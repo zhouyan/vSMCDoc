@@ -52,7 +52,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3b3268d4dbaa0833ef207017fa103ed3.html">vSMC</a></li><li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_83f3294f77a5f527272ce99bcb916db0.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_83f3294f77a5f527272ce99bcb916db0.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,6 +93,8 @@ Macros</h2></td></tr>
 <tr class="separator:ae31625a8a1e2c702dc28af28402220c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2153e69f0ad728697fa26fec821be741"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampler_8hpp.html#a2153e69f0ad728697fa26fec821be741">VSMC_RUNTIME_ASSERT_CORE_SAMPLER_MONITOR_NAME</a>(iter, map, func)</td></tr>
 <tr class="separator:a2153e69f0ad728697fa26fec821be741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac253dd3bf4df99c947373eeb013481ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sampler_8hpp.html#ac253dd3bf4df99c947373eeb013481ef">VSMC_RUNTIME_WARNING_CORE_SAMPLER_INIT_BY_ITER</a></td></tr>
+<tr class="separator:ac253dd3bf4df99c947373eeb013481ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ae31625a8a1e2c702dc28af28402220c5"></a>
@@ -166,6 +168,24 @@ Macros</h2></td></tr>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00032">assert.hpp:32</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00014">14</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac253dd3bf4df99c947373eeb013481ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_RUNTIME_WARNING_CORE_SAMPLER_INIT_BY_ITER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a>((!<span class="keywordtype">bool</span>(init_)),                                     \</div>
+<div class="line">            (<span class="stringliteral">&quot;**Sampler::initialize** A VALID INITIALIZATION OBJECT IS SET &quot;</span> \</div>
+<div class="line">             <span class="stringliteral">&quot;BUT INITILIALIZED BY ITERATING&quot;</span>))</div>
+<div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00051">assert.hpp:51</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00022">22</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>

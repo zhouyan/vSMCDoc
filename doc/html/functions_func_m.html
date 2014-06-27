@@ -132,6 +132,7 @@
 , <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_offset_zero.html#a598f07474b5a6faaac77cde035b216c1">vsmc::internal::MKLOffsetZero</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a6bafa391562d91214098eb5ee4eb104c">vsmc::MKLEngine&lt; MKL_INT, typename &gt;</a>
 , <a class="el" href="classvsmc_1_1_philox_engine.html#a965b53845b565553c96a1eea0a0f6dc1">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a>
+, <a class="el" href="classvsmc_1_1_stable_distribution.html#af18c3a3d681ae81e06bf7f7afd6ded0a">vsmc::StableDistribution&lt; FPType &gt;</a>
 , <a class="el" href="classvsmc_1_1_threefry_engine.html#abfb371f9d4380f6cb66ae8411f00151f">vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</a>
 , <a class="el" href="structvsmc_1_1traits_1_1_generator_wrapper_min_max_trait.html#a65526f63043a2fd23d4ed4178f43c126">vsmc::traits::GeneratorWrapperMinMaxTrait&lt; ResultType, typename &gt;</a>
 , <a class="el" href="classvsmc_1_1_uniform_real_distribution.html#a9a901e55a332242ac191d5f213e1c2a7">vsmc::UniformRealDistribution&lt; FPType, Left, Right &gt;</a>
@@ -151,9 +152,6 @@
 <li>max_size()
 : <a class="el" href="classvsmc_1_1_aligned_allocator.html#a2cbda6b27936c9f74cb7736e8a905864">vsmc::AlignedAllocator&lt; T, Alignment &gt;</a>
 , <a class="el" href="classvsmc_1_1_array.html#afd486e9a6a661cf2ffed78a97d491317">vsmc::Array&lt; T, N, Traits &gt;</a>
-</li>
-<li>Maximum()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_maximum.html#a740e1834c5fb4b448cd45159796d8ebe">vsmc::tbbext::Maximum&lt; T &gt;</a>
 </li>
 <li>mcmc()
 : <a class="el" href="classvsmc_1_1_sampler.html#a79806015ddea64b250aade1ff23efabb">vsmc::Sampler&lt; T &gt;</a>
@@ -199,18 +197,13 @@
 , <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_offset_zero.html#a1e48fd09d25e7ab0d76545f0649cee13">vsmc::internal::MKLOffsetZero</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a2bf8cfc695835fd9c042dbc49a76374b">vsmc::MKLEngine&lt; MKL_INT, typename &gt;</a>
 , <a class="el" href="classvsmc_1_1_philox_engine.html#a45d18c4ec05578aa93e6e763210d1e18">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a>
+, <a class="el" href="classvsmc_1_1_stable_distribution.html#aa67add2fe6231a26f0da1eb672e53a38">vsmc::StableDistribution&lt; FPType &gt;</a>
 , <a class="el" href="classvsmc_1_1_threefry_engine.html#a6bcb6158d534863a96e3605945fd2b83">vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</a>
 , <a class="el" href="structvsmc_1_1traits_1_1_generator_wrapper_min_max_trait.html#a99bea3c204f0badf91fe47c89de20558">vsmc::traits::GeneratorWrapperMinMaxTrait&lt; ResultType, typename &gt;</a>
 , <a class="el" href="classvsmc_1_1_uniform_real_distribution.html#ab8a46ae28ee626bc167e04a7cfe21264">vsmc::UniformRealDistribution&lt; FPType, Left, Right &gt;</a>
 , <a class="el" href="classvsmc_1_1_xor_combine_engine.html#ad7bcd462fb417a5e18d390e937f1d691">vsmc::XorCombineEngine&lt; Eng1, Eng2, S1, S2 &gt;</a>
 , <a class="el" href="classvsmc_1_1_xorshift_engine.html#a0906634cf816aa5f022b211c934d7f1a">vsmc::XorshiftEngine&lt; ResultType, K, A, B, C, D, R, S &gt;</a>
 , <a class="el" href="classvsmc_1_1_xorwow_engine.html#a4b0a34c9609c195359c1c9750bc761a5">vsmc::XorwowEngine&lt; Eng, D, DInit &gt;</a>
-</li>
-<li>Minimum()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_minimum.html#a569af423b27fd1a39ee61767f9cb5371">vsmc::tbbext::Minimum&lt; T &gt;</a>
-</li>
-<li>Minus()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_minus.html#aa11c3daefeb15acef6cffd5bc1b9c4b5">vsmc::tbbext::Minus&lt; T &gt;</a>
 </li>
 <li>minutes()
 : <a class="el" href="classvsmc_1_1internal_1_1_dummy_stop_watch.html#ad756c54154e12c2b2ccc4034842f1a2c">vsmc::internal::DummyStopWatch</a>
@@ -274,7 +267,7 @@
 : <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_skip_ahead_force.html#a43999d56bbf4e9ad61089ebfbce6a37e">vsmc::internal::MKLSkipAheadForce&lt; BRNG, ResultType &gt;</a>
 </li>
 <li>MKLStream()
-: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#aad4760327aa9208a97d528d90344877d">vsmc::MKLStream&lt; MKL_INT &gt;</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ae28ce4c78871f3730b0f10a760fd7167">vsmc::MKLStream&lt; MKL_INT &gt;</a>
 </li>
 <li>MKLUniformDistribution()
 : <a class="el" href="classvsmc_1_1_m_k_l_uniform_distribution.html#a753490c3942fdb7901f7a5d267984acc">vsmc::MKLUniformDistribution&lt; typename, MKL_INT &gt;</a>
@@ -285,14 +278,11 @@
 <li>modulo()
 : <a class="el" href="classvsmc_1_1_seed_generator.html#a71e381e09f42d658197377dadc96f4ac">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a>
 </li>
-<li>Modulus()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_modulus.html#af2c1e71f0d1d73919ba17f35712e982b">vsmc::tbbext::Modulus&lt; T &gt;</a>
-</li>
 <li>Monitor()
 : <a class="el" href="classvsmc_1_1_monitor.html#a8bab243f5d03efe4cd8e7f180209526a">vsmc::Monitor&lt; T &gt;</a>
 </li>
 <li>monitor()
-: <a class="el" href="classvsmc_1_1_sampler.html#ad7b60acfcc6edf8f87d8850f2980d6bc">vsmc::Sampler&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_sampler.html#a30fe55d0f4786c6ca3f59be17350203a">vsmc::Sampler&lt; T &gt;</a>
 </li>
 <li>monitor_state()
 : <a class="el" href="classvsmc_1_1_monitor_eval_adapter.html#a925c05ffee55bac32edf30ce0600cef8">vsmc::MonitorEvalAdapter&lt; typename, class, typename &gt;</a>
@@ -309,7 +299,7 @@
 , <a class="el" href="classvsmc_1_1_monitor_eval_adapter_3_01_t_00_01_monitor_eval_c_l_00_01_null_type_01_4.html#a1e72856ffbcfc17ff297c17fafc19446">vsmc::MonitorEvalAdapter&lt; T, MonitorEvalCL, NullType &gt;</a>
 </li>
 <li>MonitorEvalAdapterBase()
-: <a class="el" href="classvsmc_1_1_monitor_eval_adapter_base.html#aec49ae9030b4c88083f3be3082a6b880">vsmc::MonitorEvalAdapterBase&lt; T, F, BaseType &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_adapter_base.html#a0e5f6e8ef3c1d4729709e93d8dcf056b">vsmc::MonitorEvalAdapterBase&lt; T, F, BaseType &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_adapter_base_3_01_t_00_01_null_type_00_01_base_type_01_4.html#abfca8de46b6281bcb2a14297ea14a482">vsmc::MonitorEvalAdapterBase&lt; T, NullType, BaseType &gt;</a>
 </li>
 <li>MonitorEvalBase()
@@ -317,19 +307,19 @@
 , <a class="el" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a3eb9f908afe46133f043cd33d4f8f902">vsmc::MonitorEvalBase&lt; T, Virtual &gt;</a>
 </li>
 <li>MonitorEvalCILK()
-: <a class="el" href="classvsmc_1_1_monitor_eval_c_i_l_k.html#a724c15d97072d61164d6ad0de9547e6a">vsmc::MonitorEvalCILK&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_c_i_l_k.html#adb8b7539431b16f46f11d51c7b6679e1">vsmc::MonitorEvalCILK&lt; T, typename &gt;</a>
 </li>
 <li>MonitorEvalCL()
 : <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#ab3a7d32d622ec0f5736538ada72c6c05">vsmc::MonitorEvalCL&lt; typename, typename &gt;</a>
 </li>
 <li>MonitorEvalGCD()
-: <a class="el" href="classvsmc_1_1_monitor_eval_g_c_d.html#a184c33db577f1cb3726d4f98f5cec2bf">vsmc::MonitorEvalGCD&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_g_c_d.html#a2a8bf745040842279da58c76817af9c3">vsmc::MonitorEvalGCD&lt; T, typename &gt;</a>
 </li>
 <li>MonitorEvalOMP()
 : <a class="el" href="classvsmc_1_1_monitor_eval_o_m_p.html#aaca2d545ecadd2db5231d619b98aefe1">vsmc::MonitorEvalOMP&lt; T, typename &gt;</a>
 </li>
 <li>MonitorEvalPPL()
-: <a class="el" href="classvsmc_1_1_monitor_eval_p_p_l.html#ac7ead770e1237eb1d40db8de645f5453">vsmc::MonitorEvalPPL&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_p_p_l.html#a6fb2a5b78328434467a5ed87bc62ae96">vsmc::MonitorEvalPPL&lt; T, typename &gt;</a>
 </li>
 <li>MonitorEvalSEQ()
 : <a class="el" href="classvsmc_1_1_monitor_eval_s_e_q.html#aac2e866b37bbce6e3ad7812756a5f2ff">vsmc::MonitorEvalSEQ&lt; T, typename &gt;</a>
@@ -363,9 +353,9 @@
 , <a class="el" href="classvsmc_1_1_move_c_l.html#a308a3a1c955f918cac9ba4d0152874b2">vsmc::MoveCL&lt; typename, typename &gt;</a>
 </li>
 <li>MoveAdapter()
-: <a class="el" href="classvsmc_1_1_move_adapter.html#a83ab4d33cab6fcab0fbebea9705e04b7">vsmc::MoveAdapter&lt; typename, class, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_adapter.html#a23dc327d73e029fbe16901e364996035">vsmc::MoveAdapter&lt; typename, class, typename &gt;</a>
 , <a class="el" href="classvsmc_1_1_move_adapter_3_01_t_00_01_impl_00_01_null_type_01_4.html#a8eef4e8ce986ebb7f146c3f2cd8720a4">vsmc::MoveAdapter&lt; T, Impl, NullType &gt;</a>
-, <a class="el" href="classvsmc_1_1_move_adapter_3_01_t_00_01_move_c_l_00_01_f_01_4.html#a0288b6397384ca17e6353459b972dd8e">vsmc::MoveAdapter&lt; T, MoveCL, F &gt;</a>
+, <a class="el" href="classvsmc_1_1_move_adapter_3_01_t_00_01_move_c_l_00_01_f_01_4.html#a9d1c0ae93d68f964ab829a03576d9a0c">vsmc::MoveAdapter&lt; T, MoveCL, F &gt;</a>
 , <a class="el" href="classvsmc_1_1_move_adapter_3_01_t_00_01_move_c_l_00_01_null_type_01_4.html#a447e276a4e55d7df78aed447a0093733">vsmc::MoveAdapter&lt; T, MoveCL, NullType &gt;</a>
 </li>
 <li>MoveAdapterBase()
@@ -373,17 +363,17 @@
 , <a class="el" href="classvsmc_1_1_move_adapter_base_3_01_t_00_01_null_type_00_01_base_type_01_4.html#a22a3c14fb5ea66a4c2eac315d59950e0">vsmc::MoveAdapterBase&lt; T, NullType, BaseType &gt;</a>
 </li>
 <li>MoveBase()
-: <a class="el" href="classvsmc_1_1_move_base.html#acebc2bf655bfb658293d982759751460">vsmc::MoveBase&lt; T, Derived &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_base.html#ae27481d3d9163a812550bf90a19b652e">vsmc::MoveBase&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#a1beb7686edb33d4872606fc644762d09">vsmc::MoveBase&lt; T, Virtual &gt;</a>
 </li>
 <li>MoveCILK()
-: <a class="el" href="classvsmc_1_1_move_c_i_l_k.html#a8275acfba8b26d97d9447b8d2708f1fb">vsmc::MoveCILK&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_c_i_l_k.html#a8185a014d8841ae4b124be3ed941fe8d">vsmc::MoveCILK&lt; T, typename &gt;</a>
 </li>
 <li>MoveCL()
-: <a class="el" href="classvsmc_1_1_move_c_l.html#ac6857b70afcc048a137fc899ef6418db">vsmc::MoveCL&lt; typename, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_c_l.html#ab72bdb142548650b4855b8b83094b848">vsmc::MoveCL&lt; typename, typename &gt;</a>
 </li>
 <li>MoveGCD()
-: <a class="el" href="classvsmc_1_1_move_g_c_d.html#a1aedb4af2f62ee05450e21222ca6677e">vsmc::MoveGCD&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_g_c_d.html#af7cfb8625e790163d645afd7a40ff5b1">vsmc::MoveGCD&lt; T, typename &gt;</a>
 </li>
 <li>MoveOMP()
 : <a class="el" href="classvsmc_1_1_move_o_m_p.html#abc40c055b1b4802b646736e5a51eb7d1">vsmc::MoveOMP&lt; T, typename &gt;</a>
@@ -395,10 +385,10 @@
 : <a class="el" href="classvsmc_1_1_move_s_e_q.html#a1520ebcff029f27840b779a65c42da0e">vsmc::MoveSEQ&lt; T, typename &gt;</a>
 </li>
 <li>MoveSTD()
-: <a class="el" href="classvsmc_1_1_move_s_t_d.html#ac228ba93b51121c4315dc677f8cbd2c0">vsmc::MoveSTD&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_s_t_d.html#a92402d0ee5c098c2035fc738a91d5d55">vsmc::MoveSTD&lt; T, typename &gt;</a>
 </li>
 <li>MoveTBB()
-: <a class="el" href="classvsmc_1_1_move_t_b_b.html#acfca777793b84761de4ce32d72cd1485">vsmc::MoveTBB&lt; T, typename &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_t_b_b.html#adab8e6ba735c54dce4cc9fb398d6c375">vsmc::MoveTBB&lt; T, typename &gt;</a>
 </li>
 <li>MPIEnvironment()
 : <a class="el" href="classvsmc_1_1_m_p_i_environment.html#a46ff49a2e5cced363ccf74571a85ce4e">vsmc::MPIEnvironment</a>
@@ -406,10 +396,7 @@
 <li>mul_weight()
 : <a class="el" href="classvsmc_1_1_normalizing_constant.html#a7173903772b01ad6230070118ca52f83">vsmc::NormalizingConstant</a>
 , <a class="el" href="classvsmc_1_1_weight_set.html#a5351b3cb568b36307ceaa13719841d59">vsmc::WeightSet</a>
-, <a class="el" href="classvsmc_1_1_weight_set_empty.html#ada832c66f03ed46e869357abf36993e7">vsmc::WeightSetEmpty</a>
-</li>
-<li>Multiplies()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_multiplies.html#a7a693a64e0dde224e160f980d2d371d5">vsmc::tbbext::Multiplies&lt; T &gt;</a>
+, <a class="el" href="classvsmc_1_1_weight_set_empty.html#aa271efa41697f113a6bd8988a5526eb7">vsmc::WeightSetEmpty</a>
 </li>
 <li>mutable_particle_ptr()
 : <a class="el" href="classvsmc_1_1_single_particle_base.html#adfd3495847992b24cd8dc2effd737e95">vsmc::SingleParticleBase&lt; T &gt;</a>

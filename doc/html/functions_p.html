@@ -115,15 +115,13 @@
 , <a class="el" href="classvsmc_1_1_move_t_b_b_1_1parallel__work.html#abea7dad87aeaa0898ba36c321d8ec48e">vsmc::MoveTBB&lt; T, typename &gt;::parallel_work</a>
 , <a class="el" href="classvsmc_1_1_path_eval_t_b_b_1_1parallel__work.html#afa8fd342c328e82fde93b5463df9c627">vsmc::PathEvalTBB&lt; T, typename &gt;::parallel_work</a>
 </li>
-<li>ParallelRepeatBody()
-: <a class="el" href="classvsmc_1_1tbbext_1_1internal_1_1_parallel_repeat_body.html#ab3e267ac149bd08a5f161551377ae178">vsmc::tbbext::internal::ParallelRepeatBody&lt; ResultType, Body, bool &gt;</a>
-, <a class="el" href="classvsmc_1_1tbbext_1_1internal_1_1_parallel_repeat_body_3_01_result_type_00_01_body_00_01true_01_4.html#ad66ebf4282f05221e5e26c1ce321c96f">vsmc::tbbext::internal::ParallelRepeatBody&lt; ResultType, Body, true &gt;</a>
-</li>
 <li>param()
-: <a class="el" href="classvsmc_1_1_uniform_real_distribution.html#a348ebe968c1d59d6ccdd9885486873d1">vsmc::UniformRealDistribution&lt; FPType, Left, Right &gt;</a>
+: <a class="el" href="classvsmc_1_1_stable_distribution.html#ab8d841cb19ae9dcd4c66cb89d12007ef">vsmc::StableDistribution&lt; FPType &gt;</a>
+, <a class="el" href="classvsmc_1_1_uniform_real_distribution.html#a348ebe968c1d59d6ccdd9885486873d1">vsmc::UniformRealDistribution&lt; FPType, Left, Right &gt;</a>
 </li>
 <li>param_type()
-: <a class="el" href="classvsmc_1_1_uniform_real_distribution_1_1param__type.html#a27b2820955cdcbc9e0ed28bf5eca2114">vsmc::UniformRealDistribution&lt; FPType, Left, Right &gt;::param_type</a>
+: <a class="el" href="classvsmc_1_1_stable_distribution_1_1param__type.html#a5ed1baaf9cfdf6b2d7f8e9c8d206ed8c">vsmc::StableDistribution&lt; FPType &gt;::param_type</a>
+, <a class="el" href="classvsmc_1_1_uniform_real_distribution_1_1param__type.html#a27b2820955cdcbc9e0ed28bf5eca2114">vsmc::UniformRealDistribution&lt; FPType, Left, Right &gt;::param_type</a>
 </li>
 <li>particle()
 : <a class="el" href="classvsmc_1_1_const_single_particle_base.html#ae33e74627e3fa2e349ffaae585f936ea">vsmc::ConstSingleParticleBase&lt; T &gt;</a>
@@ -217,20 +215,17 @@
 : <a class="el" href="classvsmc_1_1_path_geometry.html#aa0ad947cddc0d4cfc8c226621f5a80b6">vsmc::PathGeometry&lt; T &gt;</a>
 </li>
 <li>PhiloxEngine()
-: <a class="el" href="classvsmc_1_1_philox_engine.html#a11a76b9b0c0b93a6b2eb8d50d39af11d">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a>
+: <a class="el" href="classvsmc_1_1_philox_engine.html#ac9e03206dff82f4d5a16fee444e9d72e">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a>
 </li>
 <li>platform()
 : <a class="el" href="classvsmc_1_1_c_l_manager.html#a10ce3c02a24d7cb0dc284e2dbb0ceb1b">vsmc::CLManager&lt; ID &gt;</a>
 , <a class="el" href="classvsmc_1_1_c_l_setup.html#a9e19534387605978fed014537af78bea">vsmc::CLSetup&lt; ID &gt;</a>
 </li>
-<li>Plus()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_plus.html#a86eac0e2588cc315703563365fcd7a7c">vsmc::tbbext::Plus&lt; T &gt;</a>
-</li>
 <li>pointer
 : <a class="el" href="classvsmc_1_1_aligned_allocator.html#ad085c78bfc3fd997ac9e89ffcc1f8a98">vsmc::AlignedAllocator&lt; T, Alignment &gt;</a>
 , <a class="el" href="classvsmc_1_1_array.html#a15627216fd5b80c8bfab2fb0f90a763e">vsmc::Array&lt; T, N, Traits &gt;</a>
-, <a class="el" href="classvsmc_1_1tbbext_1_1internal_1_1_result_vector.html#a82d9cf7906c318e580398a0c3aa5a36c">vsmc::tbbext::internal::ResultVector&lt; ResultType, bool &gt;</a>
-, <a class="el" href="classvsmc_1_1tbbext_1_1internal_1_1_result_vector_3_01_result_type_00_01true_01_4.html#a4be134e5219cf97dc138f1dd7a631db4">vsmc::tbbext::internal::ResultVector&lt; ResultType, true &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_t_b_b_result_vector.html#a79c8d2aaf15019f352b24bdfd76d7297">vsmc::internal::TBBResultVector&lt; ResultType, bool &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_t_b_b_result_vector_3_01_result_type_00_01true_01_4.html#abb672646065e8034311f6ccd09e44c9d">vsmc::internal::TBBResultVector&lt; ResultType, true &gt;</a>
 </li>
 <li>post_processor()
 : <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#a6cb636a16647097633ff93483b61c486">vsmc::InitializeAdapterBase&lt; T, F, BaseType &gt;</a>
@@ -321,9 +316,6 @@
 <li>process()
 : <a class="el" href="classvsmc_1_1_program_option_map.html#ac5adca4b80f53bce965ac7b94b6ab60d">vsmc::ProgramOptionMap</a>
 </li>
-<li>Product()
-: <a class="el" href="classvsmc_1_1tbbext_1_1_product.html#a66b6b937eaa008e623fc620ca3035aeb">vsmc::tbbext::Product&lt; T &gt;</a>
-</li>
 <li>program()
 : <a class="el" href="classvsmc_1_1_state_c_l.html#aca05056e97e49837fee8019ffa80a8ee">vsmc::StateCL&lt; size_t, typename, typename &gt;</a>
 </li>
@@ -337,13 +329,13 @@
 : <a class="el" href="classvsmc_1_1_program_option_help.html#a151b3ed0e768c5d83524aba924367d74">vsmc::ProgramOptionHelp</a>
 </li>
 <li>ProgramOptionMap()
-: <a class="el" href="classvsmc_1_1_program_option_map.html#ab2bd11517531485eb0d2630ba2d874c7">vsmc::ProgramOptionMap</a>
+: <a class="el" href="classvsmc_1_1_program_option_map.html#a8df0c9edc6e3c0d4b8381d1c02ce941d">vsmc::ProgramOptionMap</a>
 </li>
 <li>ProgramOptionScalar()
 : <a class="el" href="classvsmc_1_1_program_option_scalar.html#a37590d04f5d70788cf7b5954a010668f">vsmc::ProgramOptionScalar&lt; T &gt;</a>
 </li>
 <li>ProgramOptionVector()
-: <a class="el" href="classvsmc_1_1_program_option_vector.html#a935a01e270792b2caf2292e3cef80ded">vsmc::ProgramOptionVector&lt; T, Cont &gt;</a>
+: <a class="el" href="classvsmc_1_1_program_option_vector.html#ad08a48464f99e2974f99489693afdcab">vsmc::ProgramOptionVector&lt; T, Cont &gt;</a>
 </li>
 <li>propagate_on_container_move_assignment
 : <a class="el" href="classvsmc_1_1_aligned_allocator.html#a42cea9b9b30af8c692a1ab848fd808a8">vsmc::AlignedAllocator&lt; T, Alignment &gt;</a>

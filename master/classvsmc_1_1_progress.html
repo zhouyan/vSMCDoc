@@ -123,9 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb646e3a6943845d17f4cfeb41404d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#abb646e3a6943845d17f4cfeb41404d68">increment</a> (unsigned step=1)</td></tr>
 <tr class="memdesc:abb646e3a6943845d17f4cfeb41404d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iteration count.  <a href="#abb646e3a6943845d17f4cfeb41404d68">More...</a><br /></td></tr>
 <tr class="separator:abb646e3a6943845d17f4cfeb41404d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901a51d01fb302c0cb2dc2b42d3a4d29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a901a51d01fb302c0cb2dc2b42d3a4d29">start</a> (unsigned total, unsigned interval=100)</td></tr>
-<tr class="memdesc:a901a51d01fb302c0cb2dc2b42d3a4d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a901a51d01fb302c0cb2dc2b42d3a4d29">More...</a><br /></td></tr>
-<tr class="separator:a901a51d01fb302c0cb2dc2b42d3a4d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65fd3fc5d5443f3900c6782ad4db7d0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a65fd3fc5d5443f3900c6782ad4db7d0b">start</a> (unsigned total, <a class="el" href="classdouble.html">double</a> interval=100)</td></tr>
+<tr class="memdesc:a65fd3fc5d5443f3900c6782ad4db7d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a65fd3fc5d5443f3900c6782ad4db7d0b">More...</a><br /></td></tr>
+<tr class="separator:a65fd3fc5d5443f3900c6782ad4db7d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c947ca1c2e36d00d76dbd90f625221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a65c947ca1c2e36d00d76dbd90f625221">stop</a> (bool finished=false)</td></tr>
 <tr class="memdesc:a65c947ca1c2e36d00d76dbd90f625221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop to print the progress.  <a href="#a65c947ca1c2e36d00d76dbd90f625221">More...</a><br /></td></tr>
 <tr class="separator:a65c947ca1c2e36d00d76dbd90f625221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,10 +144,12 @@ class vsmc::Progress&lt; ThreadType, ThisThread &gt;</h3>
 <div class="line">thread_ptr_-&gt;join();</div>
 <div class="line"><span class="keyword">delete</span> thread_ptr_;</div>
 </div><!-- fragment --> </td></tr>
-    <tr><td class="paramname">ThisThread</td><td>This shall be a class that provides a <code>sleep</code> static member function that allows the calling thread to sleep for a specified number of milliseconds. A simple implementation using C++11 <code>sleep_for</code> is as the following, <div class="fragment"><div class="line"><span class="keyword">struct </span>ThisThread</div>
+    <tr><td class="paramname">ThisThread</td><td>This shall be a class that provides a <code>sleep</code> static member function that allows the calling thread to sleep for a specified time in seconds. A simple implementation using C++11 <code>sleep_for</code> is as the following, <div class="fragment"><div class="line"><span class="keyword">struct </span>ThisThread</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">static</span> <span class="keywordtype">void</span> sleep (<span class="keywordtype">unsigned</span> ms)</div>
+<div class="line">    <span class="keyword">static</span> <span class="keywordtype">void</span> sleep (<span class="keywordtype">double</span> s)</div>
 <div class="line">    {</div>
+<div class="line">        <span class="comment">// Make the interval acurate to milliseconds</span></div>
+<div class="line">        <span class="keywordtype">double</span> ms = std::max(1.0, std::floor(s * 1000));</div>
 <div class="line">        std::this_thread::sleep_for(std::chrono::milliseconds(</div>
 <div class="line">                    static_cast&lt;std::chrono::milliseconds::rep&gt;(ms)));</div>
 <div class="line">    }</div>
@@ -157,7 +159,7 @@ class vsmc::Progress&lt; ThreadType, ThisThread &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00050">50</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00052">52</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="acc5d9d20f0eaabef49a162166b616df1"></a>
 <div class="memitem">
@@ -171,7 +173,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00054">54</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00056">56</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
@@ -202,7 +204,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 
 <p>Construct a <a class="el" href="classvsmc_1_1_progress.html" title="Display a progress bar while algorithm proceed. ">Progress</a> with an output stream. </p>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00057">57</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00059">59</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
@@ -233,11 +235,11 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 
 <p>Increment the iteration count. </p>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00099">99</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00101">101</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a901a51d01fb302c0cb2dc2b42d3a4d29"></a>
+<a class="anchor" id="a65fd3fc5d5443f3900c6782ad4db7d0b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -255,7 +257,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype"><a class="el" href="classdouble.html">double</a>&#160;</td>
           <td class="paramname"><em>interval</em> = <code>100</code>&#160;</td>
         </tr>
         <tr>
@@ -275,12 +277,12 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">total</td><td>Total amount of work represented by an integer, for example file size or SMC algorithm total number of iterations </td></tr>
-    <tr><td class="paramname">interval</td><td>The sleep interval in milliseconds </td></tr>
+    <tr><td class="paramname">interval</td><td>The sleep interval in seconds </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00069">69</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00071">71</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
@@ -316,7 +318,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00088">88</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00090">90</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>

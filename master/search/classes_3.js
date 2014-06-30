@@ -9,7 +9,6 @@ var searchData=
   ['dispatchobject_3c_20dispatch_5fgroup_5ft_20_3e',['DispatchObject&lt; dispatch_group_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
   ['dispatchobject_3c_20dispatch_5fqueue_5ft_20_3e',['DispatchObject&lt; dispatch_queue_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
   ['dispatchobject_3c_20dispatch_5fsource_5ft_20_3e',['DispatchObject&lt; dispatch_source_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
-  ['dispatchprogress',['DispatchProgress',['../classvsmc_1_1_dispatch_progress.html',1,'vsmc']]],
   ['dispatchqueue',['DispatchQueue',['../classvsmc_1_1_dispatch_queue.html',1,'vsmc']]],
   ['dispatchqueue_3c_20dispatchglobal_20_3e',['DispatchQueue&lt; DispatchGlobal &gt;',['../classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html',1,'vsmc']]],
   ['dispatchqueue_3c_20dispatchmain_20_3e',['DispatchQueue&lt; DispatchMain &gt;',['../classvsmc_1_1_dispatch_queue_3_01_dispatch_main_01_4.html',1,'vsmc']]],

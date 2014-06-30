@@ -77,6 +77,7 @@ var searchData=
   ['testcancel',['testcancel',['../classvsmc_1_1_dispatch_source_base.html#acd121d7fa229c64879582d4f6af8ca2c',1,'vsmc::DispatchSourceBase']]],
   ['third_2dparty_20libraries',['Third-party libraries',['../group___third_party.html',1,'']]],
   ['thread_5fnum',['thread_num',['../classvsmc_1_1_thread_info.html#a0fb2acc96b96cb3e21a44c51575099e6',1,'vsmc::ThreadInfo::thread_num() const '],['../classvsmc_1_1_thread_info.html#a1c68ad14ae063eed357e11b38fe2115f',1,'vsmc::ThreadInfo::thread_num(std::size_t num)']]],
+  ['thread_5ftype',['thread_type',['../classvsmc_1_1_progress.html#acc5d9d20f0eaabef49a162166b616df1',1,'vsmc::Progress']]],
   ['threadguard',['ThreadGuard',['../classvsmc_1_1_thread_guard.html#aab7dab275da052bf4feb0abeb67abf6c',1,'vsmc::ThreadGuard::ThreadGuard(const ThreadGuard &amp;)=delete'],['../classvsmc_1_1_thread_guard.html#a8adc032002cd5d4cdc3b3277615aaa45',1,'vsmc::ThreadGuard::ThreadGuard() noexcept'],['../classvsmc_1_1_thread_guard.html#a23283c8f9f6c5a7ded8e780e398d3ca8',1,'vsmc::ThreadGuard::ThreadGuard(std::thread &amp;&amp;thr) noexcept'],['../classvsmc_1_1_thread_guard.html#a104073a4acc6380ac979eda26f08db41',1,'vsmc::ThreadGuard::ThreadGuard(ThreadGuard &amp;&amp;other) noexcept']]],
   ['threadguard',['ThreadGuard',['../classvsmc_1_1_thread_guard.html',1,'vsmc']]],
   ['threadinfo',['ThreadInfo',['../classvsmc_1_1_thread_info.html',1,'vsmc']]],

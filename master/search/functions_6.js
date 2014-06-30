@@ -22,6 +22,7 @@ var searchData=
   ['get_5fhandle',['get_handle',['../classvsmc_1_1_dispatch_source_base.html#a2a969e1a0b394acf2e1fd4bc6b3171c4',1,'vsmc::DispatchSourceBase']]],
   ['get_5flabel',['get_label',['../classvsmc_1_1_dispatch_queue_base.html#a6ee9847527dc77110baeaa0fdc9b151f',1,'vsmc::DispatchQueueBase']]],
   ['get_5fmask',['get_mask',['../classvsmc_1_1_dispatch_source_base.html#a8772965afffbd3a0d51fd2d904c65eda',1,'vsmc::DispatchSourceBase']]],
+  ['get_5fspecific',['get_specific',['../classvsmc_1_1_dispatch_queue_base.html#a2f05ef3065df5db50263049cdc11cff0',1,'vsmc::DispatchQueueBase']]],
   ['global_5fid',['global_id',['../classvsmc_1_1_state_m_p_i.html#a912047871b78fbb27fd9aee104c9a7e5',1,'vsmc::StateMPI']]],
   ['global_5fsize',['global_size',['../classvsmc_1_1_state_m_p_i.html#aed323d2ec53d622a7cdf47946e348361',1,'vsmc::StateMPI']]],
   ['grainsize',['grainsize',['../classvsmc_1_1_blocked_range.html#a88f58a91eb64033dd9d0887f77c7f42c',1,'vsmc::BlockedRange']]],

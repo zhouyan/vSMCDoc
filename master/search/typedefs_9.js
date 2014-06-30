@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['make_5fsigned_5ft',['make_signed_t',['../group___c_x_x11_traits_sign.html#gadeb2659d6447448106d68614eab0ceb7',1,'vsmc::cxx11']]],
+  ['make_5funsigned_5ft',['make_unsigned_t',['../group___c_x_x11_traits_sign.html#gabf3e52ae4cf60492161643cd5a0262ca',1,'vsmc::cxx11']]],
   ['manager_5ftype',['manager_type',['../classvsmc_1_1_state_c_l.html#abe537655af5fbcaf17b85a7cc70b61bc',1,'vsmc::StateCL']]],
   ['mcmc_5ftype',['mcmc_type',['../classvsmc_1_1_sampler.html#ae071e5d8f491d84bbed46cc88e011c90',1,'vsmc::Sampler']]],
   ['mkl_5fmcg59',['MKL_MCG59',['../group___m_k_l_r_n_g.html#gaea53300cc02689aa2e3fa420e7005bb3',1,'vsmc']]],

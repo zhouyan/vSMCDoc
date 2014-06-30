@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['compiler_20configration',['Compiler configration',['../group___compiler.html',1,'']]],
   ['configuration',['Configuration',['../group___config.html',1,'']]],
   ['constants',['Constants',['../group___constants.html',1,'']]],
   ['core',['Core',['../group___core.html',1,'']]],

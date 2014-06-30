@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['ranlux24_5fbase',['ranlux24_base',['../namespacevsmc_1_1cxx11.html#a2082f34113fca0ec86148c8ccb8eaa70',1,'vsmc::cxx11']]],
-  ['ranlux48_5fbase',['ranlux48_base',['../namespacevsmc_1_1cxx11.html#abfaaa6119ede0dd9fb6830b17753b95e',1,'vsmc::cxx11']]],
   ['rdrand16',['RdRand16',['../group___r_d_r_n_g.html#ga4836711ae6f73b254d3fa9b3fcdbbe1c',1,'vsmc']]],
   ['rdrand32',['RdRand32',['../group___r_d_r_n_g.html#gac3b69c3791ef56df2073e6fbf45a236e',1,'vsmc']]],
   ['rdrand64',['RdRand64',['../group___r_d_r_n_g.html#ga79500dfeee2da39a9eb645e2d59de70d',1,'vsmc']]],
@@ -9,6 +7,13 @@ var searchData=
   ['rdseed32',['RdSeed32',['../group___r_d_r_n_g.html#gacf6a5f18b7c7a749a9b2732bc3ac71ca',1,'vsmc']]],
   ['rdseed64',['RdSeed64',['../group___r_d_r_n_g.html#ga911a00c951ac5dd52da14c7253a8cee1',1,'vsmc']]],
   ['reference',['reference',['../classvsmc_1_1_aligned_allocator.html#ab06a491a291f8f0538338dba3eb273d4',1,'vsmc::AlignedAllocator::reference()'],['../classvsmc_1_1_array.html#ae8142a71d2be603f3a27de84f1161744',1,'vsmc::Array::reference()']]],
+  ['remove_5fall_5fextents_5ft',['remove_all_extents_t',['../group___c_x_x11_traits_array.html#ga22ea03b271ba95b1dcddac8e2197f2f2',1,'vsmc::cxx11']]],
+  ['remove_5fconst_5ft',['remove_const_t',['../group___c_x_x11_traits_c_v.html#gaeffcdf8458318ac4fde34b61239c99d9',1,'vsmc::cxx11']]],
+  ['remove_5fcv_5ft',['remove_cv_t',['../group___c_x_x11_traits_c_v.html#ga33fd1ed0c9f292249f05d3e3bf46dac2',1,'vsmc::cxx11']]],
+  ['remove_5fextent_5ft',['remove_extent_t',['../group___c_x_x11_traits_array.html#gae472ff1a556062226f29e888ba12b6dc',1,'vsmc::cxx11']]],
+  ['remove_5fpointer_5ft',['remove_pointer_t',['../group___c_x_x11_traits_ptr.html#ga0c839003aadb92bab8f8b8de45a7dae3',1,'vsmc::cxx11']]],
+  ['remove_5freference_5ft',['remove_reference_t',['../group___c_x_x11_traits_ref.html#ga21523a46bb41d75980222cf8e74ed1eb',1,'vsmc::cxx11']]],
+  ['remove_5fvolatile_5ft',['remove_volatile_t',['../group___c_x_x11_traits_c_v.html#gac47869d00026066b6046d86ef8baa265',1,'vsmc::cxx11']]],
   ['resample_5frng_5ftype',['resample_rng_type',['../classvsmc_1_1_particle.html#a120f6f84e229b559ae21b562f343344a',1,'vsmc::Particle']]],
   ['resample_5ftype',['resample_type',['../classvsmc_1_1_particle.html#aba98c87e36e578845f1073d73ab6b2d0',1,'vsmc::Particle::resample_type()'],['../classvsmc_1_1_sampler.html#a5126d7710d9fab6cc79c8a82f061b755',1,'vsmc::Sampler::resample_type()']]],
   ['resamplemultinomial',['ResampleMultinomial',['../namespacevsmc_1_1internal.html#a7b6be1ff40bce99f167e1ae141509417',1,'vsmc::internal']]],

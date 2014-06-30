@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;Availability.h&gt;</code><br />
 </div>
 <p><a href="compiler_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,160 +111,9 @@ Macros</h2></td></tr>
 <tr class="separator:abbe84c39c9ffa91477cde5cbc114509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a8902bdaa5edcf5243e7ecf08b532d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8hpp.html#a2a8902bdaa5edcf5243e7ecf08b532d4">VSMC_AVX2</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a2a8902bdaa5edcf5243e7ecf08b532d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b102287d7118713ffa4e06b98051141"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga9b102287d7118713ffa4e06b98051141">VSMC_HAS_C99LIB_MATH</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga9b102287d7118713ffa4e06b98051141"><td class="mdescLeft">&#160;</td><td class="mdescRight">C99 <code>&lt;math.h&gt;</code> (special functions)  <a href="group___compiler.html#ga9b102287d7118713ffa4e06b98051141">More...</a><br /></td></tr>
-<tr class="separator:ga9b102287d7118713ffa4e06b98051141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab95eeae3aa0937bb35b5872e3c8b441e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gab95eeae3aa0937bb35b5872e3c8b441e">VSMC_HAS_CXX11_ACCESS_CONTROL_SFINAE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gab95eeae3aa0937bb35b5872e3c8b441e"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 SFINAE includes access control.  <a href="group___compiler.html#gab95eeae3aa0937bb35b5872e3c8b441e">More...</a><br /></td></tr>
-<tr class="separator:gab95eeae3aa0937bb35b5872e3c8b441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57b3d3d623b28d58fd55a189b1fee0ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga57b3d3d623b28d58fd55a189b1fee0ed">VSMC_HAS_CXX11_ALIAS_TEMPLATES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga57b3d3d623b28d58fd55a189b1fee0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 alias templates.  <a href="group___compiler.html#ga57b3d3d623b28d58fd55a189b1fee0ed">More...</a><br /></td></tr>
-<tr class="separator:ga57b3d3d623b28d58fd55a189b1fee0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42ca5c8f5d3a8c8ebd2c6143e98121e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga42ca5c8f5d3a8c8ebd2c6143e98121e6">VSMC_HAS_CXX11_ALIGNAS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga42ca5c8f5d3a8c8ebd2c6143e98121e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 alignas.  <a href="group___compiler.html#ga42ca5c8f5d3a8c8ebd2c6143e98121e6">More...</a><br /></td></tr>
-<tr class="separator:ga42ca5c8f5d3a8c8ebd2c6143e98121e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cac84ea0e1d6a6a6e00f90a40082a99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga5cac84ea0e1d6a6a6e00f90a40082a99">VSMC_HAS_CXX11_ATTRIBUTES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga5cac84ea0e1d6a6a6e00f90a40082a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 attributes.  <a href="group___compiler.html#ga5cac84ea0e1d6a6a6e00f90a40082a99">More...</a><br /></td></tr>
-<tr class="separator:ga5cac84ea0e1d6a6a6e00f90a40082a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga171625f835c5d001acb60ffac59fa3be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga171625f835c5d001acb60ffac59fa3be">VSMC_HAS_CXX11_AUTO_TYPE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga171625f835c5d001acb60ffac59fa3be"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 auto.  <a href="group___compiler.html#ga171625f835c5d001acb60ffac59fa3be">More...</a><br /></td></tr>
-<tr class="separator:ga171625f835c5d001acb60ffac59fa3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e70c2f38b980dbd51878bed1223371e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga2e70c2f38b980dbd51878bed1223371e">VSMC_HAS_CXX11_CONSTEXPR</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga2e70c2f38b980dbd51878bed1223371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 constexpr.  <a href="group___compiler.html#ga2e70c2f38b980dbd51878bed1223371e">More...</a><br /></td></tr>
-<tr class="separator:ga2e70c2f38b980dbd51878bed1223371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14e6b6dc0ede1cc677ec1c30064911fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga14e6b6dc0ede1cc677ec1c30064911fa">VSMC_HAS_CXX11_DECLTYPE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga14e6b6dc0ede1cc677ec1c30064911fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 decltype.  <a href="group___compiler.html#ga14e6b6dc0ede1cc677ec1c30064911fa">More...</a><br /></td></tr>
-<tr class="separator:ga14e6b6dc0ede1cc677ec1c30064911fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac05f974249e7eb98e12d74dbe518abfa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gac05f974249e7eb98e12d74dbe518abfa">VSMC_HAS_CXX11_DEFAULT_FUNCTION_TEMPLATE_ARGS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gac05f974249e7eb98e12d74dbe518abfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 default function template arguments.  <a href="group___compiler.html#gac05f974249e7eb98e12d74dbe518abfa">More...</a><br /></td></tr>
-<tr class="separator:gac05f974249e7eb98e12d74dbe518abfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga153795ad65ea537c0561f42bae9a9a36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga153795ad65ea537c0561f42bae9a9a36">VSMC_HAS_CXX11_DEFAULTED_FUNCTIONS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga153795ad65ea537c0561f42bae9a9a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 default functions.  <a href="group___compiler.html#ga153795ad65ea537c0561f42bae9a9a36">More...</a><br /></td></tr>
-<tr class="separator:ga153795ad65ea537c0561f42bae9a9a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f224aca80190101de4e431836e6d858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga2f224aca80190101de4e431836e6d858">VSMC_HAS_CXX11_DELEGATING_CONSTRUCTORS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga2f224aca80190101de4e431836e6d858"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 delegating constructors.  <a href="group___compiler.html#ga2f224aca80190101de4e431836e6d858">More...</a><br /></td></tr>
-<tr class="separator:ga2f224aca80190101de4e431836e6d858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad219096ef2cea82df51688d6d28b3247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gad219096ef2cea82df51688d6d28b3247">VSMC_HAS_CXX11_DELETED_FUNCTIONS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gad219096ef2cea82df51688d6d28b3247"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 delete functions.  <a href="group___compiler.html#gad219096ef2cea82df51688d6d28b3247">More...</a><br /></td></tr>
-<tr class="separator:gad219096ef2cea82df51688d6d28b3247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29731900f102406edb37adbdb1c78325"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga29731900f102406edb37adbdb1c78325">VSMC_HAS_CXX11_EXPLICIT_CONVERSIONS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga29731900f102406edb37adbdb1c78325"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 explicit conversion operators.  <a href="group___compiler.html#ga29731900f102406edb37adbdb1c78325">More...</a><br /></td></tr>
-<tr class="separator:ga29731900f102406edb37adbdb1c78325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3bcc8fd38bcae28b2a187fa8e7de88f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga3bcc8fd38bcae28b2a187fa8e7de88f2">VSMC_HAS_CXX11_GENERALIZED_INITIALIZERS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga3bcc8fd38bcae28b2a187fa8e7de88f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 generalized initializers.  <a href="group___compiler.html#ga3bcc8fd38bcae28b2a187fa8e7de88f2">More...</a><br /></td></tr>
-<tr class="separator:ga3bcc8fd38bcae28b2a187fa8e7de88f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe380d784d3e1cbb92b86a8523459465"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gafe380d784d3e1cbb92b86a8523459465">VSMC_HAS_CXX11_IMPLICIT_MOVES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gafe380d784d3e1cbb92b86a8523459465"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 implicit move constructors and assignment operators.  <a href="group___compiler.html#gafe380d784d3e1cbb92b86a8523459465">More...</a><br /></td></tr>
-<tr class="separator:gafe380d784d3e1cbb92b86a8523459465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae840a6f1052f93761b06f3b41490c952"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gae840a6f1052f93761b06f3b41490c952">VSMC_HAS_CXX11_INHERITING_CONSTRUCTORS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gae840a6f1052f93761b06f3b41490c952"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 inheriting constructors.  <a href="group___compiler.html#gae840a6f1052f93761b06f3b41490c952">More...</a><br /></td></tr>
-<tr class="separator:gae840a6f1052f93761b06f3b41490c952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a70456bca6b95229b511c3f5cc3f6b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga2a70456bca6b95229b511c3f5cc3f6b3">VSMC_HAS_CXX11_INLINE_NAMESPACES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga2a70456bca6b95229b511c3f5cc3f6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 inline namespaces.  <a href="group___compiler.html#ga2a70456bca6b95229b511c3f5cc3f6b3">More...</a><br /></td></tr>
-<tr class="separator:ga2a70456bca6b95229b511c3f5cc3f6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73223c3e5aaf22f8ca192c3fedb83168"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga73223c3e5aaf22f8ca192c3fedb83168">VSMC_HAS_CXX11_LAMBDAS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga73223c3e5aaf22f8ca192c3fedb83168"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 lambda expressions.  <a href="group___compiler.html#ga73223c3e5aaf22f8ca192c3fedb83168">More...</a><br /></td></tr>
-<tr class="separator:ga73223c3e5aaf22f8ca192c3fedb83168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c589fb2fad7d3a3e862966889f335eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga3c589fb2fad7d3a3e862966889f335eb">VSMC_HAS_CXX11_LOCAL_TYPE_TEMPLATE_ARGS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga3c589fb2fad7d3a3e862966889f335eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 local and unnamed types as template arguments.  <a href="group___compiler.html#ga3c589fb2fad7d3a3e862966889f335eb">More...</a><br /></td></tr>
-<tr class="separator:ga3c589fb2fad7d3a3e862966889f335eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d5d08f7183e121f0e93cf441e243e77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga7d5d08f7183e121f0e93cf441e243e77">VSMC_HAS_CXX11_LONG_LONG</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga7d5d08f7183e121f0e93cf441e243e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 long long.  <a href="group___compiler.html#ga7d5d08f7183e121f0e93cf441e243e77">More...</a><br /></td></tr>
-<tr class="separator:ga7d5d08f7183e121f0e93cf441e243e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52055b154d80e2dac3b788fe13d037af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga52055b154d80e2dac3b788fe13d037af">VSMC_HAS_CXX11_NOEXCEPT</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga52055b154d80e2dac3b788fe13d037af"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 noexcept.  <a href="group___compiler.html#ga52055b154d80e2dac3b788fe13d037af">More...</a><br /></td></tr>
-<tr class="separator:ga52055b154d80e2dac3b788fe13d037af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga583fef8c5d0e5a42069669e435e9ba51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga583fef8c5d0e5a42069669e435e9ba51">VSMC_HAS_CXX11_NONSTATIC_MEMBER_INIT</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga583fef8c5d0e5a42069669e435e9ba51"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 non-static member initialization.  <a href="group___compiler.html#ga583fef8c5d0e5a42069669e435e9ba51">More...</a><br /></td></tr>
-<tr class="separator:ga583fef8c5d0e5a42069669e435e9ba51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad07ed9780e617dce45b949cc6f7996f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gad07ed9780e617dce45b949cc6f7996f5">VSMC_HAS_CXX11_NULLPTR</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gad07ed9780e617dce45b949cc6f7996f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 nullptr.  <a href="group___compiler.html#gad07ed9780e617dce45b949cc6f7996f5">More...</a><br /></td></tr>
-<tr class="separator:gad07ed9780e617dce45b949cc6f7996f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad75047a29201c4a176e9c54328051350"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gad75047a29201c4a176e9c54328051350">VSMC_HAS_CXX11_OVERRIDE_CONTROL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gad75047a29201c4a176e9c54328051350"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 override control.  <a href="group___compiler.html#gad75047a29201c4a176e9c54328051350">More...</a><br /></td></tr>
-<tr class="separator:gad75047a29201c4a176e9c54328051350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga611768660a4875a99b2972777fe88a7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga611768660a4875a99b2972777fe88a7b">VSMC_HAS_CXX11_RANGE_FOR</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga611768660a4875a99b2972777fe88a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 range based for.  <a href="group___compiler.html#ga611768660a4875a99b2972777fe88a7b">More...</a><br /></td></tr>
-<tr class="separator:ga611768660a4875a99b2972777fe88a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4e278c4e881e061b7c787a99ff44352"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gac4e278c4e881e061b7c787a99ff44352">VSMC_HAS_CXX11_RAW_STRING_LITERALS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gac4e278c4e881e061b7c787a99ff44352"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 raw string literals.  <a href="group___compiler.html#gac4e278c4e881e061b7c787a99ff44352">More...</a><br /></td></tr>
-<tr class="separator:gac4e278c4e881e061b7c787a99ff44352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1018f796b9210e7357a5189f6b063d73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga1018f796b9210e7357a5189f6b063d73">VSMC_HAS_CXX11_REFERENCE_QUALIFIED_FUNCTIONS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga1018f796b9210e7357a5189f6b063d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 reference qualified functions.  <a href="group___compiler.html#ga1018f796b9210e7357a5189f6b063d73">More...</a><br /></td></tr>
-<tr class="separator:ga1018f796b9210e7357a5189f6b063d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ae643643b03d5916da7d2fe2f9589f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga5ae643643b03d5916da7d2fe2f9589f5">VSMC_HAS_CXX11_RVALUE_REFERENCES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga5ae643643b03d5916da7d2fe2f9589f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 rvalue references.  <a href="group___compiler.html#ga5ae643643b03d5916da7d2fe2f9589f5">More...</a><br /></td></tr>
-<tr class="separator:ga5ae643643b03d5916da7d2fe2f9589f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a684455b4aecf10c1b2161b95ceafed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga4a684455b4aecf10c1b2161b95ceafed">VSMC_HAS_CXX11_STATIC_ASSERT</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga4a684455b4aecf10c1b2161b95ceafed"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 static_assert.  <a href="group___compiler.html#ga4a684455b4aecf10c1b2161b95ceafed">More...</a><br /></td></tr>
-<tr class="separator:ga4a684455b4aecf10c1b2161b95ceafed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf005e5cce60441594140b1bf71854cf7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gaf005e5cce60441594140b1bf71854cf7">VSMC_HAS_CXX11_STRONG_ENUMS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gaf005e5cce60441594140b1bf71854cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 strong typed enums.  <a href="group___compiler.html#gaf005e5cce60441594140b1bf71854cf7">More...</a><br /></td></tr>
-<tr class="separator:gaf005e5cce60441594140b1bf71854cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c89433f29ab4d71256e9670d20ded51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga1c89433f29ab4d71256e9670d20ded51">VSMC_HAS_CXX11_THREAD_LOCAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga1c89433f29ab4d71256e9670d20ded51"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 thread_local.  <a href="group___compiler.html#ga1c89433f29ab4d71256e9670d20ded51">More...</a><br /></td></tr>
-<tr class="separator:ga1c89433f29ab4d71256e9670d20ded51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4ec859311cfd703138530bedfb4037e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gab4ec859311cfd703138530bedfb4037e">VSMC_HAS_CXX11_TRAILING_RETURN</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gab4ec859311cfd703138530bedfb4037e"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 trailing return type function declaration.  <a href="group___compiler.html#gab4ec859311cfd703138530bedfb4037e">More...</a><br /></td></tr>
-<tr class="separator:gab4ec859311cfd703138530bedfb4037e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5bf5cec0add212d2e7f8e5e909ebbd1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga5bf5cec0add212d2e7f8e5e909ebbd1d">VSMC_HAS_CXX11_UNICODE_LITERALS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga5bf5cec0add212d2e7f8e5e909ebbd1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Unicode literals.  <a href="group___compiler.html#ga5bf5cec0add212d2e7f8e5e909ebbd1d">More...</a><br /></td></tr>
-<tr class="separator:ga5bf5cec0add212d2e7f8e5e909ebbd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8a5b5ae68ae78f36926adce66d575f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gae8a5b5ae68ae78f36926adce66d575f9">VSMC_HAS_CXX11_UNRESTRICTED_UNIONS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gae8a5b5ae68ae78f36926adce66d575f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Unrestricted unions.  <a href="group___compiler.html#gae8a5b5ae68ae78f36926adce66d575f9">More...</a><br /></td></tr>
-<tr class="separator:gae8a5b5ae68ae78f36926adce66d575f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b918e8065452f4f4be98e3add6bfcea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga5b918e8065452f4f4be98e3add6bfcea">VSMC_HAS_CXX11_USER_LITERALS</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga5b918e8065452f4f4be98e3add6bfcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 User defined literals.  <a href="group___compiler.html#ga5b918e8065452f4f4be98e3add6bfcea">More...</a><br /></td></tr>
-<tr class="separator:ga5b918e8065452f4f4be98e3add6bfcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd40c0ebd524446e3975e0d89c775f63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gabd40c0ebd524446e3975e0d89c775f63">VSMC_HAS_CXX11_VARIADIC_TEMPLATES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gabd40c0ebd524446e3975e0d89c775f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Variadic templates.  <a href="group___compiler.html#gabd40c0ebd524446e3975e0d89c775f63">More...</a><br /></td></tr>
-<tr class="separator:gabd40c0ebd524446e3975e0d89c775f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1a9c8da8a8a4ca26f73b065b7168afd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gac1a9c8da8a8a4ca26f73b065b7168afd">VSMC_HAS_CXX11LIB_CHRONO</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gac1a9c8da8a8a4ca26f73b065b7168afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;chrono&gt;</code>  <a href="group___compiler.html#gac1a9c8da8a8a4ca26f73b065b7168afd">More...</a><br /></td></tr>
-<tr class="separator:gac1a9c8da8a8a4ca26f73b065b7168afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga187f481e28a75d4f8313765f39e3005c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga187f481e28a75d4f8313765f39e3005c">VSMC_HAS_CXX11LIB_CMATH</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga187f481e28a75d4f8313765f39e3005c"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;cmath&gt;</code> (special functions)  <a href="group___compiler.html#ga187f481e28a75d4f8313765f39e3005c">More...</a><br /></td></tr>
-<tr class="separator:ga187f481e28a75d4f8313765f39e3005c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc28cecdb45dcbc067d1e70e24c767ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gacc28cecdb45dcbc067d1e70e24c767ea">VSMC_HAS_CXX11LIB_FUNCTIONAL</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gacc28cecdb45dcbc067d1e70e24c767ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;functional&gt;</code> (std::function)  <a href="group___compiler.html#gacc28cecdb45dcbc067d1e70e24c767ea">More...</a><br /></td></tr>
-<tr class="separator:gacc28cecdb45dcbc067d1e70e24c767ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09fb1c67e83b3baa430fd41299a41e1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga09fb1c67e83b3baa430fd41299a41e1c">VSMC_HAS_CXX11LIB_FUTURE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga09fb1c67e83b3baa430fd41299a41e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;future&gt;</code>  <a href="group___compiler.html#ga09fb1c67e83b3baa430fd41299a41e1c">More...</a><br /></td></tr>
-<tr class="separator:ga09fb1c67e83b3baa430fd41299a41e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2e73c4d8dd52fdb6a3a48f152ebdf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8hpp.html#a8f2e73c4d8dd52fdb6a3a48f152ebdf6">VSMC_HAS_CXX11LIB_MUTEX</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a8f2e73c4d8dd52fdb6a3a48f152ebdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;mutex&gt;</code>  <a href="#a8f2e73c4d8dd52fdb6a3a48f152ebdf6">More...</a><br /></td></tr>
-<tr class="separator:a8f2e73c4d8dd52fdb6a3a48f152ebdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6832d52a7e15f854db9f14fdca4e7a0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga6832d52a7e15f854db9f14fdca4e7a0b">VSMC_HAS_CXX11LIB_RANDOM</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga6832d52a7e15f854db9f14fdca4e7a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;random&gt;</code>  <a href="group___compiler.html#ga6832d52a7e15f854db9f14fdca4e7a0b">More...</a><br /></td></tr>
-<tr class="separator:ga6832d52a7e15f854db9f14fdca4e7a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga54d452f1f0c69a40db83e7a2eb751b2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga54d452f1f0c69a40db83e7a2eb751b2e">VSMC_HAS_CXX11LIB_RANDOM_CONSTEXPR_MINMAX</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga54d452f1f0c69a40db83e7a2eb751b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;random&gt;</code> RNG support constexpr min/max.  <a href="group___compiler.html#ga54d452f1f0c69a40db83e7a2eb751b2e">More...</a><br /></td></tr>
-<tr class="separator:ga54d452f1f0c69a40db83e7a2eb751b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf6d2d1b4f91848b01164408f1de351b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gaf6d2d1b4f91848b01164408f1de351b4">VSMC_HAS_CXX11LIB_THREAD</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gaf6d2d1b4f91848b01164408f1de351b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;thread&gt;</code>  <a href="group___compiler.html#gaf6d2d1b4f91848b01164408f1de351b4">More...</a><br /></td></tr>
-<tr class="separator:gaf6d2d1b4f91848b01164408f1de351b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba0605b8bde2f9d1323968c2104c2662"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gaba0605b8bde2f9d1323968c2104c2662">VSMC_HAS_CXX11LIB_TUPLE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gaba0605b8bde2f9d1323968c2104c2662"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 <code>&lt;tuple&gt;</code>  <a href="group___compiler.html#gaba0605b8bde2f9d1323968c2104c2662">More...</a><br /></td></tr>
-<tr class="separator:gaba0605b8bde2f9d1323968c2104c2662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga255ac4eb63cbe36180d721faf9e14687"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga255ac4eb63cbe36180d721faf9e14687">VSMC_HAS_INLINE_ASSEMBLY</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga255ac4eb63cbe36180d721faf9e14687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inline assembly.  <a href="group___compiler.html#ga255ac4eb63cbe36180d721faf9e14687">More...</a><br /></td></tr>
-<tr class="separator:ga255ac4eb63cbe36180d721faf9e14687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b9a35529fbef6bdbde0623832eb0ffc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga4b9a35529fbef6bdbde0623832eb0ffc">VSMC_HAS_INT128</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga4b9a35529fbef6bdbde0623832eb0ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">128-bits integers  <a href="group___compiler.html#ga4b9a35529fbef6bdbde0623832eb0ffc">More...</a><br /></td></tr>
-<tr class="separator:ga4b9a35529fbef6bdbde0623832eb0ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae51d1f114538b65db0d7f0f87ef99db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#gaae51d1f114538b65db0d7f0f87ef99db">VSMC_HAS_INTRINSIC_FUNCTION</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:gaae51d1f114538b65db0d7f0f87ef99db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intrinsic functions.  <a href="group___compiler.html#gaae51d1f114538b65db0d7f0f87ef99db">More...</a><br /></td></tr>
-<tr class="separator:gaae51d1f114538b65db0d7f0f87ef99db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga218a9db7fe23a5069df431494b6a4bcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga218a9db7fe23a5069df431494b6a4bcf">VSMC_HAS_INTRINSIC_INT64</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ga218a9db7fe23a5069df431494b6a4bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intrinsic functions defines <code>__int64</code>  <a href="group___compiler.html#ga218a9db7fe23a5069df431494b6a4bcf">More...</a><br /></td></tr>
-<tr class="separator:ga218a9db7fe23a5069df431494b6a4bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e1da337fea5e04f3cc471d6ac1e3804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___compiler.html#ga6e1da337fea5e04f3cc471d6ac1e3804">VSMC_HAS_INTRINSIC_INT64_LONG_LONG</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:ga6e1da337fea5e04f3cc471d6ac1e3804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intrinsic functions does not define <code>__int64</code> and use <code>long long</code> as 64-bits integers.  <a href="group___compiler.html#ga6e1da337fea5e04f3cc471d6ac1e3804">More...</a><br /></td></tr>
-<tr class="separator:ga6e1da337fea5e04f3cc471d6ac1e3804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb93933b14fd534f3794d51a8c8a907a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gaeb93933b14fd534f3794d51a8c8a907a">VSMC_HAS_OPENCL_DOUBLE</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:gaeb93933b14fd534f3794d51a8c8a907a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable &lt;<a class="el" href="u01_8h.html">vsmc/rng/u01.h</a>&gt; etc., double precision when used with vSMC.  <a href="group___config.html#gaeb93933b14fd534f3794d51a8c8a907a">More...</a><br /></td></tr>
-<tr class="separator:gaeb93933b14fd534f3794d51a8c8a907a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80026352b74cf0db9765b7c3ea6f3b28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8hpp.html#a80026352b74cf0db9765b7c3ea6f3b28">VSMC_INTRINSIC_INT64</a>&#160;&#160;&#160;long long</td></tr>
+<tr class="memitem:a6e1da337fea5e04f3cc471d6ac1e3804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8hpp.html#a6e1da337fea5e04f3cc471d6ac1e3804">VSMC_HAS_INTRINSIC_INT64_LONG_LONG</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a6e1da337fea5e04f3cc471d6ac1e3804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80026352b74cf0db9765b7c3ea6f3b28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8hpp.html#a80026352b74cf0db9765b7c3ea6f3b28">VSMC_INTRINSIC_INT64</a>&#160;&#160;&#160;__int64</td></tr>
 <tr class="separator:a80026352b74cf0db9765b7c3ea6f3b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22b8eab6fbe1b60341db1f6e9cd3e3fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compiler_8hpp.html#a22b8eab6fbe1b60341db1f6e9cd3e3fb">VSMC_MAC_10_0</a>&#160;&#160;&#160;__MAC_10_0</td></tr>
 <tr class="separator:a22b8eab6fbe1b60341db1f6e9cd3e3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,7 +169,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00534">534</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00378">378</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,23 +183,21 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00538">538</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00382">382</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8f2e73c4d8dd52fdb6a3a48f152ebdf6"></a>
+<a class="anchor" id="a6e1da337fea5e04f3cc471d6ac1e3804"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_HAS_CXX11LIB_MUTEX&#160;&#160;&#160;0</td>
+          <td class="memname">#define VSMC_HAS_INTRINSIC_INT64_LONG_LONG&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>C++11 <code>&lt;mutex&gt;</code> </p>
-
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00365">365</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00276">276</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,12 +206,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_INTRINSIC_INT64&#160;&#160;&#160;long long</td>
+          <td class="memname">#define VSMC_INTRINSIC_INT64&#160;&#160;&#160;__int64</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00442">442</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00284">284</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -549,7 +397,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00506">506</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00350">350</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -563,7 +411,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00510">510</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00354">354</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +425,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00514">514</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00358">358</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -591,7 +439,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00518">518</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00362">362</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +453,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00526">526</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00370">370</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +467,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00530">530</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00374">374</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>
@@ -633,7 +481,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00522">522</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compiler_8hpp_source.html#l00366">366</a> of file <a class="el" href="compiler_8hpp_source.html">compiler.hpp</a>.</p>
 
 </div>
 </div>

@@ -124,10 +124,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8901d4a354cec738822dcf8fbfd77d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23702c355afde5014fb0ecc4d0be57a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#af23702c355afde5014fb0ecc4d0be57a">async_f</a> (void *context, dispatch_function_t work) const </td></tr>
 <tr class="separator:af23702c355afde5014fb0ecc4d0be57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7dcc008698c1ff8593ad22f7ccf365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#a9a7dcc008698c1ff8593ad22f7ccf365">barrier_async</a> (dispatch_block_t block) const </td></tr>
+<tr class="separator:a9a7dcc008698c1ff8593ad22f7ccf365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fce08b60a421698b99ed414545302b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#af4fce08b60a421698b99ed414545302b">barrier_async_f</a> (void *context, dispatch_function_t work) const </td></tr>
+<tr class="separator:af4fce08b60a421698b99ed414545302b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48985b4cf4f94c84e2963634afc76522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#a48985b4cf4f94c84e2963634afc76522">barrier_sync</a> (dispatch_block_t block) const </td></tr>
+<tr class="separator:a48985b4cf4f94c84e2963634afc76522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae333c81ffec932e4a6ad2cbeae0ad934"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#ae333c81ffec932e4a6ad2cbeae0ad934">barrier_sync_f</a> (void *context, dispatch_function_t work) const </td></tr>
+<tr class="separator:ae333c81ffec932e4a6ad2cbeae0ad934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee9847527dc77110baeaa0fdc9b151f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#a6ee9847527dc77110baeaa0fdc9b151f">get_label</a> () const </td></tr>
 <tr class="separator:a6ee9847527dc77110baeaa0fdc9b151f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f05ef3065df5db50263049cdc11cff0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#a2f05ef3065df5db50263049cdc11cff0">get_specific</a> (const void *key) const </td></tr>
+<tr class="separator:a2f05ef3065df5db50263049cdc11cff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5761e7ca8c111db8ba5b3d16e0e94d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#a5761e7ca8c111db8ba5b3d16e0e94d81">resume</a> () const </td></tr>
 <tr class="separator:a5761e7ca8c111db8ba5b3d16e0e94d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5025c2836b77af7d2c7109b6e6e5e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#afd5025c2836b77af7d2c7109b6e6e5e6">set_specific</a> (const void *key, void *context, dispatch_function_t destructor) const </td></tr>
+<tr class="separator:afd5025c2836b77af7d2c7109b6e6e5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2b073630dffe9210d9014788752f77"><td class="memTemplParams" colspan="2">template&lt;typename DispatchType &gt; </td></tr>
 <tr class="memitem:a4d2b073630dffe9210d9014788752f77"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_dispatch_queue_base.html#a4d2b073630dffe9210d9014788752f77">set_target_queue</a> (const <a class="el" href="classvsmc_1_1_dispatch_object.html">DispatchObject</a>&lt; DispatchType &gt; &amp;<a class="el" href="classvsmc_1_1_dispatch_object.html#a43e51ae739cdd4e3f867fc558f936163">object</a>) const </td></tr>
 <tr class="separator:a4d2b073630dffe9210d9014788752f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +460,130 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9a7dcc008698c1ff8593ad22f7ccf365"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::DispatchQueueBase::barrier_async </td>
+          <td>(</td>
+          <td class="paramtype">dispatch_block_t&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00271">271</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4fce08b60a421698b99ed414545302b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::DispatchQueueBase::barrier_async_f </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dispatch_function_t&#160;</td>
+          <td class="paramname"><em>work</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00250">250</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48985b4cf4f94c84e2963634afc76522"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::DispatchQueueBase::barrier_sync </td>
+          <td>(</td>
+          <td class="paramtype">dispatch_block_t&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00274">274</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae333c81ffec932e4a6ad2cbeae0ad934"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::DispatchQueueBase::barrier_sync_f </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dispatch_function_t&#160;</td>
+          <td class="paramname"><em>work</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00253">253</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6ee9847527dc77110baeaa0fdc9b151f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -470,6 +606,32 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00216">216</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f05ef3065df5db50263049cdc11cff0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* vsmc::DispatchQueueBase::get_specific </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00220">220</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,6 +683,48 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00212">212</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd5025c2836b77af7d2c7109b6e6e5e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::DispatchQueueBase::set_specific </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dispatch_function_t&#160;</td>
+          <td class="paramname"><em>destructor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatch_8hpp_source.html#l00223">223</a> of file <a class="el" href="dispatch_8hpp_source.html">dispatch.hpp</a>.</p>
 
 </div>
 </div>

@@ -28,6 +28,7 @@ var searchData=
   ['remove_5fpointer_3c_20t_20_2avolatile_20_3e',['remove_pointer&lt; T *volatile &gt;',['../structvsmc_1_1cxx11_1_1remove__pointer_3_01_t_01_5volatile_01_4.html',1,'vsmc::cxx11']]],
   ['remove_5freference',['remove_reference',['../structvsmc_1_1cxx11_1_1remove__reference.html',1,'vsmc::cxx11']]],
   ['remove_5freference_3c_20t_20_26_20_3e',['remove_reference&lt; T &amp; &gt;',['../structvsmc_1_1cxx11_1_1remove__reference_3_01_t_01_6_01_4.html',1,'vsmc::cxx11']]],
+  ['remove_5freference_3c_20t_20_26_26_20_3e',['remove_reference&lt; T &amp;&amp; &gt;',['../structvsmc_1_1cxx11_1_1remove__reference_3_01_t_01_6_6_01_4.html',1,'vsmc::cxx11']]],
   ['remove_5fvolatile',['remove_volatile',['../structvsmc_1_1cxx11_1_1remove__volatile.html',1,'vsmc::cxx11']]],
   ['remove_5fvolatile_3c_20volatile_20t_20_3e',['remove_volatile&lt; volatile T &gt;',['../structvsmc_1_1cxx11_1_1remove__volatile_3_01volatile_01_t_01_4.html',1,'vsmc::cxx11']]],
   ['resample',['Resample',['../classvsmc_1_1_resample.html',1,'vsmc']]],

@@ -111,21 +111,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef VSMC_INTERNAL_COMPILER_INTEL_HPP</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define VSMC_INTERNAL_COMPILER_INTEL_HPP</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= 1100</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CXX11_LONG_LONG</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define VSMC_HAS_CXX11_LONG_LONG 1</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#if defined(__GXX_EXPERIMENTAL_CXX0X__) || __cplusplus &gt;= 201103L</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define VSMC_INTEL_NONEXIST 1000000UL</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define VSMC_GNUC_NONEXIST  1000000UL</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(__GNUC__) &amp;&amp; defined(__GNUC_MINOR__)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define VSMC_GNUC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define VSMC_GNUC_VERSION 0</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="intel_8hpp.html#ae1155ab7202001e0490acfe0e0b74cca">   14</a></span>&#160;<span class="preprocessor">#define VSMC_INTEL_NONEXIST 1000000UL</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="intel_8hpp.html#ac0e2ac30f5862dbb4eccce4954d43a6d">   15</a></span>&#160;<span class="preprocessor">#define VSMC_GNUC_NONEXIST  1000000UL</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#if defined(__GNUC__) &amp;&amp; defined(__GNUC_MINOR__)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define VSMC_GNUC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="intel_8hpp.html#ae204318deafe49ec1a3e42ba9bcc3afb">   19</a></span>&#160;<span class="preprocessor">#define VSMC_GNUC_VERSION 0</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= 1100</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CXX11_LONG_LONG</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define VSMC_HAS_CXX11_LONG_LONG 1</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#if defined(__GXX_EXPERIMENTAL_CXX0X__) || __cplusplus &gt;= 201103L</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// C++11 language features</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= VSMC_INTEL_NONEXIST</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= 1500 &amp;&amp; VSMC_GNUC_VERSION &gt;= 40800</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CXX11_ALIGNAS</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define VSMC_HAS_CXX11_ALIGNAS 1</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -213,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= VSMC_INTEL_NONEXIST</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= 1500 &amp;&amp; VSMC_GNUC_VERSION &gt;= 40800</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CXX11_INHERITING_CONSTRUCTORS</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define VSMC_HAS_CXX11_INHERITING_CONSTRUCTORS 1</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -297,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= VSMC_INTEL_NONEXIST</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= 1500 &amp;&amp; VSMC_GNUC_VERSION &gt;= 40800</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CXX11_THREAD_LOCAL</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define VSMC_HAS_CXX11_THREAD_LOCAL 1</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -323,7 +323,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= VSMC_INTEL_NONEXIST</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#if __INTEL_COMPILER &gt;= 1500 &amp;&amp; VSMC_GNUC_VERSION &gt;= 40700</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CXX11_USER_LITERALS</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#define VSMC_HAS_CXX11_USER_LITERALS 1</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#endif</span></div>

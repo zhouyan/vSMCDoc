@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_FUTURE</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#if VSMC_USE_CXX11LIB_FUTURE</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;future&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
@@ -172,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classvsmc_1_1_thread_guard.html">   77</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_thread_guard.html">ThreadGuard</a></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11_DELETED_FUNCTIONS</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#if VSMC_USE_CXX11LIB_FUTURE</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">public</span> :</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classvsmc_1_1_thread_guard.html#a8adc032002cd5d4cdc3b3277615aaa45">ThreadGuard</a> (<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_thread_guard.html">ThreadGuard</a> &amp;) = <span class="keyword">delete</span>;</div>
@@ -285,7 +285,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">  200</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">parallel_for</a> (<span class="keyword">const</span> Range &amp;range, WorkType &amp;&amp;work)</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    std::vector&lt;Range&gt; range_vec(<a class="code" href="classvsmc_1_1_thread_info.html#a691b5a206912568514794d683fbee31f">ThreadInfo::instance</a>().partition(range));</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_FUTURE</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#if VSMC_USE_CXX11LIB_FUTURE</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    std::vector&lt;std::future&lt;void&gt; &gt; wg;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    wg.reserve(range_vec.size());</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i != range_vec.size(); ++i) {</div>
@@ -312,7 +312,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    std::vector&lt;Range&gt; range_vec(<a class="code" href="classvsmc_1_1_thread_info.html#a691b5a206912568514794d683fbee31f">ThreadInfo::instance</a>().partition(range));</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    std::vector&lt;WorkType&gt; work_vec(range_vec.size(), work);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_FUTURE</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#if VSMC_USE_CXX11LIB_FUTURE</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    std::vector&lt;std::future&lt;void&gt; &gt; wg;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    wg.reserve(range_vec.size());</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i != range_vec.size(); ++i) {</div>
@@ -340,7 +340,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    std::vector&lt;Range&gt; range_vec(<a class="code" href="classvsmc_1_1_thread_info.html#a691b5a206912568514794d683fbee31f">ThreadInfo::instance</a>().partition(range));</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    std::vector&lt;T&gt; result(range_vec.size());</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_FUTURE</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#if VSMC_USE_CXX11LIB_FUTURE</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    std::vector&lt;std::future&lt;void&gt; &gt; wg;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    wg.reserve(range_vec.size());</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i != range_vec.size(); ++i) {</div>
@@ -375,7 +375,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    std::vector&lt;Range&gt; range_vec(<a class="code" href="classvsmc_1_1_thread_info.html#a691b5a206912568514794d683fbee31f">ThreadInfo::instance</a>().partition(range));</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    std::vector&lt;T&gt; result(range_vec.size());</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_FUTURE</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#if VSMC_USE_CXX11LIB_FUTURE</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    std::vector&lt;std::future&lt;void&gt; &gt; wg;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    wg.reserve(range_vec.size());</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i != range_vec.size(); ++i) {</div>

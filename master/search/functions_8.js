@@ -38,7 +38,6 @@ var searchData=
   ['is_5ffunction_5ftest',['is_function_test',['../namespacevsmc_1_1cxx11_1_1internal.html#ae4e3b013095aa57331061096d4f93af3',1,'vsmc::cxx11::internal']]],
   ['is_5ffunction_5ftest_5fsrc',['is_function_test_src',['../namespacevsmc_1_1cxx11_1_1internal.html#a2b15116bd3eb0f3ae5c36c4a089adfab',1,'vsmc::cxx11::internal']]],
   ['is_5flocal',['is_local',['../classvsmc_1_1_state_m_p_i.html#a6c057a4d5b93787f052cc982c3d32be9',1,'vsmc::StateMPI']]],
-  ['is_5fm128_5faligned',['is_m128_aligned',['../namespacevsmc.html#ae64d9bd00df9d3d17aaf23a22438fc04',1,'vsmc']]],
   ['is_5fpolymorphic_5ftest',['is_polymorphic_test',['../namespacevsmc_1_1cxx11_1_1internal.html#a9676398cc312332778349459dc697b03',1,'vsmc::cxx11::internal']]],
   ['is_5fsaved',['is_saved',['../classvsmc_1_1_backup.html#a0bc9eeceb063734b062146069969bccf',1,'vsmc::Backup']]],
   ['is_5fvector',['is_vector',['../classvsmc_1_1_program_option.html#a1473aa4e18f550b6ccb75ce61cdb5764',1,'vsmc::ProgramOption::is_vector()'],['../classvsmc_1_1_program_option_help.html#aca66be9a76395a43458d014ef9a2d8ed',1,'vsmc::ProgramOptionHelp::is_vector()'],['../classvsmc_1_1_program_option_scalar.html#a9b738e284ebc1d5f3c650b423d45d23d',1,'vsmc::ProgramOptionScalar::is_vector()'],['../classvsmc_1_1_program_option_vector.html#a74a469f6eed95c0a7e36e6dfacca5387',1,'vsmc::ProgramOptionVector::is_vector()']]],

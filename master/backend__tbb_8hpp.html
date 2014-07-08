@@ -181,11 +181,11 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;initialize_param(particle, param);                                 \</div>
 <div class="line">    this-&gt;pre_processor(particle);                                           \</div>
-<div class="line">    parallel_work work(<span class="keyword">this</span>, &amp;particle);                                     <a class="code" href="group___s_t_d_t_b_b.html#gac0db783f32b2b88c7376721fca43013b">\</a></div>
-<div class="line"><a class="code" href="group___s_t_d_t_b_b.html#gac0db783f32b2b88c7376721fca43013b">    tbb::parallel_reduce</a> args;                                               \</div>
+<div class="line">    parallel_work work(<span class="keyword">this</span>, &amp;particle);                                     <a class="code" href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">\</a></div>
+<div class="line"><a class="code" href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">    tbb::parallel_reduce</a> args;                                               \</div>
 <div class="line">    this-&gt;post_processor(particle);                                          \</div>
 <div class="line">    return work.accept();</div>
-<div class="ttc" id="group___s_t_d_t_b_b_html_gac0db783f32b2b88c7376721fca43013b"><div class="ttname"><a href="group___s_t_d_t_b_b.html#gac0db783f32b2b88c7376721fca43013b">vsmc::parallel_reduce</a></div><div class="ttdeci">void parallel_reduce(const Range &amp;range, WorkType &amp;work)</div><div class="ttdoc">Parallel reduce using C++11 concurrency. </div><div class="ttdef"><b>Definition:</b> <a href="stdtbb_8hpp_source.html#l00236">stdtbb.hpp:236</a></div></div>
+<div class="ttc" id="group___thread_html_gac0db783f32b2b88c7376721fca43013b"><div class="ttname"><a href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">vsmc::parallel_reduce</a></div><div class="ttdeci">void parallel_reduce(const Range &amp;range, WorkType &amp;work)</div><div class="ttdoc">Parallel reduce using C++11 concurrency. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__reduce_8hpp_source.html#l00035">parallel_reduce.hpp:35</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00019">19</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
@@ -205,10 +205,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                     \</div>
-<div class="line">    parallel_work work(<span class="keyword">this</span>, iter, dim, &amp;particle, res);                     <a class="code" href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">\</a></div>
-<div class="line"><a class="code" href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">    tbb::parallel_for</a> args;                                                  \</div>
+<div class="line">    parallel_work work(<span class="keyword">this</span>, iter, dim, &amp;particle, res);                     <a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">\</a></div>
+<div class="line"><a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">    tbb::parallel_for</a> args;                                                  \</div>
 <div class="line">    this-&gt;post_processor(iter, particle);</div>
-<div class="ttc" id="group___s_t_d_t_b_b_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using C++11 concurrency. </div><div class="ttdef"><b>Definition:</b> <a href="stdtbb_8hpp_source.html#l00200">stdtbb.hpp:200</a></div></div>
+<div class="ttc" id="group___thread_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__for_8hpp_source.html#l00034">parallel_for.hpp:34</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00034">34</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
@@ -228,11 +228,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                     \</div>
-<div class="line">    parallel_work work(<span class="keyword">this</span>, iter, &amp;particle);                               <a class="code" href="group___s_t_d_t_b_b.html#gac0db783f32b2b88c7376721fca43013b">\</a></div>
-<div class="line"><a class="code" href="group___s_t_d_t_b_b.html#gac0db783f32b2b88c7376721fca43013b">    tbb::parallel_reduce</a> args;                                               \</div>
+<div class="line">    parallel_work work(<span class="keyword">this</span>, iter, &amp;particle);                               <a class="code" href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">\</a></div>
+<div class="line"><a class="code" href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">    tbb::parallel_reduce</a> args;                                               \</div>
 <div class="line">    this-&gt;post_processor(iter, particle);                                    \</div>
 <div class="line">    return work.accept();</div>
-<div class="ttc" id="group___s_t_d_t_b_b_html_gac0db783f32b2b88c7376721fca43013b"><div class="ttname"><a href="group___s_t_d_t_b_b.html#gac0db783f32b2b88c7376721fca43013b">vsmc::parallel_reduce</a></div><div class="ttdeci">void parallel_reduce(const Range &amp;range, WorkType &amp;work)</div><div class="ttdoc">Parallel reduce using C++11 concurrency. </div><div class="ttdef"><b>Definition:</b> <a href="stdtbb_8hpp_source.html#l00236">stdtbb.hpp:236</a></div></div>
+<div class="ttc" id="group___thread_html_gac0db783f32b2b88c7376721fca43013b"><div class="ttname"><a href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">vsmc::parallel_reduce</a></div><div class="ttdeci">void parallel_reduce(const Range &amp;range, WorkType &amp;work)</div><div class="ttdoc">Parallel reduce using C++11 concurrency. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__reduce_8hpp_source.html#l00035">parallel_reduce.hpp:35</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00027">27</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
@@ -252,11 +252,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                     \</div>
-<div class="line">    parallel_work work(<span class="keyword">this</span>, iter, &amp;particle, res);                          <a class="code" href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">\</a></div>
-<div class="line"><a class="code" href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">    tbb::parallel_for</a> args;                                                  \</div>
+<div class="line">    parallel_work work(<span class="keyword">this</span>, iter, &amp;particle, res);                          <a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">\</a></div>
+<div class="line"><a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">    tbb::parallel_for</a> args;                                                  \</div>
 <div class="line">    this-&gt;post_processor(iter, particle);                                    \</div>
 <div class="line">    return this-&gt;path_grid(iter, particle);</div>
-<div class="ttc" id="group___s_t_d_t_b_b_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___s_t_d_t_b_b.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using C++11 concurrency. </div><div class="ttdef"><b>Definition:</b> <a href="stdtbb_8hpp_source.html#l00200">stdtbb.hpp:200</a></div></div>
+<div class="ttc" id="group___thread_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__for_8hpp_source.html#l00034">parallel_for.hpp:34</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00040">40</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 

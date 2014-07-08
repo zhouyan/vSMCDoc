@@ -53,6 +53,6 @@ var searchData=
   ['_7eprogramoptionmap',['~ProgramOptionMap',['../classvsmc_1_1_program_option_map.html#a45d31f972528fad53dc53fb4787fdd02',1,'vsmc::ProgramOptionMap']]],
   ['_7escopedbackup',['~ScopedBackup',['../classvsmc_1_1_scoped_backup.html#a6275ce474494d17568fb8a1b4e09d5ed',1,'vsmc::ScopedBackup']]],
   ['_7escopedstopwatch',['~ScopedStopWatch',['../classvsmc_1_1_scoped_stop_watch.html#ae4fad60935d0e2e3fe35c5d078cd9148',1,'vsmc::ScopedStopWatch']]],
-  ['_7ethreadguard',['~ThreadGuard',['../classvsmc_1_1_thread_guard.html#a7a84ebea497af7eec0d460dece75c621',1,'vsmc::ThreadGuard']]],
+  ['_7ethreadguard',['~ThreadGuard',['../classvsmc_1_1_thread_guard.html#a37c174621eb97ee33b76a644561d50cd',1,'vsmc::ThreadGuard']]],
   ['_7eweightset',['~WeightSet',['../classvsmc_1_1_weight_set.html#aa752857b142c2d074b20fbe061728f76',1,'vsmc::WeightSet']]]
 ];

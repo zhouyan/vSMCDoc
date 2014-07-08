@@ -47,13 +47,13 @@ var searchData=
   ['initializeppl_3c_20t_2c_20derived_20_3e',['InitializePPL&lt; T, Derived &gt;',['../classvsmc_1_1_initialize_p_p_l.html',1,'vsmc']]],
   ['initializeseq',['InitializeSEQ',['../classvsmc_1_1_initialize_s_e_q.html',1,'vsmc']]],
   ['initializeseq',['InitializeSEQ',['../classvsmc_1_1_initialize_s_e_q.html#a1dc609475579a9a41f6e82c07ab83488',1,'vsmc::InitializeSEQ::InitializeSEQ()'],['../classvsmc_1_1_initialize_s_e_q.html#ad9d9e83689d2b1c561f7f404a7785dd2',1,'vsmc::InitializeSEQ::InitializeSEQ(const InitializeSEQ&lt; T, Derived &gt; &amp;other)']]],
-  ['initializestd',['InitializeSTD',['../classvsmc_1_1_initialize_s_t_d.html',1,'vsmc']]],
   ['initializestd',['InitializeSTD',['../classvsmc_1_1_initialize_s_t_d.html#a5fdad00b338531d7535383b82e22ddea',1,'vsmc::InitializeSTD::InitializeSTD()'],['../classvsmc_1_1_initialize_s_t_d.html#af9e125d9655a45bccc2e8797ac8fc6b5',1,'vsmc::InitializeSTD::InitializeSTD(const InitializeSTD&lt; T, Derived &gt; &amp;other)']]],
+  ['initializestd',['InitializeSTD',['../classvsmc_1_1_initialize_s_t_d.html',1,'vsmc']]],
   ['initializestd_3c_20t_2c_20derived_20_3e',['InitializeSTD&lt; T, Derived &gt;',['../classvsmc_1_1_initialize_s_t_d.html',1,'vsmc']]],
   ['initializetbb',['InitializeTBB',['../classvsmc_1_1_initialize_t_b_b.html',1,'vsmc']]],
   ['initializetbb',['InitializeTBB',['../classvsmc_1_1_initialize_t_b_b.html#ab1b5c9267ec58c3c0011955859dc2b41',1,'vsmc::InitializeTBB::InitializeTBB()'],['../classvsmc_1_1_initialize_t_b_b.html#a117fb3c0d29c3f2602ab0ce9ee646fbf',1,'vsmc::InitializeTBB::InitializeTBB(const InitializeTBB&lt; T, Derived &gt; &amp;other)']]],
   ['initializetbb_3c_20t_2c_20derived_20_3e',['InitializeTBB&lt; T, Derived &gt;',['../classvsmc_1_1_initialize_t_b_b.html',1,'vsmc']]],
-  ['instance',['instance',['../classvsmc_1_1internal_1_1_n_integrate_newton_cotes_coeff.html#a5962aeac5e95b3f7fad621591aeb5c9f',1,'vsmc::internal::NIntegrateNewtonCotesCoeff::instance()'],['../classvsmc_1_1_m_p_i_communicator.html#ae150cd9fc9c58b2de472e5db63ba7538',1,'vsmc::MPICommunicator::instance()'],['../classvsmc_1_1_c_l_setup.html#a97919cd99fa74f70c026088dedf9c20b',1,'vsmc::CLSetup::instance()'],['../classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4',1,'vsmc::CLManager::instance()'],['../classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add',1,'vsmc::SeedGenerator::instance()'],['../classvsmc_1_1_thread_info.html#a691b5a206912568514794d683fbee31f',1,'vsmc::ThreadInfo::instance()']]],
+  ['instance',['instance',['../classvsmc_1_1internal_1_1_n_integrate_newton_cotes_coeff.html#a5962aeac5e95b3f7fad621591aeb5c9f',1,'vsmc::internal::NIntegrateNewtonCotesCoeff::instance()'],['../classvsmc_1_1_m_p_i_communicator.html#ae150cd9fc9c58b2de472e5db63ba7538',1,'vsmc::MPICommunicator::instance()'],['../classvsmc_1_1_c_l_setup.html#a97919cd99fa74f70c026088dedf9c20b',1,'vsmc::CLSetup::instance()'],['../classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4',1,'vsmc::CLManager::instance()'],['../classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add',1,'vsmc::SeedGenerator::instance()'],['../classvsmc_1_1_thread_num.html#a4ca9716cca558d027f157dbc241aa2f2',1,'vsmc::ThreadNum::instance()']]],
   ['integer_5ffunction_2ehpp',['integer_function.hpp',['../integer__function_8hpp.html',1,'']]],
   ['integer_20functions',['Integer functions',['../group___integer_function.html',1,'']]],
   ['integral_5fconstant',['integral_constant',['../structvsmc_1_1cxx11_1_1integral__constant.html',1,'vsmc::cxx11']]],
@@ -215,8 +215,8 @@ var searchData=
   ['is_5farray_3c_20t_5bn_5d_3e',['is_array&lt; T[N]&gt;',['../structvsmc_1_1cxx11_1_1is__array_3_01_t[_n]_4.html',1,'vsmc::cxx11']]],
   ['is_5fassignable',['is_assignable',['../structvsmc_1_1cxx11_1_1is__assignable.html',1,'vsmc::cxx11']]],
   ['is_5fbase_5fof',['is_base_of',['../structvsmc_1_1cxx11_1_1is__base__of.html',1,'vsmc::cxx11']]],
-  ['is_5fbase_5fof_5fdest',['is_base_of_dest',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__dest.html#aa4a0b794360840394787225c522ec013',1,'vsmc::cxx11::internal::is_base_of_dest']]],
   ['is_5fbase_5fof_5fdest',['is_base_of_dest',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__dest.html',1,'vsmc::cxx11::internal']]],
+  ['is_5fbase_5fof_5fdest',['is_base_of_dest',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__dest.html#aa4a0b794360840394787225c522ec013',1,'vsmc::cxx11::internal::is_base_of_dest']]],
   ['is_5fbase_5fof_5ffail',['is_base_of_fail',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__fail.html',1,'vsmc::cxx11::internal']]],
   ['is_5fbase_5fof_5fsrc',['is_base_of_src',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__src.html',1,'vsmc::cxx11::internal']]],
   ['is_5fbase_5fof_5ftest',['is_base_of_test',['../namespacevsmc_1_1cxx11_1_1internal.html#a808b7a605630266b8664feae97791fee',1,'vsmc::cxx11::internal::is_base_of_test(int)'],['../namespacevsmc_1_1cxx11_1_1internal.html#aa7b8e68611a0d4d802d5e408dfda0204',1,'vsmc::cxx11::internal::is_base_of_test(...)']]],
@@ -389,6 +389,5 @@ var searchData=
   ['iter_5fsize',['iter_size',['../classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9',1,'vsmc::Monitor::iter_size()'],['../classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d',1,'vsmc::Path::iter_size()'],['../classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185',1,'vsmc::Sampler::iter_size()']]],
   ['iterate',['iterate',['../classvsmc_1_1_sampler.html#a08a826dd4be3c3479bfad10ebefb71e6',1,'vsmc::Sampler']]],
   ['iterator',['iterator',['../classvsmc_1_1_array.html#a6c2ab35f596aeb2caa03cbf1855f8929',1,'vsmc::Array']]],
-  ['intel_20threading_20building_20blocks',['Intel Threading Building Blocks',['../group___t_b_b.html',1,'']]],
-  ['intel_20threading_20building_20blocks_20extensions',['Intel Threading Building Blocks Extensions',['../group___t_b_b_ext.html',1,'']]]
+  ['intel_20threading_20building_20blocks',['Intel Threading Building Blocks',['../group___t_b_b.html',1,'']]]
 ];

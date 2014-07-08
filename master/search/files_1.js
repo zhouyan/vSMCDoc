@@ -11,5 +11,6 @@ var searchData=
   ['backend_5fstd_2ehpp',['backend_std.hpp',['../backend__std_8hpp.html',1,'']]],
   ['backend_5ftbb_2ehpp',['backend_tbb.hpp',['../backend__tbb_8hpp.html',1,'']]],
   ['backup_2ehpp',['backup.hpp',['../backup_8hpp.html',1,'']]],
-  ['basic_2ehpp',['basic.hpp',['../basic_8hpp.html',1,'']]]
+  ['basic_2ehpp',['basic.hpp',['../basic_8hpp.html',1,'']]],
+  ['blocked_5frange_2ehpp',['blocked_range.hpp',['../blocked__range_8hpp.html',1,'']]]
 ];

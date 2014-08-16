@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/thread/thread_num.hpp File Reference</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/thread/parallel_repeat.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,29 +95,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">thread_num.hpp File Reference</div>  </div>
+<div class="title">parallel_repeat.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="blocked__range_8hpp_source.html">vsmc/thread/blocked_range.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="parallel__for_8hpp_source.html">vsmc/thread/parallel_for.hpp</a>&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 </div>
-<p><a href="thread__num_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="parallel__repeat_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_thread_num.html">vsmc::ThreadNum</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of threads used by algorithms.  <a href="classvsmc_1_1_thread_num.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="memTemplParams" colspan="2">template&lt;typename WorkType &gt; </td></tr>
+<tr class="memitem:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">vsmc::parallel_repeat</a> (std::size_t n, WorkType &amp;&amp;work)</td></tr>
+<tr class="memdesc:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel repeat using std::thread.  <a href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">More...</a><br /></td></tr>
+<tr class="separator:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

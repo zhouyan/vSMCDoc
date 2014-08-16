@@ -104,7 +104,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strictly scope-based thread ownership wrapper.  <a href="classvsmc_1_1_thread_guard.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_thread_num.html">vsmc::ThreadNum</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of thread used by algorithms.  <a href="classvsmc_1_1_thread_num.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of threads used by algorithms.  <a href="classvsmc_1_1_thread_num.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -125,6 +125,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gac0db783f32b2b88c7376721fca43013b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___thread.html#gac0db783f32b2b88c7376721fca43013b">vsmc::parallel_reduce</a> (const Range &amp;range, WorkType &amp;work)</td></tr>
 <tr class="memdesc:gac0db783f32b2b88c7376721fca43013b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel reduce using C++11 concurrency.  <a href="#gac0db783f32b2b88c7376721fca43013b">More...</a><br /></td></tr>
 <tr class="separator:gac0db783f32b2b88c7376721fca43013b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="memTemplParams" colspan="2">template&lt;typename WorkType &gt; </td></tr>
+<tr class="memitem:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">vsmc::parallel_repeat</a> (std::size_t n, WorkType &amp;&amp;work)</td></tr>
+<tr class="memdesc:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel repeat using std::thread.  <a href="#gaf16fe561cdb0d5e07b36dac20db2e331">More...</a><br /></td></tr>
+<tr class="separator:gaf16fe561cdb0d5e07b36dac20db2e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>C++11 threading support. </p>
@@ -313,6 +317,48 @@ template&lt;typename Range , typename WorkType &gt; </div>
 <div class="line">Work.join(other_work);</div>
 </div><!-- fragment --> 
 <p>Definition at line <a class="el" href="parallel__reduce_8hpp_source.html#l00035">35</a> of file <a class="el" href="parallel__reduce_8hpp_source.html">parallel_reduce.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf16fe561cdb0d5e07b36dac20db2e331"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename WorkType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::parallel_repeat </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WorkType &amp;&amp;&#160;</td>
+          <td class="paramname"><em>work</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parallel repeat using std::thread. </p>
+<p>Requirement: WorkType: </p><div class="fragment"><div class="line">WorkType work;</div>
+<div class="line">work(std::size_t);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="parallel__repeat_8hpp_source.html#l00031">31</a> of file <a class="el" href="parallel__repeat_8hpp_source.html">parallel_repeat.hpp</a>.</p>
 
 </div>
 </div>

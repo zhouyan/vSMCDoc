@@ -711,7 +711,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter) {</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;            *first = ess_history_[iter] / <a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>();</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            ++first;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i) {</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;            <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i) {</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                *first = accept_history_[i][iter] /</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>());</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                ++first;</div>

@@ -15,5 +15,5 @@ var searchData=
   ['normal01_5f4x64_5f53',['normal01_4x64_53',['../structnormal01__4x64__53.html',1,'']]],
   ['normalizingconstant',['NormalizingConstant',['../classvsmc_1_1_normalizing_constant.html',1,'vsmc']]],
   ['normalizingconstantbase',['NormalizingConstantBase',['../class_normalizing_constant_base.html',1,'']]],
-  ['normalizingconstantmpi',['NormalizingConstantMPI',['../classvsmc_1_1_normalizing_constant_m_p_i.html',1,'vsmc']]]
+  ['normalizingconstantmpi',['NormalizingConstantMPI',['../singletonvsmc_1_1_normalizing_constant_m_p_i.html',1,'vsmc']]]
 ];

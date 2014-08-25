@@ -73,7 +73,7 @@ var searchData=
   ['ln_5fpi_5fby6_3c_20double_20_3e',['ln_pi_by6&lt; double &gt;',['../namespacevsmc_1_1math.html#ab5212a9a6d244a10340f99d42e85bd22',1,'vsmc::math']]],
   ['ln_5fpi_5fby6_3c_20float_20_3e',['ln_pi_by6&lt; float &gt;',['../namespacevsmc_1_1math.html#a6bdd9990c1c3e765a30228f82f73efc8',1,'vsmc::math']]],
   ['ln_5fpi_5fby6_3c_20long_20double_20_3e',['ln_pi_by6&lt; long double &gt;',['../namespacevsmc_1_1math.html#a618c42648c1f7d466adbc140586f9d23',1,'vsmc::math']]],
-  ['local_5fid',['local_id',['../classvsmc_1_1_state_m_p_i.html#ae04181f73501cfac47f6c4cddb3b3572',1,'vsmc::StateMPI']]],
+  ['local_5fid',['local_id',['../singletonvsmc_1_1_state_m_p_i.html#a3fde99d4f39e721fb89398d6328b7f5e',1,'vsmc::StateMPI']]],
   ['local_5fsize',['local_size',['../classvsmc_1_1_configure_c_l.html#aa71c270ab00e216bfe0cf47bf47ab075',1,'vsmc::ConfigureCL::local_size() const '],['../classvsmc_1_1_configure_c_l.html#a7a86a37e192d6fce2a7fa6dced72434e',1,'vsmc::ConfigureCL::local_size(std::size_t new_size)'],['../classvsmc_1_1_configure_c_l.html#a7b368b456623f27394c4dcab1767a75d',1,'vsmc::ConfigureCL::local_size(std::size_t N, const cl::Kernel &amp;kern, const cl::Device &amp;dev)']]],
   ['location',['location',['../classvsmc_1_1_stable_distribution_1_1param__type.html#a6e64df591365d886184bb43a21b64ec2',1,'vsmc::StableDistribution::param_type::location()'],['../classvsmc_1_1_stable_distribution.html#a8310a19d0e2dd480829e75a7c1701aa5',1,'vsmc::StableDistribution::location()']]],
   ['log_5fweight',['log_weight',['../classvsmc_1_1_weight_set.html#af2bd74f8c3e73f6f1df5cae0017ec824',1,'vsmc::WeightSet::log_weight()'],['../classvsmc_1_1_weight_set_empty.html#afe784a7a7a17b931c300bad3696abdb0',1,'vsmc::WeightSetEmpty::log_weight()']]],

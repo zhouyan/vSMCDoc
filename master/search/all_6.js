@@ -14,7 +14,7 @@ var searchData=
   ['fill',['fill',['../classvsmc_1_1_array.html#a195dc352c81a2d48e6d3de9c757eb0fc',1,'vsmc::Array']]],
   ['forward',['forward',['../group___c_x_x11_traits_utility.html#ga59b70dafc2a1389bf8921ca03ecaad5c',1,'vsmc::cxx11::forward(typename remove_reference&lt; T &gt;::type &amp;t) noexcept'],['../group___c_x_x11_traits_utility.html#ga33acfd295f7d9cbc0aaadf42ed569672',1,'vsmc::cxx11::forward(typename remove_reference&lt; T &gt;::type &amp;&amp;t) noexcept']]],
   ['forward_2ehpp',['forward.hpp',['../forward_8hpp.html',1,'']]],
-  ['fp_5ftype',['fp_type',['../classvsmc_1_1_state_c_l.html#a29e7c2b1063576bfeb37b24c3c2a3810',1,'vsmc::StateCL']]],
+  ['fp_5ftype',['fp_type',['../singletonvsmc_1_1_state_c_l.html#a6aaee6cebad0f3bfece1d512b358b33e',1,'vsmc::StateCL']]],
   ['front',['front',['../classvsmc_1_1_array.html#aab7bb2e53fc9fcdb79ff94a0c56853d8',1,'vsmc::Array::front()'],['../classvsmc_1_1_array.html#a8130fb5cc2b6ef9ce59faea48d4eb764',1,'vsmc::Array::front() const ']]],
   ['function',['function',['../classvsmc_1_1_dispatch_function.html#a64cf8f130161195bdd8634067327b2d4',1,'vsmc::DispatchFunction']]],
   ['functional_2ehpp',['functional.hpp',['../functional_8hpp.html',1,'']]]

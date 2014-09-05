@@ -123,15 +123,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb646e3a6943845d17f4cfeb41404d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#abb646e3a6943845d17f4cfeb41404d68">increment</a> (unsigned step=1)</td></tr>
 <tr class="memdesc:abb646e3a6943845d17f4cfeb41404d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iteration count.  <a href="#abb646e3a6943845d17f4cfeb41404d68">More...</a><br /></td></tr>
 <tr class="separator:abb646e3a6943845d17f4cfeb41404d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b15cd3807d3d3eed947aa15f4f529d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a2b15cd3807d3d3eed947aa15f4f529d0">start</a> (unsigned total, const std::string &amp;message=std::string(), <a class="el" href="classdouble.html">double</a> interval=0.1)</td></tr>
-<tr class="memdesc:a2b15cd3807d3d3eed947aa15f4f529d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a2b15cd3807d3d3eed947aa15f4f529d0">More...</a><br /></td></tr>
-<tr class="separator:a2b15cd3807d3d3eed947aa15f4f529d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbf91ba8e0eae700cd3f6d3ab40cb95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a4dbf91ba8e0eae700cd3f6d3ab40cb95">start</a> (unsigned total, const std::string &amp;message=std::string(), <a class="el" href="classdouble.html">double</a> interval=0.1, unsigned length=60)</td></tr>
+<tr class="memdesc:a4dbf91ba8e0eae700cd3f6d3ab40cb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a4dbf91ba8e0eae700cd3f6d3ab40cb95">More...</a><br /></td></tr>
+<tr class="separator:a4dbf91ba8e0eae700cd3f6d3ab40cb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c947ca1c2e36d00d76dbd90f625221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a65c947ca1c2e36d00d76dbd90f625221">stop</a> (bool finished=false)</td></tr>
 <tr class="memdesc:a65c947ca1c2e36d00d76dbd90f625221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop to print the progress.  <a href="#a65c947ca1c2e36d00d76dbd90f625221">More...</a><br /></td></tr>
 <tr class="separator:a65c947ca1c2e36d00d76dbd90f625221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ThreadType, typename ThisThread&gt;<br />
+<div class="textblock"><h3>template&lt;typename ThreadType = std::thread, typename ThisThread = internal::ProgressThisThread&gt;<br />
 class vsmc::Progress&lt; ThreadType, ThisThread &gt;</h3>
 
 <p>Display a progress bar while algorithm proceed. </p>
@@ -159,13 +159,13 @@ class vsmc::Progress&lt; ThreadType, ThisThread &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00053">53</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00080">80</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="acc5d9d20f0eaabef49a162166b616df1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ThreadType , typename ThisThread &gt; </div>
+template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal::ProgressThisThread&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef ThreadType <a class="el" href="classvsmc_1_1_progress.html">vsmc::Progress</a>&lt; ThreadType, ThisThread &gt;::<a class="el" href="classvsmc_1_1_progress.html#acc5d9d20f0eaabef49a162166b616df1">thread_type</a></td>
@@ -173,7 +173,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00057">57</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00084">84</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
@@ -182,7 +182,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ThreadType , typename ThisThread &gt; </div>
+template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal::ProgressThisThread&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -204,7 +204,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 
 <p>Construct a <a class="el" href="classvsmc_1_1_progress.html" title="Display a progress bar while algorithm proceed. ">Progress</a> with an output stream. </p>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00060">60</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00087">87</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +213,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ThreadType , typename ThisThread &gt; </div>
+template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal::ProgressThisThread&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -235,15 +235,15 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 
 <p>Increment the iteration count. </p>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00105">105</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00135">135</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2b15cd3807d3d3eed947aa15f4f529d0"></a>
+<a class="anchor" id="a4dbf91ba8e0eae700cd3f6d3ab40cb95"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ThreadType , typename ThisThread &gt; </div>
+template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal::ProgressThisThread&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -264,7 +264,13 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classdouble.html">double</a>&#160;</td>
-          <td class="paramname"><em>interval</em> = <code>0.1</code>&#160;</td>
+          <td class="paramname"><em>interval</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>length</em> = <code>60</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -285,11 +291,12 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
     <tr><td class="paramname">total</td><td>Total amount of work represented by an integer, for example file size or SMC algorithm total number of iterations </td></tr>
     <tr><td class="paramname">message</td><td>A (short) discreptive message </td></tr>
     <tr><td class="paramname">interval</td><td>The sleep interval in seconds </td></tr>
+    <tr><td class="paramname">length</td><td>The length of the progress bar between brackets </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00073">73</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00102">102</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
@@ -297,7 +304,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ThreadType , typename ThisThread &gt; </div>
+template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal::ProgressThisThread&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -325,7 +332,7 @@ template&lt;typename ThreadType , typename ThisThread &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00094">94</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00124">124</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>

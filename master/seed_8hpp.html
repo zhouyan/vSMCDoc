@@ -104,6 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="array_8hpp_source.html">vsmc/utility/array.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="counter_8hpp_source.html">vsmc/utility/counter.hpp</a>&gt;</code><br />
 </div>
 <p><a href="seed_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,10 +114,32 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed generator.  <a href="classvsmc_1_1_seed_generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator_3_01_i_d_00_01_array_3_01_t_00_01_k_00_01_traits_01_4_01_4.html">vsmc::SeedGenerator&lt; ID, Array&lt; T, K, Traits &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1internal_1_1_has_seed_type.html">vsmc::traits::internal::HasSeedType&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1internal_1_1_has_seed_type_impl.html">vsmc::traits::internal::HasSeedTypeImpl&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1internal_1_1_seed_type_dispatch.html">vsmc::traits::internal::SeedTypeDispatch&lt; T, bool &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1internal_1_1_seed_type_dispatch_3_01_t_00_01false_01_4.html">vsmc::traits::internal::SeedTypeDispatch&lt; T, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1internal_1_1_seed_type_dispatch_3_01_t_00_01true_01_4.html">vsmc::traits::internal::SeedTypeDispatch&lt; T, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1_seed_type_trait.html">vsmc::traits::SeedTypeTrait&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a59ece1c707747e2ed75b976040fe0a92">Particle::rng_set_type</a> and <a class="el" href="classvsmc_1_1_particle.html#a120f6f84e229b559ae21b562f343344a">Particle::resample_rng_type</a> seed trait.  <a href="structvsmc_1_1traits_1_1_seed_type_trait.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1traits_1_1_seed_type_trait.html">vsmc::traits::SeedTypeTrait&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a59ece1c707747e2ed75b976040fe0a92">Particle::rng_set_type</a> and <a class="el" href="classvsmc_1_1_particle.html#a120f6f84e229b559ae21b562f343344a">Particle::resample_rng_type</a> seed trait.  <a href="structvsmc_1_1traits_1_1_seed_type_trait.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1traits"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1traits.html">vsmc::traits</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1traits_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1traits_1_1internal.html">vsmc::traits::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -165,7 +189,7 @@ Typedefs</h2></td></tr>
 <div class="line">             <span class="stringliteral">&quot;REMAINDER IS NOT SMALLER THAN THE DIVISOR&quot;</span>))</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00020">20</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00022">22</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -187,7 +211,7 @@ Typedefs</h2></td></tr>
 <div class="line">             <span class="stringliteral">&quot;THE MAXIMUM OF THE INTERNAL SEED IS NO LARGER THAN 1&quot;</span>))</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00025">25</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00027">27</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -208,7 +232,7 @@ Typedefs</h2></td></tr>
 <div class="line">            USE_SeedGenerator_WITH_A_RESULT_TYPE_NOT_AN_UNSIGNED_INTEGER)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00016">16</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00018">18</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>

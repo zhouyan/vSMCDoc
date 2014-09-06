@@ -200,17 +200,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="structvsmc_1_1cxx11_1_1integral__constant.html">cxx11::integral_constant&lt;bool, (fillzero &amp;&amp; A &gt;</a> 0 &amp;&amp; A &lt;= K)&gt;());</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> SeedSeq, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> SeedSeq, <span class="keyword">typename</span> U, <span class="keyword">typename</span> V = U, <span class="keyword">typename</span> W = V&gt;</div>
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structvsmc_1_1internal_1_1is__seed__seq.html">  104</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvsmc_1_1internal_1_1is__seed__seq.html">is_seed_seq</a> :</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">public</span> <a class="code" href="structvsmc_1_1cxx11_1_1integral__constant.html">cxx11::integral_constant</a>&lt;bool,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    !cxx11::is_convertible&lt;SeedSeq, T&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    !cxx11::is_same&lt;typename cxx11::remove_cv&lt;SeedSeq&gt;::type, T&gt;::value&gt; {};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    !cxx11::is_convertible&lt;SeedSeq, U&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    !cxx11::is_convertible&lt;SeedSeq, V&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    !cxx11::is_convertible&lt;SeedSeq, W&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    !cxx11::is_same&lt;typename cxx11::remove_cv&lt;SeedSeq&gt;::type, U&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    !cxx11::is_same&lt;typename cxx11::remove_cv&lt;SeedSeq&gt;::type, V&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    !cxx11::is_same&lt;typename cxx11::remove_cv&lt;SeedSeq&gt;::type, W&gt;::value&gt; {};</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_INTERNAL_COMMON_HPP</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_INTERNAL_COMMON_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
 <div class="ttc" id="structvsmc_1_1internal_1_1is__seed__seq_html"><div class="ttname"><a href="structvsmc_1_1internal_1_1is__seed__seq.html">vsmc::internal::is_seed_seq</a></div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00104">common.hpp:104</a></div></div>
 <div class="ttc" id="namespacevsmc_1_1internal_html_a6662f2203b6f5f6a59a1af6595da55fc"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a6662f2203b6f5f6a59a1af6595da55fc">vsmc::internal::rng_array_right_shift</a></div><div class="ttdeci">void rng_array_right_shift(Array&lt; T, K, Traits &gt; &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00095">common.hpp:95</a></div></div>
@@ -224,7 +228,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespacevsmc_1_1internal_html_a71fe99cb3894e1f76034e9b4747ba49b"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a71fe99cb3894e1f76034e9b4747ba49b">vsmc::internal::rng_array_left_shift</a></div><div class="ttdeci">void rng_array_left_shift(Array&lt; T, K, Traits &gt; &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00058">common.hpp:58</a></div></div>
 <div class="ttc" id="random_8hpp_html"><div class="ttname"><a href="random_8hpp.html">random.hpp</a></div></div>
 <div class="ttc" id="namespacevsmc_1_1internal_html_a243cca7ea2273a1f4b2601fa6e60e21e"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a243cca7ea2273a1f4b2601fa6e60e21e">vsmc::internal::rng_array_left_assign</a></div><div class="ttdeci">void rng_array_left_assign(Array&lt; T, K, Traits &gt; &amp;, cxx11::false_type)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00033">common.hpp:33</a></div></div>
-<div class="ttc" id="classvsmc_1_1_array_html"><div class="ttname"><a href="classvsmc_1_1_array.html">vsmc::Array</a></div><div class="ttdoc">Container class with static size but possible dynamic memory allocation. </div><div class="ttdef"><b>Definition:</b> <a href="array_8hpp_source.html#l00197">array.hpp:197</a></div></div>
+<div class="ttc" id="classvsmc_1_1_array_html"><div class="ttname"><a href="classvsmc_1_1_array.html">vsmc::Array&lt; T, K, Traits &gt;</a></div></div>
 <div class="ttc" id="namespacevsmc_1_1internal_html_a9231af57f0bb35a3848e061cd11ca968"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a9231af57f0bb35a3848e061cd11ca968">vsmc::internal::rng_array_right_assign</a></div><div class="ttdeci">void rng_array_right_assign(Array&lt; T, K, Traits &gt; &amp;, cxx11::false_type)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00068">common.hpp:68</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

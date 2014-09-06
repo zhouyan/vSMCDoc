@@ -161,7 +161,7 @@ class vsmc::SeedGenerator&lt; ID, ResultType &gt;</h3>
 <p>This property is useful when using programming models such as MPI where one want to have distinct seeds across nodes. Each process can then configure the <a class="el" href="classvsmc_1_1_seed_generator.html" title="Seed generator. ">SeedGenerator</a> using the <code>modulo</code> member such that \(D\) is the number of total nodes and \(R\) is the rank of each node, counting from zero.</p>
 <p>For multithreading programs, the access to this member function shall be protected by mutex, if it is called from multiple threads. Or one can use distinct type <code>ID</code> to initialized distinct <a class="el" href="classvsmc_1_1_seed_generator.html" title="Seed generator. ">SeedGenerator</a> instances. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00061">61</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00063">63</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a9515397ead102dad0c5c58aa8a49195d"></a>
 <div class="memitem">
@@ -175,7 +175,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00065">65</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00067">67</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The divisor of the output seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00092">92</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00094">94</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Get a new seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00075">75</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00077">77</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00067">67</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00069">69</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Set the divisor and the remainder. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00098">98</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00100">100</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The remainder of the output seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00095">95</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00097">97</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The current internal seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00086">86</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00088">88</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The maximum of the internal seed integer. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00089">89</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00091">91</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 <p>Set the internal seed. </p>
 <p>If <code>seed</code> is larger than the maximum of the internal seed, than it will be round up to fit into the range. For example, say the range is from 1 to 1000, and the new internal seed is 6061, it will be round up to 61. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00083">83</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00085">85</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Skip the internal seed by a given steps. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00114">114</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00116">116</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Skip the internal seed by 1 step. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00122">122</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00124">124</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>

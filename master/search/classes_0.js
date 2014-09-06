@@ -319,6 +319,7 @@ var searchData=
   ['array_3c_20resulttype_2c_20k_20_3e',['Array&lt; ResultType, K &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20resulttype_2c_20k_2b1_20_3e',['Array&lt; ResultType, K+1 &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20resulttype_2c_20k_2f2_20_3e',['Array&lt; ResultType, K/2 &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
+  ['array_3c_20t_2c_20k_2c_20traits_20_3e',['Array&lt; T, K, Traits &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['arrayelement',['ArrayElement',['../structvsmc_1_1_array_element.html',1,'vsmc']]],
   ['arrayelement_3c_20i_2c_20array_3c_20t_2c_20n_2c_20traits_20_3e_20_3e',['ArrayElement&lt; I, Array&lt; T, N, Traits &gt; &gt;',['../structvsmc_1_1_array_element_3_01_i_00_01_array_3_01_t_00_01_n_00_01_traits_01_4_01_4.html',1,'vsmc']]],
   ['arraysize',['ArraySize',['../structvsmc_1_1_array_size.html',1,'vsmc']]],

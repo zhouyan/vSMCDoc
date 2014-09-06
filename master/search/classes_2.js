@@ -11,7 +11,6 @@ var searchData=
   ['const_5fsingle_5fparticle_5ftype',['const_single_particle_type',['../structvsmc_1_1_state_matrix_base_1_1const__single__particle__type.html',1,'vsmc::StateMatrixBase']]],
   ['const_5fsingle_5fparticle_5ftype',['const_single_particle_type',['../structvsmc_1_1_state_tuple_base_1_1const__single__particle__type.html',1,'vsmc::StateTupleBase']]],
   ['constsingleparticle',['ConstSingleParticle',['../classvsmc_1_1_const_single_particle.html',1,'vsmc']]],
-  ['constsingleparticle_3c_20s_20_3e',['ConstSingleParticle&lt; S &gt;',['../classvsmc_1_1_const_single_particle.html',1,'vsmc']]],
   ['constsingleparticlebase',['ConstSingleParticleBase',['../classvsmc_1_1_const_single_particle_base.html',1,'vsmc']]],
   ['constsingleparticlebase_3c_20s_20_3e',['ConstSingleParticleBase&lt; S &gt;',['../classvsmc_1_1_const_single_particle_base.html',1,'vsmc']]],
   ['constsingleparticlebasetypedispatch',['ConstSingleParticleBaseTypeDispatch',['../structvsmc_1_1traits_1_1internal_1_1_const_single_particle_base_type_dispatch.html',1,'vsmc::traits::internal']]],

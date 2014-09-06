@@ -125,7 +125,7 @@ var searchData=
   ['residual_5fsystematic_2ehpp',['residual_systematic.hpp',['../residual__systematic_8hpp.html',1,'']]],
   ['residualstratified',['ResidualStratified',['../group___resample.html#gga1a8752b2b59489e6d5f11794af6d0cc6aff8bc32b3d0b6f652328e86f36a889dc',1,'vsmc']]],
   ['residualsystematic',['ResidualSystematic',['../group___resample.html#gga1a8752b2b59489e6d5f11794af6d0cc6aa3fcea04c6ba7780aac58eb97484a988',1,'vsmc']]],
-  ['resize',['resize',['../classvsmc_1_1_array.html#a5d031c5ae8e5f642caac9b74a348234f',1,'vsmc::Array']]],
+  ['resize',['resize',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_scalar_01_4.html#ab8b0c2ef1d83d7e101244e315272b4ea',1,'vsmc::RngSet&lt; RngType, Scalar &gt;::resize()'],['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_vector_01_4.html#a2a55fd69a4511ee7421c78fd944dc793',1,'vsmc::RngSet&lt; RngType, Vector &gt;::resize()'],['../classvsmc_1_1_array.html#a5d031c5ae8e5f642caac9b74a348234f',1,'vsmc::Array::resize()']]],
   ['resize_5fdim',['resize_dim',['../classvsmc_1_1_state_matrix_base.html#a6e1f7b1b3be4da799e167617b4af1f23',1,'vsmc::StateMatrixBase::resize_dim()'],['../structvsmc_1_1traits_1_1_dim_trait_3_01_dynamic_01_4.html#a09d5eac53dcf0bc8ba92747b27b29de5',1,'vsmc::traits::DimTrait&lt; Dynamic &gt;::resize_dim()']]],
   ['resize_5fstate',['resize_state',['../singletonvsmc_1_1_state_c_l.html#a9a0cc1f47b0141b9151c1dd9427a0f8a',1,'vsmc::StateCL']]],
   ['restore',['restore',['../classvsmc_1_1_backup.html#a4d56ca32f2375e01114bbffbed764766',1,'vsmc::Backup::restore(T *dst) const '],['../classvsmc_1_1_backup.html#a45861cb9c079834e0d464aa095f1021d',1,'vsmc::Backup::restore(T &amp;dst) const ']]],

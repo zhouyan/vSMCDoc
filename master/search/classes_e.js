@@ -7,7 +7,6 @@ var searchData=
   ['single_5fparticle_5ftype',['single_particle_type',['../structvsmc_1_1_state_tuple_base_1_1single__particle__type.html',1,'vsmc::StateTupleBase']]],
   ['single_5fparticle_5ftype',['single_particle_type',['../structvsmc_1_1_state_matrix_base_1_1single__particle__type.html',1,'vsmc::StateMatrixBase']]],
   ['singleparticle',['SingleParticle',['../classvsmc_1_1_single_particle.html',1,'vsmc']]],
-  ['singleparticle_3c_20s_20_3e',['SingleParticle&lt; S &gt;',['../classvsmc_1_1_single_particle.html',1,'vsmc']]],
   ['singleparticlebase',['SingleParticleBase',['../classvsmc_1_1_single_particle_base.html',1,'vsmc']]],
   ['singleparticlebase_3c_20s_20_3e',['SingleParticleBase&lt; S &gt;',['../classvsmc_1_1_single_particle_base.html',1,'vsmc']]],
   ['singleparticlebasetypedispatch',['SingleParticleBaseTypeDispatch',['../structvsmc_1_1traits_1_1internal_1_1_single_particle_base_type_dispatch.html',1,'vsmc::traits::internal']]],

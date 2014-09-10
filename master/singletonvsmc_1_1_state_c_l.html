@@ -373,14 +373,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
   </dd>
 </dl>
 <p>Note that a few macros and headers are included before the user supplied <code>source</code>. Say the template parameter <code>StateSize == 4</code>, <code>FPType</code> of this class is set to <code>cl_double</code>, and there are <code>1000</code> particles, then the complete source, which acutally get compiled looks like the following </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keywordtype">float</span> <a class="code" href="singletonvsmc_1_1_state_c_l.html#a6aaee6cebad0f3bfece1d512b358b33e">fp_type</a>;</div>
-<div class="line"><span class="preprocessor">#define VSMC_FP_TYPE_TYPE_IS_FLOAT  1</span></div>
-<div class="line"><span class="preprocessor">#define VSMC_FP_TYPE_TYPE_IS_DOUBLE 0</span></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#if defined(cl_khr_fp64)</span></div>
-<div class="line"><span class="preprocessor">#pragma OPENCL EXTENSION cl_khr_fp64 : enable</span></div>
-<div class="line"><span class="preprocessor">#elif defined(cl_amd_fp64)</span></div>
-<div class="line"><span class="preprocessor">#pragma OPENCL EXTENSION cl_amd_fp64 : enable</span></div>
-<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor">#define VSMC_HAS_OPENCL_DOUBLE 0</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">typedef</span> ulong <a class="code" href="singletonvsmc_1_1_state_c_l.html#ae723594f30440aa96231d0bb828b7248">size_type</a>;</div>
 <div class="line"><span class="preprocessor">#define Size 1000UL;</span></div>
@@ -393,7 +386,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 <div class="line"><span class="comment">// ... User source, passed by the source argument</span></div>
 </div><!-- fragment --><p> After build, <code><a class="el" href="classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add">vsmc::Seed::instance()</a>.skip(N)</code> is called with <code>N</code> being the nubmer of particles. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00272">272</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00265">265</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -431,7 +424,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00312">312</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00305">305</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -460,7 +453,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>Whether the last attempted building success. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00317">317</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00310">310</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -490,7 +483,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 <p>The build id of the last attempted of building. </p>
 <p>This function returns a non-decreasing sequence of integers </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00323">323</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00316">316</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +512,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>The build options of the program of the last attempted building. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00329">329</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00322">322</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +541,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>The source of the program of the last attempted building. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00326">326</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00319">319</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -575,7 +568,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00356">356</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00349">349</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -602,7 +595,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00358">358</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00351">351</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -642,7 +635,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00343">343</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00336">336</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +666,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 <p>Create kernel with the current program. </p>
 <p>If <a class="el" href="singletonvsmc_1_1_state_c_l.html#a1051aa88efca9f2987337be9239133b6" title="Build the OpenCL program from source. ">build()</a> does not return <code>true</code>, then calling this is an error </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00335">335</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00328">328</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

@@ -131,11 +131,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span> :</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    boost::mpi::environment env_;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ::boost::mpi::environment env_;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> init_seed ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        boost::mpi::communicator world;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        ::boost::mpi::communicator world;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add">Seed::instance</a>().modulo(</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                static_cast&lt;Seed::result_type&gt;(world.size()),</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                static_cast&lt;Seed::result_type&gt;(world.rank()));</div>

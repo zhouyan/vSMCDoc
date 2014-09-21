@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wrapper',['Wrapper',['../group___r_n_g_wrapper.html',1,'']]],
-  ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#ac3260641de2458cec6d5b8adccf57278',1,'vsmc::DispatchGroup']]],
+  ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup']]],
   ['watch_5ftype',['watch_type',['../classvsmc_1_1_scoped_stop_watch.html#ab9e9754247bd62c78a151d6440fb4c8e',1,'vsmc::ScopedStopWatch']]],
   ['weight',['weight',['../classvsmc_1_1_weight_set.html#a756ac5e464fc661243bfafd50f0fcd91',1,'vsmc::WeightSet::weight()'],['../classvsmc_1_1_weight_set_empty.html#ab7c7286cbae172375ffa08da592dd033',1,'vsmc::WeightSetEmpty::weight()']]],
   ['weight2log_5fweight',['weight2log_weight',['../classvsmc_1_1_weight_set.html#aa8afe17e88e12bd8c2b0f7e7f5a6ab23',1,'vsmc::WeightSet']]],
@@ -22,6 +22,6 @@ var searchData=
   ['weightsettypedispatch_3c_20t_2c_20true_20_3e',['WeightSetTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_weight_set_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
   ['weightsettypetrait',['WeightSetTypeTrait',['../structvsmc_1_1traits_1_1_weight_set_type_trait.html',1,'vsmc::traits']]],
   ['weightsettypetrait_3c_20s_20_3e',['WeightSetTypeTrait&lt; S &gt;',['../structvsmc_1_1traits_1_1_weight_set_type_trait.html',1,'vsmc::traits']]],
-  ['world',['world',['../singletonvsmc_1_1_weight_set_m_p_i.html#a909b3369b9070a2f9d4b2523731565ff',1,'vsmc::WeightSetMPI::world()'],['../singletonvsmc_1_1_normalizing_constant_m_p_i.html#a120d348dd1113d91af88a062f2f1f278',1,'vsmc::NormalizingConstantMPI::world()'],['../singletonvsmc_1_1_state_m_p_i.html#aa6c80a521d18d3debfe7c26951a5121e',1,'vsmc::StateMPI::world()']]],
-  ['write_5fbuffer',['write_buffer',['../classvsmc_1_1_c_l_manager.html#a4662385987a621211cc6d1c1e0698aaf',1,'vsmc::CLManager::write_buffer(const cl::Buffer &amp;buf, std::size_t num, InputIter first) const '],['../classvsmc_1_1_c_l_manager.html#a74ebd5f18699cb399b80b1ed4637347c',1,'vsmc::CLManager::write_buffer(const cl::Buffer &amp;buf, std::size_t num, const CLType *first) const '],['../classvsmc_1_1_c_l_manager.html#aa8219346b7a1862bbf8c8f20f0e8c55e',1,'vsmc::CLManager::write_buffer(const cl::Buffer &amp;buf, std::size_t num, CLType *first) const ']]]
+  ['world',['world',['../singletonvsmc_1_1_weight_set_m_p_i.html#a906e440d588352ab0191c84dccdcc845',1,'vsmc::WeightSetMPI::world()'],['../singletonvsmc_1_1_normalizing_constant_m_p_i.html#aa74e48773e539b7b8ef8c0aa22902a14',1,'vsmc::NormalizingConstantMPI::world()'],['../singletonvsmc_1_1_state_m_p_i.html#aaf9ebff4128f1f000d2b8b9163f5523c',1,'vsmc::StateMPI::world()']]],
+  ['write_5fbuffer',['write_buffer',['../classvsmc_1_1_c_l_manager.html#afc01dd1008a67f7f10c396d89b983f7d',1,'vsmc::CLManager::write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, InputIter first) const '],['../classvsmc_1_1_c_l_manager.html#adf8a6143faf3dff7ed22f0205614c870',1,'vsmc::CLManager::write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, const CLType *first) const '],['../classvsmc_1_1_c_l_manager.html#a7461eb7da598b7e7d9832fb24acdb673',1,'vsmc::CLManager::write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first) const ']]]
 ];

@@ -116,8 +116,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga664880f5f61313be6313d61328cacd0c">   21</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#ga664880f5f61313be6313d61328cacd0c">cl_maximum_local_size</a> (</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">const</span> cl::Kernel &amp;kern, <span class="keyword">const</span> cl::Device &amp;dev)</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga5a8cc7ad8cd0ea4e09a5a726083e5434">   21</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#ga5a8cc7ad8cd0ea4e09a5a726083e5434">cl_maximum_local_size</a> (</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::size_t max_s;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::size_t mul_s;</div>
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        kern.getWorkGroupInfo(dev, CL_KERNEL_WORK_GROUP_SIZE, &amp;max_s);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        kern.getWorkGroupInfo(dev,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE, &amp;mul_s);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    } <span class="keywordflow">catch</span> (cl::Error) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    } <span class="keywordflow">catch</span> (::cl::Error) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -142,8 +142,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        (N / local_size + 1) * local_size : N;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga80aa5e382e266212d0ff2d923f7ec427">   53</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#ga80aa5e382e266212d0ff2d923f7ec427">cl_preferred_work_size</a> (std::size_t N,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> cl::Kernel &amp;kern, <span class="keyword">const</span> cl::Device &amp;dev,</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">   53</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">cl_preferred_work_size</a> (std::size_t N,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::size_t &amp;global_size, std::size_t &amp;local_size)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::size_t max_s;</div>
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        kern.getWorkGroupInfo(dev, CL_KERNEL_WORK_GROUP_SIZE, &amp;max_s);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        kern.getWorkGroupInfo(dev,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE, &amp;min_local);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    } <span class="keywordflow">catch</span> (cl::Error) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    } <span class="keywordflow">catch</span> (::cl::Error) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        global_size = N;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        local_size = 0;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
@@ -183,15 +183,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> pref_diff;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ad21a36695273df8df6a1cdf0f2a46458">   94</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#ad21a36695273df8df6a1cdf0f2a46458">cl_set_kernel_args</a> (cl::Kernel &amp;, cl_uint) {}</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a850c9cab8bae6e2a768fda12243262b0">   94</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#a850c9cab8bae6e2a768fda12243262b0">cl_set_kernel_args</a> (::cl::Kernel &amp;, cl_uint) {}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11_VARIADIC_TEMPLATES</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Arg1, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga975a4ac9111af3895480ee67ab5d3164">  107</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#ad21a36695273df8df6a1cdf0f2a46458">cl_set_kernel_args</a> (cl::Kernel &amp;kern, cl_uint offset,</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga6269071623a7ccd4475d67c9a5951394">  107</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#a850c9cab8bae6e2a768fda12243262b0">cl_set_kernel_args</a> (::cl::Kernel &amp;kern, cl_uint offset,</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">const</span> Arg1 &amp;arg1, <span class="keyword">const</span> Args &amp;... args)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    kern.setArg(offset, arg1);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="namespacevsmc.html#ad21a36695273df8df6a1cdf0f2a46458">cl_set_kernel_args</a>(kern, offset + 1, args...);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="namespacevsmc.html#a850c9cab8bae6e2a768fda12243262b0">cl_set_kernel_args</a>(kern, offset + 1, args...);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#else // VSMC_HAS_CXX11_VARIADIC_TEMPLATES</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cl__set__kernel__args_8hpp.html">vsmc/opencl/internal/cl_set_kernel_args.hpp</a>&gt;</span></div>
@@ -201,13 +201,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_MANIP_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
-<div class="ttc" id="namespacevsmc_html_ad21a36695273df8df6a1cdf0f2a46458"><div class="ttname"><a href="namespacevsmc.html#ad21a36695273df8df6a1cdf0f2a46458">vsmc::cl_set_kernel_args</a></div><div class="ttdeci">void cl_set_kernel_args(cl::Kernel &amp;, cl_uint)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00094">cl_manip.hpp:94</a></div></div>
-<div class="ttc" id="group___open_c_l_html_ga664880f5f61313be6313d61328cacd0c"><div class="ttname"><a href="group___open_c_l.html#ga664880f5f61313be6313d61328cacd0c">vsmc::cl_maximum_local_size</a></div><div class="ttdeci">std::size_t cl_maximum_local_size(const cl::Kernel &amp;kern, const cl::Device &amp;dev)</div><div class="ttdoc">The maximum local size that is a multiple of the preferred factor. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00021">cl_manip.hpp:21</a></div></div>
-<div class="ttc" id="group___open_c_l_html_ga80aa5e382e266212d0ff2d923f7ec427"><div class="ttname"><a href="group___open_c_l.html#ga80aa5e382e266212d0ff2d923f7ec427">vsmc::cl_preferred_work_size</a></div><div class="ttdeci">std::size_t cl_preferred_work_size(std::size_t N, const cl::Kernel &amp;kern, const cl::Device &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div><div class="ttdoc">The preferred global and local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00053">cl_manip.hpp:53</a></div></div>
+<div class="ttc" id="namespacevsmc_html_a850c9cab8bae6e2a768fda12243262b0"><div class="ttname"><a href="namespacevsmc.html#a850c9cab8bae6e2a768fda12243262b0">vsmc::cl_set_kernel_args</a></div><div class="ttdeci">void cl_set_kernel_args(::cl::Kernel &amp;, cl_uint)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00094">cl_manip.hpp:94</a></div></div>
 <div class="ttc" id="cl__wrapper_8hpp_html"><div class="ttname"><a href="cl__wrapper_8hpp.html">cl_wrapper.hpp</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="group___open_c_l_html_ga5a8cc7ad8cd0ea4e09a5a726083e5434"><div class="ttname"><a href="group___open_c_l.html#ga5a8cc7ad8cd0ea4e09a5a726083e5434">vsmc::cl_maximum_local_size</a></div><div class="ttdeci">std::size_t cl_maximum_local_size(const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev)</div><div class="ttdoc">The maximum local size that is a multiple of the preferred factor. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00021">cl_manip.hpp:21</a></div></div>
 <div class="ttc" id="cl__set__kernel__args_8hpp_html"><div class="ttname"><a href="cl__set__kernel__args_8hpp.html">cl_set_kernel_args.hpp</a></div></div>
 <div class="ttc" id="group___open_c_l_html_ga6d947ea73043c7ae96957f33606e0cd4"><div class="ttname"><a href="group___open_c_l.html#ga6d947ea73043c7ae96957f33606e0cd4">vsmc::cl_minimum_global_size</a></div><div class="ttdeci">std::size_t cl_minimum_global_size(std::size_t N, std::size_t local_size)</div><div class="ttdoc">The minimum global size that is a multiple of the local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00039">cl_manip.hpp:39</a></div></div>
+<div class="ttc" id="group___open_c_l_html_gafde473112f1a300151211340a9adfedf"><div class="ttname"><a href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">vsmc::cl_preferred_work_size</a></div><div class="ttdeci">std::size_t cl_preferred_work_size(std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div><div class="ttdoc">The preferred global and local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00053">cl_manip.hpp:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

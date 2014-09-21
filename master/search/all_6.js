@@ -16,6 +16,6 @@ var searchData=
   ['forward_2ehpp',['forward.hpp',['../forward_8hpp.html',1,'']]],
   ['fp_5ftype',['fp_type',['../singletonvsmc_1_1_state_c_l.html#a6aaee6cebad0f3bfece1d512b358b33e',1,'vsmc::StateCL']]],
   ['front',['front',['../classvsmc_1_1_array.html#aab7bb2e53fc9fcdb79ff94a0c56853d8',1,'vsmc::Array::front()'],['../classvsmc_1_1_array.html#a8130fb5cc2b6ef9ce59faea48d4eb764',1,'vsmc::Array::front() const ']]],
-  ['function',['function',['../classvsmc_1_1_dispatch_function.html#a64cf8f130161195bdd8634067327b2d4',1,'vsmc::DispatchFunction']]],
+  ['function',['function',['../classvsmc_1_1_dispatch_function.html#ab445a8a8fca4544a1dd84ba47c0e4c74',1,'vsmc::DispatchFunction']]],
   ['functional_2ehpp',['functional.hpp',['../functional_8hpp.html',1,'']]]
 ];

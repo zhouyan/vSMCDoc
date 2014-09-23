@@ -128,18 +128,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1a7a8c098ac5d9622369c1b4b7a3ea2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf196120d822a4e24e67e43cb52994fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#acf196120d822a4e24e67e43cb52994fd">print_help</a> (const std::string &amp;, std::ostream &amp;) const =0</td></tr>
 <tr class="separator:acf196120d822a4e24e67e43cb52994fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3600996a4f1859f6958c5eb6b4688534"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a3600996a4f1859f6958c5eb6b4688534">set</a> (std::stringstream &amp;, const std::string &amp;, const std::string &amp;, bool, std::ostream &amp;)=0</td></tr>
-<tr class="separator:a3600996a4f1859f6958c5eb6b4688534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6318f7823456b58137eb3e754bdf49"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a1e6318f7823456b58137eb3e754bdf49">set</a> (const std::string &amp;, const std::string &amp;, bool, std::ostream &amp;)=0</td></tr>
+<tr class="separator:a1e6318f7823456b58137eb3e754bdf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47b3ac70e268d4c746d426b3f2b0a21"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#ab47b3ac70e268d4c746d426b3f2b0a21">set_default</a> ()=0</td></tr>
 <tr class="separator:ab47b3ac70e268d4c746d426b3f2b0a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a85a3423ecda00df5a7da9c31de4f2bd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a85a3423ecda00df5a7da9c31de4f2bd1">set_value</a> (std::stringstream &amp;, const std::string &amp;oname, const std::string &amp;sval, bool *dest, bool silent, std::ostream &amp;os)</td></tr>
-<tr class="separator:a85a3423ecda00df5a7da9c31de4f2bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c4dd2823da84dd86a6f02f57f414b0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a07c4dd2823da84dd86a6f02f57f414b0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a07c4dd2823da84dd86a6f02f57f414b0">set_value</a> (std::stringstream &amp;ss, const std::string &amp;oname, const std::string &amp;sval, T *dest, bool silent, std::ostream &amp;os)</td></tr>
-<tr class="separator:a07c4dd2823da84dd86a6f02f57f414b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5691cc478c7c9636d749816b211e6929"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a5691cc478c7c9636d749816b211e6929">set_value</a> (const std::string &amp;oname, const std::string &amp;sval, bool *dest, bool silent, std::ostream &amp;os)</td></tr>
+<tr class="separator:a5691cc478c7c9636d749816b211e6929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0548eb760f9c24d184fadd17ba43fa27"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0548eb760f9c24d184fadd17ba43fa27"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a0548eb760f9c24d184fadd17ba43fa27">set_value</a> (const std::string &amp;oname, const std::string &amp;sval, T *dest, bool silent, std::ostream &amp;os)</td></tr>
+<tr class="separator:a0548eb760f9c24d184fadd17ba43fa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Program option base class. </p>
@@ -360,7 +360,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3600996a4f1859f6958c5eb6b4688534"></a>
+<a class="anchor" id="a1e6318f7823456b58137eb3e754bdf49"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -370,12 +370,6 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool vsmc::ProgramOption::set </td>
           <td>(</td>
-          <td class="paramtype">std::stringstream &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
@@ -410,7 +404,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classvsmc_1_1_program_option_vector.html#a319ab590de5e76403288e15e2e01db14">vsmc::ProgramOptionVector&lt; T, Cont &gt;</a>, <a class="el" href="classvsmc_1_1_program_option_scalar.html#a4677cd371fe3da030ce367553795c455">vsmc::ProgramOptionScalar&lt; T &gt;</a>, and <a class="el" href="classvsmc_1_1_program_option_help.html#a7d233b26a8b836b5a0b1b34e2c6fd57a">vsmc::ProgramOptionHelp</a>.</p>
+<p>Implemented in <a class="el" href="classvsmc_1_1_program_option_vector.html#af715950731eecf3830e08c40361f1aa9">vsmc::ProgramOptionVector&lt; T, Cont &gt;</a>, <a class="el" href="classvsmc_1_1_program_option_scalar.html#ac460456dc0a41f7357b20e0f05795461">vsmc::ProgramOptionScalar&lt; T &gt;</a>, and <a class="el" href="classvsmc_1_1_program_option_help.html#ad62f596d7acae26ea4c3bad3569d798f">vsmc::ProgramOptionHelp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +433,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85a3423ecda00df5a7da9c31de4f2bd1"></a>
+<a class="anchor" id="a5691cc478c7c9636d749816b211e6929"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -449,12 +443,6 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool vsmc::ProgramOption::set_value </td>
           <td>(</td>
-          <td class="paramtype">std::stringstream &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>oname</em>, </td>
         </tr>
@@ -499,7 +487,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a07c4dd2823da84dd86a6f02f57f414b0"></a>
+<a class="anchor" id="a0548eb760f9c24d184fadd17ba43fa27"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -511,12 +499,6 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool vsmc::ProgramOption::set_value </td>
           <td>(</td>
-          <td class="paramtype">std::stringstream &amp;&#160;</td>
-          <td class="paramname"><em>ss</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>oname</em>, </td>
         </tr>

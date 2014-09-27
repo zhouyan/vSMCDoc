@@ -1,6 +1,7 @@
 var searchData=
 [
   ['sampler',['Sampler',['../classvsmc_1_1_sampler.html',1,'vsmc']]],
+  ['scalar',['Scalar',['../structvsmc_1_1_scalar.html',1,'vsmc']]],
   ['scopedbackup',['ScopedBackup',['../classvsmc_1_1_scoped_backup.html',1,'vsmc']]],
   ['scopedstopwatch',['ScopedStopWatch',['../classvsmc_1_1_scoped_stop_watch.html',1,'vsmc']]],
   ['seedcountergenerator',['SeedCounterGenerator',['../singletonvsmc_1_1_seed_counter_generator.html',1,'vsmc']]],

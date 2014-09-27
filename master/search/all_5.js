@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['enumerators_20and_20macros',['Enumerators and macros',['../group___definitions.html',1,'']]],
+  ['enumerators_2c_20placeholders_20and_20macros',['Enumerators, placeholders and macros',['../group___definitions.html',1,'']]],
   ['e',['e',['../group___constants.html#gaf6d78efa86e2acf46a82d2352c7ee577',1,'vsmc::math']]],
   ['e_3c_20double_20_3e',['e&lt; double &gt;',['../namespacevsmc_1_1math.html#adcc362401613ba029c1c650ec1a00a60',1,'vsmc::math']]],
   ['e_3c_20float_20_3e',['e&lt; float &gt;',['../namespacevsmc_1_1math.html#ae5c156c41d582533d421296525233ce7',1,'vsmc::math']]],

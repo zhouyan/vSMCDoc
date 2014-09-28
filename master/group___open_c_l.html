@@ -127,12 +127,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5a8cc7ad8cd0ea4e09a5a726083e5434"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga5a8cc7ad8cd0ea4e09a5a726083e5434">vsmc::cl_maximum_local_size</a> (const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev)</td></tr>
-<tr class="memdesc:ga5a8cc7ad8cd0ea4e09a5a726083e5434"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum local size that is a multiple of the preferred factor.  <a href="#ga5a8cc7ad8cd0ea4e09a5a726083e5434">More...</a><br /></td></tr>
-<tr class="separator:ga5a8cc7ad8cd0ea4e09a5a726083e5434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d947ea73043c7ae96957f33606e0cd4"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga6d947ea73043c7ae96957f33606e0cd4">vsmc::cl_minimum_global_size</a> (std::size_t N, std::size_t local_size)</td></tr>
-<tr class="memdesc:ga6d947ea73043c7ae96957f33606e0cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum global size that is a multiple of the local size.  <a href="#ga6d947ea73043c7ae96957f33606e0cd4">More...</a><br /></td></tr>
-<tr class="separator:ga6d947ea73043c7ae96957f33606e0cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a6688b4d1eac1692e87b3dc2d19bb90"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">vsmc::cl_min_global_size</a> (std::size_t N, std::size_t local_size)</td></tr>
+<tr class="memdesc:ga5a6688b4d1eac1692e87b3dc2d19bb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum global size that is a multiple of the local size.  <a href="#ga5a6688b4d1eac1692e87b3dc2d19bb90">More...</a><br /></td></tr>
+<tr class="separator:ga5a6688b4d1eac1692e87b3dc2d19bb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7478c54da9f63bbac0cef891b85e2174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga7478c54da9f63bbac0cef891b85e2174">vsmc::cl_minmax_local_size</a> (const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</td></tr>
+<tr class="memdesc:ga7478c54da9f63bbac0cef891b85e2174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the preferred factor of local size.  <a href="#ga7478c54da9f63bbac0cef891b85e2174">More...</a><br /></td></tr>
+<tr class="separator:ga7478c54da9f63bbac0cef891b85e2174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafde473112f1a300151211340a9adfedf"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">vsmc::cl_preferred_work_size</a> (std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</td></tr>
 <tr class="memdesc:gafde473112f1a300151211340a9adfedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred global and local size.  <a href="#gafde473112f1a300151211340a9adfedf">More...</a><br /></td></tr>
 <tr class="separator:gafde473112f1a300151211340a9adfedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Parallel sampler using OpenCL. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga5a8cc7ad8cd0ea4e09a5a726083e5434"></a>
+<a class="anchor" id="ga5a6688b4d1eac1692e87b3dc2d19bb90"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -182,45 +182,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t vsmc::cl_maximum_local_size </td>
-          <td>(</td>
-          <td class="paramtype">const ::cl::Kernel &amp;&#160;</td>
-          <td class="paramname"><em>kern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ::cl::Device &amp;&#160;</td>
-          <td class="paramname"><em>dev</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The maximum local size that is a multiple of the preferred factor. </p>
-
-<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00036">36</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga6d947ea73043c7ae96957f33606e0cd4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t vsmc::cl_minimum_global_size </td>
+          <td class="memname">std::size_t vsmc::cl_min_global_size </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>N</em>, </td>
@@ -246,7 +208,73 @@ Functions</h2></td></tr>
 
 <p>The minimum global size that is a multiple of the local size. </p>
 
-<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00054">54</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00048">48</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7478c54da9f63bbac0cef891b85e2174"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::cl_minmax_local_size </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Kernel &amp;&#160;</td>
+          <td class="paramname"><em>kern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ::cl::Device &amp;&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>lmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>mmax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Query the preferred factor of local size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kern</td><td>An OpenCL kernel </td></tr>
+    <tr><td class="paramname">dev</td><td>An OpenCL device </td></tr>
+    <tr><td class="paramname">factor</td><td>Multiplier factor of local size for optimzied performance </td></tr>
+    <tr><td class="paramname">lmax</td><td>Maximum of the local size </td></tr>
+    <tr><td class="paramname">mmax</td><td>Maximum of the multiplier of the factor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00027">27</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
 
 </div>
 </div>
@@ -303,7 +331,7 @@ Functions</h2></td></tr>
 <p>The preferred global and local size. </p>
 <dl class="section return"><dt>Returns</dt><dd>The difference between the preferred global size and the N </dd></dl>
 
-<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00068">68</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00061">61</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
 
 </div>
 </div>
@@ -356,7 +384,7 @@ template&lt;typename Arg1 , typename... Args&gt; </div>
 <p>Set OpenCL kernel arguments. </p>
 <p>The first argument <code>arg1</code> is set with index <code>offset</code> and the next with index <code>offset + 1</code> and so on. For C++11 implementations that support variadic template, there can be arbitrary number of arguments (or limited by the compiler's implementation). Otherwise this function supports up to 16 arguments. </p>
 
-<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00137">137</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manip_8hpp_source.html#l00121">121</a> of file <a class="el" href="cl__manip_8hpp_source.html">cl_manip.hpp</a>.</p>
 
 </div>
 </div>

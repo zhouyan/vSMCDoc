@@ -17,7 +17,7 @@ var searchData=
   ['max_5fdegree',['max_degree',['../classvsmc_1_1_n_integrate_newton_cotes.html#a3ce481c3778bd059959e277571c65b5f',1,'vsmc::NIntegrateNewtonCotes']]],
   ['max_5feax',['max_eax',['../classvsmc_1_1_c_p_u_i_d.html#a24467f557d04945dfa6513ed554237ec',1,'vsmc::CPUID']]],
   ['max_5feax_5fext',['max_eax_ext',['../classvsmc_1_1_c_p_u_i_d.html#a44c552856c96e585f5f05e0fded94729',1,'vsmc::CPUID']]],
-  ['max_5fsize',['max_size',['../classvsmc_1_1_aligned_allocator.html#a2cbda6b27936c9f74cb7736e8a905864',1,'vsmc::AlignedAllocator::max_size()'],['../classvsmc_1_1_array.html#afd486e9a6a661cf2ffed78a97d491317',1,'vsmc::Array::max_size()']]],
+  ['max_5fsize',['max_size',['../classvsmc_1_1_array.html#afd486e9a6a661cf2ffed78a97d491317',1,'vsmc::Array']]],
   ['mcmc',['mcmc',['../classvsmc_1_1_sampler.html#a79806015ddea64b250aade1ff23efabb',1,'vsmc::Sampler::mcmc(const mcmc_type &amp;new_mcmc, bool append)'],['../classvsmc_1_1_sampler.html#a93c194aa70fb0662e2ee75accc1e4a46',1,'vsmc::Sampler::mcmc(InputIter first, InputIter last, bool append)']]],
   ['mcmc_5fqueue_5fclear',['mcmc_queue_clear',['../classvsmc_1_1_sampler.html#ae4852d00ddadbaf8fb71e79831af38a2',1,'vsmc::Sampler']]],
   ['mcmc_5fqueue_5fempty',['mcmc_queue_empty',['../classvsmc_1_1_sampler.html#a096b2586607d11b1e49620f0a94eaba2',1,'vsmc::Sampler']]],

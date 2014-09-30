@@ -49,7 +49,7 @@ var searchData=
   ['max_5feax',['max_eax',['../classvsmc_1_1_c_p_u_i_d.html#a24467f557d04945dfa6513ed554237ec',1,'vsmc::CPUID']]],
   ['max_5feax_5fext',['max_eax_ext',['../classvsmc_1_1_c_p_u_i_d.html#a44c552856c96e585f5f05e0fded94729',1,'vsmc::CPUID']]],
   ['max_5floop_5funroll',['max_loop_unroll',['../structvsmc_1_1traits_1_1_xorshift_engine_trait.html#a151a3b3f67dcc5b9f6459db23a932b18',1,'vsmc::traits::XorshiftEngineTrait']]],
-  ['max_5fsize',['max_size',['../classvsmc_1_1_aligned_allocator.html#a2cbda6b27936c9f74cb7736e8a905864',1,'vsmc::AlignedAllocator::max_size()'],['../classvsmc_1_1_array.html#afd486e9a6a661cf2ffed78a97d491317',1,'vsmc::Array::max_size()']]],
+  ['max_5fsize',['max_size',['../classvsmc_1_1_array.html#afd486e9a6a661cf2ffed78a97d491317',1,'vsmc::Array']]],
   ['max_5fstatic_5fsize',['max_static_size',['../structvsmc_1_1traits_1_1_array_trait.html#a49b5aa4f025211f65776f9da74f0842d',1,'vsmc::traits::ArrayTrait']]],
   ['max_5fval',['max_val',['../structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#ad623e8bc45c991b044cb2f2328ae2b69',1,'vsmc::internal::CounterMask&lt; T, true &gt;']]],
   ['mcmc',['mcmc',['../classvsmc_1_1_sampler.html#a79806015ddea64b250aade1ff23efabb',1,'vsmc::Sampler::mcmc(const mcmc_type &amp;new_mcmc, bool append)'],['../classvsmc_1_1_sampler.html#a93c194aa70fb0662e2ee75accc1e4a46',1,'vsmc::Sampler::mcmc(InputIter first, InputIter last, bool append)']]],

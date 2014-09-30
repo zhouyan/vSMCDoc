@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">urng.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="defines_8h_source.html">vsmc/rng/internal/defines.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="common_8h_source.html">vsmc/rng/internal/common.h</a>&gt;</code><br />
 <code>#include &lt;Random123/threefry.h&gt;</code><br />
 <code>#include &lt;Random123/philox.h&gt;</code><br />
 </div>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="defines_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> <span class="keywordtype">void</span> RNG##N##x##W##_init(                             \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> <span class="keywordtype">void</span> RNG##N##x##W##_init(                             \</div>
 <div class="line">            RNG##N##x##W##_rng_t *rng, uint##W##_t seed)                     \</div>
 <div class="line">    {                                                                        \</div>
 <div class="line">        RNG##N##x##W##_ctr_t init_ctr = {{}};                                \</div>
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
 <div class="line">        rng-&gt;key = RNG##N##x##W##keyinit(ukey);                              \</div>
 <div class="line">        rng-&gt;remain = 0;                                                     \</div>
 <div class="line">    }</div>
-<div class="ttc" id="defines_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="defines_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="defines_8h_source.html#l00049">defines.h:49</a></div></div>
+<div class="ttc" id="common_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00053">common.h:53</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="urng_8h_source.html#l00166">166</a> of file <a class="el" href="urng_8h_source.html">urng.h</a>.</p>
 
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="defines_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> uint##W##_t RNG##N##x##W##_rand(                      \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> uint##W##_t RNG##N##x##W##_rand(                      \</div>
 <div class="line">            RNG##N##x##W##_rng_t *rng)                                       \</div>
 <div class="line">    {                                                                        \</div>
 <div class="line">        unsigned <span class="keywordtype">char</span> remain = rng-&gt;remain;                                  \</div>
@@ -301,7 +301,7 @@ Functions</h2></td></tr>
 <div class="line">                                                                             \</div>
 <div class="line">        return rnd.v[remain];                                                \</div>
 <div class="line">    }</div>
-<div class="ttc" id="defines_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="defines_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="defines_8h_source.html#l00049">defines.h:49</a></div></div>
+<div class="ttc" id="common_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00053">common.h:53</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="urng_8h_source.html#l00179">179</a> of file <a class="el" href="urng_8h_source.html">urng.h</a>.</p>
 

@@ -10,7 +10,6 @@ var searchData=
   ['default_5fdevice_5fvendor',['default_device_vendor',['../classvsmc_1_1_c_l_setup.html#a125138a68a58dec7be400fc0236f648a',1,'vsmc::CLSetup']]],
   ['default_5fname',['default_name',['../classvsmc_1_1_c_l_setup.html#a0783f91143e730152a65def55ad48834',1,'vsmc::CLSetup']]],
   ['default_5fplatform',['default_platform',['../classvsmc_1_1_c_l_setup.html#ae403547f2467cadd70e4dabcd026af0f',1,'vsmc::CLSetup']]],
-  ['defines_2eh',['defines.h',['../defines_8h.html',1,'']]],
   ['defines_2ehpp',['defines.hpp',['../defines_8hpp.html',1,'']]],
   ['destory',['destory',['../classvsmc_1_1_aligned_allocator.html#a28c8b86a5e999d87451f16ab9f9b679a',1,'vsmc::AlignedAllocator']]],
   ['device',['device',['../classvsmc_1_1_c_l_setup.html#a9a171213a71ff93482e0018ea10573aa',1,'vsmc::CLSetup::device(const std::string &amp;name)'],['../classvsmc_1_1_c_l_setup.html#aa0e49c7a54f6744cadf58b26aacd3184',1,'vsmc::CLSetup::device() const '],['../classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d',1,'vsmc::CLManager::device()']]],

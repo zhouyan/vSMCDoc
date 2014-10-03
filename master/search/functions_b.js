@@ -80,6 +80,5 @@ var searchData=
   ['log_5fweight2weight',['log_weight2weight',['../classvsmc_1_1_weight_set.html#a0f55da2e68dd5257a277ab5c310e8a3d',1,'vsmc::WeightSet']]],
   ['log_5fweight_5fptr',['log_weight_ptr',['../classvsmc_1_1_weight_set.html#ac0e675e0b25ee9351fdce388107572da',1,'vsmc::WeightSet::log_weight_ptr()'],['../classvsmc_1_1_weight_set.html#aee2004cd07bc65f295dc58f070b4fa94',1,'vsmc::WeightSet::log_weight_ptr() const ']]],
   ['log_5fweight_5fvec',['log_weight_vec',['../classvsmc_1_1_weight_set.html#ad27d9455e01435345595b35c8278560b',1,'vsmc::WeightSet::log_weight_vec()'],['../classvsmc_1_1_weight_set.html#ae467d4995fe0b3d9937beb5358505066',1,'vsmc::WeightSet::log_weight_vec() const ']]],
-  ['log_5fzconst',['log_zconst',['../classvsmc_1_1_normalizing_constant.html#a49a1143498d44758c64b8eac5fbb63e4',1,'vsmc::NormalizingConstant::log_zconst()'],['../classvsmc_1_1_path.html#a0cbf0eb131586c6b4fdf8474fcfb36c4',1,'vsmc::Path::log_zconst()']]],
-  ['log_5fzconst_5fnewton_5fcotes',['log_zconst_newton_cotes',['../classvsmc_1_1_path_geometry.html#af62a82ddfd94f22ad6ab3e2c5d57610b',1,'vsmc::PathGeometry']]]
+  ['log_5fzconst',['log_zconst',['../classvsmc_1_1_normalizing_constant.html#a49a1143498d44758c64b8eac5fbb63e4',1,'vsmc::NormalizingConstant::log_zconst()'],['../classvsmc_1_1_path.html#a0cbf0eb131586c6b4fdf8474fcfb36c4',1,'vsmc::Path::log_zconst()']]]
 ];

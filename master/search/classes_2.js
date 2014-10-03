@@ -18,7 +18,7 @@ var searchData=
   ['constsingleparticlebasetypedispatch_3c_20t_2c_20true_20_3e',['ConstSingleParticleBaseTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_const_single_particle_base_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
   ['constsingleparticlebasetypetrait',['ConstSingleParticleBaseTypeTrait',['../structvsmc_1_1traits_1_1_const_single_particle_base_type_trait.html',1,'vsmc::traits']]],
   ['counter',['Counter',['../singletonvsmc_1_1_counter.html',1,'vsmc']]],
-  ['counter_3c_20array_3c_20t_2c_20k_2c_20traits_20_3e_20_3e',['Counter&lt; Array&lt; T, K, Traits &gt; &gt;',['../classvsmc_1_1_counter_3_01_array_3_01_t_00_01_k_00_01_traits_01_4_01_4.html',1,'vsmc']]],
+  ['counter_3c_20array_3c_20t_2c_20k_20_3e_20_3e',['Counter&lt; Array&lt; T, K &gt; &gt;',['../classvsmc_1_1_counter_3_01_array_3_01_t_00_01_k_01_4_01_4.html',1,'vsmc']]],
   ['countermask',['CounterMask',['../structvsmc_1_1internal_1_1_counter_mask.html',1,'vsmc::internal']]],
   ['countermask_3c_20t_2c_20true_20_3e',['CounterMask&lt; T, true &gt;',['../structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],
   ['cpuid',['CPUID',['../classvsmc_1_1_c_p_u_i_d.html',1,'vsmc']]],

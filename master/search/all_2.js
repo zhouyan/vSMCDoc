@@ -1,7 +1,7 @@
 var searchData=
 [
   ['b',['b',['../classvsmc_1_1_uniform_real_distribution_1_1param__type.html#afbec459d8cc531ef7c76672fe44da8be',1,'vsmc::UniformRealDistribution::param_type::b()'],['../classvsmc_1_1_uniform_real_distribution.html#a6399a8910309b1509dae33336381dd70',1,'vsmc::UniformRealDistribution::b()']]],
-  ['back',['back',['../classvsmc_1_1_array.html#ad861307f2ae9fa16e3d137105ece370e',1,'vsmc::Array::back()'],['../classvsmc_1_1_array.html#afd4d56a3177d8696c0db17a181d3416d',1,'vsmc::Array::back() const ']]],
+  ['back',['back',['../classvsmc_1_1_array.html#a80e4fdc953debbc45c07a2aef39db012',1,'vsmc::Array::back()'],['../classvsmc_1_1_array.html#ace83f6cff19a5379c00bed6f1722a9ad',1,'vsmc::Array::back() const ']]],
   ['backend_5fbase_2ehpp',['backend_base.hpp',['../backend__base_8hpp.html',1,'']]],
   ['backend_5fcilk_2ehpp',['backend_cilk.hpp',['../backend__cilk_8hpp.html',1,'']]],
   ['backend_5fcl_2ehpp',['backend_cl.hpp',['../backend__cl_8hpp.html',1,'']]],
@@ -24,7 +24,7 @@ var searchData=
   ['basestate',['BaseState',['../class_base_state.html',1,'']]],
   ['basetype',['BaseType',['../class_base_type.html',1,'']]],
   ['basic_2ehpp',['basic.hpp',['../basic_8hpp.html',1,'']]],
-  ['begin',['begin',['../classvsmc_1_1_blocked_range.html#a611c64bf21ebf0155c296f683efb6c82',1,'vsmc::BlockedRange::begin()'],['../classvsmc_1_1_array.html#ab1793af9e6451b88389536c0830790c7',1,'vsmc::Array::begin()'],['../classvsmc_1_1_array.html#a0afa7a6a37ccdfcf01c0d0db85ad2960',1,'vsmc::Array::begin() const ']]],
+  ['begin',['begin',['../classvsmc_1_1_blocked_range.html#a611c64bf21ebf0155c296f683efb6c82',1,'vsmc::BlockedRange::begin()'],['../classvsmc_1_1_array.html#ae834258e34534b753cf40b17e9022eb0',1,'vsmc::Array::begin()'],['../classvsmc_1_1_array.html#ae51e072823221aa14ff50e0314639dd1',1,'vsmc::Array::begin() const ']]],
   ['blocked_5frange_2ehpp',['blocked_range.hpp',['../blocked__range_8hpp.html',1,'']]],
   ['blockedrange',['BlockedRange',['../classvsmc_1_1_blocked_range.html#ac463de2b5a37625f56d90f9228f4069e',1,'vsmc::BlockedRange::BlockedRange()'],['../classvsmc_1_1_blocked_range.html#ae44be783374a6804ebf08c92300d2c33',1,'vsmc::BlockedRange::BlockedRange(T begin, T end, size_type grainsize=1)'],['../classvsmc_1_1_blocked_range.html#a06f3ad0a564e54ce78b6e1bf406f97d1',1,'vsmc::BlockedRange::BlockedRange(BlockedRange&lt; T &gt; &amp;other, Split)']]],
   ['blockedrange',['BlockedRange',['../classvsmc_1_1_blocked_range.html',1,'vsmc']]],

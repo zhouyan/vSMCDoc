@@ -161,11 +161,11 @@ var searchData=
   ['vsmc_5fstatic_5fassert_5fsmp_5fbackend_5fbase_5fderived',['VSMC_STATIC_ASSERT_SMP_BACKEND_BASE_DERIVED',['../backend__base_8hpp.html#a0e8d4c4da64c43ba0ea14dc01be0e51c',1,'backend_base.hpp']]],
   ['vsmc_5fstatic_5fassert_5fsmp_5fbackend_5fbase_5fno_5fimpl',['VSMC_STATIC_ASSERT_SMP_BACKEND_BASE_NO_IMPL',['../backend__base_8hpp.html#aa3694e7fa5be66c844aedf2adcb3b6b6',1,'backend_base.hpp']]],
   ['vsmc_5fstatic_5fassert_5futility_5farray_5frange',['VSMC_STATIC_ASSERT_UTILITY_ARRAY_RANGE',['../array_8hpp.html#a136f577775d5cc61ca6e546bfe90ecd7',1,'array.hpp']]],
-  ['vsmc_5fstatic_5fassert_5futility_5farray_5fslice_5fbegin',['VSMC_STATIC_ASSERT_UTILITY_ARRAY_SLICE_BEGIN',['../array_8hpp.html#ad5f51bd9a3d5ffad42660e44e785a8c9',1,'array.hpp']]],
-  ['vsmc_5fstatic_5fassert_5futility_5farray_5fslice_5fend',['VSMC_STATIC_ASSERT_UTILITY_ARRAY_SLICE_END',['../array_8hpp.html#a3d9aa027efc65931932b3d8fc1ea2e37',1,'array.hpp']]],
   ['vsmc_5fstatic_5finline',['VSMC_STATIC_INLINE',['../common_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'common.h']]],
   ['vsmc_5fstop_5fwatch_5fdefined',['VSMC_STOP_WATCH_DEFINED',['../stop__watch_8hpp.html#a8309494de509fbb54564b49944ac1762',1,'stop_watch.hpp']]],
   ['vsmc_5fuse_5fcxx11lib_5ffuture',['VSMC_USE_CXX11LIB_FUTURE',['../config_8hpp.html#aea22d3af12c1f98ac954a6f66994bec6',1,'config.hpp']]],
+  ['vsmc_5fuse_5frd_5frand',['VSMC_USE_RD_RAND',['../config_8hpp.html#ac902e6406937687836a1fb6ff3096017',1,'config.hpp']]],
+  ['vsmc_5fuse_5frd_5fseed',['VSMC_USE_RD_SEED',['../config_8hpp.html#aaa2fcc4b3c3e6694e98ba274f852b5d8',1,'config.hpp']]],
   ['vsmc_5fx86',['VSMC_X86',['../compiler_8hpp.html#aea4865c9a8856233ed9564536bd3b501',1,'compiler.hpp']]],
   ['vsmc_5fx86_5f64',['VSMC_X86_64',['../compiler_8hpp.html#a934688eeb35c29fae53940aa714afc43',1,'compiler.hpp']]]
 ];

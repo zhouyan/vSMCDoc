@@ -31,7 +31,6 @@ var searchData=
   ['pathevalseq',['PathEvalSEQ',['../singletonvsmc_1_1_path_eval_s_e_q.html',1,'vsmc']]],
   ['pathevalstd',['PathEvalSTD',['../singletonvsmc_1_1_path_eval_s_t_d.html',1,'vsmc']]],
   ['pathevaltbb',['PathEvalTBB',['../singletonvsmc_1_1_path_eval_t_b_b.html',1,'vsmc']]],
-  ['pathgeometry',['PathGeometry',['../classvsmc_1_1_path_geometry.html',1,'vsmc']]],
   ['philox2x32_5frng_5ft',['philox2x32_rng_t',['../structphilox2x32__rng__t.html',1,'']]],
   ['philox2x64_5frng_5ft',['philox2x64_rng_t',['../structphilox2x64__rng__t.html',1,'']]],
   ['philox4x32_5frng_5ft',['philox4x32_rng_t',['../structphilox4x32__rng__t.html',1,'']]],

@@ -186,7 +186,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aad6358182bda186ffa3afaac9698d5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ID&gt;<br />
+<div class="textblock"><h3>template&lt;typename ID = CLDefault&gt;<br />
 class vsmc::CLManager&lt; ID &gt;</h3>
 
 <p>OpenCL Manager. </p>
@@ -208,13 +208,13 @@ class vsmc::CLManager&lt; ID &gt;</h3>
 </div><!-- fragment --><p> may not be enough to lead to successful setup. The default device type <code>CL_DEVICE_TYPE_DEFAULT</code> may not be GPU. To be safe, if one need to use <a class="el" href="classvsmc_1_1_c_l_setup.html" title="Configure the default behavior of CLManager. ">CLSetup</a>, at least specify the device type. It can be set through values of type <code>cl_device_type</code> or a string with values "GPU", "CPU", "Accelerator". Other string values are silently ignored and the default is used.</p>
 <p>Before using a <a class="el" href="classvsmc_1_1_c_l_manager.html" title="OpenCL Manager. ">CLManager</a>, it is important to check that <a class="el" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4" title="Whether the platform, context, device and command queue has been setup correctly. ...">CLManager::setup</a> returns <code>true</code>. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00196">196</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00106">106</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac966064d21e7d2b3b96f5a0b12ce1ee2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -235,7 +235,7 @@ template&lt;typename ID&gt; </div>
 
 <p>The command queue currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00221">221</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00131">131</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -264,7 +264,7 @@ template&lt;typename ID&gt; </div>
 
 <p>The context currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00212">212</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00122">122</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType &gt; </div>
 <table class="mlabels">
@@ -336,7 +336,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Copy an OpenCL buffer into another of a given type and number of elements. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00414">414</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00324">324</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ template&lt;typename CLType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType &gt; </div>
 <table class="mlabels">
@@ -368,7 +368,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Create an OpenCL buffer of a given type and number of elements. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00283">283</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00193">193</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +376,7 @@ template&lt;typename CLType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType , typename InputIter &gt; </div>
 <table class="mlabels">
@@ -410,7 +410,7 @@ template&lt;typename CLType , typename InputIter &gt; </div>
 
 <p>Create an OpenCL buffer of a given type from a range of elements. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00295">295</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00205">205</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ template&lt;typename CLType , typename InputIter &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -440,7 +440,7 @@ template&lt;typename ID&gt; </div>
 
 <p>Create a program given the source within the current context. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00429">429</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00339">339</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -469,7 +469,7 @@ template&lt;typename ID&gt; </div>
 
 <p>The device currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00215">215</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00125">125</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -498,7 +498,7 @@ template&lt;typename ID&gt; </div>
 
 <p>The vector of all device that the manager found in the platform. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00218">218</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00128">128</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -506,7 +506,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -527,7 +527,7 @@ template&lt;typename ID&gt; </div>
 
 <p>Get an instance of the manager singleton. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00201">201</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00111">111</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -556,7 +556,7 @@ template&lt;typename ID&gt; </div>
 
 <p>The platform currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00209">209</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00119">119</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CharT , typename Traits &gt; </div>
 <table class="mlabels">
@@ -598,7 +598,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Print build log. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00258">258</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00168">168</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -606,7 +606,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType , typename OutputIter &gt; </div>
 <table class="mlabels">
@@ -664,7 +664,7 @@ template&lt;typename CLType , typename OutputIter &gt; </div>
 
 <p>Read an OpenCL buffer of a given type and number of elements into an iterator. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00316">316</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00226">226</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -672,7 +672,7 @@ template&lt;typename CLType , typename OutputIter &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType &gt; </div>
 <table class="mlabels">
@@ -730,7 +730,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Read an OpenCL buffer of a given type and number of elements into a pointer. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00338">338</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00248">248</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ template&lt;typename CLType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -790,7 +790,7 @@ template&lt;typename ID&gt; </div>
 <p>OpenCL requires that <code>global_size</code> is a multiple of <code>local_size</code>. This function will round <code>N</code> if it is not already a multiple of <code>local_size</code>. In the kernel it is important to check that <code>get_global_id(0)</code> is not out of range.</p>
 <p>For example, say we have kernel that should be applied to <code>N</code> elements. But the most efficient local size <code>K</code> does not divide <code>N</code>. Instead of calculate the correct global size yourself, you can simple call <code>run_kernel(kern, N, K)</code>. But within the kernel, you need to check <code>get_global_id(0) &lt; N</code> </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00446">446</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00356">356</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +798,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -819,7 +819,7 @@ template&lt;typename ID&gt; </div>
 
 <p>Whether the platform, context, device and command queue has been setup correctly. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00225">225</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00135">135</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -827,7 +827,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -849,7 +849,7 @@ template&lt;typename ID&gt; </div>
 
 <p>Try to setup the platform, context, device and command queue using the given device type. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00229">229</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00139">139</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -902,7 +902,7 @@ template&lt;typename ID&gt; </div>
 <p>Set the platform, context, device and command queue manually. </p>
 <p>After this member function call <a class="el" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4" title="Whether the platform, context, device and command queue has been setup correctly. ...">setup()</a> will return <code>true</code> in future calls </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00242">242</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00152">152</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +910,7 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType , typename InputIter &gt; </div>
 <table class="mlabels">
@@ -968,7 +968,7 @@ template&lt;typename CLType , typename InputIter &gt; </div>
 
 <p>Write an OpenCL buffer of a given type and number of elements from an iterator. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00356">356</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00266">266</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -976,7 +976,7 @@ template&lt;typename CLType , typename InputIter &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType &gt; </div>
 <table class="mlabels">
@@ -1034,7 +1034,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Write an OpenCL buffer of a given type and number of elements from a pointer. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00377">377</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00287">287</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1042,7 @@ template&lt;typename CLType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID = CLDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename CLType &gt; </div>
 <table class="mlabels">
@@ -1100,7 +1100,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Write an OpenCL buffer of a given type and number of elements from a pointer. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00396">396</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00306">306</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>

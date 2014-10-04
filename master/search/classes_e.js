@@ -2,7 +2,6 @@ var searchData=
 [
   ['sampler',['Sampler',['../classvsmc_1_1_sampler.html',1,'vsmc']]],
   ['scalar',['Scalar',['../structvsmc_1_1_scalar.html',1,'vsmc']]],
-  ['scopedbackup',['ScopedBackup',['../classvsmc_1_1_scoped_backup.html',1,'vsmc']]],
   ['scopedstopwatch',['ScopedStopWatch',['../classvsmc_1_1_scoped_stop_watch.html',1,'vsmc']]],
   ['seedcountergenerator',['SeedCounterGenerator',['../singletonvsmc_1_1_seed_counter_generator.html',1,'vsmc']]],
   ['seedcountergenerator_3c_20id_2c_20array_3c_20t_2c_20k_20_3e_20_3e',['SeedCounterGenerator&lt; ID, Array&lt; T, K &gt; &gt;',['../classvsmc_1_1_seed_counter_generator_3_01_i_d_00_01_array_3_01_t_00_01_k_01_4_01_4.html',1,'vsmc']]],

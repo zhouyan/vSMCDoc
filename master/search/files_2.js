@@ -1,9 +1,11 @@
 var searchData=
 [
+  ['cl_5fbuffer_2ehpp',['cl_buffer.hpp',['../cl__buffer_8hpp.html',1,'']]],
   ['cl_5fmanager_2ehpp',['cl_manager.hpp',['../cl__manager_8hpp.html',1,'']]],
   ['cl_5fmanip_2ehpp',['cl_manip.hpp',['../cl__manip_8hpp.html',1,'']]],
   ['cl_5fquery_2ehpp',['cl_query.hpp',['../cl__query_8hpp.html',1,'']]],
   ['cl_5fset_5fkernel_5fargs_2ehpp',['cl_set_kernel_args.hpp',['../cl__set__kernel__args_8hpp.html',1,'']]],
+  ['cl_5fsetup_2ehpp',['cl_setup.hpp',['../cl__setup_8hpp.html',1,'']]],
   ['cl_5fwrapper_2ehpp',['cl_wrapper.hpp',['../cl__wrapper_8hpp.html',1,'']]],
   ['clang_2ehpp',['clang.hpp',['../clang_8hpp.html',1,'']]],
   ['cmath_2ehpp',['cmath.hpp',['../cmath_8hpp.html',1,'']]],

@@ -10,7 +10,7 @@ var searchData=
   ['weight_5fset_2ehpp',['weight_set.hpp',['../weight__set_8hpp.html',1,'']]],
   ['weight_5fset_5ftype',['weight_set_type',['../classvsmc_1_1_particle.html#ab5f1434fdc7a86dc77c151cf433b1893',1,'vsmc::Particle::weight_set_type()'],['../singletonvsmc_1_1_state_m_p_i.html#af70cb06240aee1620944bc4d5c229331',1,'vsmc::StateMPI::weight_set_type()']]],
   ['weight_5fvec',['weight_vec',['../classvsmc_1_1_weight_set.html#abb67b03b38ad227003e7d1bb6db23114',1,'vsmc::WeightSet::weight_vec()'],['../classvsmc_1_1_weight_set.html#af3a5bc44e209b6b326808c5effbf5b85',1,'vsmc::WeightSet::weight_vec() const ']]],
-  ['weightset',['WeightSet',['../classvsmc_1_1_weight_set.html#a8b746cc44090b0b111f420bc1fdb27ae',1,'vsmc::WeightSet::WeightSet(size_type N)'],['../classvsmc_1_1_weight_set.html#aec8757eb2a7e0c845dce641f622a0985',1,'vsmc::WeightSet::WeightSet(const WeightSet &amp;other)'],['../classvsmc_1_1_weight_set.html#a84c5ae3ae3c6f685521628f98aa77ead',1,'vsmc::WeightSet::WeightSet(WeightSet &amp;&amp;other)']]],
+  ['weightset',['WeightSet',['../classvsmc_1_1_weight_set.html#a8b746cc44090b0b111f420bc1fdb27ae',1,'vsmc::WeightSet::WeightSet(size_type N)'],['../classvsmc_1_1_weight_set.html#a5e0907198f1cc32bc4b53bcd82e8730e',1,'vsmc::WeightSet::WeightSet(const WeightSet &amp;)=default'],['../classvsmc_1_1_weight_set.html#a9f7ac8f287d8872481f24dd38e1e1d90',1,'vsmc::WeightSet::WeightSet(WeightSet &amp;&amp;)=default']]],
   ['weightset',['WeightSet',['../classvsmc_1_1_weight_set.html',1,'vsmc']]],
   ['weightsetbase',['WeightSetBase',['../class_weight_set_base.html',1,'']]],
   ['weightsetempty',['WeightSetEmpty',['../classvsmc_1_1_weight_set_empty.html#ab2b027673df17cee576ee65f65f1a746',1,'vsmc::WeightSetEmpty']]],

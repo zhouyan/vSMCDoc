@@ -1,5 +1,10 @@
 var searchData=
 [
+  ['clbuffer',['CLBuffer',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20char_2c_20id_20_3e',['CLBuffer&lt; char, ID &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20cl_5fulong_2c_20id_20_3e',['CLBuffer&lt; cl_ulong, ID &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20cl_5fulong_2c_20typename_20t_3a_3aid_20_3e',['CLBuffer&lt; cl_ulong, typename T::id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20typename_20t_3a_3afp_5ftype_2c_20typename_20t_3a_3aid_20_3e',['CLBuffer&lt; typename T::fp_type, typename T::id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
   ['clmanager',['CLManager',['../classvsmc_1_1_c_l_manager.html',1,'vsmc']]],
   ['closed',['Closed',['../structvsmc_1_1_closed.html',1,'vsmc']]],
   ['clquery',['CLQuery',['../classvsmc_1_1_c_l_query.html',1,'vsmc']]],

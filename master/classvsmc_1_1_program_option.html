@@ -120,14 +120,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc2054497f38d1c1612c0e2543dad989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab616c2a586e7bded9b0ef1fc1b620606"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvsmc_1_1_program_option.html">ProgramOption</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#ab616c2a586e7bded9b0ef1fc1b620606">clone</a> () const =0</td></tr>
 <tr class="separator:ab616c2a586e7bded9b0ef1fc1b620606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912ab12caf0ec9144ab792b4a0514e8a"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a912ab12caf0ec9144ab792b4a0514e8a">default_str</a> () const =0</td></tr>
+<tr class="separator:a912ab12caf0ec9144ab792b4a0514e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52240eb51d649ecae8f6e78ca3eac8d3"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a52240eb51d649ecae8f6e78ca3eac8d3">description</a> () const =0</td></tr>
+<tr class="separator:a52240eb51d649ecae8f6e78ca3eac8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4f1cc6b2c74baaeb5b79b77beaa45d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a9a4f1cc6b2c74baaeb5b79b77beaa45d">is_bool</a> () const =0</td></tr>
 <tr class="separator:a9a4f1cc6b2c74baaeb5b79b77beaa45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1473aa4e18f550b6ccb75ce61cdb5764"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a1473aa4e18f550b6ccb75ce61cdb5764">is_vector</a> () const =0</td></tr>
 <tr class="separator:a1473aa4e18f550b6ccb75ce61cdb5764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7a8c098ac5d9622369c1b4b7a3ea2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_program_option.html">ProgramOption</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a1a7a8c098ac5d9622369c1b4b7a3ea2d">operator=</a> (const <a class="el" href="classvsmc_1_1_program_option.html">ProgramOption</a> &amp;)</td></tr>
 <tr class="separator:a1a7a8c098ac5d9622369c1b4b7a3ea2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf196120d822a4e24e67e43cb52994fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#acf196120d822a4e24e67e43cb52994fd">print_help</a> (const std::string &amp;, std::ostream &amp;) const =0</td></tr>
-<tr class="separator:acf196120d822a4e24e67e43cb52994fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6318f7823456b58137eb3e754bdf49"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#a1e6318f7823456b58137eb3e754bdf49">set</a> (const std::string &amp;, const std::string &amp;, bool, std::ostream &amp;)=0</td></tr>
 <tr class="separator:a1e6318f7823456b58137eb3e754bdf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47b3ac70e268d4c746d426b3f2b0a21"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html#ab47b3ac70e268d4c746d426b3f2b0a21">set_default</a> ()=0</td></tr>
@@ -248,6 +250,56 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a912ab12caf0ec9144ab792b4a0514e8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string vsmc::ProgramOption::default_str </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classvsmc_1_1_program_option_default.html#a0c81057fd5dd785ab37a9adf9a663181">vsmc::ProgramOptionDefault&lt; T &gt;</a>, and <a class="el" href="classvsmc_1_1_program_option_help.html#a2f006f0f6db972ba6401effd8ad5b1a4">vsmc::ProgramOptionHelp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52240eb51d649ecae8f6e78ca3eac8d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string vsmc::ProgramOption::description </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classvsmc_1_1_program_option_default.html#a72d7588c91058257ac597d5799dfbe11">vsmc::ProgramOptionDefault&lt; T &gt;</a>, and <a class="el" href="classvsmc_1_1_program_option_help.html#a09a73f1b824a15028a3179c4c804b6b1">vsmc::ProgramOptionHelp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a9a4f1cc6b2c74baaeb5b79b77beaa45d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -321,42 +373,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00227">227</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acf196120d822a4e24e67e43cb52994fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vsmc::ProgramOption::print_help </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classvsmc_1_1_program_option_default.html#ada36defb5597b4f59e623b5e15f97bb0">vsmc::ProgramOptionDefault&lt; T &gt;</a>, and <a class="el" href="classvsmc_1_1_program_option_help.html#a5fb121a0f7158009dffcd6642e76f995">vsmc::ProgramOptionHelp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +499,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00240">240</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
+<p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00241">241</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
 
 </div>
 </div>
@@ -539,7 +555,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00299">299</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
+<p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00300">300</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
 
 </div>
 </div>

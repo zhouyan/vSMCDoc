@@ -114,52 +114,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="config_8hpp.html">vsmc/internal/config.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="defines_8hpp.html">vsmc/internal/defines.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="forward_8hpp.html#a4d8a6dedeef0d08b17a86d3863e4a3db">   19</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_SMP_FORWARD(Name) \</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class Initialize##Name;            \</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class Move##Name;                  \</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class MonitorEval##Name;           \</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class PathEval##Name;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="forward_8hpp.html#a4d8a6dedeef0d08b17a86d3863e4a3db">   17</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_SMP_FORWARD(Name) \</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class Initialize##Name;            \</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class Move##Name;                  \</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class MonitorEval##Name;           \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">template &lt;typename T, typename = Virtual&gt; class PathEval##Name;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Template default arguments</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">struct </span>Virtual;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">struct </span><a class="code" href="class_null_type.html">NullType</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Core classes</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Sampler;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Particle;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Monitor;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Path;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>SingleParticle;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>ConstSingleParticle;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>SingleParticleBase;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>ConstSingleParticleBase;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>WeightSet;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>NormalizingConstant;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// SMP states</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="singletonvsmc_1_1_state_matrix.html">   44</a></span>&#160;<span class="keyword">template</span> &lt;MatrixOrder, std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span>&gt; <span class="keyword">class </span><a class="code" href="singletonvsmc_1_1_state_matrix.html">StateMatrix</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_TUPLE</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="singletonvsmc_1_1_state_tuple.html">   46</a></span>&#160;<span class="keyword">template</span> &lt;<a class="code" href="group___definitions.html#ga3891c43c52a10259979c138e981381be">MatrixOrder</a>, <span class="keyword">typename</span>, <span class="keyword">typename</span>...&gt; <span class="keyword">class </span><a class="code" href="singletonvsmc_1_1_state_tuple.html">StateTuple</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// OpenCL state</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">struct </span>CLDefault;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="singletonvsmc_1_1_state_c_l.html">   51</a></span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span>, <span class="keyword">typename</span> = CLDefault&gt; <span class="keyword">class </span><a class="code" href="singletonvsmc_1_1_state_c_l.html">StateCL</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Template default arguments</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">struct </span>Virtual;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span><a class="code" href="class_null_type.html">NullType</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Core classes</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Sampler;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Particle;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Monitor;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>Path;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>SingleParticle;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>ConstSingleParticle;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>SingleParticleBase;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>&gt; <span class="keyword">class </span>ConstSingleParticleBase;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>WeightSet;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>NormalizingConstant;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// SMP states</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="singletonvsmc_1_1_state_matrix.html">   42</a></span>&#160;<span class="keyword">template</span> &lt;MatrixOrder, std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span>&gt; <span class="keyword">class </span><a class="code" href="singletonvsmc_1_1_state_matrix.html">StateMatrix</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if VSMC_HAS_CXX11LIB_TUPLE</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="singletonvsmc_1_1_state_tuple.html">   44</a></span>&#160;<span class="keyword">template</span> &lt;<a class="code" href="group___definitions.html#ga3891c43c52a10259979c138e981381be">MatrixOrder</a>, <span class="keyword">typename</span>, <span class="keyword">typename</span>...&gt; <span class="keyword">class </span><a class="code" href="singletonvsmc_1_1_state_tuple.html">StateTuple</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// OpenCL state</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">struct </span>CLDefault;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="singletonvsmc_1_1_state_c_l.html">   49</a></span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span>, <span class="keyword">typename</span> = CLDefault&gt; <span class="keyword">class </span><a class="code" href="singletonvsmc_1_1_state_c_l.html">StateCL</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namesapce vsmc</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namesapce vsmc</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // VSMC_INTERNAL_FORWARD_HPP</span></div>
-<div class="ttc" id="singletonvsmc_1_1_state_tuple_html"><div class="ttname"><a href="singletonvsmc_1_1_state_tuple.html">vsmc::StateTuple</a></div><div class="ttdef"><b>Definition:</b> <a href="forward_8hpp_source.html#l00046">forward.hpp:46</a></div></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // VSMC_INTERNAL_FORWARD_HPP</span></div>
+<div class="ttc" id="singletonvsmc_1_1_state_tuple_html"><div class="ttname"><a href="singletonvsmc_1_1_state_tuple.html">vsmc::StateTuple</a></div><div class="ttdef"><b>Definition:</b> <a href="forward_8hpp_source.html#l00044">forward.hpp:44</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
 <div class="ttc" id="defines_8hpp_html"><div class="ttname"><a href="defines_8hpp.html">defines.hpp</a></div></div>
-<div class="ttc" id="singletonvsmc_1_1_state_c_l_html"><div class="ttname"><a href="singletonvsmc_1_1_state_c_l.html">vsmc::StateCL</a></div><div class="ttdoc">Particle::value_type subtype using OpenCL. </div><div class="ttdef"><b>Definition:</b> <a href="forward_8hpp_source.html#l00051">forward.hpp:51</a></div></div>
+<div class="ttc" id="singletonvsmc_1_1_state_c_l_html"><div class="ttname"><a href="singletonvsmc_1_1_state_c_l.html">vsmc::StateCL</a></div><div class="ttdoc">Particle::value_type subtype using OpenCL. </div><div class="ttdef"><b>Definition:</b> <a href="forward_8hpp_source.html#l00049">forward.hpp:49</a></div></div>
 <div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
 <div class="ttc" id="group___definitions_html_ga3891c43c52a10259979c138e981381be"><div class="ttname"><a href="group___definitions.html#ga3891c43c52a10259979c138e981381be">vsmc::MatrixOrder</a></div><div class="ttdeci">MatrixOrder</div><div class="ttdoc">Matrix order. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00073">defines.hpp:73</a></div></div>
-<div class="ttc" id="singletonvsmc_1_1_state_matrix_html"><div class="ttname"><a href="singletonvsmc_1_1_state_matrix.html">vsmc::StateMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="forward_8hpp_source.html#l00044">forward.hpp:44</a></div></div>
+<div class="ttc" id="singletonvsmc_1_1_state_matrix_html"><div class="ttname"><a href="singletonvsmc_1_1_state_matrix.html">vsmc::StateMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="forward_8hpp_source.html#l00042">forward.hpp:42</a></div></div>
 <div class="ttc" id="class_null_type_html"><div class="ttname"><a href="class_null_type.html">NullType</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

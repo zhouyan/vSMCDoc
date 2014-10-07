@@ -103,7 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">backend_cl.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="cl__manager_8hpp_source.html">vsmc/opencl/cl_manager.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="cl__buffer_8hpp_source.html">vsmc/opencl/cl_buffer.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cl__manager_8hpp_source.html">vsmc/opencl/cl_manager.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__manip_8hpp_source.html">vsmc/opencl/cl_manip.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="seed_8hpp_source.html">vsmc/rng/seed.hpp</a>&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
@@ -113,35 +114,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_configure_c_l.html">vsmc::ConfigureCL</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure OpenCL runtime behavior (used by <a class="el" href="singletonvsmc_1_1_move_c_l.html" title="Sampler<T>::move_type subtype using OpenCL. ">MoveCL</a> etc)  <a href="classvsmc_1_1_configure_c_l.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure OpenCL runtime behavior (used by <a class="el" href="classvsmc_1_1_move_c_l.html" title="Sampler<T>::move_type subtype using OpenCL. ">MoveCL</a> etc)  <a href="classvsmc_1_1_configure_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#ab24a4c7ce336f767122462db3b3f6110">Sampler&lt;T&gt;::init_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_initialize_c_l.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#ab24a4c7ce336f767122462db3b3f6110">Sampler&lt;T&gt;::init_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_initialize_c_l.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL&lt; T, PlaceHolder &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#ab24a4c7ce336f767122462db3b3f6110">Sampler&lt;T&gt;::init_type</a> subtype using OpenCL.  <a href="classvsmc_1_1_initialize_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_is_derived_from_state_c_l.html">vsmc::internal::IsDerivedFromStateCL&lt; D &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_is_derived_from_state_c_l_impl.html">vsmc::internal::IsDerivedFromStateCLImpl&lt; D &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_monitor_eval_c_l.html">vsmc::MonitorEvalCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_monitor.html#a2b109c57c43b5dc85838083e57a6a80e">Monitor&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_monitor_eval_c_l.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html">vsmc::MonitorEvalCL&lt; T, PlaceHolder &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_monitor.html#a2b109c57c43b5dc85838083e57a6a80e">Monitor&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="classvsmc_1_1_monitor_eval_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_monitor_eval_c_l.html">vsmc::MonitorEvalCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_monitor.html#a2b109c57c43b5dc85838083e57a6a80e">Monitor&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_monitor_eval_c_l.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html">vsmc::MoveCL&lt; T, PlaceHolder &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#a068cfc8f7d2b1fdc467a96a9c2a255e1">Sampler&lt;T&gt;::move_type</a> subtype using OpenCL.  <a href="classvsmc_1_1_move_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_move_c_l.html">vsmc::MoveCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#a068cfc8f7d2b1fdc467a96a9c2a255e1">Sampler&lt;T&gt;::move_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_move_c_l.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_move_c_l.html">vsmc::MoveCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#a068cfc8f7d2b1fdc467a96a9c2a255e1">Sampler&lt;T&gt;::move_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_move_c_l.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_path_eval_c_l.html">vsmc::PathEvalCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html#a841756a39777c012bfb94c370f711734">Path&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_path_eval_c_l.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_path_eval_c_l.html">vsmc::PathEvalCL&lt; T, typename &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html#a841756a39777c012bfb94c370f711734">Path&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_path_eval_c_l.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_c_l.html">vsmc::PathEvalCL&lt; T, PlaceHolder &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html#a841756a39777c012bfb94c370f711734">Path&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="classvsmc_1_1_path_eval_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_state_c_l.html">vsmc::StateCL&lt; StateSize, FPType, ID &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using OpenCL.  <a href="singletonvsmc_1_1_state_c_l.html#details">More...</a><br /></td></tr>
@@ -156,6 +145,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a790e7ac274d33c494cd0e2f8b1d1dd3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a790e7ac274d33c494cd0e2f8b1d1dd3d">VSMC_DEFINE_OPENCL_CONFIGURE_KERNEL</a></td></tr>
+<tr class="separator:a790e7ac274d33c494cd0e2f8b1d1dd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2ee76d329180f3fe1bc8671164b394"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a5a2ee76d329180f3fe1bc8671164b394">VSMC_DEFINE_OPENCL_COPY</a>(Name)</td></tr>
+<tr class="separator:a5a2ee76d329180f3fe1bc8671164b394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22a62151fdad1bc0d768d0a5e6f85e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#ad22a62151fdad1bc0d768d0a5e6f85e3">VSMC_DEFINE_OPENCL_MEMBER_DATA</a></td></tr>
+<tr class="separator:ad22a62151fdad1bc0d768d0a5e6f85e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740a8b2df8507b81ecd080fa278c241a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a740a8b2df8507b81ecd080fa278c241a">VSMC_DEFINE_OPENCL_MOVE</a>(Name)</td></tr>
+<tr class="separator:a740a8b2df8507b81ecd080fa278c241a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4d6a13bb800c620a5c5788959fea22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#aec4d6a13bb800c620a5c5788959fea22">VSMC_DEFINE_OPENCL_SET_KERNEL</a></td></tr>
+<tr class="separator:aec4d6a13bb800c620a5c5788959fea22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd71b35664e569e736bb330357a9856c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#afd71b35664e569e736bb330357a9856c">VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_BUILD</a>(func)</td></tr>
 <tr class="separator:afd71b35664e569e736bb330357a9856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae71227936e9622aa2364773dce114ffc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#ae71227936e9622aa2364773dce114ffc">VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_COPY_SIZE_MISMATCH</a>&#160;&#160;&#160;<a class="el" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((N == size_), (&quot;**StateCL::copy** SIZE MISMATCH&quot;))</td></tr>
@@ -182,6 +181,105 @@ Functions</h2></td></tr>
 <tr class="separator:a26a5303f30c2f8aedc479f24bd30e7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a790e7ac274d33c494cd0e2f8b1d1dd3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_DEFINE_OPENCL_CONFIGURE_KERNEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">ConfigureCL &amp;configure () {<span class="keywordflow">return</span> configure_;}                               \</div>
+<div class="line">const ConfigureCL &amp;configure ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> configure_;}                   \</div>
+<div class="line">::cl::Kernel &amp;kernel () {<span class="keywordflow">return</span> kernel_;}                                    \</div>
+<div class="line">const ::cl::Kernel &amp;kernel ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> kernel_;}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00105">105</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a2ee76d329180f3fe1bc8671164b394"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_DEFINE_OPENCL_COPY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">Name () : build_id_(-1) {}                                                   \</div>
+<div class="line">Name (<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>;                               \</div>
+<div class="line">Name&lt;T, PlaceHolder&gt; &amp;operator= (<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>;    \</div>
+<div class="line">virtual ~Name () {}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00046">46</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad22a62151fdad1bc0d768d0a5e6f85e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_DEFINE_OPENCL_MEMBER_DATA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">ConfigureCL configure_;                                                      \</div>
+<div class="line">int build_id_;                                                               \</div>
+<div class="line">::cl::Kernel kernel_;                                                        \</div>
+<div class="line">std::string kernel_name_</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00120">120</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a740a8b2df8507b81ecd080fa278c241a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_DEFINE_OPENCL_MOVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">Name (Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                                    \</div>
+<div class="line">Name&lt;T, PlaceHolder&gt; &amp;operator= (Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00053">53</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec4d6a13bb800c620a5c5788959fea22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_DEFINE_OPENCL_SET_KERNEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (build_id_ != particle.value().build_id() || kernel_name_ != kname) {     \</div>
+<div class="line">    build_id_ = particle.value().build_id();                                 \</div>
+<div class="line">    kernel_name_ = kname;                                                    \</div>
+<div class="line">    kernel_ = particle.value().create_kernel(kernel_name_);                  \</div>
+<div class="line">    configure_.local_size(particle.size(),                                   \</div>
+<div class="line">            kernel_, particle.value().manager().device());                   \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00111">111</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="afd71b35664e569e736bb330357a9856c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +298,7 @@ Functions</h2></td></tr>
 <div class="line">             <span class="stringliteral">&quot;**StateCL::build**&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00032">32</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00033">33</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +312,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00040">40</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00041">41</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -232,7 +330,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00037">37</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00038">38</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +352,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
 <div class="ttc" id="group___definitions_html_ggae93b041dd146815d8ee3f190409795f7a3f0f7c9280e1b55ccd3f4c2575772402"><div class="ttname"><a href="group___definitions.html#ggae93b041dd146815d8ee3f190409795f7a3f0f7c9280e1b55ccd3f4c2575772402">vsmc::Dynamic</a></div><div class="ttdoc">Used to specify a dimension template parameter is dynamic. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00068">defines.hpp:68</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00019">19</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00020">20</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +374,7 @@ Functions</h2></td></tr>
 <div class="line">            USE_StateCL_WITH_A_FP_TYPE_OTHER_THAN_cl_float_AND_cl_double)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00027">27</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00028">28</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +405,7 @@ Functions</h2></td></tr>
 <div class="line">            USE_##user##_WITH_A_STATE_TYPE_NOT_DERIVED_FROM_StateCL)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00023">23</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00024">24</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

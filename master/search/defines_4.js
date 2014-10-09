@@ -60,8 +60,6 @@ var searchData=
   ['vsmc_5fmac_5f10_5f9',['VSMC_MAC_10_9',['../compiler_8hpp.html#a43146227cc645e4c40b9f3b02056db0f',1,'compiler.hpp']]],
   ['vsmc_5fmac_5fversion',['VSMC_MAC_VERSION',['../compiler_8hpp.html#a5aa23fadd3ecfdd38dad63e44f2af147',1,'compiler.hpp']]],
   ['vsmc_5fmac_5fversion_5fmin_5frequired',['VSMC_MAC_VERSION_MIN_REQUIRED',['../compiler_8hpp.html#a6929e1d093746ca6fb0cdb79bd7fc42c',1,'compiler.hpp']]],
-  ['vsmc_5fmath_5finteger_5ffunction_5fint',['VSMC_MATH_INTEGER_FUNCTION_INT',['../integer__function_8hpp.html#a6b63d80eab0cae6b8d3329ba45ac7d8e',1,'integer_function.hpp']]],
-  ['vsmc_5fmath_5finteger_5ffunction_5fuint',['VSMC_MATH_INTEGER_FUNCTION_UINT',['../integer__function_8hpp.html#a21237dc3f717d319dd9a6c726b556159',1,'integer_function.hpp']]],
   ['vsmc_5fmmx',['VSMC_MMX',['../compiler_8hpp.html#a1df8bad4efc9677751c6ebbb1c77bb56',1,'compiler.hpp']]],
   ['vsmc_5fmne',['VSMC_MNE',['../defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0',1,'defines.hpp']]],
   ['vsmc_5fmsvc_5fnonexist',['VSMC_MSVC_NONEXIST',['../msvc_8hpp.html#a86948e5ee40f2b75b0578282792296e9',1,'msvc.hpp']]],

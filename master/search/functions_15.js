@@ -1,11 +1,9 @@
 var searchData=
 [
   ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup']]],
-  ['weight',['weight',['../classvsmc_1_1_weight_set.html#a756ac5e464fc661243bfafd50f0fcd91',1,'vsmc::WeightSet::weight()'],['../classvsmc_1_1_weight_set_empty.html#ab7c7286cbae172375ffa08da592dd033',1,'vsmc::WeightSetEmpty::weight()']]],
+  ['weight',['weight',['../classvsmc_1_1_weight_set.html#a756ac5e464fc661243bfafd50f0fcd91',1,'vsmc::WeightSet::weight(size_type id) const '],['../classvsmc_1_1_weight_set.html#a7d39ace04c6a5a3e058357c1d988295b',1,'vsmc::WeightSet::weight()'],['../classvsmc_1_1_weight_set.html#a1b6558558d485737782c5da27a720c78',1,'vsmc::WeightSet::weight() const '],['../classvsmc_1_1_weight_set_empty.html#ab7c7286cbae172375ffa08da592dd033',1,'vsmc::WeightSetEmpty::weight()']]],
   ['weight2log_5fweight',['weight2log_weight',['../classvsmc_1_1_weight_set.html#aa8afe17e88e12bd8c2b0f7e7f5a6ab23',1,'vsmc::WeightSet']]],
-  ['weight_5fptr',['weight_ptr',['../classvsmc_1_1_weight_set.html#a9b4c19a177dbbf5ea6de556a5e760308',1,'vsmc::WeightSet::weight_ptr()'],['../classvsmc_1_1_weight_set.html#a21e25e59377f39022298baeb745ad1df',1,'vsmc::WeightSet::weight_ptr() const ']]],
   ['weight_5fset',['weight_set',['../classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b',1,'vsmc::Particle::weight_set()'],['../classvsmc_1_1_particle.html#aa9ee51b66a2e46574c44a9097779a775',1,'vsmc::Particle::weight_set() const ']]],
-  ['weight_5fvec',['weight_vec',['../classvsmc_1_1_weight_set.html#abb67b03b38ad227003e7d1bb6db23114',1,'vsmc::WeightSet::weight_vec()'],['../classvsmc_1_1_weight_set.html#af3a5bc44e209b6b326808c5effbf5b85',1,'vsmc::WeightSet::weight_vec() const ']]],
   ['weightset',['WeightSet',['../classvsmc_1_1_weight_set.html#a8b746cc44090b0b111f420bc1fdb27ae',1,'vsmc::WeightSet::WeightSet(size_type N)'],['../classvsmc_1_1_weight_set.html#a5e0907198f1cc32bc4b53bcd82e8730e',1,'vsmc::WeightSet::WeightSet(const WeightSet &amp;)=default'],['../classvsmc_1_1_weight_set.html#a9f7ac8f287d8872481f24dd38e1e1d90',1,'vsmc::WeightSet::WeightSet(WeightSet &amp;&amp;)=default']]],
   ['weightsetempty',['WeightSetEmpty',['../classvsmc_1_1_weight_set_empty.html#ab2b027673df17cee576ee65f65f1a746',1,'vsmc::WeightSetEmpty']]],
   ['weightsetmpi',['WeightSetMPI',['../singletonvsmc_1_1_weight_set_m_p_i.html#a935304879a2bb9fd225e3f7b969f403e',1,'vsmc::WeightSetMPI']]],

@@ -174,8 +174,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="singletonvsmc_1_1_weight_set_m_p_i.html#a9940223310523c2ac238b09431babff0">barrier</a>();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> size_type N = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(this-&gt;size());</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> weight = this-&gt;weight_ptr();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> log_weight = this-&gt;log_weight_ptr();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> weight = &amp;this-&gt;weight()[0];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> log_weight = &amp;this-&gt;log_weight()[0];</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        this-&gt;set_ess(static_cast&lt;double&gt;(resample_size_));</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> ew = 1 / this-&gt;ess();</div>
@@ -200,7 +200,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="singletonvsmc_1_1_weight_set_m_p_i.html#a9940223310523c2ac238b09431babff0">barrier</a>();</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">const</span> size_type N = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(this-&gt;size());</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> lwptr = this-&gt;log_weight_ptr();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> lwptr = &amp;this-&gt;log_weight()[0];</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">double</span> lmax_weight = lwptr[0];</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i)</div>
@@ -220,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="singletonvsmc_1_1_weight_set_m_p_i.html#a9940223310523c2ac238b09431babff0">barrier</a>();</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">const</span> size_type N = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(this-&gt;size());</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = this-&gt;weight_ptr();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = &amp;this-&gt;weight()[0];</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">double</span> lcoeff = 0;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i)</div>
@@ -253,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> bptr = &amp;buffer[0];</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span> (use_log) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> lwptr = this-&gt;log_weight_ptr();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> lwptr = &amp;this-&gt;log_weight()[0];</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                bptr[i] = lwptr[i] + first[i];</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordtype">double</span> lmax_weight = bptr[0];</div>
@@ -268,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                bptr[i] = exp(bptr[i]);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = this-&gt;weight_ptr();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = &amp;this-&gt;weight()[0];</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                bptr[i] = wptr[i] * first[i];</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
@@ -302,7 +302,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">const</span> size_type N = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(this-&gt;size());</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *bptr = first;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = this-&gt;weight_ptr();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = &amp;this-&gt;weight()[0];</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        std::vector&lt;double&gt; buffer;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span> (use_log) {</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            buffer.resize(N);</div>
@@ -339,9 +339,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">void</span> gather_resample_weight ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span> (world_.rank() == 0)</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            ::boost::mpi::gather(world_, this-&gt;weight_vec(), weight_all_, 0);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            ::boost::mpi::gather(world_, this-&gt;weight(), weight_all_, 0);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        else</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            ::boost::mpi::gather(world_, this-&gt;weight_vec(), 0);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            ::boost::mpi::gather(world_, this-&gt;weight(), 0);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}; <span class="comment">// class WeightSetMPI</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>

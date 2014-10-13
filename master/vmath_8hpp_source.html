@@ -114,30 +114,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmath_8hpp.html">vsmc/cxx11/cmath.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a42b94181cbc1c531187a00cc7da8ac7d">   16</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_1(ns, name) \</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    template &lt;typename T&gt;                                                    \</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    inline void v##name (std::size_t n, const T *a, T *y)                    \</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    {                                                                        \</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">        using ns::name;                                                      \</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">        for (std::size_t i = 0; i != n; ++i)                                 \</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">            y[i] = name(a[i]);                                               \</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">template &lt;typename T&gt;                                                        \</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">inline void v##name (std::size_t n, const T *a, T *y)                        \</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    using ns::name;                                                          \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    for (std::size_t i = 0; i != n; ++i)                                     \</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        y[i] = name(a[i]);                                                   \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a585730dfb140d13c797162d07f27105c">   25</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_2(ns, name) \</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">    template &lt;typename T&gt;                                                    \</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    inline void v##name (std::size_t n, const T *a, const T *b, T *y)        \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    {                                                                        \</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">        using ns::name;                                                      \</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        for (std::size_t i = 0; i != n; ++i)                                 \</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">            y[i] = name(a[i], b[i]);                                         \</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">template &lt;typename T&gt;                                                        \</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">inline void v##name (std::size_t n, const T *a, const T *b, T *y)            \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">    using ns::name;                                                          \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    for (std::size_t i = 0; i != n; ++i)                                     \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">        y[i] = name(a[i], b[i]);                                             \</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#ad2ec7547db3c4871eb06e68ddbaaabee">   34</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_B(name, op) \</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    template &lt;typename T&gt;                                                    \</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    inline void v##name (std::size_t n, const T *a, const T *b, T *y)        \</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    {                                                                        \</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">        for (std::size_t i = 0; i != n; ++i)                                 \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">            y[i] = a[i] op b[i];                                             \</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">template &lt;typename T&gt;                                                        \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">inline void v##name (std::size_t n, const T *a, const T *b, T *y)            \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    for (std::size_t i = 0; i != n; ++i)                                     \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">        y[i] = a[i] op b[i];                                                 \</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
@@ -245,114 +245,253 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#include &lt;mkl_vml.h&gt;</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">  218</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_VML_1(name, vname) \</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">    (std::size_t n, const float *a, float *y)                                \</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">    {::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, y);}                            \</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">    (std::size_t n, float *a, float *y)                                      \</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">    {::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, y);}                            \</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">    (std::size_t n, const double *a, double *y)                              \</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">    {::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, y);}                            \</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">    (std::size_t n, double *a, double *y)                                    \</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">    {::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, y);}</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">  232</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_VML_2(name, vname) \</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">    (std::size_t n, const float *a, const float *b, float *y)                \</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">    {::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">    (std::size_t n, float *a, const float *b, float *y)                      \</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">    {::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">    (std::size_t n, const float *a, float *b, float *y)                      \</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">    {::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">    (std::size_t n, float *a, float *b, float *y)                            \</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">    {::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">    (std::size_t n, const double *a, const double *b, double *y)             \</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">    {::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">    (std::size_t n, double *a, const double *b, double *y)                   \</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">    {::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">    (std::size_t n, const double *a, double *b, double *y)                   \</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">    {::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}                         \</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">    inline void v##name                                                      \</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">    (std::size_t n, double *a, double *b, double *y)                         \</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">    {::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);}</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">  219</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD 1000</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_abs</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a99b219e2dd9930db25298a58d1c5d0c8">  223</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_abs VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_acos</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a508b8f873cf88409a81205fe92bce127">  227</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_acos VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_acosh</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#adbcec4a0474436ca9f9f36e16453c1d3">  231</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_acosh VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_asin</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a7dba2f720a10087057ee801641cb9750">  235</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_asin VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_asinh</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#ac562ebae7341897a0852c56c77ae416b">  239</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_asinh VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_atan</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#aecbf5f5b8a70e58ca3501e0040a76875">  243</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_atan VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_atanh</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a032e304e571c02b3080fa9fcee2a2ba3">  247</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_atanh VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_cbrt</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a30e7e1895525baf14f72ebdec87ef585">  251</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_cbrt VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_cos</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a9cb5786b73bc2b8d1a7204fc90f62085">  255</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_cos VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">namespace </span>math {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_cosh</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a5f8a45e9f680f4f7942026c1a4724a65">  259</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_cosh VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a63edd43fe2bdaa2e0db69993511bb380">  262</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(abs,     Abs)</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a0fe02ce43175d6410c6d4f3f9df6613b">  263</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(acos,    Acos)</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a17d992cd6f973060f2245e64d9bee201">  264</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(acosh,   Acosh)</div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a418b491bcf26f286f46e7f847c24ec9a">  265</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(asin,    Asin)</div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#adf64eba1e2e5efdc9327fdf61800f5eb">  266</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(asinh,   Asinh)</div>
-<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#aeeee9bb0b52d0434dd50f95b5382e9fd">  267</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(atan,    Atan)</div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ab7b1cf6bfbe4ee3462660a089f179c82">  268</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(atanh,   Atanh)</div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a10f9df24a5f0bc6a3e898877ab56cd21">  269</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(cbrt,    Cbrt)</div>
-<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a3d0a9c84aacdb05b9f01c39c2a5bc498">  270</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(cos,     Cos)</div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a1c160bb057399cd916fe1149906b3ec2">  271</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(cosh,    Cosh)</div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#af4aa4378be5c5e22f66e67d297cfb7dd">  272</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(erf,     Erf)</div>
-<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a0e29ea9096bdb115d95990f22724486a">  273</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(erfc,    Erfc)</div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ac524677aaf65b8fcafc193f537a461e8">  274</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(exp,     Exp)</div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a62779384bf5d42d41d5dd55b548a2b8f">  275</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(expm1,   Expm1)</div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a866a60c8070a1849082e3e32dbcc24f4">  276</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(inv,     Inv)</div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ac5b8ee390488f3357432f0801136ad39">  277</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(invcbrt, InvCbrt)</div>
-<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ad405df45cfd34aab7803330db132ba83">  278</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(invsqrt, InvSqrt)</div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a7f9a095e913e55c9a345fe86d14eb4ec">  279</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(lgamma,  LGamma)</div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#af53b28c6a06cb2cc8d1d85f8e7680fae">  280</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(log,     Ln)</div>
-<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#aced83696390be246dc3aead76d974347">  281</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(log10,   Log10)</div>
-<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#aae561cf8b7973462b573508cc2f4384c">  282</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(log1p,   Log1p)</div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a11cd98e12f2128c76a61af069191767c">  283</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sin,     Sin)</div>
-<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a2bff25c7751e8f1690e6fe91c8f2e52c">  284</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sinh,    Sinh)</div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#aa3b25872e7bed6ba344130fcd0df6dde">  285</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sqr,     Sqr)</div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a8fd638a536f4b3a59d7d1d7c1843ebf6">  286</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sqrt,    Sqrt)</div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a93a13653f3acd3caa4476bb54650e3a4">  287</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(tan,     Tan)</div>
-<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a10356ae2cc58257b6615cdc140e61384">  288</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(tanh,    Tanh)</div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a1485c8f4a8ed822bef0485ad7e7ec1b2">  289</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(tgamma,  TGamma)</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a076e778f29093bed7640b3fbe255ab57">  291</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(add,   Add)</div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a9c1e08844ac9a98dc5f14730a33798a1">  292</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(div,   Div)</div>
-<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a7f933439428a97ee566fe19a0f4e21fa">  293</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(hypot, Hypot)</div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ac173b4956a9499e3f3cd8297d8c91c1f">  294</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(mul,   Mul)</div>
-<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a78d6cb1170101e4eef331a786dc41b30">  295</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(pow,   Pow)</div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a1e56bf5b319441b78e45c43a9f156ce2">  296</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(sub,   Sub)</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_erf</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a58688519d13b828299983ded3420e61a">  263</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_erf VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_erfc</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a295e28310d58b7a4a65c9fb0a59a6059">  267</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_erfc VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_exp</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a51d93daac9c84fdac08f905011f11021">  271</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_exp VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_expm1</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a84af1c0f78a662fe33cd50c922593825">  275</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_expm1 VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_inv</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#abf9ef556858bc334c613c9d117976bea">  279</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_inv VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_invcbrt</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#abb4bc099d14a37cb851c4ff7577e4975">  283</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_invcbrt VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_invsqrt</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#ad9d82410a02c075098200c2966807eae">  287</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_invsqrt VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_lgamma</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a2ba23500b7f08862c0adc104bdf0f8d2">  291</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_lgamma VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_log</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#aad71686634e71668487b90ca40d0f6f7">  295</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_log VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a2b711bc16653bd2928a73d9541b12ce1">  298</a></span>&#160;inline <span class="keywordtype">void</span> <a class="code" href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vpowx</a> (<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> n, const <span class="keywordtype">float</span> *a, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> *y)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;{::vsPowx(static_cast&lt;MKL_INT&gt;(n), a, b, y);}</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#af21989f260e9213060be395f663075ff">  301</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vpowx</a> (std::size_t n, <span class="keywordtype">float</span> *a, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> *y)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{::vsPowx(static_cast&lt;MKL_INT&gt;(n), a, b, y);}</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ab1e8dd4b1423d3d9a12d29408e2eefca">  304</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vpowx</a> (std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> *y)</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{::vdPowx(static_cast&lt;MKL_INT&gt;(n), a, b, y);}</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a303b972e8e6ad4da206719e7d44183b8">  307</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vpowx</a> (std::size_t n, <span class="keywordtype">double</span> *a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> *y)</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{::vdPowx(static_cast&lt;MKL_INT&gt;(n), a, b, y);}</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_log10</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#aa9565c7b0ab716999a0d0bad93260b8e">  299</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_log10 VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_log1p</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a627d6f3ad8e48f30dd4755d43b39cac6">  303</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_log1p VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_sin</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#aa2f64448533193b6ee38179539e49b0a">  307</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_sin VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;} <span class="comment">// namespace vsmc::math</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_sinh</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a2160db02408da556b1e0c9b2de39dca7">  311</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_sinh VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif // VSMC_USE_MKL_VML</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif // VSMC_MATH_VMATH_HPP</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_sqr</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#ae6a241deba920b62fde7e10e8eab22a7">  315</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_sqr VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_sqrt</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a3be5e85917cc17d5810393bbcb004d91">  319</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_sqrt VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_tan</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a14956f46028700654216681dc950bb9a">  323</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_tan VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_tanh</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a96ea69d7e0dcd4a86da17333e2c70d5e">  327</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_tanh VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_tgamma</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a232e57064f09ae58745564087d452c81">  331</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_tgamma VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_add</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a35c4c74c8c4563c14a482c2a014c467a">  335</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_add VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_div</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#abe15f7d0b75b6692543a091add754767">  339</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_div VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_hypot</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a05a2c51c9160c8f5a97a2924f0ac335a">  343</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_hypot VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_mul</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a24737f75bc332332d1419857f7723e61">  347</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_mul VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_pow</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#ac4de8632b88017dcb0eecb110d3d1e88">  351</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_pow VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_sub</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a654dcf4c578d1973af9924b4076fd512">  355</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_sub VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#ifndef VSMC_VMATH_VML_THRESHOLD_powx</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a0d4d766d8b00c35528d2238205ca0d1e">  359</a></span>&#160;<span class="preprocessor">#define VSMC_VMATH_VML_THRESHOLD_powx VSMC_VMATH_VML_THRESHOLD</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">  362</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_VML_1(name, vname) \</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">inline void v##name                                                          \</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">(std::size_t n, const float *a, float *y)                                    \</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">    n &lt; VSMC_VMATH_VML_THRESHOLD_##name ?                                    \</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor">        v##name&lt;float&gt;(n, a, y):                                             \</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">        ::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, y);                          \</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">}                                                                            \</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">inline void v##name                                                          \</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">(std::size_t n, const double *a, double *y)                                  \</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">    n &lt; VSMC_VMATH_VML_THRESHOLD_##name ?                                    \</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">        v##name&lt;double&gt;(n, a, y):                                            \</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">        ::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, y);                          \</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">  378</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_VMATH_VML_2(name, vname) \</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor">inline void v##name                                                          \</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">(std::size_t n, const float *a, const float *b, float *y)                    \</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">    n &lt; VSMC_VMATH_VML_THRESHOLD_##name ?                                    \</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">        v##name&lt;float&gt;(n, a, b, y):                                          \</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">        ::vs##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);                       \</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">}                                                                            \</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor">inline void v##name                                                          \</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">(std::size_t n, const double *a, const double *b, double *y)                 \</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">{                                                                            \</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">    n &lt; VSMC_VMATH_VML_THRESHOLD_##name ?                                    \</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">        v##name&lt;double&gt;(n, a, b, y):                                         \</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">        ::vd##vname(static_cast&lt;MKL_INT&gt;(n), a, b, y);                       \</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">namespace </span>math {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a8be1dcf27b9de8fc24ec2b31f15eb7f0">  398</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(abs,     Abs)</div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a527b406494c4d38baa6d2cd204b8ebcb">  399</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(acos,    Acos)</div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a0ab2fdb9349f5af7b270114027ac38e5">  400</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(acosh,   Acosh)</div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a2deedd01dbacbe55af2db4b49eb0cc0c">  401</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(asin,    Asin)</div>
+<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a2cee5346048d759abd01ff91e0cba66b">  402</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(asinh,   Asinh)</div>
+<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a73a03025c4cc47f40250ae87a3224381">  403</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(atan,    Atan)</div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a9cf9abc9a5f7fd0e401a49deb76adf55">  404</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(atanh,   Atanh)</div>
+<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a2f17931903f1d53811bae566949acddb">  405</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(cbrt,    Cbrt)</div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a7c1cfd4d3114fc5f108f2d0613be111c">  406</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(cos,     Cos)</div>
+<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a9ea5868fa5264b50086d84272a540cb3">  407</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(cosh,    Cosh)</div>
+<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#abc6ba5827327ff120c6f246cf7711f54">  408</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(erf,     Erf)</div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a98b4cc2dd9bec43a970411093a197e28">  409</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(erfc,    Erfc)</div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ad265aee53c986adbc3a99f0dce2bda6b">  410</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(exp,     Exp)</div>
+<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a1e288ac7f6d7f34e3d73a03f6aab972b">  411</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(expm1,   Expm1)</div>
+<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#adf77107eb1e99b8235fcfec31ba2ab8f">  412</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(inv,     Inv)</div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#af949011749e0ab8c6845f6592328ab39">  413</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(invcbrt, InvCbrt)</div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a5f2e1816d40a1fa950c64c44d9e7b904">  414</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(invsqrt, InvSqrt)</div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#af0a752f69b455ddd52930423f031de12">  415</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(lgamma,  LGamma)</div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#aa7852f4dd2803577a38de5b01787b93f">  416</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(log,     Ln)</div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a8c7beae1acf3fa8d5b2338521ab9e5e9">  417</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(log10,   Log10)</div>
+<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a10aeb882ca6105df2c9a3afe1ade6664">  418</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(log1p,   Log1p)</div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a6875c21c09771faab131dcb986778b70">  419</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sin,     Sin)</div>
+<div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a4d8850f073542c9536789244a2fa59f7">  420</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sinh,    Sinh)</div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#afe92d5e58942d4a5ad768a756c967b69">  421</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sqr,     Sqr)</div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#abf77dc049c406f580a7f38d20c67be6e">  422</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(sqrt,    Sqrt)</div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a516659c157cc0e020381cc1251e91067">  423</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(tan,     Tan)</div>
+<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ade1b04e156068e88f5c86516a72e2b48">  424</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(tanh,    Tanh)</div>
+<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a7bfbde718bee221fb0f0f45892e94e4b">  425</a></span>&#160;<a class="code" href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a>(tgamma,  TGamma)</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a8d63fdd95d8261acb6a2de4ef52bc9ce">  427</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(add,   Add)</div>
+<div class="line"><a name="l00428"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ad611a1a68ba729fce8dbd4c4b83008bf">  428</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(div,   Div)</div>
+<div class="line"><a name="l00429"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a9c9aa77d63e3c24fee4b283f64eebcf0">  429</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(hypot, Hypot)</div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ab373a67c490d0ef935e4d58f63c1b4eb">  430</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(mul,   Mul)</div>
+<div class="line"><a name="l00431"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a31b1b2ff09d31ff54b8f9c485f1955cf">  431</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(pow,   Pow)</div>
+<div class="line"><a name="l00432"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ac73b0d1fae05c5195cd700154a1cad3b">  432</a></span>&#160;<a class="code" href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a>(sub,   Sub)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
+<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#a2b711bc16653bd2928a73d9541b12ce1">  434</a></span>&#160;inline <span class="keywordtype">void</span> <a class="code" href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vpowx</a> (<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> n, const <span class="keywordtype">float</span> *a, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> *y)</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;{</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    n &lt; <a class="code" href="vmath_8hpp.html#a0d4d766d8b00c35528d2238205ca0d1e">VSMC_VMATH_VML_THRESHOLD_powx</a> ?</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        vpowx&lt;float&gt;(n, a, b, y):</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        ::vsPowx(static_cast&lt;MKL_INT&gt;(n), a, b, y);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1math.html#ab1e8dd4b1423d3d9a12d29408e2eefca">  441</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vpowx</a> (std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> *y)</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;{</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    n &lt; <a class="code" href="vmath_8hpp.html#a0d4d766d8b00c35528d2238205ca0d1e">VSMC_VMATH_VML_THRESHOLD_powx</a> ?</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        vpowx&lt;double&gt;(n, a, b, y):</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        ::vdPowx(static_cast&lt;MKL_INT&gt;(n), a, b, y);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;} <span class="comment">// namespace vsmc::math</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">#endif // VSMC_USE_MKL_VML</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor">#endif // VSMC_MATH_VMATH_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
 <div class="ttc" id="group__v_math_html_gad95071d2a64da2701e36d4f1f38a727d"><div class="ttname"><a href="group__v_math.html#gad95071d2a64da2701e36d4f1f38a727d">vsmc::math::vpowx</a></div><div class="ttdeci">void vpowx(std::size_t n, const T *a, T b, T *y)</div><div class="ttdoc">For , compute . </div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00175">vmath.hpp:175</a></div></div>
 <div class="ttc" id="group__v_math_html_ga53a4152382fe966443badb622569b316"><div class="ttname"><a href="group__v_math.html#ga53a4152382fe966443badb622569b316">vsmc::math::vinvcbrt</a></div><div class="ttdeci">void vinvcbrt(std::size_t n, const T *a, T *y)</div><div class="ttdoc">For , compute . </div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00202">vmath.hpp:202</a></div></div>
 <div class="ttc" id="group__v_math_html_ga26c7bcb752baa8c95eae7f5ceeb865bb"><div class="ttname"><a href="group__v_math.html#ga26c7bcb752baa8c95eae7f5ceeb865bb">vsmc::math::vsqr</a></div><div class="ttdeci">void vsqr(std::size_t n, const T *a, T *y)</div><div class="ttdoc">For , compute . </div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00169">vmath.hpp:169</a></div></div>
-<div class="ttc" id="vmath_8hpp_html_a45b36ed606a0cd5fe837116c35f4f192"><div class="ttname"><a href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_VML_2(name, vname)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00232">vmath.hpp:232</a></div></div>
+<div class="ttc" id="vmath_8hpp_html_a45b36ed606a0cd5fe837116c35f4f192"><div class="ttname"><a href="vmath_8hpp.html#a45b36ed606a0cd5fe837116c35f4f192">VSMC_DEFINE_VMATH_VML_2</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_VML_2(name, vname)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00378">vmath.hpp:378</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="vmath_8hpp_html_a0d4d766d8b00c35528d2238205ca0d1e"><div class="ttname"><a href="vmath_8hpp.html#a0d4d766d8b00c35528d2238205ca0d1e">VSMC_VMATH_VML_THRESHOLD_powx</a></div><div class="ttdeci">#define VSMC_VMATH_VML_THRESHOLD_powx</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00359">vmath.hpp:359</a></div></div>
 <div class="ttc" id="group__v_math_html_ga1609e5a04ab36de3d2a89bccd51d1208"><div class="ttname"><a href="group__v_math.html#ga1609e5a04ab36de3d2a89bccd51d1208">vsmc::math::vinvsqrt</a></div><div class="ttdeci">void vinvsqrt(std::size_t n, const T *a, T *y)</div><div class="ttdoc">For , compute . </div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00191">vmath.hpp:191</a></div></div>
 <div class="ttc" id="vmath_8hpp_html_a585730dfb140d13c797162d07f27105c"><div class="ttname"><a href="vmath_8hpp.html#a585730dfb140d13c797162d07f27105c">VSMC_DEFINE_VMATH_2</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_2(ns, name)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00025">vmath.hpp:25</a></div></div>
-<div class="ttc" id="vmath_8hpp_html_a168f81d2efd271629e3559f00beff3b1"><div class="ttname"><a href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_VML_1(name, vname)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00218">vmath.hpp:218</a></div></div>
+<div class="ttc" id="vmath_8hpp_html_a168f81d2efd271629e3559f00beff3b1"><div class="ttname"><a href="vmath_8hpp.html#a168f81d2efd271629e3559f00beff3b1">VSMC_DEFINE_VMATH_VML_1</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_VML_1(name, vname)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00362">vmath.hpp:362</a></div></div>
 <div class="ttc" id="vmath_8hpp_html_a42b94181cbc1c531187a00cc7da8ac7d"><div class="ttname"><a href="vmath_8hpp.html#a42b94181cbc1c531187a00cc7da8ac7d">VSMC_DEFINE_VMATH_1</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_1(ns, name)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00016">vmath.hpp:16</a></div></div>
 <div class="ttc" id="group__v_math_html_gad7a885a84d626ff4098adf0c95fc1680"><div class="ttname"><a href="group__v_math.html#gad7a885a84d626ff4098adf0c95fc1680">vsmc::math::vinv</a></div><div class="ttdeci">void vinv(std::size_t n, const T *a, T *y)</div><div class="ttdoc">For , compute . </div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00181">vmath.hpp:181</a></div></div>
 <div class="ttc" id="vmath_8hpp_html_ad2ec7547db3c4871eb06e68ddbaaabee"><div class="ttname"><a href="vmath_8hpp.html#ad2ec7547db3c4871eb06e68ddbaaabee">VSMC_DEFINE_VMATH_B</a></div><div class="ttdeci">#define VSMC_DEFINE_VMATH_B(name, op)</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00034">vmath.hpp:34</a></div></div>

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['_7eclbuffer',['~CLBuffer',['../classvsmc_1_1_c_l_buffer.html#a0a43ea3ee4bf9b5f3f383c81020bd1d3',1,'vsmc::CLBuffer']]],
-  ['_7econstsingleparticle',['~ConstSingleParticle',['../classvsmc_1_1_const_single_particle.html#a012edf50eee8ea6dd7c5382643976911',1,'vsmc::ConstSingleParticle']]],
   ['_7edispatchobject',['~DispatchObject',['../classvsmc_1_1_dispatch_object.html#ae19d984ebc8de5007a1a9ee435d02eec',1,'vsmc::DispatchObject']]],
   ['_7egslgenerator',['~GSLGenerator',['../classvsmc_1_1_g_s_l_generator.html#ab3527c968be18daea0e5aa3bceba9565',1,'vsmc::GSLGenerator']]],
   ['_7einitializebase',['~InitializeBase',['../classvsmc_1_1_initialize_base.html#af44cb7d285b440eef06f955450ad0936',1,'vsmc::InitializeBase::~InitializeBase()'],['../classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a10720ee0dcbf69535ecb7d945e7a5bb4',1,'vsmc::InitializeBase&lt; T, Virtual &gt;::~InitializeBase()']]],
@@ -46,7 +45,6 @@ var searchData=
   ['_7eprogramoption',['~ProgramOption',['../classvsmc_1_1_program_option.html#afc2054497f38d1c1612c0e2543dad989',1,'vsmc::ProgramOption']]],
   ['_7eprogramoptionmap',['~ProgramOptionMap',['../classvsmc_1_1_program_option_map.html#a45d31f972528fad53dc53fb4787fdd02',1,'vsmc::ProgramOptionMap']]],
   ['_7escopedstopwatch',['~ScopedStopWatch',['../classvsmc_1_1_scoped_stop_watch.html#ae4fad60935d0e2e3fe35c5d078cd9148',1,'vsmc::ScopedStopWatch']]],
-  ['_7esingleparticle',['~SingleParticle',['../classvsmc_1_1_single_particle.html#a8fb4a51e158d5c6696e671e2d6380f1d',1,'vsmc::SingleParticle']]],
   ['_7ethreadguard',['~ThreadGuard',['../classvsmc_1_1_thread_guard.html#a37c174621eb97ee33b76a644561d50cd',1,'vsmc::ThreadGuard']]],
   ['_7eweightset',['~WeightSet',['../classvsmc_1_1_weight_set.html#aa752857b142c2d074b20fbe061728f76',1,'vsmc::WeightSet']]]
 ];

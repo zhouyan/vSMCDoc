@@ -71,7 +71,7 @@ var searchData=
   ['dispatchvnode',['DispatchVnode',['../group___dispatch.html#gga04c4b9a9b74a7e5ba2eba1a77af01f84a86a5524d0b783f7d79b723010cb02679',1,'vsmc']]],
   ['dispatchwrite',['DispatchWrite',['../group___dispatch.html#gga04c4b9a9b74a7e5ba2eba1a77af01f84a019517226bbbdba49b0e4e47c38b748d',1,'vsmc']]],
   ['distribution_5ftype',['distribution_type',['../classvsmc_1_1_stable_distribution_1_1param__type.html#ae80be3f0ca39a00a7c15acb1291bb1ff',1,'vsmc::StableDistribution::param_type::distribution_type()'],['../classvsmc_1_1_uniform_real_distribution_1_1param__type.html#aa9c9fd9f7dbb8bec1b37e6c79dff898f',1,'vsmc::UniformRealDistribution::param_type::distribution_type()']]],
-  ['divisor',['divisor',['../classvsmc_1_1_seed_generator.html#adad33b1c730152f264517a4eb0503d09',1,'vsmc::SeedGenerator']]],
+  ['divisor',['divisor',['../classvsmc_1_1_seed_generator.html#a15c36a3de350b16aa33bd0395f87f42b',1,'vsmc::SeedGenerator::divisor()'],['../classvsmc_1_1_seed_generator_3_01_i_d_00_01_array_3_01_t_00_01_k_01_4_01_4.html#ad615a04833a5184b69a9cc5ada0f52bb',1,'vsmc::SeedGenerator&lt; ID, Array&lt; T, K &gt; &gt;::divisor()']]],
   ['draw',['draw',['../classvsmc_1_1_weight_set.html#a36f660f32258243f290d170b4199b501',1,'vsmc::WeightSet::draw()'],['../classvsmc_1_1_weight_set_empty.html#af447b5ab93c0451dbdcdb778d1223b2d',1,'vsmc::WeightSetEmpty::draw()']]],
   ['dummystopwatch',['DummyStopWatch',['../classvsmc_1_1internal_1_1_dummy_stop_watch.html',1,'vsmc::internal']]],
   ['dynamic',['Dynamic',['../group___definitions.html#ggae93b041dd146815d8ee3f190409795f7a3f0f7c9280e1b55ccd3f4c2575772402',1,'vsmc']]]

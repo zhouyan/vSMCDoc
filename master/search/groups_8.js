@@ -5,5 +5,6 @@ var searchData=
   ['property_20queries',['Property queries',['../group___c_x_x11_traits_queries.html',1,'']]],
   ['program_20option',['Program option',['../group___option.html',1,'']]],
   ['parallel_20pattern_20library',['Parallel Pattern Library',['../group___p_p_l.html',1,'']]],
-  ['progress',['Progress',['../group___progress.html',1,'']]]
+  ['progress',['Progress',['../group___progress.html',1,'']]],
+  ['power_20and_20root_20functions',['Power and root functions',['../group__v_power.html',1,'']]]
 ];

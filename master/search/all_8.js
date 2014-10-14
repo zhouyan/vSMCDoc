@@ -50,5 +50,6 @@ var searchData=
   ['hdf5store_5fdata_5fframe',['hdf5store_data_frame',['../group___h_d_f5_i_o.html#ga6ca39c18bea4d5de4426d52e971f023d',1,'vsmc::hdf5store_data_frame(std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIterIter first, SInputIter sfirst, bool append=false)'],['../group___h_d_f5_i_o.html#ga59233c2ea117a99530571f26bcc9a60c',1,'vsmc::hdf5store_data_frame(std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, SInputIter sfirst, bool append=false)']]],
   ['hdf5store_5fmatrix',['hdf5store_matrix',['../group___h_d_f5_i_o.html#ga34c74ca84fd2394a0e21c1968e108ec7',1,'vsmc']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
-  ['hours',['hours',['../classvsmc_1_1internal_1_1_dummy_stop_watch.html#a26b3ee750057b4f94c3854ed85210dda',1,'vsmc::internal::DummyStopWatch::hours()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter::hours()']]]
+  ['hours',['hours',['../classvsmc_1_1internal_1_1_dummy_stop_watch.html#a26b3ee750057b4f94c3854ed85210dda',1,'vsmc::internal::DummyStopWatch::hours()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter::hours()']]],
+  ['hyperbolic_20functions',['Hyperbolic functions',['../group__v_hyperbolic.html',1,'']]]
 ];

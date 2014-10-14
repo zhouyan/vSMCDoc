@@ -390,8 +390,8 @@ var searchData=
   ['ars_5f8x64',['ARS_8x64',['../group___a_e_s_n_i_r_n_g.html#ga962618f99accb1026306df5404b91cbe',1,'vsmc']]],
   ['arsengine',['ARSEngine',['../classvsmc_1_1_a_r_s_engine.html',1,'vsmc']]],
   ['arsengine',['ARSEngine',['../classvsmc_1_1_a_r_s_engine.html#a47f35e7b68f124329703c9e5f5753369',1,'vsmc::ARSEngine::ARSEngine(ResultType s=0)'],['../classvsmc_1_1_a_r_s_engine.html#a420f3c50ca74b04abb6fd398f28ade7e',1,'vsmc::ARSEngine::ARSEngine(SeedSeq &amp;seq, typename cxx11::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, typename base_eng_type::result_type, typename base_eng_type::key_type, ARSEngine&lt; ResultType, Rounds, Blocks &gt; &gt;::value &gt;::type *=nullptr)'],['../classvsmc_1_1_a_r_s_engine.html#ad69bdde316dae703c4b2af4e227e60d3',1,'vsmc::ARSEngine::ARSEngine(const typename base_eng_type::key_type &amp;k)'],['../classvsmc_1_1_a_r_s_engine.html#a1ca65d46358ed325dce0a0601d3d697e',1,'vsmc::ARSEngine::ARSEngine(const typename base_eng_type::ctr_type &amp;c, const typename base_eng_type::key_type &amp;k)']]],
-  ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html',1,'vsmc']]],
   ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html#ab2028ba6003d2707d5dcb1d0a60ee55c',1,'vsmc::ARSKeySeq']]],
+  ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html',1,'vsmc']]],
   ['arsweylconstanttrait',['ARSWeylConstantTrait',['../structvsmc_1_1traits_1_1_a_r_s_weyl_constant_trait.html',1,'vsmc::traits']]],
   ['arsweylconstantvalue',['ARSWeylConstantValue',['../structvsmc_1_1traits_1_1internal_1_1_a_r_s_weyl_constant_value.html',1,'vsmc::traits::internal']]],
   ['arsweylconstantvalue_3c_200_20_3e',['ARSWeylConstantValue&lt; 0 &gt;',['../structvsmc_1_1traits_1_1internal_1_1_a_r_s_weyl_constant_value_3_010_01_4.html',1,'vsmc::traits::internal']]],
@@ -402,5 +402,6 @@ var searchData=
   ['async_5ff',['async_f',['../classvsmc_1_1_dispatch_group.html#a0ae7b94ea2f80a1e375555d301201afe',1,'vsmc::DispatchGroup::async_f(const DispatchQueue&lt; Type &gt; &amp;queue, void *context,::dispatch_function_t work) const '],['../classvsmc_1_1_dispatch_group.html#aaccfdacf6bdcd2e5b94c3dd3bff1f713',1,'vsmc::DispatchGroup::async_f(::dispatch_queue_t queue, void *context,::dispatch_function_t work) const '],['../classvsmc_1_1_dispatch_queue_base.html#a6fa9b4b1b7c8f1347350505441ebd1a7',1,'vsmc::DispatchQueueBase::async_f()']]],
   ['at',['at',['../classvsmc_1_1_array.html#a562f93271f5c0377df70580906879afa',1,'vsmc::Array::at(size_type pos)'],['../classvsmc_1_1_array.html#ac72fcedf4625234c45263b3a5c39acc4',1,'vsmc::Array::at(size_type pos) const '],['../classvsmc_1_1_array.html#af5c198b7fa0930e94b522f72ee094739',1,'vsmc::Array::at()'],['../classvsmc_1_1_array.html#a34964c145dd709bf3167df53e032a4fa',1,'vsmc::Array::at() const '],['../classvsmc_1_1_array.html#a5ed43a78be15b7d4ad0a0f7aeab7fbe0',1,'vsmc::Array::at(Position&lt; Pos &gt;)'],['../classvsmc_1_1_array.html#a53b64f5ff72be94835c4db6b3a144d77',1,'vsmc::Array::at(Position&lt; Pos &gt;) const ']]],
   ['auto_5fhelp',['auto_help',['../classvsmc_1_1_program_option_map.html#a1eff326ffe9f9c755ca2a13fa5f2d72c',1,'vsmc::ProgramOptionMap']]],
-  ['arrays',['Arrays',['../group___c_x_x11_traits_array.html',1,'']]]
+  ['arrays',['Arrays',['../group___c_x_x11_traits_array.html',1,'']]],
+  ['arithmetic_20functions',['Arithmetic functions',['../group__v_arithmetic.html',1,'']]]
 ];

@@ -1222,6 +1222,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af34ba4fcf3adc27741bd5a91d39f1756"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:af34ba4fcf3adc27741bd5a91d39f1756"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af34ba4fcf3adc27741bd5a91d39f1756">hdf5io_matrix_dim&lt; RowMajor &gt;</a> (std::size_t nrow, std::size_t ncol,::hsize_t *dim)</td></tr>
 <tr class="separator:af34ba4fcf3adc27741bd5a91d39f1756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7469ea5977ace8d2c42772a2065c552"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename IntType1 , typename IntType2 &gt; </td></tr>
+<tr class="memitem:ab7469ea5977ace8d2c42772a2065c552"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ab7469ea5977ace8d2c42772a2065c552">mpi_init_seed</a> (ResultType &amp;, IntType1 D, IntType2 R)</td></tr>
+<tr class="separator:ab7469ea5977ace8d2c42772a2065c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c23a7437260c2507b1f043cab962454"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K, typename IntType1 , typename IntType2 &gt; </td></tr>
+<tr class="memitem:a7c23a7437260c2507b1f043cab962454"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7c23a7437260c2507b1f043cab962454">mpi_init_seed</a> (<a class="el" href="classvsmc_1_1_array.html">vsmc::Array</a>&lt; T, K &gt; &amp;s, IntType1, IntType2 R)</td></tr>
+<tr class="separator:a7c23a7437260c2507b1f043cab962454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f607a302f01b3702e62139b33d2daf"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t I&gt; </td></tr>
 <tr class="memitem:ac8f607a302f01b3702e62139b33d2daf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ac8f607a302f01b3702e62139b33d2daf">philox_hilo</a> (uint32_t b, uint32_t &amp;hi, uint32_t &amp;lo)</td></tr>
 <tr class="separator:ac8f607a302f01b3702e62139b33d2daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1887,6 +1893,94 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00031">31</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7469ea5977ace8d2c42772a2065c552"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ResultType , typename IntType1 , typename IntType2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::mpi_init_seed </td>
+          <td>(</td>
+          <td class="paramtype">ResultType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType1&#160;</td>
+          <td class="paramname"><em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType2&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpi__manager_8hpp_source.html#l00023">23</a> of file <a class="el" href="mpi__manager_8hpp_source.html">mpi_manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c23a7437260c2507b1f043cab962454"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K, typename IntType1 , typename IntType2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::mpi_init_seed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_array.html">vsmc::Array</a>&lt; T, K &gt; &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType2&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpi__manager_8hpp_source.html#l00030">30</a> of file <a class="el" href="mpi__manager_8hpp_source.html">mpi_manager.hpp</a>.</p>
 
 </div>
 </div>

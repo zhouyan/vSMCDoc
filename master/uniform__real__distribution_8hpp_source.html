@@ -373,65 +373,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    result_type a_;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    result_type b_;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#if !VSMC_HAS_CXX11LIB_RANDOM_CONSTEXPR_MINMAX</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">static</span> <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> uint64_t uint32_t_max_ = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(~(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(0))));</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">static</span> <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> uint64_t uint32_t_max_ = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(~(<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(0))));</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">static</span> <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> uint64_t uint64_t_max_ = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            ~(<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0)));</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, <a class="code" href="structvsmc_1_1_open.html">Open</a>, <a class="code" href="structvsmc_1_1_open.html">Open</a>, u32, f24)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {<a class="code" href="group___r_n_g.html#ga3239622836b1b63de13d32cf73955a3a">return ::u01_open_open_32_24</a>(i);}</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, Open, Closed, u32, f24)</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    {<a class="code" href="group___r_n_g.html#ga16f3ec76b40f63a1275386a818acae60">return ::u01_open_closed_32_24</a>(i);}</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, Closed, Open, u32, f24)</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    {<a class="code" href="group___r_n_g.html#gab86395965cdb0260441d3aa401173579">return ::u01_closed_open_32_24</a>(i);}</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, Closed, Closed, u32, f24)</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    {<a class="code" href="group___r_n_g.html#ga72bec4ca33a69e423683535934f3fb7e">return ::u01_closed_closed_32_24</a>(i);}</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Open, Open, u32, f53)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    {<a class="code" href="group___r_n_g.html#ga74363ee05d64adfe2a8c19b0d2ece681">return ::u01_open_open_32_53</a>(i);}</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Open, Closed, u32, f53)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {<a class="code" href="group___r_n_g.html#ga2c7b8abbd542181384c88b57bf384c69">return ::u01_open_closed_32_53</a>(i);}</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Closed, Open, u32, f53)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    {<a class="code" href="group___r_n_g.html#gad6715d83a1be85f6b193e5c6435e5881">return ::u01_closed_open_32_53</a>(i);}</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Closed, Closed, u32, f53)</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    {<a class="code" href="group___r_n_g.html#gac1c1d9fbee022f6a1934274884e2d003">return ::u01_closed_closed_32_53</a>(i);}</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Open, Open, u64, f24)</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#gae5848b85fa1414009c6374bfe129176a">::u01_open_open_64_53</a>(i));}</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Open, Closed, u64, f24)</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#ga5e3129e4f37180519acfd7f4c62431ed">::u01_open_closed_64_53</a>(i));}</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Closed, Open, u64, f24)</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#ga57abba3e48b58aa29d17e6583097964e">::u01_closed_open_64_53</a>(i));}</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Closed, Closed, u64, f24)</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#gaf15da281b02fb398a08d6058e1746213">::u01_closed_closed_64_53</a>(i));}</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Open, Open, u64, f53)</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    {<a class="code" href="group___r_n_g.html#gae5848b85fa1414009c6374bfe129176a">return ::u01_open_open_64_53</a>(i);}</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Open, Closed, u64, f53)</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    {<a class="code" href="group___r_n_g.html#ga5e3129e4f37180519acfd7f4c62431ed">return ::u01_open_closed_64_53</a>(i);}</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Closed, Open, u64, f53)</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {<a class="code" href="group___r_n_g.html#ga57abba3e48b58aa29d17e6583097964e">return ::u01_closed_open_64_53</a>(i);}</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Closed, Closed, u64, f53)</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    {<a class="code" href="group___r_n_g.html#gaf15da281b02fb398a08d6058e1746213">return ::u01_closed_closed_64_53</a>(i);}</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;}; <span class="comment">// class UniformRealDistributionBase</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor">#endif // VSMC_UNIFORM_REAL_DISTRIBUTION_HPP</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, <a class="code" href="structvsmc_1_1_open.html">Open</a>, <a class="code" href="structvsmc_1_1_open.html">Open</a>, u32, f24)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    {<a class="code" href="group___r_n_g.html#ga3239622836b1b63de13d32cf73955a3a">return ::u01_open_open_32_24</a>(i);}</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, Open, Closed, u32, f24)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    {<a class="code" href="group___r_n_g.html#ga16f3ec76b40f63a1275386a818acae60">return ::u01_open_closed_32_24</a>(i);}</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, Closed, Open, u32, f24)</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    {<a class="code" href="group___r_n_g.html#gab86395965cdb0260441d3aa401173579">return ::u01_closed_open_32_24</a>(i);}</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint32_t i, Closed, Closed, u32, f24)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {<a class="code" href="group___r_n_g.html#ga72bec4ca33a69e423683535934f3fb7e">return ::u01_closed_closed_32_24</a>(i);}</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Open, Open, u32, f53)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {<a class="code" href="group___r_n_g.html#ga74363ee05d64adfe2a8c19b0d2ece681">return ::u01_open_open_32_53</a>(i);}</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Open, Closed, u32, f53)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    {<a class="code" href="group___r_n_g.html#ga2c7b8abbd542181384c88b57bf384c69">return ::u01_open_closed_32_53</a>(i);}</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Closed, Open, u32, f53)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {<a class="code" href="group___r_n_g.html#gad6715d83a1be85f6b193e5c6435e5881">return ::u01_closed_open_32_53</a>(i);}</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint32_t i, Closed, Closed, u32, f53)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    {<a class="code" href="group___r_n_g.html#gac1c1d9fbee022f6a1934274884e2d003">return ::u01_closed_closed_32_53</a>(i);}</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Open, Open, u64, f24)</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#gae5848b85fa1414009c6374bfe129176a">::u01_open_open_64_53</a>(i));}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Open, Closed, u64, f24)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#ga5e3129e4f37180519acfd7f4c62431ed">::u01_open_closed_64_53</a>(i));}</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Closed, Open, u64, f24)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#ga57abba3e48b58aa29d17e6583097964e">::u01_closed_open_64_53</a>(i));}</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> u01(uint64_t i, Closed, Closed, u64, f24)</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {<span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="group___r_n_g.html#gaf15da281b02fb398a08d6058e1746213">::u01_closed_closed_64_53</a>(i));}</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Open, Open, u64, f53)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {<a class="code" href="group___r_n_g.html#gae5848b85fa1414009c6374bfe129176a">return ::u01_open_open_64_53</a>(i);}</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Open, Closed, u64, f53)</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    {<a class="code" href="group___r_n_g.html#ga5e3129e4f37180519acfd7f4c62431ed">return ::u01_open_closed_64_53</a>(i);}</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Closed, Open, u64, f53)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    {<a class="code" href="group___r_n_g.html#ga57abba3e48b58aa29d17e6583097964e">return ::u01_closed_open_64_53</a>(i);}</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> u01(uint64_t i, Closed, Closed, u64, f53)</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {<a class="code" href="group___r_n_g.html#gaf15da281b02fb398a08d6058e1746213">return ::u01_closed_closed_64_53</a>(i);}</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}; <span class="comment">// class UniformRealDistributionBase</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#endif // VSMC_UNIFORM_REAL_DISTRIBUTION_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
 <div class="ttc" id="group___r_n_g_html_ga74363ee05d64adfe2a8c19b0d2ece681"><div class="ttname"><a href="group___r_n_g.html#ga74363ee05d64adfe2a8c19b0d2ece681">u01_open_open_32_53</a></div><div class="ttdeci">static double u01_open_open_32_53(uint32_t i)</div><div class="ttdoc">Converting 32-bits unsigned to double precision uniform . </div><div class="ttdef"><b>Definition:</b> <a href="u01_8h_source.html#l00125">u01.h:125</a></div></div>
 <div class="ttc" id="group___r_n_g_html_ga2c7b8abbd542181384c88b57bf384c69"><div class="ttname"><a href="group___r_n_g.html#ga2c7b8abbd542181384c88b57bf384c69">u01_open_closed_32_53</a></div><div class="ttdeci">static double u01_open_closed_32_53(uint32_t i)</div><div class="ttdoc">Converting 32-bits unsigned to double precision uniform . </div><div class="ttdef"><b>Definition:</b> <a href="u01_8h_source.html#l00120">u01.h:120</a></div></div>

@@ -174,56 +174,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#else // VSMC_HAS_CXX11LIB_CMATH</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/expm1.hpp&gt;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/log1p.hpp&gt;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/cbrt.hpp&gt;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/hypot.hpp&gt;</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/asinh.hpp&gt;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/acosh.hpp&gt;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/atanh.hpp&gt;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/erf.hpp&gt;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions/gamma.hpp&gt;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> { <span class="keyword">namespace </span>cxx11 {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">inline</span> float (exp2) (<span class="keywordtype">float</span> x)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keyword">using</span> std::log; <span class="keywordflow">return</span> exp(x * log(2.f));}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (exp2) (<span class="keywordtype">double</span> x)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keyword">using</span> std::log; <span class="keywordflow">return</span> exp(x * log(2.));}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="classdouble.html">double</a> (exp2) (<span class="keywordtype">long</span> <span class="keywordtype">double</span> x)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keyword">using</span> std::log; <span class="keywordflow">return</span> exp(x * log(2.l));}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (exp2) (T x)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keyword">using</span> std::log; <span class="keywordflow">return</span> exp(static_cast&lt;double&gt;(x) * log(2.));}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">inline</span> float (log2) (<span class="keywordtype">float</span> x)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(x) / log(2.f);}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (log2) (<span class="keywordtype">double</span> x)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(x) / log(2.);}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="classdouble.html">double</a> (log2) (<span class="keywordtype">long</span> <span class="keywordtype">double</span> x)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(x) * log(2.l);}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (log2) (T x)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(static_cast&lt;double&gt;(x)) / log(2.);}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;using ::boost::math::expm1;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;using ::boost::math::log1p;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;using ::boost::math::cbrt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;using ::boost::math::hypot;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;using ::boost::math::asinh;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;using ::boost::math::acosh;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;using ::boost::math::atanh;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;using ::boost::math::erf;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;using ::boost::math::erfc;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;using ::boost::math::lgamma;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;using ::boost::math::tgamma;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} } <span class="comment">// namespace vsmc::cxx11</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_CXX11LIB_CMATH</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // VSMC_CXX11_CMATH_HPP</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="constants_8hpp.html">vsmc/math/constants.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#include &lt;boost/math/special_functions.hpp&gt;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> { <span class="keyword">namespace </span>cxx11 {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">inline</span> float (exp2) (<span class="keywordtype">float</span> x)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keywordflow">return</span> exp(x * <a class="code" href="namespacevsmc_1_1math.html#a329316d2cad7f61dc3c726626bc25e2d">math::ln_2&lt;float&gt;</a>());}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (exp2) (<span class="keywordtype">double</span> x)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keywordflow">return</span> exp(x * <a class="code" href="namespacevsmc_1_1math.html#a3cf5d1ec2791262e1b7a815a6b5b5791">math::ln_2&lt;double&gt;</a>());}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="classdouble.html">double</a> (exp2) (<span class="keywordtype">long</span> <span class="keywordtype">double</span> x)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keywordflow">return</span> exp(x * <a class="code" href="namespacevsmc_1_1math.html#a9a921a9be0be87acaba1e71df2bf4312">math::ln_2&lt;long double&gt;</a>());}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (exp2) (T x)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{<span class="keyword">using</span> std::exp; <span class="keywordflow">return</span> exp(static_cast&lt;double&gt;(x) * <a class="code" href="namespacevsmc_1_1math.html#a3cf5d1ec2791262e1b7a815a6b5b5791">math::ln_2&lt;double&gt;</a>());}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">inline</span> float (log2) (<span class="keywordtype">float</span> x)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(x) * <a class="code" href="namespacevsmc_1_1math.html#ae796718dd9bebfff2b08644ac2da9038">math::ln_inv_2&lt;float&gt;</a>();}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (log2) (<span class="keywordtype">double</span> x)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(x) * <a class="code" href="namespacevsmc_1_1math.html#a961889635f7e3107299e02b1567b301c">math::ln_inv_2&lt;double&gt;</a>();}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="classdouble.html">double</a> (log2) (<span class="keywordtype">long</span> <span class="keywordtype">double</span> x)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(x) * <a class="code" href="namespacevsmc_1_1math.html#a05f46c744e659dcac43cc8438f8b69c6">math::ln_inv_2&lt;long double&gt;</a>();}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">inline</span> <a class="code" href="classdouble.html">double</a> (log2) (T x)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{<span class="keyword">using</span> std::log; <span class="keywordflow">return</span> log(static_cast&lt;double&gt;(x)) * <a class="code" href="namespacevsmc_1_1math.html#a961889635f7e3107299e02b1567b301c">math::ln_inv_2&lt;double&gt;</a>();}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;using ::boost::math::expm1;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;using ::boost::math::log1p;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;using ::boost::math::cbrt;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;using ::boost::math::hypot;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;using ::boost::math::asinh;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;using ::boost::math::acosh;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;using ::boost::math::atanh;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;using ::boost::math::erf;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;using ::boost::math::erfc;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;using ::boost::math::lgamma;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;using ::boost::math::tgamma;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} } <span class="comment">// namespace vsmc::cxx11</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_CXX11LIB_CMATH</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif // VSMC_CXX11_CMATH_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1math_html_a9a921a9be0be87acaba1e71df2bf4312"><div class="ttname"><a href="namespacevsmc_1_1math.html#a9a921a9be0be87acaba1e71df2bf4312">vsmc::math::ln_2&lt; long double &gt;</a></div><div class="ttdeci">long double ln_2&lt; long double &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00232">constants.hpp:232</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1math_html_a3cf5d1ec2791262e1b7a815a6b5b5791"><div class="ttname"><a href="namespacevsmc_1_1math.html#a3cf5d1ec2791262e1b7a815a6b5b5791">vsmc::math::ln_2&lt; double &gt;</a></div><div class="ttdeci">double ln_2&lt; double &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00232">constants.hpp:232</a></div></div>
 <div class="ttc" id="classdouble_html"><div class="ttname"><a href="classdouble.html">double</a></div></div>
 <div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1math_html_a961889635f7e3107299e02b1567b301c"><div class="ttname"><a href="namespacevsmc_1_1math.html#a961889635f7e3107299e02b1567b301c">vsmc::math::ln_inv_2&lt; double &gt;</a></div><div class="ttdeci">double ln_inv_2&lt; double &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00252">constants.hpp:252</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1math_html_a329316d2cad7f61dc3c726626bc25e2d"><div class="ttname"><a href="namespacevsmc_1_1math.html#a329316d2cad7f61dc3c726626bc25e2d">vsmc::math::ln_2&lt; float &gt;</a></div><div class="ttdeci">float ln_2&lt; float &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00232">constants.hpp:232</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1math_html_ae796718dd9bebfff2b08644ac2da9038"><div class="ttname"><a href="namespacevsmc_1_1math.html#ae796718dd9bebfff2b08644ac2da9038">vsmc::math::ln_inv_2&lt; float &gt;</a></div><div class="ttdeci">float ln_inv_2&lt; float &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00252">constants.hpp:252</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1math_html_a05f46c744e659dcac43cc8438f8b69c6"><div class="ttname"><a href="namespacevsmc_1_1math.html#a05f46c744e659dcac43cc8438f8b69c6">vsmc::math::ln_inv_2&lt; long double &gt;</a></div><div class="ttdeci">long double ln_inv_2&lt; long double &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00252">constants.hpp:252</a></div></div>
+<div class="ttc" id="constants_8hpp_html"><div class="ttname"><a href="constants_8hpp.html">constants.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b',['b',['../classvsmc_1_1_uniform_real_distribution_1_1param__type.html#afbec459d8cc531ef7c76672fe44da8be',1,'vsmc::UniformRealDistribution::param_type::b()'],['../classvsmc_1_1_uniform_real_distribution.html#a6399a8910309b1509dae33336381dd70',1,'vsmc::UniformRealDistribution::b()']]],
+  ['b',['b',['../structvsmc_1_1_uniform_real_distribution_1_1param__type.html#a029470ffc24f2cb9899ef228f9cab4b3',1,'vsmc::UniformRealDistribution::param_type::b()'],['../classvsmc_1_1_uniform_real_distribution.html#a80e8be7420018761c38a988f06a776af',1,'vsmc::UniformRealDistribution::b()']]],
   ['back',['back',['../classvsmc_1_1_array.html#a80e4fdc953debbc45c07a2aef39db012',1,'vsmc::Array::back()'],['../classvsmc_1_1_array.html#ace83f6cff19a5379c00bed6f1722a9ad',1,'vsmc::Array::back() const ']]],
   ['backend_5fbase_2ehpp',['backend_base.hpp',['../backend__base_8hpp.html',1,'']]],
   ['backend_5fcilk_2ehpp',['backend_cilk.hpp',['../backend__cilk_8hpp.html',1,'']]],

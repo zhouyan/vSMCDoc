@@ -129,8 +129,9 @@ Macros</h2></td></tr>
 <tr class="separator:ae3e68df14758cb750fef045f80d3ff0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a686f17a3d65f71f50773399ff9f19230"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#a686f17a3d65f71f50773399ff9f19230">VSMC_DEFINE_VMATH_VML_2</a>(name)</td></tr>
 <tr class="separator:a686f17a3d65f71f50773399ff9f19230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca96a0cb5c5cd34eaff56478eace19a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="separator:aca96a0cb5c5cd34eaff56478eace19a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab970dd3599c8a14b26c5b519c9650258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:gab970dd3599c8a14b26c5b519c9650258"><td class="mdescLeft">&#160;</td><td class="mdescRight">When MKL (VML) or vecLib (vForce) is available, the threshold above which these libraries will be used.  <a href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">More...</a><br /></td></tr>
+<tr class="separator:gab970dd3599c8a14b26c5b519c9650258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -555,7 +556,7 @@ Functions</h2></td></tr>
 <div class="line">        y[i] = func(a[i]);                                                   \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00017">17</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00024">24</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +597,7 @@ Functions</h2></td></tr>
 <div class="line">        y[i] = func(a[i], b[i]);                                             \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00026">26</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00033">33</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -630,7 +631,7 @@ Functions</h2></td></tr>
 <div class="line">        y[i] = a[i] op b[i];                                                 \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00035">35</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00042">42</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -650,20 +651,20 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> v##name                                                          \</div>
 <div class="line">(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">float</span> *a, <span class="keywordtype">float</span> *y)                                    \</div>
 <div class="line">{                                                                            \</div>
-<div class="line">    n &lt; <a class="code" href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a> ?                                           \</div>
+<div class="line">    n &lt; <a class="code" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a> ?                                               \</div>
 <div class="line">        v##name&lt;float&gt;(n, a, y):                                             \</div>
 <div class="line">        ::vs##name(static_cast&lt;MKL_INT&gt;(n), a, y);                           \</div>
 <div class="line">}                                                                            \</div>
 <div class="line">inline <span class="keywordtype">void</span> v##name                                                          \</div>
 <div class="line">(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keywordtype">double</span> *y)                                  \</div>
 <div class="line">{                                                                            \</div>
-<div class="line">    n &lt; <a class="code" href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a> ?                                           \</div>
+<div class="line">    n &lt; <a class="code" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a> ?                                               \</div>
 <div class="line">        v##name&lt;double&gt;(n, a, y):                                            \</div>
 <div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, y);                           \</div>
 <div class="line">}</div>
-<div class="ttc" id="vmath_8hpp_html_aca96a0cb5c5cd34eaff56478eace19a1"><div class="ttname"><a href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a></div><div class="ttdeci">#define VSMC_VMATH_VML_THRESHOLD</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00303">vmath.hpp:303</a></div></div>
+<div class="ttc" id="group___config_html_gab970dd3599c8a14b26c5b519c9650258"><div class="ttname"><a href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a></div><div class="ttdeci">#define VSMC_VMATH_THRESHOLD</div><div class="ttdoc">When MKL (VML) or vecLib (vForce) is available, the threshold above which these libraries will be use...</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00021">vmath.hpp:21</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00306">306</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00309">309</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -683,34 +684,20 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> v##name                                                          \</div>
 <div class="line">(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">float</span> *a, <span class="keyword">const</span> <span class="keywordtype">float</span> *b, <span class="keywordtype">float</span> *y)                    \</div>
 <div class="line">{                                                                            \</div>
-<div class="line">    n &lt; <a class="code" href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a> ?                                           \</div>
+<div class="line">    n &lt; <a class="code" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a> ?                                               \</div>
 <div class="line">        v##name&lt;float&gt;(n, a, b, y):                                          \</div>
 <div class="line">        ::vs##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                        \</div>
 <div class="line">}                                                                            \</div>
 <div class="line">inline <span class="keywordtype">void</span> v##name                                                          \</div>
 <div class="line">(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keyword">const</span> <span class="keywordtype">double</span> *b, <span class="keywordtype">double</span> *y)                 \</div>
 <div class="line">{                                                                            \</div>
-<div class="line">    n &lt; <a class="code" href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a> ?                                           \</div>
+<div class="line">    n &lt; <a class="code" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a> ?                                               \</div>
 <div class="line">        v##name&lt;double&gt;(n, a, b, y):                                         \</div>
 <div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                        \</div>
 <div class="line">}</div>
-<div class="ttc" id="vmath_8hpp_html_aca96a0cb5c5cd34eaff56478eace19a1"><div class="ttname"><a href="vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1">VSMC_VMATH_VML_THRESHOLD</a></div><div class="ttdeci">#define VSMC_VMATH_VML_THRESHOLD</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00303">vmath.hpp:303</a></div></div>
+<div class="ttc" id="group___config_html_gab970dd3599c8a14b26c5b519c9650258"><div class="ttname"><a href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a></div><div class="ttdeci">#define VSMC_VMATH_THRESHOLD</div><div class="ttdoc">When MKL (VML) or vecLib (vForce) is available, the threshold above which these libraries will be use...</div><div class="ttdef"><b>Definition:</b> <a href="vmath_8hpp_source.html#l00021">vmath.hpp:21</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00322">322</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aca96a0cb5c5cd34eaff56478eace19a1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_VMATH_VML_THRESHOLD&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00303">303</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00325">325</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>

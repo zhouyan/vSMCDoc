@@ -174,7 +174,9 @@ var searchData=
   ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]],
   ['vsmc_5fuse_5frd_5frand',['VSMC_USE_RD_RAND',['../config_8hpp.html#ac902e6406937687836a1fb6ff3096017',1,'config.hpp']]],
   ['vsmc_5fuse_5frd_5fseed',['VSMC_USE_RD_SEED',['../config_8hpp.html#aaa2fcc4b3c3e6694e98ba274f852b5d8',1,'config.hpp']]],
-  ['vsmc_5fvmath_5fvml_5fthreshold',['VSMC_VMATH_VML_THRESHOLD',['../vmath_8hpp.html#aca96a0cb5c5cd34eaff56478eace19a1',1,'vmath.hpp']]],
+  ['vsmc_5fuse_5fveclib',['VSMC_USE_VECLIB',['../config_8hpp.html#a30c8de0759b5a0925afee27326581c93',1,'config.hpp']]],
+  ['vsmc_5fuse_5fveclib_5fcblas',['VSMC_USE_VECLIB_CBLAS',['../config_8hpp.html#abe3e9845fabceed7d26d770202b40a35',1,'config.hpp']]],
+  ['vsmc_5fuse_5fveclib_5fvforce',['VSMC_USE_VECLIB_VFORCE',['../config_8hpp.html#a426908ffa63d6b65c3e3f9562bb39822',1,'config.hpp']]],
   ['vsmc_5fx86',['VSMC_X86',['../compiler_8hpp.html#aea4865c9a8856233ed9564536bd3b501',1,'compiler.hpp']]],
   ['vsmc_5fx86_5f64',['VSMC_X86_64',['../compiler_8hpp.html#a934688eeb35c29fae53940aa714afc43',1,'compiler.hpp']]]
 ];

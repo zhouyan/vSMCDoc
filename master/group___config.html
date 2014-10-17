@@ -135,6 +135,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga52d683d5767c7efef88f6363bb84a36a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga52d683d5767c7efef88f6363bb84a36a">VSMC_STOP_WATCH_TYPE</a>&#160;&#160;&#160;internal::DummyStopWatch</td></tr>
 <tr class="memdesc:ga52d683d5767c7efef88f6363bb84a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fallback StopWatch type.  <a href="#ga52d683d5767c7efef88f6363bb84a36a">More...</a><br /></td></tr>
 <tr class="separator:ga52d683d5767c7efef88f6363bb84a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab970dd3599c8a14b26c5b519c9650258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:gab970dd3599c8a14b26c5b519c9650258"><td class="mdescLeft">&#160;</td><td class="mdescRight">When MKL (VML) or vecLib (vForce) is available, the threshold above which these libraries will be used.  <a href="#gab970dd3599c8a14b26c5b519c9650258">More...</a><br /></td></tr>
+<tr class="separator:gab970dd3599c8a14b26c5b519c9650258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Configuration macros and default values if undefined. </p>
@@ -345,6 +348,22 @@ Macros</h2></td></tr>
 <p>The class defined by <code>VSMC_STOP_WATCH_TYPE</code> need to be defined before including the <code>&lt;<a class="el" href="stop__watch_8hpp.html">vsmc/utility/stop_watch.hpp</a>&gt;</code> header. It shall provide the same interface as internal::DummyStopWatch. This is only used when both <code>VSMC_HAS_CXX11LIB_CHRONO</code> and <code>VSMC_HAS_NATIVE_TIME_LIBRARY</code> are zero, in which case StopWatch is a typedef of this macro. </p>
 
 <p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00036">36</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab970dd3599c8a14b26c5b519c9650258"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_VMATH_THRESHOLD&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When MKL (VML) or vecLib (vForce) is available, the threshold above which these libraries will be used. </p>
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00021">21</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>

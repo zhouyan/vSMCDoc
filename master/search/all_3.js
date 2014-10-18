@@ -10,6 +10,8 @@ var searchData=
   ['c_5fsi',['c_si',['../structgammak1__2x32__24.html#a6d780ec8ca316662600912fb2c10642a',1,'gammak1_2x32_24::c_si()'],['../structgammak1__4x32__24.html#aaee7db725acd487edd7d1eeee779a3db',1,'gammak1_4x32_24::c_si()'],['../structgammak1__2x32__53.html#a0c8ff7738454d8343f03d38aa94a90cd',1,'gammak1_2x32_53::c_si()'],['../structgammak1__4x32__53.html#ac617ff5701776c8db99cdfea395eae59',1,'gammak1_4x32_53::c_si()'],['../structgammak1__2x64__53.html#a64947c23292b794bf070a30c314a52ff',1,'gammak1_2x64_53::c_si()'],['../structgammak1__4x64__53.html#a87302722ea6b4ae195dd604fc2b562e0',1,'gammak1_4x64_53::c_si()']]],
   ['cancel',['cancel',['../classvsmc_1_1_dispatch_source_base.html#aa78cd528b1d114ff8458dd6ad30e02ae',1,'vsmc::DispatchSourceBase']]],
   ['cbegin',['cbegin',['../classvsmc_1_1_array.html#a9dfd538de5bcc55645ce8d12cf1b4726',1,'vsmc::Array']]],
+  ['c_20blas',['C BLAS',['../group___c_b_l_a_s.html',1,'']]],
+  ['cblas_2ehpp',['cblas.hpp',['../cblas_8hpp.html',1,'']]],
   ['cburng2x32_5finit',['cburng2x32_init',['../group___c_l_r_n_g.html#ga6a85fd8aec9011c3de3929ea994db784',1,'urng.h']]],
   ['cburng2x32_5frand',['cburng2x32_rand',['../group___c_l_r_n_g.html#gaf20980ad643791ad50a57113d61f1ba1',1,'urng.h']]],
   ['cburng2x32_5frng_5ft',['cburng2x32_rng_t',['../group___c_l_r_n_g.html#gac433345818fe6741f061f5360075119e',1,'urng.h']]],

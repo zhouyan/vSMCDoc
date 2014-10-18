@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="keywordtype">float</span> u[4];</div>
 <div class="line"><span class="keywordtype">float</span> z[4];</div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i != 4; ++i)</div>
-<div class="line">    u[i] = <a class="code" href="group___u01.html#ga16f3ec76b40f63a1275386a818acae60">u01_open_closed_32_24</a>(r.v[i]);</div>
+<div class="line">    u[i] = <a class="code" href="group___u01.html#gade2ac3686cd7e42e8b8ddc11c287d470">u01_open_closed_32_24</a>(r.v[i]);</div>
 <div class="line">z[0] = sqrt(-2 * log(u[0])) * cos(2 * M_PI_F * u[1]);</div>
 <div class="line">z[1] = sqrt(-2 * log(u[0])) * sin(2 * M_PI_F * u[1]);</div>
 <div class="line">z[2] = sqrt(-2 * log(u[2])) * cos(2 * M_PI_F * u[3]);</div>
@@ -137,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --><p> Since OpenCL does not support static local variables, this is the most convenient way to ensure that the RNG used in each kernel call does not overlap their counters.</p>
 <h2>Distributions</h2>
 <h3>Overview</h3>
-<p>For each distribution, a set of types and functions are defined. Each of them use either 32- or 64-bits RNG and generate <code>float</code> or <code>double</code> precision results. For example, </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> <a class="code" href="group___u01.html#ga16f3ec76b40f63a1275386a818acae60">u01_open_closed_32_24</a> (uint32_t);</div>
+<p>For each distribution, a set of types and functions are defined. Each of them use either 32- or 64-bits RNG and generate <code>float</code> or <code>double</code> precision results. For example, </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> <a class="code" href="group___u01.html#gade2ac3686cd7e42e8b8ddc11c287d470">u01_open_closed_32_24</a> (uint32_t);</div>
 </div><!-- fragment --><p> generate <code>float</code> precision uniform random variates on <code>(0, 1]</code> using 32-bits integers. Another example, </p><div class="fragment"><div class="line"><a class="code" href="structnormal01__4x32__24.html">normal01_4x32_24</a></div>
 </div><!-- fragment --><p> is the type used to construct objects that can be used to generate <code>float</code> precision standard Normal random variates using <code>threefry4x32</code> engines.</p>
 <p>Not all OpenCL devices have <code>double</code> precision support. Therefore by default, only 32-bits and <code>float</code> versions of these types and functions are defined. To enable 64-bits and <code>double</code> versions, define the macro <code>VSMC_HAS_OPENCL_DOUBLE</code> with a non-zero value.</p>

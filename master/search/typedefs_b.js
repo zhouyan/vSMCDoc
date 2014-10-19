@@ -7,6 +7,7 @@ var searchData=
   ['rdseed32',['RdSeed32',['../group___r_d_r_n_g.html#gacf6a5f18b7c7a749a9b2732bc3ac71ca',1,'vsmc']]],
   ['rdseed64',['RdSeed64',['../group___r_d_r_n_g.html#ga911a00c951ac5dd52da14c7253a8cee1',1,'vsmc']]],
   ['reference',['reference',['../classvsmc_1_1_array.html#a2788aa8641b72e8d721ec5bcc273c87f',1,'vsmc::Array']]],
+  ['reg_5ftype',['reg_type',['../classvsmc_1_1_c_p_u_i_d.html#a7e8ecdcd2a602611e96cc3ad816c754d',1,'vsmc::CPUID']]],
   ['remove_5fall_5fextents_5ft',['remove_all_extents_t',['../group___c_x_x11_traits_array.html#ga22ea03b271ba95b1dcddac8e2197f2f2',1,'vsmc::cxx11']]],
   ['remove_5fconst_5ft',['remove_const_t',['../group___c_x_x11_traits_c_v.html#gaeffcdf8458318ac4fde34b61239c99d9',1,'vsmc::cxx11']]],
   ['remove_5fcv_5ft',['remove_cv_t',['../group___c_x_x11_traits_c_v.html#ga33fd1ed0c9f292249f05d3e3bf46dac2',1,'vsmc::cxx11']]],

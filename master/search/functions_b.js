@@ -1,6 +1,8 @@
 var searchData=
 [
   ['leave',['leave',['../classvsmc_1_1_dispatch_group.html#ac8b7178e02eca88b2a891121fe461c8d',1,'vsmc::DispatchGroup']]],
+  ['level',['level',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a012c5c4d8ffa1d1890a13d437bc27f4b',1,'vsmc::CPUID::cache_param_type']]],
+  ['line_5fsize',['line_size',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a36fb9595bcd0b18c1f8f1b3d19845137',1,'vsmc::CPUID::cache_param_type']]],
   ['ln_5f10',['ln_10',['../group___constants.html#ga7d6d2cee0238d24a24d7c6df3ee3e584',1,'vsmc::math']]],
   ['ln_5f10_3c_20double_20_3e',['ln_10&lt; double &gt;',['../namespacevsmc_1_1math.html#a5773900064e62f4e010aa3ff1489b536',1,'vsmc::math']]],
   ['ln_5f10_3c_20float_20_3e',['ln_10&lt; float &gt;',['../namespacevsmc_1_1math.html#a1936da213fcf8d0274620ad5ce4c10e0',1,'vsmc::math']]],

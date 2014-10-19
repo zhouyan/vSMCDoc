@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['cache_5fparam',['cache_param',['../classvsmc_1_1_c_p_u_i_d.html#a10484a559078c0ce443f7e00215d4723',1,'vsmc::CPUID']]],
+  ['cache_5fparam_5ftype',['cache_param_type',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a17c44a65720678dd09ae08af5f431a5f',1,'vsmc::CPUID::cache_param_type']]],
   ['cancel',['cancel',['../classvsmc_1_1_dispatch_source_base.html#aa78cd528b1d114ff8458dd6ad30e02ae',1,'vsmc::DispatchSourceBase']]],
   ['cbegin',['cbegin',['../classvsmc_1_1_array.html#a9dfd538de5bcc55645ce8d12cf1b4726',1,'vsmc::Array']]],
   ['cend',['cend',['../classvsmc_1_1_array.html#a8a6bef6c5fbc09727818be5a3ca0f861',1,'vsmc::Array']]],
@@ -18,6 +20,7 @@ var searchData=
   ['coeff',['coeff',['../classvsmc_1_1internal_1_1_n_integrate_newton_cotes_coeff.html#ab7a1b2377f132042877588ddf63e3b94',1,'vsmc::internal::NIntegrateNewtonCotesCoeff']]],
   ['col_5fdata',['col_data',['../classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a422c853d4c0e6c3049e952944d41a802',1,'vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;::col_data(std::size_t pos)'],['../classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a957ceb1867ca9cf1b5d92abcf9264b86',1,'vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;::col_data(std::size_t pos) const ']]],
   ['command_5fqueue',['command_queue',['../classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2',1,'vsmc::CLManager']]],
+  ['complex_5findexing',['complex_indexing',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a3cdabff65747c8c1a9dd3f987f990735',1,'vsmc::CPUID::cache_param_type']]],
   ['compute_5fcess',['compute_cess',['../classvsmc_1_1_weight_set.html#aa6c65473be84d1e72f68776d2418bc63',1,'vsmc::WeightSet::compute_cess()'],['../singletonvsmc_1_1_weight_set_m_p_i.html#aa5b031f5b0f290a616e2e184c292a5fc',1,'vsmc::WeightSetMPI::compute_cess()']]],
   ['compute_5fess',['compute_ess',['../classvsmc_1_1_weight_set.html#abae55060018b5762e95fee8c2cb04a9d',1,'vsmc::WeightSet::compute_ess()'],['../singletonvsmc_1_1_weight_set_m_p_i.html#a947f64eab99071d50a860abd4f299c95',1,'vsmc::WeightSetMPI::compute_ess()']]],
   ['configure',['configure',['../classvsmc_1_1_initialize_c_l.html#ab4263f47b290f027f09aebd6934fe14d',1,'vsmc::InitializeCL::configure()'],['../classvsmc_1_1_initialize_c_l.html#a6b1dd382cca2eebe26d1699db92c929e',1,'vsmc::InitializeCL::configure() const '],['../classvsmc_1_1_move_c_l.html#a79178751b7496bc1e2169c14908282ed',1,'vsmc::MoveCL::configure()'],['../classvsmc_1_1_move_c_l.html#a3fe00c0ba13e47ffd86c76a92dc065ed',1,'vsmc::MoveCL::configure() const '],['../classvsmc_1_1_monitor_eval_c_l.html#a327e0e97b13f488d772fb76b2f5b941e',1,'vsmc::MonitorEvalCL::configure()'],['../classvsmc_1_1_monitor_eval_c_l.html#ace1d3ec00fc4a580e02ef229be5cfa83',1,'vsmc::MonitorEvalCL::configure() const '],['../classvsmc_1_1_path_eval_c_l.html#a00defcaa169a53fc6a114614ef85d06a',1,'vsmc::PathEvalCL::configure()'],['../classvsmc_1_1_path_eval_c_l.html#af5bcf7ac2c4585fc866b6784a4dba7f2',1,'vsmc::PathEvalCL::configure() const ']]],

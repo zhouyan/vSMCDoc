@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   2: "cv",
   3: "abcdfghimnoprstuvwx",
   4: "abcdefghijklmnoprstuvwxz~",
-  5: "_aceikmrsuvx",
+  5: "_abceikmrsuvx",
   6: "abcdefgikmprstvwx",
   7: "cdgmr",
   8: "cdgmrsv",

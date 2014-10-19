@@ -448,12 +448,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x04) {</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            print_equal(os);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            os &lt;&lt; <span class="stringliteral">&quot;Cache information\n&quot;</span>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            os &lt;&lt; <span class="stringliteral">&quot;Deterministic cache parameters\n&quot;</span>;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            print_dash(os);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            print_cache(os);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        print_equal(os);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        print_features(os);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        print_feature(os);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        print_equal(os);</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    }</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
@@ -551,343 +551,346 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a10484a559078c0ce443f7e00215d4723">  505</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html">cache_param_type</a> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a10484a559078c0ce443f7e00215d4723">cache_param</a> (<span class="keywordtype">unsigned</span> cache_index)</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    {<span class="keywordflow">return</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html">cache_param_type</a>(info(0x04, cache_index));}</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">  509</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">base_freq</a> ()</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    {<span class="keywordflow">return</span> extract_bits&lt;15, 0&gt;(info&lt;0x16, 0&gt;().at&lt;0&gt;());}</div>
+<div class="line"><a name="l00509"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413">  509</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413">intel_turbo_boost</a> ()</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    {<span class="keywordflow">return</span> test_bit&lt;1&gt;(info&lt;0x06, 0&gt;().at&lt;0&gt;());}</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a1a5bf015da92ae025bcaf19b1834ba91">  513</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a1a5bf015da92ae025bcaf19b1834ba91">max_freq</a> ()</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    {<span class="keywordflow">return</span> extract_bits&lt;15, 0&gt;(info&lt;0x16, 0&gt;().at&lt;1&gt;());}</div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">  513</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">base_freq</a> ()</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    {<span class="keywordflow">return</span> extract_bits&lt;15, 0&gt;(info&lt;0x16, 0&gt;().at&lt;0&gt;());}</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11">  517</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11">bus_freq</a> ()</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {<span class="keywordflow">return</span> extract_bits&lt;15, 0&gt;(info&lt;0x16, 0&gt;().at&lt;2&gt;());}</div>
+<div class="line"><a name="l00517"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a1a5bf015da92ae025bcaf19b1834ba91">  517</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a1a5bf015da92ae025bcaf19b1834ba91">max_freq</a> ()</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {<span class="keywordflow">return</span> extract_bits&lt;15, 0&gt;(info&lt;0x16, 0&gt;().at&lt;1&gt;());}</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
-<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">  522</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">has_feature</a> ()</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    {</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">return</span> test_bit&lt;internal::CPUIDFeatureInfo&lt;Feat&gt;::bit&gt;(</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                info&lt;internal::CPUIDFeatureInfo&lt;Feat&gt;::eax, 0&gt;().<span class="keyword">template</span></div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                at&lt;<a class="code" href="structvsmc_1_1internal_1_1_c_p_u_i_d_feature_info.html">internal::CPUIDFeatureInfo&lt;Feat&gt;::reg</a>&gt;()) != 0;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keyword">private</span> :</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="keyword">static</span> <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ext0_ = 0x80000000U;</div>
+<div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11">  521</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11">bus_freq</a> ()</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    {<span class="keywordflow">return</span> extract_bits&lt;15, 0&gt;(info&lt;0x16, 0&gt;().at&lt;2&gt;());}</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
+<div class="line"><a name="l00526"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">  526</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">has_feature</a> ()</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">return</span> test_bit&lt;internal::CPUIDFeatureInfo&lt;Feat&gt;::bit&gt;(</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                info&lt;internal::CPUIDFeatureInfo&lt;Feat&gt;::eax, 0&gt;().<span class="keyword">template</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                at&lt;<a class="code" href="structvsmc_1_1internal_1_1_c_p_u_i_d_feature_info.html">internal::CPUIDFeatureInfo&lt;Feat&gt;::reg</a>&gt;()) != 0;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span>, <span class="keywordtype">unsigned</span>&gt;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch (<a class="code" href="structvsmc_1_1cxx11_1_1integral__constant.html">cxx11::true_type</a>, <a class="code" href="structvsmc_1_1cxx11_1_1integral__constant.html">cxx11::true_type</a>)</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    {<span class="keywordflow">return</span> info(0, 0);}</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keyword">static</span> <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ext0_ = 0x80000000U;</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span>, <span class="keywordtype">unsigned</span>&gt;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch (<a class="code" href="group___c_x_x11_traits_helper.html#gac58fee08d259e39fb8480bd85c088f76">cxx11::true_type</a>, <a class="code" href="group___c_x_x11_traits_helper.html#gac9a2cf52272a27ac8eb3bd3fe550cabb">cxx11::false_type</a>)</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    {<span class="keywordflow">return</span> info(ext0_, 0);}</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch (<a class="code" href="structvsmc_1_1cxx11_1_1integral__constant.html">cxx11::true_type</a>, <a class="code" href="structvsmc_1_1cxx11_1_1integral__constant.html">cxx11::true_type</a>)</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    {<span class="keywordflow">return</span> info(0, 0);}</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> EAX, <span class="keywordtype">unsigned</span> ECX, <span class="keywordtype">bool</span> Basic&gt;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch (<a class="code" href="group___c_x_x11_traits_helper.html#gac9a2cf52272a27ac8eb3bd3fe550cabb">cxx11::false_type</a>,</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            cxx11::integral_constant&lt;bool, Basic&gt;)</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    {</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        reg_type reg(info_dispatch&lt;EAX, ECX&gt;(<a class="code" href="group___c_x_x11_traits_helper.html#gac58fee08d259e39fb8480bd85c088f76">cxx11::true_type</a>(),</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;                    cxx11::integral_constant&lt;bool, Basic&gt;()));</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <span class="keywordflow">if</span> (EAX &gt; reg.at&lt;0&gt;())</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;            reg.fill(0);</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            reg = info(EAX, ECX);</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <span class="keywordflow">return</span> reg;</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    }</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Hi, <span class="keywordtype">unsigned</span> Lo&gt;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> extract_bits (<span class="keywordtype">unsigned</span> val)</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    {<span class="keywordflow">return</span> (val &lt;&lt; (31U - Hi)) &gt;&gt; (31U - Hi + Lo);}</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span>, <span class="keywordtype">unsigned</span>&gt;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch (<a class="code" href="group___c_x_x11_traits_helper.html#gac58fee08d259e39fb8480bd85c088f76">cxx11::true_type</a>, <a class="code" href="group___c_x_x11_traits_helper.html#gac9a2cf52272a27ac8eb3bd3fe550cabb">cxx11::false_type</a>)</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    {<span class="keywordflow">return</span> info(ext0_, 0);}</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> EAX, <span class="keywordtype">unsigned</span> ECX, <span class="keywordtype">bool</span> Basic&gt;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch (<a class="code" href="group___c_x_x11_traits_helper.html#gac9a2cf52272a27ac8eb3bd3fe550cabb">cxx11::false_type</a>,</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            cxx11::integral_constant&lt;bool, Basic&gt;)</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    {</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        reg_type reg(info_dispatch&lt;EAX, ECX&gt;(<a class="code" href="group___c_x_x11_traits_helper.html#gac58fee08d259e39fb8480bd85c088f76">cxx11::true_type</a>(),</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                    cxx11::integral_constant&lt;bool, Basic&gt;()));</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">if</span> (EAX &gt; reg.at&lt;0&gt;())</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            reg.fill(0);</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;            reg = info(EAX, ECX);</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <span class="keywordflow">return</span> reg;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    }</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Bit&gt;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> test_bit (<span class="keywordtype">unsigned</span> val)</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    {<span class="keywordflow">return</span> val &amp; (1U &lt;&lt; Bit);}</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Hi, <span class="keywordtype">unsigned</span> Lo&gt;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> extract_bits (<span class="keywordtype">unsigned</span> val)</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    {<span class="keywordflow">return</span> (val &lt;&lt; (31U - Hi)) &gt;&gt; (31U - Hi + Lo);}</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_equal (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    {os &lt;&lt; std::string(95, <span class="charliteral">&#39;=&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;}</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> Bit&gt;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> test_bit (<span class="keywordtype">unsigned</span> val)</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    {<span class="keywordflow">return</span> val &amp; (1U &lt;&lt; Bit);}</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_dash (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    {os &lt;&lt; std::string(95, <span class="charliteral">&#39;-&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;}</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_equal (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    {os &lt;&lt; std::string(95, <span class="charliteral">&#39;=&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;}</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_cache (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    {</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        std::vector&lt;cache_param_type&gt; caches;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="keywordtype">unsigned</span> max_ecx = max_cache_index();</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> ecx = 0; ecx != max_ecx; ++ecx)</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;            caches.push_back(cache_param(ecx));</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <span class="keyword">const</span> std::size_t fix = 12;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        std::stringstream ss;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache level                &quot;</span>;</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].level();</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache type                 &quot;</span>;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <span class="keywordflow">switch</span> (caches[i].type()) {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5aff39d621fa8aae5b2318d099fe4595f8">CPUIDCacheTypeNull</a> :</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a0c3df898e752e2ccb71a84273d66918c">CPUIDCacheTypeData</a> :</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Data&quot;</span>;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a9a8fa590df4e73a4b5d9da6d333756d1">CPUIDCacheTypeInstruction</a> :</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Instruction&quot;</span>;</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5af4c05675815d3bb8e584a4ad8a2ab770">CPUIDCacheTypeUnified</a> :</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Unified&quot;</span>;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;            }</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        }</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache size (byte)          &quot;</span>;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            <span class="keywordtype">unsigned</span> b = caches[i].size();</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;            ss.str(std::string());</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;            <span class="keywordflow">if</span> (b &lt; 1024) {</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                ss &lt;&lt; b;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;K&quot;</span>;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;M&quot;</span>;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                ss &lt;&lt; b / 1024 &lt;&lt; <span class="stringliteral">&quot;GB&quot;</span>;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            }</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; ss.str();</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        }</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Max Proc ID sharing        &quot;</span>;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_sharing();</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Max Proc ID phiysical      &quot;</span>;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_physical();</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Coherency line size (byte) &quot;</span>;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].line_size();</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Physical line partitions   &quot;</span>;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].partitions();</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Ways of associative        &quot;</span>;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].ways();</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Number of sets             &quot;</span>;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].sets();</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Self initializing          &quot;</span>;</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                &lt;&lt; (caches[i].self_initializing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        }</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Fully associative          &quot;</span>;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                &lt;&lt; (caches[i].fully_associative() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        }</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Write-back invalidate      &quot;</span>;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                &lt;&lt; (caches[i].wbinvd() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        }</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache inclusiveness        &quot;</span>;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                &lt;&lt; (caches[i].inclusiveness() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        }</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Complex cache indexing     &quot;</span>;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                &lt;&lt; (caches[i].complex_indexing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        }</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    }</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_features (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    {</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        std::vector&lt;std::string&gt; feats;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        feature_str(feats);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Basic features\n&quot;</span>;</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        print_dash(os);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        print_features(os, feats);</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x07) {</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            std::vector&lt;std::string&gt; feats_ext;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            feature_str_ext(feats_ext);</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            <span class="keywordflow">if</span> (feats_ext.size() != 0) {</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                print_equal(os);</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Extended features\n&quot;</span>;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                print_dash(os);</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                print_features(os, feats_ext);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            }</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        }</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        os &lt;&lt; std::flush;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    }</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_features (std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;            std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    {</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        std::sort(feats.begin(), feats.end());</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <span class="keyword">const</span> std::size_t N = feats.size();</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <span class="keyword">const</span> std::size_t fix = 15;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keyword">const</span> std::size_t cols = 6;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        std::size_t rows = N / cols + (N % cols == 0 ? 0 : 1);</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        std::size_t index = 0;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keywordflow">for</span> (std::size_t r = 0; r != rows; ++r) {</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;            <span class="keywordflow">for</span> (std::size_t c = 0; c != cols; ++c)</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                <span class="keywordflow">if</span> ((index = r + rows * c) &lt; N)</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;                    print_feat(os, feats[index], fix);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        }</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    }</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feat (std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            std::string &amp;str, std::size_t fix)</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        os &lt;&lt; str;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordflow">if</span> (str.size() &lt; fix)</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;            os &lt;&lt; std::string(fix - str.size(), <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    }</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str (std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    {</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        feature_str&lt;CPUIDFeatureSSE3&gt;        (feats);</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        feature_str&lt;CPUIDFeaturePCLMULQDQ&gt;   (feats);</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        feature_str&lt;CPUIDFeatureDTES64&gt;      (feats);</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        feature_str&lt;CPUIDFeatureMONITOR&gt;     (feats);</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        feature_str&lt;CPUIDFeatureDS_CPL&gt;      (feats);</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        feature_str&lt;CPUIDFeatureVMX&gt;         (feats);</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        feature_str&lt;CPUIDFeatureSMX&gt;         (feats);</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        feature_str&lt;CPUIDFeatureEST&gt;         (feats);</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        feature_str&lt;CPUIDFeatureTM2&gt;         (feats);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        feature_str&lt;CPUIDFeatureSSSE3&gt;       (feats);</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        feature_str&lt;CPUIDFeatureCNXT_ID&gt;     (feats);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        feature_str&lt;CPUIDFeatureFMA&gt;         (feats);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        feature_str&lt;CPUIDFeatureCX16&gt;        (feats);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        feature_str&lt;CPUIDFeatureXTPR&gt;        (feats);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        feature_str&lt;CPUIDFeaturePDCM&gt;        (feats);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        feature_str&lt;CPUIDFeaturePCID&gt;        (feats);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        feature_str&lt;CPUIDFeatureDCA&gt;         (feats);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_1&gt;      (feats);</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_2&gt;      (feats);</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        feature_str&lt;CPUIDFeatureX2APIC&gt;      (feats);</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        feature_str&lt;CPUIDFeatureMOVBE&gt;       (feats);</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        feature_str&lt;CPUIDFeaturePOPCNT&gt;      (feats);</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        feature_str&lt;CPUIDFeatureTSC_DEADLINE&gt;(feats);</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        feature_str&lt;CPUIDFeatureAES&gt;         (feats);</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        feature_str&lt;CPUIDFeatureXSAVE&gt;       (feats);</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        feature_str&lt;CPUIDFeatureOSXSAVE&gt;     (feats);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        feature_str&lt;CPUIDFeatureAVX&gt;         (feats);</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        feature_str&lt;CPUIDFeatureF16C&gt;        (feats);</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        feature_str&lt;CPUIDFeatureRDRND&gt;       (feats);</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        feature_str&lt;CPUIDFeatureHYPERVISOR&gt;  (feats);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        feature_str&lt;CPUIDFeatureFPU&gt;         (feats);</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        feature_str&lt;CPUIDFeatureVME&gt;         (feats);</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        feature_str&lt;CPUIDFeatureDE&gt;          (feats);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        feature_str&lt;CPUIDFeaturePSE&gt;         (feats);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        feature_str&lt;CPUIDFeatureTSC&gt;         (feats);</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        feature_str&lt;CPUIDFeatureMSR&gt;         (feats);</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        feature_str&lt;CPUIDFeaturePAE&gt;         (feats);</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        feature_str&lt;CPUIDFeatureMCE&gt;         (feats);</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        feature_str&lt;CPUIDFeatureCX8&gt;         (feats);</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        feature_str&lt;CPUIDFeatureAPIC&gt;        (feats);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        feature_str&lt;CPUIDFeatureSEP&gt;         (feats);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        feature_str&lt;CPUIDFeatureMTRR&gt;        (feats);</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        feature_str&lt;CPUIDFeaturePGE&gt;         (feats);</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        feature_str&lt;CPUIDFeatureMCA&gt;         (feats);</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        feature_str&lt;CPUIDFeatureCMOV&gt;        (feats);</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        feature_str&lt;CPUIDFeaturePAT&gt;         (feats);</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        feature_str&lt;CPUIDFeaturePSE_36&gt;      (feats);</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        feature_str&lt;CPUIDFeaturePSN&gt;         (feats);</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        feature_str&lt;CPUIDFeatureCLFSH&gt;       (feats);</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        feature_str&lt;CPUIDFeatureDS&gt;          (feats);</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        feature_str&lt;CPUIDFeatureACPI&gt;        (feats);</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        feature_str&lt;CPUIDFeatureMMX&gt;         (feats);</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        feature_str&lt;CPUIDFeatureFXSR&gt;        (feats);</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        feature_str&lt;CPUIDFeatureSSE&gt;         (feats);</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        feature_str&lt;CPUIDFeatureSSE2&gt;        (feats);</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        feature_str&lt;CPUIDFeatureSS&gt;          (feats);</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        feature_str&lt;CPUIDFeatureHTT&gt;         (feats);</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        feature_str&lt;CPUIDFeatureTM&gt;          (feats);</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        feature_str&lt;CPUIDFeatureIA64&gt;        (feats);</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        feature_str&lt;CPUIDFeaturePBE&gt;         (feats);</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    }</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str_ext (std::vector&lt;std::string&gt; &amp;feats_ext)</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    {</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        feature_str&lt;CPUIDFeatureExtFSGSBASE&gt;    (feats_ext);</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        feature_str&lt;CPUIDFeatureExtBMI1&gt;        (feats_ext);</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        feature_str&lt;CPUIDFeatureExtHLE&gt;         (feats_ext);</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX2&gt;        (feats_ext);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        feature_str&lt;CPUIDFeatureExtSMEP&gt;        (feats_ext);</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        feature_str&lt;CPUIDFeatureExtBMI2&gt;        (feats_ext);</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        feature_str&lt;CPUIDFeatureExtERMS&gt;        (feats_ext);</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        feature_str&lt;CPUIDFeatureExtINVPCID&gt;     (feats_ext);</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        feature_str&lt;CPUIDFeatureExtRTM&gt;         (feats_ext);</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        feature_str&lt;CPUIDFeatureExtMPX&gt;         (feats_ext);</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512F&gt;     (feats_ext);</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512DQ&gt;    (feats_ext);</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        feature_str&lt;CPUIDFeatureExtRDSEED&gt;      (feats_ext);</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        feature_str&lt;CPUIDFeatureExtADX&gt;         (feats_ext);</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        feature_str&lt;CPUIDFeatureExtSMAP&gt;        (feats_ext);</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512IFMA52&gt;(feats_ext);</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        feature_str&lt;CPUIDFeatureExtCLFLUSHOPT&gt;  (feats_ext);</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        feature_str&lt;CPUIDFeatureExtINTEL_TRACE&gt; (feats_ext);</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512PF&gt;    (feats_ext);</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512ER&gt;    (feats_ext);</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512CD&gt;    (feats_ext);</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        feature_str&lt;CPUIDFeatureExtSHA&gt;         (feats_ext);</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512BW&gt;    (feats_ext);</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512VL&gt;    (feats_ext);</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        feature_str&lt;CPUIDFeatureExtPREFETCHWT1&gt; (feats_ext);</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512VBMI&gt;  (feats_ext);</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    }</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_dash (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    {os &lt;&lt; std::string(95, <span class="charliteral">&#39;-&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;}</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_cache (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    {</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        std::vector&lt;cache_param_type&gt; caches;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <span class="keywordtype">unsigned</span> max_ecx = max_cache_index();</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> ecx = 0; ecx != max_ecx; ++ecx)</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            caches.push_back(cache_param(ecx));</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keyword">const</span> std::size_t fix = 12;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        std::stringstream ss;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache level                &quot;</span>;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].level();</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache type                 &quot;</span>;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            <span class="keywordflow">switch</span> (caches[i].type()) {</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5aff39d621fa8aae5b2318d099fe4595f8">CPUIDCacheTypeNull</a> :</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a0c3df898e752e2ccb71a84273d66918c">CPUIDCacheTypeData</a> :</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Data&quot;</span>;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a9a8fa590df4e73a4b5d9da6d333756d1">CPUIDCacheTypeInstruction</a> :</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Instruction&quot;</span>;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5af4c05675815d3bb8e584a4ad8a2ab770">CPUIDCacheTypeUnified</a> :</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Unified&quot;</span>;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            }</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        }</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache size (byte)          &quot;</span>;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            <span class="keywordtype">unsigned</span> b = caches[i].size();</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            ss.str(std::string());</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            <span class="keywordflow">if</span> (b &lt; 1024) {</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                ss &lt;&lt; b;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;K&quot;</span>;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;M&quot;</span>;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                ss &lt;&lt; b / 1024 &lt;&lt; <span class="stringliteral">&quot;GB&quot;</span>;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            }</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; ss.str();</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        }</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Max Proc ID sharing        &quot;</span>;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_sharing();</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Max Proc ID phiysical      &quot;</span>;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_physical();</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Coherency line size (byte) &quot;</span>;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].line_size();</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Physical line partitions   &quot;</span>;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].partitions();</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Ways of associative        &quot;</span>;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].ways();</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Number of sets             &quot;</span>;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].sets();</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Self initializing          &quot;</span>;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                &lt;&lt; (caches[i].self_initializing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        }</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Fully associative          &quot;</span>;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                &lt;&lt; (caches[i].fully_associative() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        }</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Write-back invalidate      &quot;</span>;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                &lt;&lt; (caches[i].wbinvd() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        }</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache inclusiveness        &quot;</span>;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;                &lt;&lt; (caches[i].inclusiveness() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        }</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Complex cache indexing     &quot;</span>;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                &lt;&lt; (caches[i].complex_indexing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        }</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    }</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature (std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    {</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        feature_str(feats);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Basic features\n&quot;</span>;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        print_dash(os);</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        print_feature(os, feats);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x07) {</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;            std::vector&lt;std::string&gt; feats_ext;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            feature_str_ext(feats_ext);</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;            <span class="keywordflow">if</span> (feats_ext.size() != 0) {</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                print_equal(os);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Extended features\n&quot;</span>;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                print_dash(os);</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                print_feature(os, feats_ext);</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;            }</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        }</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        os &lt;&lt; std::flush;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    }</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature (std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    {</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        std::sort(feats.begin(), feats.end());</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <span class="keyword">const</span> std::size_t N = feats.size();</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keyword">const</span> std::size_t fix = 15;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        <span class="keyword">const</span> std::size_t cols = 6;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        std::size_t rows = N / cols + (N % cols == 0 ? 0 : 1);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        std::size_t index = 0;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordflow">for</span> (std::size_t r = 0; r != rows; ++r) {</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            <span class="keywordflow">for</span> (std::size_t c = 0; c != cols; ++c)</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                <span class="keywordflow">if</span> ((index = r + rows * c) &lt; N)</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                    print_feat(os, feats[index], fix);</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;            os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        }</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    }</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feat (std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;            std::string &amp;str, std::size_t fix)</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    {</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        os &lt;&lt; str;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        <span class="keywordflow">if</span> (str.size() &lt; fix)</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            os &lt;&lt; std::string(fix - str.size(), <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    }</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str (std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    {</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        feature_str&lt;CPUIDFeatureSSE3&gt;        (feats);</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        feature_str&lt;CPUIDFeaturePCLMULQDQ&gt;   (feats);</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        feature_str&lt;CPUIDFeatureDTES64&gt;      (feats);</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        feature_str&lt;CPUIDFeatureMONITOR&gt;     (feats);</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        feature_str&lt;CPUIDFeatureDS_CPL&gt;      (feats);</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        feature_str&lt;CPUIDFeatureVMX&gt;         (feats);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        feature_str&lt;CPUIDFeatureSMX&gt;         (feats);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        feature_str&lt;CPUIDFeatureEST&gt;         (feats);</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        feature_str&lt;CPUIDFeatureTM2&gt;         (feats);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        feature_str&lt;CPUIDFeatureSSSE3&gt;       (feats);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        feature_str&lt;CPUIDFeatureCNXT_ID&gt;     (feats);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        feature_str&lt;CPUIDFeatureFMA&gt;         (feats);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        feature_str&lt;CPUIDFeatureCX16&gt;        (feats);</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        feature_str&lt;CPUIDFeatureXTPR&gt;        (feats);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        feature_str&lt;CPUIDFeaturePDCM&gt;        (feats);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        feature_str&lt;CPUIDFeaturePCID&gt;        (feats);</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        feature_str&lt;CPUIDFeatureDCA&gt;         (feats);</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_1&gt;      (feats);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_2&gt;      (feats);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        feature_str&lt;CPUIDFeatureX2APIC&gt;      (feats);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        feature_str&lt;CPUIDFeatureMOVBE&gt;       (feats);</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        feature_str&lt;CPUIDFeaturePOPCNT&gt;      (feats);</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        feature_str&lt;CPUIDFeatureTSC_DEADLINE&gt;(feats);</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        feature_str&lt;CPUIDFeatureAES&gt;         (feats);</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        feature_str&lt;CPUIDFeatureXSAVE&gt;       (feats);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        feature_str&lt;CPUIDFeatureOSXSAVE&gt;     (feats);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        feature_str&lt;CPUIDFeatureAVX&gt;         (feats);</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        feature_str&lt;CPUIDFeatureF16C&gt;        (feats);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        feature_str&lt;CPUIDFeatureRDRND&gt;       (feats);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        feature_str&lt;CPUIDFeatureHYPERVISOR&gt;  (feats);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        feature_str&lt;CPUIDFeatureFPU&gt;         (feats);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        feature_str&lt;CPUIDFeatureVME&gt;         (feats);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        feature_str&lt;CPUIDFeatureDE&gt;          (feats);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        feature_str&lt;CPUIDFeaturePSE&gt;         (feats);</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        feature_str&lt;CPUIDFeatureTSC&gt;         (feats);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        feature_str&lt;CPUIDFeatureMSR&gt;         (feats);</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        feature_str&lt;CPUIDFeaturePAE&gt;         (feats);</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        feature_str&lt;CPUIDFeatureMCE&gt;         (feats);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        feature_str&lt;CPUIDFeatureCX8&gt;         (feats);</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        feature_str&lt;CPUIDFeatureAPIC&gt;        (feats);</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        feature_str&lt;CPUIDFeatureSEP&gt;         (feats);</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        feature_str&lt;CPUIDFeatureMTRR&gt;        (feats);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        feature_str&lt;CPUIDFeaturePGE&gt;         (feats);</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        feature_str&lt;CPUIDFeatureMCA&gt;         (feats);</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        feature_str&lt;CPUIDFeatureCMOV&gt;        (feats);</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        feature_str&lt;CPUIDFeaturePAT&gt;         (feats);</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        feature_str&lt;CPUIDFeaturePSE_36&gt;      (feats);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        feature_str&lt;CPUIDFeaturePSN&gt;         (feats);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        feature_str&lt;CPUIDFeatureCLFSH&gt;       (feats);</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        feature_str&lt;CPUIDFeatureDS&gt;          (feats);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        feature_str&lt;CPUIDFeatureACPI&gt;        (feats);</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        feature_str&lt;CPUIDFeatureMMX&gt;         (feats);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        feature_str&lt;CPUIDFeatureFXSR&gt;        (feats);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        feature_str&lt;CPUIDFeatureSSE&gt;         (feats);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        feature_str&lt;CPUIDFeatureSSE2&gt;        (feats);</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        feature_str&lt;CPUIDFeatureSS&gt;          (feats);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        feature_str&lt;CPUIDFeatureHTT&gt;         (feats);</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        feature_str&lt;CPUIDFeatureTM&gt;          (feats);</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        feature_str&lt;CPUIDFeatureIA64&gt;        (feats);</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        feature_str&lt;CPUIDFeaturePBE&gt;         (feats);</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    }</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str_ext (std::vector&lt;std::string&gt; &amp;feats_ext)</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    {</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        feature_str&lt;CPUIDFeatureExtFSGSBASE&gt;    (feats_ext);</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        feature_str&lt;CPUIDFeatureExtBMI1&gt;        (feats_ext);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        feature_str&lt;CPUIDFeatureExtHLE&gt;         (feats_ext);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX2&gt;        (feats_ext);</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        feature_str&lt;CPUIDFeatureExtSMEP&gt;        (feats_ext);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        feature_str&lt;CPUIDFeatureExtBMI2&gt;        (feats_ext);</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        feature_str&lt;CPUIDFeatureExtERMS&gt;        (feats_ext);</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        feature_str&lt;CPUIDFeatureExtINVPCID&gt;     (feats_ext);</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        feature_str&lt;CPUIDFeatureExtRTM&gt;         (feats_ext);</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        feature_str&lt;CPUIDFeatureExtMPX&gt;         (feats_ext);</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512F&gt;     (feats_ext);</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512DQ&gt;    (feats_ext);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        feature_str&lt;CPUIDFeatureExtRDSEED&gt;      (feats_ext);</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        feature_str&lt;CPUIDFeatureExtADX&gt;         (feats_ext);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        feature_str&lt;CPUIDFeatureExtSMAP&gt;        (feats_ext);</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512IFMA52&gt;(feats_ext);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        feature_str&lt;CPUIDFeatureExtCLFLUSHOPT&gt;  (feats_ext);</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        feature_str&lt;CPUIDFeatureExtINTEL_TRACE&gt; (feats_ext);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512PF&gt;    (feats_ext);</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512ER&gt;    (feats_ext);</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512CD&gt;    (feats_ext);</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        feature_str&lt;CPUIDFeatureExtSHA&gt;         (feats_ext);</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512BW&gt;    (feats_ext);</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512VL&gt;    (feats_ext);</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str (std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    {</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="keywordflow">if</span> (has_feature&lt;Feat&gt;())</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            feats.push_back(internal::CPUIDFeatureInfo&lt;Feat&gt;::str());</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    }</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;}; <span class="comment">// class CPUID</span></div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00844"></a><span class="lineno"><a class="line" href="group___c_p_u_i_d.html#ga5f2737cb67a06ea172abae597d38e38b">  844</a></span>&#160;<span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="group___open_c_l.html#ga38174a9513c40e78ff67af086b88f485">operator&lt;&lt; </a>(</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> CPUID &amp;)</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;{<a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a9befcc7de8d11a56ea1b07cbfea0189d">CPUID::info</a>(os); <span class="keywordflow">return</span> os;}</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_CPUID_HPP</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        feature_str&lt;CPUIDFeatureExtPREFETCHWT1&gt; (feats_ext);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        feature_str&lt;CPUIDFeatureExtAVX512VBMI&gt;  (feats_ext);</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    }</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str (std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    {</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        <span class="keywordflow">if</span> (has_feature&lt;Feat&gt;())</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            feats.push_back(internal::CPUIDFeatureInfo&lt;Feat&gt;::str());</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;}; <span class="comment">// class CPUID</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00848"></a><span class="lineno"><a class="line" href="group___c_p_u_i_d.html#ga5f2737cb67a06ea172abae597d38e38b">  848</a></span>&#160;<span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="group___open_c_l.html#ga38174a9513c40e78ff67af086b88f485">operator&lt;&lt; </a>(</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> CPUID &amp;)</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;{<a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a9befcc7de8d11a56ea1b07cbfea0189d">CPUID::info</a>(os); <span class="keywordflow">return</span> os;}</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_CPUID_HPP</span></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a24c92f511daaa29d90c77fead343b9f5"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a24c92f511daaa29d90c77fead343b9f5">vsmc::CPUIDFeatureExtAVX512PF</a></div><div class="ttdoc">EAX = 0x07; EBX[26]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00135">cpuid.hpp:135</a></div></div>
 <div class="ttc" id="cpuid_8hpp_html_aa31b8567938a7ccae87e2cdfb59473b4"><div class="ttname"><a href="cpuid_8hpp.html#aa31b8567938a7ccae87e2cdfb59473b4">VSMC_DEFINE_UTILITY_CPUID_FEATURE_EXT_INFO</a></div><div class="ttdeci">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_EXT_INFO(feat, eax_val, i, b)</div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00036">cpuid.hpp:36</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5c4cc698dd1f87c900b6d1bb2e65f24d"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5c4cc698dd1f87c900b6d1bb2e65f24d">vsmc::CPUIDFeatureCNXT_ID</a></div><div class="ttdoc">EAX = 0x01; ECX[10]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00065">cpuid.hpp:65</a></div></div>
@@ -917,7 +920,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a210273378d58cbb6dd05e22293c7e9f3"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a210273378d58cbb6dd05e22293c7e9f3">vsmc::CPUIDFeatureExtPREFETCHWT1</a></div><div class="ttdoc">EAX = 0x07; ECX[00]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00142">cpuid.hpp:142</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a4721c4e83a3db87d7799f8c2ef853eba"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a4721c4e83a3db87d7799f8c2ef853eba">vsmc::CPUIDFeatureExtRDSEED</a></div><div class="ttdoc">EAX = 0x07; EBX[18]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00129">cpuid.hpp:129</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a4190a170bb4ff7d9c93e78dab8b4fadf"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a4190a170bb4ff7d9c93e78dab8b4fadf">vsmc::CPUIDFeatureSS</a></div><div class="ttdoc">EAX = 0x01; EDX[27]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00111">cpuid.hpp:111</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a10484a559078c0ce443f7e00215d4723"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a10484a559078c0ce443f7e00215d4723">vsmc::CPUID::cache_param</a></div><div class="ttdeci">static cache_param_type cache_param(unsigned cache_index)</div><div class="ttdoc">Get the cache parameters. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00505">cpuid.hpp:505</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a10484a559078c0ce443f7e00215d4723"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a10484a559078c0ce443f7e00215d4723">vsmc::CPUID::cache_param</a></div><div class="ttdeci">static cache_param_type cache_param(unsigned cache_index)</div><div class="ttdoc">Get the cache parameters (EAX = 0x04; EAX, EBX, ECX, EDX) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00505">cpuid.hpp:505</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a86294905745b5a190731071d891d7afc"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a86294905745b5a190731071d891d7afc">vsmc::CPUID::cache_param_type::max_proc_sharing</a></div><div class="ttdeci">unsigned max_proc_sharing() const </div><div class="ttdoc">Maximum number of addressable logical processors sharing this cache. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00313">cpuid.hpp:313</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a501b6ff19702ea0e90253cd0f98d6f04"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a501b6ff19702ea0e90253cd0f98d6f04">vsmc::CPUIDFeaturePDCM</a></div><div class="ttdoc">EAX = 0x01; ECX[15]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00069">cpuid.hpp:69</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a6d9872a2e8f1333a929e5d6960aabdd6"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a6d9872a2e8f1333a929e5d6960aabdd6">vsmc::CPUIDFeatureExtAVX512BW</a></div><div class="ttdoc">EAX = 0x07; EBX[30]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00139">cpuid.hpp:139</a></div></div>
@@ -925,7 +928,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ab891422752388c8b52c9abb80f518486"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ab891422752388c8b52c9abb80f518486">vsmc::CPUIDFeatureExtAVX512CD</a></div><div class="ttdoc">EAX = 0x07; EBX[28]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00137">cpuid.hpp:137</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ade62d09f81bd69023b8723c02170ce42"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ade62d09f81bd69023b8723c02170ce42">vsmc::CPUIDFeatureFPU</a></div><div class="ttdoc">EAX = 0x01; EDX[00]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00086">cpuid.hpp:86</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ace3d7d168c3157e339541117f8d24abd"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ace3d7d168c3157e339541117f8d24abd">vsmc::CPUIDFeatureExtAVX512F</a></div><div class="ttdoc">EAX = 0x07; EBX[16]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00127">cpuid.hpp:127</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a66a1482d0986410be135d573c482080a"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a66a1482d0986410be135d573c482080a">vsmc::CPUID::info</a></div><div class="ttdeci">static void info(std::basic_ostream&lt; CharT, Traits &gt; &amp;os)</div><div class="ttdoc">Get CPU features using CPUID. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00370">cpuid.hpp:370</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a66a1482d0986410be135d573c482080a"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a66a1482d0986410be135d573c482080a">vsmc::CPUID::info</a></div><div class="ttdeci">static void info(std::basic_ostream&lt; CharT, Traits &gt; &amp;os)</div><div class="ttdoc">Get CPU feature using CPUID. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00370">cpuid.hpp:370</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aed77defd0b54b61eea105fcac7953dfd"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aed77defd0b54b61eea105fcac7953dfd">vsmc::CPUIDFeatureExtRTM</a></div><div class="ttdoc">EAX = 0x07; EBX[11]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00125">cpuid.hpp:125</a></div></div>
 <div class="ttc" id="namespacevsmc_html_a44538ef0bb753296fe5de1e5fd5a60a5aff39d621fa8aae5b2318d099fe4595f8"><div class="ttname"><a href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5aff39d621fa8aae5b2318d099fe4595f8">vsmc::CPUIDCacheTypeNull</a></div><div class="ttdoc">No more cache. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00148">cpuid.hpp:148</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6acfdab685996356f567c0cbbfd22c6067"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6acfdab685996356f567c0cbbfd22c6067">vsmc::CPUIDFeatureCMOV</a></div><div class="ttdoc">EAX = 0x01; EDX[15]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00100">cpuid.hpp:100</a></div></div>
@@ -953,18 +956,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aba7f9f9ee025d51bed57b4f5c86e8227"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aba7f9f9ee025d51bed57b4f5c86e8227">vsmc::CPUIDFeatureDCA</a></div><div class="ttdoc">EAX = 0x01; ECX[18]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00071">cpuid.hpp:71</a></div></div>
 <div class="ttc" id="array_8hpp_html"><div class="ttname"><a href="array_8hpp.html">array.hpp</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6acdc6772bc2c988633264f74233678471"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6acdc6772bc2c988633264f74233678471">vsmc::CPUIDFeatureExtBMI2</a></div><div class="ttdoc">EAX = 0x07; EBX[08]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00122">cpuid.hpp:122</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a44c552856c96e585f5f05e0fded94729"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a44c552856c96e585f5f05e0fded94729">vsmc::CPUID::max_eax_ext</a></div><div class="ttdeci">static unsigned max_eax_ext()</div><div class="ttdoc">Max extended calling parameter EAX. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00453">cpuid.hpp:453</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a250f04edbdfa992e740185d64a5b1565"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">vsmc::CPUID::base_freq</a></div><div class="ttdeci">static unsigned base_freq()</div><div class="ttdoc">Base frequency in MHz (EAX = 0x16; EAX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00509">cpuid.hpp:509</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a44c552856c96e585f5f05e0fded94729"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a44c552856c96e585f5f05e0fded94729">vsmc::CPUID::max_eax_ext</a></div><div class="ttdeci">static unsigned max_eax_ext()</div><div class="ttdoc">Max extended calling parameter EAX (EAX = 0x80000000; EAX) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00453">cpuid.hpp:453</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a250f04edbdfa992e740185d64a5b1565"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">vsmc::CPUID::base_freq</a></div><div class="ttdeci">static unsigned base_freq()</div><div class="ttdoc">Base frequency in MHz (EAX = 0x16; EAX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00513">cpuid.hpp:513</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a2c27247592a909bb6a117fbb3defdc00"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a2c27247592a909bb6a117fbb3defdc00">vsmc::CPUIDFeatureExtAVX512IFMA52</a></div><div class="ttdoc">EAX = 0x07; EBX[21]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00132">cpuid.hpp:132</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a31ab5be0638307f4b2e5e1d9c9607584"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a31ab5be0638307f4b2e5e1d9c9607584">vsmc::CPUIDFeatureMSR</a></div><div class="ttdoc">EAX = 0x01; EDX[05]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00091">cpuid.hpp:91</a></div></div>
-<div class="ttc" id="group___open_c_l_html_ga38174a9513c40e78ff67af086b88f485"><div class="ttname"><a href="group___open_c_l.html#ga38174a9513c40e78ff67af086b88f485">vsmc::operator&lt;&lt;</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const CLQuery &amp;)</div><div class="ttdoc">Query information of all platforms and devices. </div><div class="ttdef"><b>Definition:</b> <a href="cl__query_8hpp_source.html#l00400">cl_query.hpp:400</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_abf935f82063dad81a2e86f578a467413"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413">vsmc::CPUID::intel_turbo_boost</a></div><div class="ttdeci">static bool intel_turbo_boost()</div><div class="ttdoc">Intel Turbo Boost (EAX = 0x06; EAX[1]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00509">cpuid.hpp:509</a></div></div>
+<div class="ttc" id="group___open_c_l_html_ga38174a9513c40e78ff67af086b88f485"><div class="ttname"><a href="group___open_c_l.html#ga38174a9513c40e78ff67af086b88f485">vsmc::operator&lt;&lt;</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const CLQuery &amp;)</div><div class="ttdoc">Query OpenCL information using CLQuery. </div><div class="ttdef"><b>Definition:</b> <a href="cl__query_8hpp_source.html#l00400">cl_query.hpp:400</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ab118ce2c2d9fdfca324bc8083943dfec"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ab118ce2c2d9fdfca324bc8083943dfec">vsmc::CPUIDFeatureVMX</a></div><div class="ttdoc">EAX = 0x01; ECX[05]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00060">cpuid.hpp:60</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a35a8d73b87db52aa8c534863652307c9"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a35a8d73b87db52aa8c534863652307c9">vsmc::CPUIDFeatureFXSR</a></div><div class="ttdoc">EAX = 0x01; EDX[24]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00108">cpuid.hpp:108</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_ae52709cf772152d25de18140fa285629"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">vsmc::CPUID::has_feature</a></div><div class="ttdeci">static bool has_feature()</div><div class="ttdoc">CPU feature. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00522">cpuid.hpp:522</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_ae52709cf772152d25de18140fa285629"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">vsmc::CPUID::has_feature</a></div><div class="ttdeci">static bool has_feature()</div><div class="ttdoc">CPU feature. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00526">cpuid.hpp:526</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a587efebfb62d5db4cebc5fd7462bff3f"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a587efebfb62d5db4cebc5fd7462bff3f">vsmc::CPUID::cache_param_type::size</a></div><div class="ttdeci">unsigned size() const </div><div class="ttdoc">Cache size in byte. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00332">cpuid.hpp:332</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ade776c3b74f1a449739a35b65db67d75"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ade776c3b74f1a449739a35b65db67d75">vsmc::CPUIDFeatureSSE4_2</a></div><div class="ttdoc">EAX = 0x01; ECX[20]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00073">cpuid.hpp:73</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a24467f557d04945dfa6513ed554237ec"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a24467f557d04945dfa6513ed554237ec">vsmc::CPUID::max_eax</a></div><div class="ttdeci">static unsigned max_eax()</div><div class="ttdoc">Max calling parameter EAX. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00449">cpuid.hpp:449</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a24467f557d04945dfa6513ed554237ec"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a24467f557d04945dfa6513ed554237ec">vsmc::CPUID::max_eax</a></div><div class="ttdeci">static unsigned max_eax()</div><div class="ttdoc">Max calling parameter EAX (EAX = 0; EAX) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00449">cpuid.hpp:449</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_ad2bd6e3c25743f8c1437a393ddb5bf17"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ad2bd6e3c25743f8c1437a393ddb5bf17">vsmc::CPUID::cache_param_type::wbinvd</a></div><div class="ttdeci">bool wbinvd() const </div><div class="ttdoc">Write-back invalidate/invalidate behavior on lower level caches. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00342">cpuid.hpp:342</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a8df117f475a2c229579199bde3fac6c6"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a8df117f475a2c229579199bde3fac6c6">vsmc::CPUIDFeatureAES</a></div><div class="ttdoc">EAX = 0x01; ECX[25]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00078">cpuid.hpp:78</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a48ba0b61e912c9dd1ad199295d8b2401"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a48ba0b61e912c9dd1ad199295d8b2401">vsmc::CPUIDFeatureXTPR</a></div><div class="ttdoc">EAX = 0x01; ECX[14]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00068">cpuid.hpp:68</a></div></div>
@@ -975,11 +979,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a4f5ea08c9d088a93fa1c0fcab76cc371"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a4f5ea08c9d088a93fa1c0fcab76cc371">vsmc::CPUIDFeatureF16C</a></div><div class="ttdoc">EAX = 0x01; ECX[29]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00082">cpuid.hpp:82</a></div></div>
 <div class="ttc" id="cpuid_8hpp_html_a939beaedfa1a5acbd8b1de514adc9184"><div class="ttname"><a href="cpuid_8hpp.html#a939beaedfa1a5acbd8b1de514adc9184">VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO</a></div><div class="ttdeci">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO(feat, eax_val, i, b)</div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00027">cpuid.hpp:27</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_ae32cdb45546db8b7583de68a0198b585"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ae32cdb45546db8b7583de68a0198b585">vsmc::CPUID::cache_param_type::partitions</a></div><div class="ttdeci">unsigned partitions() const </div><div class="ttdoc">Physical line partitions. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00323">cpuid.hpp:323</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html">vsmc::CPUID</a></div><div class="ttdoc">Query CPUID informations. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00256">cpuid.hpp:256</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html">vsmc::CPUID</a></div><div class="ttdoc">Query CPUID information. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00256">cpuid.hpp:256</a></div></div>
 <div class="ttc" id="group___c_x_x11_traits_helper_html_gac58fee08d259e39fb8480bd85c088f76"><div class="ttname"><a href="group___c_x_x11_traits_helper.html#gac58fee08d259e39fb8480bd85c088f76">vsmc::cxx11::true_type</a></div><div class="ttdeci">integral_constant&lt; bool, true &gt; true_type</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8hpp_source.html#l00224">type_traits.hpp:224</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a611c133bfc30baaa3d111084acf96e48"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a611c133bfc30baaa3d111084acf96e48">vsmc::CPUIDFeaturePCLMULQDQ</a></div><div class="ttdoc">EAX = 0x01; ECX[01]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00056">cpuid.hpp:56</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a3cdabff65747c8c1a9dd3f987f990735"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a3cdabff65747c8c1a9dd3f987f990735">vsmc::CPUID::cache_param_type::complex_indexing</a></div><div class="ttdeci">bool complex_indexing() const </div><div class="ttdoc">Complex cache indexing. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00348">cpuid.hpp:348</a></div></div>
-<div class="ttc" id="group___c_p_u_i_d_html_ga6e9cefe0836fbe600a1ce47f5c9f03b6"><div class="ttname"><a href="group___c_p_u_i_d.html#ga6e9cefe0836fbe600a1ce47f5c9f03b6">vsmc::CPUIDFeature</a></div><div class="ttdeci">CPUIDFeature</div><div class="ttdoc">Basic CPU features. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00053">cpuid.hpp:53</a></div></div>
+<div class="ttc" id="group___c_p_u_i_d_html_ga6e9cefe0836fbe600a1ce47f5c9f03b6"><div class="ttname"><a href="group___c_p_u_i_d.html#ga6e9cefe0836fbe600a1ce47f5c9f03b6">vsmc::CPUIDFeature</a></div><div class="ttdeci">CPUIDFeature</div><div class="ttdoc">Basic CPU feature. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00053">cpuid.hpp:53</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a1557dbd0edde0f6c305340eef59a0b06"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a1557dbd0edde0f6c305340eef59a0b06">vsmc::CPUIDFeaturePOPCNT</a></div><div class="ttdoc">EAX = 0x01; ECX[23]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00076">cpuid.hpp:76</a></div></div>
 <div class="ttc" id="classvsmc_1_1_array_html_a60dfbeca369b7625f3c05bb941a71a43"><div class="ttname"><a href="classvsmc_1_1_array.html#a60dfbeca369b7625f3c05bb941a71a43">vsmc::Array::data</a></div><div class="ttdeci">pointer data()</div><div class="ttdef"><b>Definition:</b> <a href="array_8hpp_source.html#l00102">array.hpp:102</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a1091301db7b7e9009033e7414a28555f"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a1091301db7b7e9009033e7414a28555f">vsmc::CPUID::cache_param_type::self_initializing</a></div><div class="ttdeci">bool self_initializing() const </div><div class="ttdoc">Self initializing cache (does not need SW initialization) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00335">cpuid.hpp:335</a></div></div>
@@ -988,7 +992,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6af16513ca4ac38e0ba36f84f3762cbc7b"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6af16513ca4ac38e0ba36f84f3762cbc7b">vsmc::CPUIDFeatureDS</a></div><div class="ttdoc">EAX = 0x01; EDX[21]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00105">cpuid.hpp:105</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6af376f7292f0c0e7bfa4225d52e3be139"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6af376f7292f0c0e7bfa4225d52e3be139">vsmc::CPUIDFeatureMMX</a></div><div class="ttdoc">EAX = 0x01; EDX[23]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00107">cpuid.hpp:107</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a251cd54aaf330b460e1d4fb38e88d29f"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a251cd54aaf330b460e1d4fb38e88d29f">vsmc::CPUIDFeatureExtADX</a></div><div class="ttdoc">EAX = 0x07; EBX[19]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00130">cpuid.hpp:130</a></div></div>
-<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html">vsmc::CPUID::cache_param_type</a></div><div class="ttdoc">Structure of cache information. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00264">cpuid.hpp:264</a></div></div>
+<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html">vsmc::CPUID::cache_param_type</a></div><div class="ttdoc">Structure of deterministic cache parameter. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00264">cpuid.hpp:264</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a64a9b7ca675e3bddfdcec4f8e0e26d5e"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a64a9b7ca675e3bddfdcec4f8e0e26d5e">vsmc::CPUID::cache_param_type::fully_associative</a></div><div class="ttdeci">bool fully_associative() const </div><div class="ttdoc">Fully associative cache. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00338">cpuid.hpp:338</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5cd5f9329fe6423133104b7fa313c42e"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5cd5f9329fe6423133104b7fa313c42e">vsmc::CPUIDFeatureExtERMS</a></div><div class="ttdoc">EAX = 0x07; EBX[09]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00123">cpuid.hpp:123</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a124252fc0d4a67d20476859595d3a04b"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a124252fc0d4a67d20476859595d3a04b">vsmc::CPUIDFeatureExtSMAP</a></div><div class="ttdoc">EAX = 0x07; EBX[20]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00131">cpuid.hpp:131</a></div></div>
@@ -1011,15 +1015,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structvsmc_1_1internal_1_1_c_p_u_i_d_feature_info_html"><div class="ttname"><a href="structvsmc_1_1internal_1_1_c_p_u_i_d_feature_info.html">vsmc::internal::CPUIDFeatureInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00156">cpuid.hpp:156</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a117165476b789a7e25c29ab7ada5ca8b"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a117165476b789a7e25c29ab7ada5ca8b">vsmc::CPUIDFeatureMCE</a></div><div class="ttdoc">EAX = 0x01; EDX[07]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00093">cpuid.hpp:93</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a367e6f62f890b21dbc2c05419780fc95"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a367e6f62f890b21dbc2c05419780fc95">vsmc::CPUIDFeatureAPIC</a></div><div class="ttdoc">EAX = 0x01; EDX[09]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00095">cpuid.hpp:95</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a1a5bf015da92ae025bcaf19b1834ba91"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a1a5bf015da92ae025bcaf19b1834ba91">vsmc::CPUID::max_freq</a></div><div class="ttdeci">static unsigned max_freq()</div><div class="ttdoc">Maximum frequency in MHz (EAX = 0x16; EBX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00513">cpuid.hpp:513</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a1a5bf015da92ae025bcaf19b1834ba91"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a1a5bf015da92ae025bcaf19b1834ba91">vsmc::CPUID::max_freq</a></div><div class="ttdeci">static unsigned max_freq()</div><div class="ttdoc">Maximum frequency in MHz (EAX = 0x16; EBX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00517">cpuid.hpp:517</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5eef658aa70db2d7770a1eb7d7a82778"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5eef658aa70db2d7770a1eb7d7a82778">vsmc::CPUIDFeatureEST</a></div><div class="ttdoc">EAX = 0x01; ECX[07]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00062">cpuid.hpp:62</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a3437e810323bc87267c4e3b84f3f0f11"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11">vsmc::CPUID::bus_freq</a></div><div class="ttdeci">static unsigned bus_freq()</div><div class="ttdoc">Bus (reference) frequency in MHz (EAX = 0x16; ECX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00517">cpuid.hpp:517</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a3437e810323bc87267c4e3b84f3f0f11"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11">vsmc::CPUID::bus_freq</a></div><div class="ttdeci">static unsigned bus_freq()</div><div class="ttdoc">Bus (reference) frequency in MHz (EAX = 0x16; ECX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00521">cpuid.hpp:521</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6afe4bac842ad59800579ab945ed60fd05"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6afe4bac842ad59800579ab945ed60fd05">vsmc::CPUIDFeaturePAT</a></div><div class="ttdoc">EAX = 0x01; EDX[16]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00101">cpuid.hpp:101</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a9ae676a07ee4cc4d472e572e4c7ee2da"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a9ae676a07ee4cc4d472e572e4c7ee2da">vsmc::CPUID::max_cache_index</a></div><div class="ttdeci">static unsigned max_cache_index()</div><div class="ttdoc">Get the cache level corresponding each cache index (the index of the returned vector) ...</div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00487">cpuid.hpp:487</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a262145b50905c7701fd49de98b8aa295"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a262145b50905c7701fd49de98b8aa295">vsmc::CPUIDFeatureCLFSH</a></div><div class="ttdoc">EAX = 0x01; EDX[19]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00104">cpuid.hpp:104</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5cb6d5c8b63c086d9fa01b27581c57af"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5cb6d5c8b63c086d9fa01b27581c57af">vsmc::CPUIDFeatureAVX</a></div><div class="ttdoc">EAX = 0x01; ECX[28]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00081">cpuid.hpp:81</a></div></div>
 <div class="ttc" id="namespacevsmc_html_a44538ef0bb753296fe5de1e5fd5a60a5a9a8fa590df4e73a4b5d9da6d333756d1"><div class="ttname"><a href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a9a8fa590df4e73a4b5d9da6d333756d1">vsmc::CPUIDCacheTypeInstruction</a></div><div class="ttdoc">Instruction cache. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00150">cpuid.hpp:150</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a95751333bc942b71e307af8dfca2c7d2"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a95751333bc942b71e307af8dfca2c7d2">vsmc::CPUID::brand</a></div><div class="ttdeci">static std::string brand()</div><div class="ttdoc">Processor brand string (EAX = 0x80000002,0x80000003,0x80000004; EAX, EBX, ECX) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00471">cpuid.hpp:471</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a95751333bc942b71e307af8dfca2c7d2"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a95751333bc942b71e307af8dfca2c7d2">vsmc::CPUID::brand</a></div><div class="ttdeci">static std::string brand()</div><div class="ttdoc">Processor brand string (EAX = 0x80000002,0x80000003,0x80000004; EAX, EBX, ECX, EDX) ...</div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00471">cpuid.hpp:471</a></div></div>
 <div class="ttc" id="classint_html"><div class="ttname"><a href="classint.html">int</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aa747398736d9707f277d0192d3d97f52"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aa747398736d9707f277d0192d3d97f52">vsmc::CPUIDFeatureMONITOR</a></div><div class="ttdoc">EAX = 0x01; ECX[03]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00058">cpuid.hpp:58</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a443373c0826629dff712a5390e86e70a"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a443373c0826629dff712a5390e86e70a">vsmc::CPUIDFeatureOSXSAVE</a></div><div class="ttdoc">EAX = 0x01; ECX[27]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00080">cpuid.hpp:80</a></div></div>

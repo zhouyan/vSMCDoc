@@ -2,7 +2,6 @@ var searchData=
 [
   ['sampler',['Sampler',['../classvsmc_1_1_sampler.html',1,'vsmc']]],
   ['scalar',['Scalar',['../structvsmc_1_1_scalar.html',1,'vsmc']]],
-  ['scopedstopwatch',['ScopedStopWatch',['../classvsmc_1_1_scoped_stop_watch.html',1,'vsmc']]],
   ['seedgenerator',['SeedGenerator',['../classvsmc_1_1_seed_generator.html',1,'vsmc']]],
   ['seedgenerator_3c_20id_2c_20array_3c_20t_2c_20k_20_3e_20_3e',['SeedGenerator&lt; ID, Array&lt; T, K &gt; &gt;',['../classvsmc_1_1_seed_generator_3_01_i_d_00_01_array_3_01_t_00_01_k_01_4_01_4.html',1,'vsmc']]],
   ['single_5fparticle_5ftype',['single_particle_type',['../structvsmc_1_1_state_tuple_base_1_1single__particle__type.html',1,'vsmc::StateTupleBase']]],
@@ -47,5 +46,7 @@ var searchData=
   ['staticassert',['StaticAssert',['../structvsmc_1_1internal_1_1_static_assert.html',1,'vsmc::internal']]],
   ['staticassert_3c_20true_20_3e',['StaticAssert&lt; true &gt;',['../structvsmc_1_1internal_1_1_static_assert_3_01true_01_4.html',1,'vsmc::internal']]],
   ['stopwatchclockadapter',['StopWatchClockAdapter',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]],
-  ['stopwatchclockadapter_3c_20std_3a_3achrono_3a_3ahigh_5fresolution_5fclock_20_3e',['StopWatchClockAdapter&lt; std::chrono::high_resolution_clock &gt;',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]]
+  ['stopwatchclockadapter_3c_20std_3a_3achrono_3a_3ahigh_5fresolution_5fclock_20_3e',['StopWatchClockAdapter&lt; std::chrono::high_resolution_clock &gt;',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]],
+  ['stopwatchguard',['StopWatchGuard',['../classvsmc_1_1_stop_watch_guard.html',1,'vsmc']]],
+  ['stopwatchnull',['StopWatchNull',['../classvsmc_1_1_stop_watch_null.html',1,'vsmc']]]
 ];

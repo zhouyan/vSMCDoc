@@ -135,7 +135,7 @@ Macros</h2></td></tr>
 <tr class="memitem:gad8f651bdbfe14c3424d72d1bd1824654"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gad8f651bdbfe14c3424d72d1bd1824654">VSMC_STOP_WATCH_CHRONO_CLOCK_TYPE</a>&#160;&#160;&#160;std::chrono::high_resolution_clock</td></tr>
 <tr class="memdesc:gad8f651bdbfe14c3424d72d1bd1824654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default C++11 clock used as StopWatch if <code>VSMC_HAS_CXX11LIB_CHRONO</code> test successes.  <a href="#gad8f651bdbfe14c3424d72d1bd1824654">More...</a><br /></td></tr>
 <tr class="separator:gad8f651bdbfe14c3424d72d1bd1824654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52d683d5767c7efef88f6363bb84a36a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga52d683d5767c7efef88f6363bb84a36a">VSMC_STOP_WATCH_TYPE</a>&#160;&#160;&#160;internal::DummyStopWatch</td></tr>
+<tr class="memitem:ga52d683d5767c7efef88f6363bb84a36a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga52d683d5767c7efef88f6363bb84a36a">VSMC_STOP_WATCH_TYPE</a>&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_stop_watch_null.html">vsmc::StopWatchNull</a></td></tr>
 <tr class="memdesc:ga52d683d5767c7efef88f6363bb84a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fallback StopWatch type.  <a href="#ga52d683d5767c7efef88f6363bb84a36a">More...</a><br /></td></tr>
 <tr class="separator:ga52d683d5767c7efef88f6363bb84a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab970dd3599c8a14b26c5b519c9650258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gab970dd3599c8a14b26c5b519c9650258">VSMC_VMATH_THRESHOLD</a>&#160;&#160;&#160;1000</td></tr>
@@ -205,7 +205,7 @@ Macros</h2></td></tr>
 
 <p>Use native timing library if <code>VSMC_HAS_CXX11LIB_CHRONO</code> test fails. </p>
 
-<p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00023">23</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00019">19</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ Macros</h2></td></tr>
 
 <p>Default C++11 clock used as StopWatch if <code>VSMC_HAS_CXX11LIB_CHRONO</code> test successes. </p>
 
-<p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00043">43</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00039">39</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,15 +358,15 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_STOP_WATCH_TYPE&#160;&#160;&#160;internal::DummyStopWatch</td>
+          <td class="memname">#define VSMC_STOP_WATCH_TYPE&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_stop_watch_null.html">vsmc::StopWatchNull</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The fallback StopWatch type. </p>
-<p>The class defined by <code>VSMC_STOP_WATCH_TYPE</code> need to be defined before including the <code>&lt;<a class="el" href="stop__watch_8hpp.html">vsmc/utility/stop_watch.hpp</a>&gt;</code> header. It shall provide the same interface as internal::DummyStopWatch. This is only used when both <code>VSMC_HAS_CXX11LIB_CHRONO</code> and <code>VSMC_HAS_NATIVE_TIME_LIBRARY</code> are zero, in which case StopWatch is a typedef of this macro. </p>
+<p>The class defined by <code>VSMC_STOP_WATCH_TYPE</code> need to be defined before including the <code>&lt;<a class="el" href="stop__watch_8hpp.html">vsmc/utility/stop_watch.hpp</a>&gt;</code> header. It shall provide the same interface as StopWatchNull. This is only used when both <code>VSMC_HAS_CXX11LIB_CHRONO</code> and <code>VSMC_HAS_NATIVE_TIME_LIBRARY</code> are zero, in which case StopWatch is a typedef of this macro. </p>
 
-<p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00036">36</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stop__watch_8hpp_source.html#l00032">32</a> of file <a class="el" href="stop__watch_8hpp_source.html">stop_watch.hpp</a>.</p>
 
 </div>
 </div>

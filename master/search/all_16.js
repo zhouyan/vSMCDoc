@@ -2,7 +2,7 @@ var searchData=
 [
   ['wrapper',['Wrapper',['../group___r_n_g_wrapper.html',1,'']]],
   ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup']]],
-  ['watch_5ftype',['watch_type',['../classvsmc_1_1_scoped_stop_watch.html#ab9e9754247bd62c78a151d6440fb4c8e',1,'vsmc::ScopedStopWatch']]],
+  ['watch_5ftype',['watch_type',['../classvsmc_1_1_stop_watch_guard.html#aae8e266dc2d01dcd2d2f68dcc0ddb77b',1,'vsmc::StopWatchGuard']]],
   ['ways',['ways',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ab28750e8a0c857c232c0d1af040ea6b8',1,'vsmc::CPUID::cache_param_type']]],
   ['wbinvd',['wbinvd',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ad2bd6e3c25743f8c1437a393ddb5bf17',1,'vsmc::CPUID::cache_param_type']]],
   ['weight',['weight',['../classvsmc_1_1_weight_set.html#a756ac5e464fc661243bfafd50f0fcd91',1,'vsmc::WeightSet::weight(size_type id) const '],['../classvsmc_1_1_weight_set.html#a7d39ace04c6a5a3e058357c1d988295b',1,'vsmc::WeightSet::weight()'],['../classvsmc_1_1_weight_set.html#a1b6558558d485737782c5da27a720c78',1,'vsmc::WeightSet::weight() const '],['../classvsmc_1_1_weight_set_empty.html#ab7c7286cbae172375ffa08da592dd033',1,'vsmc::WeightSetEmpty::weight()']]],

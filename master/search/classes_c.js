@@ -11,6 +11,7 @@ var searchData=
   ['rdseedstep_3c_20uint16_5ft_2c_20ntrialmax_20_3e',['RdSeedStep&lt; uint16_t, NTrialMax &gt;',['../structvsmc_1_1_rd_seed_step_3_01uint16__t_00_01_n_trial_max_01_4.html',1,'vsmc']]],
   ['rdseedstep_3c_20uint32_5ft_2c_20ntrialmax_20_3e',['RdSeedStep&lt; uint32_t, NTrialMax &gt;',['../structvsmc_1_1_rd_seed_step_3_01uint32__t_00_01_n_trial_max_01_4.html',1,'vsmc']]],
   ['rdseedstep_3c_20uint64_5ft_2c_20ntrialmax_20_3e',['RdSeedStep&lt; uint64_t, NTrialMax &gt;',['../structvsmc_1_1_rd_seed_step_3_01uint64__t_00_01_n_trial_max_01_4.html',1,'vsmc']]],
+  ['rdtscpcounter',['RDTSCPCounter',['../classvsmc_1_1_r_d_t_s_c_p_counter.html',1,'vsmc']]],
   ['remove_5fall_5fextents',['remove_all_extents',['../structvsmc_1_1cxx11_1_1remove__all__extents.html',1,'vsmc::cxx11']]],
   ['remove_5fall_5fextents_3c_20t_5b_5d_3e',['remove_all_extents&lt; T[]&gt;',['../structvsmc_1_1cxx11_1_1remove__all__extents_3_01_t[]_4.html',1,'vsmc::cxx11']]],
   ['remove_5fall_5fextents_3c_20t_5bn_5d_3e',['remove_all_extents&lt; T[N]&gt;',['../structvsmc_1_1cxx11_1_1remove__all__extents_3_01_t[_n]_4.html',1,'vsmc::cxx11']]],

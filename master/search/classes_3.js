@@ -21,6 +21,5 @@ var searchData=
   ['dispatchsourcebase',['DispatchSourceBase',['../classvsmc_1_1_dispatch_source_base.html',1,'vsmc']]],
   ['dispatchsourcebase_3c_20dispatchdataadd_20_3e',['DispatchSourceBase&lt; DispatchDataAdd &gt;',['../classvsmc_1_1_dispatch_source_base.html',1,'vsmc']]],
   ['dispatchsourcebase_3c_20dispatchdataor_20_3e',['DispatchSourceBase&lt; DispatchDataOr &gt;',['../classvsmc_1_1_dispatch_source_base.html',1,'vsmc']]],
-  ['dispatchsourcebase_3c_20dispatchtimer_20_3e',['DispatchSourceBase&lt; DispatchTimer &gt;',['../classvsmc_1_1_dispatch_source_base.html',1,'vsmc']]],
-  ['dummystopwatch',['DummyStopWatch',['../classvsmc_1_1internal_1_1_dummy_stop_watch.html',1,'vsmc::internal']]]
+  ['dispatchsourcebase_3c_20dispatchtimer_20_3e',['DispatchSourceBase&lt; DispatchTimer &gt;',['../classvsmc_1_1_dispatch_source_base.html',1,'vsmc']]]
 ];

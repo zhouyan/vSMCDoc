@@ -112,100 +112,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define VSMC_UTILITY_RDTSCP_COUNTER_HPP</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="internal_2common_8hpp.html">vsmc/internal/common.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;intrin.h&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html">RDTSCPCounter</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span> :</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a6506370d28f9d44b8e5f94c19e968f73">   28</a></span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <a class="code" href="compiler_8hpp.html#a80026352b74cf0db9765b7c3ea6f3b28">VSMC_INTRINSIC_INT64</a> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a6506370d28f9d44b8e5f94c19e968f73">result_type</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a89244b1899d67d65c2433ac3f1eaed4a">   30</a></span>&#160;    <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a89244b1899d67d65c2433ac3f1eaed4a">RDTSCPCounter</a> () : elapsed_(0), start_(0), start_id_(0), running_(false)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {<a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">reset</a>();}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3">   38</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3">running</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">   46</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">start</a> ()</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (running_)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    running_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    start_ = now(&amp;start_id_);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">   68</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">stop</a> ()</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (!running_)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">unsigned</span> stop_id = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    result_type <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">stop</a> = now(&amp;stop_id);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> same_id = stop_id == start_id_;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (same_id)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        elapsed_ += stop - start_;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    running_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> same_id;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">reset</a> ()</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">start</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    elapsed_ = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    running_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a757d51a870ea1bc86c24765fe830dc08">   92</a></span>&#160;    result_type <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a757d51a870ea1bc86c24765fe830dc08">cycles</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> elapsed_;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">private</span> :</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    result_type elapsed_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    result_type start_;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">unsigned</span> start_id_;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> running_;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    result_type now (<span class="keywordtype">unsigned</span> *aux)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> __rdtscp(aux)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#else // _MSC_VER</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">unsigned</span> eax = 0x00;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">unsigned</span> edx = 0x00;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">unsigned</span> ecx = 0x00;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        __asm__ <span class="keyword">volatile</span>(</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="stringliteral">&quot;rdtscp\n&quot;</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                : <span class="stringliteral">&quot;=a&quot;</span> (eax), <span class="stringliteral">&quot;=d&quot;</span> (edx), <span class="stringliteral">&quot;=c&quot;</span> (ecx)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;               );</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        *aux = ecx;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> (static_cast&lt;result_type&gt;(edx) &lt;&lt; 32) +</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keyword">static_cast&lt;</span>result_type<span class="keyword">&gt;</span>(eax);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // _MSC_VER</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}; <span class="comment">// class RDTSCPCounter</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;intrin.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html">RDTSCPCounter</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a89244b1899d67d65c2433ac3f1eaed4a">   29</a></span>&#160;    <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a89244b1899d67d65c2433ac3f1eaed4a">RDTSCPCounter</a> () : elapsed_(0), start_(0), start_id_(0), running_(false)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {<a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">reset</a>();}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3">   37</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3">running</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">start</a> ()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (running_)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        running_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        start_ = now(&amp;start_id_);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">   67</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">stop</a> ()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (!running_)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">unsigned</span> stop_id = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        uint64_t <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">stop</a> = now(&amp;stop_id);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">bool</span> same_id = stop_id == start_id_;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (same_id)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            elapsed_ += stop - start_;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        running_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> same_id;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">   83</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">reset</a> ()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">start</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        elapsed_ = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        running_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe">   91</a></span>&#160;    uint64_t <a class="code" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe">cycles</a> ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> elapsed_;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    uint64_t elapsed_;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    uint64_t start_;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">unsigned</span> start_id_;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> running_;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    uint64_t now (<span class="keywordtype">unsigned</span> *aux)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(__rdtscp(&amp;ecx));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#else // _MSC_VER</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">unsigned</span> eax = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">unsigned</span> edx = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">unsigned</span> ecx = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        __asm__ <span class="keyword">volatile</span>(</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="stringliteral">&quot;rdtscp\n&quot;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                : <span class="stringliteral">&quot;=a&quot;</span> (eax), <span class="stringliteral">&quot;=d&quot;</span> (edx), <span class="stringliteral">&quot;=c&quot;</span> (ecx)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;               );</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        *aux = ecx;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> (static_cast&lt;uint64_t&gt;(edx) &lt;&lt; 32) + <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(eax);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // _MSC_VER</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}; <span class="comment">// class RDTSCPCounter</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// namespace vsmc</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_RDTSCP_COUNTER_HPP</span></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a6506370d28f9d44b8e5f94c19e968f73"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a6506370d28f9d44b8e5f94c19e968f73">vsmc::RDTSCPCounter::result_type</a></div><div class="ttdeci">unsigned __int64 result_type</div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00028">rdtscp_counter.hpp:28</a></div></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_RDTSCP_COUNTER_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00053">adapter.hpp:53</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a89244b1899d67d65c2433ac3f1eaed4a"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a89244b1899d67d65c2433ac3f1eaed4a">vsmc::RDTSCPCounter::RDTSCPCounter</a></div><div class="ttdeci">RDTSCPCounter()</div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00030">rdtscp_counter.hpp:30</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_acaa4f2a0fd3583510c8cf4fb7ddeb0ec"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">vsmc::RDTSCPCounter::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Stop and reset the elapsed cycle count to zero. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00084">rdtscp_counter.hpp:84</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a9e678771d6610d3ca195b1c65c8668f3"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3">vsmc::RDTSCPCounter::running</a></div><div class="ttdeci">bool running() const </div><div class="ttdoc">If the counter is running. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00038">rdtscp_counter.hpp:38</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_ab30d93fa0e9b80446c9cb6601e8136f4"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">vsmc::RDTSCPCounter::stop</a></div><div class="ttdeci">bool stop()</div><div class="ttdoc">Stop the counter, no effect if already stopped. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00068">rdtscp_counter.hpp:68</a></div></div>
-<div class="ttc" id="compiler_8hpp_html_a80026352b74cf0db9765b7c3ea6f3b28"><div class="ttname"><a href="compiler_8hpp.html#a80026352b74cf0db9765b7c3ea6f3b28">VSMC_INTRINSIC_INT64</a></div><div class="ttdeci">#define VSMC_INTRINSIC_INT64</div><div class="ttdef"><b>Definition:</b> <a href="compiler_8hpp_source.html#l00272">compiler.hpp:272</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a89244b1899d67d65c2433ac3f1eaed4a"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a89244b1899d67d65c2433ac3f1eaed4a">vsmc::RDTSCPCounter::RDTSCPCounter</a></div><div class="ttdeci">RDTSCPCounter()</div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00029">rdtscp_counter.hpp:29</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_acaa4f2a0fd3583510c8cf4fb7ddeb0ec"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#acaa4f2a0fd3583510c8cf4fb7ddeb0ec">vsmc::RDTSCPCounter::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Stop and reset the elapsed cycle count to zero. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00083">rdtscp_counter.hpp:83</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a9e678771d6610d3ca195b1c65c8668f3"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3">vsmc::RDTSCPCounter::running</a></div><div class="ttdeci">bool running() const </div><div class="ttdoc">If the counter is running. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00037">rdtscp_counter.hpp:37</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a476bea11f82b13df7358ea6c228843fe"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe">vsmc::RDTSCPCounter::cycles</a></div><div class="ttdeci">uint64_t cycles() const </div><div class="ttdoc">Return the accumulated elapsed cycle count. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00091">rdtscp_counter.hpp:91</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_ab30d93fa0e9b80446c9cb6601e8136f4"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4">vsmc::RDTSCPCounter::stop</a></div><div class="ttdeci">bool stop()</div><div class="ttdoc">Stop the counter, no effect if already stopped. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00067">rdtscp_counter.hpp:67</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_a757d51a870ea1bc86c24765fe830dc08"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#a757d51a870ea1bc86c24765fe830dc08">vsmc::RDTSCPCounter::cycles</a></div><div class="ttdeci">result_type cycles() const </div><div class="ttdoc">Return the accumulated elapsed cycle count. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00092">rdtscp_counter.hpp:92</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_ac702e7ab2216adffefb434a4de22ae63"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">vsmc::RDTSCPCounter::start</a></div><div class="ttdeci">bool start()</div><div class="ttdoc">Start the counter, no effect if already started. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00046">rdtscp_counter.hpp:46</a></div></div>
-<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html">vsmc::RDTSCPCounter</a></div><div class="ttdoc">CPU clock cycle counter using RDTSCP. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00024">rdtscp_counter.hpp:24</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html_ac702e7ab2216adffefb434a4de22ae63"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63">vsmc::RDTSCPCounter::start</a></div><div class="ttdeci">bool start()</div><div class="ttdoc">Start the counter, no effect if already started. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00045">rdtscp_counter.hpp:45</a></div></div>
+<div class="ttc" id="classvsmc_1_1_r_d_t_s_c_p_counter_html"><div class="ttname"><a href="classvsmc_1_1_r_d_t_s_c_p_counter.html">vsmc::RDTSCPCounter</a></div><div class="ttdoc">CPU clock cycle counter using RDTSCP. </div><div class="ttdef"><b>Definition:</b> <a href="rdtscp__counter_8hpp_source.html#l00025">rdtscp_counter.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

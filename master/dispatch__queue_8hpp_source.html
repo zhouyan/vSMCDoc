@@ -134,14 +134,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a6ee9847527dc77110baeaa0fdc9b151f">   38</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a6ee9847527dc77110baeaa0fdc9b151f">get_label</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">    </span>{return ::dispatch_queue_get_label(this-&gt;<span class="keywordtype">object</span>());}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a2f05ef3065df5db50263049cdc11cff0">   42</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a2f05ef3065df5db50263049cdc11cff0">get_specific</a> (<span class="keyword">const</span> <span class="keywordtype">void</span> *key)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">    </span>{return ::dispatch_queue_get_specific(this-&gt;<span class="keywordtype">object</span>(), key);}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#adbfa0e081152ef69aebedbfb22f172d0">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#adbfa0e081152ef69aebedbfb22f172d0">set_specific</a> (<span class="keyword">const</span> <span class="keywordtype">void</span> *key, <span class="keywordtype">void</span> *context,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            ::dispatch_function_t destructor)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">    </span>{::dispatch_queue_set_specific(this-&gt;<span class="keywordtype">object</span>(), key, context, destructor);}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DispatchType&gt;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a4d2b073630dffe9210d9014788752f77">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a4d2b073630dffe9210d9014788752f77">set_target_queue</a> (<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_dispatch_object.html">DispatchObject&lt;DispatchType&gt;</a> &amp;<span class="keywordtype">object</span>)<span class="keyword"> const</span></div>
@@ -164,13 +164,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#af3274966351b71b77ebdbf35839deee9">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#af3274966351b71b77ebdbf35839deee9">sync_f</a> (<span class="keywordtype">void</span> *context, ::dispatch_function_t work)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">    </span>{::dispatch_sync_f(this-&gt;<span class="keywordtype">object</span>(), context, work);}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a4916c994d4546187d3ddab825e2cafd0">   72</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a4916c994d4546187d3ddab825e2cafd0">barrier_async_f</a> (<span class="keywordtype">void</span> *context, ::dispatch_function_t work)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">    </span>{::dispatch_barrier_async_f(this-&gt;<span class="keywordtype">object</span>(), context, work);}</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#aef0213ca3ee2d6b68f24008fd46c98c7">   75</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#aef0213ca3ee2d6b68f24008fd46c98c7">barrier_sync_f</a> (<span class="keywordtype">void</span> *context, ::dispatch_function_t work)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">    </span>{::dispatch_barrier_sync_f(this-&gt;<span class="keywordtype">object</span>(), context, work);}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef __BLOCKS__</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a8cba19194add20a92436af8a709455de">   80</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a8cba19194add20a92436af8a709455de">after</a> (::dispatch_time_t when, ::dispatch_block_t block)<span class="keyword"> const</span></div>
@@ -185,13 +185,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a18a6a800b4d1e26ad6c9b9f15696e7fc">   89</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a18a6a800b4d1e26ad6c9b9f15696e7fc">sync</a> (::dispatch_block_t block)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">    </span>{::dispatch_sync(this-&gt;<span class="keywordtype">object</span>(), block);}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a421eb1555113c67b625a2e867cb156d8">   93</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a421eb1555113c67b625a2e867cb156d8">barrier_async</a> (::dispatch_block_t block)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">    </span>{::dispatch_barrier_async(this-&gt;<span class="keywordtype">object</span>(), block);}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#a90dde0a78f05aa2b44bba9b5c646c985">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#a90dde0a78f05aa2b44bba9b5c646c985">barrier_sync</a> (::dispatch_block_t block)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">    </span>{::dispatch_barrier_sync(this-&gt;<span class="keywordtype">object</span>(), block);}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // __BLOCKS__</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">protected</span> :</div>
@@ -213,16 +213,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">public</span> :</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#if VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html#a222014b181c8e81fc48744cdcdecfcd7">  125</a></span>&#160;    <a class="code" href="classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html#a222014b181c8e81fc48744cdcdecfcd7">DispatchQueue</a> (::dispatch_queue_priority_t priority =</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            DISPATCH_QUEUE_PRIORITY_DEFAULT, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags = 0) :</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="classvsmc_1_1_dispatch_queue_base.html">DispatchQueueBase</a>(::dispatch_get_global_queue(priority, flags), false)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#else // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#else // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="singletonvsmc_1_1_dispatch_queue.html">DispatchQueue</a> (<span class="keywordtype">long</span> priority = 0, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags = 0) :</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="classvsmc_1_1_dispatch_queue_base.html">DispatchQueueBase</a>(::dispatch_get_global_queue(priority, flags), false)</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}; <span class="comment">// class DispatchQueue</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>

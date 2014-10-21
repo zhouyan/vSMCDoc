@@ -333,7 +333,7 @@ var searchData=
   ['cpuidfeatureinfo_3c_20cpuidfeaturepse_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeaturePSE &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_p_s_e_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturepse_5f36_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeaturePSE_36 &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_p_s_e__36_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturepsn_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeaturePSN &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_p_s_n_01_4.html',1,'vsmc']]],
-  ['cpuidfeatureinfo_3c_20cpuidfeaturerdrnd_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureRDRND &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_r_d_r_n_d_01_4.html',1,'vsmc']]],
+  ['cpuidfeatureinfo_3c_20cpuidfeaturerdrand_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureRDRAND &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_r_d_r_a_n_d_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturerdseed_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureRDSEED &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_r_d_s_e_e_d_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturertm_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureRTM &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_r_t_m_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturesep_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureSEP &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_s_e_p_01_4.html',1,'vsmc']]],
@@ -380,7 +380,7 @@ var searchData=
   ['cpuidfeaturepse',['CPUIDFeaturePSE',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aa0c13d04db18b7a79a5d8e9d71a36aaf',1,'vsmc']]],
   ['cpuidfeaturepse_5f36',['CPUIDFeaturePSE_36',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a79de8ecbac7668153536ca00048f39d3',1,'vsmc']]],
   ['cpuidfeaturepsn',['CPUIDFeaturePSN',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a273bacfd06641f32b9dd712f51be901b',1,'vsmc']]],
-  ['cpuidfeaturerdrnd',['CPUIDFeatureRDRND',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a11011236640bc346ec662dda3e71bf6b',1,'vsmc']]],
+  ['cpuidfeaturerdrand',['CPUIDFeatureRDRAND',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ae7e6e81cab9cdf1f39d892704fb60893',1,'vsmc']]],
   ['cpuidfeaturerdseed',['CPUIDFeatureRDSEED',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ada98db07b179229850fc14d3e2bb8ec4',1,'vsmc']]],
   ['cpuidfeaturertm',['CPUIDFeatureRTM',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a821a03a00ee131278c78e43d52ae6fed',1,'vsmc']]],
   ['cpuidfeaturesep',['CPUIDFeatureSEP',['../group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ac6a77cc86a7c2a77f3e13985c0ae38e5',1,'vsmc']]],
@@ -416,6 +416,6 @@ var searchData=
   ['c_2b_2b11_20style_20type_20traits',['C++11 style type traits',['../group___c_x_x11_traits.html',1,'']]],
   ['composite_20type_20categories',['Composite type categories',['../group___c_x_x11_traits_composite.html',1,'']]],
   ['const_2dvolatility_20specifiers',['Const-volatility specifiers',['../group___c_x_x11_traits_c_v.html',1,'']]],
-  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a757d51a870ea1bc86c24765fe830dc08',1,'vsmc::RDTSCPCounter']]],
+  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe',1,'vsmc::RDTSCPCounter']]],
   ['c_2b_2b11_20concurrency',['C++11 concurrency',['../group___s_t_d.html',1,'']]]
 ];

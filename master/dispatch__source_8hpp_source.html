@@ -159,14 +159,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_source_base.html#acaa043441781413839beb063198e40d0">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_source_base.html#acaa043441781413839beb063198e40d0">set_event_handler_f</a> (::dispatch_function_t event_handler)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">    </span>{::dispatch_source_set_event_handler_f(this-&gt;<span class="keywordtype">object</span>(), event_handler);}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#if VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_source_base.html#a906722207fdc3c483a018005ca003eb8">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_source_base.html#a906722207fdc3c483a018005ca003eb8">set_registration_handler_f</a> (::dispatch_function_t</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            registration_handler)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        ::dispatch_source_set_registration_handler_f(</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                this-&gt;<span class="keywordtype">object</span>(), registration_handler);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#ifdef __BLOCKS__</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_source_base.html#a7a1476d4fe60a4c9151a882aa01370b2">   86</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_source_base.html#a7a1476d4fe60a4c9151a882aa01370b2">set_cancel_handler</a> (::dispatch_block_t cancel_handler)<span class="keyword"> const</span></div>
@@ -175,14 +175,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_source_base.html#ab7d47f2f265ed78a7b7f00aa7a6746e7">   89</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_source_base.html#ab7d47f2f265ed78a7b7f00aa7a6746e7">set_event_handler</a> (::dispatch_block_t event_handler)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">    </span>{::dispatch_source_set_event_handler(this-&gt;<span class="keywordtype">object</span>(), event_handler);}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_source_base.html#a67598172ce5fbd18be3022117d0e6cb2">   93</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_source_base.html#a67598172ce5fbd18be3022117d0e6cb2">set_registration_handler</a> (::dispatch_block_t</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            registration_handler)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        ::dispatch_source_set_registration_handler(</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                this-&gt;<span class="keywordtype">object</span>(), registration_handler);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // VSMC_USE_GCD_LION</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_GCD_LION</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // __BLOCKS__</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">private</span> :</div>

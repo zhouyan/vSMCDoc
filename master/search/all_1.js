@@ -378,7 +378,7 @@ var searchData=
   ['array_2ehpp',['array.hpp',['../array_8hpp.html',1,'']]],
   ['array_3c_20_5f_5fm128i_2c_20blocks_20_3e',['Array&lt; __m128i, Blocks &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20_5f_5fm128i_2c_20rounds_2b1_20_3e',['Array&lt; __m128i, Rounds+1 &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
-  ['array_3c_20ctype_2c_20blocks_20_3e',['Array&lt; ctype, Blocks &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
+  ['array_3c_20ctr_5ftype_2c_20blocks_20_3e',['Array&lt; ctr_type, Blocks &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20resulttype_2c_20k_20_3e',['Array&lt; ResultType, K &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20resulttype_2c_20k_2b1_20_3e',['Array&lt; ResultType, K+1 &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20resulttype_2c_20k_2f2_20_3e',['Array&lt; ResultType, K/2 &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],

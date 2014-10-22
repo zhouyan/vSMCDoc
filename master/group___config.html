@@ -381,8 +381,9 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>When MKL (VML) or vecLib (vForce) is available, the threshold of the number of elements above which these libraries will be used. </p>
+<p>This macro change the behavior of all functions in the vMath module. One can also define function specific macros to change the threshold of only one function. For example, <code>VSMC_VMATH_THRESHOLD_Add</code> will change how a call <code>vAdd(n, a, b, y)</code> will behave. Also call this function explicitly with a template parameter, <code>vAdd&lt;double&gt;(n, a, b, y)</code> will bypass the library calls entirely. </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00021">21</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00029">29</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>

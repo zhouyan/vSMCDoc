@@ -4,6 +4,7 @@ var searchData=
   ['rank_3c_20t_5b_5d_3e',['rank&lt; T[]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[]_4.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5bn_5d_3e',['rank&lt; T[N]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[_n]_4.html',1,'vsmc::cxx11']]],
   ['rdrandgenerator',['RDRANDGenerator',['../classvsmc_1_1_r_d_r_a_n_d_generator.html',1,'vsmc']]],
+  ['rdtsccounter',['RDTSCCounter',['../classvsmc_1_1_r_d_t_s_c_counter.html',1,'vsmc']]],
   ['rdtscpcounter',['RDTSCPCounter',['../classvsmc_1_1_r_d_t_s_c_p_counter.html',1,'vsmc']]],
   ['remove_5fall_5fextents',['remove_all_extents',['../structvsmc_1_1cxx11_1_1remove__all__extents.html',1,'vsmc::cxx11']]],
   ['remove_5fall_5fextents_3c_20t_5b_5d_3e',['remove_all_extents&lt; T[]&gt;',['../structvsmc_1_1cxx11_1_1remove__all__extents_3_01_t[]_4.html',1,'vsmc::cxx11']]],

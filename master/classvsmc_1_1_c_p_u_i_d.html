@@ -145,9 +145,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a66a1482d0986410be135d573c482080a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a66a1482d0986410be135d573c482080a">info</a> (std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os)</td></tr>
 <tr class="memdesc:a66a1482d0986410be135d573c482080a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get CPU feature using <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a>.  <a href="#a66a1482d0986410be135d573c482080a">More...</a><br /></td></tr>
 <tr class="separator:a66a1482d0986410be135d573c482080a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33b5936ab40e3cf6ac7897510cf0919"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a7e8ecdcd2a602611e96cc3ad816c754d">reg_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#af33b5936ab40e3cf6ac7897510cf0919">info</a> (unsigned eax, unsigned ecx)</td></tr>
-<tr class="memdesc:af33b5936ab40e3cf6ac7897510cf0919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> information stored in EAX, EBX, ECX and EDX, given input EAX and ECX values.  <a href="#af33b5936ab40e3cf6ac7897510cf0919">More...</a><br /></td></tr>
-<tr class="separator:af33b5936ab40e3cf6ac7897510cf0919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9befcc7de8d11a56ea1b07cbfea0189d"><td class="memTemplParams" colspan="2">template&lt;unsigned EAX, unsigned ECX&gt; </td></tr>
 <tr class="memitem:a9befcc7de8d11a56ea1b07cbfea0189d"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a7e8ecdcd2a602611e96cc3ad816c754d">reg_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a9befcc7de8d11a56ea1b07cbfea0189d">info</a> ()</td></tr>
 <tr class="memdesc:a9befcc7de8d11a56ea1b07cbfea0189d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> information stored in EAX, EBX, ECX and EDX, given input EAX and ECX values.  <a href="#a9befcc7de8d11a56ea1b07cbfea0189d">More...</a><br /></td></tr>
@@ -175,7 +172,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Query <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> information. </p>
 <dl class="section note"><dt>Note</dt><dd>Most member functions are not thread-safe. However, normal program shall not need to call <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> instruction from multiple threads. Most information shall be obtained once when the program launch. </dd></dl>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00383">383</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00407">407</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a7e8ecdcd2a602611e96cc3ad816c754d"></a>
 <div class="memitem">
@@ -189,7 +186,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>The array type that holds EAX, EBX, ECX, and EDX, in that order. </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00388">388</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00412">412</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +241,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Processor brand string (EAX = 0x80000002,0x80000003,0x80000004; EAX, EBX, ECX, EDX) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00588">588</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00583">583</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +297,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Get the cache parameters (EAX = 0x04; EAX, EBX, ECX, EDX) </p>
 <dl class="section note"><dt>Note</dt><dd>The maximum of the <code>cache_index</code> parameter is the length of the vector returned by <code>cache_levels</code> minus 1. </dd></dl>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00622">622</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00617">617</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,46 +356,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Get CPU feature using <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a>. </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00497">497</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af33b5936ab40e3cf6ac7897510cf0919"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a7e8ecdcd2a602611e96cc3ad816c754d">reg_type</a> vsmc::CPUID::info </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>eax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>ecx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> information stored in EAX, EBX, ECX and EDX, given input EAX and ECX values. </p>
-<dl class="section note"><dt>Note</dt><dd>This member function is thread-safe. The <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> instruction will be called each time this function is called. </dd></dl>
-
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00524">524</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00521">521</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +386,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 <p>Get the <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> information stored in EAX, EBX, ECX and EDX, given input EAX and ECX values. </p>
 <dl class="section note"><dt>Note</dt><dd>Unlike the <code>cpuid(eax, ecx)</code> call, the results are cached. Therefore, for subsequent calls of this function with the same value of EAX and ECX, the <a class="el" href="classvsmc_1_1_c_p_u_i_d.html" title="Query CPUID information. ">CPUID</a> instruction will not be called. </dd></dl>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00555">555</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00550">550</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +440,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 
 <p>Get the cache level corresponding each cache index (the index of the returned vector) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00604">604</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00599">599</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -509,7 +467,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 
 <p>Max calling parameter EAX (EAX = 0x00; EAX) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00566">566</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00561">561</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -536,7 +494,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 
 <p>Max extended calling parameter EAX (EAX = 0x80000000; EAX) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00570">570</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00565">565</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +548,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 
 <p>Vendor ID (EAX = 0x00; EBX, EDX, ECX) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00574">574</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00569">569</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>

@@ -117,7 +117,7 @@ var searchData=
   ['countermask',['CounterMask',['../structvsmc_1_1internal_1_1_counter_mask.html',1,'vsmc::internal']]],
   ['countermask_3c_20t_2c_20true_20_3e',['CounterMask&lt; T, true &gt;',['../structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],
   ['cpuid',['CPUID',['../classvsmc_1_1_c_p_u_i_d.html',1,'vsmc']]],
-  ['cpuid',['CPUID',['../group___c_p_u_i_d.html',1,'']]],
+  ['cpuid',['cpuid',['../group___c_p_u_i_d.html#ga7af4d8ae1ef5dd796824f742106bda00',1,'vsmc::cpuid()'],['../group___c_p_u_i_d.html',1,'(Global Namespace)']]],
   ['cpuid_2ehpp',['cpuid.hpp',['../cpuid_8hpp.html',1,'']]],
   ['cpuidcachetype',['CPUIDCacheType',['../namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5',1,'vsmc']]],
   ['cpuidcachetypedata',['CPUIDCacheTypeData',['../namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a0c3df898e752e2ccb71a84273d66918c',1,'vsmc']]],
@@ -416,6 +416,6 @@ var searchData=
   ['c_2b_2b11_20style_20type_20traits',['C++11 style type traits',['../group___c_x_x11_traits.html',1,'']]],
   ['composite_20type_20categories',['Composite type categories',['../group___c_x_x11_traits_composite.html',1,'']]],
   ['const_2dvolatility_20specifiers',['Const-volatility specifiers',['../group___c_x_x11_traits_c_v.html',1,'']]],
-  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe',1,'vsmc::RDTSCPCounter']]],
+  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_counter.html#a5ca4465deb18b6f4fbe5968b7da51e0c',1,'vsmc::RDTSCCounter::cycles()'],['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe',1,'vsmc::RDTSCPCounter::cycles()']]],
   ['c_2b_2b11_20concurrency',['C++11 concurrency',['../group___s_t_d.html',1,'']]]
 ];

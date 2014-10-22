@@ -38,6 +38,7 @@ var searchData=
   ['copy_5ftag',['copy_tag',['../singletonvsmc_1_1_state_m_p_i.html#a76ca212dc509390d872471cb29cf60da',1,'vsmc::StateMPI']]],
   ['copy_5fthis_5fnode',['copy_this_node',['../singletonvsmc_1_1_state_m_p_i.html#ad532bb10959f3c63d5e391f61dcbdb26',1,'vsmc::StateMPI']]],
   ['count',['count',['../classvsmc_1_1_program_option_map.html#aca4e3872cd87d3f8c40735c33a26bfb2',1,'vsmc::ProgramOptionMap']]],
+  ['cpuid',['cpuid',['../group___c_p_u_i_d.html#ga7af4d8ae1ef5dd796824f742106bda00',1,'vsmc']]],
   ['crbegin',['crbegin',['../classvsmc_1_1_array.html#a7fcac37eeb166703698a69d36aa285c9',1,'vsmc::Array']]],
   ['create_5fbuffer',['create_buffer',['../classvsmc_1_1_c_l_manager.html#a25e758024a8bf9eb956bf25b8132efb7',1,'vsmc::CLManager::create_buffer(std::size_t num) const '],['../classvsmc_1_1_c_l_manager.html#a763bbd9278c5d33269b3a6303f29a1fd',1,'vsmc::CLManager::create_buffer(InputIter first, InputIter last, const std::vector&lt; ::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr) const ']]],
   ['create_5fkernel',['create_kernel',['../singletonvsmc_1_1_state_c_l.html#a6df64f7d154d33b449cff9efdde1c781',1,'vsmc::StateCL']]],
@@ -45,5 +46,5 @@ var searchData=
   ['crend',['crend',['../classvsmc_1_1_array.html#a1eb54138c5ef189173409e54e7ef5ff9',1,'vsmc::Array']]],
   ['ctr',['ctr',['../classvsmc_1_1_a_e_s_n_i_engine.html#ae3eb935f3c405a478341bee9d7640342',1,'vsmc::AESNIEngine::ctr() const '],['../classvsmc_1_1_a_e_s_n_i_engine.html#a8b312b9950add674c1c03e00935163ce',1,'vsmc::AESNIEngine::ctr(const ctr_type &amp;c)'],['../classvsmc_1_1_philox_engine.html#a1cc04fdc47a4987222eaf8168deaff6c',1,'vsmc::PhiloxEngine::ctr() const '],['../classvsmc_1_1_philox_engine.html#a7eb1972b0ff57437d1d6bff50dad2515',1,'vsmc::PhiloxEngine::ctr(const ctr_type &amp;c)'],['../classvsmc_1_1_threefry_engine.html#a7ec771b8a4365fad712766db899a0791',1,'vsmc::ThreefryEngine::ctr() const '],['../classvsmc_1_1_threefry_engine.html#af4b2445cedf59c2c1aa2b8fcae9e778f',1,'vsmc::ThreefryEngine::ctr(const ctr_type &amp;c)']]],
   ['ctr_5fblock',['ctr_block',['../classvsmc_1_1_a_e_s_n_i_engine.html#a7ef051b04fd7edd249e5a06976adc416',1,'vsmc::AESNIEngine::ctr_block() const '],['../classvsmc_1_1_a_e_s_n_i_engine.html#ad9013e77c161cfce7b2eca4b45c689e5',1,'vsmc::AESNIEngine::ctr_block(const ctr_block_type &amp;cb)']]],
-  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe',1,'vsmc::RDTSCPCounter']]]
+  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_counter.html#a5ca4465deb18b6f4fbe5968b7da51e0c',1,'vsmc::RDTSCCounter::cycles()'],['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe',1,'vsmc::RDTSCPCounter::cycles()']]]
 ];

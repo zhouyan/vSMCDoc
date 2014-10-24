@@ -123,9 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a5eeb3cdc78008ecc780a180d97b30ae2">increment</a> (std::size_t step=1)</td></tr>
 <tr class="memdesc:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iteration count.  <a href="#a5eeb3cdc78008ecc780a180d97b30ae2">More...</a><br /></td></tr>
 <tr class="separator:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379c4a01f516f9f7da41307f9f022623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a379c4a01f516f9f7da41307f9f022623">start</a> (std::size_t total, const std::string &amp;message=std::string(), <a class="el" href="classdouble.html">double</a> interval=0.1, std::size_t length=60)</td></tr>
-<tr class="memdesc:a379c4a01f516f9f7da41307f9f022623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a379c4a01f516f9f7da41307f9f022623">More...</a><br /></td></tr>
-<tr class="separator:a379c4a01f516f9f7da41307f9f022623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bec417a9b36e94ce4ed48825de9370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#ab8bec417a9b36e94ce4ed48825de9370">start</a> (std::size_t total, const std::string &amp;msg=std::string(), std::size_t length=0, bool show_iter=false, <a class="el" href="classdouble.html">double</a> interval=0.1)</td></tr>
+<tr class="memdesc:ab8bec417a9b36e94ce4ed48825de9370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#ab8bec417a9b36e94ce4ed48825de9370">More...</a><br /></td></tr>
+<tr class="separator:ab8bec417a9b36e94ce4ed48825de9370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c947ca1c2e36d00d76dbd90f625221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a65c947ca1c2e36d00d76dbd90f625221">stop</a> (bool finished=false)</td></tr>
 <tr class="memdesc:a65c947ca1c2e36d00d76dbd90f625221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop to print the progress.  <a href="#a65c947ca1c2e36d00d76dbd90f625221">More...</a><br /></td></tr>
 <tr class="separator:a65c947ca1c2e36d00d76dbd90f625221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,11 +235,11 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
 
 <p>Increment the iteration count. </p>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00135">135</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00143">143</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a379c4a01f516f9f7da41307f9f022623"></a>
+<a class="anchor" id="ab8bec417a9b36e94ce4ed48825de9370"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -258,19 +258,25 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>message</em> = <code>std::string()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classdouble.html">double</a>&#160;</td>
-          <td class="paramname"><em>interval</em> = <code>0.1</code>, </td>
+          <td class="paramname"><em>msg</em> = <code>std::string()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>length</em> = <code>60</code>&#160;</td>
+          <td class="paramname"><em>length</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show_iter</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdouble.html">double</a>&#160;</td>
+          <td class="paramname"><em>interval</em> = <code>0.1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -289,9 +295,10 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">total</td><td>Total amount of work represented by an integer, for example file size or SMC algorithm total number of iterations </td></tr>
-    <tr><td class="paramname">message</td><td>A (short) discreptive message </td></tr>
+    <tr><td class="paramname">msg</td><td>A (short) discreptive message </td></tr>
+    <tr><td class="paramname">length</td><td>The length of the progress bar between brackets. If it is zero, then no bar is displayed at all </td></tr>
+    <tr><td class="paramname">show_iter</td><td>Shall the iteration count be displayed. </td></tr>
     <tr><td class="paramname">interval</td><td>The sleep interval in seconds </td></tr>
-    <tr><td class="paramname">length</td><td>The length of the progress bar between brackets </td></tr>
   </table>
   </dd>
 </dl>
@@ -332,7 +339,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00124">124</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00132">132</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
 
 </div>
 </div>

@@ -48,10 +48,11 @@ var searchData=
   ['vsmc_5fdefine_5futility_5fcpuid_5ffeature_5finfo_5fext',['VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO_EXT',['../cpuid_8hpp.html#a48a89091eb1268796e964b5c79d21678',1,'cpuid.hpp']]],
   ['vsmc_5fgnuc_5fnonexist',['VSMC_GNUC_NONEXIST',['../gcc_8hpp.html#ac0e2ac30f5862dbb4eccce4954d43a6d',1,'gcc.hpp']]],
   ['vsmc_5fgnuc_5fversion',['VSMC_GNUC_VERSION',['../gcc_8hpp.html#ae204318deafe49ec1a3e42ba9bcc3afb',1,'gcc.hpp']]],
-  ['vsmc_5fhas_5fveclib',['VSMC_HAS_VECLIB',['../config_8hpp.html#ab99dff8e077860b6cb5262300968fc96',1,'config.hpp']]],
+  ['vsmc_5fhas_5fveclib',['VSMC_HAS_VECLIB',['../compiler_8hpp.html#ab99dff8e077860b6cb5262300968fc96',1,'compiler.hpp']]],
   ['vsmc_5fintel_5fnonexist',['VSMC_INTEL_NONEXIST',['../intel_8hpp.html#ae1155ab7202001e0490acfe0e0b74cca',1,'intel.hpp']]],
   ['vsmc_5fmac_5f10_5f0',['VSMC_MAC_10_0',['../compiler_8hpp.html#a22b8eab6fbe1b60341db1f6e9cd3e3fb',1,'compiler.hpp']]],
   ['vsmc_5fmac_5f10_5f1',['VSMC_MAC_10_1',['../compiler_8hpp.html#aab37cbc4a4b4dbd2c245a886a3f02d8e',1,'compiler.hpp']]],
+  ['vsmc_5fmac_5f10_5f10',['VSMC_MAC_10_10',['../compiler_8hpp.html#add1e84bd202c1c211e6b437792416164',1,'compiler.hpp']]],
   ['vsmc_5fmac_5f10_5f2',['VSMC_MAC_10_2',['../compiler_8hpp.html#a88cc36bcf6ec6d6b09820c1578f841ef',1,'compiler.hpp']]],
   ['vsmc_5fmac_5f10_5f3',['VSMC_MAC_10_3',['../compiler_8hpp.html#a5d60d812e71acf01b27d2caca95440de',1,'compiler.hpp']]],
   ['vsmc_5fmac_5f10_5f4',['VSMC_MAC_10_4',['../compiler_8hpp.html#a542c482d85cf373a5da2bf308a76b6c5',1,'compiler.hpp']]],
@@ -162,7 +163,7 @@ var searchData=
   ['vsmc_5fstatic_5finline',['VSMC_STATIC_INLINE',['../common_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'common.h']]],
   ['vsmc_5fstop_5fwatch_5fdefined',['VSMC_STOP_WATCH_DEFINED',['../stop__watch_8hpp.html#a8309494de509fbb54564b49944ac1762',1,'stop_watch.hpp']]],
   ['vsmc_5fsunpro_5fnonexist',['VSMC_SUNPRO_NONEXIST',['../sunpro_8hpp.html#a3e7c00a545e372010eb2a9da2115896a',1,'sunpro.hpp']]],
-  ['vsmc_5fuse_5fcxx11lib_5ffuture',['VSMC_USE_CXX11LIB_FUTURE',['../config_8hpp.html#aea22d3af12c1f98ac954a6f66994bec6',1,'config.hpp']]],
+  ['vsmc_5fuse_5fcxx11lib_5ffuture',['VSMC_USE_CXX11LIB_FUTURE',['../compiler_8hpp.html#aea22d3af12c1f98ac954a6f66994bec6',1,'compiler.hpp']]],
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]],
@@ -211,7 +212,5 @@ var searchData=
   ['vsmc_5fvmath_5fthreshold_5fsub',['VSMC_VMATH_THRESHOLD_Sub',['../vmath_8hpp.html#afb32742c2b63ad61b95481db610b4b44',1,'vmath.hpp']]],
   ['vsmc_5fvmath_5fthreshold_5ftan',['VSMC_VMATH_THRESHOLD_Tan',['../vmath_8hpp.html#a72891931c0e5b31e99a91c4114f19269',1,'vmath.hpp']]],
   ['vsmc_5fvmath_5fthreshold_5ftanh',['VSMC_VMATH_THRESHOLD_Tanh',['../vmath_8hpp.html#a782bb0448e31eea5c28fb69fa194973f',1,'vmath.hpp']]],
-  ['vsmc_5fvmath_5fthreshold_5ftgamma',['VSMC_VMATH_THRESHOLD_TGamma',['../vmath_8hpp.html#a2937af4d2afd55e75c733b28817b6ce0',1,'vmath.hpp']]],
-  ['vsmc_5fx86',['VSMC_X86',['../compiler_8hpp.html#aea4865c9a8856233ed9564536bd3b501',1,'compiler.hpp']]],
-  ['vsmc_5fx86_5f64',['VSMC_X86_64',['../compiler_8hpp.html#a934688eeb35c29fae53940aa714afc43',1,'compiler.hpp']]]
+  ['vsmc_5fvmath_5fthreshold_5ftgamma',['VSMC_VMATH_THRESHOLD_TGamma',['../vmath_8hpp.html#a2937af4d2afd55e75c733b28817b6ce0',1,'vmath.hpp']]]
 ];

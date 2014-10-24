@@ -245,6 +245,7 @@ var searchData=
   ['vsmc_5fstop_5fwatch_5fchrono_5fclock_5ftype',['VSMC_STOP_WATCH_CHRONO_CLOCK_TYPE',['../group___config.html#gad8f651bdbfe14c3424d72d1bd1824654',1,'stop_watch.hpp']]],
   ['vsmc_5fstop_5fwatch_5fdefined',['VSMC_STOP_WATCH_DEFINED',['../stop__watch_8hpp.html#a8309494de509fbb54564b49944ac1762',1,'stop_watch.hpp']]],
   ['vsmc_5fstop_5fwatch_5ftype',['VSMC_STOP_WATCH_TYPE',['../group___config.html#ga52d683d5767c7efef88f6363bb84a36a',1,'stop_watch.hpp']]],
+  ['vsmc_5fsunpro_5fnonexist',['VSMC_SUNPRO_NONEXIST',['../sunpro_8hpp.html#a3e7c00a545e372010eb2a9da2115896a',1,'sunpro.hpp']]],
   ['vsmc_5fuse_5fcxx11lib_5ffuture',['VSMC_USE_CXX11LIB_FUTURE',['../config_8hpp.html#aea22d3af12c1f98ac954a6f66994bec6',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],

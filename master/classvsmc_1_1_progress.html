@@ -120,12 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c44cc1395e27feff0415274bb4591ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a6c44cc1395e27feff0415274bb4591ce">Progress</a> (std::ostream &amp;os=std::cout)</td></tr>
 <tr class="memdesc:a6c44cc1395e27feff0415274bb4591ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvsmc_1_1_progress.html" title="Display a progress bar while algorithm proceed. ">Progress</a> with an output stream.  <a href="#a6c44cc1395e27feff0415274bb4591ce">More...</a><br /></td></tr>
 <tr class="separator:a6c44cc1395e27feff0415274bb4591ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb646e3a6943845d17f4cfeb41404d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#abb646e3a6943845d17f4cfeb41404d68">increment</a> (unsigned step=1)</td></tr>
-<tr class="memdesc:abb646e3a6943845d17f4cfeb41404d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iteration count.  <a href="#abb646e3a6943845d17f4cfeb41404d68">More...</a><br /></td></tr>
-<tr class="separator:abb646e3a6943845d17f4cfeb41404d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbf91ba8e0eae700cd3f6d3ab40cb95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a4dbf91ba8e0eae700cd3f6d3ab40cb95">start</a> (unsigned total, const std::string &amp;message=std::string(), <a class="el" href="classdouble.html">double</a> interval=0.1, unsigned length=60)</td></tr>
-<tr class="memdesc:a4dbf91ba8e0eae700cd3f6d3ab40cb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a4dbf91ba8e0eae700cd3f6d3ab40cb95">More...</a><br /></td></tr>
-<tr class="separator:a4dbf91ba8e0eae700cd3f6d3ab40cb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a5eeb3cdc78008ecc780a180d97b30ae2">increment</a> (std::size_t step=1)</td></tr>
+<tr class="memdesc:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iteration count.  <a href="#a5eeb3cdc78008ecc780a180d97b30ae2">More...</a><br /></td></tr>
+<tr class="separator:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379c4a01f516f9f7da41307f9f022623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a379c4a01f516f9f7da41307f9f022623">start</a> (std::size_t total, const std::string &amp;message=std::string(), <a class="el" href="classdouble.html">double</a> interval=0.1, std::size_t length=60)</td></tr>
+<tr class="memdesc:a379c4a01f516f9f7da41307f9f022623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a379c4a01f516f9f7da41307f9f022623">More...</a><br /></td></tr>
+<tr class="separator:a379c4a01f516f9f7da41307f9f022623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c947ca1c2e36d00d76dbd90f625221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a65c947ca1c2e36d00d76dbd90f625221">stop</a> (bool finished=false)</td></tr>
 <tr class="memdesc:a65c947ca1c2e36d00d76dbd90f625221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop to print the progress.  <a href="#a65c947ca1c2e36d00d76dbd90f625221">More...</a><br /></td></tr>
 <tr class="separator:a65c947ca1c2e36d00d76dbd90f625221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,7 +209,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abb646e3a6943845d17f4cfeb41404d68"></a>
+<a class="anchor" id="a5eeb3cdc78008ecc780a180d97b30ae2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -221,7 +221,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
         <tr>
           <td class="memname">void <a class="el" href="classvsmc_1_1_progress.html">vsmc::Progress</a>&lt; ThreadType, ThisThread &gt;::increment </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>step</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
@@ -239,7 +239,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
 
 </div>
 </div>
-<a class="anchor" id="a4dbf91ba8e0eae700cd3f6d3ab40cb95"></a>
+<a class="anchor" id="a379c4a01f516f9f7da41307f9f022623"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -251,7 +251,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
         <tr>
           <td class="memname">void <a class="el" href="classvsmc_1_1_progress.html">vsmc::Progress</a>&lt; ThreadType, ThisThread &gt;::start </td>
           <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>total</em>, </td>
         </tr>
         <tr>
@@ -269,7 +269,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>length</em> = <code>60</code>&#160;</td>
         </tr>
         <tr>

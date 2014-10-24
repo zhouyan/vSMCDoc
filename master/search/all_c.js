@@ -80,5 +80,6 @@ var searchData=
   ['location',['location',['../structvsmc_1_1_stable_distribution_1_1param__type.html#a6e64df591365d886184bb43a21b64ec2',1,'vsmc::StableDistribution::param_type::location()'],['../classvsmc_1_1_stable_distribution.html#a8310a19d0e2dd480829e75a7c1701aa5',1,'vsmc::StableDistribution::location()']]],
   ['log_5fweight',['log_weight',['../classvsmc_1_1_weight_set.html#af2bd74f8c3e73f6f1df5cae0017ec824',1,'vsmc::WeightSet::log_weight(size_type id) const '],['../classvsmc_1_1_weight_set.html#a6fd672715fe557a2375caa481ebf71c4',1,'vsmc::WeightSet::log_weight()'],['../classvsmc_1_1_weight_set.html#aac8203b563ca84b65f90349a34b29e2a',1,'vsmc::WeightSet::log_weight() const '],['../classvsmc_1_1_weight_set_empty.html#afe784a7a7a17b931c300bad3696abdb0',1,'vsmc::WeightSetEmpty::log_weight()']]],
   ['log_5fweight2weight',['log_weight2weight',['../classvsmc_1_1_weight_set.html#a0f55da2e68dd5257a277ab5c310e8a3d',1,'vsmc::WeightSet']]],
+  ['log_5fweight_5fdata',['log_weight_data',['../classvsmc_1_1_weight_set.html#adf87ca515a1a07b68a05c230910f188c',1,'vsmc::WeightSet']]],
   ['log_5fzconst',['log_zconst',['../classvsmc_1_1_normalizing_constant.html#a49a1143498d44758c64b8eac5fbb63e4',1,'vsmc::NormalizingConstant::log_zconst()'],['../classvsmc_1_1_path.html#a0cbf0eb131586c6b4fdf8474fcfb36c4',1,'vsmc::Path::log_zconst()']]]
 ];

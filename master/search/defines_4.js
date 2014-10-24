@@ -161,6 +161,7 @@ var searchData=
   ['vsmc_5fstatic_5fassert_5futility_5farray_5frange',['VSMC_STATIC_ASSERT_UTILITY_ARRAY_RANGE',['../array_8hpp.html#a136f577775d5cc61ca6e546bfe90ecd7',1,'array.hpp']]],
   ['vsmc_5fstatic_5finline',['VSMC_STATIC_INLINE',['../common_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'common.h']]],
   ['vsmc_5fstop_5fwatch_5fdefined',['VSMC_STOP_WATCH_DEFINED',['../stop__watch_8hpp.html#a8309494de509fbb54564b49944ac1762',1,'stop_watch.hpp']]],
+  ['vsmc_5fsunpro_5fnonexist',['VSMC_SUNPRO_NONEXIST',['../sunpro_8hpp.html#a3e7c00a545e372010eb2a9da2115896a',1,'sunpro.hpp']]],
   ['vsmc_5fuse_5fcxx11lib_5ffuture',['VSMC_USE_CXX11LIB_FUTURE',['../config_8hpp.html#aea22d3af12c1f98ac954a6f66994bec6',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],

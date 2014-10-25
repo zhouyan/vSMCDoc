@@ -138,9 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab302f4804a31a37ef58686f5f39d6102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab26d98f5a6e3a7c9f67eec903e2a5a0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#ab26d98f5a6e3a7c9f67eec903e2a5a0c">seed</a> (MKL_UINT s)</td></tr>
 <tr class="separator:ab26d98f5a6e3a7c9f67eec903e2a5a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9929fb8db8ab8e606077fe1a1c70876b"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
-<tr class="memitem:a9929fb8db8ab8e606077fe1a1c70876b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#a9929fb8db8ab8e606077fe1a1c70876b">seed</a> (SeedSeq &amp;seq, typename <a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt; <a class="el" href="structvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT &gt;::value &gt;::type *=nullptr)</td></tr>
-<tr class="separator:a9929fb8db8ab8e606077fe1a1c70876b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170a6cee7c1e81f04869d29c1726bab7"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
+<tr class="memitem:a170a6cee7c1e81f04869d29c1726bab7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#a170a6cee7c1e81f04869d29c1726bab7">seed</a> (SeedSeq &amp;seq, typename <a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt; <a class="el" href="structvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT, <a class="el" href="singletonvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, ResultType &gt; &gt;::value &gt;::type *=nullptr)</td></tr>
+<tr class="separator:a170a6cee7c1e81f04869d29c1726bab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf31533651c1e9b934f059a2dd33ef0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#a83969d09ee6ad10490755f65769a7f95">stream_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#adf31533651c1e9b934f059a2dd33ef0e">stream</a> ()</td></tr>
 <tr class="separator:adf31533651c1e9b934f059a2dd33ef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ee95ebc8bb9cc1fedb97dd6274515d8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#a83969d09ee6ad10490755f65769a7f95">stream_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_k_l_engine.html#a2ee95ebc8bb9cc1fedb97dd6274515d8">stream</a> () const </td></tr>
@@ -306,7 +306,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 
 <p>Set the buffer size, zero or negative value restore the default. </p>
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00557">557</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00560">560</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00560">560</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00563">563</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 <p>Discard results. </p>
 <p>The the behavior is slightly different from that in C++11 standard. Calling <code>discard(nskip)</code> is not equivalent to call <code>operator()</code> <code>nskip</code> times. Instead, it ensures that at least <code>nskip</code> results are discarded. There may be a few more than <code>nskip</code> also discarded. </p>
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00537">537</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00540">540</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00551">551</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00554">554</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00550">550</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00553">553</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +445,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00519">519</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00522">522</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,11 +473,11 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00512">512</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00513">513</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9929fb8db8ab8e606077fe1a1c70876b"></a>
+<a class="anchor" id="a170a6cee7c1e81f04869d29c1726bab7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -497,7 +497,7 @@ template&lt;typename SeedSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt; <a class="el" href="structvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT &gt;::value &gt;::type *&#160;</td>
+          <td class="paramtype">typename <a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt; <a class="el" href="structvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT, <a class="el" href="singletonvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, ResultType &gt; &gt;::value &gt;::type *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -513,7 +513,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00515">515</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00516">516</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00553">553</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00556">556</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00554">554</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00557">557</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -594,7 +594,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">        traits::MKLUniformBitsTrait&lt;BRNG, ResultType&gt;::max</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00547">547</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00550">550</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ template&lt;MKL_INT BRNG, typename ResultType &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">        traits::MKLUniformBitsTrait&lt;BRNG, ResultType&gt;::min</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00545">545</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00548">548</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>

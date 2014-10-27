@@ -311,13 +311,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    std::string default_val2str (<span class="keyword">const</span> U &amp;val)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        std::stringstream ss;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        ss &lt;&lt; val;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        ss &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; val &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span> ss.str();</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    std::string default_val2str (<span class="keywordtype">bool</span> val)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keyword">    </span>{<span class="keywordflow">return</span> val ? std::string(<span class="stringliteral">&quot;true&quot;</span>) : <a class="code" href="namespacestd.html">std</a>::string(<span class="stringliteral">&quot;false&quot;</span>);}</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keyword">    </span>{<span class="keywordflow">return</span> val ? std::string(<span class="stringliteral">&quot;(true)&quot;</span>) : <a class="code" href="namespacestd.html">std</a>::string(<span class="stringliteral">&quot;(false)&quot;</span>);}</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;}; <span class="comment">// ProgramOptionDefault</span></div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
@@ -588,7 +588,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != vec[0].size(); ++i) {</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            os &lt;&lt; vec[0][i] &lt;&lt; std::string(len[0] - vec[0][i].size(), <span class="charliteral">&#39; &#39;</span>);</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            os &lt;&lt; vec[1][i] &lt;&lt; std::string(len[1] - vec[1][i].size(), <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;            os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; vec[2][i] &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;            os &lt;&lt; vec[2][i] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        }</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    }</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>

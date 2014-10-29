@@ -17,5 +17,6 @@ var searchData=
   ['hassizetypeimpl',['HasSizeTypeImpl',['../structvsmc_1_1traits_1_1internal_1_1_has_size_type_impl.html',1,'vsmc::traits::internal']]],
   ['hasweightsettype',['HasWeightSetType',['../structvsmc_1_1traits_1_1internal_1_1_has_weight_set_type.html',1,'vsmc::traits::internal']]],
   ['hasweightsettypeimpl',['HasWeightSetTypeImpl',['../structvsmc_1_1traits_1_1internal_1_1_has_weight_set_type_impl.html',1,'vsmc::traits::internal']]],
-  ['hdf5dataptr',['HDF5DataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_data_ptr.html',1,'vsmc::internal']]]
+  ['hdf5loaddataptr',['HDF5LoadDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_load_data_ptr.html',1,'vsmc::internal']]],
+  ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html',1,'vsmc::internal']]]
 ];

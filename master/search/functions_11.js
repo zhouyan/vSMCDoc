@@ -156,7 +156,7 @@ var searchData=
   ['summary_5fheader',['summary_header',['../classvsmc_1_1_sampler.html#ac8f597e1fb5395abfc61d6df76397cb7',1,'vsmc::Sampler']]],
   ['summary_5fheader_5fsize',['summary_header_size',['../classvsmc_1_1_sampler.html#a63647b3130e7a7afa7c2d8356fdd4e63',1,'vsmc::Sampler']]],
   ['suspend',['suspend',['../classvsmc_1_1_dispatch_queue_base.html#a3cc8a6b995fa8fa4d945ddcf47942512',1,'vsmc::DispatchQueueBase::suspend()'],['../classvsmc_1_1_dispatch_source_base.html#ae7adfedd2c6acb6e2a22448b3a942ad2',1,'vsmc::DispatchSourceBase::suspend()']]],
-  ['swap',['swap',['../classvsmc_1_1_array.html#ae31debb847097b9c359bc11893915bb3',1,'vsmc::Array::swap()'],['../group___array.html#ga0b87ef4ef50773babf8c15e6ff4e02f0',1,'vsmc::swap()']]],
+  ['swap',['swap',['../classvsmc_1_1_array.html#ae31debb847097b9c359bc11893915bb3',1,'vsmc::Array::swap()'],['../group___array.html#ga2f1b41fd2d96165cfc2921b683fe275d',1,'vsmc::swap()']]],
   ['sync',['sync',['../classvsmc_1_1_dispatch_queue_base.html#a18a6a800b4d1e26ad6c9b9f15696e7fc',1,'vsmc::DispatchQueueBase']]],
   ['sync_5ff',['sync_f',['../classvsmc_1_1_dispatch_queue_base.html#af3274966351b71b77ebdbf35839deee9',1,'vsmc::DispatchQueueBase']]]
 ];

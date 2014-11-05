@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_7ealignedallocator',['~AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html#ac3f73da514e8e03ff210a9fbb341c06d',1,'vsmc::AlignedAllocator']]],
   ['_7eclbuffer',['~CLBuffer',['../classvsmc_1_1_c_l_buffer.html#a0a43ea3ee4bf9b5f3f383c81020bd1d3',1,'vsmc::CLBuffer']]],
   ['_7edispatchobject',['~DispatchObject',['../classvsmc_1_1_dispatch_object.html#ae19d984ebc8de5007a1a9ee435d02eec',1,'vsmc::DispatchObject']]],
   ['_7egslgenerator',['~GSLGenerator',['../classvsmc_1_1_g_s_l_generator.html#ab3527c968be18daea0e5aa3bceba9565',1,'vsmc::GSLGenerator']]],

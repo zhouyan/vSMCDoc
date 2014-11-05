@@ -297,6 +297,7 @@ var searchData=
   ['aesroundconstantvalue_3c_200xff_20_3e',['AESRoundConstantValue&lt; 0xFF &gt;',['../structvsmc_1_1internal_1_1_a_e_s_round_constant_value_3_010x_f_f_01_4.html',1,'vsmc::internal']]],
   ['aligned_5fstorage',['aligned_storage',['../structvsmc_1_1cxx11_1_1aligned__storage.html',1,'vsmc::cxx11']]],
   ['aligned_5funion',['aligned_union',['../structvsmc_1_1cxx11_1_1aligned__union.html',1,'vsmc::cxx11']]],
+  ['alignedallocator',['AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html',1,'vsmc']]],
   ['alignment_5fof',['alignment_of',['../structvsmc_1_1cxx11_1_1alignment__of.html',1,'vsmc::cxx11']]],
   ['apply_5fcv',['apply_cv',['../structvsmc_1_1cxx11_1_1internal_1_1apply__cv.html',1,'vsmc::cxx11::internal']]],
   ['apply_5fcv_3c_20t_20_26_26_2c_20u_2c_20false_2c_20false_20_3e',['apply_cv&lt; T &amp;&amp;, U, false, false &gt;',['../structvsmc_1_1cxx11_1_1internal_1_1apply__cv_3_01_t_01_6_6_00_01_u_00_01false_00_01false_01_4.html',1,'vsmc::cxx11::internal']]],

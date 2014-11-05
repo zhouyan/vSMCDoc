@@ -86,6 +86,8 @@ var searchData=
   ['mpi_5finit_5fseed',['mpi_init_seed',['../namespacevsmc_1_1internal.html#ab7469ea5977ace8d2c42772a2065c552',1,'vsmc::internal::mpi_init_seed(ResultType &amp;, IntType1 D, IntType2 R)'],['../namespacevsmc_1_1internal.html#a7c23a7437260c2507b1f043cab962454',1,'vsmc::internal::mpi_init_seed(vsmc::Array&lt; T, K &gt; &amp;s, IntType1, IntType2 R)']]],
   ['mpienvironment',['MPIEnvironment',['../classvsmc_1_1_m_p_i_environment.html#a46ff49a2e5cced363ccf74571a85ce4e',1,'vsmc::MPIEnvironment']]],
   ['mul_5fweight',['mul_weight',['../classvsmc_1_1_weight_set.html#aa729508e1f3dbeab2f347fbcb96d4035',1,'vsmc::WeightSet::mul_weight(InputIter first)'],['../classvsmc_1_1_weight_set.html#aa6d8d6753a4cd0621c9b2d54322069d1',1,'vsmc::WeightSet::mul_weight(RandomIter first, int stride)'],['../classvsmc_1_1_weight_set_null.html#a7f805d9e85fc74c409a3f1df452c0e31',1,'vsmc::WeightSetNull::mul_weight(InputIter)'],['../classvsmc_1_1_weight_set_null.html#afd4e93541a9e18c45a0ed4b7e894fc5a',1,'vsmc::WeightSetNull::mul_weight(RandomIter, int)']]],
+  ['mutable_5flog_5fweight_5fdata',['mutable_log_weight_data',['../classvsmc_1_1_weight_set.html#aaa9b3a7b8146f3a903d43707202c1c20',1,'vsmc::WeightSet']]],
   ['mutable_5fparticle',['mutable_particle',['../classvsmc_1_1_single_particle_base.html#a705319979abb82c8d143190947402e41',1,'vsmc::SingleParticleBase']]],
-  ['mutable_5fparticle_5fptr',['mutable_particle_ptr',['../classvsmc_1_1_single_particle_base.html#adfd3495847992b24cd8dc2effd737e95',1,'vsmc::SingleParticleBase']]]
+  ['mutable_5fparticle_5fptr',['mutable_particle_ptr',['../classvsmc_1_1_single_particle_base.html#adfd3495847992b24cd8dc2effd737e95',1,'vsmc::SingleParticleBase']]],
+  ['mutable_5fweight_5fdata',['mutable_weight_data',['../classvsmc_1_1_weight_set.html#a88e6fbb150bcd3110ae8da22c151cee8',1,'vsmc::WeightSet']]]
 ];

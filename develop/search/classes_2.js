@@ -12,6 +12,7 @@ var searchData=
   ['clsetup',['CLSetup',['../classvsmc_1_1_c_l_setup.html',1,'vsmc']]],
   ['common_5ftype',['common_type',['../structvsmc_1_1cxx11_1_1common__type.html',1,'vsmc::cxx11']]],
   ['conditional',['conditional',['../structvsmc_1_1cxx11_1_1conditional.html',1,'vsmc::cxx11']]],
+  ['conditional_3c_20cxx11_3a_3ais_5farithmetic_3c_20t_20_3e_3a_3avalue_2c_20std_3a_3avector_3c_20t_2c_20vsmc_3a_3aalignedallocator_3c_20t_20_3e_20_3e_2c_20std_3a_3avector_3c_20t_20_3e_20_3e',['conditional&lt; cxx11::is_arithmetic&lt; T &gt;::value, std::vector&lt; T, vsmc::AlignedAllocator&lt; T &gt; &gt;, std::vector&lt; T &gt; &gt;',['../structvsmc_1_1cxx11_1_1conditional.html',1,'vsmc::cxx11']]],
   ['conditional_3c_20true_2c_20t_2c_20f_20_3e',['conditional&lt; true, T, F &gt;',['../structvsmc_1_1cxx11_1_1conditional_3_01true_00_01_t_00_01_f_01_4.html',1,'vsmc::cxx11']]],
   ['configurecl',['ConfigureCL',['../classvsmc_1_1_configure_c_l.html',1,'vsmc']]],
   ['const_5fsingle_5fparticle_5ftype',['const_single_particle_type',['../structvsmc_1_1_state_matrix_base_1_1const__single__particle__type.html',1,'vsmc::StateMatrixBase']]],

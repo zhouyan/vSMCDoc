@@ -487,10 +487,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    sizeof(internal::is_empty_standalone&lt;T&gt;)&gt; {};</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">// is_polymorphic</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor">#ifdef VSMC_MSVC</span></div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span>is_polymorphic :</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keyword">public</span> integral_constant&lt;bool, __is_polymorphic(T)&gt; {};</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#else // _MSC_VER</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#else // VSMC_MSVC</span></div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <a class="code" href="namespacevsmc_1_1cxx11_1_1internal.html#a406410193a9bcc6ff488dfee9467d24b">tp_test_true</a> <a class="code" href="namespacevsmc_1_1cxx11_1_1internal.html#a94ad663df5f0647b3faeb2236a3df98a">is_polymorphic_test</a> (</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keyword">typename</span> enable_if&lt;<span class="keyword">sizeof</span>(static_cast&lt;T *&gt;(const_cast&lt;void *&gt;(</div>
@@ -502,7 +502,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keyword">public</span> integral_constant&lt;bool,</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    sizeof(internal::is_polymorphic_test&lt;T&gt;(0)) ==</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    sizeof(internal::tp_test_true)&gt; {};</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="preprocessor">#endif // _MSC_VER</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="preprocessor">#endif // VSMC_MSVC</span></div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="comment">// is_abstract</span></div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="keyword">namespace </span>internal {</div>

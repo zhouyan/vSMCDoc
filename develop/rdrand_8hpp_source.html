@@ -114,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2internal_2common_8hpp.html">vsmc/rng/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="generator__wrapper_8hpp.html">vsmc/rng/generator_wrapper.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef VSMC_MSVC</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;intrin.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> UIntType&gt; <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___r_d_r_n_g.html#gad54a0213751633f7b8058c775be88656">rdrand</a> (UIntType *);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifdef VSMC_MSVC</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacevsmc.html#ad6e5943bbe66e1579257309e19343415">rdrand&lt;uint16_t&gt;</a> (uint16_t *rand)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
@@ -169,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> cf != 0;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#else // _MSC_VER</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#else // VSMC_MSVC</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ad6e5943bbe66e1579257309e19343415">   76</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacevsmc.html#ad6e5943bbe66e1579257309e19343415">rdrand&lt;uint16_t&gt;</a> (uint16_t *rand)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
@@ -210,7 +210,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> cf != 0;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // _MSC_VER</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // VSMC_MSVC</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ResultType, std::<span class="keywordtype">size_t</span> NTrialMax = VSMC_RDRAND_NTRIAL_MAX&gt;</div>
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classvsmc_1_1_r_d_r_a_n_d_generator.html">  120</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_r_d_r_a_n_d_generator.html">RDRANDGenerator</a></div>

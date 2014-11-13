@@ -54,6 +54,6 @@ var searchData=
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html',1,'vsmc::internal']]],
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
-  ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]],
+  ['hours',['hours',['../classvsmc_1_1_stop_watch_null.html#a9e11f49a5f3652852d6ebb888e574d43',1,'vsmc::StopWatchNull::hours()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter::hours()'],['../classvsmc_1_1_stop_watch_s_y_s.html#a12adb9effae20a52940adc8f7c202d77',1,'vsmc::StopWatchSYS::hours()']]],
   ['hyperbolic_20functions',['Hyperbolic functions',['../group__v_hyperbolic.html',1,'']]]
 ];

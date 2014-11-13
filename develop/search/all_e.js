@@ -1,7 +1,7 @@
 var searchData=
 [
   ['name',['name',['../classvsmc_1_1_monitor.html#a7e7bfb0a019bd6ac999727267b50a143',1,'vsmc::Monitor::name(std::size_t id)'],['../classvsmc_1_1_monitor.html#a41151e47ce7b05ca3af868ca6efe3811',1,'vsmc::Monitor::name(std::size_t id) const ']]],
-  ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter']]],
+  ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_null.html#a75fe6f6b2f7436597f74a5afa732e0f8',1,'vsmc::StopWatchNull::nanoseconds()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter::nanoseconds()'],['../classvsmc_1_1_stop_watch_s_y_s.html#ad3ab9e3bf862d54eb8aac59a56198430',1,'vsmc::StopWatchSYS::nanoseconds()']]],
   ['nintegrate_5fbase_2ehpp',['nintegrate_base.hpp',['../nintegrate__base_8hpp.html',1,'']]],
   ['nintegrate_5fnewton_5fcotes_2ehpp',['nintegrate_newton_cotes.hpp',['../nintegrate__newton__cotes_8hpp.html',1,'']]],
   ['nintegratebase',['NIntegrateBase',['../classvsmc_1_1_n_integrate_base.html#abfc6da04bf926d8494ba1736e21401a7',1,'vsmc::NIntegrateBase::NIntegrateBase()'],['../classvsmc_1_1_n_integrate_base.html#a480ae20ab00a085dcff0f900306fe0be',1,'vsmc::NIntegrateBase::NIntegrateBase(const NIntegrateBase&lt; Derived &gt; &amp;)'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#ac9b44bf02156a85e7e6bd8ce21120807',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::NIntegrateBase()'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#ad37ab0c037c6b774e2dc1bf6b219b92b',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::NIntegrateBase(const NIntegrateBase&lt; Virtual &gt; &amp;)']]],

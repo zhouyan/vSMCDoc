@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['memory_20alignment',['Memory alignment',['../group___aligned_memory.html',1,'']]],
   ['miscellaneous_20transformations',['Miscellaneous transformations',['../group___c_x_x11_traits_misc.html',1,'']]],
   ['mathematics',['Mathematics',['../group___math.html',1,'']]],
   ['mkl',['MKL',['../group___m_k_l_r_n_g.html',1,'']]],

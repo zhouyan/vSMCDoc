@@ -113,14 +113,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="internal_2common_8hpp.html">vsmc/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef VSMC_MSVC</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_INTEGRATE_NINTEGRATE_BASE_DERIVED</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#else // _MSC_VER</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#else // VSMC_MSVC</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="nintegrate__base_8hpp.html#a6ecf4e7bf78a54f815d12e12a1d541fb">   19</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_INTEGRATE_NINTEGRATE_BASE_DERIVED \</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT(                                                      \</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">            (cxx11::is_base_of&lt;NIntegrateBase&lt;Derived&gt;, Derived&gt;::value),    \</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">            USE_CRTP_NIntegrateBase_WITH_A_CLASS_NOT_DERIVED_FROM_THE_BASE)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // _MSC_VER</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // VSMC_MSVC</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="nintegrate__base_8hpp.html#a545d43ee1a1f065c8feaeed8b80fa60c">   25</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_INTEGRATE_NINTEGRATE_BASE_NO_IMPL(member) \</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((cxx11::is_same&lt;Derived, NullType&gt;::value),           \</span></div>

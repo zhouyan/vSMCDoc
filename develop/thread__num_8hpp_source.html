@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range&gt;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classvsmc_1_1_thread_num.html#a92769e2f8db90e6cacf59bf96838a217">   44</a></span>&#160;    std::vector&lt;Range&gt; <a class="code" href="classvsmc_1_1_thread_num.html#a92769e2f8db90e6cacf59bf96838a217">partition</a> (<span class="keyword">const</span> Range &amp;range)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> Range::const_iterator <a class="code" href="classsize__type.html">size_type</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">typename</span> Range::const_iterator size_type;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        size_type N = range.end() - range.begin();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        size_type tn = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(<a class="code" href="classvsmc_1_1_thread_num.html#a536a6a4d3541ab93394ecc0395c93daf">thread_num</a>());</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        size_type block_size =  0;</div>
@@ -175,12 +175,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            static_cast&lt;<a class="code" href="namespacestd.html">std</a>::size_t&gt;(1) :</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            static_cast&lt;<a class="code" href="namespacestd.html">std</a>::size_t&gt;(<a class="code" href="namespacestd.html">std</a>::thread::hardware_concurrency()))</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifdef VSMC_MSVC</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#pragma warning(push)</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#pragma warning(disable:4996)</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *num_str = std::getenv(<span class="stringliteral">&quot;VSMC_THREAD_NUM&quot;</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#ifdef VSMC_MSVC</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (num_str) {</div>
@@ -201,7 +201,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classvsmc_1_1_thread_num_html_a92769e2f8db90e6cacf59bf96838a217"><div class="ttname"><a href="classvsmc_1_1_thread_num.html#a92769e2f8db90e6cacf59bf96838a217">vsmc::ThreadNum::partition</a></div><div class="ttdeci">std::vector&lt; Range &gt; partition(const Range &amp;range) const </div><div class="ttdef"><b>Definition:</b> <a href="thread__num_8hpp_source.html#l00044">thread_num.hpp:44</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="classvsmc_1_1_thread_num_html_a536a6a4d3541ab93394ecc0395c93daf"><div class="ttname"><a href="classvsmc_1_1_thread_num.html#a536a6a4d3541ab93394ecc0395c93daf">vsmc::ThreadNum::thread_num</a></div><div class="ttdeci">std::size_t thread_num() const </div><div class="ttdef"><b>Definition:</b> <a href="thread__num_8hpp_source.html#l00032">thread_num.hpp:32</a></div></div>
-<div class="ttc" id="classsize__type_html"><div class="ttname"><a href="classsize__type.html">size_type</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
 <div class="ttc" id="classvsmc_1_1_thread_num_html"><div class="ttname"><a href="classvsmc_1_1_thread_num.html">vsmc::ThreadNum</a></div><div class="ttdoc">Number of threads used by algorithms. </div><div class="ttdef"><b>Definition:</b> <a href="thread__num_8hpp_source.html#l00021">thread_num.hpp:21</a></div></div>
 <div class="ttc" id="classvsmc_1_1_thread_num_html_a4ca9716cca558d027f157dbc241aa2f2"><div class="ttname"><a href="classvsmc_1_1_thread_num.html#a4ca9716cca558d027f157dbc241aa2f2">vsmc::ThreadNum::instance</a></div><div class="ttdeci">static ThreadNum &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__num_8hpp_source.html#l00025">thread_num.hpp:25</a></div></div>

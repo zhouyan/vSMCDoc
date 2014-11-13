@@ -137,6 +137,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a10484a559078c0ce443f7e00215d4723"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html">cache_param_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a10484a559078c0ce443f7e00215d4723">cache_param</a> (unsigned cache_index)</td></tr>
 <tr class="memdesc:a10484a559078c0ce443f7e00215d4723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cache parameters (EAX = 0x04; EAX, EBX, ECX, EDX)  <a href="#a10484a559078c0ce443f7e00215d4723">More...</a><br /></td></tr>
 <tr class="separator:a10484a559078c0ce443f7e00215d4723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80174b97ca7abd4a01ace963db1e6673"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a80174b97ca7abd4a01ace963db1e6673">cache_param_num</a> ()</td></tr>
+<tr class="memdesc:a80174b97ca7abd4a01ace963db1e6673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of caches.  <a href="#a80174b97ca7abd4a01ace963db1e6673">More...</a><br /></td></tr>
+<tr class="separator:a80174b97ca7abd4a01ace963db1e6673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae52709cf772152d25de18140fa285629"><td class="memTemplParams" colspan="2">template&lt;CPUIDFeature Feat&gt; </td></tr>
 <tr class="memitem:ae52709cf772152d25de18140fa285629"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629">has_feature</a> ()</td></tr>
 <tr class="memdesc:ae52709cf772152d25de18140fa285629"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU feature.  <a href="#ae52709cf772152d25de18140fa285629">More...</a><br /></td></tr>
@@ -152,9 +155,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abf935f82063dad81a2e86f578a467413"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413">intel_turbo_boost</a> ()</td></tr>
 <tr class="memdesc:abf935f82063dad81a2e86f578a467413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intel Turbo Boost (EAX = 0x06; EAX[1])  <a href="#abf935f82063dad81a2e86f578a467413">More...</a><br /></td></tr>
 <tr class="separator:abf935f82063dad81a2e86f578a467413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae676a07ee4cc4d472e572e4c7ee2da"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a9ae676a07ee4cc4d472e572e4c7ee2da">max_cache_index</a> ()</td></tr>
-<tr class="memdesc:a9ae676a07ee4cc4d472e572e4c7ee2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cache level corresponding each cache index (the index of the returned vector)  <a href="#a9ae676a07ee4cc4d472e572e4c7ee2da">More...</a><br /></td></tr>
-<tr class="separator:a9ae676a07ee4cc4d472e572e4c7ee2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24467f557d04945dfa6513ed554237ec"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a24467f557d04945dfa6513ed554237ec">max_eax</a> ()</td></tr>
 <tr class="memdesc:a24467f557d04945dfa6513ed554237ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum calling parameter EAX (EAX = 0x00; EAX)  <a href="#a24467f557d04945dfa6513ed554237ec">More...</a><br /></td></tr>
 <tr class="separator:a24467f557d04945dfa6513ed554237ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +214,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Base frequency in MHz (EAX = 0x16; EAX[15:0]) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00624">624</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00623">623</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Bus (reference) frequency in MHz (EAX = 0x16; ECX[15:0]) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00632">632</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00631">631</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -295,9 +295,36 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the cache parameters (EAX = 0x04; EAX, EBX, ECX, EDX) </p>
-<dl class="section note"><dt>Note</dt><dd>The maximum of the <code>cache_index</code> parameter is the length of the vector returned by <code>cache_levels</code> minus 1. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The maximum of the <code>cache_index</code> parameter <code><a class="el" href="classvsmc_1_1_c_p_u_i_d.html#a80174b97ca7abd4a01ace963db1e6673" title="Get the number of caches. ">cache_param_num()</a> - 1</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00611">611</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00610">610</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80174b97ca7abd4a01ace963db1e6673"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned vsmc::CPUID::cache_param_num </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of caches. </p>
+
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00592">592</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -326,7 +353,7 @@ template&lt;CPUIDFeature Feat&gt; </div>
 
 <p>CPU feature. </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00637">637</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00636">636</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -413,34 +440,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 
 <p>Intel Turbo Boost (EAX = 0x06; EAX[1]) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00620">620</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9ae676a07ee4cc4d472e572e4c7ee2da"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static unsigned vsmc::CPUID::max_cache_index </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the cache level corresponding each cache index (the index of the returned vector) </p>
-
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00593">593</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00619">619</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ template&lt;unsigned EAX, unsigned ECX&gt; </div>
 
 <p>Maximum frequency in MHz (EAX = 0x16; EBX[15:0]) </p>
 
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00628">628</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00627">627</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>

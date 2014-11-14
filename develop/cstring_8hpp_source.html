@@ -1086,13 +1086,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;<span class="preprocessor">#if VSMC_HAS_AVX</span></div>
 <div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
 <div class="line"><a name="l01091"></a><span class="lineno"><a class="line" href="group___c_string.html#ga1f8f4fb6a0a50ce91e2c881361771e9c"> 1091</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code" href="group___c_string.html#ga1f8f4fb6a0a50ce91e2c881361771e9c">memset_avx</a> (<span class="keywordtype">void</span> *dst, <span class="keywordtype">int</span> ch, std::size_t n)</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;{<span class="keywordflow">return</span> internal::memset_simd&lt;AVX&gt;(dst, ch, n); _mm256_zeroupper();}</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;{<span class="keywordflow">return</span> internal::memset_simd&lt;AVX&gt;(dst, ch, n);}</div>
 <div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;</div>
 <div class="line"><a name="l01096"></a><span class="lineno"><a class="line" href="group___c_string.html#gaca6837bec73a92f463eb505150e1bf40"> 1096</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code" href="group___c_string.html#gaca6837bec73a92f463eb505150e1bf40">memcpy_avx</a> (<span class="keywordtype">void</span> *dst, <span class="keyword">const</span> <span class="keywordtype">void</span> *src, std::size_t n)</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;{<span class="keywordflow">return</span> internal::memcpy_simd&lt;AVX&gt;(dst, src, n); _mm256_zeroupper();}</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;{<span class="keywordflow">return</span> internal::memcpy_simd&lt;AVX&gt;(dst, src, n);}</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;</div>
 <div class="line"><a name="l01101"></a><span class="lineno"><a class="line" href="group___c_string.html#ga6d237417819f2027852e2609b7b9dc83"> 1101</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code" href="group___c_string.html#ga6d237417819f2027852e2609b7b9dc83">memmove_avx</a> (<span class="keywordtype">void</span> *dst, <span class="keyword">const</span> <span class="keywordtype">void</span> *src, std::size_t n)</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;{<span class="keywordflow">return</span> internal::memmove_simd&lt;AVX&gt;(dst, src, n); _mm256_zeroupper();}</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;{<span class="keywordflow">return</span> internal::memmove_simd&lt;AVX&gt;(dst, src, n);}</div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;</div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_AVX</span></div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;</div>

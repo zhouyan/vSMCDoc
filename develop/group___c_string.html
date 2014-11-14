@@ -142,24 +142,25 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Optimized <code>&lt;cstring&gt;</code> functions. </p>
-<p>This module implement the <code>memcpy</code>, etc., function in the <code>vsmc</code> namespace. The implementaions are optimzied with SIMD instructions. Fource groups of functions are provided.</p>
+<p>This module implement the <code>memcpy</code>, etc., functions in the <code>vsmc</code> namespace. The implementaions are optimzied with SIMD instructions. Three groups of functions are provided.</p>
 <ul>
 <li><code>memcpy_std</code> etc., they simply call <code>std::memcpy</code> etc.</li>
 <li><code>memcpy_sse2</code> etc., they are avialable if at least SSE2 is supported and are optimized with SSE2 instructions</li>
-<li><code>memcpy_avx</code> etc., they are avialable if at least AVX is supported and</li>
+<li><code>memcpy_avx</code> etc., they are avialable if at least AVX is supported and are optimized with AVX instructions</li>
 </ul>
-<p>are optimized with AVX instructions There are also generic <code><a class="el" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e" title="SIMD optimized memcpy with non-temporal store for large buffers. ">vsmc::memcpy</a></code> etc. They dispatch the call based on the following rules.</p>
+<p>There are also generic <code><a class="el" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e" title="SIMD optimized memcpy with non-temporal store for large buffers. ">vsmc::memcpy</a></code> etc. They dispatch the call based on the following rules.</p>
 <ul>
 <li>If AVX is available, then call <code>memcpy_avx</code> etc.</li>
 <li>Else if SSE2 is available, then call <code>memcpy_sse2</code> etc.</li>
 <li>Else call <code>memcpy_std</code>.</li>
 </ul>
-<p>This dispatch can be done at compile time if the configuration macro <code>VSMC_CSTRING_RUNTIME_DISPATCH</code> is zero. This will possibly allow better inlining opportunity. If the macro is non-zero, then it will be done at runtime using <code>CPUID</code> information.</p>
+<p>This dispatch can be done at compile time if the configuration macro <code>VSMC_CSTRING_RUNTIME_DISPATCH</code> is zero. If the macro is non-zero, then it will be done at runtime using <code>CPUID</code> information.</p>
 <p>Before using any of these vSMC provided functions. A few factors shall be considered.</p>
 <ul>
 <li>For large buffers, vSMC functions use non-temporal store instructions. In this case, the performance is likely to be better than the system library or compiler builtins. On Haswell and Nehalem, about 30% performance gain were observed, though 70% were observed in some situations. A more important benefits is that cache pollution may be avoided in this case. The threshold is set to be half the size of the LLC (last level cache). Note that, only up to level 3 cache is considered. Some newer Intel CPUs have level 4 cache, which is shared with the integrated GPU. This threshold can be changed at compile time by define <code>VSMC_CSTRING_NON_TEMPORAL_THRESHOLD</code> or at runtime via CStringNonTemporalThreshold singleton.</li>
-<li>For moderate size buffers (from 1KB upto the non-temporal threshold), the performance is most likely to be only comparable to the system. At worst, 20% perforamnce degrade was observed, though in most cases, it is almost as fast as or slightly faster than system library.</li>
-<li>For small buffer size (&lt; 1KB), <code><a class="el" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e" title="SIMD optimized memcpy with non-temporal store for large buffers. ">vsmc::memcpy</a></code> etc., simply call <code>std::memcpy</code>. The overhead is minimal.</li>
+<li>For moderate size buffers (from 1KB upto the non-temporal threshold), the performance is most likely to be only comparable to the system. At worst, 20% perforamnce degrade was observed, though in most cases, it is almost as fast as or slightly faster than system library. To change the threshold, <div class="fragment"><div class="line"><a class="code" href="classvsmc_1_1_c_string_non_temporal_threshold.html#aa1a49596c2882c9e2e865b6f1819ff1c">vsmc::CStringNonTemporalThreshold::instance</a>().<a class="code" href="classvsmc_1_1_c_string_non_temporal_threshold.html#aff4c633507427f3cd8de5aa530ed4547">set</a>(new_threshold);</div>
+</div><!-- fragment --> To change the maximum level of cache to be considered and reset the threshold accordingly. <div class="fragment"><div class="line"><a class="code" href="classvsmc_1_1_c_string_non_temporal_threshold.html#aa1a49596c2882c9e2e865b6f1819ff1c">vsmc::CStringNonTemporalThreshold::instance</a>().<a class="code" href="classvsmc_1_1_c_string_non_temporal_threshold.html#af874d52ccd33c87016d5a78f75d53b72">max_level</a>(new_level);</div>
+</div><!-- fragment --></li>
 <li>The performance is only tested on limited models of CPUs. As a single person I don't have much resources. In particle, AMD CPUs were not tested at all.</li>
 <li>At the moment, <code><a class="el" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e" title="SIMD optimized memcpy with non-temporal store for large buffers. ">vsmc::memcpy</a></code> is more optimized than <code><a class="el" href="group___c_string.html#gafd12d737fd498bd863c9d94f6d818e67" title="SIMD optimized memmove with non-temporal store for large buffers. ">vsmc::memmove</a></code>. System <code>memmove</code> is likely to outpeform <code><a class="el" href="group___c_string.html#gafd12d737fd498bd863c9d94f6d818e67" title="SIMD optimized memmove with non-temporal store for large buffers. ">vsmc::memmove</a></code> considerably except for large buffers.</li>
 </ul>
@@ -206,7 +207,7 @@ Functions</h2></td></tr>
 
 <p>SIMD optimized <code>memcpy</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01179">1179</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01184">1184</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +251,7 @@ Functions</h2></td></tr>
 
 <p>AVX optimized <code>memcpy</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01091">1091</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01096">1096</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +295,7 @@ Functions</h2></td></tr>
 
 <p>SSE2 optimized <code>memcpy</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01072">1072</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01077">1077</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +339,7 @@ Functions</h2></td></tr>
 
 <p>Direct call to <code>std::memcpy</code> </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01053">1053</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01058">1058</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -382,7 +383,7 @@ Functions</h2></td></tr>
 
 <p>SIMD optimized <code>memmove</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01197">1197</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01202">1202</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +427,7 @@ Functions</h2></td></tr>
 
 <p>AVX optimized <code>memmove</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01096">1096</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01101">1101</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +471,7 @@ Functions</h2></td></tr>
 
 <p>SSE2 optimized <code>memmove</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01077">1077</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01082">1082</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -514,7 +515,7 @@ Functions</h2></td></tr>
 
 <p>Direct call to <code>std::memmove</code> </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01059">1059</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01064">1064</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -558,7 +559,7 @@ Functions</h2></td></tr>
 
 <p>SIMD optimized <code>memset</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01162">1162</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01167">1167</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -602,7 +603,7 @@ Functions</h2></td></tr>
 
 <p>AVX optimized <code>memset</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01086">1086</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01091">1091</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -646,7 +647,7 @@ Functions</h2></td></tr>
 
 <p>SSE2 optimized <code>memset</code> with non-temporal store for large buffers. </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01067">1067</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01072">1072</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>
@@ -690,7 +691,7 @@ Functions</h2></td></tr>
 
 <p>Direct call to <code>std::memset</code> </p>
 
-<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01048">1048</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cstring_8hpp_source.html#l01053">1053</a> of file <a class="el" href="cstring_8hpp_source.html">cstring.hpp</a>.</p>
 
 </div>
 </div>

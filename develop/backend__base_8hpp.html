@@ -174,9 +174,9 @@ Macros</h2></td></tr>
 <div class="line">Name##Base&lt;T, Derived&gt; &amp;operator= (<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;)           \</div>
 <div class="line">{<span class="keywordflow">return</span> *<span class="keyword">this</span>;}                                                              <a class="code" href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">\</a></div>
 <div class="line"><a class="code" href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">VSMC_CRTP_DESTRUCTOR_PREFIX</a> ~Name##Base () {}</div>
-<div class="ttc" id="group___definitions_html_gafc2169ddc131f16040676bb227a3926e"><div class="ttname"><a href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">VSMC_CRTP_DESTRUCTOR_PREFIX</a></div><div class="ttdeci">#define VSMC_CRTP_DESTRUCTOR_PREFIX</div><div class="ttdoc">CRTP style base classes (virtual) destructor. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00028">defines.hpp:28</a></div></div>
+<div class="ttc" id="group___definitions_html_gafc2169ddc131f16040676bb227a3926e"><div class="ttname"><a href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">VSMC_CRTP_DESTRUCTOR_PREFIX</a></div><div class="ttdeci">#define VSMC_CRTP_DESTRUCTOR_PREFIX</div><div class="ttdoc">CRTP style base classes (virtual) destructor. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00049">defines.hpp:49</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00016">16</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00037">37</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -199,7 +199,7 @@ Macros</h2></td></tr>
 <div class="line">{<span class="keywordflow">return</span> *<span class="keyword">this</span>;}                                                              \</div>
 <div class="line">virtual ~Name##Base () {}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00023">23</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00044">44</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Macros</h2></td></tr>
 <div class="line">}                                                                            \</div>
 <div class="line">~Name##Impl () {}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00030">30</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00051">51</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,9 +257,9 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((N == static_cast&lt;size_type&gt;(this-&gt;size())),         \</div>
 <div class="line">            (<span class="stringliteral">&quot;**State&quot;</span>#name<span class="stringliteral">&quot;::copy** SIZE MISMATCH&quot;</span>))</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00061">61</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00082">82</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -279,10 +279,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((dynamic_cast&lt;Derived *&gt;(<span class="keyword">this</span>) != <a class="code" href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a>),     \</div>
 <div class="line">            (<span class="stringliteral">&quot;DERIVED FROM &quot;</span> #basename                                       \</div>
 <div class="line">             <span class="stringliteral">&quot; WITH INCORRECT **Derived** TEMPLATE PARAMTER&quot;</span>));</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-<div class="ttc" id="group___definitions_html_gacfea7263dce24fd2dbc34b298a9afbe2"><div class="ttname"><a href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a></div><div class="ttdeci">#define VSMC_NULLPTR</div><div class="ttdoc">nullptr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00058">defines.hpp:58</a></div></div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
+<div class="ttc" id="group___definitions_html_gacfea7263dce24fd2dbc34b298a9afbe2"><div class="ttname"><a href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a></div><div class="ttdeci">#define VSMC_NULLPTR</div><div class="ttdoc">nullptr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00079">defines.hpp:79</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00056">56</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00077">77</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,9 +302,9 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                      \</div>
 <div class="line">            (cxx11::is_base_of&lt;basename&lt;T, Derived&gt;, Derived&gt;::value),       \</div>
 <div class="line">            DERIVED_FROM_##basename##_WITH_INCORRECT_Derived_TEMPLATE_PARAMETER)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00046">46</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00067">67</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,9 +333,9 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((cxx11::is_same&lt;Derived, NullType&gt;::value),           \</div>
 <div class="line">            DERIVED_FROM_##basename##_WITHOUT_IMPLEMENTATION_OF_##member##_IN_THE_Derived_TEMPLATE_PARAMETER)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00052">52</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00073">73</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>

@@ -6,7 +6,6 @@ var searchData=
   ['openmp',['OpenMP',['../group___o_m_p.html',1,'']]],
   ['ompsizetypetrait',['OMPSizeTypeTrait',['../structvsmc_1_1traits_1_1_o_m_p_size_type_trait.html',1,'vsmc::traits']]],
   ['open',['Open',['../structvsmc_1_1_open.html',1,'vsmc']]],
-  ['open64_2ehpp',['open64.hpp',['../open64_8hpp.html',1,'']]],
   ['opencl',['OpenCL',['../group___open_c_l.html',1,'']]],
   ['operator_20const_20is_5fbase_5fof_5fdest_3c_20u_20_3e_20_26',['operator const is_base_of_dest&lt; U &gt; &amp;',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__src.html#a31ca7a6e10ecd14832986ffb0215690a',1,'vsmc::cxx11::internal::is_base_of_src']]],
   ['operator_20const_20volatile_20t_20_26',['operator const volatile T &amp;',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__src.html#acb47bee390a9ddfa0390d1da694bb3d2',1,'vsmc::cxx11::internal::is_base_of_src']]],

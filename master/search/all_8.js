@@ -24,7 +24,7 @@ var searchData=
   ['hdf5_5ftuple_5fvector_5fcopy',['hdf5_tuple_vector_copy',['../namespacevsmc_1_1internal.html#a171b1365493e8fdd7fff4ee26dde58c6',1,'vsmc::internal::hdf5_tuple_vector_copy(std::size_t n, TupleVectorType &amp;vec, InputIter first, Position&lt; 0 &gt;)'],['../namespacevsmc_1_1internal.html#a2bef20b4fe68df5b1f23be6352a15eaa',1,'vsmc::internal::hdf5_tuple_vector_copy(std::size_t n, TupleVectorType &amp;vec, InputIter first, Position&lt; Pos &gt;)']]],
   ['hdf5_5ftuple_5fvector_5fptr',['hdf5_tuple_vector_ptr',['../namespacevsmc_1_1internal.html#a7105361e9ba256926300e8c2a4432e71',1,'vsmc::internal::hdf5_tuple_vector_ptr(const TupleVectorType &amp;vec, TuplePtrType &amp;ptr, Position&lt; 0 &gt;)'],['../namespacevsmc_1_1internal.html#a56eeea631c6499772102b0c92a67f7d2',1,'vsmc::internal::hdf5_tuple_vector_ptr(const TupleVectorType &amp;vec, TuplePtrType &amp;ptr, Position&lt; Pos &gt;)']]],
   ['hdf5_5ftuple_5fvector_5fresize',['hdf5_tuple_vector_resize',['../namespacevsmc_1_1internal.html#abd8f517f558cf9ff4f8b02325314a2a8',1,'vsmc::internal::hdf5_tuple_vector_resize(std::size_t n, TupleVectorType &amp;vec, Position&lt; 0 &gt;)'],['../namespacevsmc_1_1internal.html#adb824a5ea4a6bde7b9a3cece10d5d574',1,'vsmc::internal::hdf5_tuple_vector_resize(std::size_t n, TupleVectorType &amp;vec, Position&lt; Pos &gt;)']]],
-  ['hdf5_20objects_20saving',['HDF5 objects saving',['../group___h_d_f5_i_o.html',1,'']]],
+  ['hdf5_20objects_20io',['HDF5 objects IO',['../group___h_d_f5_i_o.html',1,'']]],
   ['hdf5io_2ehpp',['hdf5io.hpp',['../hdf5io_8hpp.html',1,'']]],
   ['hdf5io_5fdatatype',['hdf5io_datatype',['../namespacevsmc.html#a28978024a10e8d93feb19cfd652ddfdf',1,'vsmc']]],
   ['hdf5io_5fdatatype_3c_20char_20_3e',['hdf5io_datatype&lt; char &gt;',['../group___h_d_f5_i_o.html#gaadec9e67a65ef5b77c207992a8c0e8b8',1,'vsmc']]],
@@ -54,6 +54,6 @@ var searchData=
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html',1,'vsmc::internal']]],
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
-  ['hours',['hours',['../classvsmc_1_1_stop_watch_null.html#a9e11f49a5f3652852d6ebb888e574d43',1,'vsmc::StopWatchNull::hours()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter::hours()']]],
+  ['hours',['hours',['../classvsmc_1_1_stop_watch_null.html#a9e11f49a5f3652852d6ebb888e574d43',1,'vsmc::StopWatchNull::hours()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter::hours()'],['../classvsmc_1_1_stop_watch_s_y_s.html#a12adb9effae20a52940adc8f7c202d77',1,'vsmc::StopWatchSYS::hours()']]],
   ['hyperbolic_20functions',['Hyperbolic functions',['../group__v_hyperbolic.html',1,'']]]
 ];

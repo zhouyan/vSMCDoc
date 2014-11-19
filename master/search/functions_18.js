@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_7ealignedallocator',['~AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html#ac1b4e96a339fab87dcdfcc66b66cbebb',1,'vsmc::AlignedAllocator']]],
   ['_7eclbuffer',['~CLBuffer',['../classvsmc_1_1_c_l_buffer.html#a0a43ea3ee4bf9b5f3f383c81020bd1d3',1,'vsmc::CLBuffer']]],
   ['_7edispatchobject',['~DispatchObject',['../classvsmc_1_1_dispatch_object.html#ae19d984ebc8de5007a1a9ee435d02eec',1,'vsmc::DispatchObject']]],
   ['_7egslgenerator',['~GSLGenerator',['../classvsmc_1_1_g_s_l_generator.html#ab3527c968be18daea0e5aa3bceba9565',1,'vsmc::GSLGenerator']]],
@@ -32,7 +33,6 @@ var searchData=
   ['_7emovestd',['~MoveSTD',['../singletonvsmc_1_1_move_s_t_d.html#a60c99159f6497a5a5e8618e7b0de9fac',1,'vsmc::MoveSTD']]],
   ['_7emovetbb',['~MoveTBB',['../singletonvsmc_1_1_move_t_b_b.html#ad346e581f525ac0ea862cee56691fabf',1,'vsmc::MoveTBB']]],
   ['_7enintegratebase',['~NIntegrateBase',['../classvsmc_1_1_n_integrate_base.html#a8f08b761f3db5d2f7ba1063fa40ed935',1,'vsmc::NIntegrateBase::~NIntegrateBase()'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#a50a157548b8032939a8a24dd186e190d',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::~NIntegrateBase()']]],
-  ['_7enormalizingconstant',['~NormalizingConstant',['../classvsmc_1_1_normalizing_constant.html#a6d8a1d113b3b8b5a8e0ba3d892b2ca1c',1,'vsmc::NormalizingConstant']]],
   ['_7epathevalbase',['~PathEvalBase',['../classvsmc_1_1_path_eval_base.html#afc58b55fc1ce2d03ac2c5f5dc79b16d0',1,'vsmc::PathEvalBase::~PathEvalBase()'],['../classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5fccba54e9290f63ff39907c74e3b9b2',1,'vsmc::PathEvalBase&lt; T, Virtual &gt;::~PathEvalBase()']]],
   ['_7epathevalcilk',['~PathEvalCILK',['../singletonvsmc_1_1_path_eval_c_i_l_k.html#a36fb65838e7b0f4f25003d6483d3a9bd',1,'vsmc::PathEvalCILK']]],
   ['_7epathevalcl',['~PathEvalCL',['../classvsmc_1_1_path_eval_c_l.html#a5653bdf30475216242264801099b16df',1,'vsmc::PathEvalCL']]],

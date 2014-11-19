@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>CPU clock cycle counter using RDTSCP.  
+<p>CPU clock cycle counter using <code>rdtscp</code>  
  <a href="classvsmc_1_1_r_d_t_s_c_p_counter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="rdtsc_8hpp_source.html">vsmc/utility/rdtsc.hpp</a>&gt;</code></p>
@@ -130,12 +130,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab30d93fa0e9b80446c9cb6601e8136f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CPU clock cycle counter using RDTSCP. </p>
+<div class="textblock"><p>CPU clock cycle counter using <code>rdtscp</code> </p>
 <p>This class shall only be used if RDTSCP is supported. For example, </p><div class="fragment"><div class="line">RDTSCCouner c1;</div>
 <div class="line">RDTSCPCouner c2;</div>
 <div class="line">CPUID::has_feature&lt;CPUIDFeatureExtRDTSCP&gt;() ? c2.start() : c1.start();</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00153">153</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00169">169</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a89244b1899d67d65c2433ac3f1eaed4a"></a>
 <div class="memitem">
@@ -158,7 +158,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00157">157</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00173">173</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return the accumulated elapsed cycle count. </p>
 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00218">218</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00234">234</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +213,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Stop and reset the elapsed cycle count to zero. </p>
 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00211">211</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00227">227</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ Public Member Functions</h2></td></tr>
 <p>If the counter is running. </p>
 <p>If <code><a class="el" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ac702e7ab2216adffefb434a4de22ae63" title="Start the counter, no effect if already started. ">start()</a></code> has been called and no <code><a class="el" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4" title="Stop the counter, no effect if already stopped. ">stop()</a></code> call since, then it is running, otherwise it is stoped. </p>
 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00164">164</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00180">180</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ Public Member Functions</h2></td></tr>
 <p>Start the counter, no effect if already started. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if it is started by this call, and the elapsed cycle count will be incremented next time <code><a class="el" href="classvsmc_1_1_r_d_t_s_c_p_counter.html#ab30d93fa0e9b80446c9cb6601e8136f4" title="Stop the counter, no effect if already stopped. ">stop()</a></code> is called. The increment will be relative to the time point of this call. <code>false</code> if it is already started earlier. </dd></dl>
 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00172">172</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00188">188</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00194">194</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdtsc_8hpp_source.html#l00210">210</a> of file <a class="el" href="rdtsc_8hpp_source.html">rdtsc.hpp</a>.</p>
 
 </div>
 </div>

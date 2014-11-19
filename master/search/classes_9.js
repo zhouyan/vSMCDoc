@@ -12,8 +12,5 @@ var searchData=
   ['normal01_5f2x64_5f53',['normal01_2x64_53',['../structnormal01__2x64__53.html',1,'']]],
   ['normal01_5f4x32_5f24',['normal01_4x32_24',['../structnormal01__4x32__24.html',1,'']]],
   ['normal01_5f4x32_5f53',['normal01_4x32_53',['../structnormal01__4x32__53.html',1,'']]],
-  ['normal01_5f4x64_5f53',['normal01_4x64_53',['../structnormal01__4x64__53.html',1,'']]],
-  ['normalizingconstant',['NormalizingConstant',['../classvsmc_1_1_normalizing_constant.html',1,'vsmc']]],
-  ['normalizingconstantbase',['NormalizingConstantBase',['../class_normalizing_constant_base.html',1,'']]],
-  ['normalizingconstantmpi',['NormalizingConstantMPI',['../singletonvsmc_1_1_normalizing_constant_m_p_i.html',1,'vsmc']]]
+  ['normal01_5f4x64_5f53',['normal01_4x64_53',['../structnormal01__4x64__53.html',1,'']]]
 ];

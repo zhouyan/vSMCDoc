@@ -1,11 +1,11 @@
 var searchData=
 [
   ['name',['name',['../classvsmc_1_1_monitor.html#a7e7bfb0a019bd6ac999727267b50a143',1,'vsmc::Monitor::name(std::size_t id)'],['../classvsmc_1_1_monitor.html#a41151e47ce7b05ca3af868ca6efe3811',1,'vsmc::Monitor::name(std::size_t id) const ']]],
-  ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_null.html#a75fe6f6b2f7436597f74a5afa732e0f8',1,'vsmc::StopWatchNull::nanoseconds()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter::nanoseconds()']]],
+  ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_null.html#a75fe6f6b2f7436597f74a5afa732e0f8',1,'vsmc::StopWatchNull::nanoseconds()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter::nanoseconds()'],['../classvsmc_1_1_stop_watch_s_y_s.html#ad3ab9e3bf862d54eb8aac59a56198430',1,'vsmc::StopWatchSYS::nanoseconds()']]],
   ['nintegrate_5fbase_2ehpp',['nintegrate_base.hpp',['../nintegrate__base_8hpp.html',1,'']]],
   ['nintegrate_5fnewton_5fcotes_2ehpp',['nintegrate_newton_cotes.hpp',['../nintegrate__newton__cotes_8hpp.html',1,'']]],
-  ['nintegratebase',['NIntegrateBase',['../classvsmc_1_1_n_integrate_base.html',1,'vsmc']]],
   ['nintegratebase',['NIntegrateBase',['../classvsmc_1_1_n_integrate_base.html#abfc6da04bf926d8494ba1736e21401a7',1,'vsmc::NIntegrateBase::NIntegrateBase()'],['../classvsmc_1_1_n_integrate_base.html#a480ae20ab00a085dcff0f900306fe0be',1,'vsmc::NIntegrateBase::NIntegrateBase(const NIntegrateBase&lt; Derived &gt; &amp;)'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#ac9b44bf02156a85e7e6bd8ce21120807',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::NIntegrateBase()'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#ad37ab0c037c6b774e2dc1bf6b219b92b',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::NIntegrateBase(const NIntegrateBase&lt; Virtual &gt; &amp;)']]],
+  ['nintegratebase',['NIntegrateBase',['../classvsmc_1_1_n_integrate_base.html',1,'vsmc']]],
   ['nintegratebase_3c_20nintegratenewtoncotes_3c_20degree_20_3e_20_3e',['NIntegrateBase&lt; NIntegrateNewtonCotes&lt; Degree &gt; &gt;',['../classvsmc_1_1_n_integrate_base.html',1,'vsmc']]],
   ['nintegratebase_3c_20virtual_20_3e',['NIntegrateBase&lt; Virtual &gt;',['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html',1,'vsmc']]],
   ['nintegratenewtoncotes',['NIntegrateNewtonCotes',['../classvsmc_1_1_n_integrate_newton_cotes.html',1,'vsmc']]],
@@ -46,12 +46,6 @@ var searchData=
   ['normal01_5f4x64_5frand',['NORMAL01_4x64_RAND',['../normal01_8h.html#a53062b9d22c0fffc67d24f70c6030c6b',1,'normal01.h']]],
   ['normalize_5flog_5fweight',['normalize_log_weight',['../classvsmc_1_1_weight_set.html#adde46326a2bb2a25577b9a5459339020',1,'vsmc::WeightSet::normalize_log_weight()'],['../singletonvsmc_1_1_weight_set_m_p_i.html#aa15b2e35c062ded61282c99c0664b286',1,'vsmc::WeightSetMPI::normalize_log_weight()']]],
   ['normalize_5fweight',['normalize_weight',['../classvsmc_1_1_weight_set.html#a0c7fda52bbb2b345f2dc82c93b5052d7',1,'vsmc::WeightSet::normalize_weight()'],['../singletonvsmc_1_1_weight_set_m_p_i.html#a768037d8e9b706be40112a0100461f3b',1,'vsmc::WeightSetMPI::normalize_weight()']]],
-  ['normalizing_5fconstant_2ehpp',['normalizing_constant.hpp',['../normalizing__constant_8hpp.html',1,'']]],
-  ['normalizingconstant',['NormalizingConstant',['../classvsmc_1_1_normalizing_constant.html#a37811642959160180ceca6ee24183468',1,'vsmc::NormalizingConstant']]],
-  ['normalizingconstant',['NormalizingConstant',['../classvsmc_1_1_normalizing_constant.html',1,'vsmc']]],
-  ['normalizingconstantbase',['NormalizingConstantBase',['../class_normalizing_constant_base.html',1,'']]],
-  ['normalizingconstantmpi',['NormalizingConstantMPI',['../singletonvsmc_1_1_normalizing_constant_m_p_i.html',1,'vsmc']]],
-  ['normalizingconstantmpi',['NormalizingConstantMPI',['../singletonvsmc_1_1_normalizing_constant_m_p_i.html#a4d99c5d2708d82a0ed36328928c8bcd4',1,'vsmc::NormalizingConstantMPI']]],
   ['notify',['notify',['../classvsmc_1_1_dispatch_group.html#a4f2803ec0f6f21c7d2959137843ab526',1,'vsmc::DispatchGroup::notify(const DispatchQueue&lt; Type &gt; &amp;queue,::dispatch_block_t block) const '],['../classvsmc_1_1_dispatch_group.html#aa83efa9242a79428ff44bb3debdd4dec',1,'vsmc::DispatchGroup::notify(::dispatch_queue_t queue,::dispatch_block_t block) const ']]],
   ['notify_5ff',['notify_f',['../classvsmc_1_1_dispatch_group.html#a53adaa1e90bf2c24acfbb1f0e072e20c',1,'vsmc::DispatchGroup::notify_f(const DispatchQueue&lt; Type &gt; &amp;queue, void *context,::dispatch_function_t work) const '],['../classvsmc_1_1_dispatch_group.html#a7452cefc73ac5f7796b6d2b7ff50b721',1,'vsmc::DispatchGroup::notify_f(::dispatch_queue_t queue, void *context,::dispatch_function_t work) const ']]]
 ];

@@ -102,20 +102,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">backend_mpi.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="mpi__manager_8hpp_source.html">vsmc/mpi/mpi_manager.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="weight__set_8hpp_source.html">vsmc/core/weight_set.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="normalizing__constant_8hpp_source.html">vsmc/core/normalizing_constant.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mpi__manager_8hpp_source.html">vsmc/mpi/mpi_manager.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aligned__memory_8hpp_source.html">vsmc/utility/aligned_memory.hpp</a>&gt;</code><br />
 </div>
 <p><a href="backend__mpi_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_normalizing_constant_m_p_i.html">vsmc::NormalizingConstantMPI&lt; NormalizingConstantBase, ID &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculating normalizing constant ratio using MPI.  <a href="singletonvsmc_1_1_normalizing_constant_m_p_i.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_normalizing_constant_m_p_i.html">vsmc::NormalizingConstantMPI&lt; NormalizingConstantBase, ID &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculating normalizing constant ratio using MPI.  <a href="singletonvsmc_1_1_normalizing_constant_m_p_i.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_state_m_p_i.html">vsmc::StateMPI&lt; BaseState, ID &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using MPI.  <a href="singletonvsmc_1_1_state_m_p_i.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,9 +146,9 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((N == global_size_),                                 \</div>
 <div class="line">            (<span class="stringliteral">&quot;**StateMPI::copy** SIZE MISMATCH&quot;</span>))</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00018">18</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00040">40</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>

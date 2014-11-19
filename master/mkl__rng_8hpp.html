@@ -105,10 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;mkl_vsl.h&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;mkl.h&gt;</code><br />
 </div>
 <p><a href="mkl__rng_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -377,7 +374,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00035">35</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00053">53</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -395,7 +392,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00038">38</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00056">56</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +406,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00032">32</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00050">50</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -429,10 +426,10 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((offset &lt; max <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a> ()),                          \</div>
 <div class="line">            (<span class="stringliteral">&quot;**MKLOffsetDynamic** &quot;</span>                                         \</div>
 <div class="line">             <span class="stringliteral">&quot;EXCESS MAXIMUM NUMBER OF INDEPDENT RNG STREAMS&quot;</span>))</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-<div class="ttc" id="defines_8hpp_html_a6e24175504fd5e6f8c6bc602a5f128b0"><div class="ttname"><a href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a></div><div class="ttdeci">#define VSMC_MNE</div><div class="ttdoc">Avoid MSVC stupid behavior: MNE = Macro No Expansion. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00017">defines.hpp:17</a></div></div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
+<div class="ttc" id="defines_8hpp_html_a6e24175504fd5e6f8c6bc602a5f128b0"><div class="ttname"><a href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a></div><div class="ttdeci">#define VSMC_MNE</div><div class="ttdoc">Avoid MSVC stupid behavior: MNE = Macro No Expansion. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00038">defines.hpp:38</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00026">26</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00044">44</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>
@@ -463,9 +460,9 @@ Functions</h2></td></tr>
 <div class="line">            (cxx11::is_same&lt;FPType, float&gt;::value ||                         \</div>
 <div class="line">             cxx11::is_same&lt;FPType, double&gt;::value),                         \</div>
 <div class="line">            USE_MKL##Dist##Distribution_##WITH_A_RESULT_TYPE_OTHER_THAN_float_OR_double)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00024">assert.hpp:24</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00020">20</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl__rng_8hpp_source.html#l00038">38</a> of file <a class="el" href="mkl__rng_8hpp_source.html">mkl_rng.hpp</a>.</p>
 
 </div>
 </div>

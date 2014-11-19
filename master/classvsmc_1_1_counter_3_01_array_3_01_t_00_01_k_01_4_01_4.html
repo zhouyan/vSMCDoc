@@ -155,7 +155,7 @@ class vsmc::Counter&lt; Array&lt; T, K &gt; &gt;</h3>
 <p>It deals with two types of counters. The first type is in the form <code><a class="el" href="classvsmc_1_1_array.html" title="Static array. ">Array</a>&lt;T, K&gt;</code> where <code>T</code> is an unsigned integer type, treated as a <code>sizeof(T) * K * 8</code> bits integer. For example, <code><a class="el" href="classvsmc_1_1_array.html" title="Static array. ">Array</a>&lt;uint32_t, 4&gt;</code> is treated as an 128-bits integer. The counter start with all elements being zero. The value of the integer can be calculated as, \(c_0 + c_1 M + c_2 M^2 +\cdots + c_{K-1} M^{K - 1}\), where \(c_i\) is the \(i\)th element in the <a class="el" href="classvsmc_1_1_array.html" title="Static array. ">Array</a> and has a range from zero to \(M - 1\), \(M\) is the largest number of type <code>T</code> plus one, that is \(2^n\) with \(n\) being the number of bits in type <code>T</code>.</p>
 <p>The second type is blocks of counters of the first type. For example, <code><a class="el" href="classvsmc_1_1_array.html" title="Static array. ">Array</a>&lt;ctr_type, Blocks&gt;</code>, where <code>ctr_type</code> is a counter of the first type. When set and incremented using methods in this class, all <code>Blocks</code> counters are maintained such that, they are always distinctive. This is done by reserving eight bits as counter IDs. Therefore, there can be at most 256 blocks. The increment works by incrementing each counter the same way as in the first type, except that the last element, \(c_{K-1}\) has a range from zero to \(2^{n - 8} - 1\) where \(n\) is the number of bits in type <code>T</code>. Therefore, in the extreme case where <code>ctr_type</code> is <code><a class="el" href="classvsmc_1_1_array.html" title="Static array. ">Array</a>&lt;uint8_t, 1&gt;</code>, increment won't change the counter at all. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00067">67</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00089">89</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a5dda5276509a85a342071b7a66597e96"></a>
 <div class="memitem">
@@ -169,7 +169,7 @@ template&lt;typename T , std::size_t K&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00071">71</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00093">93</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Increment the counter by one. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00097">97</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00121">121</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Increment each counter in a block by one. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00102">102</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00126">126</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Increment a counter by a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00106">106</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00130">130</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Increment each counter in a block by a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00134">134</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00158">158</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Reset a counter to zero. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00085">85</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00109">109</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +376,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Reset a block of counters with the first set to zero. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00090">90</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00114">114</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Set the counter to a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00074">74</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00096">96</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Set a block of counters given the value of the first counter. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00078">78</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00101">101</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>

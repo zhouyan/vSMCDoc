@@ -12,7 +12,7 @@ var searchData=
   ['backend_5fseq_2ehpp',['backend_seq.hpp',['../backend__seq_8hpp.html',1,'']]],
   ['backend_5fstd_2ehpp',['backend_std.hpp',['../backend__std_8hpp.html',1,'']]],
   ['backend_5ftbb_2ehpp',['backend_tbb.hpp',['../backend__tbb_8hpp.html',1,'']]],
-  ['barrier',['barrier',['../singletonvsmc_1_1_weight_set_m_p_i.html#a9940223310523c2ac238b09431babff0',1,'vsmc::WeightSetMPI::barrier()'],['../singletonvsmc_1_1_normalizing_constant_m_p_i.html#ac6305ef12bbbd14f85d6cde43c9bb55f',1,'vsmc::NormalizingConstantMPI::barrier()'],['../singletonvsmc_1_1_state_m_p_i.html#ad490aa5a84c323d6893d0dcba26c3bff',1,'vsmc::StateMPI::barrier()']]],
+  ['barrier',['barrier',['../singletonvsmc_1_1_weight_set_m_p_i.html#a9940223310523c2ac238b09431babff0',1,'vsmc::WeightSetMPI::barrier()'],['../singletonvsmc_1_1_state_m_p_i.html#ad490aa5a84c323d6893d0dcba26c3bff',1,'vsmc::StateMPI::barrier()']]],
   ['barrier_5fasync',['barrier_async',['../classvsmc_1_1_dispatch_queue_base.html#a421eb1555113c67b625a2e867cb156d8',1,'vsmc::DispatchQueueBase']]],
   ['barrier_5fasync_5ff',['barrier_async_f',['../classvsmc_1_1_dispatch_queue_base.html#a4916c994d4546187d3ddab825e2cafd0',1,'vsmc::DispatchQueueBase']]],
   ['barrier_5fsync',['barrier_sync',['../classvsmc_1_1_dispatch_queue_base.html#a90dde0a78f05aa2b44bba9b5c646c985',1,'vsmc::DispatchQueueBase']]],

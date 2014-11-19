@@ -128,92 +128,90 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;~~~sh</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;make docs</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;~~~</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;The documentation can also be found [here][vSMCDoc]. A [tutorial][vSMCTutorial]</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;is also available. However, it describes an earlier version of the library.</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;There are a few incompatibilities with the current version. It is still highly</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;relevant. Users shall use the Doxygen generated documentations when things do</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;not work exactly the same way as in the tutorial.</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;# Examples</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;The documentation of the [master][vSMCDocMaster] and</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;[develop][vSMCDocDevelop] branches can be found online.</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;A [tutorial][vSMCTutorial] is also available. However, it describes an earlier</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;version of the library.  There are a few incompatibilities with the current</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;version. It is still highly relevant. Users shall use the Doxygen generated</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;documentations when things do not work exactly the same way as in the tutorial.</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;[Examples][vSMCExample] are now hosted separately. To get and build them,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;~~~sh</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;cd /path_to_vSMC_source</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;git clone https://github.com/zhouyan/vSMCExample.git</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;mkdir build</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;cd build</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;cmake ..</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;make example</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;~~~</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;Most examples also come with their own `README` files that give relevant</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;references.</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;# Parallelization backends</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;# Examples</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;[Examples][vSMCExample] are now hosted separately. To get and build them,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;~~~sh</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;cd /path_to_vSMC_source</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;git clone https://github.com/zhouyan/vSMCExample.git</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;mkdir build</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;cd build</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;cmake ..</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;make example</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;~~~</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;Most examples also come with their own `README` files that give relevant</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;references.</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;The library support various backends for multi-thread parallelization, unified</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;under a uniform interface. One is C++11 concurrency. For a full C++11</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;implementation, this means no third-party dependency is required to write a</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;parallel SMC sampler. Other third-party parallelization include, [Intel Cilk</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;Plus][Intel Cilk Plus], [Intel TBB][Intel TBB] and [OpenMP][OpenMP]. [Apple</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;Grand Central Dispatch][Apple GCD] is also supported on Mac OS X. [Microsoft</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;Parallel Patterns Library][MS PPL] is supported on Windows when compiled with</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;[Microsoft Visual C++][MSVC] 2012 or later. In addition, this library also</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;support using [OpenCL][OpenCL] for GPGPU computing, though the interface is</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;different than others.</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;# Third-party dependencies</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;# Parallelization backends</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;The library support various backends for multi-thread parallelization, unified</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;under a uniform interface. One is C++11 concurrency. For a full C++11</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;implementation, this means no third-party dependency is required to write a</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;parallel SMC sampler. Other third-party parallelization include, [Intel Cilk</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;Plus][Intel Cilk Plus], [Intel TBB][Intel TBB] and [OpenMP][OpenMP]. [Apple</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;Grand Central Dispatch][Apple GCD] is also supported on Mac OS X. [Microsoft</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;Parallel Patterns Library][MS PPL] is supported on Windows when compiled with</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;[Microsoft Visual C++][MSVC] 2012 or later. In addition, this library also</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;support using [OpenCL][OpenCL] for GPGPU computing, though the interface is</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;different than others.</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;This library has no dependences other than C++ standard libraries (C++11). Any</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;C++11 language features are optional.</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;In particular, the library use the `&lt;functional&gt;` and `&lt;random&gt;` headers, which</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;are parts of the C++11 standard libraries. Equivalences can be found in</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;[Boost][Boost]. By default the library will use the [Boost][Boost] library as</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;C++11 implementations are not mature at the time writing. But if the C++</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;implementation has them correctly implemented, the standard headers can also be</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;used by defining suitable macros (see reference manual for details).</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;Note that this library is only tested with [Boost][Boost] 1.49 or later. Also</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;not all C++11 implementations of `&lt;functional&gt;` and `&lt;random&gt;` work properly</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;even they are present.</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;# Compiler support</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;This library makes heavy use of some template metaprogramming techniques. It</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;requires a standard conforming compiler. Fortunately, most commonly used</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;modern compilers, at least in C++98 mode, is able to compile the examples</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;distributed with the library, provided that they can compile the Boost library.</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;# Third-party dependencies</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;This library has no dependences other than C++ standard libraries (C++11). Any</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;C++11 language features are optional.</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;In particular, the library use the `&lt;functional&gt;` and `&lt;random&gt;` headers, which</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;are parts of the C++11 standard libraries. Equivalences can be found in recent</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;versions of [Boost][Boost]. The library does its best to detect a usable C++11</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;solution and falls back to [Boost][Boost] if it fails to do so. This behavior</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;can be changed explicitly through configuration macros.</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;# Compiler support</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;This library makes heavy use of some template metaprogramming techniques. It</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;requires a standard conforming compiler. Fortunately, most commonly used</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;modern compilers, at least in C++98 mode, is able to compile the examples</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;distributed with the library, provided that they can compile the Boost library.</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;This library has been regularly tested with recent [Clang][Clang], [GCC][GCC]</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;and [Intel C++ Compiler][icpc], in both C++98 and C++11 modes.</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;This library has been regularly tested with recent [Clang][Clang], [GCC][GCC]</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;and [Intel C++ Compiler][icpc], in both C++98 and C++11 modes.</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;[Microsoft Visual C++][MSVC] 2012 or later are also supported. However, this</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;compiler is tested less regularly.</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;[Microsoft Visual C++][MSVC] 2012 or later are also supported. However, this</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;compiler is tested less regularly.</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;Other compilers might work but are not tested.</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;# License</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;Other compilers might work but are not tested.</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;# License</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;The vSMC library is distributed with a 2-clause BSD license which can be found</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;in the `LICENSE` file distributed with the source.</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;The vSMC library is distributed with a 2-clause BSD license which can be found</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;in the `LICENSE` file distributed with the source.</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;[Apple GCD]: http://en.wikipedia.org/wiki/Grand_Central_Dispatch</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;[Boost]: http://www.boost.org</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;[CMake]: http://www.cmake.org</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;[Clang]: http://clang.llvm.org</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;[Doxygen]: http://www.stack.nl/~dimitri/doxygen/manual.html</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;[GCC]: http://gcc.gnu.org</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;[Intel Cilk Plus]: https://www.cilkplus.org</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;[Intel TBB]: http://threadingbuildingblocks.org</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;[MS PPL]: http://msdn.microsoft.com/en-us/library/dd492418.aspx</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;[MSVC]: http://msdn.microsoft.com/en-us/vstudio//default.aspx</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;[OpenCL]: http://www.khronos.org/opencl</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;[OpenMP]: http://www.openmp.org</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;[icpc]: http://software.intel.com/en-us/intel-compilers</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;[vSMCDoc]: http://zhouyan.github.io/vSMCDoc/develop</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;[vSMCExample]: https://github.com/zhouyan/vSMCExample</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;[vSMCTutorial]: http://arxiv.org/pdf/1306.5583v1.pdf</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;[Apple GCD]: http://en.wikipedia.org/wiki/Grand_Central_Dispatch</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;[Boost]: http://www.boost.org</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;[CMake]: http://www.cmake.org</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;[Clang]: http://clang.llvm.org</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;[Doxygen]: http://www.stack.nl/~dimitri/doxygen/manual.html</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;[GCC]: http://gcc.gnu.org</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;[Intel Cilk Plus]: https://www.cilkplus.org</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;[Intel TBB]: http://threadingbuildingblocks.org</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;[MS PPL]: http://msdn.microsoft.com/en-us/library/dd492418.aspx</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;[MSVC]: http://msdn.microsoft.com/en-us/vstudio//default.aspx</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;[OpenCL]: http://www.khronos.org/opencl</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;[OpenMP]: http://www.openmp.org</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;[icpc]: http://software.intel.com/en-us/intel-compilers</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;[vSMCDocMaster]: http://zhouyan.github.io/vSMCDoc/master</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;[vSMCDocDevelop]: http://zhouyan.github.io/vSMCDoc/develop</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;[vSMCExample]: https://github.com/zhouyan/vSMCExample</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;[vSMCTutorial]: http://arxiv.org/pdf/1306.5583v1.pdf</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

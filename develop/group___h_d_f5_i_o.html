@@ -96,10 +96,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae5220d2ea191c5a612622f939a93c14b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIter &gt; </td></tr>
-<tr class="memitem:gae5220d2ea191c5a612622f939a93c14b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gae5220d2ea191c5a612622f939a93c14b">vsmc::hdf5_insert_data_frame</a> (std::size_t N, const std::string &amp;file_name, const std::string &amp;data_name, InputIter first, const std::string &amp;vname)</td></tr>
-<tr class="memdesc:gae5220d2ea191c5a612622f939a93c14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a variable into an existing data frame saved in HDF5 format.  <a href="#gae5220d2ea191c5a612622f939a93c14b">More...</a><br /></td></tr>
-<tr class="separator:gae5220d2ea191c5a612622f939a93c14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadec9e67a65ef5b77c207992a8c0e8b8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:gaadec9e67a65ef5b77c207992a8c0e8b8"><td class="memTemplItemLeft" align="right" valign="top">inline::hid_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gaadec9e67a65ef5b77c207992a8c0e8b8">vsmc::hdf5io_datatype&lt; char &gt;</a> ()</td></tr>
 <tr class="memdesc:gaadec9e67a65ef5b77c207992a8c0e8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">HDF5 data type specialization for char.  <a href="#gaadec9e67a65ef5b77c207992a8c0e8b8">More...</a><br /></td></tr>
@@ -184,14 +180,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gae2675903084e8f4332bc2255117daca6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gae2675903084e8f4332bc2255117daca6">vsmc::hdf5store</a> (const StateCL&lt; StateSize, FPType, ID &gt; &amp;state, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
 <tr class="memdesc:gae2675903084e8f4332bc2255117daca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="singletonvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> in the HDF5 format.  <a href="#gae2675903084e8f4332bc2255117daca6">More...</a><br /></td></tr>
 <tr class="separator:gae2675903084e8f4332bc2255117daca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ca39c18bea4d5de4426d52e971f023d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </td></tr>
-<tr class="memitem:ga6ca39c18bea4d5de4426d52e971f023d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga6ca39c18bea4d5de4426d52e971f023d">vsmc::hdf5store_data_frame</a> (std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIterIter first, SInputIter sfirst, bool append=false)</td></tr>
-<tr class="memdesc:ga6ca39c18bea4d5de4426d52e971f023d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a data frame in the HDF5 format from an iterator to iterators.  <a href="#ga6ca39c18bea4d5de4426d52e971f023d">More...</a><br /></td></tr>
-<tr class="separator:ga6ca39c18bea4d5de4426d52e971f023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59233c2ea117a99530571f26bcc9a60c"><td class="memTemplParams" colspan="2">template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt; </td></tr>
-<tr class="memitem:ga59233c2ea117a99530571f26bcc9a60c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga59233c2ea117a99530571f26bcc9a60c">vsmc::hdf5store_data_frame</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, SInputIter sfirst, bool append=false)</td></tr>
-<tr class="memdesc:ga59233c2ea117a99530571f26bcc9a60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a data frame in the HDF5 format from tuple of iterators.  <a href="#ga59233c2ea117a99530571f26bcc9a60c">More...</a><br /></td></tr>
-<tr class="separator:ga59233c2ea117a99530571f26bcc9a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </td></tr>
+<tr class="memitem:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga8bfcba94dd9e58c0e711ecfe35b80e7f">vsmc::hdf5store_list</a> (std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIterIter first, SInputIter sfirst, bool append=false)</td></tr>
+<tr class="memdesc:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list in the HDF5 format from an iterator to iterators.  <a href="#ga8bfcba94dd9e58c0e711ecfe35b80e7f">More...</a><br /></td></tr>
+<tr class="separator:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga963272a825e46b42853e7f2c08edd7f1"><td class="memTemplParams" colspan="2">template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt; </td></tr>
+<tr class="memitem:ga963272a825e46b42853e7f2c08edd7f1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga963272a825e46b42853e7f2c08edd7f1">vsmc::hdf5store_list</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, SInputIter sfirst, bool append=false)</td></tr>
+<tr class="memdesc:ga963272a825e46b42853e7f2c08edd7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list in the HDF5 format from tuple of iterators.  <a href="#ga963272a825e46b42853e7f2c08edd7f1">More...</a><br /></td></tr>
+<tr class="separator:ga963272a825e46b42853e7f2c08edd7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5214429f8a00723480e4e060a1eff9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gac5214429f8a00723480e4e060a1eff9d">vsmc::hdf5store_list_empty</a> (const std::string &amp;file_name, const std::string &amp;data_name, bool append)</td></tr>
+<tr class="memdesc:gac5214429f8a00723480e4e060a1eff9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty list.  <a href="#gac5214429f8a00723480e4e060a1eff9d">More...</a><br /></td></tr>
+<tr class="separator:gac5214429f8a00723480e4e060a1eff9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIter &gt; </td></tr>
+<tr class="memitem:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gaa816a5f1593f3a0342a728cbf5a1e6f6">vsmc::hdf5store_list_insert</a> (std::size_t N, const std::string &amp;file_name, const std::string &amp;data_name, InputIter first, const std::string &amp;vname)</td></tr>
+<tr class="memdesc:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a variable into an existing list saved in HDF5 format.  <a href="#gaa816a5f1593f3a0342a728cbf5a1e6f6">More...</a><br /></td></tr>
+<tr class="separator:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34c74ca84fd2394a0e21c1968e108ec7"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, typename T , typename InputIter &gt; </td></tr>
 <tr class="memitem:ga34c74ca84fd2394a0e21c1968e108ec7"><td class="memTemplItemLeft" align="right" valign="top">InputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga34c74ca84fd2394a0e21c1968e108ec7">vsmc::hdf5store_matrix</a> (std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIter first, bool append=false)</td></tr>
 <tr class="memdesc:ga34c74ca84fd2394a0e21c1968e108ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a matrix in the HDF5 format from an input iterator.  <a href="#ga34c74ca84fd2394a0e21c1968e108ec7">More...</a><br /></td></tr>
@@ -200,74 +203,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Load and store objects in the HDF5 format. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gae5220d2ea191c5a612622f939a93c14b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename InputIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::hdf5_insert_data_frame </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>file_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>data_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIter&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>vname</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Insert a variable into an existing data frame saved in HDF5 format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">N</td><td>The length of the variable vector. It may be different from that of the existing data frame. </td></tr>
-    <tr><td class="paramname">file_name</td><td>Name of the HDF5 file </td></tr>
-    <tr><td class="paramname">data_name</td><td>Name of the data frame </td></tr>
-    <tr><td class="paramname">first</td><td>An iterator points to the beginning of the variable vector </td></tr>
-    <tr><td class="paramname">vname</td><td>Name of the new variable </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00421">421</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gaadec9e67a65ef5b77c207992a8c0e8b8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -688,7 +623,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00575">575</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00602">602</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -740,7 +675,7 @@ template&lt;MatrixOrder Order, std::size_t Dim, typename T &gt; </div>
 
 <p>Store a <a class="el" href="singletonvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00601">601</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00628">628</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -792,7 +727,7 @@ template&lt;typename T , typename... Types&gt; </div>
 
 <p>Store a <a class="el" href="singletonvsmc_1_1_state_tuple.html">StateTuple</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00614">614</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00641">641</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -844,7 +779,7 @@ template&lt;typename T , typename... Types&gt; </div>
 
 <p>Store a <a class="el" href="singletonvsmc_1_1_state_tuple.html">StateTuple</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00643">643</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00670">670</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -896,11 +831,11 @@ template&lt;MatrixOrder Order, typename T , std::size_t StateSize, typename FPTy
 
 <p>Store a <a class="el" href="singletonvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00666">666</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00693">693</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga6ca39c18bea4d5de4426d52e971f023d"></a>
+<a class="anchor" id="ga8bfcba94dd9e58c0e711ecfe35b80e7f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -910,7 +845,7 @@ template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </div
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vsmc::hdf5store_data_frame </td>
+          <td class="memname">void vsmc::hdf5store_list </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>nrow</em>, </td>
@@ -964,8 +899,7 @@ template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </div
 </table>
 </div><div class="memdoc">
 
-<p>Store a data frame in the HDF5 format from an iterator to iterators. </p>
-<p>A data frame is similar to that in R. It is much like a matrix except that each column will be stored seperatedly as an variable and given a name.</p>
+<p>Store a list in the HDF5 format from an iterator to iterators. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Type of the data </td></tr>
@@ -976,22 +910,23 @@ template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </div
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nrow</td><td>Number of rows </td></tr>
-    <tr><td class="paramname">ncol</td><td>Number of columns </td></tr>
+    <tr><td class="paramname">nrow</td><td>Number of elements in each element of the list </td></tr>
+    <tr><td class="paramname">ncol</td><td>Number of elements in the list </td></tr>
     <tr><td class="paramname">file_name</td><td>Name of the HDF5 file </td></tr>
-    <tr><td class="paramname">data_name</td><td>Name of the data frame </td></tr>
-    <tr><td class="paramname">first</td><td>An iterator points to a sequence of iterations of length ncol. Each derefence of the iterator is iteself an iterator that points to the beginning of a column of the data frame. </td></tr>
+    <tr><td class="paramname">data_name</td><td>Name of the list </td></tr>
+    <tr><td class="paramname">first</td><td>An iterator points to a sequence of iterators of length ncol. Each derefence of an iterator is iteself an iterator that points to the beginning of an element of the list. </td></tr>
     <tr><td class="paramname">sfirst</td><td>An iterator points to the beginning of a sequence of strings that store the names of each column. The dereference need to be convertible to std::string </td></tr>
-    <tr><td class="paramname">append</td><td>If true the data is appended into an existing file, otherwise save in a new file </td></tr>
+    <tr><td class="paramname">append</td><td>If true the data is appended into an existing file, otherwise save in a new file</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>Each element in the list is assumed to be a vector of the same length. If the list contains elements of different length, then create an empty list, which is exactly an empty group in HDF5 terminology and use <code>hdf5store_list_insert</code> to insert each element. </dd></dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00372">372</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00399">399</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga59233c2ea117a99530571f26bcc9a60c"></a>
+<a class="anchor" id="ga963272a825e46b42853e7f2c08edd7f1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1001,7 +936,7 @@ template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vsmc::hdf5store_data_frame </td>
+          <td class="memname">void vsmc::hdf5store_list </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>nrow</em>, </td>
@@ -1049,21 +984,141 @@ template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt
 </table>
 </div><div class="memdoc">
 
-<p>Store a data frame in the HDF5 format from tuple of iterators. </p>
-<p>A data frame is similar to that in R. It is much like a matrix except that each column will be stored seperatedly as an variable and given a name.</p>
+<p>Store a list in the HDF5 format from tuple of iterators. </p>
+<p>A list is similar to that in R. It is much like a matrix except that each column will be stored seperatedly as an variable and given a name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nrow</td><td>Number of rows </td></tr>
     <tr><td class="paramname">file_name</td><td>Name of the HDF5 file </td></tr>
-    <tr><td class="paramname">data_name</td><td>Name of the data frame </td></tr>
-    <tr><td class="paramname">first</td><td>A <code>std::tuple</code> type object whose element types are iterators. Each element is the beginning of a column of the data frame. </td></tr>
+    <tr><td class="paramname">data_name</td><td>Name of the list </td></tr>
+    <tr><td class="paramname">first</td><td>A <code>std::tuple</code> type object whose element types are iterators. Each element is the beginning of an element of the list. </td></tr>
     <tr><td class="paramname">sfirst</td><td>An iterator points to the beginning of a sequence of strings that store the names of each column. The dereference need to be convertible to std::string </td></tr>
     <tr><td class="paramname">append</td><td>If true the data is appended into an existing file, otherwise save in a new file </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00554">554</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00581">581</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac5214429f8a00723480e4e060a1eff9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::hdf5store_list_empty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>append</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an empty list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>Name of the HDF5 file </td></tr>
+    <tr><td class="paramname">data_name</td><td>Name of the list </td></tr>
+    <tr><td class="paramname">append</td><td>If true the data is appended into an existing file, otherwise save in a new file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00355">355</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa816a5f1593f3a0342a728cbf5a1e6f6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename InputIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::hdf5store_list_insert </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIter&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Insert a variable into an existing list saved in HDF5 format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>The length of the variable vector. It may be different from that of the existing list. </td></tr>
+    <tr><td class="paramname">file_name</td><td>Name of the HDF5 file </td></tr>
+    <tr><td class="paramname">data_name</td><td>Name of the list </td></tr>
+    <tr><td class="paramname">first</td><td>An iterator points to the beginning of the variable vector </td></tr>
+    <tr><td class="paramname">vname</td><td>Name of the new variable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00448">448</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>

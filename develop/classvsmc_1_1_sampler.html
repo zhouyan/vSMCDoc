@@ -260,12 +260,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a589a4e1174f8251a2d37a6d23f713c19"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a589a4e1174f8251a2d37a6d23f713c19">path_sampling</a> () const </td></tr>
 <tr class="memdesc:a589a4e1174f8251a2d37a6d23f713c19"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling estimate of the logarithm of normalizing constants ratio.  <a href="#a589a4e1174f8251a2d37a6d23f713c19">More...</a><br /></td></tr>
 <tr class="separator:a589a4e1174f8251a2d37a6d23f713c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e585ba874a34d823d77dd60522dcd76"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:a3e585ba874a34d823d77dd60522dcd76"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a3e585ba874a34d823d77dd60522dcd76">print</a> (std::size_t sampler_id, std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os) const </td></tr>
-<tr class="memdesc:a3e585ba874a34d823d77dd60522dcd76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the history of the <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a>.  <a href="#a3e585ba874a34d823d77dd60522dcd76">More...</a><br /></td></tr>
-<tr class="separator:a3e585ba874a34d823d77dd60522dcd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84147707ea0f4c33528eb26a9e86ccdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a84147707ea0f4c33528eb26a9e86ccdb">print</a> (std::size_t sampler_id=0) const </td></tr>
-<tr class="separator:a84147707ea0f4c33528eb26a9e86ccdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860d8fbc154e35c7f4019518731a4973"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:a860d8fbc154e35c7f4019518731a4973"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, <br class="typebreak" />
+<a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a860d8fbc154e35c7f4019518731a4973">print</a> (std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os, char sepchar= '\t') const </td></tr>
+<tr class="memdesc:a860d8fbc154e35c7f4019518731a4973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the history of the <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a>.  <a href="#a860d8fbc154e35c7f4019518731a4973">More...</a><br /></td></tr>
+<tr class="separator:a860d8fbc154e35c7f4019518731a4973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac55523689139a4c53347e544f45e2ed8"><td class="memTemplParams" colspan="2">template&lt;typename OutputIter &gt; </td></tr>
 <tr class="memitem:ac55523689139a4c53347e544f45e2ed8"><td class="memTemplItemLeft" align="right" valign="top">OutputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#ac55523689139a4c53347e544f45e2ed8">read_ess_history</a> (OutputIter first) const </td></tr>
 <tr class="memdesc:ac55523689139a4c53347e544f45e2ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ESS history through an output iterator.  <a href="#ac55523689139a4c53347e544f45e2ed8">More...</a><br /></td></tr>
@@ -1848,7 +1847,7 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3e585ba874a34d823d77dd60522dcd76"></a>
+<a class="anchor" id="a860d8fbc154e35c7f4019518731a4973"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1860,16 +1859,16 @@ template&lt;typename CharT , typename Traits &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::print </td>
+          <td class="memname">std::basic_ostream&lt;CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a>&gt;&amp; <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::print </td>
           <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>sampler_id</em>, </td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>os</em>&#160;</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sepchar</em> = <code>'\t'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1887,41 +1886,13 @@ template&lt;typename CharT , typename Traits &gt; </div>
 <p>Print the history of the <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sampler_id</td><td>The ID of the sampler </td></tr>
     <tr><td class="paramname">os</td><td>The ostream to which the contents are printed </td></tr>
+    <tr><td class="paramname">sepchar</td><td>The seperator of fields </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00664">664</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a84147707ea0f4c33528eb26a9e86ccdb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::print </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>sampler_id</em> = <code>0</code></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00694">694</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2449,7 +2420,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00698">698</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00694">694</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>

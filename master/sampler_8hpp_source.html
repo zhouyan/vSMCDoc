@@ -627,11 +627,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    }</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00664"></a><span class="lineno"><a class="line" href="classvsmc_1_1_sampler.html#a3e585ba874a34d823d77dd60522dcd76">  664</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_sampler.html#a3e585ba874a34d823d77dd60522dcd76">print</a> (std::size_t sampler_id,</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;            std::basic_ostream&lt;CharT, Traits&gt; &amp;os)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno"><a class="line" href="classvsmc_1_1_sampler.html#a860d8fbc154e35c7f4019518731a4973">  664</a></span>&#160;    std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="classvsmc_1_1_sampler.html#a860d8fbc154e35c7f4019518731a4973">print</a> (</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;            std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keywordtype">char</span> sepchar = <span class="charliteral">&#39;\t&#39;</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span> (!os.good())</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>() == 0 || !os.good())</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            <span class="keywordflow">return</span> os;</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        std::size_t var_num = <a class="code" href="classvsmc_1_1_sampler.html#a63647b3130e7a7afa7c2d8356fdd4e63">summary_header_size</a>();</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        std::size_t dat_num = <a class="code" href="classvsmc_1_1_sampler.html#a3488a69fe4e01a4635f42d60b424043b">summary_data_size</a>();</div>
@@ -640,246 +640,238 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <a class="code" href="classvsmc_1_1_sampler.html#ac8f597e1fb5395abfc61d6df76397cb7">summary_header</a>(header.begin());</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        summary_data&lt;RowMajor&gt;(data.begin());</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Sampler.ID Iteration Resampled&quot;</span>;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Resampled&quot;</span>;</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != header.size(); ++i)</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            os &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; header[i];</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>() &gt; 0)</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        std::size_t data_offset = 0;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter) {</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            os &lt;&lt; sampler_id;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            os &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; iter;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            os &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; resampled_history_[iter];</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            <span class="keywordflow">for</span> (std::size_t i = 0; i != var_num; ++i)</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                os &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[data_offset++];</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        }</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    }</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00694"></a><span class="lineno"><a class="line" href="classvsmc_1_1_sampler.html#a84147707ea0f4c33528eb26a9e86ccdb">  694</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_sampler.html#a84147707ea0f4c33528eb26a9e86ccdb">print</a> (std::size_t sampler_id = 0)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="keyword">    </span>{<a class="code" href="classvsmc_1_1_sampler.html#a3e585ba874a34d823d77dd60522dcd76">print</a>(sampler_id, std::cout);}</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00698"></a><span class="lineno"><a class="line" href="classvsmc_1_1_sampler.html#ab26f96c8a15d5a52e3466f4b84ed46b4">  698</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="classvsmc_1_1_sampler.html#ab26f96c8a15d5a52e3466f4b84ed46b4">operator&lt;&lt; </a>(</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_sampler.html">Sampler&lt;T&gt;</a> &amp;sampler)</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    {</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        sampler.<a class="code" href="classvsmc_1_1_sampler.html#a3e585ba874a34d823d77dd60522dcd76">print</a>(0, os);</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    }</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            os &lt;&lt; sepchar &lt;&lt; header[i];</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        std::size_t offset = 0;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter) {</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            os &lt;&lt; sepchar &lt;&lt; resampled_history_[iter];</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="keywordflow">for</span> (std::size_t i = 0; i != var_num; ++i)</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                os &lt;&lt; sepchar &lt;&lt; data[offset++];</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        }</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    }</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00694"></a><span class="lineno"><a class="line" href="classvsmc_1_1_sampler.html#ab26f96c8a15d5a52e3466f4b84ed46b4">  694</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="classvsmc_1_1_sampler.html#ab26f96c8a15d5a52e3466f4b84ed46b4">operator&lt;&lt; </a>(</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_sampler.html">Sampler&lt;T&gt;</a> &amp;sampler)</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    {<span class="keywordflow">return</span> sampler.<a class="code" href="classvsmc_1_1_sampler.html#a860d8fbc154e35c7f4019518731a4973">print</a>(os);}</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keywordtype">bool</span> init_by_iter_;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <a class="code" href="classvsmc_1_1_sampler.html#ab24a4c7ce336f767122462db3b3f6110">init_type</a> init_;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    std::vector&lt;move_type&gt; move_queue_;</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    std::vector&lt;mcmc_type&gt; mcmc_queue_;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    resample_type resample_op_;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="keywordtype">double</span> resample_threshold_;</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="keywordtype">bool</span> init_by_iter_;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <a class="code" href="classvsmc_1_1_sampler.html#ab24a4c7ce336f767122462db3b3f6110">init_type</a> init_;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    std::vector&lt;move_type&gt; move_queue_;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    std::vector&lt;mcmc_type&gt; mcmc_queue_;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    resample_type resample_op_;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keywordtype">double</span> resample_threshold_;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> particle_;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    std::size_t iter_num_;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    std::vector&lt;double&gt; ess_history_;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    std::vector&lt;bool&gt; resampled_history_;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    std::vector&lt;std::vector&lt;std::size_t&gt; &gt; accept_history_;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> particle_;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    std::size_t iter_num_;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    std::vector&lt;double&gt; ess_history_;</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    std::vector&lt;bool&gt; resampled_history_;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    std::vector&lt;std::vector&lt;std::size_t&gt; &gt; accept_history_;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <a class="code" href="classvsmc_1_1_path.html">Path&lt;T&gt;</a> path_;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    monitor_map_type monitor_;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keywordtype">void</span> do_acch ()</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    {</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <span class="keywordflow">if</span> (accept_history_.empty())</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            accept_history_.push_back(std::vector&lt;std::size_t&gt;());</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <a class="code" href="classvsmc_1_1_path.html">Path&lt;T&gt;</a> path_;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    monitor_map_type monitor_;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordtype">void</span> do_acch ()</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    {</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <span class="keywordflow">if</span> (accept_history_.empty())</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;            accept_history_.push_back(std::vector&lt;std::size_t&gt;());</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        std::size_t acc_size = move_queue_.size() + mcmc_queue_.size();</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        <span class="keywordflow">if</span> (accept_history_.size() &lt; acc_size) {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;            std::size_t diff = acc_size - accept_history_.size();</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;            <span class="keywordflow">for</span> (std::size_t d = 0; d != diff; ++d)</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                accept_history_.push_back(std::vector&lt;std::size_t&gt;());</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        }</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i)</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            accept_history_[i].resize(<a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>());</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    }</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordtype">void</span> do_init ()</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        ess_history_.clear();</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        resampled_history_.clear();</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        accept_history_.clear();</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        path_.<a class="code" href="classvsmc_1_1_path.html#aef44c1e0e7a0e71e4e7a2c18c1afe298">clear</a>();</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::iterator</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                m = monitor_.begin(); m != monitor_.end(); ++m)</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;            m-&gt;second.clear();</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        iter_num_ = 0;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        particle_.<a class="code" href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">weight_set</a>().set_equal_weight();</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    }</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="keywordtype">void</span> do_iter ()</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    {</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        std::size_t ia = 0;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        ia = do_move(ia);</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        do_resample();</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        ia = do_mcmc(ia);</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="keywordflow">for</span> (; ia != accept_history_.size(); ++ia)</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            accept_history_[ia].push_back(0);</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    }</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    std::size_t do_move (std::size_t ia)</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    {</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;move_type&gt;::iterator</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                m = move_queue_.begin(); m != move_queue_.end(); ++m) {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            std::size_t acc = (*m)(iter_num_, particle_);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;            accept_history_[ia].push_back(acc);</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            ++ia;</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        }</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <span class="keywordflow">return</span> ia;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    }</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    std::size_t do_mcmc (std::size_t ia)</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    {</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;mcmc_type&gt;::iterator</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;                m = mcmc_queue_.begin(); m != mcmc_queue_.end(); ++m) {</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;            std::size_t acc = (*m)(iter_num_, particle_);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            accept_history_[ia].push_back(acc);</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            ++ia;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        }</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="keywordflow">return</span> ia;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    }</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordtype">void</span> do_resample ()</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    {</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        ess_history_.push_back(particle_.<a class="code" href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">weight_set</a>().ess());</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        resampled_history_.push_back(particle_.<a class="code" href="classvsmc_1_1_particle.html#a4dca9c6399a521708ace92b876524f13">resample</a>(</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                    resample_op_, resample_threshold_));</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    }</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordtype">void</span> do_monitor ()</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    {</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordflow">if</span> (!path_.<a class="code" href="classvsmc_1_1_path.html#ad5d23f40365ce63426edd361eb3fccd7">empty</a>())</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            path_.<a class="code" href="classvsmc_1_1_path.html#ab122383170ab34e0612a52b0c88722cf">eval</a>(iter_num_, particle_);</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::iterator</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;                m = monitor_.begin(); m != monitor_.end(); ++m) {</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            <span class="keywordflow">if</span> (!m-&gt;second.empty())</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;                m-&gt;second.eval(iter_num_, particle_);</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        }</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    }</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIter&gt;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    OutputIter summary_data_row (OutputIter first)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordtype">double</span> missing_data = std::numeric_limits&lt;double&gt;::quiet_NaN();</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        std::size_t piter = 0;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        std::vector&lt;std::size_t&gt; miter(monitor_.size(), 0);</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter) {</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            *first = ess_history_[iter] / <a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>();</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            ++first;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;            <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i) {</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                *first = accept_history_[i][iter] /</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>());</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                ++first;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;            }</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;            <span class="keywordflow">if</span> (path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() &gt; 0) {</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                <span class="keywordflow">if</span> (piter == path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() || iter != path_.<a class="code" href="classvsmc_1_1_path.html#a3c42bebccfec73a7a28cf8fe0829d08e">index</a>(piter)) {</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                    *first = missing_data;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                    ++first;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                    *first = missing_data;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                    ++first;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#a1c415052a452e6b09d96850f84a24048">integrand</a>(piter);</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                    ++first;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b">grid</a>(piter);</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                    ++first;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                    ++piter;</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                }</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;            }</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;            std::size_t mm = 0;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::const_iterator</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                    m = monitor_.begin(); m != monitor_.end(); ++m, ++mm) {</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                <span class="keywordflow">if</span> (m-&gt;second.iter_size() &gt; 0) {</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                    <span class="keywordflow">if</span> (miter[mm] == m-&gt;second.iter_size()</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                            || iter != m-&gt;second.index(miter[mm])) {</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                        <span class="keywordflow">for</span> (std::size_t i = 0; i != m-&gt;second.dim();</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                                ++i, ++first)</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                            *first = missing_data;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                        <span class="keywordflow">for</span> (std::size_t i = 0; i != m-&gt;second.dim();</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                                ++i, ++first)</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                            *first = m-&gt;second.record(i, miter[mm]);</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                        ++miter[mm];</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                    }</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                }</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;            }</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        }</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        std::size_t acc_size = move_queue_.size() + mcmc_queue_.size();</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        <span class="keywordflow">if</span> (accept_history_.size() &lt; acc_size) {</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            std::size_t diff = acc_size - accept_history_.size();</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            <span class="keywordflow">for</span> (std::size_t d = 0; d != diff; ++d)</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;                accept_history_.push_back(std::vector&lt;std::size_t&gt;());</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        }</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i)</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;            accept_history_[i].resize(<a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>());</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    }</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordtype">void</span> do_init ()</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    {</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        ess_history_.clear();</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        resampled_history_.clear();</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        accept_history_.clear();</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        path_.<a class="code" href="classvsmc_1_1_path.html#aef44c1e0e7a0e71e4e7a2c18c1afe298">clear</a>();</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::iterator</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;                m = monitor_.begin(); m != monitor_.end(); ++m)</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            m-&gt;second.clear();</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        iter_num_ = 0;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        particle_.<a class="code" href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">weight_set</a>().set_equal_weight();</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    }</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keywordtype">void</span> do_iter ()</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    {</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        std::size_t ia = 0;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        ia = do_move(ia);</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        do_resample();</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        ia = do_mcmc(ia);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <span class="keywordflow">for</span> (; ia != accept_history_.size(); ++ia)</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            accept_history_[ia].push_back(0);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    }</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    std::size_t do_move (std::size_t ia)</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    {</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;move_type&gt;::iterator</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                m = move_queue_.begin(); m != move_queue_.end(); ++m) {</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;            std::size_t acc = (*m)(iter_num_, particle_);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            accept_history_[ia].push_back(acc);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            ++ia;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        }</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        <span class="keywordflow">return</span> ia;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    }</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    std::size_t do_mcmc (std::size_t ia)</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    {</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;mcmc_type&gt;::iterator</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                m = mcmc_queue_.begin(); m != mcmc_queue_.end(); ++m) {</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            std::size_t acc = (*m)(iter_num_, particle_);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            accept_history_[ia].push_back(acc);</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            ++ia;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        }</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">return</span> ia;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    }</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordtype">void</span> do_resample ()</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    {</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        ess_history_.push_back(particle_.<a class="code" href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">weight_set</a>().ess());</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        resampled_history_.push_back(particle_.<a class="code" href="classvsmc_1_1_particle.html#a4dca9c6399a521708ace92b876524f13">resample</a>(</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                    resample_op_, resample_threshold_));</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    }</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="keywordtype">void</span> do_monitor ()</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    {</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keywordflow">if</span> (!path_.<a class="code" href="classvsmc_1_1_path.html#ad5d23f40365ce63426edd361eb3fccd7">empty</a>())</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;            path_.<a class="code" href="classvsmc_1_1_path.html#ab122383170ab34e0612a52b0c88722cf">eval</a>(iter_num_, particle_);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::iterator</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                m = monitor_.begin(); m != monitor_.end(); ++m) {</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;            <span class="keywordflow">if</span> (!m-&gt;second.empty())</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                m-&gt;second.eval(iter_num_, particle_);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        }</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    }</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIter&gt;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    OutputIter summary_data_row (OutputIter first)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <span class="keywordtype">double</span> missing_data = std::numeric_limits&lt;double&gt;::quiet_NaN();</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        std::size_t piter = 0;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        std::vector&lt;std::size_t&gt; miter(monitor_.size(), 0);</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter) {</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            *first = ess_history_[iter] / <a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>();</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            ++first;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i) {</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                *first = accept_history_[i][iter] /</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                    <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>());</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                ++first;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            }</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            <span class="keywordflow">if</span> (path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() &gt; 0) {</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                <span class="keywordflow">if</span> (piter == path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() || iter != path_.<a class="code" href="classvsmc_1_1_path.html#a3c42bebccfec73a7a28cf8fe0829d08e">index</a>(piter)) {</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                    *first = missing_data;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                    ++first;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                    *first = missing_data;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                    ++first;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#a1c415052a452e6b09d96850f84a24048">integrand</a>(piter);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                    ++first;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b">grid</a>(piter);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                    ++first;</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                    ++piter;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                }</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            }</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;            std::size_t mm = 0;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::const_iterator</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                    m = monitor_.begin(); m != monitor_.end(); ++m, ++mm) {</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                <span class="keywordflow">if</span> (m-&gt;second.iter_size() &gt; 0) {</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                    <span class="keywordflow">if</span> (miter[mm] == m-&gt;second.iter_size()</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                            || iter != m-&gt;second.index(miter[mm])) {</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                        <span class="keywordflow">for</span> (std::size_t i = 0; i != m-&gt;second.dim();</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                                ++i, ++first)</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                            *first = missing_data;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                        <span class="keywordflow">for</span> (std::size_t i = 0; i != m-&gt;second.dim();</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                                ++i, ++first)</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                            *first = m-&gt;second.record(i, miter[mm]);</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                        ++miter[mm];</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;                    }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                }</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;            }</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        }</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <span class="keywordflow">return</span> first;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    }</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIter&gt;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    OutputIter summary_data_col (OutputIter first)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="keywordtype">double</span> missing_data = std::numeric_limits&lt;double&gt;::quiet_NaN();</div>
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        <span class="keywordflow">return</span> first;</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    }</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIter&gt;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    OutputIter summary_data_col (OutputIter first)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="keywordtype">double</span> missing_data = std::numeric_limits&lt;double&gt;::quiet_NaN();</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first)</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            *first = ess_history_[iter] / <a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>();</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i) {</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first)</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                *first = accept_history_[i][iter] /</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                    static_cast&lt;double&gt;(<a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>());</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        }</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="keywordflow">if</span> (path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() &gt; 0) {</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            std::size_t piter;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            piter = 0;</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;            <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first) {</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                <span class="keywordflow">if</span> (piter == path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() ||iter != path_.<a class="code" href="classvsmc_1_1_path.html#a3c42bebccfec73a7a28cf8fe0829d08e">index</a>(piter)) {</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    *first = missing_data;</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#a1c415052a452e6b09d96850f84a24048">integrand</a>(piter);</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    ++piter;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                }</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            }</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            piter = 0;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first) {</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                <span class="keywordflow">if</span> (piter == path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() ||iter != path_.<a class="code" href="classvsmc_1_1_path.html#a3c42bebccfec73a7a28cf8fe0829d08e">index</a>(piter)) {</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                    *first = missing_data;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b">grid</a>(piter);</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                    ++piter;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                }</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;            }</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        }</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::const_iterator</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                m = monitor_.begin(); m != monitor_.end(); ++m) {</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            <span class="keywordflow">if</span> (m-&gt;second.iter_size() &gt; 0) {</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != m-&gt;second.dim(); ++i) {</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                    std::size_t miter = 0;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                    <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>();</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                            ++iter, ++first) {</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                        <span class="keywordflow">if</span> (miter == m-&gt;second.iter_size()</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                                || iter != m-&gt;second.index(miter)) {</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                            *first = missing_data;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                            *first = m-&gt;second.record(i, miter);</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                            ++miter;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                        }</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;                    }</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;                }</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            }</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        }</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        <span class="keywordflow">return</span> first;</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    }</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;}; <span class="comment">// class Sampler</span></div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="preprocessor">#endif // VSMC_CORE_SAMPLER_HPP</span></div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first)</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            *first = ess_history_[iter] / <a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>();</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != accept_history_.size(); ++i) {</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;            <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first)</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                *first = accept_history_[i][iter] /</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                    static_cast&lt;double&gt;(<a class="code" href="classvsmc_1_1_sampler.html#a8d30b2ba597d533a409e0ac7a7d522fd">size</a>());</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        }</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <span class="keywordflow">if</span> (path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() &gt; 0) {</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            std::size_t piter;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            piter = 0;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first) {</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                <span class="keywordflow">if</span> (piter == path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() ||iter != path_.<a class="code" href="classvsmc_1_1_path.html#a3c42bebccfec73a7a28cf8fe0829d08e">index</a>(piter)) {</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                    *first = missing_data;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#a1c415052a452e6b09d96850f84a24048">integrand</a>(piter);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                    ++piter;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                }</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            }</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;            piter = 0;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>(); ++iter, ++first) {</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                <span class="keywordflow">if</span> (piter == path_.<a class="code" href="classvsmc_1_1_path.html#af6e5c4e6309c325f2c51753da957099d">iter_size</a>() ||iter != path_.<a class="code" href="classvsmc_1_1_path.html#a3c42bebccfec73a7a28cf8fe0829d08e">index</a>(piter)) {</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                    *first = missing_data;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                    *first = path_.<a class="code" href="classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b">grid</a>(piter);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                    ++piter;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                }</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            }</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        }</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> monitor_map_type::const_iterator</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;                m = monitor_.begin(); m != monitor_.end(); ++m) {</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            <span class="keywordflow">if</span> (m-&gt;second.iter_size() &gt; 0) {</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != m-&gt;second.dim(); ++i) {</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                    std::size_t miter = 0;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                    <span class="keywordflow">for</span> (std::size_t iter = 0; iter != <a class="code" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185">iter_size</a>();</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                            ++iter, ++first) {</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                        <span class="keywordflow">if</span> (miter == m-&gt;second.iter_size()</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                                || iter != m-&gt;second.index(miter)) {</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;                            *first = missing_data;</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;                            *first = m-&gt;second.record(i, miter);</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                            ++miter;</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                        }</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                    }</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                }</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;            }</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        }</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        <span class="keywordflow">return</span> first;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    }</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;}; <span class="comment">// class Sampler</span></div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;<span class="preprocessor">#endif // VSMC_CORE_SAMPLER_HPP</span></div>
 <div class="ttc" id="classvsmc_1_1_path_html_a841756a39777c012bfb94c370f711734"><div class="ttname"><a href="classvsmc_1_1_path.html#a841756a39777c012bfb94c370f711734">vsmc::Path::eval_type</a></div><div class="ttdeci">cxx11::function&lt; double(std::size_t, const Particle&lt; T &gt; &amp;, double *)&gt; eval_type</div><div class="ttdef"><b>Definition:</b> <a href="path_8hpp_source.html#l00057">path.hpp:57</a></div></div>
 <div class="ttc" id="classvsmc_1_1_seed_generator_html_a4d8b222e0f0c1f1d2b7371e897844add"><div class="ttname"><a href="classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add">vsmc::SeedGenerator::instance</a></div><div class="ttdeci">static SeedGenerator&lt; ID, ResultType &gt; &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8hpp_source.html#l00094">seed.hpp:94</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00089">adapter.hpp:89</a></div></div>
@@ -887,6 +879,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classvsmc_1_1_particle_html"><div class="ttname"><a href="classvsmc_1_1_particle.html">vsmc::Particle</a></div><div class="ttdoc">Particle class representing the whole particle set. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00048">particle.hpp:48</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_aeead6818a369111c98e8ef4703642729"><div class="ttname"><a href="classvsmc_1_1_sampler.html#aeead6818a369111c98e8ef4703642729">vsmc::Sampler::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00064">sampler.hpp:64</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a8829db78730d67efef02fd0a69ccf7e7"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a8829db78730d67efef02fd0a69ccf7e7">vsmc::Sampler::path</a></div><div class="ttdeci">const Path&lt; T &gt; &amp; path() const </div><div class="ttdoc">Read only access to the Path sampling monitor. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00496">sampler.hpp:496</a></div></div>
+<div class="ttc" id="classvsmc_1_1_sampler_html_a860d8fbc154e35c7f4019518731a4973"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a860d8fbc154e35c7f4019518731a4973">vsmc::Sampler::print</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; print(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, char sepchar= '\t') const </div><div class="ttdoc">Print the history of the Sampler. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00664">sampler.hpp:664</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a814b2600703661a0ff04b6a638c6af26"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a814b2600703661a0ff04b6a638c6af26">vsmc::Sampler::monitor</a></div><div class="ttdeci">Sampler&lt; T &gt; &amp; monitor(const std::string &amp;name, std::size_t dim, const typename Monitor&lt; T &gt;::eval_type &amp;eval, bool record_only=false)</div><div class="ttdoc">Add a monitor with an evaluation object. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00522">sampler.hpp:522</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_ac1489a384305326c519c17f6cae857c0"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ac1489a384305326c519c17f6cae857c0">vsmc::Sampler::path_sampling</a></div><div class="ttdeci">Sampler&lt; T &gt; &amp; path_sampling(const typename Path&lt; T &gt;::eval_type &amp;eval, bool record_only=false)</div><div class="ttdoc">Set the Path sampling evaluation object. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00499">sampler.hpp:499</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_ae4852d00ddadbaf8fb71e79831af38a2"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ae4852d00ddadbaf8fb71e79831af38a2">vsmc::Sampler::mcmc_queue_clear</a></div><div class="ttdeci">Sampler&lt; T &gt; &amp; mcmc_queue_clear()</div><div class="ttdoc">Clear the mcmc queue. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00407">sampler.hpp:407</a></div></div>
@@ -920,12 +913,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classvsmc_1_1_particle_html_a4dca9c6399a521708ace92b876524f13"><div class="ttname"><a href="classvsmc_1_1_particle.html#a4dca9c6399a521708ace92b876524f13">vsmc::Particle::resample</a></div><div class="ttdeci">bool resample(const resample_type &amp;op, double threshold)</div><div class="ttdoc">Performing resampling if ESS/N < threshold. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00247">particle.hpp:247</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a589a4e1174f8251a2d37a6d23f713c19"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a589a4e1174f8251a2d37a6d23f713c19">vsmc::Sampler::path_sampling</a></div><div class="ttdeci">double path_sampling() const </div><div class="ttdoc">Path sampling estimate of the logarithm of normalizing constants ratio. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00505">sampler.hpp:505</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_ac2cd40a901a1c736c5b25d280bc996bf"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ac2cd40a901a1c736c5b25d280bc996bf">vsmc::Sampler::move_queue_size</a></div><div class="ttdeci">std::size_t move_queue_size() const </div><div class="ttdoc">Check the size of the move queue. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00377">sampler.hpp:377</a></div></div>
-<div class="ttc" id="classvsmc_1_1_sampler_html_ab26f96c8a15d5a52e3466f4b84ed46b4"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ab26f96c8a15d5a52e3466f4b84ed46b4">vsmc::Sampler::operator&lt;&lt;</a></div><div class="ttdeci">friend std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const Sampler&lt; T &gt; &amp;sampler)</div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00698">sampler.hpp:698</a></div></div>
+<div class="ttc" id="classvsmc_1_1_sampler_html_ab26f96c8a15d5a52e3466f4b84ed46b4"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ab26f96c8a15d5a52e3466f4b84ed46b4">vsmc::Sampler::operator&lt;&lt;</a></div><div class="ttdeci">friend std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const Sampler&lt; T &gt; &amp;sampler)</div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00694">sampler.hpp:694</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a3ccabd01b1c07a902aff257dc544c07a"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a3ccabd01b1c07a902aff257dc544c07a">vsmc::Sampler::resample_threshold</a></div><div class="ttdeci">double resample_threshold() const </div><div class="ttdoc">Get resampling threshold. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00266">sampler.hpp:266</a></div></div>
 <div class="ttc" id="group___definitions_html_gga3891c43c52a10259979c138e981381beacdd5754f1499e364f16d3373c94e368f"><div class="ttname"><a href="group___definitions.html#gga3891c43c52a10259979c138e981381beacdd5754f1499e364f16d3373c94e368f">vsmc::ColMajor</a></div><div class="ttdoc">Data are stored column by column in memory. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00104">defines.hpp:104</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_html_a2b109c57c43b5dc85838083e57a6a80e"><div class="ttname"><a href="classvsmc_1_1_monitor.html#a2b109c57c43b5dc85838083e57a6a80e">vsmc::Monitor::eval_type</a></div><div class="ttdeci">cxx11::function&lt; void(std::size_t, std::size_t, const Particle&lt; T &gt; &amp;, double *)&gt; eval_type</div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00063">monitor.hpp:63</a></div></div>
 <div class="ttc" id="classvsmc_1_1_path_html_ad5d23f40365ce63426edd361eb3fccd7"><div class="ttname"><a href="classvsmc_1_1_path.html#ad5d23f40365ce63426edd361eb3fccd7">vsmc::Path::empty</a></div><div class="ttdeci">bool empty() const </div><div class="ttdoc">Whether the evaluation object is valid. </div><div class="ttdef"><b>Definition:</b> <a href="path_8hpp_source.html#l00108">path.hpp:108</a></div></div>
-<div class="ttc" id="classvsmc_1_1_sampler_html_a3e585ba874a34d823d77dd60522dcd76"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a3e585ba874a34d823d77dd60522dcd76">vsmc::Sampler::print</a></div><div class="ttdeci">void print(std::size_t sampler_id, std::basic_ostream&lt; CharT, Traits &gt; &amp;os) const </div><div class="ttdoc">Print the history of the Sampler. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00664">sampler.hpp:664</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a08a826dd4be3c3479bfad10ebefb71e6"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a08a826dd4be3c3479bfad10ebefb71e6">vsmc::Sampler::iterate</a></div><div class="ttdeci">Sampler&lt; T &gt; &amp; iterate(std::size_t num=1)</div><div class="ttdoc">Iteration. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00474">sampler.hpp:474</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_ab0c41cc61304e8350bd4cec5368a4b35"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ab0c41cc61304e8350bd4cec5368a4b35">vsmc::Sampler::move</a></div><div class="ttdeci">Sampler&lt; T &gt; &amp; move(const move_type &amp;new_move, bool append)</div><div class="ttdoc">Add a new move. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00380">sampler.hpp:380</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a493abe54ea51ddc12aa16926f43803c8"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a493abe54ea51ddc12aa16926f43803c8">vsmc::Sampler::resample_threshold_always</a></div><div class="ttdeci">static double resample_threshold_always()</div><div class="ttdoc">Special value of resampling threshold that indicate no resampling will always be performed. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00279">sampler.hpp:279</a></div></div>
@@ -983,7 +975,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classvsmc_1_1_sampler_html_a2e2985745353482a6d42920bfa96221d"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a2e2985745353482a6d42920bfa96221d">vsmc::Sampler::monitor</a></div><div class="ttdeci">const Monitor&lt; T &gt; &amp; monitor(const std::string &amp;name) const </div><div class="ttdoc">Read only access to a named monitor. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00544">sampler.hpp:544</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a30fe55d0f4786c6ca3f59be17350203a"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a30fe55d0f4786c6ca3f59be17350203a">vsmc::Sampler::monitor</a></div><div class="ttdeci">Sampler&lt; T &gt; &amp; monitor(const std::string &amp;name, const Monitor&lt; T &gt; &amp;mon)</div><div class="ttdoc">Add a monitor. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00511">sampler.hpp:511</a></div></div>
 <div class="ttc" id="classvsmc_1_1_particle_html_a05126ea8ab8231d24408c3a56716350b"><div class="ttname"><a href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">vsmc::Particle::weight_set</a></div><div class="ttdeci">weight_set_type &amp; weight_set()</div><div class="ttdoc">Read and write access to the weight collection object. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00155">particle.hpp:155</a></div></div>
-<div class="ttc" id="classvsmc_1_1_sampler_html_a84147707ea0f4c33528eb26a9e86ccdb"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a84147707ea0f4c33528eb26a9e86ccdb">vsmc::Sampler::print</a></div><div class="ttdeci">void print(std::size_t sampler_id=0) const </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00694">sampler.hpp:694</a></div></div>
 <div class="ttc" id="group___resample_html_gga1a8752b2b59489e6d5f11794af6d0cc6a0f4ee87147854e44a01039ec46cb275e"><div class="ttname"><a href="group___resample.html#gga1a8752b2b59489e6d5f11794af6d0cc6a0f4ee87147854e44a01039ec46cb275e">vsmc::Systematic</a></div><div class="ttdoc">Systematic resampling. </div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00114">common.hpp:114</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_ac8f597e1fb5395abfc61d6df76397cb7"><div class="ttname"><a href="classvsmc_1_1_sampler.html#ac8f597e1fb5395abfc61d6df76397cb7">vsmc::Sampler::summary_header</a></div><div class="ttdeci">OutputIter summary_header(OutputIter first) const </div><div class="ttdoc">Sampler summary header. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00593">sampler.hpp:593</a></div></div>
 <div class="ttc" id="classvsmc_1_1_sampler_html_a4dd37caeebf10aa8829788124a3b116c"><div class="ttname"><a href="classvsmc_1_1_sampler.html#a4dd37caeebf10aa8829788124a3b116c">vsmc::Sampler::mcmc_queue_size</a></div><div class="ttdeci">std::size_t mcmc_queue_size() const </div><div class="ttdoc">Check the size of the mcmc queue. </div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00413">sampler.hpp:413</a></div></div>

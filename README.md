@@ -12,6 +12,8 @@ In addition, the references for the version of the library corresponding to the
 one in the paper (accepted at the time of writing) is also available
 [here][jss]
 
-[master]: http://zhouyan.github.io/vSMCDoc/master
+[Doxygen]: http://www.stack.nl/~dimitri/doxygen/manual.html
 [develop]: http://zhouyan.github.io/vSMCDoc/develop
 [jss]: http://zhouyan.github.io/vSMCDoc/jss
+[master]: http://zhouyan.github.io/vSMCDoc/master
+[vSMC]: http://zhouyan.github.io/vSMC

@@ -290,7 +290,6 @@ var searchData=
   ['vsmc_5fstrong_5finline',['VSMC_STRONG_INLINE',['../gcc_8hpp.html#ade54e3e614af56ac7a8a5a7d570c769a',1,'VSMC_STRONG_INLINE():&#160;gcc.hpp'],['../intel_8hpp.html#ade54e3e614af56ac7a8a5a7d570c769a',1,'VSMC_STRONG_INLINE():&#160;intel.hpp'],['../msvc_8hpp.html#ade54e3e614af56ac7a8a5a7d570c769a',1,'VSMC_STRONG_INLINE():&#160;msvc.hpp'],['../compiler_8hpp.html#ade54e3e614af56ac7a8a5a7d570c769a',1,'VSMC_STRONG_INLINE():&#160;compiler.hpp']]],
   ['vsmc_5fuse_5faccelerate_5fcblas',['VSMC_USE_ACCELERATE_CBLAS',['../config_8hpp.html#a398fb84baacf9ffaf2d6a4221bda9f2f',1,'config.hpp']]],
   ['vsmc_5fuse_5faccelerate_5fvforce',['VSMC_USE_ACCELERATE_VFORCE',['../config_8hpp.html#a4979d4db402983e506eaf5eac7366df3',1,'config.hpp']]],
-  ['vsmc_5fuse_5fcxx11lib_5ffuture',['VSMC_USE_CXX11LIB_FUTURE',['../compiler_8hpp.html#aea22d3af12c1f98ac954a6f66994bec6',1,'compiler.hpp']]],
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]],

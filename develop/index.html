@@ -102,12 +102,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --><p> The documentation of the <a href="http://zhouyan.github.io/vSMCDoc/master">master</a> and <a href="http://zhouyan.github.io/vSMCDoc/develop">develop</a> branches can be found online.</p>
 <p>A <a href="http://arxiv.org/pdf/1306.5583v1.pdf">tutorial</a> is also available. However, it describes an earlier version of the library. There are a few incompatibilities with the current version. It is still highly relevant. Users shall use the Doxygen generated documentations when things do not work exactly the same way as in the tutorial.</p>
 <h1>Examples</h1>
-<p><a href="https://github.com/zhouyan/vSMCExample">Examples</a> are now hosted separately. To get and build them, </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd /path_to_vSMC_source</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;git clone https://github.com/zhouyan/vSMCExample.git</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;mkdir build</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cd build</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;cmake ..</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;make example</div>
+<p>Examples are in the <code>example</code> subdirectory, to build them, </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd /path_to_vSMC_source</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;mkdir build</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cd build</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cmake ..</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;make example</div>
 </div><!-- fragment --><p> Most examples also come with their own <code>README</code> files that give relevant references.</p>
 <h1>Parallelization backends</h1>
 <p>The library support various backends for multi-thread parallelization, unified under a uniform interface. One is C++11 concurrency. For a full C++11 implementation, this means no third-party dependency is required to write a parallel SMC sampler. Other third-party parallelization include, <a href="https://www.cilkplus.org">Intel Cilk Plus</a>, <a href="http://threadingbuildingblocks.org">Intel TBB</a> and <a href="http://www.openmp.org">OpenMP</a>. <a href="http://en.wikipedia.org/wiki/Grand_Central_Dispatch">Apple Grand Central Dispatch</a> is also supported on Mac OS X. <a href="http://msdn.microsoft.com/en-us/library/dd492418.aspx">Microsoft Parallel Patterns Library</a> is supported on Windows when compiled with <a href="http://msdn.microsoft.com/en-us/vstudio//default.aspx">Microsoft Visual C++</a> 2012 or later. In addition, this library also support using <a href="http://www.khronos.org/opencl">OpenCL</a> for GPGPU computing, though the interface is different than others.</p>

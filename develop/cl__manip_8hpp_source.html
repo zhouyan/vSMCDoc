@@ -195,10 +195,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> global_size - N;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    local_size = factor;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    local_size = lmax;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    global_size = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, local_size);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::size_t diff_size = global_size - N;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">for</span> (std::size_t m = 1; m &lt;= mmax; ++m) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">for</span> (std::size_t m = mmax; m &gt;= 1; --m) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        std::size_t l = m * factor;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        std::size_t g = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, l);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        std::size_t d = g - N;</div>

@@ -2,11 +2,12 @@ var searchData=
 [
   ['a',['a',['../structvsmc_1_1cxx11_1_1internal_1_1tp__test__false.html#afcef312e35bc397b5e038095510307b5',1,'vsmc::cxx11::internal::tp_test_false::a()'],['../structvsmc_1_1_uniform_real_distribution_1_1param__type.html#a2642eb96651d3fb05f8984da596a581b',1,'vsmc::UniformRealDistribution::param_type::a()'],['../classvsmc_1_1_uniform_real_distribution.html#a4a7c1aa95492dabde2f7a8fcbee0354a',1,'vsmc::UniformRealDistribution::a()']]],
   ['accept',['accept',['../structvsmc_1_1_initialize_t_b_b_1_1parallel__work.html#ac0f5b427141c7590b99bc3aaae51949b',1,'vsmc::InitializeTBB::parallel_work::accept()'],['../structvsmc_1_1_move_t_b_b_1_1parallel__work.html#ae3ef08311ee9b4ef3889852f10f92d7a',1,'vsmc::MoveTBB::parallel_work::accept()']]],
+  ['accept_5fcount',['accept_count',['../classvsmc_1_1_initialize_c_l.html#adfd53c052313843200a3e49aa26df26f',1,'vsmc::InitializeCL::accept_count()'],['../classvsmc_1_1_move_c_l.html#a1e0c0eaebcd65ddde922a1574f88c412',1,'vsmc::MoveCL::accept_count()']]],
   ['accept_5fhistory',['accept_history',['../classvsmc_1_1_sampler.html#ab8bfa29ed42ebb01a5389613d965ab3e',1,'vsmc::Sampler']]],
   ['adapter',['Adapter',['../group___adapter.html',1,'']]],
   ['adapter_2ehpp',['adapter.hpp',['../core_2adapter_8hpp.html',1,'']]],
-  ['adapter_2ehpp',['adapter.hpp',['../opencl_2adapter_8hpp.html',1,'']]],
   ['adapter_2ehpp',['adapter.hpp',['../smp_2adapter_8hpp.html',1,'']]],
+  ['adapter_2ehpp',['adapter.hpp',['../opencl_2adapter_8hpp.html',1,'']]],
   ['add',['add',['../classvsmc_1_1_program_option_map.html#a617e623f8f3eed4989f2fb6faecda574',1,'vsmc::ProgramOptionMap::add(const std::string &amp;name, const std::string &amp;desc, T *ptr)'],['../classvsmc_1_1_program_option_map.html#ae66a53ca6df7c1d1504f24ee4ebc52ba',1,'vsmc::ProgramOptionMap::add(const std::string &amp;name, const std::string &amp;desc, T *ptr, V val)'],['../classvsmc_1_1_program_option_map.html#ae06b496b4af258240d7d0dfc8e00b34d',1,'vsmc::ProgramOptionMap::add(const std::string &amp;name, const std::string &amp;desc, std::vector&lt; T &gt; *ptr)'],['../classvsmc_1_1_program_option_map.html#a16c3cf7961d960dce06cefee333e499e',1,'vsmc::ProgramOptionMap::add(const std::string &amp;name, const std::string &amp;desc, std::vector&lt; T &gt; *ptr, V val)']]],
   ['add_5fconst',['add_const',['../structvsmc_1_1cxx11_1_1add__const.html',1,'vsmc::cxx11']]],
   ['add_5fconst_5fimpl',['add_const_impl',['../structvsmc_1_1cxx11_1_1internal_1_1add__const__impl.html',1,'vsmc::cxx11::internal']]],

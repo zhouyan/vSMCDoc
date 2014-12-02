@@ -236,7 +236,7 @@ Functions</h2></td></tr>
 <div class="line">::cl::Kernel kernel_;                                                        \</div>
 <div class="line">std::string kernel_name_</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00142">142</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00146">146</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -269,13 +269,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (build_id_ != particle.value().build_id() || kernel_name_ != kname) {     \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (kname.empty()) {                                                         \</div>
+<div class="line">    kernel_name_.clear();                                                    \</div>
+<div class="line">    return;                                                                  \</div>
+<div class="line">}                                                                            \</div>
+<div class="line">if (build_id_ != particle.value().build_id() || kernel_name_ != kname) {     \</div>
 <div class="line">    build_id_ = particle.value().build_id();                                 \</div>
 <div class="line">    kernel_name_ = kname;                                                    \</div>
 <div class="line">    kernel_ = particle.value().create_kernel(kernel_name_);                  \</div>
 <div class="line">    configure_.local_size(particle.size(),                                   \</div>
 <div class="line">            kernel_, particle.value().manager().device());                   \</div>
-<div class="line">}</div>
+<div class="line">}                                                                            \</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00133">133</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 

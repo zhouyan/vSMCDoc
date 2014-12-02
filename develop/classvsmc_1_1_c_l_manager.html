@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -152,10 +153,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f57f34265d4ab8773479b3b224ef38e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#a5f57f34265d4ab8773479b3b224ef38e">print_build_log</a> (const ::cl::Program &amp;program, std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os=std::cout)</td></tr>
 <tr class="memdesc:a5f57f34265d4ab8773479b3b224ef38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print build log.  <a href="#a5f57f34265d4ab8773479b3b224ef38e">More...</a><br /></td></tr>
 <tr class="separator:a5f57f34265d4ab8773479b3b224ef38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94bda0b19dc5c49b3137820913e05d3e"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
-<tr class="memitem:a94bda0b19dc5c49b3137820913e05d3e"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#a94bda0b19dc5c49b3137820913e05d3e">profile_kernel</a> (::cl::Kernel &amp;kern, std::size_t N, const Func &amp;func, std::size_t lmin=0, std::size_t repeat=3)</td></tr>
-<tr class="memdesc:a94bda0b19dc5c49b3137820913e05d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the kernel with all local size that are multiples of the preferred factor, return the local size that is the fatest.  <a href="#a94bda0b19dc5c49b3137820913e05d3e">More...</a><br /></td></tr>
-<tr class="separator:a94bda0b19dc5c49b3137820913e05d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa25dbfe6641f9cfe268df50e2e06234"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
+<tr class="memitem:afa25dbfe6641f9cfe268df50e2e06234"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a><br class="typebreak" />
+&lt; !<a class="el" href="structvsmc_1_1cxx11_1_1is__same.html">cxx11::is_same</a>&lt; Func, <br class="typebreak" />
+std::size_t &gt;::value <br class="typebreak" />
+&amp;&amp;!<a class="el" href="structvsmc_1_1cxx11_1_1is__convertible.html">cxx11::is_convertible</a>&lt; Func, <br class="typebreak" />
+std::size_t &gt;::value, <br class="typebreak" />
+std::size_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#afa25dbfe6641f9cfe268df50e2e06234">profile_kernel</a> (::cl::Kernel &amp;kern, std::size_t N, const Func &amp;func, std::size_t lmin=0, std::size_t repeat=10)</td></tr>
+<tr class="memdesc:afa25dbfe6641f9cfe268df50e2e06234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the kernel with all local size that are multiples of the preferred factor, return the local size that is the fatest.  <a href="#afa25dbfe6641f9cfe268df50e2e06234">More...</a><br /></td></tr>
+<tr class="separator:afa25dbfe6641f9cfe268df50e2e06234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba0364de7035c876ad0dee6a4b4f724c"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">profile_kernel</a> (::cl::Kernel &amp;kern, std::size_t N, std::size_t lmin=0, std::size_t repeat=3)</td></tr>
 <tr class="separator:aba0364de7035c876ad0dee6a4b4f724c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48588b2fdcaf621b0c1f8c19b048a615"><td class="memTemplParams" colspan="2">template&lt;typename CLType , typename OutputIter &gt; </td></tr>
@@ -643,7 +649,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a94bda0b19dc5c49b3137820913e05d3e"></a>
+<a class="anchor" id="afa25dbfe6641f9cfe268df50e2e06234"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -655,7 +661,7 @@ template&lt;typename Func &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t <a class="el" href="classvsmc_1_1_c_l_manager.html">vsmc::CLManager</a>&lt; ID &gt;::profile_kernel </td>
+          <td class="memname"><a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt; !<a class="el" href="structvsmc_1_1cxx11_1_1is__same.html">cxx11::is_same</a>&lt;Func, std::size_t&gt;::value &amp;&amp; !<a class="el" href="structvsmc_1_1cxx11_1_1is__convertible.html">cxx11::is_convertible</a>&lt;Func, std::size_t&gt;::value, std::size_t&gt;::type <a class="el" href="classvsmc_1_1_c_l_manager.html">vsmc::CLManager</a>&lt; ID &gt;::profile_kernel </td>
           <td>(</td>
           <td class="paramtype">::cl::Kernel &amp;&#160;</td>
           <td class="paramname"><em>kern</em>, </td>
@@ -682,7 +688,7 @@ template&lt;typename Func &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>repeat</em> = <code>3</code>&#160;</td>
+          <td class="paramname"><em>repeat</em> = <code>10</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -711,7 +717,7 @@ template&lt;typename Func &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on StopWatch to work correctly. </dd></dl>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00406">406</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00409">409</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -761,7 +767,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00457">457</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00460">460</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>

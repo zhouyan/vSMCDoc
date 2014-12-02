@@ -141,10 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62babb51154b25fac3eb313a44ed009f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27caf98bdf3dfefefd166ca82939c3f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_c_l.html#a27caf98bdf3dfefefd166ca82939c3f9">pre_processor</a> (<a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;)</td></tr>
 <tr class="separator:a27caf98bdf3dfefefd166ca82939c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62baca658b217cc02237b114dcb8df40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_c_l.html#a62baca658b217cc02237b114dcb8df40">set_kernel</a> (const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:a62baca658b217cc02237b114dcb8df40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0988e7b73f5e4e9467d323ae40cb119c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_c_l.html#a0988e7b73f5e4e9467d323ae40cb119c">set_kernel_args</a> (const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:a0988e7b73f5e4e9467d323ae40cb119c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2f53f0a70f36bbc61e4a356597cda2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_c_l.html#adc2f53f0a70f36bbc61e4a356597cda2">set_kernel</a> (const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:adc2f53f0a70f36bbc61e4a356597cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec8eb282fe62836f345dfca1d765a70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_c_l.html#a6ec8eb282fe62836f345dfca1d765a70">set_kernel_args</a> (const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:a6ec8eb282fe62836f345dfca1d765a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -188,7 +188,7 @@ class vsmc::InitializeCL&lt; T, PlaceHolder &gt;</h3>
 </div><!-- fragment --> is also acceptable, but now <code>state</code> has to be treat as a length <code>N</code> array. In summary, on the host side, it is a <code>cl::Buffer</code> object being passed to the kernel, which is not much unlike <code>void *</code> pointer. </li>
 </ul>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00424">424</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00428">428</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aaf47ac9c25817a83c25a8cc1474c66ff"></a>
 <div class="memitem">
@@ -202,7 +202,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00428">428</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00432">432</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00429">429</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00433">433</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#ab185f56efc97de7c08a3540df2812741">vsmc::InitializeAdapterBase&lt; T, NullType, InitializeCL&lt; T &gt; &gt;</a>, and <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#ab185f56efc97de7c08a3540df2812741">vsmc::InitializeAdapterBase&lt; T, F, InitializeCL&lt; T &gt; &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00460">460</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00465">465</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_initialize_adapter_3_01_t_00_01_initialize_c_l_00_01_null_type_01_4.html#a493fb6771990303bc81ce0966048e6ca">vsmc::InitializeAdapter&lt; T, InitializeCL, NullType &gt;</a>, and <a class="el" href="classvsmc_1_1_initialize_adapter_3_01_t_00_01_initialize_c_l_00_01_f_01_4.html#a829643ed863d4a86e730e7b569cc0110">vsmc::InitializeAdapter&lt; T, InitializeCL, F &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00461">461</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00466">466</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 <p>The index offset of additional kernel arguments set by the user. </p>
 <p>The first user supplied additional argument shall have index <code>kernel_args_offset</code> </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00436">436</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00440">440</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -599,7 +599,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00438">438</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00442">442</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -681,7 +681,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#a6cb636a16647097633ff93483b61c486">vsmc::InitializeAdapterBase&lt; T, NullType, InitializeCL&lt; T &gt; &gt;</a>, and <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#a6cb636a16647097633ff93483b61c486">vsmc::InitializeAdapterBase&lt; T, F, InitializeCL&lt; T &gt; &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00463">463</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00468">468</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -711,11 +711,11 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#aa4de1781491ba35f4011d5ebc1ce2dea">vsmc::InitializeAdapterBase&lt; T, NullType, InitializeCL&lt; T &gt; &gt;</a>, and <a class="el" href="classvsmc_1_1_initialize_adapter_base.html#aa4de1781491ba35f4011d5ebc1ce2dea">vsmc::InitializeAdapterBase&lt; T, F, InitializeCL&lt; T &gt; &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00462">462</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00467">467</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a62baca658b217cc02237b114dcb8df40"></a>
+<a class="anchor" id="adc2f53f0a70f36bbc61e4a356597cda2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -725,7 +725,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL</a>&lt; T, PlaceHolder &gt;::set_kernel </td>
+          <td class="memname">virtual void <a class="el" href="classvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL</a>&lt; T, PlaceHolder &gt;::set_kernel </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>particle</em></td><td>)</td>
@@ -734,16 +734,16 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00465">465</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00470">470</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0988e7b73f5e4e9467d323ae40cb119c"></a>
+<a class="anchor" id="a6ec8eb282fe62836f345dfca1d765a70"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -753,7 +753,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL</a>&lt; T, PlaceHolder &gt;::set_kernel_args </td>
+          <td class="memname">virtual void <a class="el" href="classvsmc_1_1_initialize_c_l.html">vsmc::InitializeCL</a>&lt; T, PlaceHolder &gt;::set_kernel_args </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>particle</em></td><td>)</td>
@@ -762,7 +762,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

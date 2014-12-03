@@ -2,6 +2,8 @@ var searchData=
 [
   ['cblas_2ehpp',['cblas.hpp',['../cblas_8hpp.html',1,'']]],
   ['cl_5fbuffer_2ehpp',['cl_buffer.hpp',['../cl__buffer_8hpp.html',1,'']]],
+  ['cl_5fconfigure_2ehpp',['cl_configure.hpp',['../cl__configure_8hpp.html',1,'']]],
+  ['cl_5fcopy_2ehpp',['cl_copy.hpp',['../cl__copy_8hpp.html',1,'']]],
   ['cl_5fmanager_2ehpp',['cl_manager.hpp',['../cl__manager_8hpp.html',1,'']]],
   ['cl_5fmanip_2ehpp',['cl_manip.hpp',['../cl__manip_8hpp.html',1,'']]],
   ['cl_5fquery_2ehpp',['cl_query.hpp',['../cl__query_8hpp.html',1,'']]],

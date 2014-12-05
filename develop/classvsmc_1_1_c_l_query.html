@@ -111,6 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a740844b58ee1507d2fda0a4fda6c3989"><td class="memTemplParams" colspan="2">template&lt;OpenCLDeviceFeature feat&gt; </td></tr>
+<tr class="memitem:a740844b58ee1507d2fda0a4fda6c3989"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a740844b58ee1507d2fda0a4fda6c3989">has_feature</a> (const ::cl::Device &amp;dev)</td></tr>
+<tr class="separator:a740844b58ee1507d2fda0a4fda6c3989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f1e24148317725ed28d406eea9a3d28"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
 <tr class="memitem:a7f1e24148317725ed28d406eea9a3d28"><td class="memTemplItemLeft" align="right" valign="top">static std::basic_ostream<br class="typebreak" />
 &lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a7f1e24148317725ed28d406eea9a3d28">info</a> (std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os)</td></tr>
@@ -146,12 +149,46 @@ Static Public Member Functions</h2></td></tr>
 &lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a02dff8acbd0b71027cfccd9da59616b4">info</a> (std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os, const ::cl::Program &amp;prog, const std::string &amp;kname)</td></tr>
 <tr class="memdesc:a02dff8acbd0b71027cfccd9da59616b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query kernel information given a program the name of kernel and a program.  <a href="#a02dff8acbd0b71027cfccd9da59616b4">More...</a><br /></td></tr>
 <tr class="separator:a02dff8acbd0b71027cfccd9da59616b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f55d1c5151fefd85676a8a210b8df7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7">opencl_c_version</a> (const ::cl::Device &amp;dev)</td></tr>
+<tr class="memdesc:a40f55d1c5151fefd85676a8a210b8df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the OpenCL C version of a device.  <a href="#a40f55d1c5151fefd85676a8a210b8df7">More...</a><br /></td></tr>
+<tr class="separator:a40f55d1c5151fefd85676a8a210b8df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c15b3f735a5a847fe848cf8bfc878b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">opencl_version</a> (const ::cl::Device &amp;dev)</td></tr>
+<tr class="memdesc:ac0c15b3f735a5a847fe848cf8bfc878b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the OpenCL version of a device.  <a href="#ac0c15b3f735a5a847fe848cf8bfc878b">More...</a><br /></td></tr>
+<tr class="separator:ac0c15b3f735a5a847fe848cf8bfc878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Query OpenCL information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00042">42</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00050">50</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a740844b58ee1507d2fda0a4fda6c3989"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;OpenCLDeviceFeature feat&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool vsmc::CLQuery::has_feature </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Device &amp;&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00086">86</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7f1e24148317725ed28d406eea9a3d28"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +215,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query all information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00048">48</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00094">94</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +255,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query platform information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00066">66</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00112">112</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,7 +295,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query device information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00096">96</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00141">141</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -298,7 +335,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query context information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00226">226</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00177">177</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +375,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query program informaiton. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00243">243</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00194">194</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +415,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query kernel information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00259">259</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00210">210</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -424,7 +461,72 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query kernel information given a program the name of kernel and a program. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00300">300</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00251">251</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40f55d1c5151fefd85676a8a210b8df7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classint.html">int</a> vsmc::CLQuery::opencl_c_version </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Device &amp;&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the OpenCL C version of a device. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b" title="Return the OpenCL version of a device. ">opencl_version</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00077">77</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0c15b3f735a5a847fe848cf8bfc878b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classint.html">int</a> vsmc::CLQuery::opencl_version </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Device &amp;&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the OpenCL version of a device. </p>
+<dl class="section return"><dt>Returns</dt><dd>The integer values and the OpenCL versions are mapped as the following,<ul>
+<li>OpenCL 1.0: 100</li>
+<li>OpenCL 1.1: 110</li>
+<li>OpenCL 1.2: 120</li>
+<li>OpenCL 2.0: 200</li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the version information returned by <code>CL_DEVICE_VERSION</code> does not follow the specification, then this function will return <code>100</code> (OpenCL 1.0) to play safe.. </dd></dl>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00066">66</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>

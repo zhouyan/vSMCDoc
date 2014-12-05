@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['has_5ffeature',['has_feature',['../classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629',1,'vsmc::CPUID']]],
+  ['has_5ffeature',['has_feature',['../classvsmc_1_1_c_l_query.html#a740844b58ee1507d2fda0a4fda6c3989',1,'vsmc::CLQuery::has_feature()'],['../classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629',1,'vsmc::CPUID::has_feature()']]],
   ['hdf5_5ftuple_5fvector_5fcopy',['hdf5_tuple_vector_copy',['../namespacevsmc_1_1internal.html#a171b1365493e8fdd7fff4ee26dde58c6',1,'vsmc::internal::hdf5_tuple_vector_copy(std::size_t n, TupleVectorType &amp;vec, InputIter first, Position&lt; 0 &gt;)'],['../namespacevsmc_1_1internal.html#a2bef20b4fe68df5b1f23be6352a15eaa',1,'vsmc::internal::hdf5_tuple_vector_copy(std::size_t n, TupleVectorType &amp;vec, InputIter first, Position&lt; Pos &gt;)']]],
   ['hdf5_5ftuple_5fvector_5fptr',['hdf5_tuple_vector_ptr',['../namespacevsmc_1_1internal.html#a7105361e9ba256926300e8c2a4432e71',1,'vsmc::internal::hdf5_tuple_vector_ptr(const TupleVectorType &amp;vec, TuplePtrType &amp;ptr, Position&lt; 0 &gt;)'],['../namespacevsmc_1_1internal.html#a56eeea631c6499772102b0c92a67f7d2',1,'vsmc::internal::hdf5_tuple_vector_ptr(const TupleVectorType &amp;vec, TuplePtrType &amp;ptr, Position&lt; Pos &gt;)']]],
   ['hdf5_5ftuple_5fvector_5fresize',['hdf5_tuple_vector_resize',['../namespacevsmc_1_1internal.html#abd8f517f558cf9ff4f8b02325314a2a8',1,'vsmc::internal::hdf5_tuple_vector_resize(std::size_t n, TupleVectorType &amp;vec, Position&lt; 0 &gt;)'],['../namespacevsmc_1_1internal.html#adb824a5ea4a6bde7b9a3cece10d5d574',1,'vsmc::internal::hdf5_tuple_vector_resize(std::size_t n, TupleVectorType &amp;vec, Position&lt; Pos &gt;)']]],
@@ -33,5 +33,6 @@ var searchData=
   ['hdf5store_5fmatrix',['hdf5store_matrix',['../group___h_d_f5_i_o.html#ga34c74ca84fd2394a0e21c1968e108ec7',1,'vsmc']]],
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
+  ['host_5fptr',['host_ptr',['../classvsmc_1_1_c_l_buffer.html#aa92bf47a5015a8b4410506df800e1b09',1,'vsmc::CLBuffer']]],
   ['hours',['hours',['../classvsmc_1_1_stop_watch_null.html#a9e11f49a5f3652852d6ebb888e574d43',1,'vsmc::StopWatchNull::hours()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter::hours()'],['../classvsmc_1_1_stop_watch_s_y_s.html#a12adb9effae20a52940adc8f7c202d77',1,'vsmc::StopWatchSYS::hours()']]]
 ];

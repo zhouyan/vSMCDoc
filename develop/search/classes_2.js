@@ -2,9 +2,10 @@ var searchData=
 [
   ['cache_5fparam_5ftype',['cache_param_type',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html',1,'vsmc::CPUID']]],
   ['clbuffer',['CLBuffer',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20_3a_3a_3a_3acl_5fulong_2c_20typename_20t_3a_3aid_20_3e',['CLBuffer&lt; ::::cl_ulong, typename T::id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20_3a_3acl_5fulong_2c_20id_20_3e',['CLBuffer&lt; ::cl_ulong, ID &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
+  ['clbuffer_3c_20_3a_3acl_5fulong_2c_20typename_20t_3a_3aid_20_3e',['CLBuffer&lt; ::cl_ulong, typename T::id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
   ['clbuffer_3c_20char_2c_20id_20_3e',['CLBuffer&lt; char, ID &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
-  ['clbuffer_3c_20cl_5fulong_2c_20id_20_3e',['CLBuffer&lt; cl_ulong, ID &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
-  ['clbuffer_3c_20cl_5fulong_2c_20typename_20t_3a_3aid_20_3e',['CLBuffer&lt; cl_ulong, typename T::id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
   ['clbuffer_3c_20typename_20t_3a_3afp_5ftype_2c_20typename_20t_3a_3aid_20_3e',['CLBuffer&lt; typename T::fp_type, typename T::id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
   ['clconfigure',['CLConfigure',['../classvsmc_1_1_c_l_configure.html',1,'vsmc']]],
   ['clcopy',['CLCopy',['../classvsmc_1_1internal_1_1_c_l_copy.html',1,'vsmc::internal']]],

@@ -105,6 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__setup_8hpp_source.html">vsmc/opencl/cl_setup.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__manip_8hpp_source.html">vsmc/opencl/cl_manip.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cl__query_8hpp_source.html">vsmc/opencl/cl_query.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stop__watch_8hpp_source.html">vsmc/utility/stop_watch.hpp</a>&gt;</code><br />
 </div>
 <p><a href="cl__manager_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -152,7 +153,7 @@ Macros</h2></td></tr>
 <div class="line">             <span class="stringliteral">&quot;**CLManager::setup**&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00040">40</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00041">41</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -169,7 +170,7 @@ Macros</h2></td></tr>
 <div class="line">            (<span class="stringliteral">&quot;**CLManager::setup** FAILED TO SETUP A COMMAND_QUEUE&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00082">assert.hpp:82</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00057">57</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00058">58</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +187,7 @@ Macros</h2></td></tr>
 <div class="line">            (<span class="stringliteral">&quot;**CLManager::setup** FAILED TO SETUP A CONTEXT&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00082">assert.hpp:82</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00049">49</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00050">50</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +204,7 @@ Macros</h2></td></tr>
 <div class="line">            (<span class="stringliteral">&quot;**CLManager::setup** FAILED TO SETUP A DEVICE&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00082">assert.hpp:82</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00053">53</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00054">54</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +221,7 @@ Macros</h2></td></tr>
 <div class="line">            (<span class="stringliteral">&quot;**CLManager::setup** FAILED TO SETUP A PLATFORM&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00082">assert.hpp:82</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00045">45</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00046">46</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>

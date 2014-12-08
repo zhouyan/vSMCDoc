@@ -125,6 +125,8 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a15304fca9188733aca3c383017f82768"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl__manager_8hpp.html#a15304fca9188733aca3c383017f82768">VSMC_RUNTIME_ASSERT_CL_MANAGER_SETUP</a>(func)</td></tr>
 <tr class="separator:a15304fca9188733aca3c383017f82768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff343dec9d18b9aaa147913a67e535a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl__manager_8hpp.html#aff343dec9d18b9aaa147913a67e535a1">VSMC_RUNTIME_WARNING_CL_MANAGER_BLOCK</a>(func, block, event)</td></tr>
+<tr class="separator:aff343dec9d18b9aaa147913a67e535a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03a405a3ce32b09124bb815dea48d24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl__manager_8hpp.html#ae03a405a3ce32b09124bb815dea48d24">VSMC_RUNTIME_WARNING_CL_MANAGER_SETUP_COMMAND_QUEUE</a></td></tr>
 <tr class="separator:ae03a405a3ce32b09124bb815dea48d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a58463f1bfb4647bcf17ed9f546277"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl__manager_8hpp.html#a49a58463f1bfb4647bcf17ed9f546277">VSMC_RUNTIME_WARNING_CL_MANAGER_SETUP_CONTEXT</a></td></tr>
@@ -154,6 +156,44 @@ Macros</h2></td></tr>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00041">41</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff343dec9d18b9aaa147913a67e535a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_RUNTIME_WARNING_CL_MANAGER_BLOCK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">func, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">block, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">event&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a>((block || event != <a class="code" href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a>),                   \</div>
+<div class="line">            (<span class="stringliteral">&quot;**CLManager::&quot;</span>#func<span class="stringliteral">&quot; NOT BLOCKING BUT WITH NULL EVENT&quot;</span>))</div>
+<div class="ttc" id="group___definitions_html_gacfea7263dce24fd2dbc34b298a9afbe2"><div class="ttname"><a href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a></div><div class="ttdeci">#define VSMC_NULLPTR</div><div class="ttdoc">nullptr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00079">defines.hpp:79</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00082">assert.hpp:82</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00062">62</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>

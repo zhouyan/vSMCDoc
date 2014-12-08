@@ -7,6 +7,7 @@ var searchData=
   ['ompsizetypetrait',['OMPSizeTypeTrait',['../structvsmc_1_1traits_1_1_o_m_p_size_type_trait.html',1,'vsmc::traits']]],
   ['open',['Open',['../structvsmc_1_1_open.html',1,'vsmc']]],
   ['opencl',['OpenCL',['../group___open_c_l.html',1,'']]],
+  ['opencl_2ehpp',['opencl.hpp',['../opencl_8hpp.html',1,'']]],
   ['opencl_5fc_5fversion',['opencl_c_version',['../classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8',1,'vsmc::CLManager::opencl_c_version()'],['../classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7',1,'vsmc::CLQuery::opencl_c_version()']]],
   ['opencl_5fversion',['opencl_version',['../classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9',1,'vsmc::CLManager::opencl_version()'],['../classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b',1,'vsmc::CLQuery::opencl_version()']]],
   ['opencldevicedoublefp',['OpenCLDeviceDoubleFP',['../group___open_c_l.html#gga7f9c412d8e7001a312d70732134e6419a10c0d6aff9a1afbc9653b385fc868a72',1,'vsmc']]],

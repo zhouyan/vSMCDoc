@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -112,17 +111,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="backend__cl_8hpp_source.html">vsmc/opencl/backend_cl.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a82fc4a97e98b750f50629ce5e9bb5b53"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_move_c_l.html#a82fc4a97e98b750f50629ce5e9bb5b53">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html#a82fc4a97e98b750f50629ce5e9bb5b53">size_type</a></td></tr>
-<tr class="separator:a82fc4a97e98b750f50629ce5e9bb5b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1a3b6833e10b8fbee72b82b38b60a6"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html#a9b1a3b6833e10b8fbee72b82b38b60a6">value_type</a></td></tr>
-<tr class="separator:a9b1a3b6833e10b8fbee72b82b38b60a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf430442f70486814900316187dedb54"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html#acf430442f70486814900316187dedb54">accept_count</a> (<a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, const <a class="el" href="classvsmc_1_1_c_l_buffer.html">CLBuffer</a>&lt; ::<a class="el" href="class_1_1cl__ulong.html">cl_ulong</a>, typename T::id &gt; &amp;accept_buffer)</td></tr>
-<tr class="separator:acf430442f70486814900316187dedb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0c0eaebcd65ddde922a1574f88c412"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html#a1e0c0eaebcd65ddde922a1574f88c412">accept_count</a> (<a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, const ::cl::Buffer &amp;accept_buffer)</td></tr>
+<tr class="separator:a1e0c0eaebcd65ddde922a1574f88c412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af5f19702975b1ae1c9201f97b08535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_c_l_configure.html">CLConfigure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html#a8af5f19702975b1ae1c9201f97b08535">configure</a> ()</td></tr>
 <tr class="separator:a8af5f19702975b1ae1c9201f97b08535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55bcacbb5d5095b31c8d007647918860"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvsmc_1_1_c_l_configure.html">CLConfigure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_c_l.html#a55bcacbb5d5095b31c8d007647918860">configure</a> () const </td></tr>
@@ -175,41 +167,8 @@ class vsmc::MoveCL&lt; T, PlaceHolder &gt;</h3>
 <p>Kernel requirement (<code>move_state</code>) </p><div class="fragment"><div class="line">__kernel</div>
 <div class="line"><span class="keywordtype">void</span> kern (ulong iter, __global state_type *state, __global ulong *accept);</div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00515">515</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a82fc4a97e98b750f50629ce5e9bb5b53"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt;T&gt;::<a class="el" href="classvsmc_1_1_move_c_l.html#a82fc4a97e98b750f50629ce5e9bb5b53">size_type</a> <a class="el" href="classvsmc_1_1_move_c_l.html">vsmc::MoveCL</a>&lt; T, PlaceHolder &gt;::<a class="el" href="classvsmc_1_1_move_c_l.html#a82fc4a97e98b750f50629ce5e9bb5b53">size_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00519">519</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9b1a3b6833e10b8fbee72b82b38b60a6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef T <a class="el" href="classvsmc_1_1_move_c_l.html">vsmc::MoveCL</a>&lt; T, PlaceHolder &gt;::<a class="el" href="classvsmc_1_1_move_c_l.html#a9b1a3b6833e10b8fbee72b82b38b60a6">value_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00520">520</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00560">560</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abf72f43167341fc239f892ab267f3d14"></a>
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +192,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00593">593</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00635">635</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +245,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00593">593</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00635">635</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +276,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acf430442f70486814900316187dedb54"></a>
+<a class="anchor" id="a1e0c0eaebcd65ddde922a1574f88c412"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -335,7 +294,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_c_l_buffer.html">CLBuffer</a>&lt; ::<a class="el" href="class_1_1cl__ulong.html">cl_ulong</a>, typename T::id &gt; &amp;&#160;</td>
+          <td class="paramtype">const ::cl::Buffer &amp;&#160;</td>
           <td class="paramname"><em>accept_buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -351,7 +310,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00550">550</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00592">592</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +337,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00589">589</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00631">631</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +364,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00589">589</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00631">631</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -432,7 +391,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00589">589</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00631">631</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +418,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00589">589</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00631">631</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +448,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 <p>The index offset of additional kernel arguments set by the user. </p>
 <p>The first user supplied additional argument shall have index <code>kernel_args_offset</code> </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00527">527</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00569">569</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -516,7 +475,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00589">589</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00631">631</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +515,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_move_adapter_3_01_t_00_01_move_c_l_00_01_null_type_01_4.html#ae9344be35109b66b982433de53f8fd8a">vsmc::MoveAdapter&lt; T, MoveCL, NullType &gt;</a>, and <a class="el" href="classvsmc_1_1_move_adapter_3_01_t_00_01_move_c_l_00_01_f_01_4.html#a30ca0833959281733407faea96d49d60">vsmc::MoveAdapter&lt; T, MoveCL, F &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00546">546</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00588">588</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -594,7 +553,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00529">529</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00571">571</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -686,7 +645,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_move_adapter_base.html#ae4d6a8c88aad1d17bc35a3d75ace19c7">vsmc::MoveAdapterBase&lt; T, NullType, MoveCL&lt; T &gt; &gt;</a>, and <a class="el" href="classvsmc_1_1_move_adapter_base.html#ae4d6a8c88aad1d17bc35a3d75ace19c7">vsmc::MoveAdapterBase&lt; T, F, MoveCL&lt; T &gt; &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00548">548</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00590">590</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +685,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classvsmc_1_1_move_adapter_base.html#ae976efe6f0d2fff15cd1be19ae84a9ed">vsmc::MoveAdapterBase&lt; T, NullType, MoveCL&lt; T &gt; &gt;</a>, and <a class="el" href="classvsmc_1_1_move_adapter_base.html#ae976efe6f0d2fff15cd1be19ae84a9ed">vsmc::MoveAdapterBase&lt; T, F, MoveCL&lt; T &gt; &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00547">547</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00589">589</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +723,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00561">561</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00603">603</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -802,7 +761,7 @@ template&lt;typename T, typename PlaceHolder  = NullType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00568">568</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00610">610</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

@@ -113,6 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a740844b58ee1507d2fda0a4fda6c3989"><td class="memTemplParams" colspan="2">template&lt;OpenCLDeviceFeature feat&gt; </td></tr>
 <tr class="memitem:a740844b58ee1507d2fda0a4fda6c3989"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a740844b58ee1507d2fda0a4fda6c3989">has_feature</a> (const ::cl::Device &amp;dev)</td></tr>
+<tr class="memdesc:a740844b58ee1507d2fda0a4fda6c3989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a device feature exists.  <a href="#a740844b58ee1507d2fda0a4fda6c3989">More...</a><br /></td></tr>
 <tr class="separator:a740844b58ee1507d2fda0a4fda6c3989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f1e24148317725ed28d406eea9a3d28"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
 <tr class="memitem:a7f1e24148317725ed28d406eea9a3d28"><td class="memTemplItemLeft" align="right" valign="top">static std::basic_ostream<br class="typebreak" />
@@ -155,6 +156,26 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0c15b3f735a5a847fe848cf8bfc878b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">opencl_version</a> (const ::cl::Device &amp;dev)</td></tr>
 <tr class="memdesc:ac0c15b3f735a5a847fe848cf8bfc878b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the OpenCL version of a device.  <a href="#ac0c15b3f735a5a847fe848cf8bfc878b">More...</a><br /></td></tr>
 <tr class="separator:ac0c15b3f735a5a847fe848cf8bfc878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aad7c996620e984b5d4aac7b4e3569e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a2aad7c996620e984b5d4aac7b4e3569e">program_binary</a> (const ::cl::Program &amp;program)</td></tr>
+<tr class="memdesc:a2aad7c996620e984b5d4aac7b4e3569e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program binary vector.  <a href="#a2aad7c996620e984b5d4aac7b4e3569e">More...</a><br /></td></tr>
+<tr class="separator:a2aad7c996620e984b5d4aac7b4e3569e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047ea14115eb84a866074d8f367b1267"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::pair<br class="typebreak" />
+&lt; ::cl_build_status, <br class="typebreak" />
+std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a047ea14115eb84a866074d8f367b1267">program_build_log</a> (const ::cl::Program &amp;program)</td></tr>
+<tr class="memdesc:a047ea14115eb84a866074d8f367b1267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program build log and status.  <a href="#a047ea14115eb84a866074d8f367b1267">More...</a><br /></td></tr>
+<tr class="separator:a047ea14115eb84a866074d8f367b1267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc37a3dda96bb573a7014a6fc075cad"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:a3fc37a3dda96bb573a7014a6fc075cad"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; std::pair<br class="typebreak" />
+&lt; ::cl_build_status, <br class="typebreak" />
+std::string &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a3fc37a3dda96bb573a7014a6fc075cad">program_build_log</a> (const ::cl::Program &amp;program, std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os)</td></tr>
+<tr class="memdesc:a3fc37a3dda96bb573a7014a6fc075cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print program build log and status.  <a href="#a3fc37a3dda96bb573a7014a6fc075cad">More...</a><br /></td></tr>
+<tr class="separator:a3fc37a3dda96bb573a7014a6fc075cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e30fb2871bbe3a32479a3d4a433bbc0"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; ::cl::Device &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a9e30fb2871bbe3a32479a3d4a433bbc0">program_device</a> (const ::cl::Program program)</td></tr>
+<tr class="memdesc:a9e30fb2871bbe3a32479a3d4a433bbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program device vector.  <a href="#a9e30fb2871bbe3a32479a3d4a433bbc0">More...</a><br /></td></tr>
+<tr class="separator:a9e30fb2871bbe3a32479a3d4a433bbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a07d8d718a0f5e8aeba5e5ba53d30a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a25a07d8d718a0f5e8aeba5e5ba53d30a">program_source</a> (const ::cl::Program &amp;program)</td></tr>
+<tr class="memdesc:a25a07d8d718a0f5e8aeba5e5ba53d30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program source.  <a href="#a25a07d8d718a0f5e8aeba5e5ba53d30a">More...</a><br /></td></tr>
+<tr class="separator:a25a07d8d718a0f5e8aeba5e5ba53d30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Query OpenCL information. </p>
@@ -185,7 +206,9 @@ template&lt;OpenCLDeviceFeature feat&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00086">86</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Check if a device feature exists. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00087">87</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -215,7 +238,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query all information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00094">94</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00184">184</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -255,7 +278,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query platform information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00112">112</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00202">202</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +318,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query device information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00141">141</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00231">231</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +358,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query context information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00177">177</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00267">267</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +398,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query program informaiton. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00194">194</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00284">284</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +438,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query kernel information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00210">210</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00300">300</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -461,7 +484,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query kernel information given a program the name of kernel and a program. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00251">251</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00341">341</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -527,6 +550,158 @@ template&lt;typename CharT , typename Traits &gt; </div>
 <dl class="section note"><dt>Note</dt><dd>If the version information returned by <code>CL_DEVICE_VERSION</code> does not follow the specification, then this function will return <code>100</code> (OpenCL 1.0) to play safe.. </dd></dl>
 
 <p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00066">66</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2aad7c996620e984b5d4aac7b4e3569e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;std::string&gt; vsmc::CLQuery::program_binary </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Program &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Program binary vector. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00094">94</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a047ea14115eb84a866074d8f367b1267"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;std::pair&lt; ::cl_build_status, std::string&gt; &gt; vsmc::CLQuery::program_build_log </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Program &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Program build log and status. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00142">142</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fc37a3dda96bb573a7014a6fc075cad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;std::pair&lt; ::cl_build_status, std::string&gt; &gt; vsmc::CLQuery::program_build_log </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Program &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print program build log and status. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00160">160</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e30fb2871bbe3a32479a3d4a433bbc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt; ::cl::Device&gt; vsmc::CLQuery::program_device </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Program&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Program device vector. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00119">119</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25a07d8d718a0f5e8aeba5e5ba53d30a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string vsmc::CLQuery::program_source </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Program &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Program source. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00132">132</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>

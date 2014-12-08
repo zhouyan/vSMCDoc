@@ -59,5 +59,6 @@ var searchData=
   ['uniformrealdistributionop_3c_20fptype_2c_20left_2c_20right_2c_20eng_2c_20true_20_3e',['UniformRealDistributionOp&lt; FPType, Left, Right, Eng, true &gt;',['../classvsmc_1_1internal_1_1_uniform_real_distribution_op_3_01_f_p_type_00_01_left_00_01_right_00_01_eng_00_01true_01_4.html',1,'vsmc::internal']]],
   ['update_5fstate',['update_state',['../singletonvsmc_1_1_state_c_l.html#a43345d1e873575e31d92c9f8066abef7',1,'vsmc::StateCL::update_state(::cl_mem_flags flag)'],['../singletonvsmc_1_1_state_c_l.html#a5b4fb8fe91b35b06c6f08539eb46f61e',1,'vsmc::StateCL::update_state(::cl_mem_flags flag, void *host_ptr)']]],
   ['urng_2eh',['urng.h',['../urng_8h.html',1,'']]],
-  ['utility',['Utility',['../group___utility.html',1,'']]]
+  ['utility',['Utility',['../group___utility.html',1,'']]],
+  ['utility_2ehpp',['utility.hpp',['../utility_8hpp.html',1,'']]]
 ];

@@ -929,6 +929,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a207f9838352b0dbaf5dde9425b58ddf2">cl_error_str</a> (cl_int status)</td></tr>
+<tr class="separator:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplParams" colspan="2">template&lt;typename FPType &gt; </td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#abdf744ef86e3e50ed0eb39a552533ed6">cl_source_macros</a> (std::size_t size, std::size_t state_size, std::size_t seed)</td></tr>
 <tr class="separator:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1442,6 +1444,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6e6ecb5d1733f0f7d779b9a2a39a37c3"><td class="memTemplParams" colspan="2">template&lt;SIMD ISA&gt; </td></tr>
 <tr class="memitem:a6e6ecb5d1733f0f7d779b9a2a39a37c3"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a6e6ecb5d1733f0f7d779b9a2a39a37c3">memset_simd_nt</a> (void *dst, <a class="el" href="classint.html">int</a> ch, std::size_t n)</td></tr>
 <tr class="separator:a6e6ecb5d1733f0f7d779b9a2a39a37c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb17d87b91ae10ecc65166635aac2a8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9cb17d87b91ae10ecc65166635aac2a8">mkl_vsl_brng_str</a> (<a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> BRNG)</td></tr>
+<tr class="separator:a9cb17d87b91ae10ecc65166635aac2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a14991420bbc9a6b7fb0c48f7780ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad5a14991420bbc9a6b7fb0c48f7780ec">mkl_vsl_error_check</a> (<a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> BRNG, <a class="el" href="classint.html">int</a> status, const char *func, const char *mklf)</td></tr>
+<tr class="separator:ad5a14991420bbc9a6b7fb0c48f7780ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb42bf20731b14dab1fcd8871c0e524"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aecb42bf20731b14dab1fcd8871c0e524">mkl_vsl_error_str</a> (<a class="el" href="classint.html">int</a> status)</td></tr>
+<tr class="separator:aecb42bf20731b14dab1fcd8871c0e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7469ea5977ace8d2c42772a2065c552"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename IntType1 , typename IntType2 &gt; </td></tr>
 <tr class="memitem:ab7469ea5977ace8d2c42772a2065c552"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ab7469ea5977ace8d2c42772a2065c552">mpi_init_seed</a> (ResultType &amp;, IntType1 D, IntType2 R)</td></tr>
 <tr class="separator:ab7469ea5977ace8d2c42772a2065c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1586,6 +1594,32 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a207f9838352b0dbaf5dde9425b58ddf2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vsmc::internal::cl_error_str </td>
+          <td>(</td>
+          <td class="paramtype">cl_int&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__error_8hpp_source.html#l00044">44</a> of file <a class="el" href="cl__error_8hpp_source.html">cl_error.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abdf744ef86e3e50ed0eb39a552533ed6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1626,7 +1660,7 @@ template&lt;typename FPType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00193">193</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00200">200</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -9156,6 +9190,106 @@ template&lt;SIMD ISA&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a9cb17d87b91ae10ecc65166635aac2a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vsmc::internal::mkl_vsl_brng_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a>&#160;</td>
+          <td class="paramname"><em>BRNG</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00104">104</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5a14991420bbc9a6b7fb0c48f7780ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::mkl_vsl_error_check </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a>&#160;</td>
+          <td class="paramname"><em>BRNG</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mklf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00166">166</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aecb42bf20731b14dab1fcd8871c0e524"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vsmc::internal::mkl_vsl_error_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classint.html">int</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00125">125</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab7469ea5977ace8d2c42772a2065c552"></a>
 <div class="memitem">
 <div class="memproto">
@@ -9734,7 +9868,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00175">175</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00182">182</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -9762,7 +9896,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00162">162</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00169">169</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

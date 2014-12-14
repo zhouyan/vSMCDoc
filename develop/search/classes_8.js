@@ -124,6 +124,6 @@ var searchData=
   ['moveseq',['MoveSEQ',['../singletonvsmc_1_1_move_s_e_q.html',1,'vsmc']]],
   ['movestd',['MoveSTD',['../singletonvsmc_1_1_move_s_t_d.html',1,'vsmc']]],
   ['movetbb',['MoveTBB',['../singletonvsmc_1_1_move_t_b_b.html',1,'vsmc']]],
-  ['mpicommunicator',['MPICommunicator',['../classvsmc_1_1_m_p_i_communicator.html',1,'vsmc']]],
+  ['mpicommunicator',['MPICommunicator',['../singletonvsmc_1_1_m_p_i_communicator.html',1,'vsmc']]],
   ['mpienvironment',['MPIEnvironment',['../classvsmc_1_1_m_p_i_environment.html',1,'vsmc']]]
 ];

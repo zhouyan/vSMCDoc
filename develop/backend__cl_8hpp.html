@@ -106,10 +106,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__buffer_8hpp_source.html">vsmc/opencl/cl_buffer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__configure_8hpp_source.html">vsmc/opencl/cl_configure.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cl__error_8hpp_source.html">vsmc/opencl/cl_error.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__manager_8hpp_source.html">vsmc/opencl/cl_manager.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__manip_8hpp_source.html">vsmc/opencl/cl_manip.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cl__copy_8hpp_source.html">vsmc/opencl/internal/cl_copy.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cl__wrapper_8hpp_source.html">vsmc/opencl/internal/cl_wrapper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="seed_8hpp_source.html">vsmc/rng/seed.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="array_8hpp_source.html">vsmc/utility/array.hpp</a>&gt;</code><br />
 </div>
 <p><a href="backend__cl_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -160,6 +163,8 @@ Macros</h2></td></tr>
 <tr class="separator:ae71227936e9622aa2364773dce114ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f89b56c80ec9f0a6b793b69b3bb00e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a87f89b56c80ec9f0a6b793b69b3bb00e">VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_STATE_SIZE</a>(state_size)&#160;&#160;&#160;<a class="el" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((state_size &gt;= 1), (&quot;STATE SIZE IS LESS THAN 1&quot;))</td></tr>
 <tr class="separator:a87f89b56c80ec9f0a6b793b69b3bb00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a9420a809b76155fbcb2e0069906a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a45a9420a809b76155fbcb2e0069906a4">VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_UNPACK_SIZE</a>(psize, dim)</td></tr>
+<tr class="separator:a45a9420a809b76155fbcb2e0069906a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6391e5ac78e08f3308ca763297d776bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a6391e5ac78e08f3308ca763297d776bf">VSMC_STATIC_ASSERT_OPENCL_BACKEND_CL_DYNAMIC_STATE_SIZE_RESIZE</a>(Dim)</td></tr>
 <tr class="separator:a6391e5ac78e08f3308ca763297d776bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6ac3bf395a423c55bb76d69a1c2b24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__cl_8hpp.html#a5d6ac3bf395a423c55bb76d69a1c2b24">VSMC_STATIC_ASSERT_OPENCL_BACKEND_CL_STATE_CL_FP_TYPE</a>(type)</td></tr>
@@ -198,7 +203,7 @@ Functions</h2></td></tr>
 <div class="line">const ::cl::Kernel &amp;kernel ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> kernel_;}                        \</div>
 <div class="line">const std::string &amp;kernel_name ()<span class="keyword"> const </span>{<span class="keywordflow">return</span> kernel_name_;}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00129">129</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00136">136</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +225,7 @@ Functions</h2></td></tr>
 <div class="line">Name&lt;T, PlaceHolder&gt; &amp;operator= (<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>;    \</div>
 <div class="line">virtual ~Name () {}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00070">70</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00077">77</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -238,7 +243,7 @@ Functions</h2></td></tr>
 <div class="line">::cl::Kernel kernel_;                                                        \</div>
 <div class="line">std::string kernel_name_</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00149">149</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00156">156</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,7 +263,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">Name (Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                                    \</div>
 <div class="line">Name&lt;T, PlaceHolder&gt; &amp;operator= (Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00077">77</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00084">84</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -283,7 +288,7 @@ Functions</h2></td></tr>
 <div class="line">            kernel_, particle.value().manager().device());                   \</div>
 <div class="line">}                                                                            \</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00136">136</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00143">143</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -303,9 +308,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((build()),                                           \</div>
 <div class="line">            (<span class="stringliteral">&quot;**StateCL::&quot;</span>#func<span class="stringliteral">&quot;** CAN ONLY BE CALLED AFTER true &quot;</span>           \</div>
 <div class="line">             <span class="stringliteral">&quot;**StateCL::build**&quot;</span>));</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00064">assert.hpp:64</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00056">56</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00059">59</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,9 +325,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((N == copy_.size()),                                 \</div>
 <div class="line">            (<span class="stringliteral">&quot;**StateCL::copy** SIZE MISMATCH&quot;</span>))</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00063">assert.hpp:63</a></div></div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00064">assert.hpp:64</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00064">64</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00067">67</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +345,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00061">61</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00064">64</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45a9420a809b76155fbcb2e0069906a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_UNPACK_SIZE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">psize, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dim&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((psize &gt;= dim),                                      \</div>
+<div class="line">            (<span class="stringliteral">&quot;**StateCL::state_unpack** INPUT PACK SIZE TOO SMALL&quot;</span>))</div>
+<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00064">assert.hpp:64</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00071">71</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -357,12 +393,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Dim == <a class="code" href="group___definitions.html#gga89e702e78db9a6befc987c79f303b5e3a3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>),                                     \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Dim == <a class="code" href="group___definitions.html#gga0fedbc50735140f7c355a75b81e1f4eba3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>),                                     \</div>
 <div class="line">            USE_METHOD_resize_state_WITH_A_FIXED_SIZE_StateCL_OBJECT)</div>
-<div class="ttc" id="group___definitions_html_gga89e702e78db9a6befc987c79f303b5e3a3f0f7c9280e1b55ccd3f4c2575772402"><div class="ttname"><a href="group___definitions.html#gga89e702e78db9a6befc987c79f303b5e3a3f0f7c9280e1b55ccd3f4c2575772402">vsmc::Dynamic</a></div><div class="ttdoc">Used to specify a dimension template parameter is dynamic. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00097">defines.hpp:97</a></div></div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
+<div class="ttc" id="group___definitions_html_gga0fedbc50735140f7c355a75b81e1f4eba3f0f7c9280e1b55ccd3f4c2575772402"><div class="ttname"><a href="group___definitions.html#gga0fedbc50735140f7c355a75b81e1f4eba3f0f7c9280e1b55ccd3f4c2575772402">vsmc::Dynamic</a></div><div class="ttdoc">Used to specify a dimension template parameter is dynamic. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00097">defines.hpp:97</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00043">43</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00046">46</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -382,9 +418,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((cxx11::is_same&lt;type, ::cl_float&gt;::value              \</div>
 <div class="line">                || cxx11::is_same&lt;type, ::cl_double&gt;::value),                \</div>
 <div class="line">            USE_StateCL_WITH_A_FP_TYPE_OTHER_THAN_cl_float_AND_cl_double)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00051">51</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00054">54</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -413,9 +449,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((internal::IsDerivedFromStateCL&lt;derived&gt;::value),     \</div>
 <div class="line">            USE_##user##_WITH_A_STATE_TYPE_NOT_DERIVED_FROM_StateCL)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00047">47</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00050">50</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

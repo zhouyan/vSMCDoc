@@ -114,8 +114,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad50206b3da7bd384e419c373cb1aef43"><td class="memItemLeft" align="right" valign="top">typedef ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#ad50206b3da7bd384e419c373cb1aef43">id</a></td></tr>
-<tr class="separator:ad50206b3da7bd384e419c373cb1aef43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354d4bb91b4eea22c47935cd034ec7d6"><td class="memItemLeft" align="right" valign="top">typedef ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#a354d4bb91b4eea22c47935cd034ec7d6">cl_id</a></td></tr>
+<tr class="separator:a354d4bb91b4eea22c47935cd034ec7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -133,10 +133,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae18ab4ecb9c0005de68be3da55c54aca"><td class="memTemplItemLeft" align="right" valign="top">::cl::Buffer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">create_buffer</a> (std::size_t num,::<a class="el" href="class_1_1cl__mem__flags.html">cl_mem_flags</a> flag=CL_MEM_READ_WRITE, void *host_ptr=nullptr) const </td></tr>
 <tr class="memdesc:ae18ab4ecb9c0005de68be3da55c54aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OpenCL buffer of a given type and number of elements.  <a href="#ae18ab4ecb9c0005de68be3da55c54aca">More...</a><br /></td></tr>
 <tr class="separator:ae18ab4ecb9c0005de68be3da55c54aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763bbd9278c5d33269b3a6303f29a1fd"><td class="memTemplParams" colspan="2">template&lt;typename CLType , typename InputIter &gt; </td></tr>
-<tr class="memitem:a763bbd9278c5d33269b3a6303f29a1fd"><td class="memTemplItemLeft" align="right" valign="top">::cl::Buffer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#a763bbd9278c5d33269b3a6303f29a1fd">create_buffer</a> (InputIter first, InputIter last, const std::vector&lt; ::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr) const </td></tr>
-<tr class="memdesc:a763bbd9278c5d33269b3a6303f29a1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OpenCL buffer of a given type from a range of elements.  <a href="#a763bbd9278c5d33269b3a6303f29a1fd">More...</a><br /></td></tr>
-<tr class="separator:a763bbd9278c5d33269b3a6303f29a1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc59a618c920cb937524682d0c3b0310"><td class="memItemLeft" align="right" valign="top">::cl::Program&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">create_program</a> (const std::string &amp;source) const </td></tr>
 <tr class="memdesc:adc59a618c920cb937524682d0c3b0310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a program given the source within the current context.  <a href="#adc59a618c920cb937524682d0c3b0310">More...</a><br /></td></tr>
 <tr class="separator:adc59a618c920cb937524682d0c3b0310"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,21 +230,21 @@ class vsmc::CLManager&lt; ID &gt;</h3>
 </div><!-- fragment --><p> may not be enough to lead to successful setup. The default device type <code>CL_DEVICE_TYPE_DEFAULT</code> may not be GPU. To be safe, if one need to use <a class="el" href="classvsmc_1_1_c_l_setup.html" title="Configure the default behavior of CLManager. ">CLSetup</a>, at least specify the device type. It can be set through values of type <code>cl_device_type</code> or a string with values "GPU", "CPU", "Accelerator". Other string values are silently ignored and the default is used.</p>
 <p>Before using a <a class="el" href="classvsmc_1_1_c_l_manager.html" title="OpenCL Manager. ">CLManager</a>, it is important to check that <a class="el" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4" title="Whether the platform, context, device and command queue has been setup correctly. ...">CLManager::setup</a> returns <code>true</code>. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00128">128</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00129">129</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ad50206b3da7bd384e419c373cb1aef43"></a>
+<a class="anchor" id="a354d4bb91b4eea22c47935cd034ec7d6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ID = CLDefault&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef ID <a class="el" href="classvsmc_1_1_c_l_manager.html">vsmc::CLManager</a>&lt; ID &gt;::<a class="el" href="classvsmc_1_1_c_l_manager.html#ad50206b3da7bd384e419c373cb1aef43">id</a></td>
+          <td class="memname">typedef ID <a class="el" href="classvsmc_1_1_c_l_manager.html">vsmc::CLManager</a>&lt; ID &gt;::<a class="el" href="classvsmc_1_1_c_l_manager.html#a354d4bb91b4eea22c47935cd034ec7d6">cl_id</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00132">132</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00133">133</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +274,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>The command queue currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00167">167</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00168">168</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +303,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>The context currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00158">158</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00159">159</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +381,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Copy an OpenCL buffer into another of a given type and number of elements. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00331">331</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00315">315</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -433,61 +429,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Create an OpenCL buffer of a given type and number of elements. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00205">205</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a763bbd9278c5d33269b3a6303f29a1fd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ID = CLDefault&gt; </div>
-<div class="memtemplate">
-template&lt;typename CLType , typename InputIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">::cl::Buffer <a class="el" href="classvsmc_1_1_c_l_manager.html">vsmc::CLManager</a>&lt; ID &gt;::create_buffer </td>
-          <td>(</td>
-          <td class="paramtype">InputIter&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIter&#160;</td>
-          <td class="paramname"><em>last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; ::cl::Event &gt; *&#160;</td>
-          <td class="paramname"><em>events</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">::cl::Event *&#160;</td>
-          <td class="paramname"><em>event</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create an OpenCL buffer of a given type from a range of elements. </p>
-
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00219">219</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00206">206</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +459,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>Create a program given the source within the current context. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00463">463</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00448">448</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -547,7 +489,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>Create a program given a vector of sources within the current context. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00468">468</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00453">453</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +543,7 @@ template&lt;typename ID = CLDefault&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00486">486</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00471">471</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -630,7 +572,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>The device currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00161">161</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00162">162</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -659,7 +601,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>The vector of all device that is in the context of this manager. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00164">164</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00165">165</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -688,7 +630,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>Get an instance of the manager singleton. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00135">135</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00136">136</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +660,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 <p>The minimum OpenCL C version supported by all devices in the context of this manager. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b" title="Return the OpenCL version of a device. ">CLQuery::opencl_version</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00152">152</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00153">153</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +690,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 <p>The minimum OpenCL version supported by all devices in the context of this manager. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b" title="Return the OpenCL version of a device. ">CLQuery::opencl_version</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00146">146</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00147">147</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -777,7 +719,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>The platform currently being used. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00155">155</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00156">156</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -849,7 +791,7 @@ template&lt;typename Func &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on StopWatch to work correctly. </dd></dl>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00404">404</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00389">389</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +841,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00458">458</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00443">443</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -971,7 +913,7 @@ template&lt;typename CLType , typename OutputIter &gt; </div>
 
 <p>Read an OpenCL buffer of a given type and number of elements into an iterator. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00242">242</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00221">221</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +985,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Read an OpenCL buffer of a given type and number of elements into a pointer. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00260">260</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00240">240</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1051,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 <p>OpenCL requires that <code>global_size</code> is a multiple of <code>local_size</code>. This function will round <code>N</code> if it is not already a multiple of <code>local_size</code>. In the kernel it is important to check that <code>get_global_id(0)</code> is not out of range.</p>
 <p>For example, say we have kernel that should be applied to <code>N</code> elements. But the most efficient local size <code>K</code> does not divide <code>N</code>. Instead of calculate the correct global size yourself, you can simple call <code>run_kernel(kern, N, K)</code>. But within the kernel, you need to check <code>get_global_id(0) &lt; N</code> </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00363">363</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00348">348</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1080,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>Whether the platform, context, device and command queue has been setup correctly. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00171">171</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00172">172</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1110,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 
 <p>Try to setup the platform, context, device and command queue using the given device type. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00175">175</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00176">176</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1163,7 @@ template&lt;typename ID = CLDefault&gt; </div>
 <p>Set the platform, context, device and command queue manually. </p>
 <p>After this member function call <a class="el" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4" title="Whether the platform, context, device and command queue has been setup correctly. ...">setup()</a> will return <code>true</code> in future calls </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00188">188</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00189">189</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1235,7 @@ template&lt;typename CLType , typename InputIter &gt; </div>
 
 <p>Write an OpenCL buffer of a given type and number of elements from an iterator. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00276">276</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00257">257</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1365,7 +1307,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Write an OpenCL buffer of a given type and number of elements from a pointer. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00299">299</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00281">281</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1379,7 @@ template&lt;typename CLType &gt; </div>
 
 <p>Write an OpenCL buffer of a given type and number of elements from a pointer. </p>
 
-<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00315">315</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__manager_8hpp_source.html#l00298">298</a> of file <a class="el" href="cl__manager_8hpp_source.html">cl_manager.hpp</a>.</p>
 
 </div>
 </div>

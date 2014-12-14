@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['wrapper',['Wrapper',['../group___r_n_g_wrapper.html',1,'']]],
   ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup']]],
   ['watch_5ftype',['watch_type',['../classvsmc_1_1_stop_watch_guard.html#aae8e266dc2d01dcd2d2f68dcc0ddb77b',1,'vsmc::StopWatchGuard']]],
   ['ways',['ways',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ab28750e8a0c857c232c0d1af040ea6b8',1,'vsmc::CPUID::cache_param_type']]],
@@ -10,7 +9,7 @@ var searchData=
   ['weight_5fdata',['weight_data',['../classvsmc_1_1_weight_set.html#a0b0bc5834680da50fb27f41230cf6bc7',1,'vsmc::WeightSet']]],
   ['weight_5fset',['weight_set',['../classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b',1,'vsmc::Particle::weight_set()'],['../classvsmc_1_1_particle.html#aa9ee51b66a2e46574c44a9097779a775',1,'vsmc::Particle::weight_set() const ']]],
   ['weight_5fset_2ehpp',['weight_set.hpp',['../weight__set_8hpp.html',1,'']]],
-  ['weight_5fset_5ftype',['weight_set_type',['../classvsmc_1_1_particle.html#ab5f1434fdc7a86dc77c151cf433b1893',1,'vsmc::Particle::weight_set_type()'],['../singletonvsmc_1_1_state_m_p_i.html#af70cb06240aee1620944bc4d5c229331',1,'vsmc::StateMPI::weight_set_type()']]],
+  ['weight_5fset_5ftype',['weight_set_type',['../classvsmc_1_1_particle.html#ab5f1434fdc7a86dc77c151cf433b1893',1,'vsmc::Particle::weight_set_type()'],['../singletonvsmc_1_1_state_m_p_i.html#a261b688c5b9279f3c69e4055b2238588',1,'vsmc::StateMPI::weight_set_type()']]],
   ['weightset',['WeightSet',['../classvsmc_1_1_weight_set.html',1,'vsmc']]],
   ['weightset',['WeightSet',['../classvsmc_1_1_weight_set.html#a8b746cc44090b0b111f420bc1fdb27ae',1,'vsmc::WeightSet::WeightSet(size_type N)'],['../classvsmc_1_1_weight_set.html#a5e0907198f1cc32bc4b53bcd82e8730e',1,'vsmc::WeightSet::WeightSet(const WeightSet &amp;)=default'],['../classvsmc_1_1_weight_set.html#a9f7ac8f287d8872481f24dd38e1e1d90',1,'vsmc::WeightSet::WeightSet(WeightSet &amp;&amp;)=default']]],
   ['weightsetbase',['WeightSetBase',['../class_weight_set_base.html',1,'']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrapper',['Wrapper',['../group___r_n_g_wrapper.html',1,'']]]
+  ['xorshift',['Xorshift',['../group___xorshift.html',1,'']]]
 ];

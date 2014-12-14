@@ -129,6 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3de02c4844773f4e67493e034331badc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a3cc3cb1798ee8a0087eaa899cbf5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#a71a3cc3cb1798ee8a0087eaa899cbf5c">operator()</a> (const ::cl::Buffer &amp;copy_from, const ::cl::Buffer &amp;state)</td></tr>
 <tr class="separator:a71a3cc3cb1798ee8a0087eaa899cbf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b75d6f3daf1485c9de9629428ba3a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#a80b75d6f3daf1485c9de9629428ba3a5">operator()</a> (const ::cl::Buffer &amp;idx, const ::cl::Buffer &amp;tmp, const ::cl::Buffer &amp;state)</td></tr>
+<tr class="separator:a80b75d6f3daf1485c9de9629428ba3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ceaf244ed861769dad89c577573a71"><td class="memItemLeft" align="right" valign="top">::cl::Program &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#af8ceaf244ed861769dad89c577573a71">program</a> ()</td></tr>
 <tr class="separator:af8ceaf244ed861769dad89c577573a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d9b0eabf81a4fae3809d90188c6831"><td class="memItemLeft" align="right" valign="top">const ::cl::Program &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#a17d9b0eabf81a4fae3809d90188c6831">program</a> () const </td></tr>
@@ -227,7 +229,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00060">60</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00067">67</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +256,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00091">91</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00109">109</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +283,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00092">92</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00110">110</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +310,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00088">88</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00106">106</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +337,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00089">89</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00107">107</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>
@@ -404,6 +406,50 @@ template&lt;typename ID&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a80b75d6f3daf1485c9de9629428ba3a5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ID&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html">vsmc::internal::CLCopy</a>&lt; ID &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Buffer &amp;&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ::cl::Buffer &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ::cl::Buffer &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00060">60</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af8ceaf244ed861769dad89c577573a71"></a>
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +473,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00085">85</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00103">103</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>
@@ -454,7 +500,7 @@ template&lt;typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00086">86</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__copy_8hpp_source.html#l00104">104</a> of file <a class="el" href="cl__copy_8hpp_source.html">cl_copy.hpp</a>.</p>
 
 </div>
 </div>

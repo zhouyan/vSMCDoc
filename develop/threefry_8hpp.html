@@ -258,6 +258,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga6155c6bae0f48f2844765845116a7568"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r123_r_n_g.html#ga6155c6bae0f48f2844765845116a7568">vsmc::Threefry</a></td></tr>
+<tr class="memdesc:ga6155c6bae0f48f2844765845116a7568"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 32-bits Threefry engine.  <a href="group___r123_r_n_g.html#ga6155c6bae0f48f2844765845116a7568">More...</a><br /></td></tr>
+<tr class="separator:ga6155c6bae0f48f2844765845116a7568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47e1608699f098917181dbd97d5b8807"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngine<br class="typebreak" />
 &lt; uint32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r123_r_n_g.html#ga47e1608699f098917181dbd97d5b8807">vsmc::Threefry2x32</a></td></tr>
 <tr class="memdesc:ga47e1608699f098917181dbd97d5b8807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x32 RNG engine reimplemented.  <a href="group___r123_r_n_g.html#ga47e1608699f098917181dbd97d5b8807">More...</a><br /></td></tr>
@@ -274,6 +277,9 @@ Typedefs</h2></td></tr>
 &lt; uint64_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r123_r_n_g.html#ga315d591ca2d69941c6d7569d57817831">vsmc::Threefry4x64</a></td></tr>
 <tr class="memdesc:ga315d591ca2d69941c6d7569d57817831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x64 RNG engine reimplemented.  <a href="group___r123_r_n_g.html#ga315d591ca2d69941c6d7569d57817831">More...</a><br /></td></tr>
 <tr class="separator:ga315d591ca2d69941c6d7569d57817831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7784db47d8e9da0920bfc484bfa34ccf"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r123_r_n_g.html#ga7784db47d8e9da0920bfc484bfa34ccf">vsmc::Threefry_64</a></td></tr>
+<tr class="memdesc:ga7784db47d8e9da0920bfc484bfa34ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits Threefry engine.  <a href="group___r123_r_n_g.html#ga7784db47d8e9da0920bfc484bfa34ccf">More...</a><br /></td></tr>
+<tr class="separator:ga7784db47d8e9da0920bfc484bfa34ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a991706107309d40a0896e4db63ba9b90"></a>
@@ -359,7 +365,7 @@ Typedefs</h2></td></tr>
 <div class="line">            (cxx11::is_same&lt;ResultType, uint32_t&gt;::value ||                  \</div>
 <div class="line">             cxx11::is_same&lt;ResultType, uint64_t&gt;::value),                   \</div>
 <div class="line">            USE_ThreefryEngine_WITH_INTEGER_TYPE_OTHER_THAN_uint32_t_OR_uint64_t)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00037">37</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
@@ -380,7 +386,7 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((K == 2 || K == 4),                                   \</div>
 <div class="line">            USE_ThreefryEngine_WITH_SIZE_OTHER_THAN_2_OR_4)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00045">assert.hpp:45</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00043">43</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 

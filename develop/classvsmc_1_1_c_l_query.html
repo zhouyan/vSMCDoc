@@ -111,6 +111,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af603ba7475054597e7bff49d8727f36b"><td class="memTemplParams" colspan="2">template&lt;::cl_device_type DevType&gt; </td></tr>
+<tr class="memitem:af603ba7475054597e7bff49d8727f36b"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#af603ba7475054597e7bff49d8727f36b">has_device</a> (const ::cl::Platform &amp;plat)</td></tr>
+<tr class="memdesc:af603ba7475054597e7bff49d8727f36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a device type exists in a platform.  <a href="#af603ba7475054597e7bff49d8727f36b">More...</a><br /></td></tr>
+<tr class="separator:af603ba7475054597e7bff49d8727f36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e751eaa596bb0fe7e8e02e9e299f1f"><td class="memTemplParams" colspan="2">template&lt;::cl_device_type DevType&gt; </td></tr>
+<tr class="memitem:a09e751eaa596bb0fe7e8e02e9e299f1f"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a09e751eaa596bb0fe7e8e02e9e299f1f">has_device</a> ()</td></tr>
+<tr class="memdesc:a09e751eaa596bb0fe7e8e02e9e299f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a device type exists in any platform.  <a href="#a09e751eaa596bb0fe7e8e02e9e299f1f">More...</a><br /></td></tr>
+<tr class="separator:a09e751eaa596bb0fe7e8e02e9e299f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740844b58ee1507d2fda0a4fda6c3989"><td class="memTemplParams" colspan="2">template&lt;OpenCLDeviceFeature feat&gt; </td></tr>
 <tr class="memitem:a740844b58ee1507d2fda0a4fda6c3989"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_query.html#a740844b58ee1507d2fda0a4fda6c3989">has_feature</a> (const ::cl::Device &amp;dev)</td></tr>
 <tr class="memdesc:a740844b58ee1507d2fda0a4fda6c3989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a device feature exists.  <a href="#a740844b58ee1507d2fda0a4fda6c3989">More...</a><br /></td></tr>
@@ -182,6 +190,65 @@ std::string &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a
 
 <p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00050">50</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af603ba7475054597e7bff49d8727f36b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;::cl_device_type DevType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool vsmc::CLQuery::has_device </td>
+          <td>(</td>
+          <td class="paramtype">const ::cl::Platform &amp;&#160;</td>
+          <td class="paramname"><em>plat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a device type exists in a platform. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00095">95</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09e751eaa596bb0fe7e8e02e9e299f1f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;::cl_device_type DevType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool vsmc::CLQuery::has_device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a device type exists in any platform. </p>
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00111">111</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a740844b58ee1507d2fda0a4fda6c3989"></a>
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +305,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query all information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00184">184</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00213">213</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +345,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query platform information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00202">202</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00230">230</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +385,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query device information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00231">231</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00258">258</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +425,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query context information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00267">267</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00294">294</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +465,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query program informaiton. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00284">284</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00310">310</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -438,7 +505,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query kernel information. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00300">300</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00326">326</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -484,7 +551,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Query kernel information given a program the name of kernel and a program. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00341">341</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00366">366</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +644,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Program binary vector. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00094">94</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00123">123</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +672,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Program build log and status. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00142">142</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00171">171</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +712,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Print program build log and status. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00160">160</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00189">189</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +740,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Program device vector. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00119">119</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00148">148</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -701,7 +768,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Program source. </p>
 
-<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00132">132</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00161">161</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>

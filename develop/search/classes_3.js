@@ -3,6 +3,8 @@ var searchData=
   ['decay',['decay',['../structvsmc_1_1cxx11_1_1decay.html',1,'vsmc::cxx11']]],
   ['dimtrait',['DimTrait',['../structvsmc_1_1traits_1_1_dim_trait.html',1,'vsmc::traits']]],
   ['dimtrait_3c_20dynamic_20_3e',['DimTrait&lt; Dynamic &gt;',['../structvsmc_1_1traits_1_1_dim_trait_3_01_dynamic_01_4.html',1,'vsmc::traits']]],
+  ['discretedistribution',['DiscreteDistribution',['../classvsmc_1_1_discrete_distribution.html',1,'vsmc']]],
+  ['discretedistribution_3c_20size_5ftype_20_3e',['DiscreteDistribution&lt; size_type &gt;',['../classvsmc_1_1_discrete_distribution.html',1,'vsmc']]],
   ['dispatchfunction',['DispatchFunction',['../classvsmc_1_1_dispatch_function.html',1,'vsmc']]],
   ['dispatchgroup',['DispatchGroup',['../classvsmc_1_1_dispatch_group.html',1,'vsmc']]],
   ['dispatchobject',['DispatchObject',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],

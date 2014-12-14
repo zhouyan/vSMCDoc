@@ -18,7 +18,7 @@ var indexSectionsWithContent =
   8: "acdgmorsv",
   9: "o",
   10: "_gnuv",
-  11: "acdeghimoprstuvwx",
+  11: "acdeghimoprstuvx",
   12: "bgnptuv"
 };
 

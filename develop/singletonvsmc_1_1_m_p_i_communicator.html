@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_m_p_i_communicator.html">MPICommunicator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html">MPICommunicator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -106,20 +106,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p>MPI Communicator.  
- <a href="classvsmc_1_1_m_p_i_communicator.html#details">More...</a></p>
+ <a href="singletonvsmc_1_1_m_p_i_communicator.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mpi__manager_8hpp_source.html">vsmc/mpi/mpi_manager.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="forward_8hpp_source.html">vsmc/internal/forward.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c4c1c47eb5396280d8c148cb47e3476"><td class="memItemLeft" align="right" valign="top">const MPI_Comm &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_p_i_communicator.html#a0c4c1c47eb5396280d8c148cb47e3476">get</a> () const </td></tr>
+<tr class="memitem:a0c4c1c47eb5396280d8c148cb47e3476"><td class="memItemLeft" align="right" valign="top">const MPI_Comm &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html#a0c4c1c47eb5396280d8c148cb47e3476">get</a> () const </td></tr>
 <tr class="separator:a0c4c1c47eb5396280d8c148cb47e3476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a5a9d8977a0e6d81b7cb33284b89ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_p_i_communicator.html#a1a5a9d8977a0e6d81b7cb33284b89ae6">set</a> (const MPI_Comm &amp;comm)</td></tr>
+<tr class="memitem:a1a5a9d8977a0e6d81b7cb33284b89ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html#a1a5a9d8977a0e6d81b7cb33284b89ae6">set</a> (const MPI_Comm &amp;comm)</td></tr>
 <tr class="separator:a1a5a9d8977a0e6d81b7cb33284b89ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae150cd9fc9c58b2de472e5db63ba7538"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvsmc_1_1_m_p_i_communicator.html">MPICommunicator</a>&lt; ID &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_p_i_communicator.html#ae150cd9fc9c58b2de472e5db63ba7538">instance</a> ()</td></tr>
+<tr class="memitem:ae150cd9fc9c58b2de472e5db63ba7538"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html">MPICommunicator</a>&lt; ID &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html#ae150cd9fc9c58b2de472e5db63ba7538">instance</a> ()</td></tr>
 <tr class="separator:ae150cd9fc9c58b2de472e5db63ba7538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -129,19 +129,19 @@ class vsmc::MPICommunicator&lt; ID &gt;</h3>
 <p>MPI Communicator. </p>
 <p>Use specialization of the singleton to configure different <a class="el" href="singletonvsmc_1_1_state_m_p_i.html" title="Particle::value_type subtype using MPI. ">StateMPI</a> </p>
 
-<p>Definition at line <a class="el" href="mpi__manager_8hpp_source.html#l00094">94</a> of file <a class="el" href="mpi__manager_8hpp_source.html">mpi_manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="forward_8hpp_source.html#l00070">70</a> of file <a class="el" href="forward_8hpp_source.html">forward.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0c4c1c47eb5396280d8c148cb47e3476"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const MPI_Comm&amp; <a class="el" href="classvsmc_1_1_m_p_i_communicator.html">vsmc::MPICommunicator</a>&lt; ID &gt;::get </td>
+          <td class="memname">const MPI_Comm&amp; <a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html">vsmc::MPICommunicator</a>&lt; ID &gt;::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -162,13 +162,13 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classvsmc_1_1_m_p_i_communicator.html">MPICommunicator</a>&lt;ID&gt;&amp; <a class="el" href="classvsmc_1_1_m_p_i_communicator.html">vsmc::MPICommunicator</a>&lt; ID &gt;::instance </td>
+          <td class="memname">static <a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html">MPICommunicator</a>&lt;ID&gt;&amp; <a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html">vsmc::MPICommunicator</a>&lt; ID &gt;::instance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -189,13 +189,13 @@ template&lt;typename ID&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ID&gt; </div>
+template&lt;typename ID &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_m_p_i_communicator.html">vsmc::MPICommunicator</a>&lt; ID &gt;::set </td>
+          <td class="memname">void <a class="el" href="singletonvsmc_1_1_m_p_i_communicator.html">vsmc::MPICommunicator</a>&lt; ID &gt;::set </td>
           <td>(</td>
           <td class="paramtype">const MPI_Comm &amp;&#160;</td>
           <td class="paramname"><em>comm</em></td><td>)</td>

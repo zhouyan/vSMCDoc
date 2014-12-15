@@ -4,8 +4,12 @@ var searchData=
   ['r',['r',['../structvsmc_1_1internal_1_1_xorshift_index.html#a14e0b253b182e7fadb0c764390bf092a',1,'vsmc::internal::XorshiftIndex::r()'],['../structvsmc_1_1internal_1_1_xorshift_index_3_01_result_type_00_01_k_00_01_r_00_01_s_00_01false_01_4.html#a81e4855bb9094f34c9f2d64c8710cfd2',1,'vsmc::internal::XorshiftIndex&lt; ResultType, K, R, S, false &gt;::r()']]],
   ['random123',['Random123',['../group___r123_r_n_g.html',1,'']]],
   ['random_2ehpp',['random.hpp',['../random_8hpp.html',1,'']]],
-  ['rank',['rank',['../structvsmc_1_1cxx11_1_1rank.html',1,'vsmc::cxx11']]],
+  ['rangetypeconstiteratordispatch',['RangeTypeConstIteratorDispatch',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratordispatch_3c_20t_2c_20false_20_3e',['RangeTypeConstIteratorDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratordispatch_3c_20t_2c_20true_20_3e',['RangeTypeConstIteratorDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratortrait',['RangeTypeConstIteratorTrait',['../structvsmc_1_1traits_1_1_range_type_const_iterator_trait.html',1,'vsmc::traits']]],
   ['rank',['rank',['../singletonvsmc_1_1_state_m_p_i.html#aaf6cd38da9c2ae9f6289d5e72b094456',1,'vsmc::StateMPI']]],
+  ['rank',['rank',['../structvsmc_1_1cxx11_1_1rank.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5b_5d_3e',['rank&lt; T[]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[]_4.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5bn_5d_3e',['rank&lt; T[N]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[_n]_4.html',1,'vsmc::cxx11']]],
   ['rbegin',['rbegin',['../classvsmc_1_1_array.html#a45647c4a0d1aa8c061275e5ceee553ac',1,'vsmc::Array::rbegin()'],['../classvsmc_1_1_array.html#a2caea9ce151ac19c682f5c2e25e99f89',1,'vsmc::Array::rbegin() const ']]],
@@ -151,7 +155,7 @@ var searchData=
   ['rng_5fset_5ftype',['rng_set_type',['../classvsmc_1_1_particle.html#a59ece1c707747e2ed75b976040fe0a92',1,'vsmc::Particle']]],
   ['rng_5ftype',['rng_type',['../classvsmc_1_1_particle.html#a7683654beddf8bd0ff235531f30201a3',1,'vsmc::Particle::rng_type()'],['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_scalar_01_4.html#acf254057e7fe350bd5e29bd784492b63',1,'vsmc::RngSet&lt; RngType, Scalar &gt;::rng_type()'],['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_vector_01_4.html#ac4da63d7f160e5b311008193141e28e7',1,'vsmc::RngSet&lt; RngType, Vector &gt;::rng_type()']]],
   ['rngset',['RngSet',['../singletonvsmc_1_1_rng_set.html',1,'vsmc']]],
-  ['rngset',['RngSet',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_scalar_01_4.html#afd4be5baa25264737dc07f70c0401866',1,'vsmc::RngSet&lt; RngType, Scalar &gt;::RngSet()'],['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_vector_01_4.html#ae2f24cae2dcc1cdf112363cc84604ce6',1,'vsmc::RngSet&lt; RngType, Vector &gt;::RngSet()']]],
+  ['rngset',['RngSet',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_scalar_01_4.html#a38e644e6fad1e4c92c76cf6fbfa5690c',1,'vsmc::RngSet&lt; RngType, Scalar &gt;::RngSet()'],['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_vector_01_4.html#ad1e62973fe2c1a78029af2c54a4f711e',1,'vsmc::RngSet&lt; RngType, Vector &gt;::RngSet()']]],
   ['rngset_3c_20rngtype_2c_20scalar_20_3e',['RngSet&lt; RngType, Scalar &gt;',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_scalar_01_4.html',1,'vsmc']]],
   ['rngset_3c_20rngtype_2c_20vector_20_3e',['RngSet&lt; RngType, Vector &gt;',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_vector_01_4.html',1,'vsmc']]],
   ['rngsettypedispatch',['RngSetTypeDispatch',['../structvsmc_1_1traits_1_1internal_1_1_rng_set_type_dispatch.html',1,'vsmc::traits::internal']]],
@@ -166,6 +170,6 @@ var searchData=
   ['running',['running',['../classvsmc_1_1_r_d_t_s_c_counter.html#a53a0610e6269fe310215e3a2aa96560e',1,'vsmc::RDTSCCounter::running()'],['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3',1,'vsmc::RDTSCPCounter::running()'],['../classvsmc_1_1_stop_watch_null.html#a3b2145c1bb49217d56a68a06a00500d7',1,'vsmc::StopWatchNull::running()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a31a390b2911ffe44d1235bf9f36358b7',1,'vsmc::StopWatchClockAdapter::running()'],['../classvsmc_1_1_stop_watch_s_y_s.html#a1512fcc3336dc4940c59129131eb137a',1,'vsmc::StopWatchSYS::running()']]],
   ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html',1,'vsmc']]],
   ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html#a30dabba522188460629f19adc39afd5f',1,'vsmc::RuntimeAssert::RuntimeAssert(const char *msg)'],['../classvsmc_1_1_runtime_assert.html#a3acf3d5afa14f3a1dcc8471975a301e1',1,'vsmc::RuntimeAssert::RuntimeAssert(const std::string &amp;msg)']]],
-  ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html#a8d8eefc2a70cc18dbc236f8736a0e61e',1,'vsmc::RuntimeWarning::RuntimeWarning(const char *msg)'],['../classvsmc_1_1_runtime_warning.html#afadce67da859cc7d2e65499777a0800d',1,'vsmc::RuntimeWarning::RuntimeWarning(const std::string &amp;msg)']]],
-  ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html',1,'vsmc']]]
+  ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html',1,'vsmc']]],
+  ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html#a8d8eefc2a70cc18dbc236f8736a0e61e',1,'vsmc::RuntimeWarning::RuntimeWarning(const char *msg)'],['../classvsmc_1_1_runtime_warning.html#afadce67da859cc7d2e65499777a0800d',1,'vsmc::RuntimeWarning::RuntimeWarning(const std::string &amp;msg)']]]
 ];

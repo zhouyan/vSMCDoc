@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['rangetypeconstiteratordispatch',['RangeTypeConstIteratorDispatch',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratordispatch_3c_20t_2c_20false_20_3e',['RangeTypeConstIteratorDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratordispatch_3c_20t_2c_20true_20_3e',['RangeTypeConstIteratorDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratortrait',['RangeTypeConstIteratorTrait',['../structvsmc_1_1traits_1_1_range_type_const_iterator_trait.html',1,'vsmc::traits']]],
   ['rank',['rank',['../structvsmc_1_1cxx11_1_1rank.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5b_5d_3e',['rank&lt; T[]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[]_4.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5bn_5d_3e',['rank&lt; T[N]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[_n]_4.html',1,'vsmc::cxx11']]],

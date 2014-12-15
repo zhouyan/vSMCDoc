@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['join',['join',['../structvsmc_1_1_initialize_t_b_b_1_1parallel__work.html#a4cd49b1290ddfb697510a2e83d1f7c90',1,'vsmc::InitializeTBB::parallel_work::join()'],['../structvsmc_1_1_move_t_b_b_1_1parallel__work.html#a66d7b7231520ea6b4880e62a3e571ee1',1,'vsmc::MoveTBB::parallel_work::join()']]]
+  ['join',['join',['../classvsmc_1_1internal_1_1_parallel_initialize_state.html#a99732b2e2c471514bf98978afa45e565',1,'vsmc::internal::ParallelInitializeState::join()'],['../classvsmc_1_1internal_1_1_parallel_move_state.html#abb286eb28c1c52312aff295915f7ecef',1,'vsmc::internal::ParallelMoveState::join()']]]
 ];

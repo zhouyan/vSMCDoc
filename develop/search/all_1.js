@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a',['a',['../structvsmc_1_1cxx11_1_1internal_1_1tp__test__false.html#afcef312e35bc397b5e038095510307b5',1,'vsmc::cxx11::internal::tp_test_false::a()'],['../structvsmc_1_1_uniform_real_distribution_1_1param__type.html#a2642eb96651d3fb05f8984da596a581b',1,'vsmc::UniformRealDistribution::param_type::a()'],['../classvsmc_1_1_uniform_real_distribution.html#a4a7c1aa95492dabde2f7a8fcbee0354a',1,'vsmc::UniformRealDistribution::a()']]],
-  ['accept',['accept',['../structvsmc_1_1_initialize_t_b_b_1_1parallel__work.html#ac0f5b427141c7590b99bc3aaae51949b',1,'vsmc::InitializeTBB::parallel_work::accept()'],['../structvsmc_1_1_move_t_b_b_1_1parallel__work.html#ae3ef08311ee9b4ef3889852f10f92d7a',1,'vsmc::MoveTBB::parallel_work::accept()']]],
+  ['accept',['accept',['../classvsmc_1_1internal_1_1_parallel_initialize_state.html#ad64e9aa2aa06b0c508189da394fcd395',1,'vsmc::internal::ParallelInitializeState::accept()'],['../classvsmc_1_1internal_1_1_parallel_move_state.html#a44017e7b8a0797e0ffa0a70195b01295',1,'vsmc::internal::ParallelMoveState::accept()']]],
   ['accept_5fcount',['accept_count',['../classvsmc_1_1_initialize_c_l.html#adfd53c052313843200a3e49aa26df26f',1,'vsmc::InitializeCL::accept_count()'],['../classvsmc_1_1_move_c_l.html#a1e0c0eaebcd65ddde922a1574f88c412',1,'vsmc::MoveCL::accept_count()']]],
   ['accept_5fhistory',['accept_history',['../classvsmc_1_1_sampler.html#ab8bfa29ed42ebb01a5389613d965ab3e',1,'vsmc::Sampler']]],
   ['adapter',['Adapter',['../group___adapter.html',1,'']]],

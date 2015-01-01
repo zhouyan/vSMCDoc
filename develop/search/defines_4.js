@@ -137,6 +137,7 @@ var searchData=
   ['vsmc_5fruntime_5fassert_5fopencl_5fbackend_5fcl_5fstate_5fsize',['VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_STATE_SIZE',['../backend__cl_8hpp.html#a87f89b56c80ec9f0a6b793b69b3bb00e',1,'backend_cl.hpp']]],
   ['vsmc_5fruntime_5fassert_5fopencl_5fbackend_5fcl_5funpack_5fsize',['VSMC_RUNTIME_ASSERT_OPENCL_BACKEND_CL_UNPACK_SIZE',['../backend__cl_8hpp.html#a45a9420a809b76155fbcb2e0069906a4',1,'backend_cl.hpp']]],
   ['vsmc_5fruntime_5fassert_5fopencl_5fcl_5fmanager_5fsetup',['VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP',['../cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8',1,'cl_manager.hpp']]],
+  ['vsmc_5fruntime_5fassert_5frng_5fdiscrete_5fdistribution_5fpositive',['VSMC_RUNTIME_ASSERT_RNG_DISCRETE_DISTRIBUTION_POSITIVE',['../discrete__distribution_8hpp.html#aa025da39072de5c27c422d39a0c4e695',1,'discrete_distribution.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fmkl_5fvsl_5foffset',['VSMC_RUNTIME_ASSERT_RNG_MKL_VSL_OFFSET',['../mkl_8hpp.html#a16db6ae8b5401bdb7d88f5872148bf73',1,'mkl.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fseed_5fgenerator_5fmodulo',['VSMC_RUNTIME_ASSERT_RNG_SEED_GENERATOR_MODULO',['../seed_8hpp.html#ae981a55df42bc81f71d1c38fc382c571',1,'seed.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fseed_5fmax',['VSMC_RUNTIME_ASSERT_RNG_SEED_MAX',['../seed_8hpp.html#a56f2693ca07a246797032669208efa9d',1,'seed.hpp']]],

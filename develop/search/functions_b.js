@@ -75,7 +75,7 @@ var searchData=
   ['ln_5fpi_5fby6_3c_20double_20_3e',['ln_pi_by6&lt; double &gt;',['../namespacevsmc_1_1math.html#ab5212a9a6d244a10340f99d42e85bd22',1,'vsmc::math']]],
   ['ln_5fpi_5fby6_3c_20float_20_3e',['ln_pi_by6&lt; float &gt;',['../namespacevsmc_1_1math.html#a6bdd9990c1c3e765a30228f82f73efc8',1,'vsmc::math']]],
   ['ln_5fpi_5fby6_3c_20long_20double_20_3e',['ln_pi_by6&lt; long double &gt;',['../namespacevsmc_1_1math.html#a618c42648c1f7d466adbc140586f9d23',1,'vsmc::math']]],
-  ['local_5fid',['local_id',['../singletonvsmc_1_1_state_m_p_i.html#a3fde99d4f39e721fb89398d6328b7f5e',1,'vsmc::StateMPI']]],
+  ['local_5fid',['local_id',['../classvsmc_1_1_state_m_p_i.html#a3fde99d4f39e721fb89398d6328b7f5e',1,'vsmc::StateMPI']]],
   ['local_5fsize',['local_size',['../classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a',1,'vsmc::CLConfigure::local_size() const '],['../classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36',1,'vsmc::CLConfigure::local_size(std::size_t new_size)'],['../classvsmc_1_1_c_l_configure.html#a58197fa082d1f62856a1c4f6ed5e0ca4',1,'vsmc::CLConfigure::local_size(std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev)']]],
   ['location',['location',['../structvsmc_1_1_stable_distribution_1_1param__type.html#a6e64df591365d886184bb43a21b64ec2',1,'vsmc::StableDistribution::param_type::location()'],['../classvsmc_1_1_stable_distribution.html#a8310a19d0e2dd480829e75a7c1701aa5',1,'vsmc::StableDistribution::location()']]],
   ['log_5fweight',['log_weight',['../classvsmc_1_1_weight_set.html#af2bd74f8c3e73f6f1df5cae0017ec824',1,'vsmc::WeightSet::log_weight()'],['../classvsmc_1_1_weight_set_null.html#ad9760835d64aeacbe40315b4b0c8676b',1,'vsmc::WeightSetNull::log_weight()']]],

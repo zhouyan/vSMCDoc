@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['sampler_2ehpp',['sampler.hpp',['../sampler_8hpp.html',1,'']]],
-  ['seed_2ehpp',['seed.hpp',['../seed_8hpp.html',1,'']]],
-  ['single_5fparticle_2ehpp',['single_particle.hpp',['../single__particle_8hpp.html',1,'']]],
-  ['stable_5fdistribution_2ehpp',['stable_distribution.hpp',['../stable__distribution_8hpp.html',1,'']]],
-  ['state_5fmatrix_2ehpp',['state_matrix.hpp',['../state__matrix_8hpp.html',1,'']]],
-  ['state_5ftuple_2ehpp',['state_tuple.hpp',['../state__tuple_8hpp.html',1,'']]],
-  ['stop_5fwatch_2ehpp',['stop_watch.hpp',['../stop__watch_8hpp.html',1,'']]],
-  ['stratified_2ehpp',['stratified.hpp',['../stratified_8hpp.html',1,'']]],
-  ['systematic_2ehpp',['systematic.hpp',['../systematic_8hpp.html',1,'']]]
+  ['random_2ehpp',['random.hpp',['../random_8hpp.html',1,'']]],
+  ['rdrand_2ehpp',['rdrand.hpp',['../rdrand_8hpp.html',1,'']]],
+  ['rdtsc_2ehpp',['rdtsc.hpp',['../rdtsc_8hpp.html',1,'']]],
+  ['resample_2ehpp',['resample.hpp',['../resample_8hpp.html',1,'']]],
+  ['residual_2ehpp',['residual.hpp',['../residual_8hpp.html',1,'']]],
+  ['residual_5fstratified_2ehpp',['residual_stratified.hpp',['../residual__stratified_8hpp.html',1,'']]],
+  ['residual_5fsystematic_2ehpp',['residual_systematic.hpp',['../residual__systematic_8hpp.html',1,'']]],
+  ['rng_2ehpp',['rng.hpp',['../rng_8hpp.html',1,'']]],
+  ['rng_5fset_2ehpp',['rng_set.hpp',['../rng__set_8hpp.html',1,'']]]
 ];

@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['rangetypeconstiteratordispatch',['RangeTypeConstIteratorDispatch',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratordispatch_3c_20t_2c_20false_20_3e',['RangeTypeConstIteratorDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratordispatch_3c_20t_2c_20true_20_3e',['RangeTypeConstIteratorDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
+  ['rangetypeconstiteratortrait',['RangeTypeConstIteratorTrait',['../structvsmc_1_1traits_1_1_range_type_const_iterator_trait.html',1,'vsmc::traits']]],
   ['rank',['rank',['../structvsmc_1_1cxx11_1_1rank.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5b_5d_3e',['rank&lt; T[]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[]_4.html',1,'vsmc::cxx11']]],
   ['rank_3c_20t_5bn_5d_3e',['rank&lt; T[N]&gt;',['../structvsmc_1_1cxx11_1_1rank_3_01_t[_n]_4.html',1,'vsmc::cxx11']]],
@@ -26,7 +30,7 @@ var searchData=
   ['remove_5freference_3c_20t_20_26_26_20_3e',['remove_reference&lt; T &amp;&amp; &gt;',['../structvsmc_1_1cxx11_1_1remove__reference_3_01_t_01_6_6_01_4.html',1,'vsmc::cxx11']]],
   ['remove_5fvolatile',['remove_volatile',['../structvsmc_1_1cxx11_1_1remove__volatile.html',1,'vsmc::cxx11']]],
   ['remove_5fvolatile_3c_20volatile_20t_20_3e',['remove_volatile&lt; volatile T &gt;',['../structvsmc_1_1cxx11_1_1remove__volatile_3_01volatile_01_t_01_4.html',1,'vsmc::cxx11']]],
-  ['resample',['Resample',['../singletonvsmc_1_1_resample.html',1,'vsmc']]],
+  ['resample',['Resample',['../classvsmc_1_1_resample.html',1,'vsmc']]],
   ['resample_3c_20internal_3a_3aresamplemultinomial_20_3e',['Resample&lt; internal::ResampleMultinomial &gt;',['../classvsmc_1_1_resample_3_01internal_1_1_resample_multinomial_01_4.html',1,'vsmc']]],
   ['resample_3c_20internal_3a_3aresampleresidual_20_3e',['Resample&lt; internal::ResampleResidual &gt;',['../classvsmc_1_1_resample_3_01internal_1_1_resample_residual_01_4.html',1,'vsmc']]],
   ['resample_3c_20internal_3a_3aresampleresidualstratified_20_3e',['Resample&lt; internal::ResampleResidualStratified &gt;',['../classvsmc_1_1_resample_3_01internal_1_1_resample_residual_stratified_01_4.html',1,'vsmc']]],
@@ -53,7 +57,7 @@ var searchData=
   ['resamplerngtypetrait_3c_20s_20_3e',['ResampleRngTypeTrait&lt; S &gt;',['../structvsmc_1_1traits_1_1_resample_rng_type_trait.html',1,'vsmc::traits']]],
   ['resampletype',['ResampleType',['../structvsmc_1_1_resample_type.html',1,'vsmc']]],
   ['result_5fof',['result_of',['../structvsmc_1_1cxx11_1_1result__of.html',1,'vsmc::cxx11']]],
-  ['rngset',['RngSet',['../singletonvsmc_1_1_rng_set.html',1,'vsmc']]],
+  ['rngset',['RngSet',['../classvsmc_1_1_rng_set.html',1,'vsmc']]],
   ['rngset_3c_20rngtype_2c_20scalar_20_3e',['RngSet&lt; RngType, Scalar &gt;',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_scalar_01_4.html',1,'vsmc']]],
   ['rngset_3c_20rngtype_2c_20vector_20_3e',['RngSet&lt; RngType, Vector &gt;',['../classvsmc_1_1_rng_set_3_01_rng_type_00_01_vector_01_4.html',1,'vsmc']]],
   ['rngsettypedispatch',['RngSetTypeDispatch',['../structvsmc_1_1traits_1_1internal_1_1_rng_set_type_dispatch.html',1,'vsmc::traits::internal']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simd',['SIMD',['../group___definitions.html#ga3fa1b131dbc4c9bb42ee36013355758d',1,'vsmc']]]
+  ['resamplescheme',['ResampleScheme',['../group___resample.html#ga1a8752b2b59489e6d5f11794af6d0cc6',1,'vsmc']]]
 ];

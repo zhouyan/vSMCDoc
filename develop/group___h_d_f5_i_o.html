@@ -165,6 +165,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga2e2b568ebe7dc18ca1aae256bfc08901">vsmc::hdf5store</a> (const Sampler&lt; T &gt; &amp;sampler, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
 <tr class="memdesc:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format.  <a href="#ga2e2b568ebe7dc18ca1aae256bfc08901">More...</a><br /></td></tr>
 <tr class="separator:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2963a20d02f2dd343a987f288ece2a76"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga2963a20d02f2dd343a987f288ece2a76"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga2963a20d02f2dd343a987f288ece2a76">vsmc::hdf5store</a> (const Particle&lt; T &gt; &amp;particle, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
+<tr class="memdesc:ga2963a20d02f2dd343a987f288ece2a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> in the HDF5 format.  <a href="#ga2963a20d02f2dd343a987f288ece2a76">More...</a><br /></td></tr>
+<tr class="separator:ga2963a20d02f2dd343a987f288ece2a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0db7ec4d80eba4490752a631e0ceec10"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, typename T , typename U &gt; </td></tr>
+<tr class="memitem:ga0db7ec4d80eba4490752a631e0ceec10"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga0db7ec4d80eba4490752a631e0ceec10">vsmc::hdf5store</a> (const Particle&lt; U &gt; &amp;particle, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
+<tr class="memdesc:ga0db7ec4d80eba4490752a631e0ceec10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> with <a class="el" href="classvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> value type in the HDF5 format.  <a href="#ga0db7ec4d80eba4490752a631e0ceec10">More...</a><br /></td></tr>
+<tr class="separator:ga0db7ec4d80eba4490752a631e0ceec10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacd3af8826a79d35e4d5c49b2216507ca"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, std::size_t Dim, typename T &gt; </td></tr>
 <tr class="memitem:gacd3af8826a79d35e4d5c49b2216507ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gacd3af8826a79d35e4d5c49b2216507ca">vsmc::hdf5store</a> (const StateMatrix&lt; Order, Dim, T &gt; &amp;state, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
 <tr class="memdesc:gacd3af8826a79d35e4d5c49b2216507ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format.  <a href="#gacd3af8826a79d35e4d5c49b2216507ca">More...</a><br /></td></tr>
@@ -628,6 +636,110 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ga2963a20d02f2dd343a987f288ece2a76"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::hdf5store </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>append</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> in the HDF5 format. </p>
+
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00628">628</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0db7ec4d80eba4490752a631e0ceec10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;MatrixOrder Order, typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::hdf5store </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>append</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> with <a class="el" href="classvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> value type in the HDF5 format. </p>
+
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00641">641</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gacd3af8826a79d35e4d5c49b2216507ca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +788,7 @@ template&lt;MatrixOrder Order, std::size_t Dim, typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00628">628</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00655">655</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -728,7 +840,7 @@ template&lt;typename T , typename... Types&gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_tuple.html">StateTuple</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00641">641</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00668">668</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -780,7 +892,7 @@ template&lt;typename T , typename... Types&gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_tuple.html">StateTuple</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00670">670</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00697">697</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -832,7 +944,7 @@ template&lt;MatrixOrder Order, typename T , std::size_t StateSize, typename FPTy
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00693">693</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00720">720</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>

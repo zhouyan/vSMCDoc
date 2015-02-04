@@ -357,7 +357,7 @@ var searchData=
   ['aligned_5funion',['aligned_union',['../structvsmc_1_1cxx11_1_1aligned__union.html',1,'vsmc::cxx11']]],
   ['alignedallocator',['AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html',1,'vsmc']]],
   ['alignedallocator',['AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html#ae4760a4bcaa4f5bd8c637eaad581c823',1,'vsmc::AlignedAllocator::AlignedAllocator()'],['../classvsmc_1_1_aligned_allocator.html#a941a325f5d9c9e402d1141f3406a3515',1,'vsmc::AlignedAllocator::AlignedAllocator(const AlignedAllocator&lt; T, Alignment &gt; &amp;other)'],['../classvsmc_1_1_aligned_allocator.html#a3ca300b8406d892488435efadb06411c',1,'vsmc::AlignedAllocator::AlignedAllocator(const AlignedAllocator&lt; U, Alignment &gt; &amp;other)']]],
-  ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#ga72b7a91952394345e2efd197d6b3ba24',1,'vsmc']]],
+  ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#gadd7d2892e0c4a50d1106ffa4bf45faf3',1,'vsmc']]],
   ['alignedmemorymkl',['AlignedMemoryMKL',['../classvsmc_1_1_aligned_memory_m_k_l.html',1,'vsmc']]],
   ['alignedmemorystd',['AlignedMemorySTD',['../classvsmc_1_1_aligned_memory_s_t_d.html',1,'vsmc']]],
   ['alignedmemorysys',['AlignedMemorySYS',['../classvsmc_1_1_aligned_memory_s_y_s.html',1,'vsmc']]],

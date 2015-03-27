@@ -142,6 +142,8 @@ var searchData=
   ['vsmc_5fhas_5fcxx14_5fruntime_5fsized_5farrays',['VSMC_HAS_CXX14_RUNTIME_SIZED_ARRAYS',['../compiler_8hpp.html#aea95782248d4a21cc21d875f9872c433',1,'compiler.hpp']]],
   ['vsmc_5fhas_5fcxx14_5fvariable_5ftemplates',['VSMC_HAS_CXX14_VARIABLE_TEMPLATES',['../compiler_8hpp.html#afe53f5492a1614e8eb1e6e6bd4a18a69',1,'compiler.hpp']]],
   ['vsmc_5fhas_5fgsl',['VSMC_HAS_GSL',['../config_8hpp.html#aacc679471edd859ca8e4a9bfea3cfb34',1,'config.hpp']]],
+  ['vsmc_5fhas_5fjemalloc',['VSMC_HAS_JEMALLOC',['../config_8hpp.html#a91166cf9c6bc104352f798171eeab6dc',1,'config.hpp']]],
+  ['vsmc_5fhas_5fjemalloc_5fstdapi',['VSMC_HAS_JEMALLOC_STDAPI',['../config_8hpp.html#ad90636c6a98fbd00a0f74e412a5b4356',1,'config.hpp']]],
   ['vsmc_5fhas_5fposix',['VSMC_HAS_POSIX',['../compiler_8hpp.html#adcabc5ea095e4ecab179277c8a9ff59d',1,'compiler.hpp']]],
   ['vsmc_5fhas_5frdrand',['VSMC_HAS_RDRAND',['../intel_8hpp.html#ab9de6e9b458fd0dfea162f539d1f30fc',1,'intel.hpp']]],
   ['vsmc_5fhas_5fsse2',['VSMC_HAS_SSE2',['../msvc_8hpp.html#aeed385df0494a853155b4bc14a217747',1,'VSMC_HAS_SSE2():&#160;msvc.hpp'],['../compiler_8hpp.html#aeed385df0494a853155b4bc14a217747',1,'VSMC_HAS_SSE2():&#160;compiler.hpp']]],

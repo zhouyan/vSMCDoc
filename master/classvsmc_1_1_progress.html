@@ -124,12 +124,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a5eeb3cdc78008ecc780a180d97b30ae2">increment</a> (std::size_t step=1)</td></tr>
 <tr class="memdesc:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the iteration count.  <a href="#a5eeb3cdc78008ecc780a180d97b30ae2">More...</a><br /></td></tr>
 <tr class="separator:a5eeb3cdc78008ecc780a180d97b30ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8bec417a9b36e94ce4ed48825de9370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#ab8bec417a9b36e94ce4ed48825de9370">start</a> (std::size_t total, const std::string &amp;msg=std::string(), std::size_t length=0, bool show_iter=false, double interval=0.1)</td></tr>
-<tr class="memdesc:ab8bec417a9b36e94ce4ed48825de9370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#ab8bec417a9b36e94ce4ed48825de9370">More...</a><br /></td></tr>
-<tr class="separator:ab8bec417a9b36e94ce4ed48825de9370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c947ca1c2e36d00d76dbd90f625221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a65c947ca1c2e36d00d76dbd90f625221">stop</a> (bool finished=false)</td></tr>
-<tr class="memdesc:a65c947ca1c2e36d00d76dbd90f625221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop to print the progress.  <a href="#a65c947ca1c2e36d00d76dbd90f625221">More...</a><br /></td></tr>
-<tr class="separator:a65c947ca1c2e36d00d76dbd90f625221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e823bebc319b16373a96cc52201ec3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a9e823bebc319b16373a96cc52201ec3e">message</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a9e823bebc319b16373a96cc52201ec3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new message for display.  <a href="#a9e823bebc319b16373a96cc52201ec3e">More...</a><br /></td></tr>
+<tr class="separator:a9e823bebc319b16373a96cc52201ec3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf6c785a75824284b063575bcb21b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a2cf6c785a75824284b063575bcb21b5d">start</a> (std::size_t total, const std::string &amp;msg=std::string(), std::size_t length=0, bool show_iter=true, double interval=0.1)</td></tr>
+<tr class="memdesc:a2cf6c785a75824284b063575bcb21b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start to print the progress.  <a href="#a2cf6c785a75824284b063575bcb21b5d">More...</a><br /></td></tr>
+<tr class="separator:a2cf6c785a75824284b063575bcb21b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582f2e3bdf130fc60139e61151591a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_progress.html#a582f2e3bdf130fc60139e61151591a6c">stop</a> (bool finished=true)</td></tr>
+<tr class="memdesc:a582f2e3bdf130fc60139e61151591a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop to print the progress.  <a href="#a582f2e3bdf130fc60139e61151591a6c">More...</a><br /></td></tr>
+<tr class="separator:a582f2e3bdf130fc60139e61151591a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ThreadType = std::thread, typename ThisThread = internal::ProgressThisThread&gt;<br />
@@ -240,7 +243,37 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
 
 </div>
 </div>
-<a class="anchor" id="ab8bec417a9b36e94ce4ed48825de9370"></a>
+<a class="anchor" id="a9e823bebc319b16373a96cc52201ec3e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal::ProgressThisThread&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_progress.html">vsmc::Progress</a>&lt; ThreadType, ThisThread &gt;::message </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a new message for display. </p>
+
+<p>Definition at line <a class="el" href="progress_8hpp_source.html#l00161">161</a> of file <a class="el" href="progress_8hpp_source.html">progress.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cf6c785a75824284b063575bcb21b5d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -271,7 +304,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>show_iter</em> = <code>false</code>, </td>
+          <td class="paramname"><em>show_iter</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -308,7 +341,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
 
 </div>
 </div>
-<a class="anchor" id="a65c947ca1c2e36d00d76dbd90f625221"></a>
+<a class="anchor" id="a582f2e3bdf130fc60139e61151591a6c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -321,7 +354,7 @@ template&lt;typename ThreadType  = std::thread, typename ThisThread  = internal:
           <td class="memname">void <a class="el" href="classvsmc_1_1_progress.html">vsmc::Progress</a>&lt; ThreadType, ThisThread &gt;::stop </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>finished</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>finished</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>

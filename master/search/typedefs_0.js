@@ -36,7 +36,7 @@ var searchData=
   ['aes256_5f64',['AES256_64',['../group___a_e_s_n_i_r_n_g.html#gac798231b2b639353222a09701a0b0ce7',1,'vsmc']]],
   ['aes256_5f8x32',['AES256_8x32',['../group___a_e_s_n_i_r_n_g.html#gaab13abaaaf9e0dd0ecc39a585c203fd9',1,'vsmc']]],
   ['aes256_5f8x64',['AES256_8x64',['../group___a_e_s_n_i_r_n_g.html#ga3b7ac022d62dd69e3b83b4e12a300e68',1,'vsmc']]],
-  ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#ga72b7a91952394345e2efd197d6b3ba24',1,'vsmc']]],
+  ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#gadd7d2892e0c4a50d1106ffa4bf45faf3',1,'vsmc']]],
   ['ars_5f1x32',['ARS_1x32',['../group___a_e_s_n_i_r_n_g.html#gaff0d78b9aae9d00c08216cf5c1a69950',1,'vsmc']]],
   ['ars_5f1x64',['ARS_1x64',['../group___a_e_s_n_i_r_n_g.html#ga60bcfbae324cd52823d0bb2bef79c8a5',1,'vsmc']]],
   ['ars_5f2x32',['ARS_2x32',['../group___a_e_s_n_i_r_n_g.html#gacf98b920a06fde31194666c1b4db642e',1,'vsmc']]],

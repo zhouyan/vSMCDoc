@@ -46,6 +46,7 @@ var searchData=
   ['rebind',['rebind',['../structvsmc_1_1_aligned_allocator_1_1rebind.html',1,'vsmc::AlignedAllocator']]],
   ['record',['record',['../classvsmc_1_1_monitor.html#a350dd27f213440ecc2f8c5431c30164d',1,'vsmc::Monitor::record(std::size_t id) const '],['../classvsmc_1_1_monitor.html#a2f1eb1adfeac334144eb3d272425bdda',1,'vsmc::Monitor::record(std::size_t id, std::size_t iter) const ']]],
   ['record_5fdata',['record_data',['../classvsmc_1_1_monitor.html#af2b114abbe582f5e9f7bf5fa308c55ef',1,'vsmc::Monitor']]],
+  ['record_5fonly',['record_only',['../classvsmc_1_1_monitor.html#a24bfacce2a3db6042e008725371c5019',1,'vsmc::Monitor']]],
   ['recording',['recording',['../classvsmc_1_1_monitor.html#ab625b07b1211fb182b4c459a6d592c63',1,'vsmc::Monitor::recording()'],['../classvsmc_1_1_path.html#af81158e5de3c62ee72a49e574eaf74c6',1,'vsmc::Path::recording()']]],
   ['reference',['reference',['../classvsmc_1_1_array.html#a2788aa8641b72e8d721ec5bcc273c87f',1,'vsmc::Array']]],
   ['reg_5ftype',['reg_type',['../classvsmc_1_1_c_p_u_i_d.html#a7e8ecdcd2a602611e96cc3ad816c754d',1,'vsmc::CPUID']]],
@@ -169,8 +170,8 @@ var searchData=
   ['rowmajor',['RowMajor',['../group___definitions.html#gga3891c43c52a10259979c138e981381bea4df16e4b47c5a0662d1344fac6783ae6',1,'vsmc']]],
   ['run_5fkernel',['run_kernel',['../classvsmc_1_1_c_l_manager.html#a03bd72a907e1a78013d264dec21643c9',1,'vsmc::CLManager']]],
   ['running',['running',['../classvsmc_1_1_r_d_t_s_c_counter.html#a53a0610e6269fe310215e3a2aa96560e',1,'vsmc::RDTSCCounter::running()'],['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a9e678771d6610d3ca195b1c65c8668f3',1,'vsmc::RDTSCPCounter::running()'],['../classvsmc_1_1_stop_watch_null.html#a3b2145c1bb49217d56a68a06a00500d7',1,'vsmc::StopWatchNull::running()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a31a390b2911ffe44d1235bf9f36358b7',1,'vsmc::StopWatchClockAdapter::running()'],['../classvsmc_1_1_stop_watch_s_y_s.html#a1512fcc3336dc4940c59129131eb137a',1,'vsmc::StopWatchSYS::running()']]],
-  ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html#a30dabba522188460629f19adc39afd5f',1,'vsmc::RuntimeAssert::RuntimeAssert(const char *msg)'],['../classvsmc_1_1_runtime_assert.html#a3acf3d5afa14f3a1dcc8471975a301e1',1,'vsmc::RuntimeAssert::RuntimeAssert(const std::string &amp;msg)']]],
   ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html',1,'vsmc']]],
+  ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html#a30dabba522188460629f19adc39afd5f',1,'vsmc::RuntimeAssert::RuntimeAssert(const char *msg)'],['../classvsmc_1_1_runtime_assert.html#a3acf3d5afa14f3a1dcc8471975a301e1',1,'vsmc::RuntimeAssert::RuntimeAssert(const std::string &amp;msg)']]],
   ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html#a8d8eefc2a70cc18dbc236f8736a0e61e',1,'vsmc::RuntimeWarning::RuntimeWarning(const char *msg)'],['../classvsmc_1_1_runtime_warning.html#afadce67da859cc7d2e65499777a0800d',1,'vsmc::RuntimeWarning::RuntimeWarning(const std::string &amp;msg)']]],
   ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html',1,'vsmc']]]
 ];

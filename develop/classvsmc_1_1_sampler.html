@@ -203,9 +203,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a30fe55d0f4786c6ca3f59be17350203a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_sampler.html">Sampler</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a30fe55d0f4786c6ca3f59be17350203a">monitor</a> (const std::string &amp;name, const <a class="el" href="classvsmc_1_1_monitor.html">Monitor</a>&lt; T &gt; &amp;mon)</td></tr>
 <tr class="memdesc:a30fe55d0f4786c6ca3f59be17350203a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a monitor.  <a href="#a30fe55d0f4786c6ca3f59be17350203a">More...</a><br /></td></tr>
 <tr class="separator:a30fe55d0f4786c6ca3f59be17350203a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814b2600703661a0ff04b6a638c6af26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_sampler.html">Sampler</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a814b2600703661a0ff04b6a638c6af26">monitor</a> (const std::string &amp;name, std::size_t dim, const typename <a class="el" href="classvsmc_1_1_monitor.html">Monitor</a>&lt; T &gt;::eval_type &amp;eval, bool record_only=false)</td></tr>
-<tr class="memdesc:a814b2600703661a0ff04b6a638c6af26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a monitor with an evaluation object.  <a href="#a814b2600703661a0ff04b6a638c6af26">More...</a><br /></td></tr>
-<tr class="separator:a814b2600703661a0ff04b6a638c6af26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d9c6945dad90790a1bfdbf634335bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_sampler.html">Sampler</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#aa5d9c6945dad90790a1bfdbf634335bf">monitor</a> (const std::string &amp;name, std::size_t dim, const typename <a class="el" href="classvsmc_1_1_monitor.html">Monitor</a>&lt; T &gt;::eval_type &amp;eval, bool record_only=false, <a class="el" href="group___definitions.html#ga98ab5e0a523e08c454b57c5b80e21104">MonitorStage</a> stage=<a class="el" href="group___definitions.html#gga98ab5e0a523e08c454b57c5b80e21104ae7e62e7273853b417f20162005ca363a">MonitorMCMC</a>)</td></tr>
+<tr class="memdesc:aa5d9c6945dad90790a1bfdbf634335bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a monitor with an evaluation object.  <a href="#aa5d9c6945dad90790a1bfdbf634335bf">More...</a><br /></td></tr>
+<tr class="separator:aa5d9c6945dad90790a1bfdbf634335bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b60acfcc6edf8f87d8850f2980d6bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_monitor.html">Monitor</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#ad7b60acfcc6edf8f87d8850f2980d6bc">monitor</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:ad7b60acfcc6edf8f87d8850f2980d6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and write access to a named monitor.  <a href="#ad7b60acfcc6edf8f87d8850f2980d6bc">More...</a><br /></td></tr>
 <tr class="separator:ad7b60acfcc6edf8f87d8850f2980d6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,18 +297,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56ea4bc22bae63bef9a378fcd47bbf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6521a3eaf21e96c538506df338aeca"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, typename OutputIter &gt; </td></tr>
 <tr class="memitem:a6b6521a3eaf21e96c538506df338aeca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a6b6521a3eaf21e96c538506df338aeca">summary_data</a> (OutputIter first) const </td></tr>
-<tr class="memdesc:a6b6521a3eaf21e96c538506df338aeca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data.  <a href="#a6b6521a3eaf21e96c538506df338aeca">More...</a><br /></td></tr>
+<tr class="memdesc:a6b6521a3eaf21e96c538506df338aeca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (floating point data)  <a href="#a6b6521a3eaf21e96c538506df338aeca">More...</a><br /></td></tr>
 <tr class="separator:a6b6521a3eaf21e96c538506df338aeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6c8eb960129ea464560e2b31baa599"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, typename OutputIter &gt; </td></tr>
+<tr class="memitem:a6c6c8eb960129ea464560e2b31baa599"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a6c6c8eb960129ea464560e2b31baa599">summary_data_int</a> (OutputIter first) const </td></tr>
+<tr class="memdesc:a6c6c8eb960129ea464560e2b31baa599"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (integer data)  <a href="#a6c6c8eb960129ea464560e2b31baa599">More...</a><br /></td></tr>
+<tr class="separator:a6c6c8eb960129ea464560e2b31baa599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3488a69fe4e01a4635f42d60b424043b"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a3488a69fe4e01a4635f42d60b424043b">summary_data_size</a> () const </td></tr>
-<tr class="memdesc:a3488a69fe4e01a4635f42d60b424043b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data.  <a href="#a3488a69fe4e01a4635f42d60b424043b">More...</a><br /></td></tr>
+<tr class="memdesc:a3488a69fe4e01a4635f42d60b424043b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (floating point data)  <a href="#a3488a69fe4e01a4635f42d60b424043b">More...</a><br /></td></tr>
 <tr class="separator:a3488a69fe4e01a4635f42d60b424043b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abddad8c32d677f020c0bbdea3de33a69"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#abddad8c32d677f020c0bbdea3de33a69">summary_data_size_int</a> () const </td></tr>
+<tr class="memdesc:abddad8c32d677f020c0bbdea3de33a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (integer data)  <a href="#abddad8c32d677f020c0bbdea3de33a69">More...</a><br /></td></tr>
+<tr class="separator:abddad8c32d677f020c0bbdea3de33a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5702262f88586757bf1844a3fa7cdc"><td class="memTemplParams" colspan="2">template&lt;typename OutputIter &gt; </td></tr>
 <tr class="memitem:a5b5702262f88586757bf1844a3fa7cdc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a5b5702262f88586757bf1844a3fa7cdc">summary_header</a> (OutputIter first) const </td></tr>
-<tr class="memdesc:a5b5702262f88586757bf1844a3fa7cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header.  <a href="#a5b5702262f88586757bf1844a3fa7cdc">More...</a><br /></td></tr>
+<tr class="memdesc:a5b5702262f88586757bf1844a3fa7cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (floating point data)  <a href="#a5b5702262f88586757bf1844a3fa7cdc">More...</a><br /></td></tr>
 <tr class="separator:a5b5702262f88586757bf1844a3fa7cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a884d9fc5fcb89241a8a054b97223d"><td class="memTemplParams" colspan="2">template&lt;typename OutputIter &gt; </td></tr>
+<tr class="memitem:ad6a884d9fc5fcb89241a8a054b97223d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#ad6a884d9fc5fcb89241a8a054b97223d">summary_header_int</a> (OutputIter first) const </td></tr>
+<tr class="memdesc:ad6a884d9fc5fcb89241a8a054b97223d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (integer data)  <a href="#ad6a884d9fc5fcb89241a8a054b97223d">More...</a><br /></td></tr>
+<tr class="separator:ad6a884d9fc5fcb89241a8a054b97223d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63647b3130e7a7afa7c2d8356fdd4e63"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a63647b3130e7a7afa7c2d8356fdd4e63">summary_header_size</a> () const </td></tr>
-<tr class="memdesc:a63647b3130e7a7afa7c2d8356fdd4e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header.  <a href="#a63647b3130e7a7afa7c2d8356fdd4e63">More...</a><br /></td></tr>
+<tr class="memdesc:a63647b3130e7a7afa7c2d8356fdd4e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (floating point data)  <a href="#a63647b3130e7a7afa7c2d8356fdd4e63">More...</a><br /></td></tr>
 <tr class="separator:a63647b3130e7a7afa7c2d8356fdd4e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb97cd17a8f90ada976f3facedda312"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html#a7fb97cd17a8f90ada976f3facedda312">summary_header_size_int</a> () const </td></tr>
+<tr class="memdesc:a7fb97cd17a8f90ada976f3facedda312"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (integer data, size etc.)  <a href="#a7fb97cd17a8f90ada976f3facedda312">More...</a><br /></td></tr>
+<tr class="separator:a7fb97cd17a8f90ada976f3facedda312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -643,7 +657,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the accept count of a given move id and the iteration. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00309">309</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00310">310</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +687,7 @@ template&lt;typename T&gt; </div>
 
 <p>Erase a named monitor. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00562">562</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00559">559</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +716,7 @@ template&lt;typename T&gt; </div>
 
 <p>Erase all monitors. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00569">569</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00566">566</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -853,7 +867,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get ESS of a given iteration, initialization count as iter 0. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00292">292</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00293">293</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -883,7 +897,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set the initialization object of type init_type. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00319">319</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00320">320</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -914,7 +928,7 @@ template&lt;typename T&gt; </div>
 <p>Set if initialization should use the move and mcmc queue. </p>
 <p>If set to <code>false</code>, then the initialization step use the initialization object if it is not empty. Otherwise, it perform the same steps as the iteration step. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00334">334</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00335">335</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -945,7 +959,7 @@ template&lt;typename T&gt; </div>
 <p>Set the initialization object with a type move_type object. </p>
 <p>When called, the iteration parameter passed to this object will be 0 and the <code>void *</code> parameter will be ignored. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00346">346</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00347">347</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -982,7 +996,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <p>All histories (ESS, resampled, accept, <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> and <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a>) are clared before callling the initialization object. Monitors and <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a>'s evaluation objects are untouched. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00449">449</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00450">450</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1026,7 @@ template&lt;typename T&gt; </div>
 <p>Current iteration number (initialization count as zero) </p>
 <p>The value of <code><a class="el" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185" title="Number of iterations (including initialization) ">iter_size()</a> - <a class="el" href="classvsmc_1_1_sampler.html#a31c2aa18b8a059c59e6296c4957961e3" title="Current iteration number (initialization count as zero) ">iter_num()</a></code> is always 1. <code>iter_size</code> emphasize that it returns the total number of iterations. <code>iter_num</code> is more of an index of the sampler, starting from zero. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00222">222</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00223">223</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1055,7 @@ template&lt;typename T&gt; </div>
 
 <p>Number of iterations (including initialization) </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00214">214</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00215">215</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1086,7 @@ template&lt;typename T&gt; </div>
 <p>Iteration. </p>
 <p>Moves performed first. Then ESS/N is compared to the threshold and possible resampling is performed. Then mcmcs are performed. Then monitors and <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> are computed </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00473">473</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00470">470</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1126,7 @@ template&lt;typename T&gt; </div>
 
 <p>Add a new mcmc. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00415">415</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00416">416</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1160,7 +1174,7 @@ template&lt;typename InputIter &gt; </div>
 
 <p>Add a sequence of new mcmcs. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00428">428</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00429">429</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1203,7 @@ template&lt;typename T&gt; </div>
 
 <p>Clear the mcmc queue. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00406">406</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00407">407</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1232,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check if mcmc queue is empty. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00409">409</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00410">410</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1261,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check the size of the mcmc queue. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00412">412</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00413">413</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1294,11 +1308,11 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00510">510</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00506">506</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a814b2600703661a0ff04b6a638c6af26"></a>
+<a class="anchor" id="aa5d9c6945dad90790a1bfdbf634335bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1329,7 +1343,13 @@ template&lt;typename T&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>record_only</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>record_only</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___definitions.html#ga98ab5e0a523e08c454b57c5b80e21104">MonitorStage</a>&#160;</td>
+          <td class="paramname"><em>stage</em> = <code><a class="el" href="group___definitions.html#gga98ab5e0a523e08c454b57c5b80e21104ae7e62e7273853b417f20162005ca363a">MonitorMCMC</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1347,16 +1367,17 @@ template&lt;typename T&gt; </div>
 <p>Add a monitor with an evaluation object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the monitor </td></tr>
-    <tr><td class="paramname">dim</td><td>The dimension of the monitor, i.e., the number of variables </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> </td></tr>
+    <tr><td class="paramname">dim</td><td>The dimension of the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a>, i.e., the number of variables </td></tr>
     <tr><td class="paramname">eval</td><td>The evaluation object of type <a class="el" href="classvsmc_1_1_monitor.html#a2b109c57c43b5dc85838083e57a6a80e">Monitor::eval_type</a> </td></tr>
-    <tr><td class="paramname">record_only</td><td>The monitor only records results</td></tr>
+    <tr><td class="paramname">record_only</td><td>The <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> only records results </td></tr>
+    <tr><td class="paramname">stage</td><td>The stage of the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00521">521</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00518">518</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1407,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read and write access to a named monitor. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00532">532</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00529">529</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1416,7 +1437,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to a named monitor. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00543">543</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00540">540</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1466,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read and write access to all monitors to the monitor_map_type object. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00555">555</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00552">552</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1474,7 +1495,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to all monitors to the the monitor_map_type object. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00559">559</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00556">556</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1535,7 @@ template&lt;typename T&gt; </div>
 
 <p>Add a new move. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00379">379</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00380">380</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1562,7 +1583,7 @@ template&lt;typename InputIter &gt; </div>
 
 <p>Add a sequence of new moves. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00392">392</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00393">393</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1612,7 @@ template&lt;typename T&gt; </div>
 
 <p>Clear the move queue. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00370">370</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00371">371</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1620,7 +1641,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check if move queue is empty. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00373">373</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00374">374</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1649,7 +1670,7 @@ template&lt;typename T&gt; </div>
 
 <p>Check the size of the move queue. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00376">376</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00377">377</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1699,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read and write access to the Particle&lt;T&gt; object. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00313">313</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00314">314</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1707,7 +1728,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the Particle&lt;T&gt; object. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00316">316</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00317">317</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1736,7 +1757,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read and write access to the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling monitor. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00492">492</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00488">488</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1765,7 +1786,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling monitor. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00495">495</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00491">491</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1805,7 +1826,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling evaluation object. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00498">498</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00494">494</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1855,7 @@ template&lt;typename T&gt; </div>
 
 <p><a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling estimate of the logarithm of normalizing constants ratio. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00504">504</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00500">500</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1883,7 +1904,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00659">659</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00686">686</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1915,7 +1936,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read ESS history through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00296">296</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00297">297</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1947,7 +1968,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read resampling indicator history through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00305">305</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00306">306</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1979,7 +2000,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read sampler size history through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00288">288</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00289">289</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2008,7 +2029,7 @@ template&lt;typename T&gt; </div>
 
 <p>Force resample. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00225">225</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00226">226</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2038,7 +2059,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set resampling method by a resample_type object. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00234">234</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00235">235</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +2089,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set resampling method by a built-in ResampleScheme scheme name. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00239">239</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00240">240</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2097,7 +2118,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get resampling threshold. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00266">266</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00267">267</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2127,7 +2148,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set resampling threshold. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00269">269</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00270">270</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +2177,7 @@ template&lt;typename T&gt; </div>
 
 <p>Special value of resampling threshold that indicate no resampling will always be performed. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00279">279</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00280">280</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2185,7 +2206,7 @@ template&lt;typename T&gt; </div>
 
 <p>Special value of resampling threshold that indicate no resampling will be ever performed. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00274">274</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00275">275</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2236,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get resampling indicator of a given iteration. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00300">300</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00301">301</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2304,7 +2325,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get sampler size of a given iteration, initialization count as iter 0. </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00284">284</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00285">285</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2334,15 +2355,41 @@ template&lt;MatrixOrder Order, typename OutputIter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">first</td><td>The beginning of the output </td></tr>
-  </table>
-  </dd>
-</dl>
+<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (floating point data) </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00642">642</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00669">669</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c6c8eb960129ea464560e2b31baa599"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;MatrixOrder Order, typename OutputIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::summary_data_int </td>
+          <td>(</td>
+          <td class="paramtype">OutputIter&#160;</td>
+          <td class="paramname"><em>first</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (integer data) </p>
+
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00655">655</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2369,9 +2416,38 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data. </p>
+<p>The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (floating point data) </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00635">635</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00650">650</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abddad8c32d677f020c0bbdea3de33a69"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::summary_data_size_int </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary data (integer data) </p>
+
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00646">646</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2401,9 +2477,41 @@ template&lt;typename OutputIter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header. </p>
+<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (floating point data) </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00592">592</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00615">615</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6a884d9fc5fcb89241a8a054b97223d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;typename OutputIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::summary_header_int </td>
+          <td>(</td>
+          <td class="paramtype">OutputIter&#160;</td>
+          <td class="paramname"><em>first</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (integer data) </p>
+
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00597">597</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>
@@ -2430,9 +2538,38 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header. </p>
+<p>The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (floating point data) </p>
 
-<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00572">572</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00578">578</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7fb97cd17a8f90ada976f3facedda312"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler</a>&lt; T &gt;::summary_header_size_int </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The size of <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> summary header (integer data, size etc.) </p>
+
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00569">569</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
 
 </div>
 </div>

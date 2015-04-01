@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['intel_20cilk_20plus',['Intel Cilk Plus',['../group___c_i_l_k.html',1,'']]],
-  ['integer_20functions',['Integer functions',['../group___integer_function.html',1,'']]],
-  ['integration',['Integration',['../group___integrate.html',1,'']]],
-  ['intel_20threading_20building_20blocks',['Intel Threading Building Blocks',['../group___t_b_b.html',1,'']]],
-  ['intel_20threading_20building_20blocks_20extensions',['Intel Threading Building Blocks Extensions',['../group___t_b_b_ext.html',1,'']]]
+  ['helper_20classes',['Helper classes',['../group___c_x_x11_traits_helper.html',1,'']]],
+  ['hdf5_20objects_20io',['HDF5 objects IO',['../group___h_d_f5_i_o.html',1,'']]],
+  ['hyperbolic_20functions',['Hyperbolic functions',['../group__v_hyperbolic.html',1,'']]]
 ];

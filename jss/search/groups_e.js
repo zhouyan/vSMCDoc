@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrapper',['Wrapper',['../group___r_n_g_wrapper.html',1,'']]]
+  ['vector_20math_20functions',['Vector math functions',['../group__v_math.html',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['grand_20central_20dispatch',['Grand Central Dispatch',['../group___dispatch.html',1,'']]],
-  ['grand_20central_20dispatch',['Grand Central Dispatch',['../group___g_c_d.html',1,'']]],
-  ['gsl',['GSL',['../group___g_s_l_r_n_g.html',1,'']]]
+  ['enumerators_2c_20placeholders_20and_20macros',['Enumerators, placeholders and macros',['../group___definitions.html',1,'']]],
+  ['exponential_20and_20logarithm_20functions',['Exponential and logarithm functions',['../group__v_exponential.html',1,'']]]
 ];

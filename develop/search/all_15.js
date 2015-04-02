@@ -302,6 +302,7 @@ var searchData=
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]],
+  ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8hpp.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.hpp']]],
   ['vsmc_5fvmath_5fthreshold',['VSMC_VMATH_THRESHOLD',['../group___config.html#gab970dd3599c8a14b26c5b519c9650258',1,'vmath.hpp']]],
   ['vsmc_5fvmath_5fthreshold_5fabs',['VSMC_VMATH_THRESHOLD_Abs',['../vmath_8hpp.html#a73c3ea9ac6ddc27d62a77a0b8328507b',1,'vmath.hpp']]],
   ['vsmc_5fvmath_5fthreshold_5facos',['VSMC_VMATH_THRESHOLD_Acos',['../vmath_8hpp.html#a311b65971d138a5c3867d3122bba21f4',1,'vmath.hpp']]],

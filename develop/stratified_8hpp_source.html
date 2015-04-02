@@ -159,22 +159,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> delta = 1.0 / N;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != N; ++i)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            uptr[i] = runif(rng) * delta + i * delta;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        inversion_(M, N, weight, uptr, replication, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0">internal::inversion</a>(M, N, weight, uptr, replication);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">private</span> :</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classvsmc_1_1internal_1_1_inversion.html">internal::Inversion</a> inversion_;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; u01_;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}; <span class="comment">// Stratified resampling</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_STRATIFIED_HPP</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; u01_;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}; <span class="comment">// Stratified resampling</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_STRATIFIED_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
-<div class="ttc" id="classvsmc_1_1_resample_html"><div class="ttname"><a href="classvsmc_1_1_resample.html">vsmc::Resample</a></div><div class="ttdoc">Resample forward decleration. </div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00119">common.hpp:119</a></div></div>
+<div class="ttc" id="classvsmc_1_1_resample_html"><div class="ttname"><a href="classvsmc_1_1_resample.html">vsmc::Resample</a></div><div class="ttdoc">Resample forward decleration. </div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00101">common.hpp:101</a></div></div>
 <div class="ttc" id="namespacevsmc_1_1internal_html_ad7d3d61816e666a101f3df892148c315"><div class="ttname"><a href="namespacevsmc_1_1internal.html#ad7d3d61816e666a101f3df892148c315">vsmc::internal::ResampleStratified</a></div><div class="ttdeci">cxx11::integral_constant&lt; ResampleScheme, Stratified &gt; ResampleStratified</div><div class="ttdef"><b>Definition:</b> <a href="stratified_8hpp_source.html#l00042">stratified.hpp:42</a></div></div>
-<div class="ttc" id="classvsmc_1_1internal_1_1_inversion_html"><div class="ttname"><a href="classvsmc_1_1internal_1_1_inversion.html">vsmc::internal::Inversion</a></div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00054">common.hpp:54</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0">vsmc::internal::inversion</a></div><div class="ttdeci">void inversion(std::size_t M, std::size_t N, const double *weight, const double *u01, IntType *replication)</div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00058">common.hpp:58</a></div></div>
 <div class="ttc" id="resample_2common_8hpp_html"><div class="ttname"><a href="resample_2common_8hpp.html">common.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

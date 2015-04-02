@@ -177,27 +177,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> delta = 1.0 / N;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != NN; ++i)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            uptr[i] = runif(rng) * delta + i * delta;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        inversion_(M, NN, rptr, uptr, replication, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0">internal::inversion</a>(M, NN, rptr, uptr, replication);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != N; ++i)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != M; ++i)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            replication[i] += static_cast&lt;IntType&gt;(iptr[i]);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">private</span> :</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classvsmc_1_1internal_1_1_inversion.html">internal::Inversion</a> inversion_;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; residual_;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; integral_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; u01_;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}; <span class="comment">// Residual stratified resampling</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_RESIDUAL_STRATIFIED_HPP</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; residual_;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; integral_;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; u01_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}; <span class="comment">// Residual stratified resampling</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_RESIDUAL_STRATIFIED_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="namespacevsmc_1_1internal_html_adc5502c7f9b7072e6f28d46648c214de"><div class="ttname"><a href="namespacevsmc_1_1internal.html#adc5502c7f9b7072e6f28d46648c214de">vsmc::internal::ResampleResidualStratified</a></div><div class="ttdeci">cxx11::integral_constant&lt; ResampleScheme, ResidualStratified &gt; ResampleResidualStratified</div><div class="ttdef"><b>Definition:</b> <a href="residual__stratified_8hpp_source.html#l00042">residual_stratified.hpp:42</a></div></div>
-<div class="ttc" id="classvsmc_1_1_resample_html"><div class="ttname"><a href="classvsmc_1_1_resample.html">vsmc::Resample</a></div><div class="ttdoc">Resample forward decleration. </div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00119">common.hpp:119</a></div></div>
-<div class="ttc" id="classvsmc_1_1internal_1_1_inversion_html"><div class="ttname"><a href="classvsmc_1_1internal_1_1_inversion.html">vsmc::internal::Inversion</a></div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00054">common.hpp:54</a></div></div>
+<div class="ttc" id="classvsmc_1_1_resample_html"><div class="ttname"><a href="classvsmc_1_1_resample.html">vsmc::Resample</a></div><div class="ttdoc">Resample forward decleration. </div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00101">common.hpp:101</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0">vsmc::internal::inversion</a></div><div class="ttdeci">void inversion(std::size_t M, std::size_t N, const double *weight, const double *u01, IntType *replication)</div><div class="ttdef"><b>Definition:</b> <a href="resample_2common_8hpp_source.html#l00058">common.hpp:58</a></div></div>
 <div class="ttc" id="resample_2common_8hpp_html"><div class="ttname"><a href="resample_2common_8hpp.html">common.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

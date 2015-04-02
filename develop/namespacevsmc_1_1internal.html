@@ -696,8 +696,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html">HDF5StoreDataPtr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_inversion.html">Inversion</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1is__seed__seq.html">is_seed_seq</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_is_derived_from_state_c_l.html">IsDerivedFromStateCL</a></td></tr>
@@ -967,6 +965,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d6073daee88f443e06268eced6b4124"><td class="memTemplParams" colspan="2">template&lt;typename InputIter , typename... InputIters, std::size_t Pos&gt; </td></tr>
 <tr class="memitem:a9d6073daee88f443e06268eced6b4124"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9d6073daee88f443e06268eced6b4124">hdf5store_list_insert_tuple</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, <a class="el" href="structvsmc_1_1_position.html">Position</a>&lt; Pos &gt;)</td></tr>
 <tr class="separator:a9d6073daee88f443e06268eced6b4124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0">inversion</a> (std::size_t M, std::size_t N, const double *weight, const double *u01, IntType *replication)</td></tr>
+<tr class="separator:a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memTemplParams" colspan="2">template&lt;SIMD &gt; </td></tr>
 <tr class="memitem:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9cff3653b1654b9dd780a1ca12d016f7">memcpy_0</a> (void *dst, const void *src, std::size_t n)</td></tr>
 <tr class="separator:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2216,6 +2217,54 @@ template&lt;typename InputIter , typename... InputIters, std::size_t Pos&gt; </d
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00553">553</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b3cd84bf4b0ce5f7ce392fc2b861cd0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IntType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::inversion </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>u01</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType *&#160;</td>
+          <td class="paramname"><em>replication</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00058">58</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

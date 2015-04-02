@@ -158,7 +158,6 @@ var searchData=
   ['integral_5fconstant_3c_20unsigned_2c_2057_20_3e',['integral_constant&lt; unsigned, 57 &gt;',['../structvsmc_1_1cxx11_1_1integral__constant.html',1,'vsmc::cxx11']]],
   ['integral_5fconstant_3c_20unsigned_2c_2058_20_3e',['integral_constant&lt; unsigned, 58 &gt;',['../structvsmc_1_1cxx11_1_1integral__constant.html',1,'vsmc::cxx11']]],
   ['integral_5fconstant_3c_20unsigned_2c_206_20_3e',['integral_constant&lt; unsigned, 6 &gt;',['../structvsmc_1_1cxx11_1_1integral__constant.html',1,'vsmc::cxx11']]],
-  ['inversion',['Inversion',['../classvsmc_1_1internal_1_1_inversion.html',1,'vsmc::internal']]],
   ['is_5fabstract',['is_abstract',['../structvsmc_1_1cxx11_1_1is__abstract.html',1,'vsmc::cxx11']]],
   ['is_5fabstract_5fimpl',['is_abstract_impl',['../structvsmc_1_1cxx11_1_1internal_1_1is__abstract__impl.html',1,'vsmc::cxx11::internal']]],
   ['is_5fabstract_5fimpl_3c_20t_20_3e',['is_abstract_impl&lt; T &gt;',['../structvsmc_1_1cxx11_1_1internal_1_1is__abstract__impl.html',1,'vsmc::cxx11::internal']]],

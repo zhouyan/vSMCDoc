@@ -884,6 +884,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_threefry_rotate_impl_3_01uint64__t_00_01_n_01_4.html">ThreefryRotateImpl&lt; uint64_t, N &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html">U01SeqStratified</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_systematic.html">U01SeqSystematic</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_uniform_real_distribution_f_r_int_type.html">UniformRealDistributionFRIntType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_uniform_real_distribution_f_r_int_type_3_010_00_01static__cast_3_01uiff03fb1cb80f21a83cc3c45abc4d8f8d.html">UniformRealDistributionFRIntType&lt; 0, static_cast&lt; uint64_t &gt;(static_cast&lt; uint32_t &gt;(~(static_cast&lt; uint32_t &gt;(0))))&gt;</a></td></tr>
@@ -965,9 +969,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d6073daee88f443e06268eced6b4124"><td class="memTemplParams" colspan="2">template&lt;typename InputIter , typename... InputIters, std::size_t Pos&gt; </td></tr>
 <tr class="memitem:a9d6073daee88f443e06268eced6b4124"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9d6073daee88f443e06268eced6b4124">hdf5store_list_insert_tuple</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, <a class="el" href="structvsmc_1_1_position.html">Position</a>&lt; Pos &gt;)</td></tr>
 <tr class="separator:a9d6073daee88f443e06268eced6b4124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
-<tr class="memitem:a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0">inversion</a> (std::size_t M, std::size_t N, const double *weight, const double *u01, IntType *replication)</td></tr>
-<tr class="separator:a2b3cd84bf4b0ce5f7ce392fc2b861cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91481a5a67dc8c3ecece461b89e8709"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename U01SeqType &gt; </td></tr>
+<tr class="memitem:aa91481a5a67dc8c3ecece461b89e8709"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa91481a5a67dc8c3ecece461b89e8709">inversion</a> (std::size_t M, std::size_t N, const double *weight, U01SeqType &amp;u01seq, IntType *replication)</td></tr>
+<tr class="separator:aa91481a5a67dc8c3ecece461b89e8709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memTemplParams" colspan="2">template&lt;SIMD &gt; </td></tr>
 <tr class="memitem:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9cff3653b1654b9dd780a1ca12d016f7">memcpy_0</a> (void *dst, const void *src, std::size_t n)</td></tr>
 <tr class="separator:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2220,11 +2224,11 @@ template&lt;typename InputIter , typename... InputIters, std::size_t Pos&gt; </d
 
 </div>
 </div>
-<a class="anchor" id="a2b3cd84bf4b0ce5f7ce392fc2b861cd0"></a>
+<a class="anchor" id="aa91481a5a67dc8c3ecece461b89e8709"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IntType &gt; </div>
+template&lt;typename IntType , typename U01SeqType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void vsmc::internal::inversion </td>
@@ -2247,8 +2251,8 @@ template&lt;typename IntType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>u01</em>, </td>
+          <td class="paramtype">U01SeqType &amp;&#160;</td>
+          <td class="paramname"><em>u01seq</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2264,7 +2268,7 @@ template&lt;typename IntType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00058">58</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00057">57</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

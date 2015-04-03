@@ -194,7 +194,7 @@ var searchData=
   ['integrate_5fsegment',['integrate_segment',['../classvsmc_1_1_n_integrate_base.html#a0720c04b06be08f7b416194327f970a4',1,'vsmc::NIntegrateBase::integrate_segment()'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#adf3a651726b8ce3c106fa52eb4e1d0c9',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::integrate_segment()'],['../classvsmc_1_1_n_integrate_newton_cotes.html#aaa73fbffe90f16b770c4a678ad19e1db',1,'vsmc::NIntegrateNewtonCotes::integrate_segment()']]],
   ['intel_2ehpp',['intel.hpp',['../intel_8hpp.html',1,'']]],
   ['intel_5fturbo_5fboost',['intel_turbo_boost',['../classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413',1,'vsmc::CPUID']]],
-  ['inversion',['inversion',['../namespacevsmc_1_1internal.html#a2b3cd84bf4b0ce5f7ce392fc2b861cd0',1,'vsmc::internal']]],
+  ['inversion',['inversion',['../namespacevsmc_1_1internal.html#aa91481a5a67dc8c3ecece461b89e8709',1,'vsmc::internal']]],
   ['is_5fabstract',['is_abstract',['../structvsmc_1_1cxx11_1_1is__abstract.html',1,'vsmc::cxx11']]],
   ['is_5fabstract_5fimpl',['is_abstract_impl',['../structvsmc_1_1cxx11_1_1internal_1_1is__abstract__impl.html',1,'vsmc::cxx11::internal']]],
   ['is_5fabstract_5fimpl_3c_20t_20_3e',['is_abstract_impl&lt; T &gt;',['../structvsmc_1_1cxx11_1_1internal_1_1is__abstract__impl.html',1,'vsmc::cxx11::internal']]],

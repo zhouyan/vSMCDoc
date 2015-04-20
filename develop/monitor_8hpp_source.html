@@ -277,7 +277,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> rptr = &amp;result_[0];</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">if</span> (record_only_) {</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            eval_(iter, dim_, particle, rptr);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            push_back(iter, rptr);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            push_back(iter);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
@@ -289,7 +289,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        eval_(iter, dim_, particle, bptr);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        is_integrate_(static_cast&lt;ISIntegrate::size_type&gt;(N),</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                static_cast&lt;ISIntegrate::size_type&gt;(dim_), bptr, wptr, rptr);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        push_back(iter, rptr);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        push_back(iter);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor.html#acb637453c569aa1674e22a0575f0ee6f">  305</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor.html#acb637453c569aa1674e22a0575f0ee6f">clear</a> ()</div>
@@ -318,17 +318,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    std::vector&lt;double, AlignedAllocator&lt;double&gt; &gt; buffer_;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <a class="code" href="classvsmc_1_1_i_s_integrate.html">ISIntegrate</a> is_integrate_;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">void</span> push_back (std::size_t iter, <span class="keyword">const</span> <span class="keywordtype">double</span> *rptr)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">void</span> push_back (std::size_t iter)</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        index_.push_back(iter);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">for</span> (std::size_t d = 0; d != dim_; ++d)</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            record_.push_back(rptr[d]);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}; <span class="comment">// class Monitor</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#endif // VSMC_CORE_MONITOR_HPP</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        record_.insert(record_.end(), result_.begin(), result_.end());</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}; <span class="comment">// class Monitor</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#endif // VSMC_CORE_MONITOR_HPP</span></div>
 <div class="ttc" id="classvsmc_1_1_monitor_html_a1450321bcb9d158eb6e3835eb7f69663"><div class="ttname"><a href="classvsmc_1_1_monitor.html#a1450321bcb9d158eb6e3835eb7f69663">vsmc::Monitor::empty</a></div><div class="ttdeci">bool empty() const </div><div class="ttdoc">Whether the evaluation object is valid. </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00136">monitor.hpp:136</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_html_a990f75dd1d15e59965472343f10da612"><div class="ttname"><a href="classvsmc_1_1_monitor.html#a990f75dd1d15e59965472343f10da612">vsmc::Monitor::read_record</a></div><div class="ttdeci">void read_record(std::size_t id, OutputIter first) const </div><div class="ttdoc">Read the record history for a given variable through an output iterator. </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00217">monitor.hpp:217</a></div></div>
@@ -366,10 +365,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classvsmc_1_1_monitor_html"><div class="ttname"><a href="classvsmc_1_1_monitor.html">vsmc::Monitor</a></div><div class="ttdoc">Monitor for Monte Carlo integration. </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00056">monitor.hpp:56</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_html_a7ce29fb4661e552c2548281b90ed8c51"><div class="ttname"><a href="classvsmc_1_1_monitor.html#a7ce29fb4661e552c2548281b90ed8c51">vsmc::Monitor::read_record_matrix</a></div><div class="ttdeci">void read_record_matrix(OutputIterIter first) const </div><div class="ttdoc">Read the record history of all variables through an array of output iterators. </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00230">monitor.hpp:230</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_html_ab625b07b1211fb182b4c459a6d592c63"><div class="ttname"><a href="classvsmc_1_1_monitor.html#ab625b07b1211fb182b4c459a6d592c63">vsmc::Monitor::recording</a></div><div class="ttdeci">bool recording() const </div><div class="ttdoc">Whether the Monitor is actively recording results. </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00312">monitor.hpp:312</a></div></div>
-<div class="ttc" id="classvsmc_1_1_particle_html_aaa67c53bf8efe14abd5035891669c5e1"><div class="ttname"><a href="classvsmc_1_1_particle.html#aaa67c53bf8efe14abd5035891669c5e1">vsmc::Particle::size</a></div><div class="ttdeci">size_type size() const </div><div class="ttdoc">Number of particles. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00146">particle.hpp:146</a></div></div>
+<div class="ttc" id="classvsmc_1_1_particle_html_aaa67c53bf8efe14abd5035891669c5e1"><div class="ttname"><a href="classvsmc_1_1_particle.html#aaa67c53bf8efe14abd5035891669c5e1">vsmc::Particle::size</a></div><div class="ttdeci">size_type size() const </div><div class="ttdoc">Number of particles. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00142">particle.hpp:142</a></div></div>
 <div class="ttc" id="monitor_8hpp_html_a69a3255f96eeaf4da01a4a48f3fdc1b6"><div class="ttname"><a href="monitor_8hpp.html#a69a3255f96eeaf4da01a4a48f3fdc1b6">VSMC_RUNTIME_ASSERT_CORE_MONITOR_FUNCTOR</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_CORE_MONITOR_FUNCTOR(func, caller, name)</div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00047">monitor.hpp:47</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_html_a2f1eb1adfeac334144eb3d272425bdda"><div class="ttname"><a href="classvsmc_1_1_monitor.html#a2f1eb1adfeac334144eb3d272425bdda">vsmc::Monitor::record</a></div><div class="ttdeci">double record(std::size_t id, std::size_t iter) const </div><div class="ttdoc">Get the Monte Carlo integration record of a given variable and the Monitor iteration. </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00195">monitor.hpp:195</a></div></div>
-<div class="ttc" id="classvsmc_1_1_particle_html_a05126ea8ab8231d24408c3a56716350b"><div class="ttname"><a href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">vsmc::Particle::weight_set</a></div><div class="ttdeci">weight_set_type &amp; weight_set()</div><div class="ttdoc">Read and write access to the weight collection object. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00155">particle.hpp:155</a></div></div>
+<div class="ttc" id="classvsmc_1_1_particle_html_a05126ea8ab8231d24408c3a56716350b"><div class="ttname"><a href="classvsmc_1_1_particle.html#a05126ea8ab8231d24408c3a56716350b">vsmc::Particle::weight_set</a></div><div class="ttdeci">weight_set_type &amp; weight_set()</div><div class="ttdoc">Read and write access to the weight collection object. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00151">particle.hpp:151</a></div></div>
 <div class="ttc" id="is__integrate_8hpp_html"><div class="ttname"><a href="is__integrate_8hpp.html">is_integrate.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

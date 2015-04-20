@@ -60,6 +60,7 @@ var searchData=
   ['vsmc_5fhas_5favx',['VSMC_HAS_AVX',['../compiler_8hpp.html#abeb3a93328bad911021cda1ce4bb078b',1,'compiler.hpp']]],
   ['vsmc_5fhas_5favx2',['VSMC_HAS_AVX2',['../compiler_8hpp.html#ae50016d5512fd4cce47604f39a43c195',1,'compiler.hpp']]],
   ['vsmc_5fhas_5fcxx11lib_5falgorithm',['VSMC_HAS_CXX11LIB_ALGORITHM',['../compiler_8hpp.html#a2bc3c4cfa1649405d7ab64976f9c6d59',1,'compiler.hpp']]],
+  ['vsmc_5fhas_5fcxx11lib_5fatomic',['VSMC_HAS_CXX11LIB_ATOMIC',['../compiler_8hpp.html#a287dea50293e8f20412dcea8b0b7f19a',1,'compiler.hpp']]],
   ['vsmc_5fhas_5fcxx11lib_5finitializer_5flist',['VSMC_HAS_CXX11LIB_INITIALIZER_LIST',['../compiler_8hpp.html#a760e2a8b0abfc4c71a1980540fad6e90',1,'compiler.hpp']]],
   ['vsmc_5fhas_5fcxx14_5faggregate_5fnsdmi',['VSMC_HAS_CXX14_AGGREGATE_NSDMI',['../compiler_8hpp.html#a7b068b52c4106006163c2ef39fe96df1',1,'compiler.hpp']]],
   ['vsmc_5fhas_5fcxx14_5fbinary_5fliterals',['VSMC_HAS_CXX14_BINARY_LITERALS',['../compiler_8hpp.html#a0270a667526fcff974e5545372aa504c',1,'compiler.hpp']]],
@@ -148,6 +149,7 @@ var searchData=
   ['vsmc_5fruntime_5fassert_5frng_5fstable_5fdistribution_5fparam_5fcheck_5fscale',['VSMC_RUNTIME_ASSERT_RNG_STABLE_DISTRIBUTION_PARAM_CHECK_SCALE',['../stable__distribution_8hpp.html#aca7ca668f607838f7fe3f10ac87af250',1,'stable_distribution.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fstable_5fdistribution_5fparam_5fcheck_5fskewness',['VSMC_RUNTIME_ASSERT_RNG_STABLE_DISTRIBUTION_PARAM_CHECK_SKEWNESS',['../stable__distribution_8hpp.html#a1a10fdee38ae47cf81f3b0a00f2eebbf',1,'stable_distribution.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fstable_5fdistribution_5fparam_5fcheck_5fstability',['VSMC_RUNTIME_ASSERT_RNG_STABLE_DISTRIBUTION_PARAM_CHECK_STABILITY',['../stable__distribution_8hpp.html#ac2c2063399e57086c79eb86d63f391b3',1,'stable_distribution.hpp']]],
+  ['vsmc_5fruntime_5fassert_5frng_5fu01_5fu01_5fsequence',['VSMC_RUNTIME_ASSERT_RNG_U01_U01_SEQUENCE',['../u01_8hpp.html#a55d35b753741a8a6a912884c34684524',1,'u01.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5funiform_5freal_5fdistribution_5feng_5fmax',['VSMC_RUNTIME_ASSERT_RNG_UNIFORM_REAL_DISTRIBUTION_ENG_MAX',['../uniform__real__distribution_8hpp.html#a209cf45b926c4391565ca7320e854fb4',1,'uniform_real_distribution.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5funiform_5freal_5fdistribution_5feng_5fmin',['VSMC_RUNTIME_ASSERT_RNG_UNIFORM_REAL_DISTRIBUTION_ENG_MIN',['../uniform__real__distribution_8hpp.html#a02d21a72a56f13fac9bc4529d5204837',1,'uniform_real_distribution.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5funiform_5freal_5fdistribution_5fparam_5fcheck',['VSMC_RUNTIME_ASSERT_RNG_UNIFORM_REAL_DISTRIBUTION_PARAM_CHECK',['../uniform__real__distribution_8hpp.html#ab58b8adad02d8aa899134a4eca246951',1,'uniform_real_distribution.hpp']]],
@@ -218,5 +220,6 @@ var searchData=
   ['vsmc_5fuse_5faccelerate_5fvforce',['VSMC_USE_ACCELERATE_VFORCE',['../config_8hpp.html#a4979d4db402983e506eaf5eac7366df3',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],
-  ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]]
+  ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]],
+  ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8hpp.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.hpp']]]
 ];

@@ -243,11 +243,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="config_8hpp.html#a4979d4db402983e506eaf5eac7366df3">  146</a></span>&#160;<span class="preprocessor">#define VSMC_USE_ACCELERATE_VFORCE VSMC_HAS_ACCELERATE</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_TBB_MALLOC</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="config_8hpp.html#a09ccbaae6b6225aeaab5ba1e760e7799">  150</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_TBB_MALLOC VSMC_HAS_TBB</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_TBB</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="config_8hpp.html#a18257220d2cf5fe493fcfc95379c29d3">  150</a></span>&#160;<span class="preprocessor">#define VSMC_USE_TBB VSMC_HAS_TBB</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif // VSMC_INTERNAL_CONFIG_HPP</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_TBB_MALLOC</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="config_8hpp.html#a09ccbaae6b6225aeaab5ba1e760e7799">  154</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_TBB_MALLOC VSMC_HAS_TBB</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif // VSMC_INTERNAL_CONFIG_HPP</span></div>
 <div class="ttc" id="compiler_8hpp_html"><div class="ttname"><a href="compiler_8hpp.html">compiler.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

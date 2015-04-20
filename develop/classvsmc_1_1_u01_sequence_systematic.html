@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: vsmc::internal::U01SeqStratified&lt; RngType &gt; Class Template Reference</title>
+<title>vSMC: vsmc::U01SequenceSystematic&lt; RngType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,35 +93,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="namespacevsmc_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html">U01SeqStratified</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">U01SequenceSystematic</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classvsmc_1_1internal_1_1_u01_seq_stratified-members.html">List of all members</a>  </div>
+<a href="classvsmc_1_1_u01_sequence_systematic-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::internal::U01SeqStratified&lt; RngType &gt; Class Template Reference</div>  </div>
+<div class="title">vsmc::U01SequenceSystematic&lt; RngType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="resample_2common_8hpp_source.html">vsmc/resample/common.hpp</a>&gt;</code></p>
+<p>Generate a fixed length sequence of uniform \([0,1)\) random variates by systematic sampling.  
+ <a href="classvsmc_1_1_u01_sequence_systematic.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="u01_8hpp_source.html">vsmc/rng/u01.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1ee1b1bace723bae037ff01a42f191ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html#a1ee1b1bace723bae037ff01a42f191ba">U01SeqStratified</a> (double delta, RngType &amp;rng)</td></tr>
-<tr class="separator:a1ee1b1bace723bae037ff01a42f191ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9d2a0943c38e88cca6158b4f989bc1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html#a6f9d2a0943c38e88cca6158b4f989bc1">operator[]</a> (std::size_t n)</td></tr>
-<tr class="separator:a6f9d2a0943c38e88cca6158b4f989bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a35f4c23486dd43213490d8d6a0bde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html#ab6a35f4c23486dd43213490d8d6a0bde">U01SequenceSystematic</a> (std::size_t N, RngType &amp;rng)</td></tr>
+<tr class="separator:ab6a35f4c23486dd43213490d8d6a0bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6bfced1b54aee8ba7bd8c11b870691"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html#a6a6bfced1b54aee8ba7bd8c11b870691">operator()</a> (std::size_t n)</td></tr>
+<tr class="separator:a6a6bfced1b54aee8ba7bd8c11b870691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca239ca0d50fd1e1e751d875f749eb3e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html#aca239ca0d50fd1e1e751d875f749eb3e">operator[]</a> (std::size_t n)</td></tr>
+<tr class="separator:aca239ca0d50fd1e1e751d875f749eb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename RngType&gt;<br />
-class vsmc::internal::U01SeqStratified&lt; RngType &gt;</h3>
+class vsmc::U01SequenceSystematic&lt; RngType &gt;</h3>
 
+<p>Generate a fixed length sequence of uniform \([0,1)\) random variates by systematic sampling. </p>
+<p>This is similar to <a class="el" href="classvsmc_1_1_u01_sequence_sorted.html" title="Generate a fixed length sequence of uniform  random variates by sorting. ">U01SequenceSorted</a> except that, instead of generating the sequence as if by sorting. It is done by generating \(u_i = U / N + (i - 1) / N\) where \(U\) is uniform \([0,1)\) random variates and it is generated only once for all \(i\). </p>
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00086">86</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00254">254</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1ee1b1bace723bae037ff01a42f191ba"></a>
+<a class="anchor" id="ab6a35f4c23486dd43213490d8d6a0bde"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -131,10 +138,10 @@ template&lt;typename RngType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html">vsmc::internal::U01SeqStratified</a>&lt; RngType &gt;::<a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html">U01SeqStratified</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">vsmc::U01SequenceSystematic</a>&lt; RngType &gt;::<a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">U01SequenceSystematic</a> </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>delta</em>, </td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -155,12 +162,12 @@ template&lt;typename RngType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00090">90</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00258">258</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6f9d2a0943c38e88cca6158b4f989bc1"></a>
+<a class="anchor" id="a6a6bfced1b54aee8ba7bd8c11b870691"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -170,7 +177,7 @@ template&lt;typename RngType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html">vsmc::internal::U01SeqStratified</a>&lt; RngType &gt;::operator[] </td>
+          <td class="memname">double <a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">vsmc::U01SequenceSystematic</a>&lt; RngType &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -184,7 +191,35 @@ template&lt;typename RngType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00094">94</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00278">278</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca239ca0d50fd1e1e751d875f749eb3e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RngType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">vsmc::U01SequenceSystematic</a>&lt; RngType &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00265">265</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>

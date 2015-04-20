@@ -884,10 +884,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_threefry_rotate_impl_3_01uint64__t_00_01_n_01_4.html">ThreefryRotateImpl&lt; uint64_t, N &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_stratified.html">U01SeqStratified</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_seq_systematic.html">U01SeqSystematic</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_uniform_real_distribution_f_r_int_type.html">UniformRealDistributionFRIntType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_uniform_real_distribution_f_r_int_type_3_010_00_01static__cast_3_01uiff03fb1cb80f21a83cc3c45abc4d8f8d.html">UniformRealDistributionFRIntType&lt; 0, static_cast&lt; uint64_t &gt;(static_cast&lt; uint32_t &gt;(~(static_cast&lt; uint32_t &gt;(0))))&gt;</a></td></tr>
@@ -928,6 +924,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1adf0eb0d45175683590a24180053638"><td class="memTemplParams" colspan="2">template&lt;typename IntType1 , typename IntType2 &gt; </td></tr>
+<tr class="memitem:a1adf0eb0d45175683590a24180053638"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a1adf0eb0d45175683590a24180053638">cfrp_trans</a> (std::size_t M, std::size_t N, const IntType1 *replication, IntType2 *copy_from)</td></tr>
+<tr class="separator:a1adf0eb0d45175683590a24180053638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a207f9838352b0dbaf5dde9425b58ddf2">cl_error_str</a> (cl_int status)</td></tr>
 <tr class="separator:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplParams" colspan="2">template&lt;typename FPType &gt; </td></tr>
@@ -1596,6 +1595,56 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a1adf0eb0d45175683590a24180053638"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IntType1 , typename IntType2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::cfrp_trans </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntType1 *&#160;</td>
+          <td class="paramname"><em>replication</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType2 *&#160;</td>
+          <td class="paramname"><em>copy_from</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00088">88</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a207f9838352b0dbaf5dde9425b58ddf2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2276,7 +2325,7 @@ template&lt;typename IntType , typename U01SeqType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00057">57</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00058">58</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

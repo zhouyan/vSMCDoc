@@ -250,10 +250,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>PhiloxRoundConstantValue &lt; T, K, I &gt; :                \</div>
-<div class="line">        <span class="keyword">public</span> cxx11::integral_constant&lt; T, val &gt; {};</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
+<div class="line">    struct PhiloxRoundConstantValue&lt;T, K, I&gt;                                 \</div>
+<div class="line">        : <span class="keyword">public</span> std::integral_constant&lt;T, val&gt; {                            \</div>
+<div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00059">59</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00060">60</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,10 +288,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>PhiloxWeylConstantValue &lt; T, I &gt; :                    \</div>
-<div class="line">        <span class="keyword">public</span> cxx11::integral_constant&lt; T, val &gt; {};</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
+<div class="line">    struct PhiloxWeylConstantValue&lt;T, I&gt;                                     \</div>
+<div class="line">        : <span class="keyword">public</span> std::integral_constant&lt;T, val&gt; {                            \</div>
+<div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00055">55</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00054">54</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,12 +306,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(ResultType);               <a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">\</a></div>
-<div class="line"><a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">        VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a>(K);</div>
-<div class="ttc" id="philox_8hpp_html_a8de86ca1eaf53a8d0d4f5467978fe452"><div class="ttname"><a href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE(K)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00047">philox.hpp:47</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(ResultType);                   <a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">\</a></div>
+<div class="line"><a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">    VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a>(K);</div>
+<div class="ttc" id="philox_8hpp_html_a8de86ca1eaf53a8d0d4f5467978fe452"><div class="ttname"><a href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE(K)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00046">philox.hpp:46</a></div></div>
 <div class="ttc" id="philox_8hpp_html_a71d8c5b10e0a4c9058d512ee59625f7d"><div class="ttname"><a href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00041">philox.hpp:41</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00051">51</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00050">50</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -324,11 +328,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                      \</div>
-<div class="line">            (cxx11::is_same&lt;ResultType, uint32_t&gt;::value ||                  \</div>
-<div class="line">             cxx11::is_same&lt;ResultType, uint64_t&gt;::value),                   \</div>
-<div class="line">            USE_PhiloxEngine_WITH_INTEGER_TYPE_OTHER_THAN_uint32_t_OR_uint64_t)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;ResultType, uint32_t&gt;::value ||         \</div>
+<div class="line">                           std::is_same&lt;ResultType, uint64_t&gt;::value),       \</div>
+<div class="line">        USE_PhiloxEngine_WITH_INTEGER_TYPE_OTHER_THAN_uint32_t_OR_uint64_t)</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="philox_8hpp_source.html#l00041">41</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
@@ -347,11 +350,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((K == 2 || K == 4),                                   \</div>
-<div class="line">            USE_PhiloxEngine_WITH_SIZE_OTHER_THAN_2_OR_4)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                      \</div>
+<div class="line">        (K == 2 || K == 4), USE_PhiloxEngine_WITH_SIZE_OTHER_THAN_2_OR_4)</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00047">47</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00046">46</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>

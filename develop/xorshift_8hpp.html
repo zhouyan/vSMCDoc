@@ -270,12 +270,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a048f0a4440d37867ff6c61fff583fb9d"><td class="memTemplParams" colspan="2">template&lt;unsigned A, unsigned B, unsigned C, unsigned , typename ResultType , std::size_t R, std::size_t S&gt; </td></tr>
-<tr class="memitem:a048f0a4440d37867ff6c61fff583fb9d"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a048f0a4440d37867ff6c61fff583fb9d">vsmc::internal::xorshift</a> (Array&lt; ResultType, 1 &gt; &amp;state, XorshiftIndex&lt; ResultType, 1, R, <a class="el" href="class_s.html">S</a> &gt; &amp;)</td></tr>
-<tr class="separator:a048f0a4440d37867ff6c61fff583fb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a45bbc809c377b1f65555784921208f"><td class="memTemplParams" colspan="2">template&lt;unsigned A, unsigned B, unsigned C, unsigned D, typename ResultType , std::size_t K, std::size_t R, std::size_t S&gt; </td></tr>
-<tr class="memitem:a9a45bbc809c377b1f65555784921208f"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9a45bbc809c377b1f65555784921208f">vsmc::internal::xorshift</a> (Array&lt; ResultType, K &gt; &amp;state, XorshiftIndex&lt; ResultType, K, R, <a class="el" href="class_s.html">S</a> &gt; &amp;index)</td></tr>
-<tr class="separator:a9a45bbc809c377b1f65555784921208f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86f21772d8590687d4e1f84489195f6"><td class="memTemplParams" colspan="2">template&lt;unsigned A, unsigned B, unsigned C, unsigned , typename ResultType , std::size_t R, std::size_t S&gt; </td></tr>
+<tr class="memitem:aa86f21772d8590687d4e1f84489195f6"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa86f21772d8590687d4e1f84489195f6">vsmc::internal::xorshift</a> (std::array&lt; ResultType, 1 &gt; &amp;state, XorshiftIndex&lt; ResultType, 1, R, <a class="el" href="class_s.html">S</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa86f21772d8590687d4e1f84489195f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39837d8fe674c3e8fdbfe051698c399"><td class="memTemplParams" colspan="2">template&lt;unsigned A, unsigned B, unsigned C, unsigned D, typename ResultType , std::size_t K, std::size_t R, std::size_t S&gt; </td></tr>
+<tr class="memitem:ad39837d8fe674c3e8fdbfe051698c399"><td class="memTemplItemLeft" align="right" valign="top">ResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad39837d8fe674c3e8fdbfe051698c399">vsmc::internal::xorshift</a> (std::array&lt; ResultType, K &gt; &amp;state, XorshiftIndex&lt; ResultType, K, R, <a class="el" href="class_s.html">S</a> &gt; &amp;index)</td></tr>
+<tr class="separator:ad39837d8fe674c3e8fdbfe051698c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ac393a53552722486471b352781a0e0b5"></a>
@@ -335,8 +335,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((I != 0 || K == 1),                                   \</div>
-<div class="line">            USE_XorshiftEngine_WITH_INDEX_##I##_EQUAL_TO_ZERO)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<div class="line">        USE_XorshiftEngine_WITH_INDEX_##I##_EQUAL_TO_ZERO)</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00048">48</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
@@ -372,9 +372,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((R &gt; <a class="code" href="class_s.html">S</a> || K == 1),                                    \</div>
-<div class="line">            USE_XorshiftEngine_WITH_INDEX_##R##_NOT_LARGER_THAN_##<a class="code" href="class_s.html">S</a>)</div>
+<div class="line">        USE_XorshiftEngine_WITH_INDEX_##R##_NOT_LARGER_THAN_##<a class="code" href="class_s.html">S</a>)</div>
 <div class="ttc" id="class_s_html"><div class="ttname"><a href="class_s.html">S</a></div></div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00052">52</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
@@ -411,9 +411,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((A != 0),                                             \</div>
-<div class="line">            USE_XorshiftEngine_WITH_SHIFT_BITS_##A##_EQUAL_TO_ZERO);</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                      \</div>
+<div class="line">        (A != 0), USE_XorshiftEngine_WITH_SHIFT_BITS_##A##_EQUAL_TO_ZERO);</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00056">56</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
@@ -443,8 +443,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((C != 0 || K != 1),                                   \</div>
-<div class="line">            USE_XorshiftEngine_WITH_SHIFT_BITS_##C##_EQUAL_TO_ZERO);</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<div class="line">        USE_XorshiftEngine_WITH_SHIFT_BITS_##C##_EQUAL_TO_ZERO);</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00060">60</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
@@ -474,8 +474,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((D != 0 || K == 1),                                   \</div>
-<div class="line">            USE_XorshiftEngine_WITH_SHIFT_BITS_##A##_EQUAL_TO_ZERO);</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<div class="line">        USE_XorshiftEngine_WITH_SHIFT_BITS_##A##_EQUAL_TO_ZERO);</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00064">64</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
@@ -495,8 +495,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((<span class="keyword">sizeof</span>(ResultType) &gt;= <span class="keyword">sizeof</span>(uint32_t)),             \</div>
-<div class="line">            USE_XorshiftEngine_WITH_A_ResultType_SMALLER_THAN_32_BITS)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<div class="line">        USE_XorshiftEngine_WITH_A_ResultType_SMALLER_THAN_32_BITS)</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00044">44</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
@@ -515,9 +515,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((cxx11::is_unsigned&lt;ResultType&gt;::value),              \</div>
-<div class="line">            USE_XorshiftEngine_WITH_A_ResultType_NOT_AN_UNSIGNED_INTEGER_TYPE)</div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00046">assert.hpp:46</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_unsigned&lt;ResultType&gt;::value),                \</div>
+<div class="line">        USE_XorshiftEngine_WITH_A_ResultType_NOT_AN_UNSIGNED_INTEGER_TYPE)</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00040">40</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uniform_20real_20distribution',['Uniform real distribution',['../u01.html',1,'rng']]]
+  ['vsmc',['vSMC',['../index.html',1,'']]]
 ];

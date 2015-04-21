@@ -111,9 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1d302ea502d77d867849f0ef74ee77d9"><td class="memItemLeft" align="right" valign="top">static constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#a1d302ea502d77d867849f0ef74ee77d9">mask_hi</a></td></tr>
 <tr class="separator:a1d302ea502d77d867849f0ef74ee77d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a848b0d5e3f5e09abeb1cf646abd40f"><td class="memItemLeft" align="right" valign="top">static constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#a8a848b0d5e3f5e09abeb1cf646abd40f">mask_lo</a></td></tr>
+<tr class="memitem:a8a848b0d5e3f5e09abeb1cf646abd40f"><td class="memItemLeft" align="right" valign="top">static constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#a8a848b0d5e3f5e09abeb1cf646abd40f">mask_lo</a> = static_cast&lt;T&gt;(<a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#a1d302ea502d77d867849f0ef74ee77d9">mask_hi</a> ^ <a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#ad623e8bc45c991b044cb2f2328ae2b69">max_val</a>)</td></tr>
 <tr class="separator:a8a848b0d5e3f5e09abeb1cf646abd40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad623e8bc45c991b044cb2f2328ae2b69"><td class="memItemLeft" align="right" valign="top">static constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#ad623e8bc45c991b044cb2f2328ae2b69">max_val</a></td></tr>
+<tr class="memitem:ad623e8bc45c991b044cb2f2328ae2b69"><td class="memItemLeft" align="right" valign="top">static constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#ad623e8bc45c991b044cb2f2328ae2b69">max_val</a> = static_cast&lt;T&gt;(~(static_cast&lt;T&gt;(0)))</td></tr>
 <tr class="separator:ad623e8bc45c991b044cb2f2328ae2b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -121,7 +121,7 @@ Static Public Attributes</h2></td></tr>
 struct vsmc::internal::CounterMask&lt; T, true &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00045">45</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00047">47</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a1d302ea502d77d867849f0ef74ee77d9"></a>
 <div class="memitem">
@@ -159,7 +159,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const T <a class="el" href="structvsmc_1_1internal_1_1_counter_mask.html">vsmc::internal::CounterMask</a>&lt; T, true &gt;::mask_lo</td>
+          <td class="memname">constexpr const T <a class="el" href="structvsmc_1_1internal_1_1_counter_mask.html">vsmc::internal::CounterMask</a>&lt; T, true &gt;::mask_lo = static_cast&lt;T&gt;(<a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#a1d302ea502d77d867849f0ef74ee77d9">mask_hi</a> ^ <a class="el" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#ad623e8bc45c991b044cb2f2328ae2b69">max_val</a>)</td>
         </tr>
       </table>
   </td>
@@ -168,9 +168,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#a1d302ea502d77d867849f0ef74ee77d9">mask_hi</a>^<a class="code" href="structvsmc_1_1internal_1_1_counter_mask_3_01_t_00_01true_01_4.html#ad623e8bc45c991b044cb2f2328ae2b69">max_val</a>)</div>
-</div><!-- fragment -->
+
 <p>Definition at line <a class="el" href="counter_8hpp_source.html#l00053">53</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
@@ -185,7 +183,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr const T <a class="el" href="structvsmc_1_1internal_1_1_counter_mask.html">vsmc::internal::CounterMask</a>&lt; T, true &gt;::max_val</td>
+          <td class="memname">constexpr const T <a class="el" href="structvsmc_1_1internal_1_1_counter_mask.html">vsmc::internal::CounterMask</a>&lt; T, true &gt;::max_val = static_cast&lt;T&gt;(~(static_cast&lt;T&gt;(0)))</td>
         </tr>
       </table>
   </td>
@@ -194,10 +192,8 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(~(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0)))</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00047">47</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00048">48</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>

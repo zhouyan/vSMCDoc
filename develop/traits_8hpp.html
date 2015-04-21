@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="config_8hpp_source.html">vsmc/internal/config.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="defines_8hpp_source.html">vsmc/internal/defines.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="forward_8hpp_source.html">vsmc/internal/forward.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="type__traits_8hpp_source.html">vsmc/cxx11/type_traits.hpp</a>&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
 <p><a href="traits_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -257,32 +257,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;                                                        \</div>
-<div class="line">struct has_##name##_impl_                                                    \</div>
-<div class="line">{                                                                            \</div>
-<div class="line">    private :                                                                \</div>
-<div class="line">                                                                             \</div>
-<div class="line">    struct char2 {<span class="keywordtype">char</span> c1; <span class="keywordtype">char</span> c2;};                                        \</div>
-<div class="line">    template &lt;typename V, RT (V::*) Args&gt; <span class="keyword">struct </span>sfinae_;                    \</div>
-<div class="line">    template &lt;typename V, RT (V::*) Args const&gt; <span class="keyword">struct </span>sfinae_const_;        \</div>
-<div class="line">    template &lt;typename V, RT (*) Args&gt; <span class="keyword">struct </span>sfinae_static_;                \</div>
-<div class="line">    template &lt;typename V&gt; <span class="keyword">static</span> <span class="keywordtype">char</span> test (sfinae_&lt;V, &amp;V::name&gt; *);         \</div>
-<div class="line">    template &lt;typename V&gt; <span class="keyword">static</span> <span class="keywordtype">char</span> test (sfinae_const_&lt;V, &amp;V::name&gt; *);   \</div>
-<div class="line">    template &lt;typename V&gt; <span class="keyword">static</span> <span class="keywordtype">char</span> test (sfinae_static_&lt;V, &amp;V::name&gt; *);  \</div>
-<div class="line">    template &lt;typename V&gt; <span class="keyword">static</span> char2 test (...);                           \</div>
-<div class="line">                                                                             \</div>
-<div class="line">    public :                                                                 \</div>
-<div class="line">                                                                             \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">bool</span> value =                                 \</div>
-<div class="line">        sizeof(test&lt;U&gt;(<a class="code" href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a>)) == <span class="keyword">sizeof</span>(char);                       \</div>
-<div class="line">};                                                                           \</div>
-<div class="line">                                                                             \</div>
-<div class="line">template &lt;typename U&gt; <span class="keyword">struct </span>has_##name##_ :                                 \</div>
-<div class="line"><span class="keyword">public</span> cxx11::integral_constant&lt;bool, has_##name##_impl_&lt;U&gt;::value&gt; {};</div>
-<div class="ttc" id="group___definitions_html_gac32adbf5fc65346a8eafe327d8f06294"><div class="ttname"><a href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a></div><div class="ttdeci">#define VSMC_CONSTEXPR</div><div class="ttdoc">constexpr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00055">defines.hpp:55</a></div></div>
-<div class="ttc" id="group___definitions_html_gacfea7263dce24fd2dbc34b298a9afbe2"><div class="ttname"><a href="group___definitions.html#gacfea7263dce24fd2dbc34b298a9afbe2">VSMC_NULLPTR</a></div><div class="ttdeci">#define VSMC_NULLPTR</div><div class="ttdoc">nullptr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00079">defines.hpp:79</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="traits_8hpp_source.html#l00118">118</a> of file <a class="el" href="traits_8hpp_source.html">traits.hpp</a>.</p>
+
+<p>Definition at line <a class="el" href="traits_8hpp_source.html#l00138">138</a> of file <a class="el" href="traits_8hpp_source.html">traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +326,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="traits_8hpp_source.html#l00079">79</a> of file <a class="el" href="traits_8hpp_source.html">traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="traits_8hpp_source.html#l00089">89</a> of file <a class="el" href="traits_8hpp_source.html">traits.hpp</a>.</p>
 
 </div>
 </div>

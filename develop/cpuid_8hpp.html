@@ -106,7 +106,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="array_8hpp_source.html">vsmc/utility/array.hpp</a>&gt;</code><br />
 </div>
 <p><a href="cpuid_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -761,18 +760,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>CPUIDFeatureInfo&lt;<a class="code" href="group___c_p_u_i_d.html#ga6e9cefe0836fbe600a1ce47f5c9f03b6">CPUIDFeature</a>##feat&gt;              \</div>
-<div class="line">{                                                                            \</div>
-<div class="line">    static std::string str () {<span class="keywordflow">return</span> std::string(#feat);}                   \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> eax = a##U;                         \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ecx = c##U;                         \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> bit = b##U;                         \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> std::size_t index = i;                       \</div>
-<div class="line">};</div>
-<div class="ttc" id="group___definitions_html_gac32adbf5fc65346a8eafe327d8f06294"><div class="ttname"><a href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a></div><div class="ttdeci">#define VSMC_CONSTEXPR</div><div class="ttdoc">constexpr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00055">defines.hpp:55</a></div></div>
-<div class="ttc" id="group___c_p_u_i_d_html_ga6e9cefe0836fbe600a1ce47f5c9f03b6"><div class="ttname"><a href="group___c_p_u_i_d.html#ga6e9cefe0836fbe600a1ce47f5c9f03b6">vsmc::CPUIDFeature</a></div><div class="ttdeci">CPUIDFeature</div><div class="ttdoc">CPU features. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00090">cpuid.hpp:90</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
+<div class="line">    struct CPUIDFeatureInfo&lt;CPUIDFeature##feat&gt; {                            \</div>
+<div class="line">        static std::string str() { <span class="keywordflow">return</span> std::string(#feat); }              \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> eax = a##U;                          \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ecx = c##U;                          \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> bit = b##U;                          \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> std::size_t index = i;                        \</div>
+<div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00042">42</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00041">41</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>
@@ -817,17 +814,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>CPUIDFeatureInfo&lt;CPUIDFeatureExt##feat&gt;                   \</div>
-<div class="line">{                                                                            \</div>
-<div class="line">    static std::string str () {<span class="keywordflow">return</span> std::string(#feat);}                   \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> eax = 0x80000000U + a##U;           \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ecx = c##U;                         \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> bit = b##U;                         \</div>
-<div class="line">    static <a class="code" href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a> <span class="keyword">const</span> std::size_t index = i;                       \</div>
-<div class="line">};</div>
-<div class="ttc" id="group___definitions_html_gac32adbf5fc65346a8eafe327d8f06294"><div class="ttname"><a href="group___definitions.html#gac32adbf5fc65346a8eafe327d8f06294">VSMC_CONSTEXPR</a></div><div class="ttdeci">#define VSMC_CONSTEXPR</div><div class="ttdoc">constexpr </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00055">defines.hpp:55</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
+<div class="line">    struct CPUIDFeatureInfo&lt;CPUIDFeatureExt##feat&gt; {                         \</div>
+<div class="line">        static std::string str() { <span class="keywordflow">return</span> std::string(#feat); }              \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> eax = 0x80000000U + a##U;            \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ecx = c##U;                          \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> bit = b##U;                          \</div>
+<div class="line">        static constexpr <span class="keyword">const</span> std::size_t index = i;                        \</div>
+<div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00052">52</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00051">51</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
 
 </div>
 </div>

@@ -90,9 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_bug000001"></a>Module <a class="el" href="group___c_x_x11_traits.html">CXX11Traits</a>  </dt>
-<dd><a class="el" href="structvsmc_1_1cxx11_1_1is__union.html">vsmc::cxx11::is_union</a> is not correctly implemented. This type traits need compiler support to be implemented. The current behavior is that <code>is_union&lt;T&gt;</code> derives from <a class="el" href="group___c_x_x11_traits_helper.html#gac9a2cf52272a27ac8eb3bd3fe550cabb">vsmc::cxx11::false_type</a> for any <code>T</code>. In addition, <code>is_class&lt;T&gt;</code> derives <a class="el" href="group___c_x_x11_traits_helper.html#gac58fee08d259e39fb8480bd85c088f76">vsmc::cxx11::true_type</a> if the template parameter type is a union, while it should derive from <a class="el" href="group___c_x_x11_traits_helper.html#gac9a2cf52272a27ac8eb3bd3fe550cabb">vsmc::cxx11::false_type</a> </dd>
-<dt><a class="anchor" id="_bug000002"></a>Class <a class="el" href="classvsmc_1_1_dispatch_source_base.html">vsmc::DispatchSourceBase&lt; Type &gt;</a>  </dt>
+<dt><a class="anchor" id="_bug000001"></a>Class <a class="el" href="classvsmc_1_1_dispatch_source_base.html">vsmc::DispatchSourceBase&lt; Type &gt;</a>  </dt>
 <dd>A DispachSource object is manually retained when created. It is supposed to be retained by <code>dispatch_source_create</code> according to the documents. But this seems not to be the case in the current implementation (Mac OS X 10.9). The worst case is that a source object is retained one more time than it is released. A simple test example is, <div class="fragment"><div class="line"><a class="code" href="class_1_1dispatch__source__t.html">::dispatch_source_t</a> source = ::dispatch_source_create( <span class="comment">/* arguments */</span> );</div>
 <div class="line">::dispatch_release(source); <span class="comment">// generate error</span></div>
 </div><!-- fragment --></dd>

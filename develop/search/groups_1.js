@@ -7,8 +7,5 @@ var searchData=
   ['counter',['Counter',['../group___counter.html',1,'']]],
   ['cpuid',['CPUID',['../group___c_p_u_i_d.html',1,'']]],
   ['cstring',['CString',['../group___c_string.html',1,'']]],
-  ['c_2b_2b11_20style_20type_20traits',['C++11 style type traits',['../group___c_x_x11_traits.html',1,'']]],
-  ['composite_20type_20categories',['Composite type categories',['../group___c_x_x11_traits_composite.html',1,'']]],
-  ['const_2dvolatility_20specifiers',['Const-volatility specifiers',['../group___c_x_x11_traits_c_v.html',1,'']]],
   ['c_2b_2b11_20concurrency',['C++11 concurrency',['../group___s_t_d.html',1,'']]]
 ];

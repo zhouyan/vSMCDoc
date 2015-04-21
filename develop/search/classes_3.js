@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['decay',['decay',['../structvsmc_1_1cxx11_1_1decay.html',1,'vsmc::cxx11']]],
   ['dimtrait',['DimTrait',['../structvsmc_1_1traits_1_1_dim_trait.html',1,'vsmc::traits']]],
   ['dimtrait_3c_20dynamic_20_3e',['DimTrait&lt; Dynamic &gt;',['../structvsmc_1_1traits_1_1_dim_trait_3_01_dynamic_01_4.html',1,'vsmc::traits']]],
   ['discretedistribution',['DiscreteDistribution',['../classvsmc_1_1_discrete_distribution.html',1,'vsmc']]],
@@ -8,9 +7,9 @@ var searchData=
   ['dispatchfunction',['DispatchFunction',['../classvsmc_1_1_dispatch_function.html',1,'vsmc']]],
   ['dispatchgroup',['DispatchGroup',['../classvsmc_1_1_dispatch_group.html',1,'vsmc']]],
   ['dispatchobject',['DispatchObject',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
-  ['dispatchobject_3c_20_3a_3adispatch_5fgroup_5ft_20_3e',['DispatchObject&lt; ::dispatch_group_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
-  ['dispatchobject_3c_20_3a_3adispatch_5fqueue_5ft_20_3e',['DispatchObject&lt; ::dispatch_queue_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
-  ['dispatchobject_3c_20_3a_3adispatch_5fsource_5ft_20_3e',['DispatchObject&lt; ::dispatch_source_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
+  ['dispatchobject_3c_3a_3adispatch_5fgroup_5ft_20_3e',['DispatchObject&lt;::dispatch_group_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
+  ['dispatchobject_3c_3a_3adispatch_5fqueue_5ft_20_3e',['DispatchObject&lt;::dispatch_queue_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
+  ['dispatchobject_3c_3a_3adispatch_5fsource_5ft_20_3e',['DispatchObject&lt;::dispatch_source_t &gt;',['../classvsmc_1_1_dispatch_object.html',1,'vsmc']]],
   ['dispatchqueue',['DispatchQueue',['../classvsmc_1_1_dispatch_queue.html',1,'vsmc']]],
   ['dispatchqueue_3c_20dispatchglobal_20_3e',['DispatchQueue&lt; DispatchGlobal &gt;',['../classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html',1,'vsmc']]],
   ['dispatchqueue_3c_20dispatchmain_20_3e',['DispatchQueue&lt; DispatchMain &gt;',['../classvsmc_1_1_dispatch_queue_3_01_dispatch_main_01_4.html',1,'vsmc']]],

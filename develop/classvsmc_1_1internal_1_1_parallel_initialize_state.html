@@ -118,19 +118,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad64e9aa2aa06b0c508189da394fcd395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99732b2e2c471514bf98978afa45e565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html#a99732b2e2c471514bf98978afa45e565">join</a> (const <a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html">ParallelInitializeState</a>&lt; T, InitType &gt; &amp;other)</td></tr>
 <tr class="separator:a99732b2e2c471514bf98978afa45e565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213db66ce4517ea7db999322878fcb66"><td class="memTemplParams" colspan="2">template&lt;typename SizeType &gt; </td></tr>
-<tr class="memitem:a213db66ce4517ea7db999322878fcb66"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt; <a class="el" href="structvsmc_1_1cxx11_1_1is__integral.html">cxx11::is_integral</a>&lt; SizeType &gt;::value &gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html#a213db66ce4517ea7db999322878fcb66">operator()</a> (SizeType id)</td></tr>
-<tr class="separator:a213db66ce4517ea7db999322878fcb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa827e6d113a24075dab259f39eca89eb"><td class="memTemplParams" colspan="2">template&lt;typename RangeType &gt; </td></tr>
-<tr class="memitem:aa827e6d113a24075dab259f39eca89eb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt;!<a class="el" href="structvsmc_1_1cxx11_1_1is__integral.html">cxx11::is_integral</a>&lt; RangeType &gt;::value &gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html#aa827e6d113a24075dab259f39eca89eb">operator()</a> (const RangeType &amp;range)</td></tr>
-<tr class="separator:aa827e6d113a24075dab259f39eca89eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5d80d69f261c242a1b99bd07f39d93"><td class="memTemplParams" colspan="2">template&lt;typename SizeType &gt; </td></tr>
+<tr class="memitem:a6c5d80d69f261c242a1b99bd07f39d93"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_integral&lt; SizeType &gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html#a6c5d80d69f261c242a1b99bd07f39d93">operator()</a> (SizeType id)</td></tr>
+<tr class="separator:a6c5d80d69f261c242a1b99bd07f39d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ef507c7eead1ac6096026f78da66c4"><td class="memTemplParams" colspan="2">template&lt;typename RangeType &gt; </td></tr>
+<tr class="memitem:af1ef507c7eead1ac6096026f78da66c4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!std::is_integral&lt; RangeType &gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html#af1ef507c7eead1ac6096026f78da66c4">operator()</a> (const RangeType &amp;range)</td></tr>
+<tr class="separator:af1ef507c7eead1ac6096026f78da66c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, typename InitType&gt;<br />
 class vsmc::internal::ParallelInitializeState&lt; T, InitType &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00091">91</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00092">92</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4840c5aa9739f4a67ab3ccfe254df58c"></a>
 <div class="memitem">
@@ -206,7 +206,7 @@ template&lt;typename SplitType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00099">99</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00101">101</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ template&lt;typename T, typename InitType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00131">131</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00136">136</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
 
 </div>
 </div>
@@ -262,11 +262,11 @@ template&lt;typename T, typename InitType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00128">128</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00131">131</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a213db66ce4517ea7db999322878fcb66"></a>
+<a class="anchor" id="a6c5d80d69f261c242a1b99bd07f39d93"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -278,7 +278,7 @@ template&lt;typename SizeType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt;<a class="el" href="structvsmc_1_1cxx11_1_1is__integral.html">cxx11::is_integral</a>&lt;SizeType&gt;::value&gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html">vsmc::internal::ParallelInitializeState</a>&lt; T, InitType &gt;::operator() </td>
+          <td class="memname">std::enable_if&lt;std::is_integral&lt;SizeType&gt;::value&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html">vsmc::internal::ParallelInitializeState</a>&lt; T, InitType &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">SizeType&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -292,11 +292,11 @@ template&lt;typename SizeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00105">105</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00109">109</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa827e6d113a24075dab259f39eca89eb"></a>
+<a class="anchor" id="af1ef507c7eead1ac6096026f78da66c4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -308,7 +308,7 @@ template&lt;typename RangeType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structvsmc_1_1cxx11_1_1enable__if.html">cxx11::enable_if</a>&lt;!<a class="el" href="structvsmc_1_1cxx11_1_1is__integral.html">cxx11::is_integral</a>&lt;RangeType&gt;::value&gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html">vsmc::internal::ParallelInitializeState</a>&lt; T, InitType &gt;::operator() </td>
+          <td class="memname">std::enable_if&lt;!std::is_integral&lt;RangeType&gt;::value&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1internal_1_1_parallel_initialize_state.html">vsmc::internal::ParallelInitializeState</a>&lt; T, InitType &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">const RangeType &amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
@@ -322,7 +322,7 @@ template&lt;typename RangeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00115">115</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00119">119</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
 
 </div>
 </div>

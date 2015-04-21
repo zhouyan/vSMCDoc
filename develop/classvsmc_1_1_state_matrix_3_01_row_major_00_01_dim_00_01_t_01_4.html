@@ -117,13 +117,13 @@ Public Types</h2></td></tr>
 <tr class="separator:a1130e1363eba957bbcb4dbbf9321ef36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2b11d537aecbf69b340fbcd827ce1f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvsmc_1_1_state_matrix_base.html">StateMatrixBase</a>&lt; <a class="el" href="group___definitions.html#gga3891c43c52a10259979c138e981381bea4df16e4b47c5a0662d1344fac6783ae6">RowMajor</a>, Dim, T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#afa2b11d537aecbf69b340fbcd827ce1f">state_matrix_base_type</a></td></tr>
 <tr class="separator:afa2b11d537aecbf69b340fbcd827ce1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5efe4a715ed5f0bfa8f0e10b7db77d79"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvsmc_1_1_state_matrix_base.html#a83ad1fbb2e0db735ed77430db95dc4c6">state_matrix_base_type::state_pack_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a></td></tr>
+<tr class="memitem:a5efe4a715ed5f0bfa8f0e10b7db77d79"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvsmc_1_1_state_matrix_base.html#a1fc5ac0c7b65669d967f7a494331948a">state_matrix_base_type::state_pack_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a></td></tr>
 <tr class="separator:a5efe4a715ed5f0bfa8f0e10b7db77d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classvsmc_1_1_state_matrix_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvsmc_1_1_state_matrix_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase&lt; RowMajor, Dim, T &gt;</a></td></tr>
 <tr class="memitem:a152c0a66667b7bc5c0c84024ab04651b inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a152c0a66667b7bc5c0c84024ab04651b">size_type</a></td></tr>
 <tr class="separator:a152c0a66667b7bc5c0c84024ab04651b inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ad1fbb2e0db735ed77430db95dc4c6 inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structvsmc_1_1cxx11_1_1conditional.html">cxx11::conditional</a>&lt; Dim==Dynamic, std::vector&lt; T &gt;, <a class="el" href="classvsmc_1_1_array.html">Array</a>&lt; T, Dim &gt; &gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a83ad1fbb2e0db735ed77430db95dc4c6">state_pack_type</a></td></tr>
-<tr class="separator:a83ad1fbb2e0db735ed77430db95dc4c6 inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc5ac0c7b65669d967f7a494331948a inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top">typedef std::conditional&lt; Dim==Dynamic, std::vector&lt; T &gt;, std::array&lt; T, Dim &gt; &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a1fc5ac0c7b65669d967f7a494331948a">state_pack_type</a></td></tr>
+<tr class="separator:a1fc5ac0c7b65669d967f7a494331948a inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c9dd0dc9c276e3db32ba7e0cf75fe5 inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a40c9dd0dc9c276e3db32ba7e0cf75fe5">state_type</a></td></tr>
 <tr class="separator:a40c9dd0dc9c276e3db32ba7e0cf75fe5 inherit pub_types_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,6 +164,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad5d5fcbeb00d144fde2c3dcbbac1eb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2880f0d69f4d3f652dd40fe84549b14a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a2880f0d69f4d3f652dd40fe84549b14a">state_unpack</a> (<a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a1130e1363eba957bbcb4dbbf9321ef36">size_type</a> id, const <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a> &amp;pack)</td></tr>
 <tr class="separator:a2880f0d69f4d3f652dd40fe84549b14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e07d1e360a3cdd0386dcb35e07b474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a71e07d1e360a3cdd0386dcb35e07b474">state_unpack</a> (<a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a1130e1363eba957bbcb4dbbf9321ef36">size_type</a> id, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a> &amp;&amp;pack)</td></tr>
+<tr class="separator:a71e07d1e360a3cdd0386dcb35e07b474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvsmc_1_1_state_matrix_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvsmc_1_1_state_matrix_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase&lt; RowMajor, Dim, T &gt;</a></td></tr>
 <tr class="memitem:ac62fa0d253555c3a6c7e233e764cc9fc inherit pub_methods_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#ac62fa0d253555c3a6c7e233e764cc9fc">data</a> ()</td></tr>
 <tr class="separator:ac62fa0d253555c3a6c7e233e764cc9fc inherit pub_methods_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classvsmc_1_1_state_matrix_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvsmc_1_1_state_matrix_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase&lt; RowMajor, Dim, T &gt;</a></td></tr>
 <tr class="memitem:a731f7abb8034ae3cfac6c46e33e34e19 inherit pro_methods_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a731f7abb8034ae3cfac6c46e33e34e19">StateMatrixBase</a> (<a class="el" href="classvsmc_1_1_state_matrix_base.html#a152c0a66667b7bc5c0c84024ab04651b">size_type</a> N)</td></tr>
 <tr class="separator:a731f7abb8034ae3cfac6c46e33e34e19 inherit pro_methods_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ea0929f7df53b7ad2ee0ee03d22048 inherit pro_methods_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a83ad1fbb2e0db735ed77430db95dc4c6">state_pack_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a35ea0929f7df53b7ad2ee0ee03d22048">create_pack</a> () const</td></tr>
+<tr class="memitem:a35ea0929f7df53b7ad2ee0ee03d22048 inherit pro_methods_classvsmc_1_1_state_matrix_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a1fc5ac0c7b65669d967f7a494331948a">state_pack_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a35ea0929f7df53b7ad2ee0ee03d22048">create_pack</a> () const</td></tr>
 <tr class="separator:a35ea0929f7df53b7ad2ee0ee03d22048 inherit pro_methods_classvsmc_1_1_state_matrix_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -207,7 +209,7 @@ class vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype. </p>
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00241">241</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00267">267</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a1130e1363eba957bbcb4dbbf9321ef36"></a>
 <div class="memitem">
@@ -221,7 +223,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00246">246</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00271">271</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -237,7 +239,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00245">245</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00270">270</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -248,12 +250,12 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 template&lt;std::size_t Dim, typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classvsmc_1_1_state_matrix_base.html#a83ad1fbb2e0db735ed77430db95dc4c6">state_matrix_base_type::state_pack_type</a> <a class="el" href="classvsmc_1_1_state_matrix.html">vsmc::StateMatrix</a>&lt; <a class="el" href="group___definitions.html#gga3891c43c52a10259979c138e981381bea4df16e4b47c5a0662d1344fac6783ae6">RowMajor</a>, Dim, T &gt;::<a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a></td>
+          <td class="memname">typedef <a class="el" href="classvsmc_1_1_state_matrix_base.html#a1fc5ac0c7b65669d967f7a494331948a">state_matrix_base_type::state_pack_type</a> <a class="el" href="classvsmc_1_1_state_matrix.html">vsmc::StateMatrix</a>&lt; <a class="el" href="group___definitions.html#gga3891c43c52a10259979c138e981381bea4df16e4b47c5a0662d1344fac6783ae6">RowMajor</a>, Dim, T &gt;::<a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00247">247</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00272">272</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -282,7 +284,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00249">249</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00274">274</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -323,7 +325,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00286">286</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00324">324</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +363,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00294">294</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00332">332</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -389,7 +391,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00275">275</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00312">312</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +419,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00277">277</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00314">314</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +447,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00279">279</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00316">316</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +475,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00282">282</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00318">318</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -511,7 +513,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00251">251</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00276">276</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -549,7 +551,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00254">254</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00281">281</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -589,7 +591,7 @@ template&lt;std::size_t Pos&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00258">258</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00287">287</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -629,7 +631,7 @@ template&lt;std::size_t Pos&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00262">262</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00293">293</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -659,7 +661,7 @@ template&lt;std::size_t Pos&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00266">266</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00299">299</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -689,7 +691,7 @@ template&lt;std::size_t Pos&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00270">270</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00305">305</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -717,7 +719,7 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00302">302</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00340">340</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -755,7 +757,45 @@ template&lt;std::size_t Dim, typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00310">310</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00348">348</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71e07d1e360a3cdd0386dcb35e07b474"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t Dim, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_state_matrix.html">vsmc::StateMatrix</a>&lt; <a class="el" href="group___definitions.html#gga3891c43c52a10259979c138e981381bea4df16e4b47c5a0662d1344fac6783ae6">RowMajor</a>, Dim, T &gt;::state_unpack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a1130e1363eba957bbcb4dbbf9321ef36">size_type</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a5efe4a715ed5f0bfa8f0e10b7db77d79">state_pack_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>pack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00357">357</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>

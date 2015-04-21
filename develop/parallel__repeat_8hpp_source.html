@@ -137,44 +137,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="blocked__range_8hpp.html">vsmc/thread/blocked_range.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="parallel__for_8hpp.html">vsmc/thread/parallel_for.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> WorkType&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">   51</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">parallel_repeat</a> (std::size_t n, WorkType &amp;&amp;work)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">struct </span>body</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        body (<span class="keyword">const</span> WorkType &amp;w) : work_(w) {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> WorkType&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">   52</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">parallel_repeat</a>(std::size_t n, WorkType &amp;&amp;work)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">struct </span>body {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        body(<span class="keyword">const</span> WorkType &amp;w) : work_(w) {}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        body (WorkType &amp;&amp;w) : work_(<a class="code" href="group___c_x_x11_traits_utility.html#gac50f944dde318f46ba3a672920aecc5c">std::move</a>(w)) {}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        body(WorkType &amp;&amp;w) : work_(std::move(w)) {}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> operator() (<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_blocked_range.html">BlockedRange&lt;std::size_t&gt;</a> &amp;range)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_blocked_range.html">BlockedRange&lt;std::size_t&gt;</a> &amp;range)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">for</span> (std::size_t i = range.<a class="code" href="classvsmc_1_1_blocked_range.html#a611c64bf21ebf0155c296f683efb6c82">begin</a>(); i != range.<a class="code" href="classvsmc_1_1_blocked_range.html#a731274222fa26f1b9db7ca9891670feb">end</a>(); ++i)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                work_(i);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">private</span> :</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        WorkType work_;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">parallel_for</a>(<a class="code" href="classvsmc_1_1_blocked_range.html">BlockedRange&lt;std::size_t&gt;</a>(0, n),</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            body(std::forward&lt;WorkType&gt;(work)));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namesapce vsmc</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // VSMC_THREAD_PARALLEL_REPEAT_HPP</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        WorkType work_;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">parallel_for</a>(</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classvsmc_1_1_blocked_range.html">BlockedRange&lt;std::size_t&gt;</a>(0, n), body(std::forward&lt;WorkType&gt;(work)));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namesapce vsmc</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // VSMC_THREAD_PARALLEL_REPEAT_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
-<div class="ttc" id="group___thread_html_gaf16fe561cdb0d5e07b36dac20db2e331"><div class="ttname"><a href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">vsmc::parallel_repeat</a></div><div class="ttdeci">void parallel_repeat(std::size_t n, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel repeat using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__repeat_8hpp_source.html#l00051">parallel_repeat.hpp:51</a></div></div>
-<div class="ttc" id="classvsmc_1_1_blocked_range_html_a731274222fa26f1b9db7ca9891670feb"><div class="ttname"><a href="classvsmc_1_1_blocked_range.html#a731274222fa26f1b9db7ca9891670feb">vsmc::BlockedRange::end</a></div><div class="ttdeci">const_iterator end() const </div><div class="ttdef"><b>Definition:</b> <a href="blocked__range_8hpp_source.html#l00072">blocked_range.hpp:72</a></div></div>
+<div class="ttc" id="group___thread_html_gaf16fe561cdb0d5e07b36dac20db2e331"><div class="ttname"><a href="group___thread.html#gaf16fe561cdb0d5e07b36dac20db2e331">vsmc::parallel_repeat</a></div><div class="ttdeci">void parallel_repeat(std::size_t n, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel repeat using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__repeat_8hpp_source.html#l00052">parallel_repeat.hpp:52</a></div></div>
+<div class="ttc" id="classvsmc_1_1_blocked_range_html_a731274222fa26f1b9db7ca9891670feb"><div class="ttname"><a href="classvsmc_1_1_blocked_range.html#a731274222fa26f1b9db7ca9891670feb">vsmc::BlockedRange::end</a></div><div class="ttdeci">const_iterator end() const </div><div class="ttdef"><b>Definition:</b> <a href="blocked__range_8hpp_source.html#l00074">blocked_range.hpp:74</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="group___c_x_x11_traits_utility_html_gac50f944dde318f46ba3a672920aecc5c"><div class="ttname"><a href="group___c_x_x11_traits_utility.html#gac50f944dde318f46ba3a672920aecc5c">vsmc::cxx11::move</a></div><div class="ttdeci">remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;t) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8hpp_source.html#l01258">type_traits.hpp:1258</a></div></div>
 <div class="ttc" id="parallel__for_8hpp_html"><div class="ttname"><a href="parallel__for_8hpp.html">parallel_for.hpp</a></div></div>
 <div class="ttc" id="blocked__range_8hpp_html"><div class="ttname"><a href="blocked__range_8hpp.html">blocked_range.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_blocked_range_html"><div class="ttname"><a href="classvsmc_1_1_blocked_range.html">vsmc::BlockedRange</a></div><div class="ttdoc">Blocked range. </div><div class="ttdef"><b>Definition:</b> <a href="blocked__range_8hpp_source.html#l00045">blocked_range.hpp:45</a></div></div>
-<div class="ttc" id="classvsmc_1_1_blocked_range_html_a611c64bf21ebf0155c296f683efb6c82"><div class="ttname"><a href="classvsmc_1_1_blocked_range.html#a611c64bf21ebf0155c296f683efb6c82">vsmc::BlockedRange::begin</a></div><div class="ttdeci">const_iterator begin() const </div><div class="ttdef"><b>Definition:</b> <a href="blocked__range_8hpp_source.html#l00070">blocked_range.hpp:70</a></div></div>
-<div class="ttc" id="group___thread_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__for_8hpp_source.html#l00053">parallel_for.hpp:53</a></div></div>
+<div class="ttc" id="classvsmc_1_1_blocked_range_html"><div class="ttname"><a href="classvsmc_1_1_blocked_range.html">vsmc::BlockedRange</a></div><div class="ttdoc">Blocked range. </div><div class="ttdef"><b>Definition:</b> <a href="blocked__range_8hpp_source.html#l00046">blocked_range.hpp:46</a></div></div>
+<div class="ttc" id="classvsmc_1_1_blocked_range_html_a611c64bf21ebf0155c296f683efb6c82"><div class="ttname"><a href="classvsmc_1_1_blocked_range.html#a611c64bf21ebf0155c296f683efb6c82">vsmc::BlockedRange::begin</a></div><div class="ttdeci">const_iterator begin() const </div><div class="ttdef"><b>Definition:</b> <a href="blocked__range_8hpp_source.html#l00072">blocked_range.hpp:72</a></div></div>
+<div class="ttc" id="group___thread_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__for_8hpp_source.html#l00054">parallel_for.hpp:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

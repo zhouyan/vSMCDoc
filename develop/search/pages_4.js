@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['uniform_20real_20distribution',['Uniform real distribution',['../u01.html',1,'rng']]]
 ];

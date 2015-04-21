@@ -136,50 +136,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="internal_2common_8hpp.html">vsmc/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cblas_8hpp.html">vsmc/math/cblas.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classvsmc_1_1_i_s_integrate.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_i_s_integrate.html">ISIntegrate</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span> :</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvsmc_1_1_i_s_integrate.html#a80e9a540ee1717c9922bf948b235425b">   46</a></span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="classvsmc_1_1_i_s_integrate.html#a80e9a540ee1717c9922bf948b235425b">size_type</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classvsmc_1_1_i_s_integrate.html#a7d8e3f5a7051e03222e473aaac114f99">   56</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_i_s_integrate.html#a7d8e3f5a7051e03222e473aaac114f99">operator() </a>(size_type N, size_type dim,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> *hX, <span class="keyword">const</span> <span class="keywordtype">double</span> *W, <span class="keywordtype">double</span> *Eh)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (N == 0 || dim == 0)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (dim == 1) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            *Eh = <a class="code" href="group___c_b_l_a_s.html#gaa5034f4f25a847045d83cb880be21d76">math::dot</a>(N, hX, W);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef VSMC_CBLAS_INT</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ::cblas_dgemv(::CblasColMajor, ::CblasNoTrans,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                static_cast&lt;VSMC_CBLAS_INT&gt;(dim),</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                static_cast&lt;VSMC_CBLAS_INT&gt;(N), 1, hX,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                static_cast&lt;VSMC_CBLAS_INT&gt;(dim), W, 1, 0, Eh, 1);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (size_type d = 0; d != dim; ++d)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Eh[d] = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i, ++W) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">for</span> (size_type d = 0; d != dim; ++d, ++hX)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                Eh[d] += (*W) * (*hX);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}; <span class="comment">// class ISIntegrate</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // VSMC_INTEGRATE_ISINTEGRATE_HPP</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classvsmc_1_1_i_s_integrate.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_i_s_integrate.html">ISIntegrate</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classvsmc_1_1_i_s_integrate.html#a80e9a540ee1717c9922bf948b235425b">   47</a></span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="classvsmc_1_1_i_s_integrate.html#a80e9a540ee1717c9922bf948b235425b">size_type</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classvsmc_1_1_i_s_integrate.html#a7d8e3f5a7051e03222e473aaac114f99">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_i_s_integrate.html#a7d8e3f5a7051e03222e473aaac114f99">operator()</a>(size_type N, size_type dim, <span class="keyword">const</span> <span class="keywordtype">double</span> *hX,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *W, <span class="keywordtype">double</span> *Eh)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (N == 0 || dim == 0)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (dim == 1) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            *Eh = <a class="code" href="group___c_b_l_a_s.html#gaa5034f4f25a847045d83cb880be21d76">math::dot</a>(N, hX, W);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef VSMC_CBLAS_INT</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        ::cblas_dgemv(::CblasColMajor, ::CblasNoTrans,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            static_cast&lt;VSMC_CBLAS_INT&gt;(dim), static_cast&lt;VSMC_CBLAS_INT&gt;(N),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            1, hX, static_cast&lt;VSMC_CBLAS_INT&gt;(dim), W, 1, 0, Eh, 1);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">for</span> (size_type d = 0; d != dim; ++d)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            Eh[d] = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i, ++W) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">for</span> (size_type d = 0; d != dim; ++d, ++hX)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                Eh[d] += (*W) * (*hX);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}; <span class="comment">// class ISIntegrate</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // VSMC_INTEGRATE_ISINTEGRATE_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="cblas_8hpp_html"><div class="ttname"><a href="cblas_8hpp.html">cblas.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_i_s_integrate_html_a7d8e3f5a7051e03222e473aaac114f99"><div class="ttname"><a href="classvsmc_1_1_i_s_integrate.html#a7d8e3f5a7051e03222e473aaac114f99">vsmc::ISIntegrate::operator()</a></div><div class="ttdeci">void operator()(size_type N, size_type dim, const double *hX, const double *W, double *Eh) const </div><div class="ttdoc">Compute the importance sampling integration. </div><div class="ttdef"><b>Definition:</b> <a href="is__integrate_8hpp_source.html#l00056">is_integrate.hpp:56</a></div></div>
-<div class="ttc" id="classvsmc_1_1_i_s_integrate_html"><div class="ttname"><a href="classvsmc_1_1_i_s_integrate.html">vsmc::ISIntegrate</a></div><div class="ttdoc">Compute the importance sampling integration of multivariate variable. </div><div class="ttdef"><b>Definition:</b> <a href="is__integrate_8hpp_source.html#l00042">is_integrate.hpp:42</a></div></div>
+<div class="ttc" id="classvsmc_1_1_i_s_integrate_html_a7d8e3f5a7051e03222e473aaac114f99"><div class="ttname"><a href="classvsmc_1_1_i_s_integrate.html#a7d8e3f5a7051e03222e473aaac114f99">vsmc::ISIntegrate::operator()</a></div><div class="ttdeci">void operator()(size_type N, size_type dim, const double *hX, const double *W, double *Eh) const </div><div class="ttdoc">Compute the importance sampling integration. </div><div class="ttdef"><b>Definition:</b> <a href="is__integrate_8hpp_source.html#l00058">is_integrate.hpp:58</a></div></div>
+<div class="ttc" id="classvsmc_1_1_i_s_integrate_html"><div class="ttname"><a href="classvsmc_1_1_i_s_integrate.html">vsmc::ISIntegrate</a></div><div class="ttdoc">Compute the importance sampling integration of multivariate variable. </div><div class="ttdef"><b>Definition:</b> <a href="is__integrate_8hpp_source.html#l00044">is_integrate.hpp:44</a></div></div>
 <div class="ttc" id="group___c_b_l_a_s_html_gaa5034f4f25a847045d83cb880be21d76"><div class="ttname"><a href="group___c_b_l_a_s.html#gaa5034f4f25a847045d83cb880be21d76">vsmc::math::dot</a></div><div class="ttdeci">T dot(std::size_t n, const T *x, const T *y)</div><div class="ttdoc">The dot product. </div><div class="ttdef"><b>Definition:</b> <a href="cblas_8hpp_source.html#l00068">cblas.hpp:68</a></div></div>
-<div class="ttc" id="classvsmc_1_1_i_s_integrate_html_a80e9a540ee1717c9922bf948b235425b"><div class="ttname"><a href="classvsmc_1_1_i_s_integrate.html#a80e9a540ee1717c9922bf948b235425b">vsmc::ISIntegrate::size_type</a></div><div class="ttdeci">std::size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="is__integrate_8hpp_source.html#l00046">is_integrate.hpp:46</a></div></div>
+<div class="ttc" id="classvsmc_1_1_i_s_integrate_html_a80e9a540ee1717c9922bf948b235425b"><div class="ttname"><a href="classvsmc_1_1_i_s_integrate.html#a80e9a540ee1717c9922bf948b235425b">vsmc::ISIntegrate::size_type</a></div><div class="ttdeci">std::size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="is__integrate_8hpp_source.html#l00047">is_integrate.hpp:47</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

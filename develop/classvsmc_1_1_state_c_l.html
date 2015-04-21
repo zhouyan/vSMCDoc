@@ -122,8 +122,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a43448cd36bf0ba003562762b26c5e29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396a53423724672ab2d97e9bc66b5287"><td class="memItemLeft" align="right" valign="top">typedef ::<a class="el" href="class_1_1cl__ulong.html">cl_ulong</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#a396a53423724672ab2d97e9bc66b5287">size_type</a></td></tr>
 <tr class="separator:a396a53423724672ab2d97e9bc66b5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6dd853838f28c8af5bb93a1823946b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structvsmc_1_1cxx11_1_1conditional.html">cxx11::conditional</a>&lt; StateSize==<a class="el" href="group___definitions.html#gga0fedbc50735140f7c355a75b81e1f4eba3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>, std::vector&lt; char &gt;, <a class="el" href="classvsmc_1_1_array.html">Array</a>&lt; char, StateSize &gt; &gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#afd6dd853838f28c8af5bb93a1823946b">state_pack_type</a></td></tr>
-<tr class="separator:afd6dd853838f28c8af5bb93a1823946b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffc8ab1b820b44be8465b1337c50215"><td class="memItemLeft" align="right" valign="top">typedef std::conditional&lt; StateSize==<a class="el" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>, std::vector&lt; char &gt;, std::array&lt; char, StateSize &gt; &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#aaffc8ab1b820b44be8465b1337c50215">state_pack_type</a></td></tr>
+<tr class="separator:aaffc8ab1b820b44be8465b1337c50215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -176,11 +176,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c192d506f2f576e6a09e47ea56d82e7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvsmc_1_1_c_l_buffer.html">CLBuffer</a>&lt; char, ID &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#a9c192d506f2f576e6a09e47ea56d82e7">state_buffer</a> () const </td></tr>
 <tr class="memdesc:a9c192d506f2f576e6a09e47ea56d82e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OpenCL buffer that stores the state values.  <a href="#a9c192d506f2f576e6a09e47ea56d82e7">More...</a><br /></td></tr>
 <tr class="separator:a9c192d506f2f576e6a09e47ea56d82e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f1953face3c9d2503115624d7ce7b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_c_l.html#afd6dd853838f28c8af5bb93a1823946b">state_pack_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#a78f1953face3c9d2503115624d7ce7b5">state_pack</a> (<a class="el" href="classvsmc_1_1_state_c_l.html#a396a53423724672ab2d97e9bc66b5287">size_type</a> id) const </td></tr>
+<tr class="memitem:a78f1953face3c9d2503115624d7ce7b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_c_l.html#aaffc8ab1b820b44be8465b1337c50215">state_pack_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#a78f1953face3c9d2503115624d7ce7b5">state_pack</a> (<a class="el" href="classvsmc_1_1_state_c_l.html#a396a53423724672ab2d97e9bc66b5287">size_type</a> id) const </td></tr>
 <tr class="separator:a78f1953face3c9d2503115624d7ce7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b7983e35fc0e4a30e64001d7082375"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#a84b7983e35fc0e4a30e64001d7082375">state_size</a> () const </td></tr>
 <tr class="separator:a84b7983e35fc0e4a30e64001d7082375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7fb7263f18e347205ad514976ba71dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#ae7fb7263f18e347205ad514976ba71dc">state_unpack</a> (<a class="el" href="classvsmc_1_1_state_c_l.html#a396a53423724672ab2d97e9bc66b5287">size_type</a> id, const <a class="el" href="classvsmc_1_1_state_c_l.html#afd6dd853838f28c8af5bb93a1823946b">state_pack_type</a> &amp;pack)</td></tr>
+<tr class="memitem:ae7fb7263f18e347205ad514976ba71dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#ae7fb7263f18e347205ad514976ba71dc">state_unpack</a> (<a class="el" href="classvsmc_1_1_state_c_l.html#a396a53423724672ab2d97e9bc66b5287">size_type</a> id, const <a class="el" href="classvsmc_1_1_state_c_l.html#aaffc8ab1b820b44be8465b1337c50215">state_pack_type</a> &amp;pack)</td></tr>
 <tr class="separator:ae7fb7263f18e347205ad514976ba71dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43345d1e873575e31d92c9f8066abef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html#a43345d1e873575e31d92c9f8066abef7">update_state</a> (::<a class="el" href="class_1_1cl__mem__flags.html">cl_mem_flags</a> flag)</td></tr>
 <tr class="memdesc:a43345d1e873575e31d92c9f8066abef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change state buffer flag (cause reallocation)  <a href="#a43345d1e873575e31d92c9f8066abef7">More...</a><br /></td></tr>
@@ -201,7 +201,7 @@ class vsmc::StateCL&lt; StateSize, FPType, ID &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using OpenCL. </p>
 
-<p>Definition at line <a class="el" href="forward_8hpp_source.html#l00076">76</a> of file <a class="el" href="forward_8hpp_source.html">forward.hpp</a>.</p>
+<p>Definition at line <a class="el" href="forward_8hpp_source.html#l00093">93</a> of file <a class="el" href="forward_8hpp_source.html">forward.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a7abfdad9095f4c0215b7495b49f32938"></a>
 <div class="memitem">
@@ -215,7 +215,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00252">252</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00203">203</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00251">251</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00202">202</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00253">253</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00204">204</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,23 +263,23 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00250">250</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00201">201</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afd6dd853838f28c8af5bb93a1823946b"></a>
+<a class="anchor" id="aaffc8ab1b820b44be8465b1337c50215"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structvsmc_1_1cxx11_1_1conditional.html">cxx11::conditional</a>&lt;StateSize == <a class="el" href="group___definitions.html#gga0fedbc50735140f7c355a75b81e1f4eba3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>, std::vector&lt;char&gt;, <a class="el" href="classvsmc_1_1_array.html">Array</a>&lt;char, StateSize&gt; &gt;::<a class="el" href="classvsmc_1_1cxx11_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1_state_c_l.html">vsmc::StateCL</a>&lt; StateSize, FPType, ID &gt;::<a class="el" href="classvsmc_1_1_state_c_l.html#afd6dd853838f28c8af5bb93a1823946b">state_pack_type</a></td>
+          <td class="memname">typedef std::conditional&lt;StateSize == <a class="el" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>, std::vector&lt;char&gt;, std::array&lt;char, StateSize&gt; &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1_state_c_l.html">vsmc::StateCL</a>&lt; StateSize, FPType, ID &gt;::<a class="el" href="classvsmc_1_1_state_c_l.html#aaffc8ab1b820b44be8465b1337c50215">state_pack_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00255">255</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00206">206</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00257">257</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00208">208</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 <div class="line"><span class="comment">// ... User source, passed by the source argument</span></div>
 </div><!-- fragment --><p> After build, <code><a class="el" href="classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add">vsmc::Seed::instance()</a>.skip(N)</code> is called with <code>N</code> being the nubmer of particles. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00345">345</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00302">302</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00357">357</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00315">315</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 
 <p>Build from an existing program. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00363">363</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00323">323</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -512,7 +512,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00370">370</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00330">330</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -541,7 +541,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>Whether the last attempted building success. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00375">375</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00337">337</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -571,7 +571,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 <p>The build id of the last attempted of building. </p>
 <p>This function returns a non-decreasing sequence of integers </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00381">381</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00343">343</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -611,7 +611,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00395">395</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00357">357</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00457">457</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00422">422</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -665,7 +665,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00459">459</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00424">424</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -692,7 +692,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00461">461</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00426">426</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00463">463</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00428">428</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -746,7 +746,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00430">430</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00393">393</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -773,7 +773,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00404">404</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00366">366</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -804,7 +804,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 <p>Create kernel with the current program. </p>
 <p>If <a class="el" href="classvsmc_1_1_state_c_l.html#a1051aa88efca9f2987337be9239133b6" title="Build the OpenCL program from source. ">build()</a> does not return <code>true</code>, then calling this is an error </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00387">387</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00349">349</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -833,7 +833,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>The instance of the <a class="el" href="classvsmc_1_1_c_l_manager.html" title="OpenCL Manager. ">CLManager</a> signleton associated with this value collcection. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00299">299</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00256">256</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -862,7 +862,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>The OpenCL program associated with this value collection. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00305">305</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00262">262</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -892,7 +892,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>Change state size. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00279">279</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00232">232</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -919,7 +919,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00274">274</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00227">227</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -948,7 +948,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>The OpenCL buffer that stores the state values. </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00302">302</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00259">259</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -962,7 +962,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_state_c_l.html#afd6dd853838f28c8af5bb93a1823946b">state_pack_type</a> <a class="el" href="classvsmc_1_1_state_c_l.html">vsmc::StateCL</a>&lt; StateSize, FPType, ID &gt;::state_pack </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_state_c_l.html#aaffc8ab1b820b44be8465b1337c50215">state_pack_type</a> <a class="el" href="classvsmc_1_1_state_c_l.html">vsmc::StateCL</a>&lt; StateSize, FPType, ID &gt;::state_pack </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_state_c_l.html#a396a53423724672ab2d97e9bc66b5287">size_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -976,7 +976,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00440">440</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00403">403</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1003,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00276">276</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00229">229</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1025,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_state_c_l.html#afd6dd853838f28c8af5bb93a1823946b">state_pack_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_state_c_l.html#aaffc8ab1b820b44be8465b1337c50215">state_pack_type</a> &amp;&#160;</td>
           <td class="paramname"><em>pack</em>&#160;</td>
         </tr>
         <tr>
@@ -1041,7 +1041,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00448">448</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00412">412</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1071,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>Change state buffer flag (cause reallocation) </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00290">290</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00243">243</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1111,7 @@ template&lt;std::size_t StateSize, typename FPType, typename ID&gt; </div>
 
 <p>Change state buffer flag and host pointer (cause reallocation) </p>
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00294">294</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00249">249</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

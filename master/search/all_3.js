@@ -30,6 +30,7 @@ var searchData=
   ['cburng4x64_5frng_5ft',['cburng4x64_rng_t',['../group___c_l_r_n_g.html#ga979c01f3e9870c189b805be23e3f880a',1,'urng.h']]],
   ['cend',['cend',['../classvsmc_1_1_array.html#a8a6bef6c5fbc09727818be5a3ca0f861',1,'vsmc::Array']]],
   ['cess',['cess',['../classvsmc_1_1_weight_set.html#ad54abce918140d72556a6d2476cf96fe',1,'vsmc::WeightSet::cess(InputIter first, bool use_log) const '],['../classvsmc_1_1_weight_set.html#aeb9a879af23bad921f74c08af283fe24',1,'vsmc::WeightSet::cess(RandomIter first, int stride, bool use_log) const '],['../classvsmc_1_1_weight_set_null.html#a64b37e3b1546d5525c474da84c02c56d',1,'vsmc::WeightSetNull::cess(InputIter, bool) const '],['../classvsmc_1_1_weight_set_null.html#a9b7be013fc42e1af1f4a877fb1ea1770',1,'vsmc::WeightSetNull::cess(RandomIter, int, bool) const ']]],
+  ['cfrp_5ftrans',['cfrp_trans',['../namespacevsmc_1_1internal.html#a1adf0eb0d45175683590a24180053638',1,'vsmc::internal']]],
   ['check_5fdevice',['check_device',['../classvsmc_1_1_c_l_setup.html#ae6854fee5b446361d301f0076f1c70ac',1,'vsmc::CLSetup']]],
   ['check_5fdevice_5fvendor',['check_device_vendor',['../classvsmc_1_1_c_l_setup.html#ab2cb146cd0b0f37c967393bc40334fbf',1,'vsmc::CLSetup']]],
   ['check_5fplatform',['check_platform',['../classvsmc_1_1_c_l_setup.html#a9782f67c94d74708c0616f409ca4d110',1,'vsmc::CLSetup']]],

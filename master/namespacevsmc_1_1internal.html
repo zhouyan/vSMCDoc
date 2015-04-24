@@ -696,8 +696,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html">HDF5StoreDataPtr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_inversion.html">Inversion</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1is__seed__seq.html">is_seed_seq</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_is_derived_from_state_c_l.html">IsDerivedFromStateCL</a></td></tr>
@@ -926,6 +924,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1adf0eb0d45175683590a24180053638"><td class="memTemplParams" colspan="2">template&lt;typename IntType1 , typename IntType2 &gt; </td></tr>
+<tr class="memitem:a1adf0eb0d45175683590a24180053638"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a1adf0eb0d45175683590a24180053638">cfrp_trans</a> (std::size_t M, std::size_t N, const IntType1 *replication, IntType2 *copy_from)</td></tr>
+<tr class="separator:a1adf0eb0d45175683590a24180053638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a207f9838352b0dbaf5dde9425b58ddf2">cl_error_str</a> (cl_int status)</td></tr>
 <tr class="separator:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplParams" colspan="2">template&lt;typename FPType &gt; </td></tr>
@@ -967,6 +968,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d6073daee88f443e06268eced6b4124"><td class="memTemplParams" colspan="2">template&lt;typename InputIter , typename... InputIters, std::size_t Pos&gt; </td></tr>
 <tr class="memitem:a9d6073daee88f443e06268eced6b4124"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9d6073daee88f443e06268eced6b4124">hdf5store_list_insert_tuple</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, <a class="el" href="structvsmc_1_1_position.html">Position</a>&lt; Pos &gt;)</td></tr>
 <tr class="separator:a9d6073daee88f443e06268eced6b4124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91481a5a67dc8c3ecece461b89e8709"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename U01SeqType &gt; </td></tr>
+<tr class="memitem:aa91481a5a67dc8c3ecece461b89e8709"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa91481a5a67dc8c3ecece461b89e8709">inversion</a> (std::size_t M, std::size_t N, const double *weight, U01SeqType &amp;u01seq, IntType *replication)</td></tr>
+<tr class="separator:aa91481a5a67dc8c3ecece461b89e8709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memTemplParams" colspan="2">template&lt;SIMD &gt; </td></tr>
 <tr class="memitem:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9cff3653b1654b9dd780a1ca12d016f7">memcpy_0</a> (void *dst, const void *src, std::size_t n)</td></tr>
 <tr class="separator:a9cff3653b1654b9dd780a1ca12d016f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1591,6 +1595,56 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a1adf0eb0d45175683590a24180053638"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IntType1 , typename IntType2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::cfrp_trans </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IntType1 *&#160;</td>
+          <td class="paramname"><em>replication</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType2 *&#160;</td>
+          <td class="paramname"><em>copy_from</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00088">88</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a207f9838352b0dbaf5dde9425b58ddf2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2216,6 +2270,62 @@ template&lt;typename InputIter , typename... InputIters, std::size_t Pos&gt; </d
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00553">553</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa91481a5a67dc8c3ecece461b89e8709"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IntType , typename U01SeqType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::inversion </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U01SeqType &amp;&#160;</td>
+          <td class="paramname"><em>u01seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType *&#160;</td>
+          <td class="paramname"><em>replication</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00058">58</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

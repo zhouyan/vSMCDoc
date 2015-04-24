@@ -29,6 +29,7 @@ var searchData=
   ['integrand_5fdata',['integrand_data',['../classvsmc_1_1_path.html#a6c835a7cdbcddfea3c597ea4e3170467',1,'vsmc::Path']]],
   ['integrate_5fsegment',['integrate_segment',['../classvsmc_1_1_n_integrate_base.html#a0720c04b06be08f7b416194327f970a4',1,'vsmc::NIntegrateBase::integrate_segment()'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#adf3a651726b8ce3c106fa52eb4e1d0c9',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::integrate_segment()'],['../classvsmc_1_1_n_integrate_newton_cotes.html#aaa73fbffe90f16b770c4a678ad19e1db',1,'vsmc::NIntegrateNewtonCotes::integrate_segment()']]],
   ['intel_5fturbo_5fboost',['intel_turbo_boost',['../classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413',1,'vsmc::CPUID']]],
+  ['inversion',['inversion',['../namespacevsmc_1_1internal.html#aa91481a5a67dc8c3ecece461b89e8709',1,'vsmc::internal']]],
   ['is_5fabstract_5ftest',['is_abstract_test',['../namespacevsmc_1_1cxx11_1_1internal.html#a87a3797d741d25fb9d99d0a075cdb8eb',1,'vsmc::cxx11::internal']]],
   ['is_5fbase_5fof_5fdest',['is_base_of_dest',['../structvsmc_1_1cxx11_1_1internal_1_1is__base__of__dest.html#aa4a0b794360840394787225c522ec013',1,'vsmc::cxx11::internal::is_base_of_dest']]],
   ['is_5fbase_5fof_5ftest',['is_base_of_test',['../namespacevsmc_1_1cxx11_1_1internal.html#a808b7a605630266b8664feae97791fee',1,'vsmc::cxx11::internal::is_base_of_test(int)'],['../namespacevsmc_1_1cxx11_1_1internal.html#aa7b8e68611a0d4d802d5e408dfda0204',1,'vsmc::cxx11::internal::is_base_of_test(...)']]],

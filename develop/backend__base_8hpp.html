@@ -166,12 +166,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name##Base() {}                                                          \</div>
-<div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;) {}                            \</div>
-<div class="line">    Name##Base&lt;T, Derived&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;)        \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        return *<span class="keyword">this</span>;                                                        \</div>
-<div class="line">    }                                                                        <a class="code" href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line">Name##Base() {}                                                           \</div>
+<div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;) {}                             \</div>
+<div class="line">    Name##Base&lt;T, Derived&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;)         \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        return *<span class="keyword">this</span>;                                                         \</div>
+<div class="line">    }                                                                         <a class="code" href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">\</a></div>
 <div class="line"><a class="code" href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">    VSMC_CRTP_DESTRUCTOR_PREFIX</a> ~Name##Base() {}</div>
 <div class="ttc" id="group___definitions_html_gafc2169ddc131f16040676bb227a3926e"><div class="ttname"><a href="group___definitions.html#gafc2169ddc131f16040676bb227a3926e">VSMC_CRTP_DESTRUCTOR_PREFIX</a></div><div class="ttdeci">#define VSMC_CRTP_DESTRUCTOR_PREFIX</div><div class="ttdoc">CRTP style base classes (virtual) destructor. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00052">defines.hpp:52</a></div></div>
 </div><!-- fragment -->
@@ -192,12 +192,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name##Base() {}                                                          \</div>
-<div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Virtual&gt; &amp;) {}                            \</div>
-<div class="line">    Name##Base&lt;T, Virtual&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Virtual&gt; &amp;)        \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        return *<span class="keyword">this</span>;                                                        \</div>
-<div class="line">    }                                                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">Name##Base() {}                                                           \</div>
+<div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Virtual&gt; &amp;) {}                             \</div>
+<div class="line">    Name##Base&lt;T, Virtual&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Virtual&gt; &amp;)         \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        return *<span class="keyword">this</span>;                                                         \</div>
+<div class="line">    }                                                                         \</div>
 <div class="line">    virtual ~Name##Base() {}</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00046">46</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
@@ -227,18 +227,18 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name##Impl() {}                                                          \</div>
-<div class="line">    Name##Impl(<span class="keyword">const</span> Name##Impl&lt;T, Derived&gt; &amp;other)                          \</div>
-<div class="line">        : Name##Base&lt;T, Derived&gt;(other)                                      \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">    }                                                                        \</div>
-<div class="line">    Name##Impl&lt;T, Derived&gt; &amp;operator=(<span class="keyword">const</span> Name##Impl&lt;T, Derived&gt; &amp;other)   \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        if (<span class="keyword">this</span> != &amp;other)                                                  \</div>
-<div class="line">            Name##Base&lt;T, Derived&gt;::operator=(other);                        \</div>
-<div class="line">                                                                             \</div>
-<div class="line">        return *<span class="keyword">this</span>;                                                        \</div>
-<div class="line">    }                                                                        \</div>
+<b>Value:</b><div class="fragment"><div class="line">Name##Impl() {}                                                           \</div>
+<div class="line">    Name##Impl(<span class="keyword">const</span> Name##Impl&lt;T, Derived&gt; &amp;other)                           \</div>
+<div class="line">        : Name##Base&lt;T, Derived&gt;(other)                                       \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">    }                                                                         \</div>
+<div class="line">    Name##Impl&lt;T, Derived&gt; &amp;operator=(<span class="keyword">const</span> Name##Impl&lt;T, Derived&gt; &amp;other)    \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        if (<span class="keyword">this</span> != &amp;other)                                                   \</div>
+<div class="line">            Name##Base&lt;T, Derived&gt;::operator=(other);                         \</div>
+<div class="line">                                                                              \</div>
+<div class="line">        return *<span class="keyword">this</span>;                                                         \</div>
+<div class="line">    }                                                                         \</div>
 <div class="line">    ~Name##Impl() {}</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00055">55</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
@@ -258,7 +258,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((N == static_cast&lt;size_type&gt;(this-&gt;size())),         \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((N == static_cast&lt;size_type&gt;(this-&gt;size())),          \</div>
 <div class="line">        (<span class="stringliteral">&quot;**State&quot;</span> #name <span class="stringliteral">&quot;::copy** SIZE MISMATCH&quot;</span>))</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 </div><!-- fragment -->
@@ -279,8 +279,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((dynamic_cast&lt;Derived *&gt;(<span class="keyword">this</span>) != <span class="keyword">nullptr</span>),          \</div>
-<div class="line">        (<span class="stringliteral">&quot;DERIVED FROM &quot;</span> #basename                                           \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((dynamic_cast&lt;Derived *&gt;(<span class="keyword">this</span>) != <span class="keyword">nullptr</span>),           \</div>
+<div class="line">        (<span class="stringliteral">&quot;DERIVED FROM &quot;</span> #basename                                            \</div>
 <div class="line">         <span class="stringliteral">&quot; WITH INCORRECT **Derived** TEMPLATE PARAMTER&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 </div><!-- fragment -->

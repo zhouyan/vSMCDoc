@@ -541,11 +541,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                    \</div>
-<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> T *a, T *y)                     \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        for (std::size_t i = 0; i != n; ++i)                                 \</div>
-<div class="line">            y[i] = func(a[i]);                                               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                     \</div>
+<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> T *a, T *y)                      \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        for (std::size_t i = 0; i != n; ++i)                                  \</div>
+<div class="line">            y[i] = func(a[i]);                                                \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00045">45</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
@@ -575,11 +575,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                    \</div>
-<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> T *a, <span class="keyword">const</span> T *b, T *y)         \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        for (std::size_t i = 0; i != n; ++i)                                 \</div>
-<div class="line">            y[i] = func(a[i], b[i]);                                         \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                     \</div>
+<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> T *a, <span class="keyword">const</span> T *b, T *y)          \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        for (std::size_t i = 0; i != n; ++i)                                  \</div>
+<div class="line">            y[i] = func(a[i], b[i]);                                          \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00053">53</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
@@ -609,11 +609,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                    \</div>
-<div class="line">    inline <span class="keywordtype">void</span> v##vname(std::size_t n, <span class="keyword">const</span> T *a, <span class="keyword">const</span> T *b, T *y)        \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        for (std::size_t i = 0; i != n; ++i)                                 \</div>
-<div class="line">            y[i] = a[i] op b[i];                                             \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                     \</div>
+<div class="line">    inline <span class="keywordtype">void</span> v##vname(std::size_t n, <span class="keyword">const</span> T *a, <span class="keyword">const</span> T *b, T *y)         \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        for (std::size_t i = 0; i != n; ++i)                                  \</div>
+<div class="line">            y[i] = a[i] op b[i];                                              \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00061">61</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
@@ -633,13 +633,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">float</span> *a, <span class="keywordtype">float</span> *y)             \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        ::vs##name(static_cast&lt;MKL_INT&gt;(n), a, y);                           \</div>
-<div class="line">    }                                                                        \</div>
-<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keywordtype">double</span> *y)           \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, y);                           \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">float</span> *a, <span class="keywordtype">float</span> *y)              \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        ::vs##name(static_cast&lt;MKL_INT&gt;(n), a, y);                            \</div>
+<div class="line">    }                                                                         \</div>
+<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keywordtype">double</span> *y)            \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, y);                            \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00347">347</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
@@ -659,15 +659,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> v##name(                                                     \</div>
-<div class="line">        std::size_t n, <span class="keyword">const</span> <span class="keywordtype">float</span> *a, <span class="keyword">const</span> <span class="keywordtype">float</span> *b, <span class="keywordtype">float</span> *y)             \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        ::vs##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                        \</div>
-<div class="line">    }                                                                        \</div>
-<div class="line">    inline <span class="keywordtype">void</span> v##name(                                                     \</div>
-<div class="line">        std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keyword">const</span> <span class="keywordtype">double</span> *b, <span class="keywordtype">double</span> *y)          \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                        \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> v##name(                                                      \</div>
+<div class="line">        std::size_t n, <span class="keyword">const</span> <span class="keywordtype">float</span> *a, <span class="keyword">const</span> <span class="keywordtype">float</span> *b, <span class="keywordtype">float</span> *y)              \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        ::vs##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                         \</div>
+<div class="line">    }                                                                         \</div>
+<div class="line">    inline <span class="keywordtype">void</span> v##name(                                                      \</div>
+<div class="line">        std::size_t n, <span class="keyword">const</span> <span class="keywordtype">double</span> *a, <span class="keyword">const</span> <span class="keywordtype">double</span> *b, <span class="keywordtype">double</span> *y)           \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                         \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00357">357</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>

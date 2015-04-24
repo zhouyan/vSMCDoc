@@ -139,24 +139,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;intrin.h&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="cpuid_8hpp.html#a104029813947efe92e2292e93044e7c2">   41</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO(feat, a, c, i, b)             \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    template &lt;&gt;                                                              \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    struct CPUIDFeatureInfo&lt;CPUIDFeature##feat&gt; {                            \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        static std::string str() { return std::string(#feat); }              \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">        static constexpr const unsigned eax = a##U;                          \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">        static constexpr const unsigned ecx = c##U;                          \</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        static constexpr const unsigned bit = b##U;                          \</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        static constexpr const std::size_t index = i;                        \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="cpuid_8hpp.html#a104029813947efe92e2292e93044e7c2">   41</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO(feat, a, c, i, b)              \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    template &lt;&gt;                                                               \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    struct CPUIDFeatureInfo&lt;CPUIDFeature##feat&gt; {                             \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        static std::string str() { return std::string(#feat); }               \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">        static constexpr unsigned eax = a##U;                                 \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">        static constexpr unsigned ecx = c##U;                                 \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        static constexpr unsigned bit = b##U;                                 \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        static constexpr std::size_t index = i;                               \</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    };</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="cpuid_8hpp.html#a48a89091eb1268796e964b5c79d21678">   51</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO_EXT(feat, a, c, i, b)         \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    template &lt;&gt;                                                              \</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    struct CPUIDFeatureInfo&lt;CPUIDFeatureExt##feat&gt; {                         \</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        static std::string str() { return std::string(#feat); }              \</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        static constexpr const unsigned eax = 0x80000000U + a##U;            \</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">        static constexpr const unsigned ecx = c##U;                          \</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">        static constexpr const unsigned bit = b##U;                          \</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        static constexpr const std::size_t index = i;                        \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="cpuid_8hpp.html#a48a89091eb1268796e964b5c79d21678">   51</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO_EXT(feat, a, c, i, b)          \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    template &lt;&gt;                                                               \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    struct CPUIDFeatureInfo&lt;CPUIDFeatureExt##feat&gt; {                          \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        static std::string str() { return std::string(#feat); }               \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        static constexpr unsigned eax = 0x80000000U + a##U;                   \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">        static constexpr unsigned ecx = c##U;                                 \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">        static constexpr unsigned bit = b##U;                                 \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        static constexpr std::size_t index = i;                               \</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    };</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
@@ -338,13 +338,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html">  248</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html">CPUIDFeatureInfo</a> {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#acefb092bf0a46bc075a5fa896aded149">str</a>();</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4fa1949be603340c6c9d166ac52e9631">  253</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4fa1949be603340c6c9d166ac52e9631">eax</a> = 0x00U;</div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a17e9a9197c6fc805f019e2a65478e302">  253</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a17e9a9197c6fc805f019e2a65478e302">eax</a> = 0x00U;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a0989b16a012070ebaa087129608af75f">  256</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a0989b16a012070ebaa087129608af75f">ecx</a> = 0x00U;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4ab20863fd957a8cbfc3f9e5832f5fa5">  256</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4ab20863fd957a8cbfc3f9e5832f5fa5">ecx</a> = 0x00U;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a84d47cda78f56fe1eb9014f2a96a6300">  259</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a84d47cda78f56fe1eb9014f2a96a6300">index</a> = 0x00U;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a61b44ed1b0c51fa7004b6cafe7a41de3">  259</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a61b44ed1b0c51fa7004b6cafe7a41de3">index</a> = 0x00U;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4efef76846b077faba14f827e2e8834d">  262</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4efef76846b077faba14f827e2e8834d">bit</a> = 0x00U;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a798cace5913b8e1b324dbb172205acd8">  262</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> <a class="code" href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a798cace5913b8e1b324dbb172205acd8">bit</a> = 0x00U;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}; <span class="comment">// struct CPUIDFeatureInfo</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_s_s_e3_01_4.html#ad6d61db07a39b091c2bd8e1fab34356e">  265</a></span>&#160;<a class="code" href="cpuid_8hpp.html#a104029813947efe92e2292e93044e7c2">VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO</a>(<a class="code" href="group___definitions.html#gga3fa1b131dbc4c9bb42ee36013355758da17f6345db4cc78b049317bf75355d8c6">SSE3</a>, 0x01, 0x00, 2, 0)</div>
@@ -630,9 +630,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        reg_type reg(info&lt;0x00, 0x00&gt;());</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> *uptr = reg.data();</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordtype">char</span> str[<span class="keyword">sizeof</span>(unsigned) * 3 + 1] = {<span class="charliteral">&#39;\0&#39;</span>};</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        <a class="code" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">std::memcpy</a>(str + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>) * 0, uptr + 1, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>));</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <a class="code" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">std::memcpy</a>(str + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>) * 1, uptr + 3, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>));</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <a class="code" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">std::memcpy</a>(str + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>) * 2, uptr + 2, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>));</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        std::memcpy(str + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>) * 0, uptr + 1, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>));</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        std::memcpy(str + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>) * 1, uptr + 3, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>));</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        std::memcpy(str + <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>) * 2, uptr + 2, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span>));</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordflow">return</span> std::string(str);</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    }</div>
@@ -644,9 +644,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        reg_type reg4(info&lt;ext0_ + 4U, 0&gt;());</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="keyword">const</span> std::size_t reg_size = <span class="keyword">sizeof</span>(unsigned) * 4;</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="keywordtype">char</span> str[reg_size * 3] = {<span class="charliteral">&#39;\0&#39;</span>};</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <a class="code" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">std::memcpy</a>(str + reg_size * 0, reg2.data(), reg_size);</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <a class="code" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">std::memcpy</a>(str + reg_size * 1, reg3.data(), reg_size);</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <a class="code" href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">std::memcpy</a>(str + reg_size * 2, reg4.data(), reg_size);</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        std::memcpy(str + reg_size * 0, reg2.data(), reg_size);</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        std::memcpy(str + reg_size * 1, reg3.data(), reg_size);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        std::memcpy(str + reg_size * 2, reg4.data(), reg_size);</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">return</span> std::string(str);</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    }</div>
@@ -703,7 +703,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    }</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ext0_ = 0x80000000U;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> ext0_ = 0x80000000U;</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span>, <span class="keywordtype">unsigned</span>&gt;</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keyword">static</span> reg_type info_dispatch(std::true_type, std::true_type)</div>
@@ -782,328 +782,325 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;            <span class="keywordflow">switch</span> (caches[i].<a class="code" href="classstd_1_1conditional_1_1type.html">type</a>()) {</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5aff39d621fa8aae5b2318d099fe4595f8">CPUIDCacheTypeNull</a>: <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a0c3df898e752e2ccb71a84273d66918c">CPUIDCacheTypeData</a>:</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Data&quot;</span>;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a9a8fa590df4e73a4b5d9da6d333756d1">CPUIDCacheTypeInstruction</a>:</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Instruction&quot;</span>;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5af4c05675815d3bb8e584a4ad8a2ab770">CPUIDCacheTypeUnified</a>:</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Unified&quot;</span>;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;            }</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        }</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache size (byte)          &quot;</span>;</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            <span class="keywordtype">unsigned</span> b = caches[i].size();</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;            ss.str(std::string());</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            <span class="keywordflow">if</span> (b &lt; 1024) {</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                ss &lt;&lt; b;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a0c3df898e752e2ccb71a84273d66918c">CPUIDCacheTypeData</a>: os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Data&quot;</span>; <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5a9a8fa590df4e73a4b5d9da6d333756d1">CPUIDCacheTypeInstruction</a>:</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Instruction&quot;</span>;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="namespacevsmc.html#a44538ef0bb753296fe5de1e5fd5a60a5af4c05675815d3bb8e584a4ad8a2ab770">CPUIDCacheTypeUnified</a>:</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                    os &lt;&lt; std::setw(fix) &lt;&lt; <span class="stringliteral">&quot;Unified&quot;</span>;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;            }</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        }</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache size (byte)          &quot;</span>;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            <span class="keywordtype">unsigned</span> b = caches[i].size();</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            ss.str(std::string());</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            <span class="keywordflow">if</span> (b &lt; 1024) {</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                ss &lt;&lt; b;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;K&quot;</span>;</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;K&quot;</span>;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((b /= 1024) &lt; 1024) {</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;M&quot;</span>;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                ss &lt;&lt; b / 1024 &lt;&lt; <span class="stringliteral">&quot;G&quot;</span>;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            }</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; ss.str();</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        }</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Maximum Proc sharing       &quot;</span>;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_sharing();</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Maximum Proc physical      &quot;</span>;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_physical();</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Coherency line size (byte) &quot;</span>;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].line_size();</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Physical line partitions   &quot;</span>;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].partitions();</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Ways of associative        &quot;</span>;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].ways();</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Number of sets             &quot;</span>;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].sets();</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Self initializing          &quot;</span>;</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;               &lt;&lt; (caches[i].self_initializing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Fully associative          &quot;</span>;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;               &lt;&lt; (caches[i].fully_associative() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        }</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Write-back invalidate      &quot;</span>;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; (caches[i].wbinvd() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        }</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache inclusiveness        &quot;</span>;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;               &lt;&lt; (caches[i].inclusiveness() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        }</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Complex cache indexing     &quot;</span>;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            os &lt;&lt; std::setw(fix)</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;               &lt;&lt; (caches[i].complex_indexing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        }</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature(std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    {</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x01) {</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            feature_str1(feats);</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Processor info and features\n&quot;</span>;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                print_dash(os);</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                print_feature(os, feats);</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            }</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        }</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x07) {</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;            feature_str7(feats);</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                print_equal(os);</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Extended features\n&quot;</span>;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                print_dash(os);</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                print_feature(os, feats);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            }</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        }</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        <span class="keywordflow">if</span> (max_eax_ext() &gt;= ext0_ + 1U) {</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;            feature_str_ext1(feats);</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                print_equal(os);</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Extended processor info and features\n&quot;</span>;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                print_dash(os);</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                print_feature(os, feats);</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            }</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        }</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    }</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature(std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    {</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        std::sort(feats.begin(), feats.end());</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != feats.size(); ++i) {</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            print_feat(os, feats[i], 15);</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            <span class="keywordflow">if</span> (i % 6 == 5 || i == feats.size() - 1)</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        }</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    }</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feat(std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        std::string &amp;str, std::size_t fix)</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    {</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        os &lt;&lt; str;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="keywordflow">if</span> (str.size() &lt; fix)</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;            os &lt;&lt; std::string(fix - str.size(), <span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    }</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str1(std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    {</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        feature_str&lt;CPUIDFeatureSSE3&gt;(feats);</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        feature_str&lt;CPUIDFeaturePCLMULQDQ&gt;(feats);</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        feature_str&lt;CPUIDFeatureDTES64&gt;(feats);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        feature_str&lt;CPUIDFeatureMONITOR&gt;(feats);</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        feature_str&lt;CPUIDFeatureDS_CPL&gt;(feats);</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        feature_str&lt;CPUIDFeatureVMX&gt;(feats);</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        feature_str&lt;CPUIDFeatureSMX&gt;(feats);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        feature_str&lt;CPUIDFeatureEST&gt;(feats);</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        feature_str&lt;CPUIDFeatureTM2&gt;(feats);</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        feature_str&lt;CPUIDFeatureSSSE3&gt;(feats);</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        feature_str&lt;CPUIDFeatureCNXT_ID&gt;(feats);</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        feature_str&lt;CPUIDFeatureFMA&gt;(feats);</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        feature_str&lt;CPUIDFeatureCX16&gt;(feats);</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;        feature_str&lt;CPUIDFeatureXTPR&gt;(feats);</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        feature_str&lt;CPUIDFeaturePDCM&gt;(feats);</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        feature_str&lt;CPUIDFeaturePCID&gt;(feats);</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        feature_str&lt;CPUIDFeatureDCA&gt;(feats);</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_1&gt;(feats);</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_2&gt;(feats);</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        feature_str&lt;CPUIDFeatureX2APIC&gt;(feats);</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        feature_str&lt;CPUIDFeatureMOVBE&gt;(feats);</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        feature_str&lt;CPUIDFeaturePOPCNT&gt;(feats);</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        feature_str&lt;CPUIDFeatureTSC_DEADLINE&gt;(feats);</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        feature_str&lt;CPUIDFeatureAES&gt;(feats);</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        feature_str&lt;CPUIDFeatureXSAVE&gt;(feats);</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        feature_str&lt;CPUIDFeatureOSXSAVE&gt;(feats);</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        feature_str&lt;CPUIDFeatureAVX&gt;(feats);</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        feature_str&lt;CPUIDFeatureF16C&gt;(feats);</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        feature_str&lt;CPUIDFeatureRDRAND&gt;(feats);</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;        feature_str&lt;CPUIDFeatureHYPERVISOR&gt;(feats);</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        feature_str&lt;CPUIDFeatureFPU&gt;(feats);</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;        feature_str&lt;CPUIDFeatureVME&gt;(feats);</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        feature_str&lt;CPUIDFeatureDE&gt;(feats);</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;        feature_str&lt;CPUIDFeaturePSE&gt;(feats);</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;        feature_str&lt;CPUIDFeatureTSC&gt;(feats);</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;        feature_str&lt;CPUIDFeatureMSR&gt;(feats);</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;        feature_str&lt;CPUIDFeaturePAE&gt;(feats);</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;        feature_str&lt;CPUIDFeatureMCE&gt;(feats);</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        feature_str&lt;CPUIDFeatureCX8&gt;(feats);</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        feature_str&lt;CPUIDFeatureAPIC&gt;(feats);</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        feature_str&lt;CPUIDFeatureSEP&gt;(feats);</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;        feature_str&lt;CPUIDFeatureMTRR&gt;(feats);</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        feature_str&lt;CPUIDFeaturePGE&gt;(feats);</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        feature_str&lt;CPUIDFeatureMCA&gt;(feats);</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        feature_str&lt;CPUIDFeatureCMOV&gt;(feats);</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;        feature_str&lt;CPUIDFeaturePAT&gt;(feats);</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        feature_str&lt;CPUIDFeaturePSE_36&gt;(feats);</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;        feature_str&lt;CPUIDFeaturePSN&gt;(feats);</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        feature_str&lt;CPUIDFeatureCLFSH&gt;(feats);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        feature_str&lt;CPUIDFeatureDS&gt;(feats);</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        feature_str&lt;CPUIDFeatureACPI&gt;(feats);</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        feature_str&lt;CPUIDFeatureMMX&gt;(feats);</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        feature_str&lt;CPUIDFeatureFXSR&gt;(feats);</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        feature_str&lt;CPUIDFeatureSSE&gt;(feats);</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        feature_str&lt;CPUIDFeatureSSE2&gt;(feats);</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        feature_str&lt;CPUIDFeatureSS&gt;(feats);</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        feature_str&lt;CPUIDFeatureHTT&gt;(feats);</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;        feature_str&lt;CPUIDFeatureTM&gt;(feats);</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;        feature_str&lt;CPUIDFeatureIA64&gt;(feats);</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        feature_str&lt;CPUIDFeaturePBE&gt;(feats);</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    }</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str7(std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;    {</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        feature_str&lt;CPUIDFeatureFSGSBASE&gt;(feats);</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        feature_str&lt;CPUIDFeatureBMI1&gt;(feats);</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        feature_str&lt;CPUIDFeatureHLE&gt;(feats);</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        feature_str&lt;CPUIDFeatureAVX2&gt;(feats);</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        feature_str&lt;CPUIDFeatureSMEP&gt;(feats);</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        feature_str&lt;CPUIDFeatureBMI2&gt;(feats);</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        feature_str&lt;CPUIDFeatureERMS&gt;(feats);</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;        feature_str&lt;CPUIDFeatureINVPCID&gt;(feats);</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        feature_str&lt;CPUIDFeatureRTM&gt;(feats);</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;        feature_str&lt;CPUIDFeatureMPX&gt;(feats);</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;        feature_str&lt;CPUIDFeatureAVX512F&gt;(feats);</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;        feature_str&lt;CPUIDFeatureAVX512DQ&gt;(feats);</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        feature_str&lt;CPUIDFeatureRDSEED&gt;(feats);</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        feature_str&lt;CPUIDFeatureADX&gt;(feats);</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        feature_str&lt;CPUIDFeatureSMAP&gt;(feats);</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        feature_str&lt;CPUIDFeatureAVX512IFMA52&gt;(feats);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        feature_str&lt;CPUIDFeatureCLFLUSHOPT&gt;(feats);</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        feature_str&lt;CPUIDFeatureINTEL_TRACE&gt;(feats);</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;        feature_str&lt;CPUIDFeatureAVX512PF&gt;(feats);</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        feature_str&lt;CPUIDFeatureAVX512ER&gt;(feats);</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        feature_str&lt;CPUIDFeatureAVX512CD&gt;(feats);</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        feature_str&lt;CPUIDFeatureSHA&gt;(feats);</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;        feature_str&lt;CPUIDFeatureAVX512BW&gt;(feats);</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        feature_str&lt;CPUIDFeatureAVX512VL&gt;(feats);</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        feature_str&lt;CPUIDFeaturePREFETCHWT1&gt;(feats);</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;        feature_str&lt;CPUIDFeatureAVX512VBMI&gt;(feats);</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    }</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str_ext1(std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    {</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        feature_str&lt;CPUIDFeatureExtLAHF_LM&gt;(feats);</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;        feature_str&lt;CPUIDFeatureExtCMP_LEGACY&gt;(feats);</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;        feature_str&lt;CPUIDFeatureExtSVM&gt;(feats);</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;        feature_str&lt;CPUIDFeatureExtEXTAPIC&gt;(feats);</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;        feature_str&lt;CPUIDFeatureExtCR8_LEGACY&gt;(feats);</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        feature_str&lt;CPUIDFeatureExtABM&gt;(feats);</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;        feature_str&lt;CPUIDFeatureExtSSE4A&gt;(feats);</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        feature_str&lt;CPUIDFeatureExtMISALIGNSSE&gt;(feats);</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        feature_str&lt;CPUIDFeatureExt3DNOWPREFETCH&gt;(feats);</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        feature_str&lt;CPUIDFeatureExtOSVW&gt;(feats);</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        feature_str&lt;CPUIDFeatureExtIBS&gt;(feats);</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;        feature_str&lt;CPUIDFeatureExtXOP&gt;(feats);</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        feature_str&lt;CPUIDFeatureExtSKINIT&gt;(feats);</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        feature_str&lt;CPUIDFeatureExtWDT&gt;(feats);</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;        feature_str&lt;CPUIDFeatureExtLWP&gt;(feats);</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        feature_str&lt;CPUIDFeatureExtFMA4&gt;(feats);</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        feature_str&lt;CPUIDFeatureExtTCE&gt;(feats);</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;        feature_str&lt;CPUIDFeatureExtNODEID_MSR&gt;(feats);</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        feature_str&lt;CPUIDFeatureExtTBM&gt;(feats);</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        feature_str&lt;CPUIDFeatureExtTOPOEXT&gt;(feats);</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;        feature_str&lt;CPUIDFeatureExtPERFCTR_CORE&gt;(feats);</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;        feature_str&lt;CPUIDFeatureExtPERFCTR_NB&gt;(feats);</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;        feature_str&lt;CPUIDFeatureExtDBX&gt;(feats);</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        feature_str&lt;CPUIDFeatureExtPERFTSC&gt;(feats);</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        feature_str&lt;CPUIDFeatureExtPCX_L2I&gt;(feats);</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;        feature_str&lt;CPUIDFeatureExtFPU&gt;(feats);</div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;        feature_str&lt;CPUIDFeatureExtVME&gt;(feats);</div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;        feature_str&lt;CPUIDFeatureExtDE&gt;(feats);</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;        feature_str&lt;CPUIDFeatureExtPSE&gt;(feats);</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        feature_str&lt;CPUIDFeatureExtTSC&gt;(feats);</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;        feature_str&lt;CPUIDFeatureExtMSR&gt;(feats);</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;        feature_str&lt;CPUIDFeatureExtPAE&gt;(feats);</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;        feature_str&lt;CPUIDFeatureExtMCE&gt;(feats);</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;        feature_str&lt;CPUIDFeatureExtCX8&gt;(feats);</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;        feature_str&lt;CPUIDFeatureExtAPIC&gt;(feats);</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        feature_str&lt;CPUIDFeatureExtSYSCALL&gt;(feats);</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        feature_str&lt;CPUIDFeatureExtMTRR&gt;(feats);</div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;        feature_str&lt;CPUIDFeatureExtPGE&gt;(feats);</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;        feature_str&lt;CPUIDFeatureExtMCA&gt;(feats);</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;        feature_str&lt;CPUIDFeatureExtCMOV&gt;(feats);</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        feature_str&lt;CPUIDFeatureExtPAT&gt;(feats);</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        feature_str&lt;CPUIDFeatureExtPSE36&gt;(feats);</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;        feature_str&lt;CPUIDFeatureExtMP&gt;(feats);</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;        feature_str&lt;CPUIDFeatureExtNX&gt;(feats);</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        feature_str&lt;CPUIDFeatureExtMMX&gt;(feats);</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        feature_str&lt;CPUIDFeatureExtMMXEXT&gt;(feats);</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        feature_str&lt;CPUIDFeatureExtFXSR&gt;(feats);</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        feature_str&lt;CPUIDFeatureExtFXSR_OPT&gt;(feats);</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        feature_str&lt;CPUIDFeatureExtGBPAGES&gt;(feats);</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        feature_str&lt;CPUIDFeatureExtRDTSCP&gt;(feats);</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        feature_str&lt;CPUIDFeatureExtLM&gt;(feats);</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;        feature_str&lt;CPUIDFeatureExt3DNOWEXT&gt;(feats);</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;        feature_str&lt;CPUIDFeatureExt3DNOW&gt;(feats);</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    }</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str(std::vector&lt;std::string&gt; &amp;feats)</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    {</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;        <span class="keywordflow">if</span> (has_feature&lt;Feat&gt;())</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;            feats.push_back(CPUIDFeatureInfo&lt;Feat&gt;::str());</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;    }</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;}; <span class="comment">// class CPUID</span></div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l01064"></a><span class="lineno"><a class="line" href="group___c_p_u_i_d.html#ga5f2737cb67a06ea172abae597d38e38b"> 1064</a></span>&#160;<span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="namespacevsmc.html#a933f17e11b1a51388124fcc1bfa4c0cd">operator&lt;&lt;</a>(</div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;    std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> CPUID &amp;)</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;{</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a9befcc7de8d11a56ea1b07cbfea0189d">CPUID::info</a>(os);</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;}</div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_CPUID_HPP</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                ss &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;M&quot;</span>;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                ss &lt;&lt; b / 1024 &lt;&lt; <span class="stringliteral">&quot;G&quot;</span>;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            }</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; ss.str();</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        }</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Maximum Proc sharing       &quot;</span>;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_sharing();</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Maximum Proc physical      &quot;</span>;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].max_proc_physical();</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Coherency line size (byte) &quot;</span>;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].line_size();</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Physical line partitions   &quot;</span>;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].partitions();</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Ways of associative        &quot;</span>;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].ways();</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Number of sets             &quot;</span>;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i)</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; caches[i].sets();</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Self initializing          &quot;</span>;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;               &lt;&lt; (caches[i].self_initializing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        }</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Fully associative          &quot;</span>;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;               &lt;&lt; (caches[i].fully_associative() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        }</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Write-back invalidate      &quot;</span>;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; (caches[i].wbinvd() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        }</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Cache inclusiveness        &quot;</span>;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            os &lt;&lt; std::setw(fix) &lt;&lt; (caches[i].inclusiveness() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        }</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;Complex cache indexing     &quot;</span>;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != caches.size(); ++i) {</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;            os &lt;&lt; std::setw(fix)</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;               &lt;&lt; (caches[i].complex_indexing() ? <span class="stringliteral">&quot;Yes&quot;</span> : <span class="stringliteral">&quot;No&quot;</span>);</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        }</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    }</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature(std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    {</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x01) {</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;            feature_str1(feats);</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Processor info and features\n&quot;</span>;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;                print_dash(os);</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;                print_feature(os, feats);</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;            }</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        }</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x07) {</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;            feature_str7(feats);</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                print_equal(os);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Extended features\n&quot;</span>;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                print_dash(os);</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                print_feature(os, feats);</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            }</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        }</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">if</span> (max_eax_ext() &gt;= ext0_ + 1U) {</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            feature_str_ext1(feats);</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                print_equal(os);</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Extended processor info and features\n&quot;</span>;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                print_dash(os);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                print_feature(os, feats);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            }</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        }</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    }</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature(</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        std::basic_ostream&lt;CharT, Traits&gt; &amp;os, std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    {</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        std::sort(feats.begin(), feats.end());</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != feats.size(); ++i) {</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            print_feat(os, feats[i], 15);</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keywordflow">if</span> (i % 6 == 5 || i == feats.size() - 1)</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;                os &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        }</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    }</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feat(std::basic_ostream&lt;CharT, Traits&gt; &amp;os,</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        std::string &amp;str, std::size_t fix)</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    {</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        os &lt;&lt; str;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="keywordflow">if</span> (str.size() &lt; fix)</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            os &lt;&lt; std::string(fix - str.size(), <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    }</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str1(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    {</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        feature_str&lt;CPUIDFeatureSSE3&gt;(feats);</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        feature_str&lt;CPUIDFeaturePCLMULQDQ&gt;(feats);</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        feature_str&lt;CPUIDFeatureDTES64&gt;(feats);</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        feature_str&lt;CPUIDFeatureMONITOR&gt;(feats);</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        feature_str&lt;CPUIDFeatureDS_CPL&gt;(feats);</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        feature_str&lt;CPUIDFeatureVMX&gt;(feats);</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        feature_str&lt;CPUIDFeatureSMX&gt;(feats);</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        feature_str&lt;CPUIDFeatureEST&gt;(feats);</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        feature_str&lt;CPUIDFeatureTM2&gt;(feats);</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        feature_str&lt;CPUIDFeatureSSSE3&gt;(feats);</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        feature_str&lt;CPUIDFeatureCNXT_ID&gt;(feats);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        feature_str&lt;CPUIDFeatureFMA&gt;(feats);</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        feature_str&lt;CPUIDFeatureCX16&gt;(feats);</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        feature_str&lt;CPUIDFeatureXTPR&gt;(feats);</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        feature_str&lt;CPUIDFeaturePDCM&gt;(feats);</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        feature_str&lt;CPUIDFeaturePCID&gt;(feats);</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;        feature_str&lt;CPUIDFeatureDCA&gt;(feats);</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_1&gt;(feats);</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        feature_str&lt;CPUIDFeatureSSE4_2&gt;(feats);</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        feature_str&lt;CPUIDFeatureX2APIC&gt;(feats);</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;        feature_str&lt;CPUIDFeatureMOVBE&gt;(feats);</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;        feature_str&lt;CPUIDFeaturePOPCNT&gt;(feats);</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        feature_str&lt;CPUIDFeatureTSC_DEADLINE&gt;(feats);</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        feature_str&lt;CPUIDFeatureAES&gt;(feats);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        feature_str&lt;CPUIDFeatureXSAVE&gt;(feats);</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        feature_str&lt;CPUIDFeatureOSXSAVE&gt;(feats);</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        feature_str&lt;CPUIDFeatureAVX&gt;(feats);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        feature_str&lt;CPUIDFeatureF16C&gt;(feats);</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        feature_str&lt;CPUIDFeatureRDRAND&gt;(feats);</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        feature_str&lt;CPUIDFeatureHYPERVISOR&gt;(feats);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        feature_str&lt;CPUIDFeatureFPU&gt;(feats);</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;        feature_str&lt;CPUIDFeatureVME&gt;(feats);</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;        feature_str&lt;CPUIDFeatureDE&gt;(feats);</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        feature_str&lt;CPUIDFeaturePSE&gt;(feats);</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;        feature_str&lt;CPUIDFeatureTSC&gt;(feats);</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        feature_str&lt;CPUIDFeatureMSR&gt;(feats);</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;        feature_str&lt;CPUIDFeaturePAE&gt;(feats);</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;        feature_str&lt;CPUIDFeatureMCE&gt;(feats);</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;        feature_str&lt;CPUIDFeatureCX8&gt;(feats);</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;        feature_str&lt;CPUIDFeatureAPIC&gt;(feats);</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;        feature_str&lt;CPUIDFeatureSEP&gt;(feats);</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        feature_str&lt;CPUIDFeatureMTRR&gt;(feats);</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        feature_str&lt;CPUIDFeaturePGE&gt;(feats);</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        feature_str&lt;CPUIDFeatureMCA&gt;(feats);</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;        feature_str&lt;CPUIDFeatureCMOV&gt;(feats);</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        feature_str&lt;CPUIDFeaturePAT&gt;(feats);</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        feature_str&lt;CPUIDFeaturePSE_36&gt;(feats);</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        feature_str&lt;CPUIDFeaturePSN&gt;(feats);</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;        feature_str&lt;CPUIDFeatureCLFSH&gt;(feats);</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        feature_str&lt;CPUIDFeatureDS&gt;(feats);</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;        feature_str&lt;CPUIDFeatureACPI&gt;(feats);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        feature_str&lt;CPUIDFeatureMMX&gt;(feats);</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        feature_str&lt;CPUIDFeatureFXSR&gt;(feats);</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        feature_str&lt;CPUIDFeatureSSE&gt;(feats);</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        feature_str&lt;CPUIDFeatureSSE2&gt;(feats);</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        feature_str&lt;CPUIDFeatureSS&gt;(feats);</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        feature_str&lt;CPUIDFeatureHTT&gt;(feats);</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        feature_str&lt;CPUIDFeatureTM&gt;(feats);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        feature_str&lt;CPUIDFeatureIA64&gt;(feats);</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        feature_str&lt;CPUIDFeaturePBE&gt;(feats);</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    }</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str7(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    {</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        feature_str&lt;CPUIDFeatureFSGSBASE&gt;(feats);</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        feature_str&lt;CPUIDFeatureBMI1&gt;(feats);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;        feature_str&lt;CPUIDFeatureHLE&gt;(feats);</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        feature_str&lt;CPUIDFeatureAVX2&gt;(feats);</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        feature_str&lt;CPUIDFeatureSMEP&gt;(feats);</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        feature_str&lt;CPUIDFeatureBMI2&gt;(feats);</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        feature_str&lt;CPUIDFeatureERMS&gt;(feats);</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        feature_str&lt;CPUIDFeatureINVPCID&gt;(feats);</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        feature_str&lt;CPUIDFeatureRTM&gt;(feats);</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        feature_str&lt;CPUIDFeatureMPX&gt;(feats);</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;        feature_str&lt;CPUIDFeatureAVX512F&gt;(feats);</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        feature_str&lt;CPUIDFeatureAVX512DQ&gt;(feats);</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;        feature_str&lt;CPUIDFeatureRDSEED&gt;(feats);</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;        feature_str&lt;CPUIDFeatureADX&gt;(feats);</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;        feature_str&lt;CPUIDFeatureSMAP&gt;(feats);</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        feature_str&lt;CPUIDFeatureAVX512IFMA52&gt;(feats);</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        feature_str&lt;CPUIDFeatureCLFLUSHOPT&gt;(feats);</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        feature_str&lt;CPUIDFeatureINTEL_TRACE&gt;(feats);</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        feature_str&lt;CPUIDFeatureAVX512PF&gt;(feats);</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        feature_str&lt;CPUIDFeatureAVX512ER&gt;(feats);</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        feature_str&lt;CPUIDFeatureAVX512CD&gt;(feats);</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;        feature_str&lt;CPUIDFeatureSHA&gt;(feats);</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        feature_str&lt;CPUIDFeatureAVX512BW&gt;(feats);</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        feature_str&lt;CPUIDFeatureAVX512VL&gt;(feats);</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;        feature_str&lt;CPUIDFeaturePREFETCHWT1&gt;(feats);</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        feature_str&lt;CPUIDFeatureAVX512VBMI&gt;(feats);</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    }</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str_ext1(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    {</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        feature_str&lt;CPUIDFeatureExtLAHF_LM&gt;(feats);</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        feature_str&lt;CPUIDFeatureExtCMP_LEGACY&gt;(feats);</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;        feature_str&lt;CPUIDFeatureExtSVM&gt;(feats);</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        feature_str&lt;CPUIDFeatureExtEXTAPIC&gt;(feats);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;        feature_str&lt;CPUIDFeatureExtCR8_LEGACY&gt;(feats);</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;        feature_str&lt;CPUIDFeatureExtABM&gt;(feats);</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;        feature_str&lt;CPUIDFeatureExtSSE4A&gt;(feats);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;        feature_str&lt;CPUIDFeatureExtMISALIGNSSE&gt;(feats);</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        feature_str&lt;CPUIDFeatureExt3DNOWPREFETCH&gt;(feats);</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;        feature_str&lt;CPUIDFeatureExtOSVW&gt;(feats);</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        feature_str&lt;CPUIDFeatureExtIBS&gt;(feats);</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        feature_str&lt;CPUIDFeatureExtXOP&gt;(feats);</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        feature_str&lt;CPUIDFeatureExtSKINIT&gt;(feats);</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        feature_str&lt;CPUIDFeatureExtWDT&gt;(feats);</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;        feature_str&lt;CPUIDFeatureExtLWP&gt;(feats);</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        feature_str&lt;CPUIDFeatureExtFMA4&gt;(feats);</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        feature_str&lt;CPUIDFeatureExtTCE&gt;(feats);</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;        feature_str&lt;CPUIDFeatureExtNODEID_MSR&gt;(feats);</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        feature_str&lt;CPUIDFeatureExtTBM&gt;(feats);</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        feature_str&lt;CPUIDFeatureExtTOPOEXT&gt;(feats);</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;        feature_str&lt;CPUIDFeatureExtPERFCTR_CORE&gt;(feats);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        feature_str&lt;CPUIDFeatureExtPERFCTR_NB&gt;(feats);</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        feature_str&lt;CPUIDFeatureExtDBX&gt;(feats);</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;        feature_str&lt;CPUIDFeatureExtPERFTSC&gt;(feats);</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;        feature_str&lt;CPUIDFeatureExtPCX_L2I&gt;(feats);</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        feature_str&lt;CPUIDFeatureExtFPU&gt;(feats);</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;        feature_str&lt;CPUIDFeatureExtVME&gt;(feats);</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;        feature_str&lt;CPUIDFeatureExtDE&gt;(feats);</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;        feature_str&lt;CPUIDFeatureExtPSE&gt;(feats);</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;        feature_str&lt;CPUIDFeatureExtTSC&gt;(feats);</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;        feature_str&lt;CPUIDFeatureExtMSR&gt;(feats);</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;        feature_str&lt;CPUIDFeatureExtPAE&gt;(feats);</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        feature_str&lt;CPUIDFeatureExtMCE&gt;(feats);</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;        feature_str&lt;CPUIDFeatureExtCX8&gt;(feats);</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;        feature_str&lt;CPUIDFeatureExtAPIC&gt;(feats);</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;        feature_str&lt;CPUIDFeatureExtSYSCALL&gt;(feats);</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;        feature_str&lt;CPUIDFeatureExtMTRR&gt;(feats);</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;        feature_str&lt;CPUIDFeatureExtPGE&gt;(feats);</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        feature_str&lt;CPUIDFeatureExtMCA&gt;(feats);</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        feature_str&lt;CPUIDFeatureExtCMOV&gt;(feats);</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;        feature_str&lt;CPUIDFeatureExtPAT&gt;(feats);</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;        feature_str&lt;CPUIDFeatureExtPSE36&gt;(feats);</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;        feature_str&lt;CPUIDFeatureExtMP&gt;(feats);</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;        feature_str&lt;CPUIDFeatureExtNX&gt;(feats);</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        feature_str&lt;CPUIDFeatureExtMMX&gt;(feats);</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;        feature_str&lt;CPUIDFeatureExtMMXEXT&gt;(feats);</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;        feature_str&lt;CPUIDFeatureExtFXSR&gt;(feats);</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        feature_str&lt;CPUIDFeatureExtFXSR_OPT&gt;(feats);</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;        feature_str&lt;CPUIDFeatureExtGBPAGES&gt;(feats);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        feature_str&lt;CPUIDFeatureExtRDTSCP&gt;(feats);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        feature_str&lt;CPUIDFeatureExtLM&gt;(feats);</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        feature_str&lt;CPUIDFeatureExt3DNOWEXT&gt;(feats);</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        feature_str&lt;CPUIDFeatureExt3DNOW&gt;(feats);</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;    }</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    {</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;        <span class="keywordflow">if</span> (has_feature&lt;Feat&gt;())</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;            feats.push_back(CPUIDFeatureInfo&lt;Feat&gt;::str());</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    }</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;}; <span class="comment">// class CPUID</span></div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l01061"></a><span class="lineno"><a class="line" href="group___c_p_u_i_d.html#ga5f2737cb67a06ea172abae597d38e38b"> 1061</a></span>&#160;<span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="namespacevsmc.html#a933f17e11b1a51388124fcc1bfa4c0cd">operator&lt;&lt;</a>(</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> CPUID &amp;)</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;{</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classvsmc_1_1_c_p_u_i_d.html#a9befcc7de8d11a56ea1b07cbfea0189d">CPUID::info</a>(os);</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;}</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_CPUID_HPP</span></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a786793f5f7143ebf8dbb41d4310c2f2d"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a786793f5f7143ebf8dbb41d4310c2f2d">vsmc::CPUIDFeatureSHA</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[29]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00171">cpuid.hpp:171</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5c4cc698dd1f87c900b6d1bb2e65f24d"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5c4cc698dd1f87c900b6d1bb2e65f24d">vsmc::CPUIDFeatureCNXT_ID</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[10]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00098">cpuid.hpp:98</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
@@ -1118,7 +1115,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a206bea206fb551882a07c68c94dab889"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a206bea206fb551882a07c68c94dab889">vsmc::CPUIDFeatureSSE4_1</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[19]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00105">cpuid.hpp:105</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a9fcc6d14bd36cc4ae2731a4cdae6a772"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a9fcc6d14bd36cc4ae2731a4cdae6a772">vsmc::CPUIDFeatureExtMCE</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[07]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00211">cpuid.hpp:211</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a9befcc7de8d11a56ea1b07cbfea0189d"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a9befcc7de8d11a56ea1b07cbfea0189d">vsmc::CPUID::info</a></div><div class="ttdeci">static const reg_type &amp; info()</div><div class="ttdoc">Get the CPUID information stored in EAX, EBX, ECX and EDX, given input EAX and ECX values...</div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00564">cpuid.hpp:564</a></div></div>
-<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a4fa1949be603340c6c9d166ac52e9631"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4fa1949be603340c6c9d166ac52e9631">vsmc::CPUIDFeatureInfo::eax</a></div><div class="ttdeci">static constexpr const unsigned eax</div><div class="ttdoc">The value of the calling parameter EAX. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00253">cpuid.hpp:253</a></div></div>
 <div class="ttc" id="cpuid_8hpp_html_a48a89091eb1268796e964b5c79d21678"><div class="ttname"><a href="cpuid_8hpp.html#a48a89091eb1268796e964b5c79d21678">VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO_EXT</a></div><div class="ttdeci">#define VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO_EXT(feat, a, c, i, b)</div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00051">cpuid.hpp:51</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_af686e733f559a22de4964be83119f45b"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#af686e733f559a22de4964be83119f45b">vsmc::CPUID::vendor</a></div><div class="ttdeci">static std::string vendor()</div><div class="ttdoc">Vendor ID (EAX = 0x00; EBX, EDX, ECX) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00580">cpuid.hpp:580</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ab24a01c178eb4a88bc170b229b4134a3"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ab24a01c178eb4a88bc170b229b4134a3">vsmc::CPUIDFeatureExtPAE</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[06]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00210">cpuid.hpp:210</a></div></div>
@@ -1131,9 +1127,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a2649d11fe8295e21b3e236e21c35f56d"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a2649d11fe8295e21b3e236e21c35f56d">vsmc::CPUIDFeatureExtRDTSCP</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[27]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00228">cpuid.hpp:228</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ae71dabe3ae54d250dc49f70edea5cbe0"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ae71dabe3ae54d250dc49f70edea5cbe0">vsmc::CPUIDFeatureExtTCE</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[17]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00194">cpuid.hpp:194</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ac4225d311b1f33f200b9d58e57990f08"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ac4225d311b1f33f200b9d58e57990f08">vsmc::CPUIDFeatureExt3DNOW</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[31]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00231">cpuid.hpp:231</a></div></div>
+<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a61b44ed1b0c51fa7004b6cafe7a41de3"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a61b44ed1b0c51fa7004b6cafe7a41de3">vsmc::CPUIDFeatureInfo::index</a></div><div class="ttdeci">static constexpr unsigned index</div><div class="ttdoc">The index of in CPUID::reg_type of the output register. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00259">cpuid.hpp:259</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6affe77acd846bd19cd9c57b75e496f14c"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6affe77acd846bd19cd9c57b75e496f14c">vsmc::CPUIDFeatureExtDBX</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[26]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00200">cpuid.hpp:200</a></div></div>
-<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a84d47cda78f56fe1eb9014f2a96a6300"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a84d47cda78f56fe1eb9014f2a96a6300">vsmc::CPUIDFeatureInfo::index</a></div><div class="ttdeci">static constexpr const unsigned index</div><div class="ttdoc">The index of in CPUID::reg_type of the output register. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00259">cpuid.hpp:259</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ad2b6b3d9e0cb7dd54e6a15a3de347e9f"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ad2b6b3d9e0cb7dd54e6a15a3de347e9f">vsmc::CPUIDFeatureTSC</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; EDX[04]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00123">cpuid.hpp:123</a></div></div>
+<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a798cace5913b8e1b324dbb172205acd8"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a798cace5913b8e1b324dbb172205acd8">vsmc::CPUIDFeatureInfo::bit</a></div><div class="ttdeci">static constexpr unsigned bit</div><div class="ttdoc">The bit number of the feature in the register. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00262">cpuid.hpp:262</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a64af7544daea36c13df109e8edda0360"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a64af7544daea36c13df109e8edda0360">vsmc::CPUID::cache_param_type::inclusiveness</a></div><div class="ttdeci">bool inclusiveness() const </div><div class="ttdoc">Cache inclusiveness. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00503">cpuid.hpp:503</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a3f746fe077aab7287d30aafba269cc29"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a3f746fe077aab7287d30aafba269cc29">vsmc::CPUIDFeatureExtLM</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[29]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00229">cpuid.hpp:229</a></div></div>
 <div class="ttc" id="group___definitions_html_gga3fa1b131dbc4c9bb42ee36013355758da17f6345db4cc78b049317bf75355d8c6"><div class="ttname"><a href="group___definitions.html#gga3fa1b131dbc4c9bb42ee36013355758da17f6345db4cc78b049317bf75355d8c6">vsmc::SSE3</a></div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00064">defines.hpp:64</a></div></div>
@@ -1180,7 +1177,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a7d727971005a2bfd242b010649e2531b"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a7d727971005a2bfd242b010649e2531b">vsmc::CPUID::cache_param_type::max_proc_physical</a></div><div class="ttdeci">unsigned max_proc_physical() const </div><div class="ttdoc">Maximum number of addressable processor cores in the physical package. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00475">cpuid.hpp:475</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a0a7c135a849308087a9bea02a4027bb1"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a0a7c135a849308087a9bea02a4027bb1">vsmc::CPUIDFeaturePCID</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[17]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00103">cpuid.hpp:103</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a77263534b09b56a940bf8e219d733595"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a77263534b09b56a940bf8e219d733595">vsmc::CPUIDFeaturePAE</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; EDX[06]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00125">cpuid.hpp:125</a></div></div>
-<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a4efef76846b077faba14f827e2e8834d"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4efef76846b077faba14f827e2e8834d">vsmc::CPUIDFeatureInfo::bit</a></div><div class="ttdeci">static constexpr const unsigned bit</div><div class="ttdoc">The bit number of the feature in the register. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00262">cpuid.hpp:262</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a40f8edbd947a8bc3607f822889c11863"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a40f8edbd947a8bc3607f822889c11863">vsmc::CPUIDFeatureINVPCID</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[10]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00157">cpuid.hpp:157</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a1613eab59061ea9735235b6abb55d7b9"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a1613eab59061ea9735235b6abb55d7b9">vsmc::CPUIDFeatureSMEP</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[07]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00154">cpuid.hpp:154</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5f54ce795c7d994448273455c614b911"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5f54ce795c7d994448273455c614b911">vsmc::CPUIDFeatureExtPSE</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[03]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00207">cpuid.hpp:207</a></div></div>
@@ -1191,10 +1187,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5f9beb4f6ad2fffc415650438b745b5a"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5f9beb4f6ad2fffc415650438b745b5a">vsmc::CPUIDFeatureSMX</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[06]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00094">cpuid.hpp:94</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5d0c5b7409ae6358da09d323060f2886"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5d0c5b7409ae6358da09d323060f2886">vsmc::CPUIDFeatureDTES64</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[02]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00090">cpuid.hpp:90</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a326fe195270c0113a70b9244c93f4df9"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a326fe195270c0113a70b9244c93f4df9">vsmc::CPUIDFeatureTM</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; EDX[29]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00146">cpuid.hpp:146</a></div></div>
-<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a0989b16a012070ebaa087129608af75f"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a0989b16a012070ebaa087129608af75f">vsmc::CPUIDFeatureInfo::ecx</a></div><div class="ttdeci">static constexpr const unsigned ecx</div><div class="ttdoc">The value of the calling parameter ECX. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00256">cpuid.hpp:256</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a0af0a064ad370886304fc02ae6fe59fb"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a0af0a064ad370886304fc02ae6fe59fb">vsmc::CPUID::reg_type</a></div><div class="ttdeci">std::array&lt; unsigned, 4 &gt; reg_type</div><div class="ttdoc">The array type that holds EAX, EBX, ECX, and EDX, in that order. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00420">cpuid.hpp:420</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aa3858533fc5b02ffcce8225a962f5c19"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aa3858533fc5b02ffcce8225a962f5c19">vsmc::CPUIDFeatureExtCMP_LEGACY</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[01]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00179">cpuid.hpp:179</a></div></div>
 <div class="ttc" id="group___definitions_html_gga3fa1b131dbc4c9bb42ee36013355758da31a5e2764d18b36d6e60776e61863692"><div class="ttname"><a href="group___definitions.html#gga3fa1b131dbc4c9bb42ee36013355758da31a5e2764d18b36d6e60776e61863692">vsmc::SSE4_2</a></div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00064">defines.hpp:64</a></div></div>
+<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a17e9a9197c6fc805f019e2a65478e302"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a17e9a9197c6fc805f019e2a65478e302">vsmc::CPUIDFeatureInfo::eax</a></div><div class="ttdeci">static constexpr unsigned eax</div><div class="ttdoc">The value of the calling parameter EAX. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00253">cpuid.hpp:253</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a2636af6e96af34e5f259878b82fb3625"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a2636af6e96af34e5f259878b82fb3625">vsmc::CPUIDFeatureAVX512VL</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[31]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00173">cpuid.hpp:173</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aefaba4b771ee3a80d106d7ef004ff454"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aefaba4b771ee3a80d106d7ef004ff454">vsmc::CPUIDFeatureExtPAT</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[16]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00219">cpuid.hpp:219</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aa0c13d04db18b7a79a5d8e9d71a36aaf"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aa0c13d04db18b7a79a5d8e9d71a36aaf">vsmc::CPUIDFeaturePSE</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; EDX[03]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00122">cpuid.hpp:122</a></div></div>
@@ -1209,9 +1205,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_a250f04edbdfa992e740185d64a5b1565"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565">vsmc::CPUID::base_freq</a></div><div class="ttdeci">static unsigned base_freq()</div><div class="ttdoc">Base frequency in MHz (EAX = 0x16; EAX[15:0]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00642">cpuid.hpp:642</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a83809f4868c5d99851f7ee9460687c5f"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a83809f4868c5d99851f7ee9460687c5f">vsmc::CPUIDFeatureExtPERFCTR_NB</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[24]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00199">cpuid.hpp:199</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="structvsmc_1_1_c_p_u_i_d_feature_info_html_a4ab20863fd957a8cbfc3f9e5832f5fa5"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_feature_info.html#a4ab20863fd957a8cbfc3f9e5832f5fa5">vsmc::CPUIDFeatureInfo::ecx</a></div><div class="ttdeci">static constexpr unsigned ecx</div><div class="ttdoc">The value of the calling parameter ECX. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00256">cpuid.hpp:256</a></div></div>
 <div class="ttc" id="group___definitions_html_gga3fa1b131dbc4c9bb42ee36013355758da7f3b607812a751944156ce3e88741169"><div class="ttname"><a href="group___definitions.html#gga3fa1b131dbc4c9bb42ee36013355758da7f3b607812a751944156ce3e88741169">vsmc::AVX2</a></div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00064">defines.hpp:64</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a1281abdf0d85ac5c3fb3cb206728f1e4"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a1281abdf0d85ac5c3fb3cb206728f1e4">vsmc::CPUIDFeatureExtLWP</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[15]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00192">cpuid.hpp:192</a></div></div>
-<div class="ttc" id="namespacevsmc_html_a933f17e11b1a51388124fcc1bfa4c0cd"><div class="ttname"><a href="namespacevsmc.html#a933f17e11b1a51388124fcc1bfa4c0cd">vsmc::operator&lt;&lt;</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const Sampler&lt; T &gt; &amp;sampler)</div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l01009">sampler.hpp:1009</a></div></div>
+<div class="ttc" id="namespacevsmc_html_a933f17e11b1a51388124fcc1bfa4c0cd"><div class="ttname"><a href="namespacevsmc.html#a933f17e11b1a51388124fcc1bfa4c0cd">vsmc::operator&lt;&lt;</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const Sampler&lt; T &gt; &amp;sampler)</div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00965">sampler.hpp:965</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a31ab5be0638307f4b2e5e1d9c9607584"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a31ab5be0638307f4b2e5e1d9c9607584">vsmc::CPUIDFeatureMSR</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; EDX[05]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00124">cpuid.hpp:124</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_p_u_i_d_html_abf935f82063dad81a2e86f578a467413"><div class="ttname"><a href="classvsmc_1_1_c_p_u_i_d.html#abf935f82063dad81a2e86f578a467413">vsmc::CPUID::intel_turbo_boost</a></div><div class="ttdeci">static bool intel_turbo_boost()</div><div class="ttdoc">Intel Turbo Boost (EAX = 0x06; EAX[1]) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00636">cpuid.hpp:636</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6ae309adc905fcaa95f39a66bece228715"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6ae309adc905fcaa95f39a66bece228715">vsmc::CPUIDFeatureINTEL_TRACE</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[25]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00167">cpuid.hpp:167</a></div></div>
@@ -1244,7 +1241,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a77b41e3e09ff870707d972208519e20b"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a77b41e3e09ff870707d972208519e20b">vsmc::CPUIDFeatureAVX512CD</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[28]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00170">cpuid.hpp:170</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a1557dbd0edde0f6c305340eef59a0b06"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a1557dbd0edde0f6c305340eef59a0b06">vsmc::CPUIDFeaturePOPCNT</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[23]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00109">cpuid.hpp:109</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a0348aacd7049644c5531020c07aa0bf2"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a0348aacd7049644c5531020c07aa0bf2">vsmc::CPUIDFeatureExtCMOV</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; EDX[15]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00218">cpuid.hpp:218</a></div></div>
-<div class="ttc" id="group___c_string_html_gaf3f314255383e081509b9c4a2284e38e"><div class="ttname"><a href="group___c_string.html#gaf3f314255383e081509b9c4a2284e38e">vsmc::memcpy</a></div><div class="ttdeci">void * memcpy(void *dst, const void *src, std::size_t n)</div><div class="ttdoc">SIMD optimized memcpy with non-temporal store for large buffers. </div><div class="ttdef"><b>Definition:</b> <a href="cstring_8hpp_source.html#l01048">cstring.hpp:1048</a></div></div>
 <div class="ttc" id="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type_html_a1091301db7b7e9009033e7414a28555f"><div class="ttname"><a href="structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#a1091301db7b7e9009033e7414a28555f">vsmc::CPUID::cache_param_type::self_initializing</a></div><div class="ttdeci">bool self_initializing() const </div><div class="ttdoc">Self initializing cache (does not need SW initialization) </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00493">cpuid.hpp:493</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a4647a1588e0edd1a8d9fbfd67adc6a17"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a4647a1588e0edd1a8d9fbfd67adc6a17">vsmc::CPUIDFeatureDS_CPL</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[04]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00092">cpuid.hpp:92</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a795bed870cf2765b60cfb85cd7e8b59a"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a795bed870cf2765b60cfb85cd7e8b59a">vsmc::CPUIDFeatureExtXOP</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[11]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00189">cpuid.hpp:189</a></div></div>

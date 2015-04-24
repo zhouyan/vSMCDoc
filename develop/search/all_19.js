@@ -32,7 +32,6 @@ var searchData=
   ['_7emoveseq',['~MoveSEQ',['../classvsmc_1_1_move_s_e_q.html#aa3f6f5a400264fd1118dae7be3af7399',1,'vsmc::MoveSEQ']]],
   ['_7emovestd',['~MoveSTD',['../classvsmc_1_1_move_s_t_d.html#a60c99159f6497a5a5e8618e7b0de9fac',1,'vsmc::MoveSTD']]],
   ['_7emovetbb',['~MoveTBB',['../classvsmc_1_1_move_t_b_b.html#ad346e581f525ac0ea862cee56691fabf',1,'vsmc::MoveTBB']]],
-  ['_7enintegratebase',['~NIntegrateBase',['../classvsmc_1_1_n_integrate_base.html#a8f08b761f3db5d2f7ba1063fa40ed935',1,'vsmc::NIntegrateBase::~NIntegrateBase()'],['../classvsmc_1_1_n_integrate_base_3_01_virtual_01_4.html#a50a157548b8032939a8a24dd186e190d',1,'vsmc::NIntegrateBase&lt; Virtual &gt;::~NIntegrateBase()']]],
   ['_7epathevalbase',['~PathEvalBase',['../classvsmc_1_1_path_eval_base.html#afc58b55fc1ce2d03ac2c5f5dc79b16d0',1,'vsmc::PathEvalBase::~PathEvalBase()'],['../classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5fccba54e9290f63ff39907c74e3b9b2',1,'vsmc::PathEvalBase&lt; T, Virtual &gt;::~PathEvalBase()']]],
   ['_7epathevalcilk',['~PathEvalCILK',['../classvsmc_1_1_path_eval_c_i_l_k.html#a36fb65838e7b0f4f25003d6483d3a9bd',1,'vsmc::PathEvalCILK']]],
   ['_7epathevalcl',['~PathEvalCL',['../classvsmc_1_1_path_eval_c_l.html#a5653bdf30475216242264801099b16df',1,'vsmc::PathEvalCL']]],

@@ -167,8 +167,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        return ::dispatch_queue_get_specific(this-&gt;<span class="keywordtype">object</span>(), key);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#adbfa0e081152ef69aebedbfb22f172d0">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#adbfa0e081152ef69aebedbfb22f172d0">set_specific</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *key, <span class="keywordtype">void</span> *context,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        ::dispatch_function_t destructor)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_base.html#adbfa0e081152ef69aebedbfb22f172d0">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_dispatch_queue_base.html#adbfa0e081152ef69aebedbfb22f172d0">set_specific</a>(</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">void</span> *key, <span class="keywordtype">void</span> *context, ::dispatch_function_t destructor)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        ::dispatch_queue_set_specific(</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            this-&gt;<span class="keywordtype">object</span>(), key, context, destructor);</div>
@@ -273,8 +273,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#if VSMC_HAS_GCD_LION</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html#a222014b181c8e81fc48744cdcdecfcd7">  183</a></span>&#160;    <a class="code" href="classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html#a222014b181c8e81fc48744cdcdecfcd7">DispatchQueue</a>(::dispatch_queue_priority_t priority =</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                      DISPATCH_QUEUE_PRIORITY_DEFAULT,</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html#a222014b181c8e81fc48744cdcdecfcd7">  183</a></span>&#160;    <a class="code" href="classvsmc_1_1_dispatch_queue_3_01_dispatch_global_01_4.html#a222014b181c8e81fc48744cdcdecfcd7">DispatchQueue</a>(</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        ::dispatch_queue_priority_t priority = DISPATCH_QUEUE_PRIORITY_DEFAULT,</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flags = 0)</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        : <a class="code" href="classvsmc_1_1_dispatch_queue_base.html">DispatchQueueBase</a>(</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;              ::dispatch_get_global_queue(priority, flags), false)</div>

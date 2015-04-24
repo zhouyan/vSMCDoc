@@ -137,36 +137,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="blocked__range_8hpp.html">vsmc/thread/blocked_range.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thread__guard_8hpp.html">vsmc/thread/thread_guard.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thread__num_8hpp.html">vsmc/thread/thread_num.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range, <span class="keyword">typename</span> WorkType&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">   54</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">parallel_for</a>(<span class="keyword">const</span> Range &amp;range, WorkType &amp;&amp;work)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::vector&lt;Range&gt; range_vec(<a class="code" href="classvsmc_1_1_thread_num.html#a4ca9716cca558d027f157dbc241aa2f2">ThreadNum::instance</a>().partition(range));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::vector&lt;ThreadGuard&lt;std::thread&gt;&gt; tg;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    tg.reserve(range_vec.size());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != range_vec.size(); ++i) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            tg.push_back(<a class="code" href="classvsmc_1_1_thread_guard.html">ThreadGuard&lt;std::thread&gt;</a>(</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                std::thread(std::forward&lt;WorkType&gt;(work), range_vec[i])));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // VSMC_THREAD_PARALLE_FOR_HPP</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range, <span class="keyword">typename</span> WorkType&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">   53</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">parallel_for</a>(<span class="keyword">const</span> Range &amp;range, WorkType &amp;&amp;work)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;Range&gt; range_vec(<a class="code" href="classvsmc_1_1_thread_num.html#a4ca9716cca558d027f157dbc241aa2f2">ThreadNum::instance</a>().partition(range));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::vector&lt;ThreadGuard&lt;std::thread&gt;&gt; tg;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    tg.reserve(range_vec.size());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != range_vec.size(); ++i) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            tg.push_back(<a class="code" href="classvsmc_1_1_thread_guard.html">ThreadGuard&lt;std::thread&gt;</a>(</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                std::thread(std::forward&lt;WorkType&gt;(work), range_vec[i])));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // VSMC_THREAD_PARALLE_FOR_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="thread__num_8hpp_html"><div class="ttname"><a href="thread__num_8hpp.html">thread_num.hpp</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
 <div class="ttc" id="classvsmc_1_1_thread_guard_html"><div class="ttname"><a href="classvsmc_1_1_thread_guard.html">vsmc::ThreadGuard</a></div><div class="ttdoc">Strictly scope-based thread ownership wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="thread__guard_8hpp_source.html#l00043">thread_guard.hpp:43</a></div></div>
 <div class="ttc" id="blocked__range_8hpp_html"><div class="ttname"><a href="blocked__range_8hpp.html">blocked_range.hpp</a></div></div>
 <div class="ttc" id="thread__guard_8hpp_html"><div class="ttname"><a href="thread__guard_8hpp.html">thread_guard.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_thread_num_html_a4ca9716cca558d027f157dbc241aa2f2"><div class="ttname"><a href="classvsmc_1_1_thread_num.html#a4ca9716cca558d027f157dbc241aa2f2">vsmc::ThreadNum::instance</a></div><div class="ttdeci">static ThreadNum &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__num_8hpp_source.html#l00046">thread_num.hpp:46</a></div></div>
-<div class="ttc" id="group___thread_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__for_8hpp_source.html#l00054">parallel_for.hpp:54</a></div></div>
+<div class="ttc" id="classvsmc_1_1_thread_num_html_a4ca9716cca558d027f157dbc241aa2f2"><div class="ttname"><a href="classvsmc_1_1_thread_num.html#a4ca9716cca558d027f157dbc241aa2f2">vsmc::ThreadNum::instance</a></div><div class="ttdeci">static ThreadNum &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__num_8hpp_source.html#l00049">thread_num.hpp:49</a></div></div>
+<div class="ttc" id="group___thread_html_gac2239aab31c2c59ee3b4a8dafd03e842"><div class="ttname"><a href="group___thread.html#gac2239aab31c2c59ee3b4a8dafd03e842">vsmc::parallel_for</a></div><div class="ttdeci">void parallel_for(const Range &amp;range, WorkType &amp;&amp;work)</div><div class="ttdoc">Parallel for using std::thread. </div><div class="ttdef"><b>Definition:</b> <a href="parallel__for_8hpp_source.html#l00053">parallel_for.hpp:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

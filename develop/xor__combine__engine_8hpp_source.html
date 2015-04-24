@@ -135,17 +135,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2internal_2common_8hpp.html">vsmc/rng/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">   37</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED(result_type)             \</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((std::is_unsigned&lt;result_type&gt;::value),               \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">   37</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED(result_type)              \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((std::is_unsigned&lt;result_type&gt;::value),                \</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">        USE_XorCombineEngine_WITH_ENGINES_HAVE_RESULT_TYPE_NOT_AN_UNSIGNED_INTEGER_TYPE)</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">   41</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE(Eng1, Eng2)             \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((std::is_same&lt;typename Eng1::resultType,              \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                           typename Eng2::resultType&gt;::value),               \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">   41</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE(Eng1, Eng2)              \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((std::is_same&lt;typename Eng1::resultType,               \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                           typename Eng2::resultType&gt;::value),                \</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        USE_XorCombineEngine_WITH_TWO_RNG_ENGINES_WITH_DIFFERENT_RESULT_TYPE)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="xor__combine__engine_8hpp.html#ad32d8b5112231b9ff41da180c824395b">   46</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE                                   \</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED(result_type);                \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="xor__combine__engine_8hpp.html#ad32d8b5112231b9ff41da180c824395b">   46</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE                                    \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED(result_type);                 \</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE(Eng1, Eng2);</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>

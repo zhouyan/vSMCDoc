@@ -139,8 +139,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mpi__manager_8hpp.html">vsmc/mpi/mpi_manager.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aligned__memory_8hpp.html">vsmc/utility/aligned_memory.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="backend__mpi_8hpp.html#a7a40d5ce6e289d70ae554ef9c15acc0c">   41</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_MPI_BACKEND_MPI_COPY_SIZE_MISMATCH               \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(                                                     \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="backend__mpi_8hpp.html#a7a40d5ce6e289d70ae554ef9c15acc0c">   41</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_MPI_BACKEND_MPI_COPY_SIZE_MISMATCH                \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(                                                      \</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">        (N == global_size_), (&quot;**StateMPI::copy** SIZE MISMATCH&quot;))</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
@@ -199,8 +199,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span> (lmax_weight &lt; lwptr[i])</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                lmax_weight = lwptr[i];</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">double</span> gmax_weight = 0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        ::boost::mpi::all_reduce(world_, lmax_weight, gmax_weight,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            ::boost::mpi::maximum&lt;double&gt;());</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        ::boost::mpi::all_reduce(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            world_, lmax_weight, gmax_weight, ::boost::mpi::maximum&lt;double&gt;());</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span> (size_type i = 0; i != N; ++i)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            lwptr[i] -= gmax_weight;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
@@ -231,7 +231,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classvsmc_1_1_weight_set_m_p_i.html#a947f64eab99071d50a860abd4f299c95">  133</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_weight_set_m_p_i.html#a947f64eab99071d50a860abd4f299c95">compute_ess</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> *first, <span class="keywordtype">bool</span> use_log)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">const</span> size_type N = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(this-&gt;size());</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        std::vector&lt;double, AlignedAllocator&lt;double&gt;&gt; buffer(N);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="namespacevsmc.html#a71815f774e78a7daf2858f5bd1ed7388">AlignedVector&lt;double&gt;</a> buffer(N);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">double</span> *<span class="keyword">const</span> bptr = buffer.data();</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">if</span> (use_log) {</div>
@@ -278,7 +278,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keyword">const</span> size_type N = <span class="keyword">static_cast&lt;</span>size_type<span class="keyword">&gt;</span>(this-&gt;size());</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *bptr = first;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> wptr = this-&gt;weight_data();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        std::vector&lt;double, AlignedAllocator&lt;double&gt;&gt; buffer;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="namespacevsmc.html#a71815f774e78a7daf2858f5bd1ed7388">AlignedVector&lt;double&gt;</a> buffer;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span> (use_log) {</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            buffer.resize(N);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordtype">double</span> *<span class="keyword">const</span> cptr = buffer.data();</div>
@@ -470,49 +470,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != copy_send.size(); ++i) {</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                    <span class="keywordflow">if</span> (copy_send[i].first == r) {</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                        pack_send_ = this-&gt;state_pack(copy_send[i].second);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                        world_.send(</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                            copy_send[i].first, copy_tag_, pack_send_);</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                    }</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                }</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            }</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        }</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    }</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    ::boost::mpi::communicator world_;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    size_type offset_;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    size_type global_size_;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordtype">bool</span> size_equal_;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    std::vector&lt;size_type&gt; size_all_;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordtype">int</span> copy_tag_;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    std::vector&lt;size_type&gt; copy_from_;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    std::vector&lt;size_type&gt; copy_from_this_;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    std::vector&lt;std::pair&lt;int, size_type&gt;&gt; copy_recv_;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    std::vector&lt;std::pair&lt;int, size_type&gt;&gt; copy_send_;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keyword">typename</span> BaseState::state_pack_type pack_recv_;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keyword">typename</span> BaseState::state_pack_type pack_send_;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <a class="code" href="traits_8hpp.html#a68905fe53f4753047c4e7fe31517964f">VSMC_DEFINE_METHOD_CHECKER</a>(copy_pre_processor, <span class="keywordtype">void</span>, ())</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="traits_8hpp.html#a68905fe53f4753047c4e7fe31517964f">VSMC_DEFINE_METHOD_CHECKER</a>(copy_post_processor, <span class="keywordtype">void</span>, ())</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keywordtype">void</span> copy_pre_processor_dispatch(<a class="code" href="namespacestd.html">std</a>::true_type)</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    {</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        BaseState::copy_pre_processor();</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    }</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">void</span> copy_pre_processor_dispatch(std::false_type) {}</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordtype">void</span> copy_post_processor_dispatch(std::true_type)</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    {</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        BaseState::copy_post_processor();</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    }</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="keywordtype">void</span> copy_post_processor_dispatch(std::false_type) {}</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;}; <span class="comment">// class StateMPI</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="preprocessor">#endif // VSMC_MPI_BACKEND_MPI_HPP</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                        world_.send(copy_send[i].first, copy_tag_, pack_send_);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                    }</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                }</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            }</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        }</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    }</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    ::boost::mpi::communicator world_;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    size_type offset_;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    size_type global_size_;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordtype">bool</span> size_equal_;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    std::vector&lt;size_type&gt; size_all_;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">int</span> copy_tag_;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    std::vector&lt;size_type&gt; copy_from_;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    std::vector&lt;size_type&gt; copy_from_this_;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    std::vector&lt;std::pair&lt;int, size_type&gt;&gt; copy_recv_;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    std::vector&lt;std::pair&lt;int, size_type&gt;&gt; copy_send_;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keyword">typename</span> BaseState::state_pack_type pack_recv_;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keyword">typename</span> BaseState::state_pack_type pack_send_;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <a class="code" href="traits_8hpp.html#a68905fe53f4753047c4e7fe31517964f">VSMC_DEFINE_METHOD_CHECKER</a>(copy_pre_processor, <span class="keywordtype">void</span>, ())</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <a class="code" href="traits_8hpp.html#a68905fe53f4753047c4e7fe31517964f">VSMC_DEFINE_METHOD_CHECKER</a>(copy_post_processor, <span class="keywordtype">void</span>, ())</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <span class="keywordtype">void</span> copy_pre_processor_dispatch(<a class="code" href="namespacestd.html">std</a>::true_type)</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        BaseState::copy_pre_processor();</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    }</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="keywordtype">void</span> copy_pre_processor_dispatch(std::false_type) {}</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordtype">void</span> copy_post_processor_dispatch(std::true_type)</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    {</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        BaseState::copy_post_processor();</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    }</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keywordtype">void</span> copy_post_processor_dispatch(std::false_type) {}</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;}; <span class="comment">// class StateMPI</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="preprocessor">#endif // VSMC_MPI_BACKEND_MPI_HPP</span></div>
 <div class="ttc" id="classvsmc_1_1_weight_set_m_p_i_html_aa5b031f5b0f290a616e2e184c292a5fc"><div class="ttname"><a href="classvsmc_1_1_weight_set_m_p_i.html#aa5b031f5b0f290a616e2e184c292a5fc">vsmc::WeightSetMPI::compute_cess</a></div><div class="ttdeci">double compute_cess(const double *first, bool use_log) const </div><div class="ttdef"><b>Definition:</b> <a href="backend__mpi_8hpp_source.html#l00178">backend_mpi.hpp:178</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="aligned__memory_8hpp_html"><div class="ttname"><a href="aligned__memory_8hpp.html">aligned_memory.hpp</a></div></div>
@@ -536,6 +535,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="mpi__datatype_8hpp_html"><div class="ttname"><a href="mpi__datatype_8hpp.html">mpi_datatype.hpp</a></div></div>
 <div class="ttc" id="classvsmc_1_1_weight_set_m_p_i_html_a68ef5a47ea6b9d5ba64aa6a6afa8fd33"><div class="ttname"><a href="classvsmc_1_1_weight_set_m_p_i.html#a68ef5a47ea6b9d5ba64aa6a6afa8fd33">vsmc::WeightSetMPI::mpi_id</a></div><div class="ttdeci">ID mpi_id</div><div class="ttdef"><b>Definition:</b> <a href="backend__mpi_8hpp_source.html#l00055">backend_mpi.hpp:55</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="namespacevsmc_html_a71815f774e78a7daf2858f5bd1ed7388"><div class="ttname"><a href="namespacevsmc.html#a71815f774e78a7daf2858f5bd1ed7388">vsmc::AlignedVector</a></div><div class="ttdeci">std::vector&lt; T, AlignedAllocator&lt; T &gt;&gt; AlignedVector</div><div class="ttdef"><b>Definition:</b> <a href="aligned__memory_8hpp_source.html#l00345">aligned_memory.hpp:345</a></div></div>
 <div class="ttc" id="classvsmc_1_1_state_m_p_i_html_a261b688c5b9279f3c69e4055b2238588"><div class="ttname"><a href="classvsmc_1_1_state_m_p_i.html#a261b688c5b9279f3c69e4055b2238588">vsmc::StateMPI::weight_set_type</a></div><div class="ttdeci">WeightSetMPI&lt; typename traits::WeightSetTypeTrait&lt; BaseState &gt;::type, ID &gt; weight_set_type</div><div class="ttdef"><b>Definition:</b> <a href="backend__mpi_8hpp_source.html#l00233">backend_mpi.hpp:233</a></div></div>
 <div class="ttc" id="classvsmc_1_1_weight_set_m_p_i_html_a906e440d588352ab0191c84dccdcc845"><div class="ttname"><a href="classvsmc_1_1_weight_set_m_p_i.html#a906e440d588352ab0191c84dccdcc845">vsmc::WeightSetMPI::world</a></div><div class="ttdeci">const ::boost::mpi::communicator &amp; world() const </div><div class="ttdoc">A duplicated MPI communicator for this weight set object. </div><div class="ttdef"><b>Definition:</b> <a href="backend__mpi_8hpp_source.html#l00091">backend_mpi.hpp:91</a></div></div>
 <div class="ttc" id="classvsmc_1_1_state_m_p_i_html_a98b2c58bc25b8223974a31a703c2a3ee"><div class="ttname"><a href="classvsmc_1_1_state_m_p_i.html#a98b2c58bc25b8223974a31a703c2a3ee">vsmc::StateMPI::global_id</a></div><div class="ttdeci">size_type global_id(size_type local_id) const </div><div class="ttdoc">Transfer a local particle id on this node into a global particle id. </div><div class="ttdef"><b>Definition:</b> <a href="backend__mpi_8hpp_source.html#l00391">backend_mpi.hpp:391</a></div></div>

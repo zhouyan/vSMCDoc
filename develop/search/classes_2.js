@@ -167,7 +167,5 @@ var searchData=
   ['cpuidfeatureinfo_3c_20cpuidfeaturevmx_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureVMX &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_v_m_x_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturex2apic_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureX2APIC &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_x2_a_p_i_c_01_4.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeaturexsave_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureXSAVE &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_x_s_a_v_e_01_4.html',1,'vsmc']]],
-  ['cpuidfeatureinfo_3c_20cpuidfeaturextpr_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureXTPR &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_x_t_p_r_01_4.html',1,'vsmc']]],
-  ['cstringnontemporalthreshold',['CStringNonTemporalThreshold',['../classvsmc_1_1_c_string_non_temporal_threshold.html',1,'vsmc']]],
-  ['cstringruntimedispatch',['CStringRuntimeDispatch',['../classvsmc_1_1internal_1_1_c_string_runtime_dispatch.html',1,'vsmc::internal']]]
+  ['cpuidfeatureinfo_3c_20cpuidfeaturextpr_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureXTPR &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_x_t_p_r_01_4.html',1,'vsmc']]]
 ];

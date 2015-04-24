@@ -140,29 +140,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cl__wrapper_8hpp.html">vsmc/opencl/internal/cl_wrapper.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stop__watch_8hpp.html">vsmc/utility/stop_watch.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">   42</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP(func)                    \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT((setup()),                                           \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        (&quot;**CLManager::&quot; #func &quot;** CAN ONLY BE CALLED AFTER TRUE &quot;           \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">         &quot;**CLManager::setup**&quot;));</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">   42</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP(func)                     \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(                                                      \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        (setup()), (&quot;**CLManager::&quot; #func &quot;** CAN ONLY BE CALLED AFTER TRUE &quot; \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                    &quot;**CLManager::setup**&quot;));</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#a3f22226a2b482aae5c68f6d58eef512d">   47</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_PLATFORM                \</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(setup_platform,                                     \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">        (&quot;**CLManager::setup** FAILED TO SETUP A PLATFORM&quot;));</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#a3f22226a2b482aae5c68f6d58eef512d">   47</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_PLATFORM                 \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(                                                     \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">        setup_platform, (&quot;**CLManager::setup** FAILED TO SETUP A PLATFORM&quot;));</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#a3b4b57ad7d60593628858a2529f176eb">   51</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_CONTEXT                 \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(                                                    \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#a3b4b57ad7d60593628858a2529f176eb">   51</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_CONTEXT                  \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(                                                     \</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        setup_context, (&quot;**CLManager::setup** FAILED TO SETUP A CONTEXT&quot;));</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#ad8ba87aeae7800af4a65da48609b303a">   55</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_DEVICE                  \</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(                                                    \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#ad8ba87aeae7800af4a65da48609b303a">   55</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_DEVICE                   \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(                                                     \</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">        setup_device, (&quot;**CLManager::setup** FAILED TO SETUP A DEVICE&quot;));</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#af65752c77b244d99fa5d53e050e8fc67">   59</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE           \</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(setup_command_queue,                                \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#af65752c77b244d99fa5d53e050e8fc67">   59</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE            \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING(setup_command_queue,                                 \</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        (&quot;**CLManager::setup** FAILED TO SETUP A COMMAND_QUEUE&quot;));</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">   63</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK(func, block, event)     \</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING((block || event != nullptr),                        \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">   63</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK(func, block, event)      \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING((block || event != nullptr),                         \</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">        (&quot;**CLManager::&quot; #func &quot; NOT BLOCKING BUT WITH NULL EVENT&quot;))</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
@@ -174,163 +174,163 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a354d4bb91b4eea22c47935cd034ec7d6">  136</a></span>&#160;    <span class="keyword">typedef</span> ID <a class="code" href="classvsmc_1_1_c_l_manager.html#a354d4bb91b4eea22c47935cd034ec7d6">cl_id</a>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">  139</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">instance</a>()</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">static</span> <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> manager;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> manager;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">  150</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">opencl_version</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> opencl_version_; }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8">  156</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8">opencl_c_version</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> opencl_c_version_; }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aa351d35ebf711560f775e3f973692392">  159</a></span>&#160;    const ::cl::Platform &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#aa351d35ebf711560f775e3f973692392">platform</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> platform_; }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a106457193fa0d51f3861faeb5acd90a5">  162</a></span>&#160;    const ::cl::Context &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#a106457193fa0d51f3861faeb5acd90a5">context</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> context_; }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d">  165</a></span>&#160;    const ::cl::Device &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d">device</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> device_; }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a6823cc704e45fca4a7dd4e938057180b">  168</a></span>&#160;    <span class="keyword">const</span> std::vector&lt;::cl::Device&gt; &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#a6823cc704e45fca4a7dd4e938057180b">device_vec</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> device_vec_;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2">  174</a></span>&#160;    const ::cl::CommandQueue &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2">command_queue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> command_queue_; }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4">  179</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4">setup</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> setup_; }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#af1c67ed47a951844733860f1d8ef4642">  183</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#af1c67ed47a951844733860f1d8ef4642">setup</a>(::cl_device_type dev)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        setup_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        setup_cl_manager(dev);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> setup_;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a8a3e6bb34c3ee0e4535baaaddf22f46b">  196</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a8a3e6bb34c3ee0e4535baaaddf22f46b">setup</a>(const ::cl::Platform &amp;plat, const ::cl::Context &amp;ctx,</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        const ::cl::Device &amp;dev, const ::cl::CommandQueue &amp;cmd)</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        setup_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        platform_ = plat;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        context_ = ctx;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        device_ = dev;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        device_vec_ = context_.getInfo&lt;CL_CONTEXT_DEVICES&gt;();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        command_queue_ = cmd;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        check_opencl_version();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        setup_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> setup_;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">  213</a></span>&#160;    ::cl::Buffer <a class="code" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">create_buffer</a>(std::size_t num,</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        ::<a class="code" href="class_1_1cl__mem__flags.html">cl_mem_flags</a> flag = CL_MEM_READ_WRITE,</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordtype">void</span> *host_ptr = <span class="keyword">nullptr</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">create_buffer</a>);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span> (num == 0)</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            return ::cl::Buffer();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        return ::cl::Buffer(context_, flag, <span class="keyword">sizeof</span>(CLType) * num, host_ptr);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType, <span class="keyword">typename</span> OutputIter&gt;</div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">  228</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        OutputIter first, std::size_t offset = 0,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>, block, event);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        std::vector&lt;CLType&gt; buffer(num);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        command_queue_.enqueueReadBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, buffer.data(),</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            events, event);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        std::copy(buffer.begin(), buffer.end(), first);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aa0e55e72d701895fc6bc864d4f6a071b">  247</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#aa0e55e72d701895fc6bc864d4f6a071b">read_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first,</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        std::size_t offset = 0,</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>, block, event);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        command_queue_.enqueueReadBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, first, events,</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            event);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType, <span class="keyword">typename</span> InputIter&gt;</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">  264</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        InputIter first, std::size_t offset = 0,</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>, block, event);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        std::vector&lt;CLType&gt; buffer(num);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        std::copy_n(first, num, buffer.data());</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        command_queue_.enqueueWriteBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, buffer.data(),</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            events, event);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a3930ce9303ba24f5712498c0be56cd05">  283</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a3930ce9303ba24f5712498c0be56cd05">write_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keyword">const</span> CLType *first, std::size_t offset = 0,</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>, block, event);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        command_queue_.enqueueWriteBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            const_cast&lt;CLType *&gt;(first), events, event);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aedb9a26c4fb229013a9bac74ce8c448f">  300</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#aedb9a26c4fb229013a9bac74ce8c448f">write_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first,</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        std::size_t offset = 0,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>, block, event);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        command_queue_.enqueueWriteBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, first, events,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            event);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">  318</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">copy_buffer</a>(const ::cl::Buffer &amp;src, const ::cl::Buffer &amp;dst,</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        std::size_t num, std::size_t src_offset = 0,</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        std::size_t dst_offset = 0,</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">copy_buffer</a>);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">copy_buffer</a>, block, event);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        ::cl::Event <a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        ::cl::Event *eptr = <span class="keyword">event</span> == <span class="keyword">nullptr</span> ? &amp;e : event;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        command_queue_.enqueueCopyBuffer(src, dst,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keyword">sizeof</span>(CLType) * src_offset, <span class="keyword">sizeof</span>(CLType) * dst_offset,</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keyword">sizeof</span>(CLType) * num, events, eptr);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#a90beae7cdd464efa1152941124c4827e">operator=</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">  143</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">instance</a>()</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">static</span> <a class="code" href="classvsmc_1_1_c_l_manager.html">CLManager&lt;ID&gt;</a> manager;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> manager;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">  154</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">opencl_version</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> opencl_version_; }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8">  160</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8">opencl_c_version</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> opencl_c_version_; }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aa351d35ebf711560f775e3f973692392">  163</a></span>&#160;    const ::cl::Platform &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#aa351d35ebf711560f775e3f973692392">platform</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> platform_; }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a106457193fa0d51f3861faeb5acd90a5">  166</a></span>&#160;    const ::cl::Context &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#a106457193fa0d51f3861faeb5acd90a5">context</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> context_; }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d">  169</a></span>&#160;    const ::cl::Device &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d">device</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> device_; }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a6823cc704e45fca4a7dd4e938057180b">  172</a></span>&#160;    <span class="keyword">const</span> std::vector&lt;::cl::Device&gt; &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#a6823cc704e45fca4a7dd4e938057180b">device_vec</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> device_vec_; }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2">  175</a></span>&#160;    const ::cl::CommandQueue &amp;<a class="code" href="classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2">command_queue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> command_queue_; }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4">  180</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4">setup</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> setup_; }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#af1c67ed47a951844733860f1d8ef4642">  184</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#af1c67ed47a951844733860f1d8ef4642">setup</a>(::cl_device_type dev)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        setup_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        setup_cl_manager(dev);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> setup_;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a8a3e6bb34c3ee0e4535baaaddf22f46b">  197</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a8a3e6bb34c3ee0e4535baaaddf22f46b">setup</a>(const ::cl::Platform &amp;plat, const ::cl::Context &amp;ctx,</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        const ::cl::Device &amp;dev, const ::cl::CommandQueue &amp;cmd)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        setup_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        platform_ = plat;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        context_ = ctx;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        device_ = dev;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        device_vec_ = context_.getInfo&lt;CL_CONTEXT_DEVICES&gt;();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        command_queue_ = cmd;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        check_opencl_version();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        setup_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">return</span> setup_;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">  214</a></span>&#160;    ::cl::Buffer <a class="code" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">create_buffer</a>(std::size_t num,</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        ::<a class="code" href="class_1_1cl__mem__flags.html">cl_mem_flags</a> flag = CL_MEM_READ_WRITE,</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordtype">void</span> *host_ptr = <span class="keyword">nullptr</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">create_buffer</a>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span> (num == 0)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            return ::cl::Buffer();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        return ::cl::Buffer(context_, flag, <span class="keyword">sizeof</span>(CLType) * num, host_ptr);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType, <span class="keyword">typename</span> OutputIter&gt;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">  229</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        OutputIter first, std::size_t offset = 0,</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>, block, event);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        std::vector&lt;CLType&gt; buffer(num);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        command_queue_.enqueueReadBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, buffer.data(),</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            events, event);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        std::copy(buffer.begin(), buffer.end(), first);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aa0e55e72d701895fc6bc864d4f6a071b">  248</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#aa0e55e72d701895fc6bc864d4f6a071b">read_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first,</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        std::size_t offset = 0,</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">read_buffer</a>, block, event);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        command_queue_.enqueueReadBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, first, events,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            event);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType, <span class="keyword">typename</span> InputIter&gt;</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">  265</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        InputIter first, std::size_t offset = 0,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>, block, event);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        std::vector&lt;CLType&gt; buffer(num);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        std::copy_n(first, num, buffer.data());</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        command_queue_.enqueueWriteBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, buffer.data(),</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            events, event);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a3930ce9303ba24f5712498c0be56cd05">  284</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#a3930ce9303ba24f5712498c0be56cd05">write_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keyword">const</span> CLType *first, std::size_t offset = 0,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>, block, event);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        command_queue_.enqueueWriteBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            const_cast&lt;CLType *&gt;(first), events, event);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aedb9a26c4fb229013a9bac74ce8c448f">  301</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#aedb9a26c4fb229013a9bac74ce8c448f">write_buffer</a>(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        std::size_t offset = 0,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">write_buffer</a>, block, event);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        command_queue_.enqueueWriteBuffer(buf, static_cast&lt;::cl_bool&gt;(block),</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keyword">sizeof</span>(CLType) * offset, <span class="keyword">sizeof</span>(CLType) * num, first, events,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            event);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLType&gt;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">  319</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">copy_buffer</a>(const ::cl::Buffer &amp;src, const ::cl::Buffer &amp;dst,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        std::size_t num, std::size_t src_offset = 0,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        std::size_t dst_offset = 0,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">copy_buffer</a>);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">copy_buffer</a>, block, event);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        ::cl::Event <a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        ::cl::Event *eptr = <span class="keyword">event</span> == <span class="keyword">nullptr</span> ? &amp;e : event;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        command_queue_.enqueueCopyBuffer(src, dst, <span class="keyword">sizeof</span>(CLType) * src_offset,</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keyword">sizeof</span>(CLType) * dst_offset, <span class="keyword">sizeof</span>(CLType) * num, events, eptr);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span> (block)</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            eptr-&gt;wait();</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
@@ -340,363 +340,358 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Event&gt; *events = <span class="keyword">nullptr</span>,</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        ::cl::Event *event = <span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> block = <span class="keyword">true</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">run_kernel</a>, block, event);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        ::cl::Event <a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        ::cl::Event *eptr = <span class="keyword">event</span> == <span class="keyword">nullptr</span> ? &amp;e : event;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        command_queue_.enqueueNDRangeKernel(kern, ::cl::NullRange,</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            get_global_nd_range(N, local_size),</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            get_local_nd_range(local_size), events, eptr);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">if</span> (block)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            eptr-&gt;wait();</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Func&gt;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">typename</span> std::enable_if&lt;!std::is_same&lt;Func, std::size_t&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            !std::is_convertible&lt;Func, std::size_t&gt;::value,</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        std::size_t&gt;<a class="code" href="classstd_1_1conditional_1_1type.html">::type</a></div>
-<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">  396</a></span>&#160;        <a class="code" href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">profile_kernel</a>(::cl::Kernel &amp;kern, std::size_t N, <span class="keyword">const</span> Func &amp;func,</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            std::size_t lmin = 0, std::size_t repeat = 10)</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        cl::size_t&lt;3&gt; reqd_size;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            kern.getWorkGroupInfo(</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                device_, CL_KERNEL_COMPILE_WORK_GROUP_SIZE, &amp;reqd_size);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            reqd_size[0] = 0;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">if</span> (reqd_size[0] != 0)</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <span class="keywordflow">return</span> reqd_size[0];</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        std::size_t factor;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        std::size_t lmax;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        std::size_t mmax;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="group___open_c_l.html#ga7478c54da9f63bbac0cef891b85e2174">cl_minmax_local_size</a>(kern, device_, factor, lmax, mmax);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">if</span> (lmax == 0)</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">if</span> (lmin != 0 &amp;&amp; lmin &lt;= lmax) {</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            factor = lmin;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            mmax = lmax / factor;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            lmax = mmax * factor;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">if</span> (mmax &lt; 2)</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="keywordflow">return</span> lmax;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordtype">double</span> time = std::numeric_limits&lt;double&gt;::max <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a>();</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        std::size_t lsize = lmax;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html">vsmc::StopWatch</a> watch;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        Func f(func);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <span class="keywordflow">for</span> (std::size_t m = mmax; m &gt;= 1; --m) {</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            std::size_t l = m * factor;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            f(kern);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">run_kernel</a>(kern, N, l);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a347f58403e8df3a09de6cd84446fc7">reset</a>();</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a80a2001d7f862ab268ad8b73f05eff">start</a>();</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            <span class="keywordflow">for</span> (std::size_t r = 0; r != repeat; ++r) {</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                f(kern);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                <a class="code" href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">run_kernel</a>(kern, N, l);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            }</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#af95708cc29d749597253943fdfc216ed">stop</a>();</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keywordflow">if</span> (time &gt; watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a40f601d698ccc22a388d8d3851e97ce5">milliseconds</a>()) {</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                time = watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a40f601d698ccc22a388d8d3851e97ce5">milliseconds</a>();</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                lsize = l;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            }</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        }</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">return</span> lsize;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    }</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">  450</a></span>&#160;    std::size_t <a class="code" href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">profile_kernel</a>(::cl::Kernel &amp;kern, std::size_t N,</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        std::size_t lmin = 0, std::size_t repeat = 3)</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    {</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">profile_kernel</a>(kern, N, profile_kernel_func_(), lmin, repeat);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    }</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
-<div class="line"><a name="l00457"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">  457</a></span>&#160;    ::cl::Program <a class="code" href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">create_program</a>(<span class="keyword">const</span> std::string &amp;source)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        return ::cl::Program(context_, source);</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    }</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a7c4d0efc39a92bb85891b13374fdb878">  464</a></span>&#160;    ::cl::Program <a class="code" href="classvsmc_1_1_c_l_manager.html#a7c4d0efc39a92bb85891b13374fdb878">create_program</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;source)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        std::vector&lt;std::pair&lt;const char *, std::size_t&gt;&gt; src(source.size());</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != source.size(); ++i)</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            src[i] = std::make_pair(source[i].data(), source[i].size());</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        return ::cl::Program(context_, src);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    }</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
-<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a30d14715edbd3d4a0cb7dd230a11f547">  482</a></span>&#160;    ::cl::Program <a class="code" href="classvsmc_1_1_c_l_manager.html#a30d14715edbd3d4a0cb7dd230a11f547">create_program</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;binary,</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Device&gt; *devices,</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        std::vector&lt;::cl_int&gt; *status = <span class="keyword">nullptr</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        std::vector&lt;std::pair&lt;const void *, std::size_t&gt;&gt; bin(binary.size());</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != binary.size(); ++i) {</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            bin[i] =</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                std::make_pair(static_cast&lt;const void *&gt;(binary[i].data()),</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                    binary[i].size());</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        }</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">return</span> devices == <span class="keyword">nullptr</span> ?</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            ::cl::Program(context_, device_vec_, bin, status) :</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            ::cl::Program(context_, *devices, bin, status);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    }</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keyword">struct </span>profile_kernel_func_ {</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        <span class="keywordtype">void</span> operator()(::cl::Kernel &amp;)<span class="keyword"> const </span>{}</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    };</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    ::cl::Platform platform_;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    ::cl::Context context_;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    ::cl::Device device_;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    std::vector&lt;::cl::Device&gt; device_vec_;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    ::cl::CommandQueue command_queue_;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">bool</span> setup_;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    CLSetup&lt;ID&gt; &amp;setup_default_;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordtype">int</span> opencl_version_;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordtype">int</span> opencl_c_version_;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    CLManager() : setup_(false), setup_default_(CLSetup&lt;ID&gt;::<a class="code" href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">instance</a>())</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    {</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        setup_cl_manager(setup_default_.device_type());</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    }</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    CLManager(<span class="keyword">const</span> CLManager&lt;ID&gt; &amp;);</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    CLManager&lt;ID&gt; &amp;operator=(<span class="keyword">const</span> CLManager&lt;ID&gt; &amp;);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordtype">void</span> check_opencl_version()</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        opencl_version_ = <a class="code" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">CLQuery::opencl_version</a>(device_);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        opencl_c_version_ = <a class="code" href="classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7">CLQuery::opencl_c_version</a>(device_);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != device_vec_.size(); ++i) {</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            <span class="keywordtype">int</span> ocl = <a class="code" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">CLQuery::opencl_version</a>(device_vec_[i]);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            <span class="keywordtype">int</span> oclc = <a class="code" href="classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7">CLQuery::opencl_c_version</a>(device_vec_[i]);</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;            <span class="keywordflow">if</span> (opencl_version_ &gt; ocl)</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                opencl_version_ = ocl;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <span class="keywordflow">if</span> (opencl_c_version_ &gt; ocl)</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                opencl_c_version_ = oclc;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        }</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordtype">void</span> setup_cl_manager(::cl_device_type dev_type)</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    {</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        setup_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        <span class="keywordtype">bool</span> setup_platform = platform_filter(dev_type);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a3f22226a2b482aae5c68f6d58eef512d">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_PLATFORM</a>;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="keywordflow">if</span> (!setup_platform)</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keywordtype">bool</span> setup_context = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keywordtype">bool</span> setup_device = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;            std::vector&lt;::cl::Device&gt; dev_pool;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;            std::vector&lt;::cl::Device&gt; dev_select;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            platform_.getDevices(dev_type, &amp;dev_pool);</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;            device_filter(dev_pool, dev_select);</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            <span class="keywordflow">if</span> (dev_select.size() != 0) {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                ::cl_context_properties context_properties[] = {</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                    CL_CONTEXT_PLATFORM,</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                    <span class="keyword">reinterpret_cast&lt;</span>::cl_context_properties<span class="keyword">&gt;</span>(platform_()),</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                    0};</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                context_ = ::cl::Context(dev_select, context_properties);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                setup_context = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                device_vec_ = context_.getInfo&lt;CL_CONTEXT_DEVICES&gt;();</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;                device_ = device_vec_[0];</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;                setup_device = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            }</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        }</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a3b4b57ad7d60593628858a2529f176eb">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_CONTEXT</a>;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <a class="code" href="cl__manager_8hpp.html#ad8ba87aeae7800af4a65da48609b303a">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_DEVICE</a>;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">if</span> (!setup_context)</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordflow">if</span> (!setup_device)</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordtype">bool</span> setup_command_queue = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;            command_queue_ = ::cl::CommandQueue(context_, device_, 0);</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;            setup_command_queue = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        }</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af65752c77b244d99fa5d53e050e8fc67">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE</a>;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <span class="keywordflow">if</span> (!setup_command_queue)</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        check_opencl_version();</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        setup_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    }</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordtype">bool</span> platform_filter(::cl_device_type dev_type)</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    {</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        std::vector&lt;::cl::Platform&gt; platform_vec;</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            ::cl::Platform::get(&amp;platform_vec);</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            platform_vec.clear();</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        }</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">if</span> (platform_vec.size() == 0)</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="comment">// If not using default platform</span></div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="keywordflow">if</span> (!setup_default_.default_platform()) {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;            <span class="keywordflow">for</span> (std::size_t p = 0; p != platform_vec.size(); ++p) {</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                    std::string name;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                    platform_vec[p].getInfo(CL_PLATFORM_NAME, &amp;name);</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                    <span class="keywordflow">if</span> (setup_default_.check_platform(name)) {</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                        platform_ = platform_vec[p];</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                    }</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                }</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;            }</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        }</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="comment">// Using default platform: finding the first that has the device type</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="keywordflow">for</span> (std::size_t p = 0; p != platform_vec.size(); ++p) {</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                std::vector&lt;::cl::Device&gt; dev_pool;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                std::vector&lt;::cl::Device&gt; dev_select;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                platform_vec[p].getDevices(dev_type, &amp;dev_pool);</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                device_filter(dev_pool, dev_select);</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                <span class="keywordflow">if</span> (dev_select.size() != 0) {</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                    platform_ = platform_vec[p];</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                }</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            }</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        }</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    }</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordtype">void</span> device_filter(<span class="keyword">const</span> std::vector&lt;::cl::Device&gt; &amp;dev_pool,</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        std::vector&lt;::cl::Device&gt; &amp;dev_select)</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    {</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        std::vector&lt;bool&gt; dev_select_idx(dev_pool.size(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="comment">// Not using the default device vendor</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        <span class="keywordflow">if</span> (!setup_default_.default_device_vendor()) {</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;            <span class="keywordflow">for</span> (std::size_t d = 0; d != dev_pool.size(); ++d) {</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                    std::string str;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                    dev_pool[d].getInfo(CL_DEVICE_VENDOR, &amp;str);</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                    <span class="keywordflow">if</span> (!setup_default_.check_device_vendor(str))</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                        dev_select_idx[d] = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                    dev_select_idx[d] = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                }</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;            }</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        }</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="comment">// Not using the default device</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="keywordflow">if</span> (!setup_default_.default_device()) {</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;            <span class="keywordflow">for</span> (std::size_t d = 0; d != dev_pool.size(); ++d) {</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                    std::string str;</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    dev_pool[d].getInfo(CL_DEVICE_NAME, &amp;str);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                    <span class="keywordflow">if</span> (!setup_default_.check_device(str))</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                        dev_select_idx[d] = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                    dev_select_idx[d] = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                }</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            }</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        }</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">for</span> (std::size_t d = 0; d != dev_pool.size(); ++d) {</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            <span class="keywordflow">if</span> (dev_select_idx[d]) {</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                    dev_select.push_back(dev_pool[d]);</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                }</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            }</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        }</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    }</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    ::cl::NDRange get_global_nd_range(</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        std::size_t N, std::size_t local_size)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        <span class="keywordflow">if</span> (local_size == 0)</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            return ::cl::NDRange(N);</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <span class="keywordflow">if</span> (N % local_size == 0)</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            return ::cl::NDRange(N);</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        return ::cl::NDRange((N / local_size + 1) * local_size);</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    }</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    ::cl::NDRange get_local_nd_range(std::size_t local_size)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="keywordflow">return</span> local_size == 0 ? ::cl::NullRange : ::cl::NDRange(local_size);</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    }</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;}; <span class="comment">// clss CLManager</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_MANAGER_HPP</span></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a7c4d0efc39a92bb85891b13374fdb878"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a7c4d0efc39a92bb85891b13374fdb878">vsmc::CLManager::create_program</a></div><div class="ttdeci">::cl::Program create_program(const std::vector&lt; std::string &gt; &amp;source) const </div><div class="ttdoc">Create a program given a vector of sources within the current context. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00464">cl_manager.hpp:464</a></div></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a>(<a class="code" href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">run_kernel</a>, block, event);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        ::cl::Event <a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a>;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        ::cl::Event *eptr = <span class="keyword">event</span> == <span class="keyword">nullptr</span> ? &amp;e : event;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        command_queue_.enqueueNDRangeKernel(kern, ::cl::NullRange,</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            get_global_nd_range(N, local_size), get_local_nd_range(local_size),</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            events, eptr);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span> (block)</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            eptr-&gt;wait();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Func&gt;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keyword">typename</span> std::enable_if&lt;!std::is_same&lt;Func, std::size_t&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            !std::is_convertible&lt;Func, std::size_t&gt;::value,</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        std::size_t&gt;<a class="code" href="classstd_1_1conditional_1_1type.html">::type</a></div>
+<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">  395</a></span>&#160;        <a class="code" href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">profile_kernel</a>(::cl::Kernel &amp;kern, std::size_t N, <span class="keyword">const</span> Func &amp;func,</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            std::size_t lmin = 0, std::size_t repeat = 10)</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        cl::size_t&lt;3&gt; reqd_size;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            kern.getWorkGroupInfo(</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                device_, CL_KERNEL_COMPILE_WORK_GROUP_SIZE, &amp;reqd_size);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            reqd_size[0] = 0;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keywordflow">if</span> (reqd_size[0] != 0)</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">return</span> reqd_size[0];</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        std::size_t factor;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        std::size_t lmax;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        std::size_t mmax;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <a class="code" href="group___open_c_l.html#ga7478c54da9f63bbac0cef891b85e2174">cl_minmax_local_size</a>(kern, device_, factor, lmax, mmax);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordflow">if</span> (lmax == 0)</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordflow">if</span> (lmin != 0 &amp;&amp; lmin &lt;= lmax) {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            factor = lmin;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            mmax = lmax / factor;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            lmax = mmax * factor;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">if</span> (mmax &lt; 2)</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">return</span> lmax;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordtype">double</span> time = std::numeric_limits&lt;double&gt;::max <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a>();</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        std::size_t lsize = lmax;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html">vsmc::StopWatch</a> watch;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        Func f(func);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="keywordflow">for</span> (std::size_t m = mmax; m &gt;= 1; --m) {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            std::size_t l = m * factor;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            f(kern);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            <a class="code" href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">run_kernel</a>(kern, N, l);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a347f58403e8df3a09de6cd84446fc7">reset</a>();</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a80a2001d7f862ab268ad8b73f05eff">start</a>();</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <span class="keywordflow">for</span> (std::size_t r = 0; r != repeat; ++r) {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                f(kern);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                <a class="code" href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">run_kernel</a>(kern, N, l);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#af95708cc29d749597253943fdfc216ed">stop</a>();</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="keywordflow">if</span> (time &gt; watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a40f601d698ccc22a388d8d3851e97ce5">milliseconds</a>()) {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                time = watch.<a class="code" href="classvsmc_1_1_stop_watch_clock_adapter.html#a40f601d698ccc22a388d8d3851e97ce5">milliseconds</a>();</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                lsize = l;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            }</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keywordflow">return</span> lsize;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">  449</a></span>&#160;    std::size_t <a class="code" href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">profile_kernel</a>(::cl::Kernel &amp;kern, std::size_t N,</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        std::size_t lmin = 0, std::size_t repeat = 3)</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">profile_kernel</a>(kern, N, profile_kernel_func_(), lmin, repeat);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    }</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">  456</a></span>&#160;    ::cl::Program <a class="code" href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">create_program</a>(<span class="keyword">const</span> std::string &amp;source)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        return ::cl::Program(context_, source);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    }</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a7c4d0efc39a92bb85891b13374fdb878">  463</a></span>&#160;    ::cl::Program <a class="code" href="classvsmc_1_1_c_l_manager.html#a7c4d0efc39a92bb85891b13374fdb878">create_program</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;source)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        std::vector&lt;std::pair&lt;const char *, std::size_t&gt;&gt; src(source.size());</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != source.size(); ++i)</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            src[i] = std::make_pair(source[i].data(), source[i].size());</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        return ::cl::Program(context_, src);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    }</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
+<div class="line"><a name="l00481"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_manager.html#a30d14715edbd3d4a0cb7dd230a11f547">  481</a></span>&#160;    ::cl::Program <a class="code" href="classvsmc_1_1_c_l_manager.html#a30d14715edbd3d4a0cb7dd230a11f547">create_program</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;binary,</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keyword">const</span> std::vector&lt;::cl::Device&gt; *devices,</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        std::vector&lt;::cl_int&gt; *status = <span class="keyword">nullptr</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        std::vector&lt;std::pair&lt;const void *, std::size_t&gt;&gt; bin(binary.size());</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != binary.size(); ++i) {</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            bin[i] = std::make_pair(</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                static_cast&lt;const void *&gt;(binary[i].data()), binary[i].size());</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <span class="keywordflow">return</span> devices == <span class="keyword">nullptr</span> ?</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            ::cl::Program(context_, device_vec_, bin, status) :</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            ::cl::Program(context_, *devices, bin, status);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keyword">struct </span>profile_kernel_func_ {</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keywordtype">void</span> operator()(::cl::Kernel &amp;)<span class="keyword"> const </span>{}</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    };</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    ::cl::Platform platform_;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    ::cl::Context context_;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    ::cl::Device device_;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    std::vector&lt;::cl::Device&gt; device_vec_;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    ::cl::CommandQueue command_queue_;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keywordtype">bool</span> setup_;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    CLSetup&lt;ID&gt; &amp;setup_default_;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">int</span> opencl_version_;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordtype">int</span> opencl_c_version_;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <a class="code" href="classvsmc_1_1_c_l_manager.html#a1f549bb27d6cc00c9ef7971918c3e68a">CLManager</a>() : setup_(false), setup_default_(CLSetup&lt;ID&gt;::<a class="code" href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">instance</a>())</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    {</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        setup_cl_manager(setup_default_.device_type());</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    }</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordtype">void</span> check_opencl_version()</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        opencl_version_ = <a class="code" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">CLQuery::opencl_version</a>(device_);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        opencl_c_version_ = <a class="code" href="classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7">CLQuery::opencl_c_version</a>(device_);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != device_vec_.size(); ++i) {</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            <span class="keywordtype">int</span> ocl = <a class="code" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">CLQuery::opencl_version</a>(device_vec_[i]);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordtype">int</span> oclc = <a class="code" href="classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7">CLQuery::opencl_c_version</a>(device_vec_[i]);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            <span class="keywordflow">if</span> (opencl_version_ &gt; ocl)</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                opencl_version_ = ocl;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;            <span class="keywordflow">if</span> (opencl_c_version_ &gt; ocl)</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                opencl_c_version_ = oclc;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        }</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    }</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="keywordtype">void</span> setup_cl_manager(::cl_device_type dev_type)</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    {</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        setup_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keywordtype">bool</span> setup_platform = platform_filter(dev_type);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a3f22226a2b482aae5c68f6d58eef512d">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_PLATFORM</a>;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> (!setup_platform)</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keywordtype">bool</span> setup_context = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        <span class="keywordtype">bool</span> setup_device = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            std::vector&lt;::cl::Device&gt; dev_pool;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            std::vector&lt;::cl::Device&gt; dev_select;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;            platform_.getDevices(dev_type, &amp;dev_pool);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;            device_filter(dev_pool, dev_select);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            <span class="keywordflow">if</span> (dev_select.size() != 0) {</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                ::cl_context_properties context_properties[] = {</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                    CL_CONTEXT_PLATFORM,</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                    <span class="keyword">reinterpret_cast&lt;</span>::cl_context_properties<span class="keyword">&gt;</span>(platform_()), 0};</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                context_ = ::cl::Context(dev_select, context_properties);</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                setup_context = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                device_vec_ = context_.getInfo&lt;CL_CONTEXT_DEVICES&gt;();</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                device_ = device_vec_[0];</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                setup_device = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;            }</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        }</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <a class="code" href="cl__manager_8hpp.html#a3b4b57ad7d60593628858a2529f176eb">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_CONTEXT</a>;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <a class="code" href="cl__manager_8hpp.html#ad8ba87aeae7800af4a65da48609b303a">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_DEVICE</a>;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="keywordflow">if</span> (!setup_context)</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="keywordflow">if</span> (!setup_device)</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <span class="keywordtype">bool</span> setup_command_queue = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;            command_queue_ = ::cl::CommandQueue(context_, device_, 0);</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;            setup_command_queue = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        }</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <a class="code" href="cl__manager_8hpp.html#af65752c77b244d99fa5d53e050e8fc67">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE</a>;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordflow">if</span> (!setup_command_queue)</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        check_opencl_version();</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        setup_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    }</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordtype">bool</span> platform_filter(::cl_device_type dev_type)</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    {</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        std::vector&lt;::cl::Platform&gt; platform_vec;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;            ::cl::Platform::get(&amp;platform_vec);</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;            platform_vec.clear();</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        }</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordflow">if</span> (platform_vec.size() == 0)</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="comment">// If not using default platform</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordflow">if</span> (!setup_default_.default_platform()) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            <span class="keywordflow">for</span> (std::size_t p = 0; p != platform_vec.size(); ++p) {</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                    std::string name;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                    platform_vec[p].getInfo(CL_PLATFORM_NAME, &amp;name);</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                    <span class="keywordflow">if</span> (setup_default_.check_platform(name)) {</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                        platform_ = platform_vec[p];</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                    }</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                }</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            }</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        }</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <span class="comment">// Using default platform: finding the first that has the device type</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <span class="keywordflow">for</span> (std::size_t p = 0; p != platform_vec.size(); ++p) {</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                std::vector&lt;::cl::Device&gt; dev_pool;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                std::vector&lt;::cl::Device&gt; dev_select;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                platform_vec[p].getDevices(dev_type, &amp;dev_pool);</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                device_filter(dev_pool, dev_select);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                <span class="keywordflow">if</span> (dev_select.size() != 0) {</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                    platform_ = platform_vec[p];</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                }</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;            }</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        }</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    }</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordtype">void</span> device_filter(<span class="keyword">const</span> std::vector&lt;::cl::Device&gt; &amp;dev_pool,</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        std::vector&lt;::cl::Device&gt; &amp;dev_select)</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    {</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        std::vector&lt;bool&gt; dev_select_idx(dev_pool.size(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="comment">// Not using the default device vendor</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="keywordflow">if</span> (!setup_default_.default_device_vendor()) {</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            <span class="keywordflow">for</span> (std::size_t d = 0; d != dev_pool.size(); ++d) {</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                    std::string str;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                    dev_pool[d].getInfo(CL_DEVICE_VENDOR, &amp;str);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                    <span class="keywordflow">if</span> (!setup_default_.check_device_vendor(str))</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                        dev_select_idx[d] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;                    dev_select_idx[d] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                }</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;            }</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        }</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="comment">// Not using the default device</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordflow">if</span> (!setup_default_.default_device()) {</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            <span class="keywordflow">for</span> (std::size_t d = 0; d != dev_pool.size(); ++d) {</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    std::string str;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                    dev_pool[d].getInfo(CL_DEVICE_NAME, &amp;str);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                    <span class="keywordflow">if</span> (!setup_default_.check_device(str))</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                        dev_select_idx[d] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                    dev_select_idx[d] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                }</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;            }</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        }</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keywordflow">for</span> (std::size_t d = 0; d != dev_pool.size(); ++d) {</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;            <span class="keywordflow">if</span> (dev_select_idx[d]) {</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                    dev_select.push_back(dev_pool[d]);</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                } <span class="keywordflow">catch</span> (const ::cl::Error &amp;) {</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                }</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;            }</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        }</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    }</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    ::cl::NDRange get_global_nd_range(</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        std::size_t N, std::size_t local_size)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        <span class="keywordflow">if</span> (local_size == 0)</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;            return ::cl::NDRange(N);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        <span class="keywordflow">if</span> (N % local_size == 0)</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            return ::cl::NDRange(N);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        return ::cl::NDRange((N / local_size + 1) * local_size);</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    }</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    ::cl::NDRange get_local_nd_range(std::size_t local_size)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keywordflow">return</span> local_size == 0 ? ::cl::NullRange : ::cl::NDRange(local_size);</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    }</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;}; <span class="comment">// clss CLManager</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_MANAGER_HPP</span></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a7c4d0efc39a92bb85891b13374fdb878"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a7c4d0efc39a92bb85891b13374fdb878">vsmc::CLManager::create_program</a></div><div class="ttdeci">::cl::Program create_program(const std::vector&lt; std::string &gt; &amp;source) const </div><div class="ttdoc">Create a program given a vector of sources within the current context. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00463">cl_manager.hpp:463</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a106457193fa0d51f3861faeb5acd90a5"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a106457193fa0d51f3861faeb5acd90a5">vsmc::CLManager::context</a></div><div class="ttdeci">const ::cl::Context &amp; context() const </div><div class="ttdoc">The context currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00162">cl_manager.hpp:162</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a106457193fa0d51f3861faeb5acd90a5"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a106457193fa0d51f3861faeb5acd90a5">vsmc::CLManager::context</a></div><div class="ttdeci">const ::cl::Context &amp; context() const </div><div class="ttdoc">The context currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00166">cl_manager.hpp:166</a></div></div>
 <div class="ttc" id="cl__query_8hpp_html"><div class="ttname"><a href="cl__query_8hpp.html">cl_query.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_af1c67ed47a951844733860f1d8ef4642"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#af1c67ed47a951844733860f1d8ef4642">vsmc::CLManager::setup</a></div><div class="ttdeci">bool setup(::cl_device_type dev)</div><div class="ttdoc">Try to setup the platform, context, device and command queue using the given device type...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00183">cl_manager.hpp:183</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_af1c67ed47a951844733860f1d8ef4642"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#af1c67ed47a951844733860f1d8ef4642">vsmc::CLManager::setup</a></div><div class="ttdeci">bool setup(::cl_device_type dev)</div><div class="ttdoc">Try to setup the platform, context, device and command queue using the given device type...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00184">cl_manager.hpp:184</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a1f549bb27d6cc00c9ef7971918c3e68a"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a1f549bb27d6cc00c9ef7971918c3e68a">vsmc::CLManager::CLManager</a></div><div class="ttdeci">CLManager(const CLManager&lt; ID &gt; &amp;)=delete</div></div>
 <div class="ttc" id="stop__watch_8hpp_html"><div class="ttname"><a href="stop__watch_8hpp.html">stop_watch.hpp</a></div></div>
 <div class="ttc" id="cl__manager_8hpp_html_a24524257d47378e199ddec7e054c26d0"><div class="ttname"><a href="cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK(func, block, event)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00063">cl_manager.hpp:63</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_ac958006458ee59ce301732267cbc3090"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">vsmc::CLManager::profile_kernel</a></div><div class="ttdeci">std::enable_if&lt;!std::is_same&lt; Func, std::size_t &gt;::value &amp;&amp;!std::is_convertible&lt; Func, std::size_t &gt;::value, std::size_t &gt;::type profile_kernel(::cl::Kernel &amp;kern, std::size_t N, const Func &amp;func, std::size_t lmin=0, std::size_t repeat=10)</div><div class="ttdoc">Run the kernel with all local size that are multiples of the preferred factor, return the local size ...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00396">cl_manager.hpp:396</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_ac958006458ee59ce301732267cbc3090"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#ac958006458ee59ce301732267cbc3090">vsmc::CLManager::profile_kernel</a></div><div class="ttdeci">std::enable_if&lt;!std::is_same&lt; Func, std::size_t &gt;::value &amp;&amp;!std::is_convertible&lt; Func, std::size_t &gt;::value, std::size_t &gt;::type profile_kernel(::cl::Kernel &amp;kern, std::size_t N, const Func &amp;func, std::size_t lmin=0, std::size_t repeat=10)</div><div class="ttdoc">Run the kernel with all local size that are multiples of the preferred factor, return the local size ...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00395">cl_manager.hpp:395</a></div></div>
 <div class="ttc" id="group___constants_html_ga6635f94307783df975712d202327cd92"><div class="ttname"><a href="group___constants.html#ga6635f94307783df975712d202327cd92">vsmc::math::e</a></div><div class="ttdeci">T e() noexcept</div><div class="ttdoc"> </div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00201">constants.hpp:201</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_ac966064d21e7d2b3b96f5a0b12ce1ee2"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2">vsmc::CLManager::command_queue</a></div><div class="ttdeci">const ::cl::CommandQueue &amp; command_queue() const </div><div class="ttdoc">The command queue currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00174">cl_manager.hpp:174</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a77fae141cba2755cff0694607598bdc8"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8">vsmc::CLManager::opencl_c_version</a></div><div class="ttdeci">int opencl_c_version() const </div><div class="ttdoc">The minimum OpenCL C version supported by all devices in the context of this manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00156">cl_manager.hpp:156</a></div></div>
-<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_a5a347f58403e8df3a09de6cd84446fc7"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a347f58403e8df3a09de6cd84446fc7">vsmc::StopWatchClockAdapter::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Stop and reset the elapsed time to zero. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00162">stop_watch.hpp:162</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_ac966064d21e7d2b3b96f5a0b12ce1ee2"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#ac966064d21e7d2b3b96f5a0b12ce1ee2">vsmc::CLManager::command_queue</a></div><div class="ttdeci">const ::cl::CommandQueue &amp; command_queue() const </div><div class="ttdoc">The command queue currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00175">cl_manager.hpp:175</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a77fae141cba2755cff0694607598bdc8"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a77fae141cba2755cff0694607598bdc8">vsmc::CLManager::opencl_c_version</a></div><div class="ttdeci">int opencl_c_version() const </div><div class="ttdoc">The minimum OpenCL C version supported by all devices in the context of this manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00160">cl_manager.hpp:160</a></div></div>
+<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_a5a347f58403e8df3a09de6cd84446fc7"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a347f58403e8df3a09de6cd84446fc7">vsmc::StopWatchClockAdapter::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Stop and reset the elapsed time to zero. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00161">stop_watch.hpp:161</a></div></div>
 <div class="ttc" id="cl__wrapper_8hpp_html"><div class="ttname"><a href="cl__wrapper_8hpp.html">cl_wrapper.hpp</a></div></div>
 <div class="ttc" id="cl__manager_8hpp_html_a3f22226a2b482aae5c68f6d58eef512d"><div class="ttname"><a href="cl__manager_8hpp.html#a3f22226a2b482aae5c68f6d58eef512d">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_PLATFORM</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_PLATFORM</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00047">cl_manager.hpp:47</a></div></div>
 <div class="ttc" id="group___open_c_l_html_ga7478c54da9f63bbac0cef891b85e2174"><div class="ttname"><a href="group___open_c_l.html#ga7478c54da9f63bbac0cef891b85e2174">vsmc::cl_minmax_local_size</a></div><div class="ttdeci">void cl_minmax_local_size(const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</div><div class="ttdoc">Query the preferred factor of local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00049">cl_manip.hpp:49</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_query_html_a40f55d1c5151fefd85676a8a210b8df7"><div class="ttname"><a href="classvsmc_1_1_c_l_query.html#a40f55d1c5151fefd85676a8a210b8df7">vsmc::CLQuery::opencl_c_version</a></div><div class="ttdeci">static int opencl_c_version(const ::cl::Device &amp;dev)</div><div class="ttdoc">Return the OpenCL C version of a device. </div><div class="ttdef"><b>Definition:</b> <a href="cl__query_8hpp_source.html#l00076">cl_query.hpp:76</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_ae18ab4ecb9c0005de68be3da55c54aca"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">vsmc::CLManager::create_buffer</a></div><div class="ttdeci">::cl::Buffer create_buffer(std::size_t num,::cl_mem_flags flag=CL_MEM_READ_WRITE, void *host_ptr=nullptr) const </div><div class="ttdoc">Create an OpenCL buffer of a given type and number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00213">cl_manager.hpp:213</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aba0364de7035c876ad0dee6a4b4f724c"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">vsmc::CLManager::profile_kernel</a></div><div class="ttdeci">std::size_t profile_kernel(::cl::Kernel &amp;kern, std::size_t N, std::size_t lmin=0, std::size_t repeat=3)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00450">cl_manager.hpp:450</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_ae18ab4ecb9c0005de68be3da55c54aca"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#ae18ab4ecb9c0005de68be3da55c54aca">vsmc::CLManager::create_buffer</a></div><div class="ttdeci">::cl::Buffer create_buffer(std::size_t num,::cl_mem_flags flag=CL_MEM_READ_WRITE, void *host_ptr=nullptr) const </div><div class="ttdoc">Create an OpenCL buffer of a given type and number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00214">cl_manager.hpp:214</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aba0364de7035c876ad0dee6a4b4f724c"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aba0364de7035c876ad0dee6a4b4f724c">vsmc::CLManager::profile_kernel</a></div><div class="ttdeci">std::size_t profile_kernel(::cl::Kernel &amp;kern, std::size_t N, std::size_t lmin=0, std::size_t repeat=3)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00449">cl_manager.hpp:449</a></div></div>
 <div class="ttc" id="defines_8hpp_html_a6e24175504fd5e6f8c6bc602a5f128b0"><div class="ttname"><a href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a></div><div class="ttdeci">#define VSMC_MNE</div><div class="ttdoc">Avoid MSVC stupid behavior: MNE = Macro No Expansion. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00038">defines.hpp:38</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a6823cc704e45fca4a7dd4e938057180b"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a6823cc704e45fca4a7dd4e938057180b">vsmc::CLManager::device_vec</a></div><div class="ttdeci">const std::vector&lt;::cl::Device &gt; &amp; device_vec() const </div><div class="ttdoc">The vector of all device that is in the context of this manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00168">cl_manager.hpp:168</a></div></div>
-<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html">vsmc::StopWatchClockAdapter</a></div><div class="ttdoc">StopWatch as an adapter of C++11 clock. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00112">stop_watch.hpp:112</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a6823cc704e45fca4a7dd4e938057180b"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a6823cc704e45fca4a7dd4e938057180b">vsmc::CLManager::device_vec</a></div><div class="ttdeci">const std::vector&lt;::cl::Device &gt; &amp; device_vec() const </div><div class="ttdoc">The vector of all device that is in the context of this manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00172">cl_manager.hpp:172</a></div></div>
+<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html">vsmc::StopWatchClockAdapter</a></div><div class="ttdoc">StopWatch as an adapter of C++11 clock. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00111">stop_watch.hpp:111</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a5e250bc0ddf851d912dad874a15fd17e"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">vsmc::CLManager::write_buffer</a></div><div class="ttdeci">void write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, InputIter first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Write an OpenCL buffer of a given type and number of elements from an iterator. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00264">cl_manager.hpp:264</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a5e250bc0ddf851d912dad874a15fd17e"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a5e250bc0ddf851d912dad874a15fd17e">vsmc::CLManager::write_buffer</a></div><div class="ttdeci">void write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, InputIter first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Write an OpenCL buffer of a given type and number of elements from an iterator. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00265">cl_manager.hpp:265</a></div></div>
 <div class="ttc" id="cl__manip_8hpp_html"><div class="ttname"><a href="cl__manip_8hpp.html">cl_manip.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a3930ce9303ba24f5712498c0be56cd05"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a3930ce9303ba24f5712498c0be56cd05">vsmc::CLManager::write_buffer</a></div><div class="ttdeci">void write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, const CLType *first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Write an OpenCL buffer of a given type and number of elements from a pointer. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00283">cl_manager.hpp:283</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_afd266ec07ef278b5b14f76b8adc0b129"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">vsmc::CLManager::copy_buffer</a></div><div class="ttdeci">void copy_buffer(const ::cl::Buffer &amp;src, const ::cl::Buffer &amp;dst, std::size_t num, std::size_t src_offset=0, std::size_t dst_offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Copy an OpenCL buffer into another of a given type and number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00318">cl_manager.hpp:318</a></div></div>
-<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_af95708cc29d749597253943fdfc216ed"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#af95708cc29d749597253943fdfc216ed">vsmc::StopWatchClockAdapter::stop</a></div><div class="ttdeci">bool stop()</div><div class="ttdoc">Stop the watch, no effect if already stopped. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00149">stop_watch.hpp:149</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a3930ce9303ba24f5712498c0be56cd05"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a3930ce9303ba24f5712498c0be56cd05">vsmc::CLManager::write_buffer</a></div><div class="ttdeci">void write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, const CLType *first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Write an OpenCL buffer of a given type and number of elements from a pointer. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00284">cl_manager.hpp:284</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_afd266ec07ef278b5b14f76b8adc0b129"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#afd266ec07ef278b5b14f76b8adc0b129">vsmc::CLManager::copy_buffer</a></div><div class="ttdeci">void copy_buffer(const ::cl::Buffer &amp;src, const ::cl::Buffer &amp;dst, std::size_t num, std::size_t src_offset=0, std::size_t dst_offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Copy an OpenCL buffer into another of a given type and number of elements. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00319">cl_manager.hpp:319</a></div></div>
+<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_af95708cc29d749597253943fdfc216ed"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#af95708cc29d749597253943fdfc216ed">vsmc::StopWatchClockAdapter::stop</a></div><div class="ttdeci">bool stop()</div><div class="ttdoc">Stop the watch, no effect if already stopped. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00148">stop_watch.hpp:148</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_manager_html_a354d4bb91b4eea22c47935cd034ec7d6"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a354d4bb91b4eea22c47935cd034ec7d6">vsmc::CLManager::cl_id</a></div><div class="ttdeci">ID cl_id</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00136">cl_manager.hpp:136</a></div></div>
 <div class="ttc" id="cl__manager_8hpp_html_af65752c77b244d99fa5d53e050e8fc67"><div class="ttname"><a href="cl__manager_8hpp.html#af65752c77b244d99fa5d53e050e8fc67">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00059">cl_manager.hpp:59</a></div></div>
-<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_a40f601d698ccc22a388d8d3851e97ce5"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#a40f601d698ccc22a388d8d3851e97ce5">vsmc::StopWatchClockAdapter::milliseconds</a></div><div class="ttdeci">double milliseconds() const </div><div class="ttdoc">Return the accumulated elapsed time in milliseconds. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00186">stop_watch.hpp:186</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a8a3e6bb34c3ee0e4535baaaddf22f46b"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a8a3e6bb34c3ee0e4535baaaddf22f46b">vsmc::CLManager::setup</a></div><div class="ttdeci">bool setup(const ::cl::Platform &amp;plat, const ::cl::Context &amp;ctx, const ::cl::Device &amp;dev, const ::cl::CommandQueue &amp;cmd)</div><div class="ttdoc">Set the platform, context, device and command queue manually. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00196">cl_manager.hpp:196</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a89312c520d2acb4f1d27d1e4e88324a9"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">vsmc::CLManager::opencl_version</a></div><div class="ttdeci">int opencl_version() const </div><div class="ttdoc">The minimum OpenCL version supported by all devices in the context of this manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00150">cl_manager.hpp:150</a></div></div>
+<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_a40f601d698ccc22a388d8d3851e97ce5"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#a40f601d698ccc22a388d8d3851e97ce5">vsmc::StopWatchClockAdapter::milliseconds</a></div><div class="ttdeci">double milliseconds() const </div><div class="ttdoc">Return the accumulated elapsed time in milliseconds. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00185">stop_watch.hpp:185</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a90beae7cdd464efa1152941124c4827e"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a90beae7cdd464efa1152941124c4827e">vsmc::CLManager::operator=</a></div><div class="ttdeci">CLManager&lt; ID &gt; &amp; operator=(const CLManager&lt; ID &gt; &amp;)=delete</div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a8a3e6bb34c3ee0e4535baaaddf22f46b"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a8a3e6bb34c3ee0e4535baaaddf22f46b">vsmc::CLManager::setup</a></div><div class="ttdeci">bool setup(const ::cl::Platform &amp;plat, const ::cl::Context &amp;ctx, const ::cl::Device &amp;dev, const ::cl::CommandQueue &amp;cmd)</div><div class="ttdoc">Set the platform, context, device and command queue manually. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00197">cl_manager.hpp:197</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a89312c520d2acb4f1d27d1e4e88324a9"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">vsmc::CLManager::opencl_version</a></div><div class="ttdeci">int opencl_version() const </div><div class="ttdoc">The minimum OpenCL version supported by all devices in the context of this manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00154">cl_manager.hpp:154</a></div></div>
 <div class="ttc" id="cl__manager_8hpp_html_a3b4b57ad7d60593628858a2529f176eb"><div class="ttname"><a href="cl__manager_8hpp.html#a3b4b57ad7d60593628858a2529f176eb">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_CONTEXT</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_CONTEXT</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00051">cl_manager.hpp:51</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_manager_html_a6aa59401a138454dc4d95a81cf321849"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a6aa59401a138454dc4d95a81cf321849">vsmc::CLManager::run_kernel</a></div><div class="ttdeci">void run_kernel(const ::cl::Kernel &amp;kern, std::size_t N, std::size_t local_size=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Run a given kernel with one dimensional global size and local size on the current command queue...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00352">cl_manager.hpp:352</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aa351d35ebf711560f775e3f973692392"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aa351d35ebf711560f775e3f973692392">vsmc::CLManager::platform</a></div><div class="ttdeci">const ::cl::Platform &amp; platform() const </div><div class="ttdoc">The platform currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00159">cl_manager.hpp:159</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aa351d35ebf711560f775e3f973692392"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aa351d35ebf711560f775e3f973692392">vsmc::CLManager::platform</a></div><div class="ttdeci">const ::cl::Platform &amp; platform() const </div><div class="ttdoc">The platform currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00163">cl_manager.hpp:163</a></div></div>
 <div class="ttc" id="classstd_1_1conditional_1_1type_html"><div class="ttname"><a href="classstd_1_1conditional_1_1type.html">type</a></div></div>
 <div class="ttc" id="cl__setup_8hpp_html"><div class="ttname"><a href="cl__setup_8hpp.html">cl_setup.hpp</a></div></div>
 <div class="ttc" id="cl__manager_8hpp_html_af6265f036615933833fd07c413d278d8"><div class="ttname"><a href="cl__manager_8hpp.html#af6265f036615933833fd07c413d278d8">VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_OPENCL_CL_MANAGER_SETUP(func)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00042">cl_manager.hpp:42</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_query_html_ac0c15b3f735a5a847fe848cf8bfc878b"><div class="ttname"><a href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">vsmc::CLQuery::opencl_version</a></div><div class="ttdeci">static int opencl_version(const ::cl::Device &amp;dev)</div><div class="ttdoc">Return the OpenCL version of a device. </div><div class="ttdef"><b>Definition:</b> <a href="cl__query_8hpp_source.html#l00065">cl_query.hpp:65</a></div></div>
-<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_a5a80a2001d7f862ab268ad8b73f05eff"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a80a2001d7f862ab268ad8b73f05eff">vsmc::StopWatchClockAdapter::start</a></div><div class="ttdeci">bool start()</div><div class="ttdoc">Start the watch, no effect if already started. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00133">stop_watch.hpp:133</a></div></div>
+<div class="ttc" id="classvsmc_1_1_stop_watch_clock_adapter_html_a5a80a2001d7f862ab268ad8b73f05eff"><div class="ttname"><a href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a80a2001d7f862ab268ad8b73f05eff">vsmc::StopWatchClockAdapter::start</a></div><div class="ttdeci">bool start()</div><div class="ttdoc">Start the watch, no effect if already started. </div><div class="ttdef"><b>Definition:</b> <a href="stop__watch_8hpp_source.html#l00132">stop_watch.hpp:132</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_manager_html"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html">vsmc::CLManager</a></div><div class="ttdoc">OpenCL Manager. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00133">cl_manager.hpp:133</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aa0e55e72d701895fc6bc864d4f6a071b"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aa0e55e72d701895fc6bc864d4f6a071b">vsmc::CLManager::read_buffer</a></div><div class="ttdeci">void read_buffer(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Read an OpenCL buffer of a given type and number of elements into a pointer. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00247">cl_manager.hpp:247</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_adc59a618c920cb937524682d0c3b0310"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">vsmc::CLManager::create_program</a></div><div class="ttdeci">::cl::Program create_program(const std::string &amp;source) const </div><div class="ttdoc">Create a program given the source within the current context. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00457">cl_manager.hpp:457</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aad6358182bda186ffa3afaac9698d5c4"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">vsmc::CLManager::instance</a></div><div class="ttdeci">static CLManager&lt; ID &gt; &amp; instance()</div><div class="ttdoc">Get an instance of the manager singleton. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00139">cl_manager.hpp:139</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aa0e55e72d701895fc6bc864d4f6a071b"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aa0e55e72d701895fc6bc864d4f6a071b">vsmc::CLManager::read_buffer</a></div><div class="ttdeci">void read_buffer(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Read an OpenCL buffer of a given type and number of elements into a pointer. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00248">cl_manager.hpp:248</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_adc59a618c920cb937524682d0c3b0310"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#adc59a618c920cb937524682d0c3b0310">vsmc::CLManager::create_program</a></div><div class="ttdeci">::cl::Program create_program(const std::string &amp;source) const </div><div class="ttdoc">Create a program given the source within the current context. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00456">cl_manager.hpp:456</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aad6358182bda186ffa3afaac9698d5c4"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aad6358182bda186ffa3afaac9698d5c4">vsmc::CLManager::instance</a></div><div class="ttdeci">static CLManager&lt; ID &gt; &amp; instance()</div><div class="ttdoc">Get an instance of the manager singleton. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00143">cl_manager.hpp:143</a></div></div>
 <div class="ttc" id="cl__manager_8hpp_html_ad8ba87aeae7800af4a65da48609b303a"><div class="ttname"><a href="cl__manager_8hpp.html#ad8ba87aeae7800af4a65da48609b303a">VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_DEVICE</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_DEVICE</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00055">cl_manager.hpp:55</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a5eda05068df8772d61fee36d89e02ad4"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4">vsmc::CLManager::setup</a></div><div class="ttdeci">bool setup() const </div><div class="ttdoc">Whether the platform, context, device and command queue has been setup correctly. ...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00179">cl_manager.hpp:179</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aedb9a26c4fb229013a9bac74ce8c448f"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aedb9a26c4fb229013a9bac74ce8c448f">vsmc::CLManager::write_buffer</a></div><div class="ttdeci">void write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Write an OpenCL buffer of a given type and number of elements from a pointer. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00300">cl_manager.hpp:300</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_af19fc4b132132ef0eab2671ec1b6fc7d"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d">vsmc::CLManager::device</a></div><div class="ttdeci">const ::cl::Device &amp; device() const </div><div class="ttdoc">The device currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00165">cl_manager.hpp:165</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a5eda05068df8772d61fee36d89e02ad4"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a5eda05068df8772d61fee36d89e02ad4">vsmc::CLManager::setup</a></div><div class="ttdeci">bool setup() const </div><div class="ttdoc">Whether the platform, context, device and command queue has been setup correctly. ...</div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00180">cl_manager.hpp:180</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_aedb9a26c4fb229013a9bac74ce8c448f"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#aedb9a26c4fb229013a9bac74ce8c448f">vsmc::CLManager::write_buffer</a></div><div class="ttdeci">void write_buffer(const ::cl::Buffer &amp;buf, std::size_t num, CLType *first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Write an OpenCL buffer of a given type and number of elements from a pointer. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00301">cl_manager.hpp:301</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_af19fc4b132132ef0eab2671ec1b6fc7d"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#af19fc4b132132ef0eab2671ec1b6fc7d">vsmc::CLManager::device</a></div><div class="ttdeci">const ::cl::Device &amp; device() const </div><div class="ttdoc">The device currently being used. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00169">cl_manager.hpp:169</a></div></div>
 <div class="ttc" id="class_1_1cl__mem__flags_html"><div class="ttname"><a href="class_1_1cl__mem__flags.html">cl_mem_flags</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a30d14715edbd3d4a0cb7dd230a11f547"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a30d14715edbd3d4a0cb7dd230a11f547">vsmc::CLManager::create_program</a></div><div class="ttdeci">::cl::Program create_program(const std::vector&lt; std::string &gt; &amp;binary, const std::vector&lt;::cl::Device &gt; *devices, std::vector&lt;::cl_int &gt; *status=nullptr) const </div><div class="ttdoc">Create a program given binaries within the current context. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00482">cl_manager.hpp:482</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_manager_html_af269656df23a88c4cb7066627d6a809d"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">vsmc::CLManager::read_buffer</a></div><div class="ttdeci">void read_buffer(const ::cl::Buffer &amp;buf, std::size_t num, OutputIter first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Read an OpenCL buffer of a given type and number of elements into an iterator. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00228">cl_manager.hpp:228</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_a30d14715edbd3d4a0cb7dd230a11f547"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#a30d14715edbd3d4a0cb7dd230a11f547">vsmc::CLManager::create_program</a></div><div class="ttdeci">::cl::Program create_program(const std::vector&lt; std::string &gt; &amp;binary, const std::vector&lt;::cl::Device &gt; *devices, std::vector&lt;::cl_int &gt; *status=nullptr) const </div><div class="ttdoc">Create a program given binaries within the current context. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00481">cl_manager.hpp:481</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_manager_html_af269656df23a88c4cb7066627d6a809d"><div class="ttname"><a href="classvsmc_1_1_c_l_manager.html#af269656df23a88c4cb7066627d6a809d">vsmc::CLManager::read_buffer</a></div><div class="ttdeci">void read_buffer(const ::cl::Buffer &amp;buf, std::size_t num, OutputIter first, std::size_t offset=0, const std::vector&lt;::cl::Event &gt; *events=nullptr,::cl::Event *event=nullptr, bool block=true) const </div><div class="ttdoc">Read an OpenCL buffer of a given type and number of elements into an iterator. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manager_8hpp_source.html#l00229">cl_manager.hpp:229</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

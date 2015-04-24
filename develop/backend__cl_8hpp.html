@@ -197,10 +197,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">CLConfigure &amp;configure() { <span class="keywordflow">return</span> configure_; }                          \</div>
-<div class="line">    const CLConfigure &amp;configure()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> configure_; }              \</div>
-<div class="line">    ::cl::Kernel &amp;kernel() { <span class="keywordflow">return</span> kernel_; }                               \</div>
-<div class="line">    const ::cl::Kernel &amp;kernel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> kernel_; }                   \</div>
+<b>Value:</b><div class="fragment"><div class="line">CLConfigure &amp;configure() { <span class="keywordflow">return</span> configure_; }                           \</div>
+<div class="line">    const CLConfigure &amp;configure()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> configure_; }               \</div>
+<div class="line">    ::cl::Kernel &amp;kernel() { <span class="keywordflow">return</span> kernel_; }                                \</div>
+<div class="line">    const ::cl::Kernel &amp;kernel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> kernel_; }                    \</div>
 <div class="line">    const std::string &amp;kernel_name()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> kernel_name_; }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00084">84</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -220,9 +220,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name() : build_id_(-1) {}                                                \</div>
-<div class="line">    Name(<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>;                            \</div>
-<div class="line">    Name&lt;T, PlaceHolder&gt; &amp;operator=(<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>; \</div>
+<b>Value:</b><div class="fragment"><div class="line">Name() : build_id_(-1) {}                                                 \</div>
+<div class="line">    Name(<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>;                             \</div>
+<div class="line">    Name&lt;T, PlaceHolder&gt; &amp;operator=(<span class="keyword">const</span> Name&lt;T, PlaceHolder&gt; &amp;) = <span class="keywordflow">default</span>;  \</div>
 <div class="line">    virtual ~Name() {}</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00074">74</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -238,9 +238,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">CLConfigure configure_;                                                  \</div>
-<div class="line">    int build_id_;                                                           \</div>
-<div class="line">    ::cl::Kernel kernel_;                                                    \</div>
+<b>Value:</b><div class="fragment"><div class="line">CLConfigure configure_;                                                   \</div>
+<div class="line">    int build_id_;                                                            \</div>
+<div class="line">    ::cl::Kernel kernel_;                                                     \</div>
 <div class="line">    std::string kernel_name_</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00104">104</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -260,7 +260,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name(Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                                 \</div>
+<b>Value:</b><div class="fragment"><div class="line">Name(Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                                  \</div>
 <div class="line">    Name&lt;T, PlaceHolder&gt; &amp;operator=(Name&lt;T, PlaceHolder&gt; &amp;&amp;) = <span class="keywordflow">default</span>;</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00080">80</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -276,16 +276,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (kname.empty()) {                                                     \</div>
-<div class="line">        kernel_name_.clear();                                                \</div>
-<div class="line">        return;                                                              \</div>
-<div class="line">    }                                                                        \</div>
-<div class="line">    if (build_id_ != particle.value().build_id() || kernel_name_ != kname) { \</div>
-<div class="line">        build_id_ = particle.value().build_id();                             \</div>
-<div class="line">        kernel_name_ = kname;                                                \</div>
-<div class="line">        kernel_ = particle.value().create_kernel(kernel_name_);              \</div>
-<div class="line">        configure_.local_size(                                               \</div>
-<div class="line">            particle.size(), kernel_, particle.value().manager().device());  \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (kname.empty()) {                                                      \</div>
+<div class="line">        kernel_name_.clear();                                                 \</div>
+<div class="line">        return;                                                               \</div>
+<div class="line">    }                                                                         \</div>
+<div class="line">    if (build_id_ != particle.value().build_id() || kernel_name_ != kname) {  \</div>
+<div class="line">        build_id_ = particle.value().build_id();                              \</div>
+<div class="line">        kernel_name_ = kname;                                                 \</div>
+<div class="line">        kernel_ = particle.value().create_kernel(kernel_name_);               \</div>
+<div class="line">        configure_.local_size(                                                \</div>
+<div class="line">            particle.size(), kernel_, particle.value().manager().device());   \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00091">91</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -305,8 +305,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>(                                                     \</div>
-<div class="line">        (build()), (<span class="stringliteral">&quot;**StateCL::&quot;</span> #func <span class="stringliteral">&quot;** CAN ONLY BE CALLED AFTER true &quot;</span>  \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>(                                                      \</div>
+<div class="line">        (build()), (<span class="stringliteral">&quot;**StateCL::&quot;</span> #func <span class="stringliteral">&quot;** CAN ONLY BE CALLED AFTER true &quot;</span>   \</div>
 <div class="line">                    <span class="stringliteral">&quot;**StateCL::build**&quot;</span>));</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 </div><!-- fragment -->
@@ -323,7 +323,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>(                                                     \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>(                                                      \</div>
 <div class="line">        (N == copy_.size()), (<span class="stringliteral">&quot;**StateCL::copy** SIZE MISMATCH&quot;</span>))</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 </div><!-- fragment -->
@@ -372,7 +372,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((psize &gt;= dim),                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((psize &gt;= dim),                                       \</div>
 <div class="line">        (<span class="stringliteral">&quot;**StateCL::state_unpack** INPUT PACK SIZE TOO SMALL&quot;</span>))</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 </div><!-- fragment -->
@@ -393,7 +393,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Dim == <a class="code" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>),                                     \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Dim == <a class="code" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>),                                      \</div>
 <div class="line">        USE_METHOD_resize_state_WITH_A_FIXED_SIZE_StateCL_OBJECT)</div>
 <div class="ttc" id="group___definitions_html_ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402"><div class="ttname"><a href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">vsmc::Dynamic</a></div><div class="ttdoc">Used to specify a dimension template parameter is dynamic. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00069">defines.hpp:69</a></div></div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
@@ -415,8 +415,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;type, ::cl_float&gt;::value ||             \</div>
-<div class="line">                           std::is_same&lt;type, ::cl_double&gt;::value),          \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;type, ::cl_float&gt;::value ||              \</div>
+<div class="line">                           std::is_same&lt;type, ::cl_double&gt;::value),           \</div>
 <div class="line">        USE_StateCL_WITH_A_FP_TYPE_OTHER_THAN_cl_float_AND_cl_double)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
@@ -447,7 +447,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((internal::IsDerivedFromStateCL&lt;derived&gt;::value),     \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((internal::IsDerivedFromStateCL&lt;derived&gt;::value),      \</div>
 <div class="line">        USE_##user##_WITH_A_STATE_TYPE_NOT_DERIVED_FROM_StateCL)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->

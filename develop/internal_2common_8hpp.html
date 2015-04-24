@@ -112,6 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="vmath_8hpp_source.html">vsmc/math/vmath.hpp</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
@@ -129,10 +130,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;list&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
@@ -144,9 +147,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa29c5a98ac7e0052cfd28a3d349cddaf"><td class="memTemplParams" colspan="2">template&lt;typename UIntType &gt; </td></tr>
+<tr class="memitem:aa29c5a98ac7e0052cfd28a3d349cddaf"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa29c5a98ac7e0052cfd28a3d349cddaf">vsmc::internal::itos</a> (UIntType i, std::true_type)</td></tr>
+<tr class="separator:aa29c5a98ac7e0052cfd28a3d349cddaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17015b2d441ccfc48ada4071bd253a05"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:a17015b2d441ccfc48ada4071bd253a05"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a17015b2d441ccfc48ada4071bd253a05">vsmc::internal::itos</a> (IntType i, std::false_type)</td></tr>
+<tr class="separator:a17015b2d441ccfc48ada4071bd253a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be2d2959999690d232bed16e2c771a4"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:a5be2d2959999690d232bed16e2c771a4"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a5be2d2959999690d232bed16e2c771a4">vsmc::internal::itos</a> (IntType i)</td></tr>
+<tr class="separator:a5be2d2959999690d232bed16e2c771a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14979fc398dcc651c30eb2f729573943"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a14979fc398dcc651c30eb2f729573943"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a14979fc398dcc651c30eb2f729573943">vsmc::operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os, const std::array&lt; T, N &gt; &amp;ary)</td></tr>
 <tr class="separator:a14979fc398dcc651c30eb2f729573943"><td class="memSeparator" colspan="2">&#160;</td></tr>

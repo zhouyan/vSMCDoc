@@ -388,10 +388,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{                                                         \</div>
-<div class="line">        FT u1;                                                               \</div>
-<div class="line">        FT u2;                                                               \</div>
-<div class="line">        unsigned <span class="keywordtype">char</span> saved;                                                 \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{                                                          \</div>
+<div class="line">        FT u1;                                                                \</div>
+<div class="line">        FT u2;                                                                \</div>
+<div class="line">        unsigned <span class="keywordtype">char</span> saved;                                                  \</div>
 <div class="line">    } normal01_##N##x##W##_##F;</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="normal01_8h_source.html#l00113">113</a> of file <a class="el" href="normal01_8h_source.html">normal01.h</a>.</p>
@@ -433,12 +433,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> <span class="keywordtype">void</span> normal01_##N##x##W##_##F##_init(                 \</div>
-<div class="line">        normal01_##N##x##W##_##F *rnorm, cburng##N##x##W##_rng_t *rng)       \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        rnorm-&gt;u1 = u01_open_closed_##W##_##F(cburng##N##x##W##_rand(rng));  \</div>
-<div class="line">        rnorm-&gt;u2 = u01_open_closed_##W##_##F(cburng##N##x##W##_rand(rng));  \</div>
-<div class="line">        rnorm-&gt;saved = 1;                                                    \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> <span class="keywordtype">void</span> normal01_##N##x##W##_##F##_init(                  \</div>
+<div class="line">        normal01_##N##x##W##_##F *rnorm, cburng##N##x##W##_rng_t *rng)        \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        rnorm-&gt;u1 = u01_open_closed_##W##_##F(cburng##N##x##W##_rand(rng));   \</div>
+<div class="line">        rnorm-&gt;u2 = u01_open_closed_##W##_##F(cburng##N##x##W##_rand(rng));   \</div>
+<div class="line">        rnorm-&gt;saved = 1;                                                     \</div>
 <div class="line">    }</div>
 <div class="ttc" id="common_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00070">common.h:70</a></div></div>
 </div><!-- fragment -->
@@ -481,17 +481,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> FT normal01_##N##x##W##_##F##_rand(                   \</div>
-<div class="line">        normal01_##N##x##W##_##F *rnorm, cburng##N##x##W##_rng_t *rng)       \</div>
-<div class="line">    {                                                                        \</div>
-<div class="line">        const FT c_2pi = 6.2831853071795865;                                 \</div>
-<div class="line">        if (rnorm-&gt;saved) {                                                  \</div>
-<div class="line">            rnorm-&gt;saved = 0;                                                \</div>
-<div class="line">            return sqrt(-2 * log(rnorm-&gt;u1)) * cos(c_2pi * rnorm-&gt;u2);       \</div>
-<div class="line">        } <span class="keywordflow">else</span> {                                                             \</div>
-<div class="line">            normal01_##N##x##W##_##F##_init(rnorm, rng);                     \</div>
-<div class="line">            return sqrt(-2 * log(rnorm-&gt;u1)) * sin(c_2pi * rnorm-&gt;u2);       \</div>
-<div class="line">        }                                                                    \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> FT normal01_##N##x##W##_##F##_rand(                    \</div>
+<div class="line">        normal01_##N##x##W##_##F *rnorm, cburng##N##x##W##_rng_t *rng)        \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        const FT c_2pi = 6.2831853071795865;                                  \</div>
+<div class="line">        if (rnorm-&gt;saved) {                                                   \</div>
+<div class="line">            rnorm-&gt;saved = 0;                                                 \</div>
+<div class="line">            return sqrt(-2 * log(rnorm-&gt;u1)) * cos(c_2pi * rnorm-&gt;u2);        \</div>
+<div class="line">        } <span class="keywordflow">else</span> {                                                              \</div>
+<div class="line">            normal01_##N##x##W##_##F##_init(rnorm, rng);                      \</div>
+<div class="line">            return sqrt(-2 * log(rnorm-&gt;u1)) * sin(c_2pi * rnorm-&gt;u2);        \</div>
+<div class="line">        }                                                                     \</div>
 <div class="line">    }</div>
 <div class="ttc" id="common_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00070">common.h:70</a></div></div>
 </div><!-- fragment -->

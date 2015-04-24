@@ -20,6 +20,5 @@ var searchData=
   ['constants_2ehpp',['constants.hpp',['../constants_8hpp.html',1,'']]],
   ['core_2ehpp',['core.hpp',['../core_8hpp.html',1,'']]],
   ['counter_2ehpp',['counter.hpp',['../counter_8hpp.html',1,'']]],
-  ['cpuid_2ehpp',['cpuid.hpp',['../cpuid_8hpp.html',1,'']]],
-  ['cstring_2ehpp',['cstring.hpp',['../cstring_8hpp.html',1,'']]]
+  ['cpuid_2ehpp',['cpuid.hpp',['../cpuid_8hpp.html',1,'']]]
 ];

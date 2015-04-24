@@ -141,17 +141,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#a7ed605c1917e2b9f485b1fc9767ecc96">   40</a></span>&#160;<span class="preprocessor">#define VSMC_RDRAND_NTRIAL_MAX 10</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#a172ee6e57ab54bb04b68e1a78c9f61ef">   43</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE(ResultType)      \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((std::is_same&lt;ResultType, uint16_t&gt;::value ||         \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                           std::is_same&lt;ResultType, uint32_t&gt;::value ||      \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                           std::is_same&lt;ResultType, uint64_t&gt;::value),       \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#a172ee6e57ab54bb04b68e1a78c9f61ef">   43</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE(ResultType)       \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((std::is_same&lt;ResultType, uint16_t&gt;::value ||          \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                           std::is_same&lt;ResultType, uint32_t&gt;::value ||       \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                           std::is_same&lt;ResultType, uint64_t&gt;::value),        \</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        USE_RDRANDGenerator_WITH_RESULT_TYPE_OTHER_THAN_uint16_t_OR_uint32_t_OR_uint64_t)</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#ac4d3301f1101896f33e1ed9f2ac25a86">   49</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR                              \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#ac4d3301f1101896f33e1ed9f2ac25a86">   49</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR                               \</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE(ResultType);</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#a18dcc77d62b064565f27435027005bf4">   52</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_RNG_RDRAND_GENERATOR_NTRIAL(ntrial, NTrialMax)  \</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING((ntrial &lt; NTrialMax),                               \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="rdrand_8hpp.html#a18dcc77d62b064565f27435027005bf4">   52</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_WARNING_RNG_RDRAND_GENERATOR_NTRIAL(ntrial, NTrialMax)   \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_WARNING((ntrial &lt; NTrialMax),                                \</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        (&quot;**RDRAND::generate** MAXIMUM NUMBER OF TRIALS EXCEEDED&quot;))</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>

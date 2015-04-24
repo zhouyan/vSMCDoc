@@ -24,6 +24,5 @@ var searchData=
   ['is_5fmpi_5fdatatype_3c_20std_3a_3aarray_3c_20t_2c_20n_20_3e_20_3e',['is_mpi_datatype&lt; std::array&lt; T, N &gt; &gt;',['../structboost_1_1mpi_1_1is__mpi__datatype_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html',1,'boost::mpi']]],
   ['is_5fseed_5fseq',['is_seed_seq',['../structvsmc_1_1internal_1_1is__seed__seq.html',1,'vsmc::internal']]],
   ['isderivedfromstatecl',['IsDerivedFromStateCL',['../structvsmc_1_1internal_1_1_is_derived_from_state_c_l.html',1,'vsmc::internal']]],
-  ['isderivedfromstateclimpl',['IsDerivedFromStateCLImpl',['../structvsmc_1_1internal_1_1_is_derived_from_state_c_l_impl.html',1,'vsmc::internal']]],
-  ['isintegrate',['ISIntegrate',['../classvsmc_1_1_i_s_integrate.html',1,'vsmc']]]
+  ['isderivedfromstateclimpl',['IsDerivedFromStateCLImpl',['../structvsmc_1_1internal_1_1_is_derived_from_state_c_l_impl.html',1,'vsmc::internal']]]
 ];

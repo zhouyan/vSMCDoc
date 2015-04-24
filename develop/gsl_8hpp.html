@@ -295,14 +295,12 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
-<div class="line">    struct GSLRngMinMax&lt;GSL_RNG_TYPE_##Generator&gt; {                          \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> uint32_t _Min =                               \</div>
-<div class="line">            static_cast&lt;uint32_t&gt;(Min##UL);                                  \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> uint32_t _Max =                               \</div>
-<div class="line">            static_cast&lt;uint32_t&gt;(Max##UL);                                  \</div>
-<div class="line">        static constexpr uint32_t min <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a>() { <span class="keywordflow">return</span> _Min; }            \</div>
-<div class="line">        static constexpr uint32_t max <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a>() { <span class="keywordflow">return</span> _Max; }            \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div>
+<div class="line">    struct GSLRngMinMax&lt;GSL_RNG_TYPE_##Generator&gt; {                           \</div>
+<div class="line">        static constexpr uint32_t _Min = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(Min##UL);      \</div>
+<div class="line">        static constexpr uint32_t _Max = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(Max##UL);      \</div>
+<div class="line">        static constexpr uint32_t min <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a>() { <span class="keywordflow">return</span> _Min; }             \</div>
+<div class="line">        static constexpr uint32_t max <a class="code" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a>() { <span class="keywordflow">return</span> _Max; }             \</div>
 <div class="line">    };</div>
 <div class="ttc" id="defines_8hpp_html_a6e24175504fd5e6f8c6bc602a5f128b0"><div class="ttname"><a href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a></div><div class="ttdeci">#define VSMC_MNE</div><div class="ttdoc">Avoid MSVC stupid behavior: MNE = Macro No Expansion. </div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00038">defines.hpp:38</a></div></div>
 </div><!-- fragment -->
@@ -333,9 +331,9 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
-<div class="line">    struct GSLRngTypePointer&lt;GSL_RNG_TYPE_##Generator&gt; {                     \</div>
-<div class="line">        static const ::gsl_rng_type *<span class="keyword">get</span>() { return ::gsl_rng_##pointer; }   \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div>
+<div class="line">    struct GSLRngTypePointer&lt;GSL_RNG_TYPE_##Generator&gt; {                      \</div>
+<div class="line">        static const ::gsl_rng_type *<span class="keyword">get</span>() { return ::gsl_rng_##pointer; }    \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="gsl_8hpp_source.html#l00039">39</a> of file <a class="el" href="gsl_8hpp_source.html">gsl.hpp</a>.</p>

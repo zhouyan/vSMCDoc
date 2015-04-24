@@ -124,7 +124,7 @@ Macros</h2></td></tr>
 <tr class="separator:ad32d8b5112231b9ff41da180c824395b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd3c14bb9ad4d5d780e493009ee74dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE</a>(Eng1,  Eng2)</td></tr>
 <tr class="separator:a7cd3c14bb9ad4d5d780e493009ee74dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8289be723ccec3a76e867d1d8cae7be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a>(<a class="el" href="classresult__type.html">result_type</a>)</td></tr>
+<tr class="memitem:ad8289be723ccec3a76e867d1d8cae7be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a>(result_type)</td></tr>
 <tr class="separator:ad8289be723ccec3a76e867d1d8cae7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -137,9 +137,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a>(<a class="code" href="classresult__type.html">result_type</a>);                <a class="code" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a>(result_type);                 <a class="code" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">\</a></div>
 <div class="line"><a class="code" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">    VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE</a>(Eng1, Eng2);</div>
-<div class="ttc" id="classresult__type_html"><div class="ttname"><a href="classresult__type.html">result_type</a></div></div>
 <div class="ttc" id="xor__combine__engine_8hpp_html_a7cd3c14bb9ad4d5d780e493009ee74dd"><div class="ttname"><a href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE(Eng1, Eng2)</div><div class="ttdef"><b>Definition:</b> <a href="xor__combine__engine_8hpp_source.html#l00041">xor_combine_engine.hpp:41</a></div></div>
 <div class="ttc" id="xor__combine__engine_8hpp_html_ad8289be723ccec3a76e867d1d8cae7be"><div class="ttname"><a href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED(result_type)</div><div class="ttdef"><b>Definition:</b> <a href="xor__combine__engine_8hpp_source.html#l00037">xor_combine_engine.hpp:37</a></div></div>
 </div><!-- fragment -->
@@ -170,8 +169,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;<span class="keyword">typename</span> Eng1::resultType,              \</div>
-<div class="line">                           <span class="keyword">typename</span> Eng2::resultType&gt;::value),               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;<span class="keyword">typename</span> Eng1::resultType,               \</div>
+<div class="line">                           <span class="keyword">typename</span> Eng2::resultType&gt;::value),                \</div>
 <div class="line">        USE_XorCombineEngine_WITH_TWO_RNG_ENGINES_WITH_DIFFERENT_RESULT_TYPE)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
@@ -187,12 +186,12 @@ Macros</h2></td></tr>
           <td class="memname">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="classresult__type.html">result_type</a></td><td>)</td>
+          <td class="paramname">result_type</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_unsigned&lt;result_type&gt;::value),               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_unsigned&lt;result_type&gt;::value),                \</div>
 <div class="line">        USE_XorCombineEngine_WITH_ENGINES_HAVE_RESULT_TYPE_NOT_AN_UNSIGNED_INTEGER_TYPE)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->

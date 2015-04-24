@@ -136,9 +136,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="internal_2common_8hpp.html">vsmc/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="program__option_8hpp.html#a4678282bd263509346b00e88550f3598">  232</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_UTILITY_PROGRAM_OPTION_NULLPTR(ptr, func)        \</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(                                                     \</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">        (ptr != nullptr), (&quot;**ProgramOptionMap::&quot; #func                      \</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="program__option_8hpp.html#a4678282bd263509346b00e88550f3598">  232</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_UTILITY_PROGRAM_OPTION_NULLPTR(ptr, func)         \</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(                                                      \</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">        (ptr != nullptr), (&quot;**ProgramOptionMap::&quot; #func                       \</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">                           &quot;** ATTEMPT TO SET OPTION WITH A NULL POINTER&quot;))</span></div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
@@ -666,123 +666,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    <span class="keywordtype">void</span> add_option(<span class="keyword">const</span> std::string &amp;oname, ProgramOption *optr)</div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    {</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        std::pair&lt;option_map_type::iterator, bool&gt; insert =</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            option_map_.insert(</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                std::make_pair(oname, std::make_pair(optr, 0)));</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keywordflow">if</span> (insert.second) {</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            option_list_.push_back(std::make_pair(oname, optr));</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            <span class="keywordflow">if</span> (insert.first-&gt;second.first != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                <span class="keyword">delete</span> insert.first-&gt;second.first;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            insert.first-&gt;second.first = optr;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            option_list_type::iterator liter = option_list_find(oname);</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            liter-&gt;second = optr;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        }</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    }</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordtype">void</span> process_arg_vector(</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        std::vector&lt;std::string&gt; &amp;arg_vector, std::ostream &amp;os)</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    {</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        std::string option_value;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt; option_value_vec;</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        std::vector&lt;std::pair&lt;std::string, std::vector&lt;std::string&gt;&gt;&gt;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;            option_vector;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        std::vector&lt;std::string&gt;::iterator aiter = arg_vector.begin();</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        <span class="keywordflow">while</span> (aiter != arg_vector.end() &amp;&amp; !is_option(*aiter))</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            ++aiter;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordflow">while</span> (aiter != arg_vector.end()) {</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            option_vector.push_back(std::make_pair(*aiter, option_value_vec));</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;            std::vector&lt;std::string&gt; &amp;value = option_vector.back().second;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            ++aiter;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;            <span class="keywordflow">while</span> (aiter != arg_vector.end() &amp;&amp; !is_option(*aiter)) {</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                value.push_back(*aiter);</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                ++aiter;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;            }</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        }</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keyword">const</span> std::string sval_true(<span class="stringliteral">&quot;1&quot;</span>);</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::pair&lt;std::string,</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                 std::vector&lt;std::string&gt;&gt;&gt;::iterator iter =</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                 option_vector.begin();</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;             iter != option_vector.end(); ++iter) {</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;            option_map_type::iterator miter = option_map_.find(iter-&gt;first);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;            <span class="keywordflow">if</span> (miter == option_map_.end()) {</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                <a class="code" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">program_option_warning</a>(</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                    iter-&gt;first, <span class="stringliteral">&quot;Unknown option&quot;</span>, silent_, os);</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;            }</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <span class="keywordtype">bool</span> proc = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;            <span class="keyword">const</span> std::size_t vsize = iter-&gt;second.size();</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;            <span class="keywordflow">if</span> (vsize == 0 &amp;&amp; miter-&gt;second.first-&gt;is_bool()) {</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                proc = process_option(miter, sval_true, os);</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (vsize == 0) {</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                <a class="code" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">program_option_warning</a>(</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                    miter-&gt;first, <span class="stringliteral">&quot;Value not found&quot;</span>, silent_, os);</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!miter-&gt;second.first-&gt;is_vector()) {</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                option_value.clear();</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != vsize - 1; ++i)</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                    option_value += iter-&gt;second[i] + <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                option_value += iter-&gt;second[vsize - 1];</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                proc = process_option(miter, option_value, os);</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != vsize; ++i)</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                    proc = process_option(miter, iter-&gt;second[i], os) || proc;</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            }</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            <span class="keywordflow">if</span> (proc)</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                ++miter-&gt;second.second;</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        }</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        <span class="keywordflow">for</span> (option_map_type::iterator iter = option_map_.begin();</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;             iter != option_map_.end(); ++iter) {</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;            <span class="keywordflow">if</span> (iter-&gt;second.second == 0)</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                <span class="keywordflow">if</span> (iter-&gt;second.first-&gt;set_default())</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    iter-&gt;second.second = 1;</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        }</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <span class="keywordflow">if</span> (auto_help_ &amp;&amp; help_ptr_-&gt;<a class="code" href="classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2">help</a>())</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <a class="code" href="classvsmc_1_1_program_option_map.html#a58405abd7fb83c062c716f791a838023">print_help</a>(os);</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    }</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    std::string process_arg(<span class="keyword">const</span> <span class="keywordtype">char</span> *arg)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        std::size_t s = std::strlen(arg);</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        std::size_t <a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a> = s;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        <span class="keywordflow">while</span> (e != 0 &amp;&amp; (arg[e - 1] == <span class="charliteral">&#39; &#39;</span> || arg[e - 1] == <span class="charliteral">&#39;,&#39;</span>))</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            --<a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a>;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        <span class="keywordflow">return</span> std::string(arg, arg + e);</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    }</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordtype">bool</span> process_option(option_map_type::iterator iter,</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        <span class="keyword">const</span> std::string &amp;sval, std::ostream &amp;os)</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    {</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="keywordflow">if</span> (sval.empty()) {</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;            <a class="code" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">program_option_warning</a>(</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                iter-&gt;first, <span class="stringliteral">&quot;No value found&quot;</span>, silent_, os);</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        }</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keywordflow">return</span> iter-&gt;second.first-&gt;set(iter-&gt;first, sval, silent_, os);</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    }</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    <span class="keywordtype">bool</span> is_option(<span class="keyword">const</span> std::string &amp;str)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">if</span> (str.size() &lt; 3)</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">if</span> (str[0] != <span class="charliteral">&#39;-&#39;</span>)</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        <span class="keywordflow">if</span> (str[1] != <span class="charliteral">&#39;-&#39;</span>)</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    }</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;}; <span class="comment">// class ProgramOptionMap</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            option_map_.insert(std::make_pair(oname, std::make_pair(optr, 0)));</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <span class="keywordflow">if</span> (insert.second) {</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            option_list_.push_back(std::make_pair(oname, optr));</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            <span class="keywordflow">if</span> (insert.first-&gt;second.first != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                <span class="keyword">delete</span> insert.first-&gt;second.first;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            insert.first-&gt;second.first = optr;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            option_list_type::iterator liter = option_list_find(oname);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            liter-&gt;second = optr;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        }</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    }</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordtype">void</span> process_arg_vector(</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        std::vector&lt;std::string&gt; &amp;arg_vector, std::ostream &amp;os)</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    {</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        std::string option_value;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt; option_value_vec;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        std::vector&lt;std::pair&lt;std::string, std::vector&lt;std::string&gt;&gt;&gt;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;            option_vector;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        std::vector&lt;std::string&gt;::iterator aiter = arg_vector.begin();</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <span class="keywordflow">while</span> (aiter != arg_vector.end() &amp;&amp; !is_option(*aiter))</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            ++aiter;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordflow">while</span> (aiter != arg_vector.end()) {</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;            option_vector.push_back(std::make_pair(*aiter, option_value_vec));</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            std::vector&lt;std::string&gt; &amp;value = option_vector.back().second;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;            ++aiter;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            <span class="keywordflow">while</span> (aiter != arg_vector.end() &amp;&amp; !is_option(*aiter)) {</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                value.push_back(*aiter);</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                ++aiter;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            }</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        }</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keyword">const</span> std::string sval_true(<span class="stringliteral">&quot;1&quot;</span>);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordflow">for</span> (std::vector&lt;std::pair&lt;std::string,</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                 std::vector&lt;std::string&gt;&gt;&gt;::iterator iter =</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                 option_vector.begin();</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;             iter != option_vector.end(); ++iter) {</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            option_map_type::iterator miter = option_map_.find(iter-&gt;first);</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;            <span class="keywordflow">if</span> (miter == option_map_.end()) {</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                <a class="code" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">program_option_warning</a>(</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                    iter-&gt;first, <span class="stringliteral">&quot;Unknown option&quot;</span>, silent_, os);</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            }</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            <span class="keywordtype">bool</span> proc = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <span class="keyword">const</span> std::size_t vsize = iter-&gt;second.size();</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;            <span class="keywordflow">if</span> (vsize == 0 &amp;&amp; miter-&gt;second.first-&gt;is_bool()) {</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;                proc = process_option(miter, sval_true, os);</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (vsize == 0) {</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;                <a class="code" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">program_option_warning</a>(</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                    miter-&gt;first, <span class="stringliteral">&quot;Value not found&quot;</span>, silent_, os);</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!miter-&gt;second.first-&gt;is_vector()) {</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                option_value.clear();</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != vsize - 1; ++i)</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                    option_value += iter-&gt;second[i] + <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                option_value += iter-&gt;second[vsize - 1];</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                proc = process_option(miter, option_value, os);</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                <span class="keywordflow">for</span> (std::size_t i = 0; i != vsize; ++i)</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                    proc = process_option(miter, iter-&gt;second[i], os) || proc;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            }</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            <span class="keywordflow">if</span> (proc)</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                ++miter-&gt;second.second;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        }</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="keywordflow">for</span> (option_map_type::iterator iter = option_map_.begin();</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;             iter != option_map_.end(); ++iter) {</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            <span class="keywordflow">if</span> (iter-&gt;second.second == 0)</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                <span class="keywordflow">if</span> (iter-&gt;second.first-&gt;set_default())</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                    iter-&gt;second.second = 1;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        }</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        <span class="keywordflow">if</span> (auto_help_ &amp;&amp; help_ptr_-&gt;<a class="code" href="classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2">help</a>())</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            <a class="code" href="classvsmc_1_1_program_option_map.html#a58405abd7fb83c062c716f791a838023">print_help</a>(os);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    }</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    std::string process_arg(<span class="keyword">const</span> <span class="keywordtype">char</span> *arg)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        std::size_t s = std::strlen(arg);</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        std::size_t <a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a> = s;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">while</span> (e != 0 &amp;&amp; (arg[e - 1] == <span class="charliteral">&#39; &#39;</span> || arg[e - 1] == <span class="charliteral">&#39;,&#39;</span>))</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;            --<a class="code" href="group___constants.html#ga6635f94307783df975712d202327cd92">e</a>;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        <span class="keywordflow">return</span> std::string(arg, arg + e);</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    }</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordtype">bool</span> process_option(option_map_type::iterator iter,</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="keyword">const</span> std::string &amp;sval, std::ostream &amp;os)</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    {</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">if</span> (sval.empty()) {</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;            <a class="code" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">program_option_warning</a>(iter-&gt;first, <span class="stringliteral">&quot;No value found&quot;</span>, silent_, os);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        }</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        <span class="keywordflow">return</span> iter-&gt;second.first-&gt;set(iter-&gt;first, sval, silent_, os);</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    }</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    <span class="keywordtype">bool</span> is_option(<span class="keyword">const</span> std::string &amp;str)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        <span class="keywordflow">if</span> (str.size() &lt; 3)</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        <span class="keywordflow">if</span> (str[0] != <span class="charliteral">&#39;-&#39;</span>)</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        <span class="keywordflow">if</span> (str[1] != <span class="charliteral">&#39;-&#39;</span>)</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;    }</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;}; <span class="comment">// class ProgramOptionMap</span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;} <span class="comment">// namespace vsmc</span></div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_PROGRAM_OPTION_HPP</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_PROGRAM_OPTION_HPP</span></div>
 <div class="ttc" id="classvsmc_1_1_program_option_html_a1a7a8c098ac5d9622369c1b4b7a3ea2d"><div class="ttname"><a href="classvsmc_1_1_program_option.html#a1a7a8c098ac5d9622369c1b4b7a3ea2d">vsmc::ProgramOption::operator=</a></div><div class="ttdeci">ProgramOption &amp; operator=(const ProgramOption &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="program__option_8hpp_source.html#l00260">program_option.hpp:260</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="classvsmc_1_1_program_option_html_ab47b3ac70e268d4c746d426b3f2b0a21"><div class="ttname"><a href="classvsmc_1_1_program_option.html#ab47b3ac70e268d4c746d426b3f2b0a21">vsmc::ProgramOption::set_default</a></div><div class="ttdeci">virtual bool set_default()=0</div></div>

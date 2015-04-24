@@ -760,13 +760,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
-<div class="line">    struct CPUIDFeatureInfo&lt;CPUIDFeature##feat&gt; {                            \</div>
-<div class="line">        static std::string str() { <span class="keywordflow">return</span> std::string(#feat); }              \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> eax = a##U;                          \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ecx = c##U;                          \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> bit = b##U;                          \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> std::size_t index = i;                        \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div>
+<div class="line">    struct CPUIDFeatureInfo&lt;CPUIDFeature##feat&gt; {                             \</div>
+<div class="line">        static std::string str() { <span class="keywordflow">return</span> std::string(#feat); }               \</div>
+<div class="line">        static constexpr <span class="keywordtype">unsigned</span> eax = a##U;                                 \</div>
+<div class="line">        static constexpr <span class="keywordtype">unsigned</span> ecx = c##U;                                 \</div>
+<div class="line">        static constexpr <span class="keywordtype">unsigned</span> bit = b##U;                                 \</div>
+<div class="line">        static constexpr std::size_t index = i;                               \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00041">41</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>
@@ -814,13 +814,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                              \</div>
-<div class="line">    struct CPUIDFeatureInfo&lt;CPUIDFeatureExt##feat&gt; {                         \</div>
-<div class="line">        static std::string str() { <span class="keywordflow">return</span> std::string(#feat); }              \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> eax = 0x80000000U + a##U;            \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> ecx = c##U;                          \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> <span class="keywordtype">unsigned</span> bit = b##U;                          \</div>
-<div class="line">        static constexpr <span class="keyword">const</span> std::size_t index = i;                        \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div>
+<div class="line">    struct CPUIDFeatureInfo&lt;CPUIDFeatureExt##feat&gt; {                          \</div>
+<div class="line">        static std::string str() { <span class="keywordflow">return</span> std::string(#feat); }               \</div>
+<div class="line">        static constexpr <span class="keywordtype">unsigned</span> eax = 0x80000000U + a##U;                   \</div>
+<div class="line">        static constexpr <span class="keywordtype">unsigned</span> ecx = c##U;                                 \</div>
+<div class="line">        static constexpr <span class="keywordtype">unsigned</span> bit = b##U;                                 \</div>
+<div class="line">        static constexpr std::size_t index = i;                               \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="cpuid_8hpp_source.html#l00051">51</a> of file <a class="el" href="cpuid_8hpp_source.html">cpuid.hpp</a>.</p>

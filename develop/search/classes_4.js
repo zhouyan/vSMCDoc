@@ -7,7 +7,7 @@ var searchData=
   ['gammak1_5f4x32_5f53',['gammak1_4x32_53',['../structgammak1__4x32__53.html',1,'']]],
   ['gammak1_5f4x64_5f53',['gammak1_4x64_53',['../structgammak1__4x64__53.html',1,'']]],
   ['generatorwrapper',['GeneratorWrapper',['../classvsmc_1_1_generator_wrapper.html',1,'vsmc']]],
-  ['generatorwrapper_3c_20uint32_5ft_2c_20gslgenerator_3c_20rngtype_20_3e_2c_20internal_3a_3agslrngminmax_3c_20rngtype_20_3e_20_3e',['GeneratorWrapper&lt; uint32_t, GSLGenerator&lt; RngType &gt;, internal::GSLRngMinMax&lt; RngType &gt; &gt;',['../classvsmc_1_1_generator_wrapper.html',1,'vsmc']]],
+  ['generatorwrapper_3c_20std_3a_3auint32_5ft_2c_20gslgenerator_3c_20rngtype_20_3e_2c_20internal_3a_3agslrngminmax_3c_20rngtype_20_3e_20_3e',['GeneratorWrapper&lt; std::uint32_t, GSLGenerator&lt; RngType &gt;, internal::GSLRngMinMax&lt; RngType &gt; &gt;',['../classvsmc_1_1_generator_wrapper.html',1,'vsmc']]],
   ['generatorwrapperminmaxtrait',['GeneratorWrapperMinMaxTrait',['../structvsmc_1_1traits_1_1_generator_wrapper_min_max_trait.html',1,'vsmc::traits']]],
   ['gslengine',['GSLEngine',['../classvsmc_1_1_g_s_l_engine.html',1,'vsmc']]],
   ['gslgenerator',['GSLGenerator',['../classvsmc_1_1_g_s_l_generator.html',1,'vsmc']]],

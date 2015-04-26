@@ -1,7 +1,7 @@
 var searchData=
 [
   ['name',['name',['../classvsmc_1_1_monitor.html#a7e7bfb0a019bd6ac999727267b50a143',1,'vsmc::Monitor::name(std::size_t id)'],['../classvsmc_1_1_monitor.html#a41151e47ce7b05ca3af868ca6efe3811',1,'vsmc::Monitor::name(std::size_t id) const ']]],
-  ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_null.html#a75fe6f6b2f7436597f74a5afa732e0f8',1,'vsmc::StopWatchNull::nanoseconds()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter::nanoseconds()'],['../classvsmc_1_1_stop_watch_s_y_s.html#ad3ab9e3bf862d54eb8aac59a56198430',1,'vsmc::StopWatchSYS::nanoseconds()']]],
+  ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter']]],
   ['normal_20distribution',['Normal distribution',['../normal01.html',1,'rng']]],
   ['normal01_2eh',['normal01.h',['../normal01_8h.html',1,'']]],
   ['normal01_5f2x32',['NORMAL01_2x32',['../normal01_8h.html#a712ee40aa06a144e0abc5ec2a5723e88',1,'normal01.h']]],

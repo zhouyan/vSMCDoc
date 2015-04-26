@@ -207,7 +207,7 @@ Friends</h2></td></tr>
 class vsmc::AESNIEngine&lt; ResultType, KeySeq, KeySeqInit, Rounds, Blocks &gt;</h3>
 
 <p>RNG engine using AES-NI instructions. </p>
-<p>Two dervied class <a class="el" href="classvsmc_1_1_a_e_s128_engine.html" title="AES-128 RNG engine. ">AES128Engine</a> and <a class="el" href="classvsmc_1_1_a_r_s_engine.html" title="ARS RNG engine. ">ARSEngine</a> behave exactly the same as AES and ARS RNG engines as described in <a href="http://sc11.supercomputing.org/schedule/event_detail.php?evid=pap274">Parallel Random Numbers: As Easy as 1, 2, 3</a> and implemented in <a href="https://www.deshawresearch.com/resources_random123.html">Random123</a>, when used with <code>uint32_t</code> as ResultType. The first \(2^{32}\) iterations will be exactly the same as <code>r123::Engine&lt;r123:AESNI4x32&gt;</code> and <code>r123::Engine&lt;r123:ARS4x32_R&lt;10&gt; &gt;</code>. (Note, they could be simple template alias in C++11, but to support C++98 we had to derive from it. Since the derived classes contains nothing and does nothing, there is no performance cost).</p>
+<p>Two dervied class <a class="el" href="classvsmc_1_1_a_e_s128_engine.html" title="AES-128 RNG engine. ">AES128Engine</a> and <a class="el" href="classvsmc_1_1_a_r_s_engine.html" title="ARS RNG engine. ">ARSEngine</a> behave exactly the same as AES and ARS RNG engines as described in <a href="http://sc11.supercomputing.org/schedule/event_detail.php?evid=pap274">Parallel Random Numbers: As Easy as 1, 2, 3</a> and implemented in <a href="https://www.deshawresearch.com/resources_random123.html">Random123</a>, when used with <code>std::uint32_t</code> as ResultType. The first \(2^{32}\) iterations will be exactly the same as <code>r123::Engine&lt;r123:AESNI4x32&gt;</code> and <code>r123::Engine&lt;r123:ARS4x32_R&lt;10&gt; &gt;</code>. (Note, they could be simple template alias in C++11, but to support C++98 we had to derive from it. Since the derived classes contains nothing and does nothing, there is no performance cost).</p>
 <p>This implementation is more flexible than the original. First, it allows using any unsigned integers as output. Second, it allows user defined key schedule (the second template argument). The two derived classed merely use two special key schedule to reproduce the original behavior.</p>
 <p>The terminology used in this engine is slightly different than that in <a href="https://www.deshawresearch.com/resources_random123.html">Random123</a>. In the later, there is a distinction between <code>key_type</code> and <code>ukey_type</code>. They are <code>key_type</code> and <code>key_seq_type</code> in this class, respectively. In other <a href="https://www.deshawresearch.com/resources_random123.html">Random123</a> engines, <code>key_type</code> and <code>ukey_type</code> are usually the same. And in <a class="el" href="classvsmc_1_1_threefry_engine.html" title="Threefry RNG engine reimplemented. ">ThreefryEngine</a> and <a class="el" href="classvsmc_1_1_philox_engine.html" title="Philox RNG engine reimplemented. ">PhiloxEngine</a>, vSMC does not define <code>ukey_type</code>. In this engine, the term <code>key</code> (<code>ukey</code>, short for unique key, in <a href="https://www.deshawresearch.com/resources_random123.html">Rnadom123</a>) usually refer to the 128-, 192-, or 256-bits input key in the context of the AES algorithm. And <code>key_seq</code> (<code>key</code> in <a href="https://www.deshawresearch.com/resources_random123.html">Random123</a>) refers to the key schedule in the same context. In the context of C++11, <code>key_seq</code> is also sort of like the <code>seed_seq</code> for other RNG (basically both expand a single input value into a sequence such that the sequence provides extra entropy even the inputs are not random at all). Therefore vSMC's terminology shall be both familiar to people familiar with block ciphers (of which AES is one), and people familiar with C++11, but at the risk of confusing people already familiar with [Random123<a href="https://www.deshawresearch.com/resources_random123.html">r123lib</a>. Of course, if only used as a standard C++11 engine, then none of these matters since users only provides seeds or a seed sequence.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -222,7 +222,7 @@ class vsmc::AESNIEngine&lt; ResultType, KeySeq, KeySeqInit, Rounds, Blocks &gt;<
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00220">220</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00214">214</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aad934e3a5398d6b5a959ccdaeba2007a"></a>
 <div class="memitem">
@@ -236,7 +236,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00227">227</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00221">221</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00230">230</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00224">224</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00229">229</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00223">223</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00232">232</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00226">226</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +300,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00231">231</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00225">225</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00226">226</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00220">220</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00238">238</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00232">232</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00245">245</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00239">239</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00256">256</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00250">250</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ template&lt;std::size_t B&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00291">291</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00285">285</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -471,7 +471,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00302">302</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00296">296</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00296">296</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00290">290</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00365">365</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00359">359</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00298">298</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00292">292</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -581,7 +581,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00308">308</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00302">302</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -608,7 +608,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00300">300</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00294">294</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +635,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00391">391</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00385">385</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -662,7 +662,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00390">390</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00384">384</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -689,7 +689,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00315">315</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00309">309</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 
 <p>Generate a buffer of random bits given a counter using the current key. </p>
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00328">328</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00322">322</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -749,7 +749,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 
 <p>Generate a buffer of random bits given a block of counters using the current key. </p>
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00341">341</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00335">335</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -789,7 +789,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 
 <p>Generate random bits in a pre-allocated buffer given a counter using the current key. </p>
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00351">351</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00345">345</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 
 <p>Generate ranodm bits in a pre-allocated buffer given a block of counters using the current key. </p>
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00360">360</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00354">354</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00262">262</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00256">256</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -897,7 +897,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00272">272</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00266">266</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -925,7 +925,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00282">282</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00276">276</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -964,7 +964,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00402">402</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00396">396</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1004,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00411">411</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00405">405</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1042,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00393">393</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00387">387</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1082,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00430">430</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00424">424</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1107,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00388">388</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00382">382</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1131,7 @@ template&lt;typename ResultType, typename KeySeq, bool KeySeqInit, std::size_t R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00387">387</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00381">381</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>

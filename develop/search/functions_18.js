@@ -13,7 +13,6 @@ var searchData=
   ['_7einitializeseq',['~InitializeSEQ',['../classvsmc_1_1_initialize_s_e_q.html#a1c63909ced15c92ff2567fe9e73ffb14',1,'vsmc::InitializeSEQ']]],
   ['_7einitializestd',['~InitializeSTD',['../classvsmc_1_1_initialize_s_t_d.html#a4fb87753bf3248541f78789489982194',1,'vsmc::InitializeSTD']]],
   ['_7einitializetbb',['~InitializeTBB',['../classvsmc_1_1_initialize_t_b_b.html#a72d76b7aff8d1a04850e0a5f3555bc38',1,'vsmc::InitializeTBB']]],
-  ['_7emklstream',['~MKLStream',['../classvsmc_1_1_m_k_l_stream.html#aabe4843f9a1c755c64d8bcbcd39fd875',1,'vsmc::MKLStream']]],
   ['_7emonitorevalbase',['~MonitorEvalBase',['../classvsmc_1_1_monitor_eval_base.html#a50cd5a3d3a70906240234061a6fae19a',1,'vsmc::MonitorEvalBase::~MonitorEvalBase()'],['../classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a1891f8909624df047312c572396353dd',1,'vsmc::MonitorEvalBase&lt; T, Virtual &gt;::~MonitorEvalBase()']]],
   ['_7emonitorevalcilk',['~MonitorEvalCILK',['../classvsmc_1_1_monitor_eval_c_i_l_k.html#ad219cea0e143259e1e6229d17d0ccf91',1,'vsmc::MonitorEvalCILK']]],
   ['_7emonitorevalcl',['~MonitorEvalCL',['../classvsmc_1_1_monitor_eval_c_l.html#a32631bddd0f159a58acc0453e657bc73',1,'vsmc::MonitorEvalCL']]],

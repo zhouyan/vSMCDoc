@@ -139,10 +139,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a>(result_type);                 <a class="code" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">\</a></div>
 <div class="line"><a class="code" href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">    VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE</a>(Eng1, Eng2);</div>
-<div class="ttc" id="xor__combine__engine_8hpp_html_a7cd3c14bb9ad4d5d780e493009ee74dd"><div class="ttname"><a href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE(Eng1, Eng2)</div><div class="ttdef"><b>Definition:</b> <a href="xor__combine__engine_8hpp_source.html#l00041">xor_combine_engine.hpp:41</a></div></div>
+<div class="ttc" id="xor__combine__engine_8hpp_html_a7cd3c14bb9ad4d5d780e493009ee74dd"><div class="ttname"><a href="xor__combine__engine_8hpp.html#a7cd3c14bb9ad4d5d780e493009ee74dd">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_SAME_TYPE(Eng1, Eng2)</div><div class="ttdef"><b>Definition:</b> <a href="xor__combine__engine_8hpp_source.html#l00042">xor_combine_engine.hpp:42</a></div></div>
 <div class="ttc" id="xor__combine__engine_8hpp_html_ad8289be723ccec3a76e867d1d8cae7be"><div class="ttname"><a href="xor__combine__engine_8hpp.html#ad8289be723ccec3a76e867d1d8cae7be">VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XOR_COMBINE_UNSIGNED(result_type)</div><div class="ttdef"><b>Definition:</b> <a href="xor__combine__engine_8hpp_source.html#l00037">xor_combine_engine.hpp:37</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xor__combine__engine_8hpp_source.html#l00046">46</a> of file <a class="el" href="xor__combine__engine_8hpp_source.html">xor_combine_engine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xor__combine__engine_8hpp_source.html#l00048">48</a> of file <a class="el" href="xor__combine__engine_8hpp_source.html">xor_combine_engine.hpp</a>.</p>
 
 </div>
 </div>
@@ -171,10 +171,11 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;<span class="keyword">typename</span> Eng1::resultType,               \</div>
 <div class="line">                           <span class="keyword">typename</span> Eng2::resultType&gt;::value),                \</div>
-<div class="line">        USE_XorCombineEngine_WITH_TWO_RNG_ENGINES_WITH_DIFFERENT_RESULT_TYPE)</div>
+<div class="line">        <span class="stringliteral">&quot;**XorCombneEngine** USED WITH TWO RNG ENGINES WITH DIFFERENT &quot;</span>       \</div>
+<div class="line">        <span class="stringliteral">&quot;result_type&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xor__combine__engine_8hpp_source.html#l00041">41</a> of file <a class="el" href="xor__combine__engine_8hpp_source.html">xor_combine_engine.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xor__combine__engine_8hpp_source.html#l00042">42</a> of file <a class="el" href="xor__combine__engine_8hpp_source.html">xor_combine_engine.hpp</a>.</p>
 
 </div>
 </div>
@@ -192,7 +193,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_unsigned&lt;result_type&gt;::value),                \</div>
-<div class="line">        USE_XorCombineEngine_WITH_ENGINES_HAVE_RESULT_TYPE_NOT_AN_UNSIGNED_INTEGER_TYPE)</div>
+<div class="line">        <span class="stringliteral">&quot;**XorCombineEngine** USED WITH RNG ENGINES HAVNG result_type NOT &quot;</span>   \</div>
+<div class="line">        <span class="stringliteral">&quot;AN UNSIGNED INTEGER TYPE&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="xor__combine__engine_8hpp_source.html#l00037">37</a> of file <a class="el" href="xor__combine__engine_8hpp_source.html">xor_combine_engine.hpp</a>.</p>

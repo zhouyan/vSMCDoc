@@ -138,15 +138,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="monitor_8hpp.html#a27c57f96d7b46597173425d84962d3d4">   38</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_CORE_MONITOR_ID(func)                             \</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(                                                      \</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">        (id &lt; dim()), (&quot;**Monitor::&quot; #func &quot;** INVALID ID NUMBER ARGUMENT&quot;))</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">        (id &lt; dim()), &quot;**Monitor::&quot; #func &quot;** INVALID ID NUMBER ARGUMENT&quot;)</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="monitor_8hpp.html#ab434373cb0a32d5204302020762372c7">   42</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_CORE_MONITOR_ITER(func)                           \</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT((iter &lt; iter_size()),                                 \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        (&quot;**Monitor::&quot; #func &quot;** INVALID ITERATION NUMBER ARGUMENT&quot;))</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        &quot;**Monitor::&quot; #func &quot;** INVALID ITERATION NUMBER ARGUMENT&quot;)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="monitor_8hpp.html#a69a3255f96eeaf4da01a4a48f3fdc1b6">   46</a></span>&#160;<span class="preprocessor">#define VSMC_RUNTIME_ASSERT_CORE_MONITOR_FUNCTOR(func, caller, name)          \</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    VSMC_RUNTIME_ASSERT(static_cast&lt;bool&gt;(func),                              \</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        (&quot;**Monitor::&quot; #caller &quot;** INVALID &quot; #name &quot; OBJECT&quot;))</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        &quot;**Monitor::&quot; #caller &quot;** INVALID &quot; #name &quot; OBJECT&quot;)</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>

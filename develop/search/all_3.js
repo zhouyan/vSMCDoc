@@ -419,6 +419,6 @@ var searchData=
   ['ctr_5fblock',['ctr_block',['../classvsmc_1_1_a_e_s_n_i_engine.html#a7ef051b04fd7edd249e5a06976adc416',1,'vsmc::AESNIEngine']]],
   ['ctr_5fblock_5ftype',['ctr_block_type',['../classvsmc_1_1_a_e_s_n_i_engine.html#acb62bcc4e79d8bab4a6c43401d07d31f',1,'vsmc::AESNIEngine']]],
   ['ctr_5ftype',['ctr_type',['../classvsmc_1_1_a_e_s_n_i_engine.html#a65f1d33bfb54c1642e875d3cbbb64068',1,'vsmc::AESNIEngine::ctr_type()'],['../classvsmc_1_1_philox_engine.html#ab274c23f51e238a89b1dc81bf46c4379',1,'vsmc::PhiloxEngine::ctr_type()'],['../classvsmc_1_1_threefry_engine.html#a3356539a9f972651f2f03544439b01c8',1,'vsmc::ThreefryEngine::ctr_type()'],['../classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee',1,'vsmc::Counter&lt; std::array&lt; T, K &gt; &gt;::ctr_type()']]],
-  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_counter.html#a5ca4465deb18b6f4fbe5968b7da51e0c',1,'vsmc::RDTSCCounter::cycles()'],['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a476bea11f82b13df7358ea6c228843fe',1,'vsmc::RDTSCPCounter::cycles()']]],
+  ['cycles',['cycles',['../classvsmc_1_1_r_d_t_s_c_counter.html#adfbfe52902a661f9f70eaf07e6642799',1,'vsmc::RDTSCCounter::cycles()'],['../classvsmc_1_1_r_d_t_s_c_p_counter.html#a2ec647042c81b9c797de975c09d9e7e7',1,'vsmc::RDTSCPCounter::cycles()']]],
   ['c_2b_2b11_20concurrency',['C++11 concurrency',['../group___s_t_d.html',1,'']]]
 ];

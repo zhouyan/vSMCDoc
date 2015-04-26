@@ -171,11 +171,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="aligned__memory_8hpp.html#ac2bd8740ee9ec857dd00542a193bffca">   72</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO(Alignment)     \</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT(                                                       \</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">        (Alignment != 0 &amp;&amp; (Alignment &amp; (Alignment - 1)) == 0),               \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">        USE_AlignedAllocator_WITH_ALIGNEMNT_NOT_A_POWER_OF_TWO)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">        &quot;**AlignedAllocator** USED WITH Alignment NOT A POWER OF TWO&quot;)</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="aligned__memory_8hpp.html#ad279434bce4c815e4dbbc2d50712a880">   77</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID(Alignemnt)      \</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT((Alignment &gt;= sizeof(void *)),                         \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        USE_AlignedAllocator_WITH_ALIGNMENT_LESS_THAN_SIZEOF_VOID_POINTER)</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        &quot;**AlginedAllocator** USED WITH Alignment LESS THAN sizeof(void *)&quot;)</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="aligned__memory_8hpp.html#ab3e147405b5f36ecfc5140f402bb2a9d">   81</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY                             \</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO(Alignment);        \</span></div>

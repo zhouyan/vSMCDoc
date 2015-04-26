@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="m128i_8hpp.html#ae15e6cd24e97ce3163d8a5c0fd420b43">   38</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_ASSERT_RNG_M128I_PACK(Offset, T, N)                       \</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    VSMC_STATIC_ASSERT(                                                       \</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">        ((Offset &lt; N) &amp;&amp; (sizeof(T) * (N - Offset) &gt;= sizeof(__m128i))),      \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        TRY_TO_PACK_OR_UNPACK_A_TOO_SMALL_VECTOR_INTO_OR_FROM_m128i)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        &quot;TRY TO PACK OR UNPACK A TOO SMALL VECTOR INTO OR FROM m128i&quot;)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
@@ -184,8 +184,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">   98</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">m128i_is_equal</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;a, <span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;b)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::array&lt;uint64_t, 2&gt; sa;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::array&lt;uint64_t, 2&gt; sb;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sa;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sb;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    m128i_unpack&lt;0&gt;(a, sa);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    m128i_unpack&lt;0&gt;(b, sb);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>

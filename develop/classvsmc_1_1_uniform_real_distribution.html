@@ -168,23 +168,23 @@ class vsmc::UniformRealDistribution&lt; FPType, Left, Right, MinMaxIsConstexpr &
 <p>Uniform real distribution with variants open/closed variants. </p>
 <p>This distribution is almost identical to C++11 <code>std::uniform_real_distribution</code>. But it differs in two important aspects</p><ul>
 <li>It allows the interval to be either open or closed on both sides.</li>
-<li>It requires that the uniform random number generator to produce integers on the full range of either <code>uint32_t</code> or <code>uint64_t</code>. <dl class="tparams"><dt>Template Parameters</dt><dd>
+<li>It requires that the uniform random number generator to produce integers on the full range of either <code>std::uint32_t</code> or <code>std::uint64_t</code>. <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">FPType</td><td>The floating points type of results </td></tr>
     <tr><td class="paramname">Left</td><td>Shall the left side of the interval be <a class="el" href="structvsmc_1_1_open.html" title="Parameter type for open interval. ">Open</a> or <a class="el" href="structvsmc_1_1_closed.html" title="Parameter type for closed interval. ">Closed</a> </td></tr>
     <tr><td class="paramname">Right</td><td>Shall the right side of the interval be <a class="el" href="structvsmc_1_1_open.html" title="Parameter type for open interval. ">Open</a> or <a class="el" href="structvsmc_1_1_closed.html" title="Parameter type for closed interval. ">Closed</a> </td></tr>
     <tr><td class="paramname">MinMaxIsConstexpr</td><td>Whether or not <a class="el" href="classvsmc_1_1_uniform_real_distribution.html" title="Uniform real distribution with variants open/closed variants. ">UniformRealDistribution</a> shall expect RNG engines that will be used with it has their <code>min</code> and <code>max</code> member functions defined as contant expresssion. For example, <div class="fragment"><div class="line"><span class="keyword">struct </span>Engine1</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">static</span> constexpr uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#aa9b50b785c41cf65fc80c90e53a5e14b">min</a> ();</div>
-<div class="line">    <span class="keyword">static</span> constexpr uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#a895913ceebcbd0ac82d6dcc4b722b212">max</a> ();</div>
-<div class="line">    uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#af02f9adf219aebc06c3850ad3a398094">operator() </a>();</div>
+<div class="line">    <span class="keyword">static</span> constexpr std::uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#aa9b50b785c41cf65fc80c90e53a5e14b">min</a> ();</div>
+<div class="line">    <span class="keyword">static</span> constexpr std::uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#a895913ceebcbd0ac82d6dcc4b722b212">max</a> ();</div>
+<div class="line">    std::uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#af02f9adf219aebc06c3850ad3a398094">operator() </a>();</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">struct </span>Engine2</div>
 <div class="line">{</div>
-<div class="line">    uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#aa9b50b785c41cf65fc80c90e53a5e14b">min</a> ();</div>
-<div class="line">    uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#a895913ceebcbd0ac82d6dcc4b722b212">max</a> ();</div>
-<div class="line">    uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#af02f9adf219aebc06c3850ad3a398094">operator() </a>();</div>
+<div class="line">    std::uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#aa9b50b785c41cf65fc80c90e53a5e14b">min</a> ();</div>
+<div class="line">    std::uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#a895913ceebcbd0ac82d6dcc4b722b212">max</a> ();</div>
+<div class="line">    std::uint32_t <a class="code" href="classvsmc_1_1_uniform_real_distribution.html#af02f9adf219aebc06c3850ad3a398094">operator() </a>();</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line">Engine1 eng1;</div>
@@ -203,7 +203,7 @@ class vsmc::UniformRealDistribution&lt; FPType, Left, Right, MinMaxIsConstexpr &
 </li>
 </ul>
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00172">172</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00173">173</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a822d23e91b5d8fd2da94bb05a933c005"></a>
 <div class="memitem">
@@ -217,7 +217,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00175">175</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00176">176</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00248">248</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00249">249</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00254">254</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00255">255</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00270">270</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00271">271</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00271">271</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00272">272</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00273">273</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00274">274</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00272">272</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00273">273</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -427,15 +427,15 @@ template&lt;typename Eng &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Eng</td><td>Requirement: <div class="fragment"><div class="line">Eng::min() == 0 &amp;&amp; (</div>
-<div class="line">Eng::max() == std::numeric_limits&lt;uint32_t&gt;::max() ||</div>
-<div class="line">Eng::max() == std::numeric_limits&lt;uint64_t&gt;::max()</div>
+<div class="line">Eng::max() == std::numeric_limits&lt;std::uint32_t&gt;::max() ||</div>
+<div class="line">Eng::max() == std::numeric_limits&lt;std::uint64_t&gt;::max()</div>
 <div class="line">)</div>
 </div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00285">285</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00286">286</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00260">260</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00261">261</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00262">262</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00263">263</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00268">268</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00269">269</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00305">305</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00306">306</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00314">314</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00315">315</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -634,7 +634,7 @@ template&lt;typename FPType = double, typename Left = Closed, typename Right = O
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00293">293</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00294">294</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -674,7 +674,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00328">328</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00329">329</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>
 
 </div>
 </div>

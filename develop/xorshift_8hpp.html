@@ -150,7 +150,7 @@ Macros</h2></td></tr>
 <tr class="separator:a5661d5741d2cbfbb50e6ef393613b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0346f304af1a2be84c9314c27300da0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xorshift_8hpp.html#a0346f304af1a2be84c9314c27300da0b">VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX_ORDER</a>(R,  <a class="el" href="class_s.html">S</a>,  K)</td></tr>
 <tr class="separator:a0346f304af1a2be84c9314c27300da0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf160897a0290193009977e4d9e35ead"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xorshift_8hpp.html#acf160897a0290193009977e4d9e35ead">VSMC_STATIC_ASSERT_RNG_XORSHIFT_ORDER</a>(K)&#160;&#160;&#160;<a class="el" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((K != 0), USE_XorshiftEngine_WITH_ORDER_EUQAL_TO_ZERO)</td></tr>
+<tr class="memitem:acf160897a0290193009977e4d9e35ead"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xorshift_8hpp.html#acf160897a0290193009977e4d9e35ead">VSMC_STATIC_ASSERT_RNG_XORSHIFT_ORDER</a>(K)</td></tr>
 <tr class="separator:acf160897a0290193009977e4d9e35ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a809e1667bba8305e2cbf622ee90fbd53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xorshift_8hpp.html#a809e1667bba8305e2cbf622ee90fbd53">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS</a>(A)</td></tr>
 <tr class="separator:a809e1667bba8305e2cbf622ee90fbd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,51 +168,51 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga769a7ba98716608538d8883f85587551"><td class="memItemLeft" align="right" valign="top">typedef Xorshift128x32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga769a7ba98716608538d8883f85587551">vsmc::Xorshift</a></td></tr>
 <tr class="memdesc:ga769a7ba98716608538d8883f85587551"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 32-bits Xorshift RNG engine.  <a href="group___xorshift.html#ga769a7ba98716608538d8883f85587551">More...</a><br /></td></tr>
 <tr class="separator:ga769a7ba98716608538d8883f85587551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab637e41423a7c73fc396906784bb3d1d"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 128, 17, 12, 13, 15, 128, 95 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gab637e41423a7c73fc396906784bb3d1d">vsmc::Xorshift128x32</a></td></tr>
-<tr class="memdesc:gab637e41423a7c73fc396906784bb3d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{4096}-1\) 32-bits integers.  <a href="group___xorshift.html#gab637e41423a7c73fc396906784bb3d1d">More...</a><br /></td></tr>
-<tr class="separator:gab637e41423a7c73fc396906784bb3d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fd4c2a58b2a18c1d92b96a4d9cce083"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 16, 17, 15, 13, 14, 16, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga9fd4c2a58b2a18c1d92b96a4d9cce083">vsmc::Xorshift16x32</a></td></tr>
-<tr class="memdesc:ga9fd4c2a58b2a18c1d92b96a4d9cce083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{512}-1\) 32-bits integers.  <a href="group___xorshift.html#ga9fd4c2a58b2a18c1d92b96a4d9cce083">More...</a><br /></td></tr>
-<tr class="separator:ga9fd4c2a58b2a18c1d92b96a4d9cce083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6c03119f474dd609b8baf58bdc0d8e9"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 16, 34, 29, 25, 31, 16, 7 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gad6c03119f474dd609b8baf58bdc0d8e9">vsmc::Xorshift16x64</a></td></tr>
-<tr class="memdesc:gad6c03119f474dd609b8baf58bdc0d8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{1024}-1\) 64-bits integers.  <a href="group___xorshift.html#gad6c03119f474dd609b8baf58bdc0d8e9">More...</a><br /></td></tr>
-<tr class="separator:gad6c03119f474dd609b8baf58bdc0d8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a6fb628471bff315b340e2eec1f1e11"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 1, 13, 17, 5, 0, 0, 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga4a6fb628471bff315b340e2eec1f1e11">vsmc::Xorshift1x32</a></td></tr>
-<tr class="memdesc:ga4a6fb628471bff315b340e2eec1f1e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{32}-1\) 32-bits integers.  <a href="group___xorshift.html#ga4a6fb628471bff315b340e2eec1f1e11">More...</a><br /></td></tr>
-<tr class="separator:ga4a6fb628471bff315b340e2eec1f1e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e97dacc7a36f2daab994a31c7fbbb2c"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 1, 13, 7, 17, 0, 0, 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga5e97dacc7a36f2daab994a31c7fbbb2c">vsmc::Xorshift1x64</a></td></tr>
-<tr class="memdesc:ga5e97dacc7a36f2daab994a31c7fbbb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{64}-1\) 64-bits integers.  <a href="group___xorshift.html#ga5e97dacc7a36f2daab994a31c7fbbb2c">More...</a><br /></td></tr>
-<tr class="separator:ga5e97dacc7a36f2daab994a31c7fbbb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7304756fd5d6408b9d2d3c21e31f6a99"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 2, 17, 14, 12, 19, 2, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga7304756fd5d6408b9d2d3c21e31f6a99">vsmc::Xorshift2x32</a></td></tr>
-<tr class="memdesc:ga7304756fd5d6408b9d2d3c21e31f6a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{64}-1\) 32-bits integers.  <a href="group___xorshift.html#ga7304756fd5d6408b9d2d3c21e31f6a99">More...</a><br /></td></tr>
-<tr class="separator:ga7304756fd5d6408b9d2d3c21e31f6a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabcfe79075ec11e38c05910404bb0b180"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 2, 33, 31, 28, 29, 2, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gabcfe79075ec11e38c05910404bb0b180">vsmc::Xorshift2x64</a></td></tr>
-<tr class="memdesc:gabcfe79075ec11e38c05910404bb0b180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{128}-1\) 64-bits integers.  <a href="group___xorshift.html#gabcfe79075ec11e38c05910404bb0b180">More...</a><br /></td></tr>
-<tr class="separator:gabcfe79075ec11e38c05910404bb0b180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18ef83ad595bb74a26bd4d20432fb963"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 32, 19, 11, 13, 16, 32, 15 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga18ef83ad595bb74a26bd4d20432fb963">vsmc::Xorshift32x32</a></td></tr>
-<tr class="memdesc:ga18ef83ad595bb74a26bd4d20432fb963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{1024}-1\) 32-bits integers.  <a href="group___xorshift.html#ga18ef83ad595bb74a26bd4d20432fb963">More...</a><br /></td></tr>
-<tr class="separator:ga18ef83ad595bb74a26bd4d20432fb963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga114cd2b8e768fea3ac877201241bf426"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 32, 35, 27, 26, 37, 32, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga114cd2b8e768fea3ac877201241bf426">vsmc::Xorshift32x64</a></td></tr>
-<tr class="memdesc:ga114cd2b8e768fea3ac877201241bf426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{2048}-1\) 64-bits integers.  <a href="group___xorshift.html#ga114cd2b8e768fea3ac877201241bf426">More...</a><br /></td></tr>
-<tr class="separator:ga114cd2b8e768fea3ac877201241bf426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga08b0e83c867ac2f8d59a7d7fa1c5f34a"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 4, 15, 14, 12, 17, 4, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga08b0e83c867ac2f8d59a7d7fa1c5f34a">vsmc::Xorshift4x32</a></td></tr>
-<tr class="memdesc:ga08b0e83c867ac2f8d59a7d7fa1c5f34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{128}-1\) 32-bits integers.  <a href="group___xorshift.html#ga08b0e83c867ac2f8d59a7d7fa1c5f34a">More...</a><br /></td></tr>
-<tr class="separator:ga08b0e83c867ac2f8d59a7d7fa1c5f34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga155edcf595ce18dc00884e98c2e5aafd"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 4, 37, 27, 29, 33, 4, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga155edcf595ce18dc00884e98c2e5aafd">vsmc::Xorshift4x64</a></td></tr>
-<tr class="memdesc:ga155edcf595ce18dc00884e98c2e5aafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{256}-1\) 64-bits integers.  <a href="group___xorshift.html#ga155edcf595ce18dc00884e98c2e5aafd">More...</a><br /></td></tr>
-<tr class="separator:ga155edcf595ce18dc00884e98c2e5aafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6dfac49bc5728ba475a8d5e58e2f001"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 64, 19, 12, 14, 15, 64, 59 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gac6dfac49bc5728ba475a8d5e58e2f001">vsmc::Xorshift64x32</a></td></tr>
-<tr class="memdesc:gac6dfac49bc5728ba475a8d5e58e2f001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{2048}-1\) 32-bits integers.  <a href="group___xorshift.html#gac6dfac49bc5728ba475a8d5e58e2f001">More...</a><br /></td></tr>
-<tr class="separator:gac6dfac49bc5728ba475a8d5e58e2f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeafbab8f4a7a25818a0519ce51bbcfd9"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 64, 33, 26, 27, 29, 64, 53 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gaeafbab8f4a7a25818a0519ce51bbcfd9">vsmc::Xorshift64x64</a></td></tr>
-<tr class="memdesc:gaeafbab8f4a7a25818a0519ce51bbcfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{4096}-1\) 64-bits integers.  <a href="group___xorshift.html#gaeafbab8f4a7a25818a0519ce51bbcfd9">More...</a><br /></td></tr>
-<tr class="separator:gaeafbab8f4a7a25818a0519ce51bbcfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga540c5fb1b66939742e02fe15265421f8"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint32_t, 8, 18, 13, 14, 15, 8, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga540c5fb1b66939742e02fe15265421f8">vsmc::Xorshift8x32</a></td></tr>
-<tr class="memdesc:ga540c5fb1b66939742e02fe15265421f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{256}-1\) 32-bits integers.  <a href="group___xorshift.html#ga540c5fb1b66939742e02fe15265421f8">More...</a><br /></td></tr>
-<tr class="separator:ga540c5fb1b66939742e02fe15265421f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab24248188afdd99db3a06baa81f72f1d"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; uint64_t, 8, 37, 26, 29, 34, 8, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gab24248188afdd99db3a06baa81f72f1d">vsmc::Xorshift8x64</a></td></tr>
-<tr class="memdesc:gab24248188afdd99db3a06baa81f72f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{512}-1\) 64-bits integers.  <a href="group___xorshift.html#gab24248188afdd99db3a06baa81f72f1d">More...</a><br /></td></tr>
-<tr class="separator:gab24248188afdd99db3a06baa81f72f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e6bd85a0ec246ab0650a1eddbab0249"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 128, 17, 12, 13, 15, 128, 95 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga2e6bd85a0ec246ab0650a1eddbab0249">vsmc::Xorshift128x32</a></td></tr>
+<tr class="memdesc:ga2e6bd85a0ec246ab0650a1eddbab0249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{4096}-1\) 32-bits integers.  <a href="group___xorshift.html#ga2e6bd85a0ec246ab0650a1eddbab0249">More...</a><br /></td></tr>
+<tr class="separator:ga2e6bd85a0ec246ab0650a1eddbab0249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7bb5263a682f15393e977156fb6801b"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 16, 17, 15, 13, 14, 16, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gaa7bb5263a682f15393e977156fb6801b">vsmc::Xorshift16x32</a></td></tr>
+<tr class="memdesc:gaa7bb5263a682f15393e977156fb6801b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{512}-1\) 32-bits integers.  <a href="group___xorshift.html#gaa7bb5263a682f15393e977156fb6801b">More...</a><br /></td></tr>
+<tr class="separator:gaa7bb5263a682f15393e977156fb6801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdce98b5f4b63a89d70fce4d1b2f7db0"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 16, 34, 29, 25, 31, 16, 7 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gafdce98b5f4b63a89d70fce4d1b2f7db0">vsmc::Xorshift16x64</a></td></tr>
+<tr class="memdesc:gafdce98b5f4b63a89d70fce4d1b2f7db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{1024}-1\) 64-bits integers.  <a href="group___xorshift.html#gafdce98b5f4b63a89d70fce4d1b2f7db0">More...</a><br /></td></tr>
+<tr class="separator:gafdce98b5f4b63a89d70fce4d1b2f7db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61ba75fca5e4b2552ea12d33cb4d9fcc"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 1, 13, 17, 5, 0, 0, 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga61ba75fca5e4b2552ea12d33cb4d9fcc">vsmc::Xorshift1x32</a></td></tr>
+<tr class="memdesc:ga61ba75fca5e4b2552ea12d33cb4d9fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{32}-1\) 32-bits integers.  <a href="group___xorshift.html#ga61ba75fca5e4b2552ea12d33cb4d9fcc">More...</a><br /></td></tr>
+<tr class="separator:ga61ba75fca5e4b2552ea12d33cb4d9fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga430cccf1df6a4d59bdc67c023b859847"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 1, 13, 7, 17, 0, 0, 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga430cccf1df6a4d59bdc67c023b859847">vsmc::Xorshift1x64</a></td></tr>
+<tr class="memdesc:ga430cccf1df6a4d59bdc67c023b859847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{64}-1\) 64-bits integers.  <a href="group___xorshift.html#ga430cccf1df6a4d59bdc67c023b859847">More...</a><br /></td></tr>
+<tr class="separator:ga430cccf1df6a4d59bdc67c023b859847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95880bd224c455b767cab6b47f8cf62f"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 2, 17, 14, 12, 19, 2, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga95880bd224c455b767cab6b47f8cf62f">vsmc::Xorshift2x32</a></td></tr>
+<tr class="memdesc:ga95880bd224c455b767cab6b47f8cf62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{64}-1\) 32-bits integers.  <a href="group___xorshift.html#ga95880bd224c455b767cab6b47f8cf62f">More...</a><br /></td></tr>
+<tr class="separator:ga95880bd224c455b767cab6b47f8cf62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27dff181b1dedbdb99192355428da216"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 2, 33, 31, 28, 29, 2, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga27dff181b1dedbdb99192355428da216">vsmc::Xorshift2x64</a></td></tr>
+<tr class="memdesc:ga27dff181b1dedbdb99192355428da216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{128}-1\) 64-bits integers.  <a href="group___xorshift.html#ga27dff181b1dedbdb99192355428da216">More...</a><br /></td></tr>
+<tr class="separator:ga27dff181b1dedbdb99192355428da216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab330481ba96e7fbc8bb18b08742a4aa5"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 32, 19, 11, 13, 16, 32, 15 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gab330481ba96e7fbc8bb18b08742a4aa5">vsmc::Xorshift32x32</a></td></tr>
+<tr class="memdesc:gab330481ba96e7fbc8bb18b08742a4aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{1024}-1\) 32-bits integers.  <a href="group___xorshift.html#gab330481ba96e7fbc8bb18b08742a4aa5">More...</a><br /></td></tr>
+<tr class="separator:gab330481ba96e7fbc8bb18b08742a4aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b73625d0a5ae0af383971ea36abfd65"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 32, 35, 27, 26, 37, 32, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga1b73625d0a5ae0af383971ea36abfd65">vsmc::Xorshift32x64</a></td></tr>
+<tr class="memdesc:ga1b73625d0a5ae0af383971ea36abfd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{2048}-1\) 64-bits integers.  <a href="group___xorshift.html#ga1b73625d0a5ae0af383971ea36abfd65">More...</a><br /></td></tr>
+<tr class="separator:ga1b73625d0a5ae0af383971ea36abfd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e06d89d62cf1a656ec34232a328a672"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 4, 15, 14, 12, 17, 4, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga6e06d89d62cf1a656ec34232a328a672">vsmc::Xorshift4x32</a></td></tr>
+<tr class="memdesc:ga6e06d89d62cf1a656ec34232a328a672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{128}-1\) 32-bits integers.  <a href="group___xorshift.html#ga6e06d89d62cf1a656ec34232a328a672">More...</a><br /></td></tr>
+<tr class="separator:ga6e06d89d62cf1a656ec34232a328a672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf502886d0b70ec65a0e326f57266dac"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 4, 37, 27, 29, 33, 4, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gacf502886d0b70ec65a0e326f57266dac">vsmc::Xorshift4x64</a></td></tr>
+<tr class="memdesc:gacf502886d0b70ec65a0e326f57266dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{256}-1\) 64-bits integers.  <a href="group___xorshift.html#gacf502886d0b70ec65a0e326f57266dac">More...</a><br /></td></tr>
+<tr class="separator:gacf502886d0b70ec65a0e326f57266dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72a4021bff403964879a14d9fe7c1197"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 64, 19, 12, 14, 15, 64, 59 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga72a4021bff403964879a14d9fe7c1197">vsmc::Xorshift64x32</a></td></tr>
+<tr class="memdesc:ga72a4021bff403964879a14d9fe7c1197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{2048}-1\) 32-bits integers.  <a href="group___xorshift.html#ga72a4021bff403964879a14d9fe7c1197">More...</a><br /></td></tr>
+<tr class="separator:ga72a4021bff403964879a14d9fe7c1197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18242878742df112a609c41497b83d5c"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 64, 33, 26, 27, 29, 64, 53 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga18242878742df112a609c41497b83d5c">vsmc::Xorshift64x64</a></td></tr>
+<tr class="memdesc:ga18242878742df112a609c41497b83d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{4096}-1\) 64-bits integers.  <a href="group___xorshift.html#ga18242878742df112a609c41497b83d5c">More...</a><br /></td></tr>
+<tr class="separator:ga18242878742df112a609c41497b83d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6855e94bc4118b62805127ed5a7028f9"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint32_t, 8, 18, 13, 14, 15, 8, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga6855e94bc4118b62805127ed5a7028f9">vsmc::Xorshift8x32</a></td></tr>
+<tr class="memdesc:ga6855e94bc4118b62805127ed5a7028f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{256}-1\) 32-bits integers.  <a href="group___xorshift.html#ga6855e94bc4118b62805127ed5a7028f9">More...</a><br /></td></tr>
+<tr class="separator:ga6855e94bc4118b62805127ed5a7028f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1493700bc204bea36c7145228fff952"><td class="memItemLeft" align="right" valign="top">typedef XorshiftEngine&lt; std::uint64_t, 8, 37, 26, 29, 34, 8, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#gaa1493700bc204bea36c7145228fff952">vsmc::Xorshift8x64</a></td></tr>
+<tr class="memdesc:gaa1493700bc204bea36c7145228fff952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xorshift RNG engine generating \(2^{512}-1\) 64-bits integers.  <a href="group___xorshift.html#gaa1493700bc204bea36c7145228fff952">More...</a><br /></td></tr>
+<tr class="separator:gaa1493700bc204bea36c7145228fff952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16ed9183f94af34320dfd11c7222ae3e"><td class="memItemLeft" align="right" valign="top">typedef Xorshift64x64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___xorshift.html#ga16ed9183f94af34320dfd11c7222ae3e">vsmc::Xorshift_64</a></td></tr>
 <tr class="memdesc:ga16ed9183f94af34320dfd11c7222ae3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits Xorshift RNG engine.  <a href="group___xorshift.html#ga16ed9183f94af34320dfd11c7222ae3e">More...</a><br /></td></tr>
 <tr class="separator:ga16ed9183f94af34320dfd11c7222ae3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,16 +298,16 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="xorshift_8hpp.html#aab2b90e8372a23852b1c8b21e39fe61c">    VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_C</a>(C, K);                       <a class="code" href="xorshift_8hpp.html#a6d35cd41e7424580e6859cc39314a4ea">\</a></div>
 <div class="line"><a class="code" href="xorshift_8hpp.html#a6d35cd41e7424580e6859cc39314a4ea">    VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_D</a>(D, K);</div>
 <div class="ttc" id="class_s_html"><div class="ttname"><a href="class_s.html">S</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_a809e1667bba8305e2cbf622ee90fbd53"><div class="ttname"><a href="xorshift_8hpp.html#a809e1667bba8305e2cbf622ee90fbd53">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS(A)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00056">xorshift.hpp:56</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_a6d35cd41e7424580e6859cc39314a4ea"><div class="ttname"><a href="xorshift_8hpp.html#a6d35cd41e7424580e6859cc39314a4ea">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_D</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_D(D, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00064">xorshift.hpp:64</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_a0346f304af1a2be84c9314c27300da0b"><div class="ttname"><a href="xorshift_8hpp.html#a0346f304af1a2be84c9314c27300da0b">VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX_ORDER</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX_ORDER(R, S, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00052">xorshift.hpp:52</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_a809e1667bba8305e2cbf622ee90fbd53"><div class="ttname"><a href="xorshift_8hpp.html#a809e1667bba8305e2cbf622ee90fbd53">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS(A)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00059">xorshift.hpp:59</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_a6d35cd41e7424580e6859cc39314a4ea"><div class="ttname"><a href="xorshift_8hpp.html#a6d35cd41e7424580e6859cc39314a4ea">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_D</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_D(D, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00067">xorshift.hpp:67</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_a0346f304af1a2be84c9314c27300da0b"><div class="ttname"><a href="xorshift_8hpp.html#a0346f304af1a2be84c9314c27300da0b">VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX_ORDER</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX_ORDER(R, S, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00055">xorshift.hpp:55</a></div></div>
 <div class="ttc" id="xorshift_8hpp_html_acf160897a0290193009977e4d9e35ead"><div class="ttname"><a href="xorshift_8hpp.html#acf160897a0290193009977e4d9e35ead">VSMC_STATIC_ASSERT_RNG_XORSHIFT_ORDER</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_ORDER(K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00037">xorshift.hpp:37</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_a86d6bd4c8dc92cf943ad7bdab46acbc1"><div class="ttname"><a href="xorshift_8hpp.html#a86d6bd4c8dc92cf943ad7bdab46acbc1">VSMC_STATIC_ASSERT_RNG_XORSHIFT_UNSIGNED</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_UNSIGNED(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00040">xorshift.hpp:40</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_aab2b90e8372a23852b1c8b21e39fe61c"><div class="ttname"><a href="xorshift_8hpp.html#aab2b90e8372a23852b1c8b21e39fe61c">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_C</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_C(C, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00060">xorshift.hpp:60</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_a5661d5741d2cbfbb50e6ef393613b6e5"><div class="ttname"><a href="xorshift_8hpp.html#a5661d5741d2cbfbb50e6ef393613b6e5">VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX(I, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00048">xorshift.hpp:48</a></div></div>
-<div class="ttc" id="xorshift_8hpp_html_a4b8e83b37f31db01e0a044a50d1bd6eb"><div class="ttname"><a href="xorshift_8hpp.html#a4b8e83b37f31db01e0a044a50d1bd6eb">VSMC_STATIC_ASSERT_RNG_XORSHIFT_UINT_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_UINT_SIZE(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00044">xorshift.hpp:44</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_a86d6bd4c8dc92cf943ad7bdab46acbc1"><div class="ttname"><a href="xorshift_8hpp.html#a86d6bd4c8dc92cf943ad7bdab46acbc1">VSMC_STATIC_ASSERT_RNG_XORSHIFT_UNSIGNED</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_UNSIGNED(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00041">xorshift.hpp:41</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_aab2b90e8372a23852b1c8b21e39fe61c"><div class="ttname"><a href="xorshift_8hpp.html#aab2b90e8372a23852b1c8b21e39fe61c">VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_C</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_SHIFT_BITS_C(C, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00063">xorshift.hpp:63</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_a5661d5741d2cbfbb50e6ef393613b6e5"><div class="ttname"><a href="xorshift_8hpp.html#a5661d5741d2cbfbb50e6ef393613b6e5">VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_INDEX(I, K)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00051">xorshift.hpp:51</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html_a4b8e83b37f31db01e0a044a50d1bd6eb"><div class="ttname"><a href="xorshift_8hpp.html#a4b8e83b37f31db01e0a044a50d1bd6eb">VSMC_STATIC_ASSERT_RNG_XORSHIFT_UINT_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_XORSHIFT_UINT_SIZE(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="xorshift_8hpp_source.html#l00046">xorshift.hpp:46</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00068">68</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00071">71</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -335,10 +335,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((I != 0 || K == 1),                                    \</div>
-<div class="line">        USE_XorshiftEngine_WITH_INDEX_##I##_EQUAL_TO_ZERO)</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WITH INDEX &quot;</span> #I <span class="stringliteral">&quot; EQUAL TO ZERO&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00048">48</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00051">51</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -372,11 +372,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((R &gt; <a class="code" href="class_s.html">S</a> || K == 1),                                     \</div>
-<div class="line">        USE_XorshiftEngine_WITH_INDEX_##R##_NOT_LARGER_THAN_##<a class="code" href="class_s.html">S</a>)</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WITH INDEX &quot;</span> #R <span class="stringliteral">&quot; NOT LARGER THAN &quot;</span> #<a class="code" href="class_s.html">S</a>)</div>
 <div class="ttc" id="class_s_html"><div class="ttname"><a href="class_s.html">S</a></div></div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00052">52</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00055">55</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -389,11 +389,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">K</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((K != 0), USE_XorshiftEngine_WITH_ORDER_EUQAL_TO_ZERO)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                       \</div>
+<div class="line">        (K != 0), <span class="stringliteral">&quot;**XorshiftEngine USEd WITH ORDER EUQAL TO ZERO&quot;</span>)</div>
+<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
+</div><!-- fragment -->
 <p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00037">37</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
@@ -411,11 +414,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                       \</div>
-<div class="line">        (A != 0), USE_XorshiftEngine_WITH_SHIFT_BITS_##A##_EQUAL_TO_ZERO);</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((A != 0),                                              \</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WITH SHIFT BITS &quot;</span> #A <span class="stringliteral">&quot; EQUAL TO ZERO&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00056">56</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00059">59</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,10 +446,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((C != 0 || K != 1),                                    \</div>
-<div class="line">        USE_XorshiftEngine_WITH_SHIFT_BITS_##C##_EQUAL_TO_ZERO);</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WTIH SHIFT BITS &quot;</span> #C <span class="stringliteral">&quot; EQUAL TO ZERO&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00060">60</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00063">63</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -474,10 +477,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((D != 0 || K == 1),                                    \</div>
-<div class="line">        USE_XorshiftEngine_WITH_SHIFT_BITS_##A##_EQUAL_TO_ZERO);</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WTIH SHIFT BITS &quot;</span> #D <span class="stringliteral">&quot; EQUAL TO ZERO&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00064">64</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00067">67</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -494,11 +497,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((<span class="keyword">sizeof</span>(ResultType) &gt;= <span class="keyword">sizeof</span>(uint32_t)),              \</div>
-<div class="line">        USE_XorshiftEngine_WITH_A_ResultType_SMALLER_THAN_32_BITS)</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((<span class="keyword">sizeof</span>(ResultType) &gt;= <span class="keyword">sizeof</span>(std::uint32_t)),         \</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WITH ResultType SMALLER THAN &quot;</span>               \</div>
+<div class="line">        <span class="stringliteral">&quot;std::uint32_t&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00044">44</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00046">46</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>
@@ -516,10 +520,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_unsigned&lt;ResultType&gt;::value),                 \</div>
-<div class="line">        USE_XorshiftEngine_WITH_A_ResultType_NOT_AN_UNSIGNED_INTEGER_TYPE)</div>
+<div class="line">        <span class="stringliteral">&quot;**XorshiftEngine** USED WITH ResultType NOT AN UNSIGNED INTEGER &quot;</span>    \</div>
+<div class="line">        <span class="stringliteral">&quot;TYPE&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00040">40</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
+<p>Definition at line <a class="el" href="xorshift_8hpp_source.html#l00041">41</a> of file <a class="el" href="xorshift_8hpp_source.html">xorshift.hpp</a>.</p>
 
 </div>
 </div>

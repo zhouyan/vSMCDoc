@@ -40,7 +40,7 @@ var searchData=
   ['philox4x32_5frand',['philox4x32_rand',['../group___c_l_r_n_g.html#ga4b9aa887d9ea123f1f0c895fa140a7eb',1,'urng.h']]],
   ['philox4x64_5finit',['philox4x64_init',['../group___c_l_r_n_g.html#ga0d307f07b8c6570ecf1cd8767642c50e',1,'urng.h']]],
   ['philox4x64_5frand',['philox4x64_rand',['../group___c_l_r_n_g.html#ga8ea89fdbaeb35fc53c9726727d060579',1,'urng.h']]],
-  ['philox_5fhilo',['philox_hilo',['../namespacevsmc_1_1internal.html#ac8f607a302f01b3702e62139b33d2daf',1,'vsmc::internal::philox_hilo(uint32_t b, uint32_t &amp;hi, uint32_t &amp;lo)'],['../namespacevsmc_1_1internal.html#a318bde4645458c2e9365fd97d4c6c971',1,'vsmc::internal::philox_hilo(uint64_t b, uint64_t &amp;hi, uint64_t &amp;lo)']]],
+  ['philox_5fhilo',['philox_hilo',['../namespacevsmc_1_1internal.html#a027727fd39d6b7111f5dd584d1bb32e5',1,'vsmc::internal::philox_hilo(std::uint32_t b, std::uint32_t &amp;hi, std::uint32_t &amp;lo)'],['../namespacevsmc_1_1internal.html#a756925bc67d36d416a9ef5ab87ece09f',1,'vsmc::internal::philox_hilo(std::uint64_t b, std::uint64_t &amp;hi, std::uint64_t &amp;lo)']]],
   ['philoxengine',['PhiloxEngine',['../classvsmc_1_1_philox_engine.html#a6e5f768f92d7693528b5c1b4df91c677',1,'vsmc::PhiloxEngine::PhiloxEngine(result_type s=0)'],['../classvsmc_1_1_philox_engine.html#a8c2489b3707c1d25fc601df2d77f4439',1,'vsmc::PhiloxEngine::PhiloxEngine(SeedSeq &amp;seq, typename std::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, result_type, key_type, PhiloxEngine&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::type *=nullptr)'],['../classvsmc_1_1_philox_engine.html#a2ffabb92623076960375358e296c252c',1,'vsmc::PhiloxEngine::PhiloxEngine(const key_type &amp;k)']]],
   ['pi',['pi',['../group___constants.html#gafedea845dead3923dd83c249f90867d3',1,'vsmc::math']]],
   ['pi_3c_20double_20_3e',['pi&lt; double &gt;',['../namespacevsmc_1_1math.html#ab1fc204e5fccc1b0161a6cd6014b2869',1,'vsmc::math']]],
@@ -107,6 +107,5 @@ var searchData=
   ['programoptionscalar',['ProgramOptionScalar',['../classvsmc_1_1_program_option_scalar.html#a437096f4889bdaf4df1be435fd245161',1,'vsmc::ProgramOptionScalar::ProgramOptionScalar(const std::string &amp;desc, T *ptr)'],['../classvsmc_1_1_program_option_scalar.html#a572a2b013d741bfe82e86a80759a4658',1,'vsmc::ProgramOptionScalar::ProgramOptionScalar(const std::string &amp;desc, T *ptr, V val)']]],
   ['programoptionvector',['ProgramOptionVector',['../classvsmc_1_1_program_option_vector.html#a78feae0f27589d429d076eda37be8940',1,'vsmc::ProgramOptionVector::ProgramOptionVector(const std::string &amp;desc, std::vector&lt; T &gt; *ptr)'],['../classvsmc_1_1_program_option_vector.html#aec0c4bac4d559f96545789a244df8ccd',1,'vsmc::ProgramOptionVector::ProgramOptionVector(const std::string &amp;desc, std::vector&lt; T &gt; *ptr, V val)']]],
   ['progress',['Progress',['../classvsmc_1_1_progress.html#a3d2bf8b0a1b6a657e8679f02dcb62ba9',1,'vsmc::Progress']]],
-  ['property',['property',['../classvsmc_1_1_m_k_l_stream.html#a7511778df24d7540e8a971171b9835d7',1,'vsmc::MKLStream']]],
   ['ptr',['ptr',['../classvsmc_1_1_m_k_l_stream.html#a151b57538c910066717ef949021f620d',1,'vsmc::MKLStream']]]
 ];

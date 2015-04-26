@@ -153,10 +153,10 @@ class vsmc::Counter&lt; std::array&lt; T, K &gt; &gt;</h3>
 
 <p>Using <code>std::array</code> of unsigned integers as counters. </p>
 <p>This class provides methods for using <code>std::array</code> of unsigned integers as large integer counters.</p>
-<p>It deals with two types of counters. The first type is in the form <code>std::array&lt;T, K&gt;</code> where <code>T</code> is an unsigned integer type, treated as a <code>sizeof(T) * K * 8</code> bits integer. For example, <code>std::array&lt;uint32_t, 4&gt;</code> is treated as an 128-bits integer. The counter start with all elements being zero. The value of the integer can be calculated as, \(c_0 + c_1 M + c_2 M^2 +\cdots + c_{K-1} M^{K - 1}\), where \(c_i\) is the \(i\)th element in the <code>std::array</code> and has a range from zero to \(M - 1\), \(M\) is the largest number of type <code>T</code> plus one, that is \(2^n\) with \(n\) being the number of bits in type <code>T</code>.</p>
+<p>It deals with two types of counters. The first type is in the form <code>std::array&lt;T, K&gt;</code> where <code>T</code> is an unsigned integer type, treated as a <code>sizeof(T) * K * 8</code> bits integer. For example, <code>std::array&lt;std::uint32_t, 4&gt;</code> is treated as an 128-bits integer. The counter start with all elements being zero. The value of the integer can be calculated as, \(c_0 + c_1 M + c_2 M^2 +\cdots + c_{K-1} M^{K - 1}\), where \(c_i\) is the \(i\)th element in the <code>std::array</code> and has a range from zero to \(M - 1\), \(M\) is the largest number of type <code>T</code> plus one, that is \(2^n\) with \(n\) being the number of bits in type <code>T</code>.</p>
 <p>The second type is blocks of counters of the first type. For example, <code>std::array&lt;ctr_type, Blocks&gt;</code>, where <code>ctr_type</code> is a counter of the first type. When set and incremented using methods in this class, all <code>Blocks</code> counters are maintained such that, they are always distinctive. This is done by reserving eight bits as counter IDs. Therefore, there can be at most 256 blocks. The increment works by incrementing each counter the same way as in the first type, except that the last element, \(c_{K-1}\) has a range from zero to \(2^{n - 8} - 1\) where \(n\) is the number of bits in type <code>T</code>. Therefore, in the extreme case where <code>ctr_type</code> is <code>std::array&lt;uint8_t, 1&gt;</code>, increment won't change the counter at all. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00094">94</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00095">95</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ada01bf9b09ce87022c6718f1d7dd7aee"></a>
 <div class="memitem">
@@ -170,7 +170,7 @@ template&lt;typename T , std::size_t K&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00097">97</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00098">98</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +201,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Increment the counter by one. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00126">126</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00127">127</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Increment each counter in a block by one. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00133">133</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00134">134</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Increment a counter by a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00139">139</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00140">140</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Increment each counter in a block by a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00167">167</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00168">168</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Reset a counter to zero. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00112">112</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00113">113</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Reset a block of counters with the first set to zero. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00119">119</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00120">120</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Set the counter to a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00100">100</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00101">101</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Set a block of counters given the value of the first counter. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00104">104</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00105">105</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>

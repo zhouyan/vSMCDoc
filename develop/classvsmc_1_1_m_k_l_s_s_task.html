@@ -98,9 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classvsmc_1_1_m_k_l_s_s_task-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vsmc::MKLSSTask&lt; ResultType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___utility.html">Utility</a> &raquo; <a class="el" href="group___m_k_l.html">Intel Math Kernel Library</a></div></div>  </div>
@@ -116,6 +116,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Types</h2></td></tr>
 <tr class="memitem:af2015bc194de2386cc2429505825d163"><td class="memItemLeft" align="right" valign="top">typedef ResultType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a></td></tr>
 <tr class="separator:af2015bc194de2386cc2429505825d163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classvsmc_1_1_m_k_l_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvsmc_1_1_m_k_l_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvsmc_1_1_m_k_l_base.html">vsmc::MKLBase&lt; VSLSSTaskPtr, MKLSSTask&lt; ResultType &gt; &gt;</a></td></tr>
+<tr class="memitem:a1d0615c05bac1c929705be1befa45bb0 inherit pub_types_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">typedef std::remove_pointer&lt; VSLSSTaskPtr &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a1d0615c05bac1c929705be1befa45bb0">element_type</a></td></tr>
+<tr class="separator:a1d0615c05bac1c929705be1befa45bb0 inherit pub_types_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab180ef31f26fe76ef5675dd576100f44 inherit pub_types_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">typedef VSLSSTaskPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#ab180ef31f26fe76ef5675dd576100f44">pointer</a></td></tr>
+<tr class="separator:ab180ef31f26fe76ef5675dd576100f44 inherit pub_types_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,16 +128,46 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a59f65bf95bc99282502b5cc21346cf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db78fe43d1b5c24efaaf4ca840cb75c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a1db78fe43d1b5c24efaaf4ca840cb75c">MKLSSTask</a> (const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *p, const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *n, const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *xstorage, const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a> *x, const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a> *w=nullptr, const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *indices=nullptr)</td></tr>
 <tr class="separator:a1db78fe43d1b5c24efaaf4ca840cb75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1edbf82923996f9579bb891311503e59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a1edbf82923996f9579bb891311503e59">MKLSSTask</a> (const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;)=delete</td></tr>
-<tr class="separator:a1edbf82923996f9579bb891311503e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ce6af2d22e494ef2110124b6f01cdca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a0ce6af2d22e494ef2110124b6f01cdca">MKLSSTask</a> (<a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&amp;other)=default</td></tr>
-<tr class="separator:a0ce6af2d22e494ef2110124b6f01cdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d65085306a8e93e707e04bec332ad22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a1d65085306a8e93e707e04bec332ad22">operator=</a> (const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;)=delete</td></tr>
-<tr class="separator:a1d65085306a8e93e707e04bec332ad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7abb99e58b6ca7f29bd3d1893a2ba3a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a7abb99e58b6ca7f29bd3d1893a2ba3a9">operator=</a> (<a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&amp;)=default</td></tr>
-<tr class="separator:a7abb99e58b6ca7f29bd3d1893a2ba3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a00f5208f25f690a5a96dc78570676b"><td class="memItemLeft" align="right" valign="top">VSLSSTaskPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a3a00f5208f25f690a5a96dc78570676b">ptr</a> () const </td></tr>
-<tr class="separator:a3a00f5208f25f690a5a96dc78570676b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbd982fb4662c2f5a9ad47e5cba9a2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#aefbd982fb4662c2f5a9ad47e5cba9a2c">reset</a> (const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *p, const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *n, const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *xstorage, const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a> *x, const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a> *w=nullptr, const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *indices=nullptr)</td></tr>
+<tr class="separator:aefbd982fb4662c2f5a9ad47e5cba9a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classvsmc_1_1_m_k_l_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvsmc_1_1_m_k_l_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvsmc_1_1_m_k_l_base.html">vsmc::MKLBase&lt; VSLSSTaskPtr, MKLSSTask&lt; ResultType &gt; &gt;</a></td></tr>
+<tr class="memitem:a507e086cba25962403ca70b9773978ad inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a507e086cba25962403ca70b9773978ad">MKLBase</a> ()=default</td></tr>
+<tr class="separator:a507e086cba25962403ca70b9773978ad inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f99c6a6f91df1cbe1a5f3565b1852e inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#af9f99c6a6f91df1cbe1a5f3565b1852e">MKLBase</a> (const <a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;)=delete</td></tr>
+<tr class="separator:af9f99c6a6f91df1cbe1a5f3565b1852e inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1fc0d864c5dc5d6200d17d222b7b58 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a0e1fc0d864c5dc5d6200d17d222b7b58">MKLBase</a> (<a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;&amp;)=default</td></tr>
+<tr class="separator:a0e1fc0d864c5dc5d6200d17d222b7b58 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d31a1c2ff04dd1e312d07f79ddd298e inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_base.html#ab180ef31f26fe76ef5675dd576100f44">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a4d31a1c2ff04dd1e312d07f79ddd298e">get</a> ()</td></tr>
+<tr class="separator:a4d31a1c2ff04dd1e312d07f79ddd298e inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236b8c15ce8140c148d64e79c0ff8f67 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">deleter_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a236b8c15ce8140c148d64e79c0ff8f67">get_deleter</a> ()</td></tr>
+<tr class="separator:a236b8c15ce8140c148d64e79c0ff8f67 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b2dabe319d54ff0d89342c0dd93104 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">const deleter_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a28b2dabe319d54ff0d89342c0dd93104">get_deleter</a> () const</td></tr>
+<tr class="separator:a28b2dabe319d54ff0d89342c0dd93104 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5b171e37826a41104263f60420eae5 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#abc5b171e37826a41104263f60420eae5">operator bool</a> () const</td></tr>
+<tr class="separator:abc5b171e37826a41104263f60420eae5 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772912358efd2ffee17624df4eafe50c inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a772912358efd2ffee17624df4eafe50c">operator=</a> (const <a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;)=delete</td></tr>
+<tr class="separator:a772912358efd2ffee17624df4eafe50c inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cd671db466c9b9ff8e6068d2a4ccb9 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a83cd671db466c9b9ff8e6068d2a4ccb9">operator=</a> (<a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;&amp;)=default</td></tr>
+<tr class="separator:a83cd671db466c9b9ff8e6068d2a4ccb9 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c9ebe1f09e179e0a574ffb47e3337f inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_base.html#ab180ef31f26fe76ef5675dd576100f44">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#af5c9ebe1f09e179e0a574ffb47e3337f">ptr</a> ()</td></tr>
+<tr class="separator:af5c9ebe1f09e179e0a574ffb47e3337f inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5e178966d8e0899b79502fbb7df477 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#ada5e178966d8e0899b79502fbb7df477">release</a> ()</td></tr>
+<tr class="separator:ada5e178966d8e0899b79502fbb7df477 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59d5b9ec1ff0edac67dfd26cdf88933 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#ac59d5b9ec1ff0edac67dfd26cdf88933">reset</a> (<a class="el" href="classvsmc_1_1_m_k_l_base.html#ab180ef31f26fe76ef5675dd576100f44">pointer</a> <a class="el" href="classvsmc_1_1_m_k_l_base.html#af5c9ebe1f09e179e0a574ffb47e3337f">ptr</a>=nullptr)</td></tr>
+<tr class="separator:ac59d5b9ec1ff0edac67dfd26cdf88933 inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c02556dea51491d9f218e128682c9e inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a63c02556dea51491d9f218e128682c9e">swap</a> (<a class="el" href="classvsmc_1_1_m_k_l_base.html">MKLBase</a>&lt; VSLSSTaskPtr, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &gt; &amp;other)</td></tr>
+<tr class="separator:a63c02556dea51491d9f218e128682c9e inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae431415bef373b5b8d9c47ead19d6f77"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#ae431415bef373b5b8d9c47ead19d6f77">release</a> (VSLSSTaskPtr <a class="el" href="classvsmc_1_1_m_k_l_base.html#af5c9ebe1f09e179e0a574ffb47e3337f">ptr</a>)</td></tr>
+<tr class="separator:ae431415bef373b5b8d9c47ead19d6f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classvsmc_1_1_m_k_l_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvsmc_1_1_m_k_l_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvsmc_1_1_m_k_l_base.html">vsmc::MKLBase&lt; VSLSSTaskPtr, MKLSSTask&lt; ResultType &gt; &gt;</a></td></tr>
+<tr class="memitem:a0a1d743a78f41531affc32a4df56881d inherit pro_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a0a1d743a78f41531affc32a4df56881d">reset_ptr</a> (<a class="el" href="classvsmc_1_1_m_k_l_base.html#ab180ef31f26fe76ef5675dd576100f44">pointer</a> <a class="el" href="classvsmc_1_1_m_k_l_base.html#af5c9ebe1f09e179e0a574ffb47e3337f">ptr</a>=nullptr)</td></tr>
+<tr class="separator:a0a1d743a78f41531affc32a4df56881d inherit pro_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ResultType = double&gt;<br />
@@ -140,13 +175,13 @@ class vsmc::MKLSSTask&lt; ResultType &gt;</h3>
 
 <p>MKL <code>VSLSSTaskPtr</code> </p>
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00492">492</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00346">346</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="af2015bc194de2386cc2429505825d163"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
+template&lt;typename ResultType = double&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef ResultType <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::<a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a></td>
@@ -154,7 +189,7 @@ template&lt;typename ResultType  = double&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00495">495</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00349">349</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -163,7 +198,7 @@ template&lt;typename ResultType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
+template&lt;typename ResultType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -182,7 +217,7 @@ template&lt;typename ResultType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00497">497</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00351">351</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +225,7 @@ template&lt;typename ResultType  = double&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
+template&lt;typename ResultType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -244,129 +279,88 @@ template&lt;typename ResultType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00499">499</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1edbf82923996f9579bb891311503e59"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::<a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0ce6af2d22e494ef2110124b6f01cdca"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::<a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00356">356</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1d65085306a8e93e707e04bec332ad22"></a>
+<a class="anchor" id="ae431415bef373b5b8d9c47ead19d6f77"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
+template&lt;typename ResultType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt;ResultType&gt;&amp; <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::operator= </td>
+          <td class="memname">static <a class="el" href="classint.html">int</a> <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::release </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">VSLSSTaskPtr&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00364">364</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a7abb99e58b6ca7f29bd3d1893a2ba3a9"></a>
+<a class="anchor" id="aefbd982fb4662c2f5a9ad47e5cba9a2c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
+template&lt;typename ResultType = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt;ResultType&gt;&amp; <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classint.html">int</a> <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::reset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">MKLSSTask</a>&lt; ResultType &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3a00f5208f25f690a5a96dc78570676b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ResultType  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">VSLSSTaskPtr <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html">vsmc::MKLSSTask</a>&lt; ResultType &gt;::ptr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *&#160;</td>
+          <td class="paramname"><em>xstorage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#af2015bc194de2386cc2429505825d163">result_type</a> *&#160;</td>
+          <td class="paramname"><em>w</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a> *&#160;</td>
+          <td class="paramname"><em>indices</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -376,7 +370,7 @@ template&lt;typename ResultType  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00515">515</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00373">373</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>

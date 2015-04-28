@@ -121,6 +121,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1internal_1_1_m_k_l_offset_zero.html">vsmc::internal::MKLOffsetZero</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html">vsmc::MKLBase&lt; MKLPtr, Derived &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MKL resource management base class.  <a href="classvsmc_1_1_m_k_l_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base_1_1deleter__type.html">vsmc::MKLBase&lt; MKLPtr, Derived &gt;::deleter_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_conv_task.html">vsmc::MKLConvTask&lt; ResultType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MKL <code>VSLConvTaskPtr</code>  <a href="classvsmc_1_1_m_k_l_conv_task.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +162,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab03fefbe30408d4761cc111381150f37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_2mkl_8hpp.html#ab03fefbe30408d4761cc111381150f37">VSMC_DEFINE_UTILITY_MKL_ERROR</a>(STATUS)</td></tr>
-<tr class="separator:ab03fefbe30408d4761cc111381150f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a97f1869a88b888a3dbb50e06c1147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_2mkl_8hpp.html#ae3a97f1869a88b888a3dbb50e06c1147">VSMC_RUNTIME_ASSERT_UTILITY_MKL_VSL_OFFSET</a>(offset)</td></tr>
 <tr class="separator:ae3a97f1869a88b888a3dbb50e06c1147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a719ae12f849cb2ba74d82b2259b11c91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_2mkl_8hpp.html#a719ae12f849cb2ba74d82b2259b11c91">VSMC_STATIC_ASSERT_UTILITY_MKL_CONV_TASK_RESULT_TYPE</a>(ResultType)</td></tr>
@@ -172,36 +175,22 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af83d3802d5c13905407f30f524916f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af83d3802d5c13905407f30f524916f05">vsmc::internal::mkl_df_error_check</a> (<a class="el" href="classint.html">int</a> status, const char *func, const char *mklf)</td></tr>
-<tr class="separator:af83d3802d5c13905407f30f524916f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2499bebbbbfb92ddedabc2989fab1a90"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2499bebbbbfb92ddedabc2989fab1a90">vsmc::internal::mkl_df_error_str</a> (<a class="el" href="classint.html">int</a> status)</td></tr>
-<tr class="separator:a2499bebbbbfb92ddedabc2989fab1a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292d8b7f26e234878e85dd52d0ab24bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a292d8b7f26e234878e85dd52d0ab24bf">vsmc::internal::mkl_vsl_error_check</a> (<a class="el" href="classint.html">int</a> status, const char *func, const char *mklf)</td></tr>
-<tr class="separator:a292d8b7f26e234878e85dd52d0ab24bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb42bf20731b14dab1fcd8871c0e524"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aecb42bf20731b14dab1fcd8871c0e524">vsmc::internal::mkl_vsl_error_str</a> (<a class="el" href="classint.html">int</a> status)</td></tr>
-<tr class="separator:aecb42bf20731b14dab1fcd8871c0e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20587483170a64266511a450efa34aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a20587483170a64266511a450efa34aed">vsmc::internal::mkl_error_check</a> (<a class="el" href="classint.html">int</a> status, const char *func, const char *mklf)</td></tr>
+<tr class="separator:a20587483170a64266511a450efa34aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6be99fcfb1e8162e594779f409e62f04"><td class="memTemplParams" colspan="2">template&lt;typename MKLPtr , typename Derived &gt; </td></tr>
+<tr class="memitem:ga6be99fcfb1e8162e594779f409e62f04"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l.html#ga6be99fcfb1e8162e594779f409e62f04">vsmc::operator!=</a> (const MKLBase&lt; MKLPtr, Derived &gt; &amp;ptr1, const MKLBase&lt; MKLPtr, Derived &gt; &amp;ptr2)</td></tr>
+<tr class="memdesc:ga6be99fcfb1e8162e594779f409e62f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison of inequality of two <a class="el" href="classvsmc_1_1_m_k_l_base.html" title="MKL resource management base class. ">MKLBase</a> objects.  <a href="group___m_k_l.html#ga6be99fcfb1e8162e594779f409e62f04">More...</a><br /></td></tr>
+<tr class="separator:ga6be99fcfb1e8162e594779f409e62f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c6927e4d8b09f36d9b06d4b61a1843e"><td class="memTemplParams" colspan="2">template&lt;typename MKLPtr , typename Derived &gt; </td></tr>
+<tr class="memitem:ga5c6927e4d8b09f36d9b06d4b61a1843e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l.html#ga5c6927e4d8b09f36d9b06d4b61a1843e">vsmc::operator==</a> (const MKLBase&lt; MKLPtr, Derived &gt; &amp;ptr1, const MKLBase&lt; MKLPtr, Derived &gt; &amp;ptr2)</td></tr>
+<tr class="memdesc:ga5c6927e4d8b09f36d9b06d4b61a1843e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison of equality of two <a class="el" href="classvsmc_1_1_m_k_l_base.html" title="MKL resource management base class. ">MKLBase</a> objects.  <a href="group___m_k_l.html#ga5c6927e4d8b09f36d9b06d4b61a1843e">More...</a><br /></td></tr>
+<tr class="separator:ga5c6927e4d8b09f36d9b06d4b61a1843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1aebae7f424c442a21968df9bc03c18"><td class="memTemplParams" colspan="2">template&lt;typename MKLPtr , typename Derived &gt; </td></tr>
+<tr class="memitem:gac1aebae7f424c442a21968df9bc03c18"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l.html#gac1aebae7f424c442a21968df9bc03c18">vsmc::swap</a> (const MKLBase&lt; MKLPtr, Derived &gt; &amp;ptr1, const MKLBase&lt; MKLPtr, Derived &gt; &amp;ptr2)</td></tr>
+<tr class="memdesc:gac1aebae7f424c442a21968df9bc03c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap two <a class="el" href="classvsmc_1_1_m_k_l_base.html" title="MKL resource management base class. ">MKLBase</a> objects.  <a href="group___m_k_l.html#gac1aebae7f424c442a21968df9bc03c18">More...</a><br /></td></tr>
+<tr class="separator:gac1aebae7f424c442a21968df9bc03c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab03fefbe30408d4761cc111381150f37"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_DEFINE_UTILITY_MKL_ERROR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">STATUS</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (status == STATUS)                                                     \</div>
-<div class="line">        return #STATUS;</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00069">69</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ae3a97f1869a88b888a3dbb50e06c1147"></a>
 <div class="memitem">
 <div class="memproto">

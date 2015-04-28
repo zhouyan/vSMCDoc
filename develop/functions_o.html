@@ -140,8 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_dispatch_object.html#a43e51ae739cdd4e3f867fc558f936163">vsmc::DispatchObject&lt; DispatchType &gt;</a>
 </li>
 <li>offset()
-: <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_offset_dynamic.html#ae77898963f4c84ae6b552630cfdca37a">vsmc::internal::MKLOffsetDynamic&lt; MaxOffset &gt;</a>
-, <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_offset_zero.html#a20570acb0fa020498c01146b47c8ea8c">vsmc::internal::MKLOffsetZero</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a5e099c4051d30fd502746457266dc19b">vsmc::MKLStream&lt; BRNG &gt;</a>
 , <a class="el" href="classvsmc_1_1_state_m_p_i.html#a4f20730484f17c38054fd94edf28d2c2">vsmc::StateMPI&lt; BaseState, ID &gt;</a>
 </li>
 <li>opencl_c_version()
@@ -151,6 +150,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>opencl_version()
 : <a class="el" href="classvsmc_1_1_c_l_manager.html#a89312c520d2acb4f1d27d1e4e88324a9">vsmc::CLManager&lt; ID &gt;</a>
 , <a class="el" href="classvsmc_1_1_c_l_query.html#ac0c15b3f735a5a847fe848cf8bfc878b">vsmc::CLQuery</a>
+</li>
+<li>operator bool()
+: <a class="el" href="classvsmc_1_1_m_k_l_base.html#abc5b171e37826a41104263f60420eae5">vsmc::MKLBase&lt; MKLPtr, Derived &gt;</a>
 </li>
 <li>operator size_type()
 : <a class="el" href="structvsmc_1_1_position.html#a3a29b8bb78a121acab5a1ea89c3cec63">vsmc::Position&lt; N &gt;</a>
@@ -181,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_initialize_s_e_q.html#accd54023c21485e9efd3001b60bdd629">vsmc::InitializeSEQ&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_initialize_s_t_d.html#a6f59a0a3b6ddfaa728403babaf76767f">vsmc::InitializeSTD&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_initialize_t_b_b.html#ac6ee23359b57b8debf2c534d6e4863a4">vsmc::InitializeTBB&lt; T, Derived &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#a71a3cc3cb1798ee8a0087eaa899cbf5c">vsmc::internal::CLCopy&lt; ID &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#a80b75d6f3daf1485c9de9629428ba3a5">vsmc::internal::CLCopy&lt; ID &gt;</a>
 , <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_skip_ahead_force.html#a60a8cac67aa699ad73801f6ee78c0437">vsmc::internal::MKLSkipAheadForce&lt; BRNG, ResultType &gt;</a>
 , <a class="el" href="structvsmc_1_1internal_1_1_m_k_l_skip_ahead_v_s_l.html#acd07e4cb061d25c21709b3f9a227b83e">vsmc::internal::MKLSkipAheadVSL</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_parallel_copy_particle.html#afa74003eebc972c7496c2738b7d99a2c">vsmc::internal::ParallelCopyParticle&lt; T, IntType &gt;</a>
@@ -189,6 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1internal_1_1_parallel_monitor_state.html#a735a9a6bcbf7d7005b329ddcfec00f6d">vsmc::internal::ParallelMonitorState&lt; T, MonitorEvalType &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_parallel_move_state.html#aabe708ae2223fdf33807db346a00e755">vsmc::internal::ParallelMoveState&lt; T, MoveType &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html#a2b25db13feff3fb494a782ade8c23047">vsmc::internal::ParallelPathState&lt; T, PathEvalType &gt;</a>
+, <a class="el" href="classvsmc_1_1_m_k_l_base_1_1deleter__type.html#a6f5298823fec17590a1658be61ecd1c5">vsmc::MKLBase&lt; MKLPtr, Derived &gt;::deleter_type</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_distribution.html#a80a4351ad2aef12e570d66415b8ce55c">vsmc::MKLDistribution&lt; ResultType, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_engine.html#ab302f4804a31a37ef58686f5f39d6102">vsmc::MKLEngine&lt; BRNG, ResultType &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_c_i_l_k.html#a4b65963f023eb8005c5ecfad8cc50a5f">vsmc::MonitorEvalCILK&lt; T, Derived &gt;</a>
@@ -284,15 +287,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_initialize_s_e_q.html#aaaa8b6ab4f9f412ddfa96086f2ca230c">vsmc::InitializeSEQ&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_initialize_s_t_d.html#a954b84a1cfa6063185de607ea7855a06">vsmc::InitializeSTD&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_initialize_t_b_b.html#aa047b83e600c90420416349bdb23c11d">vsmc::InitializeTBB&lt; T, Derived &gt;</a>
+, <a class="el" href="classvsmc_1_1_m_k_l_base.html#a772912358efd2ffee17624df4eafe50c">vsmc::MKLBase&lt; MKLPtr, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_conv_task.html#acca6f14e6c32a621cb483d5d7a77c4f3">vsmc::MKLConvTask&lt; ResultType &gt;</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_corr_task.html#aa365572fe38cbf74ae5af0896721d73c">vsmc::MKLCorrTask&lt; ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_m_k_l_d_f_task.html#a215c900b53be185ffe4a6b7f09fe4fb7">vsmc::MKLDFTask&lt; ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a1d65085306a8e93e707e04bec332ad22">vsmc::MKLSSTask&lt; ResultType &gt;</a>
 , <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a25d0e13363e7d93019f48bb78b9ab5ad">vsmc::MKLStream&lt; BRNG &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_base.html#a2c44a6b0f0a84916780ac595467f7fab">vsmc::MonitorEvalBase&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#afb3c094969486088de5d9758befd1cc5">vsmc::MonitorEvalBase&lt; T, Virtual &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_c_i_l_k.html#a873029b06798ed3f4432fe9099aabd06">vsmc::MonitorEvalCILK&lt; T, Derived &gt;</a>
-, <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a9002aa597948a6f9187027ed0db26618">vsmc::MonitorEvalCL&lt; T, PlaceHolder &gt;</a>
+, <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a4001f31dbf35016f25808d33ef0d0038">vsmc::MonitorEvalCL&lt; T, PlaceHolder &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_g_c_d.html#a3ec3740c3fe65d22cfa295e3831ab5d5">vsmc::MonitorEvalGCD&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_o_m_p.html#acd8b3fb2383e6ecb21ac2b4e41243017">vsmc::MonitorEvalOMP&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_p_p_l.html#a79a46750c2b74eaeb4ec4b86728a362f">vsmc::MonitorEvalPPL&lt; T, Derived &gt;</a>
@@ -313,7 +315,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_path_eval_base.html#a4a4f0c83256ee3ba3f7a6f23a9f0d619">vsmc::PathEvalBase&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#abf239c7305722161e00cb48acb61f822">vsmc::PathEvalBase&lt; T, Virtual &gt;</a>
 , <a class="el" href="classvsmc_1_1_path_eval_c_i_l_k.html#ad2eef8032865b5637fb7b68a4dac3d58">vsmc::PathEvalCILK&lt; T, Derived &gt;</a>
-, <a class="el" href="classvsmc_1_1_path_eval_c_l.html#a55ce33dfb0b968d120a481b235a8cae8">vsmc::PathEvalCL&lt; T, PlaceHolder &gt;</a>
+, <a class="el" href="classvsmc_1_1_path_eval_c_l.html#ac6500e834bac3eb93dec3c074f941af6">vsmc::PathEvalCL&lt; T, PlaceHolder &gt;</a>
 , <a class="el" href="classvsmc_1_1_path_eval_g_c_d.html#a2cfb93fabcce2b5a922ed2b6cf3ed998">vsmc::PathEvalGCD&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_path_eval_o_m_p.html#a9598311b20ee4dac7ccb117a1e00fa1d">vsmc::PathEvalOMP&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_path_eval_p_p_l.html#a615ab62273c6ab672b3707680a745d0f">vsmc::PathEvalPPL&lt; T, Derived &gt;</a>
@@ -325,7 +327,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_seed_generator.html#a15b650d304af8255f2545d874be0b32b">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a>
 , <a class="el" href="classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#a8244539216fbf99ce41198a353d799ac">vsmc::SeedGenerator&lt; ID, std::array&lt; T, K &gt; &gt;</a>
 , <a class="el" href="structvsmc_1_1_state_tuple_base_1_1state__pack__type.html#a8394b998150d4157c11d1e5586eaa6b8">vsmc::StateTupleBase&lt; Order, T, Types &gt;::state_pack_type</a>
-, <a class="el" href="classvsmc_1_1_thread_guard.html#aa2300320a34af56be988d50d944b02ac">vsmc::ThreadGuard&lt; ThreadType &gt;</a>
+, <a class="el" href="classvsmc_1_1_thread_guard.html#a43e47dfa843c59bc33813ac795015fb2">vsmc::ThreadGuard&lt; ThreadType &gt;</a>
 , <a class="el" href="classvsmc_1_1_thread_num.html#a6e1f9d3866e6913ad0cfa34d824e92cd">vsmc::ThreadNum</a>
 , <a class="el" href="classvsmc_1_1_weight_set.html#a647221b27f7a799d2e05654e425d55fb">vsmc::WeightSet</a>
 </li>
@@ -371,7 +373,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_u01_sequence_systematic.html#aca239ca0d50fd1e1e751d875f749eb3e">vsmc::U01SequenceSystematic&lt; RngType &gt;</a>
 </li>
 <li>option()
-: <a class="el" href="classvsmc_1_1_program_option_map.html#a086787d4c05bbcd9f7331aef1a049bdb">vsmc::ProgramOptionMap</a>
+: <a class="el" href="classvsmc_1_1_program_option_map.html#a4f110dcf040af6990a8f61a3f3ea58b7">vsmc::ProgramOptionMap</a>
 </li>
 <li>other
 : <a class="el" href="structvsmc_1_1_aligned_allocator_1_1rebind.html#a35275f3829fb254e9d669b244cb7f0fb">vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;::rebind&lt; U &gt;</a>

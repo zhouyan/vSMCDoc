@@ -54,7 +54,7 @@ var searchData=
   ['get_5fspecific',['get_specific',['../classvsmc_1_1_dispatch_queue_base.html#a2f05ef3065df5db50263049cdc11cff0',1,'vsmc::DispatchQueueBase']]],
   ['global_5fid',['global_id',['../classvsmc_1_1_state_m_p_i.html#a98b2c58bc25b8223974a31a703c2a3ee',1,'vsmc::StateMPI']]],
   ['global_5fsize',['global_size',['../classvsmc_1_1_state_m_p_i.html#ae8945462d84294e865d6e0a16dc923f6',1,'vsmc::StateMPI']]],
-  ['grainsize',['grainsize',['../structvsmc_1_1traits_1_1_s_i_m_d_trait_3_01_s_s_e2_01_4.html#ac85c3420b15ce8458b2f3c45cf1539ae',1,'vsmc::traits::SIMDTrait&lt; SSE2 &gt;::grainsize()'],['../structvsmc_1_1traits_1_1_s_i_m_d_trait_3_01_a_v_x_01_4.html#a2c14c0d84372ddcd41b727a7ed525d1c',1,'vsmc::traits::SIMDTrait&lt; AVX &gt;::grainsize()'],['../classvsmc_1_1_blocked_range.html#a88f58a91eb64033dd9d0887f77c7f42c',1,'vsmc::BlockedRange::grainsize()']]],
+  ['grainsize',['grainsize',['../classvsmc_1_1_blocked_range.html#a88f58a91eb64033dd9d0887f77c7f42c',1,'vsmc::BlockedRange']]],
   ['grid',['grid',['../classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b',1,'vsmc::Path']]],
   ['grid_5fdata',['grid_data',['../classvsmc_1_1_path.html#a210292fee0d8f936ab7861d1f0e72ad1',1,'vsmc::Path']]],
   ['gsl_2ehpp',['gsl.hpp',['../gsl_8hpp.html',1,'']]],

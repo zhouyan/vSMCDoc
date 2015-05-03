@@ -336,7 +336,6 @@ var searchData=
   ['alignedmemorysys',['AlignedMemorySYS',['../classvsmc_1_1_aligned_memory_s_y_s.html',1,'vsmc']]],
   ['alignedmemorytbb',['AlignedMemoryTBB',['../classvsmc_1_1_aligned_memory_t_b_b.html',1,'vsmc']]],
   ['alignedvector',['AlignedVector',['../namespacevsmc.html#a71815f774e78a7daf2858f5bd1ed7388',1,'vsmc']]],
-  ['alignment',['alignment',['../structvsmc_1_1traits_1_1_s_i_m_d_trait_3_01_s_s_e2_01_4.html#a5758a47635f7d57aa9bcff3de309d303',1,'vsmc::traits::SIMDTrait&lt; SSE2 &gt;::alignment()'],['../structvsmc_1_1traits_1_1_s_i_m_d_trait_3_01_a_v_x_01_4.html#a6f26c882e79a9826969b6f53d6c7c095',1,'vsmc::traits::SIMDTrait&lt; AVX &gt;::alignment()']]],
   ['allocate',['allocate',['../classvsmc_1_1_aligned_allocator.html#ad300a7cfd9ae5472cdff4671650925da',1,'vsmc::AlignedAllocator']]],
   ['apply',['apply',['../classvsmc_1_1_dispatch_queue_base.html#a583f726f8a6f953b811ba3431f2e5b6b',1,'vsmc::DispatchQueueBase']]],
   ['apply_5ff',['apply_f',['../classvsmc_1_1_dispatch_queue_base.html#a177093a6795a9cec09574ffb62dc9212',1,'vsmc::DispatchQueueBase']]],
@@ -353,8 +352,8 @@ var searchData=
   ['ars_5f8x64',['ARS_8x64',['../group___a_e_s_n_i_r_n_g.html#ga437012899989e4ff8e91ef073d337730',1,'vsmc']]],
   ['arsengine',['ARSEngine',['../classvsmc_1_1_a_r_s_engine.html#a47f35e7b68f124329703c9e5f5753369',1,'vsmc::ARSEngine::ARSEngine(ResultType s=0)'],['../classvsmc_1_1_a_r_s_engine.html#aa43f62ddc34155ee9d8a27d4d77b4b59',1,'vsmc::ARSEngine::ARSEngine(SeedSeq &amp;seq, typename std::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, typename base_eng_type::result_type, typename base_eng_type::key_type, ARSEngine&lt; ResultType, Rounds, Blocks &gt;&gt;::value &gt;::type *=nullptr)'],['../classvsmc_1_1_a_r_s_engine.html#ad69bdde316dae703c4b2af4e227e60d3',1,'vsmc::ARSEngine::ARSEngine(const typename base_eng_type::key_type &amp;k)']]],
   ['arsengine',['ARSEngine',['../classvsmc_1_1_a_r_s_engine.html',1,'vsmc']]],
-  ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html#ab2028ba6003d2707d5dcb1d0a60ee55c',1,'vsmc::ARSKeySeq']]],
   ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html',1,'vsmc']]],
+  ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html#ab2028ba6003d2707d5dcb1d0a60ee55c',1,'vsmc::ARSKeySeq']]],
   ['arsweylconstanttrait',['ARSWeylConstantTrait',['../structvsmc_1_1traits_1_1_a_r_s_weyl_constant_trait.html',1,'vsmc::traits']]],
   ['arsweylconstantvalue',['ARSWeylConstantValue',['../structvsmc_1_1traits_1_1internal_1_1_a_r_s_weyl_constant_value.html',1,'vsmc::traits::internal']]],
   ['arsweylconstantvalue_3c_200_20_3e',['ARSWeylConstantValue&lt; 0 &gt;',['../structvsmc_1_1traits_1_1internal_1_1_a_r_s_weyl_constant_value_3_010_01_4.html',1,'vsmc::traits::internal']]],
@@ -365,8 +364,6 @@ var searchData=
   ['async',['async',['../classvsmc_1_1_dispatch_group.html#ac6223744630473514179a1607ac96c78',1,'vsmc::DispatchGroup::async(const DispatchQueue&lt; Type &gt; &amp;queue,::dispatch_block_t block) const '],['../classvsmc_1_1_dispatch_group.html#abedbd391509f2d3991e3e3d620f7916c',1,'vsmc::DispatchGroup::async(::dispatch_queue_t queue,::dispatch_block_t block) const '],['../classvsmc_1_1_dispatch_queue_base.html#a1dbb8bb4995c49fa2d3f3e558a44166c',1,'vsmc::DispatchQueueBase::async()']]],
   ['async_5ff',['async_f',['../classvsmc_1_1_dispatch_group.html#a0ae7b94ea2f80a1e375555d301201afe',1,'vsmc::DispatchGroup::async_f(const DispatchQueue&lt; Type &gt; &amp;queue, void *context,::dispatch_function_t work) const '],['../classvsmc_1_1_dispatch_group.html#aaccfdacf6bdcd2e5b94c3dd3bff1f713',1,'vsmc::DispatchGroup::async_f(::dispatch_queue_t queue, void *context,::dispatch_function_t work) const '],['../classvsmc_1_1_dispatch_queue_base.html#a6fa9b4b1b7c8f1347350505441ebd1a7',1,'vsmc::DispatchQueueBase::async_f()']]],
   ['auto_5fhelp',['auto_help',['../classvsmc_1_1_program_option_map.html#a1eff326ffe9f9c755ca2a13fa5f2d72c',1,'vsmc::ProgramOptionMap']]],
-  ['avx',['AVX',['../group___definitions.html#gga3fa1b131dbc4c9bb42ee36013355758da338ce98afbdd3551ff83935e5f3afd63',1,'vsmc']]],
-  ['avx2',['AVX2',['../group___definitions.html#gga3fa1b131dbc4c9bb42ee36013355758da7f3b607812a751944156ce3e88741169',1,'vsmc']]],
   ['adapter',['Adapter',['../group___r_n_g_adapter.html',1,'']]],
   ['arithmetic_20functions',['Arithmetic functions',['../group__v_arithmetic.html',1,'']]]
 ];

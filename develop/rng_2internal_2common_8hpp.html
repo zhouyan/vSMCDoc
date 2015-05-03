@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">common.hpp File Reference</div>  </div>
@@ -120,6 +121,27 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ad87ec48cde7e9233f1bbbb5b3e316755"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:ad87ec48cde7e9233f1bbbb5b3e316755"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad87ec48cde7e9233f1bbbb5b3e316755">vsmc::internal::ctr_type_128</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(VSMC_INT128)==0, std::array&lt; unsigned VSMC_INT128, sizeof(T)*K/sizeof(VSMC_INT128)&gt;, ctr_type_64&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:ad87ec48cde7e9233f1bbbb5b3e316755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b19ad53dc13930f4f626b9c082066fa"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a3b19ad53dc13930f4f626b9c082066fa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a3b19ad53dc13930f4f626b9c082066fa">vsmc::internal::ctr_type_16</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint16_t)==0, std::array&lt; std::uint16_t, sizeof(T)*K/sizeof(std::uint16_t)&gt;, ctr_type_8&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:a3b19ad53dc13930f4f626b9c082066fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac9915fcd23d22bd59c2feac7b0cb7b"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:aeac9915fcd23d22bd59c2feac7b0cb7b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aeac9915fcd23d22bd59c2feac7b0cb7b">vsmc::internal::ctr_type_32</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint32_t)==0, std::array&lt; std::uint32_t, sizeof(T)*K/sizeof(std::uint32_t)&gt;, ctr_type_16&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:aeac9915fcd23d22bd59c2feac7b0cb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b68d93970fdb4ef4a8e0971cb20dc16"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a3b68d93970fdb4ef4a8e0971cb20dc16"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a3b68d93970fdb4ef4a8e0971cb20dc16">vsmc::internal::ctr_type_64</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint64_t)==0, std::array&lt; std::uint64_t, sizeof(T)*K/sizeof(std::uint64_t)&gt;, ctr_type_32&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:a3b68d93970fdb4ef4a8e0971cb20dc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955cfa910b2c10aff8bc7cf22bdcc216"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a955cfa910b2c10aff8bc7cf22bdcc216"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a955cfa910b2c10aff8bc7cf22bdcc216">vsmc::internal::ctr_type_8</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint8_t)==0, std::array&lt; std::uint8_t, sizeof(T)*K/sizeof(std::uint8_t)&gt;, std::array&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:a955cfa910b2c10aff8bc7cf22bdcc216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0137f07631954bab413cc03646b4309e"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a0137f07631954bab413cc03646b4309e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a0137f07631954bab413cc03646b4309e">vsmc::internal::ctr_type_max</a> = ctr_type_128&lt; T, K &gt;</td></tr>
+<tr class="separator:a0137f07631954bab413cc03646b4309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

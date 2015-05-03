@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/opencl/cl_error.hpp File Reference</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/opencl/internal/common.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,30 +91,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_135876a3756b6bf5cb2475840e644e70.html">opencl</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_135876a3756b6bf5cb2475840e644e70.html">opencl</a></li><li class="navelem"><a class="el" href="dir_d1887395eb06730559f8e997d1a9d4f6.html">internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">cl_error.hpp File Reference</div>  </div>
+<div class="title">common.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="cl__wrapper_8hpp_source.html">vsmc/opencl/internal/cl_wrapper.hpp</a>&gt;</code><br />
+<code>#include &lt;OpenCL/opencl.h&gt;</code><br />
 </div>
-<p><a href="cl__error_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="opencl_2internal_2common_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_c_l_error.html">vsmc::CLError</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenCL exception.  <a href="classvsmc_1_1_c_l_error.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
@@ -122,35 +114,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a60b2f875112ad1aa471370fba3dc64f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl__error_8hpp.html#a60b2f875112ad1aa471370fba3dc64f0">VSMC_DEFINE_OPENCL_CL_ERROR_ERR</a>(STATUS)&#160;&#160;&#160;case STATUS: return #STATUS</td></tr>
-<tr class="separator:a60b2f875112ad1aa471370fba3dc64f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a207f9838352b0dbaf5dde9425b58ddf2">vsmc::internal::cl_error_str</a> (cl_int status)</td></tr>
-<tr class="separator:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd16b1805450c17331a481d30f3e170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">vsmc::internal::cl_error_check</a> (cl_int status, const char *func, const char *clf)</td></tr>
+<tr class="separator:abcd16b1805450c17331a481d30f3e170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a60b2f875112ad1aa471370fba3dc64f0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_DEFINE_OPENCL_CL_ERROR_ERR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">STATUS</td><td>)</td>
-          <td>&#160;&#160;&#160;case STATUS: return #STATUS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cl__error_8hpp_source.html#l00038">38</a> of file <a class="el" href="cl__error_8hpp_source.html">cl_error.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -206,7 +206,7 @@ class vsmc::Monitor&lt; T &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> for Monte Carlo integration. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00059">59</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00056">56</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a3cf17d8c70f5c02bd35e46bfd81742df"></a>
 <div class="memitem">
@@ -220,7 +220,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00064">64</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00061">61</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00062">62</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00059">59</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ template&lt;typename T&gt; </div>
 <p>The array <code>result</code> is of length <code>particle.size() * dim</code>, and it represents a row major matrix of dimension <code>particle.size()</code> by <code>dim</code>, say \(R\). Let \(W\) be the vector of the normalized weights. The <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> will be respoinsible to compute the importance sampling estimate \(r = R^TW\) and record it. For example, say the purpose of the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is to record the importance sampling estimates of \(E[h(X)]\) where \(h(X) = (h_1(X),\dots,h_d(X))\). Then <code>result</code> shall contain the evaluation of \(h(X_i)\) for each \(i\) from <code>0</code> to <code>particle.size() - 1</code> in the order \((h_1(X_0), \dots, h_d(X_0), h_1(X_1), \dots, h_d(X_1), \dots)\).</p>
 <p>After each evaluation, the iteration number <code>iter</code> and the imporatance sampling estimates are recorded and can be retrived by <code><a class="el" href="classvsmc_1_1_monitor.html#ab245c2db02ba9379be42302a229644db" title="Get the iteration index of the sampler of a given Monitor iteration. ">index()</a></code> and <code><a class="el" href="classvsmc_1_1_monitor.html#a350dd27f213440ecc2f8c5431c30164d" title="Get the latest Monte Carlo integration record of a given variable. ">record()</a></code>. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00110">110</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00107">107</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ template&lt;typename T&gt; </div>
 
 <p>Clear all records of the index and integrations. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00344">344</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00322">322</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ template&lt;typename T&gt; </div>
 
 <p>The dimension of the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a>. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00122">122</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00119">119</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the evaluation object is valid. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00147">147</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00144">144</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ template&lt;typename T&gt; </div>
 <p>Perform the evaluation for a given iteration and a Particle&lt;T&gt; object. </p>
 <p>This function is called by a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> at the end of each iteration. It does nothing if <code><a class="el" href="classvsmc_1_1_monitor.html#ab625b07b1211fb182b4c459a6d592c63" title="Whether the Monitor is actively recording results. ">recording()</a></code> returns <code>false</code>. Otherwise it use the user defined evaluation object to compute results. When a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is constructed, <code><a class="el" href="classvsmc_1_1_monitor.html#ab625b07b1211fb182b4c459a6d592c63" title="Whether the Monitor is actively recording results. ">recording()</a></code> always returns <code>true</code>. It can be turned off by <code><a class="el" href="classvsmc_1_1_monitor.html#a4cf19bb420d491539576417f06725c91" title="Turn off the recording. ">turn_off()</a></code> and turned on later by <code><a class="el" href="classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c" title="Turn on the recording. ">turn_on()</a></code>. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00295">295</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00292">292</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ template&lt;typename T&gt; </div>
 <p>Get the iteration index of the sampler of a given <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> iteration. </p>
 <p>For example, if a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is only added to the sampler at the sampler's iteration <code>siter</code>. Then <code>index(0)</code> will be <code>siter</code> and so on. If the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is added before the sampler's initialization and continued to be evaluated during the iterations without calling <code>turnoff()</code>, then iter(iter) shall just be <code>iter</code>. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00180">180</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00177">177</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the raw data of the index vector. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00222">222</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00219">219</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +529,7 @@ template&lt;typename T&gt; </div>
 <p>The number of iterations has been recorded. </p>
 <p>This is not necessarily the same as <a class="el" href="classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185" title="Number of iterations (including initialization) ">Sampler&lt;T&gt;::iter_size</a>. For example, a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> can be added only after a certain time point of the sampler's iterations. Also the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> can be turned off for a period during the iterations. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00137">137</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00134">134</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -560,7 +560,7 @@ template&lt;typename T&gt; </div>
 <p>Read and write access to the names of variables. </p>
 <p>By default, each variable of a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is unnamed and the returned string is empty. However, the user can selectively set the names of each variable. This effect how <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> will print the headers of the summary table. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00156">156</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00153">153</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +590,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the names of variables. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00164">164</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00161">161</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -622,7 +622,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read the index history through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00216">216</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00213">213</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read the record history for a given variable through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00238">238</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00235">235</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +702,7 @@ template&lt;typename OutputIterIter &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00251">251</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00248">248</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +741,7 @@ template&lt;MatrixOrder Order, typename OutputIter &gt; </div>
 </dl>
 <p>For example, say <code>first</code> is of type <code>double *</code>, then if <code>order == ColMajor</code>, then, <code>first[j * <a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">iter_size()</a> + i] == record(i, j)</code>. Otherwise, if <code>order == RowMajor</code>, then <code>first[i * <a class="el" href="classvsmc_1_1_monitor.html#a235c98adf8fd060ca5ddd7e8f4f034a7" title="The dimension of the Monitor. ">dim()</a> + j] == record(i, j)</code>. That is, the output is an <code><a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">iter_size()</a></code> by <code><a class="el" href="classvsmc_1_1_monitor.html#a235c98adf8fd060ca5ddd7e8f4f034a7" title="The dimension of the Monitor. ">dim()</a></code> matrix, with the usual meaning of column or row major order. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00268">268</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00265">265</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -772,7 +772,7 @@ template&lt;typename T&gt; </div>
 <p>Get the latest Monte Carlo integration record of a given variable. </p>
 <p>For a <code>dim</code> dimension <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a>, <code>id</code> shall be 0 to <code>dim</code> - 1 </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00192">192</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00189">189</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -813,7 +813,7 @@ template&lt;typename T&gt; </div>
 <p>Get the Monte Carlo integration record of a given variable and the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> iteration. </p>
 <p>For a <code>dim</code> dimension <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a>, <code>id</code> shall be 0 to <code>dim</code> - 1 </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00206">206</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00203">203</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the raw data of records (a row major matrix) </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00226">226</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00223">223</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -872,7 +872,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the raw data of records for a given <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> iteration. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00230">230</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00227">227</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -901,7 +901,7 @@ template&lt;typename T&gt; </div>
 
 <p>If this is a record only <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a>. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00125">125</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00122">122</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -930,7 +930,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is actively recording results. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00351">351</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00329">329</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,7 @@ template&lt;typename T&gt; </div>
 
 <p>Reserve space for a specified number of iterations. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00140">140</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00137">137</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -990,7 +990,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set a new evaluation object of type eval_type. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00284">284</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00281">281</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1019,7 @@ template&lt;typename T&gt; </div>
 
 <p>The stage of the Montior. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00128">128</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00125">125</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1048,7 @@ template&lt;typename T&gt; </div>
 
 <p>Turn off the recording. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00357">357</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00335">335</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1077,7 @@ template&lt;typename T&gt; </div>
 
 <p>Turn on the recording. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00354">354</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00332">332</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>

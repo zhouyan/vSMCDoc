@@ -142,10 +142,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4d40c4f59d225faae9573c3b9921682"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ad4d40c4f59d225faae9573c3b9921682">set</a> (<a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a> &amp;ctr, const <a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a> &amp;c)</td></tr>
 <tr class="memdesc:ad4d40c4f59d225faae9573c3b9921682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the counter to a given value.  <a href="#ad4d40c4f59d225faae9573c3b9921682">More...</a><br /></td></tr>
 <tr class="separator:ad4d40c4f59d225faae9573c3b9921682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b80412ccf19ee7188773a97d1b93b76"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a8b80412ccf19ee7188773a97d1b93b76"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#a8b80412ccf19ee7188773a97d1b93b76">set</a> (<a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a> &amp;ctr, const U &amp;c)</td></tr>
+<tr class="separator:a8b80412ccf19ee7188773a97d1b93b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4bfb6870dca8f39877f198a5758751"><td class="memTemplParams" colspan="2">template&lt;std::size_t Blocks&gt; </td></tr>
 <tr class="memitem:acb4bfb6870dca8f39877f198a5758751"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#acb4bfb6870dca8f39877f198a5758751">set</a> (std::array&lt; <a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a>, Blocks &gt; &amp;ctr, const <a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a> &amp;c)</td></tr>
 <tr class="memdesc:acb4bfb6870dca8f39877f198a5758751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a block of counters given the value of the first counter.  <a href="#acb4bfb6870dca8f39877f198a5758751">More...</a><br /></td></tr>
 <tr class="separator:acb4bfb6870dca8f39877f198a5758751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea0be69e8e835651bd38e3a33505df4"><td class="memTemplParams" colspan="2">template&lt;std::size_t Blocks, typename U &gt; </td></tr>
+<tr class="memitem:a3ea0be69e8e835651bd38e3a33505df4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#a3ea0be69e8e835651bd38e3a33505df4">set</a> (std::array&lt; <a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a>, Blocks &gt; &amp;ctr, const U &amp;c)</td></tr>
+<tr class="separator:a3ea0be69e8e835651bd38e3a33505df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, std::size_t K&gt;<br />
@@ -156,7 +162,7 @@ class vsmc::Counter&lt; std::array&lt; T, K &gt; &gt;</h3>
 <p>It deals with two types of counters. The first type is in the form <code>std::array&lt;T, K&gt;</code> where <code>T</code> is an unsigned integer type, treated as a <code>sizeof(T) * K * 8</code> bits integer. For example, <code>std::array&lt;std::uint32_t, 4&gt;</code> is treated as an 128-bits integer. The counter start with all elements being zero. The value of the integer can be calculated as, \(c_0 + c_1 M + c_2 M^2 +\cdots + c_{K-1} M^{K - 1}\), where \(c_i\) is the \(i\)th element in the <code>std::array</code> and has a range from zero to \(M - 1\), \(M\) is the largest number of type <code>T</code> plus one, that is \(2^n\) with \(n\) being the number of bits in type <code>T</code>.</p>
 <p>The second type is blocks of counters of the first type. For example, <code>std::array&lt;ctr_type, Blocks&gt;</code>, where <code>ctr_type</code> is a counter of the first type. When set and incremented using methods in this class, all <code>Blocks</code> counters are maintained such that, they are always distinctive. This is done by reserving eight bits as counter IDs. Therefore, there can be at most 256 blocks. The increment works by incrementing each counter the same way as in the first type, except that the last element, \(c_{K-1}\) has a range from zero to \(2^{n - 8} - 1\) where \(n\) is the number of bits in type <code>T</code>. Therefore, in the extreme case where <code>ctr_type</code> is <code>std::array&lt;uint8_t, 1&gt;</code>, increment won't change the counter at all. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00095">95</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00099">99</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ada01bf9b09ce87022c6718f1d7dd7aee"></a>
 <div class="memitem">
@@ -170,7 +176,7 @@ template&lt;typename T , std::size_t K&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00098">98</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00102">102</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +207,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Increment the counter by one. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00126">126</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00145">145</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +239,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Increment each counter in a block by one. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00133">133</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00152">152</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +279,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Increment a counter by a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00139">139</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00158">158</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +321,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Increment each counter in a block by a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00167">167</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00186">186</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +351,7 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Reset a counter to zero. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00112">112</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00131">131</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -377,7 +383,7 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Reset a block of counters with the first set to zero. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00119">119</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00138">138</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +423,47 @@ template&lt;typename T , std::size_t K&gt; </div>
 
 <p>Set the counter to a given value. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00101">101</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00105">105</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b80412ccf19ee7188773a97d1b93b76"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="classvsmc_1_1_counter.html">vsmc::Counter</a>&lt; std::array&lt; T, K &gt; &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00108">108</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +505,47 @@ template&lt;std::size_t Blocks&gt; </div>
 
 <p>Set a block of counters given the value of the first counter. </p>
 
-<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00105">105</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00116">116</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ea0be69e8e835651bd38e3a33505df4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+<div class="memtemplate">
+template&lt;std::size_t Blocks, typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="classvsmc_1_1_counter.html">vsmc::Counter</a>&lt; std::array&lt; T, K &gt; &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#ada01bf9b09ce87022c6718f1d7dd7aee">ctr_type</a>, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ctr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="counter_8hpp_source.html#l00123">123</a> of file <a class="el" href="counter_8hpp_source.html">counter.hpp</a>.</p>
 
 </div>
 </div>

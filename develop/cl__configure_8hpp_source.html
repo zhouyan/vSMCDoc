@@ -133,46 +133,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_OPENCL_CL_CONFIGURE_HPP</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_OPENCL_CL_CONFIGURE_HPP</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="internal_2common_8hpp.html">vsmc/internal/common.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="opencl_2internal_2common_8hpp.html">vsmc/opencl/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cl__manip_8hpp.html">vsmc/opencl/cl_manip.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cl__wrapper_8hpp.html">vsmc/opencl/internal/cl_wrapper.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_c_l_configure.html">CLConfigure</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#aed03fe347565cbd720d7e5c9590f400b">   47</a></span>&#160;    <a class="code" href="classvsmc_1_1_c_l_configure.html#aed03fe347565cbd720d7e5c9590f400b">CLConfigure</a>() : local_size_(0) {}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a">   49</a></span>&#160;    std::size_t <a class="code" href="classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a">local_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> local_size_; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36">local_size</a>(std::size_t new_size) { local_size_ = new_size; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#a58197fa082d1f62856a1c4f6ed5e0ca4">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_configure.html#a58197fa082d1f62856a1c4f6ed5e0ca4">local_size</a>(</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        std::size_t global_size;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">cl_preferred_work_size</a>(N, kern, dev, global_size, local_size_);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::size_t local_size_;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}; <span class="comment">// class CLConfigure</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_CONFIGURE_HPP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_c_l_configure.html">CLConfigure</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#aed03fe347565cbd720d7e5c9590f400b">   46</a></span>&#160;    <a class="code" href="classvsmc_1_1_c_l_configure.html#aed03fe347565cbd720d7e5c9590f400b">CLConfigure</a>() : local_size_(0) {}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a">   48</a></span>&#160;    std::size_t <a class="code" href="classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a">local_size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> local_size_; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36">local_size</a>(std::size_t new_size) { local_size_ = new_size; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classvsmc_1_1_c_l_configure.html#a44c57a48804e1b8264c9b17a17ffee03">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_c_l_configure.html#a44c57a48804e1b8264c9b17a17ffee03">local_size</a>(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::size_t N, ::cl_kernel kern, ::cl_device_id dev)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::size_t global_size;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">cl_preferred_work_size</a>(N, kern, dev, global_size, local_size_);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::size_t local_size_;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}; <span class="comment">// class CLConfigure</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_CONFIGURE_HPP</span></div>
+<div class="ttc" id="opencl_2internal_2common_8hpp_html"><div class="ttname"><a href="opencl_2internal_2common_8hpp.html">common.hpp</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_configure_html_a01d798ee97ead86439697518c5ca0b36"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36">vsmc::CLConfigure::local_size</a></div><div class="ttdeci">void local_size(std::size_t new_size)</div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00051">cl_configure.hpp:51</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_configure_html_aed03fe347565cbd720d7e5c9590f400b"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#aed03fe347565cbd720d7e5c9590f400b">vsmc::CLConfigure::CLConfigure</a></div><div class="ttdeci">CLConfigure()</div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00047">cl_configure.hpp:47</a></div></div>
-<div class="ttc" id="cl__wrapper_8hpp_html"><div class="ttname"><a href="cl__wrapper_8hpp.html">cl_wrapper.hpp</a></div></div>
-<div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_configure_html_a44c57a48804e1b8264c9b17a17ffee03"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#a44c57a48804e1b8264c9b17a17ffee03">vsmc::CLConfigure::local_size</a></div><div class="ttdeci">void local_size(std::size_t N,::cl_kernel kern,::cl_device_id dev)</div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00052">cl_configure.hpp:52</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_configure_html_a01d798ee97ead86439697518c5ca0b36"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36">vsmc::CLConfigure::local_size</a></div><div class="ttdeci">void local_size(std::size_t new_size)</div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00050">cl_configure.hpp:50</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_configure_html_aed03fe347565cbd720d7e5c9590f400b"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#aed03fe347565cbd720d7e5c9590f400b">vsmc::CLConfigure::CLConfigure</a></div><div class="ttdeci">CLConfigure()</div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00046">cl_configure.hpp:46</a></div></div>
 <div class="ttc" id="cl__manip_8hpp_html"><div class="ttname"><a href="cl__manip_8hpp.html">cl_manip.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_configure_html_aa79b17a94a4435b13cfd293c92117a1a"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a">vsmc::CLConfigure::local_size</a></div><div class="ttdeci">std::size_t local_size() const </div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00049">cl_configure.hpp:49</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_configure_html"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html">vsmc::CLConfigure</a></div><div class="ttdoc">Configure OpenCL runtime behavior (used by MoveCL etc) </div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00044">cl_configure.hpp:44</a></div></div>
-<div class="ttc" id="group___open_c_l_html_gafde473112f1a300151211340a9adfedf"><div class="ttname"><a href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">vsmc::cl_preferred_work_size</a></div><div class="ttdeci">std::size_t cl_preferred_work_size(std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div><div class="ttdoc">The preferred global and local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00082">cl_manip.hpp:82</a></div></div>
-<div class="ttc" id="classvsmc_1_1_c_l_configure_html_a58197fa082d1f62856a1c4f6ed5e0ca4"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#a58197fa082d1f62856a1c4f6ed5e0ca4">vsmc::CLConfigure::local_size</a></div><div class="ttdeci">void local_size(std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev)</div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00053">cl_configure.hpp:53</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_configure_html_aa79b17a94a4435b13cfd293c92117a1a"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a">vsmc::CLConfigure::local_size</a></div><div class="ttdeci">std::size_t local_size() const </div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00048">cl_configure.hpp:48</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_configure_html"><div class="ttname"><a href="classvsmc_1_1_c_l_configure.html">vsmc::CLConfigure</a></div><div class="ttdoc">Configure OpenCL runtime behavior (used by MoveCL etc) </div><div class="ttdef"><b>Definition:</b> <a href="cl__configure_8hpp_source.html#l00043">cl_configure.hpp:43</a></div></div>
+<div class="ttc" id="group___open_c_l_html_ga1e8e47d8cd7a0dd6c5835fe19f9f03d2"><div class="ttname"><a href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">vsmc::cl_preferred_work_size</a></div><div class="ttdeci">std::size_t cl_preferred_work_size(std::size_t N,::cl_kernel kern,::cl_device_id dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div><div class="ttdoc">The preferred global and local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00091">cl_manip.hpp:91</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

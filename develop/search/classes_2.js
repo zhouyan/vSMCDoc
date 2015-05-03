@@ -9,7 +9,6 @@ var searchData=
   ['clbuffer_3c_3a_3acl_5fulong_2c_20typename_20t_3a_3acl_5fid_20_3e',['CLBuffer&lt;::cl_ulong, typename T::cl_id &gt;',['../classvsmc_1_1_c_l_buffer.html',1,'vsmc']]],
   ['clconfigure',['CLConfigure',['../classvsmc_1_1_c_l_configure.html',1,'vsmc']]],
   ['clcopy',['CLCopy',['../classvsmc_1_1internal_1_1_c_l_copy.html',1,'vsmc::internal']]],
-  ['clerror',['CLError',['../classvsmc_1_1_c_l_error.html',1,'vsmc']]],
   ['clmanager',['CLManager',['../classvsmc_1_1_c_l_manager.html',1,'vsmc']]],
   ['closed',['Closed',['../structvsmc_1_1_closed.html',1,'vsmc']]],
   ['clquery',['CLQuery',['../classvsmc_1_1_c_l_query.html',1,'vsmc']]],

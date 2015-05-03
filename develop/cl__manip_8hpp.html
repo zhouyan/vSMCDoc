@@ -102,8 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">cl_manip.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="internal_2common_8hpp_source.html">vsmc/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="cl__wrapper_8hpp_source.html">vsmc/opencl/internal/cl_wrapper.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="opencl_2internal_2common_8hpp_source.html">vsmc/opencl/internal/common.hpp</a>&gt;</code><br />
 </div>
 <p><a href="cl__manip_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -117,18 +116,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5a6688b4d1eac1692e87b3dc2d19bb90"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">vsmc::cl_min_global_size</a> (std::size_t N, std::size_t local_size)</td></tr>
 <tr class="memdesc:ga5a6688b4d1eac1692e87b3dc2d19bb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum global size that is a multiple of the local size.  <a href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">More...</a><br /></td></tr>
 <tr class="separator:ga5a6688b4d1eac1692e87b3dc2d19bb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7478c54da9f63bbac0cef891b85e2174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga7478c54da9f63bbac0cef891b85e2174">vsmc::cl_minmax_local_size</a> (const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</td></tr>
-<tr class="memdesc:ga7478c54da9f63bbac0cef891b85e2174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the preferred factor of local size.  <a href="group___open_c_l.html#ga7478c54da9f63bbac0cef891b85e2174">More...</a><br /></td></tr>
-<tr class="separator:ga7478c54da9f63bbac0cef891b85e2174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafde473112f1a300151211340a9adfedf"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">vsmc::cl_preferred_work_size</a> (std::size_t N, const ::cl::Kernel &amp;kern, const ::cl::Device &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</td></tr>
-<tr class="memdesc:gafde473112f1a300151211340a9adfedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred global and local size.  <a href="group___open_c_l.html#gafde473112f1a300151211340a9adfedf">More...</a><br /></td></tr>
-<tr class="separator:gafde473112f1a300151211340a9adfedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f6a613cc257b0666e6e3892c7dca51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a38f6a613cc257b0666e6e3892c7dca51">vsmc::cl_set_kernel_args</a> (::cl::Kernel &amp;,::cl_uint)</td></tr>
-<tr class="separator:a38f6a613cc257b0666e6e3892c7dca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec4ad1392ac8e912b5506a4c96d685fc"><td class="memTemplParams" colspan="2">template&lt;typename Arg1 , typename... Args&gt; </td></tr>
-<tr class="memitem:gaec4ad1392ac8e912b5506a4c96d685fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#gaec4ad1392ac8e912b5506a4c96d685fc">vsmc::cl_set_kernel_args</a> (::cl::Kernel &amp;kern,::cl_uint offset, const Arg1 &amp;arg1, const Args &amp;...args)</td></tr>
-<tr class="memdesc:gaec4ad1392ac8e912b5506a4c96d685fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set OpenCL kernel arguments.  <a href="group___open_c_l.html#gaec4ad1392ac8e912b5506a4c96d685fc">More...</a><br /></td></tr>
-<tr class="separator:gaec4ad1392ac8e912b5506a4c96d685fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1373437670d976cf6599411076eb6d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga1373437670d976cf6599411076eb6d40">vsmc::cl_minmax_local_size</a> (::cl_kernel kern,::cl_device_id dev, std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</td></tr>
+<tr class="memdesc:ga1373437670d976cf6599411076eb6d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the preferred factor of local size.  <a href="group___open_c_l.html#ga1373437670d976cf6599411076eb6d40">More...</a><br /></td></tr>
+<tr class="separator:ga1373437670d976cf6599411076eb6d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e8e47d8cd7a0dd6c5835fe19f9f03d2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">vsmc::cl_preferred_work_size</a> (std::size_t N,::cl_kernel kern,::cl_device_id dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</td></tr>
+<tr class="memdesc:ga1e8e47d8cd7a0dd6c5835fe19f9f03d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The preferred global and local size.  <a href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">More...</a><br /></td></tr>
+<tr class="separator:ga1e8e47d8cd7a0dd6c5835fe19f9f03d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ef3aff9c012b0cb1562f24e63129d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ac2ef3aff9c012b0cb1562f24e63129d6">vsmc::cl_set_kernel_args</a> (::cl_kernel,::cl_uint)</td></tr>
+<tr class="separator:ac2ef3aff9c012b0cb1562f24e63129d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47180101cf604e5c19f877a5b57a4e58"><td class="memTemplParams" colspan="2">template&lt;typename Arg1 , typename... Args&gt; </td></tr>
+<tr class="memitem:ga47180101cf604e5c19f877a5b57a4e58"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___open_c_l.html#ga47180101cf604e5c19f877a5b57a4e58">vsmc::cl_set_kernel_args</a> (::cl_kernel kern,::cl_uint offset, const Arg1 &amp;arg1, const Args &amp;...args)</td></tr>
+<tr class="memdesc:ga47180101cf604e5c19f877a5b57a4e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set OpenCL kernel arguments.  <a href="group___open_c_l.html#ga47180101cf604e5c19f877a5b57a4e58">More...</a><br /></td></tr>
+<tr class="separator:ga47180101cf604e5c19f877a5b57a4e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

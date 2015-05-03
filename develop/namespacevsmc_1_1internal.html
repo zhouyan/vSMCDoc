@@ -899,6 +899,24 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ad87ec48cde7e9233f1bbbb5b3e316755"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:ad87ec48cde7e9233f1bbbb5b3e316755"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad87ec48cde7e9233f1bbbb5b3e316755">ctr_type_128</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(VSMC_INT128)==0, std::array&lt; unsigned VSMC_INT128, sizeof(T)*K/sizeof(VSMC_INT128)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#a3b68d93970fdb4ef4a8e0971cb20dc16">ctr_type_64</a>&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:ad87ec48cde7e9233f1bbbb5b3e316755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b19ad53dc13930f4f626b9c082066fa"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a3b19ad53dc13930f4f626b9c082066fa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a3b19ad53dc13930f4f626b9c082066fa">ctr_type_16</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint16_t)==0, std::array&lt; std::uint16_t, sizeof(T)*K/sizeof(std::uint16_t)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#a955cfa910b2c10aff8bc7cf22bdcc216">ctr_type_8</a>&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:a3b19ad53dc13930f4f626b9c082066fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac9915fcd23d22bd59c2feac7b0cb7b"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:aeac9915fcd23d22bd59c2feac7b0cb7b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aeac9915fcd23d22bd59c2feac7b0cb7b">ctr_type_32</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint32_t)==0, std::array&lt; std::uint32_t, sizeof(T)*K/sizeof(std::uint32_t)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#a3b19ad53dc13930f4f626b9c082066fa">ctr_type_16</a>&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:aeac9915fcd23d22bd59c2feac7b0cb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b68d93970fdb4ef4a8e0971cb20dc16"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a3b68d93970fdb4ef4a8e0971cb20dc16"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a3b68d93970fdb4ef4a8e0971cb20dc16">ctr_type_64</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint64_t)==0, std::array&lt; std::uint64_t, sizeof(T)*K/sizeof(std::uint64_t)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#aeac9915fcd23d22bd59c2feac7b0cb7b">ctr_type_32</a>&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:a3b68d93970fdb4ef4a8e0971cb20dc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955cfa910b2c10aff8bc7cf22bdcc216"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a955cfa910b2c10aff8bc7cf22bdcc216"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a955cfa910b2c10aff8bc7cf22bdcc216">ctr_type_8</a> = typename std::conditional&lt; sizeof(T)*K%sizeof(std::uint8_t)==0, std::array&lt; std::uint8_t, sizeof(T)*K/sizeof(std::uint8_t)&gt;, std::array&lt; T, K &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:a955cfa910b2c10aff8bc7cf22bdcc216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0137f07631954bab413cc03646b4309e"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:a0137f07631954bab413cc03646b4309e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a0137f07631954bab413cc03646b4309e">ctr_type_max</a> = <a class="el" href="namespacevsmc_1_1internal.html#ad87ec48cde7e9233f1bbbb5b3e316755">ctr_type_128</a>&lt; T, K &gt;</td></tr>
+<tr class="separator:a0137f07631954bab413cc03646b4309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf31046a37a5d224be4093d9387ed3a5"><td class="memItemLeft" align="right" valign="top">typedef std::integral_constant&lt; <a class="el" href="group___resample.html#ga1a8752b2b59489e6d5f11794af6d0cc6">ResampleScheme</a>, <a class="el" href="group___resample.html#gga1a8752b2b59489e6d5f11794af6d0cc6ad0279093e5873911db0cf701f9ea136d">Multinomial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#acf31046a37a5d224be4093d9387ed3a5">ResampleMultinomial</a></td></tr>
 <tr class="separator:acf31046a37a5d224be4093d9387ed3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16a7e463727473a108a51bcd17ac535"><td class="memItemLeft" align="right" valign="top">typedef std::integral_constant&lt; <a class="el" href="group___resample.html#ga1a8752b2b59489e6d5f11794af6d0cc6">ResampleScheme</a>, <a class="el" href="group___resample.html#gga1a8752b2b59489e6d5f11794af6d0cc6ad74d0a8ff2963455c6b231acbd3add60">Residual</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ae16a7e463727473a108a51bcd17ac535">ResampleResidual</a></td></tr>
@@ -914,8 +932,32 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a207f9838352b0dbaf5dde9425b58ddf2">cl_error_str</a> (cl_int status)</td></tr>
-<tr class="separator:a207f9838352b0dbaf5dde9425b58ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd16b1805450c17331a481d30f3e170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">cl_error_check</a> (cl_int status, const char *func, const char *clf)</td></tr>
+<tr class="separator:abcd16b1805450c17331a481d30f3e170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a13850546ccaf1b2a129b414bb9f7da"><td class="memTemplParams" colspan="2">template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:a6a13850546ccaf1b2a129b414bb9f7da"><td class="memTemplItemLeft" align="right" valign="top">ParamType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a6a13850546ccaf1b2a129b414bb9f7da">cl_get_dev_info</a> (CLPtrType ptr,::cl_device_id dev, GetInfoType get_info, ParamNameType param_name, const char *get_info_name, ParamType *)</td></tr>
+<tr class="separator:a6a13850546ccaf1b2a129b414bb9f7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfce3619e1902eff1531798d74613370"><td class="memTemplParams" colspan="2">template&lt;typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:acfce3619e1902eff1531798d74613370"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#acfce3619e1902eff1531798d74613370">cl_get_dev_info</a> (CLPtrType ptr,::cl_device_id dev, GetInfoType get_info, ParamNameType param_name, const char *get_info_name, std::string *)</td></tr>
+<tr class="separator:acfce3619e1902eff1531798d74613370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac65adb868aef35d48298a41f3da9fc"><td class="memTemplParams" colspan="2">template&lt;typename T , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:aaac65adb868aef35d48298a41f3da9fc"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aaac65adb868aef35d48298a41f3da9fc">cl_get_dev_info</a> (CLPtrType ptr,::cl_device_id dev, GetInfoType get_info, ParamNameType param_name, const char *get_info_name, std::vector&lt; T &gt; *)</td></tr>
+<tr class="separator:aaac65adb868aef35d48298a41f3da9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91286d7ec7ddd63c25dc853999efb80d"><td class="memTemplParams" colspan="2">template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:a91286d7ec7ddd63c25dc853999efb80d"><td class="memTemplItemLeft" align="right" valign="top">ParamType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a91286d7ec7ddd63c25dc853999efb80d">cl_get_dev_info</a> (CLPtrType ptr,::cl_device_id dev, GetInfoType get_info, ParamNameType param_name, const char *get_info_name)</td></tr>
+<tr class="separator:a91286d7ec7ddd63c25dc853999efb80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23009d08908c90f15a871a764f1bee60"><td class="memTemplParams" colspan="2">template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:a23009d08908c90f15a871a764f1bee60"><td class="memTemplItemLeft" align="right" valign="top">ParamType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a23009d08908c90f15a871a764f1bee60">cl_get_info</a> (CLPtrType ptr, GetInfoType get_info, ParamNameType param_name, const char *get_info_name, ParamType *)</td></tr>
+<tr class="separator:a23009d08908c90f15a871a764f1bee60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02702ff4fbd19d4ea3a01d91e197e117"><td class="memTemplParams" colspan="2">template&lt;typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:a02702ff4fbd19d4ea3a01d91e197e117"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a02702ff4fbd19d4ea3a01d91e197e117">cl_get_info</a> (CLPtrType ptr, GetInfoType get_info, ParamNameType param_name, const char *get_info_name, std::string *)</td></tr>
+<tr class="separator:a02702ff4fbd19d4ea3a01d91e197e117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda87fc152d4ccbf967e9dfe3bfd0d47"><td class="memTemplParams" colspan="2">template&lt;typename T , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:adda87fc152d4ccbf967e9dfe3bfd0d47"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#adda87fc152d4ccbf967e9dfe3bfd0d47">cl_get_info</a> (CLPtrType ptr, GetInfoType get_info, ParamNameType param_name, const char *get_info_name, std::vector&lt; T &gt; *)</td></tr>
+<tr class="separator:adda87fc152d4ccbf967e9dfe3bfd0d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6703c313bad620edc360fc4e141123"><td class="memTemplParams" colspan="2">template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </td></tr>
+<tr class="memitem:adc6703c313bad620edc360fc4e141123"><td class="memTemplItemLeft" align="right" valign="top">ParamType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#adc6703c313bad620edc360fc4e141123">cl_get_info</a> (CLPtrType ptr, GetInfoType get_info, ParamNameType param_name, const char *get_info_name)</td></tr>
+<tr class="separator:adc6703c313bad620edc360fc4e141123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplParams" colspan="2">template&lt;typename FPType &gt; </td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#abdf744ef86e3e50ed0eb39a552533ed6">cl_source_macros</a> (std::size_t size, std::size_t state_size, std::size_t seed)</td></tr>
 <tr class="separator:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1034,6 +1076,102 @@ Functions</h2></td></tr>
 <tr class="separator:ad39837d8fe674c3e8fdbfe051698c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ad87ec48cde7e9233f1bbbb5b3e316755"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#ad87ec48cde7e9233f1bbbb5b3e316755">vsmc::internal::ctr_type_128</a> = typedef typename std::conditional&lt;sizeof(T) * K % sizeof(VSMC_INT128) == 0, std::array&lt;unsigned VSMC_INT128, sizeof(T) * K / sizeof(VSMC_INT128)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#a3b68d93970fdb4ef4a8e0971cb20dc16">ctr_type_64</a>&lt;T, K&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00162">162</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b19ad53dc13930f4f626b9c082066fa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#a3b19ad53dc13930f4f626b9c082066fa">vsmc::internal::ctr_type_16</a> = typedef typename std::conditional&lt;sizeof(T) * K % sizeof(std::uint16_t) == 0, std::array&lt;std::uint16_t, sizeof(T) * K / sizeof(std::uint16_t)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#a955cfa910b2c10aff8bc7cf22bdcc216">ctr_type_8</a>&lt;T, K&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00143">143</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeac9915fcd23d22bd59c2feac7b0cb7b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#aeac9915fcd23d22bd59c2feac7b0cb7b">vsmc::internal::ctr_type_32</a> = typedef typename std::conditional&lt;sizeof(T) * K % sizeof(std::uint32_t) == 0, std::array&lt;std::uint32_t, sizeof(T) * K / sizeof(std::uint32_t)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#a3b19ad53dc13930f4f626b9c082066fa">ctr_type_16</a>&lt;T, K&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00149">149</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b68d93970fdb4ef4a8e0971cb20dc16"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#a3b68d93970fdb4ef4a8e0971cb20dc16">vsmc::internal::ctr_type_64</a> = typedef typename std::conditional&lt;sizeof(T) * K % sizeof(std::uint64_t) == 0, std::array&lt;std::uint64_t, sizeof(T) * K / sizeof(std::uint64_t)&gt;, <a class="el" href="namespacevsmc_1_1internal.html#aeac9915fcd23d22bd59c2feac7b0cb7b">ctr_type_32</a>&lt;T, K&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00155">155</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a955cfa910b2c10aff8bc7cf22bdcc216"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#a955cfa910b2c10aff8bc7cf22bdcc216">vsmc::internal::ctr_type_8</a> = typedef typename std::conditional&lt;sizeof(T) * K % sizeof(std::uint8_t) == 0, std::array&lt;std::uint8_t, sizeof(T) * K / sizeof(std::uint8_t)&gt;, std::array&lt;T, K&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00137">137</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0137f07631954bab413cc03646b4309e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t K&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#a0137f07631954bab413cc03646b4309e">vsmc::internal::ctr_type_max</a> = typedef <a class="el" href="namespacevsmc_1_1internal.html#ad87ec48cde7e9233f1bbbb5b3e316755">ctr_type_128</a>&lt;T, K&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00165">165</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="acf31046a37a5d224be4093d9387ed3a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1119,7 +1257,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a207f9838352b0dbaf5dde9425b58ddf2"></a>
+<a class="anchor" id="abcd16b1805450c17331a481d30f3e170"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1127,11 +1265,27 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string vsmc::internal::cl_error_str </td>
+          <td class="memname">void vsmc::internal::cl_error_check </td>
           <td>(</td>
           <td class="paramtype">cl_int&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>clf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1141,7 +1295,467 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cl__error_8hpp_source.html#l00047">47</a> of file <a class="el" href="cl__error_8hpp_source.html">cl_error.hpp</a>.</p>
+<p>Definition at line <a class="el" href="opencl_2internal_2common_8hpp_source.html#l00052">52</a> of file <a class="el" href="opencl_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a13850546ccaf1b2a129b414bb9f7da"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParamType vsmc::internal::cl_get_dev_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">::cl_device_id&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamType *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00104">104</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfce3619e1902eff1531798d74613370"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vsmc::internal::cl_get_dev_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">::cl_device_id&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00117">117</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaac65adb868aef35d48298a41f3da9fc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; vsmc::internal::cl_get_dev_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">::cl_device_id&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00137">137</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91286d7ec7ddd63c25dc853999efb80d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParamType vsmc::internal::cl_get_dev_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">::cl_device_id&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00156">156</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23009d08908c90f15a871a764f1bee60"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParamType vsmc::internal::cl_get_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamType *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00046">46</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02702ff4fbd19d4ea3a01d91e197e117"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vsmc::internal::cl_get_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00058">58</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adda87fc152d4ccbf967e9dfe3bfd0d47"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; vsmc::internal::cl_get_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00077">77</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc6703c313bad620edc360fc4e141123"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ParamType , typename CLPtrType , typename GetInfoType , typename ParamNameType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParamType vsmc::internal::cl_get_info </td>
+          <td>(</td>
+          <td class="paramtype">CLPtrType&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetInfoType&#160;</td>
+          <td class="paramname"><em>get_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParamNameType&#160;</td>
+          <td class="paramname"><em>param_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>get_info_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__query_8hpp_source.html#l00095">95</a> of file <a class="el" href="cl__query_8hpp_source.html">cl_query.hpp</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1799,7 @@ template&lt;typename FPType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00151">151</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00149">149</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -2443,7 +3057,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00133">133</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00131">131</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -2471,7 +3085,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00120">120</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00118">118</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -2521,7 +3135,7 @@ template&lt;typename IntType1 , typename IntType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00128">128</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2internal_2common_8hpp_source.html#l00128">128</a> of file <a class="el" href="resample_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -2571,7 +3185,7 @@ template&lt;typename IntType1 , typename IntType2 &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00090">90</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2internal_2common_8hpp_source.html#l00090">90</a> of file <a class="el" href="resample_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -2627,7 +3241,7 @@ template&lt;typename IntType , typename U01SeqType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00141">141</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2internal_2common_8hpp_source.html#l00141">141</a> of file <a class="el" href="resample_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -2683,7 +3297,7 @@ template&lt;typename IntType , typename U01SeqType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resample_2common_8hpp_source.html#l00060">60</a> of file <a class="el" href="resample_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2internal_2common_8hpp_source.html#l00060">60</a> of file <a class="el" href="resample_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

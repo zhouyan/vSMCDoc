@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad45375a857018f56f4adc1ce622b7be5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_seed_generator.html#a9515397ead102dad0c5c58aa8a49195d">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html#ad45375a857018f56f4adc1ce622b7be5">get</a> ()</td></tr>
 <tr class="memdesc:ad45375a857018f56f4adc1ce622b7be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a new seed.  <a href="#ad45375a857018f56f4adc1ce622b7be5">More...</a><br /></td></tr>
 <tr class="separator:ad45375a857018f56f4adc1ce622b7be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7529d6c006a8cfbf8188e39b464e9426"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_seed_generator.html#a9515397ead102dad0c5c58aa8a49195d">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html#a7529d6c006a8cfbf8188e39b464e9426">get_scalar</a> ()</td></tr>
+<tr class="separator:a7529d6c006a8cfbf8188e39b464e9426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a688b8d89d8040bff4057a8fd0e3f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html#a35a688b8d89d8040bff4057a8fd0e3f4">modulo</a> (<a class="el" href="classvsmc_1_1_seed_generator.html#adbee2b45301f634df6784129fc6401ee">skip_type</a> div, <a class="el" href="classvsmc_1_1_seed_generator.html#adbee2b45301f634df6784129fc6401ee">skip_type</a> rem)</td></tr>
 <tr class="memdesc:a35a688b8d89d8040bff4057a8fd0e3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the divisor and the remainder.  <a href="#a35a688b8d89d8040bff4057a8fd0e3f4">More...</a><br /></td></tr>
 <tr class="separator:a35a688b8d89d8040bff4057a8fd0e3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0678b98b7e5b3133422b665952e3100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_seed_generator.html#a9515397ead102dad0c5c58aa8a49195d">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html#aa0678b98b7e5b3133422b665952e3100">seed_max</a> () const </td></tr>
 <tr class="memdesc:aa0678b98b7e5b3133422b665952e3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum of the internal seed integer.  <a href="#aa0678b98b7e5b3133422b665952e3100">More...</a><br /></td></tr>
 <tr class="separator:aa0678b98b7e5b3133422b665952e3100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab129fc8edfe2b9c672e3072eee1dafaf"><td class="memTemplParams" colspan="2">template&lt;typename RngType &gt; </td></tr>
+<tr class="memitem:ab129fc8edfe2b9c672e3072eee1dafaf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html#ab129fc8edfe2b9c672e3072eee1dafaf">seed_rng</a> (RngType &amp;rng)</td></tr>
+<tr class="memdesc:ab129fc8edfe2b9c672e3072eee1dafaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to <code>rng.seed(get())</code>  <a href="#ab129fc8edfe2b9c672e3072eee1dafaf">More...</a><br /></td></tr>
+<tr class="separator:ab129fc8edfe2b9c672e3072eee1dafaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5d913c6cededea3f1f0da4dd353467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html#a7a5d913c6cededea3f1f0da4dd353467">set</a> (<a class="el" href="classvsmc_1_1_seed_generator.html#a9515397ead102dad0c5c58aa8a49195d">result_type</a> <a class="el" href="classvsmc_1_1_seed_generator.html#a92a47d94f39dfd571c00f5eacf410cfc">seed</a>)</td></tr>
 <tr class="memdesc:a7a5d913c6cededea3f1f0da4dd353467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the internal seed.  <a href="#a7a5d913c6cededea3f1f0da4dd353467">More...</a><br /></td></tr>
 <tr class="separator:a7a5d913c6cededea3f1f0da4dd353467"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,7 +270,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The divisor of the output seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00136">136</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00145">145</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +300,34 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 <p>Get a new seed. </p>
 <p>This member function is thread safe </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00113">113</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00120">120</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7529d6c006a8cfbf8188e39b464e9426"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ID, typename ResultType = unsigned&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_seed_generator.html#a9515397ead102dad0c5c58aa8a49195d">result_type</a> <a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator</a>&lt; ID, ResultType &gt;::get_scalar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00126">126</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +394,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Set the divisor and the remainder. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00142">142</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00151">151</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +449,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The remainder of the output seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00139">139</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00148">148</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +478,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The current internal seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00130">130</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00139">139</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +507,39 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The maximum of the internal seed integer. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00133">133</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00142">142</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab129fc8edfe2b9c672e3072eee1dafaf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ID, typename ResultType = unsigned&gt; </div>
+<div class="memtemplate">
+template&lt;typename RngType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator</a>&lt; ID, ResultType &gt;::seed_rng </td>
+          <td>(</td>
+          <td class="paramtype">RngType &amp;&#160;</td>
+          <td class="paramname"><em>rng</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Equivalent to <code>rng.seed(get())</code> </p>
+
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00111">111</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -505,7 +570,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 <p>Set the internal seed. </p>
 <p>If <code>seed</code> is larger than the maximum of the internal seed, than it will be round up to fit into the range. For example, say the range is from 1 to 1000, and the new internal seed is 6061, it will be round up to 61. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00127">127</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00136">136</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -535,7 +600,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Skip the internal seed by a given steps. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00158">158</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00167">167</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -564,7 +629,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Skip the internal seed by 1 step. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00166">166</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00175">175</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +670,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00169">169</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00178">178</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +710,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00184">184</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00193">193</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>

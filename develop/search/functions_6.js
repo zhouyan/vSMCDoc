@@ -28,6 +28,7 @@ var searchData=
   ['get_5fkernels',['get_kernels',['../classvsmc_1_1_c_l_program.html#a2e80492a275d2a24e9ab55332894e1b3',1,'vsmc::CLProgram']]],
   ['get_5flabel',['get_label',['../classvsmc_1_1_dispatch_queue_base.html#a6ee9847527dc77110baeaa0fdc9b151f',1,'vsmc::DispatchQueueBase']]],
   ['get_5fmask',['get_mask',['../classvsmc_1_1_dispatch_source_base.html#a8772965afffbd3a0d51fd2d904c65eda',1,'vsmc::DispatchSourceBase']]],
+  ['get_5fscalar',['get_scalar',['../classvsmc_1_1_seed_generator.html#a7529d6c006a8cfbf8188e39b464e9426',1,'vsmc::SeedGenerator::get_scalar()'],['../classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#a9e58c61da56969396c273d8b15e749bd',1,'vsmc::SeedGenerator&lt; ID, std::array&lt; T, K &gt; &gt;::get_scalar()']]],
   ['get_5fspecific',['get_specific',['../classvsmc_1_1_dispatch_queue_base.html#a2f05ef3065df5db50263049cdc11cff0',1,'vsmc::DispatchQueueBase']]],
   ['get_5fsupported_5fimage_5fformats',['get_supported_image_formats',['../classvsmc_1_1_c_l_context.html#a6bf43f3b83bd25a8e5b5048ea8401316',1,'vsmc::CLContext']]],
   ['global_5fid',['global_id',['../classvsmc_1_1_state_m_p_i.html#a98b2c58bc25b8223974a31a703c2a3ee',1,'vsmc::StateMPI']]],

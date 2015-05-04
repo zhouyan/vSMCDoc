@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup']]],
+  ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup::wait()'],['../classvsmc_1_1_c_l_event.html#a804162b22ae0a4832239d8840cc8b9e4',1,'vsmc::CLEvent::wait() const '],['../classvsmc_1_1_c_l_event.html#aae7edd76600690b130285bbb65c0bb10',1,'vsmc::CLEvent::wait(const std::vector&lt; CLEvent &gt; &amp;events)']]],
   ['watch_5ftype',['watch_type',['../classvsmc_1_1_stop_watch_guard.html#aae8e266dc2d01dcd2d2f68dcc0ddb77b',1,'vsmc::StopWatchGuard']]],
   ['ways',['ways',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ab28750e8a0c857c232c0d1af040ea6b8',1,'vsmc::CPUID::cache_param_type']]],
   ['wbinvd',['wbinvd',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ad2bd6e3c25743f8c1437a393ddb5bf17',1,'vsmc::CPUID::cache_param_type']]],
@@ -15,13 +15,14 @@ var searchData=
   ['weightsetbase',['WeightSetBase',['../class_weight_set_base.html',1,'']]],
   ['weightsetmpi',['WeightSetMPI',['../classvsmc_1_1_weight_set_m_p_i.html#a935304879a2bb9fd225e3f7b969f403e',1,'vsmc::WeightSetMPI']]],
   ['weightsetmpi',['WeightSetMPI',['../classvsmc_1_1_weight_set_m_p_i.html',1,'vsmc']]],
-  ['weightsetnull',['WeightSetNull',['../classvsmc_1_1_weight_set_null.html',1,'vsmc']]],
   ['weightsetnull',['WeightSetNull',['../classvsmc_1_1_weight_set_null.html#aeae6f3f9d74100b28fe931d817438557',1,'vsmc::WeightSetNull']]],
+  ['weightsetnull',['WeightSetNull',['../classvsmc_1_1_weight_set_null.html',1,'vsmc']]],
   ['weightsettypedispatch',['WeightSetTypeDispatch',['../structvsmc_1_1traits_1_1internal_1_1_weight_set_type_dispatch.html',1,'vsmc::traits::internal']]],
   ['weightsettypedispatch_3c_20t_2c_20false_20_3e',['WeightSetTypeDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_weight_set_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
   ['weightsettypedispatch_3c_20t_2c_20true_20_3e',['WeightSetTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_weight_set_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
   ['weightsettypetrait',['WeightSetTypeTrait',['../structvsmc_1_1traits_1_1_weight_set_type_trait.html',1,'vsmc::traits']]],
   ['weightsettypetrait_3c_20s_20_3e',['WeightSetTypeTrait&lt; S &gt;',['../structvsmc_1_1traits_1_1_weight_set_type_trait.html',1,'vsmc::traits']]],
+  ['work_5fgroup_5fsize',['work_group_size',['../classvsmc_1_1_c_l_kernel.html#a413d7299bf3448e2cdcd567b0b9cd6cd',1,'vsmc::CLKernel']]],
   ['world',['world',['../classvsmc_1_1_weight_set_m_p_i.html#a906e440d588352ab0191c84dccdcc845',1,'vsmc::WeightSetMPI::world()'],['../classvsmc_1_1_state_m_p_i.html#aaf9ebff4128f1f000d2b8b9163f5523c',1,'vsmc::StateMPI::world()']]],
-  ['write_5fbuffer',['write_buffer',['../classvsmc_1_1_c_l_manager.html#a0910a0873eed0aa63b63f649c884bc1b',1,'vsmc::CLManager::write_buffer(::cl_mem buf, std::size_t num, InputIter first, std::size_t offset=0,::cl_uint num_events_in_wait_list=0,::cl_event *event_wait_list=nullptr,::cl_event *event=nullptr, bool block=true) const '],['../classvsmc_1_1_c_l_manager.html#a2476f7c63bfc1352c3edc3062cad14e1',1,'vsmc::CLManager::write_buffer(::cl_mem buf, std::size_t num, const CLType *first, std::size_t offset=0,::cl_uint num_events_in_wait_list=0,::cl_event *event_wait_list=nullptr,::cl_event *event=nullptr, bool block=true) const '],['../classvsmc_1_1_c_l_manager.html#a0c82cde16aa66f9ed5daf410d23a304d',1,'vsmc::CLManager::write_buffer(::cl_mem buf, std::size_t num, CLType *first, std::size_t offset=0,::cl_uint num_events_in_wait_list=0,::cl_event *event_wait_list=nullptr,::cl_event *event=nullptr, bool block=true) const ']]]
+  ['write_5fbuffer',['write_buffer',['../classvsmc_1_1_c_l_manager.html#a3b175e6c925422d2730b107a9fdcbff4',1,'vsmc::CLManager::write_buffer(const CLMemory &amp;buf, std::size_t num, InputIter first, std::size_t offset=0, const std::vector&lt; CLEvent &gt; &amp;event_wait_list=std::vector&lt; CLEvent &gt;()) const '],['../classvsmc_1_1_c_l_manager.html#a6a6189230347af4c16f11970271538b4',1,'vsmc::CLManager::write_buffer(const CLMemory &amp;buf, std::size_t num, const CLType *first, std::size_t offset=0, const std::vector&lt; CLEvent &gt; &amp;event_wait_list=std::vector&lt; CLEvent &gt;()) const '],['../classvsmc_1_1_c_l_manager.html#a5207401b274d25b96828bc69a733df44',1,'vsmc::CLManager::write_buffer(const CLMemory &amp;buf, std::size_t num, CLType *first, std::size_t offset=0, const std::vector&lt; CLEvent &gt; &amp;event_wait_list=std::vector&lt; CLEvent &gt;()) const ']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['has_5fdevice',['has_device',['../classvsmc_1_1_c_l_query.html#ab97961e22c15dd40f1930fd1a9707acb',1,'vsmc::CLQuery::has_device(::cl_platform_id plat)'],['../classvsmc_1_1_c_l_query.html#a09e751eaa596bb0fe7e8e02e9e299f1f',1,'vsmc::CLQuery::has_device()']]],
-  ['has_5ffeature',['has_feature',['../classvsmc_1_1_c_l_query.html#ad3b09712387ac190b592db771b446412',1,'vsmc::CLQuery::has_feature()'],['../classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629',1,'vsmc::CPUID::has_feature()']]],
+  ['has_5fdevice',['has_device',['../classvsmc_1_1_c_l_query.html#a4636ecca87f6db3b1061c30a70e8d05e',1,'vsmc::CLQuery::has_device(const CLPlatform &amp;plat)'],['../classvsmc_1_1_c_l_query.html#a09e751eaa596bb0fe7e8e02e9e299f1f',1,'vsmc::CLQuery::has_device()']]],
+  ['has_5ffeature',['has_feature',['../classvsmc_1_1_c_l_query.html#a0e5abd5f7a52c6e629c7e2ea9c2c8113',1,'vsmc::CLQuery::has_feature()'],['../classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629',1,'vsmc::CPUID::has_feature()']]],
   ['hasconstsingleparticlebasetype',['HasConstSingleParticleBaseType',['../structvsmc_1_1traits_1_1internal_1_1_has_const_single_particle_base_type.html',1,'vsmc::traits::internal']]],
   ['hasconstsingleparticlebasetypeimpl',['HasConstSingleParticleBaseTypeImpl',['../structvsmc_1_1traits_1_1internal_1_1_has_const_single_particle_base_type_impl.html',1,'vsmc::traits::internal']]],
   ['hasrangetypeconstiterator',['HasRangeTypeConstIterator',['../structvsmc_1_1traits_1_1internal_1_1_has_range_type_const_iterator.html',1,'vsmc::traits::internal']]],

@@ -61,8 +61,11 @@ var searchData=
   ['uniformrealdistributionfrinttype_3c_200_2c_20static_5fcast_3c_20std_3a_3auint64_5ft_20_3e_28_7e_28static_5fcast_3c_20std_3a_3auint64_5ft_20_3e_280_29_29_29_3e',['UniformRealDistributionFRIntType&lt; 0, static_cast&lt; std::uint64_t &gt;(~(static_cast&lt; std::uint64_t &gt;(0)))&gt;',['../structvsmc_1_1internal_1_1_uniform_real_distribution_f_r_int_type_3_010_00_01static__cast_3_01sta47bb2e88b3142cb0fae3ae36dea773c.html',1,'vsmc::internal']]],
   ['uniformrealdistributionop',['UniformRealDistributionOp',['../classvsmc_1_1internal_1_1_uniform_real_distribution_op.html',1,'vsmc::internal']]],
   ['uniformrealdistributionop_3c_20fptype_2c_20left_2c_20right_2c_20eng_2c_20true_20_3e',['UniformRealDistributionOp&lt; FPType, Left, Right, Eng, true &gt;',['../classvsmc_1_1internal_1_1_uniform_real_distribution_op_3_01_f_p_type_00_01_left_00_01_right_00_01_eng_00_01true_01_4.html',1,'vsmc::internal']]],
+  ['unique',['unique',['../classvsmc_1_1_c_l_base.html#a7ea8dac667a1715aa154c8b41005bf79',1,'vsmc::CLBase']]],
+  ['unload_5fcompiler',['unload_compiler',['../classvsmc_1_1_c_l_platform.html#a2f49f72d90b464f1ab56d6c8d92748da',1,'vsmc::CLPlatform']]],
   ['update_5fstate',['update_state',['../classvsmc_1_1_state_c_l.html#a43345d1e873575e31d92c9f8066abef7',1,'vsmc::StateCL::update_state(::cl_mem_flags flag)'],['../classvsmc_1_1_state_c_l.html#a5b4fb8fe91b35b06c6f08539eb46f61e',1,'vsmc::StateCL::update_state(::cl_mem_flags flag, void *host_ptr)']]],
   ['urng_2eh',['urng.h',['../urng_8h.html',1,'']]],
+  ['use_5fcount',['use_count',['../classvsmc_1_1_c_l_base.html#a566c9b492e8d50cb0de9680191eec72c',1,'vsmc::CLBase']]],
   ['utility',['Utility',['../group___utility.html',1,'']]],
   ['utility_2ehpp',['utility.hpp',['../utility_8hpp.html',1,'']]]
 ];

@@ -198,7 +198,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">CLConfigure &amp;configure() { <span class="keywordflow">return</span> configure_; }                           \</div>
 <div class="line">    const CLConfigure &amp;configure()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> configure_; }               \</div>
-<div class="line">    const std::shared_ptr&lt;CLKernel&gt; &amp;kernel() { <span class="keywordflow">return</span> kernel_; }             \</div>
+<div class="line">    const CLKernel &amp;kernel() { <span class="keywordflow">return</span> kernel_; }                              \</div>
 <div class="line">    const std::string &amp;kernel_name()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> kernel_name_; }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00083">83</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -238,7 +238,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">CLConfigure configure_;                                                   \</div>
 <div class="line">    int build_id_;                                                            \</div>
-<div class="line">    std::shared_ptr&lt;CLKernel&gt; kernel_;                                        \</div>
+<div class="line">    CLKernel kernel_;                                                         \</div>
 <div class="line">    std::string kernel_name_</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00102">102</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
@@ -282,8 +282,8 @@ Functions</h2></td></tr>
 <div class="line">        build_id_ = particle.value().build_id();                              \</div>
 <div class="line">        kernel_name_ = kname;                                                 \</div>
 <div class="line">        kernel_ = particle.value().create_kernel(kernel_name_);               \</div>
-<div class="line">        configure_.local_size(particle.size(), kernel_.get(),                 \</div>
-<div class="line">            particle.value().manager().device().get());                       \</div>
+<div class="line">        configure_.local_size(                                                \</div>
+<div class="line">            particle.size(), kernel_, particle.value().manager().device());   \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00089">89</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>

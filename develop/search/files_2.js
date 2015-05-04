@@ -9,7 +9,6 @@ var searchData=
   ['cl_5fquery_2ehpp',['cl_query.hpp',['../cl__query_8hpp.html',1,'']]],
   ['cl_5fsetup_2ehpp',['cl_setup.hpp',['../cl__setup_8hpp.html',1,'']]],
   ['cl_5ftype_2ehpp',['cl_type.hpp',['../cl__type_8hpp.html',1,'']]],
-  ['cl_5fwrapper_2ehpp',['cl_wrapper.hpp',['../cl__wrapper_8hpp.html',1,'']]],
   ['clang_2ehpp',['clang.hpp',['../clang_8hpp.html',1,'']]],
   ['common_2eh',['common.h',['../common_8h.html',1,'']]],
   ['common_2ehpp',['common.hpp',['../resample_2internal_2common_8hpp.html',1,'']]],

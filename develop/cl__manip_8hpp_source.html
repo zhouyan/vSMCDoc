@@ -134,112 +134,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_OPENCL_CL_MANIP_HPP</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="opencl_2internal_2common_8hpp.html">vsmc/opencl/internal/common.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga1373437670d976cf6599411076eb6d40">   48</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___open_c_l.html#ga1373437670d976cf6599411076eb6d40">cl_minmax_local_size</a>(::cl_kernel kern, ::cl_device_id dev,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ::cl_int status = CL_SUCCESS;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    status = ::clGetKernelWorkGroupInfo(kern, dev,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE, <span class="keyword">sizeof</span>(std::size_t),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        &amp;factor, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        factor = lmax = mmax = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    status = ::clGetKernelWorkGroupInfo(kern, dev, CL_KERNEL_WORK_GROUP_SIZE,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">sizeof</span>(std::size_t), &amp;lmax, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        factor = lmax = mmax = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (factor == 0 || factor &gt; lmax) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        factor = lmax = mmax = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    mmax = lmax / factor;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">   78</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(std::size_t N, std::size_t local_size)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (local_size == 0)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> N;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cl__type_8hpp.html">vsmc/opencl/cl_type.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga1cc89030d35a47d6144aefa585a0169d">   49</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___open_c_l.html#ga1cc89030d35a47d6144aefa585a0169d">cl_minmax_local_size</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_kernel.html">CLKernel</a> &amp;kern, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_device.html">CLDevice</a> &amp;dev,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    factor = kern.<a class="code" href="classvsmc_1_1_c_l_kernel.html#ab8eba7ff406e51667310626b928e2732">preferred_work_group_size_multiple</a>(dev);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (factor == 0) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        factor = lmax = mmax = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    lmax = kern.<a class="code" href="classvsmc_1_1_c_l_kernel.html#a413d7299bf3448e2cdcd567b0b9cd6cd">work_group_size</a>(dev);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (lmax == 0) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        factor = lmax = mmax = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (factor &gt; lmax) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        factor = lmax = mmax = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    mmax = lmax / factor;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">   74</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(std::size_t N, std::size_t local_size)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (local_size == 0)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> N;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> (local_size &amp;&amp; N % local_size) ? (N / local_size + 1) * local_size :</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                            N;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> (local_size &amp;&amp; N % local_size) ? (N / local_size + 1) * local_size :</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                            N;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">   91</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">cl_preferred_work_size</a>(std::size_t N, ::cl_kernel kern,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    ::cl_device_id dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ::cl_int status = CL_SUCCESS;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::size_t reqd_size[3] = {0};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    status = ::clGetKernelWorkGroupInfo(kern, dev,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        CL_KERNEL_COMPILE_WORK_GROUP_SIZE, <span class="keyword">sizeof</span>(reqd_size), reqd_size,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (status == CL_SUCCESS &amp;&amp; reqd_size[0] != 0) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        local_size = reqd_size[0];</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        global_size = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, local_size);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> global_size - N;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::size_t factor;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::size_t lmax;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::size_t mmax;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="group___open_c_l.html#ga1373437670d976cf6599411076eb6d40">cl_minmax_local_size</a>(kern, dev, factor, lmax, mmax);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (lmax == 0) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        global_size = N;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        local_size = 0;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> global_size - N;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    local_size = lmax;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    global_size = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, local_size);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::size_t diff_size = global_size - N;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span> (std::size_t m = mmax; m &gt;= 1; --m) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        std::size_t l = m * factor;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        std::size_t g = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, l);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        std::size_t d = g - N;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span> (d &lt; diff_size) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            local_size = l;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            global_size = g;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            diff_size = d;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> diff_size;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ac2ef3aff9c012b0cb1562f24e63129d6">  135</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#ac2ef3aff9c012b0cb1562f24e63129d6">cl_set_kernel_args</a>(::cl_kernel, ::cl_uint) {}</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Arg1, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="group___open_c_l.html#ga47180101cf604e5c19f877a5b57a4e58">  147</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#ac2ef3aff9c012b0cb1562f24e63129d6">cl_set_kernel_args</a>(</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    ::cl_kernel kern, ::cl_uint offset, <span class="keyword">const</span> Arg1 &amp;arg1, <span class="keyword">const</span> Args &amp;... args)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    ::cl_int status = ::clSetKernelArg(kern, offset, <span class="keyword">sizeof</span>(Arg1), &amp;arg1);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">internal::cl_error_check</a>(status, <span class="stringliteral">&quot;cl_set_kernel_args&quot;</span>, <span class="stringliteral">&quot;::clSetKernelArg&quot;</span>);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="namespacevsmc.html#ac2ef3aff9c012b0cb1562f24e63129d6">cl_set_kernel_args</a>(kern, offset + 1, args...);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_MANIP_HPP</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___open_c_l.html#gafdc79428d1ed3f0fb239799a65ce9ce5">   87</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___open_c_l.html#gafdc79428d1ed3f0fb239799a65ce9ce5">cl_preferred_work_size</a>(std::size_t N, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_kernel.html">CLKernel</a> &amp;kern,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_device.html">CLDevice</a> &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::array&lt;std::size_t, 3&gt; reqd_size = kern.<a class="code" href="classvsmc_1_1_c_l_kernel.html#a9e0f756ec9543ce7821438e1faa3b1fa">compile_work_group_size</a>(dev);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (std::get&lt;0&gt;(reqd_size) != 0) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        local_size = std::get&lt;0&gt;(reqd_size);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        global_size = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, local_size);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> global_size - N;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::size_t factor;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::size_t lmax;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::size_t mmax;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="group___open_c_l.html#ga1cc89030d35a47d6144aefa585a0169d">cl_minmax_local_size</a>(kern, dev, factor, lmax, mmax);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (lmax == 0) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        global_size = N;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        local_size = 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> global_size - N;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    local_size = lmax;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    global_size = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, local_size);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::size_t diff_size = global_size - N;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">for</span> (std::size_t m = mmax; m &gt;= 1; --m) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::size_t l = m * factor;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        std::size_t g = <a class="code" href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">cl_min_global_size</a>(N, l);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::size_t d = g - N;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (d &lt; diff_size) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            local_size = l;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            global_size = g;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            diff_size = d;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> diff_size;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a4aad56b47995976acc82d855b487201b">  126</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#a4aad56b47995976acc82d855b487201b">cl_set_kernel_args</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_kernel.html">CLKernel</a> &amp;, ::cl_uint) {}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Arg1, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group___open_c_l.html#gae24316a42f59864c5dbf7478592c68d5">  138</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc.html#a4aad56b47995976acc82d855b487201b">cl_set_kernel_args</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_c_l_kernel.html">CLKernel</a> &amp;kern, ::cl_uint offset,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">const</span> Arg1 &amp;arg1, <span class="keyword">const</span> Args &amp;... args)</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    kern.<a class="code" href="classvsmc_1_1_c_l_kernel.html#a8025b3629dc28ed57f8d70aebfcc3926">set_arg</a>(offset, arg1);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="namespacevsmc.html#a4aad56b47995976acc82d855b487201b">cl_set_kernel_args</a>(kern, offset + 1, args...);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_MANIP_HPP</span></div>
 <div class="ttc" id="opencl_2internal_2common_8hpp_html"><div class="ttname"><a href="opencl_2internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_kernel_html"><div class="ttname"><a href="classvsmc_1_1_c_l_kernel.html">vsmc::CLKernel</a></div><div class="ttdoc">OpenCL cl_kernel wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l00962">cl_type.hpp:962</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
-<div class="ttc" id="namespacevsmc_html_ac2ef3aff9c012b0cb1562f24e63129d6"><div class="ttname"><a href="namespacevsmc.html#ac2ef3aff9c012b0cb1562f24e63129d6">vsmc::cl_set_kernel_args</a></div><div class="ttdeci">void cl_set_kernel_args(::cl_kernel,::cl_uint)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00135">cl_manip.hpp:135</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_abcd16b1805450c17331a481d30f3e170"><div class="ttname"><a href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">vsmc::internal::cl_error_check</a></div><div class="ttdeci">void cl_error_check(cl_int status, const char *func, const char *clf)</div><div class="ttdef"><b>Definition:</b> <a href="opencl_2internal_2common_8hpp_source.html#l00052">common.hpp:52</a></div></div>
-<div class="ttc" id="group___open_c_l_html_ga5a6688b4d1eac1692e87b3dc2d19bb90"><div class="ttname"><a href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">vsmc::cl_min_global_size</a></div><div class="ttdeci">std::size_t cl_min_global_size(std::size_t N, std::size_t local_size)</div><div class="ttdoc">The minimum global size that is a multiple of the local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00078">cl_manip.hpp:78</a></div></div>
-<div class="ttc" id="group___open_c_l_html_ga1373437670d976cf6599411076eb6d40"><div class="ttname"><a href="group___open_c_l.html#ga1373437670d976cf6599411076eb6d40">vsmc::cl_minmax_local_size</a></div><div class="ttdeci">void cl_minmax_local_size(::cl_kernel kern,::cl_device_id dev, std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</div><div class="ttdoc">Query the preferred factor of local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00048">cl_manip.hpp:48</a></div></div>
-<div class="ttc" id="group___open_c_l_html_ga1e8e47d8cd7a0dd6c5835fe19f9f03d2"><div class="ttname"><a href="group___open_c_l.html#ga1e8e47d8cd7a0dd6c5835fe19f9f03d2">vsmc::cl_preferred_work_size</a></div><div class="ttdeci">std::size_t cl_preferred_work_size(std::size_t N,::cl_kernel kern,::cl_device_id dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div><div class="ttdoc">The preferred global and local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00091">cl_manip.hpp:91</a></div></div>
+<div class="ttc" id="group___open_c_l_html_gafdc79428d1ed3f0fb239799a65ce9ce5"><div class="ttname"><a href="group___open_c_l.html#gafdc79428d1ed3f0fb239799a65ce9ce5">vsmc::cl_preferred_work_size</a></div><div class="ttdeci">std::size_t cl_preferred_work_size(std::size_t N, const CLKernel &amp;kern, const CLDevice &amp;dev, std::size_t &amp;global_size, std::size_t &amp;local_size)</div><div class="ttdoc">The preferred global and local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00087">cl_manip.hpp:87</a></div></div>
+<div class="ttc" id="cl__type_8hpp_html"><div class="ttname"><a href="cl__type_8hpp.html">cl_type.hpp</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_kernel_html_a9e0f756ec9543ce7821438e1faa3b1fa"><div class="ttname"><a href="classvsmc_1_1_c_l_kernel.html#a9e0f756ec9543ce7821438e1faa3b1fa">vsmc::CLKernel::compile_work_group_size</a></div><div class="ttdeci">std::array&lt; std::size_t, 3 &gt; compile_work_group_size(const CLDevice &amp;device) const </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l01046">cl_type.hpp:1046</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_kernel_html_ab8eba7ff406e51667310626b928e2732"><div class="ttname"><a href="classvsmc_1_1_c_l_kernel.html#ab8eba7ff406e51667310626b928e2732">vsmc::CLKernel::preferred_work_group_size_multiple</a></div><div class="ttdeci">std::size_t preferred_work_group_size_multiple(const CLDevice &amp;device) const </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l01072">cl_type.hpp:1072</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_device_html"><div class="ttname"><a href="classvsmc_1_1_c_l_device.html">vsmc::CLDevice</a></div><div class="ttdoc">OpenCL cl_device_id wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l00181">cl_type.hpp:181</a></div></div>
+<div class="ttc" id="group___open_c_l_html_ga5a6688b4d1eac1692e87b3dc2d19bb90"><div class="ttname"><a href="group___open_c_l.html#ga5a6688b4d1eac1692e87b3dc2d19bb90">vsmc::cl_min_global_size</a></div><div class="ttdeci">std::size_t cl_min_global_size(std::size_t N, std::size_t local_size)</div><div class="ttdoc">The minimum global size that is a multiple of the local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00074">cl_manip.hpp:74</a></div></div>
+<div class="ttc" id="group___open_c_l_html_ga1cc89030d35a47d6144aefa585a0169d"><div class="ttname"><a href="group___open_c_l.html#ga1cc89030d35a47d6144aefa585a0169d">vsmc::cl_minmax_local_size</a></div><div class="ttdeci">void cl_minmax_local_size(const CLKernel &amp;kern, const CLDevice &amp;dev, std::size_t &amp;factor, std::size_t &amp;lmax, std::size_t &amp;mmax)</div><div class="ttdoc">Query the preferred factor of local size. </div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00049">cl_manip.hpp:49</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_kernel_html_a8025b3629dc28ed57f8d70aebfcc3926"><div class="ttname"><a href="classvsmc_1_1_c_l_kernel.html#a8025b3629dc28ed57f8d70aebfcc3926">vsmc::CLKernel::set_arg</a></div><div class="ttdeci">::cl_int set_arg(::cl_uint arg_index, const T &amp;arg) const </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l00979">cl_type.hpp:979</a></div></div>
+<div class="ttc" id="classvsmc_1_1_c_l_kernel_html_a413d7299bf3448e2cdcd567b0b9cd6cd"><div class="ttname"><a href="classvsmc_1_1_c_l_kernel.html#a413d7299bf3448e2cdcd567b0b9cd6cd">vsmc::CLKernel::work_group_size</a></div><div class="ttdeci">std::size_t work_group_size(const CLDevice &amp;device) const </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l01035">cl_type.hpp:1035</a></div></div>
+<div class="ttc" id="namespacevsmc_html_a4aad56b47995976acc82d855b487201b"><div class="ttname"><a href="namespacevsmc.html#a4aad56b47995976acc82d855b487201b">vsmc::cl_set_kernel_args</a></div><div class="ttdeci">void cl_set_kernel_args(const CLKernel &amp;,::cl_uint)</div><div class="ttdef"><b>Definition:</b> <a href="cl__manip_8hpp_source.html#l00126">cl_manip.hpp:126</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

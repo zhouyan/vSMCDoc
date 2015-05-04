@@ -141,41 +141,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;CL/opencl.h&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if VSMC_NO_RUNTIME_ASSERT</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">cl_error_check</a>(cl_int, <span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *) {}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">   52</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">cl_error_check</a>(cl_int status, <span class="keyword">const</span> <span class="keywordtype">char</span> *func, <span class="keyword">const</span> <span class="keywordtype">char</span> *clf)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (status == CL_SUCCESS)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined(CL_VERSION_2_0)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define VSMC_OPENCL_VERSION 200</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#elif defined(CL_VERSION_1_2)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define VSMC_OPENCL_VERSION 120</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#elif defined(CL_VERSION_1_1)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define VSMC_OPENCL_VERSION 110</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="opencl_2internal_2common_8hpp.html#af706fd341d56625be924da72a0d900e7">   50</a></span>&#160;<span class="preprocessor">#define VSMC_OPENCL_VERSION 100</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if VSMC_OPENCL_VERSION &lt; 120</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#error vSMC OpenCL module requires at least version 1.2 runtime</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::string msg(<span class="stringliteral">&quot;**&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    msg += func;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    msg += <span class="stringliteral">&quot;** failure&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    msg += <span class="stringliteral">&quot;; OpenCL function: &quot;</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    msg += clf;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    msg += <span class="stringliteral">&quot;; Error code: &quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    msg += <a class="code" href="namespacevsmc_1_1internal.html#aa29c5a98ac7e0052cfd28a3d349cddaf">itos</a>(status);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((status == CL_SUCCESS), msg.c_str());</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if VSMC_NO_RUNTIME_ASSERT</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">cl_error_check</a>(cl_int, <span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *) {}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">   66</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">cl_error_check</a>(cl_int status, <span class="keyword">const</span> <span class="keywordtype">char</span> *func, <span class="keyword">const</span> <span class="keywordtype">char</span> *clf)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (status == CL_SUCCESS)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_INTERNAL_COMMON_HPP</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string msg(<span class="stringliteral">&quot;**&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    msg += func;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    msg += <span class="stringliteral">&quot;** failure&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    msg += <span class="stringliteral">&quot;; OpenCL function: &quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    msg += clf;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    msg += <span class="stringliteral">&quot;; Error code: &quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    msg += <a class="code" href="namespacevsmc_1_1internal.html#aa29c5a98ac7e0052cfd28a3d349cddaf">itos</a>(status);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((status == CL_SUCCESS), msg.c_str());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_INTERNAL_COMMON_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 <div class="ttc" id="namespacevsmc_1_1internal_html_aa29c5a98ac7e0052cfd28a3d349cddaf"><div class="ttname"><a href="namespacevsmc_1_1internal.html#aa29c5a98ac7e0052cfd28a3d349cddaf">vsmc::internal::itos</a></div><div class="ttdeci">std::string itos(UIntType i, std::true_type)</div><div class="ttdef"><b>Definition:</b> <a href="internal_2common_8hpp_source.html#l00086">common.hpp:86</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_abcd16b1805450c17331a481d30f3e170"><div class="ttname"><a href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">vsmc::internal::cl_error_check</a></div><div class="ttdeci">void cl_error_check(cl_int status, const char *func, const char *clf)</div><div class="ttdef"><b>Definition:</b> <a href="opencl_2internal_2common_8hpp_source.html#l00052">common.hpp:52</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_abcd16b1805450c17331a481d30f3e170"><div class="ttname"><a href="namespacevsmc_1_1internal.html#abcd16b1805450c17331a481d30f3e170">vsmc::internal::cl_error_check</a></div><div class="ttdeci">void cl_error_check(cl_int status, const char *func, const char *clf)</div><div class="ttdef"><b>Definition:</b> <a href="opencl_2internal_2common_8hpp_source.html#l00066">common.hpp:66</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

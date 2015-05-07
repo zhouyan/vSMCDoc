@@ -43,13 +43,9 @@ var searchData=
   ['vsmc_5fdefine_5futility_5fcpuid_5ffeature_5finfo_5fext',['VSMC_DEFINE_UTILITY_CPUID_FEATURE_INFO_EXT',['../cpuid_8hpp.html#a48a89091eb1268796e964b5c79d21678',1,'cpuid.hpp']]],
   ['vsmc_5fgcc_5fnonexist',['VSMC_GCC_NONEXIST',['../gcc_8hpp.html#ad9beed1d9b7593ef74c18aa77306c308',1,'gcc.hpp']]],
   ['vsmc_5fgcc_5fversion',['VSMC_GCC_VERSION',['../gcc_8hpp.html#a2f4092416cf5eb90d47c34dfc8fc76f2',1,'gcc.hpp']]],
-  ['vsmc_5fhas_5faccelerate',['VSMC_HAS_ACCELERATE',['../config_8hpp.html#aa49b30cb5e18c1f5939e8977bd0413fa',1,'config.hpp']]],
   ['vsmc_5fhas_5faes_5fni',['VSMC_HAS_AES_NI',['../intel_8hpp.html#a1c120b7a67d77fe92b84656704940ac9',1,'intel.hpp']]],
-  ['vsmc_5fhas_5fjemalloc',['VSMC_HAS_JEMALLOC',['../config_8hpp.html#a91166cf9c6bc104352f798171eeab6dc',1,'config.hpp']]],
-  ['vsmc_5fhas_5fjemalloc_5fstdapi',['VSMC_HAS_JEMALLOC_STDAPI',['../config_8hpp.html#ad90636c6a98fbd00a0f74e412a5b4356',1,'config.hpp']]],
   ['vsmc_5fhas_5fposix',['VSMC_HAS_POSIX',['../compiler_8hpp.html#adcabc5ea095e4ecab179277c8a9ff59d',1,'compiler.hpp']]],
   ['vsmc_5fhas_5frdrand',['VSMC_HAS_RDRAND',['../intel_8hpp.html#ab9de6e9b458fd0dfea162f539d1f30fc',1,'intel.hpp']]],
-  ['vsmc_5fhas_5ftbb_5fmalloc',['VSMC_HAS_TBB_MALLOC',['../config_8hpp.html#a09ccbaae6b6225aeaab5ba1e760e7799',1,'config.hpp']]],
   ['vsmc_5fhas_5fx86',['VSMC_HAS_X86',['../compiler_8hpp.html#ad5a05ade9875b183be97708ed3d10f84',1,'compiler.hpp']]],
   ['vsmc_5fint64',['VSMC_INT64',['../clang_8hpp.html#a0361fff6e12115450ba1d0ef2e696f10',1,'VSMC_INT64():&#160;clang.hpp'],['../gcc_8hpp.html#a0361fff6e12115450ba1d0ef2e696f10',1,'VSMC_INT64():&#160;gcc.hpp'],['../intel_8hpp.html#a0361fff6e12115450ba1d0ef2e696f10',1,'VSMC_INT64():&#160;intel.hpp'],['../msvc_8hpp.html#a0361fff6e12115450ba1d0ef2e696f10',1,'VSMC_INT64():&#160;msvc.hpp'],['../compiler_8hpp.html#a0361fff6e12115450ba1d0ef2e696f10',1,'VSMC_INT64():&#160;compiler.hpp']]],
   ['vsmc_5fintel_5fnonexist',['VSMC_INTEL_NONEXIST',['../intel_8hpp.html#ae1155ab7202001e0490acfe0e0b74cca',1,'intel.hpp']]],
@@ -155,11 +151,5 @@ var searchData=
   ['vsmc_5fstatic_5fassert_5futility_5fmkl_5fcorr_5ftask_5fresult_5ftype',['VSMC_STATIC_ASSERT_UTILITY_MKL_CORR_TASK_RESULT_TYPE',['../utility_2mkl_8hpp.html#a8bdc6f95c4ac2ac276ded17a0064aa49',1,'mkl.hpp']]],
   ['vsmc_5fstatic_5fassert_5futility_5fmkl_5fdf_5ftask_5fresult_5ftype',['VSMC_STATIC_ASSERT_UTILITY_MKL_DF_TASK_RESULT_TYPE',['../utility_2mkl_8hpp.html#a947f442deb5244e1d8781da25cf16470',1,'mkl.hpp']]],
   ['vsmc_5fstatic_5fassert_5futility_5fmkl_5fss_5ftask_5fresult_5ftype',['VSMC_STATIC_ASSERT_UTILITY_MKL_SS_TASK_RESULT_TYPE',['../utility_2mkl_8hpp.html#aa71b223b6085647dfb0da226c79d17b3',1,'mkl.hpp']]],
-  ['vsmc_5fstatic_5finline',['VSMC_STATIC_INLINE',['../common_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'common.h']]],
-  ['vsmc_5fuse_5faccelerate_5fcblas',['VSMC_USE_ACCELERATE_CBLAS',['../config_8hpp.html#a398fb84baacf9ffaf2d6a4221bda9f2f',1,'config.hpp']]],
-  ['vsmc_5fuse_5faccelerate_5fvforce',['VSMC_USE_ACCELERATE_VFORCE',['../config_8hpp.html#a4979d4db402983e506eaf5eac7366df3',1,'config.hpp']]],
-  ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.hpp']]],
-  ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.hpp']]],
-  ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.hpp']]],
-  ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8hpp.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.hpp']]]
+  ['vsmc_5fstatic_5finline',['VSMC_STATIC_INLINE',['../common_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'common.h']]]
 ];

@@ -3,7 +3,6 @@ var searchData=
   ['_7ealignedallocator',['~AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html#ac1b4e96a339fab87dcdfcc66b66cbebb',1,'vsmc::AlignedAllocator']]],
   ['_7eclbuffer',['~CLBuffer',['../classvsmc_1_1_c_l_buffer.html#a0a43ea3ee4bf9b5f3f383c81020bd1d3',1,'vsmc::CLBuffer']]],
   ['_7edispatchobject',['~DispatchObject',['../classvsmc_1_1_dispatch_object.html#ae19d984ebc8de5007a1a9ee435d02eec',1,'vsmc::DispatchObject']]],
-  ['_7egslgenerator',['~GSLGenerator',['../classvsmc_1_1_g_s_l_generator.html#ab3527c968be18daea0e5aa3bceba9565',1,'vsmc::GSLGenerator']]],
   ['_7einitializebase',['~InitializeBase',['../classvsmc_1_1_initialize_base.html#af44cb7d285b440eef06f955450ad0936',1,'vsmc::InitializeBase::~InitializeBase()'],['../classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a10720ee0dcbf69535ecb7d945e7a5bb4',1,'vsmc::InitializeBase&lt; T, Virtual &gt;::~InitializeBase()']]],
   ['_7einitializecilk',['~InitializeCILK',['../classvsmc_1_1_initialize_c_i_l_k.html#a0ed273ac137dcef5245af8a38b9cc9d4',1,'vsmc::InitializeCILK']]],
   ['_7einitializecl',['~InitializeCL',['../classvsmc_1_1_initialize_c_l.html#a5d3e62066e0bc877f0d33a3d398aaee9',1,'vsmc::InitializeCL']]],

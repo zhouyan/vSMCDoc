@@ -1,16 +1,7 @@
 var searchData=
 [
-  ['gsl_5fcmrg',['GSL_CMRG',['../group___g_s_l_r_n_g.html#ga7631b0d3c4e35c1f97cda9977764e201',1,'vsmc']]],
-  ['gsl_5fgfsr4',['GSL_GFSR4',['../group___g_s_l_r_n_g.html#ga5a0c24fde464f5163f7771838820d18e',1,'vsmc']]],
-  ['gsl_5fmrg',['GSL_MRG',['../namespacevsmc.html#a148f5bc400f3b2befc7c1becf477d04b',1,'vsmc']]],
-  ['gsl_5fmt19937',['GSL_MT19937',['../group___g_s_l_r_n_g.html#gaa95c3fcd58346c13f15011b6ab0bcc33',1,'vsmc']]],
-  ['gsl_5franlux',['GSL_RANLUX',['../group___g_s_l_r_n_g.html#ga1fd35f65910d0502be3a730d1db521d7',1,'vsmc']]],
-  ['gsl_5franlux389',['GSL_RANLUX389',['../group___g_s_l_r_n_g.html#gad0eba43afe4a6dddc25a7213bf1b810a',1,'vsmc']]],
-  ['gsl_5franlxd1',['GSL_RANLXD1',['../group___g_s_l_r_n_g.html#ga862cc8ea1b9ff5081bda2ac449b1954f',1,'vsmc']]],
-  ['gsl_5franlxd2',['GSL_RANLXD2',['../group___g_s_l_r_n_g.html#ga361e974c51f8ec6222d734fc58f5749c',1,'vsmc']]],
-  ['gsl_5franlxs0',['GSL_RANLXS0',['../group___g_s_l_r_n_g.html#ga476110339d067dab76f062a43dda58d0',1,'vsmc']]],
-  ['gsl_5franlxs1',['GSL_RANLXS1',['../group___g_s_l_r_n_g.html#gae38cf1b51e66e16b9e005e825a44c1af',1,'vsmc']]],
-  ['gsl_5franlxs2',['GSL_RANLXS2',['../group___g_s_l_r_n_g.html#gaf404303eeb111b920a5e72d2295e5b83',1,'vsmc']]],
-  ['gsl_5ftaus',['GSL_TAUS',['../group___g_s_l_r_n_g.html#ga426c2d4393276345613e10f0d5ebbdeb',1,'vsmc']]],
-  ['gsl_5ftaus2',['GSL_TAUS2',['../group___g_s_l_r_n_g.html#gae5592f11a0528f51709dcd69cf962714',1,'vsmc']]]
+  ['id',['id',['../classvsmc_1_1_c_l_setup.html#a861dafd495a881bf2dc75a6a2ea7a9c4',1,'vsmc::CLSetup']]],
+  ['init_5ftype',['init_type',['../classvsmc_1_1_sampler.html#a393c585141255da27db67713a64e9e8b',1,'vsmc::Sampler']]],
+  ['initialize_5fparam_5ftype',['initialize_param_type',['../classvsmc_1_1_initialize_adapter_base_3_01_t_00_01_null_type_00_01_base_type_01_4.html#a021cac7b88002cb7e094868b118548a5',1,'vsmc::InitializeAdapterBase&lt; T, NullType, BaseType &gt;::initialize_param_type()'],['../classvsmc_1_1_initialize_adapter_3_01_t_00_01_initialize_c_l_00_01_null_type_01_4.html#a90d59b7b6b23a165a5e5939a44848232',1,'vsmc::InitializeAdapter&lt; T, InitializeCL, NullType &gt;::initialize_param_type()'],['../classvsmc_1_1_initialize_adapter_3_01_t_00_01_impl_00_01_null_type_01_4.html#a33c59c66077833f5f2c09031e4e8f411',1,'vsmc::InitializeAdapter&lt; T, Impl, NullType &gt;::initialize_param_type()']]],
+  ['initialize_5fstate_5ftype',['initialize_state_type',['../classvsmc_1_1_initialize_adapter_3_01_t_00_01_impl_00_01_null_type_01_4.html#aa84bcf85a04d224bbbae9479e0d95893',1,'vsmc::InitializeAdapter&lt; T, Impl, NullType &gt;']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../classvsmc_1_1_monitor.html#ab84aee96a08fce52f4d6d9e89732193c',1,'vsmc::Monitor::value_type()'],['../classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb',1,'vsmc::Particle::value_type()'],['../classvsmc_1_1_path.html#abcac9327e24adc6b0d8a139867178fa3',1,'vsmc::Path::value_type()'],['../classvsmc_1_1_sampler.html#aeead6818a369111c98e8ef4703642729',1,'vsmc::Sampler::value_type()'],['../classvsmc_1_1_c_l_buffer.html#a293115f3c28ffe18a3d4a46541658e6b',1,'vsmc::CLBuffer::value_type()']]]
+  ['watch_5ftype',['watch_type',['../classvsmc_1_1_stop_watch_guard.html#aae8e266dc2d01dcd2d2f68dcc0ddb77b',1,'vsmc::StopWatchGuard']]],
+  ['weight_5fset_5ftype',['weight_set_type',['../classvsmc_1_1_particle.html#ab5f1434fdc7a86dc77c151cf433b1893',1,'vsmc::Particle::weight_set_type()'],['../classvsmc_1_1_state_m_p_i.html#a261b688c5b9279f3c69e4055b2238588',1,'vsmc::StateMPI::weight_set_type()']]]
 ];

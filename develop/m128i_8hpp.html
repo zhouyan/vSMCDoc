@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/m128i.hpp File Reference</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/internal/m128i.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li><li class="navelem"><a class="el" href="dir_95828d2266e32d79db7be6a4159b76f1.html">internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -112,6 +112,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -120,41 +122,41 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaebd44f17a4ae83d9338ce8d1691fbeaf"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:gaebd44f17a4ae83d9338ce8d1691fbeaf"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaebd44f17a4ae83d9338ce8d1691fbeaf">vsmc::m128i_input</a> (std::basic_istream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;is, <a class="el" href="class____m128i.html">__m128i</a> &amp;a)</td></tr>
-<tr class="memdesc:gaebd44f17a4ae83d9338ce8d1691fbeaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input an __m128i object from an input stream as 16 bytes unsigned integers written by m128i_output.  <a href="group___r_n_g.html#gaebd44f17a4ae83d9338ce8d1691fbeaf">More...</a><br /></td></tr>
-<tr class="separator:gaebd44f17a4ae83d9338ce8d1691fbeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2374a97fbcd75a4d76d8f458cd2c568"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">vsmc::m128i_is_equal</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;a, const <a class="el" href="class____m128i.html">__m128i</a> &amp;b)</td></tr>
-<tr class="memdesc:gab2374a97fbcd75a4d76d8f458cd2c568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two __m128i objects.  <a href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">More...</a><br /></td></tr>
-<tr class="separator:gab2374a97fbcd75a4d76d8f458cd2c568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51cb632037803947a5f9c1c1345bd636"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:ga51cb632037803947a5f9c1c1345bd636"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga51cb632037803947a5f9c1c1345bd636">vsmc::m128i_output</a> (std::basic_ostream&lt; CharT, <a class="el" href="classvsmc_1_1_traits.html">Traits</a> &gt; &amp;os, const <a class="el" href="class____m128i.html">__m128i</a> &amp;a)</td></tr>
-<tr class="memdesc:ga51cb632037803947a5f9c1c1345bd636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an __m128i object into an output stream as 16 bytes unsigned integers.  <a href="group___r_n_g.html#ga51cb632037803947a5f9c1c1345bd636">More...</a><br /></td></tr>
-<tr class="separator:ga51cb632037803947a5f9c1c1345bd636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0a4bbd78923609d59b1b9fc66efd1c8"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:gab0a4bbd78923609d59b1b9fc66efd1c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gab0a4bbd78923609d59b1b9fc66efd1c8">vsmc::m128i_pack</a> (const std::array&lt; T, N &gt; &amp;c, <a class="el" href="class____m128i.html">__m128i</a> &amp;m)</td></tr>
-<tr class="memdesc:gab0a4bbd78923609d59b1b9fc66efd1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an std::array into an __m128i object.  <a href="group___r_n_g.html#gab0a4bbd78923609d59b1b9fc66efd1c8">More...</a><br /></td></tr>
-<tr class="separator:gab0a4bbd78923609d59b1b9fc66efd1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdd121f530e5268c5651fef301ca526e"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:gacdd121f530e5268c5651fef301ca526e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gacdd121f530e5268c5651fef301ca526e">vsmc::m128i_pack_a</a> (const std::array&lt; T, N &gt; &amp;c, <a class="el" href="class____m128i.html">__m128i</a> &amp;m)</td></tr>
-<tr class="memdesc:gacdd121f530e5268c5651fef301ca526e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned pack.  <a href="group___r_n_g.html#gacdd121f530e5268c5651fef301ca526e">More...</a><br /></td></tr>
-<tr class="separator:gacdd121f530e5268c5651fef301ca526e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5c3a21503f32f5bd74524c44dfe85f5"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:gac5c3a21503f32f5bd74524c44dfe85f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gac5c3a21503f32f5bd74524c44dfe85f5">vsmc::m128i_pack_u</a> (const std::array&lt; T, N &gt; &amp;c, <a class="el" href="class____m128i.html">__m128i</a> &amp;m)</td></tr>
-<tr class="memdesc:gac5c3a21503f32f5bd74524c44dfe85f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unaligned pack.  <a href="group___r_n_g.html#gac5c3a21503f32f5bd74524c44dfe85f5">More...</a><br /></td></tr>
-<tr class="separator:gac5c3a21503f32f5bd74524c44dfe85f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43315e259465408888428c32041ed5b7"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:ga43315e259465408888428c32041ed5b7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga43315e259465408888428c32041ed5b7">vsmc::m128i_unpack</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt; T, N &gt; &amp;c)</td></tr>
-<tr class="memdesc:ga43315e259465408888428c32041ed5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack an __m128i object into an std::array.  <a href="group___r_n_g.html#ga43315e259465408888428c32041ed5b7">More...</a><br /></td></tr>
-<tr class="separator:ga43315e259465408888428c32041ed5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae073164ca27d1da17be3510d97281b3b"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:gae073164ca27d1da17be3510d97281b3b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gae073164ca27d1da17be3510d97281b3b">vsmc::m128i_unpack_a</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt; T, N &gt; &amp;c)</td></tr>
-<tr class="memdesc:gae073164ca27d1da17be3510d97281b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned unpack.  <a href="group___r_n_g.html#gae073164ca27d1da17be3510d97281b3b">More...</a><br /></td></tr>
-<tr class="separator:gae073164ca27d1da17be3510d97281b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad72a8a2bb40e7e2a1601294b38553483"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
-<tr class="memitem:gad72a8a2bb40e7e2a1601294b38553483"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gad72a8a2bb40e7e2a1601294b38553483">vsmc::m128i_unpack_u</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt; T, N &gt; &amp;c)</td></tr>
-<tr class="memdesc:gad72a8a2bb40e7e2a1601294b38553483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unaligned unpack.  <a href="group___r_n_g.html#gad72a8a2bb40e7e2a1601294b38553483">More...</a><br /></td></tr>
-<tr class="separator:gad72a8a2bb40e7e2a1601294b38553483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga120d347506e64079701d05ebd9946912"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:ga120d347506e64079701d05ebd9946912"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga120d347506e64079701d05ebd9946912">vsmc::internal::m128i_input</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, <a class="el" href="class____m128i.html">__m128i</a> &amp;a)</td></tr>
+<tr class="memdesc:ga120d347506e64079701d05ebd9946912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input an __m128i object from an input stream as 16 bytes unsigned integers written by m128i_output.  <a href="group___r_n_g.html#ga120d347506e64079701d05ebd9946912">More...</a><br /></td></tr>
+<tr class="separator:ga120d347506e64079701d05ebd9946912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef79661931a5a92fed0cfaaae825544d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaef79661931a5a92fed0cfaaae825544d">vsmc::internal::m128i_is_equal</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;a, const <a class="el" href="class____m128i.html">__m128i</a> &amp;b)</td></tr>
+<tr class="memdesc:gaef79661931a5a92fed0cfaaae825544d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two __m128i objects.  <a href="group___r_n_g.html#gaef79661931a5a92fed0cfaaae825544d">More...</a><br /></td></tr>
+<tr class="separator:gaef79661931a5a92fed0cfaaae825544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86239e2fd023302d0fd510b21375bb74"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:ga86239e2fd023302d0fd510b21375bb74"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga86239e2fd023302d0fd510b21375bb74">vsmc::internal::m128i_output</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const <a class="el" href="class____m128i.html">__m128i</a> &amp;a)</td></tr>
+<tr class="memdesc:ga86239e2fd023302d0fd510b21375bb74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an __m128i object into an output stream as 16 bytes unsigned integers.  <a href="group___r_n_g.html#ga86239e2fd023302d0fd510b21375bb74">More...</a><br /></td></tr>
+<tr class="separator:ga86239e2fd023302d0fd510b21375bb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3290108c2d80f79139f59e08c70e5b3"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:gaf3290108c2d80f79139f59e08c70e5b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaf3290108c2d80f79139f59e08c70e5b3">vsmc::internal::m128i_pack</a> (const std::array&lt; T, N &gt; &amp;c, <a class="el" href="class____m128i.html">__m128i</a> &amp;m)</td></tr>
+<tr class="memdesc:gaf3290108c2d80f79139f59e08c70e5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an std::array into an __m128i object.  <a href="group___r_n_g.html#gaf3290108c2d80f79139f59e08c70e5b3">More...</a><br /></td></tr>
+<tr class="separator:gaf3290108c2d80f79139f59e08c70e5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ed3ace06ee7818255efaea527ad9deb"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:ga8ed3ace06ee7818255efaea527ad9deb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga8ed3ace06ee7818255efaea527ad9deb">vsmc::internal::m128i_pack_a</a> (const std::array&lt; T, N &gt; &amp;c, <a class="el" href="class____m128i.html">__m128i</a> &amp;m)</td></tr>
+<tr class="memdesc:ga8ed3ace06ee7818255efaea527ad9deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned pack.  <a href="group___r_n_g.html#ga8ed3ace06ee7818255efaea527ad9deb">More...</a><br /></td></tr>
+<tr class="separator:ga8ed3ace06ee7818255efaea527ad9deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4270fc1f34c62c3f89a9bbd22ba1a6ef"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:ga4270fc1f34c62c3f89a9bbd22ba1a6ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga4270fc1f34c62c3f89a9bbd22ba1a6ef">vsmc::internal::m128i_pack_u</a> (const std::array&lt; T, N &gt; &amp;c, <a class="el" href="class____m128i.html">__m128i</a> &amp;m)</td></tr>
+<tr class="memdesc:ga4270fc1f34c62c3f89a9bbd22ba1a6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unaligned pack.  <a href="group___r_n_g.html#ga4270fc1f34c62c3f89a9bbd22ba1a6ef">More...</a><br /></td></tr>
+<tr class="separator:ga4270fc1f34c62c3f89a9bbd22ba1a6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cbe5f20faf4d75a80bd242863e3e75c"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:ga4cbe5f20faf4d75a80bd242863e3e75c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga4cbe5f20faf4d75a80bd242863e3e75c">vsmc::internal::m128i_unpack</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt; T, N &gt; &amp;c)</td></tr>
+<tr class="memdesc:ga4cbe5f20faf4d75a80bd242863e3e75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack an __m128i object into an std::array.  <a href="group___r_n_g.html#ga4cbe5f20faf4d75a80bd242863e3e75c">More...</a><br /></td></tr>
+<tr class="separator:ga4cbe5f20faf4d75a80bd242863e3e75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2ccbec5579548129a9e94670543c322"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:gad2ccbec5579548129a9e94670543c322"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gad2ccbec5579548129a9e94670543c322">vsmc::internal::m128i_unpack_a</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt; T, N &gt; &amp;c)</td></tr>
+<tr class="memdesc:gad2ccbec5579548129a9e94670543c322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned unpack.  <a href="group___r_n_g.html#gad2ccbec5579548129a9e94670543c322">More...</a><br /></td></tr>
+<tr class="separator:gad2ccbec5579548129a9e94670543c322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee816bdbd65972a8336ce33fa058672a"><td class="memTemplParams" colspan="2">template&lt;std::size_t Offset, typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:gaee816bdbd65972a8336ce33fa058672a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaee816bdbd65972a8336ce33fa058672a">vsmc::internal::m128i_unpack_u</a> (const <a class="el" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt; T, N &gt; &amp;c)</td></tr>
+<tr class="memdesc:gaee816bdbd65972a8336ce33fa058672a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unaligned unpack.  <a href="group___r_n_g.html#gaee816bdbd65972a8336ce33fa058672a">More...</a><br /></td></tr>
+<tr class="separator:gaee816bdbd65972a8336ce33fa058672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ae15e6cd24e97ce3163d8a5c0fd420b43"></a>

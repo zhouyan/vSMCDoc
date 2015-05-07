@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/m128i.hpp Source File</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/internal/m128i.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li><li class="navelem"><a class="el" href="dir_95828d2266e32d79db7be6a4159b76f1.html">internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="m128i_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//============================================================================</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rng/m128i.hpp</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rng/internal/m128i.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                         vSMC: Scalable Monte Carlo</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -144,97 +144,102 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gacdd121f530e5268c5651fef301ca526e">   49</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gacdd121f530e5268c5651fef301ca526e">m128i_pack_a</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp;c, <a class="code" href="class____m128i.html">__m128i</a> &amp;m)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m = _mm_load_si128(reinterpret_cast&lt;const __m128i *&gt;(c.data() + Offset));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gac5c3a21503f32f5bd74524c44dfe85f5">   57</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gac5c3a21503f32f5bd74524c44dfe85f5">m128i_pack_u</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp;c, <a class="code" href="class____m128i.html">__m128i</a> &amp;m)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m = _mm_loadu_si128(reinterpret_cast&lt;const __m128i *&gt;(c.data() + Offset));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gae073164ca27d1da17be3510d97281b3b">   65</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gae073164ca27d1da17be3510d97281b3b">m128i_unpack_a</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt;T, N&gt; &amp;c)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    _mm_store_si128(reinterpret_cast&lt;__m128i *&gt;(c.data() + Offset), m);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gad72a8a2bb40e7e2a1601294b38553483">   73</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gad72a8a2bb40e7e2a1601294b38553483">m128i_unpack_u</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt;T, N&gt; &amp;c)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    _mm_storeu_si128(reinterpret_cast&lt;__m128i *&gt;(c.data() + Offset), m);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gab0a4bbd78923609d59b1b9fc66efd1c8">   81</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gab0a4bbd78923609d59b1b9fc66efd1c8">m128i_pack</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp;c, <a class="code" href="class____m128i.html">__m128i</a> &amp;m)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="m128i_8hpp.html#ae15e6cd24e97ce3163d8a5c0fd420b43">VSMC_STATIC_ASSERT_RNG_M128I_PACK</a>(Offset, T, N);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    m128i_pack_u&lt;Offset&gt;(c, m);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga43315e259465408888428c32041ed5b7">   90</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#ga43315e259465408888428c32041ed5b7">m128i_unpack</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt;T, N&gt; &amp;c)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="m128i_8hpp.html#ae15e6cd24e97ce3163d8a5c0fd420b43">VSMC_STATIC_ASSERT_RNG_M128I_PACK</a>(Offset, T, N);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    m128i_unpack_u&lt;Offset&gt;(m, c);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">   98</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">m128i_is_equal</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;a, <span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;b)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sa;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sb;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    m128i_unpack&lt;0&gt;(a, sa);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    m128i_unpack&lt;0&gt;(b, sb);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> sa == sb;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga8ed3ace06ee7818255efaea527ad9deb">   52</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#ga8ed3ace06ee7818255efaea527ad9deb">m128i_pack_a</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp;c, <a class="code" href="class____m128i.html">__m128i</a> &amp;m)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m = _mm_load_si128(reinterpret_cast&lt;const __m128i *&gt;(c.data() + Offset));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga4270fc1f34c62c3f89a9bbd22ba1a6ef">   60</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#ga4270fc1f34c62c3f89a9bbd22ba1a6ef">m128i_pack_u</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp;c, <a class="code" href="class____m128i.html">__m128i</a> &amp;m)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    m = _mm_loadu_si128(reinterpret_cast&lt;const __m128i *&gt;(c.data() + Offset));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gad2ccbec5579548129a9e94670543c322">   68</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gad2ccbec5579548129a9e94670543c322">m128i_unpack_a</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt;T, N&gt; &amp;c)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    _mm_store_si128(reinterpret_cast&lt;__m128i *&gt;(c.data() + Offset), m);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gaee816bdbd65972a8336ce33fa058672a">   76</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gaee816bdbd65972a8336ce33fa058672a">m128i_unpack_u</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt;T, N&gt; &amp;c)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    _mm_storeu_si128(reinterpret_cast&lt;__m128i *&gt;(c.data() + Offset), m);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gaf3290108c2d80f79139f59e08c70e5b3">   84</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#gaf3290108c2d80f79139f59e08c70e5b3">m128i_pack</a>(<span class="keyword">const</span> std::array&lt;T, N&gt; &amp;c, <a class="code" href="class____m128i.html">__m128i</a> &amp;m)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="m128i_8hpp.html#ae15e6cd24e97ce3163d8a5c0fd420b43">VSMC_STATIC_ASSERT_RNG_M128I_PACK</a>(Offset, T, N);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    m128i_pack_u&lt;Offset&gt;(c, m);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Offset, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga4cbe5f20faf4d75a80bd242863e3e75c">   93</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group___r_n_g.html#ga4cbe5f20faf4d75a80bd242863e3e75c">m128i_unpack</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;m, std::array&lt;T, N&gt; &amp;c)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="m128i_8hpp.html#ae15e6cd24e97ce3163d8a5c0fd420b43">VSMC_STATIC_ASSERT_RNG_M128I_PACK</a>(Offset, T, N);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    m128i_unpack_u&lt;Offset&gt;(m, c);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gaef79661931a5a92fed0cfaaae825544d">  101</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___r_n_g.html#gaef79661931a5a92fed0cfaaae825544d">m128i_is_equal</a>(<span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;a, <span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;b)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sa;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sb;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    m128i_unpack&lt;0&gt;(a, sa);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    m128i_unpack&lt;0&gt;(b, sb);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga51cb632037803947a5f9c1c1345bd636">  112</a></span>&#160;<span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="group___r_n_g.html#ga51cb632037803947a5f9c1c1345bd636">m128i_output</a>(</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;a)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (os.good()) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        std::array&lt;unsigned char, 16&gt; sa;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        m128i_unpack&lt;0&gt;(a, sa);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        os &lt;&lt; sa;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> sa == sb;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga86239e2fd023302d0fd510b21375bb74">  115</a></span>&#160;<span class="keyword">inline</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="group___r_n_g.html#ga86239e2fd023302d0fd510b21375bb74">m128i_output</a>(</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> <a class="code" href="class____m128i.html">__m128i</a> &amp;a)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (os.good()) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        std::array&lt;unsigned char, 16&gt; sa;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        m128i_unpack&lt;0&gt;(a, sa);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        os &lt;&lt; sa;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group___r_n_g.html#gaebd44f17a4ae83d9338ce8d1691fbeaf">  128</a></span>&#160;<span class="keyword">inline</span> std::basic_istream&lt;CharT, Traits&gt; &amp;<a class="code" href="group___r_n_g.html#gaebd44f17a4ae83d9338ce8d1691fbeaf">m128i_input</a>(</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::basic_istream&lt;CharT, Traits&gt; &amp;is, <a class="code" href="class____m128i.html">__m128i</a> &amp;a)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span> (is.good()) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        std::array&lt;unsigned char, 16&gt; sa;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        is &gt;&gt; sa;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (is)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            m128i_pack&lt;0&gt;(sa, a);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> is;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group___r_n_g.html#ga120d347506e64079701d05ebd9946912">  131</a></span>&#160;<span class="keyword">inline</span> std::basic_istream&lt;CharT, Traits&gt; &amp;<a class="code" href="group___r_n_g.html#ga120d347506e64079701d05ebd9946912">m128i_input</a>(</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    std::basic_istream&lt;CharT, Traits&gt; &amp;is, <a class="code" href="class____m128i.html">__m128i</a> &amp;a)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (is.good()) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::array&lt;unsigned char, 16&gt; sa;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        is &gt;&gt; sa;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span> (is)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            m128i_pack&lt;0&gt;(sa, a);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_M128I_HPP</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> is;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_M128I_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2adapter_8hpp_source.html#l00037">adapter.hpp:37</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gae073164ca27d1da17be3510d97281b3b"><div class="ttname"><a href="group___r_n_g.html#gae073164ca27d1da17be3510d97281b3b">vsmc::m128i_unpack_a</a></div><div class="ttdeci">void m128i_unpack_a(const __m128i &amp;m, std::array&lt; T, N &gt; &amp;c)</div><div class="ttdoc">Aligned unpack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00065">m128i.hpp:65</a></div></div>
+<div class="ttc" id="group___r_n_g_html_ga8ed3ace06ee7818255efaea527ad9deb"><div class="ttname"><a href="group___r_n_g.html#ga8ed3ace06ee7818255efaea527ad9deb">vsmc::internal::m128i_pack_a</a></div><div class="ttdeci">void m128i_pack_a(const std::array&lt; T, N &gt; &amp;c, __m128i &amp;m)</div><div class="ttdoc">Aligned pack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00052">m128i.hpp:52</a></div></div>
 <div class="ttc" id="rng_2internal_2common_8hpp_html"><div class="ttname"><a href="rng_2internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gaebd44f17a4ae83d9338ce8d1691fbeaf"><div class="ttname"><a href="group___r_n_g.html#gaebd44f17a4ae83d9338ce8d1691fbeaf">vsmc::m128i_input</a></div><div class="ttdeci">std::basic_istream&lt; CharT, Traits &gt; &amp; m128i_input(std::basic_istream&lt; CharT, Traits &gt; &amp;is, __m128i &amp;a)</div><div class="ttdoc">Input an __m128i object from an input stream as 16 bytes unsigned integers written by m128i_output...</div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00128">m128i.hpp:128</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gad72a8a2bb40e7e2a1601294b38553483"><div class="ttname"><a href="group___r_n_g.html#gad72a8a2bb40e7e2a1601294b38553483">vsmc::m128i_unpack_u</a></div><div class="ttdeci">void m128i_unpack_u(const __m128i &amp;m, std::array&lt; T, N &gt; &amp;c)</div><div class="ttdoc">Unaligned unpack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00073">m128i.hpp:73</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gacdd121f530e5268c5651fef301ca526e"><div class="ttname"><a href="group___r_n_g.html#gacdd121f530e5268c5651fef301ca526e">vsmc::m128i_pack_a</a></div><div class="ttdeci">void m128i_pack_a(const std::array&lt; T, N &gt; &amp;c, __m128i &amp;m)</div><div class="ttdoc">Aligned pack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00049">m128i.hpp:49</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gac5c3a21503f32f5bd74524c44dfe85f5"><div class="ttname"><a href="group___r_n_g.html#gac5c3a21503f32f5bd74524c44dfe85f5">vsmc::m128i_pack_u</a></div><div class="ttdeci">void m128i_pack_u(const std::array&lt; T, N &gt; &amp;c, __m128i &amp;m)</div><div class="ttdoc">Unaligned pack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00057">m128i.hpp:57</a></div></div>
+<div class="ttc" id="group___r_n_g_html_gaf3290108c2d80f79139f59e08c70e5b3"><div class="ttname"><a href="group___r_n_g.html#gaf3290108c2d80f79139f59e08c70e5b3">vsmc::internal::m128i_pack</a></div><div class="ttdeci">void m128i_pack(const std::array&lt; T, N &gt; &amp;c, __m128i &amp;m)</div><div class="ttdoc">Pack an std::array into an __m128i object. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00084">m128i.hpp:84</a></div></div>
+<div class="ttc" id="group___r_n_g_html_ga120d347506e64079701d05ebd9946912"><div class="ttname"><a href="group___r_n_g.html#ga120d347506e64079701d05ebd9946912">vsmc::internal::m128i_input</a></div><div class="ttdeci">std::basic_istream&lt; CharT, Traits &gt; &amp; m128i_input(std::basic_istream&lt; CharT, Traits &gt; &amp;is, __m128i &amp;a)</div><div class="ttdoc">Input an __m128i object from an input stream as 16 bytes unsigned integers written by m128i_output...</div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00131">m128i.hpp:131</a></div></div>
 <div class="ttc" id="class____m128i_html"><div class="ttname"><a href="class____m128i.html">__m128i</a></div></div>
 <div class="ttc" id="m128i_8hpp_html_ae15e6cd24e97ce3163d8a5c0fd420b43"><div class="ttname"><a href="m128i_8hpp.html#ae15e6cd24e97ce3163d8a5c0fd420b43">VSMC_STATIC_ASSERT_RNG_M128I_PACK</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_M128I_PACK(Offset, T, N)</div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00038">m128i.hpp:38</a></div></div>
-<div class="ttc" id="group___r_n_g_html_ga51cb632037803947a5f9c1c1345bd636"><div class="ttname"><a href="group___r_n_g.html#ga51cb632037803947a5f9c1c1345bd636">vsmc::m128i_output</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; m128i_output(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const __m128i &amp;a)</div><div class="ttdoc">Write an __m128i object into an output stream as 16 bytes unsigned integers. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00112">m128i.hpp:112</a></div></div>
-<div class="ttc" id="group___r_n_g_html_ga43315e259465408888428c32041ed5b7"><div class="ttname"><a href="group___r_n_g.html#ga43315e259465408888428c32041ed5b7">vsmc::m128i_unpack</a></div><div class="ttdeci">void m128i_unpack(const __m128i &amp;m, std::array&lt; T, N &gt; &amp;c)</div><div class="ttdoc">Unpack an __m128i object into an std::array. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00090">m128i.hpp:90</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gab2374a97fbcd75a4d76d8f458cd2c568"><div class="ttname"><a href="group___r_n_g.html#gab2374a97fbcd75a4d76d8f458cd2c568">vsmc::m128i_is_equal</a></div><div class="ttdeci">bool m128i_is_equal(const __m128i &amp;a, const __m128i &amp;b)</div><div class="ttdoc">Compare two __m128i objects. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00098">m128i.hpp:98</a></div></div>
-<div class="ttc" id="group___r_n_g_html_gab0a4bbd78923609d59b1b9fc66efd1c8"><div class="ttname"><a href="group___r_n_g.html#gab0a4bbd78923609d59b1b9fc66efd1c8">vsmc::m128i_pack</a></div><div class="ttdeci">void m128i_pack(const std::array&lt; T, N &gt; &amp;c, __m128i &amp;m)</div><div class="ttdoc">Pack an std::array into an __m128i object. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00081">m128i.hpp:81</a></div></div>
+<div class="ttc" id="group___r_n_g_html_ga4270fc1f34c62c3f89a9bbd22ba1a6ef"><div class="ttname"><a href="group___r_n_g.html#ga4270fc1f34c62c3f89a9bbd22ba1a6ef">vsmc::internal::m128i_pack_u</a></div><div class="ttdeci">void m128i_pack_u(const std::array&lt; T, N &gt; &amp;c, __m128i &amp;m)</div><div class="ttdoc">Unaligned pack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00060">m128i.hpp:60</a></div></div>
+<div class="ttc" id="group___r_n_g_html_gad2ccbec5579548129a9e94670543c322"><div class="ttname"><a href="group___r_n_g.html#gad2ccbec5579548129a9e94670543c322">vsmc::internal::m128i_unpack_a</a></div><div class="ttdeci">void m128i_unpack_a(const __m128i &amp;m, std::array&lt; T, N &gt; &amp;c)</div><div class="ttdoc">Aligned unpack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00068">m128i.hpp:68</a></div></div>
+<div class="ttc" id="group___r_n_g_html_gaee816bdbd65972a8336ce33fa058672a"><div class="ttname"><a href="group___r_n_g.html#gaee816bdbd65972a8336ce33fa058672a">vsmc::internal::m128i_unpack_u</a></div><div class="ttdeci">void m128i_unpack_u(const __m128i &amp;m, std::array&lt; T, N &gt; &amp;c)</div><div class="ttdoc">Unaligned unpack. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00076">m128i.hpp:76</a></div></div>
+<div class="ttc" id="group___r_n_g_html_ga4cbe5f20faf4d75a80bd242863e3e75c"><div class="ttname"><a href="group___r_n_g.html#ga4cbe5f20faf4d75a80bd242863e3e75c">vsmc::internal::m128i_unpack</a></div><div class="ttdeci">void m128i_unpack(const __m128i &amp;m, std::array&lt; T, N &gt; &amp;c)</div><div class="ttdoc">Unpack an __m128i object into an std::array. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00093">m128i.hpp:93</a></div></div>
+<div class="ttc" id="group___r_n_g_html_gaef79661931a5a92fed0cfaaae825544d"><div class="ttname"><a href="group___r_n_g.html#gaef79661931a5a92fed0cfaaae825544d">vsmc::internal::m128i_is_equal</a></div><div class="ttdeci">bool m128i_is_equal(const __m128i &amp;a, const __m128i &amp;b)</div><div class="ttdoc">Compare two __m128i objects. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00101">m128i.hpp:101</a></div></div>
+<div class="ttc" id="group___r_n_g_html_ga86239e2fd023302d0fd510b21375bb74"><div class="ttname"><a href="group___r_n_g.html#ga86239e2fd023302d0fd510b21375bb74">vsmc::internal::m128i_output</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; m128i_output(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const __m128i &amp;a)</div><div class="ttdoc">Write an __m128i object into an output stream as 16 bytes unsigned integers. </div><div class="ttdef"><b>Definition:</b> <a href="m128i_8hpp_source.html#l00115">m128i.hpp:115</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

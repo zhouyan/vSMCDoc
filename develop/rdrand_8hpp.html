@@ -106,15 +106,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="generator__wrapper_8hpp_source.html">vsmc/rng/generator_wrapper.hpp</a>&gt;</code><br />
 <code>#include &lt;immintrin.h&gt;</code><br />
 </div>
 <p><a href="rdrand_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_d_r_a_n_d_generator.html">vsmc::RDRANDGenerator&lt; ResultType, NTrialMax &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDRAND generator.  <a href="classvsmc_1_1_r_d_r_a_n_d_generator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_d_r_a_n_d_engine.html">vsmc::RDRANDEngine&lt; ResultType, NTrialMax &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDRAND generator.  <a href="classvsmc_1_1_r_d_r_a_n_d_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -126,42 +125,42 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a7ed605c1917e2b9f485b1fc9767ecc96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#a7ed605c1917e2b9f485b1fc9767ecc96">VSMC_RDRAND_NTRIAL_MAX</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a7ed605c1917e2b9f485b1fc9767ecc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18dcc77d62b064565f27435027005bf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#a18dcc77d62b064565f27435027005bf4">VSMC_RUNTIME_WARNING_RNG_RDRAND_GENERATOR_NTRIAL</a>(ntrial,  NTrialMax)</td></tr>
-<tr class="separator:a18dcc77d62b064565f27435027005bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d3301f1101896f33e1ed9f2ac25a86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#ac4d3301f1101896f33e1ed9f2ac25a86">VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR</a>&#160;&#160;&#160;<a class="el" href="rdrand_8hpp.html#a172ee6e57ab54bb04b68e1a78c9f61ef">VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE</a>(ResultType);</td></tr>
-<tr class="separator:ac4d3301f1101896f33e1ed9f2ac25a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a172ee6e57ab54bb04b68e1a78c9f61ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#a172ee6e57ab54bb04b68e1a78c9f61ef">VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE</a>(ResultType)</td></tr>
-<tr class="separator:a172ee6e57ab54bb04b68e1a78c9f61ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa44e00fa6f77adacb061855c80cb0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#adaa44e00fa6f77adacb061855c80cb0f">VSMC_RUNTIME_WARNING_RNG_RDRAND_ENGINE_NTRIAL</a>(ntrial,  NTrialMax)</td></tr>
+<tr class="separator:adaa44e00fa6f77adacb061855c80cb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54efdfdbd8f8e74885e81182ce02d2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#ac54efdfdbd8f8e74885e81182ce02d2b">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE</a>&#160;&#160;&#160;<a class="el" href="rdrand_8hpp.html#a992b362128de8d4d613059d6450df4ad">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</a>(ResultType);</td></tr>
+<tr class="separator:ac54efdfdbd8f8e74885e81182ce02d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992b362128de8d4d613059d6450df4ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#a992b362128de8d4d613059d6450df4ad">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</a>(ResultType)</td></tr>
+<tr class="separator:a992b362128de8d4d613059d6450df4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gad4dda89a166d294ed08fd61d134363fb"><td class="memItemLeft" align="right" valign="top">typedef GeneratorWrapper&lt; std::uint16_t, RDRANDGenerator&lt; std::uint16_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#gad4dda89a166d294ed08fd61d134363fb">vsmc::RDRAND16</a></td></tr>
-<tr class="memdesc:gad4dda89a166d294ed08fd61d134363fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Engine using 16-bits RDRAND instruction.  <a href="group___r_d_r_n_g.html#gad4dda89a166d294ed08fd61d134363fb">More...</a><br /></td></tr>
-<tr class="separator:gad4dda89a166d294ed08fd61d134363fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64c0606a4a0b9f224e805e4e6adc3f7f"><td class="memItemLeft" align="right" valign="top">typedef GeneratorWrapper&lt; std::uint32_t, RDRANDGenerator&lt; std::uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#ga64c0606a4a0b9f224e805e4e6adc3f7f">vsmc::RDRAND32</a></td></tr>
-<tr class="memdesc:ga64c0606a4a0b9f224e805e4e6adc3f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Engine using 32-bits RDRAND instruction.  <a href="group___r_d_r_n_g.html#ga64c0606a4a0b9f224e805e4e6adc3f7f">More...</a><br /></td></tr>
-<tr class="separator:ga64c0606a4a0b9f224e805e4e6adc3f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5c11713a23ddd4ade12b590634a823d"><td class="memItemLeft" align="right" valign="top">typedef GeneratorWrapper&lt; std::uint64_t, RDRANDGenerator&lt; std::uint64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#gad5c11713a23ddd4ade12b590634a823d">vsmc::RDRAND64</a></td></tr>
-<tr class="memdesc:gad5c11713a23ddd4ade12b590634a823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Engine using 64-bits RDRAND instruction.  <a href="group___r_d_r_n_g.html#gad5c11713a23ddd4ade12b590634a823d">More...</a><br /></td></tr>
-<tr class="separator:gad5c11713a23ddd4ade12b590634a823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9d5bc9b7b22f976ef6ba0676a8443d5"><td class="memItemLeft" align="right" valign="top">typedef RDRANDEngine&lt; std::uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#gaf9d5bc9b7b22f976ef6ba0676a8443d5">vsmc::RDRAND16</a></td></tr>
+<tr class="memdesc:gaf9d5bc9b7b22f976ef6ba0676a8443d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Engine using 16-bits RDRAND instruction.  <a href="group___r_d_r_a_n_d.html#gaf9d5bc9b7b22f976ef6ba0676a8443d5">More...</a><br /></td></tr>
+<tr class="separator:gaf9d5bc9b7b22f976ef6ba0676a8443d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04ee98f2505d119f650c86e3b8cbaaa1"><td class="memItemLeft" align="right" valign="top">typedef RDRANDEngine&lt; std::uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#ga04ee98f2505d119f650c86e3b8cbaaa1">vsmc::RDRAND32</a></td></tr>
+<tr class="memdesc:ga04ee98f2505d119f650c86e3b8cbaaa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Engine using 32-bits RDRAND instruction.  <a href="group___r_d_r_a_n_d.html#ga04ee98f2505d119f650c86e3b8cbaaa1">More...</a><br /></td></tr>
+<tr class="separator:ga04ee98f2505d119f650c86e3b8cbaaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6cc4a8c48d44460e2655f18624f96093"><td class="memItemLeft" align="right" valign="top">typedef RDRANDEngine&lt; std::uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#ga6cc4a8c48d44460e2655f18624f96093">vsmc::RDRAND64</a></td></tr>
+<tr class="memdesc:ga6cc4a8c48d44460e2655f18624f96093"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++11 Engine using 64-bits RDRAND instruction.  <a href="group___r_d_r_a_n_d.html#ga6cc4a8c48d44460e2655f18624f96093">More...</a><br /></td></tr>
+<tr class="separator:ga6cc4a8c48d44460e2655f18624f96093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad54a0213751633f7b8058c775be88656"><td class="memTemplParams" colspan="2">template&lt;typename UIntType &gt; </td></tr>
-<tr class="memitem:gad54a0213751633f7b8058c775be88656"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#gad54a0213751633f7b8058c775be88656">vsmc::rdrand</a> (UIntType *)</td></tr>
-<tr class="memdesc:gad54a0213751633f7b8058c775be88656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the RDRAND instruction and return the carry flag.  <a href="group___r_d_r_n_g.html#gad54a0213751633f7b8058c775be88656">More...</a><br /></td></tr>
+<tr class="memitem:gad54a0213751633f7b8058c775be88656"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#gad54a0213751633f7b8058c775be88656">vsmc::rdrand</a> (UIntType *)</td></tr>
+<tr class="memdesc:gad54a0213751633f7b8058c775be88656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the RDRAND instruction and return the carry flag.  <a href="group___r_d_r_a_n_d.html#gad54a0213751633f7b8058c775be88656">More...</a><br /></td></tr>
 <tr class="separator:gad54a0213751633f7b8058c775be88656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31f9c6efff4c615f5039a94894bfbebd"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ga31f9c6efff4c615f5039a94894bfbebd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#ga31f9c6efff4c615f5039a94894bfbebd">vsmc::rdrand&lt; std::uint16_t &gt;</a> (std::uint16_t *rand)</td></tr>
-<tr class="memdesc:ga31f9c6efff4c615f5039a94894bfbebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the 16-bits RDRAND instruction and return the carry flag.  <a href="group___r_d_r_n_g.html#ga31f9c6efff4c615f5039a94894bfbebd">More...</a><br /></td></tr>
+<tr class="memitem:ga31f9c6efff4c615f5039a94894bfbebd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#ga31f9c6efff4c615f5039a94894bfbebd">vsmc::rdrand&lt; std::uint16_t &gt;</a> (std::uint16_t *rand)</td></tr>
+<tr class="memdesc:ga31f9c6efff4c615f5039a94894bfbebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the 16-bits RDRAND instruction and return the carry flag.  <a href="group___r_d_r_a_n_d.html#ga31f9c6efff4c615f5039a94894bfbebd">More...</a><br /></td></tr>
 <tr class="separator:ga31f9c6efff4c615f5039a94894bfbebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7fbe8fe3bebbc2871b9af0ccb03c0af"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:gaa7fbe8fe3bebbc2871b9af0ccb03c0af"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#gaa7fbe8fe3bebbc2871b9af0ccb03c0af">vsmc::rdrand&lt; std::uint32_t &gt;</a> (std::uint32_t *rand)</td></tr>
-<tr class="memdesc:gaa7fbe8fe3bebbc2871b9af0ccb03c0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the 32-bits RDRAND instruction and return the carry flag.  <a href="group___r_d_r_n_g.html#gaa7fbe8fe3bebbc2871b9af0ccb03c0af">More...</a><br /></td></tr>
+<tr class="memitem:gaa7fbe8fe3bebbc2871b9af0ccb03c0af"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#gaa7fbe8fe3bebbc2871b9af0ccb03c0af">vsmc::rdrand&lt; std::uint32_t &gt;</a> (std::uint32_t *rand)</td></tr>
+<tr class="memdesc:gaa7fbe8fe3bebbc2871b9af0ccb03c0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the 32-bits RDRAND instruction and return the carry flag.  <a href="group___r_d_r_a_n_d.html#gaa7fbe8fe3bebbc2871b9af0ccb03c0af">More...</a><br /></td></tr>
 <tr class="separator:gaa7fbe8fe3bebbc2871b9af0ccb03c0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f171171da4e8a93487d06c9998f9a8b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ga1f171171da4e8a93487d06c9998f9a8b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_n_g.html#ga1f171171da4e8a93487d06c9998f9a8b">vsmc::rdrand&lt; std::uint64_t &gt;</a> (std::uint64_t *rand)</td></tr>
-<tr class="memdesc:ga1f171171da4e8a93487d06c9998f9a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the 64-bits RDRAND instruction and return the carry flag.  <a href="group___r_d_r_n_g.html#ga1f171171da4e8a93487d06c9998f9a8b">More...</a><br /></td></tr>
+<tr class="memitem:ga1f171171da4e8a93487d06c9998f9a8b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_d_r_a_n_d.html#ga1f171171da4e8a93487d06c9998f9a8b">vsmc::rdrand&lt; std::uint64_t &gt;</a> (std::uint64_t *rand)</td></tr>
+<tr class="memdesc:ga1f171171da4e8a93487d06c9998f9a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke the 64-bits RDRAND instruction and return the carry flag.  <a href="group___r_d_r_a_n_d.html#ga1f171171da4e8a93487d06c9998f9a8b">More...</a><br /></td></tr>
 <tr class="separator:ga1f171171da4e8a93487d06c9998f9a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -175,16 +174,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00040">40</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00039">39</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a18dcc77d62b064565f27435027005bf4"></a>
+<a class="anchor" id="adaa44e00fa6f77adacb061855c80cb0f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_RUNTIME_WARNING_RNG_RDRAND_GENERATOR_NTRIAL</td>
+          <td class="memname">#define VSMC_RUNTIME_WARNING_RNG_RDRAND_ENGINE_NTRIAL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ntrial, </td>
@@ -206,30 +205,30 @@ Functions</h2></td></tr>
 <div class="line">        <span class="stringliteral">&quot;**RDRAND::generate** MAXIMUM NUMBER OF TRIALS EXCEEDED&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a2e22aded3b2d116df8b7170011bb32ad"><div class="ttname"><a href="assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00079">assert.hpp:79</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00053">53</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00052">52</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac4d3301f1101896f33e1ed9f2ac25a86"></a>
+<a class="anchor" id="ac54efdfdbd8f8e74885e81182ce02d2b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR&#160;&#160;&#160;<a class="el" href="rdrand_8hpp.html#a172ee6e57ab54bb04b68e1a78c9f61ef">VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE</a>(ResultType);</td>
+          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE&#160;&#160;&#160;<a class="el" href="rdrand_8hpp.html#a992b362128de8d4d613059d6450df4ad">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</a>(ResultType);</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00050">50</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00049">49</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a172ee6e57ab54bb04b68e1a78c9f61ef"></a>
+<a class="anchor" id="a992b362128de8d4d613059d6450df4ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RDRAND_GENERATOR_RESULT_TYPE</td>
+          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ResultType</td><td>)</td>
@@ -240,11 +239,11 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;ResultType, uint16_t&gt;::value ||          \</div>
 <div class="line">                           std::is_same&lt;ResultType, std::uint32_t&gt;::value ||  \</div>
 <div class="line">                           std::is_same&lt;ResultType, std::uint64_t&gt;::value),   \</div>
-<div class="line">        <span class="stringliteral">&quot;**RDRANDGenerator** USED WITH ResultType OTHER THAN &quot;</span>                \</div>
+<div class="line">        <span class="stringliteral">&quot;**RDRANDEngine** USED WITH ResultType OTHER THAN &quot;</span>                   \</div>
 <div class="line">        <span class="stringliteral">&quot;std::uint16_t, std::uint32_t OR std::uint64_t&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00043">43</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00042">42</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
 
 </div>
 </div>

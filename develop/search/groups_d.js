@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['u01',['U01',['../group___u01.html',1,'']]],
-  ['utility',['Utility',['../group___utility.html',1,'']]]
+  ['thread',['Thread',['../group___thread.html',1,'']]],
+  ['traits',['Traits',['../group___traits.html',1,'']]],
+  ['trigonometric_20functions',['Trigonometric functions',['../group__v_trigonometric.html',1,'']]]
 ];

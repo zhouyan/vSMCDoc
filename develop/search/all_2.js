@@ -37,5 +37,6 @@ var searchData=
   ['build_5foptions',['build_options',['../classvsmc_1_1_c_l_program.html#a5ba02e8689f7c2ddd08c8ab84a0272e4',1,'vsmc::CLProgram']]],
   ['build_5fstatus',['build_status',['../classvsmc_1_1_c_l_program.html#ac095358e8b67ce3ed0ae85360ad34f3e',1,'vsmc::CLProgram']]],
   ['bus_5ffreq',['bus_freq',['../classvsmc_1_1_c_p_u_i_d.html#a3437e810323bc87267c4e3b84f3f0f11',1,'vsmc::CPUID']]],
+  ['blas_20level_201_20routines_20and_20functions',['BLAS level 1 routines and functions',['../group___c_l_b_a_s1.html',1,'']]],
   ['mpi',['mpi',['../namespaceboost_1_1mpi.html',1,'boost']]]
 ];

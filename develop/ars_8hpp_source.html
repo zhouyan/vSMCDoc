@@ -191,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Rp1&gt;</div>
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#abc14c54abb3f5088ffbd62a104baf34d">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#abc14c54abb3f5088ffbd62a104baf34d">generate</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#ac55d70d49ecdb59d67d544093b093d96">key_type</a> &amp;key, std::array&lt;__m128i, Rp1&gt; &amp;key_seq)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        m128i_pack&lt;0&gt;(key, key_seq.front());</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        internal::m128i_pack&lt;0&gt;(key, key_seq.front());</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        generate_seq&lt;1&gt;(key_seq, std::integral_constant&lt;bool, 1 &lt; Rp1&gt;());</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>

@@ -30,7 +30,7 @@ var searchData=
   ['aes256_5f64',['AES256_64',['../group___a_e_s_n_i_r_n_g.html#gaf67095953ddb386e59016ad78df1e904',1,'vsmc']]],
   ['aes256_5f8x32',['AES256_8x32',['../group___a_e_s_n_i_r_n_g.html#ga49ad89786eacb8f02903d6660cf6f429',1,'vsmc']]],
   ['aes256_5f8x64',['AES256_8x64',['../group___a_e_s_n_i_r_n_g.html#gaf23e68fbc07fdf8e0eff0704c8b264de',1,'vsmc']]],
-  ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#gadd7d2892e0c4a50d1106ffa4bf45faf3',1,'vsmc']]],
+  ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#gac3b8019689ab97077d0b580c739b41d2',1,'vsmc']]],
   ['alignedvector',['AlignedVector',['../namespacevsmc.html#a71815f774e78a7daf2858f5bd1ed7388',1,'vsmc']]],
   ['ars_5f1x32',['ARS_1x32',['../group___a_e_s_n_i_r_n_g.html#ga7357ca548b7091b69d6a39daceb6f3b6',1,'vsmc']]],
   ['ars_5f1x64',['ARS_1x64',['../group___a_e_s_n_i_r_n_g.html#ga59a0fdfdbd791b8d328aaaa949530648',1,'vsmc']]],

@@ -158,18 +158,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if defined(__APPLE__) || defined(__MACOSX)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#a66eba3e0874d462e616698c4b6cb94ff">   60</a></span>&#160;<span class="preprocessor">#define VSMC_MACOSX</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define VSMC_MACOSX</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;Availability.h&gt;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#a6929e1d093746ca6fb0cdb79bd7fc42c">   62</a></span>&#160;<span class="preprocessor">#define VSMC_MAC_VERSION_MIN_REQUIRED(ver)                                    \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define VSMC_MAC_VERSION_MIN_REQUIRED(ver)                                    \</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    __MAC_OS_X_VERSION_MIN_REQUIRED &gt;= ver</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define VSMC_MAC_VERSION_MIN_REQUIRED(ver) 0</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#a6929e1d093746ca6fb0cdb79bd7fc42c">   65</a></span>&#160;<span class="preprocessor">#define VSMC_MAC_VERSION_MIN_REQUIRED(ver) 0</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef VSMC_MACOSX</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if VSMC_MAC_VERSION_MIN_REQUIRED(__MAC_10_5)</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_POSIX</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#adcabc5ea095e4ecab179277c8a9ff59d">   71</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_POSIX 1</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define VSMC_HAS_POSIX 1</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#else // VSMC_MACOSX</span></div>
@@ -187,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // VSMC_MACOSX</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_POSIX</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define VSMC_HAS_POSIX 0</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#adcabc5ea095e4ecab179277c8a9ff59d">   89</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_POSIX 0</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if defined(__INTEL_COMPILER)</span></div>
@@ -217,15 +217,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_INT128</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#define VSMC_HAS_INT128 0</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#a4b9a35529fbef6bdbde0623832eb0ffc">  119</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_INT128 0</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_AES_NI</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#define VSMC_HAS_AES_NI 0</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#a1c120b7a67d77fe92b84656704940ac9">  123</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_AES_NI 0</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_RDRAND</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define VSMC_HAS_RDRAND 0</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="compiler_8hpp.html#ab9de6e9b458fd0dfea162f539d1f30fc">  127</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_RDRAND 0</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_OMP</span></div>

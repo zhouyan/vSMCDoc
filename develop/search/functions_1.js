@@ -1,10 +1,6 @@
 var searchData=
 [
   ['b',['b',['../structvsmc_1_1_uniform_real_distribution_1_1param__type.html#a029470ffc24f2cb9899ef228f9cab4b3',1,'vsmc::UniformRealDistribution::param_type::b()'],['../classvsmc_1_1_uniform_real_distribution.html#a80e8be7420018761c38a988f06a776af',1,'vsmc::UniformRealDistribution::b()']]],
-  ['barrier_5fasync',['barrier_async',['../classvsmc_1_1_dispatch_queue_base.html#a421eb1555113c67b625a2e867cb156d8',1,'vsmc::DispatchQueueBase']]],
-  ['barrier_5fasync_5ff',['barrier_async_f',['../classvsmc_1_1_dispatch_queue_base.html#a4916c994d4546187d3ddab825e2cafd0',1,'vsmc::DispatchQueueBase']]],
-  ['barrier_5fsync',['barrier_sync',['../classvsmc_1_1_dispatch_queue_base.html#a90dde0a78f05aa2b44bba9b5c646c985',1,'vsmc::DispatchQueueBase']]],
-  ['barrier_5fsync_5ff',['barrier_sync_f',['../classvsmc_1_1_dispatch_queue_base.html#aef0213ca3ee2d6b68f24008fd46c98c7',1,'vsmc::DispatchQueueBase']]],
   ['base_5ffreq',['base_freq',['../classvsmc_1_1_c_p_u_i_d.html#a250f04edbdfa992e740185d64a5b1565',1,'vsmc::CPUID']]],
   ['begin',['begin',['../classvsmc_1_1_blocked_range.html#a611c64bf21ebf0155c296f683efb6c82',1,'vsmc::BlockedRange']]],
   ['binary_5ftype',['binary_type',['../classvsmc_1_1_c_l_program.html#a6e4ed0f65a668201cf783e9bf53fcb1e',1,'vsmc::CLProgram']]],

@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cblas.hpp File Reference</div>  </div>
@@ -107,7 +106,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="defines_8hpp_source.html">vsmc/internal/defines.hpp</a>&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;mkl.h&gt;</code><br />
 </div>
 <p><a href="cblas_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,85 +116,37 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc_1_1math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html">vsmc::math</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a56fbd204d871fb719e5e3d39f2034e6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cblas_8hpp.html#a56fbd204d871fb719e5e3d39f2034e6f">VSMC_CBLAS_INT</a>&#160;&#160;&#160;<a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a></td></tr>
-<tr class="separator:a56fbd204d871fb719e5e3d39f2034e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa63998c7775f110c2adc23cff569d4d4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa63998c7775f110c2adc23cff569d4d4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#aa63998c7775f110c2adc23cff569d4d4">vsmc::math::asum</a> (std::size_t n, const T *x, std::size_t incx)</td></tr>
-<tr class="memdesc:aa63998c7775f110c2adc23cff569d4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sum of magnitudes of the vector elements.  <a href="#aa63998c7775f110c2adc23cff569d4d4">More...</a><br /></td></tr>
-<tr class="separator:aa63998c7775f110c2adc23cff569d4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63fec3ad2653a36da743fd504db0f8e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a63fec3ad2653a36da743fd504db0f8e3">vsmc::math::asum</a> (std::size_t n, const float *x, std::size_t incx)</td></tr>
-<tr class="separator:a63fec3ad2653a36da743fd504db0f8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d4c3f37e98ba4c5b345b59d67bdc7f4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a9d4c3f37e98ba4c5b345b59d67bdc7f4">vsmc::math::asum</a> (std::size_t n, const double *x, std::size_t incx)</td></tr>
-<tr class="separator:a9d4c3f37e98ba4c5b345b59d67bdc7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c939e6690f22e5720f08f8e2723635c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2c939e6690f22e5720f08f8e2723635c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a2c939e6690f22e5720f08f8e2723635c">vsmc::math::axpy</a> (std::size_t n, T a, const T *x, std::size_t incx, T *y, std::size_t incy)</td></tr>
-<tr class="memdesc:a2c939e6690f22e5720f08f8e2723635c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a vector-scalar product and adds the result to a vector.  <a href="#a2c939e6690f22e5720f08f8e2723635c">More...</a><br /></td></tr>
-<tr class="separator:a2c939e6690f22e5720f08f8e2723635c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0ccfcdf3bd674e7245a338d21c57b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a6f0ccfcdf3bd674e7245a338d21c57b8">vsmc::math::axpy</a> (std::size_t n, float a, const float *x, std::size_t incx, float *y, std::size_t incy)</td></tr>
-<tr class="separator:a6f0ccfcdf3bd674e7245a338d21c57b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523cf773b25c05ab758beffea4c4dcc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a523cf773b25c05ab758beffea4c4dcc4">vsmc::math::axpy</a> (std::size_t n, double a, const double *x, std::size_t incx, double *y, std::size_t incy)</td></tr>
-<tr class="separator:a523cf773b25c05ab758beffea4c4dcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c38f5c7c29c37faf3e082ac124e27a2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2c38f5c7c29c37faf3e082ac124e27a2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a2c38f5c7c29c37faf3e082ac124e27a2">vsmc::math::copy</a> (std::size_t n, const T *x, std::size_t incx, T *y, std::size_t incy)</td></tr>
-<tr class="memdesc:a2c38f5c7c29c37faf3e082ac124e27a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies vector to another vector.  <a href="#a2c38f5c7c29c37faf3e082ac124e27a2">More...</a><br /></td></tr>
-<tr class="separator:a2c38f5c7c29c37faf3e082ac124e27a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7b0787b97a3d8efd4f6b22dc1641d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#ad7b0787b97a3d8efd4f6b22dc1641d92">vsmc::math::copy</a> (std::size_t n, const float *x, std::size_t incx, float *y, std::size_t incy)</td></tr>
-<tr class="separator:ad7b0787b97a3d8efd4f6b22dc1641d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c121085c2bdb650b0f64267779af6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a26c121085c2bdb650b0f64267779af6e">vsmc::math::copy</a> (std::size_t n, const double *x, std::size_t incx, double *y, std::size_t incy)</td></tr>
-<tr class="separator:a26c121085c2bdb650b0f64267779af6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8e6e5e7044fd574c88388957360735"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6c8e6e5e7044fd574c88388957360735"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a6c8e6e5e7044fd574c88388957360735">vsmc::math::dot</a> (std::size_t n, const T *x, std::size_t incx, const T *y, std::size_t incy)</td></tr>
-<tr class="memdesc:a6c8e6e5e7044fd574c88388957360735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a vector-vector dot product.  <a href="#a6c8e6e5e7044fd574c88388957360735">More...</a><br /></td></tr>
-<tr class="separator:a6c8e6e5e7044fd574c88388957360735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30190791a5d927c7ae442d1d9b3009a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a30190791a5d927c7ae442d1d9b3009a8">vsmc::math::dot</a> (std::size_t n, const float *x, std::size_t incx, const float *y, std::size_t incy)</td></tr>
-<tr class="separator:a30190791a5d927c7ae442d1d9b3009a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a646f47fd94e36ede7a35654728b300"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a7a646f47fd94e36ede7a35654728b300">vsmc::math::dot</a> (std::size_t n, const double *x, std::size_t incx, const double *y, std::size_t incy)</td></tr>
-<tr class="separator:a7a646f47fd94e36ede7a35654728b300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec31e42bce6b34d07c4be134cd928633"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aec31e42bce6b34d07c4be134cd928633"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#aec31e42bce6b34d07c4be134cd928633">vsmc::math::gemv</a> (MatrixOrder order, MatrixTrans trans, std::size_t m, std::size_t n, T alpha, const T *A, std::size_t lda, const T *x, std::size_t incx, T beta, T *y, std::size_t incy)</td></tr>
-<tr class="memdesc:aec31e42bce6b34d07c4be134cd928633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a matrix-vector product using a general matrix.  <a href="#aec31e42bce6b34d07c4be134cd928633">More...</a><br /></td></tr>
-<tr class="separator:aec31e42bce6b34d07c4be134cd928633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5fe57c0727b704e6c13c4b2def3c01d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#ac5fe57c0727b704e6c13c4b2def3c01d">vsmc::math::gemv</a> (MatrixOrder order, MatrixTrans trans, std::size_t m, std::size_t n, float alpha, const float *A, std::size_t lda, const float *x, std::size_t incx, float beta, float *y, std::size_t incy)</td></tr>
-<tr class="separator:ac5fe57c0727b704e6c13c4b2def3c01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8dfc7bf5db90b4133c9a08e0bfc81f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#aeb8dfc7bf5db90b4133c9a08e0bfc81f">vsmc::math::gemv</a> (MatrixOrder order, MatrixTrans trans, std::size_t m, std::size_t n, double alpha, const double *A, std::size_t lda, const double *x, std::size_t incx, double beta, double *y, std::size_t incy)</td></tr>
-<tr class="separator:aeb8dfc7bf5db90b4133c9a08e0bfc81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa98fb608fa2800834c0454a892009321"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa98fb608fa2800834c0454a892009321"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#aa98fb608fa2800834c0454a892009321">vsmc::math::nrm2</a> (std::size_t n, const T *x, std::size_t incx)</td></tr>
-<tr class="memdesc:aa98fb608fa2800834c0454a892009321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Euclidean norm of a vector.  <a href="#aa98fb608fa2800834c0454a892009321">More...</a><br /></td></tr>
-<tr class="separator:aa98fb608fa2800834c0454a892009321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976ee68efa774441ca91d787bd38013a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a976ee68efa774441ca91d787bd38013a">vsmc::math::nrm2</a> (std::size_t n, const float *x, std::size_t incx)</td></tr>
-<tr class="separator:a976ee68efa774441ca91d787bd38013a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7711195f8603c7504d204ec153ec1e87"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a7711195f8603c7504d204ec153ec1e87">vsmc::math::nrm2</a> (std::size_t n, const double *x, std::size_t incx)</td></tr>
-<tr class="separator:a7711195f8603c7504d204ec153ec1e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4c3c52a995ea96f45df669db8c1bf7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaf4c3c52a995ea96f45df669db8c1bf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#aaf4c3c52a995ea96f45df669db8c1bf7">vsmc::math::scal</a> (std::size_t n, T a, T *x, std::size_t incx)</td></tr>
-<tr class="memdesc:aaf4c3c52a995ea96f45df669db8c1bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the product of a vector by a scalar.  <a href="#aaf4c3c52a995ea96f45df669db8c1bf7">More...</a><br /></td></tr>
-<tr class="separator:aaf4c3c52a995ea96f45df669db8c1bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96fe623ee7ca56adad65917a5f8dcf95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#a96fe623ee7ca56adad65917a5f8dcf95">vsmc::math::scal</a> (std::size_t n, float a, float *x, std::size_t incx)</td></tr>
-<tr class="separator:a96fe623ee7ca56adad65917a5f8dcf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae807eae294fac9cc797d391c660dc4c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1math.html#ae807eae294fac9cc797d391c660dc4c0">vsmc::math::scal</a> (std::size_t n, double a, double *x, std::size_t incx)</td></tr>
-<tr class="separator:ae807eae294fac9cc797d391c660dc4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa63998c7775f110c2adc23cff569d4d4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaa63998c7775f110c2adc23cff569d4d4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s1.html#gaa63998c7775f110c2adc23cff569d4d4">vsmc::math::asum</a> (std::size_t n, const T *x, std::size_t incx)</td></tr>
+<tr class="memdesc:gaa63998c7775f110c2adc23cff569d4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sum of magnitudes of the vector elements.  <a href="group___c_b_l_a_s1.html#gaa63998c7775f110c2adc23cff569d4d4">More...</a><br /></td></tr>
+<tr class="separator:gaa63998c7775f110c2adc23cff569d4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c939e6690f22e5720f08f8e2723635c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga2c939e6690f22e5720f08f8e2723635c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s1.html#ga2c939e6690f22e5720f08f8e2723635c">vsmc::math::axpy</a> (std::size_t n, T a, const T *x, std::size_t incx, T *y, std::size_t incy)</td></tr>
+<tr class="memdesc:ga2c939e6690f22e5720f08f8e2723635c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a vector-scalar product and adds the result to a vector.  <a href="group___c_b_l_a_s1.html#ga2c939e6690f22e5720f08f8e2723635c">More...</a><br /></td></tr>
+<tr class="separator:ga2c939e6690f22e5720f08f8e2723635c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c38f5c7c29c37faf3e082ac124e27a2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga2c38f5c7c29c37faf3e082ac124e27a2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s1.html#ga2c38f5c7c29c37faf3e082ac124e27a2">vsmc::math::copy</a> (std::size_t n, const T *x, std::size_t incx, T *y, std::size_t incy)</td></tr>
+<tr class="memdesc:ga2c38f5c7c29c37faf3e082ac124e27a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies vector to another vector.  <a href="group___c_b_l_a_s1.html#ga2c38f5c7c29c37faf3e082ac124e27a2">More...</a><br /></td></tr>
+<tr class="separator:ga2c38f5c7c29c37faf3e082ac124e27a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c8e6e5e7044fd574c88388957360735"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga6c8e6e5e7044fd574c88388957360735"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s1.html#ga6c8e6e5e7044fd574c88388957360735">vsmc::math::dot</a> (std::size_t n, const T *x, std::size_t incx, const T *y, std::size_t incy)</td></tr>
+<tr class="memdesc:ga6c8e6e5e7044fd574c88388957360735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a vector-vector dot product.  <a href="group___c_b_l_a_s1.html#ga6c8e6e5e7044fd574c88388957360735">More...</a><br /></td></tr>
+<tr class="separator:ga6c8e6e5e7044fd574c88388957360735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec31e42bce6b34d07c4be134cd928633"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaec31e42bce6b34d07c4be134cd928633"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s2.html#gaec31e42bce6b34d07c4be134cd928633">vsmc::math::gemv</a> (MatrixOrder order, MatrixTrans trans, std::size_t m, std::size_t n, T alpha, const T *A, std::size_t lda, const T *x, std::size_t incx, T beta, T *y, std::size_t incy)</td></tr>
+<tr class="memdesc:gaec31e42bce6b34d07c4be134cd928633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a matrix-vector product using a general matrix.  <a href="group___c_b_l_a_s2.html#gaec31e42bce6b34d07c4be134cd928633">More...</a><br /></td></tr>
+<tr class="separator:gaec31e42bce6b34d07c4be134cd928633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa98fb608fa2800834c0454a892009321"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaa98fb608fa2800834c0454a892009321"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s1.html#gaa98fb608fa2800834c0454a892009321">vsmc::math::nrm2</a> (std::size_t n, const T *x, std::size_t incx)</td></tr>
+<tr class="memdesc:gaa98fb608fa2800834c0454a892009321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Euclidean norm of a vector.  <a href="group___c_b_l_a_s1.html#gaa98fb608fa2800834c0454a892009321">More...</a><br /></td></tr>
+<tr class="separator:gaa98fb608fa2800834c0454a892009321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf4c3c52a995ea96f45df669db8c1bf7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaaf4c3c52a995ea96f45df669db8c1bf7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___c_b_l_a_s1.html#gaaf4c3c52a995ea96f45df669db8c1bf7">vsmc::math::scal</a> (std::size_t n, T a, T *x, std::size_t incx)</td></tr>
+<tr class="memdesc:gaaf4c3c52a995ea96f45df669db8c1bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the product of a vector by a scalar.  <a href="group___c_b_l_a_s1.html#gaaf4c3c52a995ea96f45df669db8c1bf7">More...</a><br /></td></tr>
+<tr class="separator:gaaf4c3c52a995ea96f45df669db8c1bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a56fbd204d871fb719e5e3d39f2034e6f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_CBLAS_INT&#160;&#160;&#160;<a class="el" href="class_m_k_l___i_n_t.html">MKL_INT</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cblas_8hpp_source.html#l00042">42</a> of file <a class="el" href="cblas_8hpp_source.html">cblas.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

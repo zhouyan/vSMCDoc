@@ -107,13 +107,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;<a class="el" href="seed_8hpp_source.html">vsmc/rng/seed.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="philox_8hpp_source.html">vsmc/rng/philox.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="threefry_8hpp_source.html">vsmc/rng/threefry.hpp</a>&gt;</code><br />
+<code>#include &lt;tbb/tbb.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="rng_2mkl_8hpp_source.html">vsmc/rng/mkl.hpp</a>&gt;</code><br />
 </div>
 <p><a href="rng__set_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_rng_set_m_k_l.html">vsmc::RngSetMKL&lt; typename &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_rng_set_m_k_l_3_01_m_k_l_engine_3_01_b_r_n_g_00_01_result_type_01_4_01_4.html">vsmc::RngSetMKL&lt; MKLEngine&lt; BRNG, ResultType &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread local RNG set using MKL RNG and TBB.  <a href="classvsmc_1_1_rng_set_m_k_l_3_01_m_k_l_engine_3_01_b_r_n_g_00_01_result_type_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_rng_set_scalar.html">vsmc::RngSetScalar&lt; RngType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar RNG set.  <a href="classvsmc_1_1_rng_set_scalar.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_rng_set_t_b_b.html">vsmc::RngSetTBB&lt; RngType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread local RNG set.  <a href="classvsmc_1_1_rng_set_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_rng_set_vector.html">vsmc::RngSetVector&lt; RngType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector RNG set.  <a href="classvsmc_1_1_rng_set_vector.html#details">More...</a><br /></td></tr>
@@ -146,7 +156,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gaf35ecbadeaeb7f0d0423a61405dcb4cb">VSMC_RNG_SET_TYPE</a>&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_rng_set_vector.html">vsmc::RngSetVector</a>&lt;::<a class="el" href="group___r123_r_n_g.html#ga15ffdff66da55bd56873fb4fecc231a6">vsmc::Threefry4x64</a>&gt;</td></tr>
+<tr class="memitem:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gaf35ecbadeaeb7f0d0423a61405dcb4cb">VSMC_RNG_SET_TYPE</a>&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_rng_set_t_b_b.html">vsmc::RngSetTBB</a>&lt;::<a class="el" href="group___r123_r_n_g.html#ga15ffdff66da55bd56873fb4fecc231a6">vsmc::Threefry4x64</a>&gt;</td></tr>
 <tr class="memdesc:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default RNG set type.  <a href="group___config.html#gaf35ecbadeaeb7f0d0423a61405dcb4cb">More...</a><br /></td></tr>
 <tr class="separator:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

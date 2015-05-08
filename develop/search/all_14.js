@@ -1,7 +1,6 @@
 var searchData=
 [
   ['u01',['U01',['../structvsmc_1_1_u01.html',1,'vsmc']]],
-  ['u01',['U01',['../group___u01.html',1,'']]],
   ['u01_2eh',['u01.h',['../u01_8h.html',1,'']]],
   ['u01_2ehpp',['u01.hpp',['../u01_8hpp.html',1,'']]],
   ['u01_3c_20closed_2c_20closed_2c_20uint32_5ft_2c_20double_20_3e',['U01&lt; Closed, Closed, uint32_t, double &gt;',['../structvsmc_1_1_u01_3_01_closed_00_01_closed_00_01uint32__t_00_01double_01_4.html',1,'vsmc']]],

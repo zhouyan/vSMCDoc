@@ -6,5 +6,6 @@ var searchData=
   ['core',['Core',['../group___core.html',1,'']]],
   ['counter',['Counter',['../group___counter.html',1,'']]],
   ['cpuid',['CPUID',['../group___c_p_u_i_d.html',1,'']]],
+  ['c_20api',['C API',['../group___c_r_n_g.html',1,'']]],
   ['c_2b_2b11_20concurrency',['C++11 concurrency',['../group___s_t_d.html',1,'']]]
 ];

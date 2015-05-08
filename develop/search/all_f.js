@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['opencl',['OpenCL',['../group___c_l_r_n_g.html',1,'']]],
   ['object',['object',['../classvsmc_1_1_dispatch_object.html#a43e51ae739cdd4e3f867fc558f936163',1,'vsmc::DispatchObject::object() const '],['../classvsmc_1_1_dispatch_object.html#ae6b93719d8e630d0e83e8dbc61506949',1,'vsmc::DispatchObject::object(DispatchType obj)']]],
   ['offset',['offset',['../classvsmc_1_1_state_m_p_i.html#a4f20730484f17c38054fd94edf28d2c2',1,'vsmc::StateMPI::offset()'],['../classvsmc_1_1_m_k_l_stream.html#a5e099c4051d30fd502746457266dc19b',1,'vsmc::MKLStream::offset(MKL_INT n)'],['../classvsmc_1_1_m_k_l_stream.html#a181b6b13ece8573b5f0fdecfaa9eb3e5',1,'vsmc::MKLStream::offset() const ']]],
   ['openmp',['OpenMP',['../group___o_m_p.html',1,'']]],

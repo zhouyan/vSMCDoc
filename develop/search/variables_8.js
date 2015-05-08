@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['saved',['saved',['../structnormal01__2x32__24.html#a79d2c5387350bc6b970dc5c8c33384ad',1,'normal01_2x32_24::saved()'],['../structnormal01__4x32__24.html#a76083aad06e5cc3d9a6a574e7a83e954',1,'normal01_4x32_24::saved()'],['../structnormal01__2x32__53.html#a9c12fba50181b99dc0b2f7cd055708e0',1,'normal01_2x32_53::saved()'],['../structnormal01__4x32__53.html#a0ec9ddb01897ed47ad51aaa53c128afb',1,'normal01_4x32_53::saved()'],['../structnormal01__2x64__53.html#a0770b6996ed6159051b04a441f6a5774',1,'normal01_2x64_53::saved()'],['../structnormal01__4x64__53.html#a277cb6865d1bdd74a0ca798f74d847a4',1,'normal01_4x64_53::saved()']]]
+  ['saved',['saved',['../structvsmc__normal01__24.html#acaa77892cc654a73492de0ef6e4d75c5',1,'vsmc_normal01_24::saved()'],['../structvsmc__normal01__53.html#aecf536219fc7c0cdabfc947d6c1f66d7',1,'vsmc_normal01_53::saved()']]],
+  ['state',['state',['../structvsmc__philox2x32.html#a16f57258acd009bfec787a38f3abe2df',1,'vsmc_philox2x32::state()'],['../structvsmc__philox4x32.html#ab9be04ac4cb1af5899ad42a642e5ea1b',1,'vsmc_philox4x32::state()']]]
 ];

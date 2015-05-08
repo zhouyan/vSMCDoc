@@ -246,12 +246,12 @@ Macros</h2></td></tr>
 <div class="line">    struct U01&lt;Left, Right, uint##UBits##_t, FPType&gt; {                        \</div>
 <div class="line">        FPType operator()(uint##UBits##_t u) <span class="keyword">const</span>                            \</div>
 <div class="line">        {                                                                     \</div>
-<div class="line">            return ::u01_##left##_##right##_##UBits##_##FBits(u);             \</div>
+<div class="line">            return ::vsmc_u01_##left##_##right##_##UBits##_##FBits(u);        \</div>
 <div class="line">        }                                                                     \</div>
 <div class="line">                                                                              \</div>
 <div class="line">        static FPType uint2fp(uint##UBits##_t u)                              \</div>
 <div class="line">        {                                                                     \</div>
-<div class="line">            return ::u01_##left##_##right##_##UBits##_##FBits(u);             \</div>
+<div class="line">            return ::vsmc_u01_##left##_##right##_##UBits##_##FBits(u);        \</div>
 <div class="line">        }                                                                     \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->

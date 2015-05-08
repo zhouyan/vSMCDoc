@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="common_8h_source.html">vsmc/rng/internal/common.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="urng_8h_source.html">vsmc/rng/urng.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="philox_8h_source.html">vsmc/rng/philox.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="normal01_8h_source.html">vsmc/rng/normal01.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="u01_8h_source.html">vsmc/rng/u01.h</a>&gt;</code><br />
 </div>
@@ -112,267 +112,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgammak1__2x32__24.html">gammak1_2x32_24</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__gammak1__24.html">vsmc_gammak1_24</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgammak1__2x32__53.html">gammak1_2x32_53</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgammak1__2x64__53.html">gammak1_2x64_53</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgammak1__4x32__24.html">gammak1_4x32_24</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgammak1__4x32__53.html">gammak1_4x32_53</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgammak1__4x64__53.html">gammak1_4x64_53</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__gammak1__53.html">vsmc_gammak1_53</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1383472054b66d0c5912447a990161b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a1383472054b66d0c5912447a990161b5">GAMMAK1_2x32</a>&#160;&#160;&#160;<a class="el" href="structgammak1__2x32__53.html">gammak1_2x32_53</a></td></tr>
-<tr class="separator:a1383472054b66d0c5912447a990161b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f0bb003947beaf4f2d9d5eb1a6eb642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a3f0bb003947beaf4f2d9d5eb1a6eb642">GAMMAK1_2x32_INIT</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga293cf183ccf2645865d02b2cdd7e3149">gammak1_2x32_53_init</a></td></tr>
-<tr class="separator:a3f0bb003947beaf4f2d9d5eb1a6eb642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e83e14bff497827f6022ac5bc49fcde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a5e83e14bff497827f6022ac5bc49fcde">GAMMAK1_2x32_RAND</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga4f2409fb9f3f028c4253b7293ddcbfd5">gammak1_2x32_53_rand</a></td></tr>
-<tr class="separator:a5e83e14bff497827f6022ac5bc49fcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acacb000f3a0e0e17c2f69802c1f79bfa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#acacb000f3a0e0e17c2f69802c1f79bfa">GAMMAK1_2x64</a>&#160;&#160;&#160;<a class="el" href="structgammak1__2x64__53.html">gammak1_2x64_53</a></td></tr>
-<tr class="separator:acacb000f3a0e0e17c2f69802c1f79bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70d3723f6d5841f995962ab4edb26d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#aa70d3723f6d5841f995962ab4edb26d9">GAMMAK1_2x64_INIT</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga62ad8614d4d6e4115e53fb9cc0cf7cea">gammak1_2x64_53_init</a></td></tr>
-<tr class="separator:aa70d3723f6d5841f995962ab4edb26d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30de761fc07881c8bf1d498adce4c077"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a30de761fc07881c8bf1d498adce4c077">GAMMAK1_2x64_RAND</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#gad1057c93c43b3765c149512687293163">gammak1_2x64_53_rand</a></td></tr>
-<tr class="separator:a30de761fc07881c8bf1d498adce4c077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7db6962a30d1f433a57e53f6ca07c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a6c7db6962a30d1f433a57e53f6ca07c4">GAMMAK1_4x32</a>&#160;&#160;&#160;<a class="el" href="structgammak1__4x32__53.html">gammak1_4x32_53</a></td></tr>
-<tr class="separator:a6c7db6962a30d1f433a57e53f6ca07c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93fddbd2f6583b8d6d71ee1e4ce60a5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a93fddbd2f6583b8d6d71ee1e4ce60a5f">GAMMAK1_4x32_INIT</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga4fc2566f1755ce04214f672398894f02">gammak1_4x32_53_init</a></td></tr>
-<tr class="separator:a93fddbd2f6583b8d6d71ee1e4ce60a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d7e8ed82fe4df1e0b27df85adb7fbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a86d7e8ed82fe4df1e0b27df85adb7fbc">GAMMAK1_4x32_RAND</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga8997b76ebcd14e303997c58ef4ee74c4">gammak1_4x32_53_rand</a></td></tr>
-<tr class="separator:a86d7e8ed82fe4df1e0b27df85adb7fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c32b7daaac737d952dc3082e137c2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a33c32b7daaac737d952dc3082e137c2b">GAMMAK1_4x64</a>&#160;&#160;&#160;<a class="el" href="structgammak1__4x64__53.html">gammak1_4x64_53</a></td></tr>
-<tr class="separator:a33c32b7daaac737d952dc3082e137c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8910adbe1cc5b5997ce75205d6cc23b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a8910adbe1cc5b5997ce75205d6cc23b0">GAMMAK1_4x64_INIT</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga0b5f29171c0792b7ba7492699267cb67">gammak1_4x64_53_init</a></td></tr>
-<tr class="separator:a8910adbe1cc5b5997ce75205d6cc23b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a192440662c90986d6bc285ef6e9d046a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a192440662c90986d6bc285ef6e9d046a">GAMMAK1_4x64_RAND</a>&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#gaf3d6a4ad9bea237ce6b391f936b8760f">gammak1_4x64_53_rand</a></td></tr>
-<tr class="separator:a192440662c90986d6bc285ef6e9d046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44a48830ba50e529e7654856bf1054c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#ad44a48830ba50e529e7654856bf1054c">VSMC_DEFINE_RNG_GAMMAK1</a>(N,  W,  F,  FT)</td></tr>
-<tr class="separator:ad44a48830ba50e529e7654856bf1054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add4a97eb92321e0fe30c90a407af302b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#add4a97eb92321e0fe30c90a407af302b">VSMC_DEFINE_RNG_GAMMAK1_INIT</a>(N,  W,  F,  FT)</td></tr>
-<tr class="separator:add4a97eb92321e0fe30c90a407af302b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398d0280f398eabdc5d65a4358165537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a398d0280f398eabdc5d65a4358165537">VSMC_DEFINE_RNG_GAMMAK1_RAND</a>(N,  W,  F,  FT)</td></tr>
-<tr class="separator:a398d0280f398eabdc5d65a4358165537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05d19d6591982c7436fc7736e14073f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#aa05d19d6591982c7436fc7736e14073f">VSMC_DEFINE_RNG_GAMMAK1</a>(F,  FT)</td></tr>
+<tr class="separator:aa05d19d6591982c7436fc7736e14073f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad372ab9831d859812a168df5b53c45aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#ad372ab9831d859812a168df5b53c45aa">VSMC_DEFINE_RNG_GAMMAK1_INIT</a>(F,  FT)</td></tr>
+<tr class="separator:ad372ab9831d859812a168df5b53c45aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afded82ca2cc48a3085fa8fa854fd0021"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#afded82ca2cc48a3085fa8fa854fd0021">VSMC_DEFINE_RNG_GAMMAK1_RAND</a>(F,  FT)</td></tr>
+<tr class="separator:afded82ca2cc48a3085fa8fa854fd0021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c0f8871abc71a634bfbf28713ac789"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#ae4c0f8871abc71a634bfbf28713ac789">vsmc_gammak1</a>&#160;&#160;&#160;<a class="el" href="structvsmc__gammak1__53.html">vsmc_gammak1_53</a></td></tr>
+<tr class="separator:ae4c0f8871abc71a634bfbf28713ac789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08938ec0b681dd164681c57564eee558"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a08938ec0b681dd164681c57564eee558">vsmc_gammak1_init</a>&#160;&#160;&#160;<a class="el" href="group___c_r_n_g.html#gacc90fd298a61ad86b7707d44c85ea526">vsmc_gammak1_53_init</a></td></tr>
+<tr class="separator:a08938ec0b681dd164681c57564eee558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc19f1815a2d4327b0a89a1be6f6bf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gammak1_8h.html#a1bc19f1815a2d4327b0a89a1be6f6bf1">vsmc_gammak1_rand</a>&#160;&#160;&#160;<a class="el" href="group___c_r_n_g.html#gae9921fb61478dffa3b5f7024afeddcd4">vsmc_gammak1_53_rand</a></td></tr>
+<tr class="separator:a1bc19f1815a2d4327b0a89a1be6f6bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6118bc1f337b3c2d175980e5baac7865"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga6118bc1f337b3c2d175980e5baac7865">gammak1_2x32_24_init</a> (<a class="el" href="structgammak1__2x32__24.html">gammak1_2x32_24</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#gaeffacece6bfc239c2ef6d439a4c8f5ad">cburng2x32_rng_t</a> *rng, float shape)</td></tr>
-<tr class="separator:ga6118bc1f337b3c2d175980e5baac7865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57d884c37d6db7d6664d3ef3a3de9abe"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga57d884c37d6db7d6664d3ef3a3de9abe">gammak1_2x32_24_rand</a> (<a class="el" href="structgammak1__2x32__24.html">gammak1_2x32_24</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#gaeffacece6bfc239c2ef6d439a4c8f5ad">cburng2x32_rng_t</a> *rng)</td></tr>
-<tr class="separator:ga57d884c37d6db7d6664d3ef3a3de9abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga293cf183ccf2645865d02b2cdd7e3149"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga293cf183ccf2645865d02b2cdd7e3149">gammak1_2x32_53_init</a> (<a class="el" href="structgammak1__2x32__53.html">gammak1_2x32_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#gaeffacece6bfc239c2ef6d439a4c8f5ad">cburng2x32_rng_t</a> *rng, double shape)</td></tr>
-<tr class="separator:ga293cf183ccf2645865d02b2cdd7e3149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f2409fb9f3f028c4253b7293ddcbfd5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga4f2409fb9f3f028c4253b7293ddcbfd5">gammak1_2x32_53_rand</a> (<a class="el" href="structgammak1__2x32__53.html">gammak1_2x32_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#gaeffacece6bfc239c2ef6d439a4c8f5ad">cburng2x32_rng_t</a> *rng)</td></tr>
-<tr class="separator:ga4f2409fb9f3f028c4253b7293ddcbfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62ad8614d4d6e4115e53fb9cc0cf7cea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga62ad8614d4d6e4115e53fb9cc0cf7cea">gammak1_2x64_53_init</a> (<a class="el" href="structgammak1__2x64__53.html">gammak1_2x64_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga24a4b1c9f0364ecb9a3d5c24ecdf1bfa">cburng2x64_rng_t</a> *rng, double shape)</td></tr>
-<tr class="separator:ga62ad8614d4d6e4115e53fb9cc0cf7cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1057c93c43b3765c149512687293163"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#gad1057c93c43b3765c149512687293163">gammak1_2x64_53_rand</a> (<a class="el" href="structgammak1__2x64__53.html">gammak1_2x64_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga24a4b1c9f0364ecb9a3d5c24ecdf1bfa">cburng2x64_rng_t</a> *rng)</td></tr>
-<tr class="separator:gad1057c93c43b3765c149512687293163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a43e3bc90fd1f614b9376910e8b13bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga7a43e3bc90fd1f614b9376910e8b13bc">gammak1_4x32_24_init</a> (<a class="el" href="structgammak1__4x32__24.html">gammak1_4x32_24</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga51b18334c86e0818a785a5f5baebd5c6">cburng4x32_rng_t</a> *rng, float shape)</td></tr>
-<tr class="separator:ga7a43e3bc90fd1f614b9376910e8b13bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2ac2383a66f1c6524c58b45402682df"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#gac2ac2383a66f1c6524c58b45402682df">gammak1_4x32_24_rand</a> (<a class="el" href="structgammak1__4x32__24.html">gammak1_4x32_24</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga51b18334c86e0818a785a5f5baebd5c6">cburng4x32_rng_t</a> *rng)</td></tr>
-<tr class="separator:gac2ac2383a66f1c6524c58b45402682df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4fc2566f1755ce04214f672398894f02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga4fc2566f1755ce04214f672398894f02">gammak1_4x32_53_init</a> (<a class="el" href="structgammak1__4x32__53.html">gammak1_4x32_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga51b18334c86e0818a785a5f5baebd5c6">cburng4x32_rng_t</a> *rng, double shape)</td></tr>
-<tr class="separator:ga4fc2566f1755ce04214f672398894f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8997b76ebcd14e303997c58ef4ee74c4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga8997b76ebcd14e303997c58ef4ee74c4">gammak1_4x32_53_rand</a> (<a class="el" href="structgammak1__4x32__53.html">gammak1_4x32_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga51b18334c86e0818a785a5f5baebd5c6">cburng4x32_rng_t</a> *rng)</td></tr>
-<tr class="separator:ga8997b76ebcd14e303997c58ef4ee74c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b5f29171c0792b7ba7492699267cb67"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#ga0b5f29171c0792b7ba7492699267cb67">gammak1_4x64_53_init</a> (<a class="el" href="structgammak1__4x64__53.html">gammak1_4x64_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga979c01f3e9870c189b805be23e3f880a">cburng4x64_rng_t</a> *rng, double shape)</td></tr>
-<tr class="separator:ga0b5f29171c0792b7ba7492699267cb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3d6a4ad9bea237ce6b391f936b8760f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_l_r_n_g.html#gaf3d6a4ad9bea237ce6b391f936b8760f">gammak1_4x64_53_rand</a> (<a class="el" href="structgammak1__4x64__53.html">gammak1_4x64_53</a> *rgamma, <a class="el" href="group___c_l_r_n_g.html#ga979c01f3e9870c189b805be23e3f880a">cburng4x64_rng_t</a> *rng)</td></tr>
-<tr class="separator:gaf3d6a4ad9bea237ce6b391f936b8760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46c7d479c44961455c4367cf485a5098"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_r_n_g.html#ga46c7d479c44961455c4367cf485a5098">vsmc_gammak1_24_init</a> (<a class="el" href="structvsmc__gammak1__24.html">vsmc_gammak1_24</a> *rgamma, <a class="el" href="structvsmc__philox4x32.html">vsmc_philox4x32</a> *rng, float shape)</td></tr>
+<tr class="separator:ga46c7d479c44961455c4367cf485a5098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b68657b6a116ffdd83ad891b959aa8c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_r_n_g.html#ga5b68657b6a116ffdd83ad891b959aa8c">vsmc_gammak1_24_rand</a> (<a class="el" href="structvsmc__gammak1__24.html">vsmc_gammak1_24</a> *rgamma, <a class="el" href="structvsmc__philox4x32.html">vsmc_philox4x32</a> *rng)</td></tr>
+<tr class="separator:ga5b68657b6a116ffdd83ad891b959aa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc90fd298a61ad86b7707d44c85ea526"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_r_n_g.html#gacc90fd298a61ad86b7707d44c85ea526">vsmc_gammak1_53_init</a> (<a class="el" href="structvsmc__gammak1__53.html">vsmc_gammak1_53</a> *rgamma, <a class="el" href="structvsmc__philox4x32.html">vsmc_philox4x32</a> *rng, double shape)</td></tr>
+<tr class="separator:gacc90fd298a61ad86b7707d44c85ea526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9921fb61478dffa3b5f7024afeddcd4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_r_n_g.html#gae9921fb61478dffa3b5f7024afeddcd4">vsmc_gammak1_53_rand</a> (<a class="el" href="structvsmc__gammak1__53.html">vsmc_gammak1_53</a> *rgamma, <a class="el" href="structvsmc__philox4x32.html">vsmc_philox4x32</a> *rng)</td></tr>
+<tr class="separator:gae9921fb61478dffa3b5f7024afeddcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a1383472054b66d0c5912447a990161b5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_2x32&#160;&#160;&#160;<a class="el" href="structgammak1__2x32__53.html">gammak1_2x32_53</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00092">92</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3f0bb003947beaf4f2d9d5eb1a6eb642"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_2x32_INIT&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga293cf183ccf2645865d02b2cdd7e3149">gammak1_2x32_53_init</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00093">93</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5e83e14bff497827f6022ac5bc49fcde"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_2x32_RAND&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga4f2409fb9f3f028c4253b7293ddcbfd5">gammak1_2x32_53_rand</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00094">94</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acacb000f3a0e0e17c2f69802c1f79bfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_2x64&#160;&#160;&#160;<a class="el" href="structgammak1__2x64__53.html">gammak1_2x64_53</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00096">96</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa70d3723f6d5841f995962ab4edb26d9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_2x64_INIT&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga62ad8614d4d6e4115e53fb9cc0cf7cea">gammak1_2x64_53_init</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00097">97</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a30de761fc07881c8bf1d498adce4c077"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_2x64_RAND&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#gad1057c93c43b3765c149512687293163">gammak1_2x64_53_rand</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00098">98</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6c7db6962a30d1f433a57e53f6ca07c4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_4x32&#160;&#160;&#160;<a class="el" href="structgammak1__4x32__53.html">gammak1_4x32_53</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00100">100</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a93fddbd2f6583b8d6d71ee1e4ce60a5f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_4x32_INIT&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga4fc2566f1755ce04214f672398894f02">gammak1_4x32_53_init</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00101">101</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a86d7e8ed82fe4df1e0b27df85adb7fbc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_4x32_RAND&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga8997b76ebcd14e303997c58ef4ee74c4">gammak1_4x32_53_rand</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00102">102</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a33c32b7daaac737d952dc3082e137c2b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_4x64&#160;&#160;&#160;<a class="el" href="structgammak1__4x64__53.html">gammak1_4x64_53</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00104">104</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8910adbe1cc5b5997ce75205d6cc23b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_4x64_INIT&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#ga0b5f29171c0792b7ba7492699267cb67">gammak1_4x64_53_init</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00105">105</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a192440662c90986d6bc285ef6e9d046a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GAMMAK1_4x64_RAND&#160;&#160;&#160;<a class="el" href="group___c_l_r_n_g.html#gaf3d6a4ad9bea237ce6b391f936b8760f">gammak1_4x64_53_rand</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00106">106</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad44a48830ba50e529e7654856bf1054c"></a>
+<a class="anchor" id="aa05d19d6591982c7436fc7736e14073f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define VSMC_DEFINE_RNG_GAMMAK1</td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">N, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">W, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">F, </td>
         </tr>
@@ -391,14 +169,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{                                                          \</div>
 <div class="line">        FT c_shape, c_s2, c_s, c_d, c_b, c_si, c_c, c_q0;                     \</div>
-<div class="line">        normal01_##N##x##W##_##F rnorm;                                       \</div>
-<div class="line">    } gammak1_##N##x##W##_##F;</div>
+<div class="line">        vsmc_normal01_##F rnorm;                                              \</div>
+<div class="line">    } vsmc_gammak1_##F;</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00120">120</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
+<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00050">50</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="add4a97eb92321e0fe30c90a407af302b"></a>
+<a class="anchor" id="ad372ab9831d859812a168df5b53c45aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -406,18 +184,6 @@ Functions</h2></td></tr>
           <td class="memname">#define VSMC_DEFINE_RNG_GAMMAK1_INIT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">N, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">W, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
           <td class="paramname">F, </td>
         </tr>
         <tr>
@@ -434,11 +200,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00126">126</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
+<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00056">56</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a398d0280f398eabdc5d65a4358165537"></a>
+<a class="anchor" id="afded82ca2cc48a3085fa8fa854fd0021"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -446,18 +212,6 @@ Functions</h2></td></tr>
           <td class="memname">#define VSMC_DEFINE_RNG_GAMMAK1_RAND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">N, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">W, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
           <td class="paramname">F, </td>
         </tr>
         <tr>
@@ -474,7 +228,49 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00186">186</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
+<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00116">116</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4c0f8871abc71a634bfbf28713ac789"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define vsmc_gammak1&#160;&#160;&#160;<a class="el" href="structvsmc__gammak1__53.html">vsmc_gammak1_53</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00041">41</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08938ec0b681dd164681c57564eee558"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define vsmc_gammak1_init&#160;&#160;&#160;<a class="el" href="group___c_r_n_g.html#gacc90fd298a61ad86b7707d44c85ea526">vsmc_gammak1_53_init</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00042">42</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1bc19f1815a2d4327b0a89a1be6f6bf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define vsmc_gammak1_rand&#160;&#160;&#160;<a class="el" href="group___c_r_n_g.html#gae9921fb61478dffa3b5f7024afeddcd4">vsmc_gammak1_53_rand</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gammak1_8h_source.html#l00043">43</a> of file <a class="el" href="gammak1_8h_source.html">gammak1.h</a>.</p>
 
 </div>
 </div>

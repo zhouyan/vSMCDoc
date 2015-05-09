@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/normal01.h Source File</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rngc/normal01.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_46661e38579300fbbfed0a64db3d90d4.html">rngc</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="normal01_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//============================================================================</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rng/normal01.h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rngc/normal01.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                         vSMC: Scalable Monte Carlo</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -130,31 +130,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//============================================================================</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_NORMAL01_H</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNG_NORMAL01_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNGC_NORMAL01_H</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNGC_NORMAL01_H</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_8h.html">vsmc/rng/internal/common.h</a>&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="philox_8h.html">vsmc/rng/philox.h</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="u01_8h.html">vsmc/rng/u01.h</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_8h.html">vsmc/rngc/internal/common.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="philox_8h.html">vsmc/rngc/philox.h</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="u01_8h.html">vsmc/rngc/u01.h</a>&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="normal01_8h.html#a130a928357e610972dfa2f15a744dca2">   40</a></span>&#160;<span class="preprocessor">#define vsmc_normal01 vsmc_normal01_53</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="normal01_8h.html#a29160b45bd73aaedc438bb40f820c838">   41</a></span>&#160;<span class="preprocessor">#define vsmc_normal01_init vsmc_normal01_53_init</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="normal01_8h.html#ac454ce688d068274164ddc5a3e56d290">   42</a></span>&#160;<span class="preprocessor">#define vsmc_normal01_rand vsmc_normal01_53_rand</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#else // VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#else // VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define vsmc_normal01 vsmc_normal01_24</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define vsmc_normal01_init vsmc_normal01_24_init</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define vsmc_normal01_rand vsmc_normal01_24_rand</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="normal01_8h.html#a095450382922581219ed90c828c6dbde">   49</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_NORMAL01(F, FT)                                       \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="normal01_8h.html#ab30b868a824bf7e0b013a8a0769c06b5">   49</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNGC_NORMAL01(F, FT)                                      \</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    typedef struct {                                                          \</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">        FT u1;                                                                \</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        FT u2;                                                                \</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        unsigned char saved;                                                  \</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    } vsmc_normal01_##F;</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="normal01_8h.html#a8cc017a672ff19e93d86f0c5ddd519e8">   56</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_NORMAL01_INIT(F, FT)                                  \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="normal01_8h.html#a598f411646505b15cd484169071fa5d8">   56</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNGC_NORMAL01_INIT(F, FT)                                 \</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    VSMC_STATIC_INLINE void vsmc_normal01_##F##_init(                         \</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        vsmc_normal01_##F *rnorm, vsmc_rng *rng)                              \</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    {                                                                         \</span></div>
@@ -163,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        rnorm-&gt;saved = 1;                                                     \</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    }</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="normal01_8h.html#a246649b34845642c9016f5aefd3175a0">   65</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_NORMAL01_RAND(F, FT)                                  \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="normal01_8h.html#a569f46612a2cc902d09d251acf359862">   65</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNGC_NORMAL01_RAND(F, FT)                                 \</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    VSMC_STATIC_INLINE FT vsmc_normal01_##F##_rand(                           \</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        vsmc_normal01_##F *rnorm, vsmc_rng *rng)                              \</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    {                                                                         \</span></div>
@@ -179,29 +179,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">        }                                                                     \</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    }</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structvsmc__normal01__24.html#a3e50c90b12eafc521049d587d6a4b7eb">   83</a></span>&#160;<a class="code" href="normal01_8h.html#a095450382922581219ed90c828c6dbde">VSMC_DEFINE_RNG_NORMAL01</a>(24, <span class="keywordtype">float</span>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structvsmc__normal01__24.html#a3e50c90b12eafc521049d587d6a4b7eb">   83</a></span>&#160;<a class="code" href="normal01_8h.html#ab30b868a824bf7e0b013a8a0769c06b5">VSMC_DEFINE_RNGC_NORMAL01</a>(24, <span class="keywordtype">float</span>)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="normal01_8h.html#a8cc017a672ff19e93d86f0c5ddd519e8">VSMC_DEFINE_RNG_NORMAL01_INIT</a>(24, <span class="keywordtype">float</span>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="normal01_8h.html#a598f411646505b15cd484169071fa5d8">VSMC_DEFINE_RNGC_NORMAL01_INIT</a>(24, <span class="keywordtype">float</span>)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___c_r_n_g.html#gab1ea4cd78e875450658e0dff10716e3e">   91</a></span>&#160;<a class="code" href="normal01_8h.html#a246649b34845642c9016f5aefd3175a0">VSMC_DEFINE_RNG_NORMAL01_RAND</a>(24, <span class="keywordtype">float</span>)</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___normal01_c.html#ga7f0ba5b0d54f6789445a3b6bd867172f">   91</a></span>&#160;<a class="code" href="normal01_8h.html#a569f46612a2cc902d09d251acf359862">VSMC_DEFINE_RNGC_NORMAL01_RAND</a>(24, <span class="keywordtype">float</span>)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#if VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#if VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structvsmc__normal01__53.html#a17f89e2bd619748714c5d1e299183df8">   97</a></span>&#160;<a class="code" href="normal01_8h.html#a095450382922581219ed90c828c6dbde">VSMC_DEFINE_RNG_NORMAL01</a>(53, <span class="keywordtype">double</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structvsmc__normal01__53.html#a17f89e2bd619748714c5d1e299183df8">   97</a></span>&#160;<a class="code" href="normal01_8h.html#ab30b868a824bf7e0b013a8a0769c06b5">VSMC_DEFINE_RNGC_NORMAL01</a>(53, <span class="keywordtype">double</span>)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;VSMC_DEFINE_RNG_NORMAL01_INIT(53, <span class="keywordtype">double</span>)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;VSMC_DEFINE_RNGC_NORMAL01_INIT(53, <span class="keywordtype">double</span>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___c_r_n_g.html#ga143deb6c266f9d43c011cd31c8f0d75e">  105</a></span>&#160;<a class="code" href="normal01_8h.html#a246649b34845642c9016f5aefd3175a0">VSMC_DEFINE_RNG_NORMAL01_RAND</a>(53, <span class="keywordtype">double</span>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group___normal01_c.html#gafc5eeb4a00d85fa9abad0b913666f649">  105</a></span>&#160;<a class="code" href="normal01_8h.html#a569f46612a2cc902d09d251acf359862">VSMC_DEFINE_RNGC_NORMAL01_RAND</a>(53, <span class="keywordtype">double</span>)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_NORMAL01_H</span></div>
-<div class="ttc" id="normal01_8h_html_a095450382922581219ed90c828c6dbde"><div class="ttname"><a href="normal01_8h.html#a095450382922581219ed90c828c6dbde">VSMC_DEFINE_RNG_NORMAL01</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_NORMAL01(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="normal01_8h_source.html#l00049">normal01.h:49</a></div></div>
-<div class="ttc" id="normal01_8h_html_a246649b34845642c9016f5aefd3175a0"><div class="ttname"><a href="normal01_8h.html#a246649b34845642c9016f5aefd3175a0">VSMC_DEFINE_RNG_NORMAL01_RAND</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_NORMAL01_RAND(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="normal01_8h_source.html#l00065">normal01.h:65</a></div></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // VSMC_RNGC_NORMAL01_H</span></div>
+<div class="ttc" id="normal01_8h_html_ab30b868a824bf7e0b013a8a0769c06b5"><div class="ttname"><a href="normal01_8h.html#ab30b868a824bf7e0b013a8a0769c06b5">VSMC_DEFINE_RNGC_NORMAL01</a></div><div class="ttdeci">#define VSMC_DEFINE_RNGC_NORMAL01(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="normal01_8h_source.html#l00049">normal01.h:49</a></div></div>
+<div class="ttc" id="normal01_8h_html_a598f411646505b15cd484169071fa5d8"><div class="ttname"><a href="normal01_8h.html#a598f411646505b15cd484169071fa5d8">VSMC_DEFINE_RNGC_NORMAL01_INIT</a></div><div class="ttdeci">#define VSMC_DEFINE_RNGC_NORMAL01_INIT(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="normal01_8h_source.html#l00056">normal01.h:56</a></div></div>
+<div class="ttc" id="normal01_8h_html_a569f46612a2cc902d09d251acf359862"><div class="ttname"><a href="normal01_8h.html#a569f46612a2cc902d09d251acf359862">VSMC_DEFINE_RNGC_NORMAL01_RAND</a></div><div class="ttdeci">#define VSMC_DEFINE_RNGC_NORMAL01_RAND(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="normal01_8h_source.html#l00065">normal01.h:65</a></div></div>
 <div class="ttc" id="philox_8h_html"><div class="ttname"><a href="philox_8h.html">philox.h</a></div></div>
 <div class="ttc" id="u01_8h_html"><div class="ttname"><a href="u01_8h.html">u01.h</a></div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
-<div class="ttc" id="normal01_8h_html_a8cc017a672ff19e93d86f0c5ddd519e8"><div class="ttname"><a href="normal01_8h.html#a8cc017a672ff19e93d86f0c5ddd519e8">VSMC_DEFINE_RNG_NORMAL01_INIT</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_NORMAL01_INIT(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="normal01_8h_source.html#l00056">normal01.h:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

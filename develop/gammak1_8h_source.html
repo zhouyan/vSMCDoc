@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/gammak1.h Source File</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rngc/gammak1.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_46661e38579300fbbfed0a64db3d90d4.html">rngc</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="gammak1_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//============================================================================</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rng/gammak1.h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rngc/gammak1.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                         vSMC: Scalable Monte Carlo</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -130,31 +130,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//============================================================================</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_GAMMAK1_H</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNG_GAMMAK1_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNGC_GAMMAK1_H</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNGC_GAMMAK1_H</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_8h.html">vsmc/rng/internal/common.h</a>&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="philox_8h.html">vsmc/rng/philox.h</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="normal01_8h.html">vsmc/rng/normal01.h</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="u01_8h.html">vsmc/rng/u01.h</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_8h.html">vsmc/rngc/internal/common.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="philox_8h.html">vsmc/rngc/philox.h</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="normal01_8h.html">vsmc/rngc/normal01.h</a>&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="u01_8h.html">vsmc/rngc/u01.h</a>&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="gammak1_8h.html#ae4c0f8871abc71a634bfbf28713ac789">   41</a></span>&#160;<span class="preprocessor">#define vsmc_gammak1 vsmc_gammak1_53</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="gammak1_8h.html#a08938ec0b681dd164681c57564eee558">   42</a></span>&#160;<span class="preprocessor">#define vsmc_gammak1_init vsmc_gammak1_53_init</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="gammak1_8h.html#a1bc19f1815a2d4327b0a89a1be6f6bf1">   43</a></span>&#160;<span class="preprocessor">#define vsmc_gammak1_rand vsmc_gammak1_53_rand</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else // VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else // VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define vsmc_gammak1 vsmc_gammak1_24</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define vsmc_gammak1_init vsmc_gammak1_24_init</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define vsmc_gammak1_rand vsmc_gammak1_24_rand</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="gammak1_8h.html#aa05d19d6591982c7436fc7736e14073f">   50</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_GAMMAK1(F, FT)                                        \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="gammak1_8h.html#af22b3ade75b7af1920ca59a846d1077e">   50</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNGC_GAMMAK1(F, FT)                                       \</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    typedef struct {                                                          \</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        FT c_shape, c_s2, c_s, c_d, c_b, c_si, c_c, c_q0;                     \</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        vsmc_normal01_##F rnorm;                                              \</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    } vsmc_gammak1_##F;</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="gammak1_8h.html#ad372ab9831d859812a168df5b53c45aa">   56</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_GAMMAK1_INIT(F, FT)                                   \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="gammak1_8h.html#aa61c302b55f1604facd5c6923e38122f">   56</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNGC_GAMMAK1_INIT(F, FT)                                  \</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    VSMC_STATIC_INLINE void vsmc_gammak1_##F##_init(                          \</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        vsmc_gammak1_##F *rgamma, vsmc_rng *rng, FT shape)                    \</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    {                                                                         \</span></div>
@@ -214,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">        rgamma-&gt;c_q0 = c_q0;                                                  \</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">    }</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="gammak1_8h.html#afded82ca2cc48a3085fa8fa854fd0021">  116</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_GAMMAK1_RAND(F, FT)                                   \</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="gammak1_8h.html#aaa3c670ab3850938278f0b2a74ccf159">  116</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNGC_GAMMAK1_RAND(F, FT)                                  \</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">    VSMC_STATIC_INLINE FT vsmc_gammak1_##F##_rand(                            \</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">        vsmc_gammak1_##F *rgamma, vsmc_rng *rng)                              \</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">    {                                                                         \</span></div>
@@ -333,30 +333,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">        }                                                                     \</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">    }</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="structvsmc__gammak1__24.html#aff006e5837f40d9594f1b144b9dac35a">  237</a></span>&#160;<a class="code" href="gammak1_8h.html#aa05d19d6591982c7436fc7736e14073f">VSMC_DEFINE_RNG_GAMMAK1</a>(24, <span class="keywordtype">float</span>)</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="structvsmc__gammak1__24.html#aff006e5837f40d9594f1b144b9dac35a">  237</a></span>&#160;<a class="code" href="gammak1_8h.html#af22b3ade75b7af1920ca59a846d1077e">VSMC_DEFINE_RNGC_GAMMAK1</a>(24, <span class="keywordtype">float</span>)</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<a class="code" href="gammak1_8h.html#ad372ab9831d859812a168df5b53c45aa">VSMC_DEFINE_RNG_GAMMAK1_INIT</a>(24, <span class="keywordtype">float</span>)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<a class="code" href="gammak1_8h.html#aa61c302b55f1604facd5c6923e38122f">VSMC_DEFINE_RNGC_GAMMAK1_INIT</a>(24, <span class="keywordtype">float</span>)</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="group___c_r_n_g.html#ga5b68657b6a116ffdd83ad891b959aa8c">  245</a></span>&#160;<a class="code" href="gammak1_8h.html#afded82ca2cc48a3085fa8fa854fd0021">VSMC_DEFINE_RNG_GAMMAK1_RAND</a>(24, <span class="keywordtype">float</span>)</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="group___gamma_k1_c.html#gaf92d0ebdf48854b4e437a49293fe3676">  245</a></span>&#160;<a class="code" href="gammak1_8h.html#aaa3c670ab3850938278f0b2a74ccf159">VSMC_DEFINE_RNGC_GAMMAK1_RAND</a>(24, <span class="keywordtype">float</span>)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#if VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#if VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="structvsmc__gammak1__53.html#a5f8bb9581ef32cbe2f54f1f9f35c5ee4">  251</a></span>&#160;<a class="code" href="gammak1_8h.html#aa05d19d6591982c7436fc7736e14073f">VSMC_DEFINE_RNG_GAMMAK1</a>(53, <span class="keywordtype">double</span>)</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="structvsmc__gammak1__53.html#a5f8bb9581ef32cbe2f54f1f9f35c5ee4">  251</a></span>&#160;<a class="code" href="gammak1_8h.html#af22b3ade75b7af1920ca59a846d1077e">VSMC_DEFINE_RNGC_GAMMAK1</a>(53, <span class="keywordtype">double</span>)</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;VSMC_DEFINE_RNG_GAMMAK1_INIT(53, <span class="keywordtype">double</span>)</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;VSMC_DEFINE_RNGC_GAMMAK1_INIT(53, <span class="keywordtype">double</span>)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group___c_r_n_g.html#gae9921fb61478dffa3b5f7024afeddcd4">  259</a></span>&#160;<a class="code" href="gammak1_8h.html#afded82ca2cc48a3085fa8fa854fd0021">VSMC_DEFINE_RNG_GAMMAK1_RAND</a>(53, <span class="keywordtype">double</span>)</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group___gamma_k1_c.html#gab1d865bf7aaeb22b50a34e42c29633ca">  259</a></span>&#160;<a class="code" href="gammak1_8h.html#aaa3c670ab3850938278f0b2a74ccf159">VSMC_DEFINE_RNGC_GAMMAK1_RAND</a>(53, <span class="keywordtype">double</span>)</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_OPENCL_DOUBLE</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // VSMC_HAS_RNGC_DOUBLE</span></div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_GAMMAK1_H</span></div>
-<div class="ttc" id="gammak1_8h_html_ad372ab9831d859812a168df5b53c45aa"><div class="ttname"><a href="gammak1_8h.html#ad372ab9831d859812a168df5b53c45aa">VSMC_DEFINE_RNG_GAMMAK1_INIT</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_GAMMAK1_INIT(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="gammak1_8h_source.html#l00056">gammak1.h:56</a></div></div>
-<div class="ttc" id="gammak1_8h_html_afded82ca2cc48a3085fa8fa854fd0021"><div class="ttname"><a href="gammak1_8h.html#afded82ca2cc48a3085fa8fa854fd0021">VSMC_DEFINE_RNG_GAMMAK1_RAND</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_GAMMAK1_RAND(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="gammak1_8h_source.html#l00116">gammak1.h:116</a></div></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif // VSMC_RNGC_GAMMAK1_H</span></div>
+<div class="ttc" id="gammak1_8h_html_aaa3c670ab3850938278f0b2a74ccf159"><div class="ttname"><a href="gammak1_8h.html#aaa3c670ab3850938278f0b2a74ccf159">VSMC_DEFINE_RNGC_GAMMAK1_RAND</a></div><div class="ttdeci">#define VSMC_DEFINE_RNGC_GAMMAK1_RAND(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="gammak1_8h_source.html#l00116">gammak1.h:116</a></div></div>
+<div class="ttc" id="gammak1_8h_html_aa61c302b55f1604facd5c6923e38122f"><div class="ttname"><a href="gammak1_8h.html#aa61c302b55f1604facd5c6923e38122f">VSMC_DEFINE_RNGC_GAMMAK1_INIT</a></div><div class="ttdeci">#define VSMC_DEFINE_RNGC_GAMMAK1_INIT(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="gammak1_8h_source.html#l00056">gammak1.h:56</a></div></div>
 <div class="ttc" id="philox_8h_html"><div class="ttname"><a href="philox_8h.html">philox.h</a></div></div>
-<div class="ttc" id="gammak1_8h_html_aa05d19d6591982c7436fc7736e14073f"><div class="ttname"><a href="gammak1_8h.html#aa05d19d6591982c7436fc7736e14073f">VSMC_DEFINE_RNG_GAMMAK1</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_GAMMAK1(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="gammak1_8h_source.html#l00050">gammak1.h:50</a></div></div>
 <div class="ttc" id="u01_8h_html"><div class="ttname"><a href="u01_8h.html">u01.h</a></div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
 <div class="ttc" id="normal01_8h_html"><div class="ttname"><a href="normal01_8h.html">normal01.h</a></div></div>
+<div class="ttc" id="gammak1_8h_html_af22b3ade75b7af1920ca59a846d1077e"><div class="ttname"><a href="gammak1_8h.html#af22b3ade75b7af1920ca59a846d1077e">VSMC_DEFINE_RNGC_GAMMAK1</a></div><div class="ttdeci">#define VSMC_DEFINE_RNGC_GAMMAK1(F, FT)</div><div class="ttdef"><b>Definition:</b> <a href="gammak1_8h_source.html#l00050">gammak1.h:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

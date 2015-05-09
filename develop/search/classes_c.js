@@ -62,7 +62,7 @@ var searchData=
   ['threefryrotateconstantvalue_3c_20std_3a_3auint64_5ft_2c_204_2c_207_2c_200_20_3e',['ThreefryRotateConstantValue&lt; std::uint64_t, 4, 7, 0 &gt;',['../structvsmc_1_1internal_1_1_threefry_rotate_constant_value_3_01std_1_1uint64__t_00_014_00_017_00_010_01_4.html',1,'vsmc::internal']]],
   ['threefryrotateconstantvalue_3c_20std_3a_3auint64_5ft_2c_204_2c_207_2c_201_20_3e',['ThreefryRotateConstantValue&lt; std::uint64_t, 4, 7, 1 &gt;',['../structvsmc_1_1internal_1_1_threefry_rotate_constant_value_3_01std_1_1uint64__t_00_014_00_017_00_011_01_4.html',1,'vsmc::internal']]],
   ['threefryrotateimpl',['ThreefryRotateImpl',['../structvsmc_1_1internal_1_1_threefry_rotate_impl.html',1,'vsmc::internal']]],
-  ['threefryrotateimpl_3c_20std_3a_3auint32_5ft_2c_20n_20_3e',['ThreefryRotateImpl&lt; std::uint32_t, N &gt;',['../structvsmc_1_1internal_1_1_threefry_rotate_impl_3_01std_1_1uint32__t_00_01_n_01_4.html',1,'vsmc::internal']]],
-  ['threefryrotateimpl_3c_20std_3a_3auint64_5ft_2c_20n_20_3e',['ThreefryRotateImpl&lt; std::uint64_t, N &gt;',['../structvsmc_1_1internal_1_1_threefry_rotate_impl_3_01std_1_1uint64__t_00_01_n_01_4.html',1,'vsmc::internal']]],
+  ['threefryrotateimpl_3c_20std_3a_3auint32_5ft_2c_20r_20_3e',['ThreefryRotateImpl&lt; std::uint32_t, R &gt;',['../structvsmc_1_1internal_1_1_threefry_rotate_impl_3_01std_1_1uint32__t_00_01_r_01_4.html',1,'vsmc::internal']]],
+  ['threefryrotateimpl_3c_20std_3a_3auint64_5ft_2c_20r_20_3e',['ThreefryRotateImpl&lt; std::uint64_t, R &gt;',['../structvsmc_1_1internal_1_1_threefry_rotate_impl_3_01std_1_1uint64__t_00_01_r_01_4.html',1,'vsmc::internal']]],
   ['type',['type',['../classstd_1_1conditional_1_1type.html',1,'']]]
 ];

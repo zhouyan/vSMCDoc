@@ -2,6 +2,7 @@ var searchData=
 [
   ['grand_20central_20dispatch',['Grand Central Dispatch',['../group___dispatch.html',1,'']]],
   ['gammak1_2eh',['gammak1.h',['../gammak1_8h.html',1,'']]],
+  ['gammak1',['GammaK1',['../group___gamma_k1_c.html',1,'']]],
   ['gcc_2ehpp',['gcc.hpp',['../gcc_8hpp.html',1,'']]],
   ['grand_20central_20dispatch',['Grand Central Dispatch',['../group___g_c_d.html',1,'']]],
   ['gcd_2ehpp',['gcd.hpp',['../gcd_8hpp.html',1,'']]],

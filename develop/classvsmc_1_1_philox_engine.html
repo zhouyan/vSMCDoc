@@ -188,10 +188,9 @@ class vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</h3>
 <p>Depending on the compilers, processors and RNG configurations, it might be slightly faster or slower than the original implementation. At most two-folds performace difference (both faster and slower) were observed.</p>
 <p>Currently the 64-bits version is much slower than the original, except when using recent Clang, GCC, Intel C++ or MSVC on x86-64 computers. The original implementation use some platform dependent assembly or intrinsics to optimize the performance. This implementation use standard C99 when used on other platforms.</p>
 <p>This implementation is slightly more flexible in the sense that it does not limit the number of rounds. However, larger number of rounds can have undesired effects. To say the least, currently all loops are unrolled, which can slow down significantly when the number of rounds is large.</p>
-<p>Compared to <code>r123:Engine&lt;r123::Philox4x32&gt;</code> etc., when using the default constructor or the one with a single seed, the output shall be exactly the same for the first \(2^n\) iterations, where \(n\) is the number of bits (32 or 64). Further iterations may produce different results, as vSMC increment the counter slightly differently, but it still cover the same range and has the same period as the original.</p>
-<p>The constants of bumping the key (Weyl constants) and those used in each rounds can be set through traits, <code><a class="el" href="structvsmc_1_1traits_1_1_philox_weyl_constant_trait.html" title="Traits of PhiloxEngine constants for bumping the key (Weyl sequence) ">vsmc::traits::PhiloxWeylConstantTrait</a></code> and <code><a class="el" href="structvsmc_1_1traits_1_1_philox_round_constant_trait.html" title="Traits of PhiloxEngine constants for rounding. ">vsmc::traits::PhiloxRoundConstantTrait</a></code>. </p>
+<p>Compared to <code>r123:Engine&lt;r123::Philox4x32&gt;</code> etc., when using the default constructor or the one with a single seed, the output shall be exactly the same for the first \(2^n\) iterations, where \(n\) is the number of bits (32 or 64). Further iterations may produce different results, as vSMC increment the counter slightly differently, but it still cover the same range and has the same period as the original. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00320">320</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00075">75</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ab274c23f51e238a89b1dc81bf46c4379"></a>
 <div class="memitem">
@@ -205,7 +204,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00324">324</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00079">79</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +220,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00325">325</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00080">80</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -237,7 +236,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00323">323</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00078">78</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +265,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00331">331</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00083">83</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -306,7 +305,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00338">338</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00090">90</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -334,7 +333,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00348">348</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00100">100</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -362,7 +361,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00380">380</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00132">132</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -390,7 +389,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00384">384</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00136">136</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +417,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00406">406</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00158">158</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +444,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00382">382</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00134">134</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +472,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00390">390</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00142">142</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -500,7 +499,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00432">432</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00184">184</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +526,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00431">431</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00183">183</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +553,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00396">396</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00148">148</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +581,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00354">354</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00106">106</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -622,7 +621,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00363">363</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00115">115</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -650,7 +649,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00373">373</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00125">125</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -689,7 +688,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00441">441</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00193">193</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -729,7 +728,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00448">448</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00200">200</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -767,7 +766,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00434">434</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00186">186</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +806,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00464">464</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00216">216</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -832,7 +831,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00429">429</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00181">181</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -856,7 +855,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00428">428</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00180">180</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>

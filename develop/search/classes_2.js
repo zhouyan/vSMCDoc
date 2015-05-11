@@ -41,8 +41,6 @@ var searchData=
   ['constsingleparticlebasetypedispatch_3c_20t_2c_20false_20_3e',['ConstSingleParticleBaseTypeDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_const_single_particle_base_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
   ['constsingleparticlebasetypedispatch_3c_20t_2c_20true_20_3e',['ConstSingleParticleBaseTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_const_single_particle_base_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
   ['constsingleparticlebasetypetrait',['ConstSingleParticleBaseTypeTrait',['../structvsmc_1_1traits_1_1_const_single_particle_base_type_trait.html',1,'vsmc::traits']]],
-  ['counter',['Counter',['../classvsmc_1_1_counter.html',1,'vsmc']]],
-  ['counter_3c_20std_3a_3aarray_3c_20t_2c_20k_20_3e_20_3e',['Counter&lt; std::array&lt; T, K &gt; &gt;',['../classvsmc_1_1_counter_3_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html',1,'vsmc']]],
   ['cpuid',['CPUID',['../classvsmc_1_1_c_p_u_i_d.html',1,'vsmc']]],
   ['cpuidfeatureinfo',['CPUIDFeatureInfo',['../structvsmc_1_1_c_p_u_i_d_feature_info.html',1,'vsmc']]],
   ['cpuidfeatureinfo_3c_20cpuidfeatureacpi_20_3e',['CPUIDFeatureInfo&lt; CPUIDFeatureACPI &gt;',['../structvsmc_1_1_c_p_u_i_d_feature_info_3_01_c_p_u_i_d_feature_a_c_p_i_01_4.html',1,'vsmc']]],

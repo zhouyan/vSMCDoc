@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dispatchqueuetype',['DispatchQueueType',['../group___dispatch.html#ga997793cddc8085be9d956c9dd417b8bc',1,'vsmc']]],
-  ['dispatchsourcetype',['DispatchSourceType',['../group___dispatch.html#ga04c4b9a9b74a7e5ba2eba1a77af01f84',1,'vsmc']]]
+  ['matrixorder',['MatrixOrder',['../group___definitions.html#ga3891c43c52a10259979c138e981381be',1,'vsmc']]],
+  ['matrixtrans',['MatrixTrans',['../group___definitions.html#gadbec81df055b4943ebed54f1f07ff933',1,'vsmc']]],
+  ['monitorstage',['MonitorStage',['../group___definitions.html#ga98ab5e0a523e08c454b57c5b80e21104',1,'vsmc']]]
 ];

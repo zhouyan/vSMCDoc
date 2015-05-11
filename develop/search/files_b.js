@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['parallel_5faccumulate_2ehpp',['parallel_accumulate.hpp',['../parallel__accumulate_8hpp.html',1,'']]],
-  ['parallel_5ffor_2ehpp',['parallel_for.hpp',['../parallel__for_8hpp.html',1,'']]],
-  ['parallel_5freduce_2ehpp',['parallel_reduce.hpp',['../parallel__reduce_8hpp.html',1,'']]],
-  ['parallel_5frepeat_2ehpp',['parallel_repeat.hpp',['../parallel__repeat_8hpp.html',1,'']]],
   ['parallel_5fwork_2ehpp',['parallel_work.hpp',['../parallel__work_8hpp.html',1,'']]],
   ['particle_2ehpp',['particle.hpp',['../particle_8hpp.html',1,'']]],
   ['path_2ehpp',['path.hpp',['../path_8hpp.html',1,'']]],

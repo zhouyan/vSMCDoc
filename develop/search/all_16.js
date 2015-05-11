@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait',['wait',['../classvsmc_1_1_dispatch_group.html#a4f152a7858bca3fe1b9b17d919c6bb47',1,'vsmc::DispatchGroup::wait()'],['../classvsmc_1_1_c_l_event.html#a804162b22ae0a4832239d8840cc8b9e4',1,'vsmc::CLEvent::wait() const '],['../classvsmc_1_1_c_l_event.html#aae7edd76600690b130285bbb65c0bb10',1,'vsmc::CLEvent::wait(const std::vector&lt; CLEvent &gt; &amp;events)']]],
+  ['wait',['wait',['../classvsmc_1_1_c_l_event.html#a804162b22ae0a4832239d8840cc8b9e4',1,'vsmc::CLEvent::wait() const '],['../classvsmc_1_1_c_l_event.html#aae7edd76600690b130285bbb65c0bb10',1,'vsmc::CLEvent::wait(const std::vector&lt; CLEvent &gt; &amp;events)']]],
   ['watch_5ftype',['watch_type',['../classvsmc_1_1_stop_watch_guard.html#aae8e266dc2d01dcd2d2f68dcc0ddb77b',1,'vsmc::StopWatchGuard']]],
   ['ways',['ways',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ab28750e8a0c857c232c0d1af040ea6b8',1,'vsmc::CPUID::cache_param_type']]],
   ['wbinvd',['wbinvd',['../structvsmc_1_1_c_p_u_i_d_1_1cache__param__type.html#ad2bd6e3c25743f8c1437a393ddb5bf17',1,'vsmc::CPUID::cache_param_type']]],

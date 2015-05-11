@@ -12,8 +12,6 @@ var searchData=
   ['mkl_5fsfmt19937',['MKL_SFMT19937',['../group___m_k_l_r_n_g.html#ga9aa72c7f623947b19353edf5f70ca08f',1,'vsmc']]],
   ['mkl_5fsfmt19937_5f64',['MKL_SFMT19937_64',['../group___m_k_l_r_n_g.html#ga1c9d125bb0c53199366ab604537a720f',1,'vsmc']]],
   ['monitor_5fmap_5ftype',['monitor_map_type',['../classvsmc_1_1_sampler.html#a1ed4c75acc2ae9db8b0fc9cbc681ec40',1,'vsmc::Sampler']]],
-  ['monitor_5fstate_5ftype',['monitor_state_type',['../classvsmc_1_1_monitor_eval_adapter_3_01_t_00_01_impl_00_01_null_type_01_4.html#a00c2e7253d20a09338ccc4701a24a1d5',1,'vsmc::MonitorEvalAdapter&lt; T, Impl, NullType &gt;']]],
-  ['move_5fstate_5ftype',['move_state_type',['../classvsmc_1_1_move_adapter_3_01_t_00_01_impl_00_01_null_type_01_4.html#a05cb36196733a3a77ebcf21c3f6f7b1f',1,'vsmc::MoveAdapter&lt; T, Impl, NullType &gt;']]],
   ['move_5ftype',['move_type',['../classvsmc_1_1_sampler.html#a51931e962e6ea452d53f7f6ff89d5e05',1,'vsmc::Sampler']]],
   ['mpi_5fid',['mpi_id',['../classvsmc_1_1_weight_set_m_p_i.html#a68ef5a47ea6b9d5ba64aa6a6afa8fd33',1,'vsmc::WeightSetMPI::mpi_id()'],['../classvsmc_1_1_state_m_p_i.html#a4681d703a1e4e209d6c94ceca19d05f8',1,'vsmc::StateMPI::mpi_id()']]]
 ];

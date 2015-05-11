@@ -101,6 +101,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG engine reimplemented.  <a href="classvsmc_1_1_threefry_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine_a_v_x2.html">vsmc::ThreefryEngineAVX2&lt; ResultType, K, Rounds &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG engine reimplemented using AVX2.  <a href="classvsmc_1_1_threefry_engine_a_v_x2.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine_s_s_e2.html">vsmc::ThreefryEngineSSE2&lt; ResultType, K, Rounds &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG engine reimplemented using SSE2.  <a href="classvsmc_1_1_threefry_engine_s_s_e2.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -110,18 +116,54 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga213d9258a79b719ecba18030055b928c"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngine&lt; std::uint32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga213d9258a79b719ecba18030055b928c">vsmc::Threefry2x32</a></td></tr>
 <tr class="memdesc:ga213d9258a79b719ecba18030055b928c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x32 RNG engine reimplemented.  <a href="#ga213d9258a79b719ecba18030055b928c">More...</a><br /></td></tr>
 <tr class="separator:ga213d9258a79b719ecba18030055b928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4271063db3df7eda2a256c175fb92814"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineAVX2&lt; std::uint32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga4271063db3df7eda2a256c175fb92814">vsmc::Threefry2x32AVX2</a></td></tr>
+<tr class="memdesc:ga4271063db3df7eda2a256c175fb92814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x32 RNG engine reimplemented using AVX2.  <a href="#ga4271063db3df7eda2a256c175fb92814">More...</a><br /></td></tr>
+<tr class="separator:ga4271063db3df7eda2a256c175fb92814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37bf86c09869198a9a3bc951701631bd"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineSSE2&lt; std::uint32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga37bf86c09869198a9a3bc951701631bd">vsmc::Threefry2x32SSE2</a></td></tr>
+<tr class="memdesc:ga37bf86c09869198a9a3bc951701631bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x32 RNG engine reimplemented using SSE2.  <a href="#ga37bf86c09869198a9a3bc951701631bd">More...</a><br /></td></tr>
+<tr class="separator:ga37bf86c09869198a9a3bc951701631bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade7768333233c4025da195569342963e"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngine&lt; std::uint64_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gade7768333233c4025da195569342963e">vsmc::Threefry2x64</a></td></tr>
 <tr class="memdesc:gade7768333233c4025da195569342963e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x64 RNG engine reimplemented.  <a href="#gade7768333233c4025da195569342963e">More...</a><br /></td></tr>
 <tr class="separator:gade7768333233c4025da195569342963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1c5a71d0c285684dda75e0a20a453bf"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineAVX2&lt; std::uint64_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gad1c5a71d0c285684dda75e0a20a453bf">vsmc::Threefry2x64AVX2</a></td></tr>
+<tr class="memdesc:gad1c5a71d0c285684dda75e0a20a453bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x64 RNG engine reimplemented using AVX2.  <a href="#gad1c5a71d0c285684dda75e0a20a453bf">More...</a><br /></td></tr>
+<tr class="separator:gad1c5a71d0c285684dda75e0a20a453bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56dcee30ef65c03c16e56a2d17212135"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineSSE2&lt; std::uint64_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga56dcee30ef65c03c16e56a2d17212135">vsmc::Threefry2x64SSE2</a></td></tr>
+<tr class="memdesc:ga56dcee30ef65c03c16e56a2d17212135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry2x64 RNG engine reimplemented using SSE2.  <a href="#ga56dcee30ef65c03c16e56a2d17212135">More...</a><br /></td></tr>
+<tr class="separator:ga56dcee30ef65c03c16e56a2d17212135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e938e97cbd261743656f9a6fba60582"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngine&lt; std::uint32_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga6e938e97cbd261743656f9a6fba60582">vsmc::Threefry4x32</a></td></tr>
 <tr class="memdesc:ga6e938e97cbd261743656f9a6fba60582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x32 RNG engine reimplemented.  <a href="#ga6e938e97cbd261743656f9a6fba60582">More...</a><br /></td></tr>
 <tr class="separator:ga6e938e97cbd261743656f9a6fba60582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2b41f3b215cf9acb6552e4dfe0b743"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineAVX2&lt; std::uint32_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga4a2b41f3b215cf9acb6552e4dfe0b743">vsmc::Threefry4x32AVX2</a></td></tr>
+<tr class="memdesc:ga4a2b41f3b215cf9acb6552e4dfe0b743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x32 RNG engine reimplemented using AVX2.  <a href="#ga4a2b41f3b215cf9acb6552e4dfe0b743">More...</a><br /></td></tr>
+<tr class="separator:ga4a2b41f3b215cf9acb6552e4dfe0b743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf86d367ee5042c5de61d9e25af7d625"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineSSE2&lt; std::uint32_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gadf86d367ee5042c5de61d9e25af7d625">vsmc::Threefry4x32SSE2</a></td></tr>
+<tr class="memdesc:gadf86d367ee5042c5de61d9e25af7d625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x32 RNG engine reimplemented using SSE2.  <a href="#gadf86d367ee5042c5de61d9e25af7d625">More...</a><br /></td></tr>
+<tr class="separator:gadf86d367ee5042c5de61d9e25af7d625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15ffdff66da55bd56873fb4fecc231a6"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngine&lt; std::uint64_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga15ffdff66da55bd56873fb4fecc231a6">vsmc::Threefry4x64</a></td></tr>
 <tr class="memdesc:ga15ffdff66da55bd56873fb4fecc231a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x64 RNG engine reimplemented.  <a href="#ga15ffdff66da55bd56873fb4fecc231a6">More...</a><br /></td></tr>
 <tr class="separator:ga15ffdff66da55bd56873fb4fecc231a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga617ee07a2e4542f6116f1cc8f8a423d4"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineAVX2&lt; std::uint64_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga617ee07a2e4542f6116f1cc8f8a423d4">vsmc::Threefry4x64AVX2</a></td></tr>
+<tr class="memdesc:ga617ee07a2e4542f6116f1cc8f8a423d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x64 RNG engine reimplemented using AVX2.  <a href="#ga617ee07a2e4542f6116f1cc8f8a423d4">More...</a><br /></td></tr>
+<tr class="separator:ga617ee07a2e4542f6116f1cc8f8a423d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac71351a1931d98139eb115727eed1f95"><td class="memItemLeft" align="right" valign="top">typedef ThreefryEngineSSE2&lt; std::uint64_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gac71351a1931d98139eb115727eed1f95">vsmc::Threefry4x64SSE2</a></td></tr>
+<tr class="memdesc:gac71351a1931d98139eb115727eed1f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry4x64 RNG engine reimplemented using SSE2.  <a href="#gac71351a1931d98139eb115727eed1f95">More...</a><br /></td></tr>
+<tr class="separator:gac71351a1931d98139eb115727eed1f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7784db47d8e9da0920bfc484bfa34ccf"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga7784db47d8e9da0920bfc484bfa34ccf">vsmc::Threefry_64</a></td></tr>
 <tr class="memdesc:ga7784db47d8e9da0920bfc484bfa34ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits Threefry engine.  <a href="#ga7784db47d8e9da0920bfc484bfa34ccf">More...</a><br /></td></tr>
 <tr class="separator:ga7784db47d8e9da0920bfc484bfa34ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e4d02258cd24fd6fc87acfa585d0890"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x32AVX2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga3e4d02258cd24fd6fc87acfa585d0890">vsmc::ThreefryAVX2</a></td></tr>
+<tr class="memdesc:ga3e4d02258cd24fd6fc87acfa585d0890"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 32-bits Threefry engine using AVX2.  <a href="#ga3e4d02258cd24fd6fc87acfa585d0890">More...</a><br /></td></tr>
+<tr class="separator:ga3e4d02258cd24fd6fc87acfa585d0890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85be212893f8fe0079c4ca3abb460f03"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x64AVX2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga85be212893f8fe0079c4ca3abb460f03">vsmc::ThreefryAVX2_64</a></td></tr>
+<tr class="memdesc:ga85be212893f8fe0079c4ca3abb460f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits Threefry engine using AVX2.  <a href="#ga85be212893f8fe0079c4ca3abb460f03">More...</a><br /></td></tr>
+<tr class="separator:ga85be212893f8fe0079c4ca3abb460f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae569a368d6cc1c13a3f9a0de221e6662"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x32SSE2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gae569a368d6cc1c13a3f9a0de221e6662">vsmc::ThreefrySSE2</a></td></tr>
+<tr class="memdesc:gae569a368d6cc1c13a3f9a0de221e6662"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 32-bits Threefry engine using SSE2.  <a href="#gae569a368d6cc1c13a3f9a0de221e6662">More...</a><br /></td></tr>
+<tr class="separator:gae569a368d6cc1c13a3f9a0de221e6662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0ff5cbaac51339037593d6e7b4cd9c1"><td class="memItemLeft" align="right" valign="top">typedef Threefry4x64SSE2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gae0ff5cbaac51339037593d6e7b4cd9c1">vsmc::ThreefrySSE2_64</a></td></tr>
+<tr class="memdesc:gae0ff5cbaac51339037593d6e7b4cd9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits ThreefrySSE2 engine using SSE2.  <a href="#gae0ff5cbaac51339037593d6e7b4cd9c1">More...</a><br /></td></tr>
+<tr class="separator:gae0ff5cbaac51339037593d6e7b4cd9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Random number generating using Random123 Threefry RNG. </p>
@@ -138,7 +180,7 @@ Typedefs</h2></td></tr>
 
 <p>The default 32-bits Threefry engine. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00540">540</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00307">307</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -154,7 +196,39 @@ Typedefs</h2></td></tr>
 
 <p>Threefry2x32 RNG engine reimplemented. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00524">524</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00291">291</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4271063db3df7eda2a256c175fb92814"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineAVX2&lt;std::uint32_t, 2&gt; <a class="el" href="group___threefry.html#ga4271063db3df7eda2a256c175fb92814">vsmc::Threefry2x32AVX2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry2x32 RNG engine reimplemented using AVX2. </p>
+
+<p>Definition at line <a class="el" href="threefry__avx2_8hpp_source.html#l00368">368</a> of file <a class="el" href="threefry__avx2_8hpp_source.html">threefry_avx2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga37bf86c09869198a9a3bc951701631bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineSSE2&lt;std::uint32_t, 2&gt; <a class="el" href="group___threefry.html#ga37bf86c09869198a9a3bc951701631bd">vsmc::Threefry2x32SSE2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry2x32 RNG engine reimplemented using SSE2. </p>
+
+<p>Definition at line <a class="el" href="threefry__sse2_8hpp_source.html#l00362">362</a> of file <a class="el" href="threefry__sse2_8hpp_source.html">threefry_sse2.hpp</a>.</p>
 
 </div>
 </div>
@@ -170,7 +244,39 @@ Typedefs</h2></td></tr>
 
 <p>Threefry2x64 RNG engine reimplemented. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00532">532</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00299">299</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad1c5a71d0c285684dda75e0a20a453bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineAVX2&lt;std::uint64_t, 2&gt; <a class="el" href="group___threefry.html#gad1c5a71d0c285684dda75e0a20a453bf">vsmc::Threefry2x64AVX2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry2x64 RNG engine reimplemented using AVX2. </p>
+
+<p>Definition at line <a class="el" href="threefry__avx2_8hpp_source.html#l00376">376</a> of file <a class="el" href="threefry__avx2_8hpp_source.html">threefry_avx2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga56dcee30ef65c03c16e56a2d17212135"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineSSE2&lt;std::uint64_t, 2&gt; <a class="el" href="group___threefry.html#ga56dcee30ef65c03c16e56a2d17212135">vsmc::Threefry2x64SSE2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry2x64 RNG engine reimplemented using SSE2. </p>
+
+<p>Definition at line <a class="el" href="threefry__sse2_8hpp_source.html#l00370">370</a> of file <a class="el" href="threefry__sse2_8hpp_source.html">threefry_sse2.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +292,39 @@ Typedefs</h2></td></tr>
 
 <p>Threefry4x32 RNG engine reimplemented. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00528">528</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00295">295</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4a2b41f3b215cf9acb6552e4dfe0b743"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineAVX2&lt;std::uint32_t, 4&gt; <a class="el" href="group___threefry.html#ga4a2b41f3b215cf9acb6552e4dfe0b743">vsmc::Threefry4x32AVX2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry4x32 RNG engine reimplemented using AVX2. </p>
+
+<p>Definition at line <a class="el" href="threefry__avx2_8hpp_source.html#l00372">372</a> of file <a class="el" href="threefry__avx2_8hpp_source.html">threefry_avx2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadf86d367ee5042c5de61d9e25af7d625"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineSSE2&lt;std::uint32_t, 4&gt; <a class="el" href="group___threefry.html#gadf86d367ee5042c5de61d9e25af7d625">vsmc::Threefry4x32SSE2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry4x32 RNG engine reimplemented using SSE2. </p>
+
+<p>Definition at line <a class="el" href="threefry__sse2_8hpp_source.html#l00366">366</a> of file <a class="el" href="threefry__sse2_8hpp_source.html">threefry_sse2.hpp</a>.</p>
 
 </div>
 </div>
@@ -202,7 +340,39 @@ Typedefs</h2></td></tr>
 
 <p>Threefry4x64 RNG engine reimplemented. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00536">536</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00303">303</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga617ee07a2e4542f6116f1cc8f8a423d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineAVX2&lt;std::uint64_t, 4&gt; <a class="el" href="group___threefry.html#ga617ee07a2e4542f6116f1cc8f8a423d4">vsmc::Threefry4x64AVX2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry4x64 RNG engine reimplemented using AVX2. </p>
+
+<p>Definition at line <a class="el" href="threefry__avx2_8hpp_source.html#l00380">380</a> of file <a class="el" href="threefry__avx2_8hpp_source.html">threefry_avx2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac71351a1931d98139eb115727eed1f95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThreefryEngineSSE2&lt;std::uint64_t, 4&gt; <a class="el" href="group___threefry.html#gac71351a1931d98139eb115727eed1f95">vsmc::Threefry4x64SSE2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Threefry4x64 RNG engine reimplemented using SSE2. </p>
+
+<p>Definition at line <a class="el" href="threefry__sse2_8hpp_source.html#l00374">374</a> of file <a class="el" href="threefry__sse2_8hpp_source.html">threefry_sse2.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +388,71 @@ Typedefs</h2></td></tr>
 
 <p>The default 64-bits Threefry engine. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00544">544</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00311">311</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3e4d02258cd24fd6fc87acfa585d0890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Threefry4x32AVX2 <a class="el" href="group___threefry.html#ga3e4d02258cd24fd6fc87acfa585d0890">vsmc::ThreefryAVX2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default 32-bits Threefry engine using AVX2. </p>
+
+<p>Definition at line <a class="el" href="threefry__avx2_8hpp_source.html#l00384">384</a> of file <a class="el" href="threefry__avx2_8hpp_source.html">threefry_avx2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga85be212893f8fe0079c4ca3abb460f03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Threefry4x64AVX2 <a class="el" href="group___threefry.html#ga85be212893f8fe0079c4ca3abb460f03">vsmc::ThreefryAVX2_64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default 64-bits Threefry engine using AVX2. </p>
+
+<p>Definition at line <a class="el" href="threefry__avx2_8hpp_source.html#l00388">388</a> of file <a class="el" href="threefry__avx2_8hpp_source.html">threefry_avx2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae569a368d6cc1c13a3f9a0de221e6662"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Threefry4x32SSE2 <a class="el" href="group___threefry.html#gae569a368d6cc1c13a3f9a0de221e6662">vsmc::ThreefrySSE2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default 32-bits Threefry engine using SSE2. </p>
+
+<p>Definition at line <a class="el" href="threefry__sse2_8hpp_source.html#l00378">378</a> of file <a class="el" href="threefry__sse2_8hpp_source.html">threefry_sse2.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae0ff5cbaac51339037593d6e7b4cd9c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Threefry4x64SSE2 <a class="el" href="group___threefry.html#gae0ff5cbaac51339037593d6e7b4cd9c1">vsmc::ThreefrySSE2_64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default 64-bits ThreefrySSE2 engine using SSE2. </p>
+
+<p>Definition at line <a class="el" href="threefry__sse2_8hpp_source.html#l00382">382</a> of file <a class="el" href="threefry__sse2_8hpp_source.html">threefry_sse2.hpp</a>.</p>
 
 </div>
 </div>

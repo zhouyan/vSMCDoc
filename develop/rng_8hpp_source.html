@@ -144,25 +144,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="philox_8hpp.html">vsmc/rng/philox.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="threefry_8hpp.html">vsmc/rng/threefry.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#if VSMC_HAS_AES_NI</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes_8hpp.html">vsmc/rng/aes.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes__ni_8hpp.html">vsmc/rng/aes_ni.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ars_8hpp.html">vsmc/rng/ars.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if VSMC_HAS_MKL</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2mkl_8hpp.html">vsmc/rng/mkl.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if VSMC_HAS_RDRAND</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rdrand_8hpp.html">vsmc/rng/rdrand.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#if VSMC_HAS_SSE2</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="threefry__sse2_8hpp.html">vsmc/rng/threefry_sse2.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if VSMC_HAS_AVX2</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="threefry__avx2_8hpp.html">vsmc/rng/threefry_avx2.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if VSMC_HAS_AES_NI</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes_8hpp.html">vsmc/rng/aes.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes__ni_8hpp.html">vsmc/rng/aes_ni.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ars_8hpp.html">vsmc/rng/ars.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stable__distribution_8hpp.html">vsmc/rng/stable_distribution.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="u01_8hpp.html">vsmc/rng/u01.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uniform__real__distribution_8hpp.html">vsmc/rng/uniform_real_distribution.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#if VSMC_HAS_MKL</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2mkl_8hpp.html">vsmc/rng/mkl.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_RNG_HPP</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#if VSMC_HAS_RDRAND</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rdrand_8hpp.html">vsmc/rng/rdrand.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stable__distribution_8hpp.html">vsmc/rng/stable_distribution.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="u01_8hpp.html">vsmc/rng/u01.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uniform__real__distribution_8hpp.html">vsmc/rng/uniform_real_distribution.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_RNG_HPP</span></div>
 <div class="ttc" id="seed_8hpp_html"><div class="ttname"><a href="seed_8hpp.html">seed.hpp</a></div></div>
 <div class="ttc" id="rng_2mkl_8hpp_html"><div class="ttname"><a href="rng_2mkl_8hpp.html">mkl.hpp</a></div></div>
 <div class="ttc" id="u01_8hpp_html"><div class="ttname"><a href="u01_8hpp.html">u01.hpp</a></div></div>
@@ -176,8 +184,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="rng__set_8hpp_html"><div class="ttname"><a href="rng__set_8hpp.html">rng_set.hpp</a></div></div>
 <div class="ttc" id="aes__ni_8hpp_html"><div class="ttname"><a href="aes__ni_8hpp.html">aes_ni.hpp</a></div></div>
 <div class="ttc" id="philox_8hpp_html"><div class="ttname"><a href="philox_8hpp.html">philox.hpp</a></div></div>
+<div class="ttc" id="threefry__sse2_8hpp_html"><div class="ttname"><a href="threefry__sse2_8hpp.html">threefry_sse2.hpp</a></div></div>
 <div class="ttc" id="aes_8hpp_html"><div class="ttname"><a href="aes_8hpp.html">aes.hpp</a></div></div>
 <div class="ttc" id="threefry_8hpp_html"><div class="ttname"><a href="threefry_8hpp.html">threefry.hpp</a></div></div>
+<div class="ttc" id="threefry__avx2_8hpp_html"><div class="ttname"><a href="threefry__avx2_8hpp.html">threefry_avx2.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

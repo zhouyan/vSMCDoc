@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['m128i',['M128I',['../classvsmc_1_1internal_1_1_m128_i.html',1,'vsmc::internal']]],
-  ['m256i',['M256I',['../classvsmc_1_1internal_1_1_m256_i.html',1,'vsmc::internal']]],
+  ['m128i',['M128I',['../classvsmc_1_1_m128_i.html',1,'vsmc']]],
+  ['m128i_3c_20std_3a_3auint64_5ft_20_3e',['M128I&lt; std::uint64_t &gt;',['../classvsmc_1_1_m128_i.html',1,'vsmc']]],
+  ['m128i_3c_3e',['M128I&lt;&gt;',['../classvsmc_1_1_m128_i.html',1,'vsmc']]],
+  ['m256i',['M256I',['../classvsmc_1_1_m256_i.html',1,'vsmc']]],
   ['mklbase',['MKLBase',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_20vslconvtaskptr_2c_20mklconvtask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt; VSLConvTaskPtr, MKLConvTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_20vslcorrtaskptr_2c_20mklcorrtask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt; VSLCorrTaskPtr, MKLCorrTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],

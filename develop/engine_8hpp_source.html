@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/resample/stratified.hpp Source File</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/engine.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,16 +91,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_2c7ea1b7d80ab4816cbadb4a36847b28.html">resample</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6447b6639e2e8ccee75c4481bdca4b11.html">include</a></li><li class="navelem"><a class="el" href="dir_1837d0dfac60ad43800c7be9863785fd.html">vsmc</a></li><li class="navelem"><a class="el" href="dir_812feda1cde275372f1437dae3752d46.html">rng</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">stratified.hpp</div>  </div>
+<div class="title">engine.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="stratified_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//============================================================================</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/resample/stratified.hpp</span></div>
+<a href="engine_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//============================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// vSMC/include/vsmc/rng/engine.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                         vSMC: Scalable Monte Carlo</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -130,44 +130,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//============================================================================</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RESAMPLE_STRATIFIED_HPP</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RESAMPLE_STRATIFIED_HPP</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_ENGINE_HPP</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNG_ENGINE_HPP</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="resample_2internal_2common_8hpp.html">vsmc/resample/internal/common.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="config_8hpp.html">vsmc/internal/config.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#abed230e5e6fa9a0b1b0a00c912d2cdb7">   43</a></span>&#160;<span class="keyword">typedef</span> std::integral_constant&lt;ResampleScheme, Stratified&gt; <a class="code" href="namespacevsmc_1_1internal.html#abed230e5e6fa9a0b1b0a00c912d2cdb7">ResampleStratified</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classvsmc_1_1_resample_3_01internal_1_1_resample_stratified_01_4.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_resample.html">Resample</a>&lt;internal::<a class="code" href="namespacevsmc_1_1internal.html#abed230e5e6fa9a0b1b0a00c912d2cdb7">ResampleStratified</a>&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> IntType, <span class="keyword">typename</span> RngType&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classvsmc_1_1_resample_3_01internal_1_1_resample_stratified_01_4.html#ab525c9e24db3c62b29382ab64d6a5d81">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_resample_3_01internal_1_1_resample_stratified_01_4.html#ab525c9e24db3c62b29382ab64d6a5d81">operator()</a>(std::size_t M, std::size_t N, RngType &amp;rng,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> *weight, IntType *replication)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classvsmc_1_1_u01_sequence_stratified.html">U01SequenceStratified&lt;RngType&gt;</a> u01seq(N, rng);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="namespacevsmc_1_1internal.html#ac963bfa4bb986ae9810873dbe366842a">internal::trans_usrp</a>(M, N, weight, u01seq, replication);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}; <span class="comment">// Stratified resampling</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="philox_8hpp.html">vsmc/rng/philox.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="threefry_8hpp.html">vsmc/rng/threefry.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xor__combine__engine_8hpp.html">vsmc/rng/xor_combine_engine.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="xorshift_8hpp.html">vsmc/rng/xorshift.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if VSMC_HAS_AES_NI</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes_8hpp.html">vsmc/rng/aes.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes__ni_8hpp.html">vsmc/rng/aes_ni.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ars_8hpp.html">vsmc/rng/ars.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#if VSMC_HAS_AVX2</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="threefry__avx2_8hpp.html">vsmc/rng/threefry_avx2.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if VSMC_HAS_SSE2</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="threefry__sse2_8hpp.html">vsmc/rng/threefry_sse2.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if VSMC_HAS_MKL</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2mkl_8hpp.html">vsmc/rng/mkl.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#if VSMC_HAS_RDRAND</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rdrand_8hpp.html">vsmc/rng/rdrand.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_STRATIFIED_HPP</span></div>
-<div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00050">monitor.hpp:50</a></div></div>
-<div class="ttc" id="classvsmc_1_1_u01_sequence_stratified_html"><div class="ttname"><a href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a></div><div class="ttdoc">Generate a fixed length sequence of uniform  random variates by stratified sampling. </div><div class="ttdef"><b>Definition:</b> <a href="u01_8hpp_source.html#l00222">u01.hpp:222</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_abed230e5e6fa9a0b1b0a00c912d2cdb7"><div class="ttname"><a href="namespacevsmc_1_1internal.html#abed230e5e6fa9a0b1b0a00c912d2cdb7">vsmc::internal::ResampleStratified</a></div><div class="ttdeci">std::integral_constant&lt; ResampleScheme, Stratified &gt; ResampleStratified</div><div class="ttdef"><b>Definition:</b> <a href="stratified_8hpp_source.html#l00043">stratified.hpp:43</a></div></div>
-<div class="ttc" id="classvsmc_1_1_resample_3_01internal_1_1_resample_stratified_01_4_html_ab525c9e24db3c62b29382ab64d6a5d81"><div class="ttname"><a href="classvsmc_1_1_resample_3_01internal_1_1_resample_stratified_01_4.html#ab525c9e24db3c62b29382ab64d6a5d81">vsmc::Resample&lt; internal::ResampleStratified &gt;::operator()</a></div><div class="ttdeci">void operator()(std::size_t M, std::size_t N, RngType &amp;rng, const double *weight, IntType *replication)</div><div class="ttdef"><b>Definition:</b> <a href="stratified_8hpp_source.html#l00054">stratified.hpp:54</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_ac963bfa4bb986ae9810873dbe366842a"><div class="ttname"><a href="namespacevsmc_1_1internal.html#ac963bfa4bb986ae9810873dbe366842a">vsmc::internal::trans_usrp</a></div><div class="ttdeci">void trans_usrp(std::size_t M, std::size_t N, const double *weight, U01SeqType &amp;&amp;u01seq, IntType *replication)</div><div class="ttdef"><b>Definition:</b> <a href="resample_2internal_2common_8hpp_source.html#l00063">common.hpp:63</a></div></div>
-<div class="ttc" id="classvsmc_1_1_resample_html"><div class="ttname"><a href="classvsmc_1_1_resample.html">vsmc::Resample</a></div><div class="ttdoc">Resample forward decleration. </div><div class="ttdef"><b>Definition:</b> <a href="resample_2internal_2common_8hpp_source.html#l00182">common.hpp:182</a></div></div>
-<div class="ttc" id="resample_2internal_2common_8hpp_html"><div class="ttname"><a href="resample_2internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_ENGINE_HPP</span></div>
+<div class="ttc" id="rng_2mkl_8hpp_html"><div class="ttname"><a href="rng_2mkl_8hpp.html">mkl.hpp</a></div></div>
+<div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
+<div class="ttc" id="xorshift_8hpp_html"><div class="ttname"><a href="xorshift_8hpp.html">xorshift.hpp</a></div></div>
+<div class="ttc" id="ars_8hpp_html"><div class="ttname"><a href="ars_8hpp.html">ars.hpp</a></div></div>
+<div class="ttc" id="xor__combine__engine_8hpp_html"><div class="ttname"><a href="xor__combine__engine_8hpp.html">xor_combine_engine.hpp</a></div></div>
+<div class="ttc" id="rdrand_8hpp_html"><div class="ttname"><a href="rdrand_8hpp.html">rdrand.hpp</a></div></div>
+<div class="ttc" id="aes__ni_8hpp_html"><div class="ttname"><a href="aes__ni_8hpp.html">aes_ni.hpp</a></div></div>
+<div class="ttc" id="philox_8hpp_html"><div class="ttname"><a href="philox_8hpp.html">philox.hpp</a></div></div>
+<div class="ttc" id="threefry__sse2_8hpp_html"><div class="ttname"><a href="threefry__sse2_8hpp.html">threefry_sse2.hpp</a></div></div>
+<div class="ttc" id="aes_8hpp_html"><div class="ttname"><a href="aes_8hpp.html">aes.hpp</a></div></div>
+<div class="ttc" id="threefry_8hpp_html"><div class="ttname"><a href="threefry_8hpp.html">threefry.hpp</a></div></div>
+<div class="ttc" id="threefry__avx2_8hpp_html"><div class="ttname"><a href="threefry__avx2_8hpp.html">threefry_avx2.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

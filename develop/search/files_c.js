@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['rdrand_2ehpp',['rdrand.hpp',['../rdrand_8hpp.html',1,'']]],
-  ['rdtsc_2ehpp',['rdtsc.hpp',['../rdtsc_8hpp.html',1,'']]],
-  ['resample_2ehpp',['resample.hpp',['../resample_8hpp.html',1,'']]],
-  ['residual_2ehpp',['residual.hpp',['../residual_8hpp.html',1,'']]],
-  ['residual_5fstratified_2ehpp',['residual_stratified.hpp',['../residual__stratified_8hpp.html',1,'']]],
-  ['residual_5fsystematic_2ehpp',['residual_systematic.hpp',['../residual__systematic_8hpp.html',1,'']]],
-  ['rng_2ehpp',['rng.hpp',['../rng_8hpp.html',1,'']]],
-  ['rng_5fset_2ehpp',['rng_set.hpp',['../rng__set_8hpp.html',1,'']]],
-  ['rngc_2eh',['rngc.h',['../rngc_8h.html',1,'']]]
+  ['parallel_5fwork_2ehpp',['parallel_work.hpp',['../parallel__work_8hpp.html',1,'']]],
+  ['particle_2ehpp',['particle.hpp',['../particle_8hpp.html',1,'']]],
+  ['path_2ehpp',['path.hpp',['../path_8hpp.html',1,'']]],
+  ['philox_2eh',['philox.h',['../philox_8h.html',1,'']]],
+  ['philox_2ehpp',['philox.hpp',['../philox_8hpp.html',1,'']]],
+  ['program_5foption_2ehpp',['program_option.hpp',['../program__option_8hpp.html',1,'']]],
+  ['progress_2ehpp',['progress.hpp',['../progress_8hpp.html',1,'']]]
 ];

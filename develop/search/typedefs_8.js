@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['manager_5ftype',['manager_type',['../classvsmc_1_1_state_c_l.html#a43448cd36bf0ba003562762b26c5e29a',1,'vsmc::StateCL::manager_type()'],['../classvsmc_1_1_c_l_buffer.html#ab5367e264773bf1bccb48e620a50d259',1,'vsmc::CLBuffer::manager_type()'],['../classvsmc_1_1internal_1_1_c_l_copy.html#ab8ed3c1f0ba3914bcac07dc32733d2de',1,'vsmc::internal::CLCopy::manager_type()']]],
+  ['manager_5ftype',['manager_type',['../classvsmc_1_1_state_c_l.html#a94e89c2a5f1bf3a27761637919201e18',1,'vsmc::StateCL::manager_type()'],['../classvsmc_1_1_c_l_buffer.html#ab5367e264773bf1bccb48e620a50d259',1,'vsmc::CLBuffer::manager_type()'],['../classvsmc_1_1internal_1_1_c_l_copy.html#ab8ed3c1f0ba3914bcac07dc32733d2de',1,'vsmc::internal::CLCopy::manager_type()']]],
   ['mcmc_5ftype',['mcmc_type',['../classvsmc_1_1_sampler.html#a23eac800155d95a77ca49ca54fc66edc',1,'vsmc::Sampler']]],
   ['mkl_5fmcg59',['MKL_MCG59',['../group___m_k_l_r_n_g.html#gaea53300cc02689aa2e3fa420e7005bb3',1,'vsmc']]],
   ['mkl_5fmt19937',['MKL_MT19937',['../group___m_k_l_r_n_g.html#gaabc57c2e0fcf3a3a5715929b3b4a23d0',1,'vsmc']]],

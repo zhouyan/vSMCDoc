@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['join',['join',['../classvsmc_1_1internal_1_1_parallel_initialize_state.html#a99732b2e2c471514bf98978afa45e565',1,'vsmc::internal::ParallelInitializeState::join()'],['../classvsmc_1_1internal_1_1_parallel_move_state.html#abb286eb28c1c52312aff295915f7ecef',1,'vsmc::internal::ParallelMoveState::join()']]]
+  ['join',['join',['../classvsmc_1_1_initialize_t_b_b_1_1work__type.html#a173834600a7c050f26c59aaa821fad97',1,'vsmc::InitializeTBB::work_type::join()'],['../classvsmc_1_1_move_t_b_b_1_1work__type.html#a16d7af3cb3d32696b56209e7590242ac',1,'vsmc::MoveTBB::work_type::join()']]]
 ];

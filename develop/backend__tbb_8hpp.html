@@ -104,10 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="backend__base_8hpp_source.html">vsmc/smp/backend_base.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="parallel__work_8hpp_source.html">vsmc/smp/internal/parallel_work.hpp</a>&gt;</code><br />
-<code>#include &lt;tbb/blocked_range.h&gt;</code><br />
-<code>#include &lt;tbb/parallel_for.h&gt;</code><br />
-<code>#include &lt;tbb/parallel_reduce.h&gt;</code><br />
+<code>#include &lt;tbb/tbb.h&gt;</code><br />
 </div>
 <p><a href="backend__tbb_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,11 +116,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_t_b_b.html">vsmc::InitializeTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#a393c585141255da27db67713a64e9e8b">Sampler&lt;T&gt;::init_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_initialize_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_t_b_b_1_1work__type.html">vsmc::InitializeTBB&lt; T, Derived &gt;::work_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">vsmc::MonitorEvalTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_monitor.html#a3cf17d8c70f5c02bd35e46bfd81742df">Monitor&lt;T&gt;::eval_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_monitor_eval_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">vsmc::MonitorEvalTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_monitor.html#a3cf17d8c70f5c02bd35e46bfd81742df">Monitor&lt;T&gt;::eval_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_monitor_eval_t_b_b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html">vsmc::MonitorEvalTBB&lt; T, Derived &gt;::work_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_t_b_b.html">vsmc::MoveTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#a51931e962e6ea452d53f7f6ff89d5e05">Sampler&lt;T&gt;::move_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_move_t_b_b.html#details">More...</a><br /></td></tr>
@@ -131,14 +132,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_t_b_b.html">vsmc::MoveTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_sampler.html#a51931e962e6ea452d53f7f6ff89d5e05">Sampler&lt;T&gt;::move_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_move_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_t_b_b_1_1work__type.html">vsmc::MoveTBB&lt; T, Derived &gt;::work_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_t_b_b.html">vsmc::PathEvalTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html#a9be0ed4f02b7653c1c29eccbc1457f13">Path&lt;T&gt;::eval_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_path_eval_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_t_b_b.html">vsmc::PathEvalTBB&lt; T, Derived &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html#a9be0ed4f02b7653c1c29eccbc1457f13">Path&lt;T&gt;::eval_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_path_eval_t_b_b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_t_b_b_1_1work__type.html">vsmc::PathEvalTBB&lt; T, Derived &gt;::work_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_t_b_b.html">vsmc::StateTBB&lt; BaseState &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using Intel Threading Building Blocks.  <a href="classvsmc_1_1_state_t_b_b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_t_b_b_1_1work__type.html">vsmc::StateTBB&lt; BaseState &gt;::work_type&lt; IntType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -173,13 +180,12 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;initialize_param(particle, param);                                  \</div>
 <div class="line">    this-&gt;pre_processor(particle);                                            \</div>
-<div class="line">    internal::ParallelInitializeState&lt;T, InitializeTBB&lt;T, Derived&gt;&gt; work(     \</div>
-<div class="line">        <span class="keyword">this</span>, &amp;particle);                                                     \</div>
+<div class="line">    work_type work(<span class="keyword">this</span>, &amp;particle);                                          \</div>
 <div class="line">    ::tbb::parallel_reduce args;                                              \</div>
 <div class="line">    this-&gt;post_processor(particle);                                           \</div>
 <div class="line">    return work.accept();</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00041">41</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00038">38</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
 </div>
 </div>
@@ -197,12 +203,11 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                      \</div>
-<div class="line">    internal::ParallelMonitorState&lt;T, MonitorEvalTBB&lt;T, Derived&gt;&gt; work(       \</div>
-<div class="line">        <span class="keyword">this</span>, iter, dim, &amp;particle, res);                                     \</div>
+<div class="line">    work_type work(<span class="keyword">this</span>, iter, dim, &amp;particle, res);                          \</div>
 <div class="line">    ::tbb::parallel_for args;                                                 \</div>
 <div class="line">    this-&gt;post_processor(iter, particle);</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00058">58</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00053">53</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,13 +225,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                      \</div>
-<div class="line">    internal::ParallelMoveState&lt;T, MoveTBB&lt;T, Derived&gt;&gt; work(                 \</div>
-<div class="line">        <span class="keyword">this</span>, iter, &amp;particle);                                               \</div>
+<div class="line">    work_type work(<span class="keyword">this</span>, iter, &amp;particle);                                    \</div>
 <div class="line">    ::tbb::parallel_reduce args;                                              \</div>
 <div class="line">    this-&gt;post_processor(iter, particle);                                     \</div>
 <div class="line">    return work.accept();</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00050">50</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00046">46</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,13 +248,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                      \</div>
-<div class="line">    internal::ParallelPathState&lt;T, PathEvalTBB&lt;T, Derived&gt;&gt; work(             \</div>
-<div class="line">        <span class="keyword">this</span>, iter, &amp;particle, res);                                          \</div>
+<div class="line">    work_type work(<span class="keyword">this</span>, iter, &amp;particle, res);                               \</div>
 <div class="line">    ::tbb::parallel_for args;                                                 \</div>
 <div class="line">    this-&gt;post_processor(iter, particle);                                     \</div>
 <div class="line">    return this-&gt;path_grid(iter, particle);</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00065">65</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00059">59</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
 </div>
 </div>

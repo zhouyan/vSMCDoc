@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['rangetypeconstiteratordispatch',['RangeTypeConstIteratorDispatch',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch.html',1,'vsmc::traits::internal']]],
-  ['rangetypeconstiteratordispatch_3c_20t_2c_20false_20_3e',['RangeTypeConstIteratorDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
-  ['rangetypeconstiteratordispatch_3c_20t_2c_20true_20_3e',['RangeTypeConstIteratorDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_range_type_const_iterator_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
-  ['rangetypeconstiteratortrait',['RangeTypeConstIteratorTrait',['../structvsmc_1_1traits_1_1_range_type_const_iterator_trait.html',1,'vsmc::traits']]],
   ['rdrandengine',['RDRANDEngine',['../classvsmc_1_1_r_d_r_a_n_d_engine.html',1,'vsmc']]],
   ['rdtsccounter',['RDTSCCounter',['../classvsmc_1_1_r_d_t_s_c_counter.html',1,'vsmc']]],
   ['rdtscpcounter',['RDTSCPCounter',['../classvsmc_1_1_r_d_t_s_c_p_counter.html',1,'vsmc']]],

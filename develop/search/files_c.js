@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parallel_5fwork_2ehpp',['parallel_work.hpp',['../parallel__work_8hpp.html',1,'']]],
   ['particle_2ehpp',['particle.hpp',['../particle_8hpp.html',1,'']]],
   ['path_2ehpp',['path.hpp',['../path_8hpp.html',1,'']]],
   ['philox_2eh',['philox.h',['../philox_8h.html',1,'']]],

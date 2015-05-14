@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: vsmc::U01SequenceStratified&lt; RngType &gt; Class Template Reference</title>
+<title>vSMC: vsmc::U01SequenceStratified&lt; URNG &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classvsmc_1_1_u01_sequence_stratified-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::U01SequenceStratified&lt; RngType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a> &raquo; <a class="el" href="group___u01.html">U01</a></div></div>  </div>
+<div class="title">vsmc::U01SequenceStratified&lt; URNG &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a> &raquo; <a class="el" href="group___u01.html">U01</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -112,33 +112,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d57325ab67e577480d44030f06c09f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#a2d57325ab67e577480d44030f06c09f0">U01SequenceStratified</a> (std::size_t N, RngType &amp;rng)</td></tr>
-<tr class="separator:a2d57325ab67e577480d44030f06c09f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac40f9b4b5982a2533ab46e8d9dee94cc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#ac40f9b4b5982a2533ab46e8d9dee94cc">operator()</a> (std::size_t n)</td></tr>
-<tr class="separator:ac40f9b4b5982a2533ab46e8d9dee94cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d97b23a4545ac0832282d1647bd3d56"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#a3d97b23a4545ac0832282d1647bd3d56">operator[]</a> (std::size_t n)</td></tr>
-<tr class="separator:a3d97b23a4545ac0832282d1647bd3d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4feb4a50f2db9968cd6f8b40ff4d9987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#a4feb4a50f2db9968cd6f8b40ff4d9987">U01SequenceStratified</a> (std::size_t N, URNG &amp;rng)</td></tr>
+<tr class="separator:a4feb4a50f2db9968cd6f8b40ff4d9987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f351d6d8c3618bf59cb3413c8c7432f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#a7f351d6d8c3618bf59cb3413c8c7432f">operator()</a> (std::size_t n)</td></tr>
+<tr class="separator:a7f351d6d8c3618bf59cb3413c8c7432f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355abbe07e964c73ddb5c4714a1b676c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#a355abbe07e964c73ddb5c4714a1b676c">operator[]</a> (std::size_t n)</td></tr>
+<tr class="separator:a355abbe07e964c73ddb5c4714a1b676c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename RngType&gt;<br />
-class vsmc::U01SequenceStratified&lt; RngType &gt;</h3>
+<div class="textblock"><h3>template&lt;typename URNG&gt;<br />
+class vsmc::U01SequenceStratified&lt; URNG &gt;</h3>
 
 <p>Generate a fixed length sequence of uniform \([0,1)\) random variates by stratified sampling. </p>
 <p>This is similar to <a class="el" href="classvsmc_1_1_u01_sequence_sorted.html" title="Generate a fixed length sequence of uniform  random variates by sorting. ">U01SequenceSorted</a> except that, instead of generating the sequence as if by sorting. It is done by generating \(u_i = U_i / N + (i - 1) / N\) where \(U_i\) is uniform \([0,1)\) random variates. </p>
 
 <p>Definition at line <a class="el" href="u01_8hpp_source.html#l00222">222</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2d57325ab67e577480d44030f06c09f0"></a>
+<a class="anchor" id="a4feb4a50f2db9968cd6f8b40ff4d9987"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RngType&gt; </div>
+template&lt;typename URNG&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a>&lt; RngType &gt;::<a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">U01SequenceStratified</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a>&lt; URNG &gt;::<a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">U01SequenceStratified</a> </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>N</em>, </td>
@@ -146,7 +146,7 @@ template&lt;typename RngType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">RngType &amp;&#160;</td>
+          <td class="paramtype">URNG &amp;&#160;</td>
           <td class="paramname"><em>rng</em>&#160;</td>
         </tr>
         <tr>
@@ -167,17 +167,17 @@ template&lt;typename RngType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac40f9b4b5982a2533ab46e8d9dee94cc"></a>
+<a class="anchor" id="a7f351d6d8c3618bf59cb3413c8c7432f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RngType&gt; </div>
+template&lt;typename URNG&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a>&lt; RngType &gt;::operator() </td>
+          <td class="memname">double <a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a>&lt; URNG &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -195,17 +195,17 @@ template&lt;typename RngType&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3d97b23a4545ac0832282d1647bd3d56"></a>
+<a class="anchor" id="a355abbe07e964c73ddb5c4714a1b676c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RngType&gt; </div>
+template&lt;typename URNG&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a>&lt; RngType &gt;::operator[] </td>
+          <td class="memname">double <a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a>&lt; URNG &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>

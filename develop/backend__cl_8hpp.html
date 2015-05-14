@@ -134,7 +134,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_c_l.html">vsmc::PathEvalCL&lt; T, PlaceHolder &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html#a9be0ed4f02b7653c1c29eccbc1457f13">Path&lt;T&gt;::eval_type</a> subtype using OpenCL.  <a href="classvsmc_1_1_path_eval_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html">vsmc::StateCL&lt; StateSize, FPType, ID &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_c_l.html">vsmc::StateCL&lt; StateSize, RealType, ID &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using OpenCL.  <a href="classvsmc_1_1_state_c_l.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -174,7 +174,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplParams" colspan="2">template&lt;typename FPType &gt; </td></tr>
+<tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#abdf744ef86e3e50ed0eb39a552533ed6">vsmc::internal::cl_source_macros</a> (std::size_t size, std::size_t state_size, std::size_t seed)</td></tr>
 <tr class="separator:abdf744ef86e3e50ed0eb39a552533ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae41739d51aa6cb9e6b7e221b0382ae"><td class="memTemplParams" colspan="2">template&lt;typename &gt; </td></tr>
@@ -416,7 +416,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;type, ::cl_float&gt;::value ||              \</div>
 <div class="line">                           std::is_same&lt;type, ::cl_double&gt;::value),           \</div>
-<div class="line">        <span class="stringliteral">&quot;**StateCL** USED WITH FPType OTHER THAN cl_float OR cl_double&quot;</span>)</div>
+<div class="line">        <span class="stringliteral">&quot;**StateCL** USED WITH RealType OTHER THAN cl_float OR cl_double&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00053">53</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>

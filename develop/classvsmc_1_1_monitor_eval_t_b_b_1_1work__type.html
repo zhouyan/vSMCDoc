@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: vsmc::internal::ParallelPathState&lt; T, PathEvalType &gt; Class Template Reference</title>
+<title>vSMC: vsmc::MonitorEvalTBB&lt; T, Derived &gt;::work_type Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,58 +93,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="namespacevsmc_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html">ParallelPathState</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">MonitorEvalTBB</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html">work_type</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classvsmc_1_1internal_1_1_parallel_path_state-members.html">List of all members</a>  </div>
+<a href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::internal::ParallelPathState&lt; T, PathEvalType &gt; Class Template Reference</div>  </div>
+<div class="title">vsmc::MonitorEvalTBB&lt; T, Derived &gt;::work_type Class Reference<div class="ingroups"><a class="el" href="group___s_m_p.html">Symmetric Multiprocessing</a> &raquo; <a class="el" href="group___t_b_b.html">Intel Threading Building Blocks</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="parallel__work_8hpp_source.html">vsmc/smp/internal/parallel_work.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="backend__tbb_8hpp_source.html">vsmc/smp/backend_tbb.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abc34cfeba01cbe8b2cbd059f454db7c5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#abc34cfeba01cbe8b2cbd059f454db7c5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#abc34cfeba01cbe8b2cbd059f454db7c5">size_type</a></td></tr>
+<tr class="separator:abc34cfeba01cbe8b2cbd059f454db7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab76593388cccb5f0dbdf775f4cc5a5fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html#ab76593388cccb5f0dbdf775f4cc5a5fe">ParallelPathState</a> (PathEvalType *path, std::size_t iter, const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; *particle, double *res)</td></tr>
-<tr class="separator:ab76593388cccb5f0dbdf775f4cc5a5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b25db13feff3fb494a782ade8c23047"><td class="memTemplParams" colspan="2">template&lt;typename SizeType &gt; </td></tr>
-<tr class="memitem:a2b25db13feff3fb494a782ade8c23047"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_integral&lt; SizeType &gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html#a2b25db13feff3fb494a782ade8c23047">operator()</a> (SizeType id) const </td></tr>
-<tr class="separator:a2b25db13feff3fb494a782ade8c23047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344fc7bd55f08076847dee330a782fce"><td class="memTemplParams" colspan="2">template&lt;typename RangeType &gt; </td></tr>
-<tr class="memitem:a344fc7bd55f08076847dee330a782fce"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!std::is_integral&lt; RangeType &gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html#a344fc7bd55f08076847dee330a782fce">operator()</a> (const RangeType &amp;range) const </td></tr>
-<tr class="separator:a344fc7bd55f08076847dee330a782fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b0f646f5836d9dd84689b9b6d1716e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#ad3b0f646f5836d9dd84689b9b6d1716e">work_type</a> (<a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">MonitorEvalTBB</a>&lt; T, Derived &gt; *monitor, std::size_t iter, std::size_t dim, const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; *particle, double *res)</td></tr>
+<tr class="separator:ad3b0f646f5836d9dd84689b9b6d1716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2e070719df493c33c66bbe1e7a1a0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#afa2e070719df493c33c66bbe1e7a1a0d">operator()</a> (const ::tbb::blocked_range&lt; <a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#abc34cfeba01cbe8b2cbd059f454db7c5">size_type</a> &gt; &amp;range) const </td></tr>
+<tr class="separator:afa2e070719df493c33c66bbe1e7a1a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, typename PathEvalType&gt;<br />
-class vsmc::internal::ParallelPathState&lt; T, PathEvalType &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T, typename Derived&gt;<br />
+class vsmc::MonitorEvalTBB&lt; T, Derived &gt;::work_type</h3>
 
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00250">250</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab76593388cccb5f0dbdf775f4cc5a5fe"></a>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00418">418</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="abc34cfeba01cbe8b2cbd059f454db7c5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename PathEvalType &gt; </div>
+template&lt;typename T , typename Derived &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt;T&gt;::<a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#abc34cfeba01cbe8b2cbd059f454db7c5">size_type</a> <a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">vsmc::MonitorEvalTBB</a>&lt; T, Derived &gt;::<a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#abc34cfeba01cbe8b2cbd059f454db7c5">work_type::size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00421">421</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad3b0f646f5836d9dd84689b9b6d1716e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html">vsmc::internal::ParallelPathState</a>&lt; T, PathEvalType &gt;::<a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html">ParallelPathState</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">vsmc::MonitorEvalTBB</a>&lt; T, Derived &gt;::work_type::work_type </td>
           <td>(</td>
-          <td class="paramtype">PathEvalType *&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">MonitorEvalTBB</a>&lt; T, Derived &gt; *&#160;</td>
+          <td class="paramname"><em>monitor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -171,56 +196,24 @@ template&lt;typename T , typename PathEvalType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00253">253</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00423">423</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2b25db13feff3fb494a782ade8c23047"></a>
+<a class="anchor" id="afa2e070719df493c33c66bbe1e7a1a0d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename PathEvalType &gt; </div>
-<div class="memtemplate">
-template&lt;typename SizeType &gt; </div>
+template&lt;typename T , typename Derived &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;std::is_integral&lt;SizeType&gt;::value&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html">vsmc::internal::ParallelPathState</a>&lt; T, PathEvalType &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html">vsmc::MonitorEvalTBB</a>&lt; T, Derived &gt;::work_type::operator() </td>
           <td>(</td>
-          <td class="paramtype">SizeType&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00261">261</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a344fc7bd55f08076847dee330a782fce"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename PathEvalType &gt; </div>
-<div class="memtemplate">
-template&lt;typename RangeType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;!std::is_integral&lt;RangeType&gt;::value&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1internal_1_1_parallel_path_state.html">vsmc::internal::ParallelPathState</a>&lt; T, PathEvalType &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const RangeType &amp;&#160;</td>
+          <td class="paramtype">const ::tbb::blocked_range&lt; <a class="el" href="classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#abc34cfeba01cbe8b2cbd059f454db7c5">size_type</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -232,7 +225,7 @@ template&lt;typename RangeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parallel__work_8hpp_source.html#l00271">271</a> of file <a class="el" href="parallel__work_8hpp_source.html">parallel_work.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00433">433</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
 </div>
 </div>

@@ -135,13 +135,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_TYPE</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if VSMC_HAS_AES_NI</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::ARS_4x32</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::ARS</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#elif VSMC_HAS_AVX2</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::Threefry4x32AVX2</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::ThreefryAVX2</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#elif VSMC_HAS_SSE2</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::Threefry4x32SSE2</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::ThreefrySSE2</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___config.html#gaf4d9c091769094f833a293f8bfa5ebc4">   45</a></span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::Threefry4x32</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___config.html#gaf4d9c091769094f833a293f8bfa5ebc4">   45</a></span>&#160;<span class="preprocessor">#define VSMC_RNG_TYPE ::vsmc::Threefry</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
@@ -177,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a61d7192ed5ab2b5a93ca811d9f7ec868">   81</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="group___config.html#gaf4d9c091769094f833a293f8bfa5ebc4">VSMC_RNG_TYPE</a> <a class="code" href="namespacevsmc.html#a61d7192ed5ab2b5a93ca811d9f7ec868">Rng</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespacevsmc.html#add2697f5f37a07b28e25a9dcd3f9b101">   81</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="group___config.html#gaf4d9c091769094f833a293f8bfa5ebc4">VSMC_RNG_TYPE</a> <a class="code" href="namespacevsmc.html#add2697f5f37a07b28e25a9dcd3f9b101">Rng</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace vsmc</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
@@ -185,8 +185,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00050">monitor.hpp:50</a></div></div>
 <div class="ttc" id="group___config_html_gaf4d9c091769094f833a293f8bfa5ebc4"><div class="ttname"><a href="group___config.html#gaf4d9c091769094f833a293f8bfa5ebc4">VSMC_RNG_TYPE</a></div><div class="ttdeci">#define VSMC_RNG_TYPE</div><div class="ttdoc">Default RNG type. </div><div class="ttdef"><b>Definition:</b> <a href="engine_8hpp_source.html#l00045">engine.hpp:45</a></div></div>
 <div class="ttc" id="rng_2mkl_8hpp_html"><div class="ttname"><a href="rng_2mkl_8hpp.html">mkl.hpp</a></div></div>
-<div class="ttc" id="namespacevsmc_html_a61d7192ed5ab2b5a93ca811d9f7ec868"><div class="ttname"><a href="namespacevsmc.html#a61d7192ed5ab2b5a93ca811d9f7ec868">vsmc::Rng</a></div><div class="ttdeci">::vsmc::Threefry4x32 Rng</div><div class="ttdef"><b>Definition:</b> <a href="engine_8hpp_source.html#l00081">engine.hpp:81</a></div></div>
 <div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
+<div class="ttc" id="namespacevsmc_html_add2697f5f37a07b28e25a9dcd3f9b101"><div class="ttname"><a href="namespacevsmc.html#add2697f5f37a07b28e25a9dcd3f9b101">vsmc::Rng</a></div><div class="ttdeci">::vsmc::Threefry Rng</div><div class="ttdef"><b>Definition:</b> <a href="engine_8hpp_source.html#l00081">engine.hpp:81</a></div></div>
 <div class="ttc" id="xorshift_8hpp_html"><div class="ttname"><a href="xorshift_8hpp.html">xorshift.hpp</a></div></div>
 <div class="ttc" id="ars_8hpp_html"><div class="ttname"><a href="ars_8hpp.html">ars.hpp</a></div></div>
 <div class="ttc" id="xor__combine__engine_8hpp_html"><div class="ttname"><a href="xor__combine__engine_8hpp.html">xor_combine_engine.hpp</a></div></div>

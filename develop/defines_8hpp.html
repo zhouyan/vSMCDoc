@@ -96,24 +96,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">defines.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="config_8hpp_source.html">vsmc/internal/config.hpp</a>&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
 <p><a href="defines_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc_1_1_position.html">vsmc::Position&lt; N &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function template argument used for position.  <a href="structvsmc_1_1_position.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
@@ -130,6 +125,16 @@ Macros</h2></td></tr>
 <tr class="memitem:a6e24175504fd5e6f8c6bc602a5f128b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">VSMC_MNE</a></td></tr>
 <tr class="memdesc:a6e24175504fd5e6f8c6bc602a5f128b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avoid MSVC stupid behavior: MNE = Macro No Expansion.  <a href="#a6e24175504fd5e6f8c6bc602a5f128b0">More...</a><br /></td></tr>
 <tr class="separator:a6e24175504fd5e6f8c6bc602a5f128b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga2960eb3f40adc7eef5a190b68dff9ae8"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:ga2960eb3f40adc7eef5a190b68dff9ae8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___definitions.html#ga2960eb3f40adc7eef5a190b68dff9ae8">vsmc::Index</a> = std::integral_constant&lt; std::size_t, N &gt;</td></tr>
+<tr class="memdesc:ga2960eb3f40adc7eef5a190b68dff9ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function template argument used for position.  <a href="group___definitions.html#ga2960eb3f40adc7eef5a190b68dff9ae8">More...</a><br /></td></tr>
+<tr class="separator:ga2960eb3f40adc7eef5a190b68dff9ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176822da44034710f986802551496d06"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a176822da44034710f986802551496d06"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a176822da44034710f986802551496d06">vsmc::Position</a> = Index&lt; N &gt;</td></tr>
+<tr class="separator:a176822da44034710f986802551496d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -181,7 +186,7 @@ Enumerations</h2></td></tr>
 
 <p>A constant expression that give maximum of unsigned integer types. </p>
 
-<p>Definition at line <a class="el" href="defines_8hpp_source.html#l00041">41</a> of file <a class="el" href="defines_8hpp_source.html">defines.hpp</a>.</p>
+<p>Definition at line <a class="el" href="defines_8hpp_source.html#l00042">42</a> of file <a class="el" href="defines_8hpp_source.html">defines.hpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +202,7 @@ Enumerations</h2></td></tr>
 
 <p>Avoid MSVC stupid behavior: MNE = Macro No Expansion. </p>
 
-<p>Definition at line <a class="el" href="defines_8hpp_source.html#l00038">38</a> of file <a class="el" href="defines_8hpp_source.html">defines.hpp</a>.</p>
+<p>Definition at line <a class="el" href="defines_8hpp_source.html#l00039">39</a> of file <a class="el" href="defines_8hpp_source.html">defines.hpp</a>.</p>
 
 </div>
 </div>

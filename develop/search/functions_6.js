@@ -13,8 +13,8 @@ var searchData=
   ['get_5fkernels',['get_kernels',['../classvsmc_1_1_c_l_program.html#a2e80492a275d2a24e9ab55332894e1b3',1,'vsmc::CLProgram']]],
   ['get_5fscalar',['get_scalar',['../classvsmc_1_1_seed_generator.html#a7529d6c006a8cfbf8188e39b464e9426',1,'vsmc::SeedGenerator::get_scalar()'],['../classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html#a9e58c61da56969396c273d8b15e749bd',1,'vsmc::SeedGenerator&lt; ID, std::array&lt; T, K &gt; &gt;::get_scalar()']]],
   ['get_5fsupported_5fimage_5fformats',['get_supported_image_formats',['../classvsmc_1_1_c_l_context.html#a6bf43f3b83bd25a8e5b5048ea8401316',1,'vsmc::CLContext']]],
-  ['global_5fid',['global_id',['../classvsmc_1_1_state_m_p_i.html#a98b2c58bc25b8223974a31a703c2a3ee',1,'vsmc::StateMPI']]],
-  ['global_5fsize',['global_size',['../classvsmc_1_1_state_m_p_i.html#ae8945462d84294e865d6e0a16dc923f6',1,'vsmc::StateMPI']]],
+  ['global_5fid',['global_id',['../classvsmc_1_1_state_m_p_i.html#a7b0f22fa686dd3a2d251d1e49ee9d7b8',1,'vsmc::StateMPI']]],
+  ['global_5fsize',['global_size',['../classvsmc_1_1_state_m_p_i.html#ae68a3e0658c9799cd1571f3f1f3835f0',1,'vsmc::StateMPI']]],
   ['global_5fwork_5fsize',['global_work_size',['../classvsmc_1_1_c_l_kernel.html#aa36b94a26a508b9deb1a2f2fbcf520bf',1,'vsmc::CLKernel']]],
   ['grid',['grid',['../classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b',1,'vsmc::Path']]],
   ['grid_5fdata',['grid_data',['../classvsmc_1_1_path.html#a210292fee0d8f936ab7861d1f0e72ad1',1,'vsmc::Path']]]

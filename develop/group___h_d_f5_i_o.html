@@ -157,9 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad0008a6009936485c06c834fd52f755a"><td class="memTemplItemLeft" align="right" valign="top">OutputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gad0008a6009936485c06c834fd52f755a">vsmc::hdf5load</a> (const std::string &amp;file_name, const std::string &amp;data_name, OutputIter first)</td></tr>
 <tr class="memdesc:gad0008a6009936485c06c834fd52f755a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load raw data in the HDF5 format.  <a href="#gad0008a6009936485c06c834fd52f755a">More...</a><br /></td></tr>
 <tr class="separator:gad0008a6009936485c06c834fd52f755a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f297c2121423dbd6a30c54d9789e7bb"><td class="memItemLeft" align="right" valign="top">inline::hsize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga5f297c2121423dbd6a30c54d9789e7bb">vsmc::hdf5size</a> (const std::string &amp;file_name, const std::string &amp;data_name)</td></tr>
-<tr class="memdesc:ga5f297c2121423dbd6a30c54d9789e7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of bytes of the data in the HDF5 format.  <a href="#ga5f297c2121423dbd6a30c54d9789e7bb">More...</a><br /></td></tr>
-<tr class="separator:ga5f297c2121423dbd6a30c54d9789e7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dbe264e7b3b0fa6c075b4d54124057a"><td class="memItemLeft" align="right" valign="top">inline::hsize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga0dbe264e7b3b0fa6c075b4d54124057a">vsmc::hdf5size</a> (const std::string &amp;file_name, const std::string &amp;data_name)</td></tr>
+<tr class="memdesc:ga0dbe264e7b3b0fa6c075b4d54124057a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of bytes of the data in the HDF5 format.  <a href="#ga0dbe264e7b3b0fa6c075b4d54124057a">More...</a><br /></td></tr>
+<tr class="separator:ga0dbe264e7b3b0fa6c075b4d54124057a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga2e2b568ebe7dc18ca1aae256bfc08901">vsmc::hdf5store</a> (const Sampler&lt; T &gt; &amp;sampler, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
 <tr class="memdesc:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format.  <a href="#ga2e2b568ebe7dc18ca1aae256bfc08901">More...</a><br /></td></tr>
@@ -550,16 +550,19 @@ template&lt;typename T , typename OutputIter &gt; </div>
 
 <p>Load raw data in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00268">268</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00277">277</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga5f297c2121423dbd6a30c54d9789e7bb"></a>
+<a class="anchor" id="ga0dbe264e7b3b0fa6c075b4d54124057a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">inline ::hsize_t vsmc::hdf5size </td>
+          <td class="memname">hsize_t vsmc::hdf5size </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>file_name</em>, </td>
@@ -576,9 +579,15 @@ template&lt;typename T , typename OutputIter &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the number of bytes of the data in the HDF5 format. </p>
+<p>Get the number of elements of the data in the HDF5 format given type. </p>
 
 <p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00244">244</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
@@ -632,7 +641,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00647">647</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00656">656</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -684,7 +693,7 @@ template&lt;MatrixOrder Order, std::size_t Dim, typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00689">689</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00698">698</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -736,7 +745,7 @@ template&lt;typename T , typename... Types&gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_tuple.html">StateTuple</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00700">700</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00709">709</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -788,7 +797,7 @@ template&lt;typename T , typename... Types&gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_tuple.html">StateTuple</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00726">726</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00735">735</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -840,7 +849,7 @@ template&lt;MatrixOrder Order, typename T , std::size_t StateSize, typename Real
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00744">744</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00753">753</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -892,7 +901,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00761">761</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00770">770</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -944,7 +953,7 @@ template&lt;MatrixOrder Order, typename T , typename U &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> with <a class="el" href="classvsmc_1_1_state_c_l.html" title="Particle::value_type subtype using OpenCL. ">StateCL</a> value type in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00774">774</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00783">783</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1044,7 @@ template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </div
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Each element in the list is assumed to be a vector of the same length. If the list contains elements of different length, then create an empty list, which is exactly an empty group in HDF5 terminology and use <code>hdf5store_list_insert</code> to insert each element. </dd></dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00445">445</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00454">454</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1120,7 @@ template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00630">630</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00639">639</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1172,7 @@ template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00399">399</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00408">408</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1240,7 @@ template&lt;typename T , typename InputIter &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00493">493</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00502">502</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1347,7 @@ template&lt;MatrixOrder Order, typename T , typename InputIter &gt; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;#</div>
 </div><!-- fragment --> That is, when the data is stored in column major order in C++ memory, then the read in R produces exactly the same output. If the data is stored as row major matrix in C++ memory, the read in R produces the transpose the original matrix though they are identical in memory. </dd></dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00356">356</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00365">365</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1366,7 +1375,7 @@ template&lt;MatrixOrder Order, typename T , typename InputIter &gt; </div>
 
 <p>Create a new HDF5 file for store data. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00297">297</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00306">306</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>

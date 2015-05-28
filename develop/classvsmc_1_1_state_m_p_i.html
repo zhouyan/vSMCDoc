@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using MPI.  
  <a href="classvsmc_1_1_state_m_p_i.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="forward_8hpp_source.html">vsmc/internal/forward.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="backend__mpi_8hpp_source.html">vsmc/mpi/backend_mpi.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -165,18 +165,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aa0624b98c5850335c9c29d2bb56acd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename StateBase, typename ID&gt;<br />
+<div class="textblock"><h3>template&lt;typename StateBase, typename ID = MPIDefault&gt;<br />
 class vsmc::StateMPI&lt; StateBase, ID &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_particle.html#a79faf6802c2f57cafb398bfa5f6d9fbb">Particle::value_type</a> subtype using MPI. </p>
 
-<p>Definition at line <a class="el" href="forward_8hpp_source.html#l00088">88</a> of file <a class="el" href="forward_8hpp_source.html">forward.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00220">220</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ac27f7cf7e2f94f078aa79ef6fee2f7cb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef ID <a class="el" href="classvsmc_1_1_state_m_p_i.html">vsmc::StateMPI</a>&lt; <a class="el" href="class_state_base.html">StateBase</a>, ID &gt;::<a class="el" href="classvsmc_1_1_state_m_p_i.html#ac27f7cf7e2f94f078aa79ef6fee2f7cb">mpi_id</a></td>
@@ -192,7 +192,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="structvsmc_1_1traits_1_1_size_type_trait.html">traits::SizeTypeTrait</a>&lt;<a class="el" href="class_state_base.html">StateBase</a>&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> <a class="el" href="classvsmc_1_1_state_m_p_i.html">vsmc::StateMPI</a>&lt; <a class="el" href="class_state_base.html">StateBase</a>, ID &gt;::<a class="el" href="classvsmc_1_1_state_m_p_i.html#a701a0f8f71d65a4eea5bca072594664e">size_type</a></td>
@@ -208,7 +208,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="classvsmc_1_1_weight_set_m_p_i.html">WeightSetMPI</a>&lt;typename <a class="el" href="structvsmc_1_1traits_1_1_weight_set_type_trait.html">traits::WeightSetTypeTrait</a>&lt;<a class="el" href="class_state_base.html">StateBase</a>&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a>, ID&gt; <a class="el" href="classvsmc_1_1_state_m_p_i.html">vsmc::StateMPI</a>&lt; <a class="el" href="class_state_base.html">StateBase</a>, ID &gt;::<a class="el" href="classvsmc_1_1_state_m_p_i.html#a3e40006f0ef0ebbc6b6d513fee03855e">weight_set_type</a></td>
@@ -225,7 +225,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -254,7 +254,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <div class="memtemplate">
 template&lt;typename IntType &gt; </div>
 <table class="mlabels">
@@ -294,7 +294,7 @@ template&lt;typename IntType &gt; </div>
   </table>
   </dd>
 </dl>
-<p>The <code><a class="el" href="class_state_base.html">StateBase</a></code> type is required to have the following members - <code>state_pack_type</code>: A type that used to pack state values. It shall be serializable. That is, a <code>state_pack_type</code> object is acceptable by <code>boost::mpi::communicator::send</code> etc. Both StateMatrix::state_pack_type and StateTuple::state_pack_type satisfy this requirement if their template type parameter types are serializable. For user defined types, see document of Boost.Serialize of how to serialize a class object.</p><ul>
+<p>The <code><a class="el" href="class_state_base.html">StateBase</a></code> type is required to have the following members - <code>state_pack_type</code>: A type that used to pack state values. It shall be serializable. That is, a <code>state_pack_type</code> object is acceptable by <code>boost::mpi::communicator::send</code> etc. StateMatrix::state_pack_type satisfies this requirement if their template type parameter types are serializable. For user defined types, see document of Boost.Serialize of how to serialize a class object.</p><ul>
 <li><code>state_pack</code> <div class="fragment"><div class="line">state_pack_type state_pack (<a class="code" href="classvsmc_1_1_state_m_p_i.html#a701a0f8f71d65a4eea5bca072594664e">size_type</a> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
 </div><!-- fragment --> Given a local particle id on this node, pack the state values into a <code>state_pack_type</code> object.</li>
 <li><code>state_unpack</code> <div class="fragment"><div class="line"><span class="keywordtype">void</span> state_unpack (<a class="code" href="classvsmc_1_1_state_m_p_i.html#a701a0f8f71d65a4eea5bca072594664e">size_type</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> state_pack_type &amp;pack);</div>
@@ -312,7 +312,7 @@ template&lt;typename IntType &gt; </div>
 <li>Stage three is too expansive. The default implementation assumes <code>this-&gt;state_pack(id)</code> and `this-&gt;state_unpack(id, pack) is not too expansive, and inter-node copy is rare anyway. If this is not the case, then it can be a performance bottle neck. </li>
 </ul>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00314">314</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00312">312</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ template&lt;typename IntType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -359,7 +359,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00455">455</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00453">453</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -388,7 +388,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>The MPI recv/send tag used by <code>copy_inter_node</code> </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00390">390</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00388">388</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -455,7 +455,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 </ul>
 <p>It is important the the vector accessed through <code>copy_from_first</code> is the same for all nodes. Otherwise the behavior is undefined. </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00416">416</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00414">414</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -463,7 +463,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -485,7 +485,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>Transfer a local particle id <em>on this node</em> into a global particle id. </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00383">383</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00381">381</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -493,7 +493,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -514,7 +514,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>The number of particles on all nodes. </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00332">332</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00330">330</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -544,7 +544,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>Given a global particle id check if it is on this <code>node</code> </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00356">356</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00354">354</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -574,7 +574,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>Transfer a global particle id into a local particle id (possibly not on this node, use <code>rank</code> to get the rank of its node) </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00363">363</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00361">361</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -603,7 +603,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>The number of particles on nodes with ranks less than the rank of this node. </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00336">336</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00334">334</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -611,7 +611,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -633,7 +633,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>Given a global particle id return the rank of the node it belongs. </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00340">340</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00338">338</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -641,7 +641,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StateBase , typename ID &gt; </div>
+template&lt;typename StateBase , typename ID  = MPIDefault&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -662,7 +662,7 @@ template&lt;typename StateBase , typename ID &gt; </div>
 
 <p>A duplicated MPI communicator for this state value object. </p>
 
-<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00329">329</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__mpi_8hpp_source.html#l00327">327</a> of file <a class="el" href="backend__mpi_8hpp_source.html">backend_mpi.hpp</a>.</p>
 
 </div>
 </div>

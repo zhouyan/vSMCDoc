@@ -33,7 +33,6 @@ var searchData=
   ['clsampler',['CLSampler',['../classvsmc_1_1_c_l_sampler.html',1,'vsmc']]],
   ['clsetup',['CLSetup',['../classvsmc_1_1_c_l_setup.html',1,'vsmc']]],
   ['const_5fsingle_5fparticle_5ftype',['const_single_particle_type',['../structvsmc_1_1_state_matrix_base_1_1const__single__particle__type.html',1,'vsmc::StateMatrixBase']]],
-  ['const_5fsingle_5fparticle_5ftype',['const_single_particle_type',['../structvsmc_1_1_state_tuple_base_1_1const__single__particle__type.html',1,'vsmc::StateTupleBase']]],
   ['constsingleparticle',['ConstSingleParticle',['../classvsmc_1_1_const_single_particle.html',1,'vsmc']]],
   ['constsingleparticlebase',['ConstSingleParticleBase',['../classvsmc_1_1_const_single_particle_base.html',1,'vsmc']]],
   ['constsingleparticlebase_3c_20s_20_3e',['ConstSingleParticleBase&lt; S &gt;',['../classvsmc_1_1_const_single_particle_base.html',1,'vsmc']]],

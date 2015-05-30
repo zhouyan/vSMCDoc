@@ -765,7 +765,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_cache(std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        std::vector&lt;cache_param_type&gt; caches;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        Vector&lt;cache_param_type&gt; caches;</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordtype">unsigned</span> max_ecx = cache_param_num();</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> ecx = 0x00; ecx != max_ecx; ++ecx)</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            caches.push_back(cache_param(ecx));</div>
@@ -878,7 +878,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature(std::basic_ostream&lt;CharT, Traits&gt; &amp;os)</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    {</div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x01) {</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            Vector&lt;std::string&gt; feats;</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;            feature_str1(feats);</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                os &lt;&lt; <span class="stringliteral">&quot;Processor info and features\n&quot;</span>;</div>
@@ -887,7 +887,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;            }</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        }</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="keywordflow">if</span> (max_eax() &gt;= 0x07) {</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;            Vector&lt;std::string&gt; feats;</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;            feature_str7(feats);</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                print_equal(os);</div>
@@ -897,7 +897,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            }</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        }</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">if</span> (max_eax_ext() &gt;= ext0_ + 1U) {</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            std::vector&lt;std::string&gt; feats;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            Vector&lt;std::string&gt; feats;</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            feature_str_ext1(feats);</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            <span class="keywordflow">if</span> (feats.size() != 0) {</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;                print_equal(os);</div>
@@ -910,7 +910,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_feature(</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        std::basic_ostream&lt;CharT, Traits&gt; &amp;os, std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        std::basic_ostream&lt;CharT, Traits&gt; &amp;os, Vector&lt;std::string&gt; &amp;feats)</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    {</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        std::sort(feats.begin(), feats.end());</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">for</span> (std::size_t i = 0; i != feats.size(); ++i) {</div>
@@ -929,7 +929,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            os &lt;&lt; std::string(fix - str.size(), <span class="charliteral">&#39; &#39;</span>);</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    }</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str1(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str1(Vector&lt;std::string&gt; &amp;feats)</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    {</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        feature_str&lt;CPUIDFeatureSSE3&gt;(feats);</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        feature_str&lt;CPUIDFeaturePCLMULQDQ&gt;(feats);</div>
@@ -994,7 +994,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        feature_str&lt;CPUIDFeaturePBE&gt;(feats);</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    }</div>
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str7(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str7(Vector&lt;std::string&gt; &amp;feats)</div>
 <div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    {</div>
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        feature_str&lt;CPUIDFeatureFSGSBASE&gt;(feats);</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        feature_str&lt;CPUIDFeatureBMI1&gt;(feats);</div>
@@ -1025,7 +1025,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        feature_str&lt;CPUIDFeatureAVX512VBMI&gt;(feats);</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    }</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str_ext1(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str_ext1(Vector&lt;std::string&gt; &amp;feats)</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    {</div>
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        feature_str&lt;CPUIDFeatureExtLAHF_LM&gt;(feats);</div>
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        feature_str&lt;CPUIDFeatureExtCMP_LEGACY&gt;(feats);</div>
@@ -1084,7 +1084,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;    }</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    <span class="keyword">template</span> &lt;CPUIDFeature Feat&gt;</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str(std::vector&lt;std::string&gt; &amp;feats)</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> feature_str(Vector&lt;std::string&gt; &amp;feats)</div>
 <div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    {</div>
 <div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;        <span class="keywordflow">if</span> (has_feature&lt;Feat&gt;())</div>
 <div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;            feats.push_back(CPUIDFeatureInfo&lt;Feat&gt;::str());</div>
@@ -1103,7 +1103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_CPUID_HPP</span></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a786793f5f7143ebf8dbb41d4310c2f2d"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a786793f5f7143ebf8dbb41d4310c2f2d">vsmc::CPUIDFeatureSHA</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; EBX[29]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00171">cpuid.hpp:171</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a5c4cc698dd1f87c900b6d1bb2e65f24d"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a5c4cc698dd1f87c900b6d1bb2e65f24d">vsmc::CPUIDFeatureCNXT_ID</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; ECX[10]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00098">cpuid.hpp:98</a></div></div>
-<div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00050">monitor.hpp:50</a></div></div>
+<div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6a80cfdb1effbf87267c8ffcf2acea813a"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6a80cfdb1effbf87267c8ffcf2acea813a">vsmc::CPUIDFeatureAVX512VBMI</a></div><div class="ttdoc">EAX = 0x07, ECX = 0x00; ECX[01]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00176">cpuid.hpp:176</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aa413b1b9bd37ad50277db2cd7e55996e"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aa413b1b9bd37ad50277db2cd7e55996e">vsmc::CPUIDFeatureSSE2</a></div><div class="ttdoc">EAX = 0x01, ECX = 0x00; EDX[26]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00143">cpuid.hpp:143</a></div></div>
 <div class="ttc" id="group___c_p_u_i_d_html_gga6e9cefe0836fbe600a1ce47f5c9f03b6aeaf91ec7f13b1a7ca270abaa6d598b2a"><div class="ttname"><a href="group___c_p_u_i_d.html#gga6e9cefe0836fbe600a1ce47f5c9f03b6aeaf91ec7f13b1a7ca270abaa6d598b2a">vsmc::CPUIDFeatureExtPERFCTR_CORE</a></div><div class="ttdoc">EAX = 0x80000001, ECX = 0x00; ECX[23]. </div><div class="ttdef"><b>Definition:</b> <a href="cpuid_8hpp_source.html#l00198">cpuid.hpp:198</a></div></div>

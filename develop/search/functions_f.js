@@ -70,7 +70,7 @@ var searchData=
   ['print',['print',['../classvsmc_1_1_sampler.html#a860d8fbc154e35c7f4019518731a4973',1,'vsmc::Sampler::print()'],['../classvsmc_1_1_state_matrix_base.html#a352849790a25ec2354f07fa1605be4f9',1,'vsmc::StateMatrixBase::print()']]],
   ['print_5fhelp',['print_help',['../classvsmc_1_1_program_option_map.html#a58405abd7fb83c062c716f791a838023',1,'vsmc::ProgramOptionMap']]],
   ['private_5fmem_5fsize',['private_mem_size',['../classvsmc_1_1_c_l_kernel.html#ac96893fef1d9ee7eca1271ca2d2bf839',1,'vsmc::CLKernel']]],
-  ['probability',['probability',['../classvsmc_1_1_discrete_distribution.html#a12a2495a0640d8c1258ad45db82b4770',1,'vsmc::DiscreteDistribution']]],
+  ['probability',['probability',['../classvsmc_1_1_discrete_distribution.html#a90344b28baf14c046771bd1f8726d1c0',1,'vsmc::DiscreteDistribution']]],
   ['process',['process',['../classvsmc_1_1_program_option_map.html#ac5adca4b80f53bce965ac7b94b6ab60d',1,'vsmc::ProgramOptionMap::process(int argc, const char **argv, std::ostream &amp;os=std::cout)'],['../classvsmc_1_1_program_option_map.html#ae25801a683dc7e1f5735aaec7ece5cba',1,'vsmc::ProgramOptionMap::process(int argc, char **argv, std::ostream &amp;os=std::cout)']]],
   ['profiling_5fcommand_5fend',['profiling_command_end',['../classvsmc_1_1_c_l_event.html#af873be93b0c28536a985e7fd9dd39e2f',1,'vsmc::CLEvent']]],
   ['profiling_5fcommand_5fqueued',['profiling_command_queued',['../classvsmc_1_1_c_l_event.html#aff86fb0400994dc6d192eb6c3fd72dd5',1,'vsmc::CLEvent']]],

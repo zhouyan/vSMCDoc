@@ -3,7 +3,6 @@ var searchData=
   ['param_5ftype',['param_type',['../structvsmc_1_1_stable_distribution_1_1param__type.html',1,'vsmc::StableDistribution']]],
   ['param_5ftype',['param_type',['../structvsmc_1_1_uniform_real_distribution_1_1param__type.html',1,'vsmc::UniformRealDistribution']]],
   ['particle',['Particle',['../classvsmc_1_1_particle.html',1,'vsmc']]],
-  ['particle_3c_20s_20_3e',['Particle&lt; S &gt;',['../classvsmc_1_1_particle.html',1,'vsmc']]],
   ['path',['Path',['../classvsmc_1_1_path.html',1,'vsmc']]],
   ['pathevalbase',['PathEvalBase',['../classvsmc_1_1_path_eval_base.html',1,'vsmc']]],
   ['pathevalbase_3c_20t_2c_20virtual_20_3e',['PathEvalBase&lt; T, Virtual &gt;',['../classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html',1,'vsmc']]],

@@ -2,8 +2,6 @@ var searchData=
 [
   ['has_5fdevice',['has_device',['../classvsmc_1_1_c_l_query.html#a4636ecca87f6db3b1061c30a70e8d05e',1,'vsmc::CLQuery::has_device(const CLPlatform &amp;plat)'],['../classvsmc_1_1_c_l_query.html#a09e751eaa596bb0fe7e8e02e9e299f1f',1,'vsmc::CLQuery::has_device()']]],
   ['has_5ffeature',['has_feature',['../classvsmc_1_1_c_l_query.html#a0e5abd5f7a52c6e629c7e2ea9c2c8113',1,'vsmc::CLQuery::has_feature()'],['../classvsmc_1_1_c_p_u_i_d.html#ae52709cf772152d25de18140fa285629',1,'vsmc::CPUID::has_feature()']]],
-  ['hasconstsingleparticlebasetype',['HasConstSingleParticleBaseType',['../structvsmc_1_1traits_1_1internal_1_1_has_const_single_particle_base_type.html',1,'vsmc::traits::internal']]],
-  ['hasconstsingleparticlebasetypeimpl',['HasConstSingleParticleBaseTypeImpl',['../structvsmc_1_1traits_1_1internal_1_1_has_const_single_particle_base_type_impl.html',1,'vsmc::traits::internal']]],
   ['haskeytype',['HasKeyType',['../structvsmc_1_1traits_1_1internal_1_1_has_key_type.html',1,'vsmc::traits::internal']]],
   ['haskeytypeimpl',['HasKeyTypeImpl',['../structvsmc_1_1traits_1_1internal_1_1_has_key_type_impl.html',1,'vsmc::traits::internal']]],
   ['hasresamplerngtype',['HasResampleRngType',['../structvsmc_1_1traits_1_1internal_1_1_has_resample_rng_type.html',1,'vsmc::traits::internal']]],
@@ -47,8 +45,8 @@ var searchData=
   ['hdf5store_5flist_5finsert_5ftuple',['hdf5store_list_insert_tuple',['../namespacevsmc_1_1internal.html#a350bacac6c880b2cda6dc4a70b43e125',1,'vsmc::internal::hdf5store_list_insert_tuple(std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, std::integral_constant&lt; std::size_t, 0 &gt;)'],['../namespacevsmc_1_1internal.html#a7b95885585b9d3fa91263d6869841cb0',1,'vsmc::internal::hdf5store_list_insert_tuple(std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, std::integral_constant&lt; std::size_t, Pos &gt;)']]],
   ['hdf5store_5fmatrix',['hdf5store_matrix',['../group___h_d_f5_i_o.html#ga34c74ca84fd2394a0e21c1968e108ec7',1,'vsmc']]],
   ['hdf5store_5fnew',['hdf5store_new',['../group___h_d_f5_i_o.html#ga4bfedcdf0062b93d015028638b016041',1,'vsmc']]],
-  ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html',1,'vsmc::internal']]],
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
+  ['hdf5storedataptr',['HDF5StoreDataPtr',['../structvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html',1,'vsmc::internal']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
   ['host_5fptr',['host_ptr',['../classvsmc_1_1_c_l_buffer.html#aa92bf47a5015a8b4410506df800e1b09',1,'vsmc::CLBuffer']]],
   ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]],

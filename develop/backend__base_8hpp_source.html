@@ -464,18 +464,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html">  373</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;{</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html#ac300336d3571f914ffb0a816055b2c68">  376</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base.html#ac300336d3571f914ffb0a816055b2c68">monitor_state</a>(std::size_t iter, std::size_t dim,</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle&lt;T&gt;</a> csp, <span class="keywordtype">double</span> *res)</div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html#a4f07b945194854997dce06e12a278f65">  376</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base.html#a4f07b945194854997dce06e12a278f65">monitor_state</a>(</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        std::size_t iter, std::size_t dim, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle&lt;T&gt;</a> sp, <span class="keywordtype">double</span> *res)</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        monitor_state_dispatch(iter, dim, csp, res, &amp;Derived::monitor_state);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        monitor_state_dispatch(iter, dim, sp, res, &amp;Derived::monitor_state);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html#af4b9412398450edec177985af0aa550c">  382</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base.html#af4b9412398450edec177985af0aa550c">pre_processor</a>(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html#aba627bb49add3ad56a0864e48fe853e4">  382</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base.html#aba627bb49add3ad56a0864e48fe853e4">pre_processor</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    {</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        pre_processor_dispatch(iter, particle, &amp;Derived::pre_processor);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html#a79f499876e3e947f32448f22289f61db">  387</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base.html#a79f499876e3e947f32448f22289f61db">post_processor</a>(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
+<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base.html#acea7f0287e6637e3acb92ceb9d89984c">  387</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base.html#acea7f0287e6637e3acb92ceb9d89984c">post_processor</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        post_processor_dispatch(iter, particle, &amp;Derived::post_processor);</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    }</div>
@@ -488,310 +488,304 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    template &lt;typename D&gt;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> iter, <a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> dim,</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle</a>&lt;T&gt; csp, <span class="keywordtype">double</span> *res,</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordtype">void</span> (D::*)(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span>, <a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span>, <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle</a>&lt;T&gt;,</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                    <span class="keywordtype">double</span> *))</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#ac300336d3571f914ffb0a816055b2c68">monitor_state</a>(iter, dim, csp, res);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle,</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;))</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    {</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#af4b9412398450edec177985af0aa550c">pre_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    {</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a79f499876e3e947f32448f22289f61db">post_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="comment">// non-static const</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(std::size_t iter, std::size_t dim,</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        ConstSingleParticle&lt;T&gt; csp, <span class="keywordtype">double</span> *res,</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, std::size_t, ConstSingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *)</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    {</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#ac300336d3571f914ffb0a816055b2c68">monitor_state</a>(iter, dim, csp, res);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    {</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#af4b9412398450edec177985af0aa550c">pre_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    {</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a79f499876e3e947f32448f22289f61db">post_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    }</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="comment">// static</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(std::size_t iter, std::size_t dim,</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        ConstSingleParticle&lt;T&gt; csp, <span class="keywordtype">double</span> *res,</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, std::size_t, ConstSingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *))</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    {</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        Derived::monitor_state(iter, dim, csp, res);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    }</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    {</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        Derived::pre_processor(iter, particle);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    }</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    {</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        Derived::post_processor(iter, particle);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    }</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="comment">// base</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(std::size_t, std::size_t,</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        ConstSingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *,</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">MonitorEvalBase</a>::*)(std::size_t, std::size_t,</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                                    ConstSingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *))</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    {</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    }</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;,</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">MonitorEvalBase</a>::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    {</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    }</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;,</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">MonitorEvalBase</a>::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    {</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    }</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;}; <span class="comment">// class MonitorBase</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00490"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html">  490</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt;T, Virtual&gt;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00493"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#af54278d926b13273f48a6046fe50f3bc">  493</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#af54278d926b13273f48a6046fe50f3bc">monitor_state</a>(</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        std::size_t, std::size_t, <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle&lt;T&gt;</a>, <span class="keywordtype">double</span> *)</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    }</div>
-<div class="line"><a name="l00497"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#acba8074bd8b9a4c4d76c2484a36c8f05">  497</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#acba8074bd8b9a4c4d76c2484a36c8f05">pre_processor</a>(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
-<div class="line"><a name="l00498"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a21c77744001267f767e56402f81236cf">  498</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a21c77744001267f767e56402f81236cf">post_processor</a>(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00501"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a1891f8909624df047312c572396353dd">  501</a></span>&#160;    <a class="code" href="backend__base_8hpp.html#aa76696a0673e1f7e5827aea38d783c3c">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL</a>(MonitorEval)</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;}; <span class="comment">// class MonitorEvalBase&lt;T, Virtual&gt;</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Derived&gt;</div>
-<div class="line"><a name="l00507"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html">  507</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_path_eval_base.html">PathEvalBase</a></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;{</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00510"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#a8c6ffc931b1a76c67cc0c915e05111fe">  510</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#a8c6ffc931b1a76c67cc0c915e05111fe">path_state</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle&lt;T&gt;</a> csp)</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    {</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keywordflow">return</span> path_state_dispatch(iter, csp, &amp;Derived::path_state);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    }</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#ad3d9e8e8169e2482fec6e7fdc5705b73">  515</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#ad3d9e8e8169e2482fec6e7fdc5705b73">path_grid</a>(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    {</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">return</span> path_grid_dispatch(iter, particle, &amp;Derived::path_grid);</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    }</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
-<div class="line"><a name="l00520"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#a6a76c2950ee651024d33c07c31826b01">  520</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#a6a76c2950ee651024d33c07c31826b01">pre_processor</a>(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    {</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        pre_processor_dispatch(iter, particle, &amp;Derived::pre_processor);</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    }</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
-<div class="line"><a name="l00525"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#ad16dbe2e2f9ef6fd9317a8f59b52ebc2">  525</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#ad16dbe2e2f9ef6fd9317a8f59b52ebc2">post_processor</a>(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        post_processor_dispatch(iter, particle, &amp;Derived::post_processor);</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    }</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00531"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#afc58b55fc1ce2d03ac2c5f5dc79b16d0">  531</a></span>&#160;    <a class="code" href="backend__base_8hpp.html#a135d5dcd86662122f935993de75bbf5d">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL</a>(PathEval)</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    private:</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="comment">// non-static non-const</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    template &lt;typename D&gt;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> iter, <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle</a>&lt;T&gt; csp,</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keywordtype">double</span> (D::*)(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span>, <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle</a>&lt;T&gt;))</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    {</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#a8c6ffc931b1a76c67cc0c915e05111fe">path_state</a>(iter, csp);</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t iter, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle,</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keywordtype">double</span> (D::*)(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;))</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    {</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#ad3d9e8e8169e2482fec6e7fdc5705b73">path_grid</a>(iter, particle);</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    }</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#a6a76c2950ee651024d33c07c31826b01">pre_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    }</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    {</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#ad16dbe2e2f9ef6fd9317a8f59b52ebc2">post_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt;T&gt; sp, <span class="keywordtype">double</span> *res,</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordtype">void</span> (D::*)(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span>, <a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span>, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt;T&gt;, <span class="keywordtype">double</span> *))</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a4f07b945194854997dce06e12a278f65">monitor_state</a>(iter, dim, sp, res);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;))</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#aba627bb49add3ad56a0864e48fe853e4">pre_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#acea7f0287e6637e3acb92ceb9d89984c">post_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// non-static const</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(std::size_t iter, std::size_t dim,</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        SingleParticle&lt;T&gt; sp, <span class="keywordtype">double</span> *res,</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, std::size_t, SingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *)</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a4f07b945194854997dce06e12a278f65">monitor_state</a>(iter, dim, sp, res);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    }</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#aba627bb49add3ad56a0864e48fe853e4">pre_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_monitor_eval_base.html#acea7f0287e6637e3acb92ceb9d89984c">post_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="comment">// static</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(std::size_t iter, std::size_t dim,</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        SingleParticle&lt;T&gt; sp, <span class="keywordtype">double</span> *res,</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, std::size_t, SingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *))</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    {</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        Derived::monitor_state(iter, dim, sp, res);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        Derived::pre_processor(iter, particle);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    }</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        Derived::post_processor(iter, particle);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    }</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="comment">// base</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordtype">void</span> monitor_state_dispatch(std::size_t, std::size_t, SingleParticle&lt;T&gt;,</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordtype">double</span> *, <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">MonitorEvalBase</a>::*)(std::size_t, std::size_t,</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                                    SingleParticle&lt;T&gt;, <span class="keywordtype">double</span> *))</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    {</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    }</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t, Particle&lt;T&gt; &amp;,</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">MonitorEvalBase</a>::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    {</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t, Particle&lt;T&gt; &amp;,</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">MonitorEvalBase</a>::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    {</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    }</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}; <span class="comment">// class MonitorBase</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00488"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html">  488</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt;T, Virtual&gt;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;{</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00491"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a222775ad0e29b823b4dff0bb07c46a36">  491</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a222775ad0e29b823b4dff0bb07c46a36">monitor_state</a>(</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        std::size_t, std::size_t, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle&lt;T&gt;</a>, <span class="keywordtype">double</span> *)</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    {</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
+<div class="line"><a name="l00495"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a7bd9b985ef66de378494fe00d4d44954">  495</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a7bd9b985ef66de378494fe00d4d44954">pre_processor</a>(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
+<div class="line"><a name="l00496"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a9f990c043d62cb560c355cbc7ef5f78e">  496</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a9f990c043d62cb560c355cbc7ef5f78e">post_processor</a>(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00499"></a><span class="lineno"><a class="line" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a1891f8909624df047312c572396353dd">  499</a></span>&#160;    <a class="code" href="backend__base_8hpp.html#aa76696a0673e1f7e5827aea38d783c3c">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL</a>(MonitorEval)</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;}; <span class="comment">// class MonitorEvalBase&lt;T, Virtual&gt;</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Derived&gt;</div>
+<div class="line"><a name="l00505"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html">  505</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_path_eval_base.html">PathEvalBase</a></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;{</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00508"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#af8406725ce091e8f3fe036ec0e4e4c28">  508</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#af8406725ce091e8f3fe036ec0e4e4c28">path_state</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle&lt;T&gt;</a> sp)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <span class="keywordflow">return</span> path_state_dispatch(iter, sp, &amp;Derived::path_state);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#a11d250e4e5afc9eab998e531b00597ce">  513</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#a11d250e4e5afc9eab998e531b00597ce">path_grid</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    {</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">return</span> path_grid_dispatch(iter, particle, &amp;Derived::path_grid);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00518"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#acc3fe4845e84e993503e3dad786db968">  518</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#acc3fe4845e84e993503e3dad786db968">pre_processor</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    {</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        pre_processor_dispatch(iter, particle, &amp;Derived::pre_processor);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#ac80260068ef662950e6a2a115af2de98">  523</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base.html#ac80260068ef662950e6a2a115af2de98">post_processor</a>(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle)</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        post_processor_dispatch(iter, particle, &amp;Derived::post_processor);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00529"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base.html#afc58b55fc1ce2d03ac2c5f5dc79b16d0">  529</a></span>&#160;    <a class="code" href="backend__base_8hpp.html#a135d5dcd86662122f935993de75bbf5d">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL</a>(PathEval)</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    private:</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="comment">// non-static non-const</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    template &lt;typename D&gt;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> iter, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt;T&gt; sp,</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keywordtype">double</span> (D::*)(<a class="code" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span>, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt;T&gt;))</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#af8406725ce091e8f3fe036ec0e4e4c28">path_state</a>(iter, sp);</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    }</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t iter, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;particle,</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="keywordtype">double</span> (D::*)(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;))</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    {</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#a11d250e4e5afc9eab998e531b00597ce">path_grid</a>(iter, particle);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    }</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    {</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#acc3fe4845e84e993503e3dad786db968">pre_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    }</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    {</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#ac80260068ef662950e6a2a115af2de98">post_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    }</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">// non-static const</span></div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="comment">// non-static const</span></div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(std::size_t iter, ConstSingleParticle&lt;T&gt; csp,</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordtype">double</span> (D::*)(std::size_t, ConstSingleParticle&lt;T&gt;) <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    {</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#a8c6ffc931b1a76c67cc0c915e05111fe">path_state</a>(iter, csp);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    }</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keywordtype">double</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    {</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#ad3d9e8e8169e2482fec6e7fdc5705b73">path_grid</a>(iter, particle);</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    }</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#a6a76c2950ee651024d33c07c31826b01">pre_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#ad16dbe2e2f9ef6fd9317a8f59b52ebc2">post_processor</a>(iter, particle);</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    }</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(std::size_t iter, SingleParticle&lt;T&gt; sp,</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <span class="keywordtype">double</span> (D::*)(std::size_t, SingleParticle&lt;T&gt;) <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    {</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#af8406725ce091e8f3fe036ec0e4e4c28">path_state</a>(iter, sp);</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    }</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordtype">double</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    {</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#a11d250e4e5afc9eab998e531b00597ce">path_grid</a>(iter, particle);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    {</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#acc3fe4845e84e993503e3dad786db968">pre_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    }</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> D&gt;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="keywordtype">void</span> (D::*)(std::size_t, Particle&lt;T&gt; &amp;) <span class="keyword">const</span>)</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    {</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classvsmc_1_1_path_eval_base.html#ac80260068ef662950e6a2a115af2de98">post_processor</a>(iter, particle);</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    }</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="comment">// static</span></div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="comment">// static</span></div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(std::size_t iter, ConstSingleParticle&lt;T&gt; csp,</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordtype">double</span> (*)(std::size_t, ConstSingleParticle&lt;T&gt;))</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    {</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="keywordflow">return</span> Derived::path_state(iter, csp);</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <span class="keywordtype">double</span> (*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    {</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">return</span> Derived::path_grid(iter, particle);</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    }</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    {</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        Derived::pre_processor(iter, particle);</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    }</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, <span class="keyword">const</span> Particle&lt;T&gt; &amp;particle,</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    {</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        Derived::post_processor(iter, particle);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    }</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(std::size_t iter, SingleParticle&lt;T&gt; sp,</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <span class="keywordtype">double</span> (*)(std::size_t, SingleParticle&lt;T&gt;))</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    {</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordflow">return</span> Derived::path_state(iter, sp);</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    }</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordtype">double</span> (*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    {</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <span class="keywordflow">return</span> Derived::path_grid(iter, particle);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    }</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    {</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        Derived::pre_processor(iter, particle);</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    }</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t iter, Particle&lt;T&gt; &amp;particle,</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="keywordtype">void</span> (*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    {</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        Derived::post_processor(iter, particle);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    }</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="comment">// base</span></div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="comment">// base</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(std::size_t, ConstSingleParticle&lt;T&gt;,</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <span class="keywordtype">double</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, ConstSingleParticle&lt;T&gt;))</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    }</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;,</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordtype">double</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    {</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    }</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;,</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    {</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    }</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;,</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, <span class="keyword">const</span> Particle&lt;T&gt; &amp;))</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    {</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    }</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;}; <span class="comment">// class PathEvalBase</span></div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00648"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html">  648</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_path_eval_base.html">PathEvalBase</a>&lt;T, Virtual&gt;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;{</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00651"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a0295259f06279aa221d1d987bec30377">  651</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a0295259f06279aa221d1d987bec30377">path_state</a>(std::size_t, <a class="code" href="classvsmc_1_1_const_single_particle.html">ConstSingleParticle&lt;T&gt;</a>)</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    {</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    }</div>
-<div class="line"><a name="l00655"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a0ca57b767e255094da8e4a55897de829">  655</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a0ca57b767e255094da8e4a55897de829">path_grid</a>(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) { <span class="keywordflow">return</span> 0; }</div>
-<div class="line"><a name="l00656"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a11982be73f8b5bae848c7ddeb569eabe">  656</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a11982be73f8b5bae848c7ddeb569eabe">pre_processor</a>(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
-<div class="line"><a name="l00657"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5a5f99588c409a0fe65ab586df1135bb">  657</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5a5f99588c409a0fe65ab586df1135bb">post_processor</a>(std::size_t, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00660"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5fccba54e9290f63ff39907c74e3b9b2">  660</a></span>&#160;    <a class="code" href="backend__base_8hpp.html#aa76696a0673e1f7e5827aea38d783c3c">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL</a>(PathEval)</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;}; <span class="comment">// class PathEval&lt;T, Virtual&gt;</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="preprocessor">#endif // VSMC_SMP_BACKEND_BASE_HPP</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="keywordtype">double</span> path_state_dispatch(std::size_t, SingleParticle&lt;T&gt;,</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <span class="keywordtype">double</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, SingleParticle&lt;T&gt;))</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    {</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    }</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">double</span> path_grid_dispatch(std::size_t, Particle&lt;T&gt; &amp;,</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        <span class="keywordtype">double</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    {</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    }</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordtype">void</span> pre_processor_dispatch(std::size_t, Particle&lt;T&gt; &amp;,</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    {</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    }</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keywordtype">void</span> post_processor_dispatch(std::size_t, Particle&lt;T&gt; &amp;,</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        <span class="keywordtype">void</span> (<a class="code" href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">PathEvalBase</a>::*)(std::size_t, Particle&lt;T&gt; &amp;))</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    {</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    }</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;}; <span class="comment">// class PathEvalBase</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00646"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html">  646</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_path_eval_base.html">PathEvalBase</a>&lt;T, Virtual&gt;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;{</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00649"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a4aafdc9bc74b61947d87361cf8a8db4b">  649</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a4aafdc9bc74b61947d87361cf8a8db4b">path_state</a>(std::size_t, <a class="code" href="classvsmc_1_1_single_particle.html">SingleParticle&lt;T&gt;</a>) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00650"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a4bdca709129d0d3f4f9febb62d145c3c">  650</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a4bdca709129d0d3f4f9febb62d145c3c">path_grid</a>(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00651"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a1687dc5ba6063dc291c322c48e9c713e">  651</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a1687dc5ba6063dc291c322c48e9c713e">pre_processor</a>(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
+<div class="line"><a name="l00652"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a2fdab797241603f76d901e683ffa0018">  652</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a2fdab797241603f76d901e683ffa0018">post_processor</a>(std::size_t, <a class="code" href="classvsmc_1_1_particle.html">Particle&lt;T&gt;</a> &amp;) {}</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00655"></a><span class="lineno"><a class="line" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5fccba54e9290f63ff39907c74e3b9b2">  655</a></span>&#160;    <a class="code" href="backend__base_8hpp.html#aa76696a0673e1f7e5827aea38d783c3c">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL</a>(PathEval)</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;}; <span class="comment">// class PathEval&lt;T, Virtual&gt;</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="preprocessor">#endif // VSMC_SMP_BACKEND_BASE_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
 <div class="ttc" id="classvsmc_1_1_particle_html"><div class="ttname"><a href="classvsmc_1_1_particle.html">vsmc::Particle</a></div><div class="ttdoc">Particle class representing the whole particle set. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00048">particle.hpp:48</a></div></div>
+<div class="ttc" id="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4_html_a9f990c043d62cb560c355cbc7ef5f78e"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a9f990c043d62cb560c355cbc7ef5f78e">vsmc::MonitorEvalBase&lt; T, Virtual &gt;::post_processor</a></div><div class="ttdeci">virtual void post_processor(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00496">backend_base.hpp:496</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_html_a4fc58c5cb2221a1040986ec6b1e66a8f"><div class="ttname"><a href="classvsmc_1_1_initialize_base.html#a4fc58c5cb2221a1040986ec6b1e66a8f">vsmc::InitializeBase::initialize_param</a></div><div class="ttdeci">void initialize_param(Particle&lt; T &gt; &amp;particle, void *param)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00100">backend_base.hpp:100</a></div></div>
-<div class="ttc" id="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4_html_acba8074bd8b9a4c4d76c2484a36c8f05"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#acba8074bd8b9a4c4d76c2484a36c8f05">vsmc::MonitorEvalBase&lt; T, Virtual &gt;::pre_processor</a></div><div class="ttdeci">virtual void pre_processor(std::size_t, const Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00497">backend_base.hpp:497</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a5a5f99588c409a0fe65ab586df1135bb"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a5a5f99588c409a0fe65ab586df1135bb">vsmc::PathEvalBase&lt; T, Virtual &gt;::post_processor</a></div><div class="ttdeci">virtual void post_processor(std::size_t, const Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00657">backend_base.hpp:657</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_html_ac80260068ef662950e6a2a115af2de98"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#ac80260068ef662950e6a2a115af2de98">vsmc::PathEvalBase::post_processor</a></div><div class="ttdeci">void post_processor(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00523">backend_base.hpp:523</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a4bdca709129d0d3f4f9febb62d145c3c"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a4bdca709129d0d3f4f9febb62d145c3c">vsmc::PathEvalBase&lt; T, Virtual &gt;::path_grid</a></div><div class="ttdeci">virtual double path_grid(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00650">backend_base.hpp:650</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4_html_ac6159c82a6e5d5f6b1f277c67f32f75b"><div class="ttname"><a href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#ac6159c82a6e5d5f6b1f277c67f32f75b">vsmc::MoveBase&lt; T, Virtual &gt;::pre_processor</a></div><div class="ttdeci">virtual void pre_processor(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00363">backend_base.hpp:363</a></div></div>
+<div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_acea7f0287e6637e3acb92ceb9d89984c"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#acea7f0287e6637e3acb92ceb9d89984c">vsmc::MonitorEvalBase::post_processor</a></div><div class="ttdeci">void post_processor(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00387">backend_base.hpp:387</a></div></div>
+<div class="ttc" id="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4_html_a7bd9b985ef66de378494fe00d4d44954"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a7bd9b985ef66de378494fe00d4d44954">vsmc::MonitorEvalBase&lt; T, Virtual &gt;::pre_processor</a></div><div class="ttdeci">virtual void pre_processor(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00495">backend_base.hpp:495</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_html_a76838377105392f487387e8efb105d6e"><div class="ttname"><a href="classvsmc_1_1_initialize_base.html#a76838377105392f487387e8efb105d6e">vsmc::InitializeBase::pre_processor</a></div><div class="ttdeci">void pre_processor(Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00105">backend_base.hpp:105</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_eval_base_html"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a></div><div class="ttdoc">Monitor evalution base dispatch class. </div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00373">backend_base.hpp:373</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_html_a182006de95faae22ba4f17c672aa68fc"><div class="ttname"><a href="classvsmc_1_1_move_base.html#a182006de95faae22ba4f17c672aa68fc">vsmc::MoveBase::MoveBase</a></div><div class="ttdeci">MoveBase()=default</div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_html_a4113381624c4bc9e9416fc2141fc8109"><div class="ttname"><a href="classvsmc_1_1_initialize_base.html#a4113381624c4bc9e9416fc2141fc8109">vsmc::InitializeBase::InitializeBase</a></div><div class="ttdeci">InitializeBase()=default</div></div>
-<div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_a79f499876e3e947f32448f22289f61db"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#a79f499876e3e947f32448f22289f61db">vsmc::MonitorEvalBase::post_processor</a></div><div class="ttdeci">void post_processor(std::size_t iter, const Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00387">backend_base.hpp:387</a></div></div>
 <div class="ttc" id="classvsmc_1_1_path_eval_base_html_a6d38ff135c27d22e796c36f4862f8c26"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#a6d38ff135c27d22e796c36f4862f8c26">vsmc::PathEvalBase::PathEvalBase</a></div><div class="ttdeci">PathEvalBase()=default</div></div>
+<div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_aba627bb49add3ad56a0864e48fe853e4"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#aba627bb49add3ad56a0864e48fe853e4">vsmc::MonitorEvalBase::pre_processor</a></div><div class="ttdeci">void pre_processor(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00382">backend_base.hpp:382</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4_html_a1ccabc7754186ff2e68ec0eab2f6011f"><div class="ttname"><a href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a1ccabc7754186ff2e68ec0eab2f6011f">vsmc::InitializeBase&lt; T, Virtual &gt;::pre_processor</a></div><div class="ttdeci">virtual void pre_processor(Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00236">backend_base.hpp:236</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a0295259f06279aa221d1d987bec30377"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a0295259f06279aa221d1d987bec30377">vsmc::PathEvalBase&lt; T, Virtual &gt;::path_state</a></div><div class="ttdeci">virtual double path_state(std::size_t, ConstSingleParticle&lt; T &gt;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00651">backend_base.hpp:651</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_html_ad3d9e8e8169e2482fec6e7fdc5705b73"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#ad3d9e8e8169e2482fec6e7fdc5705b73">vsmc::PathEvalBase::path_grid</a></div><div class="ttdeci">double path_grid(std::size_t iter, const Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00515">backend_base.hpp:515</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_html_a4fc8f9e7873d5e77fb960a7cfa7b9ec1"><div class="ttname"><a href="classvsmc_1_1_move_base.html#a4fc8f9e7873d5e77fb960a7cfa7b9ec1">vsmc::MoveBase::post_processor</a></div><div class="ttdeci">void post_processor(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00259">backend_base.hpp:259</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_html_a11d250e4e5afc9eab998e531b00597ce"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#a11d250e4e5afc9eab998e531b00597ce">vsmc::PathEvalBase::path_grid</a></div><div class="ttdeci">double path_grid(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00513">backend_base.hpp:513</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_html_a4367e8e33519a7402fcd0e8b297a942d"><div class="ttname"><a href="classvsmc_1_1_move_base.html#a4367e8e33519a7402fcd0e8b297a942d">vsmc::MoveBase::move_state</a></div><div class="ttdeci">std::size_t move_state(std::size_t iter, SingleParticle&lt; T &gt; sp)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00249">backend_base.hpp:249</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_html_acc3fe4845e84e993503e3dad786db968"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#acc3fe4845e84e993503e3dad786db968">vsmc::PathEvalBase::pre_processor</a></div><div class="ttdeci">void pre_processor(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00518">backend_base.hpp:518</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4_html_a8f20bfaf9a5cb6010f99ab990f2a5cf6"><div class="ttname"><a href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a8f20bfaf9a5cb6010f99ab990f2a5cf6">vsmc::InitializeBase&lt; T, Virtual &gt;::initialize_state</a></div><div class="ttdeci">virtual std::size_t initialize_state(SingleParticle&lt; T &gt;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00234">backend_base.hpp:234</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_html_a51f2217ef47c49e7492d1c0328e19f26"><div class="ttname"><a href="classvsmc_1_1_move_base.html#a51f2217ef47c49e7492d1c0328e19f26">vsmc::MoveBase::pre_processor</a></div><div class="ttdeci">void pre_processor(std::size_t iter, Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00254">backend_base.hpp:254</a></div></div>
-<div class="ttc" id="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4_html_a21c77744001267f767e56402f81236cf"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a21c77744001267f767e56402f81236cf">vsmc::MonitorEvalBase&lt; T, Virtual &gt;::post_processor</a></div><div class="ttdeci">virtual void post_processor(std::size_t, const Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00498">backend_base.hpp:498</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4_html_aa2da8f562da50de1c8480491e5e0441d"><div class="ttname"><a href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#aa2da8f562da50de1c8480491e5e0441d">vsmc::MoveBase&lt; T, Virtual &gt;::move_state</a></div><div class="ttdeci">virtual std::size_t move_state(std::size_t, SingleParticle&lt; T &gt;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00359">backend_base.hpp:359</a></div></div>
-<div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_ac300336d3571f914ffb0a816055b2c68"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#ac300336d3571f914ffb0a816055b2c68">vsmc::MonitorEvalBase::monitor_state</a></div><div class="ttdeci">void monitor_state(std::size_t iter, std::size_t dim, ConstSingleParticle&lt; T &gt; csp, double *res)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00376">backend_base.hpp:376</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_html_ad16dbe2e2f9ef6fd9317a8f59b52ebc2"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#ad16dbe2e2f9ef6fd9317a8f59b52ebc2">vsmc::PathEvalBase::post_processor</a></div><div class="ttdeci">void post_processor(std::size_t iter, const Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00525">backend_base.hpp:525</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a2fdab797241603f76d901e683ffa0018"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a2fdab797241603f76d901e683ffa0018">vsmc::PathEvalBase&lt; T, Virtual &gt;::post_processor</a></div><div class="ttdeci">virtual void post_processor(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00652">backend_base.hpp:652</a></div></div>
 <div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_a3170efc8a765af47466d5338c7404518"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">vsmc::MonitorEvalBase::MonitorEvalBase</a></div><div class="ttdeci">MonitorEvalBase()=default</div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_html_af3fb2446a4df1da29645c49ee3198d2a"><div class="ttname"><a href="classvsmc_1_1_initialize_base.html#af3fb2446a4df1da29645c49ee3198d2a">vsmc::InitializeBase::initialize_state</a></div><div class="ttdeci">std::size_t initialize_state(SingleParticle&lt; T &gt; sp)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00095">backend_base.hpp:95</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a4aafdc9bc74b61947d87361cf8a8db4b"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a4aafdc9bc74b61947d87361cf8a8db4b">vsmc::PathEvalBase&lt; T, Virtual &gt;::path_state</a></div><div class="ttdeci">virtual double path_state(std::size_t, SingleParticle&lt; T &gt;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00649">backend_base.hpp:649</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_af4b9412398450edec177985af0aa550c"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#af4b9412398450edec177985af0aa550c">vsmc::MonitorEvalBase::pre_processor</a></div><div class="ttdeci">void pre_processor(std::size_t iter, const Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00382">backend_base.hpp:382</a></div></div>
 <div class="ttc" id="backend__base_8hpp_html_aa76696a0673e1f7e5827aea38d783c3c"><div class="ttname"><a href="backend__base_8hpp.html#aa76696a0673e1f7e5827aea38d783c3c">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL</a></div><div class="ttdeci">#define VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL(Name)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00052">backend_base.hpp:52</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_html_af8406725ce091e8f3fe036ec0e4e4c28"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#af8406725ce091e8f3fe036ec0e4e4c28">vsmc::PathEvalBase::path_state</a></div><div class="ttdeci">double path_state(std::size_t iter, SingleParticle&lt; T &gt; sp)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00508">backend_base.hpp:508</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_html"><div class="ttname"><a href="classvsmc_1_1_move_base.html">vsmc::MoveBase</a></div><div class="ttdoc">Move base dispatch class. </div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00246">backend_base.hpp:246</a></div></div>
 <div class="ttc" id="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4_html_a9782073c107875e627a637d5e22e2237"><div class="ttname"><a href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#a9782073c107875e627a637d5e22e2237">vsmc::MoveBase&lt; T, Virtual &gt;::post_processor</a></div><div class="ttdeci">virtual void post_processor(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00364">backend_base.hpp:364</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_html_a8c6ffc931b1a76c67cc0c915e05111fe"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#a8c6ffc931b1a76c67cc0c915e05111fe">vsmc::PathEvalBase::path_state</a></div><div class="ttdeci">double path_state(std::size_t iter, ConstSingleParticle&lt; T &gt; csp)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00510">backend_base.hpp:510</a></div></div>
+<div class="ttc" id="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4_html_a222775ad0e29b823b4dff0bb07c46a36"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#a222775ad0e29b823b4dff0bb07c46a36">vsmc::MonitorEvalBase&lt; T, Virtual &gt;::monitor_state</a></div><div class="ttdeci">virtual void monitor_state(std::size_t, std::size_t, SingleParticle&lt; T &gt;, double *)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00491">backend_base.hpp:491</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4_html_a37adbd4d6b1757425a85f7a4b53df497"><div class="ttname"><a href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a37adbd4d6b1757425a85f7a4b53df497">vsmc::InitializeBase&lt; T, Virtual &gt;::post_processor</a></div><div class="ttdeci">virtual void post_processor(Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00237">backend_base.hpp:237</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a0ca57b767e255094da8e4a55897de829"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a0ca57b767e255094da8e4a55897de829">vsmc::PathEvalBase&lt; T, Virtual &gt;::path_grid</a></div><div class="ttdeci">virtual double path_grid(std::size_t, const Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00655">backend_base.hpp:655</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_html_af6a34870642d6694ced2a3ea241288e8"><div class="ttname"><a href="classvsmc_1_1_initialize_base.html#af6a34870642d6694ced2a3ea241288e8">vsmc::InitializeBase::post_processor</a></div><div class="ttdeci">void post_processor(Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00110">backend_base.hpp:110</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_html"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a></div><div class="ttdoc">Path evalution base dispatch class. </div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00507">backend_base.hpp:507</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_html"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a></div><div class="ttdoc">Path evalution base dispatch class. </div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00505">backend_base.hpp:505</a></div></div>
 <div class="ttc" id="backend__base_8hpp_html_a135d5dcd86662122f935993de75bbf5d"><div class="ttname"><a href="backend__base_8hpp.html#a135d5dcd86662122f935993de75bbf5d">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL</a></div><div class="ttdeci">#define VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL(Name)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00043">backend_base.hpp:43</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a11982be73f8b5bae848c7ddeb569eabe"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a11982be73f8b5bae848c7ddeb569eabe">vsmc::PathEvalBase&lt; T, Virtual &gt;::pre_processor</a></div><div class="ttdeci">virtual void pre_processor(std::size_t, const Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00656">backend_base.hpp:656</a></div></div>
-<div class="ttc" id="classvsmc_1_1_single_particle_html"><div class="ttname"><a href="classvsmc_1_1_single_particle.html">vsmc::SingleParticle</a></div><div class="ttdoc">A thin wrapper over a complete Particle. </div><div class="ttdef"><b>Definition:</b> <a href="single__particle_8hpp_source.html#l00133">single_particle.hpp:133</a></div></div>
+<div class="ttc" id="classvsmc_1_1_monitor_eval_base_html_a4f07b945194854997dce06e12a278f65"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base.html#a4f07b945194854997dce06e12a278f65">vsmc::MonitorEvalBase::monitor_state</a></div><div class="ttdeci">void monitor_state(std::size_t iter, std::size_t dim, SingleParticle&lt; T &gt; sp, double *res)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00376">backend_base.hpp:376</a></div></div>
+<div class="ttc" id="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4_html_a1687dc5ba6063dc291c322c48e9c713e"><div class="ttname"><a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#a1687dc5ba6063dc291c322c48e9c713e">vsmc::PathEvalBase&lt; T, Virtual &gt;::pre_processor</a></div><div class="ttdeci">virtual void pre_processor(std::size_t, Particle&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00651">backend_base.hpp:651</a></div></div>
+<div class="ttc" id="classvsmc_1_1_single_particle_html"><div class="ttname"><a href="classvsmc_1_1_single_particle.html">vsmc::SingleParticle</a></div><div class="ttdoc">A thin wrapper over a complete Particle. </div><div class="ttdef"><b>Definition:</b> <a href="single__particle_8hpp_source.html#l00098">single_particle.hpp:98</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4_html_a54a038668a7556d2eff2453b1e305ee9"><div class="ttname"><a href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a54a038668a7556d2eff2453b1e305ee9">vsmc::InitializeBase&lt; T, Virtual &gt;::initialize_param</a></div><div class="ttdeci">virtual void initialize_param(Particle&lt; T &gt; &amp;, void *)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00235">backend_base.hpp:235</a></div></div>
-<div class="ttc" id="classvsmc_1_1_path_eval_base_html_a6a76c2950ee651024d33c07c31826b01"><div class="ttname"><a href="classvsmc_1_1_path_eval_base.html#a6a76c2950ee651024d33c07c31826b01">vsmc::PathEvalBase::pre_processor</a></div><div class="ttdeci">void pre_processor(std::size_t iter, const Particle&lt; T &gt; &amp;particle)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00520">backend_base.hpp:520</a></div></div>
-<div class="ttc" id="classvsmc_1_1_const_single_particle_html"><div class="ttname"><a href="classvsmc_1_1_const_single_particle.html">vsmc::ConstSingleParticle</a></div><div class="ttdoc">A const variant to SingleParticle. </div><div class="ttdef"><b>Definition:</b> <a href="single__particle_8hpp_source.html#l00148">single_particle.hpp:148</a></div></div>
 <div class="ttc" id="classvsmc_1_1_initialize_base_html"><div class="ttname"><a href="classvsmc_1_1_initialize_base.html">vsmc::InitializeBase</a></div><div class="ttdoc">Initialize base dispatch class. </div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00092">backend_base.hpp:92</a></div></div>
-<div class="ttc" id="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4_html_af54278d926b13273f48a6046fe50f3bc"><div class="ttname"><a href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#af54278d926b13273f48a6046fe50f3bc">vsmc::MonitorEvalBase&lt; T, Virtual &gt;::monitor_state</a></div><div class="ttdeci">virtual void monitor_state(std::size_t, std::size_t, ConstSingleParticle&lt; T &gt;, double *)</div><div class="ttdef"><b>Definition:</b> <a href="backend__base_8hpp_source.html#l00493">backend_base.hpp:493</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

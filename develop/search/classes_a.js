@@ -13,7 +13,6 @@ var searchData=
   ['sizetypedispatch_3c_20t_2c_20false_20_3e',['SizeTypeDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_size_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
   ['sizetypedispatch_3c_20t_2c_20true_20_3e',['SizeTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_size_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
   ['sizetypetrait',['SizeTypeTrait',['../structvsmc_1_1traits_1_1_size_type_trait.html',1,'vsmc::traits']]],
-  ['sizetypetrait_3c_20s_20_3e',['SizeTypeTrait&lt; S &gt;',['../structvsmc_1_1traits_1_1_size_type_trait.html',1,'vsmc::traits']]],
   ['sizetypetrait_3c_20statebase_20_3e',['SizeTypeTrait&lt; StateBase &gt;',['../structvsmc_1_1traits_1_1_size_type_trait.html',1,'vsmc::traits']]],
   ['stabledistribution',['StableDistribution',['../classvsmc_1_1_stable_distribution.html',1,'vsmc']]],
   ['statebase',['StateBase',['../class_state_base.html',1,'']]],

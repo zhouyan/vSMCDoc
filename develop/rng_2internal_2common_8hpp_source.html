@@ -142,109 +142,106 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>traits</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>internal</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1traits.html#a645fa1dc0ada69711ae7ff56fedd1eba">   47</a></span>&#160;<a class="code" href="traits_8hpp.html#a566e7fda58c58819ab013a7296cabe33">VSMC_DEFINE_TYPE_DISPATCH_TRAIT</a>(<a class="code" href="namespacevsmc_1_1traits.html#a645fa1dc0ada69711ae7ff56fedd1eba">KeyType</a>, key_type, NullType)</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a7c5b5b58c7c371013eeab50fad68b648">   47</a></span>&#160;<a class="code" href="traits_8hpp.html#a566e7fda58c58819ab013a7296cabe33">VSMC_DEFINE_TYPE_DISPATCH_TRAIT</a>(<a class="code" href="namespacevsmc_1_1internal.html#a7c5b5b58c7c371013eeab50fad68b648">KeyType</a>, key_type, NullType)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace vsmc::traits</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> SeedSeq, <span class="keyword">typename</span> U, <span class="keyword">typename</span> V = U, <span class="keyword">typename</span> W = V&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structvsmc_1_1internal_1_1is__seed__seq.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvsmc_1_1internal_1_1is__seed__seq.html">is_seed_seq</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    : <span class="keyword">public</span> std::integral_constant&lt;bool,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          !std::is_convertible&lt;SeedSeq, U&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              !std::is_convertible&lt;SeedSeq, V&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              !std::is_convertible&lt;SeedSeq, W&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;              !std::is_same&lt;typename std::remove_cv&lt;SeedSeq&gt;::type,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                  U&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;              !std::is_same&lt;typename std::remove_cv&lt;SeedSeq&gt;::type,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  V&gt;::value &amp;&amp;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;              !std::is_same&lt;typename std::remove_cv&lt;SeedSeq&gt;::type,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                  W&gt;::value&gt; {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">   69</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">increment_single</a>(std::array&lt;T, K&gt; &amp;ctr, std::false_type)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ++ctr.back();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#ad2a823ff31f7be39a814603753fcdbf1">   75</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">increment_single</a>(std::array&lt;T, K&gt; &amp;ctr, std::true_type)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (++std::get&lt;N&gt;(ctr) != 0)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    increment_single&lt;N + 1&gt;(ctr, std::integral_constant&lt;bool, N + 2 &lt; K&gt;());</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">   84</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::array&lt;T, K&gt; &amp;ctr)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    increment_single&lt;0&gt;(ctr, std::integral_constant&lt;bool, 1 &lt; K&gt;());</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K, T NSkip&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a2c286babdab7c348c57ac1a54266ca4c">   90</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::array&lt;T, K&gt; &amp;ctr, std::integral_constant&lt;T, NSkip&gt;)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    T old = ctr.front();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    ctr.front() += NSkip;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (ctr.front() &lt; old &amp;&amp; old != 0)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        increment_single&lt;1&gt;(ctr, std::integral_constant&lt;<span class="keywordtype">bool</span>, 2 &lt; K&gt;());</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a1019f8b31be0bcf915ea1510bb6b282d">  100</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::array&lt;T, K&gt; &amp;ctr, T nskip)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    T old = ctr.front();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ctr.front() += nskip;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (ctr.front() &lt; old &amp;&amp; old != 0)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        increment_single&lt;1&gt;(ctr, std::integral_constant&lt;<span class="keywordtype">bool</span>, 2 &lt; K&gt;());</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Blocks, std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">  110</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">increment_block</a>(std::array&lt;T, K&gt; &amp;,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::array&lt;std::array&lt;T, K&gt;, Blocks&gt; &amp;, std::false_type)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Blocks, std::<span class="keywordtype">size_t</span> B, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#ae172c2fe6b783ee860ee1b67caed9760">  116</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">increment_block</a>(std::array&lt;T, K&gt; &amp;ctr,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::array&lt;std::array&lt;T, K&gt;, Blocks&gt; &amp;ctr_block, std::true_type)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::get&lt;B&gt;(ctr_block) = ctr;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::get&lt;B&gt;(ctr_block), std::integral_constant&lt;T, B + 1&gt;());</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    increment_block&lt;Blocks, B + 1&gt;(</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        ctr, ctr_block, std::integral_constant&lt;bool, B + 1 &lt; Blocks&gt;());</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Blocks, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a359a53d506870e76831ee0f425a99c58">  126</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::array&lt;T, K&gt; &amp;ctr, std::array&lt;std::array&lt;T, K&gt;, Blocks&gt; &amp;ctr_block)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    increment_block&lt;Blocks, 0&gt;(</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        ctr, ctr_block, std::integral_constant&lt;bool, 0 &lt; Blocks&gt;());</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    ctr = ctr_block.back();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_INTERNAL_COMMON_HPP</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;template &lt;typename SeedSeq, typename U, typename V = U, typename W = V&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structvsmc_1_1internal_1_1is__seed__seq.html">   50</a></span>&#160;struct <a class="code" href="structvsmc_1_1internal_1_1is__seed__seq.html">is_seed_seq</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    : public <a class="code" href="namespacestd.html">std</a>::integral_constant&lt;<span class="keywordtype">bool</span>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          !<a class="code" href="namespacestd.html">std</a>::is_convertible&lt;SeedSeq, U&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              !<a class="code" href="namespacestd.html">std</a>::is_convertible&lt;SeedSeq, V&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              !<a class="code" href="namespacestd.html">std</a>::is_convertible&lt;SeedSeq, W&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              !<a class="code" href="namespacestd.html">std</a>::is_same&lt;typename <a class="code" href="namespacestd.html">std</a>::remove_cv&lt;SeedSeq&gt;::<a class="code" href="classstd_1_1conditional_1_1type.html">type</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  U&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;              !<a class="code" href="namespacestd.html">std</a>::is_same&lt;typename <a class="code" href="namespacestd.html">std</a>::remove_cv&lt;SeedSeq&gt;::type,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  V&gt;::value &amp;&amp;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              !<a class="code" href="namespacestd.html">std</a>::is_same&lt;typename <a class="code" href="namespacestd.html">std</a>::remove_cv&lt;SeedSeq&gt;::type,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                  W&gt;::value&gt; {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">   64</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">increment_single</a>(std::array&lt;T, K&gt; &amp;ctr, std::false_type)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ++ctr.back();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#ad2a823ff31f7be39a814603753fcdbf1">   70</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">increment_single</a>(std::array&lt;T, K&gt; &amp;ctr, std::true_type)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (++std::get&lt;N&gt;(ctr) != 0)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    increment_single&lt;N + 1&gt;(ctr, std::integral_constant&lt;bool, N + 2 &lt; K&gt;());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">   79</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::array&lt;T, K&gt; &amp;ctr)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    increment_single&lt;0&gt;(ctr, std::integral_constant&lt;bool, 1 &lt; K&gt;());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K, T NSkip&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a2c286babdab7c348c57ac1a54266ca4c">   85</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::array&lt;T, K&gt; &amp;ctr, std::integral_constant&lt;T, NSkip&gt;)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    T old = ctr.front();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    ctr.front() += NSkip;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (ctr.front() &lt; old &amp;&amp; old != 0)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        increment_single&lt;1&gt;(ctr, std::integral_constant&lt;<span class="keywordtype">bool</span>, 2 &lt; K&gt;());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a1019f8b31be0bcf915ea1510bb6b282d">   95</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::array&lt;T, K&gt; &amp;ctr, T nskip)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    T old = ctr.front();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    ctr.front() += nskip;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (ctr.front() &lt; old &amp;&amp; old != 0)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        increment_single&lt;1&gt;(ctr, std::integral_constant&lt;<span class="keywordtype">bool</span>, 2 &lt; K&gt;());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Blocks, std::<span class="keywordtype">size_t</span>, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">  105</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">increment_block</a>(std::array&lt;T, K&gt; &amp;,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::array&lt;std::array&lt;T, K&gt;, Blocks&gt; &amp;, std::false_type)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Blocks, std::<span class="keywordtype">size_t</span> B, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#ae172c2fe6b783ee860ee1b67caed9760">  111</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">increment_block</a>(std::array&lt;T, K&gt; &amp;ctr,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::array&lt;std::array&lt;T, K&gt;, Blocks&gt; &amp;ctr_block, std::true_type)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::get&lt;B&gt;(ctr_block) = ctr;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(std::get&lt;B&gt;(ctr_block), std::integral_constant&lt;T, B + 1&gt;());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    increment_block&lt;Blocks, B + 1&gt;(</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        ctr, ctr_block, std::integral_constant&lt;bool, B + 1 &lt; Blocks&gt;());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Blocks, <span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> K&gt;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a359a53d506870e76831ee0f425a99c58">  121</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">increment</a>(</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::array&lt;T, K&gt; &amp;ctr, std::array&lt;std::array&lt;T, K&gt;, Blocks&gt; &amp;ctr_block)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    increment_block&lt;Blocks, 0&gt;(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        ctr, ctr_block, std::integral_constant&lt;bool, 0 &lt; Blocks&gt;());</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    ctr = ctr_block.back();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <span class="comment">// namespace vsmc::internal</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_INTERNAL_COMMON_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_a88566db9e5a52c50a9eb5ce4d42d18b1"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">vsmc::internal::increment</a></div><div class="ttdeci">void increment(std::array&lt; T, K &gt; &amp;ctr)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00084">common.hpp:84</a></div></div>
-<div class="ttc" id="structvsmc_1_1internal_1_1is__seed__seq_html"><div class="ttname"><a href="structvsmc_1_1internal_1_1is__seed__seq.html">vsmc::internal::is_seed_seq</a></div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00055">common.hpp:55</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_ad04b5d4c24cc2c27971f57f70d345749"><div class="ttname"><a href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">vsmc::internal::increment_single</a></div><div class="ttdeci">static void increment_single(std::array&lt; T, K &gt; &amp;ctr, std::false_type)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00069">common.hpp:69</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1traits_html_a645fa1dc0ada69711ae7ff56fedd1eba"><div class="ttname"><a href="namespacevsmc_1_1traits.html#a645fa1dc0ada69711ae7ff56fedd1eba">vsmc::traits::KeyType</a></div><div class="ttdeci">typename KeyTypeTrait&lt; T &gt;::type KeyType</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00047">common.hpp:47</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_a88566db9e5a52c50a9eb5ce4d42d18b1"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a88566db9e5a52c50a9eb5ce4d42d18b1">vsmc::internal::increment</a></div><div class="ttdeci">void increment(std::array&lt; T, K &gt; &amp;ctr)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00079">common.hpp:79</a></div></div>
+<div class="ttc" id="structvsmc_1_1internal_1_1is__seed__seq_html"><div class="ttname"><a href="structvsmc_1_1internal_1_1is__seed__seq.html">vsmc::internal::is_seed_seq</a></div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00050">common.hpp:50</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_ad04b5d4c24cc2c27971f57f70d345749"><div class="ttname"><a href="namespacevsmc_1_1internal.html#ad04b5d4c24cc2c27971f57f70d345749">vsmc::internal::increment_single</a></div><div class="ttdeci">static void increment_single(std::array&lt; T, K &gt; &amp;ctr, std::false_type)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00064">common.hpp:64</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="traits_8hpp_html_a566e7fda58c58819ab013a7296cabe33"><div class="ttname"><a href="traits_8hpp.html#a566e7fda58c58819ab013a7296cabe33">VSMC_DEFINE_TYPE_DISPATCH_TRAIT</a></div><div class="ttdeci">#define VSMC_DEFINE_TYPE_DISPATCH_TRAIT(Outer, Inner, Default)</div><div class="ttdef"><b>Definition:</b> <a href="traits_8hpp_source.html#l00040">traits.hpp:40</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_a7c5b5b58c7c371013eeab50fad68b648"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a7c5b5b58c7c371013eeab50fad68b648">vsmc::internal::KeyType</a></div><div class="ttdeci">typename KeyTypeTrait&lt; T &gt;::type KeyType</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00047">common.hpp:47</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="namespacevsmc_1_1internal_html_a148b6a16e61dd0e95d3dd0899b1a710c"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">vsmc::internal::increment_block</a></div><div class="ttdeci">static void increment_block(std::array&lt; T, K &gt; &amp;, std::array&lt; std::array&lt; T, K &gt;, Blocks &gt; &amp;, std::false_type)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00110">common.hpp:110</a></div></div>
+<div class="ttc" id="classstd_1_1conditional_1_1type_html"><div class="ttname"><a href="classstd_1_1conditional_1_1type.html">type</a></div></div>
+<div class="ttc" id="namespacevsmc_1_1internal_html_a148b6a16e61dd0e95d3dd0899b1a710c"><div class="ttname"><a href="namespacevsmc_1_1internal.html#a148b6a16e61dd0e95d3dd0899b1a710c">vsmc::internal::increment_block</a></div><div class="ttdeci">static void increment_block(std::array&lt; T, K &gt; &amp;, std::array&lt; std::array&lt; T, K &gt;, Blocks &gt; &amp;, std::false_type)</div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00105">common.hpp:105</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

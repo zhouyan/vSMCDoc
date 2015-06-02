@@ -29,9 +29,8 @@ var searchData=
   ['xorshift_5fright_5fzero',['xorshift_right_zero',['../namespacevsmc_1_1internal.html#a1c13429c5959cc22aca10d333b0bfc13',1,'vsmc::internal::xorshift_right_zero(std::array&lt; T, K &gt; &amp;, std::false_type)'],['../namespacevsmc_1_1internal.html#aea29ee58903ff1ab0f7d746cda9743d5',1,'vsmc::internal::xorshift_right_zero(std::array&lt; T, K &gt; &amp;state, std::true_type)']]],
   ['xorshiftengine',['XorshiftEngine',['../classvsmc_1_1_xorshift_engine.html',1,'vsmc']]],
   ['xorshiftengine',['XorshiftEngine',['../classvsmc_1_1_xorshift_engine.html#ab24507366db6960ad6b327c2af0ca7d3',1,'vsmc::XorshiftEngine::XorshiftEngine(result_type s=1)'],['../classvsmc_1_1_xorshift_engine.html#a1c9617ac278973681861b7b635480f6e',1,'vsmc::XorshiftEngine::XorshiftEngine(SeedSeq &amp;seq, typename std::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, result_type, XorshiftEngine&lt; ResultType, K, A, B, C, D, R, S &gt;&gt;::value &gt;::type *=nullptr)']]],
-  ['xorshiftenginetrait',['XorshiftEngineTrait',['../structvsmc_1_1traits_1_1_xorshift_engine_trait.html',1,'vsmc::traits']]],
-  ['xorshiftindex',['XorshiftIndex',['../structvsmc_1_1internal_1_1_xorshift_index_3_01_result_type_00_01_k_00_01_r_00_01_s_00_01false_01_4.html#abbdb979cff7527c584a6c33ed2fdeb7d',1,'vsmc::internal::XorshiftIndex&lt; ResultType, K, R, S, false &gt;']]],
   ['xorshiftindex',['XorshiftIndex',['../structvsmc_1_1internal_1_1_xorshift_index.html',1,'vsmc::internal']]],
+  ['xorshiftindex',['XorshiftIndex',['../structvsmc_1_1internal_1_1_xorshift_index_3_01_result_type_00_01_k_00_01_r_00_01_s_00_01false_01_4.html#abbdb979cff7527c584a6c33ed2fdeb7d',1,'vsmc::internal::XorshiftIndex&lt; ResultType, K, R, S, false &gt;']]],
   ['xorshiftindex_3c_20resulttype_2c_20k_2c_20r_2c_20s_20_3e',['XorshiftIndex&lt; ResultType, K, R, S &gt;',['../structvsmc_1_1internal_1_1_xorshift_index.html',1,'vsmc::internal']]],
   ['xorshiftindex_3c_20resulttype_2c_20k_2c_20r_2c_20s_2c_20false_20_3e',['XorshiftIndex&lt; ResultType, K, R, S, false &gt;',['../structvsmc_1_1internal_1_1_xorshift_index_3_01_result_type_00_01_k_00_01_r_00_01_s_00_01false_01_4.html',1,'vsmc::internal']]],
   ['xorshiftleft',['XorshiftLeft',['../structvsmc_1_1internal_1_1_xorshift_left.html',1,'vsmc::internal']]],
@@ -55,6 +54,6 @@ var searchData=
   ['xorwow8x32',['Xorwow8x32',['../group___xorshift.html#ga9539d4ad2367a415cdce723385eddc18',1,'vsmc']]],
   ['xorwow8x64',['Xorwow8x64',['../group___xorshift.html#gaa31e9ed3aad70e4346b0600c62e05a7f',1,'vsmc']]],
   ['xorwow_5f64',['Xorwow_64',['../group___xorshift.html#ga094f9e3bcf6af13c4a7205bebef77506',1,'vsmc']]],
-  ['xorwowengine',['XorwowEngine',['../classvsmc_1_1_xorwow_engine.html#aa10b789b37dff294b58be8f1398b0ed3',1,'vsmc::XorwowEngine::XorwowEngine(result_type s=1)'],['../classvsmc_1_1_xorwow_engine.html#a4d5d22eed5b619d0ac47134ded2c57d2',1,'vsmc::XorwowEngine::XorwowEngine(SeedSeq &amp;seq, typename std::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, result_type, XorwowEngine&lt; Eng, D, DInit &gt;&gt;::value &gt;::type *=nullptr)']]],
-  ['xorwowengine',['XorwowEngine',['../classvsmc_1_1_xorwow_engine.html',1,'vsmc']]]
+  ['xorwowengine',['XorwowEngine',['../classvsmc_1_1_xorwow_engine.html',1,'vsmc']]],
+  ['xorwowengine',['XorwowEngine',['../classvsmc_1_1_xorwow_engine.html#aa10b789b37dff294b58be8f1398b0ed3',1,'vsmc::XorwowEngine::XorwowEngine(result_type s=1)'],['../classvsmc_1_1_xorwow_engine.html#a4d5d22eed5b619d0ac47134ded2c57d2',1,'vsmc::XorwowEngine::XorwowEngine(SeedSeq &amp;seq, typename std::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, result_type, XorwowEngine&lt; Eng, D, DInit &gt;&gt;::value &gt;::type *=nullptr)']]]
 ];

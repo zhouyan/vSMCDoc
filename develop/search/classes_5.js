@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['keytypedispatch',['KeyTypeDispatch',['../structvsmc_1_1traits_1_1internal_1_1_key_type_dispatch.html',1,'vsmc::traits::internal']]],
-  ['keytypedispatch_3c_20t_2c_20false_20_3e',['KeyTypeDispatch&lt; T, false &gt;',['../structvsmc_1_1traits_1_1internal_1_1_key_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::traits::internal']]],
-  ['keytypedispatch_3c_20t_2c_20true_20_3e',['KeyTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1traits_1_1internal_1_1_key_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::traits::internal']]],
-  ['keytypetrait',['KeyTypeTrait',['../structvsmc_1_1traits_1_1_key_type_trait.html',1,'vsmc::traits']]]
+  ['keytypedispatch',['KeyTypeDispatch',['../structvsmc_1_1internal_1_1internal_1_1_key_type_dispatch.html',1,'vsmc::internal::internal']]],
+  ['keytypedispatch_3c_20t_2c_20false_20_3e',['KeyTypeDispatch&lt; T, false &gt;',['../structvsmc_1_1internal_1_1internal_1_1_key_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::internal::internal']]],
+  ['keytypedispatch_3c_20t_2c_20true_20_3e',['KeyTypeDispatch&lt; T, true &gt;',['../structvsmc_1_1internal_1_1internal_1_1_key_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal::internal']]],
+  ['keytypetrait',['KeyTypeTrait',['../structvsmc_1_1internal_1_1_key_type_trait.html',1,'vsmc::internal']]]
 ];

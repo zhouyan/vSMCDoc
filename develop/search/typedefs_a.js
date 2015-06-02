@@ -4,7 +4,7 @@ var searchData=
   ['par256_5ftype',['par256_type',['../structvsmc_1_1internal_1_1_threefry_par_pack_a_v_x2.html#a40aef0e40f6b579032ee0a6cf1bd0636',1,'vsmc::internal::ThreefryParPackAVX2']]],
   ['par_5ftype',['par_type',['../structvsmc_1_1internal_1_1_threefry_par_pack_a_v_x2.html#a90c46abfb9cb6a13a8c337a9a92e7edd',1,'vsmc::internal::ThreefryParPackAVX2::par_type()'],['../structvsmc_1_1internal_1_1_threefry_par_pack_s_s_e2.html#a94428c73b992555479b4701ac38d60c0',1,'vsmc::internal::ThreefryParPackSSE2::par_type()']]],
   ['param_5ftype',['param_type',['../classvsmc_1_1_discrete_distribution.html#a50bacd7bfa8b2548fcf426f902c1589a',1,'vsmc::DiscreteDistribution']]],
-  ['particle',['particle',['../classvsmc_1_1_state_matrix_base.html#a282cfb2efb3009b43a6af7ff76698286',1,'vsmc::StateMatrixBase']]],
+  ['particle',['particle',['../classvsmc_1_1_state_matrix_base.html#a6332b9a67c30206d8ecb8579c6d73788',1,'vsmc::StateMatrixBase']]],
   ['philox',['Philox',['../group___philox.html#ga863f525f8c1860e782fad5f43f122416',1,'vsmc']]],
   ['philox2x32',['Philox2x32',['../group___philox.html#ga7a87afd33f7ad31e223a549b20f0bada',1,'vsmc']]],
   ['philox2x64',['Philox2x64',['../group___philox.html#ga7c16add252b747ffbaad8490c21e5fa1',1,'vsmc']]],

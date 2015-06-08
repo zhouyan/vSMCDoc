@@ -191,43 +191,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// Optional libraries</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_ACCELERATE</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="config_8hpp.html#aa49b30cb5e18c1f5939e8977bd0413fa">   98</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_ACCELERATE 0</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CBLAS</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="config_8hpp.html#a1c37c6d025e4cc33598751d9fbeb4093">   98</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_CBLAS 0</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_ACCELERATE_CBLAS</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="config_8hpp.html#a398fb84baacf9ffaf2d6a4221bda9f2f">  102</a></span>&#160;<span class="preprocessor">#define VSMC_USE_ACCELERATE_CBLAS VSMC_HAS_ACCELERATE</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_HDF5</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="config_8hpp.html#a1c7e94d06f836a49688c6dd1c9f722b5">  102</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_HDF5 0</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_ACCELERATE_VFORCE</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="config_8hpp.html#a4979d4db402983e506eaf5eac7366df3">  106</a></span>&#160;<span class="preprocessor">#define VSMC_USE_ACCELERATE_VFORCE VSMC_HAS_ACCELERATE</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_MKL</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define VSMC_HAS_MKL 0</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_CBLAS</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="config_8hpp.html#a1c37c6d025e4cc33598751d9fbeb4093">  110</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_CBLAS 0</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_MKL_CBLAS</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf">  110</a></span>&#160;<span class="preprocessor">#define VSMC_USE_MKL_CBLAS VSMC_HAS_MKL</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_HDF5</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="config_8hpp.html#a1c7e94d06f836a49688c6dd1c9f722b5">  114</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_HDF5 0</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_MKL_VML</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e">  114</a></span>&#160;<span class="preprocessor">#define VSMC_USE_MKL_VML VSMC_HAS_MKL</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_MKL</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define VSMC_HAS_MKL 0</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_MKL_VSL</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b">  118</a></span>&#160;<span class="preprocessor">#define VSMC_USE_MKL_VSL VSMC_HAS_MKL</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_MKL_CBLAS</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="config_8hpp.html#a61641507e0537c1317cfa7749c4bbaaf">  122</a></span>&#160;<span class="preprocessor">#define VSMC_USE_MKL_CBLAS VSMC_HAS_MKL</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_MKL_VML</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="config_8hpp.html#af50438fe46c15c6c9f846ab0bd925e3e">  126</a></span>&#160;<span class="preprocessor">#define VSMC_USE_MKL_VML VSMC_HAS_MKL</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#ifndef VSMC_USE_MKL_VSL</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="config_8hpp.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b">  130</a></span>&#160;<span class="preprocessor">#define VSMC_USE_MKL_VSL VSMC_HAS_MKL</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif // VSMC_INTERNAL_CONFIG_HPP</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // VSMC_INTERNAL_CONFIG_HPP</span></div>
 <div class="ttc" id="compiler_8hpp_html"><div class="ttname"><a href="compiler_8hpp.html">compiler.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

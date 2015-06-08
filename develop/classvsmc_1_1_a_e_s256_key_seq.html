@@ -113,13 +113,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5ba5f44d9e902a7782c2b337208698ad"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; <a class="el" href="class_result_type.html">ResultType</a>, 32/sizeof(<a class="el" href="class_result_type.html">ResultType</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a5ba5f44d9e902a7782c2b337208698ad">key_type</a></td></tr>
-<tr class="separator:a5ba5f44d9e902a7782c2b337208698ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb2d77210c63126b50d332199168308"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a8cb2d77210c63126b50d332199168308">key_type</a> = std::array&lt; <a class="el" href="class_result_type.html">ResultType</a>, 32/sizeof(<a class="el" href="class_result_type.html">ResultType</a>)&gt;</td></tr>
+<tr class="separator:a8cb2d77210c63126b50d332199168308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a515ef9e6811cab043e40c4877a4027df"><td class="memTemplParams" colspan="2">template&lt;std::size_t Rp1&gt; </td></tr>
-<tr class="memitem:a515ef9e6811cab043e40c4877a4027df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a515ef9e6811cab043e40c4877a4027df">generate</a> (const <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a5ba5f44d9e902a7782c2b337208698ad">key_type</a> &amp;key, std::array&lt; <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;&gt;, Rp1 &gt; &amp;key_seq)</td></tr>
+<tr class="memitem:a515ef9e6811cab043e40c4877a4027df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a515ef9e6811cab043e40c4877a4027df">generate</a> (const <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a8cb2d77210c63126b50d332199168308">key_type</a> &amp;key, std::array&lt; <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;&gt;, Rp1 &gt; &amp;key_seq)</td></tr>
 <tr class="separator:a515ef9e6811cab043e40c4877a4027df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -128,21 +128,21 @@ class vsmc::AES256KeySeq&lt; ResultType &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_a_e_s256_engine.html" title="AES-256 RNG engine. ">AES256Engine</a> key sequence generator. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00672">672</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00675">675</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a5ba5f44d9e902a7782c2b337208698ad"></a>
+<a class="anchor" id="a8cb2d77210c63126b50d332199168308"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ResultType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::array&lt;<a class="el" href="class_result_type.html">ResultType</a>, 32 / sizeof(<a class="el" href="class_result_type.html">ResultType</a>)&gt; <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html">vsmc::AES256KeySeq</a>&lt; <a class="el" href="class_result_type.html">ResultType</a> &gt;::<a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a5ba5f44d9e902a7782c2b337208698ad">key_type</a></td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html">vsmc::AES256KeySeq</a>&lt; <a class="el" href="class_result_type.html">ResultType</a> &gt;::<a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a8cb2d77210c63126b50d332199168308">key_type</a> =  std::array&lt;<a class="el" href="class_result_type.html">ResultType</a>, 32 / sizeof(<a class="el" href="class_result_type.html">ResultType</a>)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00675">675</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00678">678</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -161,7 +161,7 @@ template&lt;std::size_t Rp1&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html">vsmc::AES256KeySeq</a>&lt; <a class="el" href="class_result_type.html">ResultType</a> &gt;::generate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a5ba5f44d9e902a7782c2b337208698ad">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a8cb2d77210c63126b50d332199168308">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -183,7 +183,7 @@ template&lt;std::size_t Rp1&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00678">678</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00681">681</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>

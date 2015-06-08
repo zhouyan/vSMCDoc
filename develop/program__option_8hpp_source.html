@@ -414,10 +414,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
 <div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="classvsmc_1_1_program_option_map.html">  522</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_program_option_map.html">ProgramOptionMap</a></div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;{</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keyword">typedef</span> std::map&lt;std::string, std::pair&lt;ProgramOption *, std::size_t&gt;&gt;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        option_map_type;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">typedef</span> std::list&lt;std::pair&lt;std::string, const ProgramOption *&gt;&gt;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        option_list_type;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keyword">using</span> option_map_type =</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        std::map&lt;std::string, std::pair&lt;ProgramOption *, std::size_t&gt;&gt;;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">using</span> option_list_type =</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        std::list&lt;std::pair&lt;std::string, const ProgramOption *&gt;&gt;;</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00530"></a><span class="lineno"><a class="line" href="classvsmc_1_1_program_option_map.html#ab2bd11517531485eb0d2630ba2d874c7">  530</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classvsmc_1_1_program_option_map.html#ab2bd11517531485eb0d2630ba2d874c7">ProgramOptionMap</a>(<span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_program_option_map.html#a7d43e3752ef230d26a7cc682a7db376e">silent</a> = <span class="keyword">false</span>, <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_program_option_map.html#a1eff326ffe9f9c755ca2a13fa5f2d72c">auto_help</a> = <span class="keyword">true</span>)</div>

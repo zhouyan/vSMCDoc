@@ -125,8 +125,8 @@ Macros</h2></td></tr>
 <tr class="separator:a2ec25a28559f5241617cbb35c0f4b6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d0cb7ff1dbdd6fcee6a2d9f1f9d2951"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#a3d0cb7ff1dbdd6fcee6a2d9f1f9d2951">VSMC_DEFINE_MATH_VMATH_2</a>(func,  name)</td></tr>
 <tr class="separator:a3d0cb7ff1dbdd6fcee6a2d9f1f9d2951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9bcab7681e8172f3e49cb3f35f212d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#ad9bcab7681e8172f3e49cb3f35f212d2">VSMC_DEFINE_MATH_VMATH_B</a>(op,  vname)</td></tr>
-<tr class="separator:ad9bcab7681e8172f3e49cb3f35f212d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8173440a8648790762270fb7315a1592"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#a8173440a8648790762270fb7315a1592">VSMC_DEFINE_MATH_VMATH_B</a>(op,  name)</td></tr>
+<tr class="separator:a8173440a8648790762270fb7315a1592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f34180638f6dc86387dce257b8f9440"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#a5f34180638f6dc86387dce257b8f9440">VSMC_DEFINE_MATH_VMATH_VML_1</a>(name)</td></tr>
 <tr class="separator:a5f34180638f6dc86387dce257b8f9440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a444e41757f19233a1999619fb08323ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmath_8hpp.html#a444e41757f19233a1999619fb08323ad">VSMC_DEFINE_MATH_VMATH_VML_2</a>(name)</td></tr>
@@ -548,7 +548,7 @@ Functions</h2></td></tr>
 <div class="line">            y[i] = func(a[i]);                                                \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00045">45</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00043">43</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,11 +582,11 @@ Functions</h2></td></tr>
 <div class="line">            y[i] = func(a[i], b[i]);                                          \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00053">53</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00051">51</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad9bcab7681e8172f3e49cb3f35f212d2"></a>
+<a class="anchor" id="a8173440a8648790762270fb7315a1592"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -600,7 +600,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">vname&#160;</td>
+          <td class="paramname">name&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -610,13 +610,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                     \</div>
-<div class="line">    inline <span class="keywordtype">void</span> v##vname(std::size_t n, <span class="keyword">const</span> T *a, <span class="keyword">const</span> T *b, T *y)         \</div>
+<div class="line">    inline <span class="keywordtype">void</span> v##name(std::size_t n, <span class="keyword">const</span> T *a, <span class="keyword">const</span> T *b, T *y)          \</div>
 <div class="line">    {                                                                         \</div>
 <div class="line">        for (std::size_t i = 0; i != n; ++i)                                  \</div>
 <div class="line">            y[i] = a[i] op b[i];                                              \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00061">61</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00059">59</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -642,7 +642,7 @@ Functions</h2></td></tr>
 <div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, y);                            \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00347">347</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00345">345</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -670,7 +670,7 @@ Functions</h2></td></tr>
 <div class="line">        ::vd##name(static_cast&lt;MKL_INT&gt;(n), a, b, y);                         \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00357">357</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00355">355</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>

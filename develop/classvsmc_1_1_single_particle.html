@@ -121,16 +121,17 @@ class vsmc::SingleParticle&lt; T &gt;</h3>
 
 <p>A thin wrapper over a complete <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a>. </p>
 <p>This is the basic <a class="el" href="classvsmc_1_1_single_particle.html" title="A thin wrapper over a complete Particle. ">SingleParticle</a> available for any type of <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a>. To extend it for type <code>T</code>. One can either specialize vsmc::SingleParticleBaseTypeTrait&lt;T&gt; or define a class template named <code>single_particle_type</code> within <code>T</code> with the following minimum requirement. </p><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S&gt; <span class="comment">// S: StateType, such as StateMatrix&lt;Dim, T&gt;</span></div>
-<div class="line"><span class="keyword">struct </span>single_particle_type</div>
+<div class="line"><span class="keyword">class </span>single_particle_type</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">typedef</span> IntType size_type;</div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">using</span> size_type = IntType;</div>
 <div class="line">    single_particle_type(size_type <span class="keywordtype">id</span>, Particle&lt;S&gt; *pptr);</div>
 <div class="line">    size_type id() <span class="keyword">const</span>;</div>
 <div class="line">    Particle&lt;S&gt; &amp;particle() <span class="keyword">const</span>;</div>
-<div class="line">};</div>
-</div><!-- fragment --><p> Usually you can safely derive <code>single_particle_type&lt;S&gt;</code> from SingleParticleBase&lt;S&gt; and add methods specific to <code>S</code>. </p>
+<div class="line">}; <span class="comment">// class single_particle_type</span></div>
+</div><!-- fragment --><p> Usually you can safely derive <code>single_particle_type&lt;S&gt;</code> from <a class="el" href="classvsmc_1_1_single_particle_base.html">SingleParticleBase&lt;S&gt;</a> and add methods specific to <code>S</code>. </p>
 
-<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00089">89</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00090">90</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a34829302165f405780281eaa72fd4d83"></a>
 <div class="memitem">
@@ -166,7 +167,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00092">92</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00093">93</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
 
 </div>
 </div>

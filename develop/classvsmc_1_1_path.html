@@ -113,14 +113,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8ce4fbe0b2aab8f7239dd841c0ef11bf"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; double(std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;, double *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">eval_type</a></td></tr>
-<tr class="separator:a8ce4fbe0b2aab8f7239dd841c0ef11bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcac9327e24adc6b0d8a139867178fa3"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#abcac9327e24adc6b0d8a139867178fa3">value_type</a></td></tr>
-<tr class="separator:abcac9327e24adc6b0d8a139867178fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4524bd5bc99a4826d3c26fb9f7b250bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">eval_type</a> = std::function&lt; double(std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;, double *)&gt;</td></tr>
+<tr class="separator:a4524bd5bc99a4826d3c26fb9f7b250bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ff15280a156a7b6a98376e1bc7ed1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#ad5ff15280a156a7b6a98376e1bc7ed1b">value_type</a> = T</td></tr>
+<tr class="separator:ad5ff15280a156a7b6a98376e1bc7ed1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3806a6cc669c760912c3af728703228"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#ae3806a6cc669c760912c3af728703228">Path</a> (const <a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">eval_type</a> &amp;<a class="el" href="classvsmc_1_1_path.html#a5a8df83ea12ef3d4b1588508ff954761">eval</a>, bool record_only=false)</td></tr>
+<tr class="memitem:ae3806a6cc669c760912c3af728703228"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#ae3806a6cc669c760912c3af728703228">Path</a> (const <a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">eval_type</a> &amp;<a class="el" href="classvsmc_1_1_path.html#a5a8df83ea12ef3d4b1588508ff954761">eval</a>, bool record_only=false)</td></tr>
 <tr class="memdesc:ae3806a6cc669c760912c3af728703228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> with an evaluation object.  <a href="#ae3806a6cc669c760912c3af728703228">More...</a><br /></td></tr>
 <tr class="separator:ae3806a6cc669c760912c3af728703228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef44c1e0e7a0e71e4e7a2c18c1afe298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#aef44c1e0e7a0e71e4e7a2c18c1afe298">clear</a> ()</td></tr>
@@ -173,7 +173,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57609a390672cc7f8dbcc75ef5a2c9bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#a57609a390672cc7f8dbcc75ef5a2c9bd">reserve</a> (std::size_t num)</td></tr>
 <tr class="memdesc:a57609a390672cc7f8dbcc75ef5a2c9bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve space for a specified number of iterations.  <a href="#a57609a390672cc7f8dbcc75ef5a2c9bd">More...</a><br /></td></tr>
 <tr class="separator:a57609a390672cc7f8dbcc75ef5a2c9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9afda891abf2ac3385c50fbf5a6ef261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#a9afda891abf2ac3385c50fbf5a6ef261">set_eval</a> (const <a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">eval_type</a> &amp;new_eval, bool record_only=false)</td></tr>
+<tr class="memitem:a9afda891abf2ac3385c50fbf5a6ef261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#a9afda891abf2ac3385c50fbf5a6ef261">set_eval</a> (const <a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">eval_type</a> &amp;new_eval, bool record_only=false)</td></tr>
 <tr class="memdesc:a9afda891abf2ac3385c50fbf5a6ef261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new evaluation object of type eval_type.  <a href="#a9afda891abf2ac3385c50fbf5a6ef261">More...</a><br /></td></tr>
 <tr class="separator:a9afda891abf2ac3385c50fbf5a6ef261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09490c1a1a2e1dfcb9b8db82713a6704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path.html#a09490c1a1a2e1dfcb9b8db82713a6704">turn_off</a> ()</td></tr>
@@ -194,14 +194,14 @@ class vsmc::Path&lt; T &gt;</h3>
 
 <p>Definition at line <a class="el" href="path_8hpp_source.html#l00051">51</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a8ce4fbe0b2aab8f7239dd841c0ef11bf"></a>
+<a class="anchor" id="a4524bd5bc99a4826d3c26fb9f7b250bc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt;double(std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt;T&gt; &amp;, double *)&gt; <a class="el" href="classvsmc_1_1_path.html">vsmc::Path</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">eval_type</a></td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_path.html">vsmc::Path</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">eval_type</a> =  std::function&lt;double(std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt;T&gt; &amp;, double *)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,14 +210,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abcac9327e24adc6b0d8a139867178fa3"></a>
+<a class="anchor" id="ad5ff15280a156a7b6a98376e1bc7ed1b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef T <a class="el" href="classvsmc_1_1_path.html">vsmc::Path</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_path.html#abcac9327e24adc6b0d8a139867178fa3">value_type</a></td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_path.html">vsmc::Path</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_path.html#ad5ff15280a156a7b6a98376e1bc7ed1b">value_type</a> =  T</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -239,7 +239,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_path.html">vsmc::Path</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1_path.html">Path</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">eval_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">eval_type</a> &amp;&#160;</td>
           <td class="paramname"><em>eval</em>, </td>
         </tr>
         <tr>
@@ -264,7 +264,7 @@ template&lt;typename T&gt; </div>
 <p>Construct a <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> with an evaluation object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eval</td><td>The evaluation object of type <a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">Path::eval_type</a> </td></tr>
+    <tr><td class="paramname">eval</td><td>The evaluation object of type <a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">Path::eval_type</a> </td></tr>
     <tr><td class="paramname">record_only</td><td>The <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> monitor only records the integrands instead of calculating them itself</td></tr>
   </table>
   </dd>
@@ -784,7 +784,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classvsmc_1_1_path.html">vsmc::Path</a>&lt; T &gt;::set_eval </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_path.html#a8ce4fbe0b2aab8f7239dd841c0ef11bf">eval_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc">eval_type</a> &amp;&#160;</td>
           <td class="paramname"><em>new_eval</em>, </td>
         </tr>
         <tr>

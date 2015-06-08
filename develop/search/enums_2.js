@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opencldevicefeature',['OpenCLDeviceFeature',['../group___open_c_l.html#ga7f9c412d8e7001a312d70732134e6419',1,'vsmc']]]
+  ['resamplescheme',['ResampleScheme',['../group___definitions.html#ga1a8752b2b59489e6d5f11794af6d0cc6',1,'vsmc']]]
 ];

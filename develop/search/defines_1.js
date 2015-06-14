@@ -138,7 +138,6 @@ var searchData=
   ['vsmc_5fstatic_5fassert_5frng_5faes_5fni',['VSMC_STATIC_ASSERT_RNG_AES_NI',['../aes__ni_8hpp.html#a49076728f930d1e53b17d2e56a7fd285',1,'aes_ni.hpp']]],
   ['vsmc_5fstatic_5fassert_5frng_5faes_5fni_5fblocks',['VSMC_STATIC_ASSERT_RNG_AES_NI_BLOCKS',['../aes__ni_8hpp.html#a5121a74dc96dd4f4cee315dfdfb43467',1,'aes_ni.hpp']]],
   ['vsmc_5fstatic_5fassert_5frng_5faes_5fni_5fresult_5ftype',['VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE',['../aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1',1,'aes_ni.hpp']]],
-  ['vsmc_5fstatic_5fassert_5frng_5fmkl_5fvsl_5fdistribution_5ffp_5ftype',['VSMC_STATIC_ASSERT_RNG_MKL_VSL_DISTRIBUTION_FP_TYPE',['../rng_2mkl_8hpp.html#af0da64c3ca44aed45acd6d88546d0fee',1,'mkl.hpp']]],
   ['vsmc_5fstatic_5fassert_5frng_5fphilox',['VSMC_STATIC_ASSERT_RNG_PHILOX',['../philox_8hpp.html#ae1d2001a058708408936ca3339166495',1,'philox.hpp']]],
   ['vsmc_5fstatic_5fassert_5frng_5fphilox_5fresult_5ftype',['VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE',['../philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d',1,'philox.hpp']]],
   ['vsmc_5fstatic_5fassert_5frng_5fphilox_5fsize',['VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE',['../philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452',1,'philox.hpp']]],

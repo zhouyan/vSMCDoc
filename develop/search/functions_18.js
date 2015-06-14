@@ -26,5 +26,5 @@ var searchData=
   ['_7eprogramoptionmap',['~ProgramOptionMap',['../classvsmc_1_1_program_option_map.html#a45d31f972528fad53dc53fb4787fdd02',1,'vsmc::ProgramOptionMap']]],
   ['_7eprogress',['~Progress',['../classvsmc_1_1_progress.html#a7a2f6df2938cecbdd323aedfe37d26e1',1,'vsmc::Progress']]],
   ['_7estopwatchguard',['~StopWatchGuard',['../classvsmc_1_1_stop_watch_guard.html#ab57a1c4bf7aea198aaaeabdedc31897d',1,'vsmc::StopWatchGuard']]],
-  ['_7eweightset',['~WeightSet',['../classvsmc_1_1_weight_set.html#aa752857b142c2d074b20fbe061728f76',1,'vsmc::WeightSet']]]
+  ['_7eweight',['~Weight',['../classvsmc_1_1_weight.html#a742a52f317d6d9e05f98052ae94b1a08',1,'vsmc::Weight']]]
 ];

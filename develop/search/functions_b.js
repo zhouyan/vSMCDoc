@@ -79,8 +79,5 @@ var searchData=
   ['local_5fmem_5fsize',['local_mem_size',['../classvsmc_1_1_c_l_kernel.html#a9ce54fdeba58a4e51c97df6fb51cf82c',1,'vsmc::CLKernel']]],
   ['local_5fsize',['local_size',['../classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a',1,'vsmc::CLConfigure::local_size() const '],['../classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36',1,'vsmc::CLConfigure::local_size(std::size_t new_size)'],['../classvsmc_1_1_c_l_configure.html#a8cbdcfef768f3fb9117f40bd33ae9d83',1,'vsmc::CLConfigure::local_size(std::size_t N, const CLKernel &amp;kern, const CLDevice &amp;dev)']]],
   ['location',['location',['../classvsmc_1_1_stable_distribution_1_1param__type.html#a11b0c094f5b69547ea976f15087db070',1,'vsmc::StableDistribution::param_type::location()'],['../classvsmc_1_1_stable_distribution.html#aca632b9323a9717c0c99a40b6ee1fd36',1,'vsmc::StableDistribution::location()']]],
-  ['log_5fweight',['log_weight',['../classvsmc_1_1_weight_set.html#af2bd74f8c3e73f6f1df5cae0017ec824',1,'vsmc::WeightSet::log_weight()'],['../classvsmc_1_1_weight_set_null.html#ad9760835d64aeacbe40315b4b0c8676b',1,'vsmc::WeightSetNull::log_weight()']]],
-  ['log_5fweight2weight',['log_weight2weight',['../classvsmc_1_1_weight_set.html#a0f55da2e68dd5257a277ab5c310e8a3d',1,'vsmc::WeightSet']]],
-  ['log_5fweight_5fdata',['log_weight_data',['../classvsmc_1_1_weight_set.html#adf87ca515a1a07b68a05c230910f188c',1,'vsmc::WeightSet::log_weight_data()'],['../classvsmc_1_1_weight_set_null.html#a16196b64826c27c4538627aae46e7612',1,'vsmc::WeightSetNull::log_weight_data()']]],
   ['log_5fzconst',['log_zconst',['../classvsmc_1_1_path.html#a0cbf0eb131586c6b4fdf8474fcfb36c4',1,'vsmc::Path']]]
 ];

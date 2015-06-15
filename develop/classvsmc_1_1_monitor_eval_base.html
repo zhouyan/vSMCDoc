@@ -113,12 +113,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f07b945194854997dce06e12a278f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#a4f07b945194854997dce06e12a278f65">monitor_state</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; sp, double *res)</td></tr>
-<tr class="separator:a4f07b945194854997dce06e12a278f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acea7f0287e6637e3acb92ceb9d89984c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#acea7f0287e6637e3acb92ceb9d89984c">post_processor</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:acea7f0287e6637e3acb92ceb9d89984c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba627bb49add3ad56a0864e48fe853e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#aba627bb49add3ad56a0864e48fe853e4">pre_processor</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:aba627bb49add3ad56a0864e48fe853e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe953e083a2295a2d091cf643e48562b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#abe953e083a2295a2d091cf643e48562b">eval_post</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:abe953e083a2295a2d091cf643e48562b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086290f49d0bd96c27757925aaf40d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#a086290f49d0bd96c27757925aaf40d4d">eval_pre</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:a086290f49d0bd96c27757925aaf40d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb3ac95344642774c5e5dc9830146ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#a0bb3ac95344642774c5e5dc9830146ec">eval_sp</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; sp, double *res)</td></tr>
+<tr class="separator:a0bb3ac95344642774c5e5dc9830146ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -141,7 +141,7 @@ class vsmc::MonitorEvalBase&lt; T, Derived &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> evalution base dispatch class. </p>
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00376">376</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00370">370</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3170efc8a765af47466d5338c7404518"></a>
 <div class="memitem">
@@ -243,12 +243,12 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00396">396</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00390">390</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4f07b945194854997dce06e12a278f65"></a>
+<a class="anchor" id="abe953e083a2295a2d091cf643e48562b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -258,7 +258,83 @@ template&lt;typename T , typename Derived &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::monitor_state </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::eval_post </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00384">384</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a086290f49d0bd96c27757925aaf40d4d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::eval_pre </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00379">379</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bb3ac95344642774c5e5dc9830146ec"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::eval_sp </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>iter</em>, </td>
@@ -294,7 +370,7 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00379">379</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00373">373</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -347,82 +423,6 @@ template&lt;typename T , typename Derived &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acea7f0287e6637e3acb92ceb9d89984c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::post_processor </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>particle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00390">390</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aba627bb49add3ad56a0864e48fe853e4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::pre_processor </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>particle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00385">385</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>

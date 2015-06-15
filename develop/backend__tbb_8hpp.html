@@ -178,11 +178,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">this-&gt;initialize_param(particle, param);                                  \</div>
-<div class="line">    this-&gt;pre_processor(particle);                                            \</div>
+<b>Value:</b><div class="fragment"><div class="line">this-&gt;eval_param(particle, param);                                        \</div>
+<div class="line">    this-&gt;eval_pre(particle);                                                 \</div>
 <div class="line">    work_type work(<span class="keyword">this</span>, &amp;particle);                                          \</div>
 <div class="line">    ::tbb::parallel_reduce args;                                              \</div>
-<div class="line">    this-&gt;post_processor(particle);                                           \</div>
+<div class="line">    this-&gt;eval_post(particle);                                                \</div>
 <div class="line">    return work.accept();</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00038">38</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
@@ -202,10 +202,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">this-&gt;eval_pre(iter, particle);                                           \</div>
 <div class="line">    work_type work(<span class="keyword">this</span>, iter, dim, &amp;particle, res);                          \</div>
 <div class="line">    ::tbb::parallel_for args;                                                 \</div>
-<div class="line">    this-&gt;post_processor(iter, particle);</div>
+<div class="line">    this-&gt;eval_post(iter, particle);</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00053">53</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 
@@ -224,10 +224,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">this-&gt;eval_pre(iter, particle);                                           \</div>
 <div class="line">    work_type work(<span class="keyword">this</span>, iter, &amp;particle);                                    \</div>
 <div class="line">    ::tbb::parallel_reduce args;                                              \</div>
-<div class="line">    this-&gt;post_processor(iter, particle);                                     \</div>
+<div class="line">    this-&gt;eval_post(iter, particle);                                          \</div>
 <div class="line">    return work.accept();</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00046">46</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
@@ -247,11 +247,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">this-&gt;pre_processor(iter, particle);                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">this-&gt;eval_pre(iter, particle);                                           \</div>
 <div class="line">    work_type work(<span class="keyword">this</span>, iter, &amp;particle, res);                               \</div>
 <div class="line">    ::tbb::parallel_for args;                                                 \</div>
-<div class="line">    this-&gt;post_processor(iter, particle);                                     \</div>
-<div class="line">    return this-&gt;path_grid(iter, particle);</div>
+<div class="line">    this-&gt;eval_post(iter, particle);                                          \</div>
+<div class="line">    return this-&gt;eval_grid(iter, particle);</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__tbb_8hpp_source.html#l00059">59</a> of file <a class="el" href="backend__tbb_8hpp_source.html">backend_tbb.hpp</a>.</p>
 

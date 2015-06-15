@@ -113,14 +113,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11d250e4e5afc9eab998e531b00597ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#a11d250e4e5afc9eab998e531b00597ce">path_grid</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:a11d250e4e5afc9eab998e531b00597ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8406725ce091e8f3fe036ec0e4e4c28"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#af8406725ce091e8f3fe036ec0e4e4c28">path_state</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; sp)</td></tr>
-<tr class="separator:af8406725ce091e8f3fe036ec0e4e4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80260068ef662950e6a2a115af2de98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#ac80260068ef662950e6a2a115af2de98">post_processor</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:ac80260068ef662950e6a2a115af2de98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3fe4845e84e993503e3dad786db968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#acc3fe4845e84e993503e3dad786db968">pre_processor</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
-<tr class="separator:acc3fe4845e84e993503e3dad786db968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581b6af84d3803511a7b47af9c29761c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#a581b6af84d3803511a7b47af9c29761c">eval_grid</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:a581b6af84d3803511a7b47af9c29761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256fb81dab2834adb5255ddf489d3f98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#a256fb81dab2834adb5255ddf489d3f98">eval_post</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:a256fb81dab2834adb5255ddf489d3f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02e73921dc92397c4ed158a7012815d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#af02e73921dc92397c4ed158a7012815d">eval_pre</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
+<tr class="separator:af02e73921dc92397c4ed158a7012815d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af907170bc7ae60e81b30cdebbd05f2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html#a2af907170bc7ae60e81b30cdebbd05f2">eval_sp</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; sp)</td></tr>
+<tr class="separator:a2af907170bc7ae60e81b30cdebbd05f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -143,7 +143,7 @@ class vsmc::PathEvalBase&lt; T, Derived &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> evalution base dispatch class. </p>
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00508">508</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00501">501</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6d38ff135c27d22e796c36f4862f8c26"></a>
 <div class="memitem">
@@ -245,11 +245,163 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00532">532</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00525">525</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a581b6af84d3803511a7b47af9c29761c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::eval_grid </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00509">509</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a256fb81dab2834adb5255ddf489d3f98"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::eval_post </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00519">519</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af02e73921dc92397c4ed158a7012815d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::eval_pre </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00514">514</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2af907170bc7ae60e81b30cdebbd05f2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::eval_sp </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>sp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00504">504</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5c33b6e5ce41348159200f4a8f3faf1c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -299,158 +451,6 @@ template&lt;typename T , typename Derived &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a11d250e4e5afc9eab998e531b00597ce"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::path_grid </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>particle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00516">516</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af8406725ce091e8f3fe036ec0e4e4c28"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::path_state </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>sp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00511">511</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac80260068ef662950e6a2a115af2de98"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::post_processor </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>particle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00526">526</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acc3fe4845e84e993503e3dad786db968"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase</a>&lt; T, Derived &gt;::pre_processor </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>iter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>particle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00521">521</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>

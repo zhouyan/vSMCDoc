@@ -12,6 +12,7 @@ var searchData=
   ['vsmc_5fphilox4x32_5fctr_5ft',['vsmc_philox4x32_ctr_t',['../structvsmc__philox4x32__ctr__t.html',1,'']]],
   ['vsmc_5fphilox4x32_5fkey_5ft',['vsmc_philox4x32_key_t',['../structvsmc__philox4x32__key__t.html',1,'']]],
   ['vsmc_5fphilox4x32_5fpar_5ft',['vsmc_philox4x32_par_t',['../structvsmc__philox4x32__par__t.html',1,'']]],
+  ['vsmc_5frng',['vsmc_rng',['../structvsmc__rng.html',1,'']]],
   ['vsmc_5fthreefry2x32',['vsmc_threefry2x32',['../structvsmc__threefry2x32.html',1,'']]],
   ['vsmc_5fthreefry2x32_5fctr_5ft',['vsmc_threefry2x32_ctr_t',['../structvsmc__threefry2x32__ctr__t.html',1,'']]],
   ['vsmc_5fthreefry2x32_5fkey_5ft',['vsmc_threefry2x32_key_t',['../structvsmc__threefry2x32__key__t.html',1,'']]],

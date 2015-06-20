@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            ++j;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    replication[M - 1] = N - j;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    replication[M - 1] = <span class="keyword">static_cast&lt;</span>IntType<span class="keyword">&gt;</span>(N - j);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IntType, <span class="keyword">typename</span> U01SeqType&gt;</div>
@@ -208,7 +208,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    IntType1 time = 0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    IntType2 src = 0;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::size_t src = 0;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">for</span> (std::size_t dst = 0; dst != N; ++dst) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (replication[dst] != 0) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            src_idx[dst] = <span class="keyword">static_cast&lt;</span>IntType2<span class="keyword">&gt;</span>(dst);</div>
@@ -221,7 +221,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    ++src;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">while</span> (replication[src] &lt; 2);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            src_idx[dst] = src;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            src_idx[dst] = <span class="keyword">static_cast&lt;</span>IntType2<span class="keyword">&gt;</span>(src);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            ++time;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
@@ -240,14 +240,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        ++replication[src_idx[i]];</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_TRANSFORM_HPP</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IntType&gt;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="group___resample.html#ga2e4e73afdd287cfe18ecec1c0eeb210b">  155</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="group___resample.html#ga2e4e73afdd287cfe18ecec1c0eeb210b">resample_trans_residual</a>(std::size_t M, std::size_t N,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> *weight, <span class="keywordtype">double</span> *resid, IntType *integ)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">double</span> integral = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> coeff = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(N);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i != M; ++i) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        resid[i] = std::modf(coeff * weight[i], &amp;integral);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        integ[i] = <span class="keyword">static_cast&lt;</span>IntType<span class="keyword">&gt;</span>(integral);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="group___c_b_l_a_s1.html#gaaf4c3c52a995ea96f45df669db8c1bf7">math::scal</a>(M, 1 / <a class="code" href="group___c_b_l_a_s1.html#gaa63998c7775f110c2adc23cff569d4d4">math::asum</a>(M, resid, 1), resid, 1);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    IntType R = std::accumulate(integ, integ + M, static_cast&lt;IntType&gt;(0));</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> N - <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(R);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif // VSMC_RESAMPLE_TRANSFORM_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
 <div class="ttc" id="group___resample_html_ga359e332b8081ab74e839a0d10ee122e9"><div class="ttname"><a href="group___resample.html#ga359e332b8081ab74e839a0d10ee122e9">vsmc::resample_trans_u01_rep</a></div><div class="ttdeci">void resample_trans_u01_rep(std::size_t M, std::size_t N, const double *weight, U01SeqType &amp;&amp;u01seq, IntType *replication)</div><div class="ttdoc">Transform uniform [0, 1] sequence into replication numbers. </div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00043">transform.hpp:43</a></div></div>
 <div class="ttc" id="group___resample_html_gab1f7a5bb0764971a7cda8a3e0c9e99e1"><div class="ttname"><a href="group___resample.html#gab1f7a5bb0764971a7cda8a3e0c9e99e1">vsmc::resample_trans_index_rep</a></div><div class="ttdeci">void resample_trans_index_rep(std::size_t M, std::size_t N, const IntType1 *src_idx, IntType2 *replication)</div><div class="ttdoc">Transform parent indices into replication numbers. </div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00139">transform.hpp:139</a></div></div>
+<div class="ttc" id="group___resample_html_ga2e4e73afdd287cfe18ecec1c0eeb210b"><div class="ttname"><a href="group___resample.html#ga2e4e73afdd287cfe18ecec1c0eeb210b">vsmc::resample_trans_residual</a></div><div class="ttdeci">std::size_t resample_trans_residual(std::size_t M, std::size_t N, const double *weight, double *resid, IntType *integ)</div><div class="ttdoc">Transform normalized weights to normalized residual and integrals, and return the number of remaining...</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00155">transform.hpp:155</a></div></div>
+<div class="ttc" id="group___c_b_l_a_s1_html_gaaf4c3c52a995ea96f45df669db8c1bf7"><div class="ttname"><a href="group___c_b_l_a_s1.html#gaaf4c3c52a995ea96f45df669db8c1bf7">vsmc::math::scal</a></div><div class="ttdeci">void scal(std::size_t n, T a, T *x, std::size_t incx)</div><div class="ttdoc">Computes the product of a vector by a scalar. </div><div class="ttdef"><b>Definition:</b> <a href="cblas_8hpp_source.html#l00117">cblas.hpp:117</a></div></div>
 <div class="ttc" id="group___resample_html_ga351553513f08ab94963fa9c55aa1503c"><div class="ttname"><a href="group___resample.html#ga351553513f08ab94963fa9c55aa1503c">vsmc::resample_trans_rep_index</a></div><div class="ttdeci">void resample_trans_rep_index(std::size_t M, std::size_t N, const IntType1 *replication, IntType2 *src_idx)</div><div class="ttdoc">Transform replication numbers into parent indices. </div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00100">transform.hpp:100</a></div></div>
 <div class="ttc" id="resample_2internal_2common_8hpp_html"><div class="ttname"><a href="resample_2internal_2common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="group___c_b_l_a_s1_html_gaa63998c7775f110c2adc23cff569d4d4"><div class="ttname"><a href="group___c_b_l_a_s1.html#gaa63998c7775f110c2adc23cff569d4d4">vsmc::math::asum</a></div><div class="ttdeci">T asum(std::size_t n, const T *x, std::size_t incx)</div><div class="ttdoc">Computes the sum of magnitudes of the vector elements. </div><div class="ttdef"><b>Definition:</b> <a href="cblas_8hpp_source.html#l00062">cblas.hpp:62</a></div></div>
 <div class="ttc" id="group___resample_html_ga087aea8c9d0678fe32766bf154e3b61d"><div class="ttname"><a href="group___resample.html#ga087aea8c9d0678fe32766bf154e3b61d">vsmc::resample_trans_u01_index</a></div><div class="ttdeci">void resample_trans_u01_index(std::size_t M, std::size_t N, const double *weight, U01SeqType &amp;&amp;u01seq, IntType *src_idx)</div><div class="ttdoc">Transform uniform [0, 1] sequence into parent indices. </div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00076">transform.hpp:76</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -18,6 +18,8 @@ var searchData=
   ['vsmc_5fdefine_5fopencl_5fbackend_5fcl_5fset_5fkernel',['VSMC_DEFINE_OPENCL_BACKEND_CL_SET_KERNEL',['../backend__cl_8hpp.html#a98671353439a882842e88b6fd8052468',1,'backend_cl.hpp']]],
   ['vsmc_5fdefine_5fopencl_5fbackend_5fcl_5fspecial',['VSMC_DEFINE_OPENCL_BACKEND_CL_SPECIAL',['../backend__cl_8hpp.html#af477667f489056dc44500ff288f7e477',1,'backend_cl.hpp']]],
   ['vsmc_5fdefine_5frng_5faes_5fround_5fconstant',['VSMC_DEFINE_RNG_AES_ROUND_CONSTANT',['../aes_8hpp.html#a092bb553e4254b6083b63888c7d25b18',1,'aes.hpp']]],
+  ['vsmc_5fdefine_5frng_5fc_5fapi_5fengine',['VSMC_DEFINE_RNG_C_API_ENGINE',['../mkl__brng_8hpp.html#a9cdc4f6d15039d2e926bf59da231fb8a',1,'mkl_brng.hpp']]],
+  ['vsmc_5fdefine_5frng_5fc_5fapi_5fengine_5fall',['VSMC_DEFINE_RNG_C_API_ENGINE_ALL',['../mkl__brng_8hpp.html#aaf573dc423552ce3bf5172423f175b9d',1,'mkl_brng.hpp']]],
   ['vsmc_5fdefine_5frng_5fphilox_5fround_5fconstant',['VSMC_DEFINE_RNG_PHILOX_ROUND_CONSTANT',['../philox_8hpp.html#a9b81cf04ed974de83a3a5c2da3b4e316',1,'philox.hpp']]],
   ['vsmc_5fdefine_5frng_5fphilox_5fwely_5fconstant',['VSMC_DEFINE_RNG_PHILOX_WELY_CONSTANT',['../philox_8hpp.html#a02ca745eeba19ee638ae8175a67fda5f',1,'philox.hpp']]],
   ['vsmc_5fdefine_5frng_5fthreefry_5frotate_5fconstant',['VSMC_DEFINE_RNG_THREEFRY_ROTATE_CONSTANT',['../threefry__defines_8hpp.html#a991706107309d40a0896e4db63ba9b90',1,'threefry_defines.hpp']]],

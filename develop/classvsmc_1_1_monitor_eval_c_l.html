@@ -121,12 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3684313149a0be86409e25ef470e4741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab736660108d160676ced976999558f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a3ab736660108d160676ced976999558f">eval_pre</a> (std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;)</td></tr>
 <tr class="separator:a3ab736660108d160676ced976999558f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a91ad4a6e954debd4c733de87cdc67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a18a91ad4a6e954debd4c733de87cdc67">eval_sp</a> (std::size_t, std::string &amp;)</td></tr>
+<tr class="separator:a18a91ad4a6e954debd4c733de87cdc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a884797917566938586cfb0e65044bec3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvsmc_1_1_c_l_kernel.html">CLKernel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a884797917566938586cfb0e65044bec3">kernel</a> ()</td></tr>
 <tr class="separator:a884797917566938586cfb0e65044bec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47f390a28e247ac3ee3172cd0ec1bff"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#ab47f390a28e247ac3ee3172cd0ec1bff">kernel_name</a> () const </td></tr>
 <tr class="separator:ab47f390a28e247ac3ee3172cd0ec1bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f39933c3e11f5a5e48acc70d94d287"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#aa4f39933c3e11f5a5e48acc70d94d287">monitor_state</a> (std::size_t, std::string &amp;)</td></tr>
-<tr class="separator:aa4f39933c3e11f5a5e48acc70d94d287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5fbfc6fe8cec356ea80a8e43b88ae39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#ac5fbfc6fe8cec356ea80a8e43b88ae39">operator()</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, double *res)</td></tr>
 <tr class="separator:ac5fbfc6fe8cec356ea80a8e43b88ae39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6559224e8182aad6df91ff22d355d8ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a6559224e8182aad6df91ff22d355d8ae">set_kernel</a> (std::size_t iter, std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
@@ -160,7 +160,7 @@ Protected Member Functions</h2></td></tr>
 class vsmc::MonitorEvalCL&lt; T &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_monitor.html#a74bd93943baa039773128e577ed639ed">Monitor&lt;T&gt;::eval_type</a> subtype using OpenCL. </p>
-<p>Kernel requirement (<code>monitor_state</code>) </p><div class="fragment"><div class="line">__kernel</div>
+<p>Kernel requirement </p><div class="fragment"><div class="line">__kernel</div>
 <div class="line"><span class="keywordtype">void</span> kern (ulong iter, ulong dim, __global state_type *state,</div>
 <div class="line">           __global fp_type *res);</div>
 </div><!-- fragment --> 
@@ -403,6 +403,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a18a91ad4a6e954debd4c733de87cdc67"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html">vsmc::MonitorEvalCL</a>&lt; T &gt;::eval_sp </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00676">676</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a884797917566938586cfb0e65044bec3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -484,44 +522,6 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00702">702</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa4f39933c3e11f5a5e48acc70d94d287"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html">vsmc::MonitorEvalCL</a>&lt; T &gt;::monitor_state </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00676">676</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 
 </div>
 </div>

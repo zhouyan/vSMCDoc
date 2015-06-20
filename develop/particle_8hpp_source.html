@@ -232,31 +232,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (resampled) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">double</span> *<span class="keyword">const</span> rwptr = weight_.resample_data();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span> (rwptr != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <a class="code" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector&lt;size_type&gt;</a> rep(N);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <a class="code" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector&lt;size_type&gt;</a> idx(N);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                op(N, N, resample_rng_, rwptr, rep.data());</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <a class="code" href="group___resample.html#ga351553513f08ab94963fa9c55aa1503c">resample_trans_rep_index</a>(N, N, rep.data(), idx.data());</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                value_.copy(N, idx.data());</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                value_.copy(N, static_cast&lt;const size_type *&gt;(<span class="keyword">nullptr</span>));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            weight_.set_equal();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> resampled;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#ad209417e0e289ba10b837a8264afaeef">size_type</a> size_;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#a0a89071f8a1a7dde5be42394e24c0eb1">value_type</a> value_;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#af025ac00c38f2d8d4ab5f75b8c773f83">weight_type</a> weight_;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#ab54493f8c041e656017497e0cdf509c4">rng_set_type</a> rng_set_;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#a69890a5c083dcb795f310df3a179a42d">resample_rng_type</a> resample_rng_;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}; <span class="comment">// class Particle</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#if VSMC_USE_TBB</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <a class="code" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector&lt;size_type&gt;</a> &amp;rep = rep_.local();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <a class="code" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector&lt;size_type&gt;</a> &amp;idx = idx_.local();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                rep.resize(N);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                idx.resize(N);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#else  // VSMC_USE_TBB</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <a class="code" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector&lt;size_type&gt;</a> rep(N);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <a class="code" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector&lt;size_type&gt;</a> idx(N);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif // VSMC_USE_TBB</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                op(N, N, resample_rng_, rwptr, rep.data());</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <a class="code" href="group___resample.html#ga351553513f08ab94963fa9c55aa1503c">resample_trans_rep_index</a>(N, N, rep.data(), idx.data());</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                value_.copy(N, idx.data());</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                value_.copy(N, static_cast&lt;const size_type *&gt;(<span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            weight_.set_equal();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">return</span> resampled;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif // VSMC_CORE_PARTICLE_HPP</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#ad209417e0e289ba10b837a8264afaeef">size_type</a> size_;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#a0a89071f8a1a7dde5be42394e24c0eb1">value_type</a> value_;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#af025ac00c38f2d8d4ab5f75b8c773f83">weight_type</a> weight_;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#ab54493f8c041e656017497e0cdf509c4">rng_set_type</a> rng_set_;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classvsmc_1_1_particle.html#a69890a5c083dcb795f310df3a179a42d">resample_rng_type</a> resample_rng_;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#if VSMC_USE_TBB</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    ::tbb::combinable&lt;Vector&lt;size_type&gt;&gt; rep_;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    ::tbb::combinable&lt;Vector&lt;size_type&gt;&gt; idx_;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}; <span class="comment">// class Particle</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#endif // VSMC_CORE_PARTICLE_HPP</span></div>
 <div class="ttc" id="seed_8hpp_html"><div class="ttname"><a href="seed_8hpp.html">seed.hpp</a></div></div>
 <div class="ttc" id="weight_8hpp_html"><div class="ttname"><a href="weight_8hpp.html">weight.hpp</a></div></div>
 <div class="ttc" id="classvsmc_1_1_seed_generator_html_a4d8b222e0f0c1f1d2b7371e897844add"><div class="ttname"><a href="classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add">vsmc::SeedGenerator::instance</a></div><div class="ttdeci">static SeedGenerator&lt; ID, ResultType &gt; &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="seed_8hpp_source.html#l00102">seed.hpp:102</a></div></div>
@@ -292,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_size_type_3_01_s_01_4_html"><div class="ttname"><a href="class_size_type_3_01_s_01_4.html">SizeType&lt; S &gt;</a></div></div>
 <div class="ttc" id="classvsmc_1_1_particle_html_af49dbfde3e232fb1d6b1f1f69524040a"><div class="ttname"><a href="classvsmc_1_1_particle.html#af49dbfde3e232fb1d6b1f1f69524040a">vsmc::Particle::rng_set</a></div><div class="ttdeci">rng_set_type &amp; rng_set()</div><div class="ttdoc">Read and write access to the RNG collection object. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00137">particle.hpp:137</a></div></div>
 <div class="ttc" id="namespacevsmc_html_a9b73162da2e0b85edb83a3557b84f357"><div class="ttname"><a href="namespacevsmc.html#a9b73162da2e0b85edb83a3557b84f357">vsmc::SizeType</a></div><div class="ttdeci">typename SizeTypeTrait&lt; T &gt;::type SizeType</div><div class="ttdef"><b>Definition:</b> <a href="traits_8hpp_source.html#l00212">traits.hpp:212</a></div></div>
-<div class="ttc" id="namespacevsmc_html_a6a58941c1f6a941b8e1f55b9df7ed028"><div class="ttname"><a href="namespacevsmc.html#a6a58941c1f6a941b8e1f55b9df7ed028">vsmc::WeightType</a></div><div class="ttdeci">typename WeightTypeTrait&lt; T &gt;::type WeightType</div><div class="ttdef"><b>Definition:</b> <a href="weight_8hpp_source.html#l00489">weight.hpp:489</a></div></div>
+<div class="ttc" id="namespacevsmc_html_a6a58941c1f6a941b8e1f55b9df7ed028"><div class="ttname"><a href="namespacevsmc.html#a6a58941c1f6a941b8e1f55b9df7ed028">vsmc::WeightType</a></div><div class="ttdeci">typename WeightTypeTrait&lt; T &gt;::type WeightType</div><div class="ttdef"><b>Definition:</b> <a href="weight_8hpp_source.html#l00363">weight.hpp:363</a></div></div>
 <div class="ttc" id="rng__set_8hpp_html"><div class="ttname"><a href="rng__set_8hpp.html">rng_set.hpp</a></div></div>
 <div class="ttc" id="classvsmc_1_1_particle_html_aaa67c53bf8efe14abd5035891669c5e1"><div class="ttname"><a href="classvsmc_1_1_particle.html#aaa67c53bf8efe14abd5035891669c5e1">vsmc::Particle::size</a></div><div class="ttdeci">size_type size() const </div><div class="ttdoc">Number of particles. </div><div class="ttdef"><b>Definition:</b> <a href="particle_8hpp_source.html#l00122">particle.hpp:122</a></div></div>
 <div class="ttc" id="class_r_n_g_set_type_3_01_s_01_4_html"><div class="ttname"><a href="class_r_n_g_set_type_3_01_s_01_4.html">RNGSetType&lt; S &gt;</a></div></div>

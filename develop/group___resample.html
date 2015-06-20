@@ -158,6 +158,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga351553513f08ab94963fa9c55aa1503c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___resample.html#ga351553513f08ab94963fa9c55aa1503c">vsmc::resample_trans_rep_index</a> (std::size_t M, std::size_t N, const IntType1 *replication, IntType2 *src_idx)</td></tr>
 <tr class="memdesc:ga351553513f08ab94963fa9c55aa1503c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform replication numbers into parent indices.  <a href="#ga351553513f08ab94963fa9c55aa1503c">More...</a><br /></td></tr>
 <tr class="separator:ga351553513f08ab94963fa9c55aa1503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e4e73afdd287cfe18ecec1c0eeb210b"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:ga2e4e73afdd287cfe18ecec1c0eeb210b"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___resample.html#ga2e4e73afdd287cfe18ecec1c0eeb210b">vsmc::resample_trans_residual</a> (std::size_t M, std::size_t N, const double *weight, double *resid, IntType *integ)</td></tr>
+<tr class="memdesc:ga2e4e73afdd287cfe18ecec1c0eeb210b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform normalized weights to normalized residual and integrals, and return the number of remaining elements to be resampled.  <a href="#ga2e4e73afdd287cfe18ecec1c0eeb210b">More...</a><br /></td></tr>
+<tr class="separator:ga2e4e73afdd287cfe18ecec1c0eeb210b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga087aea8c9d0678fe32766bf154e3b61d"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename U01SeqType &gt; </td></tr>
 <tr class="memitem:ga087aea8c9d0678fe32766bf154e3b61d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___resample.html#ga087aea8c9d0678fe32766bf154e3b61d">vsmc::resample_trans_u01_index</a> (std::size_t M, std::size_t N, const double *weight, U01SeqType &amp;&amp;u01seq, IntType *src_idx)</td></tr>
 <tr class="memdesc:ga087aea8c9d0678fe32766bf154e3b61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform uniform [0, 1] sequence into parent indices.  <a href="#ga087aea8c9d0678fe32766bf154e3b61d">More...</a><br /></td></tr>
@@ -290,6 +294,64 @@ template&lt;typename IntType1 , typename IntType2 &gt; </div>
 <p>Transform replication numbers into parent indices. </p>
 
 <p>Definition at line <a class="el" href="transform_8hpp_source.html#l00100">100</a> of file <a class="el" href="transform_8hpp_source.html">transform.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2e4e73afdd287cfe18ecec1c0eeb210b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IntType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t vsmc::resample_trans_residual </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType *&#160;</td>
+          <td class="paramname"><em>integ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transform normalized weights to normalized residual and integrals, and return the number of remaining elements to be resampled. </p>
+
+<p>Definition at line <a class="el" href="transform_8hpp_source.html#l00155">155</a> of file <a class="el" href="transform_8hpp_source.html">transform.hpp</a>.</p>
 
 </div>
 </div>

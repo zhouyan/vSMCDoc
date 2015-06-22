@@ -3,7 +3,7 @@ var searchData=
   ['par128_5ftype',['par128_type',['../classvsmc_1_1internal_1_1_threefry_par_pack_s_s_e2.html#ae09604583c69a13a30e344da5ec89bee',1,'vsmc::internal::ThreefryParPackSSE2']]],
   ['par256_5ftype',['par256_type',['../classvsmc_1_1internal_1_1_threefry_par_pack_a_v_x2.html#a766bf88d20dbf4f9e904989e36c40454',1,'vsmc::internal::ThreefryParPackAVX2']]],
   ['par_5ftype',['par_type',['../classvsmc_1_1internal_1_1_threefry_par_pack_a_v_x2.html#a26d86f75cffec404d765b2f6966bd135',1,'vsmc::internal::ThreefryParPackAVX2::par_type()'],['../classvsmc_1_1internal_1_1_threefry_par_pack_s_s_e2.html#a09397e65d4ed6c0f7fb02e6c1f320f8c',1,'vsmc::internal::ThreefryParPackSSE2::par_type()']]],
-  ['param_5ftype',['param_type',['../classvsmc_1_1_discrete_distribution.html#ae6d51d51066eb61e09a6353d7b0c864e',1,'vsmc::DiscreteDistribution']]],
+  ['param_5ftype',['param_type',['../classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4_1_1type.html#a7bf98b074ccdaec86ea5c8531a15e64a',1,'vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;::type']]],
   ['philox',['Philox',['../group___philox.html#ga0002aa661edf42df3eefb75a1aa3ead5',1,'vsmc']]],
   ['philox2x32',['Philox2x32',['../group___philox.html#gadcebe4d07e9d1f54299545e7b70953c4',1,'vsmc']]],
   ['philox2x64',['Philox2x64',['../group___philox.html#gaa0d850df625976080945bdf6b3dbd261',1,'vsmc']]],

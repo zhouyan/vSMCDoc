@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/u01.hpp File Reference</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/u01_distribution.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,18 +97,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">u01.hpp File Reference</div>  </div>
+<div class="title">u01_distribution.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="u01_8h_source.html">vsmc/rngc/u01.h</a>&gt;</code><br />
 </div>
-<p><a href="u01_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="u01__distribution_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_distribution_int_type_trait.html">vsmc::internal::U01DistributionIntTypeTrait&lt; RNGType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_distribution_int_type_trait_impl_3_01_bits_00_01true_00_01false_01_4.html">vsmc::internal::U01DistributionIntTypeTraitImpl&lt; Bits, true, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_distribution_int_type_trait_impl_3_01_bits_00_01true_00_01true_01_4.html">vsmc::internal::U01DistributionIntTypeTraitImpl&lt; Bits, true, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4.html">vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4_1_1type.html">vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;::type&lt; RNGType, RealType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01.html">vsmc::U01&lt; typename, typename, typename, typename &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_3_01_closed_00_01_closed_00_01uint32__t_00_01double_01_4.html">vsmc::U01&lt; Closed, Closed, uint32_t, double &gt;</a></td></tr>
@@ -159,24 +171,66 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_3_01_open_00_01_open_00_01uint64__t_00_01float_01_4.html">vsmc::U01&lt; Open, Open, uint64_t, float &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting 64-bits unsigned to single precision uniform \((0,1)\).  <a href="classvsmc_1_1_u01_3_01_open_00_01_open_00_01uint64__t_00_01float_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_distribution.html">vsmc::U01Distribution&lt; RealType, Left, Right &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution with open/closed variants.  <a href="classvsmc_1_1_u01_distribution.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_distribution_1_1param__type.html">vsmc::U01Distribution&lt; RealType, Left, Right &gt;::param_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_distribution_type_trait.html">vsmc::U01DistributionTypeTrait&lt; RNGType, RealType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution type trait.  <a href="classvsmc_1_1_u01_distribution_type_trait.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab638ee0414f10cc4482ab8963f6b59ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="u01_8hpp.html#ab638ee0414f10cc4482ab8963f6b59ab">VSMC_DEFINE_RNG_U01</a>(RealType,  Left,  Right,  left,  right,  UBits,  FBits)</td></tr>
-<tr class="separator:ab638ee0414f10cc4482ab8963f6b59ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c47777b5a804c044cc6572f695bbd62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="u01__distribution_8hpp.html#a5c47777b5a804c044cc6572f695bbd62">VSMC_DEFINE_RNG_U01_DISTRIBUTION_U01</a>(RealType,  Left,  Right,  left,  right,  UBits,  FBits)</td></tr>
+<tr class="separator:a5c47777b5a804c044cc6572f695bbd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga854a76159cf88286c8ca57054173abe9"><td class="memTemplParams" colspan="2">template&lt;typename RealType  = double&gt; </td></tr>
+<tr class="memitem:ga854a76159cf88286c8ca57054173abe9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga854a76159cf88286c8ca57054173abe9">vsmc::U01CCDistribution</a> = U01Distribution&lt; RealType, Closed, Closed &gt;</td></tr>
+<tr class="memdesc:ga854a76159cf88286c8ca57054173abe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution on cloed-closed interval.  <a href="group___distribution.html#ga854a76159cf88286c8ca57054173abe9">More...</a><br /></td></tr>
+<tr class="separator:ga854a76159cf88286c8ca57054173abe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38db68a67e8613cc268bba5ebf747d56"><td class="memTemplParams" colspan="2">template&lt;typename RealType  = double&gt; </td></tr>
+<tr class="memitem:ga38db68a67e8613cc268bba5ebf747d56"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga38db68a67e8613cc268bba5ebf747d56">vsmc::U01CODistribution</a> = U01Distribution&lt; RealType, Closed, Open &gt;</td></tr>
+<tr class="memdesc:ga38db68a67e8613cc268bba5ebf747d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution on open-closed interval.  <a href="group___distribution.html#ga38db68a67e8613cc268bba5ebf747d56">More...</a><br /></td></tr>
+<tr class="separator:ga38db68a67e8613cc268bba5ebf747d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2000b3a713181f6d35d477306efab2"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:ada2000b3a713181f6d35d477306efab2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ada2000b3a713181f6d35d477306efab2">vsmc::internal::U01DistributionIntType</a> = typename U01DistributionIntTypeTrait&lt; RNGType &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="separator:ada2000b3a713181f6d35d477306efab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbd0cf339061c289914c35091b44b176"><td class="memTemplParams" colspan="2">template&lt;typename RNGType , typename RealType  = double&gt; </td></tr>
+<tr class="memitem:gafbd0cf339061c289914c35091b44b176"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#gafbd0cf339061c289914c35091b44b176">vsmc::U01DistributionType</a> = typename U01DistributionTypeTrait&lt; RNGType, RealType &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="memdesc:gafbd0cf339061c289914c35091b44b176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution type.  <a href="group___distribution.html#gafbd0cf339061c289914c35091b44b176">More...</a><br /></td></tr>
+<tr class="separator:gafbd0cf339061c289914c35091b44b176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fee88da62774407c19619ac5c37913e"><td class="memTemplParams" colspan="2">template&lt;typename RealType  = double&gt; </td></tr>
+<tr class="memitem:ga7fee88da62774407c19619ac5c37913e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga7fee88da62774407c19619ac5c37913e">vsmc::U01OCDistribution</a> = U01Distribution&lt; RealType, Open, Closed &gt;</td></tr>
+<tr class="memdesc:ga7fee88da62774407c19619ac5c37913e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution on open-open interval.  <a href="group___distribution.html#ga7fee88da62774407c19619ac5c37913e">More...</a><br /></td></tr>
+<tr class="separator:ga7fee88da62774407c19619ac5c37913e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4818c4d918d889e4cd5ee060677c7e51"><td class="memTemplParams" colspan="2">template&lt;typename RealType  = double&gt; </td></tr>
+<tr class="memitem:ga4818c4d918d889e4cd5ee060677c7e51"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga4818c4d918d889e4cd5ee060677c7e51">vsmc::U01OODistribution</a> = U01Distribution&lt; RealType, Open, Open &gt;</td></tr>
+<tr class="memdesc:ga4818c4d918d889e4cd5ee060677c7e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution on cloed-open interval.  <a href="group___distribution.html#ga4818c4d918d889e4cd5ee060677c7e51">More...</a><br /></td></tr>
+<tr class="separator:ga4818c4d918d889e4cd5ee060677c7e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7fb1ffdfd94000941a5844328e11667d"><td class="memTemplParams" colspan="2">template&lt;int Bits, bool  = Bits&gt; </td></tr>
+<tr class="memitem:a7fb1ffdfd94000941a5844328e11667d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7fb1ffdfd94000941a5844328e11667d">vsmc::internal::bool</a></td></tr>
+<tr class="separator:a7fb1ffdfd94000941a5844328e11667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab638ee0414f10cc4482ab8963f6b59ab"></a>
+<a class="anchor" id="a5c47777b5a804c044cc6572f695bbd62"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_DEFINE_RNG_U01</td>
+          <td class="memname">#define VSMC_DEFINE_RNG_U01_DISTRIBUTION_U01</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">RealType, </td>
@@ -228,10 +282,7 @@ Macros</h2></td></tr>
 <div class="line">    class U01&lt;Left, Right, uint##UBits##_t, RealType&gt;                         \</div>
 <div class="line">    {                                                                         \</div>
 <div class="line">        public:                                                               \</div>
-<div class="line">        RealType operator()(uint##UBits##_t u) <span class="keyword">const</span>                          \</div>
-<div class="line">        {                                                                     \</div>
-<div class="line">            return ::vsmc_u01_##left##_##right##_u##UBits##_f##FBits(u);      \</div>
-<div class="line">        }                                                                     \</div>
+<div class="line">        RealType operator()(uint##UBits##_t u)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> uint2fp(u); }   \</div>
 <div class="line">                                                                              \</div>
 <div class="line">        static RealType uint2fp(uint##UBits##_t u)                            \</div>
 <div class="line">        {                                                                     \</div>
@@ -239,7 +290,7 @@ Macros</h2></td></tr>
 <div class="line">        }                                                                     \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00038">38</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__distribution_8hpp_source.html#l00038">38</a> of file <a class="el" href="u01__distribution_8hpp_source.html">u01_distribution.hpp</a>.</p>
 
 </div>
 </div>

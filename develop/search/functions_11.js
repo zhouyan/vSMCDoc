@@ -131,6 +131,7 @@ var searchData=
   ['stateomp',['StateOMP',['../classvsmc_1_1_state_o_m_p.html#ad4c16c3a85f75b6ff234ab7ec73d93b3',1,'vsmc::StateOMP']]],
   ['statetbb',['StateTBB',['../classvsmc_1_1_state_t_b_b.html#a1ea9c29e774a943dc4ed4d513f61f358',1,'vsmc::StateTBB']]],
   ['status',['status',['../classvsmc_1_1_m_k_l_base_1_1deleter__type.html#a83d1d7725c06b86b41e0a9933cad0c62',1,'vsmc::MKLBase::deleter_type']]],
+  ['stddev',['stddev',['../classvsmc_1_1_normal_distribution_1_1param__type.html#a1a33e0434591c39c40e19bb77da8f642',1,'vsmc::NormalDistribution::param_type::stddev()'],['../classvsmc_1_1_normal_distribution.html#a0e1d9e08503ad8a64b53b2090d549184',1,'vsmc::NormalDistribution::stddev()']]],
   ['stop',['stop',['../classvsmc_1_1_progress.html#aa27ab29277f8961e60d101d982d03f09',1,'vsmc::Progress::stop()'],['../classvsmc_1_1_stop_watch_clock_adapter.html#af95708cc29d749597253943fdfc216ed',1,'vsmc::StopWatchClockAdapter::stop()']]],
   ['stopwatchclockadapter',['StopWatchClockAdapter',['../classvsmc_1_1_stop_watch_clock_adapter.html#ab6c9b7441bd6085a97bf824211668d5c',1,'vsmc::StopWatchClockAdapter']]],
   ['stopwatchguard',['StopWatchGuard',['../classvsmc_1_1_stop_watch_guard.html#a4f15c55ddd3dcdcee0ca49f2f8977df2',1,'vsmc::StopWatchGuard']]],

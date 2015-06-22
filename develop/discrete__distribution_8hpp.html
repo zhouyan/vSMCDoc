@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="uniform__real__distribution_8hpp_source.html">vsmc/rng/uniform_real_distribution.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="u01__distribution_8hpp_source.html">vsmc/rng/u01_distribution.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cblas_8hpp_source.html">vsmc/math/cblas.hpp</a>&gt;</code><br />
 </div>
 <p><a href="discrete__distribution_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -113,6 +113,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_discrete_distribution.html">vsmc::DiscreteDistribution&lt; IntType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a single sample given weights.  <a href="classvsmc_1_1_discrete_distribution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_discrete_distribution_1_1param__type.html">vsmc::DiscreteDistribution&lt; IntType &gt;::param_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -121,11 +123,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa025da39072de5c27c422d39a0c4e695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discrete__distribution_8hpp.html#aa025da39072de5c27c422d39a0c4e695">VSMC_RUNTIME_ASSERT_RNG_DISCRETE_DISTRIBUTION_POSITIVE</a>(param)</td></tr>
-<tr class="separator:aa025da39072de5c27c422d39a0c4e695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f995ae491513cc641453575358aecc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discrete__distribution_8hpp.html#a0f995ae491513cc641453575358aecc6">VSMC_RUNTIME_ASSERT_RNG_DISCRETE_DISTRIBUTION_POSITIVE</a>(flag)</td></tr>
+<tr class="separator:a0f995ae491513cc641453575358aecc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aa025da39072de5c27c422d39a0c4e695"></a>
+<a class="anchor" id="a0f995ae491513cc641453575358aecc6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -133,13 +135,13 @@ Macros</h2></td></tr>
           <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_DISCRETE_DISTRIBUTION_POSITIVE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">param</td><td>)</td>
+          <td class="paramname">flag</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>(is_positive(param),                                   \</div>
-<div class="line">        <span class="stringliteral">&quot;**DiscreteDistribution** WEIGHTS ARE NOT NON-NEGATIVE&quot;</span>)</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>(                                                      \</div>
+<div class="line">        (flag), <span class="stringliteral">&quot;**DiscreteDistribution** WEIGHTS ARE NOT NON-NEGATIVE&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="discrete__distribution_8hpp_source.html#l00039">39</a> of file <a class="el" href="discrete__distribution_8hpp_source.html">discrete_distribution.hpp</a>.</p>

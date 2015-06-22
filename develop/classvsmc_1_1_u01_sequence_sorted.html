@@ -131,7 +131,7 @@ class vsmc::U01SequenceSorted&lt; RNGType, RealType &gt;</h3>
 <p>Generate a fixed length sequence of uniform \([0,1)\) random variates by sorting. </p>
 <p>This is primarily used in resampling algorithms within the library but can be used for other purposes. It deals with the usage case similar to the following, </p><div class="fragment"><div class="line"><span class="keyword">const</span> std::size_t N = 1000;</div>
 <div class="line">std::mt19937 rng;</div>
-<div class="line">std::uniform_real_distribution&lt;double&gt; runif(0, 1);</div>
+<div class="line">std::uniform_real_distribution&lt;double&gt; runif;</div>
 <div class="line">std::vector&lt;double&gt; u01(N);</div>
 <div class="line"><span class="keywordflow">for</span> (std::size_t i = 0; i != N; ++i)</div>
 <div class="line">    u01[i] = runif(rng);</div>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cauchydistribution',['CauchyDistribution',['../classvsmc_1_1_cauchy_distribution.html',1,'vsmc']]],
   ['clbase',['CLBase',['../classvsmc_1_1_c_l_base.html',1,'vsmc']]],
   ['clbase_3c_3a_3acl_5fcommand_5fqueue_2c_20clcommandqueue_20_3e',['CLBase&lt;::cl_command_queue, CLCommandQueue &gt;',['../classvsmc_1_1_c_l_base.html',1,'vsmc']]],
   ['clbase_3c_3a_3acl_5fcontext_2c_20clcontext_20_3e',['CLBase&lt;::cl_context, CLContext &gt;',['../classvsmc_1_1_c_l_base.html',1,'vsmc']]],

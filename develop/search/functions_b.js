@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['lambda',['lambda',['../classvsmc_1_1_exponential_distribution_1_1param__type.html#aa52da013aec481c16acdd2d5a8bc3fab',1,'vsmc::ExponentialDistribution::param_type::lambda()'],['../classvsmc_1_1_exponential_distribution.html#a1f40e6497d6ae5bacbb6a0670854ce5e',1,'vsmc::ExponentialDistribution::lambda()']]],
+  ['laplace_5fdistribution',['laplace_distribution',['../group___distribution.html#gaa79be2d036e1f686b35da6d6e18f8d00',1,'vsmc']]],
+  ['laplacedistribution',['LaplaceDistribution',['../classvsmc_1_1_laplace_distribution.html#a2d9ed9c48d1a0fff69f8072987948b38',1,'vsmc::LaplaceDistribution::LaplaceDistribution(result_type location=0, result_type scale=1)'],['../classvsmc_1_1_laplace_distribution.html#afb674172ca0ca4ca4b5946115e90df4a',1,'vsmc::LaplaceDistribution::LaplaceDistribution(const param_type &amp;param)']]],
   ['ln_5f10',['ln_10',['../group___constants.html#ga546e3224d6578f5da004b300e348997a',1,'vsmc::math']]],
   ['ln_5f10_3c_20double_20_3e',['ln_10&lt; double &gt;',['../namespacevsmc_1_1math.html#a8d1157f5ff433343bd608e01b7b8554e',1,'vsmc::math']]],
   ['ln_5f10_3c_20float_20_3e',['ln_10&lt; float &gt;',['../namespacevsmc_1_1math.html#a57d7452c5038c192905d227581819c0d',1,'vsmc::math']]],
@@ -78,6 +81,8 @@ var searchData=
   ['local_5fid',['local_id',['../classvsmc_1_1_state_m_p_i.html#af220660aa5581799eddff4a51ef5c435',1,'vsmc::StateMPI']]],
   ['local_5fmem_5fsize',['local_mem_size',['../classvsmc_1_1_c_l_kernel.html#a9ce54fdeba58a4e51c97df6fb51cf82c',1,'vsmc::CLKernel']]],
   ['local_5fsize',['local_size',['../classvsmc_1_1_c_l_configure.html#aa79b17a94a4435b13cfd293c92117a1a',1,'vsmc::CLConfigure::local_size() const '],['../classvsmc_1_1_c_l_configure.html#a01d798ee97ead86439697518c5ca0b36',1,'vsmc::CLConfigure::local_size(std::size_t new_size)'],['../classvsmc_1_1_c_l_configure.html#a8cbdcfef768f3fb9117f40bd33ae9d83',1,'vsmc::CLConfigure::local_size(std::size_t N, const CLKernel &amp;kern, const CLDevice &amp;dev)']]],
-  ['location',['location',['../classvsmc_1_1_stable_distribution_1_1param__type.html#a11b0c094f5b69547ea976f15087db070',1,'vsmc::StableDistribution::param_type::location()'],['../classvsmc_1_1_stable_distribution.html#aca632b9323a9717c0c99a40b6ee1fd36',1,'vsmc::StableDistribution::location()']]],
-  ['log_5fzconst',['log_zconst',['../classvsmc_1_1_path.html#a0cbf0eb131586c6b4fdf8474fcfb36c4',1,'vsmc::Path']]]
+  ['location',['location',['../classvsmc_1_1_laplace_distribution_1_1param__type.html#ac1850200c06002a59b5ae7b43007d6cf',1,'vsmc::LaplaceDistribution::param_type::location()'],['../classvsmc_1_1_laplace_distribution.html#a00b6a1d0f04f2def3e79fe5373b4e7f5',1,'vsmc::LaplaceDistribution::location()'],['../classvsmc_1_1_stable_distribution_1_1param__type.html#a11b0c094f5b69547ea976f15087db070',1,'vsmc::StableDistribution::param_type::location()'],['../classvsmc_1_1_stable_distribution.html#aca632b9323a9717c0c99a40b6ee1fd36',1,'vsmc::StableDistribution::location()']]],
+  ['log_5fzconst',['log_zconst',['../classvsmc_1_1_path.html#a0cbf0eb131586c6b4fdf8474fcfb36c4',1,'vsmc::Path']]],
+  ['lognormal_5fdistribution',['lognormal_distribution',['../group___distribution.html#ga06c2e95a05cec31340650fd3f907b642',1,'vsmc']]],
+  ['lognormaldistribution',['LogNormalDistribution',['../classvsmc_1_1_log_normal_distribution.html#a8e71c238bf9811ae154b1f0928e9ce27',1,'vsmc::LogNormalDistribution::LogNormalDistribution(result_type m=0, result_type s=1)'],['../classvsmc_1_1_log_normal_distribution.html#abc18606b5bc6423e473fa3e23a90634b',1,'vsmc::LogNormalDistribution::LogNormalDistribution(const param_type &amp;param)']]]
 ];

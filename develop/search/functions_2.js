@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['cauchy_5fdistribution',['cauchy_distribution',['../group___distribution.html#ga5edf3f207e998fb4324be6a0f43e585a',1,'vsmc']]],
+  ['cauchydistribution',['CauchyDistribution',['../classvsmc_1_1_cauchy_distribution.html#a8a3253e9d36bd82326b12e9715e1387f',1,'vsmc::CauchyDistribution::CauchyDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_cauchy_distribution.html#a96414e7af84574d4d874e9672fa55de0',1,'vsmc::CauchyDistribution::CauchyDistribution(const param_type &amp;param)']]],
   ['check_5fdevice',['check_device',['../classvsmc_1_1_c_l_setup.html#ae6854fee5b446361d301f0076f1c70ac',1,'vsmc::CLSetup']]],
   ['check_5fdevice_5fvendor',['check_device_vendor',['../classvsmc_1_1_c_l_setup.html#ab2cb146cd0b0f37c967393bc40334fbf',1,'vsmc::CLSetup']]],
   ['check_5fplatform',['check_platform',['../classvsmc_1_1_c_l_setup.html#a9782f67c94d74708c0616f409ca4d110',1,'vsmc::CLSetup']]],

@@ -138,6 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa90967926143460c54b1ba1f600fb4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb33d6fc91a5f985d83abc4c5e6a08f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#acb33d6fc91a5f985d83abc4c5e6a08f5">seed</a> (MKL_UINT s)</td></tr>
 <tr class="separator:acb33d6fc91a5f985d83abc4c5e6a08f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfdec74631834b2e08f82e619770d024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#abfdec74631834b2e08f82e619770d024">seed</a> (MKL_UINT s, MKL_INT offset)</td></tr>
+<tr class="separator:abfdec74631834b2e08f82e619770d024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ef4ad4d2b29514588be736be7b7ab4"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
 <tr class="memitem:ab3ef4ad4d2b29514588be736be7b7ab4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#ab3ef4ad4d2b29514588be736be7b7ab4">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT, <a class="el" href="classvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, Bits &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
 <tr class="separator:ab3ef4ad4d2b29514588be736be7b7ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,7 +310,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 
 <p>Set the buffer size, zero or negative value restore the default. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00276">276</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00286">286</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +337,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00281">281</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00291">291</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +368,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 <p>Discard results. </p>
 <p>The the behavior is slightly different from that in C++11 standard. Calling <code>discard(nskip)</code> is not equivalent to call <code>operator()</code> <code>nskip</code> times. Instead, it ensures that at least <code>nskip</code> results are discarded. There may be a few more than <code>nskip</code> also discarded. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00258">258</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00268">268</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +395,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00269">269</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00279">279</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +422,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00268">268</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00278">278</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +449,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00233">233</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00243">243</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -476,6 +478,44 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00223">223</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfdec74631834b2e08f82e619770d024"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_m_k_l_engine.html">vsmc::MKLEngine</a>&lt; BRNG, Bits &gt;::seed </td>
+          <td>(</td>
+          <td class="paramtype">MKL_UINT&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00229">229</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -515,7 +555,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00226">226</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00236">236</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -542,7 +582,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00271">271</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00281">281</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +609,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00272">272</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00282">282</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -607,7 +647,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00244">244</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00254">254</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -632,7 +672,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00266">266</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00276">276</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -656,7 +696,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00265">265</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00275">275</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>

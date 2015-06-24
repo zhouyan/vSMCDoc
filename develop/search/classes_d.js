@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['threefryctrpackavx2',['ThreefryCtrPackAVX2',['../classvsmc_1_1internal_1_1_threefry_ctr_pack_a_v_x2.html',1,'vsmc::internal']]],
-  ['threefryctrpacksse2',['ThreefryCtrPackSSE2',['../classvsmc_1_1internal_1_1_threefry_ctr_pack_s_s_e2.html',1,'vsmc::internal']]],
   ['threefryengine',['ThreefryEngine',['../classvsmc_1_1_threefry_engine.html',1,'vsmc']]],
-  ['threefryengineavx2',['ThreefryEngineAVX2',['../classvsmc_1_1_threefry_engine_a_v_x2.html',1,'vsmc']]],
-  ['threefryenginesse2',['ThreefryEngineSSE2',['../classvsmc_1_1_threefry_engine_s_s_e2.html',1,'vsmc']]],
   ['threefryinitpar',['ThreefryInitPar',['../classvsmc_1_1internal_1_1_threefry_init_par.html',1,'vsmc::internal']]],
   ['threefryinsertkey',['ThreefryInsertKey',['../classvsmc_1_1internal_1_1_threefry_insert_key.html',1,'vsmc::internal']]],
   ['threefryinsertkey_3c_20resulttype_2c_202_2c_20n_2c_20true_20_3e',['ThreefryInsertKey&lt; ResultType, 2, N, true &gt;',['../classvsmc_1_1internal_1_1_threefry_insert_key_3_01_result_type_00_012_00_01_n_00_01true_01_4.html',1,'vsmc::internal']]],
@@ -17,8 +13,6 @@ var searchData=
   ['threefryksconstant_3c_20std_3a_3auint64_5ft_20_3e',['ThreefryKSConstant&lt; std::uint64_t &gt;',['../classvsmc_1_1internal_1_1_threefry_k_s_constant_3_01std_1_1uint64__t_01_4.html',1,'vsmc::internal']]],
   ['threefryksconstant_3c_20t_20_3e',['ThreefryKSConstant&lt; T &gt;',['../classvsmc_1_1internal_1_1_threefry_k_s_constant.html',1,'vsmc::internal']]],
   ['threefryksconstant_3c_20wrapper_3c_20t_20_3e_20_3e',['ThreefryKSConstant&lt; Wrapper&lt; T &gt; &gt;',['../classvsmc_1_1internal_1_1_threefry_k_s_constant_3_01_wrapper_3_01_t_01_4_01_4.html',1,'vsmc::internal']]],
-  ['threefryparpackavx2',['ThreefryParPackAVX2',['../classvsmc_1_1internal_1_1_threefry_par_pack_a_v_x2.html',1,'vsmc::internal']]],
-  ['threefryparpacksse2',['ThreefryParPackSSE2',['../classvsmc_1_1internal_1_1_threefry_par_pack_s_s_e2.html',1,'vsmc::internal']]],
   ['threefryrotate',['ThreefryRotate',['../classvsmc_1_1internal_1_1_threefry_rotate.html',1,'vsmc::internal']]],
   ['threefryrotate_3c_20resulttype_2c_202_2c_20n_2c_20true_20_3e',['ThreefryRotate&lt; ResultType, 2, N, true &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_3_01_result_type_00_012_00_01_n_00_01true_01_4.html',1,'vsmc::internal']]],
   ['threefryrotate_3c_20resulttype_2c_204_2c_20n_2c_20true_20_3e',['ThreefryRotate&lt; ResultType, 4, N, true &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_3_01_result_type_00_014_00_01_n_00_01true_01_4.html',1,'vsmc::internal']]],
@@ -77,6 +71,6 @@ var searchData=
   ['threefryrotateconstant_3c_20t_2c_20k_2c_20n_2c_20i_20_3e',['ThreefryRotateConstant&lt; T, K, N, I &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_constant.html',1,'vsmc::internal']]],
   ['threefryrotateconstant_3c_20wrapper_3c_20t_20_3e_2c_20k_2c_20n_2c_20i_20_3e',['ThreefryRotateConstant&lt; Wrapper&lt; T &gt;, K, N, I &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_constant_3_01_wrapper_3_01_t_01_4_00_01_k_00_01_n_00_01_i_01_4.html',1,'vsmc::internal']]],
   ['threefryrotateimpl',['ThreefryRotateImpl',['../classvsmc_1_1internal_1_1_threefry_rotate_impl.html',1,'vsmc::internal']]],
-  ['type',['type',['../classstd_1_1conditional_1_1type.html',1,'']]],
-  ['type',['type',['../classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4_1_1type.html',1,'vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;']]]
+  ['type',['type',['../classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4_1_1type.html',1,'vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;']]],
+  ['type',['type',['../classstd_1_1conditional_1_1type.html',1,'']]]
 ];

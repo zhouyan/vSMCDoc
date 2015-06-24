@@ -204,16 +204,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> <span class="keywordtype">void</span> vsmc_normal01_f##F##_init(                        \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="config_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> <span class="keywordtype">void</span> vsmc_normal01_f##F##_init(                        \</div>
 <div class="line">        vsmc_normal01_f##F *rnorm, <a class="code" href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">vsmc_crng</a> *rng)                            \</div>
 <div class="line">    {                                                                         \</div>
 <div class="line">        rnorm-&gt;u1 = vsmc_u01_open_closed_u32_f##F(<a class="code" href="group___r_n_g_c.html#ga7723b4afafd02d5311aea33582b724f1">vsmc_crng_rand</a>(rng));       \</div>
 <div class="line">        rnorm-&gt;u2 = vsmc_u01_open_closed_u32_f##F(<a class="code" href="group___r_n_g_c.html#ga7723b4afafd02d5311aea33582b724f1">vsmc_crng_rand</a>(rng));       \</div>
 <div class="line">        rnorm-&gt;saved = 1;                                                     \</div>
 <div class="line">    }</div>
-<div class="ttc" id="common_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00071">common.h:71</a></div></div>
-<div class="ttc" id="group___r_n_g_c_html_ga7723b4afafd02d5311aea33582b724f1"><div class="ttname"><a href="group___r_n_g_c.html#ga7723b4afafd02d5311aea33582b724f1">vsmc_crng_rand</a></div><div class="ttdeci">#define vsmc_crng_rand</div><div class="ttdoc">Generate random 32-bits integers from default RNG. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00119">common.h:119</a></div></div>
-<div class="ttc" id="group___r_n_g_c_html_gaad990f75cd1bf28ebaec05c5da3af056"><div class="ttname"><a href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">vsmc_crng</a></div><div class="ttdeci">#define vsmc_crng</div><div class="ttdoc">Default RNG state. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00107">common.h:107</a></div></div>
+<div class="ttc" id="group___r_n_g_c_html_ga7723b4afafd02d5311aea33582b724f1"><div class="ttname"><a href="group___r_n_g_c.html#ga7723b4afafd02d5311aea33582b724f1">vsmc_crng_rand</a></div><div class="ttdeci">#define vsmc_crng_rand</div><div class="ttdoc">Generate random 32-bits integers from default RNG. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00078">common.h:78</a></div></div>
+<div class="ttc" id="config_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="config_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00071">config.h:71</a></div></div>
+<div class="ttc" id="group___r_n_g_c_html_gaad990f75cd1bf28ebaec05c5da3af056"><div class="ttname"><a href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">vsmc_crng</a></div><div class="ttdeci">#define vsmc_crng</div><div class="ttdoc">Default RNG state. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00066">common.h:66</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="normal01_8h_source.html#l00056">56</a> of file <a class="el" href="normal01_8h_source.html">normal01.h</a>.</p>
 
@@ -242,7 +242,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> FT vsmc_normal01_f##F##_rand(                          \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="config_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a> FT vsmc_normal01_f##F##_rand(                          \</div>
 <div class="line">        vsmc_normal01_f##F *rnorm, <a class="code" href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">vsmc_crng</a> *rng)                            \</div>
 <div class="line">    {                                                                         \</div>
 <div class="line">        const FT c_2pi = VSMC_F##F##_C(6.2831853071795865);                   \</div>
@@ -256,8 +256,8 @@ Functions</h2></td></tr>
 <div class="line">                VSMC_SIN_F##F(c_2pi * rnorm-&gt;u2);                             \</div>
 <div class="line">        }                                                                     \</div>
 <div class="line">    }</div>
-<div class="ttc" id="common_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00071">common.h:71</a></div></div>
-<div class="ttc" id="group___r_n_g_c_html_gaad990f75cd1bf28ebaec05c5da3af056"><div class="ttname"><a href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">vsmc_crng</a></div><div class="ttdeci">#define vsmc_crng</div><div class="ttdoc">Default RNG state. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00107">common.h:107</a></div></div>
+<div class="ttc" id="config_8h_html_a012fa09dad2fa666d92cf745261d4a7a"><div class="ttname"><a href="config_8h.html#a012fa09dad2fa666d92cf745261d4a7a">VSMC_STATIC_INLINE</a></div><div class="ttdeci">#define VSMC_STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00071">config.h:71</a></div></div>
+<div class="ttc" id="group___r_n_g_c_html_gaad990f75cd1bf28ebaec05c5da3af056"><div class="ttname"><a href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">vsmc_crng</a></div><div class="ttdeci">#define vsmc_crng</div><div class="ttdoc">Default RNG state. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00066">common.h:66</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="normal01_8h_source.html#l00065">65</a> of file <a class="el" href="normal01_8h_source.html">normal01.h</a>.</p>
 

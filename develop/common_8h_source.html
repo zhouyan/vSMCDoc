@@ -132,88 +132,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNGC_INTERNAL_COMMON_H</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNGC_INTERNAL_COMMON_H</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef __OPENCL_VERSION__</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_RNGC_DOUBLE</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define VSMC_HAS_RNGC_DOUBLE 0</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">typedef</span> uint uint32_t;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> ulong uint64_t;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define UINT32_C(x) ((uint32_t)(x##U))</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define UINT64_C(x) ((uint64_t)(x##UL))</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifndef VSMC_STATIC_INLINE</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#if defined(__OPENCL_C_VERSION__) &amp;&amp; __OPENCL_C_VERSION__ &gt;= 120</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define VSMC_STATIC_INLINE static inline</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define VSMC_STATIC_INLINE inline</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // VSMC_STATIC_INLINE</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#else  // __OPENCL_VERSION__</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef VSMC_HAS_RNGC_DOUBLE</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="common_8h.html#aa04b3c519e403ce70da9690e3e852489">   52</a></span>&#160;<span class="preprocessor">#define VSMC_HAS_RNGC_DOUBLE 1</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifndef __STDC_CONSTANT_MACROS</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="common_8h.html#a786132414c30f947907be33a4c28125a">   55</a></span>&#160;<span class="preprocessor">#define __STDC_CONSTANT_MACROS</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#ifndef UINT64_C</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#error __STDC_CONSTANT_MACROS not defined before #include&lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifndef VSMC_STATIC_INLINE</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define VSMC_STATIC_INLINE inline</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#else // __cplusplus</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifndef VSMC_STATIC_INLINE</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if defined(__STDC_VERSION__) &amp;&amp; __STDC_VERSION__ &gt;= 199901L</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#define VSMC_STATIC_INLINE static inline</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="common_8h.html#a012fa09dad2fa666d92cf745261d4a7a">   71</a></span>&#160;<span class="preprocessor">#define VSMC_STATIC_INLINE static</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // VSMC_STATIC_INLINE</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // __cplusplus</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // __OPENCL_VERSION__</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="common_8h.html#abe27450003280e0afeb1b8fc33d125ac">   78</a></span>&#160;<span class="preprocessor">#define VSMC_F32_C(x) (x##f)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="common_8h.html#aee591c287f691f5239202a8f6177a02e">   79</a></span>&#160;<span class="preprocessor">#define VSMC_F64_C(x) (x)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="config_8h.html">vsmc/internal/config.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="common_8h.html#abe27450003280e0afeb1b8fc33d125ac">   37</a></span>&#160;<span class="preprocessor">#define VSMC_F32_C(x) (x##f)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="common_8h.html#aee591c287f691f5239202a8f6177a02e">   38</a></span>&#160;<span class="preprocessor">#define VSMC_F64_C(x) (x)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="common_8h.html#a59612066e980abcc25d09b884755a3c2">   40</a></span>&#160;<span class="preprocessor">#define VSMC_LOG_F64 log</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="common_8h.html#a282e93b594e1f6b8c62b99be65a77f84">   41</a></span>&#160;<span class="preprocessor">#define VSMC_EXP_F64 exp</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="common_8h.html#a5d66a013cbd863ac9587c8c4cf40573a">   42</a></span>&#160;<span class="preprocessor">#define VSMC_EXPM1_F64 expm1</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="common_8h.html#a7006e3d5e53f8a0c50690a9a6be6bb2c">   43</a></span>&#160;<span class="preprocessor">#define VSMC_SQRT_F64 sqrt</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="common_8h.html#a2843fac30717d878f47ec3a9d8748c27">   44</a></span>&#160;<span class="preprocessor">#define VSMC_SIN_F64 sin</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="common_8h.html#a565244b494d7bed79708980fa3b16796">   45</a></span>&#160;<span class="preprocessor">#define VSMC_COS_F64 cos</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef __OPENCL_VERSION__</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define VSMC_LOG_F32 log</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define VSMC_EXP_F32 exp</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define VSMC_EXPM1_F32 expm1</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define VSMC_SQRT_F32 sqrt</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define VSMC_SIN_F32 sin</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define VSMC_COS_F32 cos</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#else // __OPENCL_VERSION__</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="common_8h.html#a9b535e0251bd6be3fcd4ee03c1c0f0b6">   55</a></span>&#160;<span class="preprocessor">#define VSMC_LOG_F32 logf</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="common_8h.html#ad50d939921da71720d46f6c9813cbbf0">   56</a></span>&#160;<span class="preprocessor">#define VSMC_EXP_F32 expf</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="common_8h.html#ab5d9082f9cad7c3274ba0f2f712ed4be">   57</a></span>&#160;<span class="preprocessor">#define VSMC_EXPM1_F32 expm1f</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="common_8h.html#a4796acfb921c9174f6f55eece078c02d">   58</a></span>&#160;<span class="preprocessor">#define VSMC_SQRT_F32 sqrtf</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="common_8h.html#aa212fcdede3ea79bfff8458a96d03969">   59</a></span>&#160;<span class="preprocessor">#define VSMC_SIN_F32 sinf</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="common_8h.html#a4f90e3d00e3260b85b31869cc7767da6">   60</a></span>&#160;<span class="preprocessor">#define VSMC_COS_F32 cosf</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // __OPENCL_VERSION__</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifndef vsmc_crng</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">   66</a></span>&#160;<span class="preprocessor">#define vsmc_crng vsmc_philox2x32</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef vsmc_crng_init</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group___r_n_g_c.html#ga2f1a06c75dc3cb1e26771301261d04f8">   72</a></span>&#160;<span class="preprocessor">#define vsmc_crng_init vsmc_philox2x32_init</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifndef vsmc_crng_rand</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___r_n_g_c.html#ga7723b4afafd02d5311aea33582b724f1">   78</a></span>&#160;<span class="preprocessor">#define vsmc_crng_rand vsmc_philox2x32_rand</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="common_8h.html#a59612066e980abcc25d09b884755a3c2">   81</a></span>&#160;<span class="preprocessor">#define VSMC_LOG_F64 log</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="common_8h.html#a282e93b594e1f6b8c62b99be65a77f84">   82</a></span>&#160;<span class="preprocessor">#define VSMC_EXP_F64 exp</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="common_8h.html#a5d66a013cbd863ac9587c8c4cf40573a">   83</a></span>&#160;<span class="preprocessor">#define VSMC_EXPM1_F64 expm1</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="common_8h.html#a7006e3d5e53f8a0c50690a9a6be6bb2c">   84</a></span>&#160;<span class="preprocessor">#define VSMC_SQRT_F64 sqrt</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="common_8h.html#a2843fac30717d878f47ec3a9d8748c27">   85</a></span>&#160;<span class="preprocessor">#define VSMC_SIN_F64 sin</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="common_8h.html#a565244b494d7bed79708980fa3b16796">   86</a></span>&#160;<span class="preprocessor">#define VSMC_COS_F64 cos</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef __OPENCL_VERSION__</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define VSMC_LOG_F32 log</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#define VSMC_EXP_F32 exp</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#define VSMC_EXPM1_F32 expm1</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#define VSMC_SQRT_F32 sqrt</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#define VSMC_SIN_F32 sin</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#define VSMC_COS_F32 cos</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#else // __OPENCL_VERSION__</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="common_8h.html#a9b535e0251bd6be3fcd4ee03c1c0f0b6">   96</a></span>&#160;<span class="preprocessor">#define VSMC_LOG_F32 logf</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="common_8h.html#ad50d939921da71720d46f6c9813cbbf0">   97</a></span>&#160;<span class="preprocessor">#define VSMC_EXP_F32 expf</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="common_8h.html#ab5d9082f9cad7c3274ba0f2f712ed4be">   98</a></span>&#160;<span class="preprocessor">#define VSMC_EXPM1_F32 expm1f</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="common_8h.html#a4796acfb921c9174f6f55eece078c02d">   99</a></span>&#160;<span class="preprocessor">#define VSMC_SQRT_F32 sqrtf</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="common_8h.html#aa212fcdede3ea79bfff8458a96d03969">  100</a></span>&#160;<span class="preprocessor">#define VSMC_SIN_F32 sinf</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="common_8h.html#a4f90e3d00e3260b85b31869cc7767da6">  101</a></span>&#160;<span class="preprocessor">#define VSMC_COS_F32 cosf</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif // __OPENCL_VERSION__</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#ifndef vsmc_crng</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group___r_n_g_c.html#gaad990f75cd1bf28ebaec05c5da3af056">  107</a></span>&#160;<span class="preprocessor">#define vsmc_crng vsmc_philox2x32</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#ifndef vsmc_crng_init</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group___r_n_g_c.html#ga2f1a06c75dc3cb1e26771301261d04f8">  113</a></span>&#160;<span class="preprocessor">#define vsmc_crng_init vsmc_philox2x32_init</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#ifndef vsmc_crng_rand</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group___r_n_g_c.html#ga7723b4afafd02d5311aea33582b724f1">  119</a></span>&#160;<span class="preprocessor">#define vsmc_crng_rand vsmc_philox2x32_rand</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // VSMC_RNGC_INTERNAL_COMMON_H</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // VSMC_RNGC_INTERNAL_COMMON_H</span></div>
+<div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

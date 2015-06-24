@@ -7,7 +7,7 @@ var searchData=
   ['param_5ftype',['param_type',['../classvsmc_1_1_u01_distribution_1_1param__type.html',1,'vsmc::U01Distribution']]],
   ['param_5ftype',['param_type',['../classvsmc_1_1_uniform_real_distribution_1_1param__type.html',1,'vsmc::UniformRealDistribution']]],
   ['param_5ftype',['param_type',['../classvsmc_1_1_discrete_distribution_1_1param__type.html',1,'vsmc::DiscreteDistribution']]],
-  ['param_5ftype',['param_type',['../classvsmc_1_1_log_normal_distribution_1_1param__type.html',1,'vsmc::LogNormalDistribution']]],
+  ['param_5ftype',['param_type',['../classvsmc_1_1_lognormal_distribution_1_1param__type.html',1,'vsmc::LognormalDistribution']]],
   ['param_5ftype',['param_type',['../classvsmc_1_1_normal_distribution_1_1param__type.html',1,'vsmc::NormalDistribution']]],
   ['particle',['Particle',['../classvsmc_1_1_particle.html',1,'vsmc']]],
   ['particle_3c_20s_20_3e',['Particle&lt; S &gt;',['../classvsmc_1_1_particle.html',1,'vsmc']]],

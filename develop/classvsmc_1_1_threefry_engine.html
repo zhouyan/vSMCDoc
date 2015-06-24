@@ -183,12 +183,8 @@ Friends</h2></td></tr>
 class vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</h3>
 
 <p>Threefry RNG engine reimplemented. </p>
-<p>This is a reimplementation of the algorithm Threefry as described in <a href="http://sc11.supercomputing.org/schedule/event_detail.php?evid=pap274">Parallel Random Numbers: As Easy as 1, 2, 3</a> and implemented in <a href="https://www.deshawresearch.com/resources_random123.html">Random123</a>.</p>
-<p>Depending on the compilers, processors and RNG configurations, it might be slightly faster or slower than the original implementation. At most two-folds performace difference (both faster and slower) were observed.</p>
-<p>This implementation is slightly more flexible in the sense that it does not limit the number of rounds. However, larger number of rounds can have undesired effects. To say the least, currently all loops are unrolled, which can slow down significantly when the number of rounds is large.</p>
-<p>Compared to <code>r123:Engine&lt;r123::Threefry4x32&gt;</code> etc., when using the default constructor or the one with a single seed, the output shall be exactly the same for the first \(2^n\) iterations, where \(n\) is the number of bits (32 or 64). Further iterations may produce different results, as vSMC increment the counter slightly differently, but it still cover the same range and has the same period as the original. </p>
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00069">69</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00330">330</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a923ce6dd6062faf224ad64afcfae5289"></a>
 <div class="memitem">
@@ -202,7 +198,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00074">74</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00335">335</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +214,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00073">73</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00334">334</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +230,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00072">72</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00333">333</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,7 +259,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00076">76</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00337">337</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -303,7 +299,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00083">83</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00344">344</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -331,7 +327,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00093">93</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00354">354</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,7 +355,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00129">129</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00390">390</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -387,7 +383,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00140">140</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00401">401</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +411,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00162">162</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00423">423</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -442,7 +438,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00131">131</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00392">392</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +466,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00146">146</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00407">407</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +493,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00188">188</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00449">449</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +520,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00187">187</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00448">448</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +547,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00152">152</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00413">413</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -579,7 +575,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00099">99</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00360">360</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +615,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00110">110</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00371">371</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -647,7 +643,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00122">122</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00383">383</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -686,7 +682,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00197">197</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00458">458</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +722,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00204">204</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00465">465</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +760,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00190">190</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00451">451</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -804,7 +800,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00220">220</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00481">481</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -829,7 +825,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00185">185</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00446">446</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -853,7 +849,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00184">184</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00445">445</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>

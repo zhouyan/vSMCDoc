@@ -3,6 +3,7 @@ var searchData=
   ['manager_5ftype',['manager_type',['../classvsmc_1_1_state_c_l.html#aaa5cc58bb1ec4a64354274bda34f2fba',1,'vsmc::StateCL::manager_type()'],['../classvsmc_1_1_c_l_buffer.html#a83fa9a67398e3ab5550df347fc219b7e',1,'vsmc::CLBuffer::manager_type()'],['../classvsmc_1_1internal_1_1_c_l_copy.html#a40e1650344007305596833bb2a1e15b1',1,'vsmc::internal::CLCopy::manager_type()']]],
   ['mcmc_5ftype',['mcmc_type',['../classvsmc_1_1_sampler.html#a00dea6f4f5b067f59f3b26c682a4a836',1,'vsmc::Sampler']]],
   ['mkl_5fmcg59',['MKL_MCG59',['../group___m_k_l_r_n_g.html#ga409d543b76f2f63714160ac72967316e',1,'vsmc']]],
+  ['mkl_5fmcg59_5f64',['MKL_MCG59_64',['../group___m_k_l_r_n_g.html#ga2631ab12c82ba5bab751ad3e1f2bf987',1,'vsmc']]],
   ['mkl_5fmt19937',['MKL_MT19937',['../group___m_k_l_r_n_g.html#ga6c1a1464ede168e8ef9a3872c180b3a8',1,'vsmc']]],
   ['mkl_5fmt19937_5f64',['MKL_MT19937_64',['../group___m_k_l_r_n_g.html#gab09c3ee8adebad354fae31501bd5fc60',1,'vsmc']]],
   ['mkl_5fmt2203',['MKL_MT2203',['../group___m_k_l_r_n_g.html#ga3bae2f2a09c0c5f4cc8838109ac38191',1,'vsmc']]],

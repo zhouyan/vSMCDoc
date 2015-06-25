@@ -101,6 +101,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7bdf8e4ebb3911f6b6936e468230379b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_power.html#ga7bdf8e4ebb3911f6b6936e468230379b">vsmc::math::vDiv</a> (std::size_t n, const T *a, const T *b, T *y)</td></tr>
 <tr class="memdesc:ga7bdf8e4ebb3911f6b6936e468230379b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a_i / b_i\).  <a href="#ga7bdf8e4ebb3911f6b6936e468230379b">More...</a><br /></td></tr>
 <tr class="separator:ga7bdf8e4ebb3911f6b6936e468230379b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b3eb1e5617b3ea3a4249cf3583dd363"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga3b3eb1e5617b3ea3a4249cf3583dd363"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_power.html#ga3b3eb1e5617b3ea3a4249cf3583dd363">vsmc::math::vDiv</a> (std::size_t n, const T *a, T b, T *y)</td></tr>
+<tr class="memdesc:ga3b3eb1e5617b3ea3a4249cf3583dd363"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a_i / b\).  <a href="#ga3b3eb1e5617b3ea3a4249cf3583dd363">More...</a><br /></td></tr>
+<tr class="separator:ga3b3eb1e5617b3ea3a4249cf3583dd363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9effcbe6e3553f0b5c3a9d45df3c715"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac9effcbe6e3553f0b5c3a9d45df3c715"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_power.html#gac9effcbe6e3553f0b5c3a9d45df3c715">vsmc::math::vDiv</a> (std::size_t n, T a, const T *b, T *y)</td></tr>
+<tr class="memdesc:gac9effcbe6e3553f0b5c3a9d45df3c715"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a / b_i\).  <a href="#gac9effcbe6e3553f0b5c3a9d45df3c715">More...</a><br /></td></tr>
+<tr class="separator:gac9effcbe6e3553f0b5c3a9d45df3c715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga953600320c12e1d8c5b7719b7c404a1c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga953600320c12e1d8c5b7719b7c404a1c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_power.html#ga953600320c12e1d8c5b7719b7c404a1c">vsmc::math::vHypot</a> (std::size_t n, const T *a, const T *b, T *y)</td></tr>
 <tr class="memdesc:ga953600320c12e1d8c5b7719b7c404a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = \sqrt{a_i^2 + b_i^2}\).  <a href="#ga953600320c12e1d8c5b7719b7c404a1c">More...</a><br /></td></tr>
@@ -182,7 +190,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = \sqrt[3]{a_i}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00193">193</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00233">233</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +242,111 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = a_i / b_i\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00184">184</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00218">218</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3b3eb1e5617b3ea3a4249cf3583dd363"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::math::vDiv </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For \(i=1,\ldots,n\), compute \(y_i = a_i / b\). </p>
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00221">221</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac9effcbe6e3553f0b5c3a9d45df3c715"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::math::vDiv </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For \(i=1,\ldots,n\), compute \(y_i = a / b_i\). </p>
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00224">224</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +398,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = \sqrt{a_i^2 + b_i^2}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00216">216</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00256">256</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +444,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = a_i^{-1}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00181">181</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00215">215</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +490,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = 1 / \sqrt[3]{a_i}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00196">196</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00236">236</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -424,7 +536,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = 1 / \sqrt{a_i}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00190">190</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00230">230</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -476,7 +588,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = a_i^{b_i}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00205">205</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00245">245</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +634,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = a_i^{2/3}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00199">199</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00239">239</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -568,7 +680,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = a_i^{3/2}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00202">202</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00242">242</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -620,7 +732,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = a_i^b\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00209">209</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00249">249</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -666,7 +778,7 @@ template&lt;typename T &gt; </div>
 
 <p>For \(i=1,\ldots,n\), compute \(y_i = \sqrt{a_i}\). </p>
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00187">187</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00227">227</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>

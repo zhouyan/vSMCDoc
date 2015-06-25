@@ -201,7 +201,7 @@ Macros</h2></td></tr>
 <div class="line">        UBits, FBits, RealType, Open, Open, open, open)</div>
 <div class="ttc" id="u01_8hpp_html_a1aee645fa2bd77ccb8fcd5eb54805629"><div class="ttname"><a href="u01_8hpp.html#a1aee645fa2bd77ccb8fcd5eb54805629">VSMC_DEFINE_RNG_U01_DISTRIBUTION_U01_IMPL</a></div><div class="ttdeci">#define VSMC_DEFINE_RNG_U01_DISTRIBUTION_U01_IMPL(UBits, FBits, RealType, Left, Right, left, right)</div><div class="ttdef"><b>Definition:</b> <a href="u01_8hpp_source.html#l00039">u01.hpp:39</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00052">52</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00054">54</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -263,9 +263,11 @@ Macros</h2></td></tr>
 <div class="line">        Right&gt;                                                                \</div>
 <div class="line">    {                                                                         \</div>
 <div class="line">        public:                                                               \</div>
-<div class="line">        static RealType eval(uint##UBits##_t u)                               \</div>
+<div class="line">        template &lt;typename UIntType&gt;                                          \</div>
+<div class="line">        static RealType eval(UIntType u)                                      \</div>
 <div class="line">        {                                                                     \</div>
-<div class="line">            return ::vsmc_u01_##left##_##right##_u##UBits##_f##FBits(u);      \</div>
+<div class="line">            return ::vsmc_u01_##left##_##right##_u##UBits##_f##FBits(         \</div>
+<div class="line">                static_cast&lt;uint##UBits##_t&gt;(u));                             \</div>
 <div class="line">        }                                                                     \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->

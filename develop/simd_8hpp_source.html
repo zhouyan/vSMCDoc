@@ -410,7 +410,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;} <span class="comment">// namespace internal</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___open_c_l.html#gae87552d62814e43260058795830ed0e2">operator==</a>(<span class="keyword">const</span> M128I&lt;&gt; &amp;a, <span class="keyword">const</span> M128I&lt;&gt; &amp;b)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___open_c_l.html#gae87552d62814e43260058795830ed0e2">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_m128_i_3_4.html">M128I&lt;&gt;</a> &amp;a, <span class="keyword">const</span> <a class="code" href="class_m128_i_3_4.html">M128I&lt;&gt;</a> &amp;b)</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sa;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sb;</div>
@@ -445,7 +445,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">return</span> os;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    std::array&lt;std::uint64_t, 2&gt; sa;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    M128I&lt;&gt; ma(a);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="class_m128_i_3_4.html">M128I&lt;&gt;</a> ma(a);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    ma.store_u(sa.data());</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    os &lt;&lt; sa;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
@@ -477,7 +477,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    is &gt;&gt; sa;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (is.good()) {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        M128I&lt;&gt; ma;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="class_m128_i_3_4.html">M128I&lt;&gt;</a> ma;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        ma.load_u(sa.data());</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        a = ma.value();</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
@@ -1844,6 +1844,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="group___constants_html_ga6635f94307783df975712d202327cd92"><div class="ttname"><a href="group___constants.html#ga6635f94307783df975712d202327cd92">vsmc::math::e</a></div><div class="ttdeci">T e() noexcept</div><div class="ttdoc"> </div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00201">constants.hpp:201</a></div></div>
+<div class="ttc" id="class_m128_i_3_4_html"><div class="ttname"><a href="class_m128_i_3_4.html">M128I&lt;&gt;</a></div></div>
 <div class="ttc" id="internal_2common_8hpp_html"><div class="ttname"><a href="internal_2common_8hpp.html">common.hpp</a></div></div>
 <div class="ttc" id="namespacevsmc_html_a933f17e11b1a51388124fcc1bfa4c0cd"><div class="ttname"><a href="namespacevsmc.html#a933f17e11b1a51388124fcc1bfa4c0cd">vsmc::operator&lt;&lt;</a></div><div class="ttdeci">std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const Sampler&lt; T &gt; &amp;sampler)</div><div class="ttdef"><b>Definition:</b> <a href="sampler_8hpp_source.html#l00964">sampler.hpp:964</a></div></div>
 <div class="ttc" id="group___open_c_l_html_gae87552d62814e43260058795830ed0e2"><div class="ttname"><a href="group___open_c_l.html#gae87552d62814e43260058795830ed0e2">vsmc::operator==</a></div><div class="ttdeci">bool operator==(const CLBase&lt; CLPtr, Derived &gt; &amp;ptr1, const CLBase&lt; CLPtr, Derived &gt; &amp;ptr2)</div><div class="ttdoc">Comparison of equality of two CLBase objects. </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l00139">cl_type.hpp:139</a></div></div>

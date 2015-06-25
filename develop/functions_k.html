@@ -161,7 +161,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1internal_1_1_c_l_copy.html#ab579317f44cafa4357e168083e12b275">vsmc::internal::CLCopy&lt; ID &gt;</a>
 </li>
 <li>key()
-: <a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html#a78c6b83446342fd02b339bd47b2603ea">vsmc::AESNIEngine&lt; ResultType, KeySeq, KeySeqInit, Rounds, Blocks &gt;</a>
+: <a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html#a533d9fd8575483c626ff85595a9fa240">vsmc::AESNIEngine&lt; ResultType, KeySeqType, Rounds, Blocks &gt;</a>
+, <a class="el" href="classvsmc_1_1_a_r_s_key_seq.html#a5c67e6dc86469e16289ad4843757b4e2">vsmc::ARSKeySeq&lt; ResultType &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s_key_seq.html#a2ac01dcae8edeef4b6071b7678c714b9">vsmc::internal::AESKeySeq&lt; ResultType, Rounds, KeySeqGenerator &gt;</a>
 , <a class="el" href="classvsmc_1_1_philox_engine.html#aa5964f662a98c129ecc23a4fb8554377">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a>
 , <a class="el" href="classvsmc_1_1_threefry_engine.html#ad60cb0ebe6fc9f7ae2bad98f85519d3d">vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</a>
 , <a class="el" href="structvsmc__philox2x32.html#a7828eb17a64850a351a6332c25263729">vsmc_philox2x32</a>
@@ -171,22 +173,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structvsmc__threefry4x32.html#aa70856ce2713ec028374d0112827e4ec">vsmc_threefry4x32</a>
 , <a class="el" href="structvsmc__threefry4x64.html#ae580cb168ff6b8717815c0b9bf6ae1d5">vsmc_threefry4x64</a>
 </li>
-<li>key_seq()
-: <a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html#ac0fad4fdd91cc48b6634b11064badffd">vsmc::AESNIEngine&lt; ResultType, KeySeq, KeySeqInit, Rounds, Blocks &gt;</a>
-</li>
-<li>key_seq_type
-: <a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html#aaf6cfdbd155c82c45e36bad1331c9a2a">vsmc::AESNIEngine&lt; ResultType, KeySeq, KeySeqInit, Rounds, Blocks &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s_n_i_key_seq_storage_3_01_key_seq_00_01false_00_01_rounds_01_4.html#a52109f40c33168a3bbb63019ad7ec0b6">vsmc::internal::AESNIKeySeqStorage&lt; KeySeq, false, Rounds &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s_n_i_key_seq_storage_3_01_key_seq_00_01true_00_01_rounds_01_4.html#a488ffc1284ebc90f637fcf4335e87f01">vsmc::internal::AESNIKeySeqStorage&lt; KeySeq, true, Rounds &gt;</a>
-</li>
 <li>key_type
-: <a class="el" href="classvsmc_1_1_a_e_s128_key_seq.html#a8fac0e58d10bfd5653b6822b50170f55">vsmc::AES128KeySeq&lt; ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_a_e_s192_key_seq.html#a7fcc91295f334f38015253453936c2ba">vsmc::AES192KeySeq&lt; ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_a_e_s256_key_seq.html#a8cb2d77210c63126b50d332199168308">vsmc::AES256KeySeq&lt; ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html#aad3558fc82bc2b8e1bff00067af51cee">vsmc::AESNIEngine&lt; ResultType, KeySeq, KeySeqInit, Rounds, Blocks &gt;</a>
+: <a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html#a0bd00aec122ff813c67a4b3f9838b0e0">vsmc::AESNIEngine&lt; ResultType, KeySeqType, Rounds, Blocks &gt;</a>
 , <a class="el" href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">vsmc::ARSKeySeq&lt; ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s_n_i_key_seq_storage_3_01_key_seq_00_01false_00_01_rounds_01_4.html#a97693cb7b996493e5365cf9e36213fbf">vsmc::internal::AESNIKeySeqStorage&lt; KeySeq, false, Rounds &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s_n_i_key_seq_storage_3_01_key_seq_00_01true_00_01_rounds_01_4.html#a37ea83f250440de014e026b927d68725">vsmc::internal::AESNIKeySeqStorage&lt; KeySeq, true, Rounds &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s128_key_seq_generator.html#aecff58f80b34e43ffef975adf0ee96ff">vsmc::internal::AES128KeySeqGenerator&lt; ResultType &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#abe74fc19377d771eb5d4b981b83e09bc">vsmc::internal::AES192KeySeqGenerator&lt; ResultType &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s256_key_seq_generator.html#a21c3f58a2f7b4f1456c0976de4fa76c3">vsmc::internal::AES256KeySeqGenerator&lt; ResultType &gt;</a>
+, <a class="el" href="classvsmc_1_1internal_1_1_a_e_s_key_seq.html#a7200bffda61b3f882ef1540e89dd8713">vsmc::internal::AESKeySeq&lt; ResultType, Rounds, KeySeqGenerator &gt;</a>
 , <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a>
 , <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</a>
 </li>

@@ -6,6 +6,7 @@ var searchData=
   ['normal01',['Normal01',['../group___normal01_c.html',1,'']]],
   ['normal_5fdistribution',['normal_distribution',['../namespacevsmc.html#a60c89e811197846d5b031b89ce47e3b9',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;rng, std::size_t n, float *r, float mean, float stddev)'],['../namespacevsmc.html#ac0dbbe0f922415170fdfae2f26fd3040',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;rng, std::size_t n, double *r, double mean, double stddev)'],['../group___distribution.html#ga072f729f9a5d59c9d909e6a61a6c1d6a',1,'vsmc::normal_distribution(RNGType &amp;rng, std::size_t n, RealType *r, RealType mean=0, RealType stddev=1)']]],
   ['normal_5fdistribution_2ehpp',['normal_distribution.hpp',['../normal__distribution_8hpp.html',1,'']]],
+  ['normal_5fdistribution_5fimpl',['normal_distribution_impl',['../namespacevsmc_1_1internal.html#adfbe9bf291abd25e2b10aeb9006a9917',1,'vsmc::internal']]],
   ['normaldistribution',['NormalDistribution',['../classvsmc_1_1_normal_distribution.html',1,'vsmc']]],
   ['normaldistribution',['NormalDistribution',['../classvsmc_1_1_normal_distribution.html#a393a26c8a2b193c99678f5b9ead0c095',1,'vsmc::NormalDistribution::NormalDistribution(result_type mean=0, result_type stddev=1)'],['../classvsmc_1_1_normal_distribution.html#ae6d9dec75fe573e555382d061030c8e5',1,'vsmc::NormalDistribution::NormalDistribution(const param_type &amp;param)']]],
   ['notrans',['NoTrans',['../group___definitions.html#ggadbec81df055b4943ebed54f1f07ff933a338f9618bd4990ba9672555d713cf0dd',1,'vsmc']]],

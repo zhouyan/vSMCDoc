@@ -5,5 +5,5 @@ var searchData=
   ['_5f_5fhas_5fcpp_5fattribute',['__has_cpp_attribute',['../compiler_8h.html#aeed0a618f017e128a5d8654754f792db',1,'compiler.h']]],
   ['_5f_5fhas_5fextension',['__has_extension',['../compiler_8h.html#ae1ce1a4353334dd8968a94a98b4bf1dd',1,'compiler.h']]],
   ['_5f_5fhas_5ffeature',['__has_feature',['../compiler_8h.html#af989845e24678c452b9222afdac95e7f',1,'compiler.h']]],
-  ['_5f_5fstdc_5fconstant_5fmacros',['__STDC_CONSTANT_MACROS',['../config_8h.html#a786132414c30f947907be33a4c28125a',1,'config.h']]]
+  ['_5f_5fstdc_5fconstant_5fmacros',['__STDC_CONSTANT_MACROS',['../compiler_8h.html#a786132414c30f947907be33a4c28125a',1,'compiler.h']]]
 ];

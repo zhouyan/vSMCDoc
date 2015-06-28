@@ -108,18 +108,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Philox RNG engine reimplemented.  
+<p>Philox RNG engine.  
  <a href="classvsmc_1_1_philox_engine.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="philox_8hpp_source.html">vsmc/rng/philox.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a97743d0b3a0036f46587ee6b34c49565"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> = std::array&lt; <a class="el" href="class_result_type.html">ResultType</a>, K &gt;</td></tr>
+<tr class="memitem:a97743d0b3a0036f46587ee6b34c49565"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> = std::array&lt; ResultType, K &gt;</td></tr>
 <tr class="separator:a97743d0b3a0036f46587ee6b34c49565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763581b1fbe665a5906885e27d2fc116"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> = std::array&lt; <a class="el" href="class_result_type.html">ResultType</a>, K/2 &gt;</td></tr>
+<tr class="memitem:a763581b1fbe665a5906885e27d2fc116"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> = std::array&lt; ResultType, K/2 &gt;</td></tr>
 <tr class="separator:a763581b1fbe665a5906885e27d2fc116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2e61339472f45f5b1fbe9c4b57b1fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> = <a class="el" href="class_result_type.html">ResultType</a></td></tr>
+<tr class="memitem:a2e2e61339472f45f5b1fbe9c4b57b1fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> = ResultType</td></tr>
 <tr class="separator:a2e2e61339472f45f5b1fbe9c4b57b1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e5f768f92d7693528b5c1b4df91c677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a6e5f768f92d7693528b5c1b4df91c677">PhiloxEngine</a> (<a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> s=0)</td></tr>
 <tr class="separator:a6e5f768f92d7693528b5c1b4df91c677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2489b3707c1d25fc601df2d77f4439"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
-<tr class="memitem:a8c2489b3707c1d25fc601df2d77f4439"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a8c2489b3707c1d25fc601df2d77f4439">PhiloxEngine</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
+<tr class="memitem:a8c2489b3707c1d25fc601df2d77f4439"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a8c2489b3707c1d25fc601df2d77f4439">PhiloxEngine</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
 <tr class="separator:a8c2489b3707c1d25fc601df2d77f4439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ffabb92623076960375358e296c252c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a2ffabb92623076960375358e296c252c">PhiloxEngine</a> (const <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> &amp;k)</td></tr>
 <tr class="separator:a2ffabb92623076960375358e296c252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa23cb309201a66e2d8c1e360b1f5ec9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#aa23cb309201a66e2d8c1e360b1f5ec9c">seed</a> (<a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> s)</td></tr>
 <tr class="separator:aa23cb309201a66e2d8c1e360b1f5ec9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ceadf57545dd43c8d135411e1ac9e94"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
-<tr class="memitem:a1ceadf57545dd43c8d135411e1ac9e94"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a1ceadf57545dd43c8d135411e1ac9e94">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
+<tr class="memitem:a1ceadf57545dd43c8d135411e1ac9e94"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a1ceadf57545dd43c8d135411e1ac9e94">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
 <tr class="separator:a1ceadf57545dd43c8d135411e1ac9e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad936a6fbb4deedd04306ff996a4adb0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#ad936a6fbb4deedd04306ff996a4adb0e">seed</a> (const <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> &amp;k)</td></tr>
 <tr class="separator:ad936a6fbb4deedd04306ff996a4adb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,22 +167,22 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8dafa5bef8458580f8b625e2c7deda80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a8dafa5bef8458580f8b625e2c7deda80">operator!=</a> (const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng2)</td></tr>
+<tr class="memitem:a8dafa5bef8458580f8b625e2c7deda80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a8dafa5bef8458580f8b625e2c7deda80">operator!=</a> (const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng2)</td></tr>
 <tr class="separator:a8dafa5bef8458580f8b625e2c7deda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d7ade88ca2f281d0113caa7b4ffdf22"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:a3d7ade88ca2f281d0113caa7b4ffdf22"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a3d7ade88ca2f281d0113caa7b4ffdf22">operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng)</td></tr>
+<tr class="memitem:a3d7ade88ca2f281d0113caa7b4ffdf22"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a3d7ade88ca2f281d0113caa7b4ffdf22">operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng)</td></tr>
 <tr class="separator:a3d7ade88ca2f281d0113caa7b4ffdf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8598a6d7544f7a30f81973dbe20b3216"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a8598a6d7544f7a30f81973dbe20b3216">operator==</a> (const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng2)</td></tr>
+<tr class="memitem:a8598a6d7544f7a30f81973dbe20b3216"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a8598a6d7544f7a30f81973dbe20b3216">operator==</a> (const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng2)</td></tr>
 <tr class="separator:a8598a6d7544f7a30f81973dbe20b3216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2163aba71c5573f03f97c7ff5ad29e2e"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:a2163aba71c5573f03f97c7ff5ad29e2e"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a2163aba71c5573f03f97c7ff5ad29e2e">operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng)</td></tr>
+<tr class="memitem:a2163aba71c5573f03f97c7ff5ad29e2e"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html#a2163aba71c5573f03f97c7ff5ad29e2e">operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng)</td></tr>
 <tr class="separator:a2163aba71c5573f03f97c7ff5ad29e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt;<br />
 class vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</h3>
 
-<p>Philox RNG engine reimplemented. </p>
+<p>Philox RNG engine. </p>
 
 <p>Definition at line <a class="el" href="philox_8hpp_source.html#l00252">252</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -193,7 +193,7 @@ class vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</h3>
 template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> =  std::array&lt;<a class="el" href="class_result_type.html">ResultType</a>, K&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> =  std::array&lt;ResultType, K&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,7 +209,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> =  std::array&lt;<a class="el" href="class_result_type.html">ResultType</a>, K / 2&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> =  std::array&lt;ResultType, K / 2&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,7 +225,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> =  <a class="el" href="class_result_type.html">ResultType</a></td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> =  ResultType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,7 +245,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>&#160;</td>
           <td class="paramname"><em>s</em> = <code>0</code></td><td>)</td>
@@ -275,7 +275,7 @@ template&lt;typename SeedSeq &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a> </td>
           <td>(</td>
           <td class="paramtype">SeedSeq &amp;&#160;</td>
           <td class="paramname"><em>seq</em>, </td>
@@ -283,7 +283,7 @@ template&lt;typename SeedSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -342,7 +342,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::ctr </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::ctr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -369,7 +369,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::ctr </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::ctr </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565">ctr_type</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -397,7 +397,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::discard </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::discard </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>&#160;</td>
           <td class="paramname"><em>nskip</em></td><td>)</td>
@@ -425,7 +425,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::key </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::key </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -452,7 +452,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::key </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::key </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -480,7 +480,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::max </td>
+          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::max </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -507,7 +507,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::min </td>
+          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::min </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -534,7 +534,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::operator() </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::operator() </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -561,7 +561,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::seed </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::seed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -591,7 +591,7 @@ template&lt;typename SeedSeq &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::seed </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::seed </td>
           <td>(</td>
           <td class="paramtype">SeedSeq &amp;&#160;</td>
           <td class="paramname"><em>seq</em>, </td>
@@ -599,7 +599,7 @@ template&lt;typename SeedSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a>, <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -629,7 +629,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::seed </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::seed </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html#a763581b1fbe665a5906885e27d2fc116">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -660,13 +660,13 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
         <tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng2</em>&#160;</td>
         </tr>
         <tr>
@@ -682,7 +682,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00369">369</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00376">376</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -706,7 +706,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng</em>&#160;</td>
         </tr>
         <tr>
@@ -722,7 +722,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00376">376</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00383">383</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -738,13 +738,13 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
         <tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng2</em>&#160;</td>
         </tr>
         <tr>
@@ -784,7 +784,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_philox_engine.html">PhiloxEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng</em>&#160;</td>
         </tr>
         <tr>
@@ -800,7 +800,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00392">392</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00399">399</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -815,7 +815,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::_Max = static_cast&lt; <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> &gt;(~(static_cast&lt; <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> &gt;(0)))</td>
+          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::_Max = static_cast&lt; <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> &gt;(~(static_cast&lt; <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> &gt;(0)))</td>
         </tr>
       </table>
   </td>
@@ -839,7 +839,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 10&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::_Min = 0</td>
+          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_philox_engine.html#a2e2e61339472f45f5b1fbe9c4b57b1fe">result_type</a> <a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine</a>&lt; ResultType, K, Rounds &gt;::_Min = 0</td>
         </tr>
       </table>
   </td>

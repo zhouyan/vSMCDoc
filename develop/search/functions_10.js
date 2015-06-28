@@ -2,6 +2,7 @@ var searchData=
 [
   ['r',['r',['../classvsmc_1_1internal_1_1_xorshift_index.html#a14e0b253b182e7fadb0c764390bf092a',1,'vsmc::internal::XorshiftIndex::r()'],['../classvsmc_1_1internal_1_1_xorshift_index_3_01_result_type_00_01_k_00_01_r_00_01_s_00_01false_01_4.html#a81e4855bb9094f34c9f2d64c8710cfd2',1,'vsmc::internal::XorshiftIndex&lt; ResultType, K, R, S, false &gt;::r()']]],
   ['rank',['rank',['../classvsmc_1_1_state_m_p_i.html#affcc87be4e22b0864bdc00ee262e4933',1,'vsmc::StateMPI']]],
+  ['rayleigh',['rayleigh',['../classvsmc_1_1_m_k_l_stream.html#a4988f0a390d1e8c333a3252baea47765',1,'vsmc::MKLStream::rayleigh(MKL_INT n, float *r, float a=0, float beta=1, MKL_INT method=VSL_RNG_METHOD_RAYLEIGH_ICDF)'],['../classvsmc_1_1_m_k_l_stream.html#afadf3405262d8c26ca8bf1f468cda064',1,'vsmc::MKLStream::rayleigh(MKL_INT n, double *r, double a=0, double beta=1, MKL_INT method=VSL_RNG_METHOD_RAYLEIGH_ICDF)']]],
   ['rdrand',['rdrand',['../group___r_d_r_a_n_d.html#gad54a0213751633f7b8058c775be88656',1,'vsmc']]],
   ['rdrand_3c_20std_3a_3auint16_5ft_20_3e',['rdrand&lt; std::uint16_t &gt;',['../group___r_d_r_a_n_d.html#ga31f9c6efff4c615f5039a94894bfbebd',1,'vsmc']]],
   ['rdrand_3c_20std_3a_3auint32_5ft_20_3e',['rdrand&lt; std::uint32_t &gt;',['../group___r_d_r_a_n_d.html#gaa7fbe8fe3bebbc2871b9af0ccb03c0af',1,'vsmc']]],
@@ -50,7 +51,7 @@ var searchData=
   ['resize_5fdim',['resize_dim',['../classvsmc_1_1internal_1_1_state_matrix_dim_3_01_dynamic_01_4.html#a4a73beeb44f505e38129ff194b6df025',1,'vsmc::internal::StateMatrixDim&lt; Dynamic &gt;::resize_dim()'],['../classvsmc_1_1_state_matrix_base.html#a6e1f7b1b3be4da799e167617b4af1f23',1,'vsmc::StateMatrixBase::resize_dim()']]],
   ['resize_5fstate',['resize_state',['../classvsmc_1_1_state_c_l.html#a9bbb86fb3c2ca9392b690eae2e281185',1,'vsmc::StateCL']]],
   ['rng',['rng',['../classvsmc_1_1_particle.html#a705e50898e42498f2ea0b807d7a2d543',1,'vsmc::Particle::rng()'],['../classvsmc_1_1_single_particle_base.html#af0f69288f402f2652c88e6390ed70d67',1,'vsmc::SingleParticleBase::rng()']]],
-  ['rng_5frand',['rng_rand',['../namespacevsmc.html#a16ba3eaad6e1b627092cc8d1f9eba654',1,'vsmc']]],
+  ['rng_5frand',['rng_rand',['../namespacevsmc.html#abc5d41cc74edbf3271a1d5136913e262',1,'vsmc::rng_rand(AESNIEngine&lt; ResultType, KeySeqType, Rounds, Blocks &gt; &amp;rng, std::size_t n, ResultType *r)'],['../group___r_n_g.html#ga16ba3eaad6e1b627092cc8d1f9eba654',1,'vsmc::rng_rand(RNGType &amp;rng, std::size_t n, typename RNGType::result_type *r)'],['../namespacevsmc.html#a12792ad32de59d7c4bcf02115e6c15c1',1,'vsmc::rng_rand(MKLEngine&lt; BRNG, Bits &gt; &amp;rng, std::size_t n, typename MKLEngine&lt; BRNG, Bits &gt;::result_type *r)']]],
   ['rng_5fset',['rng_set',['../classvsmc_1_1_particle.html#af49dbfde3e232fb1d6b1f1f69524040a',1,'vsmc::Particle::rng_set()'],['../classvsmc_1_1_particle.html#ae475cbf4ad923bc911a4bda5881acd51',1,'vsmc::Particle::rng_set() const ']]],
   ['rngsetscalar',['RNGSetScalar',['../classvsmc_1_1_r_n_g_set_scalar.html#a860eef1410b52b3be2f034e60ef993a1',1,'vsmc::RNGSetScalar']]],
   ['rngsetvector',['RNGSetVector',['../classvsmc_1_1_r_n_g_set_vector.html#a256e24b9eccb2146cfceed991d54a6dc',1,'vsmc::RNGSetVector']]],

@@ -82,7 +82,6 @@ var searchData=
   ['vsmc_5fnormal01_5frand',['vsmc_normal01_rand',['../normal01_8h.html#ac454ce688d068274164ddc5a3e56d290',1,'normal01.h']]],
   ['vsmc_5fopencl_5fversion',['VSMC_OPENCL_VERSION',['../opencl_2internal_2common_8hpp.html#af706fd341d56625be924da72a0d900e7',1,'common.hpp']]],
   ['vsmc_5frdrand_5fntrial_5fmax',['VSMC_RDRAND_NTRIAL_MAX',['../rdrand_8hpp.html#a7ed605c1917e2b9f485b1fc9767ecc96',1,'rdrand.hpp']]],
-  ['vsmc_5frng_5fmkl_5fvsl_5fbuffer_5fsize',['VSMC_RNG_MKL_VSL_BUFFER_SIZE',['../rng_2mkl_8hpp.html#a6fd470bcef602fcbf13ccef0f9a60757',1,'mkl.hpp']]],
   ['vsmc_5frngc_5fu01_5f23',['VSMC_RNGC_U01_23',['../u01_8h.html#a125a8f6dea363a580920540252a7a5e9',1,'u01.h']]],
   ['vsmc_5frngc_5fu01_5f24',['VSMC_RNGC_U01_24',['../u01_8h.html#a9ec80a9f91eb99576597c732ffca2c64',1,'u01.h']]],
   ['vsmc_5frngc_5fu01_5f31',['VSMC_RNGC_U01_31',['../u01_8h.html#a5dacd637fcec6506c948365bc9536851',1,'u01.h']]],

@@ -97,7 +97,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">aes_ni.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -126,8 +127,14 @@ Macros</h2></td></tr>
 <tr class="separator:a49076728f930d1e53b17d2e56a7fd285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5121a74dc96dd4f4cee315dfdfb43467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes__ni_8hpp.html#a5121a74dc96dd4f4cee315dfdfb43467">VSMC_STATIC_ASSERT_RNG_AES_NI_BLOCKS</a>(Blocks)&#160;&#160;&#160;<a class="el" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Blocks &gt; 0), &quot;**AESNIEngine** USED WITH ZERO BLOCKS&quot;)</td></tr>
 <tr class="separator:a5121a74dc96dd4f4cee315dfdfb43467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e59542f863bacf00b4c9c6aeec12e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1">VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE</a>(<a class="el" href="class_result_type.html">ResultType</a>)</td></tr>
+<tr class="memitem:a08e59542f863bacf00b4c9c6aeec12e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1">VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE</a>(ResultType)</td></tr>
 <tr class="separator:a08e59542f863bacf00b4c9c6aeec12e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abc5d41cc74edbf3271a1d5136913e262"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </td></tr>
+<tr class="memitem:abc5d41cc74edbf3271a1d5136913e262"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#abc5d41cc74edbf3271a1d5136913e262">vsmc::rng_rand</a> (AESNIEngine&lt; ResultType, KeySeqType, Rounds, Blocks &gt; &amp;rng, std::size_t n, ResultType *r)</td></tr>
+<tr class="separator:abc5d41cc74edbf3271a1d5136913e262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a49076728f930d1e53b17d2e56a7fd285"></a>
@@ -140,8 +147,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="aes__ni_8hpp.html#a5121a74dc96dd4f4cee315dfdfb43467">VSMC_STATIC_ASSERT_RNG_AES_NI_BLOCKS</a>(Blocks);                             <a class="code" href="aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1">\</a></div>
-<div class="line"><a class="code" href="aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1">    VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE</a>(<a class="code" href="class_result_type.html">ResultType</a>);</div>
-<div class="ttc" id="class_result_type_html"><div class="ttname"><a href="class_result_type.html">ResultType</a></div></div>
+<div class="line"><a class="code" href="aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1">    VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE</a>(ResultType);</div>
 <div class="ttc" id="aes__ni_8hpp_html_a08e59542f863bacf00b4c9c6aeec12e1"><div class="ttname"><a href="aes__ni_8hpp.html#a08e59542f863bacf00b4c9c6aeec12e1">VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="aes__ni_8hpp_source.html#l00043">aes_ni.hpp:43</a></div></div>
 <div class="ttc" id="aes__ni_8hpp_html_a5121a74dc96dd4f4cee315dfdfb43467"><div class="ttname"><a href="aes__ni_8hpp.html#a5121a74dc96dd4f4cee315dfdfb43467">VSMC_STATIC_ASSERT_RNG_AES_NI_BLOCKS</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_AES_NI_BLOCKS(Blocks)</div><div class="ttdef"><b>Definition:</b> <a href="aes__ni_8hpp_source.html#l00040">aes_ni.hpp:40</a></div></div>
 </div><!-- fragment -->
@@ -175,7 +181,7 @@ Macros</h2></td></tr>
           <td class="memname">#define VSMC_STATIC_ASSERT_RNG_AES_NI_RESULT_TYPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="class_result_type.html">ResultType</a></td><td>)</td>
+          <td class="paramname">ResultType</td><td>)</td>
           <td></td>
         </tr>
       </table>

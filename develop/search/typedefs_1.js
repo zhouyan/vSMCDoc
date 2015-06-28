@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['base_5feng_5ftype',['base_eng_type',['../classvsmc_1_1_a_e_s128_engine.html#a982cb6512463239fd5d5ca835370518d',1,'vsmc::AES128Engine::base_eng_type()'],['../classvsmc_1_1_a_e_s192_engine.html#abd856a1839ce8759233095bde6b869c4',1,'vsmc::AES192Engine::base_eng_type()'],['../classvsmc_1_1_a_e_s256_engine.html#a4b5f68ff8a89b18f97a1a6975959595b',1,'vsmc::AES256Engine::base_eng_type()'],['../classvsmc_1_1_a_r_s_engine.html#ab249b4ae0a3c1a7946e24bb950c02563',1,'vsmc::ARSEngine::base_eng_type()']]]
+  ['cl_5fid',['cl_id',['../classvsmc_1_1_state_c_l.html#a6eaa8637fa48556ee4641bf3db6c27f1',1,'vsmc::StateCL::cl_id()'],['../classvsmc_1_1_c_l_manager.html#ab19115ab9f88eaef2c3cddc45bd4e007',1,'vsmc::CLManager::cl_id()'],['../classvsmc_1_1_c_l_setup.html#adeb4b62161ec069bd7a91005eca88f9d',1,'vsmc::CLSetup::cl_id()']]],
+  ['clock_5ftype',['clock_type',['../classvsmc_1_1_stop_watch_clock_adapter.html#a67905c2a84d51d0385beb04cbcc8385c',1,'vsmc::StopWatchClockAdapter']]],
+  ['ctr_5ftype',['ctr_type',['../classvsmc_1_1_a_e_s_n_i_engine.html#af573db65861760fd700d0deb75f2c823',1,'vsmc::AESNIEngine::ctr_type()'],['../classvsmc_1_1_philox_engine.html#a97743d0b3a0036f46587ee6b34c49565',1,'vsmc::PhiloxEngine::ctr_type()'],['../classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289',1,'vsmc::ThreefryEngine::ctr_type()']]]
 ];

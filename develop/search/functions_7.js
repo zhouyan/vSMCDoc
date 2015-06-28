@@ -33,5 +33,6 @@ var searchData=
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../classvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
   ['host_5fptr',['host_ptr',['../classvsmc_1_1_c_l_buffer.html#aa92bf47a5015a8b4410506df800e1b09',1,'vsmc::CLBuffer']]],
-  ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]]
+  ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]],
+  ['hypergeometric',['hypergeometric',['../classvsmc_1_1_m_k_l_stream.html#a1fcd88cc33d76890b9ae9bade7c7e757',1,'vsmc::MKLStream']]]
 ];

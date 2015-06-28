@@ -147,7 +147,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01std_1_1uint64__t_00_011_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; std::uint64_t, 1 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_engine.html">vsmc::PhiloxEngine&lt; ResultType, K, Rounds &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG engine reimplemented.  <a href="classvsmc_1_1_philox_engine.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG engine.  <a href="classvsmc_1_1_philox_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -168,7 +168,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga3fd18e09fa563ebb7db4935844f27d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d2001a058708408936ca3339166495"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#ae1d2001a058708408936ca3339166495">VSMC_STATIC_ASSERT_RNG_PHILOX</a></td></tr>
 <tr class="separator:ae1d2001a058708408936ca3339166495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71d8c5b10e0a4c9058d512ee59625f7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(<a class="el" href="class_result_type.html">ResultType</a>)</td></tr>
+<tr class="memitem:a71d8c5b10e0a4c9058d512ee59625f7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(ResultType)</td></tr>
 <tr class="separator:a71d8c5b10e0a4c9058d512ee59625f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de86ca1eaf53a8d0d4f5467978fe452"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a>(K)</td></tr>
 <tr class="separator:a8de86ca1eaf53a8d0d4f5467978fe452"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,16 +179,16 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga0002aa661edf42df3eefb75a1aa3ead5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 32-bits Philox engine.  <a href="group___philox.html#ga0002aa661edf42df3eefb75a1aa3ead5">More...</a><br /></td></tr>
 <tr class="separator:ga0002aa661edf42df3eefb75a1aa3ead5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcebe4d07e9d1f54299545e7b70953c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___philox.html#gadcebe4d07e9d1f54299545e7b70953c4">vsmc::Philox2x32</a> = PhiloxEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 2 &gt;</td></tr>
-<tr class="memdesc:gadcebe4d07e9d1f54299545e7b70953c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox2x32 RNG engine reimplemented.  <a href="group___philox.html#gadcebe4d07e9d1f54299545e7b70953c4">More...</a><br /></td></tr>
+<tr class="memdesc:gadcebe4d07e9d1f54299545e7b70953c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox2x32 RNG engine.  <a href="group___philox.html#gadcebe4d07e9d1f54299545e7b70953c4">More...</a><br /></td></tr>
 <tr class="separator:gadcebe4d07e9d1f54299545e7b70953c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa0d850df625976080945bdf6b3dbd261"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___philox.html#gaa0d850df625976080945bdf6b3dbd261">vsmc::Philox2x64</a> = PhiloxEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 2 &gt;</td></tr>
-<tr class="memdesc:gaa0d850df625976080945bdf6b3dbd261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox2x64 RNG engine reimplemented.  <a href="group___philox.html#gaa0d850df625976080945bdf6b3dbd261">More...</a><br /></td></tr>
+<tr class="memdesc:gaa0d850df625976080945bdf6b3dbd261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox2x64 RNG engine.  <a href="group___philox.html#gaa0d850df625976080945bdf6b3dbd261">More...</a><br /></td></tr>
 <tr class="separator:gaa0d850df625976080945bdf6b3dbd261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e390c7d3bc81b7e9e3e64d6f272099a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___philox.html#ga2e390c7d3bc81b7e9e3e64d6f272099a">vsmc::Philox4x32</a> = PhiloxEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 4 &gt;</td></tr>
-<tr class="memdesc:ga2e390c7d3bc81b7e9e3e64d6f272099a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox4x32 RNG engine reimplemented.  <a href="group___philox.html#ga2e390c7d3bc81b7e9e3e64d6f272099a">More...</a><br /></td></tr>
+<tr class="memdesc:ga2e390c7d3bc81b7e9e3e64d6f272099a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox4x32 RNG engine.  <a href="group___philox.html#ga2e390c7d3bc81b7e9e3e64d6f272099a">More...</a><br /></td></tr>
 <tr class="separator:ga2e390c7d3bc81b7e9e3e64d6f272099a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f9d3376d26aa7fab9409458f4855c54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___philox.html#ga1f9d3376d26aa7fab9409458f4855c54">vsmc::Philox4x64</a> = PhiloxEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 4 &gt;</td></tr>
-<tr class="memdesc:ga1f9d3376d26aa7fab9409458f4855c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox4x64 RNG engine reimplemented.  <a href="group___philox.html#ga1f9d3376d26aa7fab9409458f4855c54">More...</a><br /></td></tr>
+<tr class="memdesc:ga1f9d3376d26aa7fab9409458f4855c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox4x64 RNG engine.  <a href="group___philox.html#ga1f9d3376d26aa7fab9409458f4855c54">More...</a><br /></td></tr>
 <tr class="separator:ga1f9d3376d26aa7fab9409458f4855c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabf043c1d3df03e748ac7a4356c69b458"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___philox.html#gabf043c1d3df03e748ac7a4356c69b458">vsmc::Philox_64</a> = Philox4x64</td></tr>
 <tr class="memdesc:gabf043c1d3df03e748ac7a4356c69b458"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits Philox engine.  <a href="group___philox.html#gabf043c1d3df03e748ac7a4356c69b458">More...</a><br /></td></tr>
@@ -196,12 +196,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t I&gt; </td></tr>
-<tr class="memitem:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a027727fd39d6b7111f5dd584d1bb32e5">vsmc::internal::philox_hilo</a> (<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> b, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &amp;hi, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &amp;lo)</td></tr>
-<tr class="separator:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756925bc67d36d416a9ef5ab87ece09f"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t I&gt; </td></tr>
 <tr class="memitem:a756925bc67d36d416a9ef5ab87ece09f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a756925bc67d36d416a9ef5ab87ece09f">vsmc::internal::philox_hilo</a> (<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> b, <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &amp;hi, <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &amp;lo)</td></tr>
 <tr class="separator:a756925bc67d36d416a9ef5ab87ece09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t I&gt; </td></tr>
+<tr class="memitem:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a027727fd39d6b7111f5dd584d1bb32e5">vsmc::internal::philox_hilo</a> (<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> b, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &amp;hi, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &amp;lo)</td></tr>
+<tr class="separator:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a9b81cf04ed974de83a3a5c2da3b4e316"></a>
@@ -296,9 +296,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(<a class="code" href="class_result_type.html">ResultType</a>);                    <a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(ResultType);                    <a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">\</a></div>
 <div class="line"><a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">    VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a>(K);</div>
-<div class="ttc" id="class_result_type_html"><div class="ttname"><a href="class_result_type.html">ResultType</a></div></div>
 <div class="ttc" id="philox_8hpp_html_a8de86ca1eaf53a8d0d4f5467978fe452"><div class="ttname"><a href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE(K)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00047">philox.hpp:47</a></div></div>
 <div class="ttc" id="philox_8hpp_html_a71d8c5b10e0a4c9058d512ee59625f7d"><div class="ttname"><a href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00041">philox.hpp:41</a></div></div>
 </div><!-- fragment -->
@@ -314,7 +313,7 @@ Functions</h2></td></tr>
           <td class="memname">#define VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="class_result_type.html">ResultType</a></td><td>)</td>
+          <td class="paramname">ResultType</td><td>)</td>
           <td></td>
         </tr>
       </table>

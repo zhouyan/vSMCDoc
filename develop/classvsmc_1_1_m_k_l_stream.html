@@ -115,25 +115,156 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fdbb4aec72931bd4a152b31ba0b4a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a1fdbb4aec72931bd4a152b31ba0b4a11">MKLStream</a> ()=default</td></tr>
 <tr class="separator:a1fdbb4aec72931bd4a152b31ba0b4a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b545018237b6152e0bf163fc9cc5d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#af5b545018237b6152e0bf163fc9cc5d3">MKLStream</a> (MKL_INT brng, MKL_UINT seed)</td></tr>
+<tr class="memdesc:af5b545018237b6152e0bf163fc9cc5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslNewStream</code>  <a href="#af5b545018237b6152e0bf163fc9cc5d3">More...</a><br /></td></tr>
 <tr class="separator:af5b545018237b6152e0bf163fc9cc5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14736c3d85a1479f495309fad2051ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a14736c3d85a1479f495309fad2051ac2">MKLStream</a> (MKL_INT brng, MKL_INT n, unsigned *params)</td></tr>
+<tr class="memdesc:a14736c3d85a1479f495309fad2051ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslNewStreamEx</code>  <a href="#a14736c3d85a1479f495309fad2051ac2">More...</a><br /></td></tr>
 <tr class="separator:a14736c3d85a1479f495309fad2051ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa54d9466d49916d9796adfae068b5a8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aa54d9466d49916d9796adfae068b5a8e">MKLStream</a> (const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;other)</td></tr>
+<tr class="memdesc:aa54d9466d49916d9796adfae068b5a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslCopyStream</code>  <a href="#aa54d9466d49916d9796adfae068b5a8e">More...</a><br /></td></tr>
 <tr class="separator:aa54d9466d49916d9796adfae068b5a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9019798122452d5edc45adea4152c2c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a9019798122452d5edc45adea4152c2c9">MKLStream</a> (<a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a9019798122452d5edc45adea4152c2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217f9f10d7f6ae3558dde3f2e13f83df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a217f9f10d7f6ae3558dde3f2e13f83df">get_stream_size</a> () const </td></tr>
-<tr class="separator:a217f9f10d7f6ae3558dde3f2e13f83df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40621591518f22ae6a73db3629d950f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aa40621591518f22ae6a73db3629d950f">get_stream_state_brng</a> () const </td></tr>
-<tr class="separator:aa40621591518f22ae6a73db3629d950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba37dc12ac5be40d153872ae418969d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aba37dc12ac5be40d153872ae418969d9">bernoulli</a> (MKL_INT n, int *r, double p=0.5, MKL_INT method=VSL_RNG_METHOD_BERNOULLI_ICDF)</td></tr>
+<tr class="memdesc:aba37dc12ac5be40d153872ae418969d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngBernoulli</code>  <a href="#aba37dc12ac5be40d153872ae418969d9">More...</a><br /></td></tr>
+<tr class="separator:aba37dc12ac5be40d153872ae418969d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32ade1156b9795928f37f4e2af4fff3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a> (MKL_INT n, float *r, float p=1, float q=1, float a=0, float beta=1, MKL_INT method=VSL_RNG_METHOD_BETA_CJA)</td></tr>
+<tr class="memdesc:ab32ade1156b9795928f37f4e2af4fff3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngBeta</code>  <a href="#ab32ade1156b9795928f37f4e2af4fff3">More...</a><br /></td></tr>
+<tr class="separator:ab32ade1156b9795928f37f4e2af4fff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf56f0ac176522b3079eda797fcbb0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#abcf56f0ac176522b3079eda797fcbb0e">beta</a> (MKL_INT n, double *r, double p=1, double q=1, double a=0, double beta=1, MKL_INT method=VSL_RNG_METHOD_BETA_CJA)</td></tr>
+<tr class="memdesc:abcf56f0ac176522b3079eda797fcbb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngBeta</code>  <a href="#abcf56f0ac176522b3079eda797fcbb0e">More...</a><br /></td></tr>
+<tr class="separator:abcf56f0ac176522b3079eda797fcbb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa158ed4eb5b5172bfb65833b9ac88093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aa158ed4eb5b5172bfb65833b9ac88093">binomial</a> (MKL_INT n, int *r, int ntrial=1, double p=0.5, MKL_INT method=VSL_RNG_METHOD_BINOMIAL_BTPE)</td></tr>
+<tr class="memdesc:aa158ed4eb5b5172bfb65833b9ac88093"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngBinomial</code>  <a href="#aa158ed4eb5b5172bfb65833b9ac88093">More...</a><br /></td></tr>
+<tr class="separator:aa158ed4eb5b5172bfb65833b9ac88093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782e52a17a5470e552fd0f55332401ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a782e52a17a5470e552fd0f55332401ae">cauchy</a> (MKL_INT n, float *r, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_CAUCHY_ICDF)</td></tr>
+<tr class="memdesc:a782e52a17a5470e552fd0f55332401ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngCauchy</code>  <a href="#a782e52a17a5470e552fd0f55332401ae">More...</a><br /></td></tr>
+<tr class="separator:a782e52a17a5470e552fd0f55332401ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeef63450ccb8e910e6b760d8644386c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#adeef63450ccb8e910e6b760d8644386c">cauchy</a> (MKL_INT n, double *r, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_CAUCHY_ICDF)</td></tr>
+<tr class="memdesc:adeef63450ccb8e910e6b760d8644386c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngCauchy</code>  <a href="#adeef63450ccb8e910e6b760d8644386c">More...</a><br /></td></tr>
+<tr class="separator:adeef63450ccb8e910e6b760d8644386c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec0be612d7c29b057731b90d8c709a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a5ec0be612d7c29b057731b90d8c709a5">exponential</a> (MKL_INT n, float *r, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_EXPONENTIAL_ICDF)</td></tr>
+<tr class="memdesc:a5ec0be612d7c29b057731b90d8c709a5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngExponential</code>  <a href="#a5ec0be612d7c29b057731b90d8c709a5">More...</a><br /></td></tr>
+<tr class="separator:a5ec0be612d7c29b057731b90d8c709a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de4fc75696c74e7d1319e1a53479029"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a5de4fc75696c74e7d1319e1a53479029">exponential</a> (MKL_INT n, double *r, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_EXPONENTIAL_ICDF)</td></tr>
+<tr class="memdesc:a5de4fc75696c74e7d1319e1a53479029"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngExponential</code>  <a href="#a5de4fc75696c74e7d1319e1a53479029">More...</a><br /></td></tr>
+<tr class="separator:a5de4fc75696c74e7d1319e1a53479029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d2fc638d30d5e7f7f592b3e408abc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#ad8d2fc638d30d5e7f7f592b3e408abc0">gamma</a> (MKL_INT n, float *r, float alpha=1, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_GAMMA_GNORM)</td></tr>
+<tr class="memdesc:ad8d2fc638d30d5e7f7f592b3e408abc0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngGamma</code>  <a href="#ad8d2fc638d30d5e7f7f592b3e408abc0">More...</a><br /></td></tr>
+<tr class="separator:ad8d2fc638d30d5e7f7f592b3e408abc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae46975b44cceb0b3c3f1232810d0c6d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#ae46975b44cceb0b3c3f1232810d0c6d1">gamma</a> (MKL_INT n, double *r, double alpha=1, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_GAMMA_GNORM)</td></tr>
+<tr class="memdesc:ae46975b44cceb0b3c3f1232810d0c6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngGamma</code>  <a href="#ae46975b44cceb0b3c3f1232810d0c6d1">More...</a><br /></td></tr>
+<tr class="separator:ae46975b44cceb0b3c3f1232810d0c6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8567eb1c85a086b3de01ede4321ad3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#af8567eb1c85a086b3de01ede4321ad3a">gaussian</a> (MKL_INT n, float *r, float a=0, float sigma=1, MKL_INT method=VSL_RNG_METHOD_GAUSSIAN_BOXMULLER2)</td></tr>
+<tr class="memdesc:af8567eb1c85a086b3de01ede4321ad3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngGaussian</code>  <a href="#af8567eb1c85a086b3de01ede4321ad3a">More...</a><br /></td></tr>
+<tr class="separator:af8567eb1c85a086b3de01ede4321ad3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ebeabba2ab981053ba7c014953ba6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aa5ebeabba2ab981053ba7c014953ba6d">gaussian</a> (MKL_INT n, double *r, double a=0, double sigma=1, MKL_INT method=VSL_RNG_METHOD_GAUSSIAN_BOXMULLER2)</td></tr>
+<tr class="memdesc:aa5ebeabba2ab981053ba7c014953ba6d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngGaussian</code>  <a href="#aa5ebeabba2ab981053ba7c014953ba6d">More...</a><br /></td></tr>
+<tr class="separator:aa5ebeabba2ab981053ba7c014953ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e2d8e149efaba0ef6eef52fd544d72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a71e2d8e149efaba0ef6eef52fd544d72">gaussian_mv</a> (MKL_INT n, float *r, MKL_INT dimen, MKL_INT mstorage, const float *a, const float *t, MKL_INT method=VSL_RNG_METHOD_GAUSSIANMV_BOXMULLER2)</td></tr>
+<tr class="memdesc:a71e2d8e149efaba0ef6eef52fd544d72"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngGaussianMV</code>  <a href="#a71e2d8e149efaba0ef6eef52fd544d72">More...</a><br /></td></tr>
+<tr class="separator:a71e2d8e149efaba0ef6eef52fd544d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192814ba447a7ac7ee4c5f8e8d3d347c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a192814ba447a7ac7ee4c5f8e8d3d347c">gaussian_mv</a> (MKL_INT n, double *r, MKL_INT dimen, MKL_INT mstorage, const double *a, const double *t, MKL_INT method=VSL_RNG_METHOD_GAUSSIANMV_BOXMULLER2)</td></tr>
+<tr class="memdesc:a192814ba447a7ac7ee4c5f8e8d3d347c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngGaussianMV</code>  <a href="#a192814ba447a7ac7ee4c5f8e8d3d347c">More...</a><br /></td></tr>
+<tr class="separator:a192814ba447a7ac7ee4c5f8e8d3d347c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9936ef8025acbb308d744fd806a95ab7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a9936ef8025acbb308d744fd806a95ab7">geometric</a> (MKL_INT n, int *r, double p=0.5, MKL_INT method=VSL_RNG_METHOD_GEOMETRIC_ICDF)</td></tr>
+<tr class="memdesc:a9936ef8025acbb308d744fd806a95ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngGeometric</code>  <a href="#a9936ef8025acbb308d744fd806a95ab7">More...</a><br /></td></tr>
+<tr class="separator:a9936ef8025acbb308d744fd806a95ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168d1bd620701f0470a8a35c92bc50c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a168d1bd620701f0470a8a35c92bc50c3">get_brng</a> () const </td></tr>
+<tr class="memdesc:a168d1bd620701f0470a8a35c92bc50c3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslGetStreamStateBrng</code>  <a href="#a168d1bd620701f0470a8a35c92bc50c3">More...</a><br /></td></tr>
+<tr class="separator:a168d1bd620701f0470a8a35c92bc50c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad22a981a3b7ec3359402099fba40a3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aad22a981a3b7ec3359402099fba40a3e">get_size</a> () const </td></tr>
+<tr class="memdesc:aad22a981a3b7ec3359402099fba40a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslGetStreamSize</code>  <a href="#aad22a981a3b7ec3359402099fba40a3e">More...</a><br /></td></tr>
+<tr class="separator:aad22a981a3b7ec3359402099fba40a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339072944c957b08cc954c0f82af2742"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a339072944c957b08cc954c0f82af2742">gumbel</a> (MKL_INT n, float *r, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_GUMBEL_ICDF)</td></tr>
+<tr class="memdesc:a339072944c957b08cc954c0f82af2742"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngGumbel</code>  <a href="#a339072944c957b08cc954c0f82af2742">More...</a><br /></td></tr>
+<tr class="separator:a339072944c957b08cc954c0f82af2742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf9ff05a8f6d24fa4edd95db17ad735"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#afcf9ff05a8f6d24fa4edd95db17ad735">gumbel</a> (MKL_INT n, double *r, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_GUMBEL_ICDF)</td></tr>
+<tr class="memdesc:afcf9ff05a8f6d24fa4edd95db17ad735"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngGumbel</code>  <a href="#afcf9ff05a8f6d24fa4edd95db17ad735">More...</a><br /></td></tr>
+<tr class="separator:afcf9ff05a8f6d24fa4edd95db17ad735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcd88cc33d76890b9ae9bade7c7e757"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a1fcd88cc33d76890b9ae9bade7c7e757">hypergeometric</a> (MKL_INT n, int *r, int l, int s, int m, MKL_INT method=VSL_RNG_METHOD_HYPERGEOMETRIC_H2PE)</td></tr>
+<tr class="memdesc:a1fcd88cc33d76890b9ae9bade7c7e757"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngHypergeometric</code>  <a href="#a1fcd88cc33d76890b9ae9bade7c7e757">More...</a><br /></td></tr>
+<tr class="separator:a1fcd88cc33d76890b9ae9bade7c7e757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d81d7974574518ab374f3dc57f29522"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a0d81d7974574518ab374f3dc57f29522">laplace</a> (MKL_INT n, float *r, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_LAPLACE_ICDF)</td></tr>
+<tr class="memdesc:a0d81d7974574518ab374f3dc57f29522"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngLaplace</code>  <a href="#a0d81d7974574518ab374f3dc57f29522">More...</a><br /></td></tr>
+<tr class="separator:a0d81d7974574518ab374f3dc57f29522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6804cb433ab714c0afb121b522b737"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#acb6804cb433ab714c0afb121b522b737">laplace</a> (MKL_INT n, double *r, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_LAPLACE_ICDF)</td></tr>
+<tr class="memdesc:acb6804cb433ab714c0afb121b522b737"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngLaplace</code>  <a href="#acb6804cb433ab714c0afb121b522b737">More...</a><br /></td></tr>
+<tr class="separator:acb6804cb433ab714c0afb121b522b737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42634602c1b09cdaef75a859f7f821dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a42634602c1b09cdaef75a859f7f821dd">leapfrog</a> (MKL_INT k, MKL_INT nstreams)</td></tr>
+<tr class="memdesc:a42634602c1b09cdaef75a859f7f821dd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslLeapfrogStream</code>  <a href="#a42634602c1b09cdaef75a859f7f821dd">More...</a><br /></td></tr>
+<tr class="separator:a42634602c1b09cdaef75a859f7f821dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92c4a0c201b240e502cf26dd779b891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aa92c4a0c201b240e502cf26dd779b891">load_f</a> (const std::string &amp;fname)</td></tr>
+<tr class="memdesc:aa92c4a0c201b240e502cf26dd779b891"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslSaveStreamF</code>  <a href="#aa92c4a0c201b240e502cf26dd779b891">More...</a><br /></td></tr>
+<tr class="separator:aa92c4a0c201b240e502cf26dd779b891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833320d6c484ece66be885733044614c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a833320d6c484ece66be885733044614c">load_m</a> (const char *memptr)</td></tr>
+<tr class="memdesc:a833320d6c484ece66be885733044614c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslLoadStreamM</code>  <a href="#a833320d6c484ece66be885733044614c">More...</a><br /></td></tr>
+<tr class="separator:a833320d6c484ece66be885733044614c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a1821cc097c6756bdb22bd807ed921"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a59a1821cc097c6756bdb22bd807ed921">lognormal</a> (MKL_INT n, float *r, float a=0, float sigma=1, float b=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_LOGNORMAL_BOXMULLER2)</td></tr>
+<tr class="memdesc:a59a1821cc097c6756bdb22bd807ed921"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngLognormal</code>  <a href="#a59a1821cc097c6756bdb22bd807ed921">More...</a><br /></td></tr>
+<tr class="separator:a59a1821cc097c6756bdb22bd807ed921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae6152ad8d9f862a276884170cc92ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#acae6152ad8d9f862a276884170cc92ef">lognormal</a> (MKL_INT n, double *r, double a=0, double sigma=1, double b=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_LOGNORMAL_BOXMULLER2)</td></tr>
+<tr class="memdesc:acae6152ad8d9f862a276884170cc92ef"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngLognormal</code>  <a href="#acae6152ad8d9f862a276884170cc92ef">More...</a><br /></td></tr>
+<tr class="separator:acae6152ad8d9f862a276884170cc92ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369c4ccc23cd4751d7ba57e9f919f5ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a369c4ccc23cd4751d7ba57e9f919f5ed">neg_binomial</a> (MKL_INT n, int *r, double a=1, double p=0.5, MKL_INT method=VSL_RNG_METHOD_NEGBINOMIAL_NBAR)</td></tr>
+<tr class="memdesc:a369c4ccc23cd4751d7ba57e9f919f5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngNegbinomial</code>  <a href="#a369c4ccc23cd4751d7ba57e9f919f5ed">More...</a><br /></td></tr>
+<tr class="separator:a369c4ccc23cd4751d7ba57e9f919f5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5af12b19cf31f9f179ef9e0be813c7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#af5af12b19cf31f9f179ef9e0be813c7f">operator=</a> (const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;other)</td></tr>
+<tr class="memdesc:af5af12b19cf31f9f179ef9e0be813c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslCopyStream</code>/<code>vslCopySreamState</code>  <a href="#af5af12b19cf31f9f179ef9e0be813c7f">More...</a><br /></td></tr>
 <tr class="separator:af5af12b19cf31f9f179ef9e0be813c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace395faf6347054e5a35d92f7c8bdfaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#ace395faf6347054e5a35d92f7c8bdfaa">operator=</a> (<a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ace395faf6347054e5a35d92f7c8bdfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666a6fa0d14f82890fced5cb08424ede"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a666a6fa0d14f82890fced5cb08424ede">poisson</a> (MKL_INT n, int *r, double lambda=1, MKL_INT method=VSL_RNG_METHOD_POISSON_PTPE)</td></tr>
+<tr class="memdesc:a666a6fa0d14f82890fced5cb08424ede"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngPoisson</code>  <a href="#a666a6fa0d14f82890fced5cb08424ede">More...</a><br /></td></tr>
+<tr class="separator:a666a6fa0d14f82890fced5cb08424ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d091c86bb9a1b522b1ce1df1ab55ad6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a4d091c86bb9a1b522b1ce1df1ab55ad6">poisson_v</a> (MKL_INT n, int *r, const double *lambda, MKL_INT method=VSL_RNG_METHOD_POISSONV_POISNORM)</td></tr>
+<tr class="memdesc:a4d091c86bb9a1b522b1ce1df1ab55ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngPoissonV</code>  <a href="#a4d091c86bb9a1b522b1ce1df1ab55ad6">More...</a><br /></td></tr>
+<tr class="separator:a4d091c86bb9a1b522b1ce1df1ab55ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4988f0a390d1e8c333a3252baea47765"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a4988f0a390d1e8c333a3252baea47765">rayleigh</a> (MKL_INT n, float *r, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_RAYLEIGH_ICDF)</td></tr>
+<tr class="memdesc:a4988f0a390d1e8c333a3252baea47765"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngRayleigh</code>  <a href="#a4988f0a390d1e8c333a3252baea47765">More...</a><br /></td></tr>
+<tr class="separator:a4988f0a390d1e8c333a3252baea47765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadf3405262d8c26ca8bf1f468cda064"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#afadf3405262d8c26ca8bf1f468cda064">rayleigh</a> (MKL_INT n, double *r, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_RAYLEIGH_ICDF)</td></tr>
+<tr class="memdesc:afadf3405262d8c26ca8bf1f468cda064"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngRayleigh</code>  <a href="#afadf3405262d8c26ca8bf1f468cda064">More...</a><br /></td></tr>
+<tr class="separator:afadf3405262d8c26ca8bf1f468cda064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b50008dea0d6c5ab6971f175ccba05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a80b50008dea0d6c5ab6971f175ccba05">reset</a> (MKL_INT brng, MKL_UINT seed)</td></tr>
+<tr class="memdesc:a80b50008dea0d6c5ab6971f175ccba05"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslNewStream</code>  <a href="#a80b50008dea0d6c5ab6971f175ccba05">More...</a><br /></td></tr>
 <tr class="separator:a80b50008dea0d6c5ab6971f175ccba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a678b1cb5283e86443627ca8011b2d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a3a678b1cb5283e86443627ca8011b2d2">reset</a> (MKL_INT brng, MKL_INT n, unsigned *params)</td></tr>
+<tr class="memdesc:a3a678b1cb5283e86443627ca8011b2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslNewStreamEx</code>  <a href="#a3a678b1cb5283e86443627ca8011b2d2">More...</a><br /></td></tr>
 <tr class="separator:a3a678b1cb5283e86443627ca8011b2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a7a455b5eaeb727c3158a80c1cd3ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a82a7a455b5eaeb727c3158a80c1cd3ac">save_f</a> (const std::string &amp;fname) const </td></tr>
+<tr class="memdesc:a82a7a455b5eaeb727c3158a80c1cd3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslSaveStreamF</code>  <a href="#a82a7a455b5eaeb727c3158a80c1cd3ac">More...</a><br /></td></tr>
+<tr class="separator:a82a7a455b5eaeb727c3158a80c1cd3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a13d90cda4b4e718cd7f42c27ba18d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a9a13d90cda4b4e718cd7f42c27ba18d9">save_m</a> (char *memptr) const </td></tr>
+<tr class="memdesc:a9a13d90cda4b4e718cd7f42c27ba18d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslSaveStreamM</code>  <a href="#a9a13d90cda4b4e718cd7f42c27ba18d9">More...</a><br /></td></tr>
+<tr class="separator:a9a13d90cda4b4e718cd7f42c27ba18d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610dd6dffe1884f247ef6c23e9d54a11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a610dd6dffe1884f247ef6c23e9d54a11">skip_ahead</a> (long long nskip)</td></tr>
+<tr class="memdesc:a610dd6dffe1884f247ef6c23e9d54a11"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslSkipAheadStream</code>  <a href="#a610dd6dffe1884f247ef6c23e9d54a11">More...</a><br /></td></tr>
+<tr class="separator:a610dd6dffe1884f247ef6c23e9d54a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac144005a5f64b0853c70fc42e83fb0e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#ac144005a5f64b0853c70fc42e83fb0e9">uniform</a> (MKL_INT n, float *r, float a=0, float b=1, MKL_INT method=VSL_RNG_METHOD_UNIFORM_STD)</td></tr>
+<tr class="memdesc:ac144005a5f64b0853c70fc42e83fb0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngUniform</code>  <a href="#ac144005a5f64b0853c70fc42e83fb0e9">More...</a><br /></td></tr>
+<tr class="separator:ac144005a5f64b0853c70fc42e83fb0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4653911d42f2c13be7d45d74b96e5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a6e4653911d42f2c13be7d45d74b96e5b">uniform</a> (MKL_INT n, double *r, double a=0, double b=1, MKL_INT method=VSL_RNG_METHOD_UNIFORM_STD)</td></tr>
+<tr class="memdesc:a6e4653911d42f2c13be7d45d74b96e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngUniform</code>  <a href="#a6e4653911d42f2c13be7d45d74b96e5b">More...</a><br /></td></tr>
+<tr class="separator:a6e4653911d42f2c13be7d45d74b96e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73d3d8d279450f1591e5a81480ce85b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#af73d3d8d279450f1591e5a81480ce85b">uniform</a> (MKL_INT n, int *r, int a=0, int b=std::numeric_limits&lt; int &gt;::max(), MKL_INT method=VSL_RNG_METHOD_UNIFORM_STD)</td></tr>
+<tr class="memdesc:af73d3d8d279450f1591e5a81480ce85b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngUniform</code>  <a href="#af73d3d8d279450f1591e5a81480ce85b">More...</a><br /></td></tr>
+<tr class="separator:af73d3d8d279450f1591e5a81480ce85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93631b9095d077a7790d96a97d21c4c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a93631b9095d077a7790d96a97d21c4c9">uniform_bits</a> (MKL_INT n, unsigned *r, MKL_INT method=VSL_RNG_METHOD_UNIFORMBITS_STD)</td></tr>
+<tr class="memdesc:a93631b9095d077a7790d96a97d21c4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngUniform</code>  <a href="#a93631b9095d077a7790d96a97d21c4c9">More...</a><br /></td></tr>
+<tr class="separator:a93631b9095d077a7790d96a97d21c4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e48eb12fe1bf12a75bb5d50cff7c16b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a3e48eb12fe1bf12a75bb5d50cff7c16b">uniform_bits32</a> (MKL_INT n, unsigned *r, MKL_INT method=VSL_RNG_METHOD_UNIFORMBITS32_STD)</td></tr>
+<tr class="memdesc:a3e48eb12fe1bf12a75bb5d50cff7c16b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngUniform32</code>  <a href="#a3e48eb12fe1bf12a75bb5d50cff7c16b">More...</a><br /></td></tr>
+<tr class="separator:a3e48eb12fe1bf12a75bb5d50cff7c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4c94aa39bccd318cc126b39b104fc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#afb4c94aa39bccd318cc126b39b104fc7">uniform_bits64</a> (MKL_INT n, unsigned MKL_INT64 *r, MKL_INT method=VSL_RNG_METHOD_UNIFORMBITS64_STD)</td></tr>
+<tr class="memdesc:afb4c94aa39bccd318cc126b39b104fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>viRngUniform64</code>  <a href="#afb4c94aa39bccd318cc126b39b104fc7">More...</a><br /></td></tr>
+<tr class="separator:afb4c94aa39bccd318cc126b39b104fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdb4a66d470bea26e40d4f5275c8f52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a5cdb4a66d470bea26e40d4f5275c8f52">weibull</a> (MKL_INT n, float *r, float alpha=1, float a=0, float <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_WEIBULL_ICDF)</td></tr>
+<tr class="memdesc:a5cdb4a66d470bea26e40d4f5275c8f52"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsRngWeibull</code>  <a href="#a5cdb4a66d470bea26e40d4f5275c8f52">More...</a><br /></td></tr>
+<tr class="separator:a5cdb4a66d470bea26e40d4f5275c8f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa816911c3c336802ef137be70ecad5c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#aa816911c3c336802ef137be70ecad5c6">weibull</a> (MKL_INT n, double *r, double alpha=1, double a=0, double <a class="el" href="classvsmc_1_1_m_k_l_stream.html#ab32ade1156b9795928f37f4e2af4fff3">beta</a>=1, MKL_INT method=VSL_RNG_METHOD_WEIBULL_ICDF)</td></tr>
+<tr class="memdesc:aa816911c3c336802ef137be70ecad5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vdRngWeibull</code>  <a href="#aa816911c3c336802ef137be70ecad5c6">More...</a><br /></td></tr>
+<tr class="separator:aa816911c3c336802ef137be70ecad5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvsmc_1_1_m_k_l_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvsmc_1_1_m_k_l_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvsmc_1_1_m_k_l_base.html">vsmc::MKLBase&lt;::VSLStreamStatePtr, MKLStream &gt;</a></td></tr>
 <tr class="memitem:a507e086cba25962403ca70b9773978ad inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_base.html#a507e086cba25962403ca70b9773978ad">MKLBase</a> ()=default</td></tr>
 <tr class="separator:a507e086cba25962403ca70b9773978ad inherit pub_methods_classvsmc_1_1_m_k_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +293,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a52e724aed8c4443ff73670c0f5f58839"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a52e724aed8c4443ff73670c0f5f58839">get_brng_properties</a> (MKL_INT brng,::VSLBRngProperties &amp;properties)</td></tr>
+<tr class="memdesc:a52e724aed8c4443ff73670c0f5f58839"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslGetBrngProperties</code>  <a href="#a52e724aed8c4443ff73670c0f5f58839">More...</a><br /></td></tr>
+<tr class="separator:a52e724aed8c4443ff73670c0f5f58839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae8fbf8f4ddae39a45f6f2de9d5d005"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#abae8fbf8f4ddae39a45f6f2de9d5d005">get_num_reg_brngs</a> ()</td></tr>
+<tr class="memdesc:abae8fbf8f4ddae39a45f6f2de9d5d005"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslGetNumRegBrngs</code>  <a href="#abae8fbf8f4ddae39a45f6f2de9d5d005">More...</a><br /></td></tr>
+<tr class="separator:abae8fbf8f4ddae39a45f6f2de9d5d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e22cb82ae8a6e30de3437206c9e7f58"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html#a8e22cb82ae8a6e30de3437206c9e7f58">release</a> (::VSLStreamStatePtr ptr)</td></tr>
+<tr class="memdesc:a8e22cb82ae8a6e30de3437206c9e7f58"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vslDeleteStream</code>  <a href="#a8e22cb82ae8a6e30de3437206c9e7f58">More...</a><br /></td></tr>
 <tr class="separator:a8e22cb82ae8a6e30de3437206c9e7f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -236,7 +374,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00183">183</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslNewStream</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00184">184</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +418,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00185">185</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslNewStreamEx</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00187">187</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +446,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00190">190</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslCopyStream</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00193">193</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a217f9f10d7f6ae3558dde3f2e13f83df"></a>
+<a class="anchor" id="aba37dc12ac5be40d153872ae418969d9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -341,7 +485,895 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vsmc::MKLStream::get_stream_size </td>
+          <td class="memname">int vsmc::MKLStream::bernoulli </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_BERNOULLI_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngBernoulli</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00659">659</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab32ade1156b9795928f37f4e2af4fff3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::beta </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>q</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_BETA_CJA</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngBeta</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00594">594</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abcf56f0ac176522b3079eda797fcbb0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::beta </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>q</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_BETA_CJA</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngBeta</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00604">604</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa158ed4eb5b5172bfb65833b9ac88093"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::binomial </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ntrial</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_BINOMIAL_BTPE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngBinomial</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00681">681</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a782e52a17a5470e552fd0f55332401ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::cauchy </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_CAUCHY_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngCauchy</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00482">482</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adeef63450ccb8e910e6b760d8644386c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::cauchy </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_CAUCHY_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngCauchy</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00493">493</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ec0be612d7c29b057731b90d8c709a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::exponential </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_EXPONENTIAL_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngExponential</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00416">416</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5de4fc75696c74e7d1319e1a53479029"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::exponential </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_EXPONENTIAL_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngExponential</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00427">427</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d2fc638d30d5e7f7f592b3e408abc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gamma </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GAMMA_GNORM</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngGamma</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00574">574</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae46975b44cceb0b3c3f1232810d0c6d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gamma </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GAMMA_GNORM</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngGamma</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00584">584</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8567eb1c85a086b3de01ede4321ad3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gaussian </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sigma</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GAUSSIAN_BOXMULLER2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngGaussian</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00368">368</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5ebeabba2ab981053ba7c014953ba6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gaussian </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sigma</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GAUSSIAN_BOXMULLER2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngGaussian</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00379">379</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71e2d8e149efaba0ef6eef52fd544d72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gaussian_mv </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>dimen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>mstorage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GAUSSIANMV_BOXMULLER2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngGaussianMV</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00390">390</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a192814ba447a7ac7ee4c5f8e8d3d347c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gaussian_mv </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>dimen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>mstorage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GAUSSIANMV_BOXMULLER2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngGaussianMV</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00403">403</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9936ef8025acbb308d744fd806a95ab7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::geometric </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GEOMETRIC_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngGeometric</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00670">670</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a168d1bd620701f0470a8a35c92bc50c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::get_brng </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -354,11 +1386,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00254">254</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslGetStreamStateBrng</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00329">329</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa40621591518f22ae6a73db3629d950f"></a>
+<a class="anchor" id="a52e724aed8c4443ff73670c0f5f58839"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -366,7 +1400,72 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vsmc::MKLStream::get_stream_state_brng </td>
+          <td class="memname">static int vsmc::MKLStream::get_brng_properties </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>brng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">::VSLBRngProperties &amp;&#160;</td>
+          <td class="paramname"><em>properties</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslGetBrngProperties</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00335">335</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abae8fbf8f4ddae39a45f6f2de9d5d005"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int vsmc::MKLStream::get_num_reg_brngs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslGetNumRegBrngs</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00332">332</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad22a981a3b7ec3359402099fba40a3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::get_size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -379,7 +1478,581 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00256">256</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslGetStreamSize</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00306">306</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a339072944c957b08cc954c0f82af2742"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gumbel </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GUMBEL_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngGumbel</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00552">552</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcf9ff05a8f6d24fa4edd95db17ad735"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::gumbel </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_GUMBEL_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngGumbel</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00563">563</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fcd88cc33d76890b9ae9bade7c7e757"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::hypergeometric </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_HYPERGEOMETRIC_H2PE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngHypergeometric</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00692">692</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d81d7974574518ab374f3dc57f29522"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::laplace </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_LAPLACE_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngLaplace</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00438">438</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb6804cb433ab714c0afb121b522b737"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::laplace </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_LAPLACE_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngLaplace</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00449">449</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42634602c1b09cdaef75a859f7f821dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::leapfrog </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>nstreams</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslLeapfrogStream</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00309">309</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa92c4a0c201b240e502cf26dd779b891"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::load_f </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslSaveStreamF</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00272">272</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a833320d6c484ece66be885733044614c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::load_m </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>memptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslLoadStreamM</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00294">294</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59a1821cc097c6756bdb22bd807ed921"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::lognormal </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sigma</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_LOGNORMAL_BOXMULLER2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngLognormal</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00526">526</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acae6152ad8d9f862a276884170cc92ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::lognormal </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sigma</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_LOGNORMAL_BOXMULLER2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngLognormal</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00539">539</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a369c4ccc23cd4751d7ba57e9f919f5ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::neg_binomial </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_NEGBINOMIAL_NBAR</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngNegbinomial</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00725">725</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +2078,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00199">199</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslCopyStream</code>/<code>vslCopySreamState</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00203">203</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -433,6 +2108,218 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a666a6fa0d14f82890fced5cb08424ede"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::poisson </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lambda</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_POISSON_PTPE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngPoisson</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00703">703</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d091c86bb9a1b522b1ce1df1ab55ad6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::poisson_v </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_POISSONV_POISNORM</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngPoissonV</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00714">714</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4988f0a390d1e8c333a3252baea47765"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::rayleigh </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_RAYLEIGH_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngRayleigh</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00504">504</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afadf3405262d8c26ca8bf1f468cda064"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::rayleigh </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_RAYLEIGH_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngRayleigh</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00515">515</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8e22cb82ae8a6e30de3437206c9e7f58"></a>
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +2342,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00220">220</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslDeleteStream</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00249">249</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -491,7 +2380,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00232">232</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslNewStream</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00225">225</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -533,7 +2424,517 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00243">243</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p><code>vslNewStreamEx</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00237">237</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82a7a455b5eaeb727c3158a80c1cd3ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::save_f </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslSaveStreamF</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00262">262</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a13d90cda4b4e718cd7f42c27ba18d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::save_m </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>memptr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslSaveStreamM</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00284">284</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a610dd6dffe1884f247ef6c23e9d54a11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::skip_ahead </td>
+          <td>(</td>
+          <td class="paramtype">long long&#160;</td>
+          <td class="paramname"><em>nskip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vslSkipAheadStream</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00319">319</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac144005a5f64b0853c70fc42e83fb0e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::uniform </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_UNIFORM_STD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngUniform</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00346">346</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e4653911d42f2c13be7d45d74b96e5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::uniform </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_UNIFORM_STD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngUniform</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00357">357</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af73d3d8d279450f1591e5a81480ce85b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::uniform </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em> = <code>std::numeric_limits&lt;int&gt;::max&#160;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_UNIFORM_STD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngUniform</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00614">614</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93631b9095d077a7790d96a97d21c4c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::uniform_bits </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_UNIFORMBITS_STD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngUniform</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00626">626</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e48eb12fe1bf12a75bb5d50cff7c16b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::uniform_bits32 </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_UNIFORMBITS32_STD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngUniform32</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00637">637</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb4c94aa39bccd318cc126b39b104fc7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::uniform_bits64 </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned MKL_INT64 *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_UNIFORMBITS64_STD</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>viRngUniform64</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00648">648</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5cdb4a66d470bea26e40d4f5275c8f52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::weibull </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_WEIBULL_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vsRngWeibull</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00460">460</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa816911c3c336802ef137be70ecad5c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::MKLStream::weibull </td>
+          <td>(</td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MKL_INT&#160;</td>
+          <td class="paramname"><em>method</em> = <code>VSL_RNG_METHOD_WEIBULL_ICDF</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>vdRngWeibull</code> </p>
+
+<p>Definition at line <a class="el" href="utility_2mkl_8hpp_source.html#l00471">471</a> of file <a class="el" href="utility_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>

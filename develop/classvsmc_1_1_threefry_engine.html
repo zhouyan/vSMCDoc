@@ -108,18 +108,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Threefry RNG engine reimplemented.  
+<p>Threefry RNG engine.  
  <a href="classvsmc_1_1_threefry_engine.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="threefry_8hpp_source.html">vsmc/rng/threefry.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a923ce6dd6062faf224ad64afcfae5289"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> = std::array&lt; <a class="el" href="class_result_type.html">ResultType</a>, K &gt;</td></tr>
+<tr class="memitem:a923ce6dd6062faf224ad64afcfae5289"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> = std::array&lt; ResultType, K &gt;</td></tr>
 <tr class="separator:a923ce6dd6062faf224ad64afcfae5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650cfd26478f5ca890a600292c03c5d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> = std::array&lt; <a class="el" href="class_result_type.html">ResultType</a>, K &gt;</td></tr>
+<tr class="memitem:a650cfd26478f5ca890a600292c03c5d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> = std::array&lt; ResultType, K &gt;</td></tr>
 <tr class="separator:a650cfd26478f5ca890a600292c03c5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2f4616328066d396e0fc6bf30756bcc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> = <a class="el" href="class_result_type.html">ResultType</a></td></tr>
+<tr class="memitem:af2f4616328066d396e0fc6bf30756bcc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> = ResultType</td></tr>
 <tr class="separator:af2f4616328066d396e0fc6bf30756bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a028ac0beb45f68e77b77d12a3904b9e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a028ac0beb45f68e77b77d12a3904b9e8">ThreefryEngine</a> (<a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> s=0)</td></tr>
 <tr class="separator:a028ac0beb45f68e77b77d12a3904b9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1c65dde15d8f58245d91260f5fe511"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
-<tr class="memitem:a8a1c65dde15d8f58245d91260f5fe511"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a8a1c65dde15d8f58245d91260f5fe511">ThreefryEngine</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
+<tr class="memitem:a8a1c65dde15d8f58245d91260f5fe511"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a8a1c65dde15d8f58245d91260f5fe511">ThreefryEngine</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
 <tr class="separator:a8a1c65dde15d8f58245d91260f5fe511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e12b2c31beb0b9492842f8f18d322d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a74e12b2c31beb0b9492842f8f18d322d">ThreefryEngine</a> (const <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> &amp;k)</td></tr>
 <tr class="separator:a74e12b2c31beb0b9492842f8f18d322d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a458270d8e4c97c58179a76069373f090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a458270d8e4c97c58179a76069373f090">seed</a> (<a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> s)</td></tr>
 <tr class="separator:a458270d8e4c97c58179a76069373f090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac113eb971ecac2b5e7d4f42dcbfe729b"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
-<tr class="memitem:ac113eb971ecac2b5e7d4f42dcbfe729b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#ac113eb971ecac2b5e7d4f42dcbfe729b">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
+<tr class="memitem:ac113eb971ecac2b5e7d4f42dcbfe729b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#ac113eb971ecac2b5e7d4f42dcbfe729b">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
 <tr class="separator:ac113eb971ecac2b5e7d4f42dcbfe729b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba429a800d8bbdfb192a47d885d3c067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#aba429a800d8bbdfb192a47d885d3c067">seed</a> (const <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> &amp;k)</td></tr>
 <tr class="separator:aba429a800d8bbdfb192a47d885d3c067"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,22 +167,22 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a3d36431d374d1cb46960804b0e8323c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a3d36431d374d1cb46960804b0e8323c2">operator!=</a> (const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng2)</td></tr>
+<tr class="memitem:a3d36431d374d1cb46960804b0e8323c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a3d36431d374d1cb46960804b0e8323c2">operator!=</a> (const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng2)</td></tr>
 <tr class="separator:a3d36431d374d1cb46960804b0e8323c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb47f87d309664ea2da5a7bcff91efcc"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:aeb47f87d309664ea2da5a7bcff91efcc"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#aeb47f87d309664ea2da5a7bcff91efcc">operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng)</td></tr>
+<tr class="memitem:aeb47f87d309664ea2da5a7bcff91efcc"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#aeb47f87d309664ea2da5a7bcff91efcc">operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng)</td></tr>
 <tr class="separator:aeb47f87d309664ea2da5a7bcff91efcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5844772a41e5d531dbca98cf933cd99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#ae5844772a41e5d531dbca98cf933cd99">operator==</a> (const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng2)</td></tr>
+<tr class="memitem:ae5844772a41e5d531dbca98cf933cd99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#ae5844772a41e5d531dbca98cf933cd99">operator==</a> (const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng1, const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng2)</td></tr>
 <tr class="separator:ae5844772a41e5d531dbca98cf933cd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6efc4c2a99706ed8211a5e3e27651a5c"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:a6efc4c2a99706ed8211a5e3e27651a5c"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a6efc4c2a99706ed8211a5e3e27651a5c">operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;eng)</td></tr>
+<tr class="memitem:a6efc4c2a99706ed8211a5e3e27651a5c"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_engine.html#a6efc4c2a99706ed8211a5e3e27651a5c">operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;eng)</td></tr>
 <tr class="separator:a6efc4c2a99706ed8211a5e3e27651a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt;<br />
 class vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</h3>
 
-<p>Threefry RNG engine reimplemented. </p>
+<p>Threefry RNG engine. </p>
 
 <p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00330">330</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -193,7 +193,7 @@ class vsmc::ThreefryEngine&lt; ResultType, K, Rounds &gt;</h3>
 template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> =  std::array&lt;<a class="el" href="class_result_type.html">ResultType</a>, K&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> =  std::array&lt;ResultType, K&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,7 +209,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> =  std::array&lt;<a class="el" href="class_result_type.html">ResultType</a>, K&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> =  std::array&lt;ResultType, K&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,7 +225,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> =  <a class="el" href="class_result_type.html">ResultType</a></td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> =  ResultType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,7 +245,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>&#160;</td>
           <td class="paramname"><em>s</em> = <code>0</code></td><td>)</td>
@@ -275,7 +275,7 @@ template&lt;typename SeedSeq &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a> </td>
           <td>(</td>
           <td class="paramtype">SeedSeq &amp;&#160;</td>
           <td class="paramname"><em>seq</em>, </td>
@@ -283,7 +283,7 @@ template&lt;typename SeedSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::<a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -342,7 +342,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::ctr </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::ctr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -369,7 +369,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::ctr </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::ctr </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html#a923ce6dd6062faf224ad64afcfae5289">ctr_type</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -397,7 +397,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::discard </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::discard </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>&#160;</td>
           <td class="paramname"><em>nskip</em></td><td>)</td>
@@ -425,7 +425,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::key </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::key </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -452,7 +452,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::key </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::key </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -480,7 +480,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::max </td>
+          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::max </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -507,7 +507,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::min </td>
+          <td class="memname">static constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::min </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -534,7 +534,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::operator() </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::operator() </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -561,7 +561,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::seed </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::seed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -591,7 +591,7 @@ template&lt;typename SeedSeq &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::seed </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::seed </td>
           <td>(</td>
           <td class="paramtype">SeedSeq &amp;&#160;</td>
           <td class="paramname"><em>seq</em>, </td>
@@ -599,7 +599,7 @@ template&lt;typename SeedSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a>, <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -629,7 +629,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::seed </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::seed </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html#a650cfd26478f5ca890a600292c03c5d7">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -660,13 +660,13 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
         <tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng2</em>&#160;</td>
         </tr>
         <tr>
@@ -682,7 +682,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00458">458</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00465">465</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -706,7 +706,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng</em>&#160;</td>
         </tr>
         <tr>
@@ -722,7 +722,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00465">465</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00472">472</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -738,13 +738,13 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
         <tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng2</em>&#160;</td>
         </tr>
         <tr>
@@ -784,7 +784,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_threefry_engine.html">ThreefryEngine</a>&lt; ResultType, K, Rounds &gt; &amp;&#160;</td>
           <td class="paramname"><em>eng</em>&#160;</td>
         </tr>
         <tr>
@@ -800,7 +800,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00481">481</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00488">488</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>
@@ -815,7 +815,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::_Max = static_cast&lt; <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> &gt;(~(static_cast&lt; <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> &gt;(0)))</td>
+          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::_Max = static_cast&lt; <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> &gt;(~(static_cast&lt; <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> &gt;(0)))</td>
         </tr>
       </table>
   </td>
@@ -839,7 +839,7 @@ template&lt;typename ResultType, std::size_t K, std::size_t Rounds = 20&gt; </di
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; <a class="el" href="class_result_type.html">ResultType</a>, K, Rounds &gt;::_Min = 0</td>
+          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_threefry_engine.html#af2f4616328066d396e0fc6bf30756bcc">result_type</a> <a class="el" href="classvsmc_1_1_threefry_engine.html">vsmc::ThreefryEngine</a>&lt; ResultType, K, Rounds &gt;::_Min = 0</td>
         </tr>
       </table>
   </td>

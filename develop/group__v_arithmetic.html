@@ -109,6 +109,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga66f75de9118b1fd33ec1b0db1ade6714"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_arithmetic.html#ga66f75de9118b1fd33ec1b0db1ade6714">vsmc::math::vAdd</a> (std::size_t n, T a, const T *b, T *y)</td></tr>
 <tr class="memdesc:ga66f75de9118b1fd33ec1b0db1ade6714"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a + b_i\).  <a href="#ga66f75de9118b1fd33ec1b0db1ade6714">More...</a><br /></td></tr>
 <tr class="separator:ga66f75de9118b1fd33ec1b0db1ade6714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12f70eb2b4c171784de1f8ceaebe8a2e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga12f70eb2b4c171784de1f8ceaebe8a2e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_arithmetic.html#ga12f70eb2b4c171784de1f8ceaebe8a2e">vsmc::math::vFMA</a> (std::size_t n, const T *a, const T *b, const T *x, T *y)</td></tr>
+<tr class="memdesc:ga12f70eb2b4c171784de1f8ceaebe8a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a_i + b_i * x_i\).  <a href="#ga12f70eb2b4c171784de1f8ceaebe8a2e">More...</a><br /></td></tr>
+<tr class="separator:ga12f70eb2b4c171784de1f8ceaebe8a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga669f48bca2389e86a238595ca373c1ae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga669f48bca2389e86a238595ca373c1ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_arithmetic.html#ga669f48bca2389e86a238595ca373c1ae">vsmc::math::vFMA</a> (std::size_t n, T a, const T *b, const T *x, T *y)</td></tr>
+<tr class="memdesc:ga669f48bca2389e86a238595ca373c1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a + b_i * x_i\).  <a href="#ga669f48bca2389e86a238595ca373c1ae">More...</a><br /></td></tr>
+<tr class="separator:ga669f48bca2389e86a238595ca373c1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d949e85df5984fb64fdc4837854fef4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga9d949e85df5984fb64fdc4837854fef4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_arithmetic.html#ga9d949e85df5984fb64fdc4837854fef4">vsmc::math::vFMA</a> (std::size_t n, T a, T b, const T *x, T *y)</td></tr>
+<tr class="memdesc:ga9d949e85df5984fb64fdc4837854fef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a + b * x_i\).  <a href="#ga9d949e85df5984fb64fdc4837854fef4">More...</a><br /></td></tr>
+<tr class="separator:ga9d949e85df5984fb64fdc4837854fef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39bb4537550fd2701fdb6079ba5af1db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga39bb4537550fd2701fdb6079ba5af1db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_arithmetic.html#ga39bb4537550fd2701fdb6079ba5af1db">vsmc::math::vLinearFrac</a> (std::size_t n, const T *a, const T *b, T beta_a, T beta_b, T mu_a, T mu_b, T *y)</td></tr>
 <tr class="memdesc:ga39bb4537550fd2701fdb6079ba5af1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = (\beta_a a_i + \mu_a) / (\beta_b b_i + \mu_b)\).  <a href="#ga39bb4537550fd2701fdb6079ba5af1db">More...</a><br /></td></tr>
@@ -343,6 +355,180 @@ template&lt;typename T &gt; </div>
 <p>For \(i=1,\ldots,n\), compute \(y_i = a + b_i\). </p>
 
 <p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00170">170</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga12f70eb2b4c171784de1f8ceaebe8a2e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::math::vFMA </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For \(i=1,\ldots,n\), compute \(y_i = a_i + b_i * x_i\). </p>
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00211">211</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga669f48bca2389e86a238595ca373c1ae"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::math::vFMA </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For \(i=1,\ldots,n\), compute \(y_i = a + b_i * x_i\). </p>
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00220">220</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9d949e85df5984fb64fdc4837854fef4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::math::vFMA </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For \(i=1,\ldots,n\), compute \(y_i = a + b * x_i\). </p>
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00229">229</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>

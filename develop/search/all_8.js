@@ -45,11 +45,12 @@ var searchData=
   ['hdf5store_5flist_5finsert_5ftuple',['hdf5store_list_insert_tuple',['../namespacevsmc_1_1internal.html#a350bacac6c880b2cda6dc4a70b43e125',1,'vsmc::internal::hdf5store_list_insert_tuple(std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, std::integral_constant&lt; std::size_t, 0 &gt;)'],['../namespacevsmc_1_1internal.html#a7b95885585b9d3fa91263d6869841cb0',1,'vsmc::internal::hdf5store_list_insert_tuple(std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters...&gt; &amp;first, const std::string *sptr, std::integral_constant&lt; std::size_t, Pos &gt;)']]],
   ['hdf5store_5fmatrix',['hdf5store_matrix',['../group___h_d_f5_i_o.html#ga34c74ca84fd2394a0e21c1968e108ec7',1,'vsmc']]],
   ['hdf5store_5fnew',['hdf5store_new',['../group___h_d_f5_i_o.html#ga4bfedcdf0062b93d015028638b016041',1,'vsmc']]],
-  ['hdf5storedataptr',['HDF5StoreDataPtr',['../classvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../classvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html',1,'vsmc::internal']]],
+  ['hdf5storedataptr',['HDF5StoreDataPtr',['../classvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
   ['host_5fptr',['host_ptr',['../classvsmc_1_1_c_l_buffer.html#aa92bf47a5015a8b4410506df800e1b09',1,'vsmc::CLBuffer']]],
   ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]],
   ['hypergeometric',['hypergeometric',['../classvsmc_1_1_m_k_l_stream.html#a1fcd88cc33d76890b9ae9bade7c7e757',1,'vsmc::MKLStream']]],
+  ['hypot',['hypot',['../group__v_power.html#gafd1ff17b38f7ba41548f126becbae980',1,'vsmc::hypot(std::size_t n, const T *a, const T *b, T *y)'],['../namespacevsmc.html#a8688e4b0cd3c77446209086100858ae1',1,'vsmc::hypot(std::size_t n, const float *a, const float *b, float *y)'],['../namespacevsmc.html#a1ab7b071e9c32f78a4d9efa587cbd4f3',1,'vsmc::hypot(std::size_t n, const double *a, const double *b, double *y)']]],
   ['hyperbolic_20functions',['Hyperbolic functions',['../group__v_hyperbolic.html',1,'']]]
 ];

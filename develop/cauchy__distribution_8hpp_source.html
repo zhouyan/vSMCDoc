@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    RNGType &amp;rng, std::size_t n, RealType *r, RealType a, RealType b)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="namespacevsmc.html#aae824436eb7508a65a395d7c294d010b">u01_distribution</a>(rng, n, r);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="group__v_arithmetic.html#ga32eb7ea3f472abf4c1233d852dbc9ceb">mul</a>(n, pi&lt;RealType&gt;(), r, r);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="group__v_arithmetic.html#ga32eb7ea3f472abf4c1233d852dbc9ceb">mul</a>(n, const_pi&lt;RealType&gt;(), r, r);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="group__v_trigonometric.html#ga76ea8cce78d0555c8f24a27db16d2339">tan</a>(n, r, r);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i != n; ++i)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        r[i] = a + b * r[i];</div>
@@ -283,7 +283,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="group___distribution.html#gafbd0cf339061c289914c35091b44b176">U01DistributionType&lt;RNGType, RealType&gt;</a> runif;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> param_.a_ +</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            param_.b_ * <a class="code" href="group__v_trigonometric.html#ga76ea8cce78d0555c8f24a27db16d2339">std::tan</a>(pi&lt;result_type&gt;() * runif(rng));</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            param_.b_ * <a class="code" href="group__v_trigonometric.html#ga76ea8cce78d0555c8f24a27db16d2339">std::tan</a>(const_pi&lt;result_type&gt;() * runif(rng));</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
 <div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classvsmc_1_1_cauchy_distribution.html#af0e9f6e4f8997ce8a37e643cd782d629">  193</a></span>&#160;    <a class="code" href="rng_2internal_2common_8hpp.html#a32b482af236c4dd1fa7da15c39bc76e3">VSMC_DEFINE_RNG_DISTRIBUTION_OPERATORS</a></div>

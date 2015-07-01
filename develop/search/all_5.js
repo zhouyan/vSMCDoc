@@ -1,14 +1,6 @@
 var searchData=
 [
   ['enumerators_2c_20placeholders_20and_20macros',['Enumerators, placeholders and macros',['../group___definitions.html',1,'']]],
-  ['e',['e',['../group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8',1,'vsmc']]],
-  ['e_3c_20double_20_3e',['e&lt; double &gt;',['../namespacevsmc.html#a4bfa13e1d32b199a5307fbe606156261',1,'vsmc']]],
-  ['e_3c_20float_20_3e',['e&lt; float &gt;',['../namespacevsmc.html#a02c851741e41461b47ef948b048578c1',1,'vsmc']]],
-  ['e_3c_20long_20double_20_3e',['e&lt; long double &gt;',['../namespacevsmc.html#ac40c55ccd9209ecc622c902adc183ef0',1,'vsmc']]],
-  ['e_5finv',['e_inv',['../group___constants.html#ga9abb7cd90cc21c00f21438e46845e3b4',1,'vsmc']]],
-  ['e_5finv_3c_20double_20_3e',['e_inv&lt; double &gt;',['../namespacevsmc.html#ab5fb674ef780d07f533e7e2e894ce22d',1,'vsmc']]],
-  ['e_5finv_3c_20float_20_3e',['e_inv&lt; float &gt;',['../namespacevsmc.html#a41eb188532e51e3e13ce78bc4f4beefb',1,'vsmc']]],
-  ['e_5finv_3c_20long_20double_20_3e',['e_inv&lt; long double &gt;',['../namespacevsmc.html#a97216dd4f753e782975c228e1e6ab0c3',1,'vsmc']]],
   ['edit_5fcor_5fparameterization',['edit_cor_parameterization',['../classvsmc_1_1_m_k_l_s_s_task.html#a59d0f9f595c48f5203a2bcc1ac1198d7',1,'vsmc::MKLSSTask']]],
   ['edit_5fcov_5fcor',['edit_cov_cor',['../classvsmc_1_1_m_k_l_s_s_task.html#a126bea103cfbc430a34fbefda3e7909a',1,'vsmc::MKLSSTask']]],
   ['edit_5fcp',['edit_cp',['../classvsmc_1_1_m_k_l_s_s_task.html#ab98de41640213da9d340492e1597ef2a',1,'vsmc::MKLSSTask']]],
@@ -65,7 +57,7 @@ var searchData=
   ['exponential_5fdistribution',['exponential_distribution',['../group___distribution.html#ga87e7f48d01b158dd645b695b8505bcf5',1,'vsmc::exponential_distribution(RNGType &amp;rng, std::size_t n, RealType *r, RealType lambda=1)'],['../namespacevsmc.html#a38e12a2a486db69d274609de30fc1b83',1,'vsmc::exponential_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;rng, std::size_t n, RealType *r, RealType lambda)']]],
   ['exponential_5fdistribution_2ehpp',['exponential_distribution.hpp',['../exponential__distribution_8hpp.html',1,'']]],
   ['exponential_5fdistribution_5fimpl',['exponential_distribution_impl',['../namespacevsmc_1_1internal.html#ae2e1a9cd69a44bf44a85f1b14b4290e9',1,'vsmc::internal']]],
-  ['exponentialdistribution',['ExponentialDistribution',['../classvsmc_1_1_exponential_distribution.html#a2abb11ee174dcec9febedec993dc26ee',1,'vsmc::ExponentialDistribution::ExponentialDistribution(result_type lambda=0)'],['../classvsmc_1_1_exponential_distribution.html#a31f6910c72fe89bae666e5feb5894082',1,'vsmc::ExponentialDistribution::ExponentialDistribution(const param_type &amp;param)']]],
   ['exponentialdistribution',['ExponentialDistribution',['../classvsmc_1_1_exponential_distribution.html',1,'vsmc']]],
+  ['exponentialdistribution',['ExponentialDistribution',['../classvsmc_1_1_exponential_distribution.html#a2abb11ee174dcec9febedec993dc26ee',1,'vsmc::ExponentialDistribution::ExponentialDistribution(result_type lambda=0)'],['../classvsmc_1_1_exponential_distribution.html#a31f6910c72fe89bae666e5feb5894082',1,'vsmc::ExponentialDistribution::ExponentialDistribution(const param_type &amp;param)']]],
   ['exponential_20and_20logarithm_20functions',['Exponential and logarithm functions',['../group__v_exponential.html',1,'']]]
 ];

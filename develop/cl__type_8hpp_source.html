@@ -1331,8 +1331,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        ::cl_int status = ::clEnqueueNDRangeKernel(<span class="keyword">get</span>(), kernel.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1352,8 +1352,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        ::cl_int status = ::clEnqueueTask(<span class="keyword">get</span>(), kernel.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1374,8 +1374,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;        <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;</div>
 <div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        ::cl_int status = ::clEnqueueReadBuffer(<span class="keyword">get</span>(), buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1395,8 +1395,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;        ::cl_int status = ::clEnqueueWriteBuffer(<span class="keyword">get</span>(), buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1420,8 +1420,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;</div>
 <div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        ::cl_int status = ::clEnqueueReadBufferRect(<span class="keyword">get</span>(), buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1448,8 +1448,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;</div>
 <div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        ::cl_int status = ::clEnqueueWriteBufferRect(<span class="keyword">get</span>(), buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1472,8 +1472,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;</div>
 <div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        ::cl_int status = ::clEnqueueCopyBuffer(<span class="keyword">get</span>(), src_buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1497,8 +1497,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;</div>
 <div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;        ::cl_int status = ::clEnqueueCopyBufferRect(<span class="keyword">get</span>(), src_buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1520,8 +1520,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;</div>
 <div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;        ::cl_int status = ::clEnqueueFillBuffer(<span class="keyword">get</span>(), buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(), pattern,</div>
@@ -1540,8 +1540,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;</div>
 <div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;        ::cl_int status = CL_SUCCESS;</div>
@@ -1563,8 +1563,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;</div>
 <div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;        ::cl_int status =</div>
@@ -1586,8 +1586,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;</div>
 <div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;        ::cl_int status =</div>
@@ -1610,8 +1610,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;</div>
 <div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;        ::cl_int status =</div>
@@ -1632,8 +1632,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;</div>
 <div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;        ::cl_int status = ::clEnqueueFillImage(<span class="keyword">get</span>(), image.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(), fill_color,</div>
@@ -1654,8 +1654,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;</div>
 <div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;        ::cl_int status = CL_SUCCESS;</div>
@@ -1678,8 +1678,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;</div>
 <div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;        ::cl_int status = ::clEnqueueCopyImageToBuffer(<span class="keyword">get</span>(), src_image.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1701,8 +1701,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;</div>
 <div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;        ::cl_int status = ::clEnqueueCopyBufferToImage(<span class="keyword">get</span>(), src_buffer.<a class="code" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">get</a>(),</div>
@@ -1721,8 +1721,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;</div>
 <div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;        ::cl_int status =</div>
@@ -1747,8 +1747,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;            mptrs.push_back(m.get());</div>
 <div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;</div>
 <div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;</div>
 <div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;        ::cl_int status = ::clEnqueueMigrateMemObjects(<span class="keyword">get</span>(),</div>
@@ -1767,8 +1767,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;</div>
 <div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;        ::cl_int status = ::clEnqueueMarkerWithWaitList(</div>
@@ -1786,8 +1786,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;        <span class="keyword">const</span> std::vector&lt;CLEvent&gt; &amp;event_wait_list, <a class="code" href="classvsmc_1_1_c_l_event.html">CLEvent</a> &amp;event)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;        std::vector&lt;::cl_event&gt; eptrs;</div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> : event_wait_list)</div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;            eptrs.push_back(<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>.get());</div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : event_wait_list)</div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;            eptrs.push_back(e.get());</div>
 <div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;        ::cl_event eptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;</div>
 <div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;        ::cl_int status = ::clEnqueueBarrierWithWaitList(</div>
@@ -1882,7 +1882,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;</div>
 <div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;<span class="preprocessor">#endif // VSMC_OPENCL_CL_TYPE_HPP</span></div>
 <div class="ttc" id="opencl_2internal_2common_8hpp_html"><div class="ttname"><a href="opencl_2internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="group___constants_html_ga34f5b40a063cafb9e32aa52df8baf9d8"><div class="ttname"><a href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">vsmc::e</a></div><div class="ttdeci">T e() noexcept</div><div class="ttdoc"> </div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00198">constants.hpp:198</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_context_html_af3192fa17df517bb4cc7fc0e2b29eaa1"><div class="ttname"><a href="classvsmc_1_1_c_l_context.html#af3192fa17df517bb4cc7fc0e2b29eaa1">vsmc::CLContext::CLContext</a></div><div class="ttdeci">CLContext(const ::cl_context_properties *properties, const CLDevice &amp;device)</div><div class="ttdoc">clCreateContext </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l00352">cl_type.hpp:352</a></div></div>
 <div class="ttc" id="classvsmc_1_1_c_l_kernel_html"><div class="ttname"><a href="classvsmc_1_1_c_l_kernel.html">vsmc::CLKernel</a></div><div class="ttdoc">OpenCL cl_kernel wrapper. </div><div class="ttdef"><b>Definition:</b> <a href="cl__type_8hpp_source.html#l01033">cl_type.hpp:1033</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>

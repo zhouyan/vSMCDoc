@@ -230,7 +230,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="namespacevsmc_1_1internal.html#a23f803d755cb541969c4f6231e47c61e">  130</a></span>&#160;<span class="keyword">inline</span> T <a class="code" href="namespacevsmc_1_1internal.html#a23f803d755cb541969c4f6231e47c61e">vmath_cdf_norm</a>(T a)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.5) +</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.5) * <a class="code" href="namespacevsmc.html#a51a7e0f86e7950343940a9cf9eb9836e">std::erf</a>(a * sqrt_1by2&lt;T&gt;());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.5) * <a class="code" href="namespacevsmc.html#a51a7e0f86e7950343940a9cf9eb9836e">std::erf</a>(a * const_sqrt_1by2&lt;T&gt;());</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>

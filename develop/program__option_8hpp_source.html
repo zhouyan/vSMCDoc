@@ -743,9 +743,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    std::string process_arg(<span class="keyword">const</span> <span class="keywordtype">char</span> *arg)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        std::size_t s = std::strlen(arg);</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        std::size_t <a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a> = s;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        std::size_t e = s;</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <span class="keywordflow">while</span> (e != 0 &amp;&amp; (arg[e - 1] == <span class="charliteral">&#39; &#39;</span> || arg[e - 1] == <span class="charliteral">&#39;,&#39;</span>))</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            --<a class="code" href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">e</a>;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            --e;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="keywordflow">return</span> std::string(arg, arg + e);</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    }</div>
@@ -779,7 +779,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;} <span class="comment">// namespace vsmc</span></div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">#endif // VSMC_UTILITY_PROGRAM_OPTION_HPP</span></div>
-<div class="ttc" id="group___constants_html_ga34f5b40a063cafb9e32aa52df8baf9d8"><div class="ttname"><a href="group___constants.html#ga34f5b40a063cafb9e32aa52df8baf9d8">vsmc::e</a></div><div class="ttdeci">T e() noexcept</div><div class="ttdoc"> </div><div class="ttdef"><b>Definition:</b> <a href="constants_8hpp_source.html#l00198">constants.hpp:198</a></div></div>
 <div class="ttc" id="classvsmc_1_1_program_option_html_a1a7a8c098ac5d9622369c1b4b7a3ea2d"><div class="ttname"><a href="classvsmc_1_1_program_option.html#a1a7a8c098ac5d9622369c1b4b7a3ea2d">vsmc::ProgramOption::operator=</a></div><div class="ttdeci">ProgramOption &amp; operator=(const ProgramOption &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="program__option_8hpp_source.html#l00065">program_option.hpp:65</a></div></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
 <div class="ttc" id="classvsmc_1_1_program_option_html_ab47b3ac70e268d4c746d426b3f2b0a21"><div class="ttname"><a href="classvsmc_1_1_program_option.html#ab47b3ac70e268d4c746d426b3f2b0a21">vsmc::ProgramOption::set_default</a></div><div class="ttdeci">virtual bool set_default()=0</div></div>

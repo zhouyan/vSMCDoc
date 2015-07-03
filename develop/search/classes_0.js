@@ -5,7 +5,7 @@ var searchData=
   ['aes256keyseqgenerator',['AES256KeySeqGenerator',['../classvsmc_1_1internal_1_1_a_e_s256_key_seq_generator.html',1,'vsmc::internal']]],
   ['aeskeyinit',['AESKeyInit',['../classvsmc_1_1internal_1_1_a_e_s_key_init.html',1,'vsmc::internal']]],
   ['aeskeyseq',['AESKeySeq',['../classvsmc_1_1internal_1_1_a_e_s_key_seq.html',1,'vsmc::internal']]],
-  ['aesniengine',['AESNIEngine',['../classvsmc_1_1_a_e_s_n_i_engine.html',1,'vsmc']]],
+  ['aesnigenerator',['AESNIGenerator',['../classvsmc_1_1_a_e_s_n_i_generator.html',1,'vsmc']]],
   ['aesroundconstant',['AESRoundConstant',['../classvsmc_1_1internal_1_1_a_e_s_round_constant.html',1,'vsmc::internal']]],
   ['aesroundconstant_3c_200x00_20_3e',['AESRoundConstant&lt; 0x00 &gt;',['../classvsmc_1_1internal_1_1_a_e_s_round_constant_3_010x00_01_4.html',1,'vsmc::internal']]],
   ['aesroundconstant_3c_200x01_20_3e',['AESRoundConstant&lt; 0x01 &gt;',['../classvsmc_1_1internal_1_1_a_e_s_round_constant_3_010x01_01_4.html',1,'vsmc::internal']]],

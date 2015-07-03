@@ -135,12 +135,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2internal_2common_8hpp.html">vsmc/rng/internal/common.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="aes__ni_8hpp.html">vsmc/rng/aes_ni.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_ARS_BLOCKS</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">   41</a></span>&#160;<span class="preprocessor">#define VSMC_RNG_ARS_BLOCKS 1</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_ARS_ROUNDS</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">   41</a></span>&#160;<span class="preprocessor">#define VSMC_RNG_ARS_ROUNDS 5</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_ARS_ROUNDS</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">   47</a></span>&#160;<span class="preprocessor">#define VSMC_RNG_ARS_ROUNDS 5</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_ARS_BLOCKS</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">   47</a></span>&#160;<span class="preprocessor">#define VSMC_RNG_ARS_BLOCKS 4</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
@@ -154,13 +154,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classvsmc_1_1internal_1_1_a_r_s_weyl_constant_3_010_01_4.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html">ARSWeylConstant</a>&lt;0&gt; : <span class="keyword">public</span> std::integral_constant&lt;std::uint64_t,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                               UINT64_C(0xBB67AE8584CAA73B)&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                               UINT64_C(0x9E3779B97F4A7C15)&gt;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}; <span class="comment">// class ARSWeylConstant</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classvsmc_1_1internal_1_1_a_r_s_weyl_constant_3_011_01_4.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html">ARSWeylConstant</a>&lt;1&gt; : <span class="keyword">public</span> std::integral_constant&lt;std::uint64_t,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                               UINT64_C(0x9E3779B97F4A7C15)&gt;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                               UINT64_C(0xBB67AE8584CAA73B)&gt;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}; <span class="comment">// class ARSWeylConstant</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
@@ -171,147 +171,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}; <span class="comment">// class ARSWeylConstantTrait</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ResultType&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq</a></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">   90</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">key_type</a> = std::array&lt;ResultType, M128I&lt;ResultType&gt;::size()&gt;;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#ae7648f5751e3ff6fb9fb76239485c83c">   90</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#ae7648f5751e3ff6fb9fb76239485c83c">key_type</a> = std::array&lt;T, M128I&lt;T&gt;::size()&gt;;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#ab2028ba6003d2707d5dcb1d0a60ee55c">   92</a></span>&#160;    <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#ab2028ba6003d2707d5dcb1d0a60ee55c">ARSKeySeq</a>()</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        weyl_.set(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">ARSWeylConstantTrait&lt;0&gt;::value</a>, <a class="code" href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">ARSWeylConstantTrait&lt;1&gt;::value</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a5c67e6dc86469e16289ad4843757b4e2">   98</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a5c67e6dc86469e16289ad4843757b4e2">key</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">key_type</a> &amp;k) { key_.load(k.data()); }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#aa86ff28c167b3b19cf31c284c1997321">  100</a></span>&#160;    <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">key_type</a> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#aa86ff28c167b3b19cf31c284c1997321">key</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">key_type</a> k;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        key_.store(k.data());</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> k;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a118136f04a5001a692340ca133ef72ba">  108</a></span>&#160;    <span class="keyword">const</span> __m128i &amp;<span class="keyword">get</span>(std::integral_constant&lt;std::size_t, 0&gt;)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        round_key_ = key_;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> round_key_.value();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#ae063222f68c9b662268e8e4f7103c87f">  116</a></span>&#160;    <span class="keyword">const</span> __m128i &amp;<span class="keyword">get</span>(std::integral_constant&lt;std::size_t, N&gt;)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        round_key_ += weyl_;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> round_key_.value();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a5c6ab49521da95a7cb6ca77f1dab0ae0">  123</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a5c6ab49521da95a7cb6ca77f1dab0ae0">operator==</a>(</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> &amp;ks1, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> &amp;ks2)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (ks1.round_key_ != ks2.round_key_)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (ks1.weyl_ != ks2.weyl_)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (ks1.key_ != ks2.key_)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#aade6dd8dd2e78e2c88d1c866fbe86e76">  135</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#aade6dd8dd2e78e2c88d1c866fbe86e76">operator!=</a>(</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> &amp;ks1, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> &amp;ks2)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span> !(ks1 == ks2);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a5ecd6918b4c4ded6151c33a67ee56584">  142</a></span>&#160;    <span class="keyword">friend</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a5ecd6918b4c4ded6151c33a67ee56584">operator&lt;&lt;</a>(</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        std::basic_ostream&lt;CharT, Traits&gt; &amp;os, <span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> &amp;ks)</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (!os.good())</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a002b61aeffbe848491e6f52535d0e25c">   92</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a002b61aeffbe848491e6f52535d0e25c">reset</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#ae7648f5751e3ff6fb9fb76239485c83c">key_type</a> &amp;) {}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Rp1&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#aefa5ba5f607fd9c7c9692c29bfe3b7ca">   95</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#aefa5ba5f607fd9c7c9692c29bfe3b7ca">operator()</a>(<span class="keyword">const</span> <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#ae7648f5751e3ff6fb9fb76239485c83c">key_type</a> &amp;key, std::array&lt;M128I&lt;&gt;, Rp1&gt; &amp;rk)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        M128I&lt;std::uint64_t&gt; weyl;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        weyl.set(</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">ARSWeylConstantTrait&lt;1&gt;::value</a>, <a class="code" href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">ARSWeylConstantTrait&lt;0&gt;::value</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::get&lt;0&gt;(rk).load(key.data());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        generate&lt;1&gt;(rk, weyl, std::integral_constant&lt;bool, 1 &lt; Rp1&gt;());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span>, std::<span class="keywordtype">size_t</span> Rp1&gt;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> generate(std::array&lt;M128I&lt;&gt;, Rp1&gt; &amp;, <span class="keyword">const</span> M128I&lt;std::uint64_t&gt; &amp;,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::false_type)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> N, std::<span class="keywordtype">size_t</span> Rp1&gt;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> generate(std::array&lt;M128I&lt;&gt;, Rp1&gt; &amp;rk,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">const</span> M128I&lt;std::uint64_t&gt; &amp;weyl, std::true_type)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::get&lt;N&gt;(rk) =</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            _mm_add_epi64(std::get&lt;N - 1&gt;(rk).value(), weyl.value());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        generate&lt;N + 1&gt;(rk, weyl, std::integral_constant&lt;bool, N + 1 &lt; Rp1&gt;());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}; <span class="comment">// class ARSKeySeq</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ResultType, std::size_t Rounds = <a class="code" href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">VSMC_RNG_ARS_ROUNDS</a>,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::size_t Blocks = <a class="code" href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">VSMC_RNG_ARS_BLOCKS</a>&gt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">using</span> <a class="code" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">ARSEngine</a> =</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">  126</a></span>&#160;    <a class="code" href="classvsmc_1_1_counter_engine.html">AESNIEngine&lt;ResultType, ARSKeySeq&lt;ResultType&gt;</a>, Rounds, Blocks&gt;;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga381bc2811b7191256bbb089b7dcac734">  131</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_1x32</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 1&gt;</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga8f868f0042387920e42502be28b58147">  136</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_2x32</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 2&gt;</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga355ca98b5d4cd084846e45e3fbde8731">  141</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_4x32</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 4&gt;</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga54d262464e9aad2f2b7def83057b7d3a">  146</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_8x32</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 8&gt;</a>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        os &lt;&lt; ks.round_key_ &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        os &lt;&lt; ks.weyl_ &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        os &lt;&lt; ks.key_;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CharT, <span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classvsmc_1_1_a_r_s_key_seq.html#a8f5ba3adab60785ac242eae549f9b894">  156</a></span>&#160;    <span class="keyword">friend</span> std::basic_ostream&lt;CharT, Traits&gt; &amp;<a class="code" href="classvsmc_1_1_a_r_s_key_seq.html#a8f5ba3adab60785ac242eae549f9b894">operator&gt;&gt;</a>(</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        std::basic_istream&lt;CharT, Traits&gt; &amp;is, <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> &amp;ks)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (!is.good())</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">return</span> is;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="classvsmc_1_1_a_r_s_key_seq.html">ARSKeySeq&lt;ResultType&gt;</a> ks_tmp;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        is &gt;&gt; std::ws &gt;&gt; ks_tmp.round_key_;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        is &gt;&gt; std::ws &gt;&gt; ks_tmp.weyl_;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        is &gt;&gt; std::ws &gt;&gt; ks_tmp.key_;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span> (is.good())</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            ks = std::move(ks_tmp);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> is;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gad07702706bccbcb5142605623fdc8ed9">  151</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_1x64</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 1&gt;</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gadd56c1bf3e5f7b511c7f2250a4aa5750">  156</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_2x64</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 2&gt;</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">  161</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_4x64</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 4&gt;</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gac18f90d06bd52ef3ea91d13baf3e9002">  166</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_8x64</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 8&gt;</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gace17716c811e6b6928e1a14d11fecbb1">  171</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint32_t&gt;</a>;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    M128I&lt;std::uint64_t&gt; round_key_;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    M128I&lt;std::uint64_t&gt; weyl_;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    M128I&lt;std::uint64_t&gt; key_;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}; <span class="comment">// class ARSKeySeq</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ResultType, std::size_t Rounds = <a class="code" href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">VSMC_RNG_ARS_ROUNDS</a>,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::size_t Blocks = <a class="code" href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">VSMC_RNG_ARS_BLOCKS</a>&gt;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">using</span> <a class="code" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">ARSEngine</a> =</div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">  184</a></span>&#160;    <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">AESNIEngine&lt;ResultType, ARSKeySeq&lt;ResultType&gt;</a>, Rounds, Blocks&gt;;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga381bc2811b7191256bbb089b7dcac734">  189</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_1x32</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 1&gt;</a>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga8f868f0042387920e42502be28b58147">  194</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_2x32</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 2&gt;</a>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga355ca98b5d4cd084846e45e3fbde8731">  199</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_4x32</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 4&gt;</a>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga54d262464e9aad2f2b7def83057b7d3a">  204</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_8x32</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint32_t, VSMC_RNG_ARS_ROUNDS, 8&gt;</a>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gad07702706bccbcb5142605623fdc8ed9">  209</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_1x64</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 1&gt;</a>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gadd56c1bf3e5f7b511c7f2250a4aa5750">  214</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_2x64</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 2&gt;</a>;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">  219</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_4x64</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 4&gt;</a>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gac18f90d06bd52ef3ea91d13baf3e9002">  224</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_8x64</a> = <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARSEngine&lt;std::uint64_t, VSMC_RNG_ARS_ROUNDS, 8&gt;</a>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga0748e787efe03167bcf9142d41f30552">  229</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS</a> = <a class="code" href="group___a_e_s_n_i_r_n_g.html#ga355ca98b5d4cd084846e45e3fbde8731">ARS_4x32</a>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#ga16e3b7555bae171ffc927cb1f8007ba7">  234</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_a_e_s_n_i_engine.html">ARS_64</a> = <a class="code" href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">ARS_4x64</a>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_ARS_HPP</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">  176</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classvsmc_1_1_counter_engine.html">ARS_64</a> = <a class="code" href="classvsmc_1_1_counter_engine.html">ARSEngine&lt;std::uint64_t&gt;</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_ARS_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
-<div class="ttc" id="group___a_e_s_n_i_r_n_g_html_ga2b4b6dd151e2b42e48336d03208ff7da"><div class="ttname"><a href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">vsmc::ARS_4x64</a></div><div class="ttdeci">ARSEngine&lt; std::uint64_t, 5, 4 &gt; ARS_4x64</div><div class="ttdoc">ARS RNG engine with 64-bits integers output, 4 blocks and default rounds. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00219">ars.hpp:219</a></div></div>
-<div class="ttc" id="group___a_e_s_n_i_r_n_g_html_ga05fb2d3c048c360df43b013bce866b09"><div class="ttname"><a href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">vsmc::ARSEngine</a></div><div class="ttdeci">AESNIEngine&lt; ResultType, ARSKeySeq&lt; ResultType &gt;, Rounds, Blocks &gt; ARSEngine</div><div class="ttdoc">ARS RNG engine. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00184">ars.hpp:184</a></div></div>
+<div class="ttc" id="group___a_e_s_n_i_r_n_g_html_ga05fb2d3c048c360df43b013bce866b09"><div class="ttname"><a href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">vsmc::ARSEngine</a></div><div class="ttdeci">AESNIEngine&lt; ResultType, ARSKeySeq&lt; ResultType &gt;, Rounds, Blocks &gt; ARSEngine</div><div class="ttdoc">ARS RNG engine. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00126">ars.hpp:126</a></div></div>
+<div class="ttc" id="classvsmc_1_1_counter_engine_html"><div class="ttname"><a href="classvsmc_1_1_counter_engine.html">vsmc::CounterEngine</a></div><div class="ttdoc">Counter based RNG engine. </div><div class="ttdef"><b>Definition:</b> <a href="rng_2internal_2common_8hpp_source.html#l00325">common.hpp:325</a></div></div>
 <div class="ttc" id="rng_2internal_2common_8hpp_html"><div class="ttname"><a href="rng_2internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_a5c67e6dc86469e16289ad4843757b4e2"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#a5c67e6dc86469e16289ad4843757b4e2">vsmc::ARSKeySeq::key</a></div><div class="ttdeci">void key(const key_type &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00098">ars.hpp:98</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_ab2028ba6003d2707d5dcb1d0a60ee55c"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#ab2028ba6003d2707d5dcb1d0a60ee55c">vsmc::ARSKeySeq::ARSKeySeq</a></div><div class="ttdeci">ARSKeySeq()</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00092">ars.hpp:92</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_a8f5ba3adab60785ac242eae549f9b894"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#a8f5ba3adab60785ac242eae549f9b894">vsmc::ARSKeySeq::operator&gt;&gt;</a></div><div class="ttdeci">friend std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&gt;&gt;(std::basic_istream&lt; CharT, Traits &gt; &amp;is, ARSKeySeq&lt; ResultType &gt; &amp;ks)</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00156">ars.hpp:156</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_a229c64b699f60c92399489b6af1ffd90"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#a229c64b699f60c92399489b6af1ffd90">vsmc::ARSKeySeq::key_type</a></div><div class="ttdeci">std::array&lt; ResultType, M128I&lt; ResultType &gt;::size()&gt; key_type</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00090">ars.hpp:90</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_aa86ff28c167b3b19cf31c284c1997321"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#aa86ff28c167b3b19cf31c284c1997321">vsmc::ARSKeySeq::key</a></div><div class="ttdeci">key_type key() const </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00100">ars.hpp:100</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_a5ecd6918b4c4ded6151c33a67ee56584"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#a5ecd6918b4c4ded6151c33a67ee56584">vsmc::ARSKeySeq::operator&lt;&lt;</a></div><div class="ttdeci">friend std::basic_ostream&lt; CharT, Traits &gt; &amp; operator&lt;&lt;(std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const ARSKeySeq&lt; ResultType &gt; &amp;ks)</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00142">ars.hpp:142</a></div></div>
+<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_aefa5ba5f607fd9c7c9692c29bfe3b7ca"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#aefa5ba5f607fd9c7c9692c29bfe3b7ca">vsmc::ARSKeySeq::operator()</a></div><div class="ttdeci">void operator()(const key_type &amp;key, std::array&lt; M128I&lt;&gt;, Rp1 &gt; &amp;rk) const </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00095">ars.hpp:95</a></div></div>
+<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_ae7648f5751e3ff6fb9fb76239485c83c"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#ae7648f5751e3ff6fb9fb76239485c83c">vsmc::ARSKeySeq::key_type</a></div><div class="ttdeci">std::array&lt; T, M128I&lt; T &gt;::size()&gt; key_type</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00090">ars.hpp:90</a></div></div>
 <div class="ttc" id="classvsmc_1_1internal_1_1_a_r_s_weyl_constant_html"><div class="ttname"><a href="classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html">vsmc::internal::ARSWeylConstant</a></div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00057">ars.hpp:57</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_e_s_n_i_engine_html"><div class="ttname"><a href="classvsmc_1_1_a_e_s_n_i_engine.html">vsmc::AESNIEngine</a></div><div class="ttdoc">RNG engine using AES-NI instructions. </div><div class="ttdef"><b>Definition:</b> <a href="aes__ni_8hpp_source.html#l00058">aes_ni.hpp:58</a></div></div>
-<div class="ttc" id="group___config_html_ga06ab3a314e0c73692809f2c1e42fa80c"><div class="ttname"><a href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">VSMC_RNG_ARS_ROUNDS</a></div><div class="ttdeci">#define VSMC_RNG_ARS_ROUNDS</div><div class="ttdoc">ARSEngine default rounds. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00047">ars.hpp:47</a></div></div>
+<div class="ttc" id="group___config_html_ga06ab3a314e0c73692809f2c1e42fa80c"><div class="ttname"><a href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">VSMC_RNG_ARS_ROUNDS</a></div><div class="ttdeci">#define VSMC_RNG_ARS_ROUNDS</div><div class="ttdoc">ARSEngine default rounds. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00041">ars.hpp:41</a></div></div>
 <div class="ttc" id="classvsmc_1_1_a_r_s_weyl_constant_trait_html"><div class="ttname"><a href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">vsmc::ARSWeylConstantTrait</a></div><div class="ttdoc">ARSEngine Weyl sequence constants. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00080">ars.hpp:80</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_aade6dd8dd2e78e2c88d1c866fbe86e76"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#aade6dd8dd2e78e2c88d1c866fbe86e76">vsmc::ARSKeySeq::operator!=</a></div><div class="ttdeci">friend bool operator!=(const ARSKeySeq&lt; ResultType &gt; &amp;ks1, const ARSKeySeq&lt; ResultType &gt; &amp;ks2)</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00135">ars.hpp:135</a></div></div>
+<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_a002b61aeffbe848491e6f52535d0e25c"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#a002b61aeffbe848491e6f52535d0e25c">vsmc::ARSKeySeq::reset</a></div><div class="ttdeci">void reset(const key_type &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00092">ars.hpp:92</a></div></div>
 <div class="ttc" id="aes__ni_8hpp_html"><div class="ttname"><a href="aes__ni_8hpp.html">aes_ni.hpp</a></div></div>
-<div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html_a5c6ab49521da95a7cb6ca77f1dab0ae0"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html#a5c6ab49521da95a7cb6ca77f1dab0ae0">vsmc::ARSKeySeq::operator==</a></div><div class="ttdeci">friend bool operator==(const ARSKeySeq&lt; ResultType &gt; &amp;ks1, const ARSKeySeq&lt; ResultType &gt; &amp;ks2)</div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00123">ars.hpp:123</a></div></div>
-<div class="ttc" id="group___config_html_ga31b2ea747ea11fa3a264445f2173b31c"><div class="ttname"><a href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">VSMC_RNG_ARS_BLOCKS</a></div><div class="ttdeci">#define VSMC_RNG_ARS_BLOCKS</div><div class="ttdoc">ARSEngine default blocks. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00041">ars.hpp:41</a></div></div>
+<div class="ttc" id="group___config_html_ga31b2ea747ea11fa3a264445f2173b31c"><div class="ttname"><a href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">VSMC_RNG_ARS_BLOCKS</a></div><div class="ttdeci">#define VSMC_RNG_ARS_BLOCKS</div><div class="ttdoc">ARSEngine default blocks. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00047">ars.hpp:47</a></div></div>
 <div class="ttc" id="classvsmc_1_1_a_r_s_key_seq_html"><div class="ttname"><a href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq</a></div><div class="ttdoc">Default ARSEngine key sequence generator. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00087">ars.hpp:87</a></div></div>
-<div class="ttc" id="group___a_e_s_n_i_r_n_g_html_ga355ca98b5d4cd084846e45e3fbde8731"><div class="ttname"><a href="group___a_e_s_n_i_r_n_g.html#ga355ca98b5d4cd084846e45e3fbde8731">vsmc::ARS_4x32</a></div><div class="ttdeci">ARSEngine&lt; std::uint32_t, 5, 4 &gt; ARS_4x32</div><div class="ttdoc">ARS RNG engine with 32-bits integers output, 4 blocks and default rounds. </div><div class="ttdef"><b>Definition:</b> <a href="ars_8hpp_source.html#l00199">ars.hpp:199</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

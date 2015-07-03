@@ -254,6 +254,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>VSMC_DEFINE_TYPE_TEMPLATE_DISPATCH_TRAIT
 : <a class="el" href="traits_8hpp.html#aa0225c176bc9c248dd6d7b9e8577272f">traits.hpp</a>
 </li>
+<li>VSMC_DEFINE_UTILITY_SIMD_INTEGER_BINARY_OP
+: <a class="el" href="simd_8hpp.html#adc7e2f27a66271f96dc62ec57e7b9c12">simd.hpp</a>
+</li>
+<li>VSMC_DEFINE_UTILITY_SIMD_REAL_BINARY_OP
+: <a class="el" href="simd_8hpp.html#a99a548bd29617cb855fe88d1c4ad4e4a">simd.hpp</a>
+</li>
 <li>VSMC_EXP_F32
 : <a class="el" href="common_8h.html#ad50d939921da71720d46f6c9813cbbf0">common.h</a>
 </li>
@@ -360,9 +366,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>vsmc_malloc()
 : <a class="el" href="group___c___a_p_i___memory.html#ga118bd4a0770c93a8970032fca37dfb57">vsmc.h</a>
-</li>
-<li>VSMC_MAX_UINT
-: <a class="el" href="defines_8hpp.html#a30ac4b011a60d41fdbb29be12ed4de84">defines.hpp</a>
 </li>
 <li>vsmc_mkl_brng_aes128_1x32()
 : <a class="el" href="group___c___a_p_i___m_l_k___b_r_n_g.html#ga7bd908fb69e70cd94b9155b6481d92a5">vsmc.h</a>
@@ -634,9 +637,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>vsmc_mkl_brng_xorwow8x64()
 : <a class="el" href="group___c___a_p_i___m_l_k___b_r_n_g.html#gacf3736b9f4224faf6d0dad022d1239e5">vsmc.h</a>
 </li>
-<li>VSMC_MNE
-: <a class="el" href="defines_8hpp.html#a6e24175504fd5e6f8c6bc602a5f128b0">defines.hpp</a>
-</li>
 <li>VSMC_MSVC_NONEXIST
 : <a class="el" href="msvc_8h.html#a86948e5ee40f2b75b0578282792296e9">msvc.h</a>
 </li>
@@ -727,11 +727,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>VSMC_RESAMPLE_MULTINOMIAL
 : <a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25af64464ab954cf9404bebe202b958781b">vsmc.h</a>
 </li>
-<li>vsmc_resample_residual()
-: <a class="el" href="group___c___a_p_i___resample.html#ga36ee5d49796255f7b54ffe9b4a47f907">vsmc.h</a>
-</li>
 <li>VSMC_RESAMPLE_RESIDUAL
 : <a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a17c7ab49aaf3d1eec2f2e422c78ce433">vsmc.h</a>
+</li>
+<li>vsmc_resample_residual()
+: <a class="el" href="group___c___a_p_i___resample.html#ga36ee5d49796255f7b54ffe9b4a47f907">vsmc.h</a>
 </li>
 <li>vsmc_resample_residual_stratified()
 : <a class="el" href="group___c___a_p_i___resample.html#ga47e5a236ac32beb4822ae9ad92b4c3c2">vsmc.h</a>
@@ -739,11 +739,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>VSMC_RESAMPLE_RESIDUAL_STRATIFIED
 : <a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a31b351ce15ff8803114780ed875acd2f">vsmc.h</a>
 </li>
-<li>VSMC_RESAMPLE_RESIDUAL_SYSTEMATIC
-: <a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a1b840540a97479426df9a9c0841ef344">vsmc.h</a>
-</li>
 <li>vsmc_resample_residual_systematic()
 : <a class="el" href="group___c___a_p_i___resample.html#gacd3fe166c81cfffe1f11f2f35328f86e">vsmc.h</a>
+</li>
+<li>VSMC_RESAMPLE_RESIDUAL_SYSTEMATIC
+: <a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a1b840540a97479426df9a9c0841ef344">vsmc.h</a>
 </li>
 <li>VSMC_RESAMPLE_RNG_TYPE
 : <a class="el" href="group___config.html#ga3f674a30b5b33116532915eacfec441b">common.hpp</a>
@@ -841,6 +841,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>VSMC_RNG_PHILOX_ROUNDS
 : <a class="el" href="group___config.html#ga3fd18e09fa563ebb7db4935844f27d01">philox.hpp</a>
 </li>
+<li>VSMC_RNG_PHILOX_VECTOR_LENGTH
+: <a class="el" href="group___config.html#gacbba31b294c9d1016dcc5465a61ada69">philox.hpp</a>
+</li>
 <li>vsmc_rng_poisson()
 : <a class="el" href="group___c___a_p_i___r_n_g.html#ga99e584d310887ab87f26bb024ea889d9">vsmc.h</a>
 </li>
@@ -870,6 +873,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>VSMC_RNG_THREEFRY_ROUNDS
 : <a class="el" href="group___config.html#ga1a2c9d41ef96eab2169fe899620fb3f2">threefry.hpp</a>
+</li>
+<li>VSMC_RNG_THREEFRY_VECTOR_LENGTH
+: <a class="el" href="group___config.html#ga5c3d754f5b261c58a70aec73d0e438ff">threefry.hpp</a>
 </li>
 <li>VSMC_RNG_TYPE
 : <a class="el" href="group___config.html#gaf4d9c091769094f833a293f8bfa5ebc4">engine.hpp</a>
@@ -1148,8 +1154,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="utility_2mkl_8hpp.html#aa71b223b6085647dfb0da226c79d17b3">mkl.hpp</a>
 </li>
 <li>VSMC_STATIC_INLINE
-: <a class="el" href="compiler_8h.html#a012fa09dad2fa666d92cf745261d4a7a">compiler.h</a>
-, <a class="el" href="opencl_8h.html#a012fa09dad2fa666d92cf745261d4a7a">opencl.h</a>
+: <a class="el" href="opencl_8h.html#a012fa09dad2fa666d92cf745261d4a7a">opencl.h</a>
+, <a class="el" href="compiler_8h.html#a012fa09dad2fa666d92cf745261d4a7a">compiler.h</a>
 </li>
 <li>VSMC_STOP_WATCH_CLOCK_TYPE
 : <a class="el" href="group___config.html#gadf265857239830e8d7487e331443e90d">stop_watch.hpp</a>

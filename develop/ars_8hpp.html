@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq&lt; ResultType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ARSEngine key sequence generator.  <a href="classvsmc_1_1_a_r_s_key_seq.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">vsmc::ARSWeylConstantTrait&lt; I &gt;</a></td></tr>
@@ -132,7 +132,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga31b2ea747ea11fa3a264445f2173b31c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">VSMC_RNG_ARS_BLOCKS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:ga31b2ea747ea11fa3a264445f2173b31c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">VSMC_RNG_ARS_BLOCKS</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:ga31b2ea747ea11fa3a264445f2173b31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARSEngine default blocks.  <a href="group___config.html#ga31b2ea747ea11fa3a264445f2173b31c">More...</a><br /></td></tr>
 <tr class="separator:ga31b2ea747ea11fa3a264445f2173b31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06ab3a314e0c73692809f2c1e42fa80c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga06ab3a314e0c73692809f2c1e42fa80c">VSMC_RNG_ARS_ROUNDS</a>&#160;&#160;&#160;5</td></tr>
@@ -141,9 +141,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0748e787efe03167bcf9142d41f30552"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga0748e787efe03167bcf9142d41f30552">vsmc::ARS</a> = ARS_4x32</td></tr>
-<tr class="memdesc:ga0748e787efe03167bcf9142d41f30552"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, default blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#ga0748e787efe03167bcf9142d41f30552">More...</a><br /></td></tr>
-<tr class="separator:ga0748e787efe03167bcf9142d41f30552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace17716c811e6b6928e1a14d11fecbb1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gace17716c811e6b6928e1a14d11fecbb1">vsmc::ARS</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &gt;</td></tr>
+<tr class="memdesc:gace17716c811e6b6928e1a14d11fecbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, default blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#gace17716c811e6b6928e1a14d11fecbb1">More...</a><br /></td></tr>
+<tr class="separator:gace17716c811e6b6928e1a14d11fecbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga381bc2811b7191256bbb089b7dcac734"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga381bc2811b7191256bbb089b7dcac734">vsmc::ARS_1x32</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 5, 1 &gt;</td></tr>
 <tr class="memdesc:ga381bc2811b7191256bbb089b7dcac734"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, 1 block and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#ga381bc2811b7191256bbb089b7dcac734">More...</a><br /></td></tr>
 <tr class="separator:ga381bc2811b7191256bbb089b7dcac734"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,16 +162,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga2b4b6dd151e2b42e48336d03208ff7da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">vsmc::ARS_4x64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 5, 4 &gt;</td></tr>
 <tr class="memdesc:ga2b4b6dd151e2b42e48336d03208ff7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, 4 blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">More...</a><br /></td></tr>
 <tr class="separator:ga2b4b6dd151e2b42e48336d03208ff7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16e3b7555bae171ffc927cb1f8007ba7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga16e3b7555bae171ffc927cb1f8007ba7">vsmc::ARS_64</a> = ARS_4x64</td></tr>
-<tr class="memdesc:ga16e3b7555bae171ffc927cb1f8007ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, default blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#ga16e3b7555bae171ffc927cb1f8007ba7">More...</a><br /></td></tr>
-<tr class="separator:ga16e3b7555bae171ffc927cb1f8007ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">vsmc::ARS_64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
+<tr class="memdesc:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, default blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">More...</a><br /></td></tr>
+<tr class="separator:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54d262464e9aad2f2b7def83057b7d3a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga54d262464e9aad2f2b7def83057b7d3a">vsmc::ARS_8x32</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 5, 8 &gt;</td></tr>
 <tr class="memdesc:ga54d262464e9aad2f2b7def83057b7d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, 8 blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#ga54d262464e9aad2f2b7def83057b7d3a">More...</a><br /></td></tr>
 <tr class="separator:ga54d262464e9aad2f2b7def83057b7d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac18f90d06bd52ef3ea91d13baf3e9002"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gac18f90d06bd52ef3ea91d13baf3e9002">vsmc::ARS_8x64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 5, 8 &gt;</td></tr>
 <tr class="memdesc:gac18f90d06bd52ef3ea91d13baf3e9002"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, 8 blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#gac18f90d06bd52ef3ea91d13baf3e9002">More...</a><br /></td></tr>
 <tr class="separator:gac18f90d06bd52ef3ea91d13baf3e9002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05fb2d3c048c360df43b013bce866b09"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 1&gt; </td></tr>
+<tr class="memitem:ga05fb2d3c048c360df43b013bce866b09"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 4&gt; </td></tr>
 <tr class="memitem:ga05fb2d3c048c360df43b013bce866b09"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">vsmc::ARSEngine</a> = AESNIEngine&lt; ResultType, ARSKeySeq&lt; ResultType &gt;, Rounds, Blocks &gt;</td></tr>
 <tr class="memdesc:ga05fb2d3c048c360df43b013bce866b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine.  <a href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">More...</a><br /></td></tr>
 <tr class="separator:ga05fb2d3c048c360df43b013bce866b09"><td class="memSeparator" colspan="2">&#160;</td></tr>

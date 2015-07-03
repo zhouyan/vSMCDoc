@@ -30,5 +30,6 @@ var searchData=
   ['clprogram',['CLProgram',['../classvsmc_1_1_c_l_program.html',1,'vsmc']]],
   ['clquery',['CLQuery',['../classvsmc_1_1_c_l_query.html',1,'vsmc']]],
   ['clsampler',['CLSampler',['../classvsmc_1_1_c_l_sampler.html',1,'vsmc']]],
-  ['clsetup',['CLSetup',['../classvsmc_1_1_c_l_setup.html',1,'vsmc']]]
+  ['clsetup',['CLSetup',['../classvsmc_1_1_c_l_setup.html',1,'vsmc']]],
+  ['counterengine',['CounterEngine',['../classvsmc_1_1_counter_engine.html',1,'vsmc']]]
 ];

@@ -100,7 +100,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classvsmc_1_1_m_k_l_engine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vsmc::MKLEngine&lt; BRNG, Bits &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a> &raquo; <a class="el" href="group___m_k_l_r_n_g.html">Intel Math Kernel Library</a></div></div>  </div>
@@ -130,11 +129,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a783c5b27d10cbb7fc4d190cd011801c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa90967926143460c54b1ba1f600fb4bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#aa90967926143460c54b1ba1f600fb4bc">operator()</a> ()</td></tr>
 <tr class="separator:aa90967926143460c54b1ba1f600fb4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7a28f3f8a422b618434a116c956c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a7c7a28f3f8a422b618434a116c956c3f">operator()</a> (std::size_t n, <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> *r)</td></tr>
+<tr class="separator:a7c7a28f3f8a422b618434a116c956c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb33d6fc91a5f985d83abc4c5e6a08f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#acb33d6fc91a5f985d83abc4c5e6a08f5">seed</a> (MKL_UINT s)</td></tr>
 <tr class="separator:acb33d6fc91a5f985d83abc4c5e6a08f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3ef4ad4d2b29514588be736be7b7ab4"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
-<tr class="memitem:ab3ef4ad4d2b29514588be736be7b7ab4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#ab3ef4ad4d2b29514588be736be7b7ab4">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT, <a class="el" href="classvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, Bits &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
-<tr class="separator:ab3ef4ad4d2b29514588be736be7b7ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f692faa48fe7bb6bde8399f239901a"><td class="memTemplParams" colspan="2">template&lt;typename SeedSeq &gt; </td></tr>
+<tr class="memitem:a95f692faa48fe7bb6bde8399f239901a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a95f692faa48fe7bb6bde8399f239901a">seed</a> (SeedSeq &amp;seq, typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT &gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *=nullptr)</td></tr>
+<tr class="separator:a95f692faa48fe7bb6bde8399f239901a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfdec74631834b2e08f82e619770d024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#abfdec74631834b2e08f82e619770d024">seed</a> (MKL_UINT s, MKL_INT offset)</td></tr>
 <tr class="separator:abfdec74631834b2e08f82e619770d024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae526587f0e05289e716ad3de324af744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#ae526587f0e05289e716ad3de324af744">stream</a> ()</td></tr>
@@ -148,13 +149,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2265f38074f6a0c3e53d0a1316d5b2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0602c5b539e9d53bf593204899c737ce"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a0602c5b539e9d53bf593204899c737ce">min</a> ()</td></tr>
 <tr class="separator:a0602c5b539e9d53bf593204899c737ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a53592f5bc8f87a278716e0efdc2e64ae"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a53592f5bc8f87a278716e0efdc2e64ae">_Max</a> = static_cast&lt; <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> &gt;(~(static_cast&lt; <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> &gt;(0)))</td></tr>
-<tr class="separator:a53592f5bc8f87a278716e0efdc2e64ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c80b08b56029ca743b2e0290830d768"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a1c80b08b56029ca743b2e0290830d768">_Min</a> = 0</td></tr>
-<tr class="separator:a1c80b08b56029ca743b2e0290830d768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;MKL_INT BRNG, std::size_t Bits&gt;<br />
@@ -162,7 +156,7 @@ class vsmc::MKLEngine&lt; BRNG, Bits &gt;</h3>
 
 <p>MKL RNG C++11 engine. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00208">208</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00207">207</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a189bd1f9a56a2b9db3426156645043c5"></a>
 <div class="memitem">
@@ -176,7 +170,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00211">211</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00210">210</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +199,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00213">213</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00212">212</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +239,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00216">216</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00215">215</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -283,7 +277,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00224">224</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00223">223</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +306,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00257">257</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00262">262</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -339,7 +333,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00267">267</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00273">273</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +360,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00266">266</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00268">268</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +387,45 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00246">246</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00245">245</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c7a28f3f8a422b618434a116c956c3f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_m_k_l_engine.html">vsmc::MKLEngine</a>&lt; BRNG, Bits &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00256">256</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -421,11 +453,11 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00226">226</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00225">225</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab3ef4ad4d2b29514588be736be7b7ab4"></a>
+<a class="anchor" id="a95f692faa48fe7bb6bde8399f239901a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -445,7 +477,7 @@ template&lt;typename SeedSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT, <a class="el" href="classvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, Bits &gt;&gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="classvsmc_1_1internal_1_1is__seed__seq.html">internal::is_seed_seq</a>&lt; SeedSeq, MKL_UINT &gt;::value &gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a> *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -461,7 +493,7 @@ template&lt;typename SeedSeq &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00229">229</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00228">228</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -499,7 +531,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00238">238</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00237">237</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -526,7 +558,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00269">269</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00278">278</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -553,56 +585,7 @@ template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00270">270</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a53592f5bc8f87a278716e0efdc2e64ae"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> <a class="el" href="classvsmc_1_1_m_k_l_engine.html">vsmc::MKLEngine</a>&lt; BRNG, Bits &gt;::_Max = static_cast&lt; <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> &gt;(~(static_cast&lt; <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> &gt;(0)))</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00264">264</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1c80b08b56029ca743b2e0290830d768"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;MKL_INT BRNG, std::size_t Bits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a189bd1f9a56a2b9db3426156645043c5">result_type</a> <a class="el" href="classvsmc_1_1_m_k_l_engine.html">vsmc::MKLEngine</a>&lt; BRNG, Bits &gt;::_Min = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00263">263</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00279">279</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>

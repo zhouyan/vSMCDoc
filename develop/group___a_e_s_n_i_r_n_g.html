@@ -97,18 +97,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_engine.html">vsmc::AESNIEngine&lt; ResultType, KeySeqType, Rounds, Blocks &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG engine using AES-NI instructions.  <a href="classvsmc_1_1_a_e_s_n_i_engine.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator&lt; ResultType, KeySeqType, Rounds, Blocks &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG generator using AES-NI instructions.  <a href="classvsmc_1_1_a_e_s_n_i_generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq&lt; ResultType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ARSEngine key sequence generator.  <a href="classvsmc_1_1_a_r_s_key_seq.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gafe8e64fcb228641838b2746b63c6b37b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gafe8e64fcb228641838b2746b63c6b37b">vsmc::AES128</a> = AES128_4x32</td></tr>
-<tr class="memdesc:gafe8e64fcb228641838b2746b63c6b37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 32-bits integers output and default blocks.  <a href="#gafe8e64fcb228641838b2746b63c6b37b">More...</a><br /></td></tr>
-<tr class="separator:gafe8e64fcb228641838b2746b63c6b37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7378827f6e66f43ee3178d025fb22441"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga7378827f6e66f43ee3178d025fb22441">vsmc::AES128</a> = AES128Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &gt;</td></tr>
+<tr class="memdesc:ga7378827f6e66f43ee3178d025fb22441"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 32-bits integers output and default blocks.  <a href="#ga7378827f6e66f43ee3178d025fb22441">More...</a><br /></td></tr>
+<tr class="separator:ga7378827f6e66f43ee3178d025fb22441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab3c21f239de5e00988ced5412eaaf632"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gab3c21f239de5e00988ced5412eaaf632">vsmc::AES128_1x32</a> = AES128Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 1 &gt;</td></tr>
 <tr class="memdesc:gab3c21f239de5e00988ced5412eaaf632"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 32-bits integers output and 1 block.  <a href="#gab3c21f239de5e00988ced5412eaaf632">More...</a><br /></td></tr>
 <tr class="separator:gab3c21f239de5e00988ced5412eaaf632"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,16 +127,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaa03c5f9eb7ef2eb4443bb0b2a968bcae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gaa03c5f9eb7ef2eb4443bb0b2a968bcae">vsmc::AES128_4x64</a> = AES128Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 4 &gt;</td></tr>
 <tr class="memdesc:gaa03c5f9eb7ef2eb4443bb0b2a968bcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 64-bits integers output and 4 blocks.  <a href="#gaa03c5f9eb7ef2eb4443bb0b2a968bcae">More...</a><br /></td></tr>
 <tr class="separator:gaa03c5f9eb7ef2eb4443bb0b2a968bcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac23030cce8183650ba332599363909e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gac23030cce8183650ba332599363909e9">vsmc::AES128_64</a> = AES128_4x64</td></tr>
-<tr class="memdesc:gac23030cce8183650ba332599363909e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 64-bits integers output and default blocks.  <a href="#gac23030cce8183650ba332599363909e9">More...</a><br /></td></tr>
-<tr class="separator:gac23030cce8183650ba332599363909e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf95d9c12ce50c94ec07d92ce4d0d9fab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gaf95d9c12ce50c94ec07d92ce4d0d9fab">vsmc::AES128_64</a> = AES128Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
+<tr class="memdesc:gaf95d9c12ce50c94ec07d92ce4d0d9fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 64-bits integers output and default blocks.  <a href="#gaf95d9c12ce50c94ec07d92ce4d0d9fab">More...</a><br /></td></tr>
+<tr class="separator:gaf95d9c12ce50c94ec07d92ce4d0d9fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1ad83546f34586a1b51f4e50eab5404"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gac1ad83546f34586a1b51f4e50eab5404">vsmc::AES128_8x32</a> = AES128Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 8 &gt;</td></tr>
 <tr class="memdesc:gac1ad83546f34586a1b51f4e50eab5404"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 32-bits integers output and 8 blocks.  <a href="#gac1ad83546f34586a1b51f4e50eab5404">More...</a><br /></td></tr>
 <tr class="separator:gac1ad83546f34586a1b51f4e50eab5404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99b9885ff4e5cfdb3b8e80470f7284af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga99b9885ff4e5cfdb3b8e80470f7284af">vsmc::AES128_8x64</a> = AES128Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 8 &gt;</td></tr>
 <tr class="memdesc:ga99b9885ff4e5cfdb3b8e80470f7284af"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine with 64-bits integers output and 8 blocks.  <a href="#ga99b9885ff4e5cfdb3b8e80470f7284af">More...</a><br /></td></tr>
 <tr class="separator:ga99b9885ff4e5cfdb3b8e80470f7284af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18a722c1caf2b8a41e747227a2d812c1"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Blocks = 1&gt; </td></tr>
+<tr class="memitem:ga18a722c1caf2b8a41e747227a2d812c1"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Blocks = 4&gt; </td></tr>
 <tr class="memitem:ga18a722c1caf2b8a41e747227a2d812c1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga18a722c1caf2b8a41e747227a2d812c1">vsmc::AES128Engine</a> = AESNIEngine&lt; ResultType, AES128KeySeq&lt; ResultType, 10 &gt;, 10, Blocks &gt;</td></tr>
 <tr class="memdesc:ga18a722c1caf2b8a41e747227a2d812c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 RNG engine.  <a href="#ga18a722c1caf2b8a41e747227a2d812c1">More...</a><br /></td></tr>
 <tr class="separator:ga18a722c1caf2b8a41e747227a2d812c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,9 +144,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga7ae11e0fead39743ff439b3f3b270c17"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga7ae11e0fead39743ff439b3f3b270c17">vsmc::AES128KeySeq</a> = internal::AESKeySeq&lt; ResultType, Rounds, internal::AES128KeySeqGenerator&lt; ResultType &gt;&gt;</td></tr>
 <tr class="memdesc:ga7ae11e0fead39743ff439b3f3b270c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES128Engine key sequence generator.  <a href="#ga7ae11e0fead39743ff439b3f3b270c17">More...</a><br /></td></tr>
 <tr class="separator:ga7ae11e0fead39743ff439b3f3b270c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f070a77e61a49d80f562c90a5935efc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga5f070a77e61a49d80f562c90a5935efc">vsmc::AES192</a> = AES192_4x32</td></tr>
-<tr class="memdesc:ga5f070a77e61a49d80f562c90a5935efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 32-bits integers output and default blocks.  <a href="#ga5f070a77e61a49d80f562c90a5935efc">More...</a><br /></td></tr>
-<tr class="separator:ga5f070a77e61a49d80f562c90a5935efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ab6a798827364d7e187a18198172c9a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga3ab6a798827364d7e187a18198172c9a">vsmc::AES192</a> = AES192Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &gt;</td></tr>
+<tr class="memdesc:ga3ab6a798827364d7e187a18198172c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 32-bits integers output and default blocks.  <a href="#ga3ab6a798827364d7e187a18198172c9a">More...</a><br /></td></tr>
+<tr class="separator:ga3ab6a798827364d7e187a18198172c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga704674402cd693a13d6ed206910c9c68"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga704674402cd693a13d6ed206910c9c68">vsmc::AES192_1x32</a> = AES192Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 1 &gt;</td></tr>
 <tr class="memdesc:ga704674402cd693a13d6ed206910c9c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 32-bits integers output and 1 block.  <a href="#ga704674402cd693a13d6ed206910c9c68">More...</a><br /></td></tr>
 <tr class="separator:ga704674402cd693a13d6ed206910c9c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,16 +165,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaf470a2be4ade9bcaaea07dc9c72ae56c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gaf470a2be4ade9bcaaea07dc9c72ae56c">vsmc::AES192_4x64</a> = AES192Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 4 &gt;</td></tr>
 <tr class="memdesc:gaf470a2be4ade9bcaaea07dc9c72ae56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 64-bits integers output and 4 blocks.  <a href="#gaf470a2be4ade9bcaaea07dc9c72ae56c">More...</a><br /></td></tr>
 <tr class="separator:gaf470a2be4ade9bcaaea07dc9c72ae56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39644e74da4dec149e38d52cfd7032a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga39644e74da4dec149e38d52cfd7032a3">vsmc::AES192_64</a> = AES192_4x64</td></tr>
-<tr class="memdesc:ga39644e74da4dec149e38d52cfd7032a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 64-bits integers output and default blocks.  <a href="#ga39644e74da4dec149e38d52cfd7032a3">More...</a><br /></td></tr>
-<tr class="separator:ga39644e74da4dec149e38d52cfd7032a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga383c635c31513a18fdfd28f68bbde45b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga383c635c31513a18fdfd28f68bbde45b">vsmc::AES192_64</a> = AES192Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
+<tr class="memdesc:ga383c635c31513a18fdfd28f68bbde45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 64-bits integers output and default blocks.  <a href="#ga383c635c31513a18fdfd28f68bbde45b">More...</a><br /></td></tr>
+<tr class="separator:ga383c635c31513a18fdfd28f68bbde45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7256a5fbea66344f619aa994fef7d300"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga7256a5fbea66344f619aa994fef7d300">vsmc::AES192_8x32</a> = AES192Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 8 &gt;</td></tr>
 <tr class="memdesc:ga7256a5fbea66344f619aa994fef7d300"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 32-bits integers output and 8 blocks.  <a href="#ga7256a5fbea66344f619aa994fef7d300">More...</a><br /></td></tr>
 <tr class="separator:ga7256a5fbea66344f619aa994fef7d300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga816e44927d91f96551172c0a942f2322"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga816e44927d91f96551172c0a942f2322">vsmc::AES192_8x64</a> = AES192Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 8 &gt;</td></tr>
 <tr class="memdesc:ga816e44927d91f96551172c0a942f2322"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine with 64-bits integers output and 8 blocks.  <a href="#ga816e44927d91f96551172c0a942f2322">More...</a><br /></td></tr>
 <tr class="separator:ga816e44927d91f96551172c0a942f2322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9499dce145054a8e5227099b93f2b1c6"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Blocks = 1&gt; </td></tr>
+<tr class="memitem:ga9499dce145054a8e5227099b93f2b1c6"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Blocks = 4&gt; </td></tr>
 <tr class="memitem:ga9499dce145054a8e5227099b93f2b1c6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga9499dce145054a8e5227099b93f2b1c6">vsmc::AES192Engine</a> = AESNIEngine&lt; ResultType, AES192KeySeq&lt; ResultType, 12 &gt;, 12, Blocks &gt;</td></tr>
 <tr class="memdesc:ga9499dce145054a8e5227099b93f2b1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-192 RNG engine.  <a href="#ga9499dce145054a8e5227099b93f2b1c6">More...</a><br /></td></tr>
 <tr class="separator:ga9499dce145054a8e5227099b93f2b1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +182,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga11914e6a37fffccdd17504ebbdc1d1a4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga11914e6a37fffccdd17504ebbdc1d1a4">vsmc::AES192KeySeq</a> = internal::AESKeySeq&lt; ResultType, Rounds, internal::AES192KeySeqGenerator&lt; ResultType &gt;&gt;</td></tr>
 <tr class="memdesc:ga11914e6a37fffccdd17504ebbdc1d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES192Engine key sequence generator.  <a href="#ga11914e6a37fffccdd17504ebbdc1d1a4">More...</a><br /></td></tr>
 <tr class="separator:ga11914e6a37fffccdd17504ebbdc1d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b1c66684fcac7f421b2d461a26b5868"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga7b1c66684fcac7f421b2d461a26b5868">vsmc::AES256</a> = AES256_4x32</td></tr>
-<tr class="memdesc:ga7b1c66684fcac7f421b2d461a26b5868"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 32-bits integers output and default blocks.  <a href="#ga7b1c66684fcac7f421b2d461a26b5868">More...</a><br /></td></tr>
-<tr class="separator:ga7b1c66684fcac7f421b2d461a26b5868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71acb88adfad4ebff2b5f8e8129fc5ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga71acb88adfad4ebff2b5f8e8129fc5ed">vsmc::AES256</a> = AES256Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &gt;</td></tr>
+<tr class="memdesc:ga71acb88adfad4ebff2b5f8e8129fc5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 32-bits integers output and default blocks.  <a href="#ga71acb88adfad4ebff2b5f8e8129fc5ed">More...</a><br /></td></tr>
+<tr class="separator:ga71acb88adfad4ebff2b5f8e8129fc5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5612cd1692095a3f79162e2c2481e023"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga5612cd1692095a3f79162e2c2481e023">vsmc::AES256_1x32</a> = AES256Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 1 &gt;</td></tr>
 <tr class="memdesc:ga5612cd1692095a3f79162e2c2481e023"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 32-bits integers output and 1 block.  <a href="#ga5612cd1692095a3f79162e2c2481e023">More...</a><br /></td></tr>
 <tr class="separator:ga5612cd1692095a3f79162e2c2481e023"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,16 +203,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga212cafcd862eb30a654aac0308335cc9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga212cafcd862eb30a654aac0308335cc9">vsmc::AES256_4x64</a> = AES256Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 4 &gt;</td></tr>
 <tr class="memdesc:ga212cafcd862eb30a654aac0308335cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 64-bits integers output and 4 blocks.  <a href="#ga212cafcd862eb30a654aac0308335cc9">More...</a><br /></td></tr>
 <tr class="separator:ga212cafcd862eb30a654aac0308335cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45f0cb386a8367e1ec590a3bb706f895"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga45f0cb386a8367e1ec590a3bb706f895">vsmc::AES256_64</a> = AES256_4x64</td></tr>
-<tr class="memdesc:ga45f0cb386a8367e1ec590a3bb706f895"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 64-bits integers output and default blocks.  <a href="#ga45f0cb386a8367e1ec590a3bb706f895">More...</a><br /></td></tr>
-<tr class="separator:ga45f0cb386a8367e1ec590a3bb706f895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7d9918cefeb4546a5f19f10889c053f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gab7d9918cefeb4546a5f19f10889c053f">vsmc::AES256_64</a> = AES256Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
+<tr class="memdesc:gab7d9918cefeb4546a5f19f10889c053f"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 64-bits integers output and default blocks.  <a href="#gab7d9918cefeb4546a5f19f10889c053f">More...</a><br /></td></tr>
+<tr class="separator:gab7d9918cefeb4546a5f19f10889c053f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa87663997d4a5dad4aa614608dc8047"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gafa87663997d4a5dad4aa614608dc8047">vsmc::AES256_8x32</a> = AES256Engine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 8 &gt;</td></tr>
 <tr class="memdesc:gafa87663997d4a5dad4aa614608dc8047"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 32-bits integers output and 8 blocks.  <a href="#gafa87663997d4a5dad4aa614608dc8047">More...</a><br /></td></tr>
 <tr class="separator:gafa87663997d4a5dad4aa614608dc8047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1760cf654d3fe6519b45ee1c7fdd7cd5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga1760cf654d3fe6519b45ee1c7fdd7cd5">vsmc::AES256_8x64</a> = AES256Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 8 &gt;</td></tr>
 <tr class="memdesc:ga1760cf654d3fe6519b45ee1c7fdd7cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine with 64-bits integers output and 8 blocks.  <a href="#ga1760cf654d3fe6519b45ee1c7fdd7cd5">More...</a><br /></td></tr>
 <tr class="separator:ga1760cf654d3fe6519b45ee1c7fdd7cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ab1b8f87524f8e2ba6252699d2260bc"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Blocks = 1&gt; </td></tr>
+<tr class="memitem:ga4ab1b8f87524f8e2ba6252699d2260bc"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Blocks = 4&gt; </td></tr>
 <tr class="memitem:ga4ab1b8f87524f8e2ba6252699d2260bc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga4ab1b8f87524f8e2ba6252699d2260bc">vsmc::AES256Engine</a> = AESNIEngine&lt; ResultType, AES256KeySeq&lt; ResultType, 14 &gt;, 14, Blocks &gt;</td></tr>
 <tr class="memdesc:ga4ab1b8f87524f8e2ba6252699d2260bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-256 RNG engine.  <a href="#ga4ab1b8f87524f8e2ba6252699d2260bc">More...</a><br /></td></tr>
 <tr class="separator:ga4ab1b8f87524f8e2ba6252699d2260bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,9 +220,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab504a47e2e6c1950ba70f81e6fea79d1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gab504a47e2e6c1950ba70f81e6fea79d1">vsmc::AES256KeySeq</a> = internal::AESKeySeq&lt; ResultType, Rounds, internal::AES256KeySeqGenerator&lt; ResultType &gt;&gt;</td></tr>
 <tr class="memdesc:gab504a47e2e6c1950ba70f81e6fea79d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES256Engine key sequence generator.  <a href="#gab504a47e2e6c1950ba70f81e6fea79d1">More...</a><br /></td></tr>
 <tr class="separator:gab504a47e2e6c1950ba70f81e6fea79d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0748e787efe03167bcf9142d41f30552"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga0748e787efe03167bcf9142d41f30552">vsmc::ARS</a> = ARS_4x32</td></tr>
-<tr class="memdesc:ga0748e787efe03167bcf9142d41f30552"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, default blocks and default rounds.  <a href="#ga0748e787efe03167bcf9142d41f30552">More...</a><br /></td></tr>
-<tr class="separator:ga0748e787efe03167bcf9142d41f30552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5726a65d03129aa4b667bc9594c00971"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </td></tr>
+<tr class="memitem:ga5726a65d03129aa4b667bc9594c00971"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga5726a65d03129aa4b667bc9594c00971">vsmc::AESNIEngine</a> = CounterEngine&lt; AESNIGenerator&lt; ResultType, KeySeqType, Rounds, Blocks &gt;&gt;</td></tr>
+<tr class="memdesc:ga5726a65d03129aa4b667bc9594c00971"><td class="mdescLeft">&#160;</td><td class="mdescRight">RNG engine using AES-NI instructions.  <a href="#ga5726a65d03129aa4b667bc9594c00971">More...</a><br /></td></tr>
+<tr class="separator:ga5726a65d03129aa4b667bc9594c00971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace17716c811e6b6928e1a14d11fecbb1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gace17716c811e6b6928e1a14d11fecbb1">vsmc::ARS</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &gt;</td></tr>
+<tr class="memdesc:gace17716c811e6b6928e1a14d11fecbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, default blocks and default rounds.  <a href="#gace17716c811e6b6928e1a14d11fecbb1">More...</a><br /></td></tr>
+<tr class="separator:gace17716c811e6b6928e1a14d11fecbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga381bc2811b7191256bbb089b7dcac734"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga381bc2811b7191256bbb089b7dcac734">vsmc::ARS_1x32</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 5, 1 &gt;</td></tr>
 <tr class="memdesc:ga381bc2811b7191256bbb089b7dcac734"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, 1 block and default rounds.  <a href="#ga381bc2811b7191256bbb089b7dcac734">More...</a><br /></td></tr>
 <tr class="separator:ga381bc2811b7191256bbb089b7dcac734"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,16 +245,16 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga2b4b6dd151e2b42e48336d03208ff7da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga2b4b6dd151e2b42e48336d03208ff7da">vsmc::ARS_4x64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 5, 4 &gt;</td></tr>
 <tr class="memdesc:ga2b4b6dd151e2b42e48336d03208ff7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, 4 blocks and default rounds.  <a href="#ga2b4b6dd151e2b42e48336d03208ff7da">More...</a><br /></td></tr>
 <tr class="separator:ga2b4b6dd151e2b42e48336d03208ff7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16e3b7555bae171ffc927cb1f8007ba7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga16e3b7555bae171ffc927cb1f8007ba7">vsmc::ARS_64</a> = ARS_4x64</td></tr>
-<tr class="memdesc:ga16e3b7555bae171ffc927cb1f8007ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, default blocks and default rounds.  <a href="#ga16e3b7555bae171ffc927cb1f8007ba7">More...</a><br /></td></tr>
-<tr class="separator:ga16e3b7555bae171ffc927cb1f8007ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">vsmc::ARS_64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
+<tr class="memdesc:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, default blocks and default rounds.  <a href="#gad79b4e4ee8c5e519a46fc2b0df331449">More...</a><br /></td></tr>
+<tr class="separator:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54d262464e9aad2f2b7def83057b7d3a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga54d262464e9aad2f2b7def83057b7d3a">vsmc::ARS_8x32</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 5, 8 &gt;</td></tr>
 <tr class="memdesc:ga54d262464e9aad2f2b7def83057b7d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bits integers output, 8 blocks and default rounds.  <a href="#ga54d262464e9aad2f2b7def83057b7d3a">More...</a><br /></td></tr>
 <tr class="separator:ga54d262464e9aad2f2b7def83057b7d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac18f90d06bd52ef3ea91d13baf3e9002"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gac18f90d06bd52ef3ea91d13baf3e9002">vsmc::ARS_8x64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 5, 8 &gt;</td></tr>
 <tr class="memdesc:gac18f90d06bd52ef3ea91d13baf3e9002"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bits integers output, 8 blocks and default rounds.  <a href="#gac18f90d06bd52ef3ea91d13baf3e9002">More...</a><br /></td></tr>
 <tr class="separator:gac18f90d06bd52ef3ea91d13baf3e9002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05fb2d3c048c360df43b013bce866b09"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 1&gt; </td></tr>
+<tr class="memitem:ga05fb2d3c048c360df43b013bce866b09"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 4&gt; </td></tr>
 <tr class="memitem:ga05fb2d3c048c360df43b013bce866b09"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">vsmc::ARSEngine</a> = AESNIEngine&lt; ResultType, ARSKeySeq&lt; ResultType &gt;, Rounds, Blocks &gt;</td></tr>
 <tr class="memdesc:ga05fb2d3c048c360df43b013bce866b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine.  <a href="#ga05fb2d3c048c360df43b013bce866b09">More...</a><br /></td></tr>
 <tr class="separator:ga05fb2d3c048c360df43b013bce866b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,19 +262,19 @@ Typedefs</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Random number generating using AES-NI. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gafe8e64fcb228641838b2746b63c6b37b"></a>
+<a class="anchor" id="ga7378827f6e66f43ee3178d025fb22441"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#gafe8e64fcb228641838b2746b63c6b37b">vsmc::AES128</a> = typedef AES128_4x32</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga7378827f6e66f43ee3178d025fb22441">vsmc::AES128</a> = typedef AES128Engine&lt;<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AES-128 RNG engine with 32-bits integers output and default blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00737">737</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00683">683</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +290,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 32-bits integers output and 1 block. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00705">705</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00651">651</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +306,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 64-bits integers output and 1 block. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00721">721</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00667">667</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +322,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 32-bits integers output and 2 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00709">709</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00655">655</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -334,7 +338,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 64-bits integers output and 2 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00725">725</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00671">671</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +354,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 32-bits integers output and 4 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00713">713</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00659">659</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -366,23 +370,23 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 64-bits integers output and 4 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00729">729</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00675">675</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gac23030cce8183650ba332599363909e9"></a>
+<a class="anchor" id="gaf95d9c12ce50c94ec07d92ce4d0d9fab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#gac23030cce8183650ba332599363909e9">vsmc::AES128_64</a> = typedef AES128_4x64</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#gaf95d9c12ce50c94ec07d92ce4d0d9fab">vsmc::AES128_64</a> = typedef AES128Engine&lt;<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AES-128 RNG engine with 64-bits integers output and default blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00741">741</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00687">687</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +402,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 32-bits integers output and 8 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00717">717</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00663">663</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -414,7 +418,7 @@ Typedefs</h2></td></tr>
 
 <p>AES-128 RNG engine with 64-bits integers output and 8 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00733">733</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00679">679</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -422,7 +426,7 @@ Typedefs</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , std::size_t Blocks = 1&gt; </div>
+template&lt;typename ResultType , std::size_t Blocks = 4&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga18a722c1caf2b8a41e747227a2d812c1">vsmc::AES128Engine</a> = typedef AESNIEngine&lt;ResultType, AES128KeySeq&lt;ResultType, 10&gt;, 10, Blocks&gt;</td>
@@ -432,7 +436,7 @@ template&lt;typename ResultType , std::size_t Blocks = 1&gt; </div>
 
 <p>AES-128 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00689">689</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00635">635</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -450,23 +454,23 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES128Engine key sequence generator. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00671">671</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00617">617</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga5f070a77e61a49d80f562c90a5935efc"></a>
+<a class="anchor" id="ga3ab6a798827364d7e187a18198172c9a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga5f070a77e61a49d80f562c90a5935efc">vsmc::AES192</a> = typedef AES192_4x32</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga3ab6a798827364d7e187a18198172c9a">vsmc::AES192</a> = typedef AES192Engine&lt;<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AES-192 RNG engine with 32-bits integers output and default blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00777">777</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00723">723</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +486,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 32-bits integers output and 1 block. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00745">745</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00691">691</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -498,7 +502,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 64-bits integers output and 1 block. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00761">761</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00707">707</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -514,7 +518,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 32-bits integers output and 2 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00749">749</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00695">695</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -530,7 +534,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 64-bits integers output and 2 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00765">765</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00711">711</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -546,7 +550,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 32-bits integers output and 4 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00753">753</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00699">699</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -562,23 +566,23 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 64-bits integers output and 4 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00769">769</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00715">715</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga39644e74da4dec149e38d52cfd7032a3"></a>
+<a class="anchor" id="ga383c635c31513a18fdfd28f68bbde45b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga39644e74da4dec149e38d52cfd7032a3">vsmc::AES192_64</a> = typedef AES192_4x64</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga383c635c31513a18fdfd28f68bbde45b">vsmc::AES192_64</a> = typedef AES192Engine&lt;<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AES-192 RNG engine with 64-bits integers output and default blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00781">781</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00727">727</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -594,7 +598,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 32-bits integers output and 8 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00757">757</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00703">703</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -610,7 +614,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-192 RNG engine with 64-bits integers output and 8 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00773">773</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00719">719</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -618,7 +622,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , std::size_t Blocks = 1&gt; </div>
+template&lt;typename ResultType , std::size_t Blocks = 4&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga9499dce145054a8e5227099b93f2b1c6">vsmc::AES192Engine</a> = typedef AESNIEngine&lt;ResultType, AES192KeySeq&lt;ResultType, 12&gt;, 12, Blocks&gt;</td>
@@ -628,7 +632,7 @@ template&lt;typename ResultType , std::size_t Blocks = 1&gt; </div>
 
 <p>AES-192 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00695">695</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00641">641</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -646,23 +650,23 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES192Engine key sequence generator. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00677">677</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00623">623</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga7b1c66684fcac7f421b2d461a26b5868"></a>
+<a class="anchor" id="ga71acb88adfad4ebff2b5f8e8129fc5ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga7b1c66684fcac7f421b2d461a26b5868">vsmc::AES256</a> = typedef AES256_4x32</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga71acb88adfad4ebff2b5f8e8129fc5ed">vsmc::AES256</a> = typedef AES256Engine&lt;<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AES-256 RNG engine with 32-bits integers output and default blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00817">817</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00763">763</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +682,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 32-bits integers output and 1 block. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00785">785</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00731">731</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -694,7 +698,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 64-bits integers output and 1 block. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00801">801</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00747">747</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -710,7 +714,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 32-bits integers output and 2 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00789">789</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00735">735</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +730,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 64-bits integers output and 2 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00805">805</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00751">751</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -742,7 +746,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 32-bits integers output and 4 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00793">793</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00739">739</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -758,23 +762,23 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 64-bits integers output and 4 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00809">809</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00755">755</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga45f0cb386a8367e1ec590a3bb706f895"></a>
+<a class="anchor" id="gab7d9918cefeb4546a5f19f10889c053f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga45f0cb386a8367e1ec590a3bb706f895">vsmc::AES256_64</a> = typedef AES256_4x64</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#gab7d9918cefeb4546a5f19f10889c053f">vsmc::AES256_64</a> = typedef AES256Engine&lt;<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>AES-256 RNG engine with 64-bits integers output and default blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00821">821</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00767">767</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -790,7 +794,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 32-bits integers output and 8 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00797">797</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00743">743</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -806,7 +810,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES-256 RNG engine with 64-bits integers output and 8 blocks. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00813">813</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00759">759</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -814,7 +818,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , std::size_t Blocks = 1&gt; </div>
+template&lt;typename ResultType , std::size_t Blocks = 4&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga4ab1b8f87524f8e2ba6252699d2260bc">vsmc::AES256Engine</a> = typedef AESNIEngine&lt;ResultType, AES256KeySeq&lt;ResultType, 14&gt;, 14, Blocks&gt;</td>
@@ -824,7 +828,7 @@ template&lt;typename ResultType , std::size_t Blocks = 1&gt; </div>
 
 <p>AES-256 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00701">701</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00647">647</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
@@ -842,23 +846,41 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>AES256Engine key sequence generator. </p>
 
-<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00683">683</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes_8hpp_source.html#l00629">629</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0748e787efe03167bcf9142d41f30552"></a>
+<a class="anchor" id="ga5726a65d03129aa4b667bc9594c00971"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga5726a65d03129aa4b667bc9594c00971">vsmc::AESNIEngine</a> = typedef CounterEngine&lt;AESNIGenerator&lt;ResultType, KeySeqType, Rounds, Blocks&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RNG engine using AES-NI instructions. </p>
+
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00199">199</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gace17716c811e6b6928e1a14d11fecbb1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga0748e787efe03167bcf9142d41f30552">vsmc::ARS</a> = typedef ARS_4x32</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#gace17716c811e6b6928e1a14d11fecbb1">vsmc::ARS</a> = typedef ARSEngine&lt;<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>ARS RNG engine with 32-bits integers output, default blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00229">229</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00171">171</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -874,7 +896,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 32-bits integers output, 1 block and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00189">189</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00131">131</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -890,7 +912,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 64-bits integers output, 1 block and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00209">209</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00151">151</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -906,7 +928,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 32-bits integers output, 2 blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00194">194</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00136">136</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -922,7 +944,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 64-bits integers output, 2 blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00214">214</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00156">156</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -938,7 +960,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 32-bits integers output, 4 blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00199">199</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00141">141</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -954,23 +976,23 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 64-bits integers output, 4 blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00219">219</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00161">161</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga16e3b7555bae171ffc927cb1f8007ba7"></a>
+<a class="anchor" id="gad79b4e4ee8c5e519a46fc2b0df331449"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga16e3b7555bae171ffc927cb1f8007ba7">vsmc::ARS_64</a> = typedef ARS_4x64</td>
+          <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">vsmc::ARS_64</a> = typedef ARSEngine&lt;<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>ARS RNG engine with 64-bits integers output, default blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00234">234</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00176">176</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -986,7 +1008,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 32-bits integers output, 8 blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00204">204</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00146">146</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1024,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 
 <p>ARS RNG engine with 64-bits integers output, 8 blocks and default rounds. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00224">224</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00166">166</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1032,7 @@ template&lt;typename ResultType , std::size_t Rounds&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 1&gt; </div>
+template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 4&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="group___a_e_s_n_i_r_n_g.html#ga05fb2d3c048c360df43b013bce866b09">vsmc::ARSEngine</a> = typedef AESNIEngine&lt;ResultType, ARSKeySeq&lt;ResultType&gt;, Rounds, Blocks&gt;</td>
@@ -1020,7 +1042,7 @@ template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 1
 
 <p>ARS RNG engine. </p>
 
-<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00184">184</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ars_8hpp_source.html#l00126">126</a> of file <a class="el" href="ars_8hpp_source.html">ars.hpp</a>.</p>
 
 </div>
 </div>

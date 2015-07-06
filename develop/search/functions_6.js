@@ -24,5 +24,8 @@ var searchData=
   ['global_5fwork_5fsize',['global_work_size',['../classvsmc_1_1_c_l_kernel.html#aa36b94a26a508b9deb1a2f2fbcf520bf',1,'vsmc::CLKernel']]],
   ['grid',['grid',['../classvsmc_1_1_path.html#ab1cac030914a269a8889ed724150525b',1,'vsmc::Path']]],
   ['grid_5fdata',['grid_data',['../classvsmc_1_1_path.html#a210292fee0d8f936ab7861d1f0e72ad1',1,'vsmc::Path']]],
-  ['gumbel',['gumbel',['../classvsmc_1_1_m_k_l_stream.html#a339072944c957b08cc954c0f82af2742',1,'vsmc::MKLStream::gumbel(MKL_INT n, float *r, float a=0, float beta=1, MKL_INT method=VSL_RNG_METHOD_GUMBEL_ICDF)'],['../classvsmc_1_1_m_k_l_stream.html#afcf9ff05a8f6d24fa4edd95db17ad735',1,'vsmc::MKLStream::gumbel(MKL_INT n, double *r, double a=0, double beta=1, MKL_INT method=VSL_RNG_METHOD_GUMBEL_ICDF)']]]
+  ['gumbel',['gumbel',['../classvsmc_1_1_m_k_l_stream.html#a339072944c957b08cc954c0f82af2742',1,'vsmc::MKLStream::gumbel(MKL_INT n, float *r, float a=0, float beta=1, MKL_INT method=VSL_RNG_METHOD_GUMBEL_ICDF)'],['../classvsmc_1_1_m_k_l_stream.html#afcf9ff05a8f6d24fa4edd95db17ad735',1,'vsmc::MKLStream::gumbel(MKL_INT n, double *r, double a=0, double beta=1, MKL_INT method=VSL_RNG_METHOD_GUMBEL_ICDF)']]],
+  ['gumbel_5fdistribution',['gumbel_distribution',['../group___distribution.html#ga216ad0f64eae604760b49fa156233106',1,'vsmc']]],
+  ['gumbel_5fdistribution_5fimpl',['gumbel_distribution_impl',['../namespacevsmc_1_1internal.html#a87f1fa1a0ea1e336806f6f056592786d',1,'vsmc::internal']]],
+  ['gumbeldistribution',['GumbelDistribution',['../classvsmc_1_1_gumbel_distribution.html#aa1dff21ba6a142efa4239814325db016',1,'vsmc::GumbelDistribution::GumbelDistribution(result_type location=0, result_type scale=1)'],['../classvsmc_1_1_gumbel_distribution.html#a03f0fc1f673c1c4c16ec1819f90d743a',1,'vsmc::GumbelDistribution::GumbelDistribution(const param_type &amp;param)']]]
 ];

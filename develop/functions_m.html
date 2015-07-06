@@ -151,6 +151,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_counter_engine.html#a66c7ad0c91ba19475f17e815f7be37b4">vsmc::CounterEngine&lt; Generator &gt;</a>
 , <a class="el" href="classvsmc_1_1_discrete_distribution.html#a1d68c65977a734e920f692e9a8bbfaae">vsmc::DiscreteDistribution&lt; IntType &gt;</a>
 , <a class="el" href="classvsmc_1_1_exponential_distribution.html#ac96cdd3caecf3614dbe81e57f11782bc">vsmc::ExponentialDistribution&lt; RealType &gt;</a>
+, <a class="el" href="classvsmc_1_1_gumbel_distribution.html#aac53c993a512526a4df7b29d0f6ee510">vsmc::GumbelDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_dynamic.html#af8aaf6bce33624383bb41545f5515315">vsmc::internal::MKLOffsetDynamic&lt; MaxOffset &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_zero.html#a598f07474b5a6faaac77cde035b216c1">vsmc::internal::MKLOffsetZero</a>
 , <a class="el" href="classvsmc_1_1_laplace_distribution.html#abac8abdcc4843e4d4c64e89fe92f6547">vsmc::LaplaceDistribution&lt; RealType &gt;</a>
@@ -195,6 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_counter_engine.html#a230d14b6ba8d15abb316a778a3c6a04b">vsmc::CounterEngine&lt; Generator &gt;</a>
 , <a class="el" href="classvsmc_1_1_discrete_distribution.html#aefa7482f5df1f267b64a308fcf647519">vsmc::DiscreteDistribution&lt; IntType &gt;</a>
 , <a class="el" href="classvsmc_1_1_exponential_distribution.html#a0aa9b5fd97f7a3b0da0c1078c23a1040">vsmc::ExponentialDistribution&lt; RealType &gt;</a>
+, <a class="el" href="classvsmc_1_1_gumbel_distribution.html#aebfa4032964ec946e5ba779d4e85beb3">vsmc::GumbelDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_dynamic.html#a8394ad48371e6c70d340e131fbb345c0">vsmc::internal::MKLOffsetDynamic&lt; MaxOffset &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_zero.html#a1e48fd09d25e7ab0d76545f0649cee13">vsmc::internal::MKLOffsetZero</a>
 , <a class="el" href="classvsmc_1_1_laplace_distribution.html#a23a2ee30e88f9c1a6ef326076d7432ea">vsmc::LaplaceDistribution&lt; RealType &gt;</a>
@@ -216,7 +218,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_m_k_l_conv_task.html#a4d20f4550835ae2850e36fa3f285b07f">vsmc::MKLConvTask&lt; ResultType &gt;</a>
 </li>
 <li>MKLCorrTask()
-: <a class="el" href="classvsmc_1_1_m_k_l_corr_task.html#a18dc9a2e0452378a4dd621a20bd7361a">vsmc::MKLCorrTask&lt; ResultType &gt;</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_corr_task.html#a8559e3c7465540d23a0a609c751000d8">vsmc::MKLCorrTask&lt; ResultType &gt;</a>
 </li>
 <li>MKLDFTask()
 : <a class="el" href="classvsmc_1_1_m_k_l_d_f_task.html#ab75b59eea982e807d6b17c1232752af6">vsmc::MKLDFTask&lt; ResultType &gt;</a>
@@ -228,10 +230,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_dynamic.html#a22974f415fe1fbf64503ba81dea0671a">vsmc::internal::MKLOffsetDynamic&lt; MaxOffset &gt;</a>
 </li>
 <li>MKLSSTask()
-: <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a59f65bf95bc99282502b5cc21346cf38">vsmc::MKLSSTask&lt; ResultType &gt;</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_s_s_task.html#a1db78fe43d1b5c24efaaf4ca840cb75c">vsmc::MKLSSTask&lt; ResultType &gt;</a>
 </li>
 <li>MKLStream()
-: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#af5b545018237b6152e0bf163fc9cc5d3">vsmc::MKLStream</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a1fdbb4aec72931bd4a152b31ba0b4a11">vsmc::MKLStream</a>
 </li>
 <li>modulo()
 : <a class="el" href="classvsmc_1_1_seed_generator.html#a35a688b8d89d8040bff4057a8fd0e3f4">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a>
@@ -241,26 +243,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_monitor.html#a73126d2ec8d806e0bfafb28dcf4ea272">vsmc::Monitor&lt; T &gt;</a>
 </li>
 <li>monitor()
-: <a class="el" href="classvsmc_1_1_sampler.html#ad7b60acfcc6edf8f87d8850f2980d6bc">vsmc::Sampler&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_sampler.html#a30fe55d0f4786c6ca3f59be17350203a">vsmc::Sampler&lt; T &gt;</a>
 </li>
 <li>monitor_map_type
 : <a class="el" href="classvsmc_1_1_sampler.html#a77c1315d3475afa3f02a2c111c25ee3f">vsmc::Sampler&lt; T &gt;</a>
 </li>
 <li>MonitorEvalBase()
-: <a class="el" href="classvsmc_1_1_monitor_eval_base.html#a3170efc8a765af47466d5338c7404518">vsmc::MonitorEvalBase&lt; T, Derived &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_base.html#a10665e481697de8f7d8f1f705582c490">vsmc::MonitorEvalBase&lt; T, Derived &gt;</a>
 , <a class="el" href="classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html#ab12b9b7bcbd07e05e11ab3cfd1a6f5a1">vsmc::MonitorEvalBase&lt; T, Virtual &gt;</a>
 </li>
 <li>MonitorEvalCL()
-: <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#adfb90a3b99d85dcb616b47b9fe153248">vsmc::MonitorEvalCL&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#ae79068e6c0ef111d10ee3816305030f0">vsmc::MonitorEvalCL&lt; T &gt;</a>
 </li>
 <li>MonitorEvalOMP()
-: <a class="el" href="classvsmc_1_1_monitor_eval_o_m_p.html#adf789ebeef1d9a7a9ff19fe7f3e8ef26">vsmc::MonitorEvalOMP&lt; T, Derived &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_o_m_p.html#aebe2c6a99d93eb2213ae9994b676f383">vsmc::MonitorEvalOMP&lt; T, Derived &gt;</a>
 </li>
 <li>MonitorEvalSEQ()
 : <a class="el" href="classvsmc_1_1_monitor_eval_s_e_q.html#a847bf54f3d39253eb9e8bee0cd89bea7">vsmc::MonitorEvalSEQ&lt; T, Derived &gt;</a>
 </li>
 <li>MonitorEvalTBB()
-: <a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html#af664be4bb950f47a7966c6030f0eb6b0">vsmc::MonitorEvalTBB&lt; T, Derived &gt;</a>
+: <a class="el" href="classvsmc_1_1_monitor_eval_t_b_b.html#abecbc0b6220644d91cd5aec5616ed4c2">vsmc::MonitorEvalTBB&lt; T, Derived &gt;</a>
 </li>
 <li>move()
 : <a class="el" href="classvsmc_1_1_sampler.html#ab0c41cc61304e8350bd4cec5368a4b35">vsmc::Sampler&lt; T &gt;</a>
@@ -278,20 +280,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_sampler.html#ad494acddf29da232d3f6bd192273e484">vsmc::Sampler&lt; T &gt;</a>
 </li>
 <li>MoveBase()
-: <a class="el" href="classvsmc_1_1_move_base.html#a577f676d3748b882f6ec26acb3ffe933">vsmc::MoveBase&lt; T, Derived &gt;</a>
-, <a class="el" href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#a8694ab52eb84a83f440da749a316e6e3">vsmc::MoveBase&lt; T, Virtual &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_base.html#a182006de95faae22ba4f17c672aa68fc">vsmc::MoveBase&lt; T, Derived &gt;</a>
+, <a class="el" href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#aaffd9df08479690fdde59c6709c21eb2">vsmc::MoveBase&lt; T, Virtual &gt;</a>
 </li>
 <li>MoveCL()
-: <a class="el" href="classvsmc_1_1_move_c_l.html#ab1efbb104c1f7ea28fc032c7c0a9651c">vsmc::MoveCL&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_c_l.html#afc9c4b6967618b9cc6f263d8df5821db">vsmc::MoveCL&lt; T &gt;</a>
 </li>
 <li>MoveOMP()
 : <a class="el" href="classvsmc_1_1_move_o_m_p.html#a51f56ff2ab5e34ac3d3c67b3223c5b24">vsmc::MoveOMP&lt; T, Derived &gt;</a>
 </li>
 <li>MoveSEQ()
-: <a class="el" href="classvsmc_1_1_move_s_e_q.html#a5c4fb03657dae08451919224c8bbdbc5">vsmc::MoveSEQ&lt; T, Derived &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_s_e_q.html#a10a5a95cee0f30ac5066259c7b556ca6">vsmc::MoveSEQ&lt; T, Derived &gt;</a>
 </li>
 <li>MoveTBB()
-: <a class="el" href="classvsmc_1_1_move_t_b_b.html#ad356c95a950a263890a28115c640ec8e">vsmc::MoveTBB&lt; T, Derived &gt;</a>
+: <a class="el" href="classvsmc_1_1_move_t_b_b.html#a6a70638e49feef130124d9cace21a86f">vsmc::MoveTBB&lt; T, Derived &gt;</a>
 </li>
 <li>mpi_id
 : <a class="el" href="classvsmc_1_1_state_m_p_i.html#afe7663fe25bb1afd95130159b760fadd">vsmc::StateMPI&lt; StateBase, ID &gt;</a>
@@ -304,7 +306,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_m_p_i_environment.html#a46ff49a2e5cced363ccf74571a85ce4e">vsmc::MPIEnvironment</a>
 </li>
 <li>mul()
-: <a class="el" href="classvsmc_1_1_weight.html#a9a094a8f39508cbff4d5404efb2ada11">vsmc::Weight</a>
+: <a class="el" href="classvsmc_1_1_weight.html#a4a060d7b32502ec5b3972ad3c7876237">vsmc::Weight</a>
 , <a class="el" href="classvsmc_1_1_weight_null.html#a25efbd353e5cd6fc63ff08def944fc46">vsmc::WeightNull</a>
 </li>
 <li>mutable_data()

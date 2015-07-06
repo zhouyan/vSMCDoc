@@ -230,7 +230,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> enc_first(std::array&lt;M128I&lt;&gt;, K&gt; &amp;state,</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">const</span> std::array&lt;M128I&lt;&gt;, Rounds + 1&gt; &amp;rk, std::true_type)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::get&lt;B&gt;(state) &amp;= std::get&lt;0&gt;(rk);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::get&lt;B&gt;(state) ^= std::get&lt;0&gt;(rk);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        enc_first&lt;B + 1&gt;(state, rk, std::integral_constant&lt;bool, B + 1 &lt; K&gt;());</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>

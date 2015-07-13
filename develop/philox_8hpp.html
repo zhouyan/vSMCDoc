@@ -253,7 +253,7 @@ Functions</h2></td></tr>
 <div class="line">    {                                                                         \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00062">62</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00064">64</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ Functions</h2></td></tr>
 <div class="line">    {                                                                         \</div>
 <div class="line">    };</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00056">56</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00058">58</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -306,10 +306,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a>(ResultType);                    <a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">\</a></div>
 <div class="line"><a class="code" href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">    VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a>(K);</div>
-<div class="ttc" id="philox_8hpp_html_a8de86ca1eaf53a8d0d4f5467978fe452"><div class="ttname"><a href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE(K)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00048">philox.hpp:48</a></div></div>
+<div class="ttc" id="philox_8hpp_html_a8de86ca1eaf53a8d0d4f5467978fe452"><div class="ttname"><a href="philox_8hpp.html#a8de86ca1eaf53a8d0d4f5467978fe452">VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_SIZE(K)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00050">philox.hpp:50</a></div></div>
 <div class="ttc" id="philox_8hpp_html_a71d8c5b10e0a4c9058d512ee59625f7d"><div class="ttname"><a href="philox_8hpp.html#a71d8c5b10e0a4c9058d512ee59625f7d">VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_PHILOX_RESULT_TYPE(ResultType)</div><div class="ttdef"><b>Definition:</b> <a href="philox_8hpp_source.html#l00042">philox.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00052">52</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00054">54</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -326,10 +326,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((std::is_same&lt;ResultType, std::uint32_t&gt;::value ||     \</div>
-<div class="line">                           std::is_same&lt;ResultType, std::uint64_t&gt;::value),   \</div>
-<div class="line">        <span class="stringliteral">&quot;**PhiloxGenerator** USED WITH ResultType OTHER THAN std::uint32_t &quot;</span>  \</div>
-<div class="line">        <span class="stringliteral">&quot;OR std::uint64_t&quot;</span>)</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(((<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(<a class="code" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>) &amp;&amp;       \</div>
+<div class="line">                            std::is_unsigned&lt;ResultType&gt;::value) ||           \</div>
+<div class="line">                           (<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(<a class="code" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>) &amp;&amp;    \</div>
+<div class="line">                               std::is_unsigned&lt;ResultType&gt;::value)),         \</div>
+<div class="line">        <span class="stringliteral">&quot;**PhiloxGenerator** USED WITH ResultType OTHER THAN UNSIGNED 32/64 &quot;</span> \</div>
+<div class="line">        <span class="stringliteral">&quot;BITS INTEGER&quot;</span>)</div>
+<div class="ttc" id="opencl_8h_html_a1597d08777066cd00a3f2846cf6ae7a8"><div class="ttname"><a href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">uint32_t</a></div><div class="ttdeci">uint uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="opencl_8h_source.html#l00039">opencl.h:39</a></div></div>
+<div class="ttc" id="opencl_8h_html_a2bf9e57a8d20903de8d1e3905eed8150"><div class="ttname"><a href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">uint64_t</a></div><div class="ttdeci">ulong uint64_t</div><div class="ttdef"><b>Definition:</b> <a href="opencl_8h_source.html#l00040">opencl.h:40</a></div></div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="philox_8hpp_source.html#l00042">42</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
@@ -353,7 +357,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="stringliteral">&quot;**PhiloxGenerator** USED WITH SIZE OTHER THAN 2 OR 4&quot;</span>)</div>
 <div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00048">48</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00050">50</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>

@@ -7,6 +7,5 @@ var searchData=
   ['tgamma',['tgamma',['../group__v_special.html#ga5844386918c5d445616e7d27494d783b',1,'vsmc']]],
   ['threefrygenerator',['ThreefryGenerator',['../classvsmc_1_1_threefry_generator.html#a58926cad0c27fd7b68e1175661936813',1,'vsmc::ThreefryGenerator']]],
   ['turn_5foff',['turn_off',['../classvsmc_1_1_monitor.html#a4cf19bb420d491539576417f06725c91',1,'vsmc::Monitor::turn_off()'],['../classvsmc_1_1_path.html#a09490c1a1a2e1dfcb9b8db82713a6704',1,'vsmc::Path::turn_off()']]],
-  ['turn_5fon',['turn_on',['../classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c',1,'vsmc::Monitor::turn_on()'],['../classvsmc_1_1_path.html#a8719c83be651e7899bcfc50c2476a35d',1,'vsmc::Path::turn_on()']]],
-  ['type',['type',['../classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4_1_1type.html#af4ec4f426789704f96735553263d8b5a',1,'vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;::type::type()'],['../classvsmc_1_1internal_1_1_u01_distribution_type_trait_impl_3_01_r_n_g_type_00_01_real_type_00_01false_01_4_1_1type.html#abda98371a0bdcd90de9c528ffa7a49c8',1,'vsmc::internal::U01DistributionTypeTraitImpl&lt; RNGType, RealType, false &gt;::type::type(const param_type &amp;)']]]
+  ['turn_5fon',['turn_on',['../classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c',1,'vsmc::Monitor::turn_on()'],['../classvsmc_1_1_path.html#a8719c83be651e7899bcfc50c2476a35d',1,'vsmc::Path::turn_on()']]]
 ];

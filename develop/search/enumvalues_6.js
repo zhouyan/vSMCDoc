@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['stratified',['Stratified',['../group___definitions.html#gga1a8752b2b59489e6d5f11794af6d0cc6ae71dc539a4a4a82ace4356f0e54d23ae',1,'vsmc']]],
-  ['systematic',['Systematic',['../group___definitions.html#gga1a8752b2b59489e6d5f11794af6d0cc6a0f4ee87147854e44a01039ec46cb275e',1,'vsmc']]]
+  ['opencldevicedoublefp',['OpenCLDeviceDoubleFP',['../group___open_c_l.html#gga7f9c412d8e7001a312d70732134e6419a10c0d6aff9a1afbc9653b385fc868a72',1,'vsmc']]],
+  ['opencldeviceimagesupport',['OpenCLDeviceImageSupport',['../group___open_c_l.html#gga7f9c412d8e7001a312d70732134e6419a1a8c8a5a5ab2e9b7f87986a572821a42',1,'vsmc']]]
 ];

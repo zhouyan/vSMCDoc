@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rayleigh_5fdistribution_2ehpp',['rayleigh_distribution.hpp',['../rayleigh__distribution_8hpp.html',1,'']]],
   ['rdrand_2ehpp',['rdrand.hpp',['../rdrand_8hpp.html',1,'']]],
   ['resample_2ehpp',['resample.hpp',['../resample_8hpp.html',1,'']]],
   ['residual_2ehpp',['residual.hpp',['../residual_8hpp.html',1,'']]],

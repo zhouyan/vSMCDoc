@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opencldevicefeature',['OpenCLDeviceFeature',['../group___open_c_l.html#ga7f9c412d8e7001a312d70732134e6419',1,'vsmc']]]
+  ['gammadistributionalgorithm',['GammaDistributionAlgorithm',['../namespacevsmc_1_1internal.html#aad5c7c89d6e150bc542017c1e69a50e9',1,'vsmc::internal']]]
 ];

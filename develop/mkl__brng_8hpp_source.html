@@ -132,35 +132,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef VSMC_RNG_MKL_BRNG_HPP</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define VSMC_RNG_MKL_BRNG_HPP</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a50e12f045f139dab544ea01c0d6b8273">   35</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vsmc_8h.html">vsmc/vsmc.h</a>&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a90eb18ae865d641abf9f8789228e8baf">   36</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2internal_2common_8hpp.html">vsmc/rng/internal/common.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a102942e40353f27634fda46177daff86">   37</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="engine_8hpp.html">vsmc/rng/engine.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a6a8be82543ad22a57a946cb659ae9e08">   38</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="utility_2mkl_8hpp.html">vsmc/utility/mkl.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespacevsmc.html#af4888c9518ebf042abb0cd819e79cf9d">   39</a></span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="mkl__brng_8hpp.html#af5f86773a0f5004a0a50e27ecee8962b">   40</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_MKL_BRNG(RNGType, name)                               \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a47c5b32bea98dd05c5b3edf2dcb57dc7">   41</a></span>&#160;<span class="preprocessor">    template &lt;&gt;                                                               \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a2c85d11a35f9720e195a2ab1d79d120b">   42</a></span>&#160;<span class="preprocessor">    inline MKL_INT mkl_brng&lt;RNGType&gt;()                                        \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a23baa0ec2e95fd5b60b67c20e7b6dc9f">   43</a></span>&#160;<span class="preprocessor">    {                                                                         \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        return static_cast&lt;MKL_INT&gt;(::vsmc_mkl_brng_##name());                \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a95c9e0764253731adf2fecbf14ac67d3">   45</a></span>&#160;<span class="preprocessor">    }</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a475ee8c5622b146dd335a16137419e4e">   46</a></span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a30ed7a22f2f9920afb57482532d18023">   47</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ac7f4c373ae20a7291b11049f9072540e">   48</a></span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a54049fa2d4332ba334fc6be37b81e23e">   52</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RNGType&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ac7109cbd34008e354da4e38bde63e276">   53</a></span>&#160;MKL_INT <a class="code" href="group___m_k_l.html#gaabf42a00c81c1705973c4bdeff08a44b">mkl_brng</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mkl__brng__defines_8hpp.html">vsmc/rng/internal/mkl_brng_defines.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace vsmc</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_MKL_BRNG_HPP</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ae800e8db52b397a7d5f666a226ca86f0">   35</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vsmc_8h.html">vsmc/vsmc.h</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a358508756f5e171b637d3f47827e0e5c">   36</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="rng_2internal_2common_8hpp.html">vsmc/rng/internal/common.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a0fccc4a16e0a6ac9f6801e0f9f74c7f9">   37</a></span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="engine_8hpp.html">vsmc/rng/engine.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a7b37836051c461cb515285dfa438c77a">   38</a></span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="mkl__brng_8hpp.html#af5f86773a0f5004a0a50e27ecee8962b">   39</a></span>&#160;<span class="preprocessor">#define VSMC_DEFINE_RNG_MKL_BRNG(RNGType, name)                               \</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a9c27ac06f8f4dd50efa3744300a2ef49">   40</a></span>&#160;<span class="preprocessor">    template &lt;&gt;                                                               \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a85c8ce771dc3661c5fa482e1cc104e08">   41</a></span>&#160;<span class="preprocessor">    inline int mkl_brng&lt;RNGType&gt;()                                            \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a7a2efc4972fe58fdf02b4c206e6d7764">   42</a></span>&#160;<span class="preprocessor">    {                                                                         \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacevsmc.html#aa0e2de6fb058efe4e7fa814930ef42fb">   43</a></span>&#160;<span class="preprocessor">        return ::vsmc_mkl_brng_##name();                                      \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacevsmc.html#aaaafd48a77cdd5e25a1cef54298591ef">   45</a></span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a3e808280cb86f872de2f31f631e7add3">   46</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsmc.html">vsmc</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacevsmc.html#accebc748a3630ffb7014d3bd965ec960">   47</a></span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a6e5c023e94973e2adadfd240935a9eb4">   48</a></span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespacevsmc.html#abe272c88370333633e840e5ba44d138f">   51</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RNGType&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespacevsmc.html#a49b7383abd8cf5468c0f565faa4d5b56">   52</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___m_k_l.html#ga4cc0d267e918f38d27838d2856f62f08">mkl_brng</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacevsmc.html#ae3ee590df8bcaa9aff5b8fa344721e41">   53</a></span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="mkl__brng__defines_8hpp.html">vsmc/rng/internal/mkl_brng_defines.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace vsmc</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // VSMC_RNG_MKL_BRNG_HPP</span></div>
 <div class="ttc" id="namespacevsmc_html"><div class="ttname"><a href="namespacevsmc.html">vsmc</a></div><div class="ttdef"><b>Definition:</b> <a href="monitor_8hpp_source.html#l00049">monitor.hpp:49</a></div></div>
 <div class="ttc" id="engine_8hpp_html"><div class="ttname"><a href="engine_8hpp.html">engine.hpp</a></div></div>
 <div class="ttc" id="rng_2internal_2common_8hpp_html"><div class="ttname"><a href="rng_2internal_2common_8hpp.html">common.hpp</a></div></div>
-<div class="ttc" id="group___m_k_l_html_gaabf42a00c81c1705973c4bdeff08a44b"><div class="ttname"><a href="group___m_k_l.html#gaabf42a00c81c1705973c4bdeff08a44b">vsmc::mkl_brng</a></div><div class="ttdeci">MKL_INT mkl_brng()</div><div class="ttdoc">Register a C++11 RNG engine for use as a MKL BRNG. </div></div>
+<div class="ttc" id="group___m_k_l_html_ga4cc0d267e918f38d27838d2856f62f08"><div class="ttname"><a href="group___m_k_l.html#ga4cc0d267e918f38d27838d2856f62f08">vsmc::mkl_brng</a></div><div class="ttdeci">int mkl_brng()</div><div class="ttdoc">Register a C++11 RNG engine for use as a MKL BRNG. </div></div>
 <div class="ttc" id="mkl__brng__defines_8hpp_html"><div class="ttname"><a href="mkl__brng__defines_8hpp.html">mkl_brng_defines.hpp</a></div></div>
-<div class="ttc" id="utility_2mkl_8hpp_html"><div class="ttname"><a href="utility_2mkl_8hpp.html">mkl.hpp</a></div></div>
 <div class="ttc" id="vsmc_8h_html"><div class="ttname"><a href="vsmc_8h.html">vsmc.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

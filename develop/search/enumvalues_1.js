@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dynamic',['Dynamic',['../group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402',1,'vsmc']]]
+  ['colmajor',['ColMajor',['../group___definitions.html#gga3891c43c52a10259979c138e981381beacdd5754f1499e364f16d3373c94e368f',1,'vsmc']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vsmc_5fresample_5fscheme',['vsmc_resample_scheme',['../group___c___a_p_i___resample.html#ga5d9eec49674c4559911ff9e3475e6a25',1,'vsmc.h']]]
+  ['opencldevicefeature',['OpenCLDeviceFeature',['../group___open_c_l.html#ga7f9c412d8e7001a312d70732134e6419',1,'vsmc']]]
 ];

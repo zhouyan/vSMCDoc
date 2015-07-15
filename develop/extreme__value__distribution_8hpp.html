@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">extreme_value_distribution.hpp File Reference</div>  </div>
@@ -123,17 +122,14 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac13a66bcc2dbc282cb277210c5a82196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="extreme__value__distribution_8hpp.html#ac13a66bcc2dbc282cb277210c5a82196">VSMC_RUNTIME_ASSERT_RNG_EXTREME_VALUE_DISTRIBUTION_PARAM_CHECK</a>(b)</td></tr>
-<tr class="separator:ac13a66bcc2dbc282cb277210c5a82196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaad81f266dc71c7e9e12112e6452e41bd"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:gaad81f266dc71c7e9e12112e6452e41bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#gaad81f266dc71c7e9e12112e6452e41bd">vsmc::extreme_value_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType a, RealType b)</td></tr>
 <tr class="memdesc:gaad81f266dc71c7e9e12112e6452e41bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating extreme_value random variates.  <a href="group___distribution.html#gaad81f266dc71c7e9e12112e6452e41bd">More...</a><br /></td></tr>
 <tr class="separator:gaad81f266dc71c7e9e12112e6452e41bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf632721c0e44ec636b9bd24c1fd18a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a1cf632721c0e44ec636b9bd24c1fd18a">vsmc::internal::extreme_value_distribution_check_param</a> (double, double b)</td></tr>
+<tr class="separator:a1cf632721c0e44ec636b9bd24c1fd18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88822c3943ff102b4ca59c4d673b8c51"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a88822c3943ff102b4ca59c4d673b8c51"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a88822c3943ff102b4ca59c4d673b8c51">vsmc::internal::extreme_value_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType a, RealType b)</td></tr>
 <tr class="separator:a88822c3943ff102b4ca59c4d673b8c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,29 +137,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d956e869cc2c49f27856c3b61c2033d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a7d956e869cc2c49f27856c3b61c2033d">vsmc::rng_rand</a> (RNGType &amp;rng, ExtremeValueDistribution&lt; RealType &gt; &amp;dist, std::size_t n, RealType *r)</td></tr>
 <tr class="separator:a7d956e869cc2c49f27856c3b61c2033d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ac13a66bcc2dbc282cb277210c5a82196"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_EXTREME_VALUE_DISTRIBUTION_PARAM_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((b &gt; 0), <span class="stringliteral">&quot;**ExtremeValueDistribution** &quot;</span>              \</div>
-<div class="line">                                 <span class="stringliteral">&quot;CONSTRUCTED WITH INVALID b &quot;</span>                \</div>
-<div class="line">                                 <span class="stringliteral">&quot;PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="extreme__value__distribution_8hpp_source.html#l00038">38</a> of file <a class="el" href="extreme__value__distribution_8hpp_source.html">extreme_value_distribution.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

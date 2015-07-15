@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">normal_distribution.hpp File Reference</div>  </div>
@@ -124,11 +123,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a80642da432a434a368331ecb70457219"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normal__distribution_8hpp.html#a80642da432a434a368331ecb70457219">VSMC_RUNTIME_ASSERT_RNG_NORMAL_DISTRIBUTION_PARAM_CHECK</a>(stddev)</td></tr>
-<tr class="separator:a80642da432a434a368331ecb70457219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3912dc0802b1da13bb016659e477fee5"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
@@ -138,6 +132,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a2a183c26b3168d3a27367b2a90e2522f"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:a2a183c26b3168d3a27367b2a90e2522f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2a183c26b3168d3a27367b2a90e2522f">vsmc::internal::normal_distribution_cdf_impl</a> (std::size_t n, const RealType *x, RealType *r, RealType mean, RealType stddev)</td></tr>
 <tr class="separator:a2a183c26b3168d3a27367b2a90e2522f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a74bc1c588bd1751ab7d2085320cf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a67a74bc1c588bd1751ab7d2085320cf6">vsmc::internal::normal_distribution_check_param</a> (double, double stddev)</td></tr>
+<tr class="separator:a67a74bc1c588bd1751ab7d2085320cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa15e0f234606851f334ff7db83829a54"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:aa15e0f234606851f334ff7db83829a54"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa15e0f234606851f334ff7db83829a54">vsmc::internal::normal_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType mean, RealType stddev)</td></tr>
 <tr class="separator:aa15e0f234606851f334ff7db83829a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,29 +144,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a2965bc6fcf42326d36655428444f3946"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a2965bc6fcf42326d36655428444f3946">vsmc::rng_rand</a> (RNGType &amp;, NormalDistribution&lt; RealType &gt; &amp;, std::size_t, RealType *)</td></tr>
 <tr class="separator:a2965bc6fcf42326d36655428444f3946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a80642da432a434a368331ecb70457219"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_NORMAL_DISTRIBUTION_PARAM_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">stddev</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((stddev &gt; 0), <span class="stringliteral">&quot;**NormalDistribution** CONSTRUCTED &quot;</span>   \</div>
-<div class="line">                                      <span class="stringliteral">&quot;WITH INVALID STANDARD DEVIATION &quot;</span>      \</div>
-<div class="line">                                      <span class="stringliteral">&quot;PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="normal__distribution_8hpp_source.html#l00039">39</a> of file <a class="el" href="normal__distribution_8hpp_source.html">normal_distribution.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rayleigh_distribution.hpp File Reference</div>  </div>
@@ -123,17 +122,14 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a0d98dc9f45b45a3571c34cf7f353df1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rayleigh__distribution_8hpp.html#a0d98dc9f45b45a3571c34cf7f353df1e">VSMC_RUNTIME_ASSERT_RNG_RAYLEIGH_DISTRIBUTION_PARAM_CHECK</a>(sigma)</td></tr>
-<tr class="separator:a0d98dc9f45b45a3571c34cf7f353df1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga742934ab9155d3691ee08f8bffe66606"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:ga742934ab9155d3691ee08f8bffe66606"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga742934ab9155d3691ee08f8bffe66606">vsmc::rayleigh_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType sigma)</td></tr>
 <tr class="memdesc:ga742934ab9155d3691ee08f8bffe66606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating rayleigh random variates.  <a href="group___distribution.html#ga742934ab9155d3691ee08f8bffe66606">More...</a><br /></td></tr>
 <tr class="separator:ga742934ab9155d3691ee08f8bffe66606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91b79b7ee23813c621a05875fb4b2b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ab91b79b7ee23813c621a05875fb4b2b2">vsmc::internal::rayleigh_distribution_check_param</a> (double sigma)</td></tr>
+<tr class="separator:ab91b79b7ee23813c621a05875fb4b2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c8bf3c7e723c68970173cc4acc8fcb"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a52c8bf3c7e723c68970173cc4acc8fcb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a52c8bf3c7e723c68970173cc4acc8fcb">vsmc::internal::rayleigh_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType sigma)</td></tr>
 <tr class="separator:a52c8bf3c7e723c68970173cc4acc8fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,29 +137,6 @@ Functions</h2></td></tr>
 <tr class="memitem:acc3845f5c18e6df984d7c4c5aead6fe9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#acc3845f5c18e6df984d7c4c5aead6fe9">vsmc::rng_rand</a> (RNGType &amp;, RayleighDistribution&lt; RealType &gt; &amp;, std::size_t, RealType *)</td></tr>
 <tr class="separator:acc3845f5c18e6df984d7c4c5aead6fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a0d98dc9f45b45a3571c34cf7f353df1e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_RAYLEIGH_DISTRIBUTION_PARAM_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">sigma</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((sigma &gt; 0), <span class="stringliteral">&quot;**RayleighDistribution** &quot;</span>              \</div>
-<div class="line">                                     <span class="stringliteral">&quot;CONSTRUCTED WITH INVALID SCALE &quot;</span>        \</div>
-<div class="line">                                     <span class="stringliteral">&quot;PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="rayleigh__distribution_8hpp_source.html#l00038">38</a> of file <a class="el" href="rayleigh__distribution_8hpp_source.html">rayleigh_distribution.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

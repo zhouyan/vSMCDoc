@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">weibull_distribution.hpp File Reference</div>  </div>
@@ -124,15 +123,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a355d5b89beeb6cfd965dddfda8929233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="weibull__distribution_8hpp.html#a355d5b89beeb6cfd965dddfda8929233">VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_A_CHECK</a>(a)</td></tr>
-<tr class="separator:a355d5b89beeb6cfd965dddfda8929233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30bb19fecf365f5bf2dd2e8e440b1d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="weibull__distribution_8hpp.html#ae30bb19fecf365f5bf2dd2e8e440b1d3">VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_B_CHECK</a>(b)</td></tr>
-<tr class="separator:ae30bb19fecf365f5bf2dd2e8e440b1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796a9f1340229fbceede19589749cf04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="weibull__distribution_8hpp.html#a796a9f1340229fbceede19589749cf04">VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_CHECK</a>(a,  b)</td></tr>
-<tr class="separator:a796a9f1340229fbceede19589749cf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6ae7dfe123480c98faf6a681e722f9a8"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
@@ -142,85 +132,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2266c3030b81279df807f0ece95f727d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga2266c3030b81279df807f0ece95f727d">vsmc::weibull_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType a, RealType b)</td></tr>
 <tr class="memdesc:ga2266c3030b81279df807f0ece95f727d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating weibull random variates.  <a href="group___distribution.html#ga2266c3030b81279df807f0ece95f727d">More...</a><br /></td></tr>
 <tr class="separator:ga2266c3030b81279df807f0ece95f727d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b509a803492aa5860124198029580f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a95b509a803492aa5860124198029580f">vsmc::internal::weibull_distribution_check_param</a> (double a, double b)</td></tr>
+<tr class="separator:a95b509a803492aa5860124198029580f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a586042334b74f6fffabd4090a94175c8"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a586042334b74f6fffabd4090a94175c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a586042334b74f6fffabd4090a94175c8">vsmc::internal::weibull_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType a, RealType b)</td></tr>
 <tr class="separator:a586042334b74f6fffabd4090a94175c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a355d5b89beeb6cfd965dddfda8929233"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_A_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((a &gt; 0), <span class="stringliteral">&quot;**WeibullDistribution** CONSTRUCTED &quot;</span>       \</div>
-<div class="line">                                 <span class="stringliteral">&quot;WITH INVALID SHAPE PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="weibull__distribution_8hpp_source.html#l00039">39</a> of file <a class="el" href="weibull__distribution_8hpp_source.html">weibull_distribution.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae30bb19fecf365f5bf2dd2e8e440b1d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_B_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((b &gt; 0), <span class="stringliteral">&quot;**WeibullDistribution** CONSTRUCTED &quot;</span>       \</div>
-<div class="line">                                 <span class="stringliteral">&quot;WITH INVALID SCALE PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="weibull__distribution_8hpp_source.html#l00043">43</a> of file <a class="el" href="weibull__distribution_8hpp_source.html">weibull_distribution.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a796a9f1340229fbceede19589749cf04"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="weibull__distribution_8hpp.html#a355d5b89beeb6cfd965dddfda8929233">VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_A_CHECK</a>(a);            <a class="code" href="weibull__distribution_8hpp.html#ae30bb19fecf365f5bf2dd2e8e440b1d3">\</a></div>
-<div class="line"><a class="code" href="weibull__distribution_8hpp.html#ae30bb19fecf365f5bf2dd2e8e440b1d3">    VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_B_CHECK</a>(b);</div>
-<div class="ttc" id="weibull__distribution_8hpp_html_ae30bb19fecf365f5bf2dd2e8e440b1d3"><div class="ttname"><a href="weibull__distribution_8hpp.html#ae30bb19fecf365f5bf2dd2e8e440b1d3">VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_B_CHECK</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_B_CHECK(b)</div><div class="ttdef"><b>Definition:</b> <a href="weibull__distribution_8hpp_source.html#l00043">weibull_distribution.hpp:43</a></div></div>
-<div class="ttc" id="weibull__distribution_8hpp_html_a355d5b89beeb6cfd965dddfda8929233"><div class="ttname"><a href="weibull__distribution_8hpp.html#a355d5b89beeb6cfd965dddfda8929233">VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_A_CHECK</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_RNG_WEIBULL_DISTRIBUTION_PARAM_A_CHECK(a)</div><div class="ttdef"><b>Definition:</b> <a href="weibull__distribution_8hpp_source.html#l00039">weibull_distribution.hpp:39</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="weibull__distribution_8hpp_source.html#l00047">47</a> of file <a class="el" href="weibull__distribution_8hpp_source.html">weibull_distribution.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

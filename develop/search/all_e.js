@@ -8,6 +8,7 @@ var searchData=
   ['normal_5fdistribution',['normal_distribution',['../group___distribution.html#ga3912dc0802b1da13bb016659e477fee5',1,'vsmc::normal_distribution(RNGType &amp;rng, std::size_t n, RealType *r, RealType mean, RealType stddev)'],['../namespacevsmc.html#a7e48393c676d96bc892bba8accbf13b1',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, float *r, float, float)'],['../namespacevsmc.html#a9b908cb91a8a51c2e38999bf5cef9577',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, double *r, double, double)']]],
   ['normal_5fdistribution_2ehpp',['normal_distribution.hpp',['../normal__distribution_8hpp.html',1,'']]],
   ['normal_5fdistribution_5fcdf_5fimpl',['normal_distribution_cdf_impl',['../namespacevsmc_1_1internal.html#a2a183c26b3168d3a27367b2a90e2522f',1,'vsmc::internal']]],
+  ['normal_5fdistribution_5fcheck_5fparam',['normal_distribution_check_param',['../namespacevsmc_1_1internal.html#a67a74bc1c588bd1751ab7d2085320cf6',1,'vsmc::internal']]],
   ['normal_5fdistribution_5fimpl',['normal_distribution_impl',['../namespacevsmc_1_1internal.html#aa15e0f234606851f334ff7db83829a54',1,'vsmc::internal']]],
   ['normal_5fdistribution_5fpdf_5fimpl',['normal_distribution_pdf_impl',['../namespacevsmc_1_1internal.html#a8cd5495ee8faecf095089a15a0bcbffb',1,'vsmc::internal']]],
   ['normaldistribution',['NormalDistribution',['../classvsmc_1_1_normal_distribution.html',1,'vsmc']]],

@@ -35,5 +35,5 @@ var searchData=
   ['host_5fptr',['host_ptr',['../classvsmc_1_1_c_l_buffer.html#aa92bf47a5015a8b4410506df800e1b09',1,'vsmc::CLBuffer']]],
   ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]],
   ['hypergeometric',['hypergeometric',['../classvsmc_1_1_m_k_l_stream.html#a1fcd88cc33d76890b9ae9bade7c7e757',1,'vsmc::MKLStream']]],
-  ['hypot',['hypot',['../group__v_power.html#gafd1ff17b38f7ba41548f126becbae980',1,'vsmc::hypot(std::size_t n, const T *a, const T *b, T *y)'],['../namespacevsmc.html#a8688e4b0cd3c77446209086100858ae1',1,'vsmc::hypot(std::size_t n, const float *a, const float *b, float *y)'],['../namespacevsmc.html#a1ab7b071e9c32f78a4d9efa587cbd4f3',1,'vsmc::hypot(std::size_t n, const double *a, const double *b, double *y)']]]
+  ['hypot',['hypot',['../namespacevsmc.html#a8688e4b0cd3c77446209086100858ae1',1,'vsmc::hypot(std::size_t n, const float *a, const float *b, float *y)'],['../namespacevsmc.html#a1ab7b071e9c32f78a4d9efa587cbd4f3',1,'vsmc::hypot(std::size_t n, const double *a, const double *b, double *y)'],['../group__v_power.html#gafd1ff17b38f7ba41548f126becbae980',1,'vsmc::hypot(std::size_t n, const T *a, const T *b, T *y)']]]
 ];

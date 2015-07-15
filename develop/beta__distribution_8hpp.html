@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -126,15 +125,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a37de54a243fdbf85fe67212266dcbf93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="beta__distribution_8hpp.html#a37de54a243fdbf85fe67212266dcbf93">VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_ALPHA_CHECK</a>(alpha)</td></tr>
-<tr class="separator:a37de54a243fdbf85fe67212266dcbf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bfc8abeef2a5abb9204e304fbe73c2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="beta__distribution_8hpp.html#a3bfc8abeef2a5abb9204e304fbe73c2f">VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_BETA_CHECK</a>(beta)</td></tr>
-<tr class="separator:a3bfc8abeef2a5abb9204e304fbe73c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56eb7b10120f4904f95432f455072f97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="beta__distribution_8hpp.html#a56eb7b10120f4904f95432f455072f97">VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_CHECK</a>(alpha,  beta)</td></tr>
-<tr class="separator:a56eb7b10120f4904f95432f455072f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -166,9 +156,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gac3b41ed059234d08dba20fe9bb27a409"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#gac3b41ed059234d08dba20fe9bb27a409">vsmc::beta_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType alpha, RealType beta)</td></tr>
 <tr class="memdesc:gac3b41ed059234d08dba20fe9bb27a409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating beta random variates.  <a href="group___distribution.html#gac3b41ed059234d08dba20fe9bb27a409">More...</a><br /></td></tr>
 <tr class="separator:gac3b41ed059234d08dba20fe9bb27a409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac565fc4f801b511aaa258afc01715cc9"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ac565fc4f801b511aaa258afc01715cc9"><td class="memTemplItemLeft" align="right" valign="top">BetaDistributionAlgorithm&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ac565fc4f801b511aaa258afc01715cc9">vsmc::internal::beta_distribution_algorithm</a> (RealType alpha, RealType beta)</td></tr>
-<tr class="separator:ac565fc4f801b511aaa258afc01715cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadfd98ed2e5db4980e910c8461a4e80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aeadfd98ed2e5db4980e910c8461a4e80">vsmc::internal::beta_distribution_check_param</a> (double alpha, double beta)</td></tr>
+<tr class="separator:aeadfd98ed2e5db4980e910c8461a4e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840ecd96ab4cb1216e73b4a3820dbdf8"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a840ecd96ab4cb1216e73b4a3820dbdf8"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a840ecd96ab4cb1216e73b4a3820dbdf8">vsmc::internal::beta_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType alpha, RealType beta, const BetaDistributionConstant&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:a840ecd96ab4cb1216e73b4a3820dbdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,81 +192,6 @@ Functions</h2></td></tr>
 <tr class="memitem:abebf08fa6d87d513207b0f0345eb6c9a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#abebf08fa6d87d513207b0f0345eb6c9a">vsmc::rng_rand</a> (RNGType &amp;rng, BetaDistribution&lt; RealType &gt; &amp;dist, std::size_t n, RealType *r)</td></tr>
 <tr class="separator:abebf08fa6d87d513207b0f0345eb6c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a37de54a243fdbf85fe67212266dcbf93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_ALPHA_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">alpha</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((alpha &gt; 0), <span class="stringliteral">&quot;**BetaDistribution** CONSTRUCTED &quot;</span>      \</div>
-<div class="line">                                     <span class="stringliteral">&quot;WITH INVALID SHAPE PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="beta__distribution_8hpp_source.html#l00039">39</a> of file <a class="el" href="beta__distribution_8hpp_source.html">beta_distribution.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3bfc8abeef2a5abb9204e304fbe73c2f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_BETA_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">beta</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a>((beta &gt; 0), <span class="stringliteral">&quot;**BetaDistribution** CONSTRUCTED &quot;</span>       \</div>
-<div class="line">                                    <span class="stringliteral">&quot;WITH INVALID SHAPE PARAMETER VALUE&quot;</span>)</div>
-<div class="ttc" id="assert_8hpp_html_aeb451e52f485b9c7fd0b3c3754e11f9d"><div class="ttname"><a href="assert_8hpp.html#aeb451e52f485b9c7fd0b3c3754e11f9d">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="beta__distribution_8hpp_source.html#l00043">43</a> of file <a class="el" href="beta__distribution_8hpp_source.html">beta_distribution.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a56eb7b10120f4904f95432f455072f97"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_CHECK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">alpha, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">beta&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="beta__distribution_8hpp.html#a37de54a243fdbf85fe67212266dcbf93">VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_ALPHA_CHECK</a>(alpha);       <a class="code" href="beta__distribution_8hpp.html#a3bfc8abeef2a5abb9204e304fbe73c2f">\</a></div>
-<div class="line"><a class="code" href="beta__distribution_8hpp.html#a3bfc8abeef2a5abb9204e304fbe73c2f">    VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_BETA_CHECK</a>(beta);</div>
-<div class="ttc" id="beta__distribution_8hpp_html_a3bfc8abeef2a5abb9204e304fbe73c2f"><div class="ttname"><a href="beta__distribution_8hpp.html#a3bfc8abeef2a5abb9204e304fbe73c2f">VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_BETA_CHECK</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_BETA_CHECK(beta)</div><div class="ttdef"><b>Definition:</b> <a href="beta__distribution_8hpp_source.html#l00043">beta_distribution.hpp:43</a></div></div>
-<div class="ttc" id="beta__distribution_8hpp_html_a37de54a243fdbf85fe67212266dcbf93"><div class="ttname"><a href="beta__distribution_8hpp.html#a37de54a243fdbf85fe67212266dcbf93">VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_ALPHA_CHECK</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_RNG_BETA_DISTRIBUTION_PARAM_ALPHA_CHECK(alpha)</div><div class="ttdef"><b>Definition:</b> <a href="beta__distribution_8hpp_source.html#l00039">beta_distribution.hpp:39</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="beta__distribution_8hpp_source.html#l00047">47</a> of file <a class="el" href="beta__distribution_8hpp_source.html">beta_distribution.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

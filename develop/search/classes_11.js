@@ -21,9 +21,10 @@ var searchData=
   ['u01impl_3c_20sizeof_28uinttype_29_2c_20sizeof_28realtype_29_2c_20left_2c_20right_20_3e',['U01Impl&lt; sizeof(UIntType), sizeof(RealType), Left, Right &gt;',['../classvsmc_1_1internal_1_1_u01_impl.html',1,'vsmc::internal']]],
   ['u01lrdistribution',['U01LRDistribution',['../classvsmc_1_1_u01_l_r_distribution.html',1,'vsmc']]],
   ['u01lrdistribution_3c_20double_20_3e',['U01LRDistribution&lt; double &gt;',['../classvsmc_1_1_u01_l_r_distribution.html',1,'vsmc']]],
-  ['u01lrdistributionbits',['U01LRDistributionBits',['../classvsmc_1_1internal_1_1_u01_l_r_distribution_bits.html',1,'vsmc::internal']]],
   ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html',1,'vsmc']]],
   ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html',1,'vsmc']]],
   ['u01sequencesystematic',['U01SequenceSystematic',['../classvsmc_1_1_u01_sequence_systematic.html',1,'vsmc']]],
+  ['uniformbits',['UniformBits',['../classvsmc_1_1internal_1_1_uniform_bits.html',1,'vsmc::internal']]],
+  ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html',1,'vsmc']]],
   ['uniformreallrdistribution',['UniformRealLRDistribution',['../classvsmc_1_1_uniform_real_l_r_distribution.html',1,'vsmc']]]
 ];

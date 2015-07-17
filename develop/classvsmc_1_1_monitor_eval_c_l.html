@@ -127,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a884797917566938586cfb0e65044bec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47f390a28e247ac3ee3172cd0ec1bff"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#ab47f390a28e247ac3ee3172cd0ec1bff">kernel_name</a> () const </td></tr>
 <tr class="separator:ab47f390a28e247ac3ee3172cd0ec1bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5fbfc6fe8cec356ea80a8e43b88ae39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#ac5fbfc6fe8cec356ea80a8e43b88ae39">operator()</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, double *res)</td></tr>
-<tr class="separator:ac5fbfc6fe8cec356ea80a8e43b88ae39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0ce9a4e5d7071fef7331dc23c19601"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a5e0ce9a4e5d7071fef7331dc23c19601">operator()</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, double *r)</td></tr>
+<tr class="separator:a5e0ce9a4e5d7071fef7331dc23c19601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6559224e8182aad6df91ff22d355d8ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a6559224e8182aad6df91ff22d355d8ae">set_kernel</a> (std::size_t iter, std::size_t, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
 <tr class="separator:a6559224e8182aad6df91ff22d355d8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ee337f99757c54fafab926050f61bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_c_l.html#a13ee337f99757c54fafab926050f61bf">set_kernel_args</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
@@ -162,7 +162,7 @@ class vsmc::MonitorEvalCL&lt; T &gt;</h3>
 <p><a class="el" href="classvsmc_1_1_monitor.html#a74bd93943baa039773128e577ed639ed">Monitor&lt;T&gt;::eval_type</a> subtype using OpenCL. </p>
 <p>Kernel requirement </p><div class="fragment"><div class="line">__kernel</div>
 <div class="line"><span class="keywordtype">void</span> kern (ulong iter, ulong dim, __global state_type *state,</div>
-<div class="line">           __global fp_type *res);</div>
+<div class="line">           __global fp_type *r);</div>
 </div><!-- fragment --> 
 <p>Definition at line <a class="el" href="backend__cl_8hpp_source.html#l00648">648</a> of file <a class="el" href="backend__cl_8hpp_source.html">backend_cl.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -525,7 +525,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac5fbfc6fe8cec356ea80a8e43b88ae39"></a>
+<a class="anchor" id="a5e0ce9a4e5d7071fef7331dc23c19601"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -556,7 +556,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>res</em>&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

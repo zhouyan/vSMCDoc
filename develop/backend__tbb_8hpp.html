@@ -202,7 +202,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;eval_pre(iter, particle);                                           \</div>
-<div class="line">    work_type work(<span class="keyword">this</span>, iter, dim, &amp;particle, res);                          \</div>
+<div class="line">    work_type work(<span class="keyword">this</span>, iter, dim, &amp;particle, r);                            \</div>
 <div class="line">    ::tbb::parallel_for args;                                                 \</div>
 <div class="line">    this-&gt;eval_post(iter, particle);</div>
 </div><!-- fragment -->
@@ -247,7 +247,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">this-&gt;eval_pre(iter, particle);                                           \</div>
-<div class="line">    work_type work(<span class="keyword">this</span>, iter, &amp;particle, res);                               \</div>
+<div class="line">    work_type work(<span class="keyword">this</span>, iter, &amp;particle, r);                                 \</div>
 <div class="line">    ::tbb::parallel_for args;                                                 \</div>
 <div class="line">    this-&gt;eval_post(iter, particle);                                          \</div>
 <div class="line">    return this-&gt;eval_grid(iter, particle);</div>

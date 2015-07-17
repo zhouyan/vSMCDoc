@@ -105,13 +105,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="u01_8hpp_source.html">vsmc/rng/u01.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uniform__bits__distribution_8hpp_source.html">vsmc/rng/uniform_bits_distribution.hpp</a>&gt;</code><br />
 </div>
 <p><a href="u01__distribution_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_l_r_distribution_bits.html">vsmc::internal::U01LRDistributionBits&lt; UIntType, Bits &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_l_r_distribution.html">vsmc::U01LRDistribution&lt; RealType, Left, Right &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution with open/closed variants.  <a href="classvsmc_1_1_u01_l_r_distribution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,21 +168,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae2c16e034d381f96e8a356b90e720c60"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#gae2c16e034d381f96e8a356b90e720c60">vsmc::u01_lr_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r)</td></tr>
 <tr class="memdesc:gae2c16e034d381f96e8a356b90e720c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate standard uniform random variates with open/closed variants.  <a href="group___distribution.html#gae2c16e034d381f96e8a356b90e720c60">More...</a><br /></td></tr>
 <tr class="separator:gae2c16e034d381f96e8a356b90e720c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a7d4743ae477015e97c6c9f1aad0288"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename Left , typename Right , typename RNGType &gt; </td></tr>
-<tr class="memitem:a2a7d4743ae477015e97c6c9f1aad0288"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2a7d4743ae477015e97c6c9f1aad0288">vsmc::internal::u01_lr_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, std::false_type, std::false_type)</td></tr>
-<tr class="separator:a2a7d4743ae477015e97c6c9f1aad0288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bfa179a5518f5f7c67674a64dbaf14b"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename Left , typename Right , typename RNGType &gt; </td></tr>
-<tr class="memitem:a8bfa179a5518f5f7c67674a64dbaf14b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a8bfa179a5518f5f7c67674a64dbaf14b">vsmc::internal::u01_lr_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, std::true_type, std::false_type)</td></tr>
-<tr class="separator:a8bfa179a5518f5f7c67674a64dbaf14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a9252e7d67487a76788dad280de9533"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename Left , typename Right , typename RNGType &gt; </td></tr>
-<tr class="memitem:a4a9252e7d67487a76788dad280de9533"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a4a9252e7d67487a76788dad280de9533">vsmc::internal::u01_lr_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, std::true_type, std::true_type)</td></tr>
-<tr class="separator:a4a9252e7d67487a76788dad280de9533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9df7f818341d644c0a65d7a00866023"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename Left , typename Right , typename RNGType &gt; </td></tr>
-<tr class="memitem:ab9df7f818341d644c0a65d7a00866023"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ab9df7f818341d644c0a65d7a00866023">vsmc::internal::u01_lr_distribution_impl_u32</a> (RNGType &amp;rng, std::size_t n, RealType *r, typename RNGType::result_type *s)</td></tr>
-<tr class="separator:ab9df7f818341d644c0a65d7a00866023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7004d2c71a542b39dfb157791c9a3ef6"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename Left , typename Right , typename RNGType &gt; </td></tr>
-<tr class="memitem:a7004d2c71a542b39dfb157791c9a3ef6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7004d2c71a542b39dfb157791c9a3ef6">vsmc::internal::u01_lr_distribution_impl_u64</a> (RNGType &amp;rng, std::size_t n, RealType *r, typename RNGType::result_type *s)</td></tr>
-<tr class="separator:a7004d2c71a542b39dfb157791c9a3ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2100f2090f6910a8793dc754eca19f14"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename Left , typename Right , typename RNGType &gt; </td></tr>
+<tr class="memitem:a2100f2090f6910a8793dc754eca19f14"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2100f2090f6910a8793dc754eca19f14">vsmc::internal::u01_lr_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r)</td></tr>
+<tr class="separator:a2100f2090f6910a8793dc754eca19f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91aa8a6761a5b6c0fa4ae32e14e8d93d"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:ga91aa8a6761a5b6c0fa4ae32e14e8d93d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga91aa8a6761a5b6c0fa4ae32e14e8d93d">vsmc::u01_oc_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r)</td></tr>
 <tr class="memdesc:ga91aa8a6761a5b6c0fa4ae32e14e8d93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate standard uniform random variates on open-closed interval.  <a href="group___distribution.html#ga91aa8a6761a5b6c0fa4ae32e14e8d93d">More...</a><br /></td></tr>

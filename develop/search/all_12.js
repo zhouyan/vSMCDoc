@@ -115,7 +115,7 @@ var searchData=
   ['stream',['stream',['../classvsmc_1_1_m_k_l_engine.html#ae526587f0e05289e716ad3de324af744',1,'vsmc::MKLEngine::stream()'],['../classvsmc_1_1_m_k_l_engine.html#a95ffb23a88c249505c5b131b1c7c38d8',1,'vsmc::MKLEngine::stream() const ']]],
   ['student_5ft_5fdistribution',['student_t_distribution',['../group___distribution.html#ga800abec422c6e4ce6f98033604a4d1f8',1,'vsmc']]],
   ['student_5ft_5fdistribution_2ehpp',['student_t_distribution.hpp',['../student__t__distribution_8hpp.html',1,'']]],
-  ['student_5ft_5fdistribution_5fcheck_5fparam',['student_t_distribution_check_param',['../namespacevsmc_1_1internal.html#a995639a8b16e97bdb17e02336c6bee49',1,'vsmc::internal']]],
+  ['student_5ft_5fdistribution_5fcheck_5fparam',['student_t_distribution_check_param',['../namespacevsmc_1_1internal.html#ad4d708caf11851a4914703eff9ab8145',1,'vsmc::internal']]],
   ['student_5ft_5fdistribution_5fimpl',['student_t_distribution_impl',['../namespacevsmc_1_1internal.html#a8d13a2bcb79b77792fa1e859d6a4e7a0',1,'vsmc::internal']]],
   ['studenttdistribution',['StudentTDistribution',['../classvsmc_1_1_student_t_distribution.html#a4a01c90dcf31bc21684ce64c86d065aa',1,'vsmc::StudentTDistribution::StudentTDistribution(result_type n=1)'],['../classvsmc_1_1_student_t_distribution.html#aab9518e55e4dece98ee192f4c8cf10fc',1,'vsmc::StudentTDistribution::StudentTDistribution(const param_type &amp;param)']]],
   ['studenttdistribution',['StudentTDistribution',['../classvsmc_1_1_student_t_distribution.html',1,'vsmc']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../classvsmc_1_1_monitor.html#aa154cb04754b1d080eda7cf6d90ba5e3',1,'vsmc::Monitor::value_type()'],['../classvsmc_1_1_particle.html#a0a89071f8a1a7dde5be42394e24c0eb1',1,'vsmc::Particle::value_type()'],['../classvsmc_1_1_path.html#ad5ff15280a156a7b6a98376e1bc7ed1b',1,'vsmc::Path::value_type()'],['../classvsmc_1_1_sampler.html#aa217b6ae0bd6c8b76b31ed63d0bc544e',1,'vsmc::Sampler::value_type()'],['../classvsmc_1_1_c_l_buffer.html#ab7ecd44505f6db09af18e339ed20004f',1,'vsmc::CLBuffer::value_type()']]],
-  ['vector',['Vector',['../group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84',1,'vsmc']]]
+  ['watch_5ftype',['watch_type',['../classvsmc_1_1_stop_watch_guard.html#a861a177eb18cc5e42e065b009ff82d19',1,'vsmc::StopWatchGuard']]],
+  ['weight_5ftype',['weight_type',['../classvsmc_1_1_particle.html#af025ac00c38f2d8d4ab5f75b8c773f83',1,'vsmc::Particle']]],
+  ['weighttype',['WeightType',['../namespacevsmc.html#a6a58941c1f6a941b8e1f55b9df7ed028',1,'vsmc']]]
 ];

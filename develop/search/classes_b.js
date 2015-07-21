@@ -32,16 +32,12 @@ var searchData=
   ['monitor',['Monitor',['../classvsmc_1_1_monitor.html',1,'vsmc']]],
   ['monitorevalbase',['MonitorEvalBase',['../classvsmc_1_1_monitor_eval_base.html',1,'vsmc']]],
   ['monitorevalbase_3c_20t_2c_20virtual_20_3e',['MonitorEvalBase&lt; T, Virtual &gt;',['../classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html',1,'vsmc']]],
-  ['monitorevalcl',['MonitorEvalCL',['../classvsmc_1_1_monitor_eval_c_l.html',1,'vsmc']]],
   ['monitorevalomp',['MonitorEvalOMP',['../classvsmc_1_1_monitor_eval_o_m_p.html',1,'vsmc']]],
   ['monitorevalseq',['MonitorEvalSEQ',['../classvsmc_1_1_monitor_eval_s_e_q.html',1,'vsmc']]],
   ['monitorevaltbb',['MonitorEvalTBB',['../classvsmc_1_1_monitor_eval_t_b_b.html',1,'vsmc']]],
   ['movebase',['MoveBase',['../classvsmc_1_1_move_base.html',1,'vsmc']]],
   ['movebase_3c_20t_2c_20virtual_20_3e',['MoveBase&lt; T, Virtual &gt;',['../classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html',1,'vsmc']]],
-  ['movecl',['MoveCL',['../classvsmc_1_1_move_c_l.html',1,'vsmc']]],
   ['moveomp',['MoveOMP',['../classvsmc_1_1_move_o_m_p.html',1,'vsmc']]],
   ['moveseq',['MoveSEQ',['../classvsmc_1_1_move_s_e_q.html',1,'vsmc']]],
-  ['movetbb',['MoveTBB',['../classvsmc_1_1_move_t_b_b.html',1,'vsmc']]],
-  ['mpicommunicator',['MPICommunicator',['../classvsmc_1_1_m_p_i_communicator.html',1,'vsmc']]],
-  ['mpienvironment',['MPIEnvironment',['../classvsmc_1_1_m_p_i_environment.html',1,'vsmc']]]
+  ['movetbb',['MoveTBB',['../classvsmc_1_1_move_t_b_b.html',1,'vsmc']]]
 ];

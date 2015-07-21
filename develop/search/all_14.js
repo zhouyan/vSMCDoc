@@ -79,10 +79,6 @@ var searchData=
   ['uniformreallrdistribution',['UniformRealLRDistribution',['../classvsmc_1_1_uniform_real_l_r_distribution.html#ad84f68634c6b41abe4e70294e72895f7',1,'vsmc::UniformRealLRDistribution::UniformRealLRDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_l_r_distribution.html#a707cd3d983f7c4e46ca947a96c833c87',1,'vsmc::UniformRealLRDistribution::UniformRealLRDistribution(const param_type &amp;param)']]],
   ['uniformrealocdistribution',['UniformRealOCDistribution',['../group___distribution.html#gaaa31609c1ca114c340634c6f9355ef66',1,'vsmc']]],
   ['uniformrealoodistribution',['UniformRealOODistribution',['../group___distribution.html#ga21a9a7cf08cb810087a15c2a268400f8',1,'vsmc']]],
-  ['unique',['unique',['../classvsmc_1_1_c_l_base.html#a7ea8dac667a1715aa154c8b41005bf79',1,'vsmc::CLBase']]],
-  ['unload_5fcompiler',['unload_compiler',['../classvsmc_1_1_c_l_platform.html#a2f49f72d90b464f1ab56d6c8d92748da',1,'vsmc::CLPlatform']]],
-  ['update_5fstate',['update_state',['../classvsmc_1_1_state_c_l.html#a866ec2dd3c6b09a5f9cd5e989b4b65ee',1,'vsmc::StateCL::update_state(::cl_mem_flags flag)'],['../classvsmc_1_1_state_c_l.html#a8887dc264ab06f20a98296dc7c661810',1,'vsmc::StateCL::update_state(::cl_mem_flags flag, void *host_ptr)']]],
-  ['use_5fcount',['use_count',['../classvsmc_1_1_c_l_base.html#a566c9b492e8d50cb0de9680191eec72c',1,'vsmc::CLBase']]],
   ['utility',['Utility',['../group___utility.html',1,'']]],
   ['utility_2ehpp',['utility.hpp',['../utility_8hpp.html',1,'']]]
 ];

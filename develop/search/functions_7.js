@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['has_5fdevice',['has_device',['../classvsmc_1_1_c_l_query.html#a4636ecca87f6db3b1061c30a70e8d05e',1,'vsmc::CLQuery::has_device(const CLPlatform &amp;plat)'],['../classvsmc_1_1_c_l_query.html#a09e751eaa596bb0fe7e8e02e9e299f1f',1,'vsmc::CLQuery::has_device()']]],
-  ['has_5ffeature',['has_feature',['../classvsmc_1_1_c_l_query.html#a0e5abd5f7a52c6e629c7e2ea9c2c8113',1,'vsmc::CLQuery']]],
   ['hdf5io_5fdatatype',['hdf5io_datatype',['../namespacevsmc.html#a9653c1f6c7339959a5f01638f77f6416',1,'vsmc']]],
   ['hdf5io_5fdatatype_3c_20char_20_3e',['hdf5io_datatype&lt; char &gt;',['../group___h_d_f5_i_o.html#gaadec9e67a65ef5b77c207992a8c0e8b8',1,'vsmc']]],
   ['hdf5io_5fdatatype_3c_20double_20_3e',['hdf5io_datatype&lt; double &gt;',['../group___h_d_f5_i_o.html#ga449553e066858a1516f9ae84497b3dfc',1,'vsmc']]],
@@ -33,7 +31,6 @@ var searchData=
   ['hdf5store_5fnew',['hdf5store_new',['../group___h_d_f5_i_o.html#ga4bfedcdf0062b93d015028638b016041',1,'vsmc']]],
   ['hdf5storedataptr',['HDF5StoreDataPtr',['../classvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#acf01608a8b3a16ee0a858372b2b52f17',1,'vsmc::internal::HDF5StoreDataPtr']]],
   ['help',['help',['../classvsmc_1_1_program_option_help.html#a1e6257889ff2c42e5ecca9a14d7c9db2',1,'vsmc::ProgramOptionHelp']]],
-  ['host_5fptr',['host_ptr',['../classvsmc_1_1_c_l_buffer.html#aa92bf47a5015a8b4410506df800e1b09',1,'vsmc::CLBuffer']]],
   ['hours',['hours',['../classvsmc_1_1_stop_watch_clock_adapter.html#a781901688b7fb89887f0a0b2fecb7999',1,'vsmc::StopWatchClockAdapter']]],
   ['hypergeometric',['hypergeometric',['../classvsmc_1_1_m_k_l_stream.html#a1fcd88cc33d76890b9ae9bade7c7e757',1,'vsmc::MKLStream']]],
   ['hypot',['hypot',['../namespacevsmc.html#a8688e4b0cd3c77446209086100858ae1',1,'vsmc::hypot(std::size_t n, const float *a, const float *b, float *y)'],['../namespacevsmc.html#a1ab7b071e9c32f78a4d9efa587cbd4f3',1,'vsmc::hypot(std::size_t n, const double *a, const double *b, double *y)'],['../group__v_power.html#gafd1ff17b38f7ba41548f126becbae980',1,'vsmc::hypot(std::size_t n, const T *a, const T *b, T *y)']]]

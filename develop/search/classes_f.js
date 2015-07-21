@@ -26,7 +26,6 @@ var searchData=
   ['statematrixbase_3c_20rowmajor_2c_20dim_2c_20t_20_3e',['StateMatrixBase&lt; RowMajor, Dim, T &gt;',['../classvsmc_1_1_state_matrix_base.html',1,'vsmc']]],
   ['statematrixdim',['StateMatrixDim',['../classvsmc_1_1internal_1_1_state_matrix_dim.html',1,'vsmc::internal']]],
   ['statematrixdim_3c_20dynamic_20_3e',['StateMatrixDim&lt; Dynamic &gt;',['../classvsmc_1_1internal_1_1_state_matrix_dim_3_01_dynamic_01_4.html',1,'vsmc::internal']]],
-  ['statempi',['StateMPI',['../classvsmc_1_1_state_m_p_i.html',1,'vsmc']]],
   ['stateomp',['StateOMP',['../classvsmc_1_1_state_o_m_p.html',1,'vsmc']]],
   ['statetbb',['StateTBB',['../classvsmc_1_1_state_t_b_b.html',1,'vsmc']]],
   ['staticassert',['StaticAssert',['../classvsmc_1_1internal_1_1_static_assert.html',1,'vsmc::internal']]],

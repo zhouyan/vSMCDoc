@@ -125,11 +125,11 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga71815f774e78a7daf2858f5bd1ed7388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type using <a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a>.  <a href="#ga71815f774e78a7daf2858f5bd1ed7388">More...</a><br /></td></tr>
 <tr class="separator:ga71815f774e78a7daf2858f5bd1ed7388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga795da25dedee60c77bf33e10f73aab5e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga795da25dedee60c77bf33e10f73aab5e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, AlignedAllocator&lt; T &gt;, std::allocator&lt; T &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="memitem:ga795da25dedee60c77bf33e10f73aab5e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, AlignedAllocator&lt; T &gt;, std::allocator&lt; T &gt;&gt;::type</td></tr>
 <tr class="memdesc:ga795da25dedee60c77bf33e10f73aab5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> for scalar type and <code>std::allocator</code> for others.  <a href="#ga795da25dedee60c77bf33e10f73aab5e">More...</a><br /></td></tr>
 <tr class="separator:ga795da25dedee60c77bf33e10f73aab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">vsmc::Vector</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, std::vector&lt; T, AlignedAllocator&lt; T &gt;&gt;, std::vector&lt; T &gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td></tr>
+<tr class="memitem:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">vsmc::Vector</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, std::vector&lt; T, AlignedAllocator&lt; T &gt;&gt;, std::vector&lt; T &gt;&gt;::type</td></tr>
 <tr class="memdesc:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlignedVector for scalar type and <code>std::vector</code> for others.  <a href="#ga8d6319aaafe93f5e8408cd4754b63b84">More...</a><br /></td></tr>
 <tr class="separator:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -177,7 +177,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typedef typename std::conditional&lt;std::is_scalar&lt;T&gt;::value, AlignedAllocator&lt;T&gt;, std::allocator&lt;T&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typedef typename std::conditional&lt;std::is_scalar&lt;T&gt;::value, AlignedAllocator&lt;T&gt;, std::allocator&lt;T&gt;&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -195,7 +195,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">vsmc::Vector</a> = typedef typename std::conditional&lt;std::is_scalar&lt;T&gt;::value, std::vector&lt;T, AlignedAllocator&lt;T&gt;&gt;, std::vector&lt;T&gt;&gt;::<a class="el" href="classstd_1_1conditional_1_1type.html">type</a></td>
+          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">vsmc::Vector</a> = typedef typename std::conditional&lt;std::is_scalar&lt;T&gt;::value, std::vector&lt;T, AlignedAllocator&lt;T&gt;&gt;, std::vector&lt;T&gt;&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

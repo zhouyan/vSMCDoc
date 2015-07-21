@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['threefrygenerator',['ThreefryGenerator',['../classvsmc_1_1_threefry_generator.html',1,'vsmc']]],
+  ['threefrygeneratorgeneric',['ThreefryGeneratorGeneric',['../classvsmc_1_1_threefry_generator_generic.html',1,'vsmc']]],
   ['threefryinitpar',['ThreefryInitPar',['../classvsmc_1_1internal_1_1_threefry_init_par.html',1,'vsmc::internal']]],
   ['threefryinsertkey',['ThreefryInsertKey',['../classvsmc_1_1internal_1_1_threefry_insert_key.html',1,'vsmc::internal']]],
   ['threefryinsertkey_3c_20t_2c_202_2c_20n_2c_20true_20_3e',['ThreefryInsertKey&lt; T, 2, N, true &gt;',['../classvsmc_1_1internal_1_1_threefry_insert_key_3_01_t_00_012_00_01_n_00_01true_01_4.html',1,'vsmc::internal']]],
@@ -68,6 +68,5 @@ var searchData=
   ['threefryrotateconstant_3c_20std_3a_3auint64_5ft_2c_204_2c_207_2c_200_20_3e',['ThreefryRotateConstant&lt; std::uint64_t, 4, 7, 0 &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_constant_3_01std_1_1uint64__t_00_014_00_017_00_010_01_4.html',1,'vsmc::internal']]],
   ['threefryrotateconstant_3c_20std_3a_3auint64_5ft_2c_204_2c_207_2c_201_20_3e',['ThreefryRotateConstant&lt; std::uint64_t, 4, 7, 1 &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_constant_3_01std_1_1uint64__t_00_014_00_017_00_011_01_4.html',1,'vsmc::internal']]],
   ['threefryrotateconstant_3c_20t_2c_20k_2c_20n_2c_20i_20_3e',['ThreefryRotateConstant&lt; T, K, N, I &gt;',['../classvsmc_1_1internal_1_1_threefry_rotate_constant.html',1,'vsmc::internal']]],
-  ['threefryrotateimpl',['ThreefryRotateImpl',['../classvsmc_1_1internal_1_1_threefry_rotate_impl.html',1,'vsmc::internal']]],
-  ['type',['type',['../classstd_1_1conditional_1_1type.html',1,'']]]
+  ['threefryrotateimpl',['ThreefryRotateImpl',['../classvsmc_1_1internal_1_1_threefry_rotate_impl.html',1,'vsmc::internal']]]
 ];

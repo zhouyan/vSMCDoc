@@ -42,8 +42,6 @@ var searchData=
   ['vsmc_5fhas_5fcblas',['VSMC_HAS_CBLAS',['../config_8h.html#a1c37c6d025e4cc33598751d9fbeb4093',1,'config.h']]],
   ['vsmc_5fhas_5fhdf5',['VSMC_HAS_HDF5',['../config_8h.html#a1c7e94d06f836a49688c6dd1c9f722b5',1,'config.h']]],
   ['vsmc_5fhas_5fint128',['VSMC_HAS_INT128',['../compiler_8h.html#a4b9a35529fbef6bdbde0623832eb0ffc',1,'compiler.h']]],
-  ['vsmc_5fhas_5fmpi',['VSMC_HAS_MPI',['../config_8h.html#ac81ca820578a146d0523c3f547a26c97',1,'config.h']]],
-  ['vsmc_5fhas_5fopencl',['VSMC_HAS_OPENCL',['../config_8h.html#a1913fd8619d55fa12e8b8b87ef1d426d',1,'config.h']]],
   ['vsmc_5fhas_5frdrand',['VSMC_HAS_RDRAND',['../compiler_8h.html#ab9de6e9b458fd0dfea162f539d1f30fc',1,'compiler.h']]],
   ['vsmc_5fhas_5frngc_5fdouble',['VSMC_HAS_RNGC_DOUBLE',['../opencl_8h.html#aa04b3c519e403ce70da9690e3e852489',1,'VSMC_HAS_RNGC_DOUBLE():&#160;opencl.h'],['../compiler_8h.html#aa04b3c519e403ce70da9690e3e852489',1,'VSMC_HAS_RNGC_DOUBLE():&#160;compiler.h']]],
   ['vsmc_5fhas_5fsse2',['VSMC_HAS_SSE2',['../compiler_8h.html#aeed385df0494a853155b4bc14a217747',1,'compiler.h']]],

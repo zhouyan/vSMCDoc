@@ -7,12 +7,10 @@ var searchData=
   ['normal01',['Normal01',['../group___normal01_c.html',1,'']]],
   ['normal_5fdistribution',['normal_distribution',['../group___distribution.html#ga3912dc0802b1da13bb016659e477fee5',1,'vsmc::normal_distribution(RNGType &amp;rng, std::size_t n, RealType *r, RealType mean, RealType stddev)'],['../namespacevsmc.html#a7e48393c676d96bc892bba8accbf13b1',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, float *r, float, float)'],['../namespacevsmc.html#a9b908cb91a8a51c2e38999bf5cef9577',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, double *r, double, double)']]],
   ['normal_5fdistribution_2ehpp',['normal_distribution.hpp',['../normal__distribution_8hpp.html',1,'']]],
-  ['normal_5fdistribution_5fcdf_5fimpl',['normal_distribution_cdf_impl',['../namespacevsmc_1_1internal.html#a2a183c26b3168d3a27367b2a90e2522f',1,'vsmc::internal']]],
   ['normal_5fdistribution_5fcheck_5fparam',['normal_distribution_check_param',['../namespacevsmc_1_1internal.html#adde6a9124dbaada19415006034806516',1,'vsmc::internal']]],
   ['normal_5fdistribution_5fimpl',['normal_distribution_impl',['../namespacevsmc_1_1internal.html#aa15e0f234606851f334ff7db83829a54',1,'vsmc::internal']]],
-  ['normal_5fdistribution_5fpdf_5fimpl',['normal_distribution_pdf_impl',['../namespacevsmc_1_1internal.html#a8cd5495ee8faecf095089a15a0bcbffb',1,'vsmc::internal']]],
-  ['normaldistribution',['NormalDistribution',['../classvsmc_1_1_normal_distribution.html',1,'vsmc']]],
   ['normaldistribution',['NormalDistribution',['../classvsmc_1_1_normal_distribution.html#a393a26c8a2b193c99678f5b9ead0c095',1,'vsmc::NormalDistribution::NormalDistribution(result_type mean=0, result_type stddev=1)'],['../classvsmc_1_1_normal_distribution.html#ae6d9dec75fe573e555382d061030c8e5',1,'vsmc::NormalDistribution::NormalDistribution(const param_type &amp;param)']]],
+  ['normaldistribution',['NormalDistribution',['../classvsmc_1_1_normal_distribution.html',1,'vsmc']]],
   ['notrans',['NoTrans',['../group___definitions.html#ggadbec81df055b4943ebed54f1f07ff933a338f9618bd4990ba9672555d713cf0dd',1,'vsmc']]],
   ['nrm2',['nrm2',['../group___c_b_l_a_s1.html#ga739bf813ac09a77c7ba1945a47b67a74',1,'vsmc::nrm2(std::size_t n, const T *x, std::size_t incx)'],['../namespacevsmc.html#aa263e138c1ea567fe7e441844aa4f72d',1,'vsmc::nrm2(std::size_t n, const float *x, std::size_t incx)'],['../namespacevsmc.html#a434ce0d88c69d3cbd470fe0acdd97fe9',1,'vsmc::nrm2(std::size_t n, const double *x, std::size_t incx)']]]
 ];

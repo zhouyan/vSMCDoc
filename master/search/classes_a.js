@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ompsizetypetrait',['OMPSizeTypeTrait',['../structvsmc_1_1traits_1_1_o_m_p_size_type_trait.html',1,'vsmc::traits']]],
-  ['open',['Open',['../structvsmc_1_1_open.html',1,'vsmc']]]
+  ['laplacedistribution',['LaplaceDistribution',['../classvsmc_1_1_laplace_distribution.html',1,'vsmc']]],
+  ['levydistribution',['LevyDistribution',['../classvsmc_1_1_levy_distribution.html',1,'vsmc']]],
+  ['logisticdistribution',['LogisticDistribution',['../classvsmc_1_1_logistic_distribution.html',1,'vsmc']]],
+  ['lognormaldistribution',['LognormalDistribution',['../classvsmc_1_1_lognormal_distribution.html',1,'vsmc']]]
 ];

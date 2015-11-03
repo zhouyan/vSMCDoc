@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['boost',['boost',['../namespaceboost.html',1,'']]],
-  ['mpi',['mpi',['../namespaceboost_1_1mpi.html',1,'boost']]]
+  ['internal',['internal',['../namespacevsmc_1_1internal.html',1,'vsmc']]],
+  ['internal',['internal',['../namespacevsmc_1_1internal_1_1internal.html',1,'vsmc::internal']]],
+  ['vsmc',['vsmc',['../namespacevsmc.html',1,'']]]
 ];

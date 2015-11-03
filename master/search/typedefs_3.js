@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['decay_5ft',['decay_t',['../group___c_x_x11_traits_misc.html#ga6a0d2e6abcbb6ce1b1a853bca01027f6',1,'vsmc::cxx11']]],
-  ['difference_5ftype',['difference_type',['../classvsmc_1_1_array.html#a01dbdc508c7dc3991aca9d8f080af98f',1,'vsmc::Array']]],
-  ['distribution_5ftype',['distribution_type',['../structvsmc_1_1_stable_distribution_1_1param__type.html#ae80be3f0ca39a00a7c15acb1291bb1ff',1,'vsmc::StableDistribution::param_type::distribution_type()'],['../structvsmc_1_1_uniform_real_distribution_1_1param__type.html#a69a8e787b7752f82ca65384290aef0c4',1,'vsmc::UniformRealDistribution::param_type::distribution_type()']]]
+  ['element_5ftype',['element_type',['../classvsmc_1_1_m_k_l_base.html#aa071ae381154b721383b75ffe991be5a',1,'vsmc::MKLBase']]],
+  ['eval_5ftype',['eval_type',['../classvsmc_1_1_monitor.html#a74bd93943baa039773128e577ed639ed',1,'vsmc::Monitor::eval_type()'],['../classvsmc_1_1_path.html#a4524bd5bc99a4826d3c26fb9f7b250bc',1,'vsmc::Path::eval_type()']]]
 ];

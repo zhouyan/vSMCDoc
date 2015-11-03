@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['sampler_2ehpp',['sampler.hpp',['../sampler_8hpp.html',1,'']]],
-  ['seed_2ehpp',['seed.hpp',['../seed_8hpp.html',1,'']]],
-  ['single_5fparticle_2ehpp',['single_particle.hpp',['../single__particle_8hpp.html',1,'']]],
-  ['smp_2ehpp',['smp.hpp',['../smp_8hpp.html',1,'']]],
-  ['stable_5fdistribution_2ehpp',['stable_distribution.hpp',['../stable__distribution_8hpp.html',1,'']]],
-  ['state_5fmatrix_2ehpp',['state_matrix.hpp',['../state__matrix_8hpp.html',1,'']]],
-  ['state_5ftuple_2ehpp',['state_tuple.hpp',['../state__tuple_8hpp.html',1,'']]],
-  ['stop_5fwatch_2ehpp',['stop_watch.hpp',['../stop__watch_8hpp.html',1,'']]],
-  ['stratified_2ehpp',['stratified.hpp',['../stratified_8hpp.html',1,'']]],
-  ['systematic_2ehpp',['systematic.hpp',['../systematic_8hpp.html',1,'']]]
+  ['pareto_5fdistribution_2ehpp',['pareto_distribution.hpp',['../pareto__distribution_8hpp.html',1,'']]],
+  ['particle_2ehpp',['particle.hpp',['../particle_8hpp.html',1,'']]],
+  ['path_2ehpp',['path.hpp',['../path_8hpp.html',1,'']]],
+  ['philox_2eh',['philox.h',['../philox_8h.html',1,'']]],
+  ['philox_2ehpp',['philox.hpp',['../philox_8hpp.html',1,'']]],
+  ['program_5foption_2ehpp',['program_option.hpp',['../program__option_8hpp.html',1,'']]],
+  ['progress_2ehpp',['progress.hpp',['../progress_8hpp.html',1,'']]]
 ];

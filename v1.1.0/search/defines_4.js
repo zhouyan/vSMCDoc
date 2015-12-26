@@ -160,7 +160,7 @@ var searchData=
   ['vsmc_5fruntime_5fassert_5futility_5fcstring_5faligned_5fsrc',['VSMC_RUNTIME_ASSERT_UTILITY_CSTRING_ALIGNED_SRC',['../cstring_8hpp.html#a4955da740824b7a34ee94abb4dd3e556',1,'cstring.hpp']]],
   ['vsmc_5fruntime_5fassert_5futility_5fcstring_5fmemcpy',['VSMC_RUNTIME_ASSERT_UTILITY_CSTRING_MEMCPY',['../cstring_8hpp.html#a7e7ba31a82d4d0c23850c123103825eb',1,'cstring.hpp']]],
   ['vsmc_5fruntime_5fassert_5futility_5fprogram_5foption_5fnullptr',['VSMC_RUNTIME_ASSERT_UTILITY_PROGRAM_OPTION_NULLPTR',['../program__option_8hpp.html#a4678282bd263509346b00e88550f3598',1,'program_option.hpp']]],
-  ['vsmc_5fruntime_5fwarning',['VSMC_RUNTIME_WARNING',['../assert_8hpp.html#a2e22aded3b2d116df8b7170011bb32ad',1,'assert.hpp']]],
+  ['vsmc_5fruntime_5fwarning',['VSMC_RUNTIME_WARNING',['../assert_8hpp.html#a90dcd2daf713da3432004b99231d5257',1,'assert.hpp']]],
   ['vsmc_5fruntime_5fwarning_5fcore_5fsampler_5finit_5fby_5fiter',['VSMC_RUNTIME_WARNING_CORE_SAMPLER_INIT_BY_ITER',['../sampler_8hpp.html#ac253dd3bf4df99c947373eeb013481ef',1,'sampler.hpp']]],
   ['vsmc_5fruntime_5fwarning_5fopencl_5fcl_5fmanager_5fblock',['VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_BLOCK',['../cl__manager_8hpp.html#a24524257d47378e199ddec7e054c26d0',1,'cl_manager.hpp']]],
   ['vsmc_5fruntime_5fwarning_5fopencl_5fcl_5fmanager_5fsetup_5fcommand_5fqueue',['VSMC_RUNTIME_WARNING_OPENCL_CL_MANAGER_SETUP_COMMAND_QUEUE',['../cl__manager_8hpp.html#af65752c77b244d99fa5d53e050e8fc67',1,'cl_manager.hpp']]],

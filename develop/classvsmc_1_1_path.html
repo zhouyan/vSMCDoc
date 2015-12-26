@@ -269,15 +269,17 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 <p>A <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> object is very similar to a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> object. It is a special case for <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a>. The dimension of the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is always one. In addition, the evaluation object returns the integration grid of the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling.</p>
-<p>The evaluation object has the signature</p><ul>
+<p>The evaluation object has the signature</p>
+<ul>
 <li>~~~{.cpp} double eval (std::size_t iter, Particle&lt;T&gt; &amp;particle, double *integrand)</li>
-<li><p class="startli">~~~ where the first two arguments are passed in by the <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> at the end of each iteration. The evaluation occurs after the possible MCMC moves. The output parameter <code>integrand</code> shall contains the results of the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling integrands. The return value shall be the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling integration grid.</p>
+<li><p class="startli">~~~</p>
+<p class="startli">where the first two arguments are passed in by the <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> at the end of each iteration. The evaluation occurs after the possible MCMC moves. The output parameter <code>integrand</code> shall contains the results of the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling integrands. The return value shall be the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling integration grid.</p>
 <p class="startli">If <code>record_only</code> is true, then the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> monitor only records the integrand estimate stored in <code>integrand</code>. Otherwise the behavior is explained below,</p>
 <p class="startli">For example, say the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling is computed through integration of \(\lambda = \int_0^1 E[g_\alpha(X)]\,\mathrm{d}\alpha\). The integral is approximated with numerical integration at point \(\alpha_0 = 0, \alpha_1, \dots, \alpha_T = 1\), then at iteration \(t\), the output parameter <code>integrand</code> contains \((g_{\alpha_t}(X_0),\dots)\) and the return value is \(\alpha_t\). </p>
 </li>
 </ul>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00095">95</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00097">97</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +309,7 @@ template&lt;typename T&gt; </div>
 
 <p>Clear all records of the index and integrations. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00218">218</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00220">220</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +338,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the evaluation object is valid. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00117">117</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00119">119</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +378,7 @@ template&lt;typename T&gt; </div>
 <p>Perform the evaluation for a given iteration and a Particle&lt;T&gt; object</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_monitor.html#a1fd595af06c745b16875955517dbad20" title="Perform the evaluation for a given iteration and a Particle<T> object. ">Monitor::eval()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00188">188</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00190">190</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -406,7 +408,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling grid value of a given <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> iteration. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00139">139</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00141">141</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +437,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the raw data of the grid vector. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00153">153</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00155">155</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +468,7 @@ template&lt;typename T&gt; </div>
 <p>Get the iteration index of the sampler of a given monitor iteration. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_monitor.html#ab245c2db02ba9379be42302a229644db" title="Get the iteration index of the sampler of a given Monitor iteration. ">Monitor::index()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00123">123</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00125">125</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -495,7 +497,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the raw data of the index vector. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00147">147</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00149">149</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -525,7 +527,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> sampling integrand of a given <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> iteration. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00131">131</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00133">133</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +556,7 @@ template&lt;typename T&gt; </div>
 
 <p>Read only access to the raw data of the integrand vector. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00150">150</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00152">152</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -584,7 +586,7 @@ template&lt;typename T&gt; </div>
 <p>The number of iterations has been recorded. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">Monitor::iter_size()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00106">106</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00108">108</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -613,7 +615,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the logarithm nomralizing constants ratio estimates. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00215">215</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00217">217</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +647,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read the grid history through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00173">173</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00175">175</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +680,7 @@ template&lt;typename OutputIter &gt; </div>
 <p>Read the index history through an output iterator. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvsmc_1_1_monitor.html#a2dc1466bb7b9c842acb0664418ebb8d1" title="Read the index history through an output iterator. ">Monitor::read_index()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00159">159</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00161">161</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -710,7 +712,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Read the integrand history through an output iterator. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00166">166</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00168">168</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -739,7 +741,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the <a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> is actively recording restuls. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00227">227</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00229">229</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -769,7 +771,7 @@ template&lt;typename T&gt; </div>
 
 <p>Reserve space for a specified number of iterations. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00109">109</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00111">111</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -809,7 +811,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set a new evaluation object of type eval_type. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00179">179</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00181">181</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -838,7 +840,7 @@ template&lt;typename T&gt; </div>
 
 <p>Turn off the recording. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00233">233</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00235">235</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -867,7 +869,7 @@ template&lt;typename T&gt; </div>
 
 <p>Turn on the recording. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00230">230</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00232">232</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>
@@ -896,7 +898,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the nomralizing constants ratio estimates. </p>
 
-<p>Definition at line <a class="el" href="path_8hpp_source.html#l00212">212</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
+<p>Definition at line <a class="el" href="path_8hpp_source.html#l00214">214</a> of file <a class="el" href="path_8hpp_source.html">path.hpp</a>.</p>
 
 </div>
 </div>

@@ -113,9 +113,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This library has no dependences other than C++ standard libraries (C++11). Any C++11 language features are optional.</p>
 <p>In particular, the library use the <code>&lt;functional&gt;</code> and <code>&lt;random&gt;</code> headers, which are parts of the C++11 standard libraries. Equivalences can be found in recent versions of <a href="http://www.boost.org">Boost</a>. The library does its best to detect a usable C++11 solution and falls back to <a href="http://www.boost.org">Boost</a> if it fails to do so. This behavior can be changed explicitly through configuration macros.</p>
 <h1>Compiler support</h1>
-<p>This library makes heavy use of some template metaprogramming techniques. It requires a standard conforming compiler. Fortunately, most commonly used modern compilers, at least in C++98 mode, is able to compile the examples distributed with the library, provided that they can compile the Boost library.</p>
-<p>This library has been regularly tested with recent <a href="http://clang.llvm.org">Clang</a>, <a href="http://gcc.gnu.org">GCC</a> and <a href="http://software.intel.com/en-us/intel-compilers">Intel C++ Compiler</a>, in both C++98 and C++11 modes.</p>
-<p><a href="http://msdn.microsoft.com/en-us/vstudio//default.aspx">Microsoft Visual C++</a> 2012 or later are also supported. However, this compiler is tested less regularly.</p>
+<p>This library makes heavy use of some template metaprogramming techniques. It requires a C++11 standard conforming compiler.</p>
+<p>This library has been regularly tested with recent <a href="http://clang.llvm.org">Clang</a>, <a href="http://gcc.gnu.org">GCC</a> and <a href="http://software.intel.com/en-us/intel-compilers">Intel C++ Compiler</a> in C++11 mode.</p>
+<p><a href="http://msdn.microsoft.com/en-us/vstudio//default.aspx">Microsoft Visual C++</a> 2015 or later are also supported. However, this compiler is tested less regularly.</p>
 <p>Other compilers might work but are not tested.</p>
 <h1>License</h1>
 <p>The vSMC library is distributed with a 2-clause BSD license which can be found in the <code>LICENSE</code> file distributed with the source. </p>

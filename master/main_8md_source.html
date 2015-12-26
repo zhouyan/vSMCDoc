@@ -165,40 +165,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;# Compiler support</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;This library makes heavy use of some template metaprogramming techniques. It</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;requires a standard conforming compiler. Fortunately, most commonly used</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;modern compilers, at least in C++98 mode, is able to compile the examples</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;distributed with the library, provided that they can compile the Boost library.</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;This library has been regularly tested with recent [Clang][Clang], [GCC][GCC]</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;and [Intel C++ Compiler][icpc], in both C++98 and C++11 modes.</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;[Microsoft Visual C++][MSVC] 2012 or later are also supported. However, this</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;compiler is tested less regularly.</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;requires a C++11 standard conforming compiler.</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;This library has been regularly tested with recent [Clang][Clang], [GCC][GCC]</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;and [Intel C++ Compiler][icpc] in C++11 mode.</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;[Microsoft Visual C++][MSVC] 2015 or later are also supported. However, this</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;compiler is tested less regularly.</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;Other compilers might work but are not tested.</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;Other compilers might work but are not tested.</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;# License</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;# License</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;The vSMC library is distributed with a 2-clause BSD license which can be found</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;in the `LICENSE` file distributed with the source.</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;[Apple GCD]: http://en.wikipedia.org/wiki/Grand_Central_Dispatch</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;[Boost]: http://www.boost.org</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;[CMake]: http://www.cmake.org</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;[Clang]: http://clang.llvm.org</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;[Doxygen]: http://www.stack.nl/~dimitri/doxygen/manual.html</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;[GCC]: http://gcc.gnu.org</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;[Intel Cilk Plus]: https://www.cilkplus.org</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;[Intel TBB]: http://threadingbuildingblocks.org</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;[MS PPL]: http://msdn.microsoft.com/en-us/library/dd492418.aspx</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;[MSVC]: http://msdn.microsoft.com/en-us/vstudio//default.aspx</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;[OpenCL]: http://www.khronos.org/opencl</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;[OpenMP]: http://www.openmp.org</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;[icpc]: http://software.intel.com/en-us/intel-compilers</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;[vSMCDocMaster]: http://zhouyan.github.io/vSMCDoc/master</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;[vSMCDocDevelop]: http://zhouyan.github.io/vSMCDoc/develop</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;[vSMC Extra]: https://github.com/zhouyan/vSMCExtra.git</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;The vSMC library is distributed with a 2-clause BSD license which can be found</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;in the `LICENSE` file distributed with the source.</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;[Apple GCD]: http://en.wikipedia.org/wiki/Grand_Central_Dispatch</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;[Boost]: http://www.boost.org</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;[CMake]: http://www.cmake.org</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;[Clang]: http://clang.llvm.org</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;[Doxygen]: http://www.stack.nl/~dimitri/doxygen/manual.html</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;[GCC]: http://gcc.gnu.org</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;[Intel Cilk Plus]: https://www.cilkplus.org</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;[Intel TBB]: http://threadingbuildingblocks.org</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;[MS PPL]: http://msdn.microsoft.com/en-us/library/dd492418.aspx</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;[MSVC]: http://msdn.microsoft.com/en-us/vstudio//default.aspx</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;[OpenCL]: http://www.khronos.org/opencl</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;[OpenMP]: http://www.openmp.org</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;[icpc]: http://software.intel.com/en-us/intel-compilers</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;[vSMCDocMaster]: http://zhouyan.github.io/vSMCDoc/master</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;[vSMCDocDevelop]: http://zhouyan.github.io/vSMCDoc/develop</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;[vSMC Extra]: https://github.com/zhouyan/vSMCExtra.git</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

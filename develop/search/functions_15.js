@@ -5,7 +5,7 @@ var searchData=
   ['weibull_5fdistribution_5fcheck_5fparam',['weibull_distribution_check_param',['../namespacevsmc_1_1internal.html#a127ab3cffac87a4e4f87f1395c5b5edc',1,'vsmc::internal']]],
   ['weibull_5fdistribution_5fimpl',['weibull_distribution_impl',['../namespacevsmc_1_1internal.html#a586042334b74f6fffabd4090a94175c8',1,'vsmc::internal']]],
   ['weibulldistribution',['WeibullDistribution',['../classvsmc_1_1_weibull_distribution.html#a296c0e2cd4431f6132fcb2d20f1e079d',1,'vsmc::WeibullDistribution::WeibullDistribution(result_type a=1, result_type b=1)'],['../classvsmc_1_1_weibull_distribution.html#a3d503e6eba7bd21d59ed61dcadb41639',1,'vsmc::WeibullDistribution::WeibullDistribution(const param_type &amp;param)']]],
-  ['weight',['Weight',['../classvsmc_1_1_weight.html#a45688d20f5c32932d67f8c1d61690da4',1,'vsmc::Weight::Weight()'],['../classvsmc_1_1_particle.html#adb63ccc884a58424c7fb44da34411305',1,'vsmc::Particle::weight()'],['../classvsmc_1_1_particle.html#ae459d2cf404c73b93031fccbe9ec0e4f',1,'vsmc::Particle::weight() const ']]],
+  ['weight',['weight',['../classvsmc_1_1_particle.html#adb63ccc884a58424c7fb44da34411305',1,'vsmc::Particle::weight()'],['../classvsmc_1_1_particle.html#ae459d2cf404c73b93031fccbe9ec0e4f',1,'vsmc::Particle::weight() const '],['../classvsmc_1_1_weight.html#a45688d20f5c32932d67f8c1d61690da4',1,'vsmc::Weight::Weight()']]],
   ['weight_5fess',['weight_ess',['../group___core.html#ga3c25e249c076553de2d0c2e777d184a4',1,'vsmc']]],
   ['weight_5fnormalize',['weight_normalize',['../group___core.html#ga4da4a3dbcc0d8de16cc8540dd6fe52e2',1,'vsmc']]],
   ['weight_5fnormalize_5flog',['weight_normalize_log',['../group___core.html#ga826d29709f815c1cfaf21dfe03b94b9e',1,'vsmc']]],

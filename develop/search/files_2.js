@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cauchy_5fdistribution_2ehpp',['cauchy_distribution.hpp',['../cauchy__distribution_8hpp.html',1,'']]],
-  ['cblas_2ehpp',['cblas.hpp',['../cblas_8hpp.html',1,'']]],
+  ['cblas_2eh',['cblas.h',['../cblas_8h.html',1,'']]],
   ['chi_5fsquared_5fdistribution_2ehpp',['chi_squared_distribution.hpp',['../chi__squared__distribution_8hpp.html',1,'']]],
   ['clang_2eh',['clang.h',['../clang_8h.html',1,'']]],
   ['common_2ehpp',['common.hpp',['../rng_2internal_2common_8hpp.html',1,'']]],

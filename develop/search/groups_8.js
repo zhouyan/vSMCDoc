@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['memory_20alignment',['Memory alignment',['../group___aligned_memory.html',1,'']]],
-  ['memory_20allocation',['Memory allocation',['../group___c___a_p_i___memory.html',1,'']]],
-  ['mathematics',['Mathematics',['../group___math.html',1,'']]]
+  ['normal01',['Normal01',['../group___normal01_c.html',1,'']]]
 ];

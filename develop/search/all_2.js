@@ -39,9 +39,7 @@ var searchData=
   ['betadistributionalgorithmc',['BetaDistributionAlgorithmC',['../namespacevsmc_1_1internal.html#a922e33bab79ac3f8e9184c8ecec0ea7eaf369575b59662131f0d89fe32daea3e5',1,'vsmc::internal']]],
   ['betadistributionalgorithmj',['BetaDistributionAlgorithmJ',['../namespacevsmc_1_1internal.html#a922e33bab79ac3f8e9184c8ecec0ea7ea30ceb828b24f94624e83fdd9d3e16cda',1,'vsmc::internal']]],
   ['betadistributionalgorithmx1',['BetaDistributionAlgorithmX1',['../namespacevsmc_1_1internal.html#a922e33bab79ac3f8e9184c8ecec0ea7eac169893c909916af9a6b68e6e4f9f62e',1,'vsmc::internal']]],
-  ['betadistributionconstant',['BetaDistributionConstant',['../classvsmc_1_1internal_1_1_beta_distribution_constant.html#abf0a54fa6714f3b429a33f806f9df687',1,'vsmc::internal::BetaDistributionConstant']]],
   ['betadistributionconstant',['BetaDistributionConstant',['../classvsmc_1_1internal_1_1_beta_distribution_constant.html',1,'vsmc::internal']]],
-  ['binomial',['binomial',['../classvsmc_1_1_m_k_l_stream.html#a104c4b1f0b48423719133dd63754365d',1,'vsmc::MKLStream']]],
-  ['blas_20level_201_20routines_20and_20functions',['BLAS level 1 routines and functions',['../group___c_b_l_a_s1.html',1,'']]],
-  ['blas_20level_202_20routines',['BLAS level 2 routines',['../group___c_b_l_a_s2.html',1,'']]]
+  ['betadistributionconstant',['BetaDistributionConstant',['../classvsmc_1_1internal_1_1_beta_distribution_constant.html#abf0a54fa6714f3b429a33f806f9df687',1,'vsmc::internal::BetaDistributionConstant']]],
+  ['binomial',['binomial',['../classvsmc_1_1_m_k_l_stream.html#a104c4b1f0b48423719133dd63754365d',1,'vsmc::MKLStream']]]
 ];

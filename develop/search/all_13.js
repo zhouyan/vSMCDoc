@@ -110,7 +110,6 @@ var searchData=
   ['threefrysse2_5f64',['ThreefrySSE2_64',['../group___threefry.html#gab315b9792719eb89bf9a029779145379',1,'vsmc']]],
   ['traits',['Traits',['../group___traits.html',1,'']]],
   ['traits_2ehpp',['traits.hpp',['../traits_8hpp.html',1,'']]],
-  ['trans',['Trans',['../group___definitions.html#ggadbec81df055b4943ebed54f1f07ff933a8b900e0b3934f39c53c4eb67555b85f8',1,'vsmc']]],
   ['transform_2ehpp',['transform.hpp',['../transform_8hpp.html',1,'']]],
   ['turn_5foff',['turn_off',['../classvsmc_1_1_monitor.html#a4cf19bb420d491539576417f06725c91',1,'vsmc::Monitor::turn_off()'],['../classvsmc_1_1_path.html#a09490c1a1a2e1dfcb9b8db82713a6704',1,'vsmc::Path::turn_off()']]],
   ['turn_5fon',['turn_on',['../classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c',1,'vsmc::Monitor::turn_on()'],['../classvsmc_1_1_path.html#a8719c83be651e7899bcfc50c2476a35d',1,'vsmc::Path::turn_on()']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['vsmc_5fbackend_5fbase_5fdestructor_5fprefix',['VSMC_BACKEND_BASE_DESTRUCTOR_PREFIX',['../backend__base_8hpp.html#ac2e8e39dc10895482191e6e756045ebd',1,'backend_base.hpp']]],
-  ['vsmc_5fcblas_5fint',['VSMC_CBLAS_INT',['../cblas_8hpp.html#a56fbd204d871fb719e5e3d39f2034e6f',1,'cblas.hpp']]],
+  ['vsmc_5fcblas_5fint',['VSMC_CBLAS_INT',['../cblas_8h.html#a56fbd204d871fb719e5e3d39f2034e6f',1,'cblas.h']]],
   ['vsmc_5fclang_5fnonexist',['VSMC_CLANG_NONEXIST',['../clang_8h.html#a73bafab4026b03f02abaf6d37150d614',1,'clang.h']]],
   ['vsmc_5fclang_5fversion',['VSMC_CLANG_VERSION',['../clang_8h.html#a49cd1c6e3028dbd8e5698bfaabf40398',1,'clang.h']]],
   ['vsmc_5fdefine_5fmath_5fconstants',['VSMC_DEFINE_MATH_CONSTANTS',['../constants_8hpp.html#a8f48061bebb77b3cf404f399a2798748',1,'constants.hpp']]],
@@ -38,7 +38,6 @@ var searchData=
   ['vsmc_5fgcc_5fnonexist',['VSMC_GCC_NONEXIST',['../gcc_8h.html#ad9beed1d9b7593ef74c18aa77306c308',1,'gcc.h']]],
   ['vsmc_5fgcc_5fversion',['VSMC_GCC_VERSION',['../gcc_8h.html#a2f4092416cf5eb90d47c34dfc8fc76f2',1,'gcc.h']]],
   ['vsmc_5fhas_5faes_5fni',['VSMC_HAS_AES_NI',['../compiler_8h.html#a1c120b7a67d77fe92b84656704940ac9',1,'compiler.h']]],
-  ['vsmc_5fhas_5fcblas',['VSMC_HAS_CBLAS',['../config_8h.html#a1c37c6d025e4cc33598751d9fbeb4093',1,'config.h']]],
   ['vsmc_5fhas_5fhdf5',['VSMC_HAS_HDF5',['../config_8h.html#a1c7e94d06f836a49688c6dd1c9f722b5',1,'config.h']]],
   ['vsmc_5fhas_5fint128',['VSMC_HAS_INT128',['../compiler_8h.html#a4b9a35529fbef6bdbde0623832eb0ffc',1,'compiler.h']]],
   ['vsmc_5fhas_5frdrand',['VSMC_HAS_RDRAND',['../compiler_8h.html#ab9de6e9b458fd0dfea162f539d1f30fc',1,'compiler.h']]],
@@ -105,7 +104,6 @@ var searchData=
   ['vsmc_5fstatic_5fassert_5futility_5fmkl_5fdf_5ftask_5fresult_5ftype',['VSMC_STATIC_ASSERT_UTILITY_MKL_DF_TASK_RESULT_TYPE',['../utility_2mkl_8hpp.html#ac597d0e9c1e56cce8bb7b525b1ef20b6',1,'mkl.hpp']]],
   ['vsmc_5fstatic_5fassert_5futility_5fmkl_5fss_5ftask_5fresult_5ftype',['VSMC_STATIC_ASSERT_UTILITY_MKL_SS_TASK_RESULT_TYPE',['../utility_2mkl_8hpp.html#abc2a3624aac242d930170151b4480f17',1,'mkl.hpp']]],
   ['vsmc_5fstatic_5finline',['VSMC_STATIC_INLINE',['../opencl_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'VSMC_STATIC_INLINE():&#160;opencl.h'],['../compiler_8h.html#a012fa09dad2fa666d92cf745261d4a7a',1,'VSMC_STATIC_INLINE():&#160;compiler.h']]],
-  ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8h.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8h.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8h.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.h']]],
   ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8h.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.h']]]

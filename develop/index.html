@@ -99,7 +99,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>Parallelization backends</h1>
 <p>The library support various backends for multi-thread parallelization, unified under a uniform interface. The primary backends are <a href="http://www.openmp.org">OpenMP</a> and <a href="http://threadingbuildingblocks.org">Intel TBB</a>. Other backends are available in the <a href="https://github.com/zhouyan/vSMCExtra.git">vSMC Extra</a> repository, including MPI and <a href="http://www.khronos.org/opencl">OpenCL</a>.</p>
 <h1>Third-party dependencies</h1>
-<p>This library has no dependences other than C++ standard libraries (C++11). Any C++11 language features are optional.</p>
+<p>This library requires a working BLAS/LAPACK implementation, with the standard C interface headers (<code><a class="el" href="cblas_8h.html">cblas.h</a></code> and <code><a class="el" href="lapacke_8h.html">lapacke.h</a></code>).</p>
+<p>This library has no other dependencies other than C++ standard libraries (C++11). Any C++11 language features are optional.</p>
 <p>In particular, the library use the <code>&lt;functional&gt;</code> and <code>&lt;random&gt;</code> headers, which are parts of the C++11 standard libraries. Equivalences can be found in recent versions of <a href="http://www.boost.org">Boost</a>. The library does its best to detect a usable C++11 solution and falls back to <a href="http://www.boost.org">Boost</a> if it fails to do so. This behavior can be changed explicitly through configuration macros.</p>
 <h1>Compiler support</h1>
 <p>This library makes heavy use of some template metaprogramming techniques. It requires a C++11 standard conforming compiler.</p>

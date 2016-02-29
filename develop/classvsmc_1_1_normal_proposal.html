@@ -119,6 +119,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ed55b957e579d1dd6e189f04e1e7319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_proposal.html#a7ed55b957e579d1dd6e189f04e1e7319">NormalProposal</a> (<a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> stddev=1, <a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> <a class="el" href="classvsmc_1_1_normal_proposal.html#a26325eae00cee826cb8d0f612d072e70">a</a>=-std::numeric_limits&lt; <a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> &gt;::infinity(), <a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> <a class="el" href="classvsmc_1_1_normal_proposal.html#a67804592c1f1eaca84404827be34f5da">b</a>=std::numeric_limits&lt; <a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> &gt;::infinity())</td></tr>
+<tr class="memdesc:a7ed55b957e579d1dd6e189f04e1e7319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Normal random walk proposal.  <a href="#a7ed55b957e579d1dd6e189f04e1e7319">More...</a><br /></td></tr>
 <tr class="separator:a7ed55b957e579d1dd6e189f04e1e7319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26325eae00cee826cb8d0f612d072e70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_proposal.html#a26325eae00cee826cb8d0f612d072e70">a</a> () const </td></tr>
 <tr class="separator:a26325eae00cee826cb8d0f612d072e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67804592c1f1eaca84404827be34f5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b8c7e8e0a50d543751d265decfbbef"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
 <tr class="memitem:a07b8c7e8e0a50d543751d265decfbbef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_proposal.html#a07b8c7e8e0a50d543751d265decfbbef">operator()</a> (RNGType &amp;rng, <a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> x, <a class="el" href="classvsmc_1_1_normal_proposal.html#a4588c78dc60c8bb19664ae1b53bbcb46">result_type</a> &amp;y)</td></tr>
+<tr class="memdesc:a07b8c7e8e0a50d543751d265decfbbef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propose new value <code>y</code> and return \(\log(q(y, x) / q(x, y))\).  <a href="#a07b8c7e8e0a50d543751d265decfbbef">More...</a><br /></td></tr>
 <tr class="separator:a07b8c7e8e0a50d543751d265decfbbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -134,7 +136,7 @@ class vsmc::NormalProposal&lt; RealType &gt;</h3>
 
 <p>Normal random walk proposal. </p>
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00265">265</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00269">269</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a4588c78dc60c8bb19664ae1b53bbcb46"></a>
 <div class="memitem">
@@ -148,7 +150,7 @@ template&lt;typename RealType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00268">268</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00272">272</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +195,17 @@ template&lt;typename RealType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00270">270</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Construct a Normal random walk proposal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stddev</td><td>The standard deviation (scale) of the proposal </td></tr>
+    <tr><td class="paramname">a</td><td>The lower bound of the support of the target distribution </td></tr>
+    <tr><td class="paramname">b</td><td>The upper bound of the support of the target distribution </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00279">279</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +233,7 @@ template&lt;typename RealType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00282">282</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00291">291</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -248,7 +260,7 @@ template&lt;typename RealType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00283">283</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00292">292</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +306,9 @@ template&lt;typename RNGType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00286">286</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Propose new value <code>y</code> and return \(\log(q(y, x) / q(x, y))\). </p>
+
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00296">296</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>

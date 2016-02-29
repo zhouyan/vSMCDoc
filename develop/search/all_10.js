@@ -38,7 +38,7 @@ var searchData=
   ['particle',['Particle',['../classvsmc_1_1_particle.html',1,'vsmc']]],
   ['particle_2ehpp',['particle.hpp',['../particle_8hpp.html',1,'']]],
   ['particle_3c_20s_20_3e',['Particle&lt; S &gt;',['../classvsmc_1_1_particle.html',1,'vsmc']]],
-  ['path',['path',['../classvsmc_1_1_sampler.html#aeb6f2a99bbde98b392053eb03dc8bed8',1,'vsmc::Sampler::path()'],['../classvsmc_1_1_sampler.html#a8829db78730d67efef02fd0a69ccf7e7',1,'vsmc::Sampler::path() const '],['../classvsmc_1_1_path.html#ae3806a6cc669c760912c3af728703228',1,'vsmc::Path::Path()']]],
+  ['path',['Path',['../classvsmc_1_1_path.html#ae3806a6cc669c760912c3af728703228',1,'vsmc::Path::Path()'],['../classvsmc_1_1_sampler.html#aeb6f2a99bbde98b392053eb03dc8bed8',1,'vsmc::Sampler::path()'],['../classvsmc_1_1_sampler.html#a8829db78730d67efef02fd0a69ccf7e7',1,'vsmc::Sampler::path() const ']]],
   ['path',['Path',['../classvsmc_1_1_path.html',1,'vsmc']]],
   ['path_2ehpp',['path.hpp',['../path_8hpp.html',1,'']]],
   ['path_5fsampling',['path_sampling',['../classvsmc_1_1_sampler.html#ac1489a384305326c519c17f6cae857c0',1,'vsmc::Sampler::path_sampling(const typename Path&lt; T &gt;::eval_type &amp;eval, bool record_only=false)'],['../classvsmc_1_1_sampler.html#a589a4e1174f8251a2d37a6d23f713c19',1,'vsmc::Sampler::path_sampling() const ']]],

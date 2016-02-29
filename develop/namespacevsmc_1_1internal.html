@@ -1091,6 +1091,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a4c389b34c59d7b532a33f5fcf0146b73"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:a4c389b34c59d7b532a33f5fcf0146b73"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a4c389b34c59d7b532a33f5fcf0146b73">chi_squared_distribution_check_param</a> (RealType n)</td></tr>
 <tr class="separator:a4c389b34c59d7b532a33f5fcf0146b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10da7e5c4b353c6a78ddd6e717622a60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a10da7e5c4b353c6a78ddd6e717622a60">cov_chol</a> (std::size_t dim, float *chol)</td></tr>
+<tr class="separator:a10da7e5c4b353c6a78ddd6e717622a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c7b871caa21cce69a276cbe34e4a57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a82c7b871caa21cce69a276cbe34e4a57">cov_chol</a> (std::size_t dim, double *chol)</td></tr>
+<tr class="separator:a82c7b871caa21cce69a276cbe34e4a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b3b36237b7130335bfc2534b9567a7d"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:a0b3b36237b7130335bfc2534b9567a7d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a0b3b36237b7130335bfc2534b9567a7d">exponential_distribution_check_param</a> (RealType lambda)</td></tr>
 <tr class="separator:a0b3b36237b7130335bfc2534b9567a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1321,9 +1325,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa15e0f234606851f334ff7db83829a54"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:aa15e0f234606851f334ff7db83829a54"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa15e0f234606851f334ff7db83829a54">normal_distribution_impl</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType mean, RealType stddev)</td></tr>
 <tr class="separator:aa15e0f234606851f334ff7db83829a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff3b601293c48e401b2d2a55492d923a"><td class="memTemplParams" colspan="2">template&lt;typename MatrixType &gt; </td></tr>
-<tr class="memitem:aff3b601293c48e401b2d2a55492d923a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aff3b601293c48e401b2d2a55492d923a">normal_mv_distribution_check_param</a> (const MatrixType &amp;)</td></tr>
-<tr class="separator:aff3b601293c48e401b2d2a55492d923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d14c37c0c4f5fd0031a07ef63ab496b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a8d14c37c0c4f5fd0031a07ef63ab496b">normal_mv_distribution_mulchol</a> (std::size_t n, float *r, std::size_t m, const float *chol)</td></tr>
 <tr class="separator:a8d14c37c0c4f5fd0031a07ef63ab496b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a070f4a80b640620acff2dc9bf5e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a12a070f4a80b640620acff2dc9bf5e34">normal_mv_distribution_mulchol</a> (std::size_t n, double *r, std::size_t m, const double *chol)</td></tr>
@@ -2344,6 +2345,78 @@ template&lt;typename RealType &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="chi__squared__distribution_8hpp_source.html#l00045">45</a> of file <a class="el" href="chi__squared__distribution_8hpp_source.html">chi_squared_distribution.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10da7e5c4b353c6a78ddd6e717622a60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::internal::cov_chol </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>chol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00464">464</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82c7b871caa21cce69a276cbe34e4a57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::internal::cov_chol </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>chol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00470">470</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -5849,34 +5922,6 @@ template&lt;std::size_t K, typename RealType , typename RNGType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aff3b601293c48e401b2d2a55492d923a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MatrixType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool vsmc::internal::normal_mv_distribution_check_param </td>
-          <td>(</td>
-          <td class="paramtype">const MatrixType &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="normal__mv__distribution_8hpp_source.html#l00053">53</a> of file <a class="el" href="normal__mv__distribution_8hpp_source.html">normal_mv_distribution.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a8d14c37c0c4f5fd0031a07ef63ab496b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5921,7 +5966,7 @@ template&lt;typename MatrixType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="normal__mv__distribution_8hpp_source.html#l00432">432</a> of file <a class="el" href="normal__mv__distribution_8hpp_source.html">normal_mv_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="normal__mv__distribution_8hpp_source.html#l00354">354</a> of file <a class="el" href="normal__mv__distribution_8hpp_source.html">normal_mv_distribution.hpp</a>.</p>
 
 </div>
 </div>
@@ -5969,7 +6014,7 @@ template&lt;typename MatrixType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="normal__mv__distribution_8hpp_source.html#l00441">441</a> of file <a class="el" href="normal__mv__distribution_8hpp_source.html">normal_mv_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="normal__mv__distribution_8hpp_source.html#l00363">363</a> of file <a class="el" href="normal__mv__distribution_8hpp_source.html">normal_mv_distribution.hpp</a>.</p>
 
 </div>
 </div>

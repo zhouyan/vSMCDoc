@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vsmc',['vSMC',['../index.html',1,'']]]
+  ['change_20log',['Change log',['../newspage.html',1,'']]]
 ];

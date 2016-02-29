@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -186,14 +187,14 @@ template&lt;typename RNGType , typename LogTargetType , typename ProposalType &g
   <table class="params">
     <tr><td class="paramname">rng</td><td>RNG engine </td></tr>
     <tr><td class="paramname">x</td><td>The current state value. It will be updated to the new value after the MCMC move. </td></tr>
-    <tr><td class="paramname">ltx</td><td>If it is a non-null pointer, then it points to the value of the \(\log\gamma(x)\). It will be updated to the updated value. If it is a null pointer, then it is ignored. Use this pointer to save \(\log\gamma(x)\) if between updates if it is expensive to calculate. </td></tr>
+    <tr><td class="paramname">ltx</td><td>If it is a non-null pointer, then it points to the value of the \(\log\gamma(x)\). It will be updated to the updated value. If it is a null pointer, then it is ignored. Use this pointer to save \(\log\gamma(x)\) between updates if it is expensive to calculate. </td></tr>
     <tr><td class="paramname">log_target</td><td>The log-target fucntion <div class="fragment"><div class="line">RealType log_target(<span class="keyword">const</span> StateType &amp;x);</div></div><!-- fragment --> and return the value of \(\log\gamma(x)\). </td></tr>
     <tr><td class="paramname">proposal</td><td>The proposal function. It takes the form, <div class="fragment"><div class="line">RealType proposal(RNGType &amp;rng, <span class="keyword">const</span> StateType &amp;x, StateType &amp;y);</div></div><!-- fragment --> After the call, the function return the proposed value in <code>y</code> and return the value \(\log(q(y, x) / q(x, y))\). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00084">84</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00083">83</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +258,7 @@ template&lt;typename RNGType , typename LogTargetType , typename ProposalType &g
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00104">104</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00103">103</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>

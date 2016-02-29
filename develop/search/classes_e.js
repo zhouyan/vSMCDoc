@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['randomwalk',['RandomWalk',['../classvsmc_1_1_random_walk.html',1,'vsmc']]],
+  ['randomwalkmv',['RandomWalkMV',['../classvsmc_1_1_random_walk_m_v.html',1,'vsmc']]],
   ['rayleighdistribution',['RayleighDistribution',['../classvsmc_1_1_rayleigh_distribution.html',1,'vsmc']]],
   ['rdrandengine',['RDRANDEngine',['../classvsmc_1_1_r_d_r_a_n_d_engine.html',1,'vsmc']]],
   ['rebind',['rebind',['../classvsmc_1_1_aligned_allocator_1_1rebind.html',1,'vsmc::AlignedAllocator']]],

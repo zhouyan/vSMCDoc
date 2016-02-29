@@ -168,6 +168,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_distribution_1_1param__type.html">vsmc::NormalDistribution&lt; RealType &gt;::param_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_m_v_distribution.html">vsmc::NormalMVDistribution&lt; RealType, Dim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multivariate Normal distribution.  <a href="classvsmc_1_1_normal_m_v_distribution.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_m_v_distribution_1_1param__type.html">vsmc::NormalMVDistribution&lt; RealType, Dim &gt;::param_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_pareto_distribution.html">vsmc::ParetoDistribution&lt; RealType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pareto distribution.  <a href="classvsmc_1_1_pareto_distribution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,8 +300,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga431724df32781dbcdfd34c61bfba10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3912dc0802b1da13bb016659e477fee5"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:ga3912dc0802b1da13bb016659e477fee5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga3912dc0802b1da13bb016659e477fee5">vsmc::normal_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType mean, RealType stddev)</td></tr>
-<tr class="memdesc:ga3912dc0802b1da13bb016659e477fee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating normal random variates.  <a href="group___distribution.html#ga3912dc0802b1da13bb016659e477fee5">More...</a><br /></td></tr>
+<tr class="memdesc:ga3912dc0802b1da13bb016659e477fee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating Normal random variates.  <a href="group___distribution.html#ga3912dc0802b1da13bb016659e477fee5">More...</a><br /></td></tr>
 <tr class="separator:ga3912dc0802b1da13bb016659e477fee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ae0a2713faeb3bb62bf3c6b7c1b925c"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:ga0ae0a2713faeb3bb62bf3c6b7c1b925c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#ga0ae0a2713faeb3bb62bf3c6b7c1b925c">vsmc::normal_mv_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, std::size_t dim, const RealType *mean, const RealType *chol)</td></tr>
+<tr class="memdesc:ga0ae0a2713faeb3bb62bf3c6b7c1b925c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating multivariate Normal random varaites.  <a href="group___distribution.html#ga0ae0a2713faeb3bb62bf3c6b7c1b925c">More...</a><br /></td></tr>
+<tr class="separator:ga0ae0a2713faeb3bb62bf3c6b7c1b925c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2a04b22d8ebd2a929cefae749d7e98d"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:gaf2a04b22d8ebd2a929cefae749d7e98d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___distribution.html#gaf2a04b22d8ebd2a929cefae749d7e98d">vsmc::pareto_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType a, RealType b)</td></tr>
 <tr class="memdesc:gaf2a04b22d8ebd2a929cefae749d7e98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating pareto random variates.  <a href="group___distribution.html#gaf2a04b22d8ebd2a929cefae749d7e98d">More...</a><br /></td></tr>
@@ -1258,9 +1267,73 @@ template&lt;typename RealType , typename RNGType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Generating normal random variates. </p>
+<p>Generating Normal random variates. </p>
 
-<p>Definition at line <a class="el" href="normal__distribution_8hpp_source.html#l00179">179</a> of file <a class="el" href="normal__distribution_8hpp_source.html">normal_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="normal__distribution_8hpp_source.html#l00185">185</a> of file <a class="el" href="normal__distribution_8hpp_source.html">normal_distribution.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0ae0a2713faeb3bb62bf3c6b7c1b925c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RealType , typename RNGType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::normal_mv_distribution </td>
+          <td>(</td>
+          <td class="paramtype">RNGType &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RealType *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RealType *&#160;</td>
+          <td class="paramname"><em>mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RealType *&#160;</td>
+          <td class="paramname"><em>chol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generating multivariate Normal random varaites. </p>
+
+<p>Definition at line <a class="el" href="normal__mv__distribution_8hpp_source.html#l00455">455</a> of file <a class="el" href="normal__mv__distribution_8hpp_source.html">normal_mv_distribution.hpp</a>.</p>
 
 </div>
 </div>

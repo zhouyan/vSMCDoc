@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8hpp_source.html">vsmc/rng/engine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="seed_8hpp_source.html">vsmc/rng/seed.hpp</a>&gt;</code><br />
-<code>#include &lt;tbb/tbb.h&gt;</code><br />
+<code>#include &lt;tbb/combinable.h&gt;</code><br />
 </div>
 <p><a href="rng__set_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -125,6 +125,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_set_scalar.html">vsmc::RNGSetScalar&lt; RNGType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar RNG set.  <a href="classvsmc_1_1_r_n_g_set_scalar.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_set_t_b_b.html">vsmc::RNGSetTBB&lt; RNGType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-local storage RNG set using tbb::combinable.  <a href="classvsmc_1_1_r_n_g_set_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_set_type_trait.html">vsmc::RNGSetTypeTrait&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#ab54493f8c041e656017497e0cdf509c4">Particle::rng_set_type</a> trait.  <a href="classvsmc_1_1_r_n_g_set_type_trait.html#details">More...</a><br /></td></tr>
@@ -145,14 +148,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gaf35ecbadeaeb7f0d0423a61405dcb4cb">VSMC_RNG_SET_TYPE</a>&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_r_n_g_set_vector.html">vsmc::RNGSetVector</a>&lt;::<a class="el" href="namespacevsmc.html#a6d9e13b0d6dba5e0c6da64a0af68d73e">vsmc::RNG</a>&gt;</td></tr>
+<tr class="memitem:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gaf35ecbadeaeb7f0d0423a61405dcb4cb">VSMC_RNG_SET_TYPE</a>&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_r_n_g_set_t_b_b.html">vsmc::RNGSetTBB</a>&lt;::<a class="el" href="namespacevsmc.html#a6d9e13b0d6dba5e0c6da64a0af68d73e">vsmc::RNG</a>&gt;</td></tr>
 <tr class="memdesc:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default RNG set type.  <a href="group___config.html#gaf35ecbadeaeb7f0d0423a61405dcb4cb">More...</a><br /></td></tr>
 <tr class="separator:gaf35ecbadeaeb7f0d0423a61405dcb4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae2d45b108738ab66ad606ecfb774d539"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae2d45b108738ab66ad606ecfb774d539">vsmc::RNGSet</a> = ::<a class="el" href="classvsmc_1_1_r_n_g_set_vector.html">vsmc::RNGSetVector</a>&lt;::<a class="el" href="namespacevsmc.html#a6d9e13b0d6dba5e0c6da64a0af68d73e">vsmc::RNG</a> &gt;</td></tr>
-<tr class="separator:ae2d45b108738ab66ad606ecfb774d539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4ff64777e435d4eb371c85e5b8e35b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6c4ff64777e435d4eb371c85e5b8e35b">vsmc::RNGSet</a> = ::<a class="el" href="classvsmc_1_1_r_n_g_set_t_b_b.html">vsmc::RNGSetTBB</a>&lt;::<a class="el" href="namespacevsmc.html#a6d9e13b0d6dba5e0c6da64a0af68d73e">vsmc::RNG</a> &gt;</td></tr>
+<tr class="separator:a6c4ff64777e435d4eb371c85e5b8e35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af152089d00c3e54a6e38a8e4e69d0e77"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af152089d00c3e54a6e38a8e4e69d0e77"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#af152089d00c3e54a6e38a8e4e69d0e77">vsmc::RNGSetType</a> = typename RNGSetTypeTrait&lt; T &gt;::type</td></tr>
 <tr class="separator:af152089d00c3e54a6e38a8e4e69d0e77"><td class="memSeparator" colspan="2">&#160;</td></tr>

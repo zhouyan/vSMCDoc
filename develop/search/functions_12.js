@@ -5,9 +5,6 @@ var searchData=
   ['test',['test',['../classvsmc_1_1internal_1_1_static_assert.html#a9daf400196ad1634524c702fd08182fa',1,'vsmc::internal::StaticAssert::test()'],['../classvsmc_1_1internal_1_1_static_assert_3_01true_01_4.html#ac77e29d0623a435fa510e891b5f71c3e',1,'vsmc::internal::StaticAssert&lt; true &gt;::test()']]],
   ['tgamm',['tgamm',['../namespacevsmc.html#a917fea69151ef8da0578b26d02b4d685',1,'vsmc::tgamm(std::size_t n, const float *a, float *y)'],['../namespacevsmc.html#ab891179f6a7cf4ae7cc646a9977c7d5f',1,'vsmc::tgamm(std::size_t n, const double *a, double *y)']]],
   ['tgamma',['tgamma',['../group__v_special.html#ga5844386918c5d445616e7d27494d783b',1,'vsmc']]],
-  ['threefrygeneratoravx2',['ThreefryGeneratorAVX2',['../classvsmc_1_1_threefry_generator_a_v_x2.html#a372af0a00ed36bce48e5e6693ebe82e9',1,'vsmc::ThreefryGeneratorAVX2']]],
-  ['threefrygeneratorgeneric',['ThreefryGeneratorGeneric',['../classvsmc_1_1_threefry_generator_generic.html#ad260f1c32bdde5f0c22c00b45bb628b0',1,'vsmc::ThreefryGeneratorGeneric']]],
-  ['threefrygeneratorsse2',['ThreefryGeneratorSSE2',['../classvsmc_1_1_threefry_generator_s_s_e2.html#aa33e209c36eaf1fb4df40f0a2576af9e',1,'vsmc::ThreefryGeneratorSSE2']]],
-  ['turn_5foff',['turn_off',['../classvsmc_1_1_monitor.html#a4cf19bb420d491539576417f06725c91',1,'vsmc::Monitor::turn_off()'],['../classvsmc_1_1_path.html#a09490c1a1a2e1dfcb9b8db82713a6704',1,'vsmc::Path::turn_off()']]],
-  ['turn_5fon',['turn_on',['../classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c',1,'vsmc::Monitor::turn_on()'],['../classvsmc_1_1_path.html#a8719c83be651e7899bcfc50c2476a35d',1,'vsmc::Path::turn_on()']]]
+  ['turn_5foff',['turn_off',['../classvsmc_1_1_monitor.html#a4cf19bb420d491539576417f06725c91',1,'vsmc::Monitor']]],
+  ['turn_5fon',['turn_on',['../classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c',1,'vsmc::Monitor']]]
 ];

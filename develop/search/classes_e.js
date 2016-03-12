@@ -1,7 +1,7 @@
 var searchData=
 [
   ['randomwalk',['RandomWalk',['../classvsmc_1_1_random_walk.html',1,'vsmc']]],
-  ['randomwalkmv',['RandomWalkMV',['../classvsmc_1_1_random_walk_m_v.html',1,'vsmc']]],
+  ['randomwalkg',['RandomWalkG',['../classvsmc_1_1_random_walk_g.html',1,'vsmc']]],
   ['rayleighdistribution',['RayleighDistribution',['../classvsmc_1_1_rayleigh_distribution.html',1,'vsmc']]],
   ['rdrandengine',['RDRANDEngine',['../classvsmc_1_1_r_d_r_a_n_d_engine.html',1,'vsmc']]],
   ['rebind',['rebind',['../classvsmc_1_1_aligned_allocator_1_1rebind.html',1,'vsmc::AlignedAllocator']]],
@@ -25,11 +25,12 @@ var searchData=
   ['resampletypetrait_3c_20systematic_20_3e',['ResampleTypeTrait&lt; Systematic &gt;',['../classvsmc_1_1_resample_type_trait_3_01_systematic_01_4.html',1,'vsmc']]],
   ['rngbits',['RNGBits',['../classvsmc_1_1internal_1_1_r_n_g_bits.html',1,'vsmc::internal']]],
   ['rngbitsn',['RNGBitsN',['../classvsmc_1_1internal_1_1_r_n_g_bits_n.html',1,'vsmc::internal']]],
-  ['rngbitsn_3c_20umax_2c_200_20_3e',['RNGBitsN&lt; UMax, 0 &gt;',['../classvsmc_1_1internal_1_1_r_n_g_bits_n_3_01_u_max_00_010_01_4.html',1,'vsmc::internal']]],
+  ['rngbitsn_3c_20u_2c_200_20_3e',['RNGBitsN&lt; U, 0 &gt;',['../classvsmc_1_1internal_1_1_r_n_g_bits_n_3_01_u_00_010_01_4.html',1,'vsmc::internal']]],
   ['rngbitsnmax',['RNGBitsNMax',['../classvsmc_1_1internal_1_1_r_n_g_bits_n_max.html',1,'vsmc::internal']]],
   ['rngmaxbits',['RNGMaxBits',['../classvsmc_1_1internal_1_1_r_n_g_max_bits.html',1,'vsmc::internal']]],
   ['rngminbits',['RNGMinBits',['../classvsmc_1_1internal_1_1_r_n_g_min_bits.html',1,'vsmc::internal']]],
   ['rngsetscalar',['RNGSetScalar',['../classvsmc_1_1_r_n_g_set_scalar.html',1,'vsmc']]],
+  ['rngsettbb',['RNGSetTBB',['../classvsmc_1_1_r_n_g_set_t_b_b.html',1,'vsmc']]],
   ['rngsettypedispatch',['RNGSetTypeDispatch',['../classvsmc_1_1internal_1_1_r_n_g_set_type_dispatch.html',1,'vsmc::internal']]],
   ['rngsettypedispatch_3c_20t_2c_20false_20_3e',['RNGSetTypeDispatch&lt; T, false &gt;',['../classvsmc_1_1internal_1_1_r_n_g_set_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::internal']]],
   ['rngsettypedispatch_3c_20t_2c_20true_20_3e',['RNGSetTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1_r_n_g_set_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],

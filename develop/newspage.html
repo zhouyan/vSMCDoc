@@ -94,11 +94,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li><code>MatrixOrder</code> is now an alias to <code>MatrixLayout</code>.</li>
 <li>CBLAS and LAPACK are now required dependency.</li>
+<li>Path sampling support is removed. It can be easily done through the more general <code>Monitor</code>. See the GMM example.</li>
 </ul>
 <h2>New features</h2>
 <ul>
 <li><code>Particle</code> now has a new <code>sp</code> member that return <code>SingleParticle</code> objects.</li>
+<li><code>NormalMVDistribution</code> and related functions for generating multivariate Normal distribution random variate.</li>
 <li>New module "Random Walk" that implements generic random walk MCMC kernels and Normal distribution based proposals. Both scalar and multivariate cases are supported.</li>
+<li><code>Covariance</code> is a new class that can compute the covariance matrix from (weighted) samples, and output the matrix in variance formats.</li>
+<li><code>cov_chol</code> transform a covariance matrix, stored in various formats, into the lower triangular part of its Cholesky decomposition, stored as a packed row major matrix</li>
+</ul>
+<h2>Changed behaviors</h2>
+<ul>
+<li><code>AlignedAllocator</code> template parameter <code>Memory</code> now requires its member functions to be static and the class stateless.</li>
+<li><code>U01Distribution</code> now produce random numbers in interval (0, 1] if the unsigned integer results from the RNG has more bits than the significant bits of the floating point types. Otherwise it produce random numbers in (0, 1). This behavior affect all distributions. But it shall not be visible within user program.</li>
+</ul>
+<h2>Removed features</h2>
+<ul>
+<li><code>U01CCDistribution</code>, etc., are removed. The functionally of generating fixed point random numbers within interval [0, 1] is preserved through <code>u01_lr</code>, etc., functions which convert a random unsigned integer to floating points numbers within desired ranges. It is extended to support all unsigned integer types and floating points types.</li>
 </ul>
 <h1>Changes since v2.0.0</h1>
 <h2>Important changes</h2>
@@ -148,6 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>Particle::weight_set</code> renamed to <code>Particle::weight</code></li>
 <li><code>weight_set_type</code> renamed to <code>weight_type</code></li>
 <li>All occurrence of <code>Rng</code> are renamed to <code>RNG</code></li>
+<li><code>AlignedMemory</code> and <code>AlignedAllocator</code> no longer support <a href="http://www.canonware.com/jemalloc/">jemalloc</a>.</li>
 </ul>
 <h2>Removed features</h2>
 <ul>

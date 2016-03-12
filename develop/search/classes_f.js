@@ -2,7 +2,7 @@ var searchData=
 [
   ['sampler',['Sampler',['../classvsmc_1_1_sampler.html',1,'vsmc']]],
   ['seedgenerator',['SeedGenerator',['../classvsmc_1_1_seed_generator.html',1,'vsmc']]],
-  ['seedgenerator_3c_20id_2c_20std_3a_3aarray_3c_20t_2c_20k_20_3e_20_3e',['SeedGenerator&lt; ID, std::array&lt; T, K &gt; &gt;',['../classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_t_00_01_k_01_4_01_4.html',1,'vsmc']]],
+  ['seedgenerator_3c_20id_2c_20std_3a_3aarray_3c_20resulttype_2c_20k_20_3e_20_3e',['SeedGenerator&lt; ID, std::array&lt; ResultType, K &gt; &gt;',['../classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_result_type_00_01_k_01_4_01_4.html',1,'vsmc']]],
   ['single_5fparticle_5ftype',['single_particle_type',['../classvsmc_1_1_state_matrix_base_1_1single__particle__type.html',1,'vsmc::StateMatrixBase']]],
   ['singleparticle',['SingleParticle',['../classvsmc_1_1_single_particle.html',1,'vsmc']]],
   ['singleparticlebase',['SingleParticleBase',['../classvsmc_1_1_single_particle_base.html',1,'vsmc']]],

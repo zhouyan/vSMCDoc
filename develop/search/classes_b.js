@@ -16,7 +16,7 @@ var searchData=
   ['mklbase',['MKLBase',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_3a_3avslconvtaskptr_2c_20mklconvtask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt;::VSLConvTaskPtr, MKLConvTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_3a_3avslcorrtaskptr_2c_20mklcorrtask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt;::VSLCorrTaskPtr, MKLCorrTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
-  ['mklbase_3c_3a_3avslsstaskptr_2c_20mklsstask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt;::VSLSSTaskPtr, MKLSSTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
+  ['mklbase_3c_3a_3avslsstaskptr_2c_20mklsstask_3c_20realtype_20_3e_20_3e',['MKLBase&lt;::VSLSSTaskPtr, MKLSSTask&lt; RealType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_3a_3avslstreamstateptr_2c_20mklstream_20_3e',['MKLBase&lt;::VSLStreamStatePtr, MKLStream &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklconvtask',['MKLConvTask',['../classvsmc_1_1_m_k_l_conv_task.html',1,'vsmc']]],
   ['mklcorrtask',['MKLCorrTask',['../classvsmc_1_1_m_k_l_corr_task.html',1,'vsmc']]],

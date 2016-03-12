@@ -119,11 +119,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_normal_proposal.html">vsmc::NormalProposal&lt; RealType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal random walk proposal.  <a href="classvsmc_1_1_normal_proposal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_random_walk.html">vsmc::RandomWalk&lt; RealType, StateType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random walk MCMC.  <a href="classvsmc_1_1_random_walk.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_random_walk.html">vsmc::RandomWalk&lt; RealType, Dim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random walk MCMC update.  <a href="classvsmc_1_1_random_walk.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_random_walk_m_v.html">vsmc::RandomWalkMV&lt; RealType, StateType, Dim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multivariate random walk MCMC.  <a href="classvsmc_1_1_random_walk_m_v.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_random_walk_g.html">vsmc::RandomWalkG&lt; RealType, DimX, DimG &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random walk MCMC update with test function.  <a href="classvsmc_1_1_random_walk_g.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -137,31 +137,27 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a2e2630b6b05f8b9868f09655ac0ff97b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random__walk_8hpp.html#a2e2630b6b05f8b9868f09655ac0ff97b">VSMC_RUNTIME_ASSERT_RNG_RANDOM_WALK_PROPOSAL_PARAM</a>(flag,  Name)            </td></tr>
 <tr class="separator:a2e2630b6b05f8b9868f09655ac0ff97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e574f168eb01683d47e29c00a375ba9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random__walk_8hpp.html#a9e574f168eb01683d47e29c00a375ba9">VSMC_STATIC_ASSERT_RNG_RANDOM_WALK_MV_DYNAMIC_DIM</a>(Dim,  Name)                </td></tr>
-<tr class="separator:a9e574f168eb01683d47e29c00a375ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba904ba899977834e5556507e25539a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random__walk_8hpp.html#aba904ba899977834e5556507e25539a7">VSMC_STATIC_ASSERT_RNG_RANDOM_WALK_MV_FIXED_DIM</a>(Dim,  Name)                    </td></tr>
-<tr class="separator:aba904ba899977834e5556507e25539a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad5186a6920d198bb0dc3b2a7b1babea5"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ad5186a6920d198bb0dc3b2a7b1babea5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad5186a6920d198bb0dc3b2a7b1babea5">vsmc::internal::proposal_normal_check_param</a> (RealType a, RealType b)</td></tr>
-<tr class="separator:ad5186a6920d198bb0dc3b2a7b1babea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096649046805999711cd7ca70a722bcb"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:a096649046805999711cd7ca70a722bcb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a096649046805999711cd7ca70a722bcb">vsmc::internal::proposal_normal_mv_check_param</a> (std::size_t dim, const RealType *a, const RealType *b)</td></tr>
-<tr class="separator:a096649046805999711cd7ca70a722bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac790e6ccaf6d5ab7edba9876ec6a7ebf"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ac790e6ccaf6d5ab7edba9876ec6a7ebf"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ac790e6ccaf6d5ab7edba9876ec6a7ebf">vsmc::internal::proposal_normal_q</a> (RealType x, RealType &amp;y, RealType z)</td></tr>
-<tr class="separator:ac790e6ccaf6d5ab7edba9876ec6a7ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11473398ba40568d597a53295252580d"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:a11473398ba40568d597a53295252580d"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a11473398ba40568d597a53295252580d">vsmc::internal::proposal_normal_qa</a> (RealType x, RealType &amp;y, RealType z, RealType a)</td></tr>
-<tr class="separator:a11473398ba40568d597a53295252580d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f8819647e8fc03e856cf96bab51c57"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:a99f8819647e8fc03e856cf96bab51c57"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a99f8819647e8fc03e856cf96bab51c57">vsmc::internal::proposal_normal_qab</a> (RealType x, RealType &amp;y, RealType z, RealType a, RealType b)</td></tr>
-<tr class="separator:a99f8819647e8fc03e856cf96bab51c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fb81ae2847dacee86d0646b19d426f"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:a48fb81ae2847dacee86d0646b19d426f"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a48fb81ae2847dacee86d0646b19d426f">vsmc::internal::proposal_normal_qb</a> (RealType x, RealType &amp;y, RealType z, RealType b)</td></tr>
-<tr class="separator:a48fb81ae2847dacee86d0646b19d426f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6830b2b3b15c510c2058711cba99af62"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:a6830b2b3b15c510c2058711cba99af62"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a6830b2b3b15c510c2058711cba99af62">vsmc::internal::normal_mv_proposal_check_param</a> (std::size_t dim, const RealType *a, const RealType *b)</td></tr>
+<tr class="separator:a6830b2b3b15c510c2058711cba99af62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53120b8f87870eb93ad9620517c81eb6"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:a53120b8f87870eb93ad9620517c81eb6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a53120b8f87870eb93ad9620517c81eb6">vsmc::internal::normal_proposal_check_param</a> (RealType a, RealType b)</td></tr>
+<tr class="separator:a53120b8f87870eb93ad9620517c81eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4157b43a7e443ad90eea68a84dfe740"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:ad4157b43a7e443ad90eea68a84dfe740"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad4157b43a7e443ad90eea68a84dfe740">vsmc::internal::normal_proposal_q</a> (RealType x, RealType &amp;y, RealType z)</td></tr>
+<tr class="separator:ad4157b43a7e443ad90eea68a84dfe740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fd4001891c28df3d99accc79ac7f20"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:a08fd4001891c28df3d99accc79ac7f20"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a08fd4001891c28df3d99accc79ac7f20">vsmc::internal::normal_proposal_qa</a> (RealType x, RealType &amp;y, RealType z, RealType a)</td></tr>
+<tr class="separator:a08fd4001891c28df3d99accc79ac7f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ff0c495e43bb715e1c091eb7dd85da"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:a94ff0c495e43bb715e1c091eb7dd85da"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a94ff0c495e43bb715e1c091eb7dd85da">vsmc::internal::normal_proposal_qab</a> (RealType x, RealType &amp;y, RealType z, RealType a, RealType b)</td></tr>
+<tr class="separator:a94ff0c495e43bb715e1c091eb7dd85da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e2369c1d58d98121d6f7876cbd9b12"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:a59e2369c1d58d98121d6f7876cbd9b12"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a59e2369c1d58d98121d6f7876cbd9b12">vsmc::internal::normal_proposal_qb</a> (RealType x, RealType &amp;y, RealType z, RealType b)</td></tr>
+<tr class="separator:a59e2369c1d58d98121d6f7876cbd9b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a2e2630b6b05f8b9868f09655ac0ff97b"></a>
@@ -187,67 +183,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (flag), <span class="stringliteral">&quot;**&quot;</span> #Name <span class="stringliteral">&quot;Proposal** CONSTRUCTED WITH INVALID PARAMETERS&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00048">48</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9e574f168eb01683d47e29c00a375ba9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RANDOM_WALK_MV_DYNAMIC_DIM</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Dim, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Name&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Dim == <a class="code" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>),                                      \</div><div class="line">        <span class="stringliteral">&quot;**&quot;</span> #Name <span class="stringliteral">&quot;** OBJECT DECLARED WITH FIXED DIMENSION&quot;</span>)</div><div class="ttc" id="group___definitions_html_ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402"><div class="ttname"><a href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">vsmc::Dynamic</a></div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00047">defines.hpp:47</a></div></div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00044">44</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aba904ba899977834e5556507e25539a7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RANDOM_WALK_MV_FIXED_DIM</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Dim, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Name&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Dim != <a class="code" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>),                                      \</div><div class="line">        <span class="stringliteral">&quot;**&quot;</span> #Name <span class="stringliteral">&quot;** OBJECT DECLARED WITH DYNAMIC DIMENSION&quot;</span>)</div><div class="ttc" id="group___definitions_html_ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402"><div class="ttname"><a href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">vsmc::Dynamic</a></div><div class="ttdef"><b>Definition:</b> <a href="defines_8hpp_source.html#l00047">defines.hpp:47</a></div></div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (flag), <span class="stringliteral">&quot;**&quot;</span> #Name <span class="stringliteral">&quot;Proposal** CONSTRUCTED WITH INVALID PARAMETERS&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00040">40</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 

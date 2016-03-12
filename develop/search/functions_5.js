@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fisher_5ff_5fdistribution',['fisher_f_distribution',['../group___distribution.html#ga2aae07950a6cbcee52461514029faa72',1,'vsmc']]],
+  ['fisher_5ff_5fdistribution',['fisher_f_distribution',['../group___distribution.html#ga2aae07950a6cbcee52461514029faa72',1,'vsmc::fisher_f_distribution(RNGType &amp;rng, std::size_t n, RealType *r, RealType df1, RealType df2)'],['../namespacevsmc.html#a73da0813ca1a8152e55c90507608d9d5',1,'vsmc::fisher_f_distribution(RNGType &amp;rng, std::size_t n, RealType *r, const typename FisherFDistribution&lt; RealType &gt;::param_type &amp;param)']]],
   ['fisher_5ff_5fdistribution_5fcheck_5fparam',['fisher_f_distribution_check_param',['../namespacevsmc_1_1internal.html#afe0f8a34186100db4f516d267ba207de',1,'vsmc::internal']]],
   ['fisher_5ff_5fdistribution_5fimpl',['fisher_f_distribution_impl',['../namespacevsmc_1_1internal.html#afaa5beb8d66ec56c7f2802928ca74e5c',1,'vsmc::internal']]],
   ['fisherfdistribution',['FisherFDistribution',['../classvsmc_1_1_fisher_f_distribution.html#a1df885f451d0fcb4dca901e8ab1f0fd4',1,'vsmc::FisherFDistribution::FisherFDistribution(result_type m=1, result_type n=1)'],['../classvsmc_1_1_fisher_f_distribution.html#a55b7f1e33c5200bf59884f0b30960618',1,'vsmc::FisherFDistribution::FisherFDistribution(const param_type &amp;param)']]],

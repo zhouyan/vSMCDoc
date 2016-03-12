@@ -251,11 +251,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_threefry_rotate_impl.html">vsmc::internal::ThreefryRotateImpl&lt; T, R &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_generator.html">vsmc::ThreefryGenerator&lt; ResultType, K, Rounds &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG generator.  <a href="classvsmc_1_1_threefry_generator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_generator_a_v_x2.html">vsmc::ThreefryGeneratorAVX2&lt; ResultType, K, Rounds &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG generator using AVX2.  <a href="classvsmc_1_1_threefry_generator_a_v_x2.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_generator_generic.html">vsmc::ThreefryGeneratorGeneric&lt; ResultType, K, Rounds &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG generator.  <a href="classvsmc_1_1_threefry_generator_generic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_threefry_generator_s_s_e2.html">vsmc::ThreefryGeneratorSSE2&lt; ResultType, K, Rounds &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG generator using SSE2.  <a href="classvsmc_1_1_threefry_generator_s_s_e2.html#details">More...</a><br /></td></tr>
@@ -278,12 +278,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga5c3d754f5b261c58a70aec73d0e438ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga5c3d754f5b261c58a70aec73d0e438ff">VSMC_RNG_THREEFRY_VECTOR_LENGTH</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:ga5c3d754f5b261c58a70aec73d0e438ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">ThreefryGenerator default vector length.  <a href="group___config.html#ga5c3d754f5b261c58a70aec73d0e438ff">More...</a><br /></td></tr>
 <tr class="separator:ga5c3d754f5b261c58a70aec73d0e438ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a751a18044a3056f2f20257a7dea867f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threefry_8hpp.html#a751a18044a3056f2f20257a7dea867f4">VSMC_STATIC_ASSERT_RNG_THREEFRY</a>(SIMD)                                                              </td></tr>
-<tr class="separator:a751a18044a3056f2f20257a7dea867f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9bcf42459b4cf040207a3c44b94e03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threefry_8hpp.html#ace9bcf42459b4cf040207a3c44b94e03">VSMC_STATIC_ASSERT_RNG_THREEFRY_RESULT_TYPE</a>(ResultType,  SIMD)              </td></tr>
-<tr class="separator:ace9bcf42459b4cf040207a3c44b94e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02becae7ccb25baa15abcc860da99644"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threefry_8hpp.html#a02becae7ccb25baa15abcc860da99644">VSMC_STATIC_ASSERT_RNG_THREEFRY_SIZE</a>(K,  SIMD)                                              </td></tr>
-<tr class="separator:a02becae7ccb25baa15abcc860da99644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -335,10 +329,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaaaaa547f4925036665d2c704b27e9076"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___threefry.html#gaaaaa547f4925036665d2c704b27e9076">vsmc::ThreefryAVX2_64</a> = ThreefryEngineAVX2&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
 <tr class="memdesc:gaaaaa547f4925036665d2c704b27e9076"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bits Threefry engine using AVX2.  <a href="group___threefry.html#gaaaaa547f4925036665d2c704b27e9076">More...</a><br /></td></tr>
 <tr class="separator:gaaaaa547f4925036665d2c704b27e9076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad369e85ef9d0dfba8d8f715bfae6cdc6"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t K = 4, std::size_t Rounds = 20&gt; </td></tr>
-<tr class="memitem:gad369e85ef9d0dfba8d8f715bfae6cdc6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___threefry.html#gad369e85ef9d0dfba8d8f715bfae6cdc6">vsmc::ThreefryEngine</a> = CounterEngine&lt; ThreefryGeneratorGeneric&lt; ResultType, K, Rounds &gt;&gt;</td></tr>
-<tr class="memdesc:gad369e85ef9d0dfba8d8f715bfae6cdc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG engine.  <a href="group___threefry.html#gad369e85ef9d0dfba8d8f715bfae6cdc6">More...</a><br /></td></tr>
-<tr class="separator:gad369e85ef9d0dfba8d8f715bfae6cdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85b1f9d804c2bc1023bd4cb00a7408b5"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t K = 4, std::size_t Rounds = 20&gt; </td></tr>
+<tr class="memitem:ga85b1f9d804c2bc1023bd4cb00a7408b5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga85b1f9d804c2bc1023bd4cb00a7408b5">vsmc::ThreefryEngine</a> = CounterEngine&lt; ThreefryGenerator&lt; ResultType, K, Rounds &gt;&gt;</td></tr>
+<tr class="memdesc:ga85b1f9d804c2bc1023bd4cb00a7408b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG engine.  <a href="group___threefry.html#ga85b1f9d804c2bc1023bd4cb00a7408b5">More...</a><br /></td></tr>
+<tr class="separator:ga85b1f9d804c2bc1023bd4cb00a7408b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga35ecd6c2e97e3a68e916c3f24ffcf1d5"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t K = 4, std::size_t Rounds = 20&gt; </td></tr>
 <tr class="memitem:ga35ecd6c2e97e3a68e916c3f24ffcf1d5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___threefry.html#ga35ecd6c2e97e3a68e916c3f24ffcf1d5">vsmc::ThreefryEngineAVX2</a> = CounterEngine&lt; ThreefryGeneratorAVX2&lt; ResultType, K, Rounds &gt;&gt;</td></tr>
 <tr class="memdesc:ga35ecd6c2e97e3a68e916c3f24ffcf1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threefry RNG engine using AVX2.  <a href="group___threefry.html#ga35ecd6c2e97e3a68e916c3f24ffcf1d5">More...</a><br /></td></tr>
@@ -397,86 +391,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div><div class="line">    class ThreefryRotateConstant&lt;T, K, N, I&gt;                                  \</div><div class="line">        : <span class="keyword">public</span> std::integral_constant&lt;int, val&gt;                             \</div><div class="line">    {                                                                         \</div><div class="line">    };</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00054">54</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a751a18044a3056f2f20257a7dea867f4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_THREEFRY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">SIMD</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="threefry_8hpp.html#ace9bcf42459b4cf040207a3c44b94e03">VSMC_STATIC_ASSERT_RNG_THREEFRY_RESULT_TYPE</a>(ResultType, SIMD);            \</div><div class="line">    VSMC_STATIC_ASSERT_RNG_THREEFRY_SIZE(K, SIMD);</div><div class="ttc" id="threefry_8hpp_html_ace9bcf42459b4cf040207a3c44b94e03"><div class="ttname"><a href="threefry_8hpp.html#ace9bcf42459b4cf040207a3c44b94e03">VSMC_STATIC_ASSERT_RNG_THREEFRY_RESULT_TYPE</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_RNG_THREEFRY_RESULT_TYPE(ResultType, SIMD)              </div><div class="ttdef"><b>Definition:</b> <a href="threefry_8hpp_source.html#l00038">threefry.hpp:38</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00050">50</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ace9bcf42459b4cf040207a3c44b94e03"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_THREEFRY_RESULT_TYPE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ResultType, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">SIMD&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(((<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(<a class="code" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>) &amp;&amp;       \</div><div class="line">                            std::is_unsigned&lt;ResultType&gt;::value) ||           \</div><div class="line">                           (<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(<a class="code" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>) &amp;&amp;    \</div><div class="line">                               std::is_unsigned&lt;ResultType&gt;::value)),         \</div><div class="line">        <span class="stringliteral">&quot;**ThreefryGenerator&quot;</span> #SIMD                                           \</div><div class="line">        <span class="stringliteral">&quot;** USED WITH ResultType OTHER THAN UNSIGNED 32/64 BITS INTEGER&quot;</span>)</div><div class="ttc" id="opencl_8h_html_a1597d08777066cd00a3f2846cf6ae7a8"><div class="ttname"><a href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">uint32_t</a></div><div class="ttdeci">uint uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="opencl_8h_source.html#l00039">opencl.h:39</a></div></div>
-<div class="ttc" id="opencl_8h_html_a2bf9e57a8d20903de8d1e3905eed8150"><div class="ttname"><a href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">uint64_t</a></div><div class="ttdeci">ulong uint64_t</div><div class="ttdef"><b>Definition:</b> <a href="opencl_8h_source.html#l00040">opencl.h:40</a></div></div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-</div><!-- fragment -->
 <p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00038">38</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a02becae7ccb25baa15abcc860da99644"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_THREEFRY_SIZE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">K, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">SIMD&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((K == 2 || K == 4),                                    \</div><div class="line">        <span class="stringliteral">&quot;**Threefry&quot;</span> #SIMD <span class="stringliteral">&quot;** USED WITH SIZE OTHER THAN 2 OR 4&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="threefry_8hpp_source.html#l00046">46</a> of file <a class="el" href="threefry_8hpp_source.html">threefry.hpp</a>.</p>
 
 </div>
 </div>

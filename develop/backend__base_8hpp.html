@@ -127,12 +127,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html">vsmc::MoveBase&lt; T, Virtual &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move base dispatch class.  <a href="classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base.html">vsmc::PathEvalBase&lt; T, Derived &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> evalution base dispatch class.  <a href="classvsmc_1_1_path_eval_base.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html">vsmc::PathEvalBase&lt; T, Virtual &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_path.html" title="Monitor for Path sampling. ">Path</a> evalution base dispatch class.  <a href="classvsmc_1_1_path_eval_base_3_01_t_00_01_virtual_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -218,7 +212,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = Virtual&gt;                                 \</div><div class="line">    class Initialize##Name;                                                   \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class Move##Name;                                                         \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class MonitorEval##Name;                                                  \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class PathEval##Name;</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = Virtual&gt;                                 \</div><div class="line">    class Initialize##Name;                                                   \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class Move##Name;                                                         \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class MonitorEval##Name;</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00069">69</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
@@ -264,9 +258,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((dynamic_cast&lt;Derived *&gt;(<span class="keyword">this</span>) != <span class="keyword">nullptr</span>),           \</div><div class="line">        <span class="stringliteral">&quot;DERIVED FROM &quot;</span> #basename                                             \</div><div class="line">        <span class="stringliteral">&quot; WITH INCORRECT **Derived** TEMPLATE PARAMTER&quot;</span>);</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((dynamic_cast&lt;Derived *&gt;(<span class="keyword">this</span>) != <span class="keyword">nullptr</span>),           \</div><div class="line">        <span class="stringliteral">&quot;DERIVED FROM &quot;</span> #basename                                             \</div><div class="line">        <span class="stringliteral">&quot; WITH INCORRECT **Derived** TEMPLATE PARAMTER&quot;</span>);</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00079">79</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00077">77</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>

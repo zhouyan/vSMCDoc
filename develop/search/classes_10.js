@@ -2,8 +2,8 @@ var searchData=
 [
   ['threefryctrpackavx2',['ThreefryCtrPackAVX2',['../classvsmc_1_1internal_1_1_threefry_ctr_pack_a_v_x2.html',1,'vsmc::internal']]],
   ['threefryctrpacksse2',['ThreefryCtrPackSSE2',['../classvsmc_1_1internal_1_1_threefry_ctr_pack_s_s_e2.html',1,'vsmc::internal']]],
+  ['threefrygenerator',['ThreefryGenerator',['../classvsmc_1_1_threefry_generator.html',1,'vsmc']]],
   ['threefrygeneratoravx2',['ThreefryGeneratorAVX2',['../classvsmc_1_1_threefry_generator_a_v_x2.html',1,'vsmc']]],
-  ['threefrygeneratorgeneric',['ThreefryGeneratorGeneric',['../classvsmc_1_1_threefry_generator_generic.html',1,'vsmc']]],
   ['threefrygeneratorsse2',['ThreefryGeneratorSSE2',['../classvsmc_1_1_threefry_generator_s_s_e2.html',1,'vsmc']]],
   ['threefryinitpar',['ThreefryInitPar',['../classvsmc_1_1internal_1_1_threefry_init_par.html',1,'vsmc::internal']]],
   ['threefryinsertkey',['ThreefryInsertKey',['../classvsmc_1_1internal_1_1_threefry_insert_key.html',1,'vsmc::internal']]],

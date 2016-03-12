@@ -11,5 +11,6 @@ var searchData=
   ['config_2eh',['config.h',['../config_8h.html',1,'']]],
   ['constants_2ehpp',['constants.hpp',['../constants_8hpp.html',1,'']]],
   ['core_2ehpp',['core.hpp',['../core_8hpp.html',1,'']]],
-  ['counter_2ehpp',['counter.hpp',['../counter_8hpp.html',1,'']]]
+  ['counter_2ehpp',['counter.hpp',['../counter_8hpp.html',1,'']]],
+  ['covariance_2ehpp',['covariance.hpp',['../covariance_8hpp.html',1,'']]]
 ];

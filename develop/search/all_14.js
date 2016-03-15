@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u',['U',['../classvsmc_1_1internal_1_1_r_n_g_min_bits_impl.html#a81ec984ed1cca6a1817d83c87298df2a',1,'vsmc::internal::RNGMinBitsImpl']]],
+  ['u',['U',['../classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#a1406e84532a2af01230e92bf7e8c2ee5',1,'vsmc::internal::RNGMaxBitsImpl']]],
   ['u01',['U01',['../group___u01.html',1,'']]],
   ['u01_2eh',['u01.h',['../u01_8h.html',1,'']]],
   ['u01_2ehpp',['u01.hpp',['../u01_8hpp.html',1,'']]],

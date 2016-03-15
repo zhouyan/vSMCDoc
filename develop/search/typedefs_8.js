@@ -7,5 +7,5 @@ var searchData=
   ['philox4x64',['Philox4x64',['../group___philox.html#ga1f9d3376d26aa7fab9409458f4855c54',1,'vsmc']]],
   ['philox_5f64',['Philox_64',['../group___philox.html#gaa5587300a073f77ff8575e766df1771c',1,'vsmc']]],
   ['philoxengine',['PhiloxEngine',['../group___philox.html#gad947049903ccd4d5c34cc064a5372585',1,'vsmc']]],
-  ['pointer',['pointer',['../classvsmc_1_1_aligned_allocator.html#aa4ed4b26b59ebc7856a7481b28ffdc5f',1,'vsmc::AlignedAllocator::pointer()'],['../classvsmc_1_1_m_k_l_base.html#a9a60ebd682397c300c971bc6ec89b86b',1,'vsmc::MKLBase::pointer()']]]
+  ['pointer',['pointer',['../classvsmc_1_1_aligned_allocator.html#a3d2ee83be6ac61f291aeccecdeee7db0',1,'vsmc::AlignedAllocator::pointer()'],['../classvsmc_1_1_m_k_l_base.html#a9a60ebd682397c300c971bc6ec89b86b',1,'vsmc::MKLBase::pointer()']]]
 ];

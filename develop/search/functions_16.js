@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7ealignedallocator',['~AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html#abd2a3b22e9ab7dd684d68aa6a4ce80d1',1,'vsmc::AlignedAllocator']]],
   ['_7einitializebase',['~InitializeBase',['../classvsmc_1_1_initialize_base.html#af44cb7d285b440eef06f955450ad0936',1,'vsmc::InitializeBase::~InitializeBase()'],['../classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a10720ee0dcbf69535ecb7d945e7a5bb4',1,'vsmc::InitializeBase&lt; T, Virtual &gt;::~InitializeBase()']]],
   ['_7einitializeomp',['~InitializeOMP',['../classvsmc_1_1_initialize_o_m_p.html#a43cef2bb0770c6122cf8e519b2fe23e9',1,'vsmc::InitializeOMP']]],
   ['_7einitializeseq',['~InitializeSEQ',['../classvsmc_1_1_initialize_s_e_q.html#a1c63909ced15c92ff2567fe9e73ffb14',1,'vsmc::InitializeSEQ']]],
@@ -14,7 +13,6 @@ var searchData=
   ['_7emoveseq',['~MoveSEQ',['../classvsmc_1_1_move_s_e_q.html#aa3f6f5a400264fd1118dae7be3af7399',1,'vsmc::MoveSEQ']]],
   ['_7emovetbb',['~MoveTBB',['../classvsmc_1_1_move_t_b_b.html#ad346e581f525ac0ea862cee56691fabf',1,'vsmc::MoveTBB']]],
   ['_7eprogramoption',['~ProgramOption',['../classvsmc_1_1_program_option.html#afc2054497f38d1c1612c0e2543dad989',1,'vsmc::ProgramOption']]],
-  ['_7eprogramoptionmap',['~ProgramOptionMap',['../classvsmc_1_1_program_option_map.html#a45d31f972528fad53dc53fb4787fdd02',1,'vsmc::ProgramOptionMap']]],
   ['_7eprogress',['~Progress',['../classvsmc_1_1_progress.html#a7a2f6df2938cecbdd323aedfe37d26e1',1,'vsmc::Progress']]],
   ['_7estopwatchguard',['~StopWatchGuard',['../classvsmc_1_1_stop_watch_guard.html#ab57a1c4bf7aea198aaaeabdedc31897d',1,'vsmc::StopWatchGuard']]]
 ];

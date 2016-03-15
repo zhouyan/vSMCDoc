@@ -3,6 +3,7 @@ var searchData=
   ['rdrand16',['RDRAND16',['../group___r_d_r_a_n_d.html#ga5dfb7ff019469632aff5a70a074d5572',1,'vsmc']]],
   ['rdrand32',['RDRAND32',['../group___r_d_r_a_n_d.html#gab4b423697221847201caadade3bec834',1,'vsmc']]],
   ['rdrand64',['RDRAND64',['../group___r_d_r_a_n_d.html#gad2fa06d4c438905168dc683ce7703f25',1,'vsmc']]],
+  ['reference',['reference',['../classvsmc_1_1_aligned_allocator.html#a93b9cca515b2fc14ccc21367fa8701f1',1,'vsmc::AlignedAllocator']]],
   ['resample_5frng_5ftype',['resample_rng_type',['../classvsmc_1_1_particle.html#a69890a5c083dcb795f310df3a179a42d',1,'vsmc::Particle']]],
   ['resample_5ftype',['resample_type',['../classvsmc_1_1_particle.html#a726b17c570b0df1d7de61f1c77921a4a',1,'vsmc::Particle::resample_type()'],['../classvsmc_1_1_sampler.html#ad82d92fb1ed29d25ec5a0d0aecd3d8e5',1,'vsmc::Sampler::resample_type()']]],
   ['resamplerngtype',['ResampleRNGType',['../namespacevsmc.html#a02b66298010e21f501bf67cf6d6a908e',1,'vsmc']]],

@@ -7,6 +7,8 @@ var searchData=
   ['aeskeyseq',['AESKeySeq',['../classvsmc_1_1internal_1_1_a_e_s_key_seq.html',1,'vsmc::internal']]],
   ['aesnigenerator',['AESNIGenerator',['../classvsmc_1_1_a_e_s_n_i_generator.html',1,'vsmc']]],
   ['alignedallocator',['AlignedAllocator',['../classvsmc_1_1_aligned_allocator.html',1,'vsmc']]],
+  ['alignedallocator_3c_20const_20void_2c_20alignment_2c_20memory_20_3e',['AlignedAllocator&lt; const void, Alignment, Memory &gt;',['../classvsmc_1_1_aligned_allocator_3_01const_01void_00_01_alignment_00_01_memory_01_4.html',1,'vsmc']]],
+  ['alignedallocator_3c_20void_2c_20alignment_2c_20memory_20_3e',['AlignedAllocator&lt; void, Alignment, Memory &gt;',['../classvsmc_1_1_aligned_allocator_3_01void_00_01_alignment_00_01_memory_01_4.html',1,'vsmc']]],
   ['alignedmemorymkl',['AlignedMemoryMKL',['../classvsmc_1_1_aligned_memory_m_k_l.html',1,'vsmc']]],
   ['alignedmemorystd',['AlignedMemorySTD',['../classvsmc_1_1_aligned_memory_s_t_d.html',1,'vsmc']]],
   ['alignedmemorysys',['AlignedMemorySYS',['../classvsmc_1_1_aligned_memory_s_y_s.html',1,'vsmc']]],

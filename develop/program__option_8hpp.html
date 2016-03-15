@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option.html">vsmc::ProgramOption</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program option base class.  <a href="classvsmc_1_1_program_option.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option base class.  <a href="classvsmc_1_1_program_option.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option_default.html">vsmc::ProgramOptionDefault&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option with a default value.  <a href="classvsmc_1_1_program_option_default.html#details">More...</a><br /></td></tr>
@@ -120,7 +120,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option <code>--help</code>  <a href="classvsmc_1_1_program_option_help.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option_map.html">vsmc::ProgramOptionMap</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="classvsmc_1_1_program_option.html" title="Program option base class. ">ProgramOption</a>.  <a href="classvsmc_1_1_program_option_map.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program options.  <a href="classvsmc_1_1_program_option_map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_program_option_scalar.html">vsmc::ProgramOptionScalar&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option with a single value.  <a href="classvsmc_1_1_program_option_scalar.html#details">More...</a><br /></td></tr>
@@ -133,6 +133,8 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -141,9 +143,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga45ff00007204119f5c1e27f26bd3efa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">vsmc::program_option_warning</a> (const std::string &amp;oname, const std::string &amp;msg, bool silent, std::ostream &amp;os)</td></tr>
-<tr class="memdesc:ga45ff00007204119f5c1e27f26bd3efa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program option warning messages.  <a href="group___option.html#ga45ff00007204119f5c1e27f26bd3efa3">More...</a><br /></td></tr>
-<tr class="separator:ga45ff00007204119f5c1e27f26bd3efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917226c0efcdbbb5efcf92f310e1cf57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a917226c0efcdbbb5efcf92f310e1cf57">vsmc::internal::program_option_warning</a> (const std::string &amp;name, const std::string &amp;msg, bool silent, std::ostream &amp;os)</td></tr>
+<tr class="separator:a917226c0efcdbbb5efcf92f310e1cf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a8c312d72a2bd451df92e32d9aaebf3b7"></a>
@@ -169,7 +170,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((ptr != <span class="keyword">nullptr</span>),                                     \</div><div class="line">        <span class="stringliteral">&quot;**ProgramOptionMap::&quot;</span> #func                                          \</div><div class="line">        <span class="stringliteral">&quot;** ATTEMPT TO SET OPTION WITH A NULL POINTER&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((ptr != <span class="keyword">nullptr</span>),                                     \</div><div class="line">        <span class="stringliteral">&quot;**ProgramOption::&quot;</span> #func                                             \</div><div class="line">        <span class="stringliteral">&quot;** ATTEMPT TO SET OPTION WITH A NULL POINTER&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00037">37</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
 

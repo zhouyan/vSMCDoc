@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::internal::RNGBitsN&lt; U, N &gt; Class Template Reference</title>
+<title>vSMC: vsmc::internal::RNGMaxBitsImpl&lt; UIntType, U, N &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,15 +93,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="namespacevsmc_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classvsmc_1_1internal_1_1_r_n_g_bits_n.html">RNGBitsN</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="namespacevsmc_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html">RNGMaxBitsImpl</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="classvsmc_1_1internal_1_1_r_n_g_bits_n-members.html">List of all members</a>  </div>
+<a href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::internal::RNGBitsN&lt; U, N &gt; Class Template Reference</div>  </div>
+<div class="title">vsmc::internal::RNGMaxBitsImpl&lt; UIntType, U, N &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -109,27 +109,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aeb40fbd56a1fc36adbb26c2c4c1f1729"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_r_n_g_bits_n.html#aeb40fbd56a1fc36adbb26c2c4c1f1729">value</a> = U &lt; bmax ? <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_bits_n.html">RNGBitsN</a>&lt;U, N - 1&gt;::value : N</td></tr>
-<tr class="separator:aeb40fbd56a1fc36adbb26c2c4c1f1729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bc1098370f07adea0e0e98e566078e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#ae6bc1098370f07adea0e0e98e566078e">value</a></td></tr>
+<tr class="separator:ae6bc1098370f07adea0e0e98e566078e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;std::uint64_t U, int N&gt;<br />
-class vsmc::internal::RNGBitsN&lt; U, N &gt;</h3>
+<div class="textblock"><h3>template&lt;typename UIntType, UIntType U, int N = std::numeric_limits&lt;UIntType&gt;::digits&gt;<br />
+class vsmc::internal::RNGMaxBitsImpl&lt; UIntType, U, N &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00441">441</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00466">466</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aeb40fbd56a1fc36adbb26c2c4c1f1729"></a>
+<a class="anchor" id="ae6bc1098370f07adea0e0e98e566078e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::uint64_t U, int N&gt; </div>
+template&lt;typename UIntType , UIntType U, int N = std::numeric_limits&lt;UIntType&gt;::digits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_bits_n.html">vsmc::internal::RNGBitsN</a>&lt; U, N &gt;::value = U &lt; bmax ? <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_bits_n.html">RNGBitsN</a>&lt;U, N - 1&gt;::value : N</td>
+          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html">vsmc::internal::RNGMaxBitsImpl</a>&lt; UIntType, U, N &gt;::value</td>
         </tr>
       </table>
   </td>
@@ -138,8 +138,8 @@ template&lt;std::uint64_t U, int N&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00446">446</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        U &lt; bmax ? RNGMaxBitsImpl&lt;UIntType, U, N - 1&gt;<a class="code" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#ae6bc1098370f07adea0e0e98e566078e">::value</a> : N</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00472">472</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

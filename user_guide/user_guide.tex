@@ -1,12 +1,9 @@
-\documentclass[11pt,bib,mint,hyper]{marticle}
-
-\ExplSyntaxOn
-\dim_new:N \g_mltxdoc_charwidth_dim
-\settowidth{\g_mltxdoc_charwidth_dim}{\texttt{\normalsize 0}}
-\geometry{textwidth=80\g_mltxdoc_charwidth_dim}
-\ExplSyntaxOff
+\documentclass[11pt,bib,mint,hyper,altcolor]{marticle}
 
 \addbibresource{user_guide.bib}
+\newlength\fixedchar
+\settowidth{\fixedchar}{\texttt{\normalsize 0}}
+\geometry{textwidth=80\fixedchar}
 
 \UseAbbr{ais}
 \UseAbbr{cpu}
@@ -16,10 +13,12 @@
 \UseAbbr{sis}
 \UseAbbr{smc}
 \UseAbbr[\cpp][\textcase]{C++}
-\UseAbbr[\opencl][\textsf]{OpenCL}
+\UseAbbr[\opencl][]{OpenCL}
+\UseAbbr[\openmp][]{OpenMP}
 \UseAbbr[\vsmc][\textsf]{vSMC}
-\UseAbbr[\tbb][\textsf]{Intel TBB}
-\UseAbbr[\openmp][\textsf]{OpenMP}
+
+\def\cmake{\href{https://cmake.org}{CMake}\xspace}
+\def\tbb{\href{https://www.threadingbuildingblocks.org}{Intel TBB}\xspace}
 
 \newminted{cmake}{}
 \newminted{cpp}{}
@@ -272,12 +271,17 @@ resampling.
 
 Particle filters as seen in the physics and signal processing literature, can
 also be interpreted as the sequential importance sampling and resampling
-algorithms. See \textcite{Doucet:2011us} for a review of this topic. A simple
-particle filter example is used in Section~\ref{sub:A simple particle filter}
-to demonstrate basic features of the \vsmc library.
+algorithms. See \textcite{Doucet:2011us} for a review of this topic.
 
 \section{Using the \protect\vsmc library}
 
+The library is hosted at \href{https://github.com/zhouyan/vSMC}{GitHub}. One
+can download the stable
+\href{https://github.com/zhouyan/vSMC/releases}{Releases} or the development
+branch from the Git repository. This is a header only template \cpp library. To
+install the library just move the contents of the \shinline{include} directory
+into a proper place, e.g., \shinline{/usr/local/include} on Unix-alike systems.
+Alternatively, one can use \cmake (version 2.8.3 or later required).
 \begin{shcode}
   cd /path_to_vSMC_source
   mkdir build
@@ -285,6 +289,14 @@ to demonstrate basic features of the \vsmc library.
   cmake ..
   make install
 \end{shcode}
+One may need administrator permissions to perform the last installation step,
+or change the destination using \cmakeinline{-DCMAKE_INSTALL_PREFIX}
+
+This library requires a working \blas/\lapack implemetation, with standard C
+interface headers (\cppinline{cblas.h} and \cppinline{lapacke.h}).
+
+This library has no other dependencies other than \cpp standard libraries
+(\cppoo). Any \cppoo language features are 
 
 \printbibliography[title=\refname]
 

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['u',['U',['../classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#a1406e84532a2af01230e92bf7e8c2ee5',1,'vsmc::internal::RNGMaxBitsImpl']]],
   ['u01',['U01',['../group___u01.html',1,'']]],
   ['u01_2eh',['u01.h',['../u01_8h.html',1,'']]],
   ['u01_2ehpp',['u01.hpp',['../u01_8hpp.html',1,'']]],
@@ -35,8 +34,8 @@ var searchData=
   ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html#a9608e92e5107bc9925980f80b2a6e419',1,'vsmc::U01SequenceSorted']]],
   ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html',1,'vsmc']]],
   ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html#a3607c6e3dc60bcfaaacadd3677d95c23',1,'vsmc::U01SequenceStratified']]],
-  ['u01sequencesystematic',['U01SequenceSystematic',['../classvsmc_1_1_u01_sequence_systematic.html',1,'vsmc']]],
   ['u01sequencesystematic',['U01SequenceSystematic',['../classvsmc_1_1_u01_sequence_systematic.html#a16409765547ef5ef504d938174a36e35',1,'vsmc::U01SequenceSystematic']]],
+  ['u01sequencesystematic',['U01SequenceSystematic',['../classvsmc_1_1_u01_sequence_systematic.html',1,'vsmc']]],
   ['u01uinttype',['U01UIntType',['../namespacevsmc_1_1internal.html#a4642cb53480cd995a989e41223585211',1,'vsmc::internal']]],
   ['uint32_5fc',['UINT32_C',['../opencl_8h.html#a2451a7ede7ebd810357f1503e9898ea6',1,'opencl.h']]],
   ['uint32_5ft',['uint32_t',['../opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8',1,'opencl.h']]],
@@ -54,8 +53,8 @@ var searchData=
   ['uniform_5freal_5fdistribution_5fcheck_5fparam',['uniform_real_distribution_check_param',['../namespacevsmc_1_1internal.html#afdf24bfcd210c4e18e277b52fbb128c7',1,'vsmc::internal']]],
   ['uniform_5freal_5fdistribution_5fimpl',['uniform_real_distribution_impl',['../namespacevsmc_1_1internal.html#a7739b08c255e401219b15c63102d8a52',1,'vsmc::internal']]],
   ['uniformbits',['UniformBits',['../classvsmc_1_1_uniform_bits.html',1,'vsmc']]],
-  ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html',1,'vsmc']]],
   ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html#a0417d8865555b77d88212d45533c5562',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution()=default'],['../classvsmc_1_1_uniform_bits_distribution.html#ab1876acdf1445d56ad3a906fa8af5a08',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution(const param_type &amp;)']]],
+  ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html',1,'vsmc']]],
   ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html',1,'vsmc']]],
   ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]],
   ['utility',['Utility',['../group___utility.html',1,'']]],

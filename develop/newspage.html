@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Change log </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Changes since v2.1.0</h1>
+<div class="textblock"><h1>Changes in v2.2.0</h1>
 <h2>Changed behaviors</h2>
 <ul>
 <li><code>MatrixOrder</code> is now an alias to <code>MatrixLayout</code>.</li>
@@ -113,136 +113,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li><code>U01CCDistribution</code>, etc., are removed. The functionally of generating fixed point random numbers within interval [0, 1] is preserved through <code>u01_lr</code>, etc., functions which convert a random unsigned integer to floating points numbers within desired ranges. It is extended to support all unsigned integer types and floating points types.</li>
 </ul>
-<h1>Changes since v2.0.0</h1>
+<h2>Documentation</h2>
+<p><a href="http://zhouyan.github.io/vSMCDoc/v2.2.0/">http://zhouyan.github.io/vSMCDoc/v2.2.0/</a></p>
+<h1>Changes in v2.1.0</h1>
 <h2>Important changes</h2>
 <p>The mutation (MCMC) steps are now performed after the resampling of initialization step.</p>
-<h1>Changes since v1.2.0</h1>
-<h2>Important changes</h2>
-<p>The library is now C++11 only. GCC 4.8.1, Clang 3.4, Intel C++ 2015 all provides full C++11 support. MSVC is the only one lagging behind. At the moment, MSVC 2015 support is considered to be the minimum.</p>
-<p>Most changes are internal. The API remain unchanged (in C++11 mode with supported compilers). The following are backward compatibility breaking changes.</p>
-<ul>
-<li>Everything in the namespace <code>vsmc::cxx11</code> is gone. Replace <code>vsmc::cxx11</code> with <code>std</code> shall solve any issues.</li>
-<li>OpenCL and MPI modules are moved to <a href="https://github.com/zhouyan/vSMCExtra">vSMCExtra</a>.</li>
-<li><code>Progress</code> is no longer a class template.</li>
-<li><code>vsmc::Array</code> is replaced by <code>std::array</code></li>
-<li>The <code>RngSet</code> class template is replaced by <code>RngSetScalar</code> and <code>RngSetVector</code>, and the structures <code>Scalar</code> and <code>Vector</code> are removed.</li>
-<li>The OpenCL module has gone through a complete rework. The library now has its own C++ wrapper based on <code>std::shared_ptr</code> instead of the official (outdated) C++ wrapper.</li>
-<li>The index type <code>Position</code> is renamed to <code>Index</code>, and it is now a template alias to <code>std::integral_constant</code></li>
-<li>The structure <code>ConstSingleParticle</code> is removed. All of its occurrence shall be replaced by <code>SingleParticle</code>. In addition, in most places, where the API previously accept <code>const Particle&lt;T&gt; &amp;</code> shall now accept <code>Particle&lt;T&gt; &amp;</code> instead.</li>
-<li>Member functions of SMP bases classes are renamed to use a more consistent pattern<ul>
-<li><code>pre_processor</code> -&gt; <code>eval_pre</code></li>
-<li><code>post_processor</code> -&gt; <code>eval_post</code></li>
-<li><code>initialize_param</code> -&gt; <code>eval_param</code></li>
-<li><code>initialize_state</code> -&gt; <code>eval_sp</code></li>
-<li><code>move_state</code> -&gt; <code>eval_sp</code></li>
-<li><code>monitor_state</code> -&gt; <code>eval_sp</code></li>
-<li><code>path_state</code> -&gt; <code>eval_sp</code></li>
-<li><code>path_grid</code> -&gt; <code>eval_grid</code></li>
-</ul>
-</li>
-<li>Member function in base value classes <code>StateMPI</code> and <code>StateCL</code> are renamed<ul>
-<li><code>copy_pre_processor</code> -&gt; <code>copy_pre</code></li>
-<li><code>copy_post_processor</code> -&gt; <code>copy_pre</code></li>
-</ul>
-</li>
-<li>Weight classes are renamed<ul>
-<li><code>WeightSet</code> -&gt; <code>Weight</code></li>
-<li><code>WeightSetMPI</code> -&gt; <code>WeightMPI</code> The header file <code>weight_set.hpp</code> is also renamed to <code>weight</code></li>
-</ul>
-</li>
-<li><code>Weight</code> (formerly <code>WeightSet</code>)'s interface has been overhauled<ul>
-<li><code>set_weight</code> -&gt; <code>set</code></li>
-<li><code>set_log_weight</code> -&gt; <code>set_log</code></li>
-<li><code>mul_weight</code> -&gt; <code>mul</code></li>
-<li><code>add_log_weight</code> -&gt; <code>add_log</code></li>
-<li><code>weight_data</code> -&gt; <code>data</code></li>
-</ul>
-</li>
-<li><code>Particle::weight_set</code> renamed to <code>Particle::weight</code></li>
-<li><code>weight_set_type</code> renamed to <code>weight_type</code></li>
-<li>All occurrence of <code>Rng</code> are renamed to <code>RNG</code></li>
-<li><code>AlignedMemory</code> and <code>AlignedAllocator</code> no longer support <a href="http://www.canonware.com/jemalloc/">jemalloc</a>.</li>
-</ul>
-<h2>Removed features</h2>
-<ul>
-<li>Modules removed<ul>
-<li>Thread</li>
-<li>GCD</li>
-<li>Integrate</li>
-<li>Core/Adapter</li>
-<li>Core/StateTuple</li>
-<li>SMP/Adapter</li>
-<li>RNG/GSL</li>
-<li>SMP/CILK</li>
-<li>SMP/GCD</li>
-<li>SMP/PPL</li>
-<li>SMP/STD</li>
-<li>OpenCL/Adapter</li>
-<li>Utility/Array</li>
-<li>Utility/Counter</li>
-<li>Utility/CString</li>
-</ul>
-</li>
-</ul>
-<h2>New features</h2>
-<ul>
-<li><code>Monitor::record_data</code> gets an overload version that return the row pointer.</li>
-<li><code>std::unique_ptr</code> alike wrappers for <a href="https://software.intel.com/en-us/intel-mkl/">Intel MKL</a> <code>VSLStreamStatePtr</code>, <code>VSLSSTaskPtr</code>, <code>VSLConvTaskPtr</code>, <code>VSLCorrTaskPtr</code>, <code>DFTaskPtr</code>.</li>
-</ul>
-<h2>Bug fixes</h2>
-<ul>
-<li>The default resampling threshold when a user defined resampling algorithm is provided in <code>Sampler</code>'s constructor is fixed to be always resampling, the same as for the built-in schemes.</li>
-</ul>
-<h1>Changes since v1.1.1</h1>
-<h2>New features</h2>
-<ul>
-<li><code>Monitor</code> gains a new parameter <code>stage</code>. A monitor maybe evaluated in different stages of the initialization and iterations. See the documents of <code>Monitor</code> constructor.</li>
-<li>A new optional argument of <code>Sampler::monitor</code> that allows setting the above <code>stage</code> parameter when adding a new <code>Monitor</code>.</li>
-<li><code>StateMatrix</code> has new overloaded <code>data</code> member function that is equivalent to either <code>row_data</code> (<code>StateMatrix&lt;RowMajor, Dim, T&gt;</code>) or <code>col_data</code> (<code>StateMatrix&lt;ColMajor, Dim, T&gt;</code>).</li>
-<li>The library now optionally use <code>&lt;type_traits&gt;</code> standard header. The configuration macro is <code>VSMC_HAS_CXX11LIB_TYPE_TRAITS</code>.</li>
-<li>Multinomial and Residual resampling algorithms now use <a href="https://www.threadingbuildingblocks.org">Intel TBB</a>'s <code>tbb::parallel_sort</code> to improve performance. This can be disabled by setting <code>VSMC_USE_TBB</code> to zero even if <code>VSMC_HAS_TBB</code> is non-zero.</li>
-<li>New <a href="https://www.threadingbuildingblocks.org">Intel TBB</a> based thread local version of <code>RngSet</code></li>
-<li><code>WeightSet</code> now has a set of static member functions that can be used to implement weights related operations.</li>
-<li>New classes in <code><a class="el" href="u01_8hpp.html">rng/u01.hpp</a></code>, <code>U01SequenceSorted</code>, <code>U01SequenceStratified</code>, <code>U01SequenceSystematic</code>, for generating sorted uniform random variates with O(N) runtime cost and O(1) memory cost. These are primarily used resampling algorithms within the library but can find other usages.</li>
-</ul>
-<h2>Changed behaviors</h2>
-<ul>
-<li><code>CBlas</code> and <code>vMath</code> functions (vExp, etc.) no longer check threshold configuration macros. In particular, the macro <code>VSMC_CLABS_THRESHOLD</code> and <code>VSMC_VMATH_THRESHOLD</code> are no longer checked.</li>
-<li><code>Particle</code> no longer check <code>resample_copy_from_replication_type</code> and <code>resample_post_copy_type</code> for user defined resampling behaviors. It is easier to write customized resampling algorithms as a <code>move</code> instead of messing with <code>Particle</code>'s internal this way.</li>
-</ul>
-<h2>Bug fixes</h2>
-<ul>
-<li>Fix Residual and related resampling algorithms in situations where the new system has number of particles unequal to the old system.</li>
-</ul>
-<h1>Changes since v1.1.0</h1>
-<h2>Changed behaviors</h2>
-<ul>
-<li><code>Sampler</code> summary member functions, such as <code>summary_data</code> etc., now only deal with floating point data, such as importance sampling estimates. Integer data, such as acceptance counts are dealt with new member functions <code>summary_data_int</code> etc.</li>
-<li><code>Sampler</code> summary now output raw results of ESS and acceptance counts. They are no longer scaled by the number of particles.</li>
-</ul>
-<h2>Bug fixes</h2>
-<ul>
-<li><code>Sampler</code> now correctly clear size history during initialization</li>
-</ul>
-<h1>Changes since v1.0.0</h1>
-<h2>New features</h2>
-<ul>
-<li>Support <a href="http://www.canonware.com/jemalloc/">jemalloc</a> in <code><a class="el" href="aligned__memory_8hpp.html">utility/aligned_memory.hpp</a></code>.</li>
-<li>Support storing <code>Particle&lt;T&gt;</code> object in <a href="http://www.hdfgroup.org/HDF5/">HDF5</a> format.</li>
-<li>New function <code>hdf5store_new</code> creates a new file for storing data (trunk any existing files with the supplied file name).</li>
-</ul>
-<h2>Changed behaviors</h2>
-<ul>
-<li><code>Progress</code> by default shows iteration number.</li>
-<li><code>Progress::stop</code> by default assumes that all work is done.</li>
-<li><code>AlignedMemory</code> and <code>AlignedAllocator</code> by default use <a href="http://www.canonware.com/jemalloc/">jemalloc</a> if it is available.</li>
-<li><code>hdf5store_list_empty</code> argument <code>append</code> now has a default value, <code>false</code>.</li>
-</ul>
-<h2>Bug fixes</h2>
-<ul>
-<li><code>hdf5size</code> now correctly return the number of <em>bytes</em> of data and it is no longer a template.</li>
-<li>Fix a memory bug when using "initialization by iteration" (<code>Sampler::init_by_iter(true)</code>). </li>
-</ul>
+<h2>Documentation</h2>
+<p><a href="http://zhouyan.github.io/vSMCDoc/v2.1.0/">http://zhouyan.github.io/vSMCDoc/v2.1.0/</a></p>
+<h1>Changes in v2.0.0</h1>
+<p>The version 2.0.0 is a major restructuring of the library since the initial release. Its documentation is still been updated. For the time being, one can keep using the old JSS release or the reference manual below.</p>
+<p>The most important change is that C++11, both language and libraries are now required.</p>
+<h2>Documentation</h2>
+<p><a href="http://zhouyan.github.io/vSMCDoc/v2.0.0/">http://zhouyan.github.io/vSMCDoc/v2.0.0/</a> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

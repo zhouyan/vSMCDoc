@@ -109,8 +109,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a1406e84532a2af01230e92bf7e8c2ee5"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#a1406e84532a2af01230e92bf7e8c2ee5">U</a></td></tr>
-<tr class="separator:a1406e84532a2af01230e92bf7e8c2ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6bc1098370f07adea0e0e98e566078e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#ae6bc1098370f07adea0e0e98e566078e">value</a></td></tr>
 <tr class="separator:ae6bc1098370f07adea0e0e98e566078e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -121,30 +119,6 @@ class vsmc::internal::RNGMaxBitsImpl&lt; UIntType, U, N &gt;</h3>
 
 <p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00466">466</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1406e84532a2af01230e92bf7e8c2ee5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UIntType , UIntType U, int N = std::numeric_limits&lt;UIntType&gt;::digits&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html">vsmc::internal::RNGMaxBitsImpl</a>&lt; UIntType, U, N &gt;::U</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00472">472</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ae6bc1098370f07adea0e0e98e566078e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +129,7 @@ template&lt;typename UIntType , UIntType U, int N = std::numeric_limits&lt;UIntT
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html">vsmc::internal::RNGMaxBitsImpl</a>&lt; UIntType, <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#a1406e84532a2af01230e92bf7e8c2ee5">U</a>, N &gt;::value</td>
+          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html">vsmc::internal::RNGMaxBitsImpl</a>&lt; UIntType, U, N &gt;::value</td>
         </tr>
       </table>
   </td>
@@ -164,7 +138,7 @@ template&lt;typename UIntType , UIntType U, int N = std::numeric_limits&lt;UIntT
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        <a class="code" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#a1406e84532a2af01230e92bf7e8c2ee5">U</a> &gt;= bmax ? N : RNGMaxBitsImpl&lt;UIntType</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        U &lt; bmax ? RNGMaxBitsImpl&lt;UIntType, U, N - 1&gt;<a class="code" href="classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html#ae6bc1098370f07adea0e0e98e566078e">::value</a> : N</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00472">472</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>

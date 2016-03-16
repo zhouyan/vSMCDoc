@@ -5,21 +5,6 @@
 \settowidth{\fixedchar}{\texttt{\normalsize 0}}
 \geometry{textwidth=80\fixedchar}
 
-\UseAbbr{ais}
-\UseAbbr{cpu}
-\UseAbbr{ess}
-\UseAbbr{gpu}
-\UseAbbr{mpi}
-\UseAbbr{sis}
-\UseAbbr{smc}
-\UseAbbr[\cpp][\textcase]{C++}
-\UseAbbr[\opencl][]{OpenCL}
-\UseAbbr[\openmp][]{OpenMP}
-\UseAbbr[\vsmc][\textsf]{vSMC}
-
-\def\cmake{\href{https://cmake.org}{CMake}\xspace}
-\def\tbb{\href{https://www.threadingbuildingblocks.org}{Intel TBB}\xspace}
-
 \newminted{cmake}{}
 \newminted{cpp}{}
 \newminted{c}{}
@@ -36,6 +21,24 @@
 \newmintedfile{sh}{}
 \newmintedfile{text}{}
 
+\UseAbbr{ais}
+\UseAbbr{blas}
+\UseAbbr{cpu}
+\UseAbbr{ess}
+\UseAbbr{gpu}
+\UseAbbr{lapack}
+\UseAbbr{mpi}
+\UseAbbr{sis}
+\UseAbbr{smc}
+\UseAbbr[\cpp][\textcase]{C++}
+\UseAbbr[\cppoo][\lnfigures\textcase]{C++11}
+\UseAbbr[\opencl][]{OpenCL}
+\UseAbbr[\openmp][]{OpenMP}
+\UseAbbr[\vsmc][]{vSMC}
+
+\def\cmake{\href{https://cmake.org}{CMake}\xspace}
+\def\tbb{\href{https://www.threadingbuildingblocks.org}{Intel TBB}\xspace}
+
 \begin{document}
 
 \title{\protect\vsmc{} -- Parallel Sequential Monte Carlo in \protect\cpp}
@@ -43,6 +46,9 @@
 \date{\today}
 
 \maketitle
+\begin{multicols}{2}
+  \tableofcontents
+\end{multicols}
 
 \begin{abstract}
   Sequential Monte Carlo is a family of algorithms for sampling from a sequence
@@ -198,7 +204,7 @@ Equation~\eqref{eq:resample}. One such distribution is a multinomial
 distribution of size $N$ and weights $(W_t^{(i)},\dots,W_t^{(N)})$. See
 \textcite{Douc:2005wa} for some commonly used resampling algorithms.
 
-\subsection[SMC samplers]{\protect\smc samplers}
+\subsection{\protect\smc samplers}
 \label{sub:SMC Samplers}
 
 \smc samplers allow us to obtain, iteratively, collections of weighted samples
@@ -274,6 +280,7 @@ also be interpreted as the sequential importance sampling and resampling
 algorithms. See \textcite{Doucet:2011us} for a review of this topic.
 
 \section{Using the \protect\vsmc library}
+\label{sec:Using the vSMC library}
 
 The library is hosted at \href{https://github.com/zhouyan/vSMC}{GitHub}. One
 can download the stable
@@ -297,6 +304,12 @@ interface headers (\cppinline{cblas.h} and \cppinline{lapacke.h}).
 
 This library has no other dependencies other than \cpp standard libraries
 (\cppoo). Any \cppoo language features are 
+
+\section{Basic usage}
+\label{sec:Basic usage}
+
+\section{Advanced usage}
+\label{sec:Advanced usage}
 
 \printbibliography[title=\refname]
 

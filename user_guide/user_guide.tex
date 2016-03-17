@@ -370,8 +370,8 @@ argument is acceptable. For example,
 \begin{cppcode}
   class State
   {
-    public:
-    State(std::size_t N);
+      public:
+      State(std::size_t N);
   };
 \end{cppcode}
 How the state values are actually stored and accessed are entirely up to the
@@ -453,9 +453,9 @@ below a function that manipulates some state values,
 \begin{cppcode}
   void function(double &x)
   {
-    std::mt19937 rng;
-    std::normal_distribution<double> rnorm;
-    x = rnorm(rng);
+      std::mt19937 rng;
+      std::normal_distribution<double> rnorm;
+      x = rnorm(rng);
   }
 \end{cppcode}
 Every call of this function will give \cppinline{x} exactly the same value.
@@ -465,8 +465,8 @@ as class member data. For example,
   std::mt19937 rng;
   void function(double &x)
   {
-    std::normal_distribution<double> rnorm;
-    x = rnorm(rng);
+      std::normal_distribution<double> rnorm;
+      x = rnorm(rng);
   }
 \end{cppcode}
 This will work fine as long as the function is never called by two threads at
@@ -500,8 +500,8 @@ one can write functions that process each particle, for example,
 \begin{cppcode}
   void function(std::size_t i)
   {
-    auto &rng = particle.rng(i);
-    // Process particle i using rng
+      auto &rng = particle.rng(i);
+      // Process particle i using rng
   }
 \end{cppcode}
 The details of the \rng system are documented later in section~\ref{sec:Random
@@ -553,8 +553,8 @@ constructs a sampler that is never resampled, while
 \end{cppcode}
 constructs a sampler that is resampled every iteration, using the multinomial
 method. Other resampling schemes are also possible, see
-section~\ref{sec:Resample}. Last, one can also construct a sampler that is only
-resampled when $\ess < \alpha N$, $\alpha\in[0, 1]$, by the following,
+section~\ref{sec:Resampling}. Last, one can also construct a sampler that is
+only resampled when $\ess < \alpha N$, $\alpha\in[0, 1]$, by the following,
 \begin{cppcode}
   Sampler<T> sampler(N, Multinomial, alpha);
 \end{cppcode}
@@ -562,7 +562,7 @@ In summary, if one does not tell the constructor which resampling scheme to
 use, then it is assumed one does not want to do resampling. If one specify the
 resampling scheme without a threshold for \ess, then it is assumed it need to
 be done at every step. More advanced constructors will be discussed in
-section~\ref{sec:Resample}
+section~\ref{sec:Resampling}
 
 The method call \cppinline{sampler.particle()} returns a reference to the
 particle system. A sampler can be initialized by user defined object that is
@@ -614,7 +614,7 @@ accepts an optional argument that specifies the number of iterations. It is a
 shortcut for
 \begin{cppcode}
   for (std::size_t i = 0; i != n; ++i)
-  sampler.iterate();
+      sampler.iterate();
 \end{cppcode}
 
 \subsubsection{Monitor}
@@ -625,18 +625,18 @@ quantity $\sum_{i=1}^NW^{(i)}\varphi(X^{(i)})$ at each iteration. One can
 define callable object that is convertible to
 \begin{cppcode}
   using eval_type =
-  std::function<void(std::size_t, std::size_t, Particle<T> &, double *);
+      std::function<void(std::size_t, std::size_t, Particle<T> &, double *);
 \end{cppcode}
 For example,
 \begin{cppcode*}{texcomments}
   void eval(std::size_t iter, std::size_t d, Particle<T> &particle, double *r)
   {
-    for (std::size_t i = 0; i != particle.size(); ++i, r += dim) {
-      auto sp = particle.sp(i);
-      r[0] = /* $\varphi_1(X^{(i)})$ */;
-      // ...
-      r[d - 1] = /* $\varphi_d(X^{(i)})$ */;
-    }
+      for (std::size_t i = 0; i != particle.size(); ++i, r += dim) {
+          auto sp = particle.sp(i);
+          r[0] = /* $\varphi_1(X^{(i)})$ */;
+          // ...
+          r[d - 1] = /* $\varphi_d(X^{(i)})$ */;
+      }
   }
 \end{cppcode*}
 The argument \cppinline{d} is the dimension of the vector function $\varphi$.
@@ -654,9 +654,9 @@ is assumed that no summation is needed. For example,
 \begin{cppcode*}{texcomments}
   void eval(std::size_t iter, std::size_t d, Particle<T> &particle, double *r)
   {
-    r[0] = /* $\varphi_1(\{X^{(i)}\}_{i=1}^N)$ */;
-    // ...
-    r[d - 1] = /* $\varphi_d(\{X^{(i)}\}_{i=1}^N)$ */;
+      r[0] = /* $\varphi_1(\{X^{(i)}\}_{i=1}^N)$ */;
+      // ...
+      r[d - 1] = /* $\varphi_d(\{X^{(i)}\}_{i=1}^N)$ */;
   }
 \end{cppcode*}
 In this case, the monitor acts merely as a storage facility. The second
@@ -778,7 +778,7 @@ R\footnote{\url{http://r-project.org}} script that can be used to process this
 \end{rcode}
 The \rinline{print} statement shows the first five lines of the output,
 \begin{routcode}
-  Size Resampled Accept.0       ESS    pos.0   pos.1
+    Size Resampled Accept.0       ESS    pos.0   pos.1
   1 1000         1        0   1.54765 -1.41510 3.03569
   2 1000         1        0 159.69800 -1.22141 3.15391
   3 1000         1        0 182.29200 -1.29763 2.95484
@@ -787,7 +787,7 @@ The \rinline{print} statement shows the first five lines of the output,
 \end{routcode}
 The column \routinline{Size} shows the sample size at each iteration. The
 library does not provide direct support of changing the sample size. However,
-it is possible and an example is shown in section~\ref{sec:Resample}. The
+it is possible and an example is shown in section~\ref{sec:Resampling}. The
 column \routinline{Resampled} shows nonzero values if resampling were performed
 and zero otherwise. For each moves and \mcmc steps, an acceptance count will be
 recorded. In this particular example, it is irrelevant. Next the column
@@ -1084,8 +1084,8 @@ pointers $y$ and $z$). For all functions, the output is always a vector. If
 there are more than one input pointer, then some of them, but not all, can be
 scalars.
 
-\section{Resample}
-\label{sec:Resample}
+\section{Resampling}
+\label{sec:Resampling}
 
 \section{Random number generating}
 \label{sec:Random number generating}
@@ -1120,9 +1120,9 @@ example
 \begin{cppcode}
   std::ifstream seed_txt("seed.txt");
   if (seed_txt.good())
-  seed_txt >> Seed::instance(); // Read seed from a file
+      seed_txt >> Seed::instance(); // Read seed from a file
   else
-  Seed::instance().set(101);    // The default seed
+      Seed::instance().set(101);    // The default seed
   seed_txt.close();
   // The program
   std::ofstream seed_txt("seed.txt");

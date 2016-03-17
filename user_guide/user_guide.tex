@@ -13,6 +13,7 @@
 \NewMinted{sh}
 
 \UseAbbr{ais}
+\UseAbbr{api}
 \UseAbbr{avx}
 \UseAbbr{blas}
 \UseAbbr{brng}
@@ -25,6 +26,7 @@
 \UseAbbr{mkl}
 \UseAbbr{mpi}
 \UseAbbr{pdf}
+\UseAbbr{raii}
 \UseAbbr{rdrand}
 \UseAbbr{rng}
 \UseAbbr{simd}
@@ -1184,43 +1186,43 @@ statistical properties.
 
 The development by \textcite{Salmon:2011um} made high performance parallel \rng
 much more accessible than it was before. In the author's personal opinion, it
-is most significant development for parallel Monte Carlo algorithms in recent
-memory. See the paper for more details. Here, it is sufficient to mention that,
-the \rng introduce in the paper use a deterministic function $f_k$, such that,
-for any sequence $\{c_i\}_{i>0}$, the sequence $\{y_i\}_{i>0}$, $y_i =
-f_k(c_i)$, appears as random. In addition, for $k_1 \ne k_2$, $f_{k_1}$ and
-$f_{k_2}$ will generate two sequences that appear statically independent.
-Compared to more conventional \rng{}s which use recursions $y_i = f(y_{i -
-  1})$, these counter-based \rng{}s are much easier to setup in a parallelized
-environment.
+is the most significant development for parallel Monte Carlo algorithms in
+recent memory. See the paper for more details. Here, it is sufficient to
+mention that, the \rng introduced in the paper use a deterministic function
+$f_k$, such that, for any sequence $\{c_i\}_{i>0}$, the sequence
+$\{y_i\}_{i>0}$, $y_i = f_k(c_i)$, appears as random. In addition, for $k_1 \ne
+k_2$, $f_{k_1}$ and $f_{k_2}$ will generate two sequences that appear
+statistically independent.  Compared to more conventional \rng{}s which use
+recursions $y_i = f(y_{i - 1})$, these counter-based \rng{}s are much easier to
+setup in a parallelized environment.
 
-If $c$, the counter, is an unsigned integers with $b$ bits, and $k$, the key,
-is an unsigned integer with $d$ bits. Then for each $k$, the \rng has a period
+If $c$, the counter, is an unsigned integer with $b$ bits, and $k$, the key, is
+an unsigned integer with $d$ bits. Then for each $k$, the \rng has a period
 $2^b$. And there can be at most $2^d$ independent streams.
 Table~\ref{tab:Counter-based RNG} lists all counter-based \rng{}s implemented
 in this library, along with the bits of the counter and the key. They all
 conform to the \cppoo uniform \rng concept. All \rng{}s in
-\textcite{Salmon:2011um} are implemented with a few additions. Note that, the
-actual period of an \rng can be longer. For example, \cppinline{Philox4x64} has
-a 256-bits counter and but output 64-bits integers. And thus it has a
+\textcite{Salmon:2011um} are implemented along with a few additions. Note that,
+the actual period of an \rng can be longer. For example, \cppinline{Philox4x64}
+has a 256-bits counter but output 64-bits integers. And thus it has a
 $2^{1024}$ period. Such period length may seems very small compared to many
 well known \rng{}s. For example, the famous Mersenne-Twister generator
 (\cppinline{std::mt19937}) has a period $2^{19937} - 1$. However, combined with
 $2^{256}$ independent streams, only the most demanding programs will find these
 counter-base \rng{}s insufficient.
 
-Note that, note all \rng{}s defined by the library is available on all
+Note that, not all \rng{}s defined by the library is available on all
 platforms. The library also defines a type alias \cppinline{RNG} which is one
 of the \rng{}s listed in table~\ref{tab:Counter-based RNG}. More specifically,
 if the \aesni instructions are supported,
 \begin{cppcode}
   using RNG = ARS_4x32;
 \end{cppcode}
-otherwise if \avx2 instructions are supported,
+otherwise if \avx{}2 instructions are supported,
 \begin{cppcode}
   using RNG = Threefry4x32AVX2;
 \end{cppcode}
-otherwise if \sse2 instructions are supported,
+otherwise if \sse{}2 instructions are supported,
 \begin{cppcode}
   using RNG = Threefry4x32SSE2;
 \end{cppcode}
@@ -1228,14 +1230,14 @@ and last, on all other platforms,
 \begin{cppcode}
   using RNG = Threefry4x32;
 \end{cppcode}
-This can be changed by the configurations macro \cppinline{VSMC_RNG_TYPE}.
+This can be changed by the configuration macro \cppinline{VSMC_RNG_TYPE}.
 
 \subsection{Non-deterministic \protect\rng}
 \label{sub:Non-deterministic RNG}
 
 If the \rdrand instructions are supported, the library also implement three
 \rng{}s, \cppinline{RDRAND16}, \cppinline{RDRAND32} and \cppinline{RDRAND64}.
-The output 16-, 32-, and 64-bits random integers, respectively.
+They output 16-, 32-, and 64-bits random unsigned integers, respectively.
 
 \subsection{\protect\mkl{} \protect\rng}
 \label{sub:MKL RNG}
@@ -1260,17 +1262,17 @@ The output 16-, 32-, and 64-bits random integers, respectively.
 \end{table}
 
 The \mkl library provides some high performance \rng{}s. The library implement
-a wrapper class \cppinline{MKLEngine} that make them accessible as \cppoo{}
+a wrapper class \cppinline{MKLEngine} that makes them accessible as \cppoo{}
 generators. They are listed in table~\ref{tab:MKL RNG}. Note that, \mkl{}
 \rng{}s performs best when they are used to generate vectors of random numbers.
 These wrappers use a buffer to store such vectors. And thus they have much
-bigger state space them usual \rng{}s.
+bigger state space than usual \rng{}s.
 
 \subsection{Multiple \protect\rng streams}
 \label{sub:Multiple RNG streams}
 
 Earlier in section~\ref{ssub:Particle} we introduced that
-\cppinline{particle.rng(i)} returns independent \rng instances. This is
+\cppinline{particle.rng(i)} returns an independent \rng instance. This is
 actually done through a class template called \cppinline{RNGSet}. Three of them
 are implemented in the library. They all have the same interface,
 \begin{cppcode}
@@ -1282,7 +1284,7 @@ are implemented in the library. They all have the same interface,
 The first implementation is \cppinline{RNGSetScalar}. As its name suggests, it
 is only a wrapper of a single \rng. All calls to \cppinline{rng_set[i]} returns
 a reference to the same \rng. It is only useful when an \cppinline{RNGSet}
-interface is required while the thread-safety and other issues is not
+interface is required while the thread-safety and other issues are not
 important.
 
 The second implementation is \cppinline{RNGSetVector}. It is an array of
@@ -1299,20 +1301,20 @@ computation at the calling site is trivial. For example,
 \begin{cppcode}
   std::size_t eval_pre(SingleParticle<T> sp)
   {
-    auto &rng = sp.rng();
-    // using rng to initialize state
-    // do some computation, likely far more costly than TLS
+      auto &rng = sp.rng();
+      // using rng to initialize state
+      // do some computation, likely far more costly than TLS
   }
 \end{cppcode}
-The type template alias \cppinline{RNGSet} is defined to be
-\cppinline{RNGSetTBB} if \tbb is available. Otherwise it is defined to be
-\cppinline{RNGSetVector}. It is used by the \cppinline{Particle} class
-template. One can replace the type of \rng set used by \cppinline{Particle<T>}
-with a member type of \cppinline{T}. For example,
+The type alias \cppinline{RNGSet} is defined to be \cppinline{RNGSetTBB} if
+\tbb is available. Otherwise it is defined to be \cppinline{RNGSetVector}. It
+is used by the \cppinline{Particle} class template. One can replace the type of
+\rng set used by \cppinline{Particle<T>} with a member type of \cppinline{T}.
+For example,
 \begin{cppcode}
   class T
   {
-    using rng_set_type = /* User defined type */;
+      using rng_set_type = /* User defined type */;
   };
 \end{cppcode}
 will make the \rng set used by \cppinline{Particle<T>} replaced by the user
@@ -1320,7 +1322,7 @@ defined type. Alternatively, one can only replace the \rng type, for example
 \begin{cppcode}
   class T
   {
-    using rng_type = AES256_4x64;
+      using rng_type = AES256_4x64;
   };
 \end{cppcode}
 will make the \cppinline{Particle<T>} to use \cppinline{RNGSet<AES256_4x64>}
@@ -1442,8 +1444,57 @@ type, and \cppinline{std::vector<T>} otherwise.
 \subsection{Storing objects in \protect\hdf}
 \label{sub:Storing objects in hdf}
 
-\subsection{Smart pointers for Intel \protect\mkl objects}
-\label{sub:Smart pointers for Intel MKL objects}
+If the \hdf library is available, it is possible to store
+\cppinline{Sampler<T>} objects, etc., in the \hdf format. For example,
+\begin{cppcode}
+  hdf5store(sampler, "pf.h5", "sampler");
+\end{cppcode}
+create a \hdf file with the sampler stored as a list. In R it can be processed
+as the following,
+\begin{rcode}
+  library(rhdf5)
+  pf <- as.data.frame(h5read("pf.h5", "sampler"))
+\end{rcode}
+This creates a \rinline{data.frame} similar to that shown in
+section~\ref{ssub:Implementations}. Other types of objects can also be store,
+see the reference manual for details.
+
+\subsection{\protect\raii classes for \protect\mkl pointers}
+\label{sub:RAII classes for MKL pointers}
+
+\begin{table}
+  \begin{tabu}{X[l]X[l]}
+    \toprule
+    Class & \mkl pointer type \\
+    \midrule
+    MKLStream   & VSLStreamStatePtr \\
+    MKLSSTask   & VSLSSTaskPtr      \\
+    MKLConvTask & VSLConvTask       \\
+    MKLCorrTask & VSLCorrTask       \\
+    MKLDFTask   & DFTaskPtr         \\
+    \bottomrule
+  \end{tabu}
+  \caption{\protect\raii classes for \protect\mkl pointers}
+  \label{tab:RAII classes for MKL pointers}
+\end{table}
+
+The library provides a few classes to manage \mkl pointers. It provides
+Resource Acquisition Is Initialization (\raii) idiom on top of the \mkl C
+interface. For example,
+\begin{cppcode}
+  // VSLSSTaskPtr ptr;
+  // vsldSSNewTask(&ptr, &p, &n, &xstorage, x, w, indices);
+  MKLSSTask<double> task(&p, &n, &xstorage, x, w, indices);
+  // vsldSSEditMoments(ptr, mean, r2m, r3m, r4m, c2m, c3m, c4m);
+  task.edit_moments(mean, r2m, r3m, r4m, c2m, c3m, c4m);
+  // vsldSSCompute(ptr, estimates, method);
+  task.compute(estimates, method)
+  // vslSSDeleteTask(&ptr);
+\end{cppcode}
+In the above snippets, \cppinline{MKLSSTask} manages a \cppinline{VSLSSTaskPtr}
+task pointer. All C functions that operates on the pointer, is also defined as
+methods in the class. Table~\ref{tab:Smart pointers for MKL} lists the classes
+defined by the library and their corresponding \mkl pointers.
 
 \subsection{Program options}
 \label{sub:Program options}

@@ -5,53 +5,59 @@
 \settowidth{\fixedchar}{\texttt{\normalsize 0}}
 \geometry{textwidth=80\fixedchar}
 
-\newmintedfile{cmake}{bgcolor=SBase3}
-\newmintedfile{cpp}{bgcolor=SBase3}
-\newmintedfile{c}{bgcolor=SBase3}
-\newmintedfile{r}{bgcolor=SBase3}
-\newmintedfile{sh}{bgcolor=SBase3}
-\newmintedfile{text}{bgcolor=SBase3}
-\newminted{cmake}{bgcolor=SBase3}
-\newminted{cpp}{bgcolor=SBase3}
-\newminted{c}{bgcolor=SBase3}
-\newminted{r}{bgcolor=SBase3}
-\newminted{sh}{bgcolor=SBase3}
-\newminted{text}{bg=SBase3}
-\newmintinline{cmake}{}
-\newmintinline{cpp}{}
-\newmintinline{c}{}
-\newmintinline{r}{}
-\newmintinline{sh}{}
-\newmintinline{text}{}
+\NewMinted{cmake}
+\NewMinted{console}
+\NewMinted{cpp}
+\NewMinted{rout}
+\NewMinted{r}
+\NewMinted{sh}
 
 \UseAbbr{ais}
+\UseAbbr{avx}
 \UseAbbr{blas}
+\UseAbbr{brng}
 \UseAbbr{cpu}
+\UseAbbr{crtp}
 \UseAbbr{ess}
 \UseAbbr{gpu}
 \UseAbbr{lapack}
+\UseAbbr{mcmc}
 \UseAbbr{mkl}
 \UseAbbr{mpi}
+\UseAbbr{pdf}
+\UseAbbr{rdrand}
 \UseAbbr{rng}
 \UseAbbr{simd}
 \UseAbbr{sis}
+\UseAbbr{smctc}
 \UseAbbr{smc}
+\UseAbbr{smp}
+\UseAbbr{sse}
+\UseAbbr{tbb}
+\UseAbbr{tls}
 
+\UseAbbr[\aesni][\textsc]{aes-ni}
 \UseAbbr[\cpp][\textcase]{C++}
 \UseAbbr[\cppoo][\lnfigures\textcase]{C++11}
 \UseAbbr[\hdf]{hdf5}
-\UseAbbr[\opencl][]{OpenCL}
-\UseAbbr[\openmp][]{OpenMP}
+\UseAbbr[\ith][\textsups]{t{}h}
 \UseAbbr[\vsmc][]{vSMC}
 
-\def\cmake{\href{https://cmake.org}{CMake}\xspace}
-\def\tbb{\href{https://www.threadingbuildingblocks.org}{Intel TBB}\xspace}
+\UseMathCal{N}
+
+\def\xobs{X_{\mathrm{obs}}}
+\def\xpos{X_{\mathrm{pos}}}
+\def\xvel{X_{\mathrm{vel}}}
+\def\yobs{Y_{\mathrm{obs}}}
+\def\ypos{Y_{\mathrm{pos}}}
+\def\yvel{Y_{\mathrm{vel}}}
+\def\STATESKIP{\hskip.68cm}
 
 \begin{document}
 
 \title{\protect\vsmc{} -- Parallel Sequential Monte Carlo in \protect\cpp}
 \author{Yan Zhou}
-\date{\today}
+\date{Version 2.1.0}
 
 \maketitle
 \tableofcontents
@@ -59,7 +65,7 @@
 \begin{abstract}
   Sequential Monte Carlo is a family of algorithms for sampling from a sequence
   of distributions. Some of these algorithms, such as particle filters, are
-  widely used in the physics and signal processing researches.  More recent
+  widely used in the physics and signal processing researches. More recent
   developments have established their application in more general inference
   problems such as Bayesian modeling.
 
@@ -67,11 +73,9 @@
   they admit natural and scalable parallelization. However, these algorithms
   are perceived to be difficult to implement. In addition, parallel programming
   is often unfamiliar to many researchers though conceptually appealing,
-  especially for sequential Monte Carlo related fields.
-
-  A \cpp template library is presented for the purpose of implementing general
-  sequential Monte Carlo algorithms on parallel hardware. Two examples are
-  presented: a simple particle filter and a classic Bayesian modeling problem.
+  especially for sequential Monte Carlo related fields. A \cpp template library
+  is presented for the purpose of implementing general sequential Monte Carlo
+  algorithms on parallel hardware.
 \end{abstract}
 
 \section{Introduction}
@@ -89,32 +93,30 @@ sequence of artificial distributions on spaces of increasing dimensions which
 admit the distributions of interest as particular marginals.
 
 \smc algorithms are perceived as being difficult to implement while general
-tools were not available until the development by \textcite{Johansen:2009wd},
-which provided a general framework for implementing \smc algorithms. \smc
-algorithms admit natural and scalable parallelization. However, there are only
-parallel implementations of \smc algorithms for many problem specific
-applications, usually associated with specific \smc related researches.
-\textcite{Lee:2010fm} studied the parallelization of \smc algorithms on \gpu{}s
-with some generality. There are few general tools to implement \smc algorithms
-on parallel hardware though multicore \cpu{}s are very common today and
-computing on specialized hardware such as \gpu{}s are more and more popular.
+tools were not available until the development of \smctc by
+\textcite{Johansen:2009wd}, which provided a general framework for implementing
+\smc algorithms. \smc algorithms admit natural and scalable parallelization.
+However, there are only parallel implementations of \smc algorithms for many
+problem specific applications, usually associated with specific \smc related
+researches. \textcite{Lee:2010fm} studied the parallelization of \smc
+algorithms on \gpu{}s with some generality. There are few general tools to
+implement \smc algorithms on parallel hardware though multicore \cpu{}s are
+very common today and computing on specialized hardware such as \gpu{}s are
+more and more popular.
 
 The purpose of the current work is to provide a general framework for
 implementing \smc algorithms on both sequential and parallel hardware. There
 are two main goals of the presented framework. The first is reusability. It
 will be demonstrated that the same implementation source code can be used to
 build a serialized sampler, or using different programming models (for example,
-\openmp and \tbb) to build parallelized samplers for multicore \cpu{}s. They
-can be scaled for clusters using \mpi with few modifications.  And with a
-little effort they can also be used to build parallelized samplers on
-specialized massive parallel hardware such as \gpu{}s using \opencl. The second
-is extensibility. It is possible to write a backend for \vsmc to use new
-parallel programming models while reusing existing implementations. It is also
-possible to enhance the library to improve performance for specific
-applications. Almost all components of the library can be reimplemented by
-users and thus if the default implementation is not suitable for a specific
-application, they can be replaced while being integrated with other components
-seamlessly.
+OpenMP and Intel Threading Building Blocks) to build parallelized samplers for
+multicore \cpu{}s. The second is extensibility. It is possible to write a
+backend for \vsmc to use new parallel programming models while reusing existing
+implementations. It is also possible to enhance the library to improve
+performance for specific applications. Almost all components of the library can
+be reimplemented by users and thus if the default implementation is not
+suitable for a specific application, they can be replaced while being
+integrated with other components seamlessly.
 
 \section{Sequential Monte Carlo}
 \label{sec:Sequential Monte Carlo}
@@ -130,7 +132,7 @@ absolutely continuous, based on the identity,
   \Exp_{\pi}[\varphi(X)]
   = \int\varphi(x)\pi(x)\intd x
   = \int\frac{\varphi(x)\pi(x)}{\eta(x)}\eta(x)\intd x
-  = \Exp_{\eta}\Bigl[\frac{\varphi(X)\pi(X)}{\eta(X)}\Bigr]
+  = \Exp_{\eta}\Square[Big]{\frac{\varphi(X)\pi(X)}{\eta(X)}}
 \end{equation}
 And thus, let $\{X^{(i)}\}_{i=1}^N$ be samples from $\eta$, then
 $\Exp_{\pi}[\varphi(X)]$ can be approximated by
@@ -184,8 +186,8 @@ becomes larger. Resampling techniques are applied such that, a new particle
 system $\{\bar{W}_t^{(i)},\bar{X}_{0:t}^{(i)}\}_{i=1}^M$ is obtained with the
 property,
 \begin{equation}
-  \Exp\Bigl[\sum_{i=1}^M\bar{W}_t^{(i)}\varphi_t(\bar{X}_{0:t}^{(i)})\Bigr] =
-  \Exp\Bigl[\sum_{i=1}^NW_t^{(i)}\varphi_t(X_{0:t}^{(i)})\Bigr]
+  \Exp\Square[Big]{\sum_{i=1}^M\bar{W}_t^{(i)}\varphi_t(\bar{X}_{0:t}^{(i)})} =
+  \Exp\Square[Big]{\sum_{i=1}^NW_t^{(i)}\varphi_t(X_{0:t}^{(i)})}
   \label{eq:resample}
 \end{equation}
 In practice, the resampling algorithm is usually chosen such that $M = N$ and
@@ -279,11 +281,9 @@ is used, the unnormalized incremental weights will be
 Some other commonly used sequential Monte Carlo algorithms can be viewed as
 special cases of algorithms introduced above. The annealed importance sampling
 (\ais; \textcite{Neal:2001we}) can be viewed as \smc samplers without
-resampling.
-
-Particle filters as seen in the physics and signal processing literature, can
-also be interpreted as the sequential importance sampling and resampling
-algorithms. See \textcite{Doucet:2011us} for a review of this topic.
+resampling. Particle filters as seen in the physics and signal processing
+literature, can also be interpreted as the sequential importance sampling and
+resampling algorithms. See \textcite{Doucet:2011us} for a review of this topic.
 
 \section{Basic usage}
 \label{sec:Basic usage}
@@ -299,107 +299,630 @@ guide, we will omit the \cppinline{vsmc::} name space qualifiers.
 \subsection{Getting and installing the library}
 \label{sub:Getting and installing the library}
 
-The library is hosted at \href{https://github.com/zhouyan/vSMC}{GitHub}. One
-can download the stable
-\href{https://github.com/zhouyan/vSMC/releases}{Releases} or get the
-development branch from the Git repository. This is a header only template \cpp
-library. To install the library just move the contents of the
+The library is hosted at
+GitHub\footnote{\url{https://github.com/zhouyan/vSMC}}. One can download the
+stable releases\footnote{\url{https://github.com/zhouyan/vSMC/releases}} or get
+the development branch from the GitHub repository. This is a header only \cpp
+template library. To install the library just move the contents of the
 \shinline{include} directory into a proper place, e.g.,
-\shinline{/usr/local/include} on Unix-alike systems.  Alternatively, one can
-use \cmake (version 2.8.3 or later required).
-
-\begin{listing}
-  \begin{shcode}
-    cd /path_to_vSMC_source
-    mkdir build
-    cd build
-    cmake ..
-    make install
-  \end{shcode}
-  \caption{Installing the library}
-  \label{lst:install the library}
-\end{listing}
-
-One may need administrator permissions to perform the last installation step,
-or change the destination using \cmakeinline{-DCMAKE_INSTALL_PREFIX}
-
-This library requires a working \blas/\lapack implemetation, with standard C
-interface headers (\cppinline{cblas.h} and \cppinline{lapacke.h}).
-
-This library has no other dependencies other than \cpp standard libraries
-(\cppoo). Any \cppoo language features are
+\shinline{/usr/local/include} on Unix-alike systems. This library requires
+working \cppoo, \blas and \lapack implementations. Standard C interface headers
+for the later two (\cppinline{cblas.h} and \cppinline{lapacke.h}) are
+required\footnote{If \mkl is used, its \cppinline{mkl_cblas.h} and
+  \cppinline{mkl_lapacke.h} headers will be used}. Intel Threading Building
+Blocks\footnote{\url{https://www.threadingbuildingblocks.org}} (\tbb), Intel
+Math Kernel Library\footnote{\url{https://software.intel.com/en-us/intel-mkl}}
+(\mkl) and \hdf\footnote{\url{http://www.hdfgroup.org}} are optional
+third-party libraries. One need to define the configuration macro
+\cppinline{VSMC_HAS_TBB}, \cppinline{VSMC_HAS_MKL} and
+\cppinline{VSMC_HAS_HDF5} to nonzero values before including any \vsmc headers
+to make their existence known to the library, respectively.
+Doxygen\footnote{\url{http://www.stack.nl/~dimitri/doxygen/}} generated
+reference manual can be access
+online\footnote{\url{http://zhouyan.github.io/vSMCDoc/master/}}.
 
 \subsection{Concepts}
 \label{sub:Concepts}
 
-\subsubsection{Sampler}
-\label{ssub:Sampler}
+\begin{table}[t]
+  \begin{tabu}{X[l]X[2l]}
+    \toprule
+    Concept & Class \\
+    \midrule
+    Weight, $\{W^{(i)}\}_{i=1}^N$           & \texttt{Weight}            \\
+    State, $\{X^{(i)}\}_{i=1}^N$            & \texttt{T}, user defined   \\
+    Particle, $\{W^{(i)},X^{(i)}\}_{i=1}^N$ & \texttt{Particle<T>}       \\
+    Single particle, $\{W^{(i)},X^{(i)}\}$  & \texttt{SingleParticle<T>} \\
+    Sampler        & \texttt{Sampler<T>}                           \\
+    Initialization & \texttt{Sampler<T>::init\_type}, user defined \\
+    Move           & \texttt{Sampler<T>::move\_type}, user defined \\
+    \mcmc          & \texttt{Sampler<T>::mcmc\_type}, user defined \\
+    Monitor        & \texttt{Monitor<T>}                           \\
+    \bottomrule
+  \end{tabu}
+  \caption{Core concepts of the library}
+  \label{tab:concepts}
+\end{table}
 
-\subsubsection{Particle}
-\label{ssub:Particle}
+The library is based on a few core concepts. A sampler is responsible for
+running an algorithm. It is composed by a particle system and operations on it.
+A particle system is formed by the states $\{X^{(i)}\}_{i=1}^N$ and weights
+$\{W^{(i)}\}_{i=1}^N$. This system will also be responsible for resampling. All
+user defined operations are to be applied to the whole system. These are
+``initialization'' and ``moves'' which are applied before resampling, and
+``\mcmc'' which are applied after resampling\footnote{These operations do not
+  have to be \mcmc kernels. They can be used for any purpose that suites the
+  particular algorithm.}. Most statistical inferences are done through
+$\sum_{i=1}^NW^{(i)}\varphi(X^{(i)})$. This can be carried out along each
+sampler iteration by a monitor. Table~\ref{tab:concepts} summarizes these
+concepts and the corresponding classes in the library. Each of them are
+introduced in detail in the following sections.
 
 \subsubsection{State}
 \label{ssub:State}
 
+The library gives users the maximum flexibility of how the states
+$\{X^{(i)}\}_{i=1}^N$ shall be stored and structured. Any class type with a
+constructor that takes a single integer value (the number of particles) as its
+argument is acceptable. For example,
+\begin{cppcode}
+  class State
+  {
+    public:
+    State(std::size_t N);
+  };
+\end{cppcode}
+How the state values are actually stored and accessed are entirely up to the
+user.
+
+For most applications, the states can be stored within an $N$ by $d$ matrix,
+where $d$ is the dimension of the state. Let $X_{ij}$ denote the value of the
+state of the $i$\ith particle at coordinate $j$. In this case, the library
+provides a convenient class template,
+\begin{cppcode}
+  template <MatrixLayout Layout, std::size_t Dim, typename T>
+  class StateMatrix;
+\end{cppcode}
+where \cppinline{Layout} is either \cppinline{RowMajor} or
+\cppinline{ColMajor}, which specifies the matrix storage layout;
+\cppinline{Dim} is a non-negative integer value. If \cppinline{Dim} is zero,
+then the dimension may be changed at runtime. If it is positive, then the
+dimension is fixed and cannot be changed at runtime. The last template
+parameter \cppinline{T} is the \cpp type of $X_{ij}$. The following constructs
+an object of this class,
+\begin{cppcode}
+  StateMatrix<ColMajor, Dynamic, double> sm(N);
+\end{cppcode}
+where \cppinline{Dynamic} is just a enumerator with value zero. We can specify
+the dimension at runtime through the method call \cppinline{sm.resize_dim(d)}.
+Note that, if the template parameter \cppinline{Dim} is positive, then the call
+results in a compile-time error. To access $X_{ij}$, one can call the method
+\cppinline{sm.state(i, j)}. The method call \cppinline{sm.data()} returns a
+pointer to the beginning of the matrix. If \cppinline{Layout} is
+\cppinline{RowMajor}, then the method call \cppinline{sm.row_data(i)} returns a
+pointer to the beginning of row $i$. If \cppinline{Layout} is
+\cppinline{ColMajor}, then the method call \cppinline{sm.col_data(j)} returns a
+pointer to the begninning of column $j$. These methods facilitate the
+interfacing with numerical libraries, such as \blas. There are a few additional
+methods for accessing the state values. See the reference manual for details.
+
 \subsubsection{Weight}
 \label{ssub:Weight}
+
+The weights $\{W^{(i)}\}_{i=1}^N$ are abstracted by the \cppinline{Weight}
+class. The following constructs an object of this class,
+\begin{cppcode}
+  Weight w(N);
+\end{cppcode}
+There are a few methods for accessing the weights,
+\begin{cppcode*}{texcomments}
+  w.ess();       // Get $\text{\normalfont\textsc{ess}} = 1/\sum_{i=1}^N(W^{(i)})^2$
+  w.set_equal(); // Set $W^{(i)} = 1/N$
+  w.set(v);      // Set $W^{(i)} \propto v^{(i)}$
+  w.mul(v);      // Set $W^{(i)} \propto W^{(i)} v^{(i)}$
+  w.set_log(v);  // Set $\log W^{(i)} = v^{(i)} + \text{const.}$
+  w.add_log(v);  // Set $\log W^{(i)} = \log W^{(i)} + v^{(i)} + \text{const.}$
+\end{cppcode*}
+where the argument \cppinline{v} is an input iterator which can be advanced at
+least $N$ times. The method call \cppinline{w.data()} returns a pointer to the
+normalized weights. It is important to note that the weights are always
+normalized and all mutable methods only allow access to $\{W^{(i)}\}_{i=1}^N$
+as a whole.
+
+\subsubsection{Particle}
+\label{ssub:Particle}
+
+A particle system is composed of both the state values, which is of user
+defined type, say \cppinline{T}, and the weights. The following constructs an
+object of class \cppinline{Particle<T>},
+\begin{cppcode}
+  Particle<T> particle(N);
+\end{cppcode}
+The method call \cppinline{particle.value()} returns the type \cppinline{T}
+object, and \cppinline{particle.weight()} returns the type \cppinline{Weight}
+object. They are constructed with the same integer value $N$ when the above
+constructor is invoked.
+
+As a Monte Carlo algorithm, random number generators (\rng) will be used
+frequently. The user is free to use whatever \rng mechanism as they see fit.
+However, one common issue encountered in practice is how to maintain
+independence of the \rng streams between function calls. For example, consider
+below a function that manipulates some state values,
+\begin{cppcode}
+  void function(double &x)
+  {
+    std::mt19937 rng;
+    std::normal_distribution<double> rnorm;
+    x = rnorm(rng);
+  }
+\end{cppcode}
+Every call of this function will give \cppinline{x} exactly the same value.
+This is hardly what the user intended. One might consider an global \rng or one
+as class member data. For example,
+\begin{cppcode}
+  std::mt19937 rng;
+  void function(double &x)
+  {
+    std::normal_distribution<double> rnorm;
+    x = rnorm(rng);
+  }
+\end{cppcode}
+This will work fine as long as the function is never called by two threads at
+the same time. However, \smc algorithms are natural candidates to
+parallelization. Therefore, the user will need to either lock the \rng, which
+degenerates the performance, or construct different \rng{}s for different
+threads. The later, though ensures thread-safety, has other issues. For
+example, consider
+\begin{cppcode}
+  std::mt19937 rng1(s1); // For thread 1
+  std::mt19937 rng2(s2); // For thread 2
+\end{cppcode}
+where the seeds $s_1 \ne s_2$. It is difficult to ensure that the two streams
+generated by the two \rng{}s are independent. Common practice for parallel
+\rng is to use sub-streams or leap-frog algorithms. Without going into any
+further details, it is sufficient to say that this is perhaps not a problem
+that most users bother to solve.
+
+The library provides a simple solution to this issue. The method call
+\cppinline{particle.rng(i)} returns a reference to an \rng that conforms to the
+\cppoo uniform \rng concept. It can be called from different threads at the
+same time, for example,
+\begin{cppcode}
+  particle.rng(i); // Call from thread i
+  particle.rng(j); // Call from thread j
+\end{cppcode}
+If $i \ne j$, then the above calls are guaranteed to be thread-safe. If \tbb is
+available to the library, then it is also thread-safe even if $i = j$. In
+addition, each instance of the \rng generates independent streams. Therefore,
+one can write functions that process each particle, for example,
+\begin{cppcode}
+  void function(std::size_t i)
+  {
+    auto &rng = particle.rng(i);
+    // Process particle i using rng
+  }
+\end{cppcode}
+The details of the \rng system are documented later in section~\ref{sec:Random
+  number generating}.
 
 \subsubsection{Single particle}
 \label{ssub:Single particle}
 
+It is often easier to define a function $f(X^{(i)})$ than
+$f(X^{(1)},\dots,X^{(N)})$. However, \cppinline{Particle<T>} only provides
+access to $\{X^{(i)}\}_{i=1}^N$ as a whole through
+\cppinline{particle.value()}. To allow direct access to $X^{(i)}$, the library
+uses a class template \cppinline{SingeParticle<T>}. An object of this class is
+constructed from the index $i$ of the particle, and a pointer to the particle
+system it belongs to, for example,
+\begin{cppcode}
+  SingleParticle<T> sp(i, &particle);
+\end{cppcode}
+or more conveniently,
+\begin{cppcode}
+  auto sp = particle.sp(i);
+\end{cppcode}
+In its most basic form, it has the following methods,
+\begin{cppcode}
+  sp.id();       // Get the value i that sp was constructed with
+  sp.particle(); // A reference to the Particle<T> object
+  sp.rng();      // => sp.particle().rng(sp.id());
+\end{cppcode}
+If \cppinline{T} is a subclass of \cppinline{StateMatrix}, then it has two
+additional methods,
+\begin{cppcode}
+  sp.dim();    // => sp.particle().value().dim();
+  sp.state(j); // => sp.particle().value().state(sp.id(), j);
+\end{cppcode}
+It is clear now that the interface of \cppinline{SingleParticle<T>} depends on
+the type \cppinline{T}. Later in section~\ref{sub:Customizing SingleParticle}
+we will show how to insert additional methods into this class.
+
+\subsubsection{Sampler}
+\label{ssub:Sampler}
+
+A sampler can be constructed in a few ways,
+\begin{cppcode}
+  Sampler<T> sampler(N);
+\end{cppcode}
+constructs a sampler that is never resampled, while
+\begin{cppcode}
+  Sampler<T> sampler(N, Multinomial);
+\end{cppcode}
+constructs a sampler that is resampled every iteration, using the multinomial
+method. Other resampling schemes are also possible, see
+section~\ref{sec:Resample}. Last, one can also construct a sampler that is only
+resampled when $\ess < \alpha N$, $\alpha\in[0, 1]$, by the following,
+\begin{cppcode}
+  Sampler<T> sampler(N, Multinomial, alpha);
+\end{cppcode}
+In summary, if one does not tell the constructor which resampling scheme to
+use, then it is assumed one does not want to do resampling. If one specify the
+resampling scheme without a threshold for \ess, then it is assumed it need to
+be done at every step. More advanced constructors will be discussed in
+section~\ref{sec:Resample}
+
+The method call \cppinline{sampler.particle()} returns a reference to the
+particle system. A sampler can be initialized by user defined object that is
+convertible to the following type,
+\begin{cppcode}
+  using init_type = std::function<std::size_t(Particle<T> &, void *)>;
+\end{cppcode}
+For example,
+\begin{cppcode}
+  auto init = [](Particle<T> &particle, void *param) { /* Process particle /*};
+\end{cppcode}
+is a \cppoo lambda expression that can be used for this purpose. One can add it
+to a sampler by calling \cppinline{sampler.init(init)}. Upon calling
+\cppinline{sampler.initialize(param)}, the user defined function
+\cppinline{init} will be called and the argument \cppinline{param} will be
+passed to it.
+
+Similarly, after initialization, at each iteration, the particle system can be
+manipulated by users given callable objects that is convertible to the
+following types,
+\begin{cppcode}
+  using move_type = std::function<std::size_t(std::size_t, Particle<T> &)>;
+  using mcmc_type = std::function<std::size_t(std::size_t, Particle<T> &)>;
+\end{cppcode}
+Multiple moves can be added to a sampler. The call
+\cppinline{sampler.move(move, append)} adds a \cppinline{move_type} object to
+the sampler, where \cppinline{append} is a boolean value. If it is false, the
+call will clear any moves that were added before. If it is true, then
+\cppinline{move} is appended to the end of a sequence of moves. Each move will
+be called one by one upon calling \cppinline{sampler.iterate()}. A similar
+sequence of \mcmc moves can also be added to a sampler. The call
+\cppinline{sampler.iterate()} will call user defined moves first, then perform
+the possible resampling, and then the sequence of \mcmc moves.
+
+Note that the possible resampling will also be performed after the user defined
+initialization function is called by \cppinline{sampler.initialize(param)}. And
+after it, the sequence of \mcmc moves will be called. If it desired no to
+perform mutations during initialization, then following can be used,
+\begin{cppcode}
+  sampler.init(init);
+  sampler.initialize(param);
+  sampler.move(move, true).mcmc(mcmc, true);
+  sampler.iterate(n);
+\end{cppcode}
+The above snippet code also demonstrates that most methods of
+\cppinline{Sampler<T>} return a reference to the sampler itself and thus method
+calls can be chained. In addition, method \cppinline{sampler.iterate(n)}
+accepts an optional argument that specifies the number of iterations. It is a
+shortcut for
+\begin{cppcode}
+  for (std::size_t i = 0; i != n; ++i)
+  sampler.iterate();
+\end{cppcode}
+
 \subsubsection{Monitor}
 \label{ssub:Monitor}
+
+Inferences using a \smc algorithm usually require the calculation of the
+quantity $\sum_{i=1}^NW^{(i)}\varphi(X^{(i)})$ at each iteration. One can
+define callable object that is convertible to
+\begin{cppcode}
+  using eval_type =
+  std::function<void(std::size_t, std::size_t, Particle<T> &, double *);
+\end{cppcode}
+For example,
+\begin{cppcode*}{texcomments}
+  void eval(std::size_t iter, std::size_t d, Particle<T> &particle, double *r)
+  {
+    for (std::size_t i = 0; i != particle.size(); ++i, r += dim) {
+      auto sp = particle.sp(i);
+      r[0] = /* $\varphi_1(X^{(i)})$ */;
+      // ...
+      r[d - 1] = /* $\varphi_d(X^{(i)})$ */;
+    }
+  }
+\end{cppcode*}
+The argument \cppinline{d} is the dimension of the vector function $\varphi$.
+The output is an $N$ by $d$ matrix, with each row corresponding to the value of
+$\varphi(X^{(i)})$. Then one can add this function to a sampler by calling,
+\begin{cppcode}
+  sampler.monitor("name", d, eval);
+\end{cppcode}
+where the first argument is the name for the monitor, second its dimension, and
+the third the evaluation function. Then after all the initialization, possible
+resampling, moves and \mcmc moves are done, the sampler will calculate
+$\sum_{i=1}^NW^{(i)}\varphi(X^{(i)})$. This method call has two optional
+arguments. First is a boolean value \cppinline{record_only}. If it is true, it
+is assumed that no summation is needed. For example,
+\begin{cppcode*}{texcomments}
+  void eval(std::size_t iter, std::size_t d, Particle<T> &particle, double *r)
+  {
+    r[0] = /* $\varphi_1(\{X^{(i)}\}_{i=1}^N)$ */;
+    // ...
+    r[d - 1] = /* $\varphi_d(\{X^{(i)}\}_{i=1}^N)$ */;
+  }
+\end{cppcode*}
+In this case, the monitor acts merely as a storage facility. The second
+optional argument is \cppinline{stage} which specifies at which point the
+monitoring shall happen. It can be \cppinline{MonitorMove}, which specifies
+that the monitoring happens right after the moves and before resampling. It can
+also be \cppinline{MonitorResample}, which specifies that the monitoring
+happens right after the resampling and before the \mcmc moves. Last, the
+default is \cppinline{MonitorMCMC}, which specifies that the monitoring happens
+after everything.
+
+The output of a sampler, together with the records of any monitors it has can
+be output in plain text forms through a \cpp output stream. For example,
+\begin{cppcode}
+  std::cout << sampler << std::endl;
+\end{cppcode}
+We will see how this works later with a concrete particle filter example. If
+the \hdf library is available, it is also possible to write such output to \hdf
+format, for example,
+\begin{cppcode}
+  hdfstore(sampler, file_name, data_name);
+\end{cppcode}
+Details can be found in section~\ref{sub:Storing objects in hdf}.
 
 \subsection{A simple particle filter}
 \label{sub:A simple particle filter}
 
-\begin{listing}
-  \cppfile{pf.cpp}
-  \caption{\protect\texttt{pf.cpp}}
-  \label{lst:pf.cpp}
-\end{listing}
+\subsection{Model and algorithm}
+\label{sub:Model and algorithm}
 
-\begin{listing}
-  \cppfile{pf.hpp}
-  \caption{\protect\texttt{pf.hpp}}
-  \label{lst:pf.hpp}
-\end{listing}
+This is an example used in \textcite{Johansen:2009wd}. Through this example, we
+will show how to re-implement a simple particle filter in \vsmc. It shall walk
+one through the basic features of the library introduced above.
 
-\begin{listing}
-  \cppfile{pf_const.hpp}
-  \caption{\protect\texttt{pf\_const.hpp}}
-  \label{lst:pf_const.hpp}
-\end{listing}
+The state space model, known as the almost constant velocity model in the
+tracking literature, provides a simple scenario. The state vector $X_t$
+contains the position and velocity of an object moving in a plane. That is,
+$X_t = (\xpos^t, \ypos^t, \xvel^t, \yvel^t)^T$. Imperfect observations $Y_t =
+(\xobs^t, \yobs^t)^T$ of the positions are possible at each time instance. The
+state and observation equations are linear with additive noises,
+\begin{align*}
+  X_t &= AX_{t-1} + V_t \\
+  Y_t &= BX_t + \alpha W_t
+\end{align*}
+where
+\begin{equation*}
+  A = \begin{pmatrix}
+    1 & \Delta & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1
+  \end{pmatrix} \qquad
+  B = \begin{pmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+  \end{pmatrix} \qquad
+  \alpha = 0.1
+\end{equation*}
+and we assume that the elements of the noise vector $V_t$ are independent
+Gaussian with variance $0.02$ and $0.001$ for position and velocity,
+respectively. The observation noise, $W_t$ comprises independent, identically
+distributed $t$-distributed random variables with degree of freedom $\nu = 10$.
+The prior at time $0$ corresponds to an axis-aligned Gaussian with variance $4$
+for the position coordinates and $1$ for the velocity coordinates. The particle
+filter algorithm is shown in algorithm~\ref{alg:pf}.
 
-\begin{listing}
-  \cppfile{pf_state.hpp}
-  \caption{\protect\texttt{pf\_state.hpp}}
-  \label{lst:pf_state.hpp}
-\end{listing}
+\begin{algorithm}[t]
+  \begin{algorithmic}
+    \hrule\vskip1ex
+    \STATE \emph{Initialization}
+    \STATE\STATESKIP Set $t\leftarrow0$.
+    \STATE\STATESKIP Sample
+    $\xpos^{(0,i)},\ypos^{(0,i)}\sim\calN(0,4)$ and
+    $\xvel^{(0,i)},\yvel^{(0,i)}\sim\calN(0,1)$.
+    \STATE\STATESKIP Weight $W_0^{(i)} \propto \exp{\ell(X_0^{(i)}|Y_0)}$ where
+    $\ell$ is the likelihood function.
 
-\begin{listing}
-  \cppfile{pf_init.hpp}
-  \caption{\protect\texttt{pf\_init.hpp}}
-  \label{lst:pf_init.hpp}
-\end{listing}
+    \STATE \emph{Iteration}
+    \STATE\STATESKIP Set $t\leftarrow t + 1$.
+    \STATE\STATESKIP Sample
+    \begin{align*}
+      \xpos^{(t,i)}&\sim\calN(\xpos^{(t-1,i)} + \Delta\xvel^{(t-1,i)}, 0.02) &
+      \xvel^{(t,i)}&\sim\calN(\xvel^{(t-1,i)}, 0.001) \\
+      \ypos^{(t,i)}&\sim\calN(\ypos^{(t-1,i)} + \Delta\yvel^{(t-1,i)}, 0.02) &
+      \yvel^{(t,i)}&\sim\calN(\yvel^{(t-1,i)}, 0.001)
+    \end{align*}
+    \STATE\STATESKIP Weight $W_t^{(i)} \propto
+    W_{t-1}^{(i)}\exp{\ell(X_t^{(i)}|Y_t)}$.
 
-\begin{listing}
-  \cppfile{pf_move.hpp}
-  \caption{\protect\texttt{pf\_move.hpp}}
-  \label{lst:pf_move.hpp}
-\end{listing}
+    \STATE \emph{Repeat the \emph{Iteration} step until all data are processed}.
+    \vskip1ex\hrule
+  \end{algorithmic}
+  \caption{Particle filter algorithm for the almost constant velocity model.}
+  \label{alg:pf}
+\end{algorithm}
 
-\begin{listing}
-  \cppfile{pf_meval.hpp}
-  \caption{\protect\texttt{pf\_meval.hpp}}
-  \label{lst:pf_meval.hpp}
-\end{listing}
+\subsection{Implementations}
+\label{sub:Implementations}
+
+We first show the main program.
+\cppfile{pf.cpp}
+A \cppinline{Sampler<PFState>} object is constructed first. Then the
+initialization \cppinline{PFInit}, move \cppinline{PFMove} and a monitor
+\cppinline{PFMEval} that records $\xpos^t$ and $\ypos^t$ are added to the
+sampler. The monitor is named \cppinline{"pos"}. Then it is initialized with
+the name of the data file \shinline{"pf.data"}, and iterated $n - 1$ times,
+where $n$ is the number of data points. At last, the output is written into a
+text file \shinline{"pf.out"}. Below is a short
+R\footnote{\url{http://r-project.org}} script that can be used to process this
+\begin{rcode}
+  obs <- read.table("pf.data", header = FALSE)
+  pf <- read.table("pf.out", header = TRUE)
+  print(pf[1:5,])
+
+  pdf("pf.pdf")
+  plot(obs[,1], obs[,2], xlab = "X", ylab = "Y")
+  lines(pf$pos.0, pf$pos.1)
+  dev.off()
+\end{rcode}
+The \rinline{print} statement shows the first five lines of the output,
+\begin{routcode}
+  Size Resampled Accept.0       ESS    pos.0   pos.1
+  1 1000         1        0   1.54765 -1.41510 3.03569
+  2 1000         1        0 159.69800 -1.22141 3.15391
+  3 1000         1        0 182.29200 -1.29763 2.95484
+  4 1000         1        0  17.90400 -1.48292 3.28054
+  5 1000         1        0 252.25700 -1.48763 3.43379
+\end{routcode}
+The column \routinline{Size} shows the sample size at each iteration. The
+library does not provide direct support of changing the sample size. However,
+it is possible and an example is shown in section~\ref{sec:Resample}. The
+column \routinline{Resampled} shows nonzero values if resampling were performed
+and zero otherwise. For each moves and \mcmc steps, an acceptance count will be
+recorded. In this particular example, it is irrelevant. Next the column
+\routinline{ESS} shows the value of \ess. The last two columns show the
+importance sampling estimates of the positions recorded by the monitor named
+\cppinline{"pos"}. The graphical representation of the output is shown in
+figure~\ref{fig:pf}.
+
+\begin{figure}
+  \includegraphics{pf}
+  \caption{A simple particle system}
+  \label{fig:pf}
+\end{figure}
+
+Before diving into the details of the implementation of \cppinline{PFState},
+etc., we will first define a few constant. The state space is of dimension $4$.
+And it is natural to use a \cppinline{StateMatrix} as the base class of
+\cppinline{PFState}. We define the following constants as the indices of each
+state component.
+\cppfile{pf_const.hpp}
+
+\subsubsection{State: \texttt{PFState}}
+\label{ssub:State: PFState}
+
+As noted earlier, \cppinline{StateMatrix} will be used as the base class of
+\cppinline{PFState}. Since the data will be shared by all particles, we also
+store the data within this class. And methods will be provided to read the data
+from an external file, and compute the log-likelihood $\ell(X^{(i)})$, which
+accesses the data. Below the definition of the class \cppinline{PFState}
+\cppfile{pf_state.hpp}
+The method \cppinline{log_likelihood} accepts the iteration number (starting
+from zero at initialization) and the particle number as its input. It returns
+the value of $\ell(X^{(i)})$. The method \cppinline{read_data} read the data
+input member data.
+
+\subsubsection{Initialization: \texttt{PFInit}}
+\label{ssub:Initialization: PFInit}
+
+The initialization step is implemented as below.
+\cppfile{pf_init.hpp}
+An object of this class is convertible to
+\cppinline{Sampler<PFState>::init_type}. After initialization each state
+component with the respective Gaussian distribution, we compute the
+log-likelihood and store them in a vector. The class template
+\cppinline{vsmc::Vector} is very similar to \cppinline{std::vector}. See
+section~\ref{sub:Aligned memory allocation} for details. After all particles
+have been initialized, we set the weights of the system.
+
+The main method, \cppinline{operator()} calls a few other methods to perform
+the tasks. Later in section~\ref{sub:Symmetric Multiprocessing} it will become
+clear why we structured the implementation this way.
+
+\subsubsection{Move: \texttt{PFMove}}
+\label{ssub:Move: PFMove}
+
+The move step is similar to the initialization. The implementation is as below,
+\cppfile{pf_move.hpp}
+
+\subsubsection{Monitor: \texttt{PFMEval}}
+\label{ssub:Monitor: PFMEval}
+
+Last we define \cppinline{PFMEval}, which simply copies the values of the
+positions.
+\cppfile{pf_meval.hpp}
 
 \subsection{Symmetric Multiprocessing}
 \label{sub:Symmetric Multiprocessing}
 
-\subsection{A simple particle filter parallelized}
-\label{sub:A simple particle filter parallelized}
+The above example is implemented in a sequential fashion. However, the loops
+inside \cppinline{PFInit}, \cppinline{PFMove} and \cppinline{PFMEval} clearly
+can be parallelized. The library provides basic support of multicore
+parallelization through its \smp module. Two widely used backends, OpenMP and
+\tbb are available. Here we demonstrate how to use the \tbb backend. First we
+will declare the implementation classes as subclasses as below,
+\begin{cppcode}
+  class PFInit : public InitializationTBB<PFState>;
+  class PFMove : public MoveTBB<PFState>;
+  class PFMEval : public MonitorEvalTBB<PFState>;
+\end{cppcode}
+And remove \cppinline{operator()} from their implementations. After these
+changes, the implementation will be parallelized using \tbb. It works as if
+\cppinline{InitializationTBB<PFState>} has an implementation of
+\cppinline{operator()} as we did before, except it is parallelized. Now it is
+clear that, method such as \cppinline{eval_pre} and \cppinline{eval_post} are
+called before and after the main loop. Method \cppinline{eval_sp} is called
+within the loop and it need to be thread-safe. This is the main reason we
+constructed the \cppinline{NormalDistribution} objects within
+\cppinline{eval_sp} instead of as member data, even though they are constructed
+in exactly the same way for each particle. This is because
+\cppinline{NormalDistribution::operator()} is a mutable method and thus not
+thread-safe.
+
+Apart from the three base classes we have shown here, there are also
+\cppinline{InitializationOMP}, etc., for using the OpenMP backend. And
+\cppinline{InitializationSEQ}, etc., for implementation without
+parallelization. The later works in exactly the same way as our implementation
+in the last section. It is often easier to debug a single-threaded program than
+a parallelized one. And thus one may develop the algorithm with the sequential
+backend and obtain optimal performance latter by only changing the name of a
+few base class names. This can usually be done automatically through a build
+system.
+
+\subsubsection{Performance consideration}
+\label{sub:Performance consideration}
+
+The base classes dispatch calls to \cppinline{eval_pre}, \cppinline{eval_sp},
+etc., through the virtual function mechanism. The performance impact is minimal
+for \cppinline{eval_pre} and \cppinline{eval_post}, since they are called only
+once in each iteration and we expect the computational cost will be dominated
+by \cppinline{eval_sp} in most cases. However, the dynamic dispatch can cause
+considerable performance degenerating if the cost of a single call to
+\cppinline{eval_sp} is small while the number of particles is large. Modern
+optimizing compilers can usually devirtualize the method calls in trivial
+situations. However, it is not always possible. In this situation, the library
+will need a little help from the user to make compile-time dispatch. For each
+implementation class, we will declare it in the following way,
+\begin{cppcode}
+  class PFInit : public InitializationTBB<PFState, PFInit>;
+  class PFMove : public MoveTBB<PFState, PFMove>;
+  class PFMEval : public MonitorEvalTBB<PFState, PFMEval>;
+\end{cppcode}
+The second template argument of the base class need to be exactly the same as
+the derived class. For interested users, this is called Curiously Recurring
+Template Pattern%
+\footnote{\url{https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern}}
+(\crtp). This usage of the library's base classes also provides other
+flexibility. The methods \cppinline{eval_pre} etc., can be either
+\cppinline{const} or mutable. They can also be \cppinline{static}.
+
+\section{Advanced usage}
+\label{sec:Advanced usage}
+
+\subsection{Customizing \protect\texttt{SingleParticle<T>}}
+\label{sub:Customizing SingleParticle}
+
+\subsection{Customizing \protect\texttt{Particle<T>} member types}
+\label{sub:Customizing Particle<T> member types}
 
 \section{Mathematical operations}
 \label{sec:Mathemtical operations}
@@ -407,7 +930,7 @@ This library has no other dependencies other than \cpp standard libraries
 \subsection{Constants}
 \label{sub:Constants}
 
-\begin{table}
+\begin{table}[t]
   \begin{tabu}{X[2l]X[l]X[2l]X[l]X[2l]X[l]}
     \toprule
     Function & Value &
@@ -471,12 +994,103 @@ This library has no other dependencies other than \cpp standard libraries
     \bottomrule
   \end{tabu}
   \caption[Mathematical constants]{Mathematical constants. Note: All functions
-    are prefixed by \cppinline{const\_}.}
+    are prefixed by \cppinline{const_}.}
   \label{tab:Mathematical constants}
 \end{table}
 
+The library defines some mathematical constants in the form of
+\cppinline{constexpr} functions. For example, to get the value of $\pi$ with
+a desired precision, one can call the following.
+\begin{cppcode}
+  auto pi_f = const_pi<float>();
+  auto pi_d = const_pi<double>();
+  auto pi_l = const_pi<long double>();
+\end{cppcode}
+The compiler will evaluate these values at compile-time and thus there is no
+performance difference from hard-coding the constants in the program, while the
+readability is improved. All defined constants are listed in
+table~\ref{tab:Mathematical constants}. Note that all functions has a prefix
+\cppinline{const_}, which is omitted in the table.
+
 \subsection{Vectorized operations}
 \label{sub:Vectorized operations}
+
+\begin{table}[t]
+  \begin{tabu}{X[l]X[l]X[l]X[l]}
+    \toprule
+    Function & Operation & Function & Operation \\
+    \midrule
+    \texttt{add(n, a, b, y)}    & $y = a + b$                               &
+    \texttt{sub(n, a, b, y)}    & $y = a - b$                               \\
+    \texttt{sqr(n, a, y)}       & $y = a^2$                                 &
+    \texttt{mul(n, a, b, y)}    & $y = ab$                                  \\
+    \texttt{abs(n, a, y)}       & $y = |a|$                                 &
+    \texttt{fma(n, a, b, c, y)} & $y = ab + c$                              \\
+    \texttt{inv(n, a, y)}       & $y = 1 / a$                               &
+    \texttt{div(n, a, b, y)}    & $y = a / b$                               \\
+    \texttt{sqrt(n, a, y)}      & $y = \sqrt{a}$                            &
+    \texttt{invsqrt(n, a, y)}   & $y = 1 / \sqrt{a}$                        \\
+    \texttt{cbrt(n, a, y)}      & $y = \sqrt[3]{a}$                         &
+    \texttt{invcbrt(n, a, y)}   & $y = 1 / \sqrt[3]{a}$                     \\
+    \texttt{pow2o3(n, a, y)}    & $y = a^{2/3}$                             &
+    \texttt{pow3o2(n, a, y)}    & $y = a^{3/2}$                             \\
+    \texttt{pow(n, a, b, y)}    & $y = a^b$                                 &
+    \texttt{hypot(n, a, b, y)}  & $y = \sqrt{a^2 + b^2}$                    \\
+    \texttt{exp(n, a, y)}       & $y = \EE^a$                               &
+    \texttt{exp2(n, a, y)}      & $y = 2^a$                                 \\
+    \texttt{exp10(n, a, y)}     & $y = 10^a$                                &
+    \texttt{expm1(n, a, y)}     & $y = \EE^a - 1$                           \\
+    \texttt{log(n, a, y)}       & $y = \ln a$                               &
+    \texttt{log2(n, a, y)}      & $y = \log_2(a)$                           \\
+    \texttt{log10(n, a, y)}     & $y = \log_{10}(a)$                        &
+    \texttt{log1p(n, a, y)}     & $y = \ln(a + 1)$                          \\
+    \texttt{cos(n, a, y)}       & $y = \cos(a)$                             &
+    \texttt{sin(n, a, y)}       & $y = \sin(a)$                             \\
+    \texttt{sincos(n, a, y, z)} & $y = \sin(a)$, $z = \cos(a)$              &
+    \texttt{tan(n, a, y)}       & $y = \tan(a)$                             \\
+    \texttt{acos(n, a, y)}      & $y = \arccos(a)$                          &
+    \texttt{asin(n, a, y)}      & $y = \arcsin(a)$                          \\
+    \texttt{atan(n, a, y)}      & $y = \arctan(a)$                          &
+    \texttt{acos(n, a, y)}      & $y = \arccos(a)$                          \\
+    \texttt{atan2(n, a, b, y)}  & $y = \arctan(a / b)$                      &
+    \texttt{cosh(n, a, y)}      & $y = \cosh(a)$                            \\
+    \texttt{sinh(n, a, y)}      & $y = \sinh(a)$                            &
+    \texttt{tanh(n, a, y)}      & $y = \tanh(a)$                            \\
+    \texttt{acosh(n, a, y)}     & $y = \mathrm{arc}\cosh(a)$                &
+    \texttt{asinh(n, a, y)}     & $y = \mathrm{arc}\sinh(a)$                \\
+    \texttt{atanh(n, a, y)}     & $y = \mathrm{arc}\tanh(a)$                &
+    \texttt{erf(n, a, y)}       & $y = \mathrm{erf}(a)$                     \\
+    \texttt{erfc(n, a, y)}      & $y = \mathrm{erfc}(a)$                    &
+    \texttt{cdfnorm(n, a, y)}   & $y = 1 - \mathrm{erfc}(a / \sqrt{2}) / 2$ \\
+    \texttt{lgamma(n, a, y)}    & $y = \ln\Gamma(a)$                        &
+    \texttt{tgamma(n, a, y)}    & $y = \Gamma(a)$                           \\
+    \bottomrule
+  \end{tabu}
+  \caption{Vectorized mathematical operations}
+  \label{tab:Vectorized mathematical operations}
+\end{table}
+
+The library provides a set of functions for vectorized mathematical operations.
+For example,
+\begin{cppcode}
+  std::size_t n = 1000;
+  vsmc::Vector<double> a(n);
+  vsmc::Vector<double> b(n);
+  vsmc::Vector<double> y(n);
+  // Fill vectors a and b
+  add(n, a.data(), b.data(), y.data());
+\end{cppcode}
+performs addition for vectors. If the input $a$ and $b$ are pointers to length
+$n$ arrays, and the output $y$ is a pointer to array of the same length, then
+this function call compute $y_i = a_i + b_i$ for $i=1,\dots,n$. Either $a$ and
+$b$ can also be scalars. For example, if $b$ is a scalar, then the operation
+performed is $y_i = a_i + b$. The functions defined are listed in
+table~\ref{tab:Vectorized mathematical operations}. For each function, the
+first parameter is always the length of the vector $n$, and the last is a
+pointer to the output $y$ (except \cppinline{sincos} which has two output
+pointers $y$ and $z$). For all functions, the output is always a vector. If
+there are more than one input pointer, then some of them, but not all, can be
+scalars.
 
 \section{Resample}
 \label{sec:Resample}
@@ -484,13 +1098,64 @@ This library has no other dependencies other than \cpp standard libraries
 \section{Random number generating}
 \label{sec:Random number generating}
 
+The library has a comprehensive \rng system to facilitate implementation of
+Monte Carlo algorithms.
+
 \subsection{Seeding}
 \label{sub:Seeding}
 
-\subsection{Counter based \protect\rng}
-\label{sub:Coutner based RNG}
+The singleton class template \cppinline{SeedGenerator} can be used to generate
+distinctive seed sequentially. For example,
+\begin{cppcode}
+  auto &seed = SeedGenerator<void, unsigned>::instance();
+  RNG rng1(seed.get()); // Construct rng1
+  RNG rng2(seed.get()); // Construct rng2 with another seed
+\end{cppcode}
+The first argument to the template can be any type. For different types,
+different instances of \cppinline{SeedGenerator} will be created. Thus, the
+seeds generated by \cppinline{SeedGenerator<T1>} and
+\cppinline{SeedGenerator<T2>} will be independent. The second parameter is the
+type of the seed values. It can be an unsigned integer type. Classes such as
+\cppinline{Particle<T>} will use the generator of the following type,
+\begin{cppcode}
+  using Seed = SeedGenerator<NullType, VSMC_SEED_RESULT_TYPE>;
+\end{cppcode}
+where \cppinline{VSMC_SEED_RESULT_TYPE} is a configuration macro which is
+defined to \cppinline{unsigned} by default.
 
-\begin{table}
+One can save and set the seed generator using standard \cpp streams. For
+example
+\begin{cppcode}
+  std::ifstream seed_txt("seed.txt");
+  if (seed_txt.good())
+  seed_txt >> Seed::instance(); // Read seed from a file
+  else
+  Seed::instance().set(101);    // The default seed
+  seed_txt.close();
+  // The program
+  std::ofstream seed_txt("seed.txt");
+  seed_txt << Seed::instance();     // Write the seed to a file
+  seed_txt.close();
+\end{cppcode}
+This way, if the simulation program need to be repeated multiple times, each
+time is will use a different set of seeds.
+
+A single seed generator is enough for a single computer program. However, it is
+more difficult to ensure that each computing node has a distinctive set of
+seeds in a distributed system. A simple solution is to use the
+\cppinline{modulo} method of \cppinline{SeedGenerator}. For example,
+\begin{cppcode}
+  Seed::instance().modulo(n, r);
+\end{cppcode}
+where $n$ is the number of processes and $r$ is the rank of the current node.
+After this call, all seeds generated will belong to the equivalent class
+$s \equiv r \mathrm{mode} n$. Therefore, no two nodes will ever generate the
+same seeds.
+
+\subsection{Counter-based \protect\rng}
+\label{sub:Coutner-based RNG}
+
+\begin{table}[t]
   \def\B{\textcolor{MRed}{\textit{B}}}
   \def\V{\textcolor{MRed}{\textit{V}}}
   \begin{tabu}{X[2l]X[l]X[l]X[l]}
@@ -515,22 +1180,80 @@ This library has no other dependencies other than \cpp standard libraries
     \texttt{Threefry4x64\V} & \texttt{std::uint64\_t} & $256$ & $256$ \\
     \bottomrule
   \end{tabu}
-  \caption[Counter based \protect\rng]{Counter based \rng; \B: either
+  \caption[Counter-based \protect\rng]{Counter-based \rng; \B: either
     \cppinline{1}, \cppinline{2}, \cppinline{4}, or \cppinline{8}; \V: either
     empty, \cppinline{SSE2}, or \cppinline{AVX2}.}
-  \label{tab:Counter based rng}
+  \label{tab:Counter-based RNG}
 \end{table}
+
+The standard library provides a set of \rng classes. Unfortunately, none of
+them are suitable for parallel computing, at least without considerable user
+input. In addition, only the \cppinline{std::mt19937} and
+\cppinline{std::mt19937_64} have both high performance and desirable
+statistical properties.
+
+The development by \textcite{Salmon:2011um} made high performance parallel \rng
+much more accessible than it was before. In the author's personal opinion, it
+is most significant development for parallel Monte Carlo algorithms in recent
+memory. See the paper for more details. Here, it is sufficient to mention that,
+the \rng introduce in the paper use a deterministic function $f_k$, such that,
+for any sequence $\{c_i\}_{i>0}$, the sequence $\{y_i\}_{i>0}$, $y_i =
+f_k(c_i)$, appears as random. In addition, for $k_1 \ne k_2$, $f_{k_1}$ and
+$f_{k_2}$ will generate two sequences that appear statically independent.
+Compared to more conventional \rng{}s which use recursions $y_i = f(y_{i -
+  1})$, these counter-based \rng{}s are much easier to setup in a parallelized
+environment.
+
+If $c$, the counter, is an unsigned integers with $b$ bits, and $k$, the key,
+is an unsigned integer with $d$ bits. Then for each $k$, the \rng has a period
+$2^b$. And there can be at most $2^d$ independent streams.
+Table~\ref{tab:Counter-based RNG} lists all counter-based \rng{}s implemented
+in this library, along with the bits of the counter and the key. They all
+conform to the \cppoo uniform \rng concept. All \rng{}s in
+\textcite{Salmon:2011um} are implemented with a few additions. Note that, the
+actual period of an \rng can be longer. For example, \cppinline{Philox4x64} has
+a 256-bits counter and but output 64-bits integers. And thus it has a
+$2^{1024}$ period. Such period length may seems very small compared to many
+well known \rng{}s. For example, the famous Mersenne-Twister generator
+(\cppinline{std::mt19937}) has a period $2^{19937} - 1$. However, combined with
+$2^{256}$ independent streams, only the most demanding programs will find these
+counter-base \rng{}s insufficient.
+
+Note that, note all \rng{}s defined by the library is available on all
+platforms. The library also defines a type alias \cppinline{RNG} which is one
+of the \rng{}s listed in table~\ref{tab:Counter-based RNG}. More specifically,
+if the \aesni instructions are supported,
+\begin{cppcode}
+  using RNG = ARS_4x32;
+\end{cppcode}
+otherwise if \avx2 instructions are supported,
+\begin{cppcode}
+  using RNG = Threefry4x32AVX2;
+\end{cppcode}
+otherwise if \sse2 instructions are supported,
+\begin{cppcode}
+  using RNG = Threefry4x32SSE2;
+\end{cppcode}
+and last, on all other platforms,
+\begin{cppcode}
+  using RNG = Threefry4x32;
+\end{cppcode}
+This can be changed by the configurations macro \cppinline{VSMC_RNG_TYPE}.
 
 \subsection{Non-deterministic \protect\rng}
 \label{sub:Non-deterministic RNG}
 
-\subsection{Intel \protect\mkl{} \protect\rng}
-\label{sub:Intel MKL RNG}
+If the \rdrand instructions are supported, the library also implement three
+\rng{}s, \cppinline{RDRAND16}, \cppinline{RDRAND32} and \cppinline{RDRAND64}.
+The output 16-, 32-, and 64-bits random integers, respectively.
 
-\begin{table}
+\subsection{\protect\mkl{} \protect\rng}
+\label{sub:MKL RNG}
+
+\begin{table}[t]
   \begin{tabu}{X[l]X[l]}
     \toprule
-    Class & Intel \mkl \texttt{BRNG} \\
+    Class & \mkl \brng \\
     \midrule
     \texttt{MKL\_MCG59}         & \texttt{VSL\_BRNG\_MCG59}         \\
     \texttt{MKL\_MT19937}       & \texttt{VSL\_BRNG\_MT19937}       \\
@@ -541,28 +1264,155 @@ This library has no other dependencies other than \cpp standard libraries
     \texttt{MKL\_PHILOX4X32X10} & \texttt{VSL\_BRNG\_PHILOX4X32X10} \\
     \bottomrule
   \end{tabu}
-  \caption[Intel \protect\mkl{} \protect\rng]{Intel \mkl{} \rng. Note, all
-    classes can have a suffix \cppinline{_64}}.
-  \label{tab:Intel MKL RNG}
+  \caption[Intel \protect\mkl{} \protect\rng]{\mkl{} \rng. Note: all
+    classes can have a suffix \cppinline{_64}.}
+  \label{tab:MKL RNG}
 \end{table}
+
+The \mkl library provides some high performance \rng{}s. The library implement
+a wrapper class \cppinline{MKLEngine} that make them accessible as \cppoo{}
+generators. They are listed in table~\ref{tab:MKL RNG}. Note that, \mkl{}
+\rng{}s performs best when they are used to generate vectors of random numbers.
+These wrappers use a buffer to store such vectors. And thus they have much
+bigger state space them usual \rng{}s.
 
 \subsection{Multiple \protect\rng streams}
 \label{sub:Multiple RNG streams}
 
+Earlier in section~\ref{ssub:Particle} we introduced that
+\cppinline{particle.rng(i)} returns independent \rng instances. This is
+actually done through a class template called \cppinline{RNGSet}. Three of them
+are implemented in the library. They all have the same interface,
+\begin{cppcode}
+  RNGSet<RNG> rng_set(N); // A set of N RNGs
+  rng_set.resize(n);      // Change the size of the set
+  rng_set.seed();         // Seed each RNG in the set with Seed::instance()
+  rng_set[i];             // Get a reference to the i-th RNG
+\end{cppcode}
+The first implementation is \cppinline{RNGSetScalar}. As its name suggests, it
+is only a wrapper of a single \rng. All calls to \cppinline{rng_set[i]} returns
+a reference to the same \rng. It is only useful when an \cppinline{RNGSet}
+interface is required while the thread-safety and other issues is not
+important.
+
+The second implementation is \cppinline{RNGSetVector}. It is an array of
+\rng{}s with length $N$. It has memory cost $O(N)$. Many of the counter-based
+\rng{}s have small state size and thus for moderate $N$, this cost is not an
+issue. The method calls \cppinline{rng_set[i]} and \cppinline{rng_set[j]}
+return independent \rng{}s if $i \ne j$.
+
+Last, if \tbb is available, there is a third implementation
+\cppinline{RNGSetTBB}, which uses thread-local storage (\tls). It has much
+smaller memory footprint than \cppinline{RNGSetVector} while maintains better
+thread-safety. The performance impact of using \tls is minimal unless the
+computation at the calling site is trivial. For example,
+\begin{cppcode}
+  std::size_t eval_pre(SingleParticle<T> sp)
+  {
+    auto &rng = sp.rng();
+    // using rng to initialize state
+    // do some computation, likely far more costly than TLS
+  }
+\end{cppcode}
+The type template alias \cppinline{RNGSet} is defined to be
+\cppinline{RNGSetTBB} if \tbb is available. Otherwise it is defined to be
+\cppinline{RNGSetVector}. It is used by the \cppinline{Particle} class
+template. One can replace the type of \rng set used by \cppinline{Particle<T>}
+with a member type of \cppinline{T}. For example,
+\begin{cppcode}
+  class T
+  {
+    using rng_set_type = /* User defined type */;
+  };
+\end{cppcode}
+will make the \rng set used by \cppinline{Particle<T>} replaced by the user
+defined type. Alternatively, one can only replace the \rng type, for example
+\begin{cppcode}
+  class T
+  {
+    using rng_type = AES256_4x64;
+  };
+\end{cppcode}
+will make the \cppinline{Particle<T>} to use \cppinline{RNGSet<AES256_4x64>}
+instead of \cppinline{RNGSet<RNG>}, the default.
+
 \subsection{Distributions}
 \label{sub:Distributions}
 
-\subsubsection{Uniform bits distributions}
-\label{ssub:Uniform bits distributions}
+\begin{table}[t]
+  \begin{tabu}{X[l]X[4l]}
+    \toprule
+    Class & Notes \\
+    \midrule
+    \texttt{UniformBits} & No parameters,
+    uniform on the set $\{0,\dots,2^b - 1\}$, where $b$ is the number of bits
+    of the result type, which has to be an unsigned integer type. \\
+    \texttt{U01}         & No parameters, uniform on $[0, 1)$ \\
+    \texttt{U01CC}       & No parameters, uniform on $[0, 1]$ \\
+    \texttt{U01CO}       & No parameters, uniform on $[0, 1)$ \\
+    \texttt{U01OC}       & No parameters, uniform on $(0, 1]$ \\
+    \texttt{U01OO}       & No parameters, uniform on $(0, 1)$ \\
+    \texttt{Laplace}     & Parameters: location \texttt{a}; scale \texttt{b}\\
+    \texttt{Levy}        & Parameters: location \texttt{a}; scale \texttt{b}\\
+    \texttt{Pareto}      & Parameters: shape \texttt{a}; scale \texttt{b}   \\
+    \texttt{Rayleigh}    & Parameters: scale \texttt{sigma}                 \\
+    \bottomrule
+  \end{tabu}
+  \caption[Random number distributions]{Random number distributions. Note: all
+    class names have a suffix \cppinline{Distribution} which is omitted in the
+    table}
+  \label{tab:Random number distributions}
+\end{table}
 
-\subsubsection{Standard uniform distributions}
-\label{ssub:Standard uniform distributions}
+The library also provides implementations of some common distributions. They
+all conforms to the \cppoo random number distribution concepts. Some of them
+are the same as those in the \cppoo standard library, with
+\cppinline{CamelCase} names. For example, \cppinline{NormalDistribuiton} can be
+used as an drop-in replacement for \cppinline{std::normal_distribuiton}. This
+includes all of the continuous distributions defined in the standard library.
+Their benefits compared to the standard library will be discussed later.
+Table~\ref{tab:Random number distributions} lists all the additional
+distributions implemented.
 
-\subsection{Ordered standard uniform random numbers}
-\label{sub:Ordered standard uniform random numbers}
+The last, the library also implement the multivariate Normal distribution. Its
+usable is summarized by the following.
+\begin{cppcode*}{texcomments}
+  double mean[2] = { /* the mean vector */ };
+  double cov[4] = { / * the covariance matrix */ };
+  double chol[3];
+  double r[2];
+  // Compute the lower triangular of the Cholesky decomposition
+  cov_chol(2, cov, chol);
+  RNG rng;
+  NormalMVDistribution<double, 2> norm2(mean, chol); // Bivariate Normal
+  NormalMVDistribution<double, Dynamic> normd(2, mean, chol); // Same as above
+  norm2(rng, r); // Generate a bivariate Normal
+  normd(rng, r); // Same as above
+\end{cppcode*}
+See the reference manual for details. We shall mention here that the static
+form, where the dimension is specified as a template parameter is more
+efficient.
 
-\subsubsection{Continuous distributions}
-\label{ssub:Continuous distributions}
+\subsection{Vectorized random number generating}
+\label{sub:Vectorized random number generating}
+
+The \rng{}s and distributions implemented by this library provides vectorized
+operations. For example,
+\begin{cppcode}
+  std::size_t n = 1000;
+  RNG rng;
+  NormalDistribution<double> norm(0, 1);
+  Vector<RNG::result_type> u(n);
+  Vector<double> r(n);
+  rng(n, u.data());           // Generate n random unsigned integers
+  rng_rand(rng, n, u.data()); // Same as above
+  norm(rng, n, r.data());     // Generate n Normal random numbers
+  normal_distribution(rng, n, r.data(), 0.0, 1.0);     // Same as above
+  normal_distribution(rng, n, r.data(), norm.param()); // Same as above
+  rng_rand(rng, norm, n, r.data());                    // Same as above
+\end{cppcode}
+Note that these functions will be specialized to use \mkl routines if
+\cppinline{rng} is one of the engines listed in table~\ref{tab:MKL RNG}.
 
 \subsection{Random walk}
 \label{sub:Random walk}
@@ -572,6 +1422,24 @@ This library has no other dependencies other than \cpp standard libraries
 
 \subsection{Aligned memory allocation}
 \label{sub:Aligned memory allocation}
+
+The standard library class \cppinline{std::allocator} is used by containers to
+allocate memory. It works fine in most cases. However, sometime it is desired
+to allocate memory aligned by a certain boundary. The library provides the
+class template,
+\begin{cppcode}
+  template <typename T, std::size_t Alignment = VSMC_ALIGNMENT,
+  typename Memory = AlignedMemory>
+  class AlignedAllocator;
+\end{cppcode}
+where the configuration macro \cppinline{VSMC_ALIGNMENT} is defined to be
+\cppinline{32} by default. For the requirement of the parameter type
+\cppinline{Memory}, see the reference manual. It is sufficient to mention here
+that the default implementation works best if \tbb is available. This class can
+be used as a drop-in replacement of \cppinline{std::allocator<T>}. In fact,
+this library defines a type alias \cppinline{Vector<T>} which is
+\cppinline{std::vector<T, AlignedAllocator<T>>} if \cppinline{T} is a scalar
+type, and \cppinline{std::vector<T>} otherwise.
 
 \subsection{Sample covariance estimating}
 \label{sub:Sample covariance estimating}
@@ -585,6 +1453,25 @@ This library has no other dependencies other than \cpp standard libraries
 \subsection{Program options}
 \label{sub:Program options}
 
+The library provides some basic support of processing command line program
+options. Here is a minimal example
+\cppfile{program_option.cpp}
+when invoked as the following,
+\begin{shcode}
+  ./prg --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
+\end{shcode}
+The console output is as the following,
+\begin{consolecode}
+  n: 4
+  str: def hij
+  vec: 1 2 0.1 8 9
+\end{consolecode}
+To summarize these output, the same option can be specified multiple times. If
+it is a scalar option, the last one is used (\shinline{--str}, \shinline{--n}).
+A string option's value can be grouped by quotes. For a vector option
+(\shinline{--vec}), all values are gather together and inserted into the
+vector.
+
 \subsection{Program progress}
 \label{sub:Program progress}
 
@@ -593,6 +1480,27 @@ This library has no other dependencies other than \cpp standard libraries
 
 \subsection{Timing}
 \label{sub:Timing}
+
+Performance can only be improved after it is first properly benchmarked. There
+are advanced profiling programs for this purpose. However, sometime simple
+timing facilities are enough. The library provides a simple class
+\cppinline{StopWatch} for this purpose. As its name suggests, it works much
+like a physical stop watch. Here is a simple example
+\begin{cppcode}
+  StopWatch watch;
+  for (std::size_t i = 0; i != n; ++i) {
+      // Some computation
+      watch.start();
+      // Computation to be benchmarked;
+      watch.stop();
+      // Some other computation
+  }
+  double t = watch.seconds(); // The time in seconds
+\end{cppcode}
+The above example demonstrate that timing can be accumulated between loop
+iterations, function calls, etc. It shall be noted that, the time is only
+accurate if the computation between \cppinline{watch.start()} and
+\cppinline{watch.stop()} is non-trivial.
 
 \printbibliography[title=\refname]
 

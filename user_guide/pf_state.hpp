@@ -1,20 +1,18 @@
-class PFState : public vsmc::StateMatrix<vsmc::RowMajor, 5, double>
+class PFState : public vsmc::StateMatrix<vsmc::RowMajor, 4, double>
 {
     public:
-    using base = vsmc::StateMatrix<vsmc::RowMajor, 5, double>;
+    using base = vsmc::StateMatrix<vsmc::RowMajor, 4, double>;
 
     PFState(base::size_type N) : base(N) {}
 
-    double log_likelihood(std::size_t iter, size_type id) const
+    double log_likelihood(std::size_t iter, size_type i) const
     {
-        constexpr double scale = 10;
-        constexpr double nu = 10;
-        double llh_x = scale * (this->state(id, PosX) - obs_x_[iter]);
-        double llh_y = scale * (this->state(id, PosY) - obs_y_[iter]);
-        llh_x = std::log(1 + llh_x * llh_x / nu);
-        llh_y = std::log(1 + llh_y * llh_y / nu);
+        double llh_x = 10 * (this->state(i, PosX) - obs_x_[iter]);
+        double llh_y = 10 * (this->state(i, PosY) - obs_y_[iter]);
+        llh_x = std::log(1 + llh_x * llh_x / 10);
+        llh_y = std::log(1 + llh_y * llh_y / 10);
 
-        return -0.5 * (nu + 1) * (llh_x + llh_y);
+        return -0.5 * (10 + 1) * (llh_x + llh_y);
     }
 
     void read_data(const char *file)

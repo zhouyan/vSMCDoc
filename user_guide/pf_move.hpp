@@ -3,26 +3,36 @@ class PFMove
     public:
     std::size_t operator()(std::size_t iter, vsmc::Particle<PFState> &particle)
     {
-        const double sd_pos = std::sqrt(0.02);
-        const double sd_vel = std::sqrt(0.001);
-        const double delta = 0.1;
-        vsmc::NormalDistribution<double> norm_pos(0, sd_pos);
-        vsmc::NormalDistribution<double> norm_vel(0, sd_vel);
-
-        for (std::size_t i = 0; i != particle.size(); ++i) {
-            auto sp = particle.sp(i);
-            sp.state(PosX) += norm_pos(sp.rng()) + delta * sp.state(VelX);
-            sp.state(PosY) += norm_pos(sp.rng()) + delta * sp.state(VelY);
-            sp.state(VelX) += norm_vel(sp.rng());
-            sp.state(VelY) += norm_vel(sp.rng());
-            sp.state(LogL) = particle.value().log_likelihood(iter, sp.id());
-        }
-
-        w_.resize(particle.size());
-        particle.value().read_state(LogL, w_.data());
-        particle.weight().add_log(w_.data());
+        eval_pre(iter, particle);
+        std::size_t acc = 0;
+        for (std::size_t i = 0; i != particle.size(); ++i)
+            acc += eval_sp(iter, particle.sp(i));
+        eval_post(iter, particle);
 
         return 0;
+    }
+
+    void eval_pre(std::size_t iter, vsmc::Particle<PFState> &particle)
+    {
+        w_.resize(particle.size());
+    }
+
+    std::size_t eval_sp(std::size_t iter, vsmc::SingleParticle<PFState> sp)
+    {
+        vsmc::NormalDistribution<double> norm_pos(0, std::sqrt(0.02));
+        vsmc::NormalDistribution<double> norm_vel(0, std::sqrt(0.001));
+        sp.state(PosX) += norm_pos(sp.rng()) + 0.1 * sp.state(VelX);
+        sp.state(PosY) += norm_pos(sp.rng()) + 0.1 * sp.state(VelY);
+        sp.state(VelX) += norm_vel(sp.rng());
+        sp.state(VelY) += norm_vel(sp.rng());
+        w_[sp.id()] = sp.particle().value().log_likelihood(iter, sp.id());
+
+        return 0;
+    }
+
+    void eval_post(std::size_t iter, vsmc::Particle<PFState> &particle)
+    {
+        particle.weight().add_log(w_.data());
     }
 
     private:

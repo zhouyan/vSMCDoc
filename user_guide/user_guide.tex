@@ -682,8 +682,8 @@ Details can be found in section~\ref{sub:Storing objects in hdf}.
 \subsection{A simple particle filter}
 \label{sub:A simple particle filter}
 
-\subsection{Model and algorithm}
-\label{sub:Model and algorithm}
+\subsubsection{Model and algorithm}
+\label{ssub:Model and algorithm}
 
 This is an example used in \textcite{Johansen:2009wd}. Through this example, we
 will show how to re-implement a simple particle filter in \vsmc. It shall walk
@@ -751,8 +751,8 @@ filter algorithm is shown in algorithm~\ref{alg:pf}.
   \label{alg:pf}
 \end{algorithm}
 
-\subsection{Implementations}
-\label{sub:Implementations}
+\subsubsection{Implementations}
+\label{ssub:Implementations}
 
 We first show the main program.
 \cppfile{pf.cpp}
@@ -807,8 +807,7 @@ And it is natural to use a \cppinline{StateMatrix} as the base class of
 state component.
 \cppfile{pf_const.hpp}
 
-\subsubsection{State: \texttt{PFState}}
-\label{ssub:State: PFState}
+\paragraph{State: \texttt{PFState}}
 
 As noted earlier, \cppinline{StateMatrix} will be used as the base class of
 \cppinline{PFState}. Since the data will be shared by all particles, we also
@@ -821,8 +820,7 @@ from zero at initialization) and the particle number as its input. It returns
 the value of $\ell(X^{(i)})$. The method \cppinline{read_data} read the data
 input member data.
 
-\subsubsection{Initialization: \texttt{PFInit}}
-\label{ssub:Initialization: PFInit}
+\paragraph{Initialization: \texttt{PFInit}}
 
 The initialization step is implemented as below.
 \cppfile{pf_init.hpp}
@@ -838,14 +836,12 @@ The main method, \cppinline{operator()} calls a few other methods to perform
 the tasks. Later in section~\ref{sub:Symmetric Multiprocessing} it will become
 clear why we structured the implementation this way.
 
-\subsubsection{Move: \texttt{PFMove}}
-\label{ssub:Move: PFMove}
+\paragraph{Move: \texttt{PFMove}}
 
 The move step is similar to the initialization. The implementation is as below,
 \cppfile{pf_move.hpp}
 
-\subsubsection{Monitor: \texttt{PFMEval}}
-\label{ssub:Monitor: PFMEval}
+\paragraph{Monitor: \texttt{PFMEval}}
 
 Last we define \cppinline{PFMEval}, which simply copies the values of the
 positions.
@@ -917,12 +913,6 @@ flexibility. The methods \cppinline{eval_pre} etc., can be either
 
 \section{Advanced usage}
 \label{sec:Advanced usage}
-
-\subsection{Customizing \protect\texttt{SingleParticle<T>}}
-\label{sub:Customizing SingleParticle}
-
-\subsection{Customizing \protect\texttt{Particle<T>} member types}
-\label{sub:Customizing Particle<T> member types}
 
 \section{Mathematical operations}
 \label{sec:Mathemtical operations}
@@ -1149,7 +1139,7 @@ seeds in a distributed system. A simple solution is to use the
 \end{cppcode}
 where $n$ is the number of processes and $r$ is the rank of the current node.
 After this call, all seeds generated will belong to the equivalent class
-$s \equiv r \mathrm{mode} n$. Therefore, no two nodes will ever generate the
+$s \equiv r\mod{n}$. Therefore, no two nodes will ever generate the
 same seeds.
 
 \subsection{Counter-based \protect\rng}
@@ -1420,6 +1410,11 @@ Note that these functions will be specialized to use \mkl routines if
 \section{Utilities}
 \label{sec:Utilities}
 
+The library provides some utilities for writing Monte Carlo simulation
+programs. For some of them, such as command line option processing, there are
+more advanced, dedicated libraries out there. The library only provides some
+basic functionality that is sufficient for more simple cases.
+
 \subsection{Aligned memory allocation}
 \label{sub:Aligned memory allocation}
 
@@ -1456,7 +1451,7 @@ type, and \cppinline{std::vector<T>} otherwise.
 The library provides some basic support of processing command line program
 options. Here is a minimal example
 \cppfile{program_option.cpp}
-when invoked as the following,
+When invoked as the following,
 \begin{shcode}
   ./prg --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
 \end{shcode}
@@ -1474,6 +1469,22 @@ vector.
 
 \subsection{Program progress}
 \label{sub:Program progress}
+
+Sometime it is desirable to see how much progress of a program has been made.
+The library provide a \cppinline{Progress} class for this purpose. Below is a
+minimal example,
+\cppfile{progress.cpp}
+When invoked, the program output something similar the below
+\begin{consolecode}
+  [  4%][00:07][  49019/1000000][i = 49]
+\end{consolecode}
+The method call \cppinline{progress.start(n * n)} starting the printing of the
+progress. The argument specifies how many iterations there will be before it is
+stopped. The method call \cppinline{progress.message(ss.str())} direct the
+program to print a message. This is optional. Each time after we finish $n$
+iterations, we increment the progress count by calling
+\cppinline{progress.increment()}. And aftre everything is finished, the method
+\cppinline{progress.stop()} is called.
 
 \subsection{x86 \protect\simd operations}
 \label{sub:x86 SIMD operations}

@@ -493,7 +493,7 @@ filter algorithm is shown in algorithm~\ref{alg:pf}.
 \label{ssub:Implementations}
 
 We first show the main program.
-\cppfile{pf.cpp}
+\cppfile{pf/pf.cpp}
 
 A \cppinline{Sampler<PFState>} object is constructed first. Then the
 initialization \cppinline{PFInit}, move \cppinline{PFMove} and a monitor
@@ -503,10 +503,10 @@ the name of the data file \shinline{"pf.data"}, and iterated $n - 1$ times,
 where $n$ is the number of data points. At last, the output is written into a
 text file \shinline{"pf.out"}. Below is a short
 R\footnote{\url{http://r-project.org}} script that can be used to process this
-\rfile{pf.R}
+\rfile{pf/pf.R}
 
 The \rinline{print} statement shows the first five lines of the output,
-\routfile{pf.rout}
+\routfile{pf/pf.rout}
 
 The column \routinline{Size} shows the sample size at each iteration. The
 library does not provide direct support of changing the sample size. However,
@@ -520,7 +520,7 @@ importance sampling estimates of the positions recorded by the monitor named
 figure~\ref{fig:pf}.
 
 \begin{figure}
-  \includegraphics{pf}
+  \includegraphics{pf/pf}
   \caption{A simple particle system}
   \label{fig:pf}
 \end{figure}
@@ -530,7 +530,7 @@ etc., we will first define a few constant. The state space is of dimension $4$.
 And it is natural to use a \cppinline{StateMatrix} as the base class of
 \cppinline{PFState}. We define the following constants as the indices of each
 state component.
-\cppfile{pf_const.hpp}
+\cppfile{pf/pf_const.hpp}
 
 \paragraph{State: \texttt{PFState}}
 
@@ -539,7 +539,7 @@ As noted earlier, \cppinline{StateMatrix} will be used as the base class of
 store the data within this class. And methods will be provided to read the data
 from an external file, and compute the log-likelihood $\ell(X^{(i)})$, which
 accesses the data. Below the definition of the class \cppinline{PFState}
-\cppfile{pf_state.hpp}
+\cppfile{pf/pf_state.hpp}
 
 The method \cppinline{log_likelihood} accepts the iteration number (starting
 from zero at initialization) and the particle number as its input. It returns
@@ -549,7 +549,7 @@ input member data.
 \paragraph{Initialization: \texttt{PFInit}}
 
 The initialization step is implemented as below.
-\cppfile{pf_init.hpp}
+\cppfile{pf/pf_init.hpp}
 
 An object of this class is convertible to
 \cppinline{Sampler<PFState>::init_type}. After initialization each state
@@ -566,13 +566,13 @@ clear why we structured the implementation this way.
 \paragraph{Move: \texttt{PFMove}}
 
 The move step is similar to the initialization. The implementation is as below,
-\cppfile{pf_move.hpp}
+\cppfile{pf/pf_move.hpp}
 
 \paragraph{Monitor: \texttt{PFMEval}}
 
 Last we define \cppinline{PFMEval}, which simply copies the values of the
 positions.
-\cppfile{pf_meval.hpp}
+\cppfile{pf/pf_meval.hpp}
 
 \subsection{Symmetric Multiprocessing}
 \label{sub:Symmetric Multiprocessing}
@@ -599,12 +599,8 @@ constructed the \cppinline{NormalDistribution} objects within
 \cppinline{eval_sp} instead of as member data, even though they are constructed
 in exactly the same way for each particle. This is because
 \cppinline{NormalDistribution::operator()} is a mutable method and thus not
-thread-safe.
-
-If any of these member functions does not do anything, then it does not have to
-be defined in the derived class. For example, \cppinline{PFMEval} can be
-simplified to
-\cppfile{pf_meval_tbb.hpp}
+thread-safe. If any of these member functions does not do anything, then it
+does not have to be defined in the derived class.
 
 Apart from the three base classes we have shown here, there are also
 \cppinline{InitializationOMP}, etc., for using the OpenMP backend. And
@@ -616,12 +612,9 @@ backend and obtain optimal performance latter by only changing the name of a
 few base class names. This can usually be done automatically through a build
 system.
 
-The complete implementation of a parallelized sampler is shown in the following
-pages.
-\cppfile{pf_state_tbb.hpp}
-\cppfile{pf_init_tbb.hpp}
-\cppfile{pf_move_tbb.hpp}
-\cppfile{pf_meval_tbb.hpp}
+The complete implementation of a parallelized sampler using \tbb can be found
+in appendix~\appref{app:Parllelized implementation of a simple particle
+  filter}.
 
 \subsubsection{Performance consideration}
 \label{sub:Performance consideration}

@@ -43,7 +43,16 @@ class PFState : public PFStateBase
 
     void read_data(const char *file)
     {
-        // same as before
+        if (!file)
+            return;
+
+        constexpr std::size_t n = 100; // Number of data points
+        obs_x_.resize(n);
+        obs_y_.resize(n);
+        std::ifstream data(file);
+        for (std::size_t i = 0; i != n; ++i)
+            data >> obs_x_[i] >> obs_y_[i];
+        data.close();
     }
 
     private:

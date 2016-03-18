@@ -494,8 +494,8 @@ filter algorithm is shown in algorithm~\ref{alg:pf}.
 \subsubsection{Implementations}
 \label{ssub:Implementations}
 
-The complete program is shown in appendix~\ref{sub:Sequential implementation of
-  a simple particle filter}. In this section we show the outline of the
+The complete program is shown in appendix~\appref{sub:Sequential implementation
+  of a simple particle filter}. In this section we show the outline of the
 implementation.
 
 \paragraph{The main program}
@@ -741,7 +741,7 @@ will declare the implementation classes as subclasses as below,
 And remove \cppinline{operator()} from their implementations. After these
 changes, the implementation will be parallelized using \tbb. The complete
 program can be found in section The complete program is shown in
-appendix~\ref{sub:Parallelized implementation of a simple particle filter}.
+appendix~\appref{sub:Parallelized implementation of a simple particle filter}.
 
 It works as if \cppinline{InitializationTBB<PFState>} has an implementation of
 \cppinline{operator()} as we did before, except it is parallelized. Now it is

@@ -50,8 +50,8 @@ class PFInit
         eval_param(particle, param);
         eval_pre(particle);
         std::size_t acc = 0;
-        for (std::size_t i = 0; i != particle.size(); ++i)
-            acc += eval_sp(particle.sp(i));
+        for (auto sp : particle)
+            acc += eval_sp(sp);
         eval_post(particle);
 
         return acc;
@@ -96,8 +96,8 @@ class PFMove
     {
         eval_pre(t, particle);
         std::size_t acc = 0;
-        for (std::size_t i = 0; i != particle.size(); ++i)
-            acc += eval_sp(t, particle.sp(i));
+        for (auto sp : particle)
+            acc += eval_sp(t, sp);
         eval_post(t, particle);
 
         return 0;

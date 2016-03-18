@@ -271,6 +271,26 @@ It is clear now that the interface of \cppinline{SingleParticle<T>} depends on
 the type \cppinline{T}. Later in section~\ref{sec:Extending SP}
 we will show how to insert additional methods into this class.
 
+A \cppinline{SingleParticle<T>} object is similar to an iterator. In fact, it
+supports almost all of the operations of a random access iterator with two
+exceptions. First dereferencing a \cppinline{SingleParticle<T>} object returns
+itself. The support of \cppinline{operator*} allows the range-based for loop to
+be applied on a \cppinline{Particle<T>} object, for example,
+\begin{cppcode}
+  for (auto sp : particle) {
+      // sp is of type SingleParticle<T>
+  }
+\end{cppcode}
+The above loop does make some sense. However trying to dereferencing a
+\cppinline{SingleParticle<T>} object in other contexts does not make much
+sense. Recall that it is an \emph{index}, not a \emph{pointer}. The library
+does not require the user defined type \cppinline{T} to provide access to
+individual values, and thus it cannot dereference a
+\cppinline{SingleParticle<T>} object to obtain such a value. Similarly, the
+expression \cppinline{sp[n]} returns \cppinline{sp + n}, another
+\cppinline{SingleParticle<T>} object. For the same reason,
+\cppinline{operator->} is not supported at all.
+
 \subsection{Sampler}
 \label{sub:Sampler}
 
@@ -624,8 +644,8 @@ The initialization step is implemented as below,
           eval_param(particle, param);
           eval_pre(particle);
           std::size_t acc = 0;
-          for (std::size_t i = 0; i != particle.size(); ++i)
-              acc += eval_sp(particle.sp(i));
+          for (auto sp : particle)
+              acc += eval_sp(sp);
           eval_post(particle);
   
           return acc;

@@ -1,11 +1,11 @@
-\section{Random number generating}
-\label{sec:Random number generating}
+\chapter{Random number generating}
+\label{chap:Random number generating}
 
 The library has a comprehensive \rng system to facilitate implementation of
 Monte Carlo algorithms.
 
-\subsection{Seeding}
-\label{sub:Seeding}
+\section{Seeding}
+\label{sec:Seeding}
 
 The singleton class template \cppinline{SeedGenerator} can be used to generate
 distinctive seed sequentially. For example,
@@ -31,9 +31,9 @@ example
 \begin{cppcode}
   std::ifstream seed_txt("seed.txt");
   if (seed_txt.good())
-  seed_txt >> Seed::instance(); // Read seed from a file
+      seed_txt >> Seed::instance(); // Read seed from a file
   else
-  Seed::instance().set(101);    // The default seed
+      Seed::instance().set(101);    // The default seed
   seed_txt.close();
   // The program
   std::ofstream seed_txt("seed.txt");
@@ -54,8 +54,8 @@ where $n$ is the number of processes and $r$ is the rank of the current node.
 After this call, all seeds generated will belong to the equivalent class $s
 \equiv r\mod{n}$. Therefore, no two nodes will ever generate the same seeds.
 
-\subsection{Counter-based \protect\rng}
-\label{sub:Counter-based RNG}
+\section{Counter-based \protect\rng}
+\label{sec:Counter-based RNG}
 
 The standard library provides a set of \rng classes. Unfortunately, none of
 them are suitable for parallel computing without considerable efforts.
@@ -93,7 +93,7 @@ counter-base \rng{}s insufficient.
   \begin{tabu}{X[2l]X[2l]X[l]X[l]}
     \toprule
     & & \multicolumn{2}{c}{Bits} \\
-    \cmidrule{3-4} \\
+    \cmidrule{3-4}
     Class & Result type & Counter & Key \\
     \midrule
     \texttt{AES128\_\B x32} & \texttt{std::uint32\_t} & $128$ & $128$ \\
@@ -138,8 +138,8 @@ counter-base \rng{}s insufficient.
   \label{tab:Configuration macros for the counter-based RNG}
 \end{table}
 
-\subsubsection{\protect\aesni intrinsics based \protect\rng}
-\label{ssub:AES-NI intrinsics based RNG}
+\subsection{\protect\aesni intrinsics based \protect\rng}
+\label{sub:AES-NI intrinsics based RNG}
 
 The \aesni intrinsics based \rng{}s in \textcite{Salmon:2011um} are implemented
 in a more general form,
@@ -164,21 +164,21 @@ the \ars algorithm in \textcite{Salmon:2011um} and the \aes-128, \aes-192, and
 \aes-256 algorithms. The following \rng engines are defined.
 \begin{cppcode}
   template <typename ResultType, std::size_t Rounds = VSMC_RNG_ARS_ROUNDS,
-  std::size_t Blocks = VSMC_RNG_ARS_BLOCKS>
+      std::size_t Blocks = VSMC_RNG_ARS_BLOCKS>
   using ARSEngine =
-  AESNIEngine<ResultType, ARSKeySeq<ResultType>, Rounds, Blocks>;
+      AESNIEngine<ResultType, ARSKeySeq<ResultType>, Rounds, Blocks>;
 
   template <typename ResultType, std::size_t Blocks = VSMC_RNG_AES_BLOCKS>
   using AES128Engine =
-  AESNIEngine<ResultType, AES128KeySeq<ResultType, 10>, 10, Blocks>;
+      AESNIEngine<ResultType, AES128KeySeq<ResultType, 10>, 10, Blocks>;
 
   template <typename ResultType, std::size_t Blocks = VSMC_RNG_AES_BLOCKS>
   using AES192Engine =
-  AESNIEngine<ResultType, AES192KeySeq<ResultType, 12>, 12, Blocks>;
+      AESNIEngine<ResultType, AES192KeySeq<ResultType, 12>, 12, Blocks>;
 
   template <typename ResultType, std::size_t Blocks = VSMC_RNG_AES_BLOCKS>
   using AES256Engine =
-  AESNIEngine<ResultType, AES256KeySeq<ResultType, 14>, 14, Blocks>;
+      AESNIEngine<ResultType, AES256KeySeq<ResultType, 14>, 14, Blocks>;
 \end{cppcode}
 The default template arguments can be changed by configuration macros listed in
 table~\ref{tab:Configuration macros for the counter-based RNG}. Shortcuts are
@@ -186,14 +186,14 @@ also defined, as listed in table~\ref{tab:Counter-based RNG}. For example,
 \cppinline{ARS_4x32} is \cppinline{ARSEngine} with result type
 \cppinline{std::uint32_t}, four blocks, and the default number of rounds.
 
-\subsubsection{Philox}
-\label{ssub:Philox}
+\subsection{Philox}
+\label{sub:Philox}
 
 The Philox algorithm in \textcite{Salmon:2011um} is implemented in a more
 general form,
 \begin{cppcode}
   template <typename ResultType, std::size_t K = VSMC_RNG_PHILOX_VECTOR_LENGTH,
-  std::size_t Rounds = VSMC_RNG_PHILOX_ROUNDS>
+      std::size_t Rounds = VSMC_RNG_PHILOX_ROUNDS>
   using PhiloxEngine = CounterEngine<PhiloxGenerator<ResultType, K, Rounds>>;
 \end{cppcode}
 The default vector length and the number of rounds can be changed by
@@ -203,14 +203,14 @@ table~\ref{tab:Counter-based RNG}. For example, \cppinline{Philox4x32} is
 \cppinline{PhiloxEngine} with result type \cppinline{std::uint32_t}, vector
 length four, and the default number of rounds.
 
-\subsubsection{Threefry}
-\label{ssub:Threefry}
+\subsection{Threefry}
+\label{sub:Threefry}
 
 The Threefry algorithm in \textcite{Salmon:2011um} is implemented in a more
 general form,
 \begin{cppcode}
   template <typename ResultType, std::size_t K = VSMC_RNG_THREEFRY_VECTOR_LENGTH,
-  std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
+      std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
   using ThreefryEngine = CounterEngine<ThreefryGenerator<ResultType, K, Rounds>>;
 \end{cppcode}
 The default vector length and the number of rounds can be changed by
@@ -226,18 +226,18 @@ larger state size. If \avx{}2 intrinsics are supported, then a even more
 optimized, with even larger state size version is also implemented.
 \begin{cppcode}
   template <typename ResultType, std::size_t K = VSMC_RNG_THREEFRY_VECTOR_LENGTH,
-  std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
+      std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
   using ThreefryEngineSSE2 =
-  CounterEngine<ThreefryGeneratorSSE2<ResultType, K, Rounds>>;
+      CounterEngine<ThreefryGeneratorSSE2<ResultType, K, Rounds>>;
 
   template <typename ResultType, std::size_t K = VSMC_RNG_THREEFRY_VECTOR_LENGTH,
-  std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
+      std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
   using ThreefryEngineAVX2 =
-  CounterEngine<ThreefryGeneratorAVX2<ResultType, K, Rounds>>;
+      CounterEngine<ThreefryGeneratorAVX2<ResultType, K, Rounds>>;
 \end{cppcode}
 
-\subsubsection{Default \protect\rng}
-\label{ssub:Default RNG}
+\subsection{Default \protect\rng}
+\label{sub:Default RNG}
 
 Note that, not all \rng{}s defined by the library is available on all
 platforms. The library also defines a type alias \cppinline{RNG} which is one
@@ -260,15 +260,15 @@ and last, on all other platforms,
 \end{cppcode}
 This can be changed by the configuration macro \cppinline{VSMC_RNG_TYPE}.
 
-\subsection{Non-deterministic \protect\rng}
-\label{sub:Non-deterministic RNG}
+\section{Non-deterministic \protect\rng}
+\label{sec:Non-deterministic RNG}
 
 If the \rdrand intrinsics are supported, the library also implement three
 \rng{}s, \cppinline{RDRAND16}, \cppinline{RDRAND32} and \cppinline{RDRAND64}.
 They output 16-, 32-, and 64-bits random unsigned integers, respectively.
 
-\subsection{\protect\mkl{} \protect\rng}
-\label{sub:MKL RNG}
+\section{\protect\mkl{} \protect\rng}
+\label{sec:MKL RNG}
 
 The \mkl library provides some high performance \rng{}s. The library implement
 a wrapper class \cppinline{MKLEngine} that makes them accessible as \cppoo{}
@@ -296,10 +296,10 @@ larger state space than usual \rng{}s.
   \label{tab:MKL RNG}
 \end{table}
 
-\subsection{Multiple \protect\rng streams}
-\label{sub:Multiple RNG streams}
+\section{Multiple \protect\rng streams}
+\label{sec:Multiple RNG streams}
 
-Earlier in section~\ref{ssub:Particle} we introduced that
+Earlier in section~\ref{sub:Particle} we introduced that
 \cppinline{particle.rng(i)} returns an independent \rng instance. This is
 actually done through a class template called \cppinline{RNGSet}. Three of them
 are implemented in the library. They all have the same interface,
@@ -329,27 +329,27 @@ computation at the calling site is trivial. For example,
 \begin{cppcode}
   std::size_t eval_pre(SingleParticle<T> sp)
   {
-    auto &rng = sp.rng();
-    // using rng to initialize state
-    // do some computation, likely far more costly than TLS
+      auto &rng = sp.rng();
+      // using rng to initialize state
+      // do some computation, likely far more costly than TLS
   }
 \end{cppcode}
 The type alias \cppinline{RNGSet} is defined to be \cppinline{RNGSetTBB} if
-\tbb is available. Otherwise it is defined to be \cppinline{RNGSetVector}. It
-is used by the \cppinline{Particle} class template. One can replace the type of
-\rng set used by \cppinline{Particle<T>} with a member type of \cppinline{T}.
-For example,
+\tbb is available, otherwise defined to be \cppinline{RNGSetVector}. It is used
+by the \cppinline{Particle} class template. One can replace the type of \rng
+set used by \cppinline{Particle<T>} with a member type of \cppinline{T}.  For
+example,
 \begin{cppcode}
   class T
   {
-    using rng_set_type = /* User defined type */;
+      using rng_set_type = /* User defined type */;
   };
 \end{cppcode}
 will make the \rng set used by \cppinline{Particle<T>} replaced by the user
 defined type.
 
-\subsection{Distributions}
-\label{sub:Distributions}
+\section{Distributions}
+\label{sec:Distributions}
 
 The library also provides implementations of some common distributions. They
 all conforms to the \cppoo random number distribution concepts. Some of them
@@ -389,7 +389,7 @@ The last, the library also implement the multivariate Normal distribution. Its
 usable is summarized by the following.
 \begin{cppcode*}{texcomments}
   double mean[2] = { /* the mean vector */ };
-  double cov[4] = { / * the covariance matrix */ };
+  double cov[4] = { /* the covariance matrix */ };
   double chol[3];
   double r[2];
   // Compute the lower triangular of the Cholesky decomposition
@@ -403,8 +403,8 @@ usable is summarized by the following.
 We shall mention here that the static form, where the dimension is specified as
 a template parameter is more efficient.
 
-\subsection{Vectorized random number generating}
-\label{sub:Vectorized random number generating}
+\section{Vectorized random number generating}
+\label{sec:Vectorized random number generating}
 
 The \rng{}s and distributions implemented by this library provides vectorized
 operations. For example,

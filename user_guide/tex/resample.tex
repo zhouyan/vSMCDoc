@@ -1,8 +1,8 @@
-\section{Resampling}
-\label{sec:Resampling}
+\chapter{Resampling}
+\label{chap:Resampling}
 
 The library supports resampling in a more general way than the algorithm
-described in section~\ref{sec:Sequential Monte Carlo}. Recall that, given a
+described in chapter~\ref{chap:Sequential Monte Carlo}. Recall that, given a
 particle system $\{W^{(i)},X^{(i)}\}_{i=1}^N$, a new system $\{\bar{W}^{(i)},
 \bar{X}^{(i)}\}_{i=1}^M$ is generated. Regardless other statistical properties,
 in practice, such an algorithm can be decomposed into three steps. First, a
@@ -13,7 +13,7 @@ vector $\{a_i\}_{i=1}^M$ is generated such that, $\sum_{i=1}^M
 The first step determines the statistical properties of the resampling
 algorithm. The library defines all algorithms discussed in
 \textcite{Douc:2005wa}. Samplers can be constructed with builtin schemes as
-seen in section~\ref{ssub:Implementations}. In addition, samplers can also be
+seen in section~\ref{sub:Implementations}. In addition, samplers can also be
 constructed with user defined resampling operations. Below is the signature,
 \begin{cppcode}
   template <typename IntType, typename RNGType>
@@ -41,8 +41,8 @@ to achieve optimal performance. In those situations, it is best to use
 \cppinline{ResampleMultinomial} etc., to generate the replication numbers, and
 manually perform the rest of the resampling algorithm.
 
-\subsection{Resizing a sampler}
-\label{sub:Resizing a sampler}
+\section{Resizing a sampler}
+\label{sec:Resizing a sampler}
 
 Now, we provide an example of changing sampler size,
 \begin{cppcode}

@@ -1,8 +1,8 @@
-\section{Advanced usage}
-\label{sec:Advanced usage}
+\chapter{Advanced usage}
+\label{chap:Advanced usage}
 
-\subsection{Cloning objects}
-\label{sub:Cloning objects}
+\section{Cloning objects}
+\label{sec:Cloning objects}
 
 The \cppinline{Sampler<T>} and \cppinline{Particle<T>} objects have copy
 constructors, assignment operators, move constructors, and move assignment
@@ -45,8 +45,8 @@ behaves exactly the same as
 The above method also supports move semantics. Similar \cppinline{clone}
 methods exist for the \cppinline{Particle<T>} class.
 
-\subsection{Customizing member types}
-\label{sub:Customizing member types}
+\section{Customizing member types}
+\label{sec:Customizing member types}
 
 The \cppinline{Particle<T>} class has a few member types that can be replaced
 by the user. If the class \cppinline{T} has the corresponding types, then the
@@ -120,22 +120,22 @@ has been allocated $N_r$ particles.
 \end{cppcode*}
 When \cppinline{Particle<T>} performs resampling, it checks if the pointer
 returned by \cppinline{w.resample_data()} is a null pointer. It will only
-generate the vector $\{a_i\}_{i=1}^N$ (see section~\ref{ssub:State}) when it is
+generate the vector $\{a_i\}_{i=1}^N$ (see section~\ref{sub:State}) when it is
 not a null pointer. And then a pointer to this vector is passed to
 \cppinline{T::copy}. Of course, the class \cppinline{T} also needs to provide a
 suitable method \cppinline{copy} that can handle the distributed system. By
 defining suitable \cppinline{WeightMPI} and \cppinline{T::copy}, the library
 can be extended to handle distributed systems.
 
-\subsection{Extending \protect\spt}
-\label{sub:Extending SPT}
+\section{Extending \protect\spt}
+\label{sec:Extending SP}
 
 The \cppinline{SingleParticle<T>} can also be extended by the user. We have
-already see in section~\ref{ssub:State} that if class \cppinline{T} is a
+already see in section~\ref{sub:State} that if class \cppinline{T} is a
 subclass of \cppinline{StateMatrix}, \cppinline{SingleParticle<T>} can have
 additional methods to access the state. This class can be extended by defining
 a member class template inside class \cppinline{T}. For example, for the simple
-particle filter in section~\ref{sub:A simple particle filter}, we can redefine
+particle filter in section~\ref{sec:A simple particle filter}, we can redefine
 the \cppinline{PFState} as the following,
 \begin{cppcode}
   using PFStateBase = vsmc::StateMatrix<vsmc::RowMajor, 4, double>;

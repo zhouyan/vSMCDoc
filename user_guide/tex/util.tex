@@ -1,13 +1,13 @@
-\section{Utilities}
-\label{sec:Utilities}
+\chapter{Utilities}
+\label{chap:Utilities}
 
 The library provides some utilities for writing Monte Carlo simulation
 programs. For some of them, such as command line option processing, there are
 more advanced, dedicated libraries out there. The library only provides some
 basic functionality that is sufficient for most simple cases.
 
-\subsection{Aligned memory allocation}
-\label{sub:Aligned memory allocation}
+\section{Aligned memory allocation}
+\label{sec:Aligned memory allocation}
 
 The standard library class \cppinline{std::allocator} is used by containers to
 allocate memory. It works fine in most cases. However, sometime it is desired
@@ -27,8 +27,8 @@ this library defines a type alias \cppinline{Vector<T>} which is
 \cppinline{std::vector<T, AlignedAllocator<T>>} if \cppinline{T} is a scalar
 type, and \cppinline{std::vector<T>} otherwise.
 
-\subsection{Sample covariance estimating}
-\label{sub:Sample covariance estimating}
+\section{Sample covariance estimating}
+\label{sec:Sample covariance estimating}
 
 The library provides some basic functionality to estimate sample variance. For
 example,
@@ -61,7 +61,7 @@ packed, otherwise the lower triangular is packed.
 
 The estimated covariance matrix is often used to construct multivariate Normal
 distribution for the purpose of generating random walk scales. The
-\cppinline{NormalMVDistribution} in section~\ref{sub:Distributions} accepts
+\cppinline{NormalMVDistribution} in section~\ref{sec:Distributions} accepts
 the lower triangular of the Cholesky decomposition of the covariance instead of
 the covariance matrix itself. The following function will compute this
 decomposition,
@@ -74,8 +74,8 @@ function also has three optional parameters, which are the same as those of
 \cppinline{Covariance::operator()}, except that they are now used to specify
 the storage scheme of the input parameter \cppinline{cov}. 
 
-\subsection{Storing objects in \protect\hdf}
-\label{sub:Storing objects in HDF5}
+\section{Storing objects in \protect\hdf}
+\label{sec:Storing objects in HDF5}
 
 If the \hdf library is available, it is possible to store
 \cppinline{Sampler<T>} objects, etc., in the \hdf format. For example,
@@ -89,11 +89,11 @@ as the following,
   pf <- as.data.frame(h5read("pf.h5", "sampler"))
 \end{rcode}
 This creates a \rinline{data.frame} similar to that shown in
-section~\ref{ssub:Implementations}. Other types of objects can also be store,
+section~\ref{sub:Implementations}. Other types of objects can also be store,
 see the reference manual for details.
 
-\subsection{\protect\raii classes for \protect\mkl pointers}
-\label{sub:RAII classes for MKL pointers}
+\section{\protect\raii classes for \protect\mkl pointers}
+\label{sec:RAII classes for MKL pointers}
 
 The library provides a few classes to manage \mkl pointers. It provides
 Resource Acquisition Is Initialization (\raii) idiom on top of the \mkl C
@@ -129,12 +129,12 @@ classes defined by the library and their corresponding \mkl pointers.
   \label{tab:RAII classes for MKL pointers}
 \end{table}
 
-\subsection{Program options}
-\label{sub:Program options}
+\section{Program options}
+\label{sec:Program options}
 
 The library provides some basic support of processing command line program
 options. Here we show a minimal example. The complete program is shown in
-appendix~\appref{sub:Processing command line program options}. First, one need to
+appendix~\appref{sec:Processing command line program options}. First, one need to
 allocated variables to store the options to be processed.
 \begin{cppcode}
   int n;
@@ -143,12 +143,11 @@ allocated variables to store the options to be processed.
 \end{cppcode}
 All types that support standard library \io operations are supported. In
 addition, \cppinline{std::vector<T>}, where \cppinline{T} is a type that
-supports standard library \io operations is also supported. Then one constructs
-a \cppinline{ProgramOptionMap} object,
+supports standard library \io operations is also supported. Then,
 \begin{cppcode}
   ProgramOptionMap option_map;
 \end{cppcode}
-Options can be added to the map,
+constructs the container of options. Options can be added to the map,
 \begin{cppcode}
   option_map
       .add("str", "A string option with a default value", &str, "default")
@@ -165,28 +164,28 @@ processed as the following,
 where \cppinline{argc} and \cppinline{argv} are the arguments of the
 \cppinline{main} function. When the program is invoked, each option can be
 passed like below,
-\begin{consolecode}
+\begin{textcode}
   ./program_option --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
-\end{consolecode}
+\end{textcode}
 The results of the option processing is displayed below,
-\begin{consolecode}
+\begin{textcode}
   n: 4
   str: def hij
   vec: 1 2 0.1 8 9
-\end{consolecode}
+\end{textcode}
 To summarize these output, the same option can be specified multiple times. If
-it is a scalar option, the last one is used (\shinline{--str}, \shinline{--n}).
-A string option's value can be grouped by quotes. For a vector option
-(\shinline{--vec}), all values are gather together and inserted into the
-vector.
+it is a scalar option, the last one is used (\textinline{--str},
+\textinline{--n}). A string option's value can be grouped by quotes. For a
+vector option (\textinline{--vec}), all values are gather together and inserted
+into the vector.
 
-\subsection{Program progress}
-\label{sub:Program progress}
+\section{Program progress}
+\label{sec:Program progress}
 
 Sometime it is desirable to see how much progress of a program has been made.
 The library provide a \cppinline{Progress} class for this purpose. Here we show
 a minimal example. The complete program is shown in
-appendix~\appref{sub:Display program progress}.
+appendix~\appref{sec:Display program progress}.
 \begin{cppcode}
   vsmc::Progress progress;
   progress.start(n * n);
@@ -202,9 +201,9 @@ appendix~\appref{sub:Display program progress}.
   progress.stop();
 \end{cppcode}
 When invoked, the program output something similar the below
-\begin{consolecode}
+\begin{textcode}
   [  4%][00:07][  49019/1000000][i = 49]
-\end{consolecode}
+\end{textcode}
 The method \cppinline{progress.start(n * n)} starts the printing of the
 progress. The argument specifies how many iterations there will be before it is
 stopped. The method \cppinline{progress.message(ss.str())} direct the program
@@ -213,8 +212,8 @@ we increment the progress count by calling \cppinline{progress.increment()}.
 And after everything is finished, the method \cppinline{progress.stop()} is
 called.
 
-\subsection{Timing}
-\label{sub:Timing}
+\section{Timing}
+\label{sec:Timing}
 
 Performance can only be improved after it is first properly benchmarked. There
 are advanced profiling programs for this purpose. However, sometime simple
@@ -236,5 +235,3 @@ The above example demonstrate that timing can be accumulated between loop
 iterations, function calls, etc. It shall be noted that, the time is only
 accurate if the computation between \cppinline{watch.start()} and
 \cppinline{watch.stop()} is non-trivial.
-
-\printbibliography[title=\refname]

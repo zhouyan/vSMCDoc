@@ -1,8 +1,8 @@
-\section{Basic usage}
-\label{sec:Basic usage}
+\chapter{Basic usage}
+\label{chap:Basic usage}
 
-\subsection{Conventions}
-\label{sub:Conventions}
+\section{Conventions}
+\label{sec:Conventions}
 
 All classes that are accessible to users are within the name space
 \cppinline{vsmc}. Class names are in \cppinline{CamelCase} and function names,
@@ -11,14 +11,14 @@ guide, we will omit the \cppinline{vsmc::} name space qualifiers. We will use
 ``function'' for referring to name space scope functions and ``method'' for
 class member functions.
 
-\subsection{Getting and installing the library}
-\label{sub:Getting and installing the library}
+\section{Getting and installing the library}
+\label{sec:Getting and installing the library}
 
 The library is hosted at
 GitHub\footnote{\url{https://github.com/zhouyan/vSMC}}. This is a header only
 \cpp template library. To install the library just move the contents of the
-\shinline{include} directory into a proper place, e.g.,
-\shinline{/usr/local/include} on Unix-alike systems. This library requires
+\texttt{include} directory into a proper place, e.g.,
+\texttt{/usr/local/include} on Unix-alike systems. This library requires
 working \cppoo, \blas and \lapack implementations. Standard C interface headers
 for the later two (\cppinline{cblas.h} and \cppinline{lapacke.h}) are required.
 Intel Threading Building
@@ -30,8 +30,8 @@ third-party libraries. One need to define the configuration macros
 \cppinline{VSMC_HAS_HDF5} to nonzero values before including any \vsmc headers
 to make their existence known to the library, respectively.
 
-\subsection{Concepts}
-\label{sub:Concepts}
+\section{Concepts}
+\label{sec:Concepts}
 
 The library is structured around a few core concepts. A sampler is responsible
 for running an algorithm. It is composed by a particle system and operations on
@@ -67,8 +67,8 @@ are introduced in detail in the following sections.
   \label{tab:concepts}
 \end{table}
 
-\subsubsection{State}
-\label{ssub:State}
+\subsection{State}
+\label{sub:State}
 
 The library gives users the maximum flexibility of how the states
 $\{X^{(i)}\}_{i=1}^N$ shall be stored and structured. Any class type with a
@@ -110,31 +110,31 @@ dimension is fixed and cannot be changed at runtime. The last template
 parameter \cppinline{T} is the \cpp type of state space. The following
 constructs an object of this class,
 \begin{cppcode}
-  StateMatrix<ColMajor, Dynamic, double> sm(N);
+  StateMatrix<ColMajor, Dynamic, double> s(N);
 \end{cppcode}
 where \cppinline{Dynamic} is just an enumerator with value zero. We can specify
-the dimension at runtime through the method \cppinline{sm.resize_dim(d)}. Note
+the dimension at runtime through the method \cppinline{s.resize_dim(d)}. Note
 that, if the template parameter \cppinline{Dim} is positive, then this call
 results in a compile-time error.
 
-To access $X_{ij}$, the value of the state of the $i$\ith particle at
-coordinate $j$, one can use the method \cppinline{sm.state(i, j)}. The method
-\cppinline{sm.data()} returns a pointer to the beginning of the matrix. If
+To access $X_{ij}$, the value of the state of the $i$\ith particle at the
+$j$\ith coordinate, one can use the method \cppinline{s.state(i,j)}. The method
+\cppinline{s.data()} returns a pointer to the beginning of the matrix.  If
 \cppinline{Layout} is \cppinline{RowMajor}, then the method
-\cppinline{sm.row_data(i)} returns a pointer to the beginning of the $i$\ith
+\cppinline{s.row_data(i)} returns a pointer to the beginning of the $i$\ith
 row. If \cppinline{Layout} is \cppinline{ColMajor}, then the method
-\cppinline{sm.col_data(j)} returns a pointer to the beginning of the $j$\ith
+\cppinline{s.col_data(j)} returns a pointer to the beginning of the $j$\ith
 column. These methods help interfacing with numerical libraries, such as \blas.
 
 The \cppinline{StateMatrix} class deliberately does not provide a
 \cppinline{resize} method. There are algorithms that change the sample size
 between iterations. However, such algorithms often change size through
 resampling or other methods, either deterministically or stochastically. An
-example of changing size of a sampler is provided in section~\ref{sub:Resizing
+example of changing size of a sampler is provided in section~\ref{sec:Resizing
   a sampler}.
 
-\subsubsection{Weight}
-\label{ssub:Weight}
+\subsection{Weight}
+\label{sub:Weight}
 
 The vector of weights $\{W^{(i)}\}_{i=1}^N$ is abstracted in the library by the
 \cppinline{Weight} class. The following constructs an object of this class,
@@ -157,8 +157,8 @@ The method \cppinline{w.data()} returns a pointer to the normalized weights. It
 is important to note that the weights are always normalized and all mutable
 methods only allow access to $\{W^{(i)}\}_{i=1}^N$ as a whole.
 
-\subsubsection{Particle}
-\label{ssub:Particle}
+\subsection{Particle}
+\label{sub:Particle}
 
 A particle system is composed of both the state values, which is of user
 defined type, say \cppinline{T}, and the weights. The following constructs an
@@ -170,7 +170,7 @@ The method \cppinline{particle.value()} returns the type \cppinline{T} object,
 and \cppinline{particle.weight()} returns the type \cppinline{Weight}
 object\footnote{More precisely, it is a \cppinline{Particle<T>::weight_type}
   object, whose exact type depends on the type \cppinline{T}. See
-  section~\ref{sub:Customizing member types} for more details. If the user does
+  section~\ref{sec:Customizing member types} for more details. If the user does
   not do something special as shown in that section, then the default type is
   the class \cppinline{Weight}}. They are constructed with the same integer
 value $N$ when the above constructor is invoked.
@@ -236,10 +236,10 @@ can write functions that process each particle, for example,
 \end{cppcode*}
 And if later this function is called from a parallelized environment, it is
 still thread-safe and produce desired statistical results. The details of the
-\rng system are documented later in section~\ref{sec:Random number generating}.
+\rng system are documented later in chapter~\ref{chap:Random number generating}.
 
-\subsubsection{Single particle}
-\label{ssub:Single particle}
+\subsection{Single particle}
+\label{sub:Single particle}
 
 It is often easier to define a function $f(X^{(i)})$ than
 $f(X^{(1)},\dots,X^{(N)})$. However, \cppinline{Particle<T>} only provides
@@ -268,11 +268,11 @@ additional methods,
   sp.state(j); // => sp.particle().value().state(sp.id(), j);
 \end{cppcode}
 It is clear now that the interface of \cppinline{SingleParticle<T>} depends on
-the type \cppinline{T}. Later in section~\ref{sub:Customizing SingleParticle}
+the type \cppinline{T}. Later in section~\ref{sec:Extending SP}
 we will show how to insert additional methods into this class.
 
-\subsubsection{Sampler}
-\label{ssub:Sampler}
+\subsection{Sampler}
+\label{sub:Sampler}
 
 A sampler can be constructed in a few ways,
 \begin{cppcode}
@@ -284,7 +284,7 @@ constructs a sampler that is never resampled, while
 \end{cppcode}
 constructs a sampler that is resampled every iteration, using the multinomial
 algorithm. Other resampling schemes are also implemented, see
-section~\ref{sec:Resampling}. Last, one can also construct a sampler that is
+chapter~\ref{chap:Resampling}. Last, one can also construct a sampler that is
 only resampled when $\ess < \alpha N$, where $\alpha\in[0, 1]$, by the
 following,
 \begin{cppcode}
@@ -353,8 +353,8 @@ that specifies the number of iterations. It is a shortcut for
       sampler.iterate();
 \end{cppcode}
 
-\subsubsection{Monitor}
-\label{ssub:Monitor}
+\subsection{Monitor}
+\label{sub:Monitor}
 
 Inferences using a \smc algorithm usually require the calculation of the
 quantity $\sum_{i=1}^NW^{(i)}\varphi(X^{(i)})$ at each iteration for some
@@ -417,13 +417,13 @@ format, for example,
 \begin{cppcode}
   hdf5store(sampler, file_name, data_name);
 \end{cppcode}
-Details can be found in section~\ref{sub:Storing objects in HDF5}.
+Details can be found in section~\ref{sec:Storing objects in HDF5}.
 
-\subsection{A simple particle filter}
-\label{sub:A simple particle filter}
+\section{A simple particle filter}
+\label{sec:A simple particle filter}
 
-\subsubsection{Model and algorithm}
-\label{ssub:Model and algorithm}
+\subsection{Model and algorithm}
+\label{sub:Model and algorithm}
 
 This is an example used in \textcite{Johansen:2009wd}. Through this example, we
 will show how to re-implement a simple particle filter in \vsmc. It shall walk
@@ -491,14 +491,14 @@ filter algorithm is shown in algorithm~\ref{alg:pf}.
   \label{alg:pf}
 \end{algorithm}
 
-\subsubsection{Implementations}
-\label{ssub:Implementations}
+\subsection{Implementations}
+\label{sub:Implementations}
 
-The complete program is shown in appendix~\appref{sub:Sequential implementation
+The complete program is shown in appendix~\appref{sec:Sequential implementation
   of a simple particle filter}. In this section we show the outline of the
 implementation.
 
-\paragraph{The main program}
+\subsubsection{The main program}
 
 \begin{cppcode}
     vsmc::Sampler<PFState> sampler(N, vsmc::Multinomial, 0.5);
@@ -540,27 +540,27 @@ output
 \end{rcode}
 
 The \rinline{print} statement shows the first five lines of the output,
-\begin{routcode}
+\begin{textcode}
     Size Resampled Accept.0      ESS    pos.0   pos.1
   1 1000         1        0   2.9204 -1.21951 3.16397
   2 1000         1        0 313.6830 -1.15602 3.22770
   3 1000         1        0  33.0421 -1.26451 3.04031
   4 1000         1        0  80.1088 -1.45922 3.37625
   5 1000         1        0 382.8820 -1.47299 3.49230
-\end{routcode}
-The column \routinline{Size} shows the sample size at each iteration. The
+\end{textcode}
+The column \textinline{Size} shows the sample size at each iteration. The
 library does not provide direct support of changing the sample size. However,
-it is possible and an example is shown in section~\ref{sub:Resizing a sampler}.
-The column \routinline{Resampled} shows nonzero values if resampling were
+it is possible and an example is shown in section~\ref{sec:Resizing a sampler}.
+The column \textinline{Resampled} shows nonzero values if resampling were
 performed and zero otherwise. For each moves and \mcmc steps, an acceptance
 count will be recorded. In this particular example, it is irrelevant. Next the
-column \routinline{ESS} shows the value of \ess. The last two columns show the
+column \textinline{ESS} shows the value of \ess. The last two columns show the
 importance sampling estimates of the positions recorded by the monitor named
 \cppinline{"pos"}. The graphical representation of the output is shown in
 figure~\ref{fig:pf}.
 
 \begin{figure}
-  \includegraphics{cpp/pf}
+  \includegraphics[width=\linewidth]{cpp/pf}
   \caption{A simple particle filter}
   \label{fig:pf}
 \end{figure}
@@ -586,7 +586,7 @@ Last, we define the following constants as the indices of each state component.
   static constexpr std::size_t VelY = 3;
 \end{cppcode}
 
-\paragraph{State: \texttt{PFState}}
+\subsubsection{State: \texttt{PFState}}
 
 As noted earlier, \cppinline{StateMatrix} will be used as the base class of
 \cppinline{PFState}. Since the data will be shared by all particles, we also
@@ -612,7 +612,7 @@ shown,
   };
 \end{cppcode*}
 
-\paragraph{Initialization: \texttt{PFInit}}
+\subsubsection{Initialization: \texttt{PFInit}}
 
 The initialization step is implemented as below,
 \begin{cppcode}
@@ -673,11 +673,11 @@ loop initializes each state component with the respective Gaussian
 distribution, computes the log-likelihood and store them in the vector
 allocated in the last step. This is done by calling the \cppinline{eval_sp}
 method. After all particles have been initialized, we set the weights of the
-system in \cppinline{eval_post}. Later in section~\ref{sub:Symmetric
+system in \cppinline{eval_post}. Later in section~\ref{sec:Symmetric
   Multiprocessing} it will become clear why we structured the implementation
 this way.
 
-\paragraph{Move: \texttt{PFMove}}
+\subsubsection{Move: \texttt{PFMove}}
 
 The move step is similar to the initialization. We show the declaration here,
 \begin{cppcode}
@@ -694,7 +694,7 @@ The move step is similar to the initialization. We show the declaration here,
   };
 \end{cppcode}
 
-\paragraph{Monitor: \texttt{PFMEval}}
+\subsubsection{Monitor: \texttt{PFMEval}}
 
 Last we define \cppinline{PFMEval}, which simply copies the values of the
 positions.
@@ -724,8 +724,8 @@ positions.
   };
 \end{cppcode}
 
-\subsection{Symmetric Multiprocessing}
-\label{sub:Symmetric Multiprocessing}
+\section{Symmetric Multiprocessing}
+\label{sec:Symmetric Multiprocessing}
 
 The above example is implemented in a sequential fashion. However, the loops
 inside \cppinline{PFInit}, \cppinline{PFMove} and \cppinline{PFMEval} clearly
@@ -741,7 +741,7 @@ will declare the implementation classes as subclasses as below,
 And remove \cppinline{operator()} from their implementations. After these
 changes, the implementation will be parallelized using \tbb. The complete
 program can be found in section The complete program is shown in
-appendix~\appref{sub:Parallelized implementation of a simple particle filter}.
+appendix~\appref{sec:Parallelized implementation of a simple particle filter}.
 
 It works as if \cppinline{InitializationTBB<PFState>} has an implementation of
 \cppinline{operator()} as we did before, except it is parallelized. Now it is
@@ -765,8 +765,8 @@ backend and obtain optimal performance latter by only changing the name of a
 few base class names. This can usually be done automatically through a build
 system.
 
-\subsubsection{Performance consideration}
-\label{sub:Performance consideration}
+\subsection{Performance consideration}
+\label{sec:Performance consideration}
 
 The base classes dispatch calls to \cppinline{eval_pre}, \cppinline{eval_sp},
 etc., through the virtual function mechanism. The performance impact is minimal

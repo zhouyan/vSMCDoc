@@ -10,7 +10,7 @@ int main(int argc, char **argv)
     option_map
         .add("str", "A string option with a default value", &str, "default")
         .add("n", "An integer option", &n)
-        .add("vec", "A vector option");
+        .add("vec", "A vector option", &vec);
     option_map.process(argc, argv);
 
     std::cout << "n: " << n << std::endl;

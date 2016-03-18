@@ -1,0 +1,155 @@
+\section{Utilities}
+\label{sec:Utilities}
+
+The library provides some utilities for writing Monte Carlo simulation
+programs. For some of them, such as command line option processing, there are
+more advanced, dedicated libraries out there. The library only provides some
+basic functionality that is sufficient for more simple cases.
+
+\subsection{Aligned memory allocation}
+\label{sub:Aligned memory allocation}
+
+The standard library class \cppinline{std::allocator} is used by containers to
+allocate memory. It works fine in most cases. However, sometime it is desired
+to allocate memory aligned by a certain boundary. The library provides the
+class template,
+\begin{cppcode}
+  template <typename T, std::size_t Alignment = VSMC_ALIGNMENT,
+  typename Memory = AlignedMemory>
+  class AlignedAllocator;
+\end{cppcode}
+where the configuration macro \cppinline{VSMC_ALIGNMENT} is defined to be
+\cppinline{32} by default. For the requirement of the parameter type
+\cppinline{Memory}, see the reference manual. It is sufficient to mention here
+that the default implementation works best if \tbb is available. This class can
+be used as a drop-in replacement of \cppinline{std::allocator<T>}. In fact,
+this library defines a type alias \cppinline{Vector<T>} which is
+\cppinline{std::vector<T, AlignedAllocator<T>>} if \cppinline{T} is a scalar
+type, and \cppinline{std::vector<T>} otherwise.
+
+\subsection{Sample covariance estimating}
+\label{sub:Sample covariance estimating}
+
+\subsection{Storing objects in \protect\hdf}
+\label{sub:Storing objects in hdf}
+
+If the \hdf library is available, it is possible to store
+\cppinline{Sampler<T>} objects, etc., in the \hdf format. For example,
+\begin{cppcode}
+  hdf5store(sampler, "pf.h5", "sampler");
+\end{cppcode}
+create a \hdf file with the sampler stored as a list. In R it can be processed
+as the following,
+\begin{rcode}
+  library(rhdf5)
+  pf <- as.data.frame(h5read("pf.h5", "sampler"))
+\end{rcode}
+This creates a \rinline{data.frame} similar to that shown in
+section~\ref{ssub:Implementations}. Other types of objects can also be store,
+see the reference manual for details.
+
+\subsection{\protect\raii classes for \protect\mkl pointers}
+\label{sub:RAII classes for MKL pointers}
+
+\begin{table}[t]
+  \begin{tabu}{X[l]X[l]}
+    \toprule
+    Class & \mkl pointer type \\
+    \midrule
+    \texttt{MKLStream}   & \texttt{VSLStreamStatePtr} \\
+    \texttt{MKLSSTask}   & \texttt{VSLSSTaskPtr}      \\
+    \texttt{MKLConvTask} & \texttt{VSLConvTask}       \\
+    \texttt{MKLCorrTask} & \texttt{VSLCorrTask}       \\
+    \texttt{MKLDFTask}   & \texttt{DFTaskPtr}         \\
+    \bottomrule
+  \end{tabu}
+  \caption{\protect\raii classes for \protect\mkl pointers}
+  \label{tab:RAII classes for MKL pointers}
+\end{table}
+
+The library provides a few classes to manage \mkl pointers. It provides
+Resource Acquisition Is Initialization (\raii) idiom on top of the \mkl C
+interface. For example,
+\begin{cppcode}
+  // VSLSSTaskPtr ptr;
+  // vsldSSNewTask(&ptr, &p, &n, &xstorage, x, w, indices);
+  MKLSSTask<double> task(&p, &n, &xstorage, x, w, indices);
+  // vsldSSEditMoments(ptr, mean, r2m, r3m, r4m, c2m, c3m, c4m);
+  task.edit_moments(mean, r2m, r3m, r4m, c2m, c3m, c4m);
+  // vsldSSCompute(ptr, estimates, method);
+  task.compute(estimates, method)
+  // vslSSDeleteTask(&ptr);
+\end{cppcode}
+In the above snippets, \cppinline{MKLSSTask} manages a \cppinline{VSLSSTaskPtr}
+task pointer. All C functions that operates on the pointer, is also defined as
+methods in the class. Table~\ref{tab:Smart pointers for MKL} lists the classes
+defined by the library and their corresponding \mkl pointers.
+
+\subsection{Program options}
+\label{sub:Program options}
+
+The library provides some basic support of processing command line program
+options. Here is a minimal example
+\cppfile{program_option.cpp}
+
+When invoked as the following,
+\begin{consolecode}
+  ./prg --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
+\end{consolecode}
+The console output is as the following,
+\begin{consolecode}
+  n: 4
+  str: def hij
+  vec: 1 2 0.1 8 9
+\end{consolecode}
+To summarize these output, the same option can be specified multiple times. If
+it is a scalar option, the last one is used (\shinline{--str}, \shinline{--n}).
+A string option's value can be grouped by quotes. For a vector option
+(\shinline{--vec}), all values are gather together and inserted into the
+vector.
+
+\subsection{Program progress}
+\label{sub:Program progress}
+
+Sometime it is desirable to see how much progress of a program has been made.
+The library provide a \cppinline{Progress} class for this purpose. Below is a
+minimal example,
+\cppfile{progress.cpp}
+
+When invoked, the program output something similar the below
+\begin{consolecode}
+  [  4%][00:07][  49019/1000000][i = 49]
+\end{consolecode}
+The method \cppinline{progress.start(n * n)} starts the printing of the
+progress. The argument specifies how many iterations there will be before it is
+stopped. The method \cppinline{progress.message(ss.str())} direct the program
+to print a message. This is optional. Each time after we finish $n$ iterations,
+we increment the progress count by calling \cppinline{progress.increment()}.
+And after everything is finished, the method \cppinline{progress.stop()} is
+called.
+
+\subsection{Timing}
+\label{sub:Timing}
+
+Performance can only be improved after it is first properly benchmarked. There
+are advanced profiling programs for this purpose. However, sometime simple
+timing facilities are enough. The library provides a simple class
+\cppinline{StopWatch} for this purpose. As its name suggests, it works much
+like a physical stop watch. Here is a simple example
+\begin{cppcode}
+  StopWatch watch;
+  for (std::size_t i = 0; i != n; ++i) {
+    // Some computation
+    watch.start();
+    // Computation to be benchmarked;
+    watch.stop();
+    // Some other computation
+  }
+  double t = watch.seconds(); // The time in seconds
+\end{cppcode}
+The above example demonstrate that timing can be accumulated between loop
+iterations, function calls, etc. It shall be noted that, the time is only
+accurate if the computation between \cppinline{watch.start()} and
+\cppinline{watch.stop()} is non-trivial.
+
+\printbibliography[title=\refname]

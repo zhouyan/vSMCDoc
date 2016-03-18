@@ -1,6 +1,45 @@
 \chapter{Sequential Monte Carlo}
 \label{chap:Sequential Monte Carlo}
 
+\section{Introduction}
+\label{sec:Introduction}
+
+Sequential Monte Carlo (\smc) methods are a class of sampling algorithms that
+combine importance sampling and resampling. They have been primarily used as
+``particle filters'' to solve optimal filtering problems; see, for example,
+\textcite{Cappe:2007hz} and \textcite{Doucet:2011us} for recent reviews. They
+are also used in a static setting where a target distribution is of interest,
+for example, for the purpose of Bayesian modeling. This was proposed by
+\textcite{DelMoral:2006hc} and developed by \textcite{Peters:2005wh} and
+\textcite{DelMoral:2006wv}. This framework involves the construction of a
+sequence of artificial distributions on spaces of increasing dimensions which
+admit the distributions of interest as particular marginals.
+
+\smc algorithms are perceived as being difficult to implement while general
+tools were not available until the development of \textcite{Johansen:2009wd},
+which provided a general framework for implementing \smc algorithms. \smc
+algorithms admit natural and scalable parallelization. However, there are only
+parallel implementations of \smc algorithms for many problem specific
+applications, usually associated with specific \smc related researches.
+\textcite{Lee:2010fm} studied the parallelization of \smc algorithms on \gpu{}s
+with some generality. There are few general tools to implement \smc algorithms
+on parallel hardware though multicore \cpu{}s are very common today and
+computing on specialized hardware such as \gpu{}s are more and more popular.
+
+The purpose of the current work is to provide a general framework for
+implementing \smc algorithms on both sequential and parallel hardware. There
+are two main goals of the presented framework. The first is reusability. It
+will be demonstrated that the same implementation source code can be used to
+build a serialized sampler, or using different programming models (for example,
+OpenMP and Intel Threading Building Blocks) to build parallelized samplers for
+multicore \cpu{}s. The second is extensibility. It is possible to write a
+backend for \vsmc to use new parallel programming models while reusing existing
+implementations. It is also possible to enhance the library to improve
+performance for specific applications. Almost all components of the library can
+be reimplemented by users and thus if the default implementation is not
+suitable for a specific application, they can be replaced while being
+integrated with other components seamlessly.
+
 \section{Sequential importance sampling and resampling}
 \label{sec:Sequential importance sampling and resampling}
 

@@ -57,11 +57,11 @@ Now, we provide an example of changing sampler size,
   resample_trans_rep_index(M, N, rep.data(), idx.data());
   Particle<T> particle(M);
   for (std::size_t i = 0; i != M; ++i) {
-    auto sp_dst = particle.sp(i);
-    auto sp_src = sampler.partice().sp(idx[i]);
-    // Assuming T is a subclass of StateMatrix
-    for (std::size_t d = 0; d != sp_dst.dim(); ++d)
-    sp_dst.state(d) = sp_src.state(d);
+      auto sp_dst = particle.sp(i);
+      auto sp_src = sampler.partice().sp(idx[i]);
+      // Assuming T is a subclass of StateMatrix
+      for (std::size_t d = 0; d != sp_dst.dim(); ++d)
+      sp_dst.state(d) = sp_src.state(d);
   }
   // Copy other data of class T if any
   sampler.particle() = std::move(particle);

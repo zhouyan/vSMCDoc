@@ -1,9 +1,9 @@
-class PFState : public vsmc::StateMatrix<vsmc::RowMajor, 4, double>
+using PFStateBase = vsmc::StateMatrix<vsmc::RowMajor, 4, double>;
+
+class PFState : public PFStateBase
 {
     public:
-    using base = vsmc::StateMatrix<vsmc::RowMajor, 4, double>;
-
-    PFState(base::size_type N) : base(N) {}
+    using PFStateBase::PFStateBase;
 
     double log_likelihood(std::size_t iter, size_type i) const
     {

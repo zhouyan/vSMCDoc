@@ -1,18 +1,18 @@
-class PFState : public vsmc::StateMatrix<vsmc::RowMajor, 4, double>
+using PFStateBase = vsmc::StateMatrix<vsmc::RowMajor, 4, double>;
+
+template <typename T>
+using PFStateSPBase = PFStateBase::single_particle_type<T>;
+
+class PFState : public PFStateBase
 {
     public:
-    using base = vsmc::StateMatrix<vsmc::RowMajor, 4, double>;
-
-    PFState(base::size_type N) : base(N) {}
+    using PFStateBase::StateMatrix;
 
     template <typename S>
-    class single_particle_type : public base::single_particle_type<S>
+    class single_particle_type : public PFStateSPBase
     {
         public:
-        single_particle_type(std::size_t i, vsmc::Particle<T> *pptr)
-            : base::single_particle_type<S>(i, pptr)
-        {
-        }
+        using PFStateSPBase::single_particle_type;
 
         double &pos_x() { return this->state(0); }
         double &pos_y() { return this->state(1); }
@@ -41,7 +41,10 @@ class PFState : public vsmc::StateMatrix<vsmc::RowMajor, 4, double>
         }
     }
 
-    void read_data(const char *file) { /* same as before */ }
+    void read_data(const char *file)
+    {
+        // same as before
+    }
 
     private:
     vsmc::Vector<double> obs_x_;

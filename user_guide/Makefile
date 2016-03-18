@@ -15,6 +15,10 @@ pf.pdf pf.rout : pf.cpp pf.hpp pf_*.hpp
 	./pf
 	Rscript --vanilla pf.R
 
+pf_tbb : pf_tbb.cpp pf_tbb.hpp pf_*_tbb.hpp
+	$(CXX) $(CXXFLAGS) -o pf_tbb pf_tbb.cpp $(LDFLAGS)
+	./pf_tbb
+
 prog : progress.cpp
 	$(CXX) $(CXXFLAGS) -o progress progress.cpp $(LDFLAGS)
 	./progress

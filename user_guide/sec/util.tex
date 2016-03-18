@@ -4,7 +4,7 @@
 The library provides some utilities for writing Monte Carlo simulation
 programs. For some of them, such as command line option processing, there are
 more advanced, dedicated libraries out there. The library only provides some
-basic functionality that is sufficient for more simple cases.
+basic functionality that is sufficient for most simple cases.
 
 \subsection{Aligned memory allocation}
 \label{sub:Aligned memory allocation}
@@ -15,7 +15,7 @@ to allocate memory aligned by a certain boundary. The library provides the
 class template,
 \begin{cppcode}
   template <typename T, std::size_t Alignment = VSMC_ALIGNMENT,
-  typename Memory = AlignedMemory>
+      typename Memory = AlignedMemory>
   class AlignedAllocator;
 \end{cppcode}
 where the configuration macro \cppinline{VSMC_ALIGNMENT} is defined to be
@@ -29,6 +29,50 @@ type, and \cppinline{std::vector<T>} otherwise.
 
 \subsection{Sample covariance estimating}
 \label{sub:Sample covariance estimating}
+
+The library provides some basic functionality to estimate sample variance. For
+example,
+\begin{cppcode}
+  constexpr std::size_t d = /* Dimension */;
+  using T = StateMatrix<RowMajor, d, double>;
+  Sampler<T> sampler(N);
+  // operations on the sampler
+  double mean[d];
+  double cov[d * d];
+  Covariance eval;
+  auto x = sampler.particle().value().data();
+  auto w = sampler.particle().weight().data();
+  eval(RowMajor, N, d, x, w, mean, cov);
+\end{cppcode}
+The sample covariance matrix will be computed and stored in \cppinline{cov}.
+The mean vector is stored in \cppinline{mean}. Note that, if any of them is a
+null pointer, then the corresponding output is not computed. The sample
+\cppinline{x} is assumed to be stored in an $N$ by $d$ matrix. The first
+argument passed to \cppinline{eval} is the storage layout of this matrix. If
+\cppinline{x} is a null pointer, then no computation will be done. If
+\cppinline{w} is a null pointer, then the weight is assumed to be equal for all
+samples. The method has three additional optional parameters. The first is
+\cppinline{cov_layout}, which specifies the covariance matrix storage layout.
+The second is \cppinline{cov_upper} and the third \cppinline{cov_packed}, both
+are \cppinline{false} by default. If the later is \cppinline{cov_packed}, a
+packed vector of length $d(d+1)/2$ is written into \cppinline{cov}. If
+\cppinline{cov_upper} is \cppinline{false}, then the upper triangular is
+packed, otherwise the lower triangular is packed. 
+
+The estimated covariance matrix is often used to construct multivariate Normal
+distribution for the purpose of generating random walk scales. The
+\cppinline{NormalMVDistribution} in section~\ref{sub:Distributions} accepts
+the lower triangular of the Cholesky decomposition of the covariance instead of
+the covariance matrix itself. The following function will compute this
+decomposition,
+\begin{cppcode}
+  double chol[d * (d + 1) / 2];
+  cov_chol(d, cov, chol);
+\end{cppcode}
+The output \cppinline{chol} is a packed vector in row major storage. This
+function also has three optional parameters, which are the same as those of
+\cppinline{Covariance::operator()}, except that they are now used to specify
+the storage scheme of the input parameter \cppinline{cov}. 
 
 \subsection{Storing objects in \protect\hdf}
 \label{sub:Storing objects in HDF5}
@@ -66,10 +110,10 @@ interface. For example,
 \end{cppcode}
 In the above snippets, \cppinline{MKLSSTask} manages a \cppinline{VSLSSTaskPtr}
 task pointer. All C functions that operates on the pointer, is also defined as
-methods in the class. Table~\ref{tab:Smart pointers for MKL} lists the classes
-defined by the library and their corresponding \mkl pointers.
+methods in the class. Table~\ref{tab:RAII classes for MKL pointers} lists the
+classes defined by the library and their corresponding \mkl pointers.
 
-\begin{table}[ht]
+\begin{table}[t]
   \begin{tabu}{X[l]X[l]}
     \toprule
     Class & \mkl pointer type \\
@@ -85,21 +129,46 @@ defined by the library and their corresponding \mkl pointers.
   \label{tab:RAII classes for MKL pointers}
 \end{table}
 
-
 \subsection{Program options}
 \label{sub:Program options}
 
 The library provides some basic support of processing command line program
-options. Here is a minimal example
+options. Here we show a minimal example. The complete program is shown in
+appendix~\ref{sub:Processing command line program options}. First, one need to
+allocated variables to store the options to be processed.
 \begin{cppcode}
-  %FIXME \cppfile{program_option.cpp}
+  int n;
+  std::string str;
+  std::vector<double> vec;
 \end{cppcode}
-
-When invoked as the following,
+All types that support standard library \io operations are supported. In
+addition, \cppinline{std::vector<T>}, where \cppinline{T} is a type that
+supports standard library \io operations is also supported. Then one constructs
+a \cppinline{ProgramOptionMap} object,
+\begin{cppcode}
+  ProgramOptionMap option_map;
+\end{cppcode}
+Options can be added to the map,
+\begin{cppcode}
+  option_map
+      .add("str", "A string option with a default value", &str, "default")
+      .add("n", "An integer option", &n)
+      .add("vec", "A vector option", &vec);
+\end{cppcode}
+The first argument is the name of the option, the second is a description, and
+the third is a pointer to where the option's value shall be stored. The last
+optional argument is a default value. The options on the command line can be
+processed as the following,
+\begin{cppcode}
+  option_map.process(argc, argv);
+\end{cppcode}
+where \cppinline{argc} and \cppinline{argv} are the arguments of the
+\cppinline{main} function. When the program is invoked, each option can be
+passed like below,
 \begin{consolecode}
-  ./prg --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
+  ./program_option --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
 \end{consolecode}
-The console output is as the following,
+The results of the option processing is displayed below,
 \begin{consolecode}
   n: 4
   str: def hij
@@ -115,12 +184,23 @@ vector.
 \label{sub:Program progress}
 
 Sometime it is desirable to see how much progress of a program has been made.
-The library provide a \cppinline{Progress} class for this purpose. Below is a
-minimal example,
+The library provide a \cppinline{Progress} class for this purpose. Here we show
+a minimal example. The complete program is shown in appendix~\ref{sub:Display
+  program progress}.
 \begin{cppcode}
-  %FIXME \cppfile{progress.cpp}
+  vsmc::Progress progress;
+  progress.start(n * n);
+  for (std::size_t i = 0; i != n; ++i) {
+      std::stringstream ss;
+      ss << "i = " << i;
+      progress.message(ss.str());
+      for (std::size_t j = 0; j != n; ++j) {
+          // Do some computation
+          progress.increment();
+      }
+  }
+  progress.stop();
 \end{cppcode}
-
 When invoked, the program output something similar the below
 \begin{consolecode}
   [  4%][00:07][  49019/1000000][i = 49]
@@ -144,11 +224,11 @@ like a physical stop watch. Here is a simple example
 \begin{cppcode}
   StopWatch watch;
   for (std::size_t i = 0; i != n; ++i) {
-    // Some computation
-    watch.start();
-    // Computation to be benchmarked;
-    watch.stop();
-    // Some other computation
+      // Some computation
+      watch.start();
+      // Computation to be benchmarked;
+      watch.stop();
+      // Some other computation
   }
   double t = watch.seconds(); // The time in seconds
 \end{cppcode}

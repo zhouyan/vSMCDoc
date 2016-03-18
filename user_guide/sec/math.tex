@@ -93,76 +93,87 @@ The library provides a set of functions for vectorized mathematical operations.
 For example,
 \begin{cppcode}
   std::size_t n = 1000;
-  vsmc::Vector<double> a(n);
-  vsmc::Vector<double> b(n);
-  vsmc::Vector<double> y(n);
+  vsmc::Vector<double> a(n), b(n), y(n);
   // Fill vectors a and b
   add(n, a.data(), b.data(), y.data());
 \end{cppcode}
-performs addition for vectors. If the input $a$ and $b$ are pointers to length
-$n$ arrays, and the output $y$ is a pointer to array of the same length, then
-this function call compute $y_i = a_i + b_i$ for $i=1,\dots,n$. Either $a$ and
-$b$ can also be scalars. For example, if $b$ is a scalar, then the operation
-performed is $y_i = a_i + b$. The functions defined are listed in
-table~\ref{tab:Vectorized mathematical operations}. For each function, the
-first parameter is always the length of the vector $n$, and the last is a
-pointer to the output $y$ (except \cppinline{sincos} which has two output
-pointers $y$ and $z$). For all functions, the output is always a vector. If
-there are more than one input pointer, then some of them, but not all, can be
-scalars.
+performs addition for vectors. It is equivalent to
+\begin{cppcode}
+  for (std::size_t i = 0; i != n; ++i)
+      y[i] = a[i] + b[i];
+\end{cppcode}
+The functions defined are listed in table~\ref{tab:Vectorized mathematical
+  operations}.
 
 \begin{table}[ht]
-  \begin{tabu}{X[l]X[l]X[l]X[l]}
+  \begin{tabu}{X[l]X[2l]X[l]X[2l]X[l]X[2l]}
     \toprule
-    Function & Operation & Function & Operation \\
+    Function & Operation &
+    Function & Operation &
+    Function & Operation \\
     \midrule
-    \texttt{add(n, a, b, y)}    & $y = a + b$                               &
-    \texttt{sub(n, a, b, y)}    & $y = a - b$                               \\
-    \texttt{sqr(n, a, y)}       & $y = a^2$                                 &
-    \texttt{mul(n, a, b, y)}    & $y = ab$                                  \\
-    \texttt{abs(n, a, y)}       & $y = |a|$                                 &
-    \texttt{fma(n, a, b, c, y)} & $y = ab + c$                              \\
-    \texttt{inv(n, a, y)}       & $y = 1 / a$                               &
-    \texttt{div(n, a, b, y)}    & $y = a / b$                               \\
-    \texttt{sqrt(n, a, y)}      & $y = \sqrt{a}$                            &
-    \texttt{invsqrt(n, a, y)}   & $y = 1 / \sqrt{a}$                        \\
-    \texttt{cbrt(n, a, y)}      & $y = \sqrt[3]{a}$                         &
-    \texttt{invcbrt(n, a, y)}   & $y = 1 / \sqrt[3]{a}$                     \\
-    \texttt{pow2o3(n, a, y)}    & $y = a^{2/3}$                             &
-    \texttt{pow3o2(n, a, y)}    & $y = a^{3/2}$                             \\
-    \texttt{pow(n, a, b, y)}    & $y = a^b$                                 &
-    \texttt{hypot(n, a, b, y)}  & $y = \sqrt{a^2 + b^2}$                    \\
-    \texttt{exp(n, a, y)}       & $y = \EE^a$                               &
-    \texttt{exp2(n, a, y)}      & $y = 2^a$                                 \\
-    \texttt{exp10(n, a, y)}     & $y = 10^a$                                &
-    \texttt{expm1(n, a, y)}     & $y = \EE^a - 1$                           \\
-    \texttt{log(n, a, y)}       & $y = \ln(a)$                              &
-    \texttt{log2(n, a, y)}      & $y = \log_2(a)$                           \\
-    \texttt{log10(n, a, y)}     & $y = \log_{10}(a)$                        &
-    \texttt{log1p(n, a, y)}     & $y = \ln(a + 1)$                          \\
-    \texttt{cos(n, a, y)}       & $y = \cos(a)$                             &
-    \texttt{sin(n, a, y)}       & $y = \sin(a)$                             \\
-    \texttt{sincos(n, a, y, z)} & $y = \sin(a)$, $z = \cos(a)$              &
-    \texttt{tan(n, a, y)}       & $y = \tan(a)$                             \\
-    \texttt{acos(n, a, y)}      & $y = \arccos(a)$                          &
-    \texttt{asin(n, a, y)}      & $y = \arcsin(a)$                          \\
-    \texttt{atan(n, a, y)}      & $y = \arctan(a)$                          &
-    \texttt{acos(n, a, y)}      & $y = \arccos(a)$                          \\
-    \texttt{atan2(n, a, b, y)}  & $y = \arctan(a / b)$                      &
-    \texttt{cosh(n, a, y)}      & $y = \cosh(a)$                            \\
-    \texttt{sinh(n, a, y)}      & $y = \sinh(a)$                            &
-    \texttt{tanh(n, a, y)}      & $y = \tanh(a)$                            \\
-    \texttt{acosh(n, a, y)}     & $y = \mathrm{arc}\cosh(a)$                &
-    \texttt{asinh(n, a, y)}     & $y = \mathrm{arc}\sinh(a)$                \\
-    \texttt{atanh(n, a, y)}     & $y = \mathrm{arc}\tanh(a)$                &
-    \texttt{erf(n, a, y)}       & $y = \mathrm{erf}(a)$                     \\
-    \texttt{erfc(n, a, y)}      & $y = \mathrm{erfc}(a)$                    &
-    \texttt{cdfnorm(n, a, y)}   & $y = 1 - \mathrm{erfc}(a / \sqrt{2}) / 2$ \\
-    \texttt{lgamma(n, a, y)}    & $y = \ln\Gamma(a)$                        &
-    \texttt{tgamma(n, a, y)}    & $y = \Gamma(a)$                           \\
+    \texttt{add}     & $a + b$                               &
+    \texttt{sub}     & $a - b$                               &
+    \texttt{sqr}     & $a^2$                                 \\
+    \texttt{mul}     & $ab$                                  &
+    \texttt{abs}     & $|a|$                                 &
+    \texttt{fma}     & $ab + c$                              \\
+    \texttt{inv}     & $1 / a$                               &
+    \texttt{div}     & $a / b$                               &
+    \texttt{sqrt}    & $\sqrt{a}$                            \\
+    \texttt{invsqrt} & $1 / \sqrt{a}$                        &
+    \texttt{cbrt}    & $\sqrt[3]{a}$                         &
+    \texttt{invcbrt} & $1 / \sqrt[3]{a}$                     \\
+    \texttt{pow2o3}  & $a^{2/3}$                             &
+    \texttt{pow3o2}  & $a^{3/2}$                             &
+    \texttt{pow}     & $a^b$                                 \\
+    \texttt{hypot}   & $\sqrt{a^2 + b^2}$                    &
+    \texttt{exp}     & $\EE^a$                               &
+    \texttt{exp2}    & $2^a$                                 \\
+    \texttt{exp10}   & $10^a$                                &
+    \texttt{expm1}   & $\EE^a - 1$                           &
+    \texttt{log}     & $\ln(a)$                              \\
+    \texttt{log2}    & $\log_2(a)$                           &
+    \texttt{log10}   & $\log_{10}(a)$                        &
+    \texttt{log1p}   & $\ln(a + 1)$                          \\
+    \texttt{cos}     & $\cos(a)$                             &
+    \texttt{sin}     & $\sin(a)$                             &
+    \texttt{sincos}  & $\sin(a)$ and $\cos(a)$               \\
+    \texttt{tan}     & $\tan(a)$                             &
+    \texttt{acos}    & $\arccos(a)$                          &
+    \texttt{asin}    & $\arcsin(a)$                          \\
+    \texttt{atan}    & $\arctan(a)$                          &
+    \texttt{acos}    & $\arccos(a)$                          &
+    \texttt{atan2}   & $\arctan(a / b)$                      \\
+    \texttt{cosh}    & $\cosh(a)$                            &
+    \texttt{sinh}    & $\sinh(a)$                            &
+    \texttt{tanh}    & $\tanh(a)$                            \\
+    \texttt{acosh}   & $\mathrm{arc}\cosh(a)$                &
+    \texttt{asinh}   & $\mathrm{arc}\sinh(a)$                &
+    \texttt{atanh}   & $\mathrm{arc}\tanh(a)$                \\
+    \texttt{erf}     & $\mathrm{erf}(a)$                     &
+    \texttt{erfc}    & $\mathrm{erfc}(a)$                    &
+    \texttt{cdfnorm} & $1 - \mathrm{erfc}(a / \sqrt{2}) / 2$ \\
+    \texttt{lgamma}  & $\ln\Gamma(a)$                        &
+    \texttt{tgamma}  & $\Gamma(a)$                           &
+                     &                                       \\
     \bottomrule
   \end{tabu}
   \caption{Vectorized mathematical operations}
   \label{tab:Vectorized mathematical operations}
 \end{table}
 
+For each function, the first parameter is always the length of
+the vector, and the last is a pointer to the output vector (except
+\cppinline{sincos} which has two output parameters). For all functions, the
+output is always a vector. If there are more than one input parameters, then
+some of them, but not all, can be scalars. The order of the input parameters
+are as they appear in the mathematical expressions. For example,
+\cppinline{fma} perform the operation $ab + c$, then the function shall be
+called as,
+\begin{cppcode}
+  fma(n, a, b, c, y);
+\end{cppcode}
+where \cppinline{a}, \cppinline{b}, \cppinline{c} are input parameters, and
+some of them, not all, can be scalars instead of pointers. And \cppinline{y} is
+the output parameter, which has to be pointer to a length $n$ vector.

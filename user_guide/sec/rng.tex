@@ -57,7 +57,37 @@ After this call, all seeds generated will belong to the equivalent class $s
 \subsection{Counter-based \protect\rng}
 \label{sub:Counter-based RNG}
 
-\begin{table}[t]
+The standard library provides a set of \rng classes. Unfortunately, none of
+them are suitable for parallel computing without considerable efforts.
+
+The development by \textcite{Salmon:2011um} made high performance parallel \rng
+much more accessible than it was before. In the author's personal opinion, it
+is the most significant development for parallel Monte Carlo algorithms in
+recent memory. See the paper for more details. Here, it is sufficient to
+mention that, the \rng introduced in the paper use a deterministic function
+$f_k$, such that, for any sequence $\{c_i\}_{i>0}$, the sequence
+$\{y_i\}_{i>0}$, $y_i = f_k(c_i)$, appears as random. In addition, for $k_1 \ne
+k_2$, $f_{k_1}$ and $f_{k_2}$ will generate two sequences that appear
+statistically independent. Compared to more conventional \rng{}s which use
+recursions $y_i = f(y_{i - 1})$, these counter-based \rng{}s are much easier to
+setup in a parallelized environment.
+
+If $c$, the counter, is an unsigned integer with $b$ bits, and $k$, the key, is
+an unsigned integer with $d$ bits. Then for each $k$, the \rng has a period
+$2^b$. And there can be at most $2^d$ independent streams.
+Table~\ref{tab:Counter-based RNG} lists all counter-based \rng{}s implemented
+in this library, along with the bits of the counter and the key. They all
+conform to the \cppoo uniform \rng concept. All \rng{}s in
+\textcite{Salmon:2011um} are implemented along with a few additions. Note that,
+the actual period of an \rng can be longer. For example, \cppinline{Philox4x64}
+has a 256-bits counter but output 64-bits integers. And thus it has a
+$2^{1024}$ period. Such period length may seems very small compared to many
+well known \rng{}s. For example, the famous Mersenne-Twister generator
+(\cppinline{std::mt19937}) has a period $2^{19937} - 1$. However, combined with
+$2^{256}$ independent streams, only the most demanding programs will find these
+counter-base \rng{}s insufficient.
+
+\begin{table}[ht]
   \def\B{\textcolor{MRed}{\textit{B}}}
   \def\V{\textcolor{MRed}{\textit{V}}}
   \begin{tabu}{X[2l]X[2l]X[l]X[l]}
@@ -90,35 +120,23 @@ After this call, all seeds generated will belong to the equivalent class $s
   \label{tab:Counter-based RNG}
 \end{table}
 
-The standard library provides a set of \rng classes. Unfortunately, none of
-them are suitable for parallel computing without considerable efforts.
-
-The development by \textcite{Salmon:2011um} made high performance parallel \rng
-much more accessible than it was before. In the author's personal opinion, it
-is the most significant development for parallel Monte Carlo algorithms in
-recent memory. See the paper for more details. Here, it is sufficient to
-mention that, the \rng introduced in the paper use a deterministic function
-$f_k$, such that, for any sequence $\{c_i\}_{i>0}$, the sequence
-$\{y_i\}_{i>0}$, $y_i = f_k(c_i)$, appears as random. In addition, for $k_1 \ne
-k_2$, $f_{k_1}$ and $f_{k_2}$ will generate two sequences that appear
-statistically independent. Compared to more conventional \rng{}s which use
-recursions $y_i = f(y_{i - 1})$, these counter-based \rng{}s are much easier to
-setup in a parallelized environment.
-
-If $c$, the counter, is an unsigned integer with $b$ bits, and $k$, the key, is
-an unsigned integer with $d$ bits. Then for each $k$, the \rng has a period
-$2^b$. And there can be at most $2^d$ independent streams.
-Table~\ref{tab:Counter-based RNG} lists all counter-based \rng{}s implemented
-in this library, along with the bits of the counter and the key. They all
-conform to the \cppoo uniform \rng concept. All \rng{}s in
-\textcite{Salmon:2011um} are implemented along with a few additions. Note that,
-the actual period of an \rng can be longer. For example, \cppinline{Philox4x64}
-has a 256-bits counter but output 64-bits integers. And thus it has a
-$2^{1024}$ period. Such period length may seems very small compared to many
-well known \rng{}s. For example, the famous Mersenne-Twister generator
-(\cppinline{std::mt19937}) has a period $2^{19937} - 1$. However, combined with
-$2^{256}$ independent streams, only the most demanding programs will find these
-counter-base \rng{}s insufficient.
+\begin{table}[ht]
+  \begin{tabu}{X[l]X[l]}
+    \toprule
+    Macro & Default \\
+    \midrule
+    \texttt{VSMC\_RNG\_AES\_BLOCKS} & \texttt{4} \\
+    \texttt{VSMC\_RNG\_ARS\_ROUNDS} & \texttt{5} \\
+    \texttt{VSMC\_RNG\_ARS\_BLOCKS} & \texttt{4} \\
+    \texttt{VSMC\_RNG\_PHILOX\_ROUNDS} & \texttt{10} \\
+    \texttt{VSMC\_RNG\_PHILOX\_VECTOR\_LENGTH} & \texttt{4} \\
+    \texttt{VSMC\_RNG\_THREEFRY\_ROUNDS} & \texttt{20} \\
+    \texttt{VSMC\_RNG\_THREEFRY\_VECTOR\_LENGTH} & \texttt{4} \\
+    \bottomrule
+  \end{tabu}
+  \caption{Configuration macros for the counter-based \rng}
+  \label{tab:Configuration macros for the counter-based RNG}
+\end{table}
 
 \subsubsection{\protect\aesni intrinsics based \protect\rng}
 \label{ssub:AES-NI intrinsics based RNG}
@@ -163,8 +181,8 @@ the \ars algorithm in \textcite{Salmon:2011um} and the \aes-128, \aes-192, and
   AESNIEngine<ResultType, AES256KeySeq<ResultType, 14>, 14, Blocks>;
 \end{cppcode}
 The default template arguments can be changed by configuration macros listed in
-table~\ref{tab:Configuration macros for the RNG system}. Shortcuts are also
-defined, as listed in table~\ref{tab:Counter-based RNG}. For example,
+table~\ref{tab:Configuration macros for the counter-based RNG}. Shortcuts are
+also defined, as listed in table~\ref{tab:Counter-based RNG}. For example,
 \cppinline{ARS_4x32} is \cppinline{ARSEngine} with result type
 \cppinline{std::uint32_t}, four blocks, and the default number of rounds.
 
@@ -252,7 +270,14 @@ They output 16-, 32-, and 64-bits random unsigned integers, respectively.
 \subsection{\protect\mkl{} \protect\rng}
 \label{sub:MKL RNG}
 
-\begin{table}[t]
+The \mkl library provides some high performance \rng{}s. The library implement
+a wrapper class \cppinline{MKLEngine} that makes them accessible as \cppoo{}
+generators. They are listed in table~\ref{tab:MKL RNG}. Note that, \mkl{}
+\rng{}s performs best when they are used to generate vectors of random numbers.
+These wrappers use a buffer to store such vectors. And thus they have much
+larger state space than usual \rng{}s.
+
+\begin{table}[ht]
   \begin{tabu}{X[l]X[l]}
     \toprule
     Class & \mkl \brng \\
@@ -270,13 +295,6 @@ They output 16-, 32-, and 64-bits random unsigned integers, respectively.
     classes can have a suffix \cppinline{_64}.}
   \label{tab:MKL RNG}
 \end{table}
-
-The \mkl library provides some high performance \rng{}s. The library implement
-a wrapper class \cppinline{MKLEngine} that makes them accessible as \cppoo{}
-generators. They are listed in table~\ref{tab:MKL RNG}. Note that, \mkl{}
-\rng{}s performs best when they are used to generate vectors of random numbers.
-These wrappers use a buffer to store such vectors. And thus they have much
-larger state space than usual \rng{}s.
 
 \subsection{Multiple \protect\rng streams}
 \label{sub:Multiple RNG streams}
@@ -333,7 +351,17 @@ defined type.
 \subsection{Distributions}
 \label{sub:Distributions}
 
-\begin{table}[t]
+The library also provides implementations of some common distributions. They
+all conforms to the \cppoo random number distribution concepts. Some of them
+are the same as those in the \cppoo standard library, with
+\cppinline{CamelCase} names. For example, \cppinline{NormalDistribuiton} can be
+used as an drop-in replacement for \cppinline{std::normal_distribuiton}. This
+includes all of the continuous distributions defined in the standard library.
+Their benefits compared to the standard library will be discussed later.
+Table~\ref{tab:Random number distributions} lists all the additional
+distributions implemented.
+
+\begin{table}[ht]
   \begin{tabu}{X[l]X[4l]}
     \toprule
     Class & Notes \\
@@ -356,16 +384,6 @@ defined type.
     \cppinline{Distribution} which is omitted in the table}
   \label{tab:Random number distributions}
 \end{table}
-
-The library also provides implementations of some common distributions. They
-all conforms to the \cppoo random number distribution concepts. Some of them
-are the same as those in the \cppoo standard library, with
-\cppinline{CamelCase} names. For example, \cppinline{NormalDistribuiton} can be
-used as an drop-in replacement for \cppinline{std::normal_distribuiton}. This
-includes all of the continuous distributions defined in the standard library.
-Their benefits compared to the standard library will be discussed later.
-Table~\ref{tab:Random number distributions} lists all the additional
-distributions implemented.
 
 The last, the library also implement the multivariate Normal distribution. Its
 usable is summarized by the following.

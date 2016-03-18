@@ -31,7 +31,7 @@ type, and \cppinline{std::vector<T>} otherwise.
 \label{sub:Sample covariance estimating}
 
 \subsection{Storing objects in \protect\hdf}
-\label{sub:Storing objects in hdf}
+\label{sub:Storing objects in HDF5}
 
 If the \hdf library is available, it is possible to store
 \cppinline{Sampler<T>} objects, etc., in the \hdf format. For example,
@@ -51,22 +51,6 @@ see the reference manual for details.
 \subsection{\protect\raii classes for \protect\mkl pointers}
 \label{sub:RAII classes for MKL pointers}
 
-\begin{table}[t]
-  \begin{tabu}{X[l]X[l]}
-    \toprule
-    Class & \mkl pointer type \\
-    \midrule
-    \texttt{MKLStream}   & \texttt{VSLStreamStatePtr} \\
-    \texttt{MKLSSTask}   & \texttt{VSLSSTaskPtr}      \\
-    \texttt{MKLConvTask} & \texttt{VSLConvTask}       \\
-    \texttt{MKLCorrTask} & \texttt{VSLCorrTask}       \\
-    \texttt{MKLDFTask}   & \texttt{DFTaskPtr}         \\
-    \bottomrule
-  \end{tabu}
-  \caption{\protect\raii classes for \protect\mkl pointers}
-  \label{tab:RAII classes for MKL pointers}
-\end{table}
-
 The library provides a few classes to manage \mkl pointers. It provides
 Resource Acquisition Is Initialization (\raii) idiom on top of the \mkl C
 interface. For example,
@@ -85,12 +69,31 @@ task pointer. All C functions that operates on the pointer, is also defined as
 methods in the class. Table~\ref{tab:Smart pointers for MKL} lists the classes
 defined by the library and their corresponding \mkl pointers.
 
+\begin{table}[ht]
+  \begin{tabu}{X[l]X[l]}
+    \toprule
+    Class & \mkl pointer type \\
+    \midrule
+    \texttt{MKLStream}   & \texttt{VSLStreamStatePtr} \\
+    \texttt{MKLSSTask}   & \texttt{VSLSSTaskPtr}      \\
+    \texttt{MKLConvTask} & \texttt{VSLConvTask}       \\
+    \texttt{MKLCorrTask} & \texttt{VSLCorrTask}       \\
+    \texttt{MKLDFTask}   & \texttt{DFTaskPtr}         \\
+    \bottomrule
+  \end{tabu}
+  \caption{\protect\raii classes for \protect\mkl pointers}
+  \label{tab:RAII classes for MKL pointers}
+\end{table}
+
+
 \subsection{Program options}
 \label{sub:Program options}
 
 The library provides some basic support of processing command line program
 options. Here is a minimal example
-\cppfile{program_option.cpp}
+\begin{cppcode}
+  %FIXME \cppfile{program_option.cpp}
+\end{cppcode}
 
 When invoked as the following,
 \begin{consolecode}
@@ -114,7 +117,9 @@ vector.
 Sometime it is desirable to see how much progress of a program has been made.
 The library provide a \cppinline{Progress} class for this purpose. Below is a
 minimal example,
-\cppfile{progress.cpp}
+\begin{cppcode}
+  %FIXME \cppfile{progress.cpp}
+\end{cppcode}
 
 When invoked, the program output something similar the below
 \begin{consolecode}

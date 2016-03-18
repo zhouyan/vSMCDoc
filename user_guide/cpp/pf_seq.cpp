@@ -14,10 +14,10 @@ class PFState : public PFStateBase
     public:
     using PFStateBase::PFStateBase;
 
-    double log_likelihood(std::size_t iter, size_type i) const
+    double log_likelihood(std::size_t t, size_type i) const
     {
-        double llh_x = 10 * (this->state(i, PosX) - obs_x_[iter]);
-        double llh_y = 10 * (this->state(i, PosY) - obs_y_[iter]);
+        double llh_x = 10 * (this->state(i, PosX) - obs_x_[t]);
+        double llh_y = 10 * (this->state(i, PosY) - obs_y_[t]);
         llh_x = std::log(1 + llh_x * llh_x / 10);
         llh_y = std::log(1 + llh_y * llh_y / 10);
 
@@ -92,23 +92,23 @@ class PFInit
 class PFMove
 {
     public:
-    std::size_t operator()(std::size_t iter, vsmc::Particle<PFState> &particle)
+    std::size_t operator()(std::size_t t, vsmc::Particle<PFState> &particle)
     {
-        eval_pre(iter, particle);
+        eval_pre(t, particle);
         std::size_t acc = 0;
         for (std::size_t i = 0; i != particle.size(); ++i)
-            acc += eval_sp(iter, particle.sp(i));
-        eval_post(iter, particle);
+            acc += eval_sp(t, particle.sp(i));
+        eval_post(t, particle);
 
         return 0;
     }
 
-    void eval_pre(std::size_t iter, vsmc::Particle<PFState> &particle)
+    void eval_pre(std::size_t t, vsmc::Particle<PFState> &particle)
     {
         w_.resize(particle.size());
     }
 
-    std::size_t eval_sp(std::size_t iter, vsmc::SingleParticle<PFState> sp)
+    std::size_t eval_sp(std::size_t t, vsmc::SingleParticle<PFState> sp)
     {
         vsmc::NormalDistribution<double> norm_pos(0, std::sqrt(0.02));
         vsmc::NormalDistribution<double> norm_vel(0, std::sqrt(0.001));
@@ -116,12 +116,12 @@ class PFMove
         sp.state(PosY) += norm_pos(sp.rng()) + 0.1 * sp.state(VelY);
         sp.state(VelX) += norm_vel(sp.rng());
         sp.state(VelY) += norm_vel(sp.rng());
-        w_[sp.id()] = sp.particle().value().log_likelihood(iter, sp.id());
+        w_[sp.id()] = sp.particle().value().log_likelihood(t, sp.id());
 
         return 0;
     }
 
-    void eval_post(std::size_t iter, vsmc::Particle<PFState> &particle)
+    void eval_post(std::size_t t, vsmc::Particle<PFState> &particle)
     {
         particle.weight().add_log(w_.data());
     }
@@ -133,25 +133,25 @@ class PFMove
 class PFMEval
 {
     public:
-    void operator()(std::size_t iter, std::size_t dim,
+    void operator()(std::size_t t, std::size_t dim,
         vsmc::Particle<PFState> &particle, double *r)
     {
-        eval_pre(iter, particle);
+        eval_pre(t, particle);
         for (std::size_t i = 0; i != particle.size(); ++i, r += dim)
-            eval_sp(iter, dim, particle.sp(i), r);
-        eval_post(iter, particle);
+            eval_sp(t, dim, particle.sp(i), r);
+        eval_post(t, particle);
     }
 
-    void eval_pre(std::size_t iter, vsmc::Particle<PFState> &particle) {}
+    void eval_pre(std::size_t t, vsmc::Particle<PFState> &particle) {}
 
-    void eval_sp(std::size_t iter, std::size_t dim,
+    void eval_sp(std::size_t t, std::size_t dim,
         vsmc::SingleParticle<PFState> sp, double *r)
     {
         r[0] = sp.state(PosX);
         r[1] = sp.state(PosY);
     }
 
-    void eval_post(std::size_t iter, vsmc::Particle<PFState> &particle) {}
+    void eval_post(std::size_t t, vsmc::Particle<PFState> &particle) {}
 };
 
 int main()

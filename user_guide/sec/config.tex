@@ -1,7 +1,16 @@
 \section{Configuration macros}
 \label{sec:Configuration macros}
 
-\begin{table}[t]
+The library has a few configuration macros. All these macros can be overwritten
+by the user by defining them with proper values before including any of the
+library's headers. Most of the macros have the prefix \cppinline{VSMC_HAS_},
+which specify if a feature is available to the library. A few have the prefix
+\cppinline{VSMC_USE_}, which specify if a feature shall be used in the case
+that it is available. A handful remaining ones define some constants or types
+used by the library. These macros are listed in table~\ref{tab:Configuration
+  macros}.
+
+\begin{table}[ht]
   \begin{tabu}{X[l]X[l]X[2l]}
     \toprule
     Macro & Default & Description \\
@@ -52,38 +61,3 @@
   \caption{Configuration macros}
   \label{tab:Configuration macros}
 \end{table}
-
-\begin{table}[t]
-  \begin{tabu}{X[l]X[l]}
-    \toprule
-    Macro & Default \\
-    \midrule
-    \texttt{VSMC\_RNG\_TYPE} &
-    See section~\ref{sub:Counter-based RNG} \\
-    \texttt{VSMC\_RNG\_SET\_TYPE} &
-    See section~\ref{sub:Multiple RNG streams} \\
-    \texttt{VSMC\_RESAMPLE\_RNG\_TYPE} & \texttt{VSMC\_RNG\_TYPE} \\
-    \texttt{VSMC\_RNG\_AES\_BLOCKS} & \texttt{4} \\
-    \texttt{VSMC\_RNG\_ARS\_ROUNDS} & \texttt{5} \\
-    \texttt{VSMC\_RNG\_ARS\_BLOCKS} & \texttt{4} \\
-    \texttt{VSMC\_RNG\_PHILOX\_ROUNDS} & \texttt{10} \\
-    \texttt{VSMC\_RNG\_PHILOX\_VECTOR\_LENGTH} & \texttt{4} \\
-    \texttt{VSMC\_RNG\_THREEFRY\_ROUNDS} & \texttt{20} \\
-    \texttt{VSMC\_RNG\_THREEFRY\_VECTOR\_LENGTH} & \texttt{4} \\
-    \texttt{VSMC\_SEED\_RESULT\_TYPE} & See section~\ref{sub:Seeding} \\
-    \bottomrule
-  \end{tabu}
-  \caption{Configuration macros for the \rng system}
-  \label{tab:Configuration macros for the RNG system}
-\end{table}
-
-The library has a few configuration macros. All these macros can be overwritten
-by the user by defining them with proper values before including any of the
-library's headers. Most of the macros have the prefix \cppinline{VSMC_HAS_},
-which specify if a feature is available to the library. A few have the prefix
-\cppinline{VSMC_USE_}, which specify if a feature shall be used in the case
-that it is available. A handful remaining ones define some constants or types
-used by the library. These macros are listed in table~\ref{tab:Configuration
-  macros}. The \rng system has a few of its own macros, listed in
-table~\ref{tab:Configuration macros for the RNG system}. See
-section~\ref{sec:Random number generating} for details.

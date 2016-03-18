@@ -4,7 +4,21 @@
 \subsection{Constants}
 \label{sub:Constants}
 
-\begin{table}[t]
+The library defines some mathematical constants in the form of
+\cppinline{constexpr} functions. For example, to get the value of $\pi$ with a
+desired precision, one can call the following.
+\begin{cppcode}
+  auto pi_f = const_pi<float>();
+  auto pi_d = const_pi<double>();
+  auto pi_l = const_pi<long double>();
+\end{cppcode}
+The compiler will evaluate these values at compile-time and thus there is no
+performance difference from hard-coding the constants in the program, while the
+readability is improved. All defined constants are listed in
+table~\ref{tab:Mathematical constants}. Note that all functions has a prefix
+\cppinline{const_}, which is omitted in the table.
+
+\begin{table}[ht]
   \begin{tabu}{X[2l]X[l]X[2l]X[l]X[2l]X[l]}
     \toprule
     Function & Value &
@@ -72,24 +86,32 @@
   \label{tab:Mathematical constants}
 \end{table}
 
-The library defines some mathematical constants in the form of
-\cppinline{constexpr} functions. For example, to get the value of $\pi$ with a
-desired precision, one can call the following.
-\begin{cppcode}
-  auto pi_f = const_pi<float>();
-  auto pi_d = const_pi<double>();
-  auto pi_l = const_pi<long double>();
-\end{cppcode}
-The compiler will evaluate these values at compile-time and thus there is no
-performance difference from hard-coding the constants in the program, while the
-readability is improved. All defined constants are listed in
-table~\ref{tab:Mathematical constants}. Note that all functions has a prefix
-\cppinline{const_}, which is omitted in the table.
-
 \subsection{Vectorized operations}
 \label{sub:Vectorized operations}
 
-\begin{table}[t]
+The library provides a set of functions for vectorized mathematical operations.
+For example,
+\begin{cppcode}
+  std::size_t n = 1000;
+  vsmc::Vector<double> a(n);
+  vsmc::Vector<double> b(n);
+  vsmc::Vector<double> y(n);
+  // Fill vectors a and b
+  add(n, a.data(), b.data(), y.data());
+\end{cppcode}
+performs addition for vectors. If the input $a$ and $b$ are pointers to length
+$n$ arrays, and the output $y$ is a pointer to array of the same length, then
+this function call compute $y_i = a_i + b_i$ for $i=1,\dots,n$. Either $a$ and
+$b$ can also be scalars. For example, if $b$ is a scalar, then the operation
+performed is $y_i = a_i + b$. The functions defined are listed in
+table~\ref{tab:Vectorized mathematical operations}. For each function, the
+first parameter is always the length of the vector $n$, and the last is a
+pointer to the output $y$ (except \cppinline{sincos} which has two output
+pointers $y$ and $z$). For all functions, the output is always a vector. If
+there are more than one input pointer, then some of them, but not all, can be
+scalars.
+
+\begin{table}[ht]
   \begin{tabu}{X[l]X[l]X[l]X[l]}
     \toprule
     Function & Operation & Function & Operation \\
@@ -144,24 +166,3 @@ table~\ref{tab:Mathematical constants}. Note that all functions has a prefix
   \label{tab:Vectorized mathematical operations}
 \end{table}
 
-The library provides a set of functions for vectorized mathematical operations.
-For example,
-\begin{cppcode}
-  std::size_t n = 1000;
-  vsmc::Vector<double> a(n);
-  vsmc::Vector<double> b(n);
-  vsmc::Vector<double> y(n);
-  // Fill vectors a and b
-  add(n, a.data(), b.data(), y.data());
-\end{cppcode}
-performs addition for vectors. If the input $a$ and $b$ are pointers to length
-$n$ arrays, and the output $y$ is a pointer to array of the same length, then
-this function call compute $y_i = a_i + b_i$ for $i=1,\dots,n$. Either $a$ and
-$b$ can also be scalars. For example, if $b$ is a scalar, then the operation
-performed is $y_i = a_i + b$. The functions defined are listed in
-table~\ref{tab:Vectorized mathematical operations}. For each function, the
-first parameter is always the length of the vector $n$, and the last is a
-pointer to the output $y$ (except \cppinline{sincos} which has two output
-pointers $y$ and $z$). For all functions, the output is always a vector. If
-there are more than one input pointer, then some of them, but not all, can be
-scalars.

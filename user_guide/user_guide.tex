@@ -12,8 +12,9 @@
 \NewMinted{r}
 \NewMinted{sh}
 
+\UseAbbr{aes}
 \UseAbbr{ais}
-\UseAbbr{api}
+\UseAbbr{ars}
 \UseAbbr{avx}
 \UseAbbr{blas}
 \UseAbbr{brng}
@@ -24,19 +25,18 @@
 \UseAbbr{lapack}
 \UseAbbr{mcmc}
 \UseAbbr{mkl}
-\UseAbbr{mpi}
-\UseAbbr{pdf}
+\UseAbbr{posix}
 \UseAbbr{raii}
 \UseAbbr{rdrand}
 \UseAbbr{rng}
-\UseAbbr{simd}
 \UseAbbr{sis}
-\UseAbbr{smctc}
 \UseAbbr{smc}
 \UseAbbr{smp}
 \UseAbbr{sse}
 \UseAbbr{tbb}
 \UseAbbr{tls}
+\UseAbbr{vml}
+\UseAbbr{vsl}
 
 \UseAbbr[\aesni][\textsc]{aes-ni}
 \UseAbbr[\cpp][\textcase]{C++}
@@ -97,16 +97,15 @@ sequence of artificial distributions on spaces of increasing dimensions which
 admit the distributions of interest as particular marginals.
 
 \smc algorithms are perceived as being difficult to implement while general
-tools were not available until the development of \smctc by
-\textcite{Johansen:2009wd}, which provided a general framework for implementing
-\smc algorithms. \smc algorithms admit natural and scalable parallelization.
-However, there are only parallel implementations of \smc algorithms for many
-problem specific applications, usually associated with specific \smc related
-researches. \textcite{Lee:2010fm} studied the parallelization of \smc
-algorithms on \gpu{}s with some generality. There are few general tools to
-implement \smc algorithms on parallel hardware though multicore \cpu{}s are
-very common today and computing on specialized hardware such as \gpu{}s are
-more and more popular.
+tools were not available until the development of \textcite{Johansen:2009wd},
+which provided a general framework for implementing \smc algorithms. \smc
+algorithms admit natural and scalable parallelization.  However, there are only
+parallel implementations of \smc algorithms for many problem specific
+applications, usually associated with specific \smc related researches.
+\textcite{Lee:2010fm} studied the parallelization of \smc algorithms on \gpu{}s
+with some generality. There are few general tools to implement \smc algorithms
+on parallel hardware though multicore \cpu{}s are very common today and
+computing on specialized hardware such as \gpu{}s are more and more popular.
 
 The purpose of the current work is to provide a general framework for
 implementing \smc algorithms on both sequential and parallel hardware. There
@@ -126,7 +125,7 @@ Section~\ref{sec:Sequential Monte Carlo} introduces the \smc algorithm and
 notations used throughout this guide. Section~\ref{sec:Basic usage} introduces
 the basic features of the library. It is followed by section~\ref{sec:Advanced
   usage}, which details a few more advanced usage of the library.
-Section~\ref{sec:Mathemtical operations} to~\ref{sec:Utilities} introduces some
+Section~\ref{sec:Configuration macros} to~\ref{sec:Utilities} introduces some
 useful additional features. It is not practical and of little interest to the
 users to include all the details of the library in this guide. A
 Doxygen\footnote{\url{http://www.stack.nl/~dimitri/doxygen/}} generated
@@ -795,25 +794,9 @@ the name of the data file \shinline{"pf.data"}, and iterated $n - 1$ times,
 where $n$ is the number of data points. At last, the output is written into a
 text file \shinline{"pf.out"}. Below is a short
 R\footnote{\url{http://r-project.org}} script that can be used to process this
-\begin{rcode}
-  obs <- read.table("pf.data", header = FALSE)
-  pf <- read.table("pf.out", header = TRUE)
-  print(pf[1:5,])
-
-  pdf("pf.pdf")
-  plot(obs[,1], obs[,2], xlab = "X", ylab = "Y")
-  lines(pf$pos.0, pf$pos.1)
-  dev.off()
-\end{rcode}
+\rfile{pf.R}
 The \rinline{print} statement shows the first five lines of the output,
-\begin{routcode}
-    Size Resampled Accept.0       ESS    pos.0   pos.1
-  1 1000         1        0   1.54765 -1.41510 3.03569
-  2 1000         1        0 159.69800 -1.22141 3.15391
-  3 1000         1        0 182.29200 -1.29763 2.95484
-  4 1000         1        0  17.90400 -1.48292 3.28054
-  5 1000         1        0 252.25700 -1.48763 3.43379
-\end{routcode}
+\routfile{pf.rout}
 The column \routinline{Size} shows the sample size at each iteration. The
 library does not provide direct support of changing the sample size. However,
 it is possible and an example is shown in section~\ref{sec:Resampling}. The
@@ -1003,7 +986,6 @@ following declarations inside class \cppinline{T},
       using size_type = int;
       using weight_type = /* User defined type */;
       using rng_set_type = RNGSetTBB<AES256_4x32>;
-      using resample_rng_type = AES256_4x32;
   };
 \end{cppcode}
 The corresponding \cppinline{Particle<T>::size_type}, etc., will have their
@@ -1086,6 +1068,96 @@ member method that operating on a single particle inside
 It is important to keep the object small and copying the object efficient. The
 library will frequently pass argument of \cppinline{SingleParticle<T>} type by
 value.
+
+\section{Configuration macros}
+\label{sec:Configuration macros}
+
+\begin{table}[t]
+  \begin{tabu}{X[l]X[l]X[2l]}
+    \toprule
+    Macro & Default & Description \\
+    \midrule
+    \texttt{VSMC\_INT64} & Platform dependent &
+    The 64-bits integer type used by x86 intrinsics functions \\
+    \texttt{VSMC\_HAS\_INT128} & Platform dependent &
+    Support for 128-bits integers \\
+    \texttt{VSMC\_INT128} & Platform dependent &
+    The 128-bits integer type \\
+    \texttt{VSMC\_HAS\_SSE2} & Platform dependent &
+    Support for \sse{}2 intrinsic functions \\
+    \texttt{VSMC\_HAS\_AVX2} & Platform dependent &
+    Support for \avx{}2 intrinsic functions \\
+    \texttt{VSMC\_HAS\_AES\_NI} & Platform dependent &
+    Support for \aesni intrinsic functions \\
+    \texttt{VSMC\_HAS\_RDRAND} & Platform dependent &
+    Support for \rdrand intrinsic functions \\
+    \texttt{VSMC\_HAS\_X86} & Platform dependent &
+    If we are using x86 \\
+    \texttt{VSMC\_HAS\_X86\_64} & Platform dependent &
+    If we are using x86-64 \\
+    \texttt{VSMC\_HAS\_POSIX} & Platform dependent &
+    If we are on a \posix platform \\
+    \texttt{VSMC\_HAS\_OMP} & Platform dependent &
+    Support for OpenMP~3.0 or higher \\
+    \texttt{VSMC\_HAS\_TBB} & \texttt{0} & Support for \tbb 4.0 or higher \\
+    \texttt{VSMC\_HAS\_TBB\_MALLOC} & \texttt{VSMC\_HAS\_TBB} &
+    Support for \tbb scalable memory allocation \\
+    \texttt{VSMC\_HAS\_HDF5} & \texttt{0} & Support for \hdf 1.8.6 or higher \\
+    \texttt{VSMC\_HAS\_MKL} & \texttt{0} & Support for \mkl 11 or higher \\
+    \texttt{VSMC\_USE\_MKL\_CBLAS} & \texttt{VSMC\_HAS\_MKL} &
+    Use \mkl header \texttt{mkl\_cblas.h} instead of the standard
+    \texttt{cblas.h} \\
+    \texttt{VSMC\_USE\_MKL\_LAPACKE} & \texttt{VSMC\_HAS\_MKL} &
+    Use \mkl header \texttt{mkl\_lapacke.h} instead of the standard
+    \texttt{lapacke.h} \\
+    \texttt{VSMC\_USE\_MKL\_VML} & \texttt{VSMC\_HAS\_MKL} &
+    Use \mkl vector mathematical functions (\vml) \\
+    \texttt{VSMC\_USE\_MKL\_VSL} & \texttt{VSMC\_HAS\_MKL} &
+    Use \mkl statistical functions (\vsl) \\
+    \texttt{VSMC\_CBLAS\_INT\_TYPE} & \texttt{int} &
+    The default integer type of \blas routines \\
+    \texttt{VSMC\_ALIGNMENT} & \texttt{32} &
+    Default alignment of \texttt{AlignedAllocator} \\
+    \bottomrule
+  \end{tabu}
+  \caption{Configuration macros}
+  \label{tab:Configuration macros}
+\end{table}
+
+\begin{table}[t]
+  \begin{tabu}{X[l]X[l]}
+    \toprule
+    Macro & Default \\
+    \midrule
+    \texttt{VSMC\_RNG\_TYPE} &
+    See section~\ref{sub:Counter-based RNG} \\
+    \texttt{VSMC\_RNG\_SET\_TYPE} &
+    See section~\ref{sub:Multiple RNG streams} \\
+    \texttt{VSMC\_RESAMPLE\_RNG\_TYPE} & \texttt{VSMC\_RNG\_TYPE} \\
+    \texttt{VSMC\_RNG\_AES\_BLOCKS} & \texttt{4} \\
+    \texttt{VSMC\_RNG\_ARS\_ROUNDS} & \texttt{5} \\
+    \texttt{VSMC\_RNG\_ARS\_BLOCKS} & \texttt{4} \\
+    \texttt{VSMC\_RNG\_PHILOX\_ROUNDS} & \texttt{10} \\
+    \texttt{VSMC\_RNG\_PHILOX\_VECTOR\_LENGTH} & \texttt{4} \\
+    \texttt{VSMC\_RNG\_THREEFRY\_ROUNDS} & \texttt{20} \\
+    \texttt{VSMC\_RNG\_THREEFRY\_VECTOR\_LENGTH} & \texttt{4} \\
+    \texttt{VSMC\_SEED\_RESULT\_TYPE} & See section~\ref{sub:Seeding} \\
+    \bottomrule
+  \end{tabu}
+  \caption{Configuration macros for the \rng system}
+  \label{tab:Configuration macros for the RNG system}
+\end{table}
+
+The library has a few configuration macros. All these macros can be overwritten
+by the user by defining them with proper values before including any of the
+library's headers. Most of the macros have the prefix \cppinline{VSMC_HAS_},
+which specify if a feature is available to the library. A few have the prefix
+\cppinline{VSMC_USE_}, which specify if a feature shall be used in the case
+that it is available. A handful remaining ones define some constants or types
+used by the library. These macros are listed in table~\ref{tab:Configuration
+  macros}. The \rng system has a few of its own macros, listed in
+table~\ref{tab:Configuration macros for the RNG system}. See
+section~\ref{sec:Random number generating} for details.
 
 \section{Mathematical operations}
 \label{sec:Mathemtical operations}
@@ -1305,7 +1377,7 @@ Now, we provide an example of changing sampler size,
 \begin{cppcode}
   // sampler is an existing Sampler<T> object
   auto N = sampler.size();
-  auto &rng = sampler.particle().resample_rng();
+  auto &rng = sampler.particle().rng();
   auto weight = sampler.particle().weight().data();
   Vector<std::size_t> rep(N);
   Vector<std::size_t> idx(M);
@@ -1382,14 +1454,16 @@ $s \equiv r\mod{n}$. Therefore, no two nodes will ever generate the
 same seeds.
 
 \subsection{Counter-based \protect\rng}
-\label{sub:Coutner-based RNG}
+\label{sub:Counter-based RNG}
 
 \begin{table}[t]
   \def\B{\textcolor{MRed}{\textit{B}}}
   \def\V{\textcolor{MRed}{\textit{V}}}
-  \begin{tabu}{X[2l]X[l]X[l]X[l]}
+  \begin{tabu}{X[2l]X[2l]X[l]X[l]}
     \toprule
-    Class & \texttt{result\_type} & Counter bits & Key bits \\
+    & & \multicolumn{2}{c}{Bits} \\
+    \cmidrule{3-4} \\
+    Class & Result type & Counter & Key \\
     \midrule
     \texttt{AES128\_\B x32} & \texttt{std::uint32\_t} & $128$ & $128$ \\
     \texttt{AES128\_\B x64} & \texttt{std::uint64\_t} & $128$ & $128$ \\
@@ -1416,10 +1490,7 @@ same seeds.
 \end{table}
 
 The standard library provides a set of \rng classes. Unfortunately, none of
-them are suitable for parallel computing, at least without considerable user
-input. In addition, only the \cppinline{std::mt19937} and
-\cppinline{std::mt19937_64} have both high performance and desirable
-statistical properties.
+them are suitable for parallel computing without considerable efforts.
 
 The development by \textcite{Salmon:2011um} made high performance parallel \rng
 much more accessible than it was before. In the author's personal opinion, it
@@ -1448,18 +1519,119 @@ well known \rng{}s. For example, the famous Mersenne-Twister generator
 $2^{256}$ independent streams, only the most demanding programs will find these
 counter-base \rng{}s insufficient.
 
+\subsubsection{\protect\aesni intrinsics based \protect\rng}
+\label{ssub:AES-NI intrinsics based RNG}
+
+The \aesni intrinsics based \rng{}s in \textcite{Salmon:2011um} are implemented
+in a more general form,
+\begin{cppcode}
+  template <typename ResultType, typename KeySeqType, std::size_t Rounds,
+      std::size_t Blocks>
+  using AESNIEngine =
+      CounterEngine<AESNIGenerator<ResultType, KeySeqType, Rounds, Blocks>>;
+\end{cppcode}
+where \cppinline{KeySeqType} is the class used to generate the sequence of
+round keys; \cppinline{Rounds} is the number of rounds of \aes encryption to be
+performed. See the reference manual for details of how to define the key
+sequence class. The \aesni intrinsics have a latency of seven or eight cycles,
+while they can be issued at every cycle. Therefore better performance can be
+achieved if multiple 128-bits random integers are generated at the same time.
+This is specified by the template parameter \cppinline{Blocks}. Larger blocks,
+up to eight, can improve runtime performance but this is at the cost of larger
+state size.
+
+Four types of key sequences are implemented by the library, corresponding to
+the \ars algorithm in \textcite{Salmon:2011um} and the \aes-128, \aes-192, and
+\aes-256 algorithms. The following \rng engines are defined.
+\begin{cppcode}
+template <typename ResultType, std::size_t Rounds = VSMC_RNG_ARS_ROUNDS,
+    std::size_t Blocks = VSMC_RNG_ARS_BLOCKS>
+using ARSEngine =
+    AESNIEngine<ResultType, ARSKeySeq<ResultType>, Rounds, Blocks>;
+
+template <typename ResultType, std::size_t Blocks = VSMC_RNG_AES_BLOCKS>
+using AES128Engine =
+    AESNIEngine<ResultType, AES128KeySeq<ResultType, 10>, 10, Blocks>;
+
+template <typename ResultType, std::size_t Blocks = VSMC_RNG_AES_BLOCKS>
+using AES192Engine =
+    AESNIEngine<ResultType, AES192KeySeq<ResultType, 12>, 12, Blocks>;
+
+template <typename ResultType, std::size_t Blocks = VSMC_RNG_AES_BLOCKS>
+using AES256Engine =
+    AESNIEngine<ResultType, AES256KeySeq<ResultType, 14>, 14, Blocks>;
+\end{cppcode}
+The default template arguments can be changed by configuration macros listed in
+table~\ref{tab:Configuration macros for the RNG system}. Shortcuts are also
+defined, as listed in table~\ref{tab:Counter-based RNG}. For example,
+\cppinline{ARS_4x32} is \cppinline{ARSEngine} with result type
+\cppinline{std::uint32_t}, four blocks, and the default number of rounds.
+
+\subsubsection{Philox}
+\label{ssub:Philox}
+
+The Philox algorithm in \textcite{Salmon:2011um} is implemented in a more
+general form,
+\begin{cppcode}
+template <typename ResultType, std::size_t K = VSMC_RNG_PHILOX_VECTOR_LENGTH,
+    std::size_t Rounds = VSMC_RNG_PHILOX_ROUNDS>
+using PhiloxEngine = CounterEngine<PhiloxGenerator<ResultType, K, Rounds>>;
+\end{cppcode}
+The default vector length and the number of rounds can be changed by
+configuration macros listed in table~\ref{tab:Configuration macros for the RNG
+  system}. Shortcuts are also defined, as listed in
+table~\ref{tab:Counter-based RNG}. For example, \cppinline{Philox4x32} is
+\cppinline{PhiloxEngine} with result type \cppinline{std::uint32_t}, vector
+length four, and the default number of rounds.
+
+\subsubsection{Threefry}
+\label{ssub:Threefry}
+
+The Threefry algorithm in \textcite{Salmon:2011um} is implemented in a more
+general form,
+\begin{cppcode}
+template <typename ResultType, std::size_t K = VSMC_RNG_THREEFRY_VECTOR_LENGTH,
+    std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
+using ThreefryEngine = CounterEngine<ThreefryGenerator<ResultType, K, Rounds>>;
+\end{cppcode}
+The default vector length and the number of rounds can be changed by
+configuration macros listed in table~\ref{tab:Configuration macros for the RNG
+  system}. Shortcuts are also defined, as listed in
+table~\ref{tab:Counter-based RNG}. For example, \cppinline{Threefry4x32} is
+\cppinline{ThreefryEngine} with result type \cppinline{std::uint32_t}, vector
+length four, and the default number of rounds.
+
+If \sse{}2 intrinsics are supported, then a more optimized version is also
+implemented. This implementation can have higher performance at the cost of
+larger state size. If \avx{}2 intrinsics are supported, then a even more
+optimized, with even larger state size version is also implemented.
+\begin{cppcode}
+template <typename ResultType, std::size_t K = VSMC_RNG_THREEFRY_VECTOR_LENGTH,
+    std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
+using ThreefryEngineSSE2 =
+    CounterEngine<ThreefryGeneratorSSE2<ResultType, K, Rounds>>;
+
+template <typename ResultType, std::size_t K = VSMC_RNG_THREEFRY_VECTOR_LENGTH,
+    std::size_t Rounds = VSMC_RNG_THREEFRY_ROUNDS>
+using ThreefryEngineAVX2 =
+    CounterEngine<ThreefryGeneratorAVX2<ResultType, K, Rounds>>;
+\end{cppcode}
+
+\subsubsection{Default \protect\rng}
+\label{ssub:Default RNG}
+
 Note that, not all \rng{}s defined by the library is available on all
 platforms. The library also defines a type alias \cppinline{RNG} which is one
 of the \rng{}s listed in table~\ref{tab:Counter-based RNG}. More specifically,
-if the \aesni instructions are supported,
+if the \aesni intrinsics are supported,
 \begin{cppcode}
   using RNG = ARS_4x32;
 \end{cppcode}
-otherwise if \avx{}2 instructions are supported,
+otherwise if \avx{}2 intrinsics are supported,
 \begin{cppcode}
   using RNG = Threefry4x32AVX2;
 \end{cppcode}
-otherwise if \sse{}2 instructions are supported,
+otherwise if \sse{}2 intrinsics are supported,
 \begin{cppcode}
   using RNG = Threefry4x32SSE2;
 \end{cppcode}
@@ -1472,7 +1644,7 @@ This can be changed by the configuration macro \cppinline{VSMC_RNG_TYPE}.
 \subsection{Non-deterministic \protect\rng}
 \label{sub:Non-deterministic RNG}
 
-If the \rdrand instructions are supported, the library also implement three
+If the \rdrand intrinsics are supported, the library also implement three
 \rng{}s, \cppinline{RDRAND16}, \cppinline{RDRAND32} and \cppinline{RDRAND64}.
 They output 16-, 32-, and 64-bits random unsigned integers, respectively.
 
@@ -1503,7 +1675,7 @@ a wrapper class \cppinline{MKLEngine} that makes them accessible as \cppoo{}
 generators. They are listed in table~\ref{tab:MKL RNG}. Note that, \mkl{}
 \rng{}s performs best when they are used to generate vectors of random numbers.
 These wrappers use a buffer to store such vectors. And thus they have much
-bigger state space than usual \rng{}s.
+larger state space than usual \rng{}s.
 
 \subsection{Multiple \protect\rng streams}
 \label{sub:Multiple RNG streams}
@@ -1690,16 +1862,16 @@ see the reference manual for details.
 \subsection{\protect\raii classes for \protect\mkl pointers}
 \label{sub:RAII classes for MKL pointers}
 
-\begin{table}
+\begin{table}[t]
   \begin{tabu}{X[l]X[l]}
     \toprule
     Class & \mkl pointer type \\
     \midrule
-    MKLStream   & VSLStreamStatePtr \\
-    MKLSSTask   & VSLSSTaskPtr      \\
-    MKLConvTask & VSLConvTask       \\
-    MKLCorrTask & VSLCorrTask       \\
-    MKLDFTask   & DFTaskPtr         \\
+    \texttt{MKLStream}   & \texttt{VSLStreamStatePtr} \\
+    \texttt{MKLSSTask}   & \texttt{VSLSSTaskPtr}      \\
+    \texttt{MKLConvTask} & \texttt{VSLConvTask}       \\
+    \texttt{MKLCorrTask} & \texttt{VSLCorrTask}       \\
+    \texttt{MKLDFTask}   & \texttt{DFTaskPtr}         \\
     \bottomrule
   \end{tabu}
   \caption{\protect\raii classes for \protect\mkl pointers}
@@ -1764,9 +1936,6 @@ program to print a message. This is optional. Each time after we finish $n$
 iterations, we increment the progress count by calling
 \cppinline{progress.increment()}. And aftre everything is finished, the method
 \cppinline{progress.stop()} is called.
-
-\subsection{x86 \protect\simd operations}
-\label{sub:x86 SIMD operations}
 
 \subsection{Timing}
 \label{sub:Timing}

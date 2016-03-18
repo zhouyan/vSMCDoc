@@ -5,12 +5,15 @@ CXXFLAGS := $(CXXFLAGS) -DVSMC_HAS_MKL
 CXXFLAGS := $(CXXFLAGS) -I ~/Documents/GitHub/vSMC/include
 LDFLAGS := -lmkl_rt
 
-all :
+all : user_guide.pdf
 
-pf: pf.cpp
+user_guide.pdf : user_guide.tex pf.pdf pf.rout
+	latexmk user_guide.tex
+
+pf.pdf pf.rout : pf.cpp pf.hpp pf_*.hpp
 	$(CXX) $(CXXFLAGS) -o pf pf.cpp $(LDFLAGS)
 	./pf
-	Rscript pf.R
+	Rscript --vanilla pf.R
 
 prog : progress.cpp
 	$(CXX) $(CXXFLAGS) -o progress progress.cpp $(LDFLAGS)
@@ -20,5 +23,6 @@ progopt : program_option.cpp
 	$(CXX) $(CXXFLAGS) -o program_option program_option.cpp $(LDFLAGS)
 	./program_option --vec 1 2 1e-1 --str "abc" --vec 8 9 --str "def hij" --n 2 4
 
-user_guide : user_guide.tex
-	latexmk user_guide.tex
+clean:
+	rm pf pf.out pf.pdf pf.rout
+	latexmk -c user_guide.tex

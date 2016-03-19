@@ -28,8 +28,6 @@ var searchData=
   ['statematrixdim_3c_20dynamic_20_3e',['StateMatrixDim&lt; Dynamic &gt;',['../classvsmc_1_1internal_1_1_state_matrix_dim_3_01_dynamic_01_4.html',1,'vsmc::internal']]],
   ['stateomp',['StateOMP',['../classvsmc_1_1_state_o_m_p.html',1,'vsmc']]],
   ['statetbb',['StateTBB',['../classvsmc_1_1_state_t_b_b.html',1,'vsmc']]],
-  ['staticassert',['StaticAssert',['../classvsmc_1_1internal_1_1_static_assert.html',1,'vsmc::internal']]],
-  ['staticassert_3c_20true_20_3e',['StaticAssert&lt; true &gt;',['../classvsmc_1_1internal_1_1_static_assert_3_01true_01_4.html',1,'vsmc::internal']]],
   ['stopwatchclockadapter',['StopWatchClockAdapter',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]],
   ['stopwatchclockadapter_3c_20std_3a_3achrono_3a_3ahigh_5fresolution_5fclock_20_3e',['StopWatchClockAdapter&lt; std::chrono::high_resolution_clock &gt;',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]],
   ['stopwatchguard',['StopWatchGuard',['../classvsmc_1_1_stop_watch_guard.html',1,'vsmc']]],

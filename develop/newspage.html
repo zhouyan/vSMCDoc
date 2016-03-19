@@ -90,14 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Changes in v2.2.0</h1>
-<h2>Changed behaviors</h2>
-<ul>
-<li><code>MatrixOrder</code> is now an alias to <code>MatrixLayout</code>.</li>
-<li>CBLAS and LAPACK are now required dependency.</li>
-<li>Path sampling support is removed. It can be easily done through the more general <code>Monitor</code>. See the GMM example.</li>
-</ul>
 <h2>New features</h2>
 <ul>
+<li><code>SingleParticle</code> now as iterator-like behaviors.</li>
 <li><code>Particle</code> now has a new <code>sp</code> member that return <code>SingleParticle</code> objects.</li>
 <li><code>NormalMVDistribution</code> and related functions for generating multivariate Normal distribution random variate.</li>
 <li>New module "Random Walk" that implements generic random walk MCMC kernels and Normal distribution based proposals. Both scalar and multivariate cases are supported.</li>
@@ -106,18 +101,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 <h2>Changed behaviors</h2>
 <ul>
-<li><code>AlignedAllocator</code> template parameter <code>Memory</code> now requires its member functions to be static and the class stateless.</li>
-<li><code>U01Distribution</code> now produce random numbers in interval (0, 1] if the unsigned integer results from the RNG has more bits than the significant bits of the floating point types. Otherwise it produce random numbers in (0, 1). This behavior affect all distributions. But it shall not be visible within user program.</li>
+<li><code>AlignedAllocator</code> template parameter <code>Memory</code> now requires its member functions to be static and the class stateless. Unless you write your allocator using this template, there is no need to change client code.</li>
+<li><code>MatrixOrder</code> is now an alias to <code>MatrixLayout</code>.</li>
+<li>CBLAS and LAPACK are now required dependency.</li>
 </ul>
 <h2>Removed features</h2>
 <ul>
-<li><code>U01CCDistribution</code>, etc., are removed. The functionally of generating fixed point random numbers within interval [0, 1] is preserved through <code>u01_lr</code>, etc., functions which convert a random unsigned integer to floating points numbers within desired ranges. It is extended to support all unsigned integer types and floating points types.</li>
+<li><code>U01LRDistribution</code> is removed, while <code>U01CCDistribution</code> etc., remain.</li>
+<li><code>UniformRealLRDistribution</code> and <code>UniformRealCCDistribution</code> etc., are removed.</li>
+<li>Path sampling support is removed. It can be easily done through the more general <code>Monitor</code>. See the GMM example.</li>
 </ul>
 <h2>Documentation</h2>
 <p><a href="http://zhouyan.github.io/vSMCDoc/v2.2.0/">http://zhouyan.github.io/vSMCDoc/v2.2.0/</a></p>
 <h1>Changes in v2.1.0</h1>
 <h2>Important changes</h2>
 <p>The mutation (MCMC) steps are now performed after the resampling of initialization step.</p>
+<h2>Removed features</h2>
+<ul>
+<li>OpenCL and MPI modules are removed for now. It is planned that they will be added back in future with a new interface.</li>
+</ul>
 <h2>Documentation</h2>
 <p><a href="http://zhouyan.github.io/vSMCDoc/v2.1.0/">http://zhouyan.github.io/vSMCDoc/v2.1.0/</a></p>
 <h1>Changes in v2.0.0</h1>

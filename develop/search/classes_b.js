@@ -14,6 +14,7 @@ var searchData=
   ['m256typetrait_3c_20double_20_3e',['M256TypeTrait&lt; double &gt;',['../classvsmc_1_1internal_1_1_m256_type_trait_3_01double_01_4.html',1,'vsmc::internal']]],
   ['m256typetrait_3c_20float_20_3e',['M256TypeTrait&lt; float &gt;',['../classvsmc_1_1internal_1_1_m256_type_trait_3_01float_01_4.html',1,'vsmc::internal']]],
   ['mklbase',['MKLBase',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
+  ['mklbase_3c_3a_3adftaskptr_2c_20mkldftask_3c_20realtype_20_3e_20_3e',['MKLBase&lt;::DFTaskPtr, MKLDFTask&lt; RealType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_3a_3avslconvtaskptr_2c_20mklconvtask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt;::VSLConvTaskPtr, MKLConvTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_3a_3avslcorrtaskptr_2c_20mklcorrtask_3c_20resulttype_20_3e_20_3e',['MKLBase&lt;::VSLCorrTaskPtr, MKLCorrTask&lt; ResultType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],
   ['mklbase_3c_3a_3avslsstaskptr_2c_20mklsstask_3c_20realtype_20_3e_20_3e',['MKLBase&lt;::VSLSSTaskPtr, MKLSSTask&lt; RealType &gt; &gt;',['../classvsmc_1_1_m_k_l_base.html',1,'vsmc']]],

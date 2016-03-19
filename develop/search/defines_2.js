@@ -78,6 +78,8 @@ var searchData=
   ['vsmc_5fruntime_5fassert_5frng_5fseed_5fgenerator_5fmodulo',['VSMC_RUNTIME_ASSERT_RNG_SEED_GENERATOR_MODULO',['../seed_8hpp.html#a534a455b9e015df9075ead6d3bec539d',1,'seed.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fseed_5fmax',['VSMC_RUNTIME_ASSERT_RNG_SEED_MAX',['../seed_8hpp.html#a4a0b1ab6dd19a294914d49cab76e8b75',1,'seed.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fu01_5fsequence',['VSMC_RUNTIME_ASSERT_RNG_U01_SEQUENCE',['../u01__sequence_8hpp.html#ab11f8f739d9c687fc096341b83bebd76',1,'u01_sequence.hpp']]],
+  ['vsmc_5fruntime_5fassert_5fsingle_5fparticle_5fcompare',['VSMC_RUNTIME_ASSERT_SINGLE_PARTICLE_COMPARE',['../single__particle_8hpp.html#aabf8ddfb4ddce8b1bc7854128717ed5b',1,'single_particle.hpp']]],
+  ['vsmc_5fruntime_5fassert_5fsingle_5fparticle_5fdifference',['VSMC_RUNTIME_ASSERT_SINGLE_PARTICLE_DIFFERENCE',['../single__particle_8hpp.html#a5f6034899d8002688adfadd6a1ac21be',1,'single_particle.hpp']]],
   ['vsmc_5fruntime_5fassert_5fsmp_5fbackend_5fbase_5fderived',['VSMC_RUNTIME_ASSERT_SMP_BACKEND_BASE_DERIVED',['../backend__base_8hpp.html#aa58d70a7623d8e15b349dc19af56aabd',1,'backend_base.hpp']]],
   ['vsmc_5fruntime_5fassert_5futility_5faligned_5fmemory',['VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY',['../aligned__memory_8hpp.html#a09e7c0131fd6f5d15017196bbcd40a41',1,'aligned_memory.hpp']]],
   ['vsmc_5fruntime_5fassert_5futility_5faligned_5fmemory_5fpower_5fof_5ftwo',['VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO',['../aligned__memory_8hpp.html#a0505ed9f76f0f3dffdd6b3f10500744b',1,'aligned_memory.hpp']]],

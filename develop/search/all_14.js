@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u01_20sequence',['U01 Sequence',['../group___c___a_p_i___r_n_g___u01_sequence.html',1,'']]],
+  ['u01_20sequence',['U01 sequence',['../group___c___a_p_i___r_n_g___u01_sequence.html',1,'']]],
   ['utility',['Utility',['../group___c___a_p_i___utility.html',1,'']]],
   ['u01',['U01',['../group___u01.html',1,'']]],
   ['u01_2eh',['u01.h',['../u01_8h.html',1,'']]],
@@ -47,7 +47,7 @@ var searchData=
   ['u01ocdistribution',['U01OCDistribution',['../classvsmc_1_1_u01_o_c_distribution.html',1,'vsmc']]],
   ['u01oodistribution',['U01OODistribution',['../classvsmc_1_1_u01_o_o_distribution.html#aabe18fad92dd7e19493e1ac523dabcd1',1,'vsmc::U01OODistribution::U01OODistribution()=default'],['../classvsmc_1_1_u01_o_o_distribution.html#a2a28331efbc85d807c1f532d4e8237a9',1,'vsmc::U01OODistribution::U01OODistribution(const param_type &amp;)']]],
   ['u01oodistribution',['U01OODistribution',['../classvsmc_1_1_u01_o_o_distribution.html',1,'vsmc']]],
-  ['u01_20sequence',['U01 Sequence',['../group___u01_sequence.html',1,'']]],
+  ['u01_20sequence',['U01 sequence',['../group___u01_sequence.html',1,'']]],
   ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html#a9608e92e5107bc9925980f80b2a6e419',1,'vsmc::U01SequenceSorted']]],
   ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html',1,'vsmc']]],
   ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html',1,'vsmc']]],

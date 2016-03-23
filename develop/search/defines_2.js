@@ -45,7 +45,6 @@ var searchData=
   ['vsmc_5fdefine_5futility_5fsimd_5freal_5fbinary_5fop',['VSMC_DEFINE_UTILITY_SIMD_REAL_BINARY_OP',['../simd_8hpp.html#a99a548bd29617cb855fe88d1c4ad4e4a',1,'simd.hpp']]],
   ['vsmc_5fgcc_5fnonexist',['VSMC_GCC_NONEXIST',['../gcc_8h.html#ad9beed1d9b7593ef74c18aa77306c308',1,'gcc.h']]],
   ['vsmc_5fgcc_5fversion',['VSMC_GCC_VERSION',['../gcc_8h.html#a2f4092416cf5eb90d47c34dfc8fc76f2',1,'gcc.h']]],
-  ['vsmc_5fhas_5faes_5fni',['VSMC_HAS_AES_NI',['../compiler_8h.html#a1c120b7a67d77fe92b84656704940ac9',1,'compiler.h']]],
   ['vsmc_5fhas_5fhdf5',['VSMC_HAS_HDF5',['../config_8h.html#a1c7e94d06f836a49688c6dd1c9f722b5',1,'config.h']]],
   ['vsmc_5fhas_5fint128',['VSMC_HAS_INT128',['../compiler_8h.html#a4b9a35529fbef6bdbde0623832eb0ffc',1,'compiler.h']]],
   ['vsmc_5fhas_5fopencl',['VSMC_HAS_OPENCL',['../config_8h.html#a1913fd8619d55fa12e8b8b87ef1d426d',1,'config.h']]],

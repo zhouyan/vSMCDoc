@@ -17,7 +17,6 @@ var searchData=
   ['sizetypedispatch_3c_20t_2c_20true_20_3e',['SizeTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1_size_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],
   ['sizetypetrait',['SizeTypeTrait',['../classvsmc_1_1_size_type_trait.html',1,'vsmc']]],
   ['statebase',['StateBase',['../class_state_base.html',1,'']]],
-  ['statecl',['StateCL',['../classvsmc_1_1_state_c_l.html',1,'vsmc']]],
   ['statematrix',['StateMatrix',['../classvsmc_1_1_state_matrix.html',1,'vsmc']]],
   ['statematrix_3c_20colmajor_2c_20dim_2c_20t_20_3e',['StateMatrix&lt; ColMajor, Dim, T &gt;',['../classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html',1,'vsmc']]],
   ['statematrix_3c_20rowmajor_2c_20dim_2c_20t_20_3e',['StateMatrix&lt; RowMajor, Dim, T &gt;',['../classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html',1,'vsmc']]],

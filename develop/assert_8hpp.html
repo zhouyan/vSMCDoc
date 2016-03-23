@@ -154,7 +154,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">        if (!(cond)) {                                                        \</div><div class="line">            std::fprintf(stderr, <span class="stringliteral">&quot;vSMC runtime assertion failded:%s:%d:%s\n&quot;</span>, \</div><div class="line">                __FILE__, __LINE__, msg);                                     \</div><div class="line">        };                                                                    \</div><div class="line">        assert(cond);                                                         \</div><div class="line">    }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">        if (!(cond)) {                                                        \</div><div class="line">            std::fprintf(stderr, <span class="stringliteral">&quot;vSMC runtime assertion failed:%s\n&quot;</span>, msg);  \</div><div class="line">            std::fflush(stderr);                                              \</div><div class="line">        };                                                                    \</div><div class="line">        assert(cond);                                                         \</div><div class="line">    }</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="assert_8hpp_source.html#l00053">53</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
 
 </div>
@@ -182,7 +182,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">        if (!(cond)) {                                                        \</div><div class="line">            std::fprintf(stderr,                                              \</div><div class="line">                <span class="stringliteral">&quot;vSMC runtime warning; File: %s; Line: %d\n%s\n&quot;</span>, __FILE__,   \</div><div class="line">                __LINE__, msg);                                               \</div><div class="line">            std::fflush(stderr);                                              \</div><div class="line">        };                                                                    \</div><div class="line">    }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">        if (!(cond)) {                                                        \</div><div class="line">            std::fprintf(stderr, <span class="stringliteral">&quot;vSMC runtime warning:%s\n&quot;</span>, msg);           \</div><div class="line">            std::fflush(stderr);                                              \</div><div class="line">        };                                                                    \</div><div class="line">    }</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="assert_8hpp_source.html#l00075">75</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
 
 </div>

@@ -146,9 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a87a6bdcae06d4dac471c1eea461251e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_particle.html#a93f9d2e94449bd8bb191e9f570e29782">sp_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_particle.html#a87a6bdcae06d4dac471c1eea461251e9">end</a> ()</td></tr>
 <tr class="memdesc:a87a6bdcae06d4dac471c1eea461251e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a SingleParticle&lt;T&gt; object for the first particle.  <a href="#a87a6bdcae06d4dac471c1eea461251e9">More...</a><br /></td></tr>
 <tr class="separator:a87a6bdcae06d4dac471c1eea461251e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dca9c6399a521708ace92b876524f13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_particle.html#a4dca9c6399a521708ace92b876524f13">resample</a> (const <a class="el" href="classvsmc_1_1_particle.html#ab492b3805d9ca79b5a3042597c5fc3a5">resample_type</a> &amp;op, double threshold)</td></tr>
-<tr class="memdesc:a4dca9c6399a521708ace92b876524f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performing resampling if ESS/N &lt; threshold.  <a href="#a4dca9c6399a521708ace92b876524f13">More...</a><br /></td></tr>
-<tr class="separator:a4dca9c6399a521708ace92b876524f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8761af4b22d4704097b9b6b11c4348e5"><td class="memTemplParams" colspan="2">template&lt;typename ResampleType &gt; </td></tr>
+<tr class="memitem:a8761af4b22d4704097b9b6b11c4348e5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_particle.html#a8761af4b22d4704097b9b6b11c4348e5">resample</a> (<a class="el" href="group___resample.html#gadf87ff3c9e8240ba445a7a3191f93d09">ResampleType</a> &amp;&amp;op, double threshold)</td></tr>
+<tr class="memdesc:a8761af4b22d4704097b9b6b11c4348e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performing resampling if ESS/N &lt; threshold.  <a href="#a8761af4b22d4704097b9b6b11c4348e5">More...</a><br /></td></tr>
+<tr class="separator:a8761af4b22d4704097b9b6b11c4348e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a705e50898e42498f2ea0b807d7a2d543"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_particle.html#ad45e4cd609c92c3bdf1124b1be8e965a">rng_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_particle.html#a705e50898e42498f2ea0b807d7a2d543">rng</a> (<a class="el" href="classvsmc_1_1_particle.html#ad209417e0e289ba10b837a8264afaeef">size_type</a> id)</td></tr>
 <tr class="memdesc:a705e50898e42498f2ea0b807d7a2d543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an (parallel) RNG stream for a given particle.  <a href="#a705e50898e42498f2ea0b807d7a2d543">More...</a><br /></td></tr>
 <tr class="separator:a705e50898e42498f2ea0b807d7a2d543"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,7 +362,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get a SingleParticle&lt;T&gt; object for the first particle. </p>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00158">158</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00164">164</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>
@@ -511,15 +512,17 @@ template&lt;typename T&gt; </div>
 
 <p>Get a SingleParticle&lt;T&gt; object for the first particle. </p>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00161">161</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00167">167</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4dca9c6399a521708ace92b876524f13"></a>
+<a class="anchor" id="a8761af4b22d4704097b9b6b11c4348e5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;typename ResampleType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -527,7 +530,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classvsmc_1_1_particle.html">vsmc::Particle</a>&lt; T &gt;::resample </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_particle.html#ab492b3805d9ca79b5a3042597c5fc3a5">resample_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group___resample.html#gadf87ff3c9e8240ba445a7a3191f93d09">ResampleType</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>
@@ -552,14 +555,14 @@ template&lt;typename T&gt; </div>
 <p>Performing resampling if ESS/N &lt; threshold. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">op</td><td>The resampling operation funcitor </td></tr>
+    <tr><td class="paramname">op</td><td>The resampling operation functor </td></tr>
     <tr><td class="paramname">threshold</td><td>The threshold of ESS/N below which resampling will be performed</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if resampling was performed </dd></dl>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00170">170</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00177">177</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +622,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get an (parallel) RNG stream for a given particle. </p>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00146">146</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00149">149</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +651,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the (sequential) RNG used stream for resampling. </p>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00149">149</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00155">155</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>
@@ -677,7 +680,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get the (sequential) RNG used stream for resampling. </p>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00152">152</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00158">158</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>
@@ -794,7 +797,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get a SingleParticle&lt;T&gt; object. </p>
 
-<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00155">155</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="particle_8hpp_source.html#l00161">161</a> of file <a class="el" href="particle_8hpp_source.html">particle.hpp</a>.</p>
 
 </div>
 </div>

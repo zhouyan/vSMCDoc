@@ -86,140 +86,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Resample algorithms<div class="ingroups"><a class="el" href="group___c___a_p_i.html">C API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga5d9eec49674c4559911ff9e3475e6a25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga5d9eec49674c4559911ff9e3475e6a25">vsmc_resample_scheme</a> { <br />
-&#160;&#160;<a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25af64464ab954cf9404bebe202b958781b">VSMC_RESAMPLE_MULTINOMIAL</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25ac9878a384638395b8deed36870303879">VSMC_RESAMPLE_STRATIFIED</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a2e2aa459179092444910f843c67b41ed">VSMC_RESAMPLE_SYSTEMATIC</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a17c7ab49aaf3d1eec2f2e422c78ce433">VSMC_RESAMPLE_RESIDUAL</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a31b351ce15ff8803114780ed875acd2f">VSMC_RESAMPLE_RESIDUAL_STRATIFIED</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___c___a_p_i___resample.html#gga5d9eec49674c4559911ff9e3475e6a25a1b840540a97479426df9a9c0841ef344">VSMC_RESAMPLE_RESIDUAL_SYSTEMATIC</a>
-<br />
- }</td></tr>
-<tr class="separator:ga5d9eec49674c4559911ff9e3475e6a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaefae5dfb855ab86eb05f3e8903277a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gaefae5dfb855ab86eb05f3e8903277a7d">vsmc_resample</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication, <a class="el" href="group___c___a_p_i___resample.html#ga5d9eec49674c4559911ff9e3475e6a25">vsmc_resample_scheme</a> scheme)</td></tr>
-<tr class="separator:gaefae5dfb855ab86eb05f3e8903277a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b9c2ee667f689afed8e9f45a414a4c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga7b9c2ee667f689afed8e9f45a414a4c2">vsmc_resample_multinomial</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication)</td></tr>
-<tr class="separator:ga7b9c2ee667f689afed8e9f45a414a4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga36ee5d49796255f7b54ffe9b4a47f907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga36ee5d49796255f7b54ffe9b4a47f907">vsmc_resample_residual</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication)</td></tr>
-<tr class="separator:ga36ee5d49796255f7b54ffe9b4a47f907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47e5a236ac32beb4822ae9ad92b4c3c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga47e5a236ac32beb4822ae9ad92b4c3c2">vsmc_resample_residual_stratified</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication)</td></tr>
-<tr class="separator:ga47e5a236ac32beb4822ae9ad92b4c3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd3fe166c81cfffe1f11f2f35328f86e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gacd3fe166c81cfffe1f11f2f35328f86e">vsmc_resample_residual_systematic</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication)</td></tr>
-<tr class="separator:gacd3fe166c81cfffe1f11f2f35328f86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga540688b74b20595818fadbbe3d3d1622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga540688b74b20595818fadbbe3d3d1622">vsmc_resample_stratified</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication)</td></tr>
-<tr class="separator:ga540688b74b20595818fadbbe3d3d1622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8c8cc5bbb0f587dbc9628f9f70a8760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gaf8c8cc5bbb0f587dbc9628f9f70a8760">vsmc_resample_systematic</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> *rng_ptr, const double *weight, int *replication)</td></tr>
-<tr class="separator:gaf8c8cc5bbb0f587dbc9628f9f70a8760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad57d5c3a60fa1cc7caac66176b002857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gad57d5c3a60fa1cc7caac66176b002857">vsmc_resample_multinomial</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> rng, const double *weight, int *replication)</td></tr>
+<tr class="memdesc:gad57d5c3a60fa1cc7caac66176b002857"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_resample_multinomial.html" title="Multinomial resampling. ">vsmc::ResampleMultinomial</a></code>  <a href="#gad57d5c3a60fa1cc7caac66176b002857">More...</a><br /></td></tr>
+<tr class="separator:gad57d5c3a60fa1cc7caac66176b002857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa057928f2ad66e030478207cde8e98e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gaa057928f2ad66e030478207cde8e98e7">vsmc_resample_residual</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> rng, const double *weight, int *replication)</td></tr>
+<tr class="memdesc:gaa057928f2ad66e030478207cde8e98e7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_resample_residual.html" title="Residual resampling. ">vsmc::ResampleResidual</a></code>  <a href="#gaa057928f2ad66e030478207cde8e98e7">More...</a><br /></td></tr>
+<tr class="separator:gaa057928f2ad66e030478207cde8e98e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac77e51220f63ecc9bbc5a2a0e5a8a52e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gac77e51220f63ecc9bbc5a2a0e5a8a52e">vsmc_resample_residual_stratified</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> rng, const double *weight, int *replication)</td></tr>
+<tr class="memdesc:gac77e51220f63ecc9bbc5a2a0e5a8a52e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_resample_residual_stratified.html" title="Residual stratified resampling. ">vsmc::ResampleResidualStratified</a></code>  <a href="#gac77e51220f63ecc9bbc5a2a0e5a8a52e">More...</a><br /></td></tr>
+<tr class="separator:gac77e51220f63ecc9bbc5a2a0e5a8a52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9305c8fe94e9ba489c7327ebd6bbe4a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga9305c8fe94e9ba489c7327ebd6bbe4a5">vsmc_resample_residual_systematic</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> rng, const double *weight, int *replication)</td></tr>
+<tr class="memdesc:ga9305c8fe94e9ba489c7327ebd6bbe4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_resample_systematic.html" title="Systematic resampling. ">vsmc::ResampleSystematic</a></code>  <a href="#ga9305c8fe94e9ba489c7327ebd6bbe4a5">More...</a><br /></td></tr>
+<tr class="separator:ga9305c8fe94e9ba489c7327ebd6bbe4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88054eda2eb621f4a91159bc28638d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga88054eda2eb621f4a91159bc28638d43">vsmc_resample_stratified</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> rng, const double *weight, int *replication)</td></tr>
+<tr class="memdesc:ga88054eda2eb621f4a91159bc28638d43"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_resample_stratified.html" title="Stratified resampling. ">vsmc::ResampleStratified</a></code>  <a href="#ga88054eda2eb621f4a91159bc28638d43">More...</a><br /></td></tr>
+<tr class="separator:ga88054eda2eb621f4a91159bc28638d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf668c56c3c6f4fb629bf6eb27d29297c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gaf668c56c3c6f4fb629bf6eb27d29297c">vsmc_resample_systematic</a> (int m, int n, <a class="el" href="structvsmc__rng.html">vsmc_rng</a> rng, const double *weight, int *replication)</td></tr>
+<tr class="memdesc:gaf668c56c3c6f4fb629bf6eb27d29297c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_resample_systematic.html" title="Systematic resampling. ">vsmc::ResampleSystematic</a></code>  <a href="#gaf668c56c3c6f4fb629bf6eb27d29297c">More...</a><br /></td></tr>
+<tr class="separator:gaf668c56c3c6f4fb629bf6eb27d29297c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ee54b317884054654a384594297178b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga0ee54b317884054654a384594297178b">vsmc_resample_trans_index_rep</a> (int m, int n, const int *index, int *replication)</td></tr>
+<tr class="memdesc:ga0ee54b317884054654a384594297178b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="group___resample.html#ga131d40cb746c771165ba8ac84d2d8f69" title="Transform parent indices into replication numbers. ">vsmc::resample_trans_index_rep</a></code>  <a href="#ga0ee54b317884054654a384594297178b">More...</a><br /></td></tr>
 <tr class="separator:ga0ee54b317884054654a384594297178b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6edfef03da973a552288dead50e55b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga6edfef03da973a552288dead50e55b05">vsmc_resample_trans_rep_index</a> (int m, int n, const int *replication, int *index)</td></tr>
+<tr class="memdesc:ga6edfef03da973a552288dead50e55b05"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="group___resample.html#ga76dc7feee993e49f7a00c08024c43081" title="Transform replication numbers into parent indices. ">vsmc::resample_trans_rep_index</a></code>  <a href="#ga6edfef03da973a552288dead50e55b05">More...</a><br /></td></tr>
 <tr class="separator:ga6edfef03da973a552288dead50e55b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab525ae612cfcb0faec864c5c1ae92628"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gab525ae612cfcb0faec864c5c1ae92628">vsmc_resample_trans_residual</a> (int m, int n, const double *weight, double *resid, int *integ)</td></tr>
+<tr class="memdesc:gab525ae612cfcb0faec864c5c1ae92628"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="group___resample.html#ga2e4e73afdd287cfe18ecec1c0eeb210b" title="Transform normalized weights to normalized residual and integrals, and return the number of remaining...">vsmc::resample_trans_residual</a></code>  <a href="#gab525ae612cfcb0faec864c5c1ae92628">More...</a><br /></td></tr>
 <tr class="separator:gab525ae612cfcb0faec864c5c1ae92628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9266b761ecb2ba7e91f1763fa025100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#gae9266b761ecb2ba7e91f1763fa025100">vsmc_resample_trans_u01_index</a> (int m, int n, const double *weight, const double *u01, int *index)</td></tr>
+<tr class="memdesc:gae9266b761ecb2ba7e91f1763fa025100"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="group___resample.html#ga178442b9cd51416c974209f504905e2a" title="Transform uniform [0, 1] sequence into parent indices. ">vsmc::resample_trans_u01_index</a></code>  <a href="#gae9266b761ecb2ba7e91f1763fa025100">More...</a><br /></td></tr>
 <tr class="separator:gae9266b761ecb2ba7e91f1763fa025100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54d95557e8eb5dee5410a0c15bdca51e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___resample.html#ga54d95557e8eb5dee5410a0c15bdca51e">vsmc_resample_trans_u01_rep</a> (int m, int n, const double *weight, const double *u01, int *replication)</td></tr>
+<tr class="memdesc:ga54d95557e8eb5dee5410a0c15bdca51e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="group___resample.html#ga359e332b8081ab74e839a0d10ee122e9" title="Transform uniform [0, 1] sequence into replication numbers. ">vsmc::resample_trans_u01_rep</a></code>  <a href="#ga54d95557e8eb5dee5410a0c15bdca51e">More...</a><br /></td></tr>
 <tr class="separator:ga54d95557e8eb5dee5410a0c15bdca51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga5d9eec49674c4559911ff9e3475e6a25"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___c___a_p_i___resample.html#ga5d9eec49674c4559911ff9e3475e6a25">vsmc_resample_scheme</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga5d9eec49674c4559911ff9e3475e6a25af64464ab954cf9404bebe202b958781b"></a>VSMC_RESAMPLE_MULTINOMIAL&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5d9eec49674c4559911ff9e3475e6a25ac9878a384638395b8deed36870303879"></a>VSMC_RESAMPLE_STRATIFIED&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5d9eec49674c4559911ff9e3475e6a25a2e2aa459179092444910f843c67b41ed"></a>VSMC_RESAMPLE_SYSTEMATIC&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5d9eec49674c4559911ff9e3475e6a25a17c7ab49aaf3d1eec2f2e422c78ce433"></a>VSMC_RESAMPLE_RESIDUAL&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5d9eec49674c4559911ff9e3475e6a25a31b351ce15ff8803114780ed875acd2f"></a>VSMC_RESAMPLE_RESIDUAL_STRATIFIED&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5d9eec49674c4559911ff9e3475e6a25a1b840540a97479426df9a9c0841ef344"></a>VSMC_RESAMPLE_RESIDUAL_SYSTEMATIC&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00277">277</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaefae5dfb855ab86eb05f3e8903277a7d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc_resample </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>weight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>replication</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___c___a_p_i___resample.html#ga5d9eec49674c4559911ff9e3475e6a25">vsmc_resample_scheme</a>&#160;</td>
-          <td class="paramname"><em>scheme</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga7b9c2ee667f689afed8e9f45a414a4c2"></a>
+<a class="anchor" id="gad57d5c3a60fa1cc7caac66176b002857"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -238,8 +149,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
+          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -261,9 +172,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="classvsmc_1_1_resample_multinomial.html" title="Multinomial resampling. ">vsmc::ResampleMultinomial</a></code> </p>
+
 </div>
 </div>
-<a class="anchor" id="ga36ee5d49796255f7b54ffe9b4a47f907"></a>
+<a class="anchor" id="gaa057928f2ad66e030478207cde8e98e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -282,8 +195,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
+          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -305,9 +218,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="classvsmc_1_1_resample_residual.html" title="Residual resampling. ">vsmc::ResampleResidual</a></code> </p>
+
 </div>
 </div>
-<a class="anchor" id="ga47e5a236ac32beb4822ae9ad92b4c3c2"></a>
+<a class="anchor" id="gac77e51220f63ecc9bbc5a2a0e5a8a52e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -326,8 +241,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
+          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -349,9 +264,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="classvsmc_1_1_resample_residual_stratified.html" title="Residual stratified resampling. ">vsmc::ResampleResidualStratified</a></code> </p>
+
 </div>
 </div>
-<a class="anchor" id="gacd3fe166c81cfffe1f11f2f35328f86e"></a>
+<a class="anchor" id="ga9305c8fe94e9ba489c7327ebd6bbe4a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -370,8 +287,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
+          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -393,9 +310,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="classvsmc_1_1_resample_systematic.html" title="Systematic resampling. ">vsmc::ResampleSystematic</a></code> </p>
+
 </div>
 </div>
-<a class="anchor" id="ga540688b74b20595818fadbbe3d3d1622"></a>
+<a class="anchor" id="ga88054eda2eb621f4a91159bc28638d43"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -414,8 +333,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
+          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -437,9 +356,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="classvsmc_1_1_resample_stratified.html" title="Stratified resampling. ">vsmc::ResampleStratified</a></code> </p>
+
 </div>
 </div>
-<a class="anchor" id="gaf8c8cc5bbb0f587dbc9628f9f70a8760"></a>
+<a class="anchor" id="gaf668c56c3c6f4fb629bf6eb27d29297c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -458,8 +379,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a> *&#160;</td>
-          <td class="paramname"><em>rng_ptr</em>, </td>
+          <td class="paramtype"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -480,6 +401,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code><a class="el" href="classvsmc_1_1_resample_systematic.html" title="Systematic resampling. ">vsmc::ResampleSystematic</a></code> </p>
 
 </div>
 </div>
@@ -519,6 +442,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="group___resample.html#ga131d40cb746c771165ba8ac84d2d8f69" title="Transform parent indices into replication numbers. ">vsmc::resample_trans_index_rep</a></code> </p>
+
 </div>
 </div>
 <a class="anchor" id="ga6edfef03da973a552288dead50e55b05"></a>
@@ -556,6 +481,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code><a class="el" href="group___resample.html#ga76dc7feee993e49f7a00c08024c43081" title="Transform replication numbers into parent indices. ">vsmc::resample_trans_rep_index</a></code> </p>
 
 </div>
 </div>
@@ -601,6 +528,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="group___resample.html#ga2e4e73afdd287cfe18ecec1c0eeb210b" title="Transform normalized weights to normalized residual and integrals, and return the number of remaining...">vsmc::resample_trans_residual</a></code> </p>
+
 </div>
 </div>
 <a class="anchor" id="gae9266b761ecb2ba7e91f1763fa025100"></a>
@@ -645,6 +574,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><code><a class="el" href="group___resample.html#ga178442b9cd51416c974209f504905e2a" title="Transform uniform [0, 1] sequence into parent indices. ">vsmc::resample_trans_u01_index</a></code> </p>
+
 </div>
 </div>
 <a class="anchor" id="ga54d95557e8eb5dee5410a0c15bdca51e"></a>
@@ -688,6 +619,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code><a class="el" href="group___resample.html#ga359e332b8081ab74e839a0d10ee122e9" title="Transform uniform [0, 1] sequence into replication numbers. ">vsmc::resample_trans_u01_rep</a></code> </p>
 
 </div>
 </div>

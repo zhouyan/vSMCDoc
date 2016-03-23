@@ -33,7 +33,11 @@ var searchData=
   ['betadistributionalgorithmc',['BetaDistributionAlgorithmC',['../namespacevsmc_1_1internal.html#a922e33bab79ac3f8e9184c8ecec0ea7eaf369575b59662131f0d89fe32daea3e5',1,'vsmc::internal']]],
   ['betadistributionalgorithmj',['BetaDistributionAlgorithmJ',['../namespacevsmc_1_1internal.html#a922e33bab79ac3f8e9184c8ecec0ea7ea30ceb828b24f94624e83fdd9d3e16cda',1,'vsmc::internal']]],
   ['betadistributionalgorithmx1',['BetaDistributionAlgorithmX1',['../namespacevsmc_1_1internal.html#a922e33bab79ac3f8e9184c8ecec0ea7eac169893c909916af9a6b68e6e4f9f62e',1,'vsmc::internal']]],
-  ['betadistributionconstant',['BetaDistributionConstant',['../classvsmc_1_1internal_1_1_beta_distribution_constant.html#abf0a54fa6714f3b429a33f806f9df687',1,'vsmc::internal::BetaDistributionConstant']]],
   ['betadistributionconstant',['BetaDistributionConstant',['../classvsmc_1_1internal_1_1_beta_distribution_constant.html',1,'vsmc::internal']]],
-  ['binomial',['binomial',['../classvsmc_1_1_m_k_l_stream.html#a104c4b1f0b48423719133dd63754365d',1,'vsmc::MKLStream']]]
+  ['betadistributionconstant',['BetaDistributionConstant',['../classvsmc_1_1internal_1_1_beta_distribution_constant.html#abf0a54fa6714f3b429a33f806f9df687',1,'vsmc::internal::BetaDistributionConstant']]],
+  ['binomial',['binomial',['../classvsmc_1_1_m_k_l_stream.html#a104c4b1f0b48423719133dd63754365d',1,'vsmc::MKLStream']]],
+  ['build',['build',['../classvsmc_1_1_c_l_program.html#ad239a39ffc6f0630874d35829b59942a',1,'vsmc::CLProgram']]],
+  ['build_5flog',['build_log',['../classvsmc_1_1_c_l_program.html#a695cdd766f6bfe18b1ab5359e8eeb182',1,'vsmc::CLProgram']]],
+  ['build_5foptions',['build_options',['../classvsmc_1_1_c_l_program.html#a5ba02e8689f7c2ddd08c8ab84a0272e4',1,'vsmc::CLProgram']]],
+  ['build_5fstatus',['build_status',['../classvsmc_1_1_c_l_program.html#ac095358e8b67ce3ed0ae85360ad34f3e',1,'vsmc::CLProgram']]]
 ];

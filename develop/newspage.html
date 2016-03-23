@@ -89,7 +89,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Change log </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Changes in v2.2.0</h1>
+<div class="textblock"><h1>Changes in v2.3.0</h1>
+<h2>New features</h2>
+<ul>
+<li>C++ OpenCL RAII classes</li>
+<li><code>Sampler</code> gains new methods, <code>accept_size</code>, <code>read_accept_history</code>, <code>read_accept_history_list</code>, and <code>read_accept_history_matrix</code>.</li>
+</ul>
+<h2>Changed behaviors</h2>
+<ul>
+<li><code>Monitor::read_record_matrix</code> overload which takes iterators to iterators is renamed to <code>read_record_list</code>.</li>
+<li><code>StateMatrix::read_state_matrix</code> overload which takes iterators to iterators is renamed to <code>read_record_list</code></li>
+<li>Most methods which take a <code>MatrixLayout</code> type template parameter now has that parameter as a runtime parameter.</li>
+<li>Most methods that takes output iterators, (including pointers that used in this fashion), now returns an iterator in the same way as <code>std::copy</code> etc.</li>
+<li><code>Allocator</code> is now always an alias to <code>AlignedAllocator</code>. The alignment is 32 for scalar types and <code>max(alignof(T), 16)</code> for others.</li>
+<li><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;</code></li>
+</ul>
+<h2>Removed features</h2>
+<ul>
+<li>MKL RAII classes no long has the <code>reset</code> method with same arguments as the constructors. Use the constructor and move semantics instead.</li>
+<li><code>Monitor::index_data</code> and <code>Monitor::record_data</code> are removed</li>
+<li><code>AlignedVector</code> is removed</li>
+</ul>
+<h1>Changes in v2.2.0</h1>
 <h2>New features</h2>
 <ul>
 <li><code>SingleParticle</code> now as iterator-like behaviors.</li>

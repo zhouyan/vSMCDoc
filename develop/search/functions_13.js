@@ -37,5 +37,8 @@ var searchData=
   ['uniform_5freal_5fdistribution_5fcheck_5fparam',['uniform_real_distribution_check_param',['../namespacevsmc_1_1internal.html#afdf24bfcd210c4e18e277b52fbb128c7',1,'vsmc::internal']]],
   ['uniform_5freal_5fdistribution_5fimpl',['uniform_real_distribution_impl',['../namespacevsmc_1_1internal.html#a7739b08c255e401219b15c63102d8a52',1,'vsmc::internal']]],
   ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html#a0417d8865555b77d88212d45533c5562',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution()=default'],['../classvsmc_1_1_uniform_bits_distribution.html#ab1876acdf1445d56ad3a906fa8af5a08',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution(const param_type &amp;)']]],
-  ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]]
+  ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]],
+  ['unique',['unique',['../classvsmc_1_1_c_l_base.html#a7ea8dac667a1715aa154c8b41005bf79',1,'vsmc::CLBase']]],
+  ['unload_5fcompiler',['unload_compiler',['../classvsmc_1_1_c_l_platform.html#a2f49f72d90b464f1ab56d6c8d92748da',1,'vsmc::CLPlatform']]],
+  ['use_5fcount',['use_count',['../classvsmc_1_1_c_l_base.html#a566c9b492e8d50cb0de9680191eec72c',1,'vsmc::CLBase']]]
 ];

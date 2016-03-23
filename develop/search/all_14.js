@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['u01_20sequence',['U01 Sequence',['../group___c___a_p_i___r_n_g___u01_sequence.html',1,'']]],
+  ['utility',['Utility',['../group___c___a_p_i___utility.html',1,'']]],
   ['u01',['U01',['../group___u01.html',1,'']]],
   ['u01_2eh',['u01.h',['../u01_8h.html',1,'']]],
   ['u01_2ehpp',['u01.hpp',['../u01_8hpp.html',1,'']]],
@@ -46,10 +48,10 @@ var searchData=
   ['u01oodistribution',['U01OODistribution',['../classvsmc_1_1_u01_o_o_distribution.html#aabe18fad92dd7e19493e1ac523dabcd1',1,'vsmc::U01OODistribution::U01OODistribution()=default'],['../classvsmc_1_1_u01_o_o_distribution.html#a2a28331efbc85d807c1f532d4e8237a9',1,'vsmc::U01OODistribution::U01OODistribution(const param_type &amp;)']]],
   ['u01oodistribution',['U01OODistribution',['../classvsmc_1_1_u01_o_o_distribution.html',1,'vsmc']]],
   ['u01_20sequence',['U01 Sequence',['../group___u01_sequence.html',1,'']]],
-  ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html',1,'vsmc']]],
   ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html#a9608e92e5107bc9925980f80b2a6e419',1,'vsmc::U01SequenceSorted']]],
-  ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html#a3607c6e3dc60bcfaaacadd3677d95c23',1,'vsmc::U01SequenceStratified']]],
+  ['u01sequencesorted',['U01SequenceSorted',['../classvsmc_1_1_u01_sequence_sorted.html',1,'vsmc']]],
   ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html',1,'vsmc']]],
+  ['u01sequencestratified',['U01SequenceStratified',['../classvsmc_1_1_u01_sequence_stratified.html#a3607c6e3dc60bcfaaacadd3677d95c23',1,'vsmc::U01SequenceStratified']]],
   ['u01sequencesystematic',['U01SequenceSystematic',['../classvsmc_1_1_u01_sequence_systematic.html#a16409765547ef5ef504d938174a36e35',1,'vsmc::U01SequenceSystematic']]],
   ['u01sequencesystematic',['U01SequenceSystematic',['../classvsmc_1_1_u01_sequence_systematic.html',1,'vsmc']]],
   ['u01uinttype',['U01UIntType',['../namespacevsmc_1_1internal.html#a4642cb53480cd995a989e41223585211',1,'vsmc::internal']]],
@@ -71,8 +73,11 @@ var searchData=
   ['uniformbits',['UniformBits',['../classvsmc_1_1_uniform_bits.html',1,'vsmc']]],
   ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html#a0417d8865555b77d88212d45533c5562',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution()=default'],['../classvsmc_1_1_uniform_bits_distribution.html#ab1876acdf1445d56ad3a906fa8af5a08',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution(const param_type &amp;)']]],
   ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html',1,'vsmc']]],
-  ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html',1,'vsmc']]],
   ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]],
+  ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html',1,'vsmc']]],
+  ['unique',['unique',['../classvsmc_1_1_c_l_base.html#a7ea8dac667a1715aa154c8b41005bf79',1,'vsmc::CLBase']]],
+  ['unload_5fcompiler',['unload_compiler',['../classvsmc_1_1_c_l_platform.html#a2f49f72d90b464f1ab56d6c8d92748da',1,'vsmc::CLPlatform']]],
+  ['use_5fcount',['use_count',['../classvsmc_1_1_c_l_base.html#a566c9b492e8d50cb0de9680191eec72c',1,'vsmc::CLBase']]],
   ['utility',['Utility',['../group___utility.html',1,'']]],
   ['utility_2ehpp',['utility.hpp',['../utility_8hpp.html',1,'']]]
 ];

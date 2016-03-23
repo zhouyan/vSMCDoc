@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: Memory alignment</title>
+<title>vSMC: Aligned memory alignment</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">Memory alignment<div class="ingroups"><a class="el" href="group___utility.html">Utility</a></div></div>  </div>
+<div class="title">Aligned memory alignment<div class="ingroups"><a class="el" href="group___utility.html">Utility</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -121,18 +121,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga38b49cd552427b5f884bfd45f2262e9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c">vsmc::AlignedMemory</a> = ::<a class="el" href="classvsmc_1_1_aligned_memory_t_b_b.html">vsmc::AlignedMemoryTBB</a></td></tr>
 <tr class="memdesc:ga38b49cd552427b5f884bfd45f2262e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default AlignedMemory type.  <a href="group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c">More...</a><br /></td></tr>
 <tr class="separator:ga38b49cd552427b5f884bfd45f2262e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga71815f774e78a7daf2858f5bd1ed7388"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga71815f774e78a7daf2858f5bd1ed7388"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga71815f774e78a7daf2858f5bd1ed7388">vsmc::AlignedVector</a> = std::vector&lt; T, AlignedAllocator&lt; T &gt;&gt;</td></tr>
-<tr class="memdesc:ga71815f774e78a7daf2858f5bd1ed7388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type using <a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a>.  <a href="group___aligned_memory.html#ga71815f774e78a7daf2858f5bd1ed7388">More...</a><br /></td></tr>
-<tr class="separator:ga71815f774e78a7daf2858f5bd1ed7388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga795da25dedee60c77bf33e10f73aab5e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga795da25dedee60c77bf33e10f73aab5e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, AlignedAllocator&lt; T &gt;, std::allocator&lt; T &gt;&gt;::type</td></tr>
-<tr class="memdesc:ga795da25dedee60c77bf33e10f73aab5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> for scalar type and <code>std::allocator</code> for others.  <a href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">More...</a><br /></td></tr>
-<tr class="separator:ga795da25dedee60c77bf33e10f73aab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab66d52262c9aabefa08a1304c57d57f6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gab66d52262c9aabefa08a1304c57d57f6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">vsmc::Vector</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, AlignedVector&lt; T &gt;, std::vector&lt; T &gt;&gt;::type</td></tr>
-<tr class="memdesc:gab66d52262c9aabefa08a1304c57d57f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlignedVector for scalar type and <code>std::vector</code> for others.  <a href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">More...</a><br /></td></tr>
-<tr class="separator:gab66d52262c9aabefa08a1304c57d57f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f1de809633cd238633b94560d27dfc8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga5f1de809633cd238633b94560d27dfc8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga5f1de809633cd238633b94560d27dfc8">vsmc::Allocator</a> = AlignedAllocator&lt; T, std::is_scalar&lt; T &gt;::value?32:(alignof(T) &gt; 16?alignof(T):16)&gt;</td></tr>
+<tr class="memdesc:ga5f1de809633cd238633b94560d27dfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> with proper alignement detected for type.  <a href="group___aligned_memory.html#ga5f1de809633cd238633b94560d27dfc8">More...</a><br /></td></tr>
+<tr class="separator:ga5f1de809633cd238633b94560d27dfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">vsmc::Vector</a> = std::vector&lt; T, Allocator&lt; T &gt;&gt;</td></tr>
+<tr class="memdesc:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type using Allocator.  <a href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">More...</a><br /></td></tr>
+<tr class="separator:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Memory allocation with alignment requirement. </p>
@@ -153,57 +149,39 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga71815f774e78a7daf2858f5bd1ed7388"></a>
+<a class="anchor" id="ga5f1de809633cd238633b94560d27dfc8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga71815f774e78a7daf2858f5bd1ed7388">vsmc::AlignedVector</a> = typedef std::vector&lt;T, AlignedAllocator&lt;T&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga5f1de809633cd238633b94560d27dfc8">vsmc::Allocator</a> = typedef AlignedAllocator&lt;T, std::is_scalar&lt;T&gt;::value ? 32 : (alignof(T) &gt; 16 ? alignof(T) : 16)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vector type using <a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a>. </p>
-
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00354">354</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga795da25dedee60c77bf33e10f73aab5e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typedef typename std::conditional&lt;std::is_scalar&lt;T&gt;::value, AlignedAllocator&lt;T&gt;, std::allocator&lt;T&gt;&gt;::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> for scalar type and <code>std::allocator</code> for others. </p>
+<p><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> with proper alignement detected for type. </p>
 
 <p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00349">349</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gab66d52262c9aabefa08a1304c57d57f6"></a>
+<a class="anchor" id="ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">vsmc::Vector</a> = typedef typename std::conditional&lt;std::is_scalar&lt;T&gt;::value, AlignedVector&lt;T&gt;, std::vector&lt;T&gt;&gt;::type</td>
+          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">vsmc::Vector</a> = typedef std::vector&lt;T, Allocator&lt;T&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>AlignedVector for scalar type and <code>std::vector</code> for others. </p>
+<p>Vector type using Allocator. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00360">360</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00354">354</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

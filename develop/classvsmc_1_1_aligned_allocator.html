@@ -163,12 +163,12 @@ class vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</h3>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The value type </td></tr>
     <tr><td class="paramname">Alignment</td><td>The alignment requirement of memory, must be a power of two and no less than <code>sizeof(void *)</code>. </td></tr>
-    <tr><td class="paramname">Memory</td><td>The memory management class. Must provides two static member functions, <code>aligned_malloc</code> and <code>aligned_free</code>. The member function <code>aligned_malloc</code> shall behave similar to <code>std::malloc</code> but take an additional arguments for alignment. The member function <code>aligned_free</code> shall behave just like <code>std::free</code>. </td></tr>
+    <tr><td class="paramname">Memory</td><td>The memory management class. Must provides two static member functions, <code>aligned_malloc</code> and <code>aligned_free</code>. The member function <code>aligned_malloc</code> shall behave similar to <code>std::malloc</code> but take an additional arguments for alignment. It shall return a null pointer if the input size is zero. If there is an error, it throw an error or use other error handiling techniques, and if it mush return, it returns a null pointer . The member function <code>aligned_free</code> shall behave just like <code>std::free</code>. It shall be able to handle null pointer as an input. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00253">253</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00337">337</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a14a1bef1b0eca1b1f09ccd168e1b3240"></a>
 <div class="memitem">
@@ -182,7 +182,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00267">267</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00351">351</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00269">269</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00353">353</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00265">265</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00349">349</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00270">270</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00354">354</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +246,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00266">266</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00350">350</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00268">268</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00352">352</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +278,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00264">264</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00348">348</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00263">263</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00347">347</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +376,7 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00284">284</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00368">368</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00289">289</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00373">373</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +453,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00298">298</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00379">379</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

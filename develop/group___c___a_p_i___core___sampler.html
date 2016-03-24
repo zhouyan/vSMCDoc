@@ -132,12 +132,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf5ad535cb8ce66de655e5810a9aed09a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#gaf5ad535cb8ce66de655e5810a9aed09a">vsmc_sampler_clone</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler, <a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> other, int retain_rng)</td></tr>
 <tr class="memdesc:gaf5ad535cb8ce66de655e5810a9aed09a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a2f6dc7aac74224eb09dbe113f064ee7e" title="Clone the sampler system except the RNG engines. ">vsmc::Sampler::clone</a></code>  <a href="#gaf5ad535cb8ce66de655e5810a9aed09a">More...</a><br /></td></tr>
 <tr class="separator:gaf5ad535cb8ce66de655e5810a9aed09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae567aa3e4ec3b51441024e0fbe75bac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#gae567aa3e4ec3b51441024e0fbe75bac2">vsmc_sampler_delete</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> *sampler_ptr)</td></tr>
+<tr class="memdesc:gae567aa3e4ec3b51441024e0fbe75bac2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsmc::Sampler::~Sampler</code>  <a href="#gae567aa3e4ec3b51441024e0fbe75bac2">More...</a><br /></td></tr>
+<tr class="separator:gae567aa3e4ec3b51441024e0fbe75bac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6464369b7a1931dc9ad3dd755e15734e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#ga6464369b7a1931dc9ad3dd755e15734e">vsmc_sampler_ess_history</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler, int iter)</td></tr>
 <tr class="memdesc:ga6464369b7a1931dc9ad3dd755e15734e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#ade5ca7c5fb251ab534bade4145c537d8" title="Get ESS of a given iteration, initialization count as iter 0. ">vsmc::Sampler::ess_history</a></code>  <a href="#ga6464369b7a1931dc9ad3dd755e15734e">More...</a><br /></td></tr>
 <tr class="separator:ga6464369b7a1931dc9ad3dd755e15734e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78a6fddf1ead6b9e785be4b32ed31e0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#ga78a6fddf1ead6b9e785be4b32ed31e0f">vsmc_sampler_free</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> *sampler_ptr)</td></tr>
-<tr class="memdesc:ga78a6fddf1ead6b9e785be4b32ed31e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vsmc::Sampler::~Sampler</code>  <a href="#ga78a6fddf1ead6b9e785be4b32ed31e0f">More...</a><br /></td></tr>
-<tr class="separator:ga78a6fddf1ead6b9e785be4b32ed31e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad894f87cbdc888ad5e68e72a05ebf458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__monitor.html">vsmc_monitor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#gad894f87cbdc888ad5e68e72a05ebf458">vsmc_sampler_get_monitor</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler, const char *name)</td></tr>
 <tr class="memdesc:gad894f87cbdc888ad5e68e72a05ebf458"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a30fe55d0f4786c6ca3f59be17350203a" title="Add a monitor. ">vsmc::Sampler::monitor</a></code>  <a href="#gad894f87cbdc888ad5e68e72a05ebf458">More...</a><br /></td></tr>
 <tr class="separator:gad894f87cbdc888ad5e68e72a05ebf458"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,9 +165,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2dbffdf4086d616ddd02126ccf673560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#ga2dbffdf4086d616ddd02126ccf673560">vsmc_sampler_iterate</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler, int num)</td></tr>
 <tr class="memdesc:ga2dbffdf4086d616ddd02126ccf673560"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a08a826dd4be3c3479bfad10ebefb71e6" title="Iteration. ">vsmc::Sampler::iterate</a></code>  <a href="#ga2dbffdf4086d616ddd02126ccf673560">More...</a><br /></td></tr>
 <tr class="separator:ga2dbffdf4086d616ddd02126ccf673560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee6ce43a24f4693ca4362866746330f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#gaee6ce43a24f4693ca4362866746330f4">vsmc_sampler_malloc</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> *sampler_ptr, int n, int dim, <a class="el" href="group___c___a_p_i___definitions.html#ga6d03b8e6a9caf4e8840be924ec9a6f19">vSMCResampleScheme</a> scheme, double threshold)</td></tr>
-<tr class="memdesc:gaee6ce43a24f4693ca4362866746330f4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a859d9e004177bb7cfb0a607e0735e279" title="Construct a Sampler without selection of resampling method. ">vsmc::Sampler::Sampler</a></code>  <a href="#gaee6ce43a24f4693ca4362866746330f4">More...</a><br /></td></tr>
-<tr class="separator:gaee6ce43a24f4693ca4362866746330f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08084bdff1697e86a938cfc13f3d171e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#ga08084bdff1697e86a938cfc13f3d171e">vsmc_sampler_mcmc</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler, <a class="el" href="group___c___a_p_i___core___sampler.html#ga355836e94fa73567b69679f94c96923c">vsmc_sampler_mcmc_type</a> new_mcmc, int append)</td></tr>
 <tr class="memdesc:ga08084bdff1697e86a938cfc13f3d171e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a79806015ddea64b250aade1ff23efabb" title="Add a new mcmc. ">vsmc::Sampler::mcmc</a></code>  <a href="#ga08084bdff1697e86a938cfc13f3d171e">More...</a><br /></td></tr>
 <tr class="separator:ga08084bdff1697e86a938cfc13f3d171e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +189,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae96a39e2f425f069c9d98c45b74ac642"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#gae96a39e2f425f069c9d98c45b74ac642">vsmc_sampler_move_queue_size</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler)</td></tr>
 <tr class="memdesc:gae96a39e2f425f069c9d98c45b74ac642"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#ac2cd40a901a1c736c5b25d280bc996bf" title="Check the size of the move queue. ">vsmc::Sampler::move_queue_size</a></code>  <a href="#gae96a39e2f425f069c9d98c45b74ac642">More...</a><br /></td></tr>
 <tr class="separator:gae96a39e2f425f069c9d98c45b74ac642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cd4ffbe7e91705984174f4806244765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__sampler.html">vsmc_sampler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#ga2cd4ffbe7e91705984174f4806244765">vsmc_sampler_new</a> (int n, int dim, <a class="el" href="group___c___a_p_i___definitions.html#ga6d03b8e6a9caf4e8840be924ec9a6f19">vSMCResampleScheme</a> scheme, double threshold)</td></tr>
+<tr class="memdesc:ga2cd4ffbe7e91705984174f4806244765"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a859d9e004177bb7cfb0a607e0735e279" title="Construct a Sampler without selection of resampling method. ">vsmc::Sampler::Sampler</a></code>  <a href="#ga2cd4ffbe7e91705984174f4806244765">More...</a><br /></td></tr>
+<tr class="separator:ga2cd4ffbe7e91705984174f4806244765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63519b9d6abebb3275b9374ad1f9dfb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__particle.html">vsmc_particle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___sampler.html#ga63519b9d6abebb3275b9374ad1f9dfb9">vsmc_sampler_particle</a> (<a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> sampler)</td></tr>
 <tr class="memdesc:ga63519b9d6abebb3275b9374ad1f9dfb9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_sampler.html#a5e69a58d1ec49d362d6749f8155fb464" title="Read and write access to the Particle&lt;T&gt; object. ">vsmc::Sampler::particle</a></code>  <a href="#ga63519b9d6abebb3275b9374ad1f9dfb9">More...</a><br /></td></tr>
 <tr class="separator:ga63519b9d6abebb3275b9374ad1f9dfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,7 +270,7 @@ Functions</h2></td></tr>
 
 <p><code><a class="el" href="classvsmc_1_1_sampler.html#a0b5b45a078f44f60bad285e252eee935">vsmc::Sampler::init_type</a></code> </p>
 
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00834">834</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
+<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00833">833</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Functions</h2></td></tr>
 
 <p><code><a class="el" href="classvsmc_1_1_sampler.html#a00dea6f4f5b067f59f3b26c682a4a836">vsmc::Sampler::mcmc_type</a></code> </p>
 
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00840">840</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
+<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00839">839</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ Functions</h2></td></tr>
 
 <p><code><a class="el" href="classvsmc_1_1_sampler.html#ad494acddf29da232d3f6bd192273e484">vsmc::Sampler::move_type</a></code> </p>
 
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00837">837</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
+<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00836">836</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
 
 </div>
 </div>
@@ -467,6 +467,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gae567aa3e4ec3b51441024e0fbe75bac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc_sampler_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> *&#160;</td>
+          <td class="paramname"><em>sampler_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>vsmc::Sampler::~Sampler</code> </p>
+
+</div>
+</div>
 <a class="anchor" id="ga6464369b7a1931dc9ad3dd755e15734e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -492,24 +510,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code><a class="el" href="classvsmc_1_1_sampler.html#ade5ca7c5fb251ab534bade4145c537d8" title="Get ESS of a given iteration, initialization count as iter 0. ">vsmc::Sampler::ess_history</a></code> </p>
-
-</div>
-</div>
-<a class="anchor" id="ga78a6fddf1ead6b9e785be4b32ed31e0f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc_sampler_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> *&#160;</td>
-          <td class="paramname"><em>sampler_ptr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>vsmc::Sampler::~Sampler</code> </p>
 
 </div>
 </div>
@@ -735,52 +735,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaee6ce43a24f4693ca4362866746330f4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc_sampler_malloc </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> *&#160;</td>
-          <td class="paramname"><em>sampler_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___c___a_p_i___definitions.html#ga6d03b8e6a9caf4e8840be924ec9a6f19">vSMCResampleScheme</a>&#160;</td>
-          <td class="paramname"><em>scheme</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>threshold</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code><a class="el" href="classvsmc_1_1_sampler.html#a859d9e004177bb7cfb0a607e0735e279" title="Construct a Sampler without selection of resampling method. ">vsmc::Sampler::Sampler</a></code> </p>
-
-</div>
-</div>
 <a class="anchor" id="ga08084bdff1697e86a938cfc13f3d171e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -954,6 +908,46 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code><a class="el" href="classvsmc_1_1_sampler.html#ac2cd40a901a1c736c5b25d280bc996bf" title="Check the size of the move queue. ">vsmc::Sampler::move_queue_size</a></code> </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2cd4ffbe7e91705984174f4806244765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvsmc__sampler.html">vsmc_sampler</a> vsmc_sampler_new </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c___a_p_i___definitions.html#ga6d03b8e6a9caf4e8840be924ec9a6f19">vSMCResampleScheme</a>&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code><a class="el" href="classvsmc_1_1_sampler.html#a859d9e004177bb7cfb0a607e0735e279" title="Construct a Sampler without selection of resampling method. ">vsmc::Sampler::Sampler</a></code> </p>
 
 </div>
 </div>

@@ -34,5 +34,7 @@ var searchData=
   ['vsmc_5fthreefry4x64_5fctr_5ft',['vsmc_threefry4x64_ctr_t',['../structvsmc__threefry4x64__ctr__t.html',1,'']]],
   ['vsmc_5fthreefry4x64_5fkey_5ft',['vsmc_threefry4x64_key_t',['../structvsmc__threefry4x64__key__t.html',1,'']]],
   ['vsmc_5fthreefry4x64_5fpar_5ft',['vsmc_threefry4x64_par_t',['../structvsmc__threefry4x64__par__t.html',1,'']]],
+  ['vsmc_5fvector',['vsmc_vector',['../structvsmc__vector.html',1,'']]],
+  ['vsmc_5fvector_5fint',['vsmc_vector_int',['../structvsmc__vector__int.html',1,'']]],
   ['vsmc_5fweight',['vsmc_weight',['../structvsmc__weight.html',1,'']]]
 ];

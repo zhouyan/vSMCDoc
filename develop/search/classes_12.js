@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['vsmc_5fcovariance',['vsmc_covariance',['../structvsmc__covariance.html',1,'']]],
   ['vsmc_5fmonitor',['vsmc_monitor',['../structvsmc__monitor.html',1,'']]],
   ['vsmc_5fparticle',['vsmc_particle',['../structvsmc__particle.html',1,'']]],
   ['vsmc_5fphilox2x32',['vsmc_philox2x32',['../structvsmc__philox2x32.html',1,'']]],
@@ -10,6 +11,8 @@ var searchData=
   ['vsmc_5fphilox4x32_5fctr_5ft',['vsmc_philox4x32_ctr_t',['../structvsmc__philox4x32__ctr__t.html',1,'']]],
   ['vsmc_5fphilox4x32_5fkey_5ft',['vsmc_philox4x32_key_t',['../structvsmc__philox4x32__key__t.html',1,'']]],
   ['vsmc_5fphilox4x32_5fpar_5ft',['vsmc_philox4x32_par_t',['../structvsmc__philox4x32__par__t.html',1,'']]],
+  ['vsmc_5fprogram_5foption_5fmap',['vsmc_program_option_map',['../structvsmc__program__option__map.html',1,'']]],
+  ['vsmc_5fprogress',['vsmc_progress',['../structvsmc__progress.html',1,'']]],
   ['vsmc_5frng',['vsmc_rng',['../structvsmc__rng.html',1,'']]],
   ['vsmc_5fsampler',['vsmc_sampler',['../structvsmc__sampler.html',1,'']]],
   ['vsmc_5fsingle_5fparticle',['vsmc_single_particle',['../structvsmc__single__particle.html',1,'']]],

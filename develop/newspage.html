@@ -102,13 +102,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Most methods which take a <code>MatrixLayout</code> type template parameter now has that parameter as a runtime parameter.</li>
 <li>Most methods that takes output iterators, (including pointers that used in this fashion), now returns an iterator in the same way as <code>std::copy</code> etc.</li>
 <li><code>Allocator</code> is now always an alias to <code>AlignedAllocator</code>. The alignment is 32 for scalar types and <code>max(alignof(T), 16)</code> for others.</li>
-<li><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;</code></li>
+<li><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;&gt;</code></li>
+<li>HDF5 IO functions' <code>append</code> parameter no longer has a default argument</li>
+<li><code>hdf5store</code> is now overloaded for <code>Monitor</code></li>
 </ul>
 <h2>Removed features</h2>
 <ul>
 <li>MKL RAII classes no long has the <code>reset</code> method with same arguments as the constructors. Use the constructor and move semantics instead.</li>
 <li><code>Monitor::index_data</code> and <code>Monitor::record_data</code> are removed</li>
 <li><code>AlignedVector</code> is removed</li>
+<li><code>hdf5store</code> is now overloaded for <code>Monitor</code></li>
 </ul>
 <h1>Changes in v2.2.0</h1>
 <h2>New features</h2>

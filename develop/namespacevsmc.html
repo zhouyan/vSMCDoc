@@ -1925,37 +1925,41 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0dbe264e7b3b0fa6c075b4d54124057a"><td class="memItemLeft" align="right" valign="top">inline::hsize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga0dbe264e7b3b0fa6c075b4d54124057a">hdf5size</a> (const std::string &amp;file_name, const std::string &amp;data_name)</td></tr>
 <tr class="memdesc:ga0dbe264e7b3b0fa6c075b4d54124057a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of bytes of the data in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga0dbe264e7b3b0fa6c075b4d54124057a">More...</a><br /></td></tr>
 <tr class="separator:ga0dbe264e7b3b0fa6c075b4d54124057a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga2e2b568ebe7dc18ca1aae256bfc08901">hdf5store</a> (const <a class="el" href="classvsmc_1_1_sampler.html">Sampler</a>&lt; T &gt; &amp;sampler, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
-<tr class="memdesc:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga2e2b568ebe7dc18ca1aae256bfc08901">More...</a><br /></td></tr>
-<tr class="separator:ga2e2b568ebe7dc18ca1aae256bfc08901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c8bc0da46fc6a493eadbbc0824140b1"><td class="memTemplParams" colspan="2">template&lt;MatrixLayout Layout, std::size_t Dim, typename T &gt; </td></tr>
-<tr class="memitem:ga3c8bc0da46fc6a493eadbbc0824140b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga3c8bc0da46fc6a493eadbbc0824140b1">hdf5store</a> (const <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a>&lt; Layout, Dim, T &gt; &amp;state, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
-<tr class="memdesc:ga3c8bc0da46fc6a493eadbbc0824140b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga3c8bc0da46fc6a493eadbbc0824140b1">More...</a><br /></td></tr>
-<tr class="separator:ga3c8bc0da46fc6a493eadbbc0824140b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2963a20d02f2dd343a987f288ece2a76"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga2963a20d02f2dd343a987f288ece2a76"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga2963a20d02f2dd343a987f288ece2a76">hdf5store</a> (const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
-<tr class="memdesc:ga2963a20d02f2dd343a987f288ece2a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga2963a20d02f2dd343a987f288ece2a76">More...</a><br /></td></tr>
-<tr class="separator:ga2963a20d02f2dd343a987f288ece2a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </td></tr>
-<tr class="memitem:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga8bfcba94dd9e58c0e711ecfe35b80e7f">hdf5store_list</a> (std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIterIter first, SInputIter sfirst, bool append=false)</td></tr>
-<tr class="memdesc:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list in the HDF5 format from an iterator to iterators.  <a href="group___h_d_f5_i_o.html#ga8bfcba94dd9e58c0e711ecfe35b80e7f">More...</a><br /></td></tr>
-<tr class="separator:ga8bfcba94dd9e58c0e711ecfe35b80e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga783c35051ae2fd34e71c64a0ef911c84"><td class="memTemplParams" colspan="2">template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt; </td></tr>
-<tr class="memitem:ga783c35051ae2fd34e71c64a0ef911c84"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga783c35051ae2fd34e71c64a0ef911c84">hdf5store_list</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters... &gt; &amp;first, SInputIter sfirst, bool append=false)</td></tr>
-<tr class="memdesc:ga783c35051ae2fd34e71c64a0ef911c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list in the HDF5 format from tuple of iterators.  <a href="group___h_d_f5_i_o.html#ga783c35051ae2fd34e71c64a0ef911c84">More...</a><br /></td></tr>
-<tr class="separator:ga783c35051ae2fd34e71c64a0ef911c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4a9b54f40547162eed3fd47cb7da5be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gab4a9b54f40547162eed3fd47cb7da5be">hdf5store_list_empty</a> (const std::string &amp;file_name, const std::string &amp;data_name, bool append=false)</td></tr>
-<tr class="memdesc:gab4a9b54f40547162eed3fd47cb7da5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty list.  <a href="group___h_d_f5_i_o.html#gab4a9b54f40547162eed3fd47cb7da5be">More...</a><br /></td></tr>
-<tr class="separator:gab4a9b54f40547162eed3fd47cb7da5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca270c0909fdc0f099cb3a7f1341c742"><td class="memTemplParams" colspan="2">template&lt;MatrixLayout Layout, std::size_t Dim, typename T &gt; </td></tr>
+<tr class="memitem:gaca270c0909fdc0f099cb3a7f1341c742"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gaca270c0909fdc0f099cb3a7f1341c742">hdf5store</a> (const <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a>&lt; Layout, Dim, T &gt; &amp;state_matrix, const std::string &amp;file_name, const std::string &amp;data_name, bool append)</td></tr>
+<tr class="memdesc:gaca270c0909fdc0f099cb3a7f1341c742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#gaca270c0909fdc0f099cb3a7f1341c742">More...</a><br /></td></tr>
+<tr class="separator:gaca270c0909fdc0f099cb3a7f1341c742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga665fc7f9e9312e245b777d8a0d087e66"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga665fc7f9e9312e245b777d8a0d087e66"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga665fc7f9e9312e245b777d8a0d087e66">hdf5store</a> (const <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle, const std::string &amp;file_name, const std::string &amp;data_name, bool append)</td></tr>
+<tr class="memdesc:ga665fc7f9e9312e245b777d8a0d087e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga665fc7f9e9312e245b777d8a0d087e66">More...</a><br /></td></tr>
+<tr class="separator:ga665fc7f9e9312e245b777d8a0d087e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga874a833a4990c21b526eec1153efc272"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga874a833a4990c21b526eec1153efc272"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga874a833a4990c21b526eec1153efc272">hdf5store</a> (const <a class="el" href="classvsmc_1_1_monitor.html">Monitor</a>&lt; T &gt; &amp;monitor, const std::string &amp;file_name, const std::string &amp;data_name, bool append)</td></tr>
+<tr class="memdesc:ga874a833a4990c21b526eec1153efc272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga874a833a4990c21b526eec1153efc272">More...</a><br /></td></tr>
+<tr class="separator:ga874a833a4990c21b526eec1153efc272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga377572a02d0a5d389d256b15b504255f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga377572a02d0a5d389d256b15b504255f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga377572a02d0a5d389d256b15b504255f">hdf5store</a> (const <a class="el" href="classvsmc_1_1_sampler.html">Sampler</a>&lt; T &gt; &amp;sampler, const std::string &amp;file_name, const std::string &amp;data_name, bool append)</td></tr>
+<tr class="memdesc:ga377572a02d0a5d389d256b15b504255f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format.  <a href="group___h_d_f5_i_o.html#ga377572a02d0a5d389d256b15b504255f">More...</a><br /></td></tr>
+<tr class="separator:ga377572a02d0a5d389d256b15b504255f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc4452096b48527f7ea10a412264f414"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIterIter , typename SInputIter &gt; </td></tr>
+<tr class="memitem:gacc4452096b48527f7ea10a412264f414"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gacc4452096b48527f7ea10a412264f414">hdf5store_list</a> (std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIterIter first, SInputIter sfirst, bool append)</td></tr>
+<tr class="memdesc:gacc4452096b48527f7ea10a412264f414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list in the HDF5 format from an iterator to iterators.  <a href="group___h_d_f5_i_o.html#gacc4452096b48527f7ea10a412264f414">More...</a><br /></td></tr>
+<tr class="separator:gacc4452096b48527f7ea10a412264f414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11173b4b65c8cbfd2e25ace5fe9fb921"><td class="memTemplParams" colspan="2">template&lt;typename SInputIter , typename InputIter , typename... InputIters&gt; </td></tr>
+<tr class="memitem:ga11173b4b65c8cbfd2e25ace5fe9fb921"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga11173b4b65c8cbfd2e25ace5fe9fb921">hdf5store_list</a> (std::size_t nrow, const std::string &amp;file_name, const std::string &amp;data_name, const std::tuple&lt; InputIter, InputIters... &gt; &amp;first, SInputIter sfirst, bool append)</td></tr>
+<tr class="memdesc:ga11173b4b65c8cbfd2e25ace5fe9fb921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list in the HDF5 format from tuple of iterators.  <a href="group___h_d_f5_i_o.html#ga11173b4b65c8cbfd2e25ace5fe9fb921">More...</a><br /></td></tr>
+<tr class="separator:ga11173b4b65c8cbfd2e25ace5fe9fb921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5214429f8a00723480e4e060a1eff9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gac5214429f8a00723480e4e060a1eff9d">hdf5store_list_empty</a> (const std::string &amp;file_name, const std::string &amp;data_name, bool append)</td></tr>
+<tr class="memdesc:gac5214429f8a00723480e4e060a1eff9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty list.  <a href="group___h_d_f5_i_o.html#gac5214429f8a00723480e4e060a1eff9d">More...</a><br /></td></tr>
+<tr class="separator:gac5214429f8a00723480e4e060a1eff9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIter &gt; </td></tr>
 <tr class="memitem:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#gaa816a5f1593f3a0342a728cbf5a1e6f6">hdf5store_list_insert</a> (std::size_t N, const std::string &amp;file_name, const std::string &amp;data_name, InputIter first, const std::string &amp;vname)</td></tr>
 <tr class="memdesc:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a variable into an existing list saved in HDF5 format.  <a href="group___h_d_f5_i_o.html#gaa816a5f1593f3a0342a728cbf5a1e6f6">More...</a><br /></td></tr>
 <tr class="separator:gaa816a5f1593f3a0342a728cbf5a1e6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04cf4d5a904bf5b4de2b30070ed02615"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIter &gt; </td></tr>
-<tr class="memitem:ga04cf4d5a904bf5b4de2b30070ed02615"><td class="memTemplItemLeft" align="right" valign="top">InputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga04cf4d5a904bf5b4de2b30070ed02615">hdf5store_matrix</a> (<a class="el" href="group___definitions.html#ga59ef6afcf177c66c2847f809d21dd8d5">MatrixLayout</a> layout, std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIter first, bool append=false)</td></tr>
-<tr class="memdesc:ga04cf4d5a904bf5b4de2b30070ed02615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a matrix in the HDF5 format from an input iterator.  <a href="group___h_d_f5_i_o.html#ga04cf4d5a904bf5b4de2b30070ed02615">More...</a><br /></td></tr>
-<tr class="separator:ga04cf4d5a904bf5b4de2b30070ed02615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga897aa1e8d784c43c527e14fb5d2a7c26"><td class="memTemplParams" colspan="2">template&lt;typename T , typename InputIter &gt; </td></tr>
+<tr class="memitem:ga897aa1e8d784c43c527e14fb5d2a7c26"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga897aa1e8d784c43c527e14fb5d2a7c26">hdf5store_matrix</a> (<a class="el" href="group___definitions.html#ga59ef6afcf177c66c2847f809d21dd8d5">MatrixLayout</a> layout, std::size_t nrow, std::size_t ncol, const std::string &amp;file_name, const std::string &amp;data_name, InputIter first, bool append)</td></tr>
+<tr class="memdesc:ga897aa1e8d784c43c527e14fb5d2a7c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a matrix in the HDF5 format from an input iterator.  <a href="group___h_d_f5_i_o.html#ga897aa1e8d784c43c527e14fb5d2a7c26">More...</a><br /></td></tr>
+<tr class="separator:ga897aa1e8d784c43c527e14fb5d2a7c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4bfedcdf0062b93d015028638b016041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_d_f5_i_o.html#ga4bfedcdf0062b93d015028638b016041">hdf5store_new</a> (const std::string &amp;file_name)</td></tr>
 <tr class="memdesc:ga4bfedcdf0062b93d015028638b016041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new HDF5 file for store data.  <a href="group___h_d_f5_i_o.html#ga4bfedcdf0062b93d015028638b016041">More...</a><br /></td></tr>
 <tr class="separator:ga4bfedcdf0062b93d015028638b016041"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2343,12 +2347,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9c458203d6a1124a8cb19ac3fb3b438"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad9c458203d6a1124a8cb19ac3fb3b438"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ad9c458203d6a1124a8cb19ac3fb3b438">operator&amp;</a> (const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:ad9c458203d6a1124a8cb19ac3fb3b438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286ad9ad8a6106bf645273272fdf6c11"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a286ad9ad8a6106bf645273272fdf6c11"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a286ad9ad8a6106bf645273272fdf6c11">operator&amp;</a> (T a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
-<tr class="separator:a286ad9ad8a6106bf645273272fdf6c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81674d8baaa90511d5c7894e1cfe7a26"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a81674d8baaa90511d5c7894e1cfe7a26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a81674d8baaa90511d5c7894e1cfe7a26">operator&amp;</a> (const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, T b)</td></tr>
 <tr class="separator:a81674d8baaa90511d5c7894e1cfe7a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286ad9ad8a6106bf645273272fdf6c11"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a286ad9ad8a6106bf645273272fdf6c11"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a286ad9ad8a6106bf645273272fdf6c11">operator&amp;</a> (T a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:a286ad9ad8a6106bf645273272fdf6c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afce4587deed9abce16b7a95666533521"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:afce4587deed9abce16b7a95666533521"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#afce4587deed9abce16b7a95666533521">operator&amp;</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:afce4587deed9abce16b7a95666533521"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2390,10 +2394,10 @@ Functions</h2></td></tr>
 <tr class="separator:aed6fc73f70377218912c5aea74d2ec1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5a430baa60c84c8103d919e3d375c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a4b5a430baa60c84c8103d919e3d375c6">operator*</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:a4b5a430baa60c84c8103d919e3d375c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63c89e298c9e0708afd88cbfc16a5e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a63c89e298c9e0708afd88cbfc16a5e54">operator*</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
-<tr class="separator:a63c89e298c9e0708afd88cbfc16a5e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3addeb3457dd94ed8c55adb304d63cf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a3addeb3457dd94ed8c55adb304d63cf1">operator*</a> (double a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:a3addeb3457dd94ed8c55adb304d63cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c89e298c9e0708afd88cbfc16a5e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a63c89e298c9e0708afd88cbfc16a5e54">operator*</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
+<tr class="separator:a63c89e298c9e0708afd88cbfc16a5e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad68ac1bacff119bb0cf4ee73d35ab56b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ad68ac1bacff119bb0cf4ee73d35ab56b">operator*=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, float b)</td></tr>
 <tr class="separator:ad68ac1bacff119bb0cf4ee73d35ab56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ecb257609ca6a12a3d45fa93d281105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a2ecb257609ca6a12a3d45fa93d281105">operator*=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
@@ -2406,10 +2410,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac3ff282b84cf837b679b1b7434cfa1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6588c4b227b75bc10f10a6273e932865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6588c4b227b75bc10f10a6273e932865">operator*=</a> (<a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
 <tr class="separator:a6588c4b227b75bc10f10a6273e932865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd11835a8767d16f9b007ecbfd96245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9cd11835a8767d16f9b007ecbfd96245">operator*=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
-<tr class="separator:a9cd11835a8767d16f9b007ecbfd96245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab627def0f6bcc5891b5f2a466325767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aab627def0f6bcc5891b5f2a466325767">operator*=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:aab627def0f6bcc5891b5f2a466325767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd11835a8767d16f9b007ecbfd96245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9cd11835a8767d16f9b007ecbfd96245">operator*=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
+<tr class="separator:a9cd11835a8767d16f9b007ecbfd96245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d41fa733ecfc78f818d402267ee48a6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename IntType &gt; </td></tr>
 <tr class="memitem:a6d41fa733ecfc78f818d402267ee48a6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6d41fa733ecfc78f818d402267ee48a6">operator+</a> (const <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;sp, IntType n)</td></tr>
 <tr class="separator:a6d41fa733ecfc78f818d402267ee48a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2427,10 +2431,10 @@ Functions</h2></td></tr>
 <tr class="separator:a35191a908262be8f264a03e7f8dc17bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8bcad70ae7ea36b455341b3dcfb708a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#af8bcad70ae7ea36b455341b3dcfb708a">operator+</a> (const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
 <tr class="separator:af8bcad70ae7ea36b455341b3dcfb708a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c4354fe47f5fb92d97a09ee9dd89ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae8c4354fe47f5fb92d97a09ee9dd89ce">operator+</a> (float a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
-<tr class="separator:ae8c4354fe47f5fb92d97a09ee9dd89ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9239786eb4e355624c548dd55c86cfb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9239786eb4e355624c548dd55c86cfb7">operator+</a> (const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, float b)</td></tr>
 <tr class="separator:a9239786eb4e355624c548dd55c86cfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c4354fe47f5fb92d97a09ee9dd89ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae8c4354fe47f5fb92d97a09ee9dd89ce">operator+</a> (float a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
+<tr class="separator:ae8c4354fe47f5fb92d97a09ee9dd89ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea8073fbaa7ae76a4ea0985b7953a98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a2ea8073fbaa7ae76a4ea0985b7953a98">operator+</a> (const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;b)</td></tr>
 <tr class="separator:a2ea8073fbaa7ae76a4ea0985b7953a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a8925ade36b6bd62b69769a7bfe0d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a65a8925ade36b6bd62b69769a7bfe0d9">operator+</a> (double a, const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;b)</td></tr>
@@ -2440,18 +2444,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a65c891d270bf84506207d82bf08eca53"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a65c891d270bf84506207d82bf08eca53"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a65c891d270bf84506207d82bf08eca53">operator+</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a65c891d270bf84506207d82bf08eca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ace374a4cc3ea65b0a4a1952a60fdaa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6ace374a4cc3ea65b0a4a1952a60fdaa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6ace374a4cc3ea65b0a4a1952a60fdaa">operator+</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
-<tr class="separator:a6ace374a4cc3ea65b0a4a1952a60fdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa8526dad565b433ed4b17b37ab8ff55"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:afa8526dad565b433ed4b17b37ab8ff55"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#afa8526dad565b433ed4b17b37ab8ff55">operator+</a> (T a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:afa8526dad565b433ed4b17b37ab8ff55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ace374a4cc3ea65b0a4a1952a60fdaa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6ace374a4cc3ea65b0a4a1952a60fdaa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6ace374a4cc3ea65b0a4a1952a60fdaa">operator+</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
+<tr class="separator:a6ace374a4cc3ea65b0a4a1952a60fdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2171595e9dbb91ff4ac9d62898d5e454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a2171595e9dbb91ff4ac9d62898d5e454">operator+</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
 <tr class="separator:a2171595e9dbb91ff4ac9d62898d5e454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a626f97d7612f03e859cd4216b609b7bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a626f97d7612f03e859cd4216b609b7bc">operator+</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
-<tr class="separator:a626f97d7612f03e859cd4216b609b7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd37a060fa1a00e8daac095a1b02ea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a1dd37a060fa1a00e8daac095a1b02ea2">operator+</a> (float a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
 <tr class="separator:a1dd37a060fa1a00e8daac095a1b02ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626f97d7612f03e859cd4216b609b7bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a626f97d7612f03e859cd4216b609b7bc">operator+</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
+<tr class="separator:a626f97d7612f03e859cd4216b609b7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148309db057654d8359bd03fc08a0c1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a148309db057654d8359bd03fc08a0c1f">operator+</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:a148309db057654d8359bd03fc08a0c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f3b4edfc601baa513b727445cab3f84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9f3b4edfc601baa513b727445cab3f84">operator+</a> (double a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
@@ -2467,16 +2471,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7f59f076b624f04bb385fb2e9b48b4f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename IntType &gt; </td></tr>
 <tr class="memitem:ac7f59f076b624f04bb385fb2e9b48b4f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ac7f59f076b624f04bb385fb2e9b48b4f">operator+=</a> (<a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;sp, IntType n)</td></tr>
 <tr class="separator:ac7f59f076b624f04bb385fb2e9b48b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0cabe5409e1de6563634ff15979fee4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac0cabe5409e1de6563634ff15979fee4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ac0cabe5409e1de6563634ff15979fee4">operator+=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
-<tr class="separator:ac0cabe5409e1de6563634ff15979fee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978ebaa09c1e9f37306e2db79f7736e1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a978ebaa09c1e9f37306e2db79f7736e1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a978ebaa09c1e9f37306e2db79f7736e1">operator+=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, T b)</td></tr>
 <tr class="separator:a978ebaa09c1e9f37306e2db79f7736e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeba937b48bddc59ae74143e7f9fb98db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aeba937b48bddc59ae74143e7f9fb98db">operator+=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
-<tr class="separator:aeba937b48bddc59ae74143e7f9fb98db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cabe5409e1de6563634ff15979fee4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac0cabe5409e1de6563634ff15979fee4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ac0cabe5409e1de6563634ff15979fee4">operator+=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:ac0cabe5409e1de6563634ff15979fee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72eb020105b64cadec28cbb41d46efa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a72eb020105b64cadec28cbb41d46efa1">operator+=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, float b)</td></tr>
 <tr class="separator:a72eb020105b64cadec28cbb41d46efa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba937b48bddc59ae74143e7f9fb98db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aeba937b48bddc59ae74143e7f9fb98db">operator+=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
+<tr class="separator:aeba937b48bddc59ae74143e7f9fb98db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0554aa8a11e1113bd47716ba6d62a1b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a0554aa8a11e1113bd47716ba6d62a1b6">operator+=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, double b)</td></tr>
 <tr class="separator:a0554aa8a11e1113bd47716ba6d62a1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e8b5fa308f590fca3c024e7e3c406b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a5e8b5fa308f590fca3c024e7e3c406b4">operator+=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;b)</td></tr>
@@ -2525,24 +2529,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ab4a156a3ba04e8aa0051bf2008b62d3d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab4a156a3ba04e8aa0051bf2008b62d3d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab4a156a3ba04e8aa0051bf2008b62d3d">operator-</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:ab4a156a3ba04e8aa0051bf2008b62d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a835e7da99fa4b82442464e286d5e28d7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a835e7da99fa4b82442464e286d5e28d7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a835e7da99fa4b82442464e286d5e28d7">operator-</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
-<tr class="separator:a835e7da99fa4b82442464e286d5e28d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da95666b384086de34ef34ec287736b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1da95666b384086de34ef34ec287736b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a1da95666b384086de34ef34ec287736b">operator-</a> (T a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a1da95666b384086de34ef34ec287736b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835e7da99fa4b82442464e286d5e28d7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a835e7da99fa4b82442464e286d5e28d7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a835e7da99fa4b82442464e286d5e28d7">operator-</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
+<tr class="separator:a835e7da99fa4b82442464e286d5e28d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a038823799cf05b231c9154f9c66bfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a7a038823799cf05b231c9154f9c66bfd">operator-</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
 <tr class="separator:a7a038823799cf05b231c9154f9c66bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb8097b47ba85675bacf36060ed8a38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#abbb8097b47ba85675bacf36060ed8a38">operator-</a> (float a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
-<tr class="separator:abbb8097b47ba85675bacf36060ed8a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5391a7e5b665a1ee6f7caabe84806e88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a5391a7e5b665a1ee6f7caabe84806e88">operator-</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
 <tr class="separator:a5391a7e5b665a1ee6f7caabe84806e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb8097b47ba85675bacf36060ed8a38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#abbb8097b47ba85675bacf36060ed8a38">operator-</a> (float a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
+<tr class="separator:abbb8097b47ba85675bacf36060ed8a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a2edae513e5074d5e1321ce4913ae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a29a2edae513e5074d5e1321ce4913ae2">operator-</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:a29a2edae513e5074d5e1321ce4913ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38be80bcc5fd2c2d815c57b97224a7a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a38be80bcc5fd2c2d815c57b97224a7a2">operator-</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
-<tr class="separator:a38be80bcc5fd2c2d815c57b97224a7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc8b0706222726c904bf03faec85fbf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#acc8b0706222726c904bf03faec85fbf3">operator-</a> (double a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:acc8b0706222726c904bf03faec85fbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38be80bcc5fd2c2d815c57b97224a7a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a38be80bcc5fd2c2d815c57b97224a7a2">operator-</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
+<tr class="separator:a38be80bcc5fd2c2d815c57b97224a7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4120133d0aa707265bfc02fe9c11acc2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4120133d0aa707265bfc02fe9c11acc2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a4120133d0aa707265bfc02fe9c11acc2">operator--</a> (<a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;sp)</td></tr>
 <tr class="separator:a4120133d0aa707265bfc02fe9c11acc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2562,10 +2566,10 @@ Functions</h2></td></tr>
 <tr class="separator:a4c10a3291fc1047a4efa7cfcd603de09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf19182521fd6336014ab432c669b8c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#abf19182521fd6336014ab432c669b8c3">operator-=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
 <tr class="separator:abf19182521fd6336014ab432c669b8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0978d32fd8c8e0568dc827ec48f72465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a0978d32fd8c8e0568dc827ec48f72465">operator-=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, double b)</td></tr>
-<tr class="separator:a0978d32fd8c8e0568dc827ec48f72465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5f975e70d8ff6bbb379d4ee6372498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6b5f975e70d8ff6bbb379d4ee6372498">operator-=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;b)</td></tr>
 <tr class="separator:a6b5f975e70d8ff6bbb379d4ee6372498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0978d32fd8c8e0568dc827ec48f72465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a0978d32fd8c8e0568dc827ec48f72465">operator-=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, double b)</td></tr>
+<tr class="separator:a0978d32fd8c8e0568dc827ec48f72465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af813e886e3012f9e25029a967df88fdc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af813e886e3012f9e25029a967df88fdc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#af813e886e3012f9e25029a967df88fdc">operator-=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
 <tr class="separator:af813e886e3012f9e25029a967df88fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2576,10 +2580,10 @@ Functions</h2></td></tr>
 <tr class="separator:a36628843b43202f4883678175c5559b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a18c5185940e6525dde51b5b059527c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a5a18c5185940e6525dde51b5b059527c">operator-=</a> (<a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
 <tr class="separator:a5a18c5185940e6525dde51b5b059527c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a890d40d42fbca3fd89c82c4c94a7f7cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a890d40d42fbca3fd89c82c4c94a7f7cd">operator-=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
-<tr class="separator:a890d40d42fbca3fd89c82c4c94a7f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269cc17c301132c29318b5ff0b36c423"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a269cc17c301132c29318b5ff0b36c423">operator-=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
 <tr class="separator:a269cc17c301132c29318b5ff0b36c423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890d40d42fbca3fd89c82c4c94a7f7cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a890d40d42fbca3fd89c82c4c94a7f7cd">operator-=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
+<tr class="separator:a890d40d42fbca3fd89c82c4c94a7f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6059e060d7666ee9cbb9372955b783db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a6059e060d7666ee9cbb9372955b783db">operator/</a> (const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
 <tr class="separator:a6059e060d7666ee9cbb9372955b783db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c01a741ee9cd9deab3f32b2f3fc2aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9c01a741ee9cd9deab3f32b2f3fc2aec">operator/</a> (const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, float b)</td></tr>
@@ -2594,28 +2598,28 @@ Functions</h2></td></tr>
 <tr class="separator:a3bd4e0aaf02ad1ee6eeb5ffdda52eea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2d5bf03bc1a2422dba54346753f4da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#acd2d5bf03bc1a2422dba54346753f4da">operator/</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
 <tr class="separator:acd2d5bf03bc1a2422dba54346753f4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555b307943f571ccdaa8cffca7218bb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a555b307943f571ccdaa8cffca7218bb1">operator/</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
-<tr class="separator:a555b307943f571ccdaa8cffca7218bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40800a7374f8b4e990db3396a4402e14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a40800a7374f8b4e990db3396a4402e14">operator/</a> (float a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
 <tr class="separator:a40800a7374f8b4e990db3396a4402e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555b307943f571ccdaa8cffca7218bb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a555b307943f571ccdaa8cffca7218bb1">operator/</a> (const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
+<tr class="separator:a555b307943f571ccdaa8cffca7218bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d976f90b6cad2058f502d7f2450dedd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a2d976f90b6cad2058f502d7f2450dedd">operator/</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:a2d976f90b6cad2058f502d7f2450dedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c8c33ba6eb03c749bd32025f4419bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab5c8c33ba6eb03c749bd32025f4419bf">operator/</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
-<tr class="separator:ab5c8c33ba6eb03c749bd32025f4419bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc53c19552fd0e53e0c1cf769801cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aacc53c19552fd0e53e0c1cf769801cd3">operator/</a> (double a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:aacc53c19552fd0e53e0c1cf769801cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c8c33ba6eb03c749bd32025f4419bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab5c8c33ba6eb03c749bd32025f4419bf">operator/</a> (const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
+<tr class="separator:ab5c8c33ba6eb03c749bd32025f4419bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae60b95973a4e3278267c3b4885af1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#acae60b95973a4e3278267c3b4885af1e">operator/=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, float b)</td></tr>
 <tr class="separator:acae60b95973a4e3278267c3b4885af1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d70f5b073422a864fd33e93f651534e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a4d70f5b073422a864fd33e93f651534e">operator/=</a> (<a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;b)</td></tr>
 <tr class="separator:a4d70f5b073422a864fd33e93f651534e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a859a53274a5fd70c98153ba63f905320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a859a53274a5fd70c98153ba63f905320">operator/=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, double b)</td></tr>
-<tr class="separator:a859a53274a5fd70c98153ba63f905320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0584f0218b8413443298821394266d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a0584f0218b8413443298821394266d00">operator/=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;b)</td></tr>
 <tr class="separator:a0584f0218b8413443298821394266d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b60d95f9b4a19c399f07b59a8612d7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9b60d95f9b4a19c399f07b59a8612d7b">operator/=</a> (<a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
-<tr class="separator:a9b60d95f9b4a19c399f07b59a8612d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859a53274a5fd70c98153ba63f905320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a859a53274a5fd70c98153ba63f905320">operator/=</a> (<a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;a, double b)</td></tr>
+<tr class="separator:a859a53274a5fd70c98153ba63f905320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b4799a309587645d5c000e3b1972428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a2b4799a309587645d5c000e3b1972428">operator/=</a> (<a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, float b)</td></tr>
 <tr class="separator:a2b4799a309587645d5c000e3b1972428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b60d95f9b4a19c399f07b59a8612d7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9b60d95f9b4a19c399f07b59a8612d7b">operator/=</a> (<a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;b)</td></tr>
+<tr class="separator:a9b60d95f9b4a19c399f07b59a8612d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e35201b16300e84993b78c7ae090d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a19e35201b16300e84993b78c7ae090d1">operator/=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;b)</td></tr>
 <tr class="separator:a19e35201b16300e84993b78c7ae090d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37bd3d7a5e558b09dcc1e52e79ee4a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae37bd3d7a5e558b09dcc1e52e79ee4a4">operator/=</a> (<a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;a, double b)</td></tr>
@@ -2741,42 +2745,42 @@ Functions</h2></td></tr>
 <tr class="memitem:acb077f3a91612fe1ca312e376e9e99c2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb077f3a91612fe1ca312e376e9e99c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#acb077f3a91612fe1ca312e376e9e99c2">operator^</a> (const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:acb077f3a91612fe1ca312e376e9e99c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1478e3240453d30ea12e31963dbfe13"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa1478e3240453d30ea12e31963dbfe13"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aa1478e3240453d30ea12e31963dbfe13">operator^</a> (T a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
-<tr class="separator:aa1478e3240453d30ea12e31963dbfe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb4efc189e05cb8bfab496934506521"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:abdb4efc189e05cb8bfab496934506521"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#abdb4efc189e05cb8bfab496934506521">operator^</a> (const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, T b)</td></tr>
 <tr class="separator:abdb4efc189e05cb8bfab496934506521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1478e3240453d30ea12e31963dbfe13"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa1478e3240453d30ea12e31963dbfe13"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aa1478e3240453d30ea12e31963dbfe13">operator^</a> (T a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:aa1478e3240453d30ea12e31963dbfe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad746793dfde17e47c4692648bb3d4740"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad746793dfde17e47c4692648bb3d4740"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ad746793dfde17e47c4692648bb3d4740">operator^</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:ad746793dfde17e47c4692648bb3d4740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2fdf09085a7b8d4eebbf0ae1bf4d20"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aeb2fdf09085a7b8d4eebbf0ae1bf4d20"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aeb2fdf09085a7b8d4eebbf0ae1bf4d20">operator^</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
-<tr class="separator:aeb2fdf09085a7b8d4eebbf0ae1bf4d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b52725c8548f94a2c79a667527fed3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a91b52725c8548f94a2c79a667527fed3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a91b52725c8548f94a2c79a667527fed3">operator^</a> (T a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a91b52725c8548f94a2c79a667527fed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbfd2ee7b6eb7db91400b56245df9f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adfbfd2ee7b6eb7db91400b56245df9f7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#adfbfd2ee7b6eb7db91400b56245df9f7">operator^=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, T b)</td></tr>
-<tr class="separator:adfbfd2ee7b6eb7db91400b56245df9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2fdf09085a7b8d4eebbf0ae1bf4d20"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aeb2fdf09085a7b8d4eebbf0ae1bf4d20"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aeb2fdf09085a7b8d4eebbf0ae1bf4d20">operator^</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
+<tr class="separator:aeb2fdf09085a7b8d4eebbf0ae1bf4d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf0f8e798dc75b522fd06f101434bc1b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adf0f8e798dc75b522fd06f101434bc1b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#adf0f8e798dc75b522fd06f101434bc1b">operator^=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:adf0f8e798dc75b522fd06f101434bc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae65fcf5323d963e2791f44d283d2a7af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae65fcf5323d963e2791f44d283d2a7af"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae65fcf5323d963e2791f44d283d2a7af">operator^=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
-<tr class="separator:ae65fcf5323d963e2791f44d283d2a7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfbfd2ee7b6eb7db91400b56245df9f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adfbfd2ee7b6eb7db91400b56245df9f7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#adfbfd2ee7b6eb7db91400b56245df9f7">operator^=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, T b)</td></tr>
+<tr class="separator:adfbfd2ee7b6eb7db91400b56245df9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a16e0f0da66f40a9fb662c1517b797"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac3a16e0f0da66f40a9fb662c1517b797"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ac3a16e0f0da66f40a9fb662c1517b797">operator^=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:ac3a16e0f0da66f40a9fb662c1517b797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65fcf5323d963e2791f44d283d2a7af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae65fcf5323d963e2791f44d283d2a7af"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae65fcf5323d963e2791f44d283d2a7af">operator^=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
+<tr class="separator:ae65fcf5323d963e2791f44d283d2a7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01095fefa67cd185c3edd8699c101325"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a01095fefa67cd185c3edd8699c101325"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a01095fefa67cd185c3edd8699c101325">operator|</a> (const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a01095fefa67cd185c3edd8699c101325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab572df2f8aead3b9d9bf618032e60eba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab572df2f8aead3b9d9bf618032e60eba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab572df2f8aead3b9d9bf618032e60eba">operator|</a> (T a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
-<tr class="separator:ab572df2f8aead3b9d9bf618032e60eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85acc506f87a5c29baa873508df94d0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa85acc506f87a5c29baa873508df94d0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#aa85acc506f87a5c29baa873508df94d0">operator|</a> (const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, T b)</td></tr>
 <tr class="separator:aa85acc506f87a5c29baa873508df94d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab572df2f8aead3b9d9bf618032e60eba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab572df2f8aead3b9d9bf618032e60eba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab572df2f8aead3b9d9bf618032e60eba">operator|</a> (T a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:ab572df2f8aead3b9d9bf618032e60eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a043e2795a684a5d381e9a766583e3aef"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a043e2795a684a5d381e9a766583e3aef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a043e2795a684a5d381e9a766583e3aef">operator|</a> (const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a043e2795a684a5d381e9a766583e3aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2792,12 +2796,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae11c9aa22f393c72f78dd96a40f1a24b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae11c9aa22f393c72f78dd96a40f1a24b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ae11c9aa22f393c72f78dd96a40f1a24b">operator|=</a> (<a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:ae11c9aa22f393c72f78dd96a40f1a24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3091beee33cb8746b9414697097514cf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3091beee33cb8746b9414697097514cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a3091beee33cb8746b9414697097514cf">operator|=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
-<tr class="separator:a3091beee33cb8746b9414697097514cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4192bcb901e566ec3f854d2b03db1c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3b4192bcb901e566ec3f854d2b03db1c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a3b4192bcb901e566ec3f854d2b03db1c">operator|=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a3b4192bcb901e566ec3f854d2b03db1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3091beee33cb8746b9414697097514cf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3091beee33cb8746b9414697097514cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a3091beee33cb8746b9414697097514cf">operator|=</a> (<a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;a, T b)</td></tr>
+<tr class="separator:a3091beee33cb8746b9414697097514cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae5dcd5378cefd2f809b314be8f1ede"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:acae5dcd5378cefd2f809b314be8f1ede"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#acae5dcd5378cefd2f809b314be8f1ede">pareto_distribution</a> (RNGType &amp;rng, std::size_t n, RealType *r, const typename <a class="el" href="classvsmc_1_1_pareto_distribution.html">ParetoDistribution</a>&lt; RealType &gt;::param_type &amp;param)</td></tr>
 <tr class="separator:acae5dcd5378cefd2f809b314be8f1ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2974,10 +2978,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a0948f5af8f6062b2532955cadff88912"><td class="memTemplParams" colspan="2">template&lt;MKL_INT BRNG, int Bits&gt; </td></tr>
 <tr class="memitem:a0948f5af8f6062b2532955cadff88912"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a0948f5af8f6062b2532955cadff88912">rng_rand</a> (<a class="el" href="classvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, Bits &gt; &amp;, std::size_t, typename <a class="el" href="classvsmc_1_1_m_k_l_engine.html">MKLEngine</a>&lt; BRNG, Bits &gt;::result_type *)</td></tr>
 <tr class="separator:a0948f5af8f6062b2532955cadff88912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e9c0d469d32f917bfc33b7defa0ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab4e9c0d469d32f917bfc33b7defa0ba4">sin</a> (std::size_t n, const double *a, double *y)</td></tr>
-<tr class="separator:ab4e9c0d469d32f917bfc33b7defa0ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268d94339af466f2bcc9570b47668558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a268d94339af466f2bcc9570b47668558">sin</a> (std::size_t n, const float *a, float *y)</td></tr>
 <tr class="separator:a268d94339af466f2bcc9570b47668558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e9c0d469d32f917bfc33b7defa0ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab4e9c0d469d32f917bfc33b7defa0ba4">sin</a> (std::size_t n, const double *a, double *y)</td></tr>
+<tr class="separator:ab4e9c0d469d32f917bfc33b7defa0ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac45ac487b64203f9545e5c8053d491df"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gac45ac487b64203f9545e5c8053d491df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_trigonometric.html#gac45ac487b64203f9545e5c8053d491df">sin</a> (std::size_t n, const T *a, T *y)</td></tr>
 <tr class="memdesc:gac45ac487b64203f9545e5c8053d491df"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = \cos(a_i)\).  <a href="group__v_trigonometric.html#gac45ac487b64203f9545e5c8053d491df">More...</a><br /></td></tr>
@@ -2990,18 +2994,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa06a66c480b789a75051889d105a0349"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_trigonometric.html#gaa06a66c480b789a75051889d105a0349">sincos</a> (std::size_t n, const T *a, T *y, T *z)</td></tr>
 <tr class="memdesc:gaa06a66c480b789a75051889d105a0349"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = \sin(a_i), z_i = \cos(a_i)\).  <a href="group__v_trigonometric.html#gaa06a66c480b789a75051889d105a0349">More...</a><br /></td></tr>
 <tr class="separator:gaa06a66c480b789a75051889d105a0349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26dfc5aaf0774a1d3146cd96bacbc3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a26dfc5aaf0774a1d3146cd96bacbc3fd">sinh</a> (std::size_t n, const double *a, double *y)</td></tr>
-<tr class="separator:a26dfc5aaf0774a1d3146cd96bacbc3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc3e3198b3c365e9c403d3a471674e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9cc3e3198b3c365e9c403d3a471674e6">sinh</a> (std::size_t n, const float *a, float *y)</td></tr>
 <tr class="separator:a9cc3e3198b3c365e9c403d3a471674e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dfc5aaf0774a1d3146cd96bacbc3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a26dfc5aaf0774a1d3146cd96bacbc3fd">sinh</a> (std::size_t n, const double *a, double *y)</td></tr>
+<tr class="separator:a26dfc5aaf0774a1d3146cd96bacbc3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae3eb9f1dd487993b948d927ae702f732"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gae3eb9f1dd487993b948d927ae702f732"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_hyperbolic.html#gae3eb9f1dd487993b948d927ae702f732">sinh</a> (std::size_t n, const T *a, T *y)</td></tr>
 <tr class="memdesc:gae3eb9f1dd487993b948d927ae702f732"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = \sinh(a_i)\).  <a href="group__v_hyperbolic.html#gae3eb9f1dd487993b948d927ae702f732">More...</a><br /></td></tr>
 <tr class="separator:gae3eb9f1dd487993b948d927ae702f732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e4f2af16c9e5126266203dabe1d54b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9e4f2af16c9e5126266203dabe1d54b7">sqr</a> (std::size_t n, const double *a, double *y)</td></tr>
-<tr class="separator:a9e4f2af16c9e5126266203dabe1d54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a38c7c966d29af8153c197fabc8400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a62a38c7c966d29af8153c197fabc8400">sqr</a> (std::size_t n, const float *a, float *y)</td></tr>
 <tr class="separator:a62a38c7c966d29af8153c197fabc8400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4f2af16c9e5126266203dabe1d54b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9e4f2af16c9e5126266203dabe1d54b7">sqr</a> (std::size_t n, const double *a, double *y)</td></tr>
+<tr class="separator:a9e4f2af16c9e5126266203dabe1d54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4467f38ea9b8593bf4f04c7e37796ae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gab4467f38ea9b8593bf4f04c7e37796ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_arithmetic.html#gab4467f38ea9b8593bf4f04c7e37796ae">sqr</a> (std::size_t n, const T *a, T *y)</td></tr>
 <tr class="memdesc:gab4467f38ea9b8593bf4f04c7e37796ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = a_i^2\).  <a href="group__v_arithmetic.html#gab4467f38ea9b8593bf4f04c7e37796ae">More...</a><br /></td></tr>
@@ -3061,10 +3065,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9023851f7e486c1197f7e310cadff154"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_hyperbolic.html#ga9023851f7e486c1197f7e310cadff154">tanh</a> (std::size_t n, const T *a, T *y)</td></tr>
 <tr class="memdesc:ga9023851f7e486c1197f7e310cadff154"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = \tanh(a_i)\).  <a href="group__v_hyperbolic.html#ga9023851f7e486c1197f7e310cadff154">More...</a><br /></td></tr>
 <tr class="separator:ga9023851f7e486c1197f7e310cadff154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab891179f6a7cf4ae7cc646a9977c7d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab891179f6a7cf4ae7cc646a9977c7d5f">tgamm</a> (std::size_t n, const double *a, double *y)</td></tr>
-<tr class="separator:ab891179f6a7cf4ae7cc646a9977c7d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a917fea69151ef8da0578b26d02b4d685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a917fea69151ef8da0578b26d02b4d685">tgamm</a> (std::size_t n, const float *a, float *y)</td></tr>
 <tr class="separator:a917fea69151ef8da0578b26d02b4d685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab891179f6a7cf4ae7cc646a9977c7d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#ab891179f6a7cf4ae7cc646a9977c7d5f">tgamm</a> (std::size_t n, const double *a, double *y)</td></tr>
+<tr class="separator:ab891179f6a7cf4ae7cc646a9977c7d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5844386918c5d445616e7d27494d783b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga5844386918c5d445616e7d27494d783b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__v_special.html#ga5844386918c5d445616e7d27494d783b">tgamma</a> (std::size_t n, const T *a, T *y)</td></tr>
 <tr class="memdesc:ga5844386918c5d445616e7d27494d783b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For \(i=1,\ldots,n\), compute \(y_i = \Gamma(a_i)\), the Gamma function.  <a href="group__v_special.html#ga5844386918c5d445616e7d27494d783b">More...</a><br /></td></tr>
@@ -13700,44 +13704,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a286ad9ad8a6106bf645273272fdf6c11"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt; vsmc::operator&amp; </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00491">491</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a81674d8baaa90511d5c7894e1cfe7a26"></a>
 <div class="memitem">
 <div class="memproto">
@@ -13757,6 +13723,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00491">491</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a286ad9ad8a6106bf645273272fdf6c11"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt; vsmc::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -14402,7 +14406,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a63c89e298c9e0708afd88cbfc16a5e54"></a>
+<a class="anchor" id="a3addeb3457dd94ed8c55adb304d63cf1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -14412,13 +14416,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> vsmc::operator* </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -14438,7 +14442,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3addeb3457dd94ed8c55adb304d63cf1"></a>
+<a class="anchor" id="a63c89e298c9e0708afd88cbfc16a5e54"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -14448,13 +14452,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> vsmc::operator* </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -14690,7 +14694,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9cd11835a8767d16f9b007ecbfd96245"></a>
+<a class="anchor" id="aab627def0f6bcc5891b5f2a466325767"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -14706,7 +14710,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -14726,7 +14730,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aab627def0f6bcc5891b5f2a466325767"></a>
+<a class="anchor" id="a9cd11835a8767d16f9b007ecbfd96245"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -14742,7 +14746,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -14972,7 +14976,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae8c4354fe47f5fb92d97a09ee9dd89ce"></a>
+<a class="anchor" id="a9239786eb4e355624c548dd55c86cfb7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -14982,13 +14986,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m128.html">M128</a> vsmc::operator+ </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -15008,7 +15012,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9239786eb4e355624c548dd55c86cfb7"></a>
+<a class="anchor" id="ae8c4354fe47f5fb92d97a09ee9dd89ce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -15018,13 +15022,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m128.html">M128</a> vsmc::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -15190,44 +15194,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6ace374a4cc3ea65b0a4a1952a60fdaa"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt; vsmc::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01197">1197</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="afa8526dad565b433ed4b17b37ab8ff55"></a>
 <div class="memitem">
 <div class="memproto">
@@ -15247,6 +15213,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01197">1197</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ace374a4cc3ea65b0a4a1952a60fdaa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt; vsmc::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -15302,7 +15306,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a626f97d7612f03e859cd4216b609b7bc"></a>
+<a class="anchor" id="a1dd37a060fa1a00e8daac095a1b02ea2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -15312,13 +15316,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a> vsmc::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -15338,7 +15342,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1dd37a060fa1a00e8daac095a1b02ea2"></a>
+<a class="anchor" id="a626f97d7612f03e859cd4216b609b7bc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -15348,13 +15352,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a> vsmc::operator+ </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -15562,44 +15566,6 @@ template&lt;typename T , typename IntType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac0cabe5409e1de6563634ff15979fee4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt;&amp; vsmc::operator+= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00487">487</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a978ebaa09c1e9f37306e2db79f7736e1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -15638,23 +15604,25 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aeba937b48bddc59ae74143e7f9fb98db"></a>
+<a class="anchor" id="ac0cabe5409e1de6563634ff15979fee4"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&amp; vsmc::operator+= </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt;&amp; vsmc::operator+= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -15670,7 +15638,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00627">627</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00487">487</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
 
 </div>
 </div>
@@ -15691,6 +15659,42 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00627">627</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeba937b48bddc59ae74143e7f9fb98db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128.html">M128</a>&amp; vsmc::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128.html">M128</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16430,44 +16434,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a835e7da99fa4b82442464e286d5e28d7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt; vsmc::operator- </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01199">1199</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a1da95666b384086de34ef34ec287736b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -16487,6 +16453,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01199">1199</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a835e7da99fa4b82442464e286d5e28d7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt; vsmc::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16542,7 +16546,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abbb8097b47ba85675bacf36060ed8a38"></a>
+<a class="anchor" id="a5391a7e5b665a1ee6f7caabe84806e88"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -16552,13 +16556,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a> vsmc::operator- </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16578,7 +16582,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5391a7e5b665a1ee6f7caabe84806e88"></a>
+<a class="anchor" id="abbb8097b47ba85675bacf36060ed8a38"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -16588,13 +16592,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a> vsmc::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16650,7 +16654,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a38be80bcc5fd2c2d815c57b97224a7a2"></a>
+<a class="anchor" id="acc8b0706222726c904bf03faec85fbf3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -16660,13 +16664,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> vsmc::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16686,7 +16690,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="acc8b0706222726c904bf03faec85fbf3"></a>
+<a class="anchor" id="a38be80bcc5fd2c2d815c57b97224a7a2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -16696,13 +16700,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> vsmc::operator- </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16950,7 +16954,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0978d32fd8c8e0568dc827ec48f72465"></a>
+<a class="anchor" id="a6b5f975e70d8ff6bbb379d4ee6372498"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -16966,7 +16970,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -16986,7 +16990,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6b5f975e70d8ff6bbb379d4ee6372498"></a>
+<a class="anchor" id="a0978d32fd8c8e0568dc827ec48f72465"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17002,7 +17006,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17170,7 +17174,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a890d40d42fbca3fd89c82c4c94a7f7cd"></a>
+<a class="anchor" id="a269cc17c301132c29318b5ff0b36c423"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17186,7 +17190,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17206,7 +17210,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a269cc17c301132c29318b5ff0b36c423"></a>
+<a class="anchor" id="a890d40d42fbca3fd89c82c4c94a7f7cd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17222,7 +17226,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17494,7 +17498,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a555b307943f571ccdaa8cffca7218bb1"></a>
+<a class="anchor" id="a40800a7374f8b4e990db3396a4402e14"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17504,13 +17508,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a> vsmc::operator/ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17530,7 +17534,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a40800a7374f8b4e990db3396a4402e14"></a>
+<a class="anchor" id="a555b307943f571ccdaa8cffca7218bb1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17540,13 +17544,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a> vsmc::operator/ </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17602,7 +17606,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab5c8c33ba6eb03c749bd32025f4419bf"></a>
+<a class="anchor" id="aacc53c19552fd0e53e0c1cf769801cd3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17612,13 +17616,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> vsmc::operator/ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17638,7 +17642,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aacc53c19552fd0e53e0c1cf769801cd3"></a>
+<a class="anchor" id="ab5c8c33ba6eb03c749bd32025f4419bf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17648,13 +17652,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> vsmc::operator/ </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_d.html">M256D</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17746,42 +17750,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a859a53274a5fd70c98153ba63f905320"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a>&amp; vsmc::operator/= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00766">766</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a0584f0218b8413443298821394266d00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -17818,7 +17786,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9b60d95f9b4a19c399f07b59a8612d7b"></a>
+<a class="anchor" id="a859a53274a5fd70c98153ba63f905320"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -17826,15 +17794,15 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&amp; vsmc::operator/= </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a>&amp; vsmc::operator/= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128_d.html">M128D</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -17850,7 +17818,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01341">1341</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00766">766</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
 
 </div>
 </div>
@@ -17871,6 +17839,42 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01341">1341</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b60d95f9b4a19c399f07b59a8612d7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m256.html">M256</a>&amp; vsmc::operator/= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256.html">M256</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -19396,44 +19400,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa1478e3240453d30ea12e31963dbfe13"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt; vsmc::operator^ </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00495">495</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="abdb4efc189e05cb8bfab496934506521"></a>
 <div class="memitem">
 <div class="memproto">
@@ -19453,6 +19419,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00495">495</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1478e3240453d30ea12e31963dbfe13"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt; vsmc::operator^ </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -19510,44 +19514,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aeb2fdf09085a7b8d4eebbf0ae1bf4d20"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt; vsmc::operator^ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01205">1205</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a91b52725c8548f94a2c79a667527fed3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -19586,7 +19552,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adfbfd2ee7b6eb7db91400b56245df9f7"></a>
+<a class="anchor" id="aeb2fdf09085a7b8d4eebbf0ae1bf4d20"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -19596,9 +19562,9 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt;&amp; vsmc::operator^= </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt; vsmc::operator^ </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -19620,7 +19586,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00495">495</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01205">1205</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
 
 </div>
 </div>
@@ -19662,7 +19628,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae65fcf5323d963e2791f44d283d2a7af"></a>
+<a class="anchor" id="adfbfd2ee7b6eb7db91400b56245df9f7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -19672,9 +19638,9 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt;&amp; vsmc::operator^= </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt;&amp; vsmc::operator^= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -19696,7 +19662,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01205">1205</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00495">495</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
 
 </div>
 </div>
@@ -19719,6 +19685,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01205">1205</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae65fcf5323d963e2791f44d283d2a7af"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt;&amp; vsmc::operator^= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -19776,44 +19780,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab572df2f8aead3b9d9bf618032e60eba"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt; vsmc::operator| </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00493">493</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aa85acc506f87a5c29baa873508df94d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -19833,6 +19799,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l00493">493</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab572df2f8aead3b9d9bf618032e60eba"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;T&gt; vsmc::operator| </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -20042,44 +20046,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3091beee33cb8746b9414697097514cf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt;&amp; vsmc::operator|= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01203">1203</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a3b4192bcb901e566ec3f854d2b03db1c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -20099,6 +20065,44 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simd_8hpp_source.html#l01203">1203</a> of file <a class="el" href="simd_8hpp_source.html">simd.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3091beee33cb8746b9414697097514cf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt;T&gt;&amp; vsmc::operator|= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m256_i.html">M256I</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -22062,48 +22066,6 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab4e9c0d469d32f917bfc33b7defa0ba4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::sin </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00153">153</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a268d94339af466f2bcc9570b47668558"></a>
 <div class="memitem">
 <div class="memproto">
@@ -22127,6 +22089,48 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00153">153</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4e9c0d469d32f917bfc33b7defa0ba4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::sin </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -22242,48 +22246,6 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a26dfc5aaf0774a1d3146cd96bacbc3fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::sinh </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00169">169</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a9cc3e3198b3c365e9c403d3a471674e6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -22326,7 +22288,7 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9e4f2af16c9e5126266203dabe1d54b7"></a>
+<a class="anchor" id="a26dfc5aaf0774a1d3146cd96bacbc3fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -22334,7 +22296,7 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vsmc::sqr </td>
+          <td class="memname">void vsmc::sinh </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -22364,7 +22326,7 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00111">111</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00169">169</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
 
 </div>
 </div>
@@ -22391,6 +22353,48 @@ template&lt;MKL_INT BRNG, int Bits&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00111">111</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e4f2af16c9e5126266203dabe1d54b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::sqr </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -22808,48 +22812,6 @@ template&lt;typename RealType , typename RNGType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab891179f6a7cf4ae7cc646a9977c7d5f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::tgamm </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00182">182</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a917fea69151ef8da0578b26d02b4d685"></a>
 <div class="memitem">
 <div class="memproto">
@@ -22873,6 +22835,48 @@ template&lt;typename RealType , typename RNGType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vmath_8hpp_source.html#l00182">182</a> of file <a class="el" href="vmath_8hpp_source.html">vmath.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab891179f6a7cf4ae7cc646a9977c7d5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::tgamm </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>

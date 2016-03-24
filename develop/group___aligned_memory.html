@@ -128,10 +128,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga38b49cd552427b5f884bfd45f2262e9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c">vsmc::AlignedMemory</a> = ::<a class="el" href="classvsmc_1_1_aligned_memory_t_b_b.html">vsmc::AlignedMemoryTBB</a></td></tr>
 <tr class="memdesc:ga38b49cd552427b5f884bfd45f2262e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default AlignedMemory type.  <a href="group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c">More...</a><br /></td></tr>
 <tr class="separator:ga38b49cd552427b5f884bfd45f2262e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f1de809633cd238633b94560d27dfc8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga5f1de809633cd238633b94560d27dfc8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga5f1de809633cd238633b94560d27dfc8">vsmc::Allocator</a> = AlignedAllocator&lt; T, std::is_scalar&lt; T &gt;::value?32:(alignof(T) &gt; 16?alignof(T):16)&gt;</td></tr>
-<tr class="memdesc:ga5f1de809633cd238633b94560d27dfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> with proper alignement detected for type.  <a href="group___aligned_memory.html#ga5f1de809633cd238633b94560d27dfc8">More...</a><br /></td></tr>
-<tr class="separator:ga5f1de809633cd238633b94560d27dfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3966909db94b540ce406ebda3251ff6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gad3966909db94b540ce406ebda3251ff6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#gad3966909db94b540ce406ebda3251ff6">vsmc::Allocator</a> = AlignedAllocator&lt; T, Alignment&lt; T &gt;::value &gt;</td></tr>
+<tr class="memdesc:gad3966909db94b540ce406ebda3251ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> with proper alignement detected for type.  <a href="group___aligned_memory.html#gad3966909db94b540ce406ebda3251ff6">More...</a><br /></td></tr>
+<tr class="separator:gad3966909db94b540ce406ebda3251ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">vsmc::Vector</a> = std::vector&lt; T, Allocator&lt; T &gt;&gt;</td></tr>
 <tr class="memdesc:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type using Allocator.  <a href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">More...</a><br /></td></tr>
@@ -156,7 +156,7 @@ Typedefs</h2></td></tr>
 
 <p>Define class member <code>new</code> and <code>delete</code> using Allocator. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00080">80</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00086">86</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -173,25 +173,25 @@ Typedefs</h2></td></tr>
 
 <p>Default AlignedMemory type. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00319">319</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00285">285</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga5f1de809633cd238633b94560d27dfc8"></a>
+<a class="anchor" id="gad3966909db94b540ce406ebda3251ff6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga5f1de809633cd238633b94560d27dfc8">vsmc::Allocator</a> = typedef AlignedAllocator&lt;T, std::is_scalar&lt;T&gt;::value ? 32 : (alignof(T) &gt; 16 ? alignof(T) : 16)&gt;</td>
+          <td class="memname">using <a class="el" href="group___aligned_memory.html#gad3966909db94b540ce406ebda3251ff6">vsmc::Allocator</a> = typedef AlignedAllocator&lt;T, Alignment&lt;T&gt;::value&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> with proper alignement detected for type. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00429">429</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00400">400</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ template&lt;typename T &gt; </div>
 
 <p>Vector type using Allocator. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00434">434</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00405">405</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

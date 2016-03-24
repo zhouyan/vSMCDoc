@@ -141,10 +141,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a208b2ec04c16a555d619da229db5d0e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator.html#a208b2ec04c16a555d619da229db5d0e5">AlignedAllocator</a> ()=default</td></tr>
 <tr class="separator:a208b2ec04c16a555d619da229db5d0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3afa803b5ccdd1b3e0be366dcd435d41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator.html#a3afa803b5ccdd1b3e0be366dcd435d41">AlignedAllocator</a> (const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; T, Alignment, Memory &gt; &amp;)=default</td></tr>
+<tr class="memitem:a3afa803b5ccdd1b3e0be366dcd435d41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator.html#a3afa803b5ccdd1b3e0be366dcd435d41">AlignedAllocator</a> (const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt; &amp;)=default</td></tr>
 <tr class="separator:a3afa803b5ccdd1b3e0be366dcd435d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b13fad40960541e93bc8da28727e8db"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a9b13fad40960541e93bc8da28727e8db"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator.html#a9b13fad40960541e93bc8da28727e8db">AlignedAllocator</a> (const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; U, Alignment, Memory &gt; &amp;other)</td></tr>
+<tr class="memitem:a9b13fad40960541e93bc8da28727e8db"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator.html#a9b13fad40960541e93bc8da28727e8db">AlignedAllocator</a> (const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; U, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt; &amp;other)</td></tr>
 <tr class="separator:a9b13fad40960541e93bc8da28727e8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -162,13 +162,13 @@ class vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The value type </td></tr>
-    <tr><td class="paramname">Alignment</td><td>The alignment requirement of memory, must be a power of two and no less than <code>sizeof(void *)</code>. </td></tr>
-    <tr><td class="paramname">Memory</td><td>The memory management class. Must provides two static member functions, <code>aligned_malloc</code> and <code>aligned_free</code>. The member function <code>aligned_malloc</code> shall behave similar to <code>std::malloc</code> but take an additional arguments for alignment. It shall return a null pointer if the input size is zero. If there is an error, it throw an error or use other error handiling techniques, and if it mush return, it returns a null pointer . The member function <code>aligned_free</code> shall behave just like <code>std::free</code>. It shall be able to handle null pointer as an input. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classvsmc_1_1_alignment.html" title="Alignment of a given type. ">Alignment</a></td><td>The alignment requirement of memory, must be a power of two and no less than <code>sizeof(void *)</code>. </td></tr>
+    <tr><td class="paramname">Memory</td><td>The memory management class. Must provides two static member functions, <code>aligned_malloc</code> and <code>aligned_free</code>. The member function <code>aligned_malloc</code> shall behave similar to <code>std::malloc</code> but take an additional argument as alignment requirement. It need to be able to handle any alignment that is a power of two, other than zero. It need to return a non-null pointer even if the size is zero. It shall only return a null pointer if it fails to allocated the memory. It shall not throw any exceptions. The member function <code>aligned_free</code> shall behave just like <code>std::free</code>. It shall be able to handle a null pointer as its input. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00337">337</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00304">304</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a14a1bef1b0eca1b1f09ccd168e1b3240"></a>
 <div class="memitem">
@@ -177,12 +177,12 @@ class vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</h3>
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a14a1bef1b0eca1b1f09ccd168e1b3240">const_pointer</a> =  const T *</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a14a1bef1b0eca1b1f09ccd168e1b3240">const_pointer</a> =  const T *</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00351">351</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00318">318</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -193,12 +193,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a58ac706e2e9bfd1cc7661e0951272664">const_reference</a> =  typename std::add_lvalue_reference&lt;const T&gt;::type</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a58ac706e2e9bfd1cc7661e0951272664">const_reference</a> =  typename std::add_lvalue_reference&lt;const T&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00353">353</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00320">320</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -209,12 +209,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a59c8306a1d19fce6a8a010390a09aade">difference_type</a> =  std::ptrdiff_t</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a59c8306a1d19fce6a8a010390a09aade">difference_type</a> =  std::ptrdiff_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00349">349</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00316">316</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,12 +225,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a0beeea75bdcc0e20e9e6b635e2530075">is_always_equal</a> =  std::true_type</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a0beeea75bdcc0e20e9e6b635e2530075">is_always_equal</a> =  std::true_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00354">354</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00321">321</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -241,12 +241,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a3d2ee83be6ac61f291aeccecdeee7db0">pointer</a> =  T *</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a3d2ee83be6ac61f291aeccecdeee7db0">pointer</a> =  T *</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00350">350</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00317">317</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,12 +257,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a93b9cca515b2fc14ccc21367fa8701f1">reference</a> =  typename std::add_lvalue_reference&lt;T&gt;::type</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a93b9cca515b2fc14ccc21367fa8701f1">reference</a> =  typename std::add_lvalue_reference&lt;T&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00352">352</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00319">319</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,12 +273,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#abe5231720b31af9456c6599977f15312">size_type</a> =  std::size_t</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#abe5231720b31af9456c6599977f15312">size_type</a> =  std::size_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00348">348</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00315">315</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -289,12 +289,12 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a576977bf97798cc5f478174db759f554">value_type</a> =  T</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html#a576977bf97798cc5f478174db759f554">value_type</a> =  T</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00347">347</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00314">314</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -334,9 +334,9 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; T, Alignment, Memory &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -362,9 +362,9 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::<a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; U, Alignment, Memory &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; U, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -376,7 +376,7 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00368">368</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00335">335</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classvsmc_1_1_aligned_allocator.html#a3d2ee83be6ac61f291aeccecdeee7db0">pointer</a> <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::allocate </td>
+          <td class="memname">static <a class="el" href="classvsmc_1_1_aligned_allocator.html#a3d2ee83be6ac61f291aeccecdeee7db0">pointer</a> <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::allocate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_aligned_allocator.html#abe5231720b31af9456c6599977f15312">size_type</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -415,7 +415,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00373">373</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00340">340</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, Alignment, Memory &gt;::deallocate </td>
+          <td class="memname">static void <a class="el" href="classvsmc_1_1_aligned_allocator.html">vsmc::AlignedAllocator</a>&lt; T, <a class="el" href="classvsmc_1_1_alignment.html">Alignment</a>, Memory &gt;::deallocate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_aligned_allocator.html#a3d2ee83be6ac61f291aeccecdeee7db0">pointer</a>&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -453,7 +453,7 @@ template&lt;typename T, std::size_t Alignment = 32, typename Memory = AlignedMem
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00379">379</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00350">350</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

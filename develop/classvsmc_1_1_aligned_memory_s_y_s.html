@@ -112,18 +112,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f4236c113ece33572d630dfc04d7161"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_s_y_s.html#a2f4236c113ece33572d630dfc04d7161">aligned_free</a> (void *ptr)</td></tr>
-<tr class="separator:a2f4236c113ece33572d630dfc04d7161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77838fbb1e1cb00819d3849fced16f8d"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_s_y_s.html#a77838fbb1e1cb00819d3849fced16f8d">aligned_malloc</a> (std::size_t n, std::size_t alignment)</td></tr>
-<tr class="separator:a77838fbb1e1cb00819d3849fced16f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e481800d7e74da31da4e79fc931600"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_s_y_s.html#ae3e481800d7e74da31da4e79fc931600">aligned_free</a> (void *ptr) noexcept</td></tr>
+<tr class="separator:ae3e481800d7e74da31da4e79fc931600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddf2afe059d818f5fec7a5564c06d9a"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_s_y_s.html#afddf2afe059d818f5fec7a5564c06d9a">aligned_malloc</a> (std::size_t n, std::size_t alignment) noexcept</td></tr>
+<tr class="separator:afddf2afe059d818f5fec7a5564c06d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Aligned memory using native system aligned memory allocation. </p>
 <p>This class use <code>posix_memalign</code> and <code>free</code> on POSIX systems (Mac OS X, Linux, etc.) and <code>_aligned_malloc</code> and <code>_aligned_free</code> on Windows. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00188">188</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00203">203</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2f4236c113ece33572d630dfc04d7161"></a>
+<a class="anchor" id="ae3e481800d7e74da31da4e79fc931600"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -140,16 +140,16 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00207">207</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00214">214</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a77838fbb1e1cb00819d3849fced16f8d"></a>
+<a class="anchor" id="afddf2afe059d818f5fec7a5564c06d9a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -176,12 +176,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00191">191</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00206">206</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

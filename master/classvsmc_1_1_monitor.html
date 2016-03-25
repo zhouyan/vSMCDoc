@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -160,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ce29fb4661e552c2548281b90ed8c51"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor.html#a7ce29fb4661e552c2548281b90ed8c51">read_record_matrix</a> (OutputIterIter first) const </td></tr>
 <tr class="memdesc:a7ce29fb4661e552c2548281b90ed8c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the record history of all variables through an array of output iterators.  <a href="#a7ce29fb4661e552c2548281b90ed8c51">More...</a><br /></td></tr>
 <tr class="separator:a7ce29fb4661e552c2548281b90ed8c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3cad9116e07d570273e6efd5d0742a5"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, typename OutputIter &gt; </td></tr>
+<tr class="memitem:ab3cad9116e07d570273e6efd5d0742a5"><td class="memTemplParams" colspan="2">template&lt;MatrixLayout Layout, typename OutputIter &gt; </td></tr>
 <tr class="memitem:ab3cad9116e07d570273e6efd5d0742a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor.html#ab3cad9116e07d570273e6efd5d0742a5">read_record_matrix</a> (OutputIter first) const </td></tr>
 <tr class="memdesc:ab3cad9116e07d570273e6efd5d0742a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the record history of all variables through an output iterator.  <a href="#ab3cad9116e07d570273e6efd5d0742a5">More...</a><br /></td></tr>
 <tr class="separator:ab3cad9116e07d570273e6efd5d0742a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,7 +281,7 @@ template&lt;typename T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -315,7 +316,7 @@ template&lt;typename T&gt; </div>
 
 <p>Clear all records of the index and integrations. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00269">269</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00271">271</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -691,7 +692,7 @@ template&lt;typename OutputIterIter &gt; </div>
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
 <div class="memtemplate">
-template&lt;MatrixOrder Order, typename OutputIter &gt; </div>
+template&lt;MatrixLayout Layout, typename OutputIter &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -718,7 +719,7 @@ template&lt;MatrixOrder Order, typename OutputIter &gt; </div>
   </table>
   </dd>
 </dl>
-<p>For example, say <code>first</code> is of type <code>double *</code>, then if <code>order == ColMajor</code>, then, <code>first[j * <a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">iter_size()</a> + i] == record(i, j)</code>. Otherwise, if <code>order == RowMajor</code>, then <code>first[i * <a class="el" href="classvsmc_1_1_monitor.html#a235c98adf8fd060ca5ddd7e8f4f034a7" title="The dimension of the Monitor. ">dim()</a> + j] == record(i, j)</code>. That is, the output is an <code><a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">iter_size()</a></code> by <code><a class="el" href="classvsmc_1_1_monitor.html#a235c98adf8fd060ca5ddd7e8f4f034a7" title="The dimension of the Monitor. ">dim()</a></code> matrix, with the usual meaning of column or row major order. </p>
+<p>For example, say <code>first</code> is of type <code>double *</code>, then if <code>layout == ColMajor</code>, then, <code>first[j * <a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">iter_size()</a> + i] == record(i, j)</code>. Otherwise, if <code>layout == RowMajor</code>, then <code>first[i * <a class="el" href="classvsmc_1_1_monitor.html#a235c98adf8fd060ca5ddd7e8f4f034a7" title="The dimension of the Monitor. ">dim()</a> + j] == record(i, j)</code>. That is, the output is an <code><a class="el" href="classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9" title="The number of iterations has been recorded. ">iter_size()</a></code> by <code><a class="el" href="classvsmc_1_1_monitor.html#a235c98adf8fd060ca5ddd7e8f4f034a7" title="The dimension of the Monitor. ">dim()</a></code> matrix, with the usual meaning of column or row major layout. </p>
 
 <p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00222">222</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
@@ -909,7 +910,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> is actively recording results. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00276">276</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00278">278</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1028,7 @@ template&lt;typename T&gt; </div>
 
 <p>Turn off the recording. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00282">282</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00284">284</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1057,7 @@ template&lt;typename T&gt; </div>
 
 <p>Turn on the recording. </p>
 
-<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00279">279</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="monitor_8hpp_source.html#l00281">281</a> of file <a class="el" href="monitor_8hpp_source.html">monitor.hpp</a>.</p>
 
 </div>
 </div>

@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -126,10 +127,6 @@ Macros</h2></td></tr>
 <tr class="separator:a7ed605c1917e2b9f485b1fc9767ecc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add24c30cacaf3adfe827af99be3492a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#add24c30cacaf3adfe827af99be3492a7">VSMC_RUNTIME_WARNING_RNG_RDRAND_ENGINE_NTRIAL</a>(ntrial,  NTrialMax)        </td></tr>
 <tr class="separator:add24c30cacaf3adfe827af99be3492a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac54efdfdbd8f8e74885e81182ce02d2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#ac54efdfdbd8f8e74885e81182ce02d2b">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE</a>&#160;&#160;&#160;<a class="el" href="rdrand_8hpp.html#a16e6a7a4af1e2b05ee50ee6cfddc2daa">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</a>(ResultType);</td></tr>
-<tr class="separator:ac54efdfdbd8f8e74885e81182ce02d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e6a7a4af1e2b05ee50ee6cfddc2daa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdrand_8hpp.html#a16e6a7a4af1e2b05ee50ee6cfddc2daa">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</a>(ResultType)                </td></tr>
-<tr class="separator:a16e6a7a4af1e2b05ee50ee6cfddc2daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -200,42 +197,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a>((ntrial &lt; NTrialMax),                                \</div><div class="line">        <span class="stringliteral">&quot;**RDRAND::generate** MAXIMUM NUMBER OF TRIALS EXCEEDED&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a89c0fabaf2a8c3842eabb5f15acc10d5"><div class="ttname"><a href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)                                                                          </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00077">assert.hpp:77</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00055">55</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac54efdfdbd8f8e74885e81182ce02d2b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE&#160;&#160;&#160;<a class="el" href="rdrand_8hpp.html#a16e6a7a4af1e2b05ee50ee6cfddc2daa">VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</a>(ResultType);</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00052">52</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a16e6a7a4af1e2b05ee50ee6cfddc2daa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_RNG_RDRAND_ENGINE_RESULT_TYPE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ResultType</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(((<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(std::uint16_t) &amp;&amp;       \</div><div class="line">                            std::is_unsigned&lt;ResultType&gt;::value) ||           \</div><div class="line">                           (<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(<a class="code" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>) &amp;&amp;    \</div><div class="line">                               std::is_unsigned&lt;ResultType&gt;::value) ||        \</div><div class="line">                           (<span class="keyword">sizeof</span>(ResultType) == <span class="keyword">sizeof</span>(<a class="code" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>) &amp;&amp;    \</div><div class="line">                               std::is_unsigned&lt;ResultType&gt;::value)),         \</div><div class="line">        <span class="stringliteral">&quot;**RDRANDEngine** USED WITH ResultType OTHER THAN UNSIGNED 16/32/64 &quot;</span> \</div><div class="line">        <span class="stringliteral">&quot;BITS INTEGER&quot;</span>)</div><div class="ttc" id="opencl_8h_html_a1597d08777066cd00a3f2846cf6ae7a8"><div class="ttname"><a href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">uint32_t</a></div><div class="ttdeci">uint uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="opencl_8h_source.html#l00039">opencl.h:39</a></div></div>
-<div class="ttc" id="opencl_8h_html_a2bf9e57a8d20903de8d1e3905eed8150"><div class="ttname"><a href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">uint64_t</a></div><div class="ttdeci">ulong uint64_t</div><div class="ttdef"><b>Definition:</b> <a href="opencl_8h_source.html#l00040">opencl.h:40</a></div></div>
-<div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a>((ntrial &lt; NTrialMax),                                \</div><div class="line">        <span class="stringliteral">&quot;**RDRAND::generate** MAXIMUM NUMBER OF TRIALS EXCEEDED&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a89c0fabaf2a8c3842eabb5f15acc10d5"><div class="ttname"><a href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)                                                                          </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00075">assert.hpp:75</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="rdrand_8hpp_source.html#l00042">42</a> of file <a class="el" href="rdrand_8hpp_source.html">rdrand.hpp</a>.</p>
 

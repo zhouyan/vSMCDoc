@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -98,18 +99,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">aligned_memory.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="config_8h_source.html">vsmc/internal/config.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="assert_8hpp_source.html">vsmc/internal/assert.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="assert_8hpp_source.html">vsmc/internal/assert.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="config_8h_source.html">vsmc/internal/config.h</a>&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;new&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;tbb/scalable_allocator.h&gt;</code><br />
@@ -123,6 +124,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned allocator.  <a href="classvsmc_1_1_aligned_allocator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator_1_1rebind.html">vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;::rebind&lt; U &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator_3_01const_01void_00_01_alignment_00_01_memory_01_4.html">vsmc::AlignedAllocator&lt; const void, Alignment, Memory &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_allocator_3_01void_00_01_alignment_00_01_memory_01_4.html">vsmc::AlignedAllocator&lt; void, Alignment, Memory &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_m_k_l.html">vsmc::AlignedMemoryMKL</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned memory using Intel MKL <code>mkl_malloc</code> and <code>mkl_free</code>  <a href="classvsmc_1_1_aligned_memory_m_k_l.html#details">More...</a><br /></td></tr>
@@ -156,12 +161,6 @@ Macros</h2></td></tr>
 <tr class="separator:a0505ed9f76f0f3dffdd6b3f10500744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a936ceb9a9655c0d8600b67a483955287"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aligned__memory_8hpp.html#a936ceb9a9655c0d8600b67a483955287">VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID</a>(alignemnt)      </td></tr>
 <tr class="separator:a936ceb9a9655c0d8600b67a483955287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e147405b5f36ecfc5140f402bb2a9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aligned__memory_8hpp.html#ab3e147405b5f36ecfc5140f402bb2a9d">VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY</a></td></tr>
-<tr class="separator:ab3e147405b5f36ecfc5140f402bb2a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b5361c467007a501b18f3c217cd818b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aligned__memory_8hpp.html#a0b5361c467007a501b18f3c217cd818b">VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a>(Alignment)      </td></tr>
-<tr class="separator:a0b5361c467007a501b18f3c217cd818b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6137e0369f685f26d2c68bfd8d6265"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aligned__memory_8hpp.html#a7a6137e0369f685f26d2c68bfd8d6265">VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID</a>(Alignemnt)        </td></tr>
-<tr class="separator:a7a6137e0369f685f26d2c68bfd8d6265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -176,10 +175,19 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga795da25dedee60c77bf33e10f73aab5e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">vsmc::Allocator</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, AlignedAllocator&lt; T &gt;, std::allocator&lt; T &gt;&gt;::type</td></tr>
 <tr class="memdesc:ga795da25dedee60c77bf33e10f73aab5e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_aligned_allocator.html" title="Aligned allocator. ">AlignedAllocator</a> for scalar type and <code>std::allocator</code> for others.  <a href="group___aligned_memory.html#ga795da25dedee60c77bf33e10f73aab5e">More...</a><br /></td></tr>
 <tr class="separator:ga795da25dedee60c77bf33e10f73aab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">vsmc::Vector</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, std::vector&lt; T, AlignedAllocator&lt; T &gt;&gt;, std::vector&lt; T &gt;&gt;::type</td></tr>
-<tr class="memdesc:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlignedVector for scalar type and <code>std::vector</code> for others.  <a href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">More...</a><br /></td></tr>
-<tr class="separator:ga8d6319aaafe93f5e8408cd4754b63b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab66d52262c9aabefa08a1304c57d57f6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gab66d52262c9aabefa08a1304c57d57f6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">vsmc::Vector</a> = typename std::conditional&lt; std::is_scalar&lt; T &gt;::value, AlignedVector&lt; T &gt;, std::vector&lt; T &gt;&gt;::type</td></tr>
+<tr class="memdesc:gab66d52262c9aabefa08a1304c57d57f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AlignedVector for scalar type and <code>std::vector</code> for others.  <a href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">More...</a><br /></td></tr>
+<tr class="separator:gab66d52262c9aabefa08a1304c57d57f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:addcd5a28d42376a53980893088e3c5bd"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , std::size_t Alignment, typename Memory &gt; </td></tr>
+<tr class="memitem:addcd5a28d42376a53980893088e3c5bd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#addcd5a28d42376a53980893088e3c5bd">vsmc::operator!=</a> (const AlignedAllocator&lt; T1, Alignment, Memory &gt; &amp;, const AlignedAllocator&lt; T2, Alignment, Memory &gt; &amp;)</td></tr>
+<tr class="separator:addcd5a28d42376a53980893088e3c5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f06a9c5d45ec4d04623972a8f28b58c"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , std::size_t Alignment, typename Memory &gt; </td></tr>
+<tr class="memitem:a9f06a9c5d45ec4d04623972a8f28b58c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a9f06a9c5d45ec4d04623972a8f28b58c">vsmc::operator==</a> (const AlignedAllocator&lt; T1, Alignment, Memory &gt; &amp;, const AlignedAllocator&lt; T2, Alignment, Memory &gt; &amp;)</td></tr>
+<tr class="separator:a9f06a9c5d45ec4d04623972a8f28b58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a09e7c0131fd6f5d15017196bbcd40a41"></a>
@@ -191,9 +199,9 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="aligned__memory_8hpp.html#a0505ed9f76f0f3dffdd6b3f10500744b">VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a>(alignment);       \</div><div class="line">    VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID(alignment);</div><div class="ttc" id="aligned__memory_8hpp_html_a0505ed9f76f0f3dffdd6b3f10500744b"><div class="ttname"><a href="aligned__memory_8hpp.html#a0505ed9f76f0f3dffdd6b3f10500744b">VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO(alignment)    </div><div class="ttdef"><b>Definition:</b> <a href="aligned__memory_8hpp_source.html#l00092">aligned_memory.hpp:92</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="aligned__memory_8hpp.html#a0505ed9f76f0f3dffdd6b3f10500744b">VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a>(alignment);       \</div><div class="line">    VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID(alignment);</div><div class="ttc" id="aligned__memory_8hpp_html_a0505ed9f76f0f3dffdd6b3f10500744b"><div class="ttname"><a href="aligned__memory_8hpp.html#a0505ed9f76f0f3dffdd6b3f10500744b">VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO(alignment)    </div><div class="ttdef"><b>Definition:</b> <a href="aligned__memory_8hpp_source.html#l00078">aligned_memory.hpp:78</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00101">101</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00087">87</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -210,9 +218,9 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (alignment != 0 &amp;&amp; (alignment &amp; (alignment - 1)) == 0),               \</div><div class="line">        <span class="stringliteral">&quot;**aligned_malloc** USED WITH ALIGNMENT NOT A POWER OF TWO&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (alignment != 0 &amp;&amp; (alignment &amp; (alignment - 1)) == 0),               \</div><div class="line">        <span class="stringliteral">&quot;**aligned_malloc** USED WITH ALIGNMENT NOT A POWER OF TWO&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00092">92</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00078">78</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -229,62 +237,9 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((alignment &gt;= <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *)),                        \</div><div class="line">        <span class="stringliteral">&quot;**aligned_malloc** USED WITH ALIGNMENT LESS THAN sizeof(void *)&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00055">assert.hpp:55</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((alignment &gt;= <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *)),                        \</div><div class="line">        <span class="stringliteral">&quot;**aligned_malloc** USED WITH ALIGNMENT LESS THAN sizeof(void *)&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00097">97</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab3e147405b5f36ecfc5140f402bb2a9d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="aligned__memory_8hpp.html#a0b5361c467007a501b18f3c217cd818b">VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a>(Alignment);        \</div><div class="line">    VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID(Alignment);</div><div class="ttc" id="aligned__memory_8hpp_html_a0b5361c467007a501b18f3c217cd818b"><div class="ttname"><a href="aligned__memory_8hpp.html#a0b5361c467007a501b18f3c217cd818b">VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO(Alignment)      </div><div class="ttdef"><b>Definition:</b> <a href="aligned__memory_8hpp_source.html#l00079">aligned_memory.hpp:79</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00088">88</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0b5361c467007a501b18f3c217cd818b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_POWER_OF_TWO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Alignment</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>(                                                       \</div><div class="line">        (Alignment != 0 &amp;&amp; (Alignment &amp; (Alignment - 1)) == 0),               \</div><div class="line">        <span class="stringliteral">&quot;**AlignedAllocator** USED WITH Alignment NOT A POWER OF TWO&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00079">79</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7a6137e0369f685f26d2c68bfd8d6265"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_STATIC_ASSERT_UTILITY_ALIGNED_MEMORY_SIZEOF_VOID</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Alignemnt</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a>((Alignment &gt;= <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *)),                         \</div><div class="line">        <span class="stringliteral">&quot;**AlginedAllocator** USED WITH Alignment LESS THAN sizeof(void *)&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a543ff9adbfd963e253d731c6bcef8fc3"><div class="ttname"><a href="assert_8hpp.html#a543ff9adbfd963e253d731c6bcef8fc3">VSMC_STATIC_ASSERT</a></div><div class="ttdeci">#define VSMC_STATIC_ASSERT(cond, msg)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00042">assert.hpp:42</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00084">84</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00083">83</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

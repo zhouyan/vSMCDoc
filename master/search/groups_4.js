@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['enumerators_2c_20placeholders_20and_20macros',['Enumerators, placeholders and macros',['../group___definitions.html',1,'']]],
-  ['exponential_20and_20logarithm_20functions',['Exponential and logarithm functions',['../group__v_exponential.html',1,'']]]
+  ['hdf5_20objects_20io',['HDF5 objects IO',['../group___h_d_f5_i_o.html',1,'']]],
+  ['hyperbolic_20functions',['Hyperbolic functions',['../group__v_hyperbolic.html',1,'']]]
 ];

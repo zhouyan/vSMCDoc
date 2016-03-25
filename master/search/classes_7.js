@@ -2,8 +2,6 @@ var searchData=
 [
   ['haskeytype',['HasKeyType',['../classvsmc_1_1internal_1_1internal_1_1_has_key_type.html',1,'vsmc::internal::internal']]],
   ['haskeytypeimpl',['HasKeyTypeImpl',['../classvsmc_1_1internal_1_1internal_1_1_has_key_type_impl.html',1,'vsmc::internal::internal']]],
-  ['hasresamplerngtype',['HasResampleRNGType',['../classvsmc_1_1internal_1_1_has_resample_r_n_g_type.html',1,'vsmc::internal']]],
-  ['hasresamplerngtypeimpl',['HasResampleRNGTypeImpl',['../classvsmc_1_1internal_1_1_has_resample_r_n_g_type_impl.html',1,'vsmc::internal']]],
   ['hasrngsettype',['HasRNGSetType',['../classvsmc_1_1internal_1_1_has_r_n_g_set_type.html',1,'vsmc::internal']]],
   ['hasrngsettypeimpl',['HasRNGSetTypeImpl',['../classvsmc_1_1internal_1_1_has_r_n_g_set_type_impl.html',1,'vsmc::internal']]],
   ['hassingleparticlebasetype',['HasSingleParticleBaseType',['../classvsmc_1_1internal_1_1_has_single_particle_base_type.html',1,'vsmc::internal']]],

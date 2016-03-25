@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -113,6 +114,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a34829302165f405780281eaa72fd4d83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_single_particle.html#a34829302165f405780281eaa72fd4d83">SingleParticle</a> (typename <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt;::size_type id, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; *pptr)</td></tr>
 <tr class="separator:a34829302165f405780281eaa72fd4d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e4012544dd437507261e4c1983d8dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_single_particle.html#a53e4012544dd437507261e4c1983d8dc">operator*</a> ()</td></tr>
+<tr class="separator:a53e4012544dd437507261e4c1983d8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6886700aad277f391b0e4f42efbc029"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_single_particle.html#ae6886700aad277f391b0e4f42efbc029">operator*</a> () const </td></tr>
+<tr class="separator:ae6886700aad277f391b0e4f42efbc029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02643415089f9888e5bf1d77a533d24b"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:a02643415089f9888e5bf1d77a533d24b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_single_particle.html#a02643415089f9888e5bf1d77a533d24b">operator[]</a> (IntType n)</td></tr>
+<tr class="separator:a02643415089f9888e5bf1d77a533d24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -121,7 +129,7 @@ class vsmc::SingleParticle&lt; T &gt;</h3>
 <p>A thin wrapper over a complete <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a>. </p>
 <p>This is the basic <a class="el" href="classvsmc_1_1_single_particle.html" title="A thin wrapper over a complete Particle. ">SingleParticle</a> available for any type of <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a>. To extend it for type <code>T</code>. One can either specialize vsmc::SingleParticleBaseTypeTrait&lt;T&gt; or define a class template named <code>single_particle_type</code> within <code>T</code> with the following minimum requirement. </p><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S&gt; <span class="comment">// S: StateType, such as StateMatrix&lt;Dim, T&gt;</span></div><div class="line"><span class="keyword">class </span>single_particle_type</div><div class="line">{</div><div class="line">    <span class="keyword">public</span>:</div><div class="line">    <span class="keyword">using</span> size_type = IntType;</div><div class="line">    single_particle_type(size_type <span class="keywordtype">id</span>, Particle&lt;S&gt; *pptr);</div><div class="line">    size_type id() <span class="keyword">const</span>;</div><div class="line">    Particle&lt;S&gt; &amp;particle() <span class="keyword">const</span>;</div><div class="line">}; <span class="comment">// class single_particle_type</span></div></div><!-- fragment --><p> Usually you can safely derive <code>single_particle_type&lt;S&gt;</code> from <a class="el" href="classvsmc_1_1_single_particle_base.html">SingleParticleBase&lt;S&gt;</a> and add methods specific to <code>S</code>. </p>
 
-<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00090">90</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00102">102</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a34829302165f405780281eaa72fd4d83"></a>
 <div class="memitem">
@@ -157,7 +165,92 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00093">93</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00105">105</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a53e4012544dd437507261e4c1983d8dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt;T&gt;&amp; <a class="el" href="classvsmc_1_1_single_particle.html">vsmc::SingleParticle</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00119">119</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6886700aad277f391b0e4f42efbc029"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt;T&gt;&amp; <a class="el" href="classvsmc_1_1_single_particle.html">vsmc::SingleParticle</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00121">121</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02643415089f9888e5bf1d77a533d24b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;typename IntType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a> <a class="el" href="classvsmc_1_1_single_particle.html">vsmc::SingleParticle</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">IntType&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="single__particle_8hpp_source.html#l00111">111</a> of file <a class="el" href="single__particle_8hpp_source.html">single_particle.hpp</a>.</p>
 
 </div>
 </div>

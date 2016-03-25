@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -108,7 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_uniform_bits.html">vsmc::internal::UniformBits&lt; UIntType, Bits &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_uniform_bits.html">vsmc::UniformBits&lt; UIntType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate uniform bits of given type.  <a href="classvsmc_1_1_uniform_bits.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_uniform_bits_distribution.html">vsmc::UniformBitsDistribution&lt; UIntType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniform bits distribution.  <a href="classvsmc_1_1_uniform_bits_distribution.html#details">More...</a><br /></td></tr>
@@ -128,24 +130,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a5591819693d169503cecb85a3caeee25"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a5591819693d169503cecb85a3caeee25"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a5591819693d169503cecb85a3caeee25">vsmc::rng_rand</a> (RNGType &amp;, UniformBitsDistribution&lt; UIntType &gt; &amp;, std::size_t, UIntType *)</td></tr>
 <tr class="separator:a5591819693d169503cecb85a3caeee25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572a0c095abb2be8868a779da0bdc33e"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a572a0c095abb2be8868a779da0bdc33e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a572a0c095abb2be8868a779da0bdc33e">vsmc::uniform_bits_distribution</a> (RNGType &amp;rng, std::size_t n, UIntType *r, const typename UniformBitsDistribution&lt; UIntType &gt;::param_type &amp;)</td></tr>
+<tr class="separator:a572a0c095abb2be8868a779da0bdc33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc5b4dd3b4e617bf4c7e507a861fd11"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a0cc5b4dd3b4e617bf4c7e507a861fd11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a0cc5b4dd3b4e617bf4c7e507a861fd11">vsmc::uniform_bits_distribution</a> (RNGType &amp;, std::size_t, UIntType *)</td></tr>
 <tr class="separator:a0cc5b4dd3b4e617bf4c7e507a861fd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39b596df3efc5b21a686235443bd761"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType , bool B1, bool B2&gt; </td></tr>
-<tr class="memitem:aa39b596df3efc5b21a686235443bd761"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa39b596df3efc5b21a686235443bd761">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::false_type, std::integral_constant&lt; bool, B1 &gt;, std::integral_constant&lt; bool, B2 &gt;)</td></tr>
-<tr class="separator:aa39b596df3efc5b21a686235443bd761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5085d39e1fdd3d49e672c043fd77b66"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:ac5085d39e1fdd3d49e672c043fd77b66"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ac5085d39e1fdd3d49e672c043fd77b66">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::true_type, std::true_type, std::true_type)</td></tr>
-<tr class="separator:ac5085d39e1fdd3d49e672c043fd77b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5fb8554595dbe821700fcbb445b183"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:a7d5fb8554595dbe821700fcbb445b183"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7d5fb8554595dbe821700fcbb445b183">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::true_type, std::true_type, std::false_type)</td></tr>
-<tr class="separator:a7d5fb8554595dbe821700fcbb445b183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31321c538919f1080a4d8b0a620949d2"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:a31321c538919f1080a4d8b0a620949d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a31321c538919f1080a4d8b0a620949d2">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::true_type, std::false_type, std::true_type)</td></tr>
-<tr class="separator:a31321c538919f1080a4d8b0a620949d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62937c2786b01a463e54071058968917"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:a62937c2786b01a463e54071058968917"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a62937c2786b01a463e54071058968917">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::true_type, std::false_type, std::false_type)</td></tr>
-<tr class="separator:a62937c2786b01a463e54071058968917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42f274748965f14fb09f8df44ac9231"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
+<tr class="memitem:af42f274748965f14fb09f8df44ac9231"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af42f274748965f14fb09f8df44ac9231">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::false_type)</td></tr>
+<tr class="separator:af42f274748965f14fb09f8df44ac9231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c69e010484493e6e69e6024f7f3791"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a50c69e010484493e6e69e6024f7f3791"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a50c69e010484493e6e69e6024f7f3791">vsmc::internal::uniform_bits_distribution_impl</a> (RNGType &amp;rng, std::size_t n, UIntType *r, std::true_type)</td></tr>
+<tr class="separator:a50c69e010484493e6e69e6024f7f3791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

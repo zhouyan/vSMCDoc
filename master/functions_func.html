@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -109,7 +110,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_u.html#index_u"><span>u</span></a></li>
       <li><a href="functions_func_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_func_w.html#index_w"><span>w</span></a></li>
-      <li><a href="functions_func_z.html#index_z"><span>z</span></a></li>
       <li><a href="functions_func_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -143,10 +143,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_levy_distribution_1_1param__type.html#aeb0ae051a68a1efdfae35ceead6a1b7a">vsmc::LevyDistribution&lt; RealType &gt;::param_type</a>
 , <a class="el" href="classvsmc_1_1_logistic_distribution.html#ac3259602670d9c8fe4a44ce382faaea1">vsmc::LogisticDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1_logistic_distribution_1_1param__type.html#aedde558464b41f2add3047de40b0cb0c">vsmc::LogisticDistribution&lt; RealType &gt;::param_type</a>
+, <a class="el" href="classvsmc_1_1_normal_m_v_proposal.html#ac60a7ea0a7c88883dae484e2c8cd1050">vsmc::NormalMVProposal&lt; RealType, Dim &gt;</a>
+, <a class="el" href="classvsmc_1_1_normal_proposal.html#a26325eae00cee826cb8d0f612d072e70">vsmc::NormalProposal&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1_pareto_distribution.html#abdb3dd3893259d034c8c1adf672a7c8f">vsmc::ParetoDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1_pareto_distribution_1_1param__type.html#ae2c433d59f1c6e3797189fedbe27c7a2">vsmc::ParetoDistribution&lt; RealType &gt;::param_type</a>
-, <a class="el" href="classvsmc_1_1_uniform_real_l_r_distribution.html#affdd7c8b5e46bc812779ea6da109ca7f">vsmc::UniformRealLRDistribution&lt; RealType, Left, Right &gt;</a>
-, <a class="el" href="classvsmc_1_1_uniform_real_l_r_distribution_1_1param__type.html#a9d4b6b033fa22abdad7594bf2b536af8">vsmc::UniformRealLRDistribution&lt; RealType, Left, Right &gt;::param_type</a>
+, <a class="el" href="classvsmc_1_1_uniform_real_distribution.html#a38f20b646a57fdc76549ffcb1a67a130">vsmc::UniformRealDistribution&lt; RealType &gt;</a>
+, <a class="el" href="classvsmc_1_1_uniform_real_distribution_1_1param__type.html#aeacc680c4a751fbe6d0b0865452418ec">vsmc::UniformRealDistribution&lt; RealType &gt;::param_type</a>
 , <a class="el" href="classvsmc_1_1_weibull_distribution.html#a011877329b08c588f7c17b53748ab65a">vsmc::WeibullDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1_weibull_distribution_1_1param__type.html#a282d33e7c57b9e26d30f1127d558f9b0">vsmc::WeibullDistribution&lt; RealType &gt;::param_type</a>
 </li>
@@ -161,11 +163,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_program_option_map.html#a617e623f8f3eed4989f2fb6faecda574">vsmc::ProgramOptionMap</a>
 </li>
 <li>add_log()
-: <a class="el" href="classvsmc_1_1_weight.html#a70bd1212a6115e52cccacd81600e6bba">vsmc::Weight</a>
-, <a class="el" href="classvsmc_1_1_weight_null.html#a6bdb3d57ac200cb1e28a398735d6b93e">vsmc::WeightNull</a>
-</li>
-<li>AESNIGenerator()
-: <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#aacbeabfe4633d3af5845e182038038b9">vsmc::AESNIGenerator&lt; ResultType, KeySeqType, Rounds, Blocks &gt;</a>
+: <a class="el" href="classvsmc_1_1_weight.html#a392e6b66be1cab033b805766d978e7f3">vsmc::Weight</a>
+, <a class="el" href="classvsmc_1_1_weight_null.html#a7a811b25eeee1d60f1dd8a4ad4fa3af1">vsmc::WeightNull</a>
 </li>
 <li>aligned_free()
 : <a class="el" href="classvsmc_1_1_aligned_memory_m_k_l.html#a41ed8046b5c6c333b2cccd9bcb5e344b">vsmc::AlignedMemoryMKL</a>
@@ -180,19 +179,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_aligned_memory_t_b_b.html#a33b7932c138f47f3364579b06e5918ae">vsmc::AlignedMemoryTBB</a>
 </li>
 <li>AlignedAllocator()
-: <a class="el" href="classvsmc_1_1_aligned_allocator.html#a93cc74e1e578ae7ae7393bc0e12dc0d5">vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</a>
+: <a class="el" href="classvsmc_1_1_aligned_allocator.html#a208b2ec04c16a555d619da229db5d0e5">vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</a>
 </li>
 <li>allocate()
-: <a class="el" href="classvsmc_1_1_aligned_allocator.html#ad300a7cfd9ae5472cdff4671650925da">vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</a>
+: <a class="el" href="classvsmc_1_1_aligned_allocator.html#a1b79a4c080fe50c079b922bfa6606b66">vsmc::AlignedAllocator&lt; T, Alignment, Memory &gt;</a>
 </li>
 <li>alpha()
 : <a class="el" href="classvsmc_1_1_beta_distribution.html#ae24a30acf9b4738ddf94eba66bac2bd9">vsmc::BetaDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1_beta_distribution_1_1param__type.html#a3b654d8271586407c017aa93e4ee3ac1">vsmc::BetaDistribution&lt; RealType &gt;::param_type</a>
 , <a class="el" href="classvsmc_1_1_gamma_distribution.html#a5c35aec08fff83b91e9543511443fadf">vsmc::GammaDistribution&lt; RealType &gt;</a>
 , <a class="el" href="classvsmc_1_1_gamma_distribution_1_1param__type.html#a8f66ffba86c0782076c4f46f14d66b25">vsmc::GammaDistribution&lt; RealType &gt;::param_type</a>
-</li>
-<li>auto_help()
-: <a class="el" href="classvsmc_1_1_program_option_map.html#a1eff326ffe9f9c755ca2a13fa5f2d72c">vsmc::ProgramOptionMap</a>
 </li>
 </ul>
 </div><!-- contents -->

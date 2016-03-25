@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['m128type',['M128Type',['../group___s_i_m_d.html#ga78112d697ce4951772f2f3a807d16eaf',1,'vsmc']]],
+  ['m256type',['M256Type',['../group___s_i_m_d.html#gaee417e34180a83b31c6588bfc418371d',1,'vsmc']]],
+  ['matrixorder',['MatrixOrder',['../group___definitions.html#gaff26a589f5615a0ee8271bea59607616',1,'vsmc']]],
   ['mcmc_5ftype',['mcmc_type',['../classvsmc_1_1_sampler.html#a00dea6f4f5b067f59f3b26c682a4a836',1,'vsmc::Sampler']]],
   ['mkl_5fmcg59',['MKL_MCG59',['../group___m_k_l_r_n_g.html#ga409d543b76f2f63714160ac72967316e',1,'vsmc']]],
   ['mkl_5fmcg59_5f64',['MKL_MCG59_64',['../group___m_k_l_r_n_g.html#ga2631ab12c82ba5bab751ad3e1f2bf987',1,'vsmc']]],

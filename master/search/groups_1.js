@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['blas_20level_201_20routines_20and_20functions',['BLAS level 1 routines and functions',['../group___c_b_l_a_s1.html',1,'']]],
-  ['blas_20level_202_20routines',['BLAS level 2 routines',['../group___c_b_l_a_s2.html',1,'']]]
+  ['c_20api',['C API',['../group___c___a_p_i.html',1,'']]],
+  ['configuration',['Configuration',['../group___config.html',1,'']]],
+  ['constants',['Constants',['../group___constants.html',1,'']]],
+  ['core',['Core',['../group___core.html',1,'']]],
+  ['covariance',['Covariance',['../group___covariance.html',1,'']]]
 ];

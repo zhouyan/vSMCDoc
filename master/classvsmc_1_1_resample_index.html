@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -127,8 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a827d0fe9b9c8073599a49774c737c991"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_resample_index.html#ab653b4166676b4f2620295b64e560b70">index_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#a827d0fe9b9c8073599a49774c737c991">index</a> (<a class="el" href="classvsmc_1_1_resample_index.html#a858265e4f2d117c8ab43a34c3c66260a">size_type</a> id, std::size_t iter) const </td></tr>
 <tr class="memdesc:a827d0fe9b9c8073599a49774c737c991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index given the particle ID and iteration number, starting with zero.  <a href="#a827d0fe9b9c8073599a49774c737c991">More...</a><br /></td></tr>
 <tr class="separator:a827d0fe9b9c8073599a49774c737c991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2b116e3ab87fc59bad64b8979317eb2"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order&gt; </td></tr>
-<tr class="memitem:ab2b116e3ab87fc59bad64b8979317eb2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector</a>&lt; <a class="el" href="classvsmc_1_1_resample_index.html#ab653b4166676b4f2620295b64e560b70">index_type</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#ab2b116e3ab87fc59bad64b8979317eb2">index_matrix</a> () const </td></tr>
+<tr class="memitem:ab2b116e3ab87fc59bad64b8979317eb2"><td class="memTemplParams" colspan="2">template&lt;MatrixLayout Layout&gt; </td></tr>
+<tr class="memitem:ab2b116e3ab87fc59bad64b8979317eb2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">Vector</a>&lt; <a class="el" href="classvsmc_1_1_resample_index.html#ab653b4166676b4f2620295b64e560b70">index_type</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#ab2b116e3ab87fc59bad64b8979317eb2">index_matrix</a> () const </td></tr>
 <tr class="separator:ab2b116e3ab87fc59bad64b8979317eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0b15b306a9bdc12fdef97b21f96ee3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#aaa0b15b306a9bdc12fdef97b21f96ee3">insert</a> ()</td></tr>
 <tr class="separator:aaa0b15b306a9bdc12fdef97b21f96ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29ed5ef7ce4ee544168ef146bd755dd9"><td class="memTemplParams" colspan="2">template&lt;typename InputIter &gt; </td></tr>
 <tr class="memitem:a29ed5ef7ce4ee544168ef146bd755dd9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#a29ed5ef7ce4ee544168ef146bd755dd9">push_back</a> (InputIter first)</td></tr>
 <tr class="separator:a29ed5ef7ce4ee544168ef146bd755dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a400ee8d02bb3bb9e83763b3356ff4dff"><td class="memTemplParams" colspan="2">template&lt;MatrixOrder Order, typename OutputIter &gt; </td></tr>
+<tr class="memitem:a400ee8d02bb3bb9e83763b3356ff4dff"><td class="memTemplParams" colspan="2">template&lt;MatrixLayout Layout, typename OutputIter &gt; </td></tr>
 <tr class="memitem:a400ee8d02bb3bb9e83763b3356ff4dff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#a400ee8d02bb3bb9e83763b3356ff4dff">read_index_matrix</a> (OutputIter first) const </td></tr>
 <tr class="separator:a400ee8d02bb3bb9e83763b3356ff4dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b1b1472dda3b920def696a48cc66af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html#af7b1b1472dda3b920def696a48cc66af">reset</a> ()</td></tr>
@@ -301,13 +302,13 @@ template&lt;typename IntType  = std::size_t&gt; </div>
 <div class="memtemplate">
 template&lt;typename IntType  = std::size_t&gt; </div>
 <div class="memtemplate">
-template&lt;MatrixOrder Order&gt; </div>
+template&lt;MatrixLayout Layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___aligned_memory.html#ga8d6319aaafe93f5e8408cd4754b63b84">Vector</a>&lt;<a class="el" href="classvsmc_1_1_resample_index.html#ab653b4166676b4f2620295b64e560b70">index_type</a>&gt; <a class="el" href="classvsmc_1_1_resample_index.html">vsmc::ResampleIndex</a>&lt; IntType &gt;::index_matrix </td>
+          <td class="memname"><a class="el" href="group___aligned_memory.html#gab66d52262c9aabefa08a1304c57d57f6">Vector</a>&lt;<a class="el" href="classvsmc_1_1_resample_index.html#ab653b4166676b4f2620295b64e560b70">index_type</a>&gt; <a class="el" href="classvsmc_1_1_resample_index.html">vsmc::ResampleIndex</a>&lt; IntType &gt;::index_matrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -513,7 +514,7 @@ template&lt;typename InputIter &gt; </div>
 <div class="memtemplate">
 template&lt;typename IntType  = std::size_t&gt; </div>
 <div class="memtemplate">
-template&lt;MatrixOrder Order, typename OutputIter &gt; </div>
+template&lt;MatrixLayout Layout, typename OutputIter &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

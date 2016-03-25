@@ -101,6 +101,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__vector__int.html">vsmc_vector_int</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple vector type for <code>int</code>  <a href="structvsmc__vector__int.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple vector type for <code>unsigned char</code>  <a href="structvsmc__vector__raw.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -125,6 +128,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7612fdd895a1decdaa5657017824c5a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__vector.html">vsmc_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___utility___aligned_memory.html#ga7612fdd895a1decdaa5657017824c5a6">vsmc_vector_new</a> (int size)</td></tr>
 <tr class="memdesc:ga7612fdd895a1decdaa5657017824c5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new vector given its size.  <a href="#ga7612fdd895a1decdaa5657017824c5a6">More...</a><br /></td></tr>
 <tr class="separator:ga7612fdd895a1decdaa5657017824c5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad22104ca4c1c432e147f2f28c7d4e809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___utility___aligned_memory.html#gad22104ca4c1c432e147f2f28c7d4e809">vsmc_vector_raw_delete</a> (<a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a> *vector_raw_ptr)</td></tr>
+<tr class="memdesc:gad22104ca4c1c432e147f2f28c7d4e809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a vector.  <a href="#gad22104ca4c1c432e147f2f28c7d4e809">More...</a><br /></td></tr>
+<tr class="separator:gad22104ca4c1c432e147f2f28c7d4e809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c76ba07344c3898972926fa3131f9ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___utility___aligned_memory.html#ga9c76ba07344c3898972926fa3131f9ec">vsmc_vector_raw_new</a> (int size)</td></tr>
+<tr class="memdesc:ga9c76ba07344c3898972926fa3131f9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new vector given its size.  <a href="#ga9c76ba07344c3898972926fa3131f9ec">More...</a><br /></td></tr>
+<tr class="separator:ga9c76ba07344c3898972926fa3131f9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee10cb01c97fc0cdc77ddaecbb629a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___utility___aligned_memory.html#gaee10cb01c97fc0cdc77ddaecbb629a35">vsmc_vector_raw_resize</a> (<a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a> *vector_raw_ptr, int size)</td></tr>
+<tr class="memdesc:gaee10cb01c97fc0cdc77ddaecbb629a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a vector.  <a href="#gaee10cb01c97fc0cdc77ddaecbb629a35">More...</a><br /></td></tr>
+<tr class="separator:gaee10cb01c97fc0cdc77ddaecbb629a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeac62562af513dd599bbdf5980f1249c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___utility___aligned_memory.html#gaeac62562af513dd599bbdf5980f1249c">vsmc_vector_resize</a> (<a class="el" href="structvsmc__vector.html">vsmc_vector</a> *vector_ptr, int size)</td></tr>
 <tr class="memdesc:gaeac62562af513dd599bbdf5980f1249c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize a vector.  <a href="#gaeac62562af513dd599bbdf5980f1249c">More...</a><br /></td></tr>
 <tr class="separator:gaeac62562af513dd599bbdf5980f1249c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,6 +286,70 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new vector given its size. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad22104ca4c1c432e147f2f28c7d4e809"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc_vector_raw_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a> *&#160;</td>
+          <td class="paramname"><em>vector_raw_ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete a vector. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9c76ba07344c3898972926fa3131f9ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a> vsmc_vector_raw_new </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new vector given its size. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaee10cb01c97fc0cdc77ddaecbb629a35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc_vector_raw_resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvsmc__vector__raw.html">vsmc_vector_raw</a> *&#160;</td>
+          <td class="paramname"><em>vector_raw_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize a vector. </p>
 
 </div>
 </div>

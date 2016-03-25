@@ -6,5 +6,6 @@ var searchData=
   ['philox',['Philox',['../group___philox_c.html',1,'']]],
   ['program_20option',['Program option',['../group___program_option.html',1,'']]],
   ['progress',['Progress',['../group___progress.html',1,'']]],
-  ['power_20and_20root_20functions',['Power and root functions',['../group__v_power.html',1,'']]]
+  ['pack_20and_20unpack_20vectors',['Pack and unpack vectors',['../group__v_pack_unpack.html',1,'']]],
+  ['power_20root_20functions',['Power root functions',['../group__v_power.html',1,'']]]
 ];

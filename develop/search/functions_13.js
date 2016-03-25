@@ -40,5 +40,8 @@ var searchData=
   ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]],
   ['unique',['unique',['../classvsmc_1_1_c_l_base.html#a7ea8dac667a1715aa154c8b41005bf79',1,'vsmc::CLBase']]],
   ['unload_5fcompiler',['unload_compiler',['../classvsmc_1_1_c_l_platform.html#a2f49f72d90b464f1ab56d6c8d92748da',1,'vsmc::CLPlatform']]],
+  ['unpack_5fi',['unpack_i',['../group__v_pack_unpack.html#ga8e03ac68bd42a925c28181dfe8d1758e',1,'vsmc']]],
+  ['unpack_5fm',['unpack_m',['../group__v_pack_unpack.html#gad64fb6e12c079e9291b8be21ef61278c',1,'vsmc']]],
+  ['unpack_5fs',['unpack_s',['../group__v_pack_unpack.html#ga5d37c26bfe3c12974e0f7615f265f409',1,'vsmc']]],
   ['use_5fcount',['use_count',['../classvsmc_1_1_c_l_base.html#a566c9b492e8d50cb0de9680191eec72c',1,'vsmc::CLBase']]]
 ];

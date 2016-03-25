@@ -87,6 +87,7 @@ var searchData=
   ['vsmc_5fruntime_5fwarning_5fcore_5fsampler_5finit_5fby_5fiter',['VSMC_RUNTIME_WARNING_CORE_SAMPLER_INIT_BY_ITER',['../sampler_8hpp.html#ac253dd3bf4df99c947373eeb013481ef',1,'sampler.hpp']]],
   ['vsmc_5fruntime_5fwarning_5frng_5frdrand_5fengine_5fntrial',['VSMC_RUNTIME_WARNING_RNG_RDRAND_ENGINE_NTRIAL',['../rdrand_8hpp.html#add24c30cacaf3adfe827af99be3492a7',1,'rdrand.hpp']]],
   ['vsmc_5fruntime_5fwarning_5frng_5fseed_5fgenerator_5fmodulo',['VSMC_RUNTIME_WARNING_RNG_SEED_GENERATOR_MODULO',['../seed_8hpp.html#a803948dbf3c9229317723eafd7242e69',1,'seed.hpp']]],
+  ['vsmc_5fuse_5faccelerate',['VSMC_USE_ACCELERATE',['../config_8h.html#a4b42829d9431ba7c2b11ef3ddfabf0c8',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8h.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5flapacke',['VSMC_USE_MKL_LAPACKE',['../config_8h.html#a7b805a74b83c54fc182240f0d997fae4',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8h.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.h']]],

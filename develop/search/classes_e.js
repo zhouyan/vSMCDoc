@@ -4,7 +4,7 @@ var searchData=
   ['randomwalkg',['RandomWalkG',['../classvsmc_1_1_random_walk_g.html',1,'vsmc']]],
   ['rayleighdistribution',['RayleighDistribution',['../classvsmc_1_1_rayleigh_distribution.html',1,'vsmc']]],
   ['rdrandengine',['RDRANDEngine',['../classvsmc_1_1_r_d_r_a_n_d_engine.html',1,'vsmc']]],
-  ['rebind',['rebind',['../classvsmc_1_1_aligned_allocator_1_1rebind.html',1,'vsmc::AlignedAllocator']]],
+  ['rebind',['rebind',['../classvsmc_1_1_allocator_1_1rebind.html',1,'vsmc::Allocator']]],
   ['resampleindex',['ResampleIndex',['../classvsmc_1_1_resample_index.html',1,'vsmc']]],
   ['resamplemultinomial',['ResampleMultinomial',['../classvsmc_1_1_resample_multinomial.html',1,'vsmc']]],
   ['resampleresidual',['ResampleResidual',['../classvsmc_1_1_resample_residual.html',1,'vsmc']]],

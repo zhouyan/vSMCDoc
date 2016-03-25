@@ -87,7 +87,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">vsmc::Particle<div class="ingroups"><a class="el" href="group___c___a_p_i.html">C API</a> &raquo; <a class="el" href="group___c___a_p_i___core.html">Core</a></div></div>  </div>
@@ -99,12 +98,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__particle.html">vsmc_particle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">vsmc::Particle</a></code>  <a href="structvsmc__particle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gab2aa521c77c5dc1f1cbe524e29d82e25"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___particle.html#gab2aa521c77c5dc1f1cbe524e29d82e25">vsmc_particle_resample_type</a>) (int, int, <a class="el" href="structvsmc__rng.html">vsmc_rng</a>, const double *, int *)</td></tr>
-<tr class="memdesc:gab2aa521c77c5dc1f1cbe524e29d82e25"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_particle.html#ab492b3805d9ca79b5a3042597c5fc3a5">vsmc::Particle::resample_type</a></code>  <a href="#gab2aa521c77c5dc1f1cbe524e29d82e25">More...</a><br /></td></tr>
-<tr class="separator:gab2aa521c77c5dc1f1cbe524e29d82e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -120,9 +113,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga907f533042cec5e5a2fed310d6c2ba96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__particle.html">vsmc_particle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___particle.html#ga907f533042cec5e5a2fed310d6c2ba96">vsmc_particle_new</a> (int n, int dim)</td></tr>
 <tr class="memdesc:ga907f533042cec5e5a2fed310d6c2ba96"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_particle.html#a2d36bbd9e52bc65c83ab8797d9803a46">vsmc::Particle::Particle</a></code>  <a href="#ga907f533042cec5e5a2fed310d6c2ba96">More...</a><br /></td></tr>
 <tr class="separator:ga907f533042cec5e5a2fed310d6c2ba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccecaadf1fbb17491014910b45f510d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___particle.html#gaccecaadf1fbb17491014910b45f510d2">vsmc_particle_resample</a> (<a class="el" href="structvsmc__particle.html">vsmc_particle</a> particle, <a class="el" href="group___c___a_p_i___core___particle.html#gab2aa521c77c5dc1f1cbe524e29d82e25">vsmc_particle_resample_type</a> op, double threshold)</td></tr>
-<tr class="memdesc:gaccecaadf1fbb17491014910b45f510d2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_particle.html#a8761af4b22d4704097b9b6b11c4348e5" title="Performing resampling if ESS/N &lt; threshold. ">vsmc::Particle::resample</a></code>  <a href="#gaccecaadf1fbb17491014910b45f510d2">More...</a><br /></td></tr>
-<tr class="separator:gaccecaadf1fbb17491014910b45f510d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc2e7c8fea35caeddbdd9537c42da74a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___particle.html#gabc2e7c8fea35caeddbdd9537c42da74a">vsmc_particle_resample</a> (<a class="el" href="structvsmc__particle.html">vsmc_particle</a> particle, <a class="el" href="group___c___a_p_i___resample.html#ga45f1aa75c087a2036d325ed3fda08f48">vsmc_resample_type</a> op, double threshold)</td></tr>
+<tr class="memdesc:gabc2e7c8fea35caeddbdd9537c42da74a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_particle.html#a8761af4b22d4704097b9b6b11c4348e5" title="Performing resampling if ESS/N &lt; threshold. ">vsmc::Particle::resample</a></code>  <a href="#gabc2e7c8fea35caeddbdd9537c42da74a">More...</a><br /></td></tr>
+<tr class="separator:gabc2e7c8fea35caeddbdd9537c42da74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92c6f9697d2006b910f8669c9f040c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvsmc__rng.html">vsmc_rng</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c___a_p_i___core___particle.html#ga92c6f9697d2006b910f8669c9f040c02">vsmc_particle_rng</a> (<a class="el" href="structvsmc__particle.html">vsmc_particle</a> particle, int id)</td></tr>
 <tr class="memdesc:ga92c6f9697d2006b910f8669c9f040c02"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classvsmc_1_1_particle.html#a705e50898e42498f2ea0b807d7a2d543" title="Get an (parallel) RNG stream for a given particle. ">vsmc::Particle::rng</a></code>  <a href="#ga92c6f9697d2006b910f8669c9f040c02">More...</a><br /></td></tr>
 <tr class="separator:ga92c6f9697d2006b910f8669c9f040c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,23 +133,6 @@ Functions</h2></td></tr>
 <tr class="separator:gaec396590ddfeae74e3443b77c2dfb425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gab2aa521c77c5dc1f1cbe524e29d82e25"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* vsmc_particle_resample_type) (int, int, <a class="el" href="structvsmc__rng.html">vsmc_rng</a>, const double *, int *)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code><a class="el" href="classvsmc_1_1_particle.html#ab492b3805d9ca79b5a3042597c5fc3a5">vsmc::Particle::resample_type</a></code> </p>
-
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l00692">692</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga79095f1114ed02c0e270fe6fd653f66f"></a>
 <div class="memitem">
@@ -266,7 +242,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaccecaadf1fbb17491014910b45f510d2"></a>
+<a class="anchor" id="gabc2e7c8fea35caeddbdd9537c42da74a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -279,7 +255,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___c___a_p_i___core___particle.html#gab2aa521c77c5dc1f1cbe524e29d82e25">vsmc_particle_resample_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group___c___a_p_i___resample.html#ga45f1aa75c087a2036d325ed3fda08f48">vsmc_resample_type</a>&#160;</td>
           <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>

@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li>C++ OpenCL RAII classes</li>
 <li><code>Sampler</code> gains new methods, <code>accept_size</code>, <code>read_accept_history</code>, <code>read_accept_history_list</code>, and <code>read_accept_history_matrix</code>.</li>
+<li>New functions <code>pack_s</code>, <code>pack_i</code>, <code>pack_m</code>, <code>unpack_s</code>, <code>unpack_i</code>, and <code>unpack_m</code>, for pack and unpack vectors into/from contiguous storage</li>
 </ul>
 <h2>Changed behaviors</h2>
 <ul>
@@ -101,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>StateMatrix::read_state_matrix</code> overload which takes iterators to iterators is renamed to <code>read_record_list</code></li>
 <li>Most methods which take a <code>MatrixLayout</code> type template parameter now has that parameter as a runtime parameter.</li>
 <li>Most methods that takes output iterators, (including pointers that used in this fashion), now returns an iterator in the same way as <code>std::copy</code> etc.</li>
-<li><code>Allocator</code> is now always an alias to <code>AlignedAllocator</code>. The alignment is 32 for scalar types and <code>max(alignof(T), 16)</code> for others.</li>
+<li><code>AlignedAllocator</code> is renamed to <code>Allocator</code>. The old type alias <code>Allocator</code> is removed. The default alignment is <code>AlignmentTrait&lt;T&gt;::value</code>, which is <code>VSMC_ALIGNMENT</code> for scalar types and <code>max(alignof(T), VSMC_ALIGNMENT_MIN)</code> for others.</li>
 <li><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;&gt;</code></li>
 <li>HDF5 IO functions' <code>append</code> parameter no longer has a default argument</li>
 <li><code>hdf5store</code> is now overloaded for <code>Monitor</code></li>

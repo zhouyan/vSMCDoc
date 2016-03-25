@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::AlignedAllocator&lt; void, Alignment, Memory &gt; Class Template Reference</title>
+<title>vSMC: vsmc::AlignmentTrait&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,25 +93,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_aligned_allocator_3_01void_00_01_alignment_00_01_memory_01_4.html">AlignedAllocator&lt; void, Alignment, Memory &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_alignment_trait.html">AlignmentTrait</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="classvsmc_1_1_aligned_allocator_3_01void_00_01_alignment_00_01_memory_01_4-members.html">List of all members</a>  </div>
+<a href="classvsmc_1_1_alignment_trait-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::AlignedAllocator&lt; void, Alignment, Memory &gt; Class Template Reference</div>  </div>
+<div class="title">vsmc::AlignmentTrait&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>Alignment of a given type.  
+ <a href="classvsmc_1_1_alignment_trait.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="aligned__memory_8hpp_source.html">vsmc/utility/aligned_memory.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classvsmc_1_1internal_1_1_alignment_trait_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classvsmc_1_1internal_1_1_alignment_trait_impl')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classvsmc_1_1internal_1_1_alignment_trait_impl.html">vsmc::internal::AlignmentTraitImpl&lt; T &gt;</a></td></tr>
+<tr class="memitem:ae4238d2741e255c6910c26f7b7154f00 inherit pub_static_attribs_classvsmc_1_1internal_1_1_alignment_trait_impl"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_alignment_trait_impl.html#ae4238d2741e255c6910c26f7b7154f00">value</a></td></tr>
+<tr class="separator:ae4238d2741e255c6910c26f7b7154f00 inherit pub_static_attribs_classvsmc_1_1internal_1_1_alignment_trait_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;std::size_t Alignment, typename Memory&gt;<br />
-class vsmc::AlignedAllocator&lt; void, Alignment, Memory &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class vsmc::AlignmentTrait&lt; T &gt;</h3>
 
+<p>Alignment of a given type. </p>
+<p>For scalar type, such as <code>double</code>, <code>value</code> is VSMC_ALIGNMENT, which shall be big enough for SIME aligned operations. For other types, it return <code>VSMC_ALIGNMENT_MIN</code> if <code>alignof(T)</code> is smaller, otherwise <code>alignof(T)</code> </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00358">358</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00163">163</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

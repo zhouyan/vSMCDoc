@@ -112,16 +112,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fb1306a65bb012118c8139b75470efd"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:a0fb1306a65bb012118c8139b75470efd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_residual_stratified.html#a0fb1306a65bb012118c8139b75470efd">operator()</a> (std::size_t M, std::size_t N, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
-<tr class="separator:a0fb1306a65bb012118c8139b75470efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4648898671830e064e32ae1b3589b5a"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename RNGType &gt; </td></tr>
+<tr class="memitem:ad4648898671830e064e32ae1b3589b5a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_residual_stratified.html#ad4648898671830e064e32ae1b3589b5a">operator()</a> (std::size_t N, std::size_t M, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
+<tr class="memdesc:ad4648898671830e064e32ae1b3589b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate replication numbers from normalized weights.  <a href="#ad4648898671830e064e32ae1b3589b5a">More...</a><br /></td></tr>
+<tr class="separator:ad4648898671830e064e32ae1b3589b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Residual stratified resampling. </p>
 
 <p>Definition at line <a class="el" href="residual__stratified_8hpp_source.html#l00043">43</a> of file <a class="el" href="residual__stratified_8hpp_source.html">residual_stratified.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0fb1306a65bb012118c8139b75470efd"></a>
+<a class="anchor" id="ad4648898671830e064e32ae1b3589b5a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -134,13 +135,13 @@ template&lt;typename IntType , typename RNGType &gt; </div>
           <td class="memname">void vsmc::ResampleResidualStratified::operator() </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>M</em>, </td>
+          <td class="paramname"><em>N</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
+          <td class="paramname"><em>M</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -173,7 +174,18 @@ template&lt;typename IntType , typename RNGType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="residual__stratified_8hpp_source.html#l00047">47</a> of file <a class="el" href="residual__stratified_8hpp_source.html">residual_stratified.hpp</a>.</p>
+<p>Generate replication numbers from normalized weights. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>Sample size before resampling </td></tr>
+    <tr><td class="paramname">M</td><td>Sample size after resampling </td></tr>
+    <tr><td class="paramname">weight</td><td>N-vector of normalized weights </td></tr>
+    <tr><td class="paramname">replication</td><td>N-vector of replication numbers </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="residual__stratified_8hpp_source.html#l00053">53</a> of file <a class="el" href="residual__stratified_8hpp_source.html">residual_stratified.hpp</a>.</p>
 
 </div>
 </div>

@@ -112,16 +112,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a639db569b765c74fbbb9fa2cd7ed12"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:a9a639db569b765c74fbbb9fa2cd7ed12"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_systematic.html#a9a639db569b765c74fbbb9fa2cd7ed12">operator()</a> (std::size_t M, std::size_t N, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
-<tr class="separator:a9a639db569b765c74fbbb9fa2cd7ed12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d994ef689fd47ef9c4593f0cb60291a"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a5d994ef689fd47ef9c4593f0cb60291a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_systematic.html#a5d994ef689fd47ef9c4593f0cb60291a">operator()</a> (std::size_t N, std::size_t M, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
+<tr class="memdesc:a5d994ef689fd47ef9c4593f0cb60291a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate replication numbers from normalized weights.  <a href="#a5d994ef689fd47ef9c4593f0cb60291a">More...</a><br /></td></tr>
+<tr class="separator:a5d994ef689fd47ef9c4593f0cb60291a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Systematic resampling. </p>
 
 <p>Definition at line <a class="el" href="systematic_8hpp_source.html#l00043">43</a> of file <a class="el" href="systematic_8hpp_source.html">systematic.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9a639db569b765c74fbbb9fa2cd7ed12"></a>
+<a class="anchor" id="a5d994ef689fd47ef9c4593f0cb60291a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -134,13 +135,13 @@ template&lt;typename IntType , typename RNGType &gt; </div>
           <td class="memname">void vsmc::ResampleSystematic::operator() </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>M</em>, </td>
+          <td class="paramname"><em>N</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
+          <td class="paramname"><em>M</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -173,7 +174,18 @@ template&lt;typename IntType , typename RNGType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="systematic_8hpp_source.html#l00047">47</a> of file <a class="el" href="systematic_8hpp_source.html">systematic.hpp</a>.</p>
+<p>Generate replication numbers from normalized weights. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>Sample size before resampling </td></tr>
+    <tr><td class="paramname">M</td><td>Sample size after resampling </td></tr>
+    <tr><td class="paramname">weight</td><td>N-vector of normalized weights </td></tr>
+    <tr><td class="paramname">replication</td><td>N-vector of replication numbers </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="systematic_8hpp_source.html#l00053">53</a> of file <a class="el" href="systematic_8hpp_source.html">systematic.hpp</a>.</p>
 
 </div>
 </div>

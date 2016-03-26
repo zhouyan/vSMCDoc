@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_index.html">vsmc::ResampleIndex&lt; IntType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record and trace resample index.  <a href="classvsmc_1_1_resample_index.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record and trace resampling index.  <a href="classvsmc_1_1_resample_index.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -120,11 +120,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:acf3a89a3ea49a9821f943a0cc3b7fe67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8hpp.html#acf3a89a3ea49a9821f943a0cc3b7fe67">VSMC_RUNTIME_ASSERT_RESAMPLE_INDEX_ITER</a>(test,  func)                                  </td></tr>
-<tr class="separator:acf3a89a3ea49a9821f943a0cc3b7fe67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573f603e753d37d89e64199dfec66c24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="index_8hpp.html#a573f603e753d37d89e64199dfec66c24">VSMC_RUNTIME_ASSERT_RESAMPLE_INDEX_ITER</a>(iter,  iter_back,  func)            </td></tr>
+<tr class="separator:a573f603e753d37d89e64199dfec66c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="acf3a89a3ea49a9821f943a0cc3b7fe67"></a>
+<a class="anchor" id="a573f603e753d37d89e64199dfec66c24"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -132,7 +132,13 @@ Macros</h2></td></tr>
           <td class="memname">#define VSMC_RUNTIME_ASSERT_RESAMPLE_INDEX_ITER</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">test, </td>
+          <td class="paramname">iter, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">iter_back, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -147,7 +153,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (test), <span class="stringliteral">&quot;**StateIndex::&quot;</span> #func <span class="stringliteral">&quot;ITERATION NUMBER OUT OF RANGE&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((iter &lt;= iter_back &amp;&amp; iter_back &lt; iter_size()),       \</div><div class="line">        <span class="stringliteral">&quot;**ResampleIndex::&quot;</span> #func <span class="stringliteral">&quot;** ITERATION NUMBERS OUT OF RANGE&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="index_8hpp_source.html#l00037">37</a> of file <a class="el" href="index_8hpp_source.html">index.hpp</a>.</p>
 

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::ResampleTypeTrait&lt; Multinomial &gt; Class Template Reference</title>
+<title>vSMC: vsmc::ResampleBase&lt; Derived &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,47 +93,92 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_resample_type_trait_3_01_multinomial_01_4.html">ResampleTypeTrait&lt; Multinomial &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_resample_base.html">ResampleBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="classvsmc_1_1_resample_type_trait_3_01_multinomial_01_4-members.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classvsmc_1_1_resample_base-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::ResampleTypeTrait&lt; Multinomial &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___resample.html">Resampling algorithms</a></div></div>  </div>
+<div class="title">vsmc::ResampleBase&lt; Derived &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Type trait of Multinomial scheme.  
- <a href="classvsmc_1_1_resample_type_trait_3_01_multinomial_01_4.html#details">More...</a></p>
+<p>Base class of resampling algorithms.  
+ <a href="classvsmc_1_1_resample_base.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="multinomial_8hpp_source.html">vsmc/resample/multinomial.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="resample_2internal_2common_8hpp_source.html">vsmc/resample/internal/common.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ad559f52f0dabc5ffdd6f48ad1d232c79"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_type_trait_3_01_multinomial_01_4.html#ad559f52f0dabc5ffdd6f48ad1d232c79">type</a> = <a class="el" href="classvsmc_1_1_resample_multinomial.html">ResampleMultinomial</a></td></tr>
-<tr class="separator:ad559f52f0dabc5ffdd6f48ad1d232c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a495827cfad56b10ce7134047fd1f8ef8"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a495827cfad56b10ce7134047fd1f8ef8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_base.html#a495827cfad56b10ce7134047fd1f8ef8">operator()</a> (std::size_t N, std::size_t M, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
+<tr class="separator:a495827cfad56b10ce7134047fd1f8ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;&gt;<br />
-class vsmc::ResampleTypeTrait&lt; Multinomial &gt;</h3>
+<div class="textblock"><h3>template&lt;typename Derived&gt;<br />
+class vsmc::ResampleBase&lt; Derived &gt;</h3>
 
-<p>Type trait of Multinomial scheme. </p>
+<p>Base class of resampling algorithms. </p>
 
-<p>Definition at line <a class="el" href="multinomial_8hpp_source.html#l00065">65</a> of file <a class="el" href="multinomial_8hpp_source.html">multinomial.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ad559f52f0dabc5ffdd6f48ad1d232c79"></a>
+<p>Definition at line <a class="el" href="resample_2internal_2common_8hpp_source.html#l00054">54</a> of file <a class="el" href="resample_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a495827cfad56b10ce7134047fd1f8ef8"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived&gt; </div>
+<div class="memtemplate">
+template&lt;typename IntType , typename RNGType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_resample_type_trait.html">vsmc::ResampleTypeTrait</a>&lt; <a class="el" href="group___definitions.html#gga1a8752b2b59489e6d5f11794af6d0cc6ad0279093e5873911db0cf701f9ea136d">Multinomial</a> &gt;::<a class="el" href="classvsmc_1_1_resample_type_trait_3_01_multinomial_01_4.html#ad559f52f0dabc5ffdd6f48ad1d232c79">type</a> =  <a class="el" href="classvsmc_1_1_resample_multinomial.html">ResampleMultinomial</a></td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_resample_base.html">vsmc::ResampleBase</a>&lt; Derived &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RNGType &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntType *&#160;</td>
+          <td class="paramname"><em>replication</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="multinomial_8hpp_source.html#l00068">68</a> of file <a class="el" href="multinomial_8hpp_source.html">multinomial.hpp</a>.</p>
+<p>Definition at line <a class="el" href="resample_2internal_2common_8hpp_source.html#l00058">58</a> of file <a class="el" href="resample_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

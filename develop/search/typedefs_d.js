@@ -15,6 +15,5 @@ var searchData=
   ['vsmc_5fmove_5feval_5fsp_5ftype',['vsmc_move_eval_sp_type',['../group___c___a_p_i___s_m_p.html#gac1ba782c01b8f33c2f520bc1f2f6be31',1,'vsmc.h']]],
   ['vsmc_5fresample_5ftype',['vsmc_resample_type',['../group___c___a_p_i___resample.html#ga45f1aa75c087a2036d325ed3fda08f48',1,'vsmc.h']]],
   ['vsmc_5fsampler_5finit_5ftype',['vsmc_sampler_init_type',['../group___c___a_p_i___core___sampler.html#ga3ed819ddc6cf4812a0350251ee65cd0e',1,'vsmc.h']]],
-  ['vsmc_5fsampler_5fmcmc_5ftype',['vsmc_sampler_mcmc_type',['../group___c___a_p_i___core___sampler.html#ga355836e94fa73567b69679f94c96923c',1,'vsmc.h']]],
   ['vsmc_5fsampler_5fmove_5ftype',['vsmc_sampler_move_type',['../group___c___a_p_i___core___sampler.html#ga57cdebbd824c7473745ffe35c794589e',1,'vsmc.h']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::ResampleSystematic Class Reference</title>
+<title>vSMC: vsmc::ResampleAlgorithm&lt; U01SeqType, Residual &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,52 +93,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_resample_systematic.html">ResampleSystematic</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_resample_algorithm.html">ResampleAlgorithm</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="classvsmc_1_1_resample_systematic-members.html">List of all members</a>  </div>
+<a href="classvsmc_1_1_resample_algorithm-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::ResampleSystematic Class Reference<div class="ingroups"><a class="el" href="group___resample.html">Resampling algorithms</a></div></div>  </div>
+<div class="title">vsmc::ResampleAlgorithm&lt; U01SeqType, Residual &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___resample.html">Resampling algorithms</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Systematic resampling.  
- <a href="classvsmc_1_1_resample_systematic.html#details">More...</a></p>
+<p>Resampling algorithm.  
+ <a href="classvsmc_1_1_resample_algorithm.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="systematic_8hpp_source.html">vsmc/resample/systematic.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="algorithm_8hpp_source.html">vsmc/resample/algorithm.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3f53d6631a779fe17d080114a213a6b6"><td class="memTemplParams" colspan="2">template&lt;typename RNGType , typename InputIter , typename OutputIter &gt; </td></tr>
+<tr class="memitem:a3f53d6631a779fe17d080114a213a6b6"><td class="memTemplItemLeft" align="right" valign="top">OutputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_algorithm.html#a3f53d6631a779fe17d080114a213a6b6">operator()</a> (std::size_t N, std::size_t M, RNGType &amp;rng, InputIter weight, OutputIter replication) const </td></tr>
+<tr class="memdesc:a3f53d6631a779fe17d080114a213a6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <code>eval</code>  <a href="#a3f53d6631a779fe17d080114a213a6b6">More...</a><br /></td></tr>
+<tr class="separator:a3f53d6631a779fe17d080114a213a6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa983ae620507a671cb009c9c736abda6"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename RNGType &gt; </td></tr>
-<tr class="memitem:aa983ae620507a671cb009c9c736abda6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_systematic.html#aa983ae620507a671cb009c9c736abda6">eval</a> (std::size_t N, std::size_t M, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
-<tr class="memdesc:aa983ae620507a671cb009c9c736abda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate replication numbers from normalized weights.  <a href="#aa983ae620507a671cb009c9c736abda6">More...</a><br /></td></tr>
-<tr class="separator:aa983ae620507a671cb009c9c736abda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_classvsmc_1_1_resample_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvsmc_1_1_resample_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvsmc_1_1_resample_base.html">vsmc::ResampleBase&lt; ResampleSystematic &gt;</a></td></tr>
-<tr class="memitem:a495827cfad56b10ce7134047fd1f8ef8 inherit pub_methods_classvsmc_1_1_resample_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_base.html#a495827cfad56b10ce7134047fd1f8ef8">operator()</a> (std::size_t N, std::size_t M, RNGType &amp;rng, const double *weight, IntType *replication)</td></tr>
-<tr class="separator:a495827cfad56b10ce7134047fd1f8ef8 inherit pub_methods_classvsmc_1_1_resample_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b8ccdc4f3f947dcb64fb309a25d9e9"><td class="memTemplParams" colspan="2">template&lt;typename RNGType , typename InputIter , typename OutputIter &gt; </td></tr>
+<tr class="memitem:a48b8ccdc4f3f947dcb64fb309a25d9e9"><td class="memTemplItemLeft" align="right" valign="top">static OutputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_algorithm.html#a48b8ccdc4f3f947dcb64fb309a25d9e9">eval</a> (std::size_t N, std::size_t M, RNGType &amp;rng, InputIter weight, OutputIter replication)</td></tr>
+<tr class="memdesc:a48b8ccdc4f3f947dcb64fb309a25d9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate replication numbers from normalized weights.  <a href="#a48b8ccdc4f3f947dcb64fb309a25d9e9">More...</a><br /></td></tr>
+<tr class="separator:a48b8ccdc4f3f947dcb64fb309a25d9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Systematic resampling. </p>
+<div class="textblock"><h3>template&lt;template&lt; typename, typename &gt; class U01SeqType, bool Residual&gt;<br />
+class vsmc::ResampleAlgorithm&lt; U01SeqType, Residual &gt;</h3>
 
-<p>Definition at line <a class="el" href="systematic_8hpp_source.html#l00043">43</a> of file <a class="el" href="systematic_8hpp_source.html">systematic.hpp</a>.</p>
+<p>Resampling algorithm. </p>
+
+<p>Definition at line <a class="el" href="algorithm_8hpp_source.html#l00045">45</a> of file <a class="el" href="algorithm_8hpp_source.html">algorithm.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa983ae620507a671cb009c9c736abda6"></a>
+<a class="anchor" id="a48b8ccdc4f3f947dcb64fb309a25d9e9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IntType , typename RNGType &gt; </div>
+template&lt;template&lt; typename, typename &gt; class U01SeqType, bool Residual&gt; </div>
+<div class="memtemplate">
+template&lt;typename RNGType , typename InputIter , typename OutputIter &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void vsmc::ResampleSystematic::eval </td>
+          <td class="memname">static OutputIter <a class="el" href="classvsmc_1_1_resample_algorithm.html">vsmc::ResampleAlgorithm</a>&lt; U01SeqType, <a class="el" href="group___definitions.html#gga1a8752b2b59489e6d5f11794af6d0cc6ad74d0a8ff2963455c6b231acbd3add60">Residual</a> &gt;::eval </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>N</em>, </td>
@@ -158,13 +165,13 @@ template&lt;typename IntType , typename RNGType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">InputIter&#160;</td>
           <td class="paramname"><em>weight</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IntType *&#160;</td>
+          <td class="paramtype">OutputIter&#160;</td>
           <td class="paramname"><em>replication</em>&#160;</td>
         </tr>
         <tr>
@@ -192,7 +199,67 @@ template&lt;typename IntType , typename RNGType &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="systematic_8hpp_source.html#l00054">54</a> of file <a class="el" href="systematic_8hpp_source.html">systematic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="algorithm_8hpp_source.html#l00056">56</a> of file <a class="el" href="algorithm_8hpp_source.html">algorithm.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f53d6631a779fe17d080114a213a6b6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename &gt; class U01SeqType, bool Residual&gt; </div>
+<div class="memtemplate">
+template&lt;typename RNGType , typename InputIter , typename OutputIter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputIter <a class="el" href="classvsmc_1_1_resample_algorithm.html">vsmc::ResampleAlgorithm</a>&lt; U01SeqType, <a class="el" href="group___definitions.html#gga1a8752b2b59489e6d5f11794af6d0cc6ad74d0a8ff2963455c6b231acbd3add60">Residual</a> &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RNGType &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIter&#160;</td>
+          <td class="paramname"><em>weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIter&#160;</td>
+          <td class="paramname"><em>replication</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as <code>eval</code> </p>
+
+<p>Definition at line <a class="el" href="algorithm_8hpp_source.html#l00065">65</a> of file <a class="el" href="algorithm_8hpp_source.html">algorithm.hpp</a>.</p>
 
 </div>
 </div>

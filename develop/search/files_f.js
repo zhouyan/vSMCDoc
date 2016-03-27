@@ -7,7 +7,5 @@ var searchData=
   ['smp_2ehpp',['smp.hpp',['../smp_8hpp.html',1,'']]],
   ['state_5fmatrix_2ehpp',['state_matrix.hpp',['../state__matrix_8hpp.html',1,'']]],
   ['stop_5fwatch_2ehpp',['stop_watch.hpp',['../stop__watch_8hpp.html',1,'']]],
-  ['stratified_2ehpp',['stratified.hpp',['../stratified_8hpp.html',1,'']]],
-  ['student_5ft_5fdistribution_2ehpp',['student_t_distribution.hpp',['../student__t__distribution_8hpp.html',1,'']]],
-  ['systematic_2ehpp',['systematic.hpp',['../systematic_8hpp.html',1,'']]]
+  ['student_5ft_5fdistribution_2ehpp',['student_t_distribution.hpp',['../student__t__distribution_8hpp.html',1,'']]]
 ];

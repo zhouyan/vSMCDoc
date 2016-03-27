@@ -65,10 +65,9 @@ var searchData=
   ['vsmc_5fruntime_5fassert_5fcore_5fmonitor_5feval',['VSMC_RUNTIME_ASSERT_CORE_MONITOR_EVAL',['../monitor_8hpp.html#a5a1247530157a81f601884925b0735f6',1,'monitor.hpp']]],
   ['vsmc_5fruntime_5fassert_5fcore_5fmonitor_5fid',['VSMC_RUNTIME_ASSERT_CORE_MONITOR_ID',['../monitor_8hpp.html#a4c142c55c715e55c2e6f5de948ecc215',1,'monitor.hpp']]],
   ['vsmc_5fruntime_5fassert_5fcore_5fmonitor_5fiter',['VSMC_RUNTIME_ASSERT_CORE_MONITOR_ITER',['../monitor_8hpp.html#a8e870cba78f138d3a4a4acc97d7a099f',1,'monitor.hpp']]],
+  ['vsmc_5fruntime_5fassert_5fcore_5fparticle_5fresize_5fby_5frange',['VSMC_RUNTIME_ASSERT_CORE_PARTICLE_RESIZE_BY_RANGE',['../particle_8hpp.html#ad194006cd17b9313644b9004075f412b',1,'particle.hpp']]],
   ['vsmc_5fruntime_5fassert_5fcore_5fsampler_5ffunctor',['VSMC_RUNTIME_ASSERT_CORE_SAMPLER_FUNCTOR',['../sampler_8hpp.html#a34287cf7508fafd1d75e1caeebdce1f0',1,'sampler.hpp']]],
   ['vsmc_5fruntime_5fassert_5fcore_5fsampler_5fmonitor_5fname',['VSMC_RUNTIME_ASSERT_CORE_SAMPLER_MONITOR_NAME',['../sampler_8hpp.html#ad567e3399df6dd3dfcd36576b9702482',1,'sampler.hpp']]],
-  ['vsmc_5fruntime_5fassert_5fcore_5fstate_5fmatrix_5fcopy_5fsize_5fmismatch',['VSMC_RUNTIME_ASSERT_CORE_STATE_MATRIX_COPY_SIZE_MISMATCH',['../state__matrix_8hpp.html#a41d9bb3a6a3bac3a89ed8fd1363330be',1,'state_matrix.hpp']]],
-  ['vsmc_5fruntime_5fassert_5fcore_5fstate_5fmatrix_5fresize_5fdim',['VSMC_RUNTIME_ASSERT_CORE_STATE_MATRIX_RESIZE_DIM',['../state__matrix_8hpp.html#ae8f4b49f023db805fc2d0cff1af71c76',1,'state_matrix.hpp']]],
   ['vsmc_5fruntime_5fassert_5fcore_5fstate_5fmatrix_5funpack_5fsize',['VSMC_RUNTIME_ASSERT_CORE_STATE_MATRIX_UNPACK_SIZE',['../state__matrix_8hpp.html#afdcf4fe6985bd894b0cdced1d1d2d428',1,'state_matrix.hpp']]],
   ['vsmc_5fruntime_5fassert_5fresample_5findex_5fiter',['VSMC_RUNTIME_ASSERT_RESAMPLE_INDEX_ITER',['../index_8hpp.html#a573f603e753d37d89e64199dfec66c24',1,'index.hpp']]],
   ['vsmc_5fruntime_5fassert_5frng_5fdiscrete_5fdistribution_5fpositive',['VSMC_RUNTIME_ASSERT_RNG_DISCRETE_DISTRIBUTION_POSITIVE',['../discrete__distribution_8hpp.html#a0085f7a898c2d28cbe7daf272e3331bd',1,'discrete_distribution.hpp']]],
@@ -91,6 +90,5 @@ var searchData=
   ['vsmc_5fuse_5fmkl_5fcblas',['VSMC_USE_MKL_CBLAS',['../config_8h.html#a61641507e0537c1317cfa7749c4bbaaf',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5flapacke',['VSMC_USE_MKL_LAPACKE',['../config_8h.html#a7b805a74b83c54fc182240f0d997fae4',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8h.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.h']]],
-  ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8h.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.h']]],
-  ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8h.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.h']]]
+  ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8h.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.h']]]
 ];

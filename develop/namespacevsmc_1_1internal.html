@@ -1413,6 +1413,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af9d959912eec0183176eee29b2ffe489"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af9d959912eec0183176eee29b2ffe489"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af9d959912eec0183176eee29b2ffe489">is_equal</a> (const T &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:af9d959912eec0183176eee29b2ffe489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290e05b76b9b4e5b74d168b45b827264"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a290e05b76b9b4e5b74d168b45b827264"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a290e05b76b9b4e5b74d168b45b827264">is_nullptr</a> (T ptr, std::true_type)</td></tr>
+<tr class="separator:a290e05b76b9b4e5b74d168b45b827264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279976ab8be96011a19c7080bea70805"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a279976ab8be96011a19c7080bea70805"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a279976ab8be96011a19c7080bea70805">is_nullptr</a> (T, std::false_type)</td></tr>
+<tr class="separator:a279976ab8be96011a19c7080bea70805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30db41e0add314b7f6a246269c0ee386"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a30db41e0add314b7f6a246269c0ee386"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a30db41e0add314b7f6a246269c0ee386">is_nullptr</a> (T ptr)</td></tr>
+<tr class="separator:a30db41e0add314b7f6a246269c0ee386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29c5a98ac7e0052cfd28a3d349cddaf"><td class="memTemplParams" colspan="2">template&lt;typename UIntType &gt; </td></tr>
 <tr class="memitem:aa29c5a98ac7e0052cfd28a3d349cddaf"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa29c5a98ac7e0052cfd28a3d349cddaf">itos</a> (UIntType i, std::true_type)</td></tr>
 <tr class="separator:aa29c5a98ac7e0052cfd28a3d349cddaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1656,7 +1665,7 @@ template&lt;typename T , std::size_t Dim&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00135">135</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00153">153</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -11382,6 +11391,110 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a290e05b76b9b4e5b74d168b45b827264"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::internal::is_nullptr </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::true_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00100">100</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a279976ab8be96011a19c7080bea70805"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::internal::is_nullptr </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::false_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00106">106</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30db41e0add314b7f6a246269c0ee386"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::internal::is_nullptr </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00112">112</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa29c5a98ac7e0052cfd28a3d349cddaf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -11416,7 +11529,7 @@ template&lt;typename UIntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00100">100</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00118">118</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -11454,7 +11567,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00117">117</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00135">135</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -11482,7 +11595,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00128">128</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00146">146</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -14094,7 +14207,7 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00138">138</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00156">156</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>
@@ -14132,7 +14245,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00143">143</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00161">161</a> of file <a class="el" href="internal_2common_8hpp_source.html">common.hpp</a>.</p>
 
 </div>
 </div>

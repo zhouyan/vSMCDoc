@@ -96,6 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>Sampler</code> gains new methods, <code>accept_size</code>, <code>read_accept_history</code>, <code>read_accept_history_list</code>, and <code>read_accept_history_matrix</code>.</li>
 <li>New functions <code>pack_s</code>, <code>pack_i</code>, <code>pack_m</code>, <code>unpack_s</code>, <code>unpack_i</code>, and <code>unpack_m</code>, for pack and unpack vectors into/from contiguous storage</li>
 <li><code>StateMatrix</code> gain <code>resize(N, dim)</code> method. Resizing a <code>StateMatrix</code> object preserve original values in the following sense. Let N and M be the original and new sizes, let K and L be the original and new dimensions. Then <code>resize(M, L)</code> preserve the min(N, M) by min(K, L) matrix at the upper left corner of the original. The overloading <code>resize(N)</code> assumes the dimension does not change. The method <code>resize_dim</code> also gains this new behavior of preserving values.</li>
+<li><code>StateMatrix</code> can now handle the situation where the length of the input to <code>copy</code>, <code>index</code> is not the same as its own size.</li>
+<li><code>Particle</code> can now be resized by various methods</li>
 </ul>
 <h2>Changed behaviors</h2>
 <ul>
@@ -114,6 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>Monitor::index_data</code> and <code>Monitor::record_data</code> are removed</li>
 <li><code>AlignedVector</code> is removed</li>
 <li><code>hdf5store</code> is now overloaded for <code>Monitor</code></li>
+<li><code>Sampler::mcmc_type</code> is removed. It was exactly the same as <code>Sampler::move_type</code>. Unless the user code explicitly use the name <code>mcmc_type</code>, nothing shall break.</li>
 </ul>
 <h1>Changes in v2.2.0</h1>
 <h2>New features</h2>

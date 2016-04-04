@@ -111,10 +111,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_t_b_b.html">vsmc::AlignedMemoryTBB</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned memory using Intel TBB <code>scalable_aligned_malloc</code> and <code>scalable_aligned_free</code>.  <a href="classvsmc_1_1_aligned_memory_t_b_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator&lt; T, Alignment, Memory &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator&lt; T, ConstructScalar, Alignment, Memory &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned allocator.  <a href="classvsmc_1_1_allocator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator_1_1rebind.html">vsmc::Allocator&lt; T, Alignment, Memory &gt;::rebind&lt; U &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator_1_1rebind.html">vsmc::Allocator&lt; T, ConstructScalar, Alignment, Memory &gt;::rebind&lt; U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -128,10 +128,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga38b49cd552427b5f884bfd45f2262e9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c">vsmc::AlignedMemory</a> = ::<a class="el" href="classvsmc_1_1_aligned_memory_t_b_b.html">vsmc::AlignedMemoryTBB</a></td></tr>
 <tr class="memdesc:ga38b49cd552427b5f884bfd45f2262e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default AlignedMemory type.  <a href="group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c">More...</a><br /></td></tr>
 <tr class="separator:ga38b49cd552427b5f884bfd45f2262e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">vsmc::Vector</a> = std::vector&lt; T, Allocator&lt; T &gt;&gt;</td></tr>
-<tr class="memdesc:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type using <a class="el" href="classvsmc_1_1_allocator.html" title="Aligned allocator. ">Allocator</a>.  <a href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">More...</a><br /></td></tr>
-<tr class="separator:ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0282b67a9ceda34be6139dc7275bf353"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Alloc  = Allocator&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ga0282b67a9ceda34be6139dc7275bf353"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">vsmc::Vector</a> = std::vector&lt; T, Alloc &gt;</td></tr>
+<tr class="memdesc:ga0282b67a9ceda34be6139dc7275bf353"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector with <a class="el" href="classvsmc_1_1_allocator.html" title="Aligned allocator. ">Allocator</a> as default allocator  <a href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">More...</a><br /></td></tr>
+<tr class="separator:ga0282b67a9ceda34be6139dc7275bf353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Memory allocation with alignment requirement. </p>
@@ -153,7 +153,7 @@ Typedefs</h2></td></tr>
 <p>Define class member <code>new</code> and <code>delete</code> using Allocator. </p>
 <p>The behavior of the custom <code>operator new</code> is sligtly different than the standard ones. There will be no <code>new</code> handler called in the case of failure to allocate memroy. Another way to view this is that the class tha uses these custom <code>operator new</code> has its own <code>new</code> handler which does exactly nothing. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00093">93</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00103">103</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -170,25 +170,25 @@ Typedefs</h2></td></tr>
 
 <p>Default AlignedMemory type. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00292">292</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00304">304</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba"></a>
+<a class="anchor" id="ga0282b67a9ceda34be6139dc7275bf353"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename Alloc  = Allocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga2fd1a2257e7ff0dbf2bf3a11ba4c88ba">vsmc::Vector</a> = typedef std::vector&lt;T, Allocator&lt;T&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">vsmc::Vector</a> = typedef std::vector&lt;T, Alloc&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vector type using <a class="el" href="classvsmc_1_1_allocator.html" title="Aligned allocator. ">Allocator</a>. </p>
+<p>std::vector with <a class="el" href="classvsmc_1_1_allocator.html" title="Aligned allocator. ">Allocator</a> as default allocator </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00421">421</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00486">486</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

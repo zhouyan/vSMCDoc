@@ -147,18 +147,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>gaussian_mv()
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a71e2d8e149efaba0ef6eef52fd544d72">vsmc::MKLStream</a>
 </li>
+<li>generate()
+: <a class="el" href="classvsmc_1_1_u01_sequence_sorted.html#a1d2e82c99ee6455b42d1246c4f49b48d">vsmc::U01SequenceSorted&lt; RNGType, RealType &gt;</a>
+, <a class="el" href="classvsmc_1_1_u01_sequence_stratified.html#afd0ba6192234dce131b489815bdc233d">vsmc::U01SequenceStratified&lt; RNGType, RealType &gt;</a>
+, <a class="el" href="classvsmc_1_1_u01_sequence_systematic.html#a678994fc223ae252e2def73b1ee3182a">vsmc::U01SequenceSystematic&lt; RNGType, RealType &gt;</a>
+</li>
 <li>geometric()
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a84feaad911191a6724df34e44aed59ff">vsmc::MKLStream</a>
 </li>
 <li>get()
 : <a class="el" href="classvsmc_1_1_c_l_base.html#a1ac464d5d74d771203cfe3c723d7db8e">vsmc::CLBase&lt; CLPtr, Derived &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_h_d_f5_load_data_ptr.html#a94b2c89d4cc18aced8d6cce1a309d0b1">vsmc::internal::HDF5LoadDataPtr&lt; T &gt;</a>
 , <a class="el" href="classvsmc_1_1internal_1_1_h_d_f5_store_data_ptr.html#abff1878f4ed915d4bec5797aebc29206">vsmc::internal::HDF5StoreDataPtr&lt; T &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_dynamic.html#a6f16001fb7b7d2a8e46b7a5ba6859007">vsmc::internal::MKLOffsetDynamic&lt; MaxOffset &gt;</a>
-, <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_offset_zero.html#ac0b5428a739598d1f9564329e4b4a05b">vsmc::internal::MKLOffsetZero</a>
-, <a class="el" href="classvsmc_1_1_m_k_l_base.html#a8d9028c88610ff3bb498f424726af107">vsmc::MKLBase&lt; MKLPtr, Derived &gt;</a>
-, <a class="el" href="classvsmc_1_1_seed_generator.html#ad45375a857018f56f4adc1ce622b7be5">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_result_type_00_01_k_01_4_01_4.html#a430eb1a0e6bae16abc66b50c19d36842">vsmc::SeedGenerator&lt; ID, std::array&lt; ResultType, K &gt; &gt;</a>
+, <a class="el" href="classvsmc_1_1_seed_generator.html#a12b6c846418baa448b9805a973c7445d">vsmc::SeedGenerator&lt; ID, ResultType, K &gt;</a>
+</li>
+<li>get_allocator()
+: <a class="el" href="classvsmc_1_1_static_vector_n.html#ac8f7528f9b3599d5029ec6ecbf35598b">vsmc::StaticVectorN&lt; T, N, Alloc &gt;</a>
 </li>
 <li>get_arg_info()
 : <a class="el" href="classvsmc_1_1_c_l_kernel.html#a65b196c41d7461072d561514d40d97a7">vsmc::CLKernel</a>
@@ -167,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a168d1bd620701f0470a8a35c92bc50c3">vsmc::MKLStream</a>
 </li>
 <li>get_brng_properties()
-: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a52e724aed8c4443ff73670c0f5f58839">vsmc::MKLStream</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a76c0b5d8e9459167539f02728394429e">vsmc::MKLStream</a>
 </li>
 <li>get_build_info()
 : <a class="el" href="classvsmc_1_1_c_l_program.html#a10d4f103802ebfacab2d1f9e4e2b9be0">vsmc::CLProgram</a>
@@ -180,9 +183,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_c_l_event.html#a64a0bc884cc71537e433d69ec74fce06">vsmc::CLEvent</a>
 , <a class="el" href="classvsmc_1_1_c_l_program.html#a95289f1fdc5f20d8f7c1ffcf6085853a">vsmc::CLProgram</a>
 </li>
-<li>get_deleter()
-: <a class="el" href="classvsmc_1_1_m_k_l_base.html#a236b8c15ce8140c148d64e79c0ff8f67">vsmc::MKLBase&lt; MKLPtr, Derived &gt;</a>
-</li>
 <li>get_device()
 : <a class="el" href="classvsmc_1_1_c_l_command_queue.html#a9b7dde35a2adcc52f0128f533293f6f6">vsmc::CLCommandQueue</a>
 , <a class="el" href="classvsmc_1_1_c_l_context.html#af4822bac5c535746b2d59a03306e90fa">vsmc::CLContext</a>
@@ -190,30 +190,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_c_l_program.html#a3d1c184bba46c7b69f97124a95f275dd">vsmc::CLProgram</a>
 </li>
 <li>get_info()
-: <a class="el" href="classvsmc_1_1_c_l_command_queue.html#aa889b39c24377b1941afc99189b1733e">vsmc::CLCommandQueue</a>
-, <a class="el" href="classvsmc_1_1_c_l_context.html#a4459a0a4154476e6d97043deda690eec">vsmc::CLContext</a>
+: <a class="el" href="classvsmc_1_1_c_l_command_queue.html#ac8aa98ad878a1cb0638a0d3886797f06">vsmc::CLCommandQueue</a>
+, <a class="el" href="classvsmc_1_1_c_l_context.html#a0ac331e3d39179a457c92f6a21f7c202">vsmc::CLContext</a>
 , <a class="el" href="classvsmc_1_1_c_l_device.html#a7924282c5dfb6f3614c8bf9935913396">vsmc::CLDevice</a>
-, <a class="el" href="classvsmc_1_1_c_l_event.html#a0e2f8c01e9d58ea49d7db91ffd74bae2">vsmc::CLEvent</a>
-, <a class="el" href="classvsmc_1_1_c_l_kernel.html#a07c0cb2801523b7dedc8d4ef6d2ba397">vsmc::CLKernel</a>
+, <a class="el" href="classvsmc_1_1_c_l_event.html#a43e54446fcaf869a3fd8fd87b8388bde">vsmc::CLEvent</a>
+, <a class="el" href="classvsmc_1_1_c_l_kernel.html#ab44cd3927a2ebaf1df8f8ace5b4b389e">vsmc::CLKernel</a>
 , <a class="el" href="classvsmc_1_1_c_l_memory.html#a7bcfc2dca94c7906cfa5e4de19b0b863">vsmc::CLMemory</a>
-, <a class="el" href="classvsmc_1_1_c_l_platform.html#ae77b8d78027bcfca532aa89221ddb908">vsmc::CLPlatform</a>
-, <a class="el" href="classvsmc_1_1_c_l_program.html#a6ac54586cdcfaa920cadf77c5503f0c7">vsmc::CLProgram</a>
+, <a class="el" href="classvsmc_1_1_c_l_platform.html#a8440401192993d56cce06486734bef25">vsmc::CLPlatform</a>
+, <a class="el" href="classvsmc_1_1_c_l_program.html#ac846247d73e00bc92a078e9a83f80c73">vsmc::CLProgram</a>
+</li>
+<li>get_key()
+: <a class="el" href="classvsmc_1_1_seed_generator.html#a4cfb46524de0ba7fa0657a62c9eea33d">vsmc::SeedGenerator&lt; ID, ResultType, K &gt;</a>
 </li>
 <li>get_num_reg_brngs()
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#abae8fbf8f4ddae39a45f6f2de9d5d005">vsmc::MKLStream</a>
 </li>
 <li>get_profiling_info()
-: <a class="el" href="classvsmc_1_1_c_l_event.html#aa7c7b9fd3bc63c1c4b92c5511b692e6e">vsmc::CLEvent</a>
-</li>
-<li>get_scalar()
-: <a class="el" href="classvsmc_1_1_seed_generator.html#a7529d6c006a8cfbf8188e39b464e9426">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a>
-, <a class="el" href="classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_result_type_00_01_k_01_4_01_4.html#a06cd770871eca94f001e8ec7d42dced3">vsmc::SeedGenerator&lt; ID, std::array&lt; ResultType, K &gt; &gt;</a>
+: <a class="el" href="classvsmc_1_1_c_l_event.html#a49de0ea354edf6e0f80eb35ff1ad2956">vsmc::CLEvent</a>
 </li>
 <li>get_size()
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#aad22a981a3b7ec3359402099fba40a3e">vsmc::MKLStream</a>
 </li>
 <li>get_work_group_info()
-: <a class="el" href="classvsmc_1_1_c_l_kernel.html#a69d54266629208f4026f7f00c2838fcf">vsmc::CLKernel</a>
+: <a class="el" href="classvsmc_1_1_c_l_kernel.html#a92c1a21c04ef803b7bee066dba2d2cfc">vsmc::CLKernel</a>
+</li>
+<li>good()
+: <a class="el" href="classvsmc_1_1internal_1_1_h_d_f5_i_d.html#a1d7de118d2bcb9f06fddfa466fbb893d">vsmc::internal::HDF5ID&lt; Derived &gt;</a>
 </li>
 <li>gumbel()
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a0366ff813d2ab176b210f36d946a976e">vsmc::MKLStream</a>

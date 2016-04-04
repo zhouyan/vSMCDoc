@@ -98,7 +98,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">assert.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -106,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="config_8h_source.html">vsmc/internal/config.h</a>&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div>
@@ -122,6 +124,8 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -129,6 +133,12 @@ Macros</h2></td></tr>
 <tr class="separator:a992bf27762b7f77bd3312340c757054e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c0fabaf2a8c3842eabb5f15acc10d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a>(cond,  msg)                                                                          </td></tr>
 <tr class="separator:a89c0fabaf2a8c3842eabb5f15acc10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5742ed9b0e14e8a24e2aa5e151df32a0"><td class="memTemplParams" colspan="2">template&lt;typename IntType , typename SizeType &gt; </td></tr>
+<tr class="memitem:a5742ed9b0e14e8a24e2aa5e151df32a0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a5742ed9b0e14e8a24e2aa5e151df32a0">vsmc::internal::size_check</a> (SizeType n, const char *f)</td></tr>
+<tr class="separator:a5742ed9b0e14e8a24e2aa5e151df32a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a992bf27762b7f77bd3312340c757054e"></a>
@@ -155,7 +165,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">        if (!(cond)) {                                                        \</div><div class="line">            std::fprintf(stderr, <span class="stringliteral">&quot;vSMC runtime assertion failed:%s\n&quot;</span>, msg);  \</div><div class="line">            std::fflush(stderr);                                              \</div><div class="line">        };                                                                    \</div><div class="line">        assert(cond);                                                         \</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="assert_8hpp_source.html#l00053">53</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
+<p>Definition at line <a class="el" href="assert_8hpp_source.html#l00054">54</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
 
 </div>
 </div>
@@ -183,7 +193,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">        if (!(cond)) {                                                        \</div><div class="line">            std::fprintf(stderr, <span class="stringliteral">&quot;vSMC runtime warning:%s\n&quot;</span>, msg);           \</div><div class="line">            std::fflush(stderr);                                              \</div><div class="line">        };                                                                    \</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="assert_8hpp_source.html#l00075">75</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
+<p>Definition at line <a class="el" href="assert_8hpp_source.html#l00076">76</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
 
 </div>
 </div>

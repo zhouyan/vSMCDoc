@@ -38,7 +38,7 @@ var searchData=
   ['aes256keyseq',['AES256KeySeq',['../group___a_e_s_n_i_r_n_g.html#gab504a47e2e6c1950ba70f81e6fea79d1',1,'vsmc']]],
   ['aesniengine',['AESNIEngine',['../group___a_e_s_n_i_r_n_g.html#ga5726a65d03129aa4b667bc9594c00971',1,'vsmc']]],
   ['alignedmemory',['AlignedMemory',['../group___aligned_memory.html#ga38b49cd552427b5f884bfd45f2262e9c',1,'vsmc']]],
-  ['array',['Array',['../namespacevsmc_1_1internal.html#a355eb41817c17c842a680064b5fa63ea',1,'vsmc::internal']]],
+  ['allocator_5ftype',['allocator_type',['../classvsmc_1_1_static_vector_n.html#af4a394a8c66e0dc91aaf33c894b2facd',1,'vsmc::StaticVectorN']]],
   ['ars',['ARS',['../group___a_e_s_n_i_r_n_g.html#gace17716c811e6b6928e1a14d11fecbb1',1,'vsmc']]],
   ['ars_5f1x32',['ARS_1x32',['../group___a_e_s_n_i_r_n_g.html#ga381bc2811b7191256bbb089b7dcac734',1,'vsmc']]],
   ['ars_5f1x64',['ARS_1x64',['../group___a_e_s_n_i_r_n_g.html#gad07702706bccbcb5142605623fdc8ed9',1,'vsmc']]],

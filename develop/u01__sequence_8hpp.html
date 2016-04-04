@@ -125,6 +125,8 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -133,18 +135,45 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8eae98a5147ecce730e44d736e5c914b"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ga8eae98a5147ecce730e44d736e5c914b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga8eae98a5147ecce730e44d736e5c914b">vsmc::u01_sorted</a> (std::size_t N, const RealType *u01, RealType *u01seq)</td></tr>
-<tr class="memdesc:ga8eae98a5147ecce730e44d736e5c914b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tranform a sequence of standard uniform random numbers to sorted sequence.  <a href="group___u01_sequence.html#ga8eae98a5147ecce730e44d736e5c914b">More...</a><br /></td></tr>
-<tr class="separator:ga8eae98a5147ecce730e44d736e5c914b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72903a45082529afb669a27277a485b9"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ga72903a45082529afb669a27277a485b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga72903a45082529afb669a27277a485b9">vsmc::u01_stratified</a> (std::size_t N, const RealType *u01, RealType *u01seq)</td></tr>
-<tr class="memdesc:ga72903a45082529afb669a27277a485b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a sequence of standard uniform random numbers to a stratified sequence.  <a href="group___u01_sequence.html#ga72903a45082529afb669a27277a485b9">More...</a><br /></td></tr>
-<tr class="separator:ga72903a45082529afb669a27277a485b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25a59d8948f33bae43cd5bf082d32f5d"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ga25a59d8948f33bae43cd5bf082d32f5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga25a59d8948f33bae43cd5bf082d32f5d">vsmc::u01_systematic</a> (std::size_t N, RealType u01, RealType *u01seq)</td></tr>
-<tr class="memdesc:ga25a59d8948f33bae43cd5bf082d32f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a single standard uniform random number to a systematic sequence.  <a href="group___u01_sequence.html#ga25a59d8948f33bae43cd5bf082d32f5d">More...</a><br /></td></tr>
-<tr class="separator:ga25a59d8948f33bae43cd5bf082d32f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92925ea9e7296c54b907766c0c8a18d2"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:ga92925ea9e7296c54b907766c0c8a18d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga92925ea9e7296c54b907766c0c8a18d2">vsmc::u01_rand_sorted</a> (RNGType &amp;rng, std::size_t N, RealType *r)</td></tr>
+<tr class="memdesc:ga92925ea9e7296c54b907766c0c8a18d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate sorted standard uniform numbers with \(O(N)\) cost.  <a href="group___u01_sequence.html#ga92925ea9e7296c54b907766c0c8a18d2">More...</a><br /></td></tr>
+<tr class="separator:ga92925ea9e7296c54b907766c0c8a18d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af870de59fc79fe8f94d16b62d2a6c480"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:af870de59fc79fe8f94d16b62d2a6c480"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af870de59fc79fe8f94d16b62d2a6c480">vsmc::internal::u01_rand_sorted_impl</a> (RNGType &amp;rng, std::size_t n0, std::size_t n, RealType *r, std::size_t N, RealType &amp;lmax)</td></tr>
+<tr class="separator:af870de59fc79fe8f94d16b62d2a6c480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52b1b61abe5d84e57ad00a64ad03c067"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:ga52b1b61abe5d84e57ad00a64ad03c067"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga52b1b61abe5d84e57ad00a64ad03c067">vsmc::u01_rand_stratified</a> (RNGType &amp;rng, std::size_t N, RealType *r)</td></tr>
+<tr class="memdesc:ga52b1b61abe5d84e57ad00a64ad03c067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate stratified standard uniform numbers.  <a href="group___u01_sequence.html#ga52b1b61abe5d84e57ad00a64ad03c067">More...</a><br /></td></tr>
+<tr class="separator:ga52b1b61abe5d84e57ad00a64ad03c067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fde2e43a148f751a1f37cb253105a8"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a07fde2e43a148f751a1f37cb253105a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a07fde2e43a148f751a1f37cb253105a8">vsmc::internal::u01_rand_stratified_impl</a> (RNGType &amp;rng, std::size_t n0, std::size_t n, RealType *r, RealType delta)</td></tr>
+<tr class="separator:a07fde2e43a148f751a1f37cb253105a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0bd0f41520e4df2971cb6f461987e4f"><td class="memTemplParams" colspan="2">template&lt;typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:gad0bd0f41520e4df2971cb6f461987e4f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#gad0bd0f41520e4df2971cb6f461987e4f">vsmc::u01_rand_systematic</a> (RNGType &amp;rng, std::size_t N, RealType *r)</td></tr>
+<tr class="memdesc:gad0bd0f41520e4df2971cb6f461987e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate systematic standard uniform numbers.  <a href="group___u01_sequence.html#gad0bd0f41520e4df2971cb6f461987e4f">More...</a><br /></td></tr>
+<tr class="separator:gad0bd0f41520e4df2971cb6f461987e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga594c92fcaefaf8a7a27ddf5fc465d22c"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:ga594c92fcaefaf8a7a27ddf5fc465d22c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga594c92fcaefaf8a7a27ddf5fc465d22c">vsmc::u01_trans_sorted</a> (std::size_t N, const RealType *u01, RealType *r)</td></tr>
+<tr class="memdesc:ga594c92fcaefaf8a7a27ddf5fc465d22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tranform a sequence of standard uniform random numbers to sorted sequence.  <a href="group___u01_sequence.html#ga594c92fcaefaf8a7a27ddf5fc465d22c">More...</a><br /></td></tr>
+<tr class="separator:ga594c92fcaefaf8a7a27ddf5fc465d22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3100de15d1e84c8c5ffbf8caf1f9725"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType &gt; </td></tr>
+<tr class="memitem:ae3100de15d1e84c8c5ffbf8caf1f9725"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ae3100de15d1e84c8c5ffbf8caf1f9725">vsmc::internal::u01_trans_sorted_impl</a> (std::size_t n0, std::size_t n, const RealType *u01, RealType *r, std::size_t N, RealType &amp;lmax)</td></tr>
+<tr class="separator:ae3100de15d1e84c8c5ffbf8caf1f9725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1309df039681ba79c7f75b9c4fb507ba"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:ga1309df039681ba79c7f75b9c4fb507ba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#ga1309df039681ba79c7f75b9c4fb507ba">vsmc::u01_trans_stratified</a> (std::size_t N, const RealType *u01, RealType *r)</td></tr>
+<tr class="memdesc:ga1309df039681ba79c7f75b9c4fb507ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a sequence of standard uniform random numbers to a stratified sequence.  <a href="group___u01_sequence.html#ga1309df039681ba79c7f75b9c4fb507ba">More...</a><br /></td></tr>
+<tr class="separator:ga1309df039681ba79c7f75b9c4fb507ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c25bd483044cc46ec8543a89dbe5c0"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:af1c25bd483044cc46ec8543a89dbe5c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af1c25bd483044cc46ec8543a89dbe5c0">vsmc::internal::u01_trans_stratified_impl</a> (std::size_t n0, std::size_t n, const RealType *u01, RealType *r, RealType delta)</td></tr>
+<tr class="separator:af1c25bd483044cc46ec8543a89dbe5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab49c2e3be1f04b881163d934c739c1f6"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:gab49c2e3be1f04b881163d934c739c1f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___u01_sequence.html#gab49c2e3be1f04b881163d934c739c1f6">vsmc::u01_trans_systematic</a> (std::size_t N, const RealType *u01, RealType *r)</td></tr>
+<tr class="memdesc:gab49c2e3be1f04b881163d934c739c1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a single standard uniform random number to a systematic sequence.  <a href="group___u01_sequence.html#gab49c2e3be1f04b881163d934c739c1f6">More...</a><br /></td></tr>
+<tr class="separator:gab49c2e3be1f04b881163d934c739c1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad96c63e5e62b4fc2733add6e08f8449"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:aad96c63e5e62b4fc2733add6e08f8449"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aad96c63e5e62b4fc2733add6e08f8449">vsmc::internal::u01_trans_systematic_impl</a> (std::size_t n0, std::size_t n, RealType u, RealType *r, RealType delta)</td></tr>
+<tr class="separator:aad96c63e5e62b4fc2733add6e08f8449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ab11f8f739d9c687fc096341b83bebd76"></a>
@@ -160,7 +189,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((n &lt; N_ &amp;&amp; (n == n_ || n == n_ + 1 || n_ == N_)),     \</div><div class="line">        <span class="stringliteral">&quot;**U01Sequence&quot;</span> #Method <span class="stringliteral">&quot;::operator[]** INVALID INDEX&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00053">assert.hpp:53</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((n &lt; N_ &amp;&amp; (n == n_ || n == n_ + 1 || n_ == N_)),     \</div><div class="line">        <span class="stringliteral">&quot;**U01Sequence&quot;</span> #Method <span class="stringliteral">&quot;::operator[]** INVALID INDEX&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00054">assert.hpp:54</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00038">38</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 

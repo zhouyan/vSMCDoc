@@ -104,15 +104,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6bae028c90b7707880797bbfa357d7bd"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:ga6bae028c90b7707880797bbfa357d7bd"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___covariance.html#ga6bae028c90b7707880797bbfa357d7bd">vsmc::cov_chol</a> (std::size_t dim, const RealType *cov, RealType *chol, MatrixLayout layout=RowMajor, bool upper=false, bool packed=false)</td></tr>
-<tr class="memdesc:ga6bae028c90b7707880797bbfa357d7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Cholesky decomposition of the covariance matrix.  <a href="group___covariance.html#ga6bae028c90b7707880797bbfa357d7bd">More...</a><br /></td></tr>
-<tr class="separator:ga6bae028c90b7707880797bbfa357d7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab29db1cf56002949014a2a80507d2504"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
+<tr class="memitem:gab29db1cf56002949014a2a80507d2504"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___covariance.html#gab29db1cf56002949014a2a80507d2504">vsmc::chol</a> (std::size_t dim, const RealType *a, RealType *chol, MatrixLayout layout=RowMajor, bool upper=false, bool packed=false)</td></tr>
+<tr class="memdesc:gab29db1cf56002949014a2a80507d2504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Cholesky decomposition of the covariance matrix.  <a href="group___covariance.html#gab29db1cf56002949014a2a80507d2504">More...</a><br /></td></tr>
+<tr class="separator:gab29db1cf56002949014a2a80507d2504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Covariance matrix estimation and manipulation. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga6bae028c90b7707880797bbfa357d7bd"></a>
+<a class="anchor" id="gab29db1cf56002949014a2a80507d2504"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -122,7 +122,7 @@ template&lt;typename RealType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vsmc::cov_chol </td>
+          <td class="memname">int vsmc::chol </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
@@ -131,7 +131,7 @@ template&lt;typename RealType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const RealType *&#160;</td>
-          <td class="paramname"><em>cov</em>, </td>
+          <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -174,7 +174,7 @@ template&lt;typename RealType &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dim</td><td>The number of rows of the covariance matrix </td></tr>
-    <tr><td class="paramname">cov</td><td>The covariance matrix </td></tr>
+    <tr><td class="paramname">a</td><td>The input matrix </td></tr>
     <tr><td class="paramname">chol</td><td>The output lower triangular elements of the Cholesky decomposition, packed row by row. This can be directly used as the input parameter of the <a class="el" href="classvsmc_1_1_normal_m_v_distribution.html" title="Multivariate Normal distribution. ">NormalMVDistribution</a> constructors. </td></tr>
     <tr><td class="paramname">layout</td><td>The storage layout of the covariance matrix </td></tr>
     <tr><td class="paramname">upper</td><td>If <code>true</code>, the upper triangular of the covariance matrix shall be used. Otherwise the lower triangular shall be used. </td></tr>
@@ -188,7 +188,7 @@ template&lt;typename RealType &gt; </div>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="covariance_8hpp_source.html#l00129">129</a> of file <a class="el" href="covariance_8hpp_source.html">covariance.hpp</a>.</p>
+<p>Definition at line <a class="el" href="covariance_8hpp_source.html#l00126">126</a> of file <a class="el" href="covariance_8hpp_source.html">covariance.hpp</a>.</p>
 
 </div>
 </div>

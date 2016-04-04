@@ -87,7 +87,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Intel Math Kernel Library<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a></div></div>  </div>
 </div><!--header-->
@@ -100,6 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_engine.html">vsmc::MKLEngine&lt; BRNG, Bits &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MKL RNG C++11 engine.  <a href="classvsmc_1_1_m_k_l_engine.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_m_k_l_stream.html">vsmc::MKLStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MKL <code>VSLStreamStatePtr</code> wrapper.  <a href="classvsmc_1_1_m_k_l_stream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -134,6 +138,27 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gadc656e7b1a9e4d1f81f71d0d7240cfae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#gadc656e7b1a9e4d1f81f71d0d7240cfae">vsmc::MKL_SFMT19937_64</a> = MKLEngine&lt; VSL_BRNG_SFMT19937, 64 &gt;</td></tr>
 <tr class="memdesc:gadc656e7b1a9e4d1f81f71d0d7240cfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">A SIMD-oriented fast Mersenne-Twister pseudoranom number genertor (64-bit)  <a href="group___m_k_l_r_n_g.html#gadc656e7b1a9e4d1f81f71d0d7240cfae">More...</a><br /></td></tr>
 <tr class="separator:gadc656e7b1a9e4d1f81f71d0d7240cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga4cc0d267e918f38d27838d2856f62f08"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:ga4cc0d267e918f38d27838d2856f62f08"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#ga4cc0d267e918f38d27838d2856f62f08">vsmc::mkl_brng</a> ()</td></tr>
+<tr class="memdesc:ga4cc0d267e918f38d27838d2856f62f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a C++11 RNG as MKL BRNG.  <a href="group___m_k_l_r_n_g.html#ga4cc0d267e918f38d27838d2856f62f08">More...</a><br /></td></tr>
+<tr class="separator:ga4cc0d267e918f38d27838d2856f62f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21e671772065f6fabd41b0011d4518b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#ga21e671772065f6fabd41b0011d4518b0">vsmc::operator!=</a> (const MKLStream &amp;stream1, const MKLStream &amp;stream2)</td></tr>
+<tr class="memdesc:ga21e671772065f6fabd41b0011d4518b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality comparison of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>.  <a href="group___m_k_l_r_n_g.html#ga21e671772065f6fabd41b0011d4518b0">More...</a><br /></td></tr>
+<tr class="separator:ga21e671772065f6fabd41b0011d4518b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaab710400ce76e471fc841dc12ed0d37"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:gaaab710400ce76e471fc841dc12ed0d37"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#gaaab710400ce76e471fc841dc12ed0d37">vsmc::operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const MKLStream &amp;stream)</td></tr>
+<tr class="memdesc:gaaab710400ce76e471fc841dc12ed0d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>.  <a href="group___m_k_l_r_n_g.html#gaaab710400ce76e471fc841dc12ed0d37">More...</a><br /></td></tr>
+<tr class="separator:gaaab710400ce76e471fc841dc12ed0d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1012856ed96dac790db0f22120fc3fb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#ga1012856ed96dac790db0f22120fc3fb4">vsmc::operator==</a> (const MKLStream &amp;stream1, const MKLStream &amp;stream2)</td></tr>
+<tr class="memdesc:ga1012856ed96dac790db0f22120fc3fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality comparison of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>.  <a href="group___m_k_l_r_n_g.html#ga1012856ed96dac790db0f22120fc3fb4">More...</a><br /></td></tr>
+<tr class="separator:ga1012856ed96dac790db0f22120fc3fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab34baec2a8c96a76c6d1140f6989b743"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:gab34baec2a8c96a76c6d1140f6989b743"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#gab34baec2a8c96a76c6d1140f6989b743">vsmc::operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, MKLStream &amp;stream)</td></tr>
+<tr class="memdesc:gab34baec2a8c96a76c6d1140f6989b743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>.  <a href="group___m_k_l_r_n_g.html#gab34baec2a8c96a76c6d1140f6989b743">More...</a><br /></td></tr>
+<tr class="separator:gab34baec2a8c96a76c6d1140f6989b743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Random number generating using MKL RNG. </p>
@@ -150,7 +175,7 @@ Typedefs</h2></td></tr>
 
 <p>A 59-bit multiplicative congruential generator. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00419">419</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01062">1062</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -166,7 +191,7 @@ Typedefs</h2></td></tr>
 
 <p>A 59-bit multiplicative congruential generator (64-bit) </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00423">423</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01066">1066</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -182,7 +207,7 @@ Typedefs</h2></td></tr>
 
 <p>A Mersenne-Twister pseudoranom number genertor. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00427">427</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01070">1070</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -198,7 +223,7 @@ Typedefs</h2></td></tr>
 
 <p>A Mersenne-Twister pseudoranom number genertor (64-bit) </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00431">431</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01074">1074</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +239,7 @@ Typedefs</h2></td></tr>
 
 <p>A set of 6024 Mersenne-Twister pseudoranom number genertor. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00435">435</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01078">1078</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +255,7 @@ Typedefs</h2></td></tr>
 
 <p>A set of 6024 Mersenne-Twister pseudoranom number genertor (64-bit) </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00439">439</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01082">1082</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +271,7 @@ Typedefs</h2></td></tr>
 
 <p>A non-determinstic random number generator. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00453">453</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01096">1096</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -262,7 +287,7 @@ Typedefs</h2></td></tr>
 
 <p>A non-determinstic random number generator (64-bit) </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00457">457</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01100">1100</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +303,7 @@ Typedefs</h2></td></tr>
 
 <p>A SIMD-oriented fast Mersenne-Twister pseudoranom number genertor. </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00444">444</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01087">1087</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +319,184 @@ Typedefs</h2></td></tr>
 
 <p>A SIMD-oriented fast Mersenne-Twister pseudoranom number genertor (64-bit) </p>
 
-<p>Definition at line <a class="el" href="rng_2mkl_8hpp_source.html#l00449">449</a> of file <a class="el" href="rng_2mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l01092">1092</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga4cc0d267e918f38d27838d2856f62f08"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNGType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int vsmc::mkl_brng </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a C++11 RNG as MKL BRNG. </p>
+<p>Only engines defined in this library and the standard library are specialized. This function requires the C runtime of the library. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga21e671772065f6fabd41b0011d4518b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inequality comparison of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>. </p>
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00644">644</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaaab710400ce76e471fc841dc12ed0d37"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_ostream&lt;CharT, Traits&gt;&amp; vsmc::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Output of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>. </p>
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00652">652</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1012856ed96dac790db0f22120fc3fb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Equality comparison of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>. </p>
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00626">626</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab34baec2a8c96a76c6d1140f6989b743"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_istream&lt;CharT, Traits&gt;&amp; vsmc::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_m_k_l_stream.html">MKLStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Input of <a class="el" href="classvsmc_1_1_m_k_l_stream.html" title="MKL VSLStreamStatePtr wrapper. ">MKLStream</a>. </p>
+
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00675">675</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>

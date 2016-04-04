@@ -8,5 +8,5 @@ var searchData=
   ['philox4x64',['Philox4x64',['../group___philox.html#ga1f9d3376d26aa7fab9409458f4855c54',1,'vsmc']]],
   ['philox_5f64',['Philox_64',['../group___philox.html#gaa5587300a073f77ff8575e766df1771c',1,'vsmc']]],
   ['philoxengine',['PhiloxEngine',['../group___philox.html#gad947049903ccd4d5c34cc064a5372585',1,'vsmc']]],
-  ['pointer',['pointer',['../classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968',1,'vsmc::Allocator::pointer()'],['../classvsmc_1_1_m_k_l_base.html#a9a60ebd682397c300c971bc6ec89b86b',1,'vsmc::MKLBase::pointer()'],['../classvsmc_1_1_c_l_base.html#af2bf2acba931a83ca250577e9e2e289c',1,'vsmc::CLBase::pointer()']]]
+  ['pointer',['pointer',['../classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77',1,'vsmc::Allocator::pointer()'],['../classvsmc_1_1_c_l_base.html#af2bf2acba931a83ca250577e9e2e289c',1,'vsmc::CLBase::pointer()'],['../classvsmc_1_1_static_vector_n.html#a4ce08dab4156531e453d224d0b4ce83d',1,'vsmc::StaticVectorN::pointer()']]]
 ];

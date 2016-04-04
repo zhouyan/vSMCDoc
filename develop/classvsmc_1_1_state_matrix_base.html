@@ -122,8 +122,8 @@ Classes</h2></td></tr>
 Public Types</h2></td></tr>
 <tr class="memitem:a4f943c162a9c35ab9f99d4376d5a3827"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a4f943c162a9c35ab9f99d4376d5a3827">size_type</a> = std::size_t</td></tr>
 <tr class="separator:a4f943c162a9c35ab9f99d4376d5a3827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc548e6c57df8de4b37f3ba35657f59"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a0dc548e6c57df8de4b37f3ba35657f59">state_pack_type</a> = <a class="el" href="namespacevsmc_1_1internal.html#a355eb41817c17c842a680064b5fa63ea">internal::Array</a>&lt; T, Dim &gt;</td></tr>
-<tr class="separator:a0dc548e6c57df8de4b37f3ba35657f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a643d826abad46379930480191996cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a7a643d826abad46379930480191996cc">state_pack_type</a> = <a class="el" href="group___static_vector.html#gaf2abc49370d51e08b08599829fd1fe27">StaticVector</a>&lt; T, Dim &gt;</td></tr>
+<tr class="separator:a7a643d826abad46379930480191996cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb49bf764a164232bf07e764e0bceb8f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#adb49bf764a164232bf07e764e0bceb8f">state_type</a> = T</td></tr>
 <tr class="separator:adb49bf764a164232bf07e764e0bceb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,18 +133,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4f464bffda5b54f79954e254bd8b03da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00bda6c0e0acefb812b57768a151b0a3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvsmc_1_1_state_matrix_base.html#adb49bf764a164232bf07e764e0bceb8f">state_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a00bda6c0e0acefb812b57768a151b0a3">data</a> () const </td></tr>
 <tr class="separator:a00bda6c0e0acefb812b57768a151b0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a182982d169b281f3c2f2690613dc959c"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
-<tr class="memitem:a182982d169b281f3c2f2690613dc959c"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a182982d169b281f3c2f2690613dc959c">print</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, char sepchar= '\t') const </td></tr>
-<tr class="separator:a182982d169b281f3c2f2690613dc959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0cef8f2800aa064b774b96219c1102b"><td class="memTemplParams" colspan="2">template&lt;typename OutputIter &gt; </td></tr>
-<tr class="memitem:aa0cef8f2800aa064b774b96219c1102b"><td class="memTemplItemLeft" align="right" valign="top">OutputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#aa0cef8f2800aa064b774b96219c1102b">read_state</a> (std::size_t pos, OutputIter first) const </td></tr>
-<tr class="separator:aa0cef8f2800aa064b774b96219c1102b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008735e7070e0cefa0e004da3e8cccfc"><td class="memTemplParams" colspan="2">template&lt;typename OutputIterIter &gt; </td></tr>
-<tr class="memitem:a008735e7070e0cefa0e004da3e8cccfc"><td class="memTemplItemLeft" align="right" valign="top">OutputIterIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a008735e7070e0cefa0e004da3e8cccfc">read_state_list</a> (OutputIterIter first) const </td></tr>
-<tr class="separator:a008735e7070e0cefa0e004da3e8cccfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c34d79db50efb9f4c7bb99464be608"><td class="memTemplParams" colspan="2">template&lt;typename OutputIter &gt; </td></tr>
-<tr class="memitem:ad0c34d79db50efb9f4c7bb99464be608"><td class="memTemplItemLeft" align="right" valign="top">OutputIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#ad0c34d79db50efb9f4c7bb99464be608">read_state_matrix</a> (<a class="el" href="group___definitions.html#ga59ef6afcf177c66c2847f809d21dd8d5">MatrixLayout</a> layout, OutputIter first) const </td></tr>
-<tr class="separator:ad0c34d79db50efb9f4c7bb99464be608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5b59af31254a248e2c40c4560c2784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a9e5b59af31254a248e2c40c4560c2784">shrink_to_fit</a> ()</td></tr>
 <tr class="separator:a9e5b59af31254a248e2c40c4560c2784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8938b7e0f7b9505a0baff58662d1c281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a4f943c162a9c35ab9f99d4376d5a3827">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a8938b7e0f7b9505a0baff58662d1c281">size</a> () const </td></tr>
@@ -160,6 +148,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a644fb643dcb0b3f33cf7a10552b5ec23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5875ae81c204bdf1e6493a93ef9aeb86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a5875ae81c204bdf1e6493a93ef9aeb86">StateMatrixBase</a> (<a class="el" href="classvsmc_1_1_state_matrix_base.html">StateMatrixBase</a>&lt; Layout, Dim, T &gt; &amp;&amp;)=default</td></tr>
 <tr class="separator:a5875ae81c204bdf1e6493a93ef9aeb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0df18edc7792ea2c575de6f2d5ac88"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#abf0df18edc7792ea2c575de6f2d5ac88">data_size</a> () const </td></tr>
+<tr class="separator:abf0df18edc7792ea2c575de6f2d5ac88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa23d9f6b9326794214ed73fab9cd17c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_matrix_base.html">StateMatrixBase</a>&lt; Layout, Dim, T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#aa23d9f6b9326794214ed73fab9cd17c0">operator=</a> (const <a class="el" href="classvsmc_1_1_state_matrix_base.html">StateMatrixBase</a>&lt; Layout, Dim, T &gt; &amp;)=default</td></tr>
 <tr class="separator:aa23d9f6b9326794214ed73fab9cd17c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a994eb98dfe31068824e2c9f61974caa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_state_matrix_base.html">StateMatrixBase</a>&lt; Layout, Dim, T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html#a994eb98dfe31068824e2c9f61974caa7">operator=</a> (<a class="el" href="classvsmc_1_1_state_matrix_base.html">StateMatrixBase</a>&lt; Layout, Dim, T &gt; &amp;&amp;other) noexcept</td></tr>
@@ -203,14 +193,14 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0dc548e6c57df8de4b37f3ba35657f59"></a>
+<a class="anchor" id="a7a643d826abad46379930480191996cc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::<a class="el" href="classvsmc_1_1_state_matrix_base.html#a0dc548e6c57df8de4b37f3ba35657f59">state_pack_type</a> =  <a class="el" href="namespacevsmc_1_1internal.html#a355eb41817c17c842a680064b5fa63ea">internal::Array</a>&lt;T, Dim&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::<a class="el" href="classvsmc_1_1_state_matrix_base.html#a7a643d826abad46379930480191996cc">state_pack_type</a> =  <a class="el" href="group___static_vector.html#gaf2abc49370d51e08b08599829fd1fe27">StaticVector</a>&lt;T, Dim&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,7 +250,7 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00186">186</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00127">127</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -371,6 +361,33 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="abf0df18edc7792ea2c575de6f2d5ac88"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::data_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00151">151</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa23d9f6b9326794214ed73fab9cd17c0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -421,157 +438,7 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00195">195</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a182982d169b281f3c2f2690613dc959c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename CharT , typename Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::basic_ostream&lt;CharT, Traits&gt;&amp; <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::print </td>
-          <td>(</td>
-          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>sepchar</em> = <code>'\t'</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00169">169</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa0cef8f2800aa064b774b96219c1102b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename OutputIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OutputIter <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::read_state </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OutputIter&#160;</td>
-          <td class="paramname"><em>first</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00127">127</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a008735e7070e0cefa0e004da3e8cccfc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename OutputIterIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OutputIterIter <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::read_state_list </td>
-          <td>(</td>
-          <td class="paramtype">OutputIterIter&#160;</td>
-          <td class="paramname"><em>first</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00137">137</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad0c34d79db50efb9f4c7bb99464be608"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename OutputIter &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OutputIter <a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase</a>&lt; Layout, Dim, T &gt;::read_state_matrix </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___definitions.html#ga59ef6afcf177c66c2847f809d21dd8d5">MatrixLayout</a>&#160;</td>
-          <td class="paramname"><em>layout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OutputIter&#160;</td>
-          <td class="paramname"><em>first</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00146">146</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00136">136</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -609,7 +476,7 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00203">203</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00144">144</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>

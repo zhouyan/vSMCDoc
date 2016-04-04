@@ -151,11 +151,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_set_vector.html">vsmc::RNGSetVector&lt; RNGType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector RNG set.  <a href="classvsmc_1_1_r_n_g_set_vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator&lt; ID, ResultType, K &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed generator.  <a href="classvsmc_1_1_seed_generator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_result_type_00_01_k_01_4_01_4.html">vsmc::SeedGenerator&lt; ID, std::array&lt; ResultType, K &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed generator counters.  <a href="classvsmc_1_1_seed_generator_3_01_i_d_00_01std_1_1array_3_01_result_type_00_01_k_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_uniform_bits.html">vsmc::UniformBits&lt; UIntType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate uniform bits of given type.  <a href="classvsmc_1_1_uniform_bits.html#details">More...</a><br /></td></tr>
@@ -163,9 +160,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga6d3503656916407a33cf8430660d9c3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga6d3503656916407a33cf8430660d9c3e">vsmc::Seed</a> = SeedGenerator&lt; NullType, unsigned &gt;</td></tr>
-<tr class="memdesc:ga6d3503656916407a33cf8430660d9c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default Seed type.  <a href="group___r_n_g.html#ga6d3503656916407a33cf8430660d9c3e">More...</a><br /></td></tr>
-<tr class="separator:ga6d3503656916407a33cf8430660d9c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaefa150967badbefe35204cede426d22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaaefa150967badbefe35204cede426d22">vsmc::Seed</a> = SeedGenerator&lt; NullType &gt;</td></tr>
+<tr class="memdesc:gaaefa150967badbefe35204cede426d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default Seed type.  <a href="group___r_n_g.html#gaaefa150967badbefe35204cede426d22">More...</a><br /></td></tr>
+<tr class="separator:gaaefa150967badbefe35204cede426d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -193,6 +190,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga16ba3eaad6e1b627092cc8d1f9eba654"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga16ba3eaad6e1b627092cc8d1f9eba654">vsmc::rng_rand</a> (RNGType &amp;rng, std::size_t n, typename RNGType::result_type *r)</td></tr>
 <tr class="memdesc:ga16ba3eaad6e1b627092cc8d1f9eba654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate random bits.  <a href="group___r_n_g.html#ga16ba3eaad6e1b627092cc8d1f9eba654">More...</a><br /></td></tr>
 <tr class="separator:ga16ba3eaad6e1b627092cc8d1f9eba654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fe7cbb2c110942196dfb58d478cb61b"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType &gt; </td></tr>
+<tr class="memitem:ga6fe7cbb2c110942196dfb58d478cb61b"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga6fe7cbb2c110942196dfb58d478cb61b">vsmc::u01</a> (UIntType u) noexcept</td></tr>
+<tr class="memdesc:ga6fe7cbb2c110942196dfb58d478cb61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points on [0, 1)  <a href="group___r_n_g.html#ga6fe7cbb2c110942196dfb58d478cb61b">More...</a><br /></td></tr>
+<tr class="separator:ga6fe7cbb2c110942196dfb58d478cb61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21dec2dc5f9ff35a7b3b7874da8f86c2"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType &gt; </td></tr>
+<tr class="memitem:ga21dec2dc5f9ff35a7b3b7874da8f86c2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga21dec2dc5f9ff35a7b3b7874da8f86c2">vsmc::u01</a> (std::size_t n, const UIntType *u, RealType *r) noexcept</td></tr>
+<tr class="memdesc:ga21dec2dc5f9ff35a7b3b7874da8f86c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points on [0, 1)  <a href="group___r_n_g.html#ga21dec2dc5f9ff35a7b3b7874da8f86c2">More...</a><br /></td></tr>
+<tr class="separator:ga21dec2dc5f9ff35a7b3b7874da8f86c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3fad9177402274719a166cf61fdbda06"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType &gt; </td></tr>
 <tr class="memitem:ga3fad9177402274719a166cf61fdbda06"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga3fad9177402274719a166cf61fdbda06">vsmc::u01_cc</a> (UIntType u) noexcept</td></tr>
 <tr class="memdesc:ga3fad9177402274719a166cf61fdbda06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points on [0, 1].  <a href="group___r_n_g.html#ga3fad9177402274719a166cf61fdbda06">More...</a><br /></td></tr>
@@ -237,19 +242,19 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Random number generating engines and utilities. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga6d3503656916407a33cf8430660d9c3e"></a>
+<a class="anchor" id="gaaefa150967badbefe35204cede426d22"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___r_n_g.html#ga6d3503656916407a33cf8430660d9c3e">vsmc::Seed</a> = typedef SeedGenerator&lt;NullType, unsigned &gt;</td>
+          <td class="memname">using <a class="el" href="group___r_n_g.html#gaaefa150967badbefe35204cede426d22">vsmc::Seed</a> = typedef SeedGenerator&lt;NullType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The default Seed type. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00406">406</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00268">268</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -484,7 +489,83 @@ template&lt;typename RNGType &gt; </div>
 
 <p>Generate random bits. </p>
 
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00524">524</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00588">588</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6fe7cbb2c110942196dfb58d478cb61b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UIntType , typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RealType vsmc::u01 </td>
+          <td>(</td>
+          <td class="paramtype">UIntType&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert uniform unsigned integers to floating points on [0, 1) </p>
+
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00242">242</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga21dec2dc5f9ff35a7b3b7874da8f86c2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UIntType , typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::u01 </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UIntType *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RealType *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert uniform unsigned integers to floating points on [0, 1) </p>
+
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00282">282</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -514,7 +595,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00242">242</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00250">250</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -560,7 +641,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00274">274</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00290">290</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +671,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00250">250</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00258">258</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -636,7 +717,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00282">282</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00298">298</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -743,7 +824,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00258">258</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00266">266</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -789,7 +870,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00290">290</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00306">306</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +900,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00266">266</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00274">274</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -865,7 +946,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00298">298</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00314">314</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>

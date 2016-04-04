@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::Allocator&lt; T, Alignment, Memory &gt; Class Template Reference</title>
+<title>vSMC: vsmc::Allocator&lt; T, ConstructScalar, Alignment, Memory &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,10 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classvsmc_1_1_allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::Allocator&lt; T, Alignment, Memory &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___utility.html">Utility</a> &raquo; <a class="el" href="group___aligned_memory.html">Aligned memory alignment</a></div></div>  </div>
+<div class="title">vsmc::Allocator&lt; T, ConstructScalar, Alignment, Memory &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___utility.html">Utility</a> &raquo; <a class="el" href="group___aligned_memory.html">Aligned memory alignment</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -120,205 +119,209 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a116795d44a9b90d57dbf0ff1056c9722"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a116795d44a9b90d57dbf0ff1056c9722">const_pointer</a> = const T *</td></tr>
-<tr class="separator:a116795d44a9b90d57dbf0ff1056c9722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9df569e749ac2ad0ba27c1194ba34a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ab9df569e749ac2ad0ba27c1194ba34a8">const_reference</a> = typename std::add_lvalue_reference&lt; const T &gt;::type</td></tr>
-<tr class="separator:ab9df569e749ac2ad0ba27c1194ba34a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2706e9857b1df3229364f2d1d721becf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a2706e9857b1df3229364f2d1d721becf">difference_type</a> = std::ptrdiff_t</td></tr>
-<tr class="separator:a2706e9857b1df3229364f2d1d721becf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac542cf32696aadbd0f770d44e903a87c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ac542cf32696aadbd0f770d44e903a87c">is_always_equal</a> = std::true_type</td></tr>
-<tr class="separator:ac542cf32696aadbd0f770d44e903a87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc06f20f34af3712d39de68a206c968"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968">pointer</a> = T *</td></tr>
-<tr class="separator:a0dc06f20f34af3712d39de68a206c968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e61a0848d4731fd6630e44ca893ef43"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a5e61a0848d4731fd6630e44ca893ef43">reference</a> = typename std::add_lvalue_reference&lt; T &gt;::type</td></tr>
-<tr class="separator:a5e61a0848d4731fd6630e44ca893ef43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11c7de7794cc721e295910680d91f65"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">size_type</a> = std::size_t</td></tr>
-<tr class="separator:ab11c7de7794cc721e295910680d91f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4ae1194a1097aaa90dceb8b122a1cf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a2a4ae1194a1097aaa90dceb8b122a1cf">value_type</a> = T</td></tr>
-<tr class="separator:a2a4ae1194a1097aaa90dceb8b122a1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e6620e1b1fc2f75c5c8add27b443b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ac4e6620e1b1fc2f75c5c8add27b443b9">const_pointer</a> = const T *</td></tr>
+<tr class="separator:ac4e6620e1b1fc2f75c5c8add27b443b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b832b8103aa2fef2749d95c3496daf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ab9b832b8103aa2fef2749d95c3496daf">const_reference</a> = typename std::add_lvalue_reference&lt; const T &gt;::type</td></tr>
+<tr class="separator:ab9b832b8103aa2fef2749d95c3496daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218bb6594360ce4df5364a366ca5745f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a218bb6594360ce4df5364a366ca5745f">difference_type</a> = std::ptrdiff_t</td></tr>
+<tr class="separator:a218bb6594360ce4df5364a366ca5745f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9d068f70f563c16096b6f55fd9750e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a7c9d068f70f563c16096b6f55fd9750e">is_always_equal</a> = std::true_type</td></tr>
+<tr class="separator:a7c9d068f70f563c16096b6f55fd9750e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0aabd5e425d5ade3d9e005135d6f77"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77">pointer</a> = T *</td></tr>
+<tr class="separator:a9d0aabd5e425d5ade3d9e005135d6f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab93d8640cf645e39d36f0de78c6402a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#aab93d8640cf645e39d36f0de78c6402a">reference</a> = typename std::add_lvalue_reference&lt; T &gt;::type</td></tr>
+<tr class="separator:aab93d8640cf645e39d36f0de78c6402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11156c3a951114f0c5ba5b7e5a4de64e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a11156c3a951114f0c5ba5b7e5a4de64e">size_type</a> = std::size_t</td></tr>
+<tr class="separator:a11156c3a951114f0c5ba5b7e5a4de64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556c357d9552f50c84c2f69d54f4249f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a556c357d9552f50c84c2f69d54f4249f">value_type</a> = T</td></tr>
+<tr class="separator:a556c357d9552f50c84c2f69d54f4249f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6baba9fdeef49fe69a3d1e7b2c928157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a6baba9fdeef49fe69a3d1e7b2c928157">Allocator</a> ()=default</td></tr>
-<tr class="separator:a6baba9fdeef49fe69a3d1e7b2c928157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e73c02ca685b4bcf898efa5eb15f69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ac9e73c02ca685b4bcf898efa5eb15f69">Allocator</a> (const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;)=default</td></tr>
-<tr class="separator:ac9e73c02ca685b4bcf898efa5eb15f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7727a46c18abd7d70984ccea6135b982"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a7727a46c18abd7d70984ccea6135b982">Allocator</a> (<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&amp;)=default</td></tr>
-<tr class="separator:a7727a46c18abd7d70984ccea6135b982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a691bb4d81d7be36019a4777d0bf2b55c"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a691bb4d81d7be36019a4777d0bf2b55c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a691bb4d81d7be36019a4777d0bf2b55c">Allocator</a> (const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, Alignment, Memory &gt; &amp;other)</td></tr>
-<tr class="separator:a691bb4d81d7be36019a4777d0bf2b55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49b95c215344fe13ee357f615c875348"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a49b95c215344fe13ee357f615c875348"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a49b95c215344fe13ee357f615c875348">Allocator</a> (<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, Alignment, Memory &gt; &amp;&amp;other)</td></tr>
-<tr class="separator:a49b95c215344fe13ee357f615c875348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53ee2988f8ef93ab4324d10967a40fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a53ee2988f8ef93ab4324d10967a40fa2">operator=</a> (const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;)=default</td></tr>
-<tr class="separator:a53ee2988f8ef93ab4324d10967a40fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457632ead8419e5ffc4f5055f7378d86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a457632ead8419e5ffc4f5055f7378d86">operator=</a> (<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&amp;)=default</td></tr>
-<tr class="separator:a457632ead8419e5ffc4f5055f7378d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:adc22da8969c8b7b1c441bfdd54900546"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#adc22da8969c8b7b1c441bfdd54900546">allocate</a> (<a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">size_type</a> n, const void *=nullptr)</td></tr>
-<tr class="separator:adc22da8969c8b7b1c441bfdd54900546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863a30417d5d2a7d1a97960620034414"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a863a30417d5d2a7d1a97960620034414">deallocate</a> (<a class="el" href="classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968">pointer</a> ptr, <a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">size_type</a>)</td></tr>
-<tr class="separator:a863a30417d5d2a7d1a97960620034414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffc1bb8843debc3d86ff86bf9aa3a61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#acffc1bb8843debc3d86ff86bf9aa3a61">Allocator</a> ()=default</td></tr>
+<tr class="separator:acffc1bb8843debc3d86ff86bf9aa3a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ed1815a24001fb2ad1ba55b5a3ebad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a38ed1815a24001fb2ad1ba55b5a3ebad">Allocator</a> (const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;)=default</td></tr>
+<tr class="separator:a38ed1815a24001fb2ad1ba55b5a3ebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1554cbe85e7574b5a40f8e662a384e6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a1554cbe85e7574b5a40f8e662a384e6b">Allocator</a> (<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&amp;)=default</td></tr>
+<tr class="separator:a1554cbe85e7574b5a40f8e662a384e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c625525a92dd03a05f5e96b24bd0878"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a5c625525a92dd03a05f5e96b24bd0878"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a5c625525a92dd03a05f5e96b24bd0878">Allocator</a> (const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, ConstructScalar, Alignment, Memory &gt; &amp;other)</td></tr>
+<tr class="separator:a5c625525a92dd03a05f5e96b24bd0878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953a36e7e06305a6bc7417dc6a137b21"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a953a36e7e06305a6bc7417dc6a137b21"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a953a36e7e06305a6bc7417dc6a137b21">Allocator</a> (<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, ConstructScalar, Alignment, Memory &gt; &amp;&amp;other)</td></tr>
+<tr class="separator:a953a36e7e06305a6bc7417dc6a137b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17b4702993d7bc38cbe2224d4c662d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ab17b4702993d7bc38cbe2224d4c662d9">allocate</a> (<a class="el" href="classvsmc_1_1_allocator.html#a11156c3a951114f0c5ba5b7e5a4de64e">size_type</a> n, const void *=nullptr)</td></tr>
+<tr class="separator:ab17b4702993d7bc38cbe2224d4c662d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ce2607d384a513c33bc424e7bacf02"><td class="memTemplParams" colspan="2">template&lt;typename U , typename Arg , typename... Args&gt; </td></tr>
+<tr class="memitem:ac0ce2607d384a513c33bc424e7bacf02"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ac0ce2607d384a513c33bc424e7bacf02">constrct</a> (U *ptr, Arg &amp;&amp;arg, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:ac0ce2607d384a513c33bc424e7bacf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabee7abed689c3c9d38ee4665b68d18"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:acabee7abed689c3c9d38ee4665b68d18"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#acabee7abed689c3c9d38ee4665b68d18">construct</a> (U *ptr)</td></tr>
+<tr class="separator:acabee7abed689c3c9d38ee4665b68d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2be553dda6393410de77adf25c30bbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#ad2be553dda6393410de77adf25c30bbb">deallocate</a> (<a class="el" href="classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77">pointer</a> ptr, <a class="el" href="classvsmc_1_1_allocator.html#a11156c3a951114f0c5ba5b7e5a4de64e">size_type</a>=0) noexcept</td></tr>
+<tr class="separator:ad2be553dda6393410de77adf25c30bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74022982ca15f4eddfade04f5bd6af10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a74022982ca15f4eddfade04f5bd6af10">operator=</a> (const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;)=default</td></tr>
+<tr class="separator:a74022982ca15f4eddfade04f5bd6af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c87a35d1f334269644c49f94a5e9ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_allocator.html#a37c87a35d1f334269644c49f94a5e9ec">operator=</a> (<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&amp;)=default</td></tr>
+<tr class="separator:a37c87a35d1f334269644c49f94a5e9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt;<br />
-class vsmc::Allocator&lt; T, Alignment, Memory &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt;<br />
+class vsmc::Allocator&lt; T, ConstructScalar, Alignment, Memory &gt;</h3>
 
 <p>Aligned allocator. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The value type </td></tr>
     <tr><td class="paramname">Alignment</td><td>The alignment requirement of memory, must be a power of two and no less than <code>sizeof(void *)</code>. </td></tr>
+    <tr><td class="paramname">ConstructScalar</td><td>Should construct(ptr) initialize a scalar type with zero or left it uninitialized. </td></tr>
     <tr><td class="paramname">Memory</td><td>The memory management class. Must provides two static member functions, <code>aligned_malloc</code> and <code>aligned_free</code>. The member function <code>aligned_malloc</code> shall behave similar to <code>std::malloc</code> but take an additional argument as alignment requirement. It need to be able to handle any alignment that is a power of two, other than zero. It need to return a non-null pointer even if the size is zero. It shall only return a null pointer if it fails to allocated the memory. It shall not throw any exceptions. The member function <code>aligned_free</code> shall behave just like <code>std::free</code>. It shall be able to handle a null pointer as its input. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00311">311</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a116795d44a9b90d57dbf0ff1056c9722"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a116795d44a9b90d57dbf0ff1056c9722">const_pointer</a> =  const T *</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00325">325</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab9df569e749ac2ad0ba27c1194ba34a8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#ab9df569e749ac2ad0ba27c1194ba34a8">const_reference</a> =  typename std::add_lvalue_reference&lt;const T&gt;::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00327">327</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2706e9857b1df3229364f2d1d721becf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a2706e9857b1df3229364f2d1d721becf">difference_type</a> =  std::ptrdiff_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00323">323</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac542cf32696aadbd0f770d44e903a87c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#ac542cf32696aadbd0f770d44e903a87c">is_always_equal</a> =  std::true_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00328">328</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0dc06f20f34af3712d39de68a206c968"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968">pointer</a> =  T *</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00324">324</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5e61a0848d4731fd6630e44ca893ef43"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a5e61a0848d4731fd6630e44ca893ef43">reference</a> =  typename std::add_lvalue_reference&lt;T&gt;::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 <p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00326">326</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab11c7de7794cc721e295910680d91f65"></a>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ac4e6620e1b1fc2f75c5c8add27b443b9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">size_type</a> =  std::size_t</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#ac4e6620e1b1fc2f75c5c8add27b443b9">const_pointer</a> =  const T *</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00322">322</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00340">340</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2a4ae1194a1097aaa90dceb8b122a1cf"></a>
+<a class="anchor" id="ab9b832b8103aa2fef2749d95c3496daf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a2a4ae1194a1097aaa90dceb8b122a1cf">value_type</a> =  T</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#ab9b832b8103aa2fef2749d95c3496daf">const_reference</a> =  typename std::add_lvalue_reference&lt;const T&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00321">321</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00342">342</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a218bb6594360ce4df5364a366ca5745f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a218bb6594360ce4df5364a366ca5745f">difference_type</a> =  std::ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00338">338</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c9d068f70f563c16096b6f55fd9750e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a7c9d068f70f563c16096b6f55fd9750e">is_always_equal</a> =  std::true_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00343">343</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d0aabd5e425d5ade3d9e005135d6f77"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77">pointer</a> =  T *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00339">339</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab93d8640cf645e39d36f0de78c6402a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#aab93d8640cf645e39d36f0de78c6402a">reference</a> =  typename std::add_lvalue_reference&lt;T&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00341">341</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11156c3a951114f0c5ba5b7e5a4de64e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a11156c3a951114f0c5ba5b7e5a4de64e">size_type</a> =  std::size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00337">337</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a556c357d9552f50c84c2f69d54f4249f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html#a556c357d9552f50c84c2f69d54f4249f">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00336">336</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6baba9fdeef49fe69a3d1e7b2c928157"></a>
+<a class="anchor" id="acffc1bb8843debc3d86ff86bf9aa3a61"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -333,19 +336,19 @@ template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, 
 
 </div>
 </div>
-<a class="anchor" id="ac9e73c02ca685b4bcf898efa5eb15f69"></a>
+<a class="anchor" id="a38ed1815a24001fb2ad1ba55b5a3ebad"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -359,19 +362,19 @@ template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, 
 
 </div>
 </div>
-<a class="anchor" id="a7727a46c18abd7d70984ccea6135b982"></a>
+<a class="anchor" id="a1554cbe85e7574b5a40f8e662a384e6b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -385,11 +388,11 @@ template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, 
 
 </div>
 </div>
-<a class="anchor" id="a691bb4d81d7be36019a4777d0bf2b55c"></a>
+<a class="anchor" id="a5c625525a92dd03a05f5e96b24bd0878"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
 <table class="mlabels">
@@ -397,9 +400,9 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, Alignment, Memory &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, ConstructScalar, Alignment, Memory &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -411,15 +414,15 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00350">350</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00366">366</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a49b95c215344fe13ee357f615c875348"></a>
+<a class="anchor" id="a953a36e7e06305a6bc7417dc6a137b21"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
 <table class="mlabels">
@@ -427,9 +430,9 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::<a class="el" href="classvsmc_1_1_allocator.html">Allocator</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, Alignment, Memory &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; U, ConstructScalar, Alignment, Memory &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -441,24 +444,24 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00356">356</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00372">372</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adc22da8969c8b7b1c441bfdd54900546"></a>
+<a class="anchor" id="ab17b4702993d7bc38cbe2224d4c662d9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968">pointer</a> <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::allocate </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77">pointer</a> <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::allocate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">size_type</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html#a11156c3a951114f0c5ba5b7e5a4de64e">size_type</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -475,35 +478,43 @@ template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00361">361</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00377">377</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a863a30417d5d2a7d1a97960620034414"></a>
+<a class="anchor" id="ac0ce2607d384a513c33bc424e7bacf02"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+<div class="memtemplate">
+template&lt;typename U , typename Arg , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::deallocate </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::constrct </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968">pointer</a>&#160;</td>
+          <td class="paramtype">U *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">size_type</a>&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">Arg &amp;&amp;&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -513,28 +524,96 @@ template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00371">371</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00402">402</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a53ee2988f8ef93ab4324d10967a40fa2"></a>
+<a class="anchor" id="acabee7abed689c3c9d38ee4665b68d18"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt;T, Alignment, Memory&gt;&amp; <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::operator= </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::construct </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&#160;</td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00394">394</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2be553dda6393410de77adf25c30bbb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html#a9d0aabd5e425d5ade3d9e005135d6f77">pointer</a>&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html#a11156c3a951114f0c5ba5b7e5a4de64e">size_type</a>&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00387">387</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74022982ca15f4eddfade04f5bd6af10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt;T, ConstructScalar, Alignment, Memory&gt;&amp; <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -548,19 +627,19 @@ template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, 
 
 </div>
 </div>
-<a class="anchor" id="a457632ead8419e5ffc4f5055f7378d86"></a>
+<a class="anchor" id="a37c87a35d1f334269644c49f94a5e9ec"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
+template&lt;typename T, bool ConstructScalar = 0 != 0, std::size_t Alignment = AlignmentTrait&lt;T&gt;::value, typename Memory = AlignedMemory&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt;T, Alignment, Memory&gt;&amp; <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, Alignment, Memory &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt;T, ConstructScalar, Alignment, Memory&gt;&amp; <a class="el" href="classvsmc_1_1_allocator.html">vsmc::Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, Alignment, Memory &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_allocator.html">Allocator</a>&lt; T, ConstructScalar, Alignment, Memory &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

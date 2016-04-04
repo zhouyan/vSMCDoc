@@ -22,5 +22,9 @@ var searchData=
   ['clplatform',['CLPlatform',['../classvsmc_1_1_c_l_platform.html',1,'vsmc']]],
   ['clprogram',['CLProgram',['../classvsmc_1_1_c_l_program.html',1,'vsmc']]],
   ['counterengine',['CounterEngine',['../classvsmc_1_1_counter_engine.html',1,'vsmc']]],
-  ['covariance',['Covariance',['../classvsmc_1_1_covariance.html',1,'vsmc']]]
+  ['covariance',['Covariance',['../classvsmc_1_1_covariance.html',1,'vsmc']]],
+  ['ctrtypedispatch',['CtrTypeDispatch',['../classvsmc_1_1internal_1_1internal_1_1_ctr_type_dispatch.html',1,'vsmc::internal::internal']]],
+  ['ctrtypedispatch_3c_20t_2c_20false_20_3e',['CtrTypeDispatch&lt; T, false &gt;',['../classvsmc_1_1internal_1_1internal_1_1_ctr_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::internal::internal']]],
+  ['ctrtypedispatch_3c_20t_2c_20true_20_3e',['CtrTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1internal_1_1_ctr_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal::internal']]],
+  ['ctrtypetrait',['CtrTypeTrait',['../classvsmc_1_1internal_1_1_ctr_type_trait.html',1,'vsmc::internal']]]
 ];

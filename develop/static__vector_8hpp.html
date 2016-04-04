@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: /home/Zhou/Documents/GitHub/vSMC/include/vsmc/utility/static_vector.hpp File Reference</title>
+<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/utility/static_vector.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="basic_8hpp_source.html">vsmc/internal/basic.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aligned__memory_8hpp_source.html">vsmc/utility/aligned_memory.hpp</a>&gt;</code><br />
+<code>#include &lt;tbb/combinable.h&gt;</code><br />
 </div>
 <p><a href="static__vector_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -120,9 +121,13 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacevsmc_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html">vsmc::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:aea60042ac8af351ee2a328b3c30cfd69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static__vector_8hpp.html#aea60042ac8af351ee2a328b3c30cfd69">VSMC_BUFFER</a>(var,  T,  n)                                                                                            </td></tr>
+<tr class="separator:aea60042ac8af351ee2a328b3c30cfd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0619978ca02d648ee0fb3ee75e9f8dc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static__vector_8hpp.html#a0619978ca02d648ee0fb3ee75e9f8dc5">VSMC_RUNTIME_ASSERT_UTILITY_STATIC_VECTOR_AT</a>(pos)                                      </td></tr>
 <tr class="separator:a0619978ca02d648ee0fb3ee75e9f8dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,6 +140,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7a36a3355b462ce8fd027e3c3734a168"><td class="memTemplParams" colspan="2">template&lt;typename T , int  = 0&gt; </td></tr>
+<tr class="memitem:a7a36a3355b462ce8fd027e3c3734a168"><td class="memTemplItemLeft" align="right" valign="top">Vector&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7a36a3355b462ce8fd027e3c3734a168">vsmc::internal::buffer</a> (std::size_t n)</td></tr>
+<tr class="separator:a7a36a3355b462ce8fd027e3c3734a168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5952ee5a93eb71f14aa8936c1f275e6a"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, typename Alloc &gt; </td></tr>
 <tr class="memitem:ga5952ee5a93eb71f14aa8936c1f275e6a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___static_vector.html#ga5952ee5a93eb71f14aa8936c1f275e6a">vsmc::operator!=</a> (const StaticVectorN&lt; T, N, Alloc &gt; &amp;sv1, const StaticVectorN&lt; T, N, Alloc &gt; &amp;sv2)</td></tr>
 <tr class="memdesc:ga5952ee5a93eb71f14aa8936c1f275e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two <a class="el" href="classvsmc_1_1_static_vector_n.html" title="Vector with statically allocated space. ">StaticVectorN</a> objects.  <a href="group___static_vector.html#ga5952ee5a93eb71f14aa8936c1f275e6a">More...</a><br /></td></tr>
@@ -173,6 +181,40 @@ Functions</h2></td></tr>
 <tr class="separator:ga00c6dce0d20ba48caae700411251baf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aea60042ac8af351ee2a328b3c30cfd69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_BUFFER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">T, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">static ::tbb::combinable&lt;Vector&lt;T&gt;&gt; var##_tls;                            \</div><div class="line">    Vector&lt;T&gt; &amp;var = var##_tls.local();                                       \</div><div class="line">    var.resize(static_cast&lt;std::size_t&gt;(n));</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="static__vector_8hpp_source.html#l00047">47</a> of file <a class="el" href="static__vector_8hpp_source.html">static_vector.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0619978ca02d648ee0fb3ee75e9f8dc5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +230,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (pos &lt; size()), <span class="stringliteral">&quot;**StaticVectorN::at INDEX OUT OF RANGE&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00054">assert.hpp:54</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="static__vector_8hpp_source.html#l00038">38</a> of file <a class="el" href="static__vector_8hpp_source.html">static_vector.hpp</a>.</p>
+<p>Definition at line <a class="el" href="static__vector_8hpp_source.html#l00042">42</a> of file <a class="el" href="static__vector_8hpp_source.html">static_vector.hpp</a>.</p>
 
 </div>
 </div>

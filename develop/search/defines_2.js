@@ -2,6 +2,7 @@ var searchData=
 [
   ['vsmc_5falignment_5ftrait',['VSMC_ALIGNMENT_TRAIT',['../aligned__memory_8hpp.html#a5f66360b1f2aba369b2f9dfee89dd20c',1,'aligned_memory.hpp']]],
   ['vsmc_5fbackend_5fbase_5fdestructor_5fprefix',['VSMC_BACKEND_BASE_DESTRUCTOR_PREFIX',['../backend__base_8hpp.html#ac2e8e39dc10895482191e6e756045ebd',1,'backend_base.hpp']]],
+  ['vsmc_5fbuffer',['VSMC_BUFFER',['../static__vector_8hpp.html#aea60042ac8af351ee2a328b3c30cfd69',1,'static_vector.hpp']]],
   ['vsmc_5fcblas_5fint',['VSMC_CBLAS_INT',['../cblas_8h.html#a56fbd204d871fb719e5e3d39f2034e6f',1,'cblas.h']]],
   ['vsmc_5fclang_5fnonexist',['VSMC_CLANG_NONEXIST',['../clang_8h.html#a73bafab4026b03f02abaf6d37150d614',1,'clang.h']]],
   ['vsmc_5fclang_5fversion',['VSMC_CLANG_VERSION',['../clang_8h.html#a49cd1c6e3028dbd8e5698bfaabf40398',1,'clang.h']]],

@@ -3,9 +3,10 @@ var searchData=
   ['resample_20algorithms',['Resample algorithms',['../group___c___a_p_i___resample.html',1,'']]],
   ['random_20number_20generating',['Random number generating',['../group___c___a_p_i___r_n_g.html',1,'']]],
   ['random_20walk',['Random walk',['../group___c___a_p_i___r_n_g___random_walk.html',1,'']]],
+  ['common_2ehpp',['common.hpp',['../rng_2internal_2common_8hpp.html',1,'']]],
   ['random_5fwalk_2ehpp',['random_walk.hpp',['../random__walk_8hpp.html',1,'']]],
-  ['randomwalk',['RandomWalk',['../classvsmc_1_1_random_walk.html',1,'vsmc']]],
   ['randomwalk',['RandomWalk',['../classvsmc_1_1_random_walk.html#a449783679e30db77fb895d5af79ab38e',1,'vsmc::RandomWalk::RandomWalk()'],['../classvsmc_1_1_random_walk.html#acdba9b60c96a07ea8f19b3f580ebe949',1,'vsmc::RandomWalk::RandomWalk(std::size_t dim)'],['../group___random_walk.html',1,'(Global Namespace)']]],
+  ['randomwalk',['RandomWalk',['../classvsmc_1_1_random_walk.html',1,'vsmc']]],
   ['randomwalkg',['RandomWalkG',['../classvsmc_1_1_random_walk_g.html',1,'vsmc']]],
   ['randomwalkg',['RandomWalkG',['../classvsmc_1_1_random_walk_g.html#a119a344b8602c4c98d9a714fec032a8b',1,'vsmc::RandomWalkG::RandomWalkG()'],['../classvsmc_1_1_random_walk_g.html#ad36ce0573aaa16e57fe71f1f9653a25b',1,'vsmc::RandomWalkG::RandomWalkG(std::size_t dim_x, std::size_t dim_g)']]],
   ['rayleigh',['rayleigh',['../classvsmc_1_1_m_k_l_stream.html#a396d5b2af3a29ff6aec6906c81909cfc',1,'vsmc::MKLStream::rayleigh(MKL_INT n, float *r, float a, float beta, MKL_INT method=VSL_RNG_METHOD_RAYLEIGH_ICDF)'],['../classvsmc_1_1_m_k_l_stream.html#adb88e368dc76f9a382956b14a70d4fbd',1,'vsmc::MKLStream::rayleigh(MKL_INT n, double *r, double a, double beta, MKL_INT method=VSL_RNG_METHOD_RAYLEIGH_ICDF)']]],
@@ -127,8 +128,8 @@ var searchData=
   ['row_5fdata',['row_data',['../classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a27609728f60e3f45926966a8be8917b5',1,'vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;::row_data(size_type id)'],['../classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a8cd16ebe0e672aa18a4f0b7705adf2a5',1,'vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;::row_data(size_type id) const ']]],
   ['rowmajor',['RowMajor',['../group___definitions.html#gga59ef6afcf177c66c2847f809d21dd8d5a4df16e4b47c5a0662d1344fac6783ae6',1,'vsmc']]],
   ['running',['running',['../classvsmc_1_1_stop_watch_clock_adapter.html#a31a390b2911ffe44d1235bf9f36358b7',1,'vsmc::StopWatchClockAdapter']]],
-  ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html#a30dabba522188460629f19adc39afd5f',1,'vsmc::RuntimeAssert::RuntimeAssert(const char *msg)'],['../classvsmc_1_1_runtime_assert.html#a3acf3d5afa14f3a1dcc8471975a301e1',1,'vsmc::RuntimeAssert::RuntimeAssert(const std::string &amp;msg)']]],
   ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html',1,'vsmc']]],
+  ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html#a30dabba522188460629f19adc39afd5f',1,'vsmc::RuntimeAssert::RuntimeAssert(const char *msg)'],['../classvsmc_1_1_runtime_assert.html#a3acf3d5afa14f3a1dcc8471975a301e1',1,'vsmc::RuntimeAssert::RuntimeAssert(const std::string &amp;msg)']]],
   ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html',1,'vsmc']]],
   ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html#a8d8eefc2a70cc18dbc236f8736a0e61e',1,'vsmc::RuntimeWarning::RuntimeWarning(const char *msg)'],['../classvsmc_1_1_runtime_warning.html#afadce67da859cc7d2e65499777a0800d',1,'vsmc::RuntimeWarning::RuntimeWarning(const std::string &amp;msg)']]]
 ];

@@ -23,6 +23,7 @@ var searchData=
   ['mklresulttypetrait_3c_2032_20_3e',['MKLResultTypeTrait&lt; 32 &gt;',['../classvsmc_1_1internal_1_1_m_k_l_result_type_trait_3_0132_01_4.html',1,'vsmc::internal']]],
   ['mklresulttypetrait_3c_2064_20_3e',['MKLResultTypeTrait&lt; 64 &gt;',['../classvsmc_1_1internal_1_1_m_k_l_result_type_trait_3_0164_01_4.html',1,'vsmc::internal']]],
   ['mklstream',['MKLStream',['../classvsmc_1_1_m_k_l_stream.html',1,'vsmc']]],
+  ['mklstreamstate',['MKLStreamState',['../classvsmc_1_1internal_1_1_m_k_l_stream_state.html',1,'vsmc::internal']]],
   ['mkluniformbits',['MKLUniformBits',['../classvsmc_1_1internal_1_1_m_k_l_uniform_bits.html',1,'vsmc::internal']]],
   ['mkluniformbits_3c_2032_20_3e',['MKLUniformBits&lt; 32 &gt;',['../classvsmc_1_1internal_1_1_m_k_l_uniform_bits_3_0132_01_4.html',1,'vsmc::internal']]],
   ['mkluniformbits_3c_2064_20_3e',['MKLUniformBits&lt; 64 &gt;',['../classvsmc_1_1internal_1_1_m_k_l_uniform_bits_3_0164_01_4.html',1,'vsmc::internal']]],

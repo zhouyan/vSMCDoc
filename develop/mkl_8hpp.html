@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: /Users/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/mkl.hpp File Reference</title>
+<title>vSMC: /home/Zhou/Documents/GitHub/vSMC/include/vsmc/rng/mkl.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="uniform__real__distribution_8hpp_source.html">vsmc/rng/uniform_real_distribution.hpp</a>&gt;</code><br />
 <code>#include &lt;mkl.h&gt;</code><br />
 </div>
 <p><a href="mkl_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -127,6 +128,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_m_k_l_result_type_trait_3_0132_01_4.html">vsmc::internal::MKLResultTypeTrait&lt; 32 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_m_k_l_result_type_trait_3_0164_01_4.html">vsmc::internal::MKLResultTypeTrait&lt; 64 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_m_k_l_stream_state.html">vsmc::internal::MKLStreamState&lt; RNGType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_m_k_l_uniform_bits.html">vsmc::internal::MKLUniformBits&lt; int &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,8 +238,36 @@ Functions</h2></td></tr>
 <tr class="memitem:a3b28eae78c3f359b64f48fad9c631c6f"><td class="memTemplParams" colspan="2">template&lt;MKL_INT BRNG, int Bits&gt; </td></tr>
 <tr class="memitem:a3b28eae78c3f359b64f48fad9c631c6f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a3b28eae78c3f359b64f48fad9c631c6f">vsmc::lognormal_distribution</a> (MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, double *, double, double)</td></tr>
 <tr class="separator:a3b28eae78c3f359b64f48fad9c631c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cc0d267e918f38d27838d2856f62f08"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:ga4cc0d267e918f38d27838d2856f62f08"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___m_k_l_r_n_g.html#ga4cc0d267e918f38d27838d2856f62f08">vsmc::mkl_brng</a> ()</td></tr>
+<tr class="memdesc:ga4cc0d267e918f38d27838d2856f62f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a C++11 RNG as MKL BRNG.  <a href="group___m_k_l_r_n_g.html#ga4cc0d267e918f38d27838d2856f62f08">More...</a><br /></td></tr>
+<tr class="separator:ga4cc0d267e918f38d27838d2856f62f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85b7e4dad4daaa9b74edb9ba3918698c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a85b7e4dad4daaa9b74edb9ba3918698c">vsmc::internal::mkl_error_check</a> (int status, const char *cpp, const char *c)</td></tr>
 <tr class="separator:a85b7e4dad4daaa9b74edb9ba3918698c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c50d9948b83827767ba62ba6bc9db71"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:a8c50d9948b83827767ba62ba6bc9db71"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a8c50d9948b83827767ba62ba6bc9db71">vsmc::internal::mkl_init</a> (RNGType &amp;rng, int n, const unsigned *param, std::false_type)</td></tr>
+<tr class="separator:a8c50d9948b83827767ba62ba6bc9db71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddd5d1fa440691d8295ac4f8f3f231b"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:aeddd5d1fa440691d8295ac4f8f3f231b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aeddd5d1fa440691d8295ac4f8f3f231b">vsmc::internal::mkl_init</a> (RNGType &amp;rng, int n, const unsigned *param, std::true_type)</td></tr>
+<tr class="separator:aeddd5d1fa440691d8295ac4f8f3f231b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1a997c933e5663c0a2e594f95d35c3"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:aaa1a997c933e5663c0a2e594f95d35c3"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aaa1a997c933e5663c0a2e594f95d35c3">vsmc::internal::mkl_init</a> (int method,::VSLStreamStatePtr stream, int n, const unsigned *param)</td></tr>
+<tr class="separator:aaa1a997c933e5663c0a2e594f95d35c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9862c93824011d0569e739a9eeec077b"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:a9862c93824011d0569e739a9eeec077b"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9862c93824011d0569e739a9eeec077b">vsmc::internal::mkl_nseeds</a> (std::false_type)</td></tr>
+<tr class="separator:a9862c93824011d0569e739a9eeec077b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89be3dbec09aeee73edf8b9cb518ed7f"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:a89be3dbec09aeee73edf8b9cb518ed7f"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a89be3dbec09aeee73edf8b9cb518ed7f">vsmc::internal::mkl_nseeds</a> (std::true_type)</td></tr>
+<tr class="separator:a89be3dbec09aeee73edf8b9cb518ed7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e50d954df9f69cf404e6bf34e63be7"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:ae3e50d954df9f69cf404e6bf34e63be7"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ae3e50d954df9f69cf404e6bf34e63be7">vsmc::internal::mkl_nseeds</a> ()</td></tr>
+<tr class="separator:ae3e50d954df9f69cf404e6bf34e63be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17edec4ffef9d1369868a8b43019932"><td class="memTemplParams" colspan="2">template&lt;typename RNGType &gt; </td></tr>
+<tr class="memitem:aa17edec4ffef9d1369868a8b43019932"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa17edec4ffef9d1369868a8b43019932">vsmc::internal::mkl_uniform_int</a> (::VSLStreamStatePtr stream, int n, unsigned *r)</td></tr>
+<tr class="separator:aa17edec4ffef9d1369868a8b43019932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81014d3c9db50516a9c16f57da358911"><td class="memTemplParams" colspan="2">template&lt;typename RNGType , typename RealType &gt; </td></tr>
+<tr class="memitem:a81014d3c9db50516a9c16f57da358911"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a81014d3c9db50516a9c16f57da358911">vsmc::internal::mkl_uniform_real</a> (::VSLStreamStatePtr stream, int n, RealType *r, RealType a, RealType b)</td></tr>
+<tr class="separator:a81014d3c9db50516a9c16f57da358911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e48393c676d96bc892bba8accbf13b1"><td class="memTemplParams" colspan="2">template&lt;MKL_INT BRNG, int Bits&gt; </td></tr>
 <tr class="memitem:a7e48393c676d96bc892bba8accbf13b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a7e48393c676d96bc892bba8accbf13b1">vsmc::normal_distribution</a> (MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, float *r, float, float)</td></tr>
 <tr class="separator:a7e48393c676d96bc892bba8accbf13b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +334,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        (nskip &gt;= 0), <span class="stringliteral">&quot;**MKLEngine::discard** INPUT IS NEGATIVE&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00054">assert.hpp:54</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00042">42</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00043">43</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +349,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a>((offset &lt; MaxOffset),                                \</div><div class="line">        <span class="stringliteral">&quot;**MKLEngine** EXCESS MAXIMUM NUMBER OF INDEPDENT RNG STREAMS&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a89c0fabaf2a8c3842eabb5f15acc10d5"><div class="ttname"><a href="assert_8hpp.html#a89c0fabaf2a8c3842eabb5f15acc10d5">VSMC_RUNTIME_WARNING</a></div><div class="ttdeci">#define VSMC_RUNTIME_WARNING(cond, msg)                                                                          </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00076">assert.hpp:76</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00038">38</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00039">39</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
 
 </div>
 </div>

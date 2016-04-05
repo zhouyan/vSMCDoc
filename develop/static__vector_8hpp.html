@@ -210,7 +210,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">static ::tbb::combinable&lt;Vector&lt;T&gt;&gt; var##_tls;                            \</div><div class="line">    Vector&lt;T&gt; &amp;var = var##_tls.local();                                       \</div><div class="line">    var.resize(static_cast&lt;std::size_t&gt;(n));</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">static ::tbb::combinable&lt;<a class="code" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">Vector</a>&lt;T,                                        \</div><div class="line">        Allocator&lt;T, (AlignmentTrait&lt;T&gt;::value &lt; 64 ? 64 : AlignmentTrait&lt;    \</div><div class="line">                                                               T&gt;::value)&gt;&gt;&gt;  \</div><div class="line">        var##_tls;                                                            \</div><div class="line">    auto &amp;var = var##_tls.local();                                            \</div><div class="line">    var.resize(static_cast&lt;std::size_t&gt;(n));</div><div class="ttc" id="group___aligned_memory_html_ga0282b67a9ceda34be6139dc7275bf353"><div class="ttname"><a href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">vsmc::Vector</a></div><div class="ttdeci">std::vector&lt; T, Alloc &gt; Vector</div><div class="ttdoc">std::vector with Allocator as default allocator </div><div class="ttdef"><b>Definition:</b> <a href="aligned__memory_8hpp_source.html#l00490">aligned_memory.hpp:490</a></div></div>
+</div><!-- fragment -->
 <p>Definition at line <a class="el" href="static__vector_8hpp_source.html#l00047">47</a> of file <a class="el" href="static__vector_8hpp_source.html">static_vector.hpp</a>.</p>
 
 </div>

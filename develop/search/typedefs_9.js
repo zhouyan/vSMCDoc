@@ -3,7 +3,7 @@ var searchData=
   ['rdrand16',['RDRAND16',['../group___r_d_r_a_n_d.html#ga5dfb7ff019469632aff5a70a074d5572',1,'vsmc']]],
   ['rdrand32',['RDRAND32',['../group___r_d_r_a_n_d.html#gab4b423697221847201caadade3bec834',1,'vsmc']]],
   ['rdrand64',['RDRAND64',['../group___r_d_r_a_n_d.html#gad2fa06d4c438905168dc683ce7703f25',1,'vsmc']]],
-  ['reference',['reference',['../classvsmc_1_1_allocator.html#aab93d8640cf645e39d36f0de78c6402a',1,'vsmc::Allocator::reference()'],['../classvsmc_1_1_static_vector_n.html#a9d6c9d83d6c0084f9706fad5ca55c9cd',1,'vsmc::StaticVectorN::reference()']]],
+  ['reference',['reference',['../classvsmc_1_1_allocator.html#a5e61a0848d4731fd6630e44ca893ef43',1,'vsmc::Allocator::reference()'],['../classvsmc_1_1_static_vector_n.html#a9d6c9d83d6c0084f9706fad5ca55c9cd',1,'vsmc::StaticVectorN::reference()']]],
   ['resample_5ftype',['resample_type',['../classvsmc_1_1_sampler.html#af99836aa32e139bcc36543693ec9b1b3',1,'vsmc::Sampler']]],
   ['resamplemultinomial',['ResampleMultinomial',['../group___resample.html#gab71e8ed43458e235201569030bb87b3b',1,'vsmc']]],
   ['resampleresidual',['ResampleResidual',['../group___resample.html#ga343b6d78f9b73053179500a79c67e92f',1,'vsmc']]],

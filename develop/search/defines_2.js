@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vsmc_5falignment_5ftrait',['VSMC_ALIGNMENT_TRAIT',['../aligned__memory_8hpp.html#a5f66360b1f2aba369b2f9dfee89dd20c',1,'aligned_memory.hpp']]],
   ['vsmc_5fbackend_5fbase_5fdestructor_5fprefix',['VSMC_BACKEND_BASE_DESTRUCTOR_PREFIX',['../backend__base_8hpp.html#ac2e8e39dc10895482191e6e756045ebd',1,'backend_base.hpp']]],
   ['vsmc_5fbuffer',['VSMC_BUFFER',['../static__vector_8hpp.html#aea60042ac8af351ee2a328b3c30cfd69',1,'static_vector.hpp']]],
   ['vsmc_5fcblas_5fint',['VSMC_CBLAS_INT',['../cblas_8h.html#a56fbd204d871fb719e5e3d39f2034e6f',1,'cblas.h']]],
@@ -102,5 +101,6 @@ var searchData=
   ['vsmc_5fuse_5fmkl_5fvml',['VSMC_USE_MKL_VML',['../config_8h.html#af50438fe46c15c6c9f846ab0bd925e3e',1,'config.h']]],
   ['vsmc_5fuse_5fmkl_5fvsl',['VSMC_USE_MKL_VSL',['../config_8h.html#ad4cefc6b81fec03ba5c0ca82d2b5b88b',1,'config.h']]],
   ['vsmc_5fuse_5fomp',['VSMC_USE_OMP',['../config_8h.html#add05c0533cf982edd971398cba2feb30',1,'config.h']]],
-  ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8h.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.h']]]
+  ['vsmc_5fuse_5ftbb',['VSMC_USE_TBB',['../config_8h.html#a18257220d2cf5fe493fcfc95379c29d3',1,'config.h']]],
+  ['vsmc_5fuse_5ftbb_5ftls',['VSMC_USE_TBB_TLS',['../config_8h.html#a3922bf31a4836c363fc21b02c6c60cdc',1,'config.h']]]
 ];

@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Important changes</h2>
 <ul>
 <li><code>AlignedAllocator</code> is renamed to <code>Allocator</code>. The old type alias <code>Allocator</code> is removed. The default alignment is defined by <code>AlignmentTrait&lt;T&gt;</code>, which is <code>VSMC_ALIGNMENT</code> for scalar types and <code>max(alignof(T), VSMC_ALIGNMENT_MIN)</code> for others.</li>
-<li><code>Allocator</code> has an additional second template argument, <code>ConstructScalar</code>, which defaults to <code>false</code>. If <code>false</code>, <code>construct</code> will leave scalar types uninitialized instead of zeroing. The default behavior can be changed by macro <code>VSMC_CONSTRUCT_SCALAR</code></li>
+<li>New configuration macro <code>VSMC_CONSTRUCT_SCALAR</code>. If it is zero (the default), then <code>Allocator</code> will not zero initialize scalar values when <code>construct</code> is called without additional arguments.</li>
 <li>The HDFIO module has been rewritten. Now there are only two main functions, <code>hdf5load</code> and <code>hdf5store</code>. The data types are detected based on iterator types.</li>
 </ul>
 <h2>New features</h2>
@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>Sampler</code> gains new methods, <code>accept_size</code>, <code>read_accept_history</code>, <code>read_accept_history_list</code>, and <code>read_accept_history_matrix</code>.</li>
 <li>New functions <code>pack_s</code>, <code>pack_i</code>, <code>pack_m</code>, <code>unpack_s</code>, <code>unpack_i</code>, and <code>unpack_m</code>, for pack and unpack vectors into/from contiguous storage</li>
 <li><code>StateMatrix</code> gain <code>resize(N, dim)</code> method. Resizing a <code>StateMatrix</code> object preserve original values in the following sense. Let N and M be the original and new sizes, let K and L be the original and new dimensions. Then <code>resize(M, L)</code> preserve the min(N, M) by min(K, L) matrix at the upper left corner of the original. The overloading <code>resize(N)</code> assumes the dimension does not change. The method <code>resize_dim</code> also gains this new behavior of preserving values.</li>
-<li><code>StateMatrix</code> can now handle the situation where the length of the input to <code>copy</code>, <code>index</code> is not the same as its own size.</li>
+<li><code>StateMatrix</code> can now handle the situation where the length of the input <code>index</code> to <code>copy</code> is not the same as its own size. The results is a resized matrix.</li>
 <li><code>Particle</code> can now be resized by various methods</li>
 </ul>
 <h2>Changed behaviors</h2>

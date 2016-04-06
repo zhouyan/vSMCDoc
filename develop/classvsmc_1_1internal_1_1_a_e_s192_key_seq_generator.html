@@ -110,13 +110,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1775d1700c3e87f4d82cede11e5de691"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#a1775d1700c3e87f4d82cede11e5de691">key_type</a> = std::array&lt; T, 24/sizeof(T)&gt;</td></tr>
-<tr class="separator:a1775d1700c3e87f4d82cede11e5de691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae493acecbb208e7b75e7c365f5cefc06"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#ae493acecbb208e7b75e7c365f5cefc06">key_type</a> = std::array&lt; T, 192/std::numeric_limits&lt; T &gt;::digits &gt;</td></tr>
+<tr class="separator:ae493acecbb208e7b75e7c365f5cefc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a20dcb66361378c03b4f6d32cee68cf70"><td class="memTemplParams" colspan="2">template&lt;std::size_t Rp1&gt; </td></tr>
-<tr class="memitem:a20dcb66361378c03b4f6d32cee68cf70"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#a20dcb66361378c03b4f6d32cee68cf70">operator()</a> (const <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#a1775d1700c3e87f4d82cede11e5de691">key_type</a> &amp;key, std::array&lt; <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;&gt;, Rp1 &gt; &amp;key_seq)</td></tr>
+<tr class="memitem:a20dcb66361378c03b4f6d32cee68cf70"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#a20dcb66361378c03b4f6d32cee68cf70">operator()</a> (const <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#ae493acecbb208e7b75e7c365f5cefc06">key_type</a> &amp;key, std::array&lt; <a class="el" href="classvsmc_1_1_m128_i.html">M128I</a>&lt;&gt;, Rp1 &gt; &amp;key_seq)</td></tr>
 <tr class="separator:a20dcb66361378c03b4f6d32cee68cf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -126,14 +126,14 @@ class vsmc::internal::AES192KeySeqGenerator&lt; T &gt;</h3>
 
 <p>Definition at line <a class="el" href="aes_8hpp_source.html#l00418">418</a> of file <a class="el" href="aes_8hpp_source.html">aes.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a1775d1700c3e87f4d82cede11e5de691"></a>
+<a class="anchor" id="ae493acecbb208e7b75e7c365f5cefc06"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html">vsmc::internal::AES192KeySeqGenerator</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#a1775d1700c3e87f4d82cede11e5de691">key_type</a> =  std::array&lt;T, 24 / sizeof(T)&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html">vsmc::internal::AES192KeySeqGenerator</a>&lt; T &gt;::<a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#ae493acecbb208e7b75e7c365f5cefc06">key_type</a> =  std::array&lt;T, 192 / std::numeric_limits&lt;T&gt;::digits&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,7 +157,7 @@ template&lt;std::size_t Rp1&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html">vsmc::internal::AES192KeySeqGenerator</a>&lt; T &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#a1775d1700c3e87f4d82cede11e5de691">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html#ae493acecbb208e7b75e7c365f5cefc06">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>

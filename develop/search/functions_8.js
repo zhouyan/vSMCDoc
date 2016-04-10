@@ -31,6 +31,5 @@ var searchData=
   ['is_5fzero',['is_zero',['../namespacevsmc_1_1internal.html#acbccd70a644aa7d244bf7ab3f78b8905',1,'vsmc::internal']]],
   ['iter_5fnum',['iter_num',['../classvsmc_1_1_sampler.html#a31c2aa18b8a059c59e6296c4957961e3',1,'vsmc::Sampler']]],
   ['iter_5fsize',['iter_size',['../classvsmc_1_1_monitor.html#ade837871c7e9bdd94e039deaab60f9b9',1,'vsmc::Monitor::iter_size()'],['../classvsmc_1_1_sampler.html#a1f9924e1f260a7f06dd7719c1e669185',1,'vsmc::Sampler::iter_size()'],['../classvsmc_1_1_resample_index.html#ae3cc23f9a28a9284eee5083c3ceccbc6',1,'vsmc::ResampleIndex::iter_size()']]],
-  ['iterate',['iterate',['../classvsmc_1_1_sampler.html#a08a826dd4be3c3479bfad10ebefb71e6',1,'vsmc::Sampler']]],
-  ['itos',['itos',['../namespacevsmc_1_1internal.html#aa29c5a98ac7e0052cfd28a3d349cddaf',1,'vsmc::internal::itos(UIntType i, std::true_type)'],['../namespacevsmc_1_1internal.html#a17015b2d441ccfc48ada4071bd253a05',1,'vsmc::internal::itos(IntType i, std::false_type)'],['../namespacevsmc_1_1internal.html#a5be2d2959999690d232bed16e2c771a4',1,'vsmc::internal::itos(IntType i)']]]
+  ['iterate',['iterate',['../classvsmc_1_1_sampler.html#a08a826dd4be3c3479bfad10ebefb71e6',1,'vsmc::Sampler']]]
 ];

@@ -99,14 +99,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">philox.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="counter_8hpp_source.html">vsmc/rng/counter.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="philox_8h_source.html">vsmc/rngc/philox.h</a>&gt;</code><br />
 </div>
 <p><a href="philox_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,35 +118,43 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_bump_key_3_01_t_00_014_00_01_n_00_01true_01_4.html">vsmc::internal::PhiloxBumpKey&lt; T, 4, N, true &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_hi_lo.html">vsmc::internal::PhiloxHiLo&lt; T, size_t, size_t, int &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_hi_lo_3_01_t_00_01_k_00_01_i_00_0132_01_4.html">vsmc::internal::PhiloxHiLo&lt; T, K, I, 32 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_hi_lo_3_01_t_00_01_k_00_01_i_00_0164_01_4.html">vsmc::internal::PhiloxHiLo&lt; T, K, I, 64 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_init_par.html">vsmc::internal::PhiloxInitPar&lt; T, K &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round.html">vsmc::internal::PhiloxRound&lt; T, K, N, bool &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_3_01_t_00_012_00_01_n_00_01true_01_4.html">vsmc::internal::PhiloxRound&lt; T, 2, N, true &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_3_01_t_00_014_00_01_n_00_01true_01_4.html">vsmc::internal::PhiloxRound&lt; T, 4, N, true &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant.html">vsmc::internal::PhiloxRoundConstant&lt; typename, size_t, size_t &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant.html">vsmc::internal::PhiloxRoundConstant&lt; T, size_t, size_t, int &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01std_1_1uint32__t_00_012_00_010_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; std::uint32_t, 2, 0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01_t_00_012_00_010_00_0132_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; T, 2, 0, 32 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01std_1_1uint32__t_00_014_00_010_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; std::uint32_t, 4, 0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01_t_00_012_00_010_00_0164_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; T, 2, 0, 64 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01std_1_1uint32__t_00_014_00_011_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; std::uint32_t, 4, 1 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01_t_00_014_00_010_00_0132_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; T, 4, 0, 32 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01std_1_1uint64__t_00_012_00_010_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; std::uint64_t, 2, 0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01_t_00_014_00_010_00_0164_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; T, 4, 0, 64 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01std_1_1uint64__t_00_014_00_010_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; std::uint64_t, 4, 0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01_t_00_014_00_011_00_0132_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; T, 4, 1, 32 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01std_1_1uint64__t_00_014_00_011_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; std::uint64_t, 4, 1 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_round_constant_3_01_t_00_014_00_011_00_0164_01_4.html">vsmc::internal::PhiloxRoundConstant&lt; T, 4, 1, 64 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant.html">vsmc::internal::PhiloxWeylConstant&lt; typename, size_t &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant.html">vsmc::internal::PhiloxWeylConstant&lt; T, size_t, int &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01std_1_1uint32__t_00_010_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; std::uint32_t, 0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01_t_00_010_00_0132_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; T, 0, 32 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01std_1_1uint32__t_00_011_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; std::uint32_t, 1 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01_t_00_010_00_0164_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; T, 0, 64 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01std_1_1uint64__t_00_010_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; std::uint64_t, 0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01_t_00_011_00_0132_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; T, 1, 32 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01std_1_1uint64__t_00_011_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; std::uint64_t, 1 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_philox_weyl_constant_3_01_t_00_011_00_0164_01_4.html">vsmc::internal::PhiloxWeylConstant&lt; T, 1, 64 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_generator.html">vsmc::PhiloxGenerator&lt; ResultType, K, Rounds &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG generator.  <a href="classvsmc_1_1_philox_generator.html#details">More...</a><br /></td></tr>
@@ -161,10 +169,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3214ab765010b1d45ff2bf99677ae268"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a3214ab765010b1d45ff2bf99677ae268">VSMC_DEFINE_RNG_PHILOX_ROUND_CONSTANT</a>(T,  K,  I,  val)                                  </td></tr>
-<tr class="separator:a3214ab765010b1d45ff2bf99677ae268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a151fc33f3cd415ef9fd9c9ee9c560a9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a151fc33f3cd415ef9fd9c9ee9c560a9d">VSMC_DEFINE_RNG_PHILOX_WELY_CONSTANT</a>(T,  I,  val)                                          </td></tr>
-<tr class="separator:a151fc33f3cd415ef9fd9c9ee9c560a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fc1c8d85b15318f9f3d6170311c104"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a81fc1c8d85b15318f9f3d6170311c104">VSMC_DEFINE_RNG_PHILOX_ROUND_CONSTANT</a>(W,  K,  I,  val)                                  </td></tr>
+<tr class="separator:a81fc1c8d85b15318f9f3d6170311c104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f2a10620649a42a0bf6e172dea2ea9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="philox_8hpp.html#a85f2a10620649a42a0bf6e172dea2ea9">VSMC_DEFINE_RNG_PHILOX_WEYL_CONSTANT</a>(W,  K,  val)                                          </td></tr>
+<tr class="separator:a85f2a10620649a42a0bf6e172dea2ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3fd18e09fa563ebb7db4935844f27d01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga3fd18e09fa563ebb7db4935844f27d01">VSMC_RNG_PHILOX_ROUNDS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="memdesc:ga3fd18e09fa563ebb7db4935844f27d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">PhiloxGenerator default rounds.  <a href="group___config.html#ga3fd18e09fa563ebb7db4935844f27d01">More...</a><br /></td></tr>
 <tr class="separator:ga3fd18e09fa563ebb7db4935844f27d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,18 +204,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gad947049903ccd4d5c34cc064a5372585"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___philox.html#gad947049903ccd4d5c34cc064a5372585">vsmc::PhiloxEngine</a> = CounterEngine&lt; PhiloxGenerator&lt; ResultType, K, Rounds &gt;&gt;</td></tr>
 <tr class="memdesc:gad947049903ccd4d5c34cc064a5372585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG engine.  <a href="group___philox.html#gad947049903ccd4d5c34cc064a5372585">More...</a><br /></td></tr>
 <tr class="separator:gad947049903ccd4d5c34cc064a5372585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t I&gt; </td></tr>
-<tr class="memitem:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a027727fd39d6b7111f5dd584d1bb32e5">vsmc::internal::philox_hilo</a> (<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> b, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &amp;hi, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &amp;lo)</td></tr>
-<tr class="separator:a027727fd39d6b7111f5dd584d1bb32e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756925bc67d36d416a9ef5ab87ece09f"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, std::size_t I&gt; </td></tr>
-<tr class="memitem:a756925bc67d36d416a9ef5ab87ece09f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a756925bc67d36d416a9ef5ab87ece09f">vsmc::internal::philox_hilo</a> (<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> b, <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &amp;hi, <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &amp;lo)</td></tr>
-<tr class="separator:a756925bc67d36d416a9ef5ab87ece09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a3214ab765010b1d45ff2bf99677ae268"></a>
+<a class="anchor" id="a81fc1c8d85b15318f9f3d6170311c104"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -215,7 +214,7 @@ Functions</h2></td></tr>
           <td class="memname">#define VSMC_DEFINE_RNG_PHILOX_ROUND_CONSTANT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">T, </td>
+          <td class="paramname">W, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -242,26 +241,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div><div class="line">    class PhiloxRoundConstant&lt;T, K, I&gt;                                        \</div><div class="line">        : <span class="keyword">public</span> std::integral_constant&lt;T, val&gt;                               \</div><div class="line">    {                                                                         \</div><div class="line">    };</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00048">48</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                     \</div><div class="line">    class PhiloxRoundConstant&lt;T, K, I, W&gt;                                     \</div><div class="line">        : <span class="keyword">public</span> std::integral_constant&lt;T, UINT##W##_C(val)&gt;                  \</div><div class="line">    {                                                                         \</div><div class="line">    };</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00050">50</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a151fc33f3cd415ef9fd9c9ee9c560a9d"></a>
+<a class="anchor" id="a85f2a10620649a42a0bf6e172dea2ea9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_DEFINE_RNG_PHILOX_WELY_CONSTANT</td>
+          <td class="memname">#define VSMC_DEFINE_RNG_PHILOX_WEYL_CONSTANT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">T, </td>
+          <td class="paramname">W, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">I, </td>
+          <td class="paramname">K, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -276,8 +275,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                               \</div><div class="line">    class PhiloxWeylConstant&lt;T, I&gt; : <span class="keyword">public</span> std::integral_constant&lt;T, val&gt;    \</div><div class="line">    {                                                                         \</div><div class="line">    };</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00042">42</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                     \</div><div class="line">    class PhiloxWeylConstant&lt;T, K, W&gt;                                         \</div><div class="line">        : <span class="keyword">public</span> std::integral_constant&lt;T, UINT##W##_C(val)&gt;                  \</div><div class="line">    {                                                                         \</div><div class="line">    };</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00043">43</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>

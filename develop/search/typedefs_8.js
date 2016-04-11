@@ -1,12 +1,20 @@
 var searchData=
 [
   ['pfn_5fnotify_5ftype',['pfn_notify_type',['../classvsmc_1_1_c_l_context.html#a65d9835289fe7244d94a4e571da8afee',1,'vsmc::CLContext::pfn_notify_type()'],['../classvsmc_1_1_c_l_program.html#af9abe4253b0edfdecb9a82bc472fdbab',1,'vsmc::CLProgram::pfn_notify_type()']]],
-  ['philox',['Philox',['../group___philox.html#gacf3c66908752c71877c9eff7a5a0ed36',1,'vsmc']]],
-  ['philox2x32',['Philox2x32',['../group___philox.html#gadcebe4d07e9d1f54299545e7b70953c4',1,'vsmc']]],
-  ['philox2x64',['Philox2x64',['../group___philox.html#gaa0d850df625976080945bdf6b3dbd261',1,'vsmc']]],
-  ['philox4x32',['Philox4x32',['../group___philox.html#ga2e390c7d3bc81b7e9e3e64d6f272099a',1,'vsmc']]],
-  ['philox4x64',['Philox4x64',['../group___philox.html#ga1f9d3376d26aa7fab9409458f4855c54',1,'vsmc']]],
-  ['philox_5f64',['Philox_64',['../group___philox.html#gaa5587300a073f77ff8575e766df1771c',1,'vsmc']]],
-  ['philoxengine',['PhiloxEngine',['../group___philox.html#gad947049903ccd4d5c34cc064a5372585',1,'vsmc']]],
+  ['philox',['Philox',['../group___philox.html#ga64592b12be048284207e16d73d287c19',1,'vsmc']]],
+  ['philox2x32',['Philox2x32',['../group___philox.html#gaa6a212d5c81d0e9731b158912dfc0ec7',1,'vsmc']]],
+  ['philox2x32_5f64',['Philox2x32_64',['../group___philox.html#ga40d3038e4263760b9671aaa1bcbd286a',1,'vsmc']]],
+  ['philox2x32engine',['Philox2x32Engine',['../group___philox.html#gaed2a001fc18aa8e9e2faa3e13c76d855',1,'vsmc']]],
+  ['philox2x64',['Philox2x64',['../group___philox.html#ga2549c05e225c37159ec98b6a46c85e76',1,'vsmc']]],
+  ['philox2x64_5f64',['Philox2x64_64',['../group___philox.html#gac9ae6ae56dd32b2ce3bb3369d9bcdd4b',1,'vsmc']]],
+  ['philox2x64engine',['Philox2x64Engine',['../group___philox.html#gaa9c578d70716dc54463ab554fd1d5502',1,'vsmc']]],
+  ['philox4x32',['Philox4x32',['../group___philox.html#ga751614ff5ed3ec08c750197f7fa4f5a4',1,'vsmc']]],
+  ['philox4x32_5f64',['Philox4x32_64',['../group___philox.html#gad54219cf2c01c54bc636439c73a14abd',1,'vsmc']]],
+  ['philox4x32engine',['Philox4x32Engine',['../group___philox.html#gafb9514c8ea0af2d471d2d918f173d464',1,'vsmc']]],
+  ['philox4x64',['Philox4x64',['../group___philox.html#ga7afc4fa462c5556e8fda6c306f707f48',1,'vsmc']]],
+  ['philox4x64_5f64',['Philox4x64_64',['../group___philox.html#gabe93c5b40d918710170b9a9607c76fc7',1,'vsmc']]],
+  ['philox4x64engine',['Philox4x64Engine',['../group___philox.html#ga1d786ee8358dfdc5af4e06bf1592da5d',1,'vsmc']]],
+  ['philox_5f64',['Philox_64',['../group___philox.html#ga2d22af110e76cbf25f01563283097a95',1,'vsmc']]],
+  ['philoxengine',['PhiloxEngine',['../group___philox.html#gaa63a8f417cb340092553aef73bee120e',1,'vsmc']]],
   ['pointer',['pointer',['../classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968',1,'vsmc::Allocator::pointer()'],['../classvsmc_1_1_c_l_base.html#af2bf2acba931a83ca250577e9e2e289c',1,'vsmc::CLBase::pointer()'],['../classvsmc_1_1_static_vector_n.html#a4ce08dab4156531e453d224d0b4ce83d',1,'vsmc::StaticVectorN::pointer()']]]
 ];

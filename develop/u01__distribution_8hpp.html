@@ -124,9 +124,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_c_o_distribution_1_1param__type.html">vsmc::U01CODistribution&lt; RealType &gt;::param_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_distribution.html">vsmc::U01Distribution&lt; RealType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution.  <a href="classvsmc_1_1_u01_distribution.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_distribution_1_1param__type.html">vsmc::U01Distribution&lt; RealType &gt;::param_type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution on [0, 1)  <a href="classvsmc_1_1_u01_distribution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_o_c_distribution.html">vsmc::U01OCDistribution&lt; RealType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard uniform distribution on (0, 1].  <a href="classvsmc_1_1_u01_o_c_distribution.html#details">More...</a><br /></td></tr>
@@ -148,10 +146,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab072a1ed22cc4a6c01ff2f46b39ac869"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="u01__distribution_8hpp.html#ab072a1ed22cc4a6c01ff2f46b39ac869">VSMC_DEFINE_U01_DISTRIBUTION</a>(Name,  name)                                                        </td></tr>
-<tr class="separator:ab072a1ed22cc4a6c01ff2f46b39ac869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2abe1ce168d8132e553ac9dac979467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="u01__distribution_8hpp.html#aa2abe1ce168d8132e553ac9dac979467">VSMC_DEFINE_U01_DISTRIBUTION_IMPL</a>(name)                                                          </td></tr>
-<tr class="separator:aa2abe1ce168d8132e553ac9dac979467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020a804068fcb95e0c51c48277029b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="u01__distribution_8hpp.html#a020a804068fcb95e0c51c48277029b39">VSMC_DEFINE_U01LR_DISTRIBUTION</a>(Name,  name)                                                    </td></tr>
+<tr class="separator:a020a804068fcb95e0c51c48277029b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab101832ee240ee9953ca0cb6600201cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="u01__distribution_8hpp.html#ab101832ee240ee9953ca0cb6600201cd">VSMC_DEFINE_U01LR_DISTRIBUTION_IMPL</a>(name)                                                      </td></tr>
+<tr class="separator:ab101832ee240ee9953ca0cb6600201cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18bdbe7f9560480b1c542a3ad62306d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga18bdbe7f9560480b1c542a3ad62306d2">VSMC_U01_FIXED_POINT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga18bdbe7f9560480b1c542a3ad62306d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default U01 distribution using fixed point conversion.  <a href="group___config.html#ga18bdbe7f9560480b1c542a3ad62306d2">More...</a><br /></td></tr>
+<tr class="separator:ga18bdbe7f9560480b1c542a3ad62306d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -228,12 +229,12 @@ Functions</h2></td></tr>
 <tr class="separator:ae9009d5efe984b3db7fd4553e52c6a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab072a1ed22cc4a6c01ff2f46b39ac869"></a>
+<a class="anchor" id="a020a804068fcb95e0c51c48277029b39"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_DEFINE_U01_DISTRIBUTION</td>
+          <td class="memname">#define VSMC_DEFINE_U01LR_DISTRIBUTION</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">Name, </td>
@@ -252,16 +253,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> RealType&gt;                                              \</div><div class="line">    class Name##Distribution                                                  \</div><div class="line">    {                                                                         \</div><div class="line">        VSMC_DEFINE_RNG_DISTRIBUTION_0(                                       \</div><div class="line">            Name, name, RealType, floating_point, FLOATING_POINT)             \</div><div class="line">                                                                              \</div><div class="line">        public:                                                               \</div><div class="line">        result_type min()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 0; }                                 \</div><div class="line">                                                                              \</div><div class="line">        result_type max()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 1; }                                 \</div><div class="line">                                                                              \</div><div class="line">        void reset() {}                                                       \</div><div class="line">                                                                              \</div><div class="line">        private:                                                              \</div><div class="line">        template &lt;typename RNGType&gt;                                           \</div><div class="line">        result_type generate(RNGType &amp;rng, <span class="keyword">const</span> param_type &amp;)                \</div><div class="line">        {                                                                     \</div><div class="line">            return name&lt;internal::U01UIntType&lt;RNGType&gt;, result_type&gt;(         \</div><div class="line">                UniformBits&lt;internal::U01UIntType&lt;RNGType&gt;&gt;::eval(rng));      \</div><div class="line">        }                                                                     \</div><div class="line">    };</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="u01__distribution_8hpp_source.html#l00039">39</a> of file <a class="el" href="u01__distribution_8hpp_source.html">u01_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__distribution_8hpp_source.html#l00045">45</a> of file <a class="el" href="u01__distribution_8hpp_source.html">u01_distribution.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa2abe1ce168d8132e553ac9dac979467"></a>
+<a class="anchor" id="ab101832ee240ee9953ca0cb6600201cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VSMC_DEFINE_U01_DISTRIBUTION_IMPL</td>
+          <td class="memname">#define VSMC_DEFINE_U01LR_DISTRIBUTION_IMPL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
@@ -270,7 +271,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> K, <span class="keyword">typename</span> RealType, <span class="keyword">typename</span> RNGType&gt;             \</div><div class="line">    inline <span class="keywordtype">void</span> name##_distribution_impl(                                     \</div><div class="line">        RNGType &amp;rng, std::size_t n, RealType *r)                             \</div><div class="line">    {                                                                         \</div><div class="line">        using UIntType = U01UIntType&lt;RNGType&gt;;                                \</div><div class="line">                                                                              \</div><div class="line">        Array&lt;UIntType, K&gt; s;                                                 \</div><div class="line">        uniform_bits_distribution(rng, n, s.data());                          \</div><div class="line">        name&lt;UIntType, RealType&gt;(n, s.data(), r);                             \</div><div class="line">    }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="u01__distribution_8hpp_source.html#l00062">62</a> of file <a class="el" href="u01__distribution_8hpp_source.html">u01_distribution.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__distribution_8hpp_source.html#l00068">68</a> of file <a class="el" href="u01__distribution_8hpp_source.html">u01_distribution.hpp</a>.</p>
 
 </div>
 </div>

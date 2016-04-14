@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator&lt; ID, ResultType, K &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed generator.  <a href="classvsmc_1_1_seed_generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,9 +124,9 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a534a455b9e015df9075ead6d3bec539d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seed_8hpp.html#a534a455b9e015df9075ead6d3bec539d">VSMC_RUNTIME_ASSERT_RNG_SEED_GENERATOR_MODULO</a>(div,  rem)                          </td></tr>
 <tr class="separator:a534a455b9e015df9075ead6d3bec539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0b1ab6dd19a294914d49cab76e8b75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seed_8hpp.html#a4a0b1ab6dd19a294914d49cab76e8b75">VSMC_RUNTIME_ASSERT_RNG_SEED_MAX</a>(seed_max)                                                    </td></tr>
-<tr class="separator:a4a0b1ab6dd19a294914d49cab76e8b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga098987648d711d24cd464a60c5fd0e6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga098987648d711d24cd464a60c5fd0e6f">VSMC_SEED_RESULT_TYPE</a>&#160;&#160;&#160;<a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a></td></tr>
+<tr class="memitem:adc6cb8160a489c102c715fd4e03af2e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="seed_8hpp.html#adc6cb8160a489c102c715fd4e03af2e2">VSMC_RUNTIME_ASSERT_RNG_SEED_MAX</a>(max)                                                              </td></tr>
+<tr class="separator:adc6cb8160a489c102c715fd4e03af2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga098987648d711d24cd464a60c5fd0e6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga098987648d711d24cd464a60c5fd0e6f">VSMC_SEED_RESULT_TYPE</a>&#160;&#160;&#160;unsigned</td></tr>
 <tr class="memdesc:ga098987648d711d24cd464a60c5fd0e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default result type of Seed.  <a href="group___config.html#ga098987648d711d24cd464a60c5fd0e6f">More...</a><br /></td></tr>
 <tr class="separator:ga098987648d711d24cd464a60c5fd0e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -167,7 +167,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a0b1ab6dd19a294914d49cab76e8b75"></a>
+<a class="anchor" id="adc6cb8160a489c102c715fd4e03af2e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -175,12 +175,12 @@ Typedefs</h2></td></tr>
           <td class="memname">#define VSMC_RUNTIME_ASSERT_RNG_SEED_MAX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">seed_max</td><td>)</td>
+          <td class="paramname">max</td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((seed_max &gt; 1),                                       \</div><div class="line">        <span class="stringliteral">&quot;**SeedGenerator::modulo** &quot;</span>                                          \</div><div class="line">        <span class="stringliteral">&quot;THE MAXIMUM OF THE INTERNAL SEED IS NO LARGER THAN 1&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00054">assert.hpp:54</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((max &gt; 1),                                            \</div><div class="line">        <span class="stringliteral">&quot;**SeedGenerator::modulo** &quot;</span>                                          \</div><div class="line">        <span class="stringliteral">&quot;THE MAXIMUM OF THE INTERNAL SEED IS NO LARGER THAN 1&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00054">assert.hpp:54</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="seed_8hpp_source.html#l00043">43</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::AESNIGenerator&lt; ResultType, KeySeqType, Rounds, Blocks &gt; Class Template Reference</title>
+<title>vSMC: vsmc::AESNIGenerator&lt; KeySeqType, Rounds, Blocks &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,9 +101,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classvsmc_1_1_a_e_s_n_i_generator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::AESNIGenerator&lt; ResultType, KeySeqType, Rounds, Blocks &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a> &raquo; <a class="el" href="group___a_e_s_n_i_r_n_g.html">AES-NI</a></div></div>  </div>
+<div class="title">vsmc::AESNIGenerator&lt; KeySeqType, Rounds, Blocks &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a> &raquo; <a class="el" href="group___a_e_s_n_i_r_n_g.html">AES-NI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -114,109 +115,102 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac40a44ef98df61aac8e6d58ce85138a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ac40a44ef98df61aac8e6d58ce85138a3">ctr_type</a> = std::array&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 2 &gt;</td></tr>
-<tr class="separator:ac40a44ef98df61aac8e6d58ce85138a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405a08a9b78d3bb74acebf0722997c32"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> = typename KeySeqType::key_type</td></tr>
-<tr class="separator:a405a08a9b78d3bb74acebf0722997c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb685282cddcc32c008ec438d0028da6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#acb685282cddcc32c008ec438d0028da6">result_type</a> = ResultType</td></tr>
-<tr class="separator:acb685282cddcc32c008ec438d0028da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20a39178b006a55ba49aca3ca01808a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> = std::array&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 2 &gt;</td></tr>
+<tr class="separator:af20a39178b006a55ba49aca3ca01808a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe5a1312caae83e94df29a7514a0c1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a0fe5a1312caae83e94df29a7514a0c1f">key_type</a> = typename KeySeqType::key_type</td></tr>
+<tr class="separator:a0fe5a1312caae83e94df29a7514a0c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4bf8f70023289a0d2d41f6fbe833e65e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a4bf8f70023289a0d2d41f6fbe833e65e">operator()</a> (<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ac40a44ef98df61aac8e6d58ce85138a3">ctr_type</a> &amp;ctr, const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> &amp;key, std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a6f71973c9c2d9219b937115875d7c2f2">size</a>()&gt; &amp;buffer) const </td></tr>
-<tr class="separator:a4bf8f70023289a0d2d41f6fbe833e65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3f9b5151341708142afcf78532a151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a8f3f9b5151341708142afcf78532a151">operator()</a> (<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ac40a44ef98df61aac8e6d58ce85138a3">ctr_type</a> &amp;ctr, const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> &amp;key, std::size_t n, std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a6f71973c9c2d9219b937115875d7c2f2">size</a>()&gt; *buffer) const </td></tr>
-<tr class="separator:a8f3f9b5151341708142afcf78532a151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9fec91969a7c66a0c8893c688da2889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ae9fec91969a7c66a0c8893c688da2889">reset</a> (const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> &amp;key)</td></tr>
-<tr class="separator:ae9fec91969a7c66a0c8893c688da2889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acded4c1548bdb5ac88756df6f2b3b30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#acded4c1548bdb5ac88756df6f2b3b30e">enc</a> (const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;ctr, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;buffer) const </td></tr>
+<tr class="separator:acded4c1548bdb5ac88756df6f2b3b30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a79525114eb716fc4dd31cc1e0bb59"><td class="memTemplParams" colspan="2">template&lt;typename ResultType &gt; </td></tr>
+<tr class="memitem:a13a79525114eb716fc4dd31cc1e0bb59"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a13a79525114eb716fc4dd31cc1e0bb59">operator()</a> (<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;ctr, std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#aa4e4b71bc5bcbbac7d190b53133df9e3">size</a>()/sizeof(ResultType)&gt; &amp;buffer) const </td></tr>
+<tr class="separator:a13a79525114eb716fc4dd31cc1e0bb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b22fdb3f1b954cd049005ee5cb51e2d"><td class="memTemplParams" colspan="2">template&lt;typename ResultType &gt; </td></tr>
+<tr class="memitem:a8b22fdb3f1b954cd049005ee5cb51e2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a8b22fdb3f1b954cd049005ee5cb51e2d">operator()</a> (<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;ctr, std::size_t n, std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#aa4e4b71bc5bcbbac7d190b53133df9e3">size</a>()/sizeof(ResultType)&gt; *buffer) const </td></tr>
+<tr class="separator:a8b22fdb3f1b954cd049005ee5cb51e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9036abb303683e5d142c72c0e6fa07d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ab9036abb303683e5d142c72c0e6fa07d">reset</a> (const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a0fe5a1312caae83e94df29a7514a0c1f">key_type</a> &amp;key)</td></tr>
+<tr class="separator:ab9036abb303683e5d142c72c0e6fa07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f71973c9c2d9219b937115875d7c2f2"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a6f71973c9c2d9219b937115875d7c2f2">size</a> ()</td></tr>
-<tr class="separator:a6f71973c9c2d9219b937115875d7c2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e4b71bc5bcbbac7d190b53133df9e3"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#aa4e4b71bc5bcbbac7d190b53133df9e3">size</a> ()</td></tr>
+<tr class="separator:aa4e4b71bc5bcbbac7d190b53133df9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a98807dcd4b3884f4cccd09edc974acce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a98807dcd4b3884f4cccd09edc974acce">operator!=</a> (const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;gen1, const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;gen2)</td></tr>
+<tr class="separator:a98807dcd4b3884f4cccd09edc974acce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c1b5497a44f1352b4eb25747f6e9d8"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:a10c1b5497a44f1352b4eb25747f6e9d8"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a10c1b5497a44f1352b4eb25747f6e9d8">operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;gen)</td></tr>
+<tr class="separator:a10c1b5497a44f1352b4eb25747f6e9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a56630a4aa3d39c3e88e09378b5f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af5a56630a4aa3d39c3e88e09378b5f30">operator==</a> (const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;gen1, const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;gen2)</td></tr>
+<tr class="separator:af5a56630a4aa3d39c3e88e09378b5f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44abed2bf0f0983634ba198ae9bfbb9b"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:a44abed2bf0f0983634ba198ae9bfbb9b"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a44abed2bf0f0983634ba198ae9bfbb9b">operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;gen)</td></tr>
+<tr class="separator:a44abed2bf0f0983634ba198ae9bfbb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ResultType, typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt;<br />
-class vsmc::AESNIGenerator&lt; ResultType, KeySeqType, Rounds, Blocks &gt;</h3>
+<div class="textblock"><h3>template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt;<br />
+class vsmc::AESNIGenerator&lt; KeySeqType, Rounds, Blocks &gt;</h3>
 
 <p>RNG generator using AES-NI instructions. </p>
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00046">46</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00045">45</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ac40a44ef98df61aac8e6d58ce85138a3"></a>
+<a class="anchor" id="af20a39178b006a55ba49aca3ca01808a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ac40a44ef98df61aac8e6d58ce85138a3">ctr_type</a> =  std::array&lt;<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 2&gt;</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> =  std::array&lt;<a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, 2&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00064">64</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00054">54</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a405a08a9b78d3bb74acebf0722997c32"></a>
+<a class="anchor" id="a0fe5a1312caae83e94df29a7514a0c1f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> =  typename KeySeqType::key_type</td>
+          <td class="memname">using <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a0fe5a1312caae83e94df29a7514a0c1f">key_type</a> =  typename KeySeqType::key_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00065">65</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acb685282cddcc32c008ec438d0028da6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::<a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#acb685282cddcc32c008ec438d0028da6">result_type</a> =  ResultType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00063">63</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00055">55</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4bf8f70023289a0d2d41f6fbe833e65e"></a>
+<a class="anchor" id="acded4c1548bdb5ac88756df6f2b3b30e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::enc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ac40a44ef98df61aac8e6d58ce85138a3">ctr_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;&#160;</td>
           <td class="paramname"><em>ctr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a6f71973c9c2d9219b937115875d7c2f2">size</a>()&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -232,30 +226,66 @@ template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std:
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00074">74</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00061">61</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8f3f9b5151341708142afcf78532a151"></a>
+<a class="anchor" id="a13a79525114eb716fc4dd31cc1e0bb59"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
+<div class="memtemplate">
+template&lt;typename ResultType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#ac40a44ef98df61aac8e6d58ce85138a3">ctr_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;&#160;</td>
           <td class="paramname"><em>ctr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramtype">std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#aa4e4b71bc5bcbbac7d190b53133df9e3">size</a>()/sizeof(ResultType)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00077">77</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b22fdb3f1b954cd049005ee5cb51e2d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
+<div class="memtemplate">
+template&lt;typename ResultType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#af20a39178b006a55ba49aca3ca01808a">ctr_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -266,7 +296,7 @@ template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std:
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a6f71973c9c2d9219b937115875d7c2f2">size</a>()&gt; *&#160;</td>
+          <td class="paramtype">std::array&lt; ResultType, <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#aa4e4b71bc5bcbbac7d190b53133df9e3">size</a>()/sizeof(ResultType)&gt; *&#160;</td>
           <td class="paramname"><em>buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -282,23 +312,23 @@ template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std:
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00091">91</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00095">95</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae9fec91969a7c66a0c8893c688da2889"></a>
+<a class="anchor" id="ab9036abb303683e5d142c72c0e6fa07d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::reset </td>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::reset </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a405a08a9b78d3bb74acebf0722997c32">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html#a0fe5a1312caae83e94df29a7514a0c1f">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -310,21 +340,21 @@ template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std:
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00072">72</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00059">59</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6f71973c9c2d9219b937115875d7c2f2"></a>
+<a class="anchor" id="aa4e4b71bc5bcbbac7d190b53133df9e3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std::size_t Blocks&gt; </div>
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr std::size_t <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; ResultType, KeySeqType, Rounds, Blocks &gt;::size </td>
+          <td class="memname">static constexpr std::size_t <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">vsmc::AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -337,7 +367,164 @@ template&lt;typename ResultType , typename KeySeqType , std::size_t Rounds, std:
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00067">67</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00057">57</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a98807dcd4b3884f4cccd09edc974acce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gen1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gen2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00121">121</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10c1b5497a44f1352b4eb25747f6e9d8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_ostream&lt;CharT, Traits&gt;&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00129">129</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5a56630a4aa3d39c3e88e09378b5f30"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gen1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gen2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00114">114</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44abed2bf0f0983634ba198ae9bfbb9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeySeqType, std::size_t Rounds, std::size_t Blocks&gt; </div>
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_istream&lt;CharT, Traits&gt;&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_a_e_s_n_i_generator.html">AESNIGenerator</a>&lt; KeySeqType, Rounds, Blocks &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="aes__ni_8hpp_source.html#l00142">142</a> of file <a class="el" href="aes__ni_8hpp_source.html">aes_ni.hpp</a>.</p>
 
 </div>
 </div>

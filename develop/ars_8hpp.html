@@ -111,11 +111,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ARSEngine key sequence generator.  <a href="classvsmc_1_1_a_r_s_key_seq.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_constants.html">vsmc::ARSConstants</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ARS constants.  <a href="classvsmc_1_1_a_r_s_constants.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_weyl_constant_trait.html">vsmc::ARSWeylConstantTrait&lt; I &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARSEngine Weyl sequence constants.  <a href="classvsmc_1_1_a_r_s_weyl_constant_trait.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_a_r_s_key_seq.html">vsmc::ARSKeySeq&lt; Constants &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ARSEngine key sequence generator.  <a href="classvsmc_1_1_a_r_s_key_seq.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html">vsmc::internal::ARSWeylConstant&lt; size_t &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +148,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">vsmc::ARS_64</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
 <tr class="memdesc:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 64-bit integers output, default blocks and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#gad79b4e4ee8c5e519a46fc2b0df331449">More...</a><br /></td></tr>
 <tr class="separator:gad79b4e4ee8c5e519a46fc2b0df331449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a117050220b7b0a11aef78ae9abebe9"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 8&gt; </td></tr>
-<tr class="memitem:ga9a117050220b7b0a11aef78ae9abebe9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga9a117050220b7b0a11aef78ae9abebe9">vsmc::ARSEngine</a> = AESNIEngine&lt; ResultType, ARSKeySeq, Rounds, Blocks &gt;</td></tr>
-<tr class="memdesc:ga9a117050220b7b0a11aef78ae9abebe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine.  <a href="group___a_e_s_n_i_r_n_g.html#ga9a117050220b7b0a11aef78ae9abebe9">More...</a><br /></td></tr>
-<tr class="separator:ga9a117050220b7b0a11aef78ae9abebe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e4456fb3ed93ad8269de31bed952be1"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , std::size_t Rounds = 5, std::size_t Blocks = 8, typename Constants  = ARSConstants&gt; </td></tr>
+<tr class="memitem:ga6e4456fb3ed93ad8269de31bed952be1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga6e4456fb3ed93ad8269de31bed952be1">vsmc::ARSEngine</a> = AESNIEngine&lt; ResultType, ARSKeySeq&lt; Constants &gt;, Rounds, Blocks &gt;</td></tr>
+<tr class="memdesc:ga6e4456fb3ed93ad8269de31bed952be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine.  <a href="group___a_e_s_n_i_r_n_g.html#ga6e4456fb3ed93ad8269de31bed952be1">More...</a><br /></td></tr>
+<tr class="separator:ga6e4456fb3ed93ad8269de31bed952be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3dbe26f930a3938bc56250648064bb2c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_e_s_n_i_r_n_g.html#ga3dbe26f930a3938bc56250648064bb2c">vsmc::ARSx1</a> = ARSEngine&lt; <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a>, 5, 1 &gt;</td></tr>
 <tr class="memdesc:ga3dbe26f930a3938bc56250648064bb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARS RNG engine with 32-bit integers output, 1 block and default rounds.  <a href="group___a_e_s_n_i_r_n_g.html#ga3dbe26f930a3938bc56250648064bb2c">More...</a><br /></td></tr>
 <tr class="separator:ga3dbe26f930a3938bc56250648064bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>

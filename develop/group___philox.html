@@ -98,7 +98,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_generator.html">vsmc::PhiloxGenerator&lt; ResultType, T, K, Rounds &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_constants.html">vsmc::PhiloxConstants&lt; T, K &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Philox constants.  <a href="classvsmc_1_1_philox_constants.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_philox_generator.html">vsmc::PhiloxGenerator&lt; T, K, Rounds, Constants &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG generator.  <a href="classvsmc_1_1_philox_generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -150,10 +153,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga2d22af110e76cbf25f01563283097a95"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___philox.html#ga2d22af110e76cbf25f01563283097a95">vsmc::Philox_64</a> = Philox4x64Engine&lt; <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a> &gt;</td></tr>
 <tr class="memdesc:ga2d22af110e76cbf25f01563283097a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default 64-bit Philox engine.  <a href="group___philox.html#ga2d22af110e76cbf25f01563283097a95">More...</a><br /></td></tr>
 <tr class="separator:ga2d22af110e76cbf25f01563283097a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa63a8f417cb340092553aef73bee120e"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename T  = ResultType, std::size_t K = 4, std::size_t Rounds = 10&gt; </td></tr>
-<tr class="memitem:gaa63a8f417cb340092553aef73bee120e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___philox.html#gaa63a8f417cb340092553aef73bee120e">vsmc::PhiloxEngine</a> = CounterEngine&lt; PhiloxGenerator&lt; ResultType, T, K, Rounds &gt;&gt;</td></tr>
-<tr class="memdesc:gaa63a8f417cb340092553aef73bee120e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG engine.  <a href="group___philox.html#gaa63a8f417cb340092553aef73bee120e">More...</a><br /></td></tr>
-<tr class="separator:gaa63a8f417cb340092553aef73bee120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d11ab80f17bd05a83087b8628dc84b6"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename T  = ResultType, std::size_t K = 4, std::size_t Rounds = 10, typename Constants  = PhiloxConstants&lt;T, K&gt;&gt; </td></tr>
+<tr class="memitem:ga1d11ab80f17bd05a83087b8628dc84b6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___philox.html#ga1d11ab80f17bd05a83087b8628dc84b6">vsmc::PhiloxEngine</a> = CounterEngine&lt; ResultType, PhiloxGenerator&lt; T, K, Rounds, Constants &gt;&gt;</td></tr>
+<tr class="memdesc:ga1d11ab80f17bd05a83087b8628dc84b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Philox RNG engine.  <a href="group___philox.html#ga1d11ab80f17bd05a83087b8628dc84b6">More...</a><br /></td></tr>
+<tr class="separator:ga1d11ab80f17bd05a83087b8628dc84b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Random number generating using Random123 Philox RNG. </p>
@@ -170,7 +173,7 @@ Typedefs</h2></td></tr>
 
 <p>The default 32-bit Philox engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00425">425</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00577">577</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +189,7 @@ Typedefs</h2></td></tr>
 
 <p>Philox2x32 RNG engine with 32-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00393">393</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00545">545</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -202,7 +205,7 @@ Typedefs</h2></td></tr>
 
 <p>Philox2x32 RNG engine with 64-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00409">409</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00561">561</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +223,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox2x32 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00374">374</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00526">526</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +239,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox2x64 RNG engine with 32-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00401">401</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00553">553</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +255,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox2x64 RNG engine with 64-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00417">417</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00569">569</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +273,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox2x64 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00384">384</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00536">536</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +289,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox4x32 RNG engine with 32-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00397">397</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00549">549</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +305,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox4x32 RNG engine with 64-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00413">413</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00565">565</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +323,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox4x32 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00379">379</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00531">531</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +339,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox4x64 RNG engine with 32-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00405">405</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00557">557</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +355,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox4x64 RNG engine with 64-bit integer output. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00421">421</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00573">573</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -370,7 +373,7 @@ template&lt;typename ResultType &gt; </div>
 
 <p>Philox4x64 RNG engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00389">389</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00541">541</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
@@ -386,25 +389,25 @@ template&lt;typename ResultType &gt; </div>
 
 <p>The default 64-bit Philox engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00429">429</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00581">581</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaa63a8f417cb340092553aef73bee120e"></a>
+<a class="anchor" id="ga1d11ab80f17bd05a83087b8628dc84b6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResultType , typename T  = ResultType, std::size_t K = 4, std::size_t Rounds = 10&gt; </div>
+template&lt;typename ResultType , typename T  = ResultType, std::size_t K = 4, std::size_t Rounds = 10, typename Constants  = PhiloxConstants&lt;T, K&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group___philox.html#gaa63a8f417cb340092553aef73bee120e">vsmc::PhiloxEngine</a> = typedef CounterEngine&lt;PhiloxGenerator&lt;ResultType, T, K, Rounds&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="group___philox.html#ga1d11ab80f17bd05a83087b8628dc84b6">vsmc::PhiloxEngine</a> = typedef CounterEngine&lt;ResultType, PhiloxGenerator&lt;T, K, Rounds, Constants&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Philox RNG engine. </p>
 
-<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00369">369</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
+<p>Definition at line <a class="el" href="philox_8hpp_source.html#l00521">521</a> of file <a class="el" href="philox_8hpp_source.html">philox.hpp</a>.</p>
 
 </div>
 </div>

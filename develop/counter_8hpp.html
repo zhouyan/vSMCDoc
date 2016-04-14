@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_engine.html">vsmc::CounterEngine&lt; Generator &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_engine.html">vsmc::CounterEngine&lt; ResultType, Generator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter based RNG engine.  <a href="classvsmc_1_1_counter_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -138,10 +138,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf859b317611efeb5e0865b76a4a80b14"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaf859b317611efeb5e0865b76a4a80b14">vsmc::increment</a> (std::array&lt; T, K &gt; &amp;ctr, std::array&lt; std::array&lt; T, K &gt;, Blocks &gt; &amp;ctr_block)</td></tr>
 <tr class="memdesc:gaf859b317611efeb5e0865b76a4a80b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment a counter by a given steps, and store each step in an array of counters.  <a href="group___r_n_g.html#gaf859b317611efeb5e0865b76a4a80b14">More...</a><br /></td></tr>
 <tr class="separator:gaf859b317611efeb5e0865b76a4a80b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7bb64b6b8076ac850071e56c5f68727"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
-<tr class="memitem:gab7bb64b6b8076ac850071e56c5f68727"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gab7bb64b6b8076ac850071e56c5f68727">vsmc::increment</a> (std::array&lt; T, K &gt; &amp;ctr, std::size_t n, std::array&lt; T, K &gt; *ctr_block)</td></tr>
-<tr class="memdesc:gab7bb64b6b8076ac850071e56c5f68727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment a counter by given steps, and store each step in an array of counters.  <a href="group___r_n_g.html#gab7bb64b6b8076ac850071e56c5f68727">More...</a><br /></td></tr>
-<tr class="separator:gab7bb64b6b8076ac850071e56c5f68727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a036ec07808552fb7816d295a4c85efd3"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename T , std::size_t K, std::size_t Blocks&gt; </td></tr>
 <tr class="memitem:a036ec07808552fb7816d295a4c85efd3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a036ec07808552fb7816d295a4c85efd3">vsmc::internal::increment_block</a> (std::array&lt; T, K &gt; &amp;, std::array&lt; std::array&lt; T, K &gt;, Blocks &gt; &amp;, std::false_type)</td></tr>
 <tr class="separator:a036ec07808552fb7816d295a4c85efd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,24 +156,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aa7ce698ac39295bf04fab90a0852e5a8"><td class="memTemplParams" colspan="2">template&lt;std::size_t B, typename T , std::size_t K, std::size_t Blocks&gt; </td></tr>
 <tr class="memitem:aa7ce698ac39295bf04fab90a0852e5a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aa7ce698ac39295bf04fab90a0852e5a8">vsmc::internal::increment_block_set</a> (const std::array&lt; T, K &gt; &amp;ctr, std::array&lt; std::array&lt; T, K &gt;, Blocks &gt; &amp;ctr_block, std::true_type)</td></tr>
 <tr class="separator:aa7ce698ac39295bf04fab90a0852e5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1abc1b90c9bfd75968425188324f81c7"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
-<tr class="memitem:a1abc1b90c9bfd75968425188324f81c7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a1abc1b90c9bfd75968425188324f81c7">vsmc::internal::increment_block_set</a> (const std::array&lt; T, K &gt; &amp;ctr, std::size_t n, std::array&lt; T, K &gt; *ctr_block, std::false_type)</td></tr>
-<tr class="separator:a1abc1b90c9bfd75968425188324f81c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c9bffde4932a1ff4d28fc9650091eb6"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
-<tr class="memitem:a9c9bffde4932a1ff4d28fc9650091eb6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9c9bffde4932a1ff4d28fc9650091eb6">vsmc::internal::increment_block_set</a> (const std::array&lt; T, K &gt; &amp;ctr, std::size_t n, std::array&lt; T, K &gt; *ctr_block, std::true_type)</td></tr>
-<tr class="separator:a9c9bffde4932a1ff4d28fc9650091eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6728953e6bf50cf08379b1ca848627fa"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
-<tr class="memitem:a6728953e6bf50cf08379b1ca848627fa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a6728953e6bf50cf08379b1ca848627fa">vsmc::internal::increment_block_set</a> (const std::array&lt; T, K &gt; &amp;ctr, std::size_t n, std::array&lt; T, K &gt; *ctr_block)</td></tr>
-<tr class="separator:a6728953e6bf50cf08379b1ca848627fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8c4de18e542cbafb546ac870d022e0"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename T , std::size_t K&gt; </td></tr>
 <tr class="memitem:a8a8c4de18e542cbafb546ac870d022e0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a8a8c4de18e542cbafb546ac870d022e0">vsmc::internal::increment_single</a> (std::array&lt; T, K &gt; &amp;, std::false_type)</td></tr>
 <tr class="separator:a8a8c4de18e542cbafb546ac870d022e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca6b0410137587c6a0419785f8148d0"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, typename T , std::size_t K&gt; </td></tr>
 <tr class="memitem:a7ca6b0410137587c6a0419785f8148d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7ca6b0410137587c6a0419785f8148d0">vsmc::internal::increment_single</a> (std::array&lt; T, K &gt; &amp;ctr, std::true_type)</td></tr>
 <tr class="separator:a7ca6b0410137587c6a0419785f8148d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8471bc933767de93b07df60c5c095658"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
-<tr class="memitem:a8471bc933767de93b07df60c5c095658"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a8471bc933767de93b07df60c5c095658">vsmc::rng_rand</a> (CounterEngine&lt; Generator &gt; &amp;rng, std::size_t n, typename CounterEngine&lt; Generator &gt;::result_type *r)</td></tr>
-<tr class="separator:a8471bc933767de93b07df60c5c095658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a9002912c725c0184cb0aa9f69c97c"><td class="memTemplParams" colspan="2">template&lt;typename ResultType , typename Generator &gt; </td></tr>
+<tr class="memitem:a40a9002912c725c0184cb0aa9f69c97c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc.html#a40a9002912c725c0184cb0aa9f69c97c">vsmc::rng_rand</a> (CounterEngine&lt; ResultType, Generator &gt; &amp;rng, std::size_t n, ResultType *r)</td></tr>
+<tr class="separator:a40a9002912c725c0184cb0aa9f69c97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -3,7 +3,6 @@ var searchData=
   ['aes128keyseqgenerator',['AES128KeySeqGenerator',['../classvsmc_1_1internal_1_1_a_e_s128_key_seq_generator.html',1,'vsmc::internal']]],
   ['aes192keyseqgenerator',['AES192KeySeqGenerator',['../classvsmc_1_1internal_1_1_a_e_s192_key_seq_generator.html',1,'vsmc::internal']]],
   ['aes256keyseqgenerator',['AES256KeySeqGenerator',['../classvsmc_1_1internal_1_1_a_e_s256_key_seq_generator.html',1,'vsmc::internal']]],
-  ['aeskeyinit',['AESKeyInit',['../classvsmc_1_1internal_1_1_a_e_s_key_init.html',1,'vsmc::internal']]],
   ['aeskeyseq',['AESKeySeq',['../classvsmc_1_1internal_1_1_a_e_s_key_seq.html',1,'vsmc::internal']]],
   ['aesnigenerator',['AESNIGenerator',['../classvsmc_1_1_a_e_s_n_i_generator.html',1,'vsmc']]],
   ['alignedmemorymkl',['AlignedMemoryMKL',['../classvsmc_1_1_aligned_memory_m_k_l.html',1,'vsmc']]],
@@ -21,10 +20,9 @@ var searchData=
   ['allocatoralignment_3c_20allocator_3c_20t_2c_20alignment_2c_20memory_20_3e_20_3e',['AllocatorAlignment&lt; Allocator&lt; T, Alignment, Memory &gt; &gt;',['../classvsmc_1_1internal_1_1_allocator_alignment_3_01_allocator_3_01_t_00_01_alignment_00_01_memory_01_4_01_4.html',1,'vsmc::internal']]],
   ['array',['Array',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['array_3c_20t_2c_20n_2c_20internal_3a_3aallocatoralignment_3c_20alloc_20_3e_3a_3avalue_20_3e',['Array&lt; T, N, internal::AllocatorAlignment&lt; Alloc &gt;::value &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
+  ['arsconstants',['ARSConstants',['../classvsmc_1_1_a_r_s_constants.html',1,'vsmc']]],
   ['arskeyseq',['ARSKeySeq',['../classvsmc_1_1_a_r_s_key_seq.html',1,'vsmc']]],
   ['arsweylconstant',['ARSWeylConstant',['../classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html',1,'vsmc::internal']]],
   ['arsweylconstant_3c_200_20_3e',['ARSWeylConstant&lt; 0 &gt;',['../classvsmc_1_1internal_1_1_a_r_s_weyl_constant_3_010_01_4.html',1,'vsmc::internal']]],
-  ['arsweylconstant_3c_201_20_3e',['ARSWeylConstant&lt; 1 &gt;',['../classvsmc_1_1internal_1_1_a_r_s_weyl_constant_3_011_01_4.html',1,'vsmc::internal']]],
-  ['arsweylconstant_3c_20i_20_3e',['ARSWeylConstant&lt; I &gt;',['../classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html',1,'vsmc::internal']]],
-  ['arsweylconstanttrait',['ARSWeylConstantTrait',['../classvsmc_1_1_a_r_s_weyl_constant_trait.html',1,'vsmc']]]
+  ['arsweylconstant_3c_201_20_3e',['ARSWeylConstant&lt; 1 &gt;',['../classvsmc_1_1internal_1_1_a_r_s_weyl_constant_3_011_01_4.html',1,'vsmc::internal']]]
 ];

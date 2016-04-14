@@ -1,18 +1,5 @@
 var searchData=
 [
-  ['m128',['M128',['../classvsmc_1_1_m128.html',1,'vsmc']]],
-  ['m128d',['M128D',['../classvsmc_1_1_m128_d.html',1,'vsmc']]],
-  ['m128i',['M128I',['../classvsmc_1_1_m128_i.html',1,'vsmc']]],
-  ['m128i_3c_3e',['M128I&lt;&gt;',['../classvsmc_1_1_m128_i.html',1,'vsmc']]],
-  ['m128typetrait',['M128TypeTrait',['../classvsmc_1_1internal_1_1_m128_type_trait.html',1,'vsmc::internal']]],
-  ['m128typetrait_3c_20double_20_3e',['M128TypeTrait&lt; double &gt;',['../classvsmc_1_1internal_1_1_m128_type_trait_3_01double_01_4.html',1,'vsmc::internal']]],
-  ['m128typetrait_3c_20float_20_3e',['M128TypeTrait&lt; float &gt;',['../classvsmc_1_1internal_1_1_m128_type_trait_3_01float_01_4.html',1,'vsmc::internal']]],
-  ['m256',['M256',['../classvsmc_1_1_m256.html',1,'vsmc']]],
-  ['m256d',['M256D',['../classvsmc_1_1_m256_d.html',1,'vsmc']]],
-  ['m256i',['M256I',['../classvsmc_1_1_m256_i.html',1,'vsmc']]],
-  ['m256typetrait',['M256TypeTrait',['../classvsmc_1_1internal_1_1_m256_type_trait.html',1,'vsmc::internal']]],
-  ['m256typetrait_3c_20double_20_3e',['M256TypeTrait&lt; double &gt;',['../classvsmc_1_1internal_1_1_m256_type_trait_3_01double_01_4.html',1,'vsmc::internal']]],
-  ['m256typetrait_3c_20float_20_3e',['M256TypeTrait&lt; float &gt;',['../classvsmc_1_1internal_1_1_m256_type_trait_3_01float_01_4.html',1,'vsmc::internal']]],
   ['mklengine',['MKLEngine',['../classvsmc_1_1_m_k_l_engine.html',1,'vsmc']]],
   ['mklmaxoffset',['MKLMaxOffset',['../classvsmc_1_1internal_1_1_m_k_l_max_offset.html',1,'vsmc::internal']]],
   ['mklmaxoffset_3c_20vsl_5fbrng_5fmt2203_20_3e',['MKLMaxOffset&lt; VSL_BRNG_MT2203 &gt;',['../classvsmc_1_1internal_1_1_m_k_l_max_offset_3_01_v_s_l___b_r_n_g___m_t2203_01_4.html',1,'vsmc::internal']]],

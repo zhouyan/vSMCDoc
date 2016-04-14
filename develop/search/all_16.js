@@ -9,7 +9,7 @@ var searchData=
   ['weibull_5fdistribution_5fimpl',['weibull_distribution_impl',['../namespacevsmc_1_1internal.html#a61c0e5be73a57e11f28afcf6ef7b3a7b',1,'vsmc::internal']]],
   ['weibulldistribution',['WeibullDistribution',['../classvsmc_1_1_weibull_distribution.html#a296c0e2cd4431f6132fcb2d20f1e079d',1,'vsmc::WeibullDistribution::WeibullDistribution(result_type a=1, result_type b=1)'],['../classvsmc_1_1_weibull_distribution.html#a3d503e6eba7bd21d59ed61dcadb41639',1,'vsmc::WeibullDistribution::WeibullDistribution(const param_type &amp;param)']]],
   ['weibulldistribution',['WeibullDistribution',['../classvsmc_1_1_weibull_distribution.html',1,'vsmc']]],
-  ['weight',['Weight',['../classvsmc_1_1_weight.html#a5f605f7c86cf254296a1fd04f5683e54',1,'vsmc::Weight::Weight()'],['../classvsmc_1_1_particle.html#adb63ccc884a58424c7fb44da34411305',1,'vsmc::Particle::weight()'],['../classvsmc_1_1_particle.html#ae459d2cf404c73b93031fccbe9ec0e4f',1,'vsmc::Particle::weight() const ']]],
+  ['weight',['weight',['../classvsmc_1_1_particle.html#adb63ccc884a58424c7fb44da34411305',1,'vsmc::Particle::weight()'],['../classvsmc_1_1_particle.html#ae459d2cf404c73b93031fccbe9ec0e4f',1,'vsmc::Particle::weight() const '],['../classvsmc_1_1_weight.html#a5f605f7c86cf254296a1fd04f5683e54',1,'vsmc::Weight::Weight()']]],
   ['weight',['Weight',['../classvsmc_1_1_weight.html',1,'vsmc']]],
   ['weight_2ehpp',['weight.hpp',['../weight_8hpp.html',1,'']]],
   ['weight_5fess',['weight_ess',['../group___core.html#ga3c25e249c076553de2d0c2e777d184a4',1,'vsmc']]],
@@ -23,8 +23,9 @@ var searchData=
   ['weighttypedispatch_3c_20t_2c_20false_20_3e',['WeightTypeDispatch&lt; T, false &gt;',['../classvsmc_1_1internal_1_1_weight_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::internal']]],
   ['weighttypedispatch_3c_20t_2c_20true_20_3e',['WeightTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1_weight_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],
   ['weighttypetrait',['WeightTypeTrait',['../classvsmc_1_1_weight_type_trait.html',1,'vsmc']]],
-  ['work_5ftype',['work_type',['../classvsmc_1_1_initialize_t_b_b_1_1work__type.html',1,'vsmc::InitializeTBB']]],
+  ['weyl',['weyl',['../classvsmc_1_1_a_r_s_constants.html#a9d1856c89e62f170c1613c8c737b2b0d',1,'vsmc::ARSConstants::weyl()'],['../classvsmc_1_1_philox_constants.html#a183e2433a50d3542443d6997d704726d',1,'vsmc::PhiloxConstants::weyl()']]],
   ['work_5ftype',['work_type',['../classvsmc_1_1_initialize_t_b_b_1_1work__type.html#ad1fbd8a8e4ea4543775e6fa6b438397f',1,'vsmc::InitializeTBB::work_type::work_type(InitializeTBB&lt; T, Derived &gt; *wptr, Particle&lt; T &gt; *pptr)'],['../classvsmc_1_1_initialize_t_b_b_1_1work__type.html#abda4d1811809bd4f8b9825352c379190',1,'vsmc::InitializeTBB::work_type::work_type(const work_type &amp;other,::tbb::split)'],['../classvsmc_1_1_move_t_b_b_1_1work__type.html#a5a173b9159a0398ad0cc7ec4ce74cca7',1,'vsmc::MoveTBB::work_type::work_type(MoveTBB&lt; T, Derived &gt; *wptr, std::size_t iter, Particle&lt; T &gt; *pptr)'],['../classvsmc_1_1_move_t_b_b_1_1work__type.html#a2e3489e038a8ad6f68b4b53941e676bd',1,'vsmc::MoveTBB::work_type::work_type(const work_type &amp;other,::tbb::split)'],['../classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html#a980c2b308f87cee9cec3a21bc6402942',1,'vsmc::MonitorEvalTBB::work_type::work_type()']]],
   ['work_5ftype',['work_type',['../classvsmc_1_1_move_t_b_b_1_1work__type.html',1,'vsmc::MoveTBB']]],
-  ['work_5ftype',['work_type',['../classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html',1,'vsmc::MonitorEvalTBB']]]
+  ['work_5ftype',['work_type',['../classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html',1,'vsmc::MonitorEvalTBB']]],
+  ['work_5ftype',['work_type',['../classvsmc_1_1_initialize_t_b_b_1_1work__type.html',1,'vsmc::InitializeTBB']]]
 ];

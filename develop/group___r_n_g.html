@@ -133,15 +133,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_counter_engine.html">vsmc::CounterEngine&lt; ResultType, Generator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter based RNG engine.  <a href="classvsmc_1_1_counter_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_bits.html">vsmc::RNGBits&lt; RNGType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of RNGMaxBits&lt;RNGType&gt;::value - RNGMinBits&lt;RNGType&gt;::value.  <a href="classvsmc_1_1_r_n_g_bits.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_max_bits.html">vsmc::RNGMaxBits&lt; RNGType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the largest N such that RNGType::max() &gt;= (M &gt;&gt; (W - N)) where M = std::numeric_limits&lt;typename RNGType::result_type&gt;::max() W = std::numeric_limits&lt;typename RNGType::result_type&gt;::digits.  <a href="classvsmc_1_1_r_n_g_max_bits.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_min_bits.html">vsmc::RNGMinBits&lt; RNGType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the smallest N such that <code>(RNGType::min() &gt;&gt; N) == 0</code>  <a href="classvsmc_1_1_r_n_g_min_bits.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_set_scalar.html">vsmc::RNGSetScalar&lt; RNGType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar RNG set.  <a href="classvsmc_1_1_r_n_g_set_scalar.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +141,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_set_vector.html">vsmc::RNGSetVector&lt; RNGType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector RNG set.  <a href="classvsmc_1_1_r_n_g_set_vector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_traits.html">vsmc::RNGTraits&lt; RNGType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traits of RNG engines.  <a href="classvsmc_1_1_r_n_g_traits.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_seed_generator.html">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed generator.  <a href="classvsmc_1_1_seed_generator.html#details">More...</a><br /></td></tr>
@@ -190,6 +184,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gad045a9573a5c1c5a31548e0ae9091c7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gad045a9573a5c1c5a31548e0ae9091c7d">vsmc::rng_rand</a> (RNGType &amp;rng, const DistributionType &amp;distribution, std::size_t n, typename DistributionType::result_type *r)</td></tr>
 <tr class="memdesc:gad045a9573a5c1c5a31548e0ae9091c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate random distribution numbers.  <a href="group___r_n_g.html#gad045a9573a5c1c5a31548e0ae9091c7d">More...</a><br /></td></tr>
 <tr class="separator:gad045a9573a5c1c5a31548e0ae9091c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4ea3c811f22a9e1b421f33b54afa46c"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType , typename Lower , typename Upper &gt; </td></tr>
+<tr class="memitem:gaf4ea3c811f22a9e1b421f33b54afa46c"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaf4ea3c811f22a9e1b421f33b54afa46c">vsmc::u01</a> (UIntType u) noexcept</td></tr>
+<tr class="memdesc:gaf4ea3c811f22a9e1b421f33b54afa46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points within [0, 1].  <a href="group___r_n_g.html#gaf4ea3c811f22a9e1b421f33b54afa46c">More...</a><br /></td></tr>
+<tr class="separator:gaf4ea3c811f22a9e1b421f33b54afa46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf79bc28eb4f140aeccd771a405e06e11"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType , typename Lower , typename Upper &gt; </td></tr>
+<tr class="memitem:gaf79bc28eb4f140aeccd771a405e06e11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaf79bc28eb4f140aeccd771a405e06e11">vsmc::u01</a> (std::size_t n, const UIntType *u, RealType *r) noexcept</td></tr>
+<tr class="memdesc:gaf79bc28eb4f140aeccd771a405e06e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points within [0, 1].  <a href="group___r_n_g.html#gaf79bc28eb4f140aeccd771a405e06e11">More...</a><br /></td></tr>
+<tr class="separator:gaf79bc28eb4f140aeccd771a405e06e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3fad9177402274719a166cf61fdbda06"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType &gt; </td></tr>
 <tr class="memitem:ga3fad9177402274719a166cf61fdbda06"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga3fad9177402274719a166cf61fdbda06">vsmc::u01_cc</a> (UIntType u) noexcept</td></tr>
 <tr class="memdesc:ga3fad9177402274719a166cf61fdbda06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points on [0, 1].  <a href="group___r_n_g.html#ga3fad9177402274719a166cf61fdbda06">More...</a><br /></td></tr>
@@ -206,14 +208,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf2392ac86ba0e4cfe17c3d7d290c2bc6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gaf2392ac86ba0e4cfe17c3d7d290c2bc6">vsmc::u01_co</a> (std::size_t n, const UIntType *u, RealType *r) noexcept</td></tr>
 <tr class="memdesc:gaf2392ac86ba0e4cfe17c3d7d290c2bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points on [0, 1)  <a href="group___r_n_g.html#gaf2392ac86ba0e4cfe17c3d7d290c2bc6">More...</a><br /></td></tr>
 <tr class="separator:gaf2392ac86ba0e4cfe17c3d7d290c2bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19041c96347a480a0d5e9f1b584667df"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType , typename Left , typename Right &gt; </td></tr>
-<tr class="memitem:ga19041c96347a480a0d5e9f1b584667df"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga19041c96347a480a0d5e9f1b584667df">vsmc::u01_lr</a> (UIntType u) noexcept</td></tr>
-<tr class="memdesc:ga19041c96347a480a0d5e9f1b584667df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points within [0, 1].  <a href="group___r_n_g.html#ga19041c96347a480a0d5e9f1b584667df">More...</a><br /></td></tr>
-<tr class="separator:ga19041c96347a480a0d5e9f1b584667df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab01e212dc0122a8be639eb10fd6c8884"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType , typename Left , typename Right &gt; </td></tr>
-<tr class="memitem:gab01e212dc0122a8be639eb10fd6c8884"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#gab01e212dc0122a8be639eb10fd6c8884">vsmc::u01_lr</a> (std::size_t n, const UIntType *u, RealType *r) noexcept</td></tr>
-<tr class="memdesc:gab01e212dc0122a8be639eb10fd6c8884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points within [0, 1].  <a href="group___r_n_g.html#gab01e212dc0122a8be639eb10fd6c8884">More...</a><br /></td></tr>
-<tr class="separator:gab01e212dc0122a8be639eb10fd6c8884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53882fcf79911ee0cfd42002990e8a43"><td class="memTemplParams" colspan="2">template&lt;typename UIntType , typename RealType &gt; </td></tr>
 <tr class="memitem:ga53882fcf79911ee0cfd42002990e8a43"><td class="memTemplItemLeft" align="right" valign="top">RealType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___r_n_g.html#ga53882fcf79911ee0cfd42002990e8a43">vsmc::u01_oc</a> (UIntType u) noexcept</td></tr>
 <tr class="memdesc:ga53882fcf79911ee0cfd42002990e8a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert uniform unsigned integers to floating points on (0, 1].  <a href="group___r_n_g.html#ga53882fcf79911ee0cfd42002990e8a43">More...</a><br /></td></tr>
@@ -443,7 +437,7 @@ template&lt;typename RNGType &gt; </div>
 
 <p>Generate random integers. </p>
 
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00575">575</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00517">517</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
 
 </div>
 </div>
@@ -495,7 +489,84 @@ template&lt;typename RNGType , typename DistributionType &gt; </div>
 
 <p>Generate random distribution numbers. </p>
 
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00585">585</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00527">527</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf4ea3c811f22a9e1b421f33b54afa46c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UIntType , typename RealType , typename Lower , typename Upper &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RealType vsmc::u01 </td>
+          <td>(</td>
+          <td class="paramtype">UIntType&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert uniform unsigned integers to floating points within [0, 1]. </p>
+<p>Let \(W\) be the number of digits of unsigned integer type <code>UIntType</code>. Let \(M\) be the number of significant digits of floating point type <code>RealType</code>. Assuming the input is a uniform random number on the set \(\{0,1,\dots,2^W - 1\), the output is uniform over the interval \([0,1]\) or one of its (half-)open interval variant. The exact output depend on the template parameter <code>Lower</code> and <code>Upper</code>. </p>
+
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00213">213</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf79bc28eb4f140aeccd771a405e06e11"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UIntType , typename RealType , typename Lower , typename Upper &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::u01 </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UIntType *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RealType *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert uniform unsigned integers to floating points within [0, 1]. </p>
+
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00228">228</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -525,7 +596,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00248">248</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00243">243</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -571,7 +642,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00280">280</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00275">275</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +672,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00256">256</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00251">251</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -647,84 +718,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on [0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00288">288</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga19041c96347a480a0d5e9f1b584667df"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UIntType , typename RealType , typename Left , typename Right &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">RealType vsmc::u01_lr </td>
-          <td>(</td>
-          <td class="paramtype">UIntType&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Convert uniform unsigned integers to floating points within [0, 1]. </p>
-<p>Let \(W\) be the number of digits of unsigned integer type <code>UIntType</code>. Let \(M\) be the number of significant digits of floating point type <code>RealType</code>. Assuming the input is a uniform random number on the set \(\{0,1,\dots,2^W - 1\), the output is uniform over the interval \([0,1]\) or one of its (half-)open interval variant. The exact output depend on the template parameter <code>Left</code> and <code>Right</code>. </p>
-
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00218">218</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab01e212dc0122a8be639eb10fd6c8884"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UIntType , typename RealType , typename Left , typename Right &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::u01_lr </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const UIntType *&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RealType *&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Convert uniform unsigned integers to floating points within [0, 1]. </p>
-
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00233">233</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00283">283</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +748,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00264">264</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00259">259</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -800,7 +794,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1]. </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00296">296</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00291">291</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -830,7 +824,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00272">272</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00267">267</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>
@@ -876,7 +870,7 @@ template&lt;typename UIntType , typename RealType &gt; </div>
 
 <p>Convert uniform unsigned integers to floating points on (0, 1) </p>
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00304">304</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00299">299</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
 
 </div>
 </div>

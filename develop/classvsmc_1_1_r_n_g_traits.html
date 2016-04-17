@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::RNGMaxBits&lt; RNGType &gt; Class Template Reference</title>
+<title>vSMC: vsmc::RNGTraits&lt; RNGType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,27 +93,90 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_r_n_g_max_bits.html">RNGMaxBits</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="classvsmc_1_1_r_n_g_traits.html">RNGTraits</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classvsmc_1_1_r_n_g_traits-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::RNGMaxBits&lt; RNGType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a></div></div>  </div>
+<div class="title">vsmc::RNGTraits&lt; RNGType &gt; Class Template Reference<div class="ingroups"><a class="el" href="group___r_n_g.html">Random number generating</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Find the largest N such that RNGType::max() &gt;= (M &gt;&gt; (W - N)) where M = std::numeric_limits&lt;typename RNGType::result_type&gt;::max() W = std::numeric_limits&lt;typename RNGType::result_type&gt;::digits.  
- <a href="classvsmc_1_1_r_n_g_max_bits.html#details">More...</a></p>
+<p>Traits of RNG engines.  
+ <a href="classvsmc_1_1_r_n_g_traits.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="rng_2internal_2common_8hpp_source.html">vsmc/rng/internal/common.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1dc2465f2fcba77eb58a4c4ea1e6835b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_traits.html#a1dc2465f2fcba77eb58a4c4ea1e6835b">bits</a> = <a class="el" href="classvsmc_1_1internal_1_1_log2.html">internal::Log2</a>&lt;result_type, R_&gt;::value</td></tr>
+<tr class="separator:a1dc2465f2fcba77eb58a4c4ea1e6835b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9308149ce304fb832ba0c78f4e2165"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_r_n_g_traits.html#a9d9308149ce304fb832ba0c78f4e2165">is_full_range</a></td></tr>
+<tr class="memdesc:a9d9308149ce304fb832ba0c78f4e2165"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the random integers are uniform on the set \(\{0,\dots,2^W - 1\}\) for some \(W &gt; 0\).  <a href="#a9d9308149ce304fb832ba0c78f4e2165">More...</a><br /></td></tr>
+<tr class="separator:a9d9308149ce304fb832ba0c78f4e2165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename RNGType&gt;<br />
-class vsmc::RNGMaxBits&lt; RNGType &gt;</h3>
+class vsmc::RNGTraits&lt; RNGType &gt;</h3>
 
-<p>Find the largest N such that RNGType::max() &gt;= (M &gt;&gt; (W - N)) where M = std::numeric_limits&lt;typename RNGType::result_type&gt;::max() W = std::numeric_limits&lt;typename RNGType::result_type&gt;::digits. </p>
+<p>Traits of RNG engines. </p>
 
-<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00542">542</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
-</div></div><!-- contents -->
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00488">488</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1dc2465f2fcba77eb58a4c4ea1e6835b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNGType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1_r_n_g_traits.html">vsmc::RNGTraits</a>&lt; RNGType &gt;::bits = <a class="el" href="classvsmc_1_1internal_1_1_log2.html">internal::Log2</a>&lt;result_type, R_&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00503">503</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d9308149ce304fb832ba0c78f4e2165"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNGType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classvsmc_1_1_r_n_g_traits.html">vsmc::RNGTraits</a>&lt; RNGType &gt;::is_full_range</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        RNGType::min() == 0 &amp;&amp; (R_ &amp; (R_ - 1)) == 0</div></div><!-- fragment -->
+<p>If the random integers are uniform on the set \(\{0,\dots,2^W - 1\}\) for some \(W &gt; 0\). </p>
+
+<p>Definition at line <a class="el" href="rng_2internal_2common_8hpp_source.html#l00500">500</a> of file <a class="el" href="rng_2internal_2common_8hpp_source.html">rng/internal/common.hpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

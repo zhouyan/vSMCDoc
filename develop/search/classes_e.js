@@ -14,13 +14,6 @@ var searchData=
   ['resampletypetrait_3c_20residualsystematic_20_3e',['ResampleTypeTrait&lt; ResidualSystematic &gt;',['../classvsmc_1_1_resample_type_trait_3_01_residual_systematic_01_4.html',1,'vsmc']]],
   ['resampletypetrait_3c_20stratified_20_3e',['ResampleTypeTrait&lt; Stratified &gt;',['../classvsmc_1_1_resample_type_trait_3_01_stratified_01_4.html',1,'vsmc']]],
   ['resampletypetrait_3c_20systematic_20_3e',['ResampleTypeTrait&lt; Systematic &gt;',['../classvsmc_1_1_resample_type_trait_3_01_systematic_01_4.html',1,'vsmc']]],
-  ['rngbits',['RNGBits',['../classvsmc_1_1_r_n_g_bits.html',1,'vsmc']]],
-  ['rngmaxbits',['RNGMaxBits',['../classvsmc_1_1_r_n_g_max_bits.html',1,'vsmc']]],
-  ['rngmaxbitsimpl',['RNGMaxBitsImpl',['../classvsmc_1_1internal_1_1_r_n_g_max_bits_impl.html',1,'vsmc::internal']]],
-  ['rngmaxbitsimpl_3c_20uinttype_2c_20u_2c_200_20_3e',['RNGMaxBitsImpl&lt; UIntType, U, 0 &gt;',['../classvsmc_1_1internal_1_1_r_n_g_max_bits_impl_3_01_u_int_type_00_01_u_00_010_01_4.html',1,'vsmc::internal']]],
-  ['rngminbits',['RNGMinBits',['../classvsmc_1_1_r_n_g_min_bits.html',1,'vsmc']]],
-  ['rngminbitsimpl',['RNGMinBitsImpl',['../classvsmc_1_1internal_1_1_r_n_g_min_bits_impl.html',1,'vsmc::internal']]],
-  ['rngminbitsimpl_3c_20uinttype_2c_20u_2c_200_20_3e',['RNGMinBitsImpl&lt; UIntType, U, 0 &gt;',['../classvsmc_1_1internal_1_1_r_n_g_min_bits_impl_3_01_u_int_type_00_01_u_00_010_01_4.html',1,'vsmc::internal']]],
   ['rngsetscalar',['RNGSetScalar',['../classvsmc_1_1_r_n_g_set_scalar.html',1,'vsmc']]],
   ['rngsettbb',['RNGSetTBB',['../classvsmc_1_1_r_n_g_set_t_b_b.html',1,'vsmc']]],
   ['rngsettypedispatch',['RNGSetTypeDispatch',['../classvsmc_1_1internal_1_1_r_n_g_set_type_dispatch.html',1,'vsmc::internal']]],
@@ -28,6 +21,7 @@ var searchData=
   ['rngsettypedispatch_3c_20t_2c_20true_20_3e',['RNGSetTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1_r_n_g_set_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],
   ['rngsettypetrait',['RNGSetTypeTrait',['../classvsmc_1_1_r_n_g_set_type_trait.html',1,'vsmc']]],
   ['rngsetvector',['RNGSetVector',['../classvsmc_1_1_r_n_g_set_vector.html',1,'vsmc']]],
+  ['rngtraits',['RNGTraits',['../classvsmc_1_1_r_n_g_traits.html',1,'vsmc']]],
   ['runtimeassert',['RuntimeAssert',['../classvsmc_1_1_runtime_assert.html',1,'vsmc']]],
   ['runtimewarning',['RuntimeWarning',['../classvsmc_1_1_runtime_warning.html',1,'vsmc']]]
 ];

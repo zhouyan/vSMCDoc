@@ -38,6 +38,7 @@ var searchData=
   ['is_5falways_5fequal',['is_always_equal',['../classvsmc_1_1_allocator.html#ac542cf32696aadbd0f770d44e903a87c',1,'vsmc::Allocator']]],
   ['is_5fbool',['is_bool',['../classvsmc_1_1_program_option.html#ac3810caa43452897748e3b5e60022e5b',1,'vsmc::ProgramOption::is_bool()'],['../classvsmc_1_1_program_option_help.html#a813a3f4da6f39ed0cd8be06d37362a80',1,'vsmc::ProgramOptionHelp::is_bool()'],['../classvsmc_1_1_program_option_default.html#a2f8a786506c232e06b5da5b8dc8862b8',1,'vsmc::ProgramOptionDefault::is_bool()']]],
   ['is_5fequal',['is_equal',['../namespacevsmc_1_1internal.html#af9d959912eec0183176eee29b2ffe489',1,'vsmc::internal']]],
+  ['is_5ffull_5frange',['is_full_range',['../classvsmc_1_1_r_n_g_traits.html#a9d9308149ce304fb832ba0c78f4e2165',1,'vsmc::RNGTraits']]],
   ['is_5fnullptr',['is_nullptr',['../namespacevsmc_1_1internal.html#a290e05b76b9b4e5b74d168b45b827264',1,'vsmc::internal::is_nullptr(T ptr, std::true_type)'],['../namespacevsmc_1_1internal.html#a279976ab8be96011a19c7080bea70805',1,'vsmc::internal::is_nullptr(T, std::false_type)'],['../namespacevsmc_1_1internal.html#a30db41e0add314b7f6a246269c0ee386',1,'vsmc::internal::is_nullptr(T ptr)']]],
   ['is_5fone',['is_one',['../namespacevsmc_1_1internal.html#a4dec43f4155b0140e74bca2315831106',1,'vsmc::internal']]],
   ['is_5fone_5fof',['is_one_of',['../classvsmc_1_1internal_1_1is__one__of.html',1,'vsmc::internal']]],

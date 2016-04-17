@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc::internal::U01LRImpl&lt; UIntType, RealType, Open, Closed &gt; Class Template Reference</title>
+<title>vSMC: vsmc::internal::Log2L&lt; U, N &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,103 +93,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="namespacevsmc_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classvsmc_1_1internal_1_1_u01_l_r_impl_3_01_u_int_type_00_01_real_type_00_01_open_00_01_closed_01_4.html">U01LRImpl&lt; UIntType, RealType, Open, Closed &gt;</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacevsmc.html">vsmc</a></li><li class="navelem"><a class="el" href="namespacevsmc_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classvsmc_1_1internal_1_1_log2_l.html">Log2L</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="classvsmc_1_1internal_1_1_u01_l_r_impl_3_01_u_int_type_00_01_real_type_00_01_open_00_01_closed_01_4-members.html">List of all members</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classvsmc_1_1internal_1_1_log2_l-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc::internal::U01LRImpl&lt; UIntType, RealType, Open, Closed &gt; Class Template Reference</div>  </div>
+<div class="title">vsmc::internal::Log2L&lt; U, N &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="u01_8hpp_source.html">vsmc/rng/u01.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="basic_8hpp_source.html">vsmc/internal/basic.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a640493d107566b46810cbd8706c9ca76"><td class="memItemLeft" align="right" valign="top">static RealType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_l_r_impl_3_01_u_int_type_00_01_real_type_00_01_open_00_01_closed_01_4.html#a640493d107566b46810cbd8706c9ca76">eval</a> (UIntType u) noexcept</td></tr>
-<tr class="separator:a640493d107566b46810cbd8706c9ca76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ede23740f5fd52de0b44a70b48e0d6f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_u01_l_r_impl_3_01_u_int_type_00_01_real_type_00_01_open_00_01_closed_01_4.html#a6ede23740f5fd52de0b44a70b48e0d6f">eval</a> (std::size_t n, const UIntType *u, RealType *r) noexcept</td></tr>
-<tr class="separator:a6ede23740f5fd52de0b44a70b48e0d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab2a6fbcd3c2436ed7135d1f6e3643f0e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1internal_1_1_log2_l.html#ab2a6fbcd3c2436ed7135d1f6e3643f0e">value</a> = M &lt;= U ? N : <a class="el" href="classvsmc_1_1internal_1_1_log2_l.html">Log2L</a>&lt;U, N - 1&gt;::value</td></tr>
+<tr class="separator:ab2a6fbcd3c2436ed7135d1f6e3643f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename UIntType, typename RealType&gt;<br />
-class vsmc::internal::U01LRImpl&lt; UIntType, RealType, Open, Closed &gt;</h3>
+<div class="textblock"><h3>template&lt;unsigned long long U, int N = std::numeric_limits&lt;unsigned long long&gt;::digits - 1&gt;<br />
+class vsmc::internal::Log2L&lt; U, N &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00157">157</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a640493d107566b46810cbd8706c9ca76"></a>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00129">129</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab2a6fbcd3c2436ed7135d1f6e3643f0e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UIntType , typename RealType &gt; </div>
+template&lt;unsigned long long U, int N = std::numeric_limits&lt;unsigned long long&gt;::digits - 1&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static RealType <a class="el" href="classvsmc_1_1internal_1_1_u01_l_r_impl.html">vsmc::internal::U01LRImpl</a>&lt; UIntType, RealType, Open, Closed &gt;::eval </td>
-          <td>(</td>
-          <td class="paramtype">UIntType&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
-          <td></td>
+          <td class="memname">constexpr int <a class="el" href="classvsmc_1_1internal_1_1_log2_l.html">vsmc::internal::Log2L</a>&lt; U, N &gt;::value = M &lt;= U ? N : <a class="el" href="classvsmc_1_1internal_1_1_log2_l.html">Log2L</a>&lt;U, N - 1&gt;::value</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00165">165</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6ede23740f5fd52de0b44a70b48e0d6f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UIntType , typename RealType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void <a class="el" href="classvsmc_1_1internal_1_1_u01_l_r_impl.html">vsmc::internal::U01LRImpl</a>&lt; UIntType, RealType, Open, Closed &gt;::eval </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const UIntType *&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RealType *&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="u01_8hpp_source.html#l00171">171</a> of file <a class="el" href="u01_8hpp_source.html">u01.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00134">134</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>

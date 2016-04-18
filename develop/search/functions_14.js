@@ -310,6 +310,7 @@ var searchData=
   ['vsmc_5fstate_5fmatrix_5fset',['vsmc_state_matrix_set',['../group___c___a_p_i___core___state_matrix.html#ga7aebc3068fe4ebedd5c30b0fa06dabb5',1,'vsmc.h']]],
   ['vsmc_5fstate_5fmatrix_5fsize',['vsmc_state_matrix_size',['../group___c___a_p_i___core___state_matrix.html#gaa222365dd928294fca8ae77f3c087c79',1,'vsmc.h']]],
   ['vsmc_5fstop_5fwatch_5fassign',['vsmc_stop_watch_assign',['../group___c___a_p_i___utility___stop_watch.html#gaba3e5f887609eb1deaccab6e7cc78382',1,'vsmc.h']]],
+  ['vsmc_5fstop_5fwatch_5fcycles',['vsmc_stop_watch_cycles',['../group___c___a_p_i___utility___stop_watch.html#ga6e420b4633b0044d2d7f2b4c7c96dc5e',1,'vsmc.h']]],
   ['vsmc_5fstop_5fwatch_5fdelete',['vsmc_stop_watch_delete',['../group___c___a_p_i___utility___stop_watch.html#gac92f371085d3c0aa1994e040f6dde130',1,'vsmc.h']]],
   ['vsmc_5fstop_5fwatch_5fhours',['vsmc_stop_watch_hours',['../group___c___a_p_i___utility___stop_watch.html#ga942ea750a02a932c8574a6df3e882c43',1,'vsmc.h']]],
   ['vsmc_5fstop_5fwatch_5fmicroseconds',['vsmc_stop_watch_microseconds',['../group___c___a_p_i___utility___stop_watch.html#ga13bbc5389f31a76d568157bc6f387e4e',1,'vsmc.h']]],

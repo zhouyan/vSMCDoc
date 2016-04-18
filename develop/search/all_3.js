@@ -291,10 +291,10 @@ var searchData=
   ['cosh',['cosh',['../namespacevsmc.html#a1740ad81b8976e49f0a19ceeaa717e2a',1,'vsmc::cosh(std::size_t n, const float *a, float *y)'],['../namespacevsmc.html#a28ec2eef7773fe94f519739fb14decc6',1,'vsmc::cosh(std::size_t n, const double *a, double *y)'],['../group__v_hyperbolic.html#gae3fad0e4dfbfb0870a582e0b6deed2e0',1,'vsmc::cosh(std::size_t n, const T *a, T *y)']]],
   ['count',['count',['../classvsmc_1_1_program_option_map.html#aca4e3872cd87d3f8c40735c33a26bfb2',1,'vsmc::ProgramOptionMap']]],
   ['counter_2ehpp',['counter.hpp',['../counter_8hpp.html',1,'']]],
-  ['counterengine',['CounterEngine',['../classvsmc_1_1_counter_engine.html',1,'vsmc']]],
   ['counterengine',['CounterEngine',['../classvsmc_1_1_counter_engine.html#a9154d2fd6db6c01b3b2850d0fed1f2a0',1,'vsmc::CounterEngine::CounterEngine(result_type s=1)'],['../classvsmc_1_1_counter_engine.html#a68c5f08e75c2d06a619b6d7fcbd4d010',1,'vsmc::CounterEngine::CounterEngine(SeedSeq &amp;seq, typename std::enable_if&lt; internal::is_seed_seq&lt; SeedSeq, ResultType, key_type, CounterEngine&lt; ResultType, Generator &gt;&gt;::value &gt;::type *=nullptr)'],['../classvsmc_1_1_counter_engine.html#a8acc8d2d40801dec868e7881a9afb7cd',1,'vsmc::CounterEngine::CounterEngine(const key_type &amp;k)']]],
-  ['covariance',['Covariance',['../classvsmc_1_1_covariance.html',1,'vsmc']]],
+  ['counterengine',['CounterEngine',['../classvsmc_1_1_counter_engine.html',1,'vsmc']]],
   ['covariance',['Covariance',['../group___covariance.html',1,'']]],
+  ['covariance',['Covariance',['../classvsmc_1_1_covariance.html',1,'vsmc']]],
   ['covariance_2ehpp',['covariance.hpp',['../covariance_8hpp.html',1,'']]],
   ['crbegin',['crbegin',['../classvsmc_1_1_static_vector_n.html#a042fb32d2bfda974baf44ecf38069ae1',1,'vsmc::StaticVectorN::crbegin()'],['../classvsmc_1_1_static_vector_n.html#afc1ed37cd9e53a74ac24f026eac1af9f',1,'vsmc::StaticVectorN::crbegin() const ']]],
   ['creat_5fsub_5fdevices',['creat_sub_devices',['../classvsmc_1_1_c_l_device.html#a773b89d41fefacd5a26b0e92356b3fc9',1,'vsmc::CLDevice']]],
@@ -307,5 +307,6 @@ var searchData=
   ['ctrtypedispatch_3c_20t_2c_20false_20_3e',['CtrTypeDispatch&lt; T, false &gt;',['../classvsmc_1_1internal_1_1internal_1_1_ctr_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::internal::internal']]],
   ['ctrtypedispatch_3c_20t_2c_20true_20_3e',['CtrTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1internal_1_1_ctr_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal::internal']]],
   ['ctrtypetrait',['CtrTypeTrait',['../classvsmc_1_1internal_1_1_ctr_type_trait.html',1,'vsmc::internal']]],
+  ['cycles',['cycles',['../classvsmc_1_1_stop_watch_clock_adapter.html#a2c7468dd352a65e691ef1a7b66efff96',1,'vsmc::StopWatchClockAdapter']]],
   ['change_20log',['Change log',['../newspage.html',1,'']]]
 ];

@@ -253,5 +253,6 @@ var searchData=
   ['creat_5fsub_5fdevices',['creat_sub_devices',['../classvsmc_1_1_c_l_device.html#a773b89d41fefacd5a26b0e92356b3fc9',1,'vsmc::CLDevice']]],
   ['create_5fkernels',['create_kernels',['../classvsmc_1_1_c_l_program.html#a79956f9d23b622abef07b298676b56a3',1,'vsmc::CLProgram']]],
   ['crend',['crend',['../classvsmc_1_1_static_vector_n.html#afb2a5c0c082fcb706bd7d3c0a3ae2332',1,'vsmc::StaticVectorN::crend()'],['../classvsmc_1_1_static_vector_n.html#ad734f5a5d42e247802a75c6b10513cca',1,'vsmc::StaticVectorN::crend() const ']]],
-  ['ctr',['ctr',['../classvsmc_1_1_counter_engine.html#a96b71264e338a03e4bc527e3f744c30e',1,'vsmc::CounterEngine']]]
+  ['ctr',['ctr',['../classvsmc_1_1_counter_engine.html#a96b71264e338a03e4bc527e3f744c30e',1,'vsmc::CounterEngine']]],
+  ['cycles',['cycles',['../classvsmc_1_1_stop_watch_clock_adapter.html#a2c7468dd352a65e691ef1a7b66efff96',1,'vsmc::StopWatchClockAdapter']]]
 ];

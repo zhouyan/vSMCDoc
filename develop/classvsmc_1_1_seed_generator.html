@@ -171,10 +171,9 @@ class vsmc::SeedGenerator&lt; ID, ResultType &gt;</h3>
 
 <p>Seed generator. </p>
 <p>The sequence of seeds are belongs to the equivalent class \(s \mod D \equiv R\) where \(D &gt; 0\), \(R \ge 0\). The defaults are \(1\) and \(0\) respectively. Each time <code><a class="el" href="classvsmc_1_1_seed_generator.html#ad45375a857018f56f4adc1ce622b7be5" title="Get a seed. ">get()</a></code> is called, a new seed is returned.</p>
-<p>The method <code><a class="el" href="classvsmc_1_1_seed_generator.html#abe62cbc958187eece7952c94271c30c0" title="Seed a single RNG. ">operator()(RNGType &amp;rng)</a></code> is equivalent to <code>rng.seed(static_cast&lt;typename RNGType::result_type&gt;(<a class="el" href="classvsmc_1_1_seed_generator.html#ad45375a857018f56f4adc1ce622b7be5" title="Get a seed. ">get()</a>))</code>.</p>
-<p>The only thread-safe mutable method is <code>operator()</code>. Seeding RNGs from multiple threads at the same time using this method is possible. Any other mutable methods are not thread-safe. In particular, if this singleton is going to be used in a multi-threaded environment, make sure <code><a class="el" href="classvsmc_1_1_seed_generator.html#a4d8b222e0f0c1f1d2b7371e897844add">instance()</a></code> is called at least once in a single threaded environment. </p>
+<p>The method <code><a class="el" href="classvsmc_1_1_seed_generator.html#abe62cbc958187eece7952c94271c30c0" title="Seed a single RNG. ">operator()(RNGType &amp;rng)</a></code> is equivalent to <code>rng.seed(static_cast&lt;typename RNGType::result_type&gt;(<a class="el" href="classvsmc_1_1_seed_generator.html#ad45375a857018f56f4adc1ce622b7be5" title="Get a seed. ">get()</a>))</code>. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00074">74</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00068">68</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a8f62d887ca1a710c98806f51e6323b75"></a>
 <div class="memitem">
@@ -188,7 +187,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00081">81</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00075">75</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +244,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The divisor of the output seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00134">134</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00125">125</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +273,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Get a seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00120">120</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00112">112</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +300,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00088">88</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00082">82</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +329,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The maximum of the seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00131">131</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00122">122</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -370,7 +369,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Set the divisor and the remainder. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00140">140</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00131">131</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -402,7 +401,7 @@ template&lt;typename RNGType &gt; </div>
 
 <p>Seed a single RNG. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00097">97</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00091">91</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -444,7 +443,7 @@ template&lt;typename OutputIter &gt; </div>
 
 <p>Seed a sequence of RNGs. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00105">105</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00098">98</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -499,7 +498,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>The remainder of the output seed. </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00137">137</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00128">128</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +528,7 @@ template&lt;typename ID, typename ResultType = unsigned&gt; </div>
 
 <p>Set the seed to <code>s % <a class="el" href="classvsmc_1_1_seed_generator.html#a6dcace515630768aed8ca6fc82792331" title="The maximum of the seed. ">max()</a> * <a class="el" href="classvsmc_1_1_seed_generator.html#adad33b1c730152f264517a4eb0503d09" title="The divisor of the output seed. ">divisor()</a> + <a class="el" href="classvsmc_1_1_seed_generator.html#ae598bd598202d576778e5a95b9b43cfa" title="The remainder of the output seed. ">remainder()</a></code> </p>
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00117">117</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00109">109</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -570,7 +569,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00154">154</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00145">145</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>
@@ -610,7 +609,7 @@ template&lt;typename CharT , typename Traits &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00170">170</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
+<p>Definition at line <a class="el" href="seed_8hpp_source.html#l00161">161</a> of file <a class="el" href="seed_8hpp_source.html">seed.hpp</a>.</p>
 
 </div>
 </div>

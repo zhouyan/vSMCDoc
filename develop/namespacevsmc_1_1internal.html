@@ -705,6 +705,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abf5730a95b4d46205e4cdcd0d81f8090"><td class="memTemplParams" colspan="2">template&lt;int Bits&gt; </td></tr>
 <tr class="memitem:abf5730a95b4d46205e4cdcd0d81f8090"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#abf5730a95b4d46205e4cdcd0d81f8090">MKLResultType</a> = typename <a class="el" href="classvsmc_1_1internal_1_1_m_k_l_result_type_trait.html">MKLResultTypeTrait</a>&lt; Bits &gt;::type</td></tr>
 <tr class="separator:abf5730a95b4d46205e4cdcd0d81f8090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf18b33f4645b3e133846baf2510c48b"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:adf18b33f4645b3e133846baf2510c48b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#adf18b33f4645b3e133846baf2510c48b">StaticVector</a> = typename std::conditional&lt; N==<a class="el" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>, <a class="el" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">Vector</a>&lt; T &gt;, std::array&lt; T, N &gt;&gt;::type</td></tr>
+<tr class="separator:adf18b33f4645b3e133846baf2510c48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d236c5793d305a2104fd2fe0fed514c"><td class="memTemplParams" colspan="2">template&lt;typename RNGType , typename RealType &gt; </td></tr>
 <tr class="memitem:a4d236c5793d305a2104fd2fe0fed514c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a4d236c5793d305a2104fd2fe0fed514c">U01UIntType</a> = typename std::conditional&lt;(<a class="el" href="classvsmc_1_1_r_n_g_traits.html">RNGTraits</a>&lt; RNGType &gt;::bits &gt;=64||std::is_same&lt; RealType, long double &gt;::value), <a class="el" href="opencl_8h.html#a2bf9e57a8d20903de8d1e3905eed8150">std::uint64_t</a>, <a class="el" href="opencl_8h.html#a1597d08777066cd00a3f2846cf6ae7a8">std::uint32_t</a> &gt;::type</td></tr>
 <tr class="separator:a4d236c5793d305a2104fd2fe0fed514c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1541,18 +1544,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a9b7c157ab19e9d78ad5487942906fd9c"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a9b7c157ab19e9d78ad5487942906fd9c"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a9b7c157ab19e9d78ad5487942906fd9c">beta_distribution_impl_as</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType, RealType, const <a class="el" href="classvsmc_1_1internal_1_1_beta_distribution_constant.html">BetaDistributionConstant</a>&lt; RealType &gt; &amp;)</td></tr>
 <tr class="separator:a9b7c157ab19e9d78ad5487942906fd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3cce3cb4cd4d778e0dba55afc65d04"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a6a3cce3cb4cd4d778e0dba55afc65d04"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a6a3cce3cb4cd4d778e0dba55afc65d04"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a6a3cce3cb4cd4d778e0dba55afc65d04">beta_distribution_impl_c</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType alpha, RealType beta, const <a class="el" href="classvsmc_1_1internal_1_1_beta_distribution_constant.html">BetaDistributionConstant</a>&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:a6a3cce3cb4cd4d778e0dba55afc65d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0056db43433d68a29adb40a2d95512"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a7d0056db43433d68a29adb40a2d95512"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a7d0056db43433d68a29adb40a2d95512"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7d0056db43433d68a29adb40a2d95512">beta_distribution_impl_j</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType, RealType, const <a class="el" href="classvsmc_1_1internal_1_1_beta_distribution_constant.html">BetaDistributionConstant</a>&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:a7d0056db43433d68a29adb40a2d95512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec59fc070b314eaccc0b182ca41a6277"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:aec59fc070b314eaccc0b182ca41a6277"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aec59fc070b314eaccc0b182ca41a6277">beta_distribution_impl_x1</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType, RealType, const <a class="el" href="classvsmc_1_1internal_1_1_beta_distribution_constant.html">BetaDistributionConstant</a>&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:aec59fc070b314eaccc0b182ca41a6277"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a36a3355b462ce8fd027e3c3734a168"><td class="memTemplParams" colspan="2">template&lt;typename T , int  = 0&gt; </td></tr>
-<tr class="memitem:a7a36a3355b462ce8fd027e3c3734a168"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">Vector</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7a36a3355b462ce8fd027e3c3734a168">buffer</a> (std::size_t n)</td></tr>
-<tr class="separator:a7a36a3355b462ce8fd027e3c3734a168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac92c23be2561f716a2a1fdfd60dfda0"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:aac92c23be2561f716a2a1fdfd60dfda0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aac92c23be2561f716a2a1fdfd60dfda0">cauchy_distribution_check_param</a> (RealType, RealType b)</td></tr>
 <tr class="separator:aac92c23be2561f716a2a1fdfd60dfda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1604,13 +1604,13 @@ Functions</h2></td></tr>
 <tr class="memitem:afc46d4161aa828422466ba9e5338d2c8"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:afc46d4161aa828422466ba9e5338d2c8"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#afc46d4161aa828422466ba9e5338d2c8">gamma_distribution_impl_e</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType, RealType beta, const <a class="el" href="classvsmc_1_1internal_1_1_gamma_distribution_constant.html">GammaDistributionConstant</a>&lt; RealType &gt; &amp;)</td></tr>
 <tr class="separator:afc46d4161aa828422466ba9e5338d2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce387f2a6d72f89784880b250c8b259"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a8ce387f2a6d72f89784880b250c8b259"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a8ce387f2a6d72f89784880b250c8b259"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a8ce387f2a6d72f89784880b250c8b259">gamma_distribution_impl_n</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType, RealType beta, const <a class="el" href="classvsmc_1_1internal_1_1_gamma_distribution_constant.html">GammaDistributionConstant</a>&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:a8ce387f2a6d72f89784880b250c8b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec51f84bcec54be492494781b8234df"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a7ec51f84bcec54be492494781b8234df"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a7ec51f84bcec54be492494781b8234df"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7ec51f84bcec54be492494781b8234df">gamma_distribution_impl_t</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType alpha, RealType beta, const <a class="el" href="classvsmc_1_1internal_1_1_gamma_distribution_constant.html">GammaDistributionConstant</a>&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:a7ec51f84bcec54be492494781b8234df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c499cef8065582bd9c311596a7db3b"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename RealType , typename RNGType &gt; </td></tr>
+<tr class="memitem:a99c499cef8065582bd9c311596a7db3b"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename RealType , typename RNGType &gt; </td></tr>
 <tr class="memitem:a99c499cef8065582bd9c311596a7db3b"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a99c499cef8065582bd9c311596a7db3b">gamma_distribution_impl_w</a> (RNGType &amp;rng, std::size_t n, RealType *r, RealType, RealType beta, const <a class="el" href="classvsmc_1_1internal_1_1_gamma_distribution_constant.html">GammaDistributionConstant</a>&lt; RealType &gt; &amp;constant)</td></tr>
 <tr class="separator:a99c499cef8065582bd9c311596a7db3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb1800bc9261fceedeea92b65f6b77cd"><td class="memItemLeft" align="right" valign="top">inline::hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#afb1800bc9261fceedeea92b65f6b77cd">hdf5io_datafile</a> (const std::string &amp;filename, bool append, bool read_only)</td></tr>
@@ -1647,6 +1647,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a7ca6b0410137587c6a0419785f8148d0"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, typename T , std::size_t K&gt; </td></tr>
 <tr class="memitem:a7ca6b0410137587c6a0419785f8148d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a7ca6b0410137587c6a0419785f8148d0">increment_single</a> (std::array&lt; T, K &gt; &amp;ctr, std::true_type)</td></tr>
 <tr class="separator:a7ca6b0410137587c6a0419785f8148d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f95971e1ab60888c904a600e9fadd8f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3f95971e1ab60888c904a600e9fadd8f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a3f95971e1ab60888c904a600e9fadd8f">is_equal</a> (const T &amp;a, const T &amp;b, std::true_type)</td></tr>
+<tr class="separator:a3f95971e1ab60888c904a600e9fadd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d645e017f67bf5a5d99af31dd943ff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a46d645e017f67bf5a5d99af31dd943ff"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a46d645e017f67bf5a5d99af31dd943ff">is_equal</a> (const T &amp;a, const T &amp;b, std::false_type)</td></tr>
+<tr class="separator:a46d645e017f67bf5a5d99af31dd943ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d959912eec0183176eee29b2ffe489"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af9d959912eec0183176eee29b2ffe489"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#af9d959912eec0183176eee29b2ffe489">is_equal</a> (const T &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:af9d959912eec0183176eee29b2ffe489"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1665,6 +1671,15 @@ Functions</h2></td></tr>
 <tr class="memitem:acbccd70a644aa7d244bf7ab3f78b8905"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acbccd70a644aa7d244bf7ab3f78b8905"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#acbccd70a644aa7d244bf7ab3f78b8905">is_zero</a> (const T &amp;a)</td></tr>
 <tr class="separator:acbccd70a644aa7d244bf7ab3f78b8905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad10d62bb5a7ca0addfc02e478d8a09"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a3ad10d62bb5a7ca0addfc02e478d8a09"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a3ad10d62bb5a7ca0addfc02e478d8a09">istream_ary</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;, std::array&lt; T, N &gt; &amp;, std::false_type)</td></tr>
+<tr class="separator:a3ad10d62bb5a7ca0addfc02e478d8a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5e7011cc08ad355aa9c92cfaa1b3e2"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:aba5e7011cc08ad355aa9c92cfaa1b3e2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#aba5e7011cc08ad355aa9c92cfaa1b3e2">istream_ary</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, std::array&lt; T, N &gt; &amp;ary, std::true_type)</td></tr>
+<tr class="separator:aba5e7011cc08ad355aa9c92cfaa1b3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9accaf11612badff84b03ea2a0af76"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; </td></tr>
+<tr class="memitem:a0b9accaf11612badff84b03ea2a0af76"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a0b9accaf11612badff84b03ea2a0af76">istream_vec</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, std::vector&lt; T, Alloc &gt; &amp;vec)</td></tr>
+<tr class="separator:a0b9accaf11612badff84b03ea2a0af76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f40a38a1a6fa20e5ae7bddbb34fb04"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:a91f40a38a1a6fa20e5ae7bddbb34fb04"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a91f40a38a1a6fa20e5ae7bddbb34fb04">laplace_distribution_check_param</a> (RealType, RealType b)</td></tr>
 <tr class="separator:a91f40a38a1a6fa20e5ae7bddbb34fb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1755,6 +1770,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ad0963444edb3ed205e409917e78d44cb"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; </td></tr>
 <tr class="memitem:ad0963444edb3ed205e409917e78d44cb"><td class="memTemplItemLeft" align="right" valign="top">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ad0963444edb3ed205e409917e78d44cb">operator&gt;&gt;</a> (std::basic_istream&lt; CharT, Traits &gt; &amp;is, std::vector&lt; T, Alloc &gt; &amp;vec)</td></tr>
 <tr class="separator:ad0963444edb3ed205e409917e78d44cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e863857745d37f659ba7bb26d329bb"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a85e863857745d37f659ba7bb26d329bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a85e863857745d37f659ba7bb26d329bb">ostream_ary</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;, const std::array&lt; T, N &gt; &amp;, std::false_type)</td></tr>
+<tr class="separator:a85e863857745d37f659ba7bb26d329bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addad77caf3ec1317fddd8f805828611f"><td class="memTemplParams" colspan="2">template&lt;std::size_t K, typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:addad77caf3ec1317fddd8f805828611f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#addad77caf3ec1317fddd8f805828611f">ostream_ary</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const std::array&lt; T, N &gt; &amp;ary, std::true_type)</td></tr>
+<tr class="separator:addad77caf3ec1317fddd8f805828611f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bece30a582062a863a915eea75aee6d"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a8bece30a582062a863a915eea75aee6d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a8bece30a582062a863a915eea75aee6d">ostream_ary_space</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;, const std::array&lt; T, N &gt; &amp;, std::false_type)</td></tr>
+<tr class="separator:a8bece30a582062a863a915eea75aee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25d774f7f324647bd542265ccc08a18"><td class="memTemplParams" colspan="2">template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:ac25d774f7f324647bd542265ccc08a18"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#ac25d774f7f324647bd542265ccc08a18">ostream_ary_space</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const std::array&lt; T, N &gt; &amp;, std::true_type)</td></tr>
+<tr class="separator:ac25d774f7f324647bd542265ccc08a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2530748dfa2d6399c11fc2656a77d5"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; </td></tr>
+<tr class="memitem:a0c2530748dfa2d6399c11fc2656a77d5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a0c2530748dfa2d6399c11fc2656a77d5">ostream_vec</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, const std::vector&lt; T, Alloc &gt; &amp;vec)</td></tr>
+<tr class="separator:a0c2530748dfa2d6399c11fc2656a77d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2eb35469c5fe09b90c7e9b49d8d70e"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:a2d2eb35469c5fe09b90c7e9b49d8d70e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevsmc_1_1internal.html#a2d2eb35469c5fe09b90c7e9b49d8d70e">pareto_distribution_check_param</a> (RealType a, RealType b)</td></tr>
 <tr class="separator:a2d2eb35469c5fe09b90c7e9b49d8d70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1875,6 +1905,22 @@ template&lt;int Bits&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="mkl_8hpp_source.html#l00755">755</a> of file <a class="el" href="mkl_8hpp_source.html">mkl.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf18b33f4645b3e133846baf2510c48b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacevsmc_1_1internal.html#adf18b33f4645b3e133846baf2510c48b">vsmc::internal::StaticVector</a> = typedef typename std::conditional&lt;N == <a class="el" href="group___definitions.html#ggad1b57335a70d817da4b59ef2bc6237bea3f0f7c9280e1b55ccd3f4c2575772402">Dynamic</a>, <a class="el" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">Vector</a>&lt;T&gt;, std::array&lt;T, N&gt;&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="internal_2common_8hpp_source.html#l00047">47</a> of file <a class="el" href="internal_2common_8hpp_source.html">internal/common.hpp</a>.</p>
 
 </div>
 </div>
@@ -9624,7 +9670,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
+template&lt;std::size_t K, typename RealType , typename RNGType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -9686,7 +9732,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
+template&lt;std::size_t K, typename RealType , typename RNGType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -9803,34 +9849,6 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="beta__distribution_8hpp_source.html#l00414">414</a> of file <a class="el" href="beta__distribution_8hpp_source.html">beta_distribution.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7a36a3355b462ce8fd027e3c3734a168"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , int  = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group___aligned_memory.html#ga0282b67a9ceda34be6139dc7275bf353">Vector</a>&lt;T&gt;&amp; vsmc::internal::buffer </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="static__vector_8hpp_source.html#l00068">68</a> of file <a class="el" href="static__vector_8hpp_source.html">static_vector.hpp</a>.</p>
 
 </div>
 </div>
@@ -10632,7 +10650,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
+template&lt;std::size_t K, typename RealType , typename RNGType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -10694,7 +10712,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
+template&lt;std::size_t K, typename RealType , typename RNGType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -10756,7 +10774,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
+template&lt;std::size_t K, typename RealType , typename RNGType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -10844,7 +10862,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00164">164</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00174">174</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -10892,7 +10910,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00113">113</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00123">123</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -10936,7 +10954,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00127">127</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00137">137</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -10980,7 +10998,7 @@ template&lt;typename IntType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00144">144</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00154">154</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -11324,6 +11342,94 @@ template&lt;std::size_t N, typename T , std::size_t K&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a3f95971e1ab60888c904a600e9fadd8f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::internal::is_equal </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::true_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00083">83</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46d645e017f67bf5a5d99af31dd943ff"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vsmc::internal::is_equal </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::false_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00089">89</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af9d959912eec0183176eee29b2ffe489"></a>
 <div class="memitem">
 <div class="memproto">
@@ -11358,7 +11464,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00088">88</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00095">95</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -11396,7 +11502,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00110">110</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00113">113</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -11434,7 +11540,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00116">116</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00119">119</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -11462,7 +11568,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00122">122</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00125">125</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -11490,7 +11596,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00104">104</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00107">107</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -11518,7 +11624,133 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00098">98</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00101">101</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ad10d62bb5a7ca0addfc02e478d8a09"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::istream_ary </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::false_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00198">198</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba5e7011cc08ad355aa9c92cfaa1b3e2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t K, typename CharT , typename Traits , typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::istream_ary </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::true_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00205">205</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b9accaf11612badff84b03ea2a0af76"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::istream_vec </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_istream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T, Alloc &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00225">225</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -12550,6 +12782,9 @@ template&lt;typename RealType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RealType vsmc::internal::normal_proposal_q </td>
@@ -12575,6 +12810,11 @@ template&lt;typename RealType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00379">379</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
@@ -12586,6 +12826,9 @@ template&lt;typename RealType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RealType vsmc::internal::normal_proposal_qa </td>
@@ -12617,6 +12860,11 @@ template&lt;typename RealType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00387">387</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
@@ -12628,6 +12876,9 @@ template&lt;typename RealType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RealType vsmc::internal::normal_proposal_qab </td>
@@ -12665,9 +12916,14 @@ template&lt;typename RealType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00403">403</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00405">405</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -12676,6 +12932,9 @@ template&lt;typename RealType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RealType vsmc::internal::normal_proposal_qb </td>
@@ -12707,9 +12966,14 @@ template&lt;typename RealType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00395">395</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
+<p>Definition at line <a class="el" href="random__walk_8hpp_source.html#l00396">396</a> of file <a class="el" href="random__walk_8hpp_source.html">random_walk.hpp</a>.</p>
 
 </div>
 </div>
@@ -12747,7 +13011,7 @@ template&lt;typename CharT , typename Traits , typename T , std::size_t N&gt; </
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00162">162</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00239">239</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -12785,7 +13049,7 @@ template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00194">194</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00266">266</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -12823,7 +13087,7 @@ template&lt;typename CharT , typename Traits , typename T , std::size_t N&gt; </
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00177">177</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00251">251</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -12861,7 +13125,221 @@ template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00211">211</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00278">278</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85e863857745d37f659ba7bb26d329bb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::ostream_ary </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::false_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00181">181</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addad77caf3ec1317fddd8f805828611f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t K, typename CharT , typename Traits , typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::ostream_ary </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::true_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00188">188</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bece30a582062a863a915eea75aee6d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::ostream_ary_space </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::false_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00166">166</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac25d774f7f324647bd542265ccc08a18"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t , typename CharT , typename Traits , typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::ostream_ary_space </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::true_type&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00173">173</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c2530748dfa2d6399c11fc2656a77d5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , typename Traits , typename T , typename Alloc &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vsmc::internal::ostream_vec </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T, Alloc &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="basic_8hpp_source.html#l00213">213</a> of file <a class="el" href="basic_8hpp_source.html">basic.hpp</a>.</p>
 
 </div>
 </div>
@@ -13003,7 +13481,7 @@ template&lt;std::size_t , typename RealType , typename RNGType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00048">48</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
+<p>Definition at line <a class="el" href="program__option_8hpp_source.html#l00053">53</a> of file <a class="el" href="program__option_8hpp_source.html">program_option.hpp</a>.</p>
 
 </div>
 </div>
@@ -13144,7 +13622,7 @@ template&lt;typename IntType , typename SizeType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="assert_8hpp_source.html#l00117">117</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
+<p>Definition at line <a class="el" href="assert_8hpp_source.html#l00122">122</a> of file <a class="el" href="assert_8hpp_source.html">assert.hpp</a>.</p>
 
 </div>
 </div>
@@ -13843,6 +14321,9 @@ template&lt;typename UIntType , typename RNGType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename RealType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool vsmc::internal::uniform_real_distribution_check_param </td>
@@ -13862,6 +14343,11 @@ template&lt;typename RealType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uniform__real__distribution_8hpp_source.html#l00045">45</a> of file <a class="el" href="uniform__real__distribution_8hpp_source.html">uniform_real_distribution.hpp</a>.</p>

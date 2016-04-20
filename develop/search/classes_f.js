@@ -23,7 +23,6 @@ var searchData=
   ['statematrixbase_3c_20rowmajor_2c_20dim_2c_20t_20_3e',['StateMatrixBase&lt; RowMajor, Dim, T &gt;',['../classvsmc_1_1_state_matrix_base.html',1,'vsmc']]],
   ['statematrixdim',['StateMatrixDim',['../classvsmc_1_1internal_1_1_state_matrix_dim.html',1,'vsmc::internal']]],
   ['statematrixdim_3c_20dynamic_20_3e',['StateMatrixDim&lt; Dynamic &gt;',['../classvsmc_1_1internal_1_1_state_matrix_dim_3_01_dynamic_01_4.html',1,'vsmc::internal']]],
-  ['staticvectorn',['StaticVectorN',['../classvsmc_1_1_static_vector_n.html',1,'vsmc']]],
   ['stopwatchclockadapter',['StopWatchClockAdapter',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]],
   ['stopwatchclockadapter_3c_20std_3a_3achrono_3a_3ahigh_5fresolution_5fclock_20_3e',['StopWatchClockAdapter&lt; std::chrono::high_resolution_clock &gt;',['../classvsmc_1_1_stop_watch_clock_adapter.html',1,'vsmc']]],
   ['stopwatchguard',['StopWatchGuard',['../classvsmc_1_1_stop_watch_guard.html',1,'vsmc']]],

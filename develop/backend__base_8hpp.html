@@ -135,8 +135,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac2e8e39dc10895482191e6e756045ebd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__base_8hpp.html#ac2e8e39dc10895482191e6e756045ebd">VSMC_BACKEND_BASE_DESTRUCTOR_PREFIX</a>&#160;&#160;&#160;virtual</td></tr>
-<tr class="separator:ac2e8e39dc10895482191e6e756045ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d749ba3b5657ad8cbb58a185a18d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__base_8hpp.html#ad1d749ba3b5657ad8cbb58a185a18d9a">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL</a>(Name)                                                    </td></tr>
 <tr class="separator:ad1d749ba3b5657ad8cbb58a185a18d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad663fff993c2fed9c5e5c3440c66fe9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__base_8hpp.html#ad663fff993c2fed9c5e5c3440c66fe9a">VSMC_DEFINE_SMP_BACKEND_BASE_SPECIAL_VIRTUAL</a>(Name)                                    </td></tr>
@@ -145,24 +143,8 @@ Macros</h2></td></tr>
 <tr class="separator:abbef4e3dde3d4c181992851efa1a1357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3838b51f8e6f756c341c5c6c6b05a064"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__base_8hpp.html#a3838b51f8e6f756c341c5c6c6b05a064">VSMC_DEFINE_SMP_BACKEND_SPECIAL</a>(SMP,  Name)                                                    </td></tr>
 <tr class="separator:a3838b51f8e6f756c341c5c6c6b05a064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58d70a7623d8e15b349dc19af56aabd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__base_8hpp.html#aa58d70a7623d8e15b349dc19af56aabd">VSMC_RUNTIME_ASSERT_SMP_BACKEND_BASE_DERIVED</a>(basename)                            </td></tr>
-<tr class="separator:aa58d70a7623d8e15b349dc19af56aabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ac2e8e39dc10895482191e6e756045ebd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_BACKEND_BASE_DESTRUCTOR_PREFIX&#160;&#160;&#160;virtual</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00040">40</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ad1d749ba3b5657ad8cbb58a185a18d9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -176,8 +158,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name##Base() = <span class="keywordflow">default</span>;                                                   \</div><div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;) = <span class="keywordflow">default</span>;                     \</div><div class="line">    Name##Base&lt;T, Derived&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;) =       \</div><div class="line">        default;                                                              \</div><div class="line">    Name##Base(Name##Base&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                          \</div><div class="line">    Name##Base&lt;T, Derived&gt; &amp;operator=(Name##Base&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;   \</div><div class="line">    VSMC_BACKEND_BASE_DESTRUCTOR_PREFIX ~Name##Base() {}</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00043">43</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">Name##Base() = <span class="keywordflow">default</span>;                                                   \</div><div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;) = <span class="keywordflow">default</span>;                     \</div><div class="line">    Name##Base&lt;T, Derived&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Derived&gt; &amp;) =       \</div><div class="line">        default;                                                              \</div><div class="line">    Name##Base(Name##Base&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                          \</div><div class="line">    Name##Base&lt;T, Derived&gt; &amp;operator=(Name##Base&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00042">42</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -195,7 +177,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">Name##Base() = <span class="keywordflow">default</span>;                                                   \</div><div class="line">    Name##Base(<span class="keyword">const</span> Name##Base&lt;T, Virtual&gt; &amp;) = <span class="keywordflow">default</span>;                     \</div><div class="line">    Name##Base&lt;T, Virtual&gt; &amp;operator=(<span class="keyword">const</span> Name##Base&lt;T, Virtual&gt; &amp;) =       \</div><div class="line">        default;                                                              \</div><div class="line">    Name##Base(Name##Base&lt;T, Virtual&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                          \</div><div class="line">    Name##Base&lt;T, Virtual&gt; &amp;operator=(Name##Base&lt;T, Virtual&gt; &amp;&amp;) = <span class="keywordflow">default</span>;   \</div><div class="line">    virtual ~Name##Base() {}</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00052">52</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00050">50</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +195,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = Virtual&gt;                                 \</div><div class="line">    class Initialize##Name;                                                   \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class Move##Name;                                                         \</div><div class="line">    template &lt;typename T, typename = Virtual&gt;                                 \</div><div class="line">    class MonitorEval##Name;</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00069">69</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00066">66</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -240,27 +222,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">Name##SMP() = <span class="keywordflow">default</span>;                                                    \</div><div class="line">    Name##SMP(<span class="keyword">const</span> Name##SMP&lt;T, Derived&gt; &amp;) = <span class="keywordflow">default</span>;                       \</div><div class="line">    Name##SMP&lt;T, Derived&gt; &amp;operator=(Name##SMP&lt;T, Derived&gt; &amp;) = <span class="keywordflow">default</span>;      \</div><div class="line">    Name##SMP(Name##SMP&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                            \</div><div class="line">    Name##SMP&lt;T, Derived&gt; &amp;operator=(Name##SMP&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;     \</div><div class="line">    ~Name##SMP() {}</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00061">61</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa58d70a7623d8e15b349dc19af56aabd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VSMC_RUNTIME_ASSERT_SMP_BACKEND_BASE_DERIVED</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">basename</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>((dynamic_cast&lt;Derived *&gt;(<span class="keyword">this</span>) != <span class="keyword">nullptr</span>),           \</div><div class="line">        <span class="stringliteral">&quot;DERIVED FROM &quot;</span> #basename                                             \</div><div class="line">        <span class="stringliteral">&quot; WITH INCORRECT **Derived** TEMPLATE PARAMTER&quot;</span>);</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00054">assert.hpp:54</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00077">77</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">Name##SMP() = <span class="keywordflow">default</span>;                                                    \</div><div class="line">    Name##SMP(<span class="keyword">const</span> Name##SMP&lt;T, Derived&gt; &amp;) = <span class="keywordflow">default</span>;                       \</div><div class="line">    Name##SMP&lt;T, Derived&gt; &amp;operator=(Name##SMP&lt;T, Derived&gt; &amp;) = <span class="keywordflow">default</span>;      \</div><div class="line">    Name##SMP(Name##SMP&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;                            \</div><div class="line">    Name##SMP&lt;T, Derived&gt; &amp;operator=(Name##SMP&lt;T, Derived&gt; &amp;&amp;) = <span class="keywordflow">default</span>;</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00059">59</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>

@@ -98,14 +98,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_sorted.html">vsmc::U01SequenceSorted&lt; RNGType, RealType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a fixed length sequence of uniform \([0,1)\) random variates by sorting.  <a href="classvsmc_1_1_u01_sequence_sorted.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_sorted.html">vsmc::U01SequenceSorted</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorted of standard uniform numbers.  <a href="classvsmc_1_1_u01_sequence_sorted.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified&lt; RNGType, RealType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a fixed length sequence of uniform \([0,1)\) random variates by stratified sampling.  <a href="classvsmc_1_1_u01_sequence_stratified.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_stratified.html">vsmc::U01SequenceStratified</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stratified standard uniform numbers.  <a href="classvsmc_1_1_u01_sequence_stratified.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">vsmc::U01SequenceSystematic&lt; RNGType, RealType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a fixed length sequence of uniform \([0,1)\) random variates by systematic sampling.  <a href="classvsmc_1_1_u01_sequence_systematic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_u01_sequence_systematic.html">vsmc::U01SequenceSystematic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Systematic standard uniform numbers.  <a href="classvsmc_1_1_u01_sequence_systematic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -180,7 +180,7 @@ template&lt;typename RealType , typename RNGType &gt; </div>
 
 <p>Generate sorted standard uniform numbers with \(O(N)\) cost. </p>
 
-<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00194">194</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00196">196</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ template&lt;typename RealType , typename RNGType &gt; </div>
 
 <p>Generate stratified standard uniform numbers. </p>
 
-<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00215">215</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00223">223</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ template&lt;typename RealType , typename RNGType &gt; </div>
 
 <p>Generate systematic standard uniform numbers. </p>
 
-<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00233">233</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00241">241</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 
 </div>
 </div>
@@ -317,9 +317,8 @@ template&lt;typename RealType &gt; </div>
 </div><div class="memdoc">
 
 <p>Tranform a sequence of standard uniform random numbers to sorted sequence. </p>
-<p>This function does not acutally sort the sequence <code>u01</code>, instead <code>r</code> is a sequence generated such that it comes from the same distribution of the sorted sequence. </p>
 
-<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00126">126</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00121">121</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +364,7 @@ template&lt;typename RealType &gt; </div>
 
 <p>Transform a sequence of standard uniform random numbers to a stratified sequence. </p>
 
-<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00148">148</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00150">150</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +410,7 @@ template&lt;typename RealType &gt; </div>
 
 <p>Transform a single standard uniform random number to a systematic sequence. </p>
 
-<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00171">171</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
+<p>Definition at line <a class="el" href="u01__sequence_8hpp_source.html#l00173">173</a> of file <a class="el" href="u01__sequence_8hpp_source.html">u01_sequence.hpp</a>.</p>
 
 </div>
 </div>

@@ -19,7 +19,6 @@ var searchData=
   ['allocatoralignment',['AllocatorAlignment',['../classvsmc_1_1internal_1_1_allocator_alignment.html',1,'vsmc::internal']]],
   ['allocatoralignment_3c_20allocator_3c_20t_2c_20alignment_2c_20memory_20_3e_20_3e',['AllocatorAlignment&lt; Allocator&lt; T, Alignment, Memory &gt; &gt;',['../classvsmc_1_1internal_1_1_allocator_alignment_3_01_allocator_3_01_t_00_01_alignment_00_01_memory_01_4_01_4.html',1,'vsmc::internal']]],
   ['array',['Array',['../classvsmc_1_1_array.html',1,'vsmc']]],
-  ['array_3c_20t_2c_20n_2c_20internal_3a_3aallocatoralignment_3c_20alloc_20_3e_3a_3avalue_20_3e',['Array&lt; T, N, internal::AllocatorAlignment&lt; Alloc &gt;::value &gt;',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['arsconstants',['ARSConstants',['../classvsmc_1_1_a_r_s_constants.html',1,'vsmc']]],
   ['arskeyseqimpl',['ARSKeySeqImpl',['../classvsmc_1_1internal_1_1_a_r_s_key_seq_impl.html',1,'vsmc::internal']]],
   ['arsweylconstant',['ARSWeylConstant',['../classvsmc_1_1internal_1_1_a_r_s_weyl_constant.html',1,'vsmc::internal']]],

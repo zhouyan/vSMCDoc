@@ -17,5 +17,5 @@ var searchData=
   ['philox4x64engine',['Philox4x64Engine',['../group___philox.html#ga1d786ee8358dfdc5af4e06bf1592da5d',1,'vsmc']]],
   ['philox_5f64',['Philox_64',['../group___philox.html#ga2d22af110e76cbf25f01563283097a95',1,'vsmc']]],
   ['philoxengine',['PhiloxEngine',['../group___philox.html#ga1d11ab80f17bd05a83087b8628dc84b6',1,'vsmc']]],
-  ['pointer',['pointer',['../classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968',1,'vsmc::Allocator::pointer()'],['../classvsmc_1_1_c_l_base.html#af2bf2acba931a83ca250577e9e2e289c',1,'vsmc::CLBase::pointer()'],['../classvsmc_1_1_static_vector_n.html#a4ce08dab4156531e453d224d0b4ce83d',1,'vsmc::StaticVectorN::pointer()']]]
+  ['pointer',['pointer',['../classvsmc_1_1_allocator.html#a0dc06f20f34af3712d39de68a206c968',1,'vsmc::Allocator::pointer()'],['../classvsmc_1_1_c_l_base.html#af2bf2acba931a83ca250577e9e2e289c',1,'vsmc::CLBase::pointer()']]]
 ];

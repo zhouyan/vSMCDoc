@@ -221,7 +221,6 @@ var searchData=
   ['threefrysbox_3c_20t_2c_20k_2c_20n_2c_20constants_2c_20true_20_3e',['ThreefrySBox&lt; T, K, N, Constants, true &gt;',['../classvsmc_1_1internal_1_1_threefry_s_box_3_01_t_00_01_k_00_01_n_00_01_constants_00_01true_01_4.html',1,'vsmc::internal']]],
   ['traits',['Traits',['../group___traits.html',1,'']]],
   ['traits_2ehpp',['traits.hpp',['../traits_8hpp.html',1,'']]],
-  ['transform',['transform',['../classvsmc_1_1_u01_sequence_sorted.html#a09e2691edd942a0744f2ebc45d5c09aa',1,'vsmc::U01SequenceSorted::transform()'],['../classvsmc_1_1_u01_sequence_stratified.html#a35e1eb32563e30a4cf522dfa1d09a67f',1,'vsmc::U01SequenceStratified::transform()'],['../classvsmc_1_1_u01_sequence_systematic.html#a0a7fa43dbd13db3f8602bba4de7b10e9',1,'vsmc::U01SequenceSystematic::transform()']]],
   ['transform_2ehpp',['transform.hpp',['../transform_8hpp.html',1,'']]],
   ['turn_5foff',['turn_off',['../classvsmc_1_1_monitor.html#a4cf19bb420d491539576417f06725c91',1,'vsmc::Monitor']]],
   ['turn_5fon',['turn_on',['../classvsmc_1_1_monitor.html#ae502858b87f498ea8a1ecbf21186db9c',1,'vsmc::Monitor']]],

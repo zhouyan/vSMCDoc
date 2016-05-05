@@ -7,7 +7,7 @@ var searchData=
   ['weighttypedispatch_3c_20t_2c_20false_20_3e',['WeightTypeDispatch&lt; T, false &gt;',['../classvsmc_1_1internal_1_1_weight_type_dispatch_3_01_t_00_01false_01_4.html',1,'vsmc::internal']]],
   ['weighttypedispatch_3c_20t_2c_20true_20_3e',['WeightTypeDispatch&lt; T, true &gt;',['../classvsmc_1_1internal_1_1_weight_type_dispatch_3_01_t_00_01true_01_4.html',1,'vsmc::internal']]],
   ['weighttypetrait',['WeightTypeTrait',['../classvsmc_1_1_weight_type_trait.html',1,'vsmc']]],
-  ['work_5ftype',['work_type',['../classvsmc_1_1_monitor_eval_t_b_b_1_1work__type.html',1,'vsmc::MonitorEvalTBB']]],
-  ['work_5ftype',['work_type',['../classvsmc_1_1_initialize_t_b_b_1_1work__type.html',1,'vsmc::InitializeTBB']]],
-  ['work_5ftype',['work_type',['../classvsmc_1_1_move_t_b_b_1_1work__type.html',1,'vsmc::MoveTBB']]]
+  ['work_5ftype',['work_type',['../classvsmc_1_1_monitor_eval_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4_1_1work__type.html',1,'vsmc::MonitorEvalSMP&lt; BackendTBB, T, Derived &gt;']]],
+  ['work_5ftype',['work_type',['../classvsmc_1_1_initialize_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4_1_1work__type.html',1,'vsmc::InitializeSMP&lt; BackendTBB, T, Derived &gt;']]],
+  ['work_5ftype',['work_type',['../classvsmc_1_1_move_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4_1_1work__type.html',1,'vsmc::MoveSMP&lt; BackendTBB, T, Derived &gt;']]]
 ];

@@ -87,8 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">Covariance<div class="ingroups"><a class="el" href="group___utility.html">Utility</a></div></div>  </div>
 </div><!--header-->
@@ -102,97 +101,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_covariance.html">vsmc::Covariance&lt; RealType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_covariance.html" title="Covariance. ">Covariance</a>.  <a href="classvsmc_1_1_covariance.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gab29db1cf56002949014a2a80507d2504"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
-<tr class="memitem:gab29db1cf56002949014a2a80507d2504"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___covariance.html#gab29db1cf56002949014a2a80507d2504">vsmc::chol</a> (std::size_t dim, const RealType *a, RealType *chol, MatrixLayout layout=RowMajor, bool upper=false, bool packed=false)</td></tr>
-<tr class="memdesc:gab29db1cf56002949014a2a80507d2504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Cholesky decomposition of the covariance matrix.  <a href="group___covariance.html#gab29db1cf56002949014a2a80507d2504">More...</a><br /></td></tr>
-<tr class="separator:gab29db1cf56002949014a2a80507d2504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Covariance matrix estimation and manipulation. </p>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gab29db1cf56002949014a2a80507d2504"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename RealType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vsmc::chol </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>dim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const RealType *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RealType *&#160;</td>
-          <td class="paramname"><em>chol</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___definitions.html#ga59ef6afcf177c66c2847f809d21dd8d5">MatrixLayout</a>&#160;</td>
-          <td class="paramname"><em>layout</em> = <code><a class="el" href="group___definitions.html#gga59ef6afcf177c66c2847f809d21dd8d5a4df16e4b47c5a0662d1344fac6783ae6">RowMajor</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>upper</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>packed</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute Cholesky decomposition of the covariance matrix. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dim</td><td>The number of rows of the covariance matrix </td></tr>
-    <tr><td class="paramname">a</td><td>The input matrix </td></tr>
-    <tr><td class="paramname">chol</td><td>The output lower triangular elements of the Cholesky decomposition, packed row by row. This can be directly used as the input parameter of the <a class="el" href="classvsmc_1_1_normal_m_v_distribution.html" title="Multivariate Normal distribution. ">NormalMVDistribution</a> constructors. </td></tr>
-    <tr><td class="paramname">layout</td><td>The storage layout of the covariance matrix </td></tr>
-    <tr><td class="paramname">upper</td><td>If <code>true</code>, the upper triangular of the covariance matrix shall be used. Otherwise the lower triangular shall be used. </td></tr>
-    <tr><td class="paramname">packed</td><td>If the upper or lower triangular of covariance matrix is packed, row by row if <code>layout == RowMajor</code>, or column by column if <code>layout == ColMajor</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><ul>
-<li><code>0</code> If successful</li>
-<li>Positive value <code>i</code> if the <code>i</code>th minor of the covariance matrix is not psotive-definite. </li>
-</ul>
-</dd></dl>
-
-<p>Definition at line <a class="el" href="covariance_8hpp_source.html#l00126">126</a> of file <a class="el" href="covariance_8hpp_source.html">covariance.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

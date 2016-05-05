@@ -4,6 +4,7 @@ var searchData=
   ['name',['name',['../classvsmc_1_1_monitor.html#a7e7bfb0a019bd6ac999727267b50a143',1,'vsmc::Monitor::name(std::size_t id)'],['../classvsmc_1_1_monitor.html#a41151e47ce7b05ca3af868ca6efe3811',1,'vsmc::Monitor::name(std::size_t id) const ']]],
   ['nanoseconds',['nanoseconds',['../classvsmc_1_1_stop_watch_clock_adapter.html#a1bfb327162f1cee77c3558b254094fa6',1,'vsmc::StopWatchClockAdapter']]],
   ['neg_5fbinomial',['neg_binomial',['../classvsmc_1_1_m_k_l_stream.html#adf78b90487819f05b9f6f1d029cc2367',1,'vsmc::MKLStream']]],
+  ['never',['never',['../classvsmc_1_1_resample_move.html#a43e698b418835294cc376538fe91eb3b',1,'vsmc::ResampleMove']]],
   ['news_2emd',['news.md',['../news_8md.html',1,'']]],
   ['normal_5fdistribution',['normal_distribution',['../group___distribution.html#ga3912dc0802b1da13bb016659e477fee5',1,'vsmc::normal_distribution(RNGType &amp;rng, std::size_t n, RealType *r, RealType mean, RealType stddev)'],['../namespacevsmc.html#a7e48393c676d96bc892bba8accbf13b1',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, float *r, float, float)'],['../namespacevsmc.html#a9b908cb91a8a51c2e38999bf5cef9577',1,'vsmc::normal_distribution(MKLEngine&lt; BRNG, Bits &gt; &amp;, std::size_t, double *r, double, double)'],['../namespacevsmc.html#acf5e2805debb869ba14488de1f264f9f',1,'vsmc::normal_distribution(RNGType &amp;rng, std::size_t N, RealType *r, const typename NormalDistribution&lt; RealType &gt;::param_type &amp;param)']]],
   ['normal_5fdistribution_2ehpp',['normal_distribution.hpp',['../normal__distribution_8hpp.html',1,'']]],
@@ -24,6 +25,6 @@ var searchData=
   ['normalmvdistribution',['NormalMVDistribution',['../classvsmc_1_1_normal_m_v_distribution.html',1,'vsmc']]],
   ['normalmvproposal',['NormalMVProposal',['../classvsmc_1_1_normal_m_v_proposal.html#af2e62ae5860a7c37bd7c3de48dd17458',1,'vsmc::NormalMVProposal::NormalMVProposal(const result_type *chol=nullptr, const result_type *a=nullptr, const result_type *b=nullptr)'],['../classvsmc_1_1_normal_m_v_proposal.html#a87dc24b6a6f21f5a293ef82ae8a944e4',1,'vsmc::NormalMVProposal::NormalMVProposal(std::size_t dim, const result_type *chol=nullptr, const result_type *a=nullptr, const result_type *b=nullptr)']]],
   ['normalmvproposal',['NormalMVProposal',['../classvsmc_1_1_normal_m_v_proposal.html',1,'vsmc']]],
-  ['normalproposal',['NormalProposal',['../classvsmc_1_1_normal_proposal.html#a7ed55b957e579d1dd6e189f04e1e7319',1,'vsmc::NormalProposal']]],
-  ['normalproposal',['NormalProposal',['../classvsmc_1_1_normal_proposal.html',1,'vsmc']]]
+  ['normalproposal',['NormalProposal',['../classvsmc_1_1_normal_proposal.html',1,'vsmc']]],
+  ['normalproposal',['NormalProposal',['../classvsmc_1_1_normal_proposal.html#a7ed55b957e579d1dd6e189f04e1e7319',1,'vsmc::NormalProposal']]]
 ];

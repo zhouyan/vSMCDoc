@@ -7,6 +7,7 @@ var searchData=
   ['rebind',['rebind',['../classvsmc_1_1_allocator_1_1rebind.html',1,'vsmc::Allocator']]],
   ['resamplealgorithm',['ResampleAlgorithm',['../classvsmc_1_1_resample_algorithm.html',1,'vsmc']]],
   ['resampleindex',['ResampleIndex',['../classvsmc_1_1_resample_index.html',1,'vsmc']]],
+  ['resamplemove',['ResampleMove',['../classvsmc_1_1_resample_move.html',1,'vsmc']]],
   ['resampletypetrait',['ResampleTypeTrait',['../classvsmc_1_1_resample_type_trait.html',1,'vsmc']]],
   ['resampletypetrait_3c_20multinomial_20_3e',['ResampleTypeTrait&lt; Multinomial &gt;',['../classvsmc_1_1_resample_type_trait_3_01_multinomial_01_4.html',1,'vsmc']]],
   ['resampletypetrait_3c_20residual_20_3e',['ResampleTypeTrait&lt; Residual &gt;',['../classvsmc_1_1_resample_type_trait_3_01_residual_01_4.html',1,'vsmc']]],

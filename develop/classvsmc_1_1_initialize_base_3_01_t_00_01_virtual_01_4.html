@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f4b3e5e7284d4e9cc78f336f6a5be43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a606304b5a6d280c07986a700be1300cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a606304b5a6d280c07986a700be1300cf">eval_pre</a> (<a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;)</td></tr>
 <tr class="separator:a606304b5a6d280c07986a700be1300cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4ff8a6bdfe013894e5bde9e5729cb4"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#a6d4ff8a6bdfe013894e5bde9e5729cb4">eval_range</a> (<a class="el" href="classvsmc_1_1_particle_range.html">ParticleRange</a>&lt; T &gt; range)</td></tr>
+<tr class="separator:a6d4ff8a6bdfe013894e5bde9e5729cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae69da8517b4371cd55ad60042639bc7"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_initialize_base_3_01_t_00_01_virtual_01_4.html#aae69da8517b4371cd55ad60042639bc7">eval_sp</a> (<a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt;)</td></tr>
 <tr class="separator:aae69da8517b4371cd55ad60042639bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -144,7 +146,7 @@ class vsmc::InitializeBase&lt; T, Virtual &gt;</h3>
 
 <p>Initilaize base dispatch class. </p>
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00221">221</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00267">267</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae3cde5d222ac406fa844219c1a02e6ef"></a>
 <div class="memitem">
@@ -246,7 +248,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00230">230</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00290">290</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +287,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00225">225</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00283">283</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +315,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00227">227</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00287">287</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -341,7 +343,35 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00226">226</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00285">285</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d4ff8a6bdfe013894e5bde9e5729cb4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::size_t <a class="el" href="classvsmc_1_1_initialize_base.html">vsmc::InitializeBase</a>&lt; T, Virtual &gt;::eval_range </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle_range.html">ParticleRange</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>range</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00272">272</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,33 +399,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00224">224</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abf9970f748b755c3632dbbd01144c3c1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_initialize_base.html">InitializeBase</a>&lt;T, Virtual&gt;&amp; <a class="el" href="classvsmc_1_1_initialize_base.html">vsmc::InitializeBase</a>&lt; T, Virtual &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvsmc_1_1_initialize_base.html">InitializeBase</a>&lt; T, Virtual &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00270">270</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -412,6 +416,32 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="classvsmc_1_1_initialize_base.html">InitializeBase</a>&lt;T, Virtual&gt;&amp; <a class="el" href="classvsmc_1_1_initialize_base.html">vsmc::InitializeBase</a>&lt; T, Virtual &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvsmc_1_1_initialize_base.html">InitializeBase</a>&lt; T, Virtual &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf9970f748b755c3632dbbd01144c3c1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_initialize_base.html">InitializeBase</a>&lt;T, Virtual&gt;&amp; <a class="el" href="classvsmc_1_1_initialize_base.html">vsmc::InitializeBase</a>&lt; T, Virtual &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvsmc_1_1_initialize_base.html">InitializeBase</a>&lt; T, Virtual &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

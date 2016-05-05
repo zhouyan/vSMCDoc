@@ -17,12 +17,16 @@ var searchData=
   ['monitor',['Monitor',['../classvsmc_1_1_monitor.html',1,'vsmc']]],
   ['monitorevalbase',['MonitorEvalBase',['../classvsmc_1_1_monitor_eval_base.html',1,'vsmc']]],
   ['monitorevalbase_3c_20t_2c_20virtual_20_3e',['MonitorEvalBase&lt; T, Virtual &gt;',['../classvsmc_1_1_monitor_eval_base_3_01_t_00_01_virtual_01_4.html',1,'vsmc']]],
-  ['monitorevalomp',['MonitorEvalOMP',['../classvsmc_1_1_monitor_eval_o_m_p.html',1,'vsmc']]],
-  ['monitorevalseq',['MonitorEvalSEQ',['../classvsmc_1_1_monitor_eval_s_e_q.html',1,'vsmc']]],
-  ['monitorevaltbb',['MonitorEvalTBB',['../classvsmc_1_1_monitor_eval_t_b_b.html',1,'vsmc']]],
+  ['monitorevalsmp',['MonitorEvalSMP',['../classvsmc_1_1_monitor_eval_s_m_p.html',1,'vsmc']]],
+  ['monitorevalsmp_3c_20backendomp_2c_20t_2c_20derived_20_3e',['MonitorEvalSMP&lt; BackendOMP, T, Derived &gt;',['../classvsmc_1_1_monitor_eval_s_m_p_3_01_backend_o_m_p_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
+  ['monitorevalsmp_3c_20backendseq_2c_20t_2c_20derived_20_3e',['MonitorEvalSMP&lt; BackendSEQ, T, Derived &gt;',['../classvsmc_1_1_monitor_eval_s_m_p_3_01_backend_s_e_q_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
+  ['monitorevalsmp_3c_20backendstd_2c_20t_2c_20derived_20_3e',['MonitorEvalSMP&lt; BackendSTD, T, Derived &gt;',['../classvsmc_1_1_monitor_eval_s_m_p_3_01_backend_s_t_d_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
+  ['monitorevalsmp_3c_20backendtbb_2c_20t_2c_20derived_20_3e',['MonitorEvalSMP&lt; BackendTBB, T, Derived &gt;',['../classvsmc_1_1_monitor_eval_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
   ['movebase',['MoveBase',['../classvsmc_1_1_move_base.html',1,'vsmc']]],
   ['movebase_3c_20t_2c_20virtual_20_3e',['MoveBase&lt; T, Virtual &gt;',['../classvsmc_1_1_move_base_3_01_t_00_01_virtual_01_4.html',1,'vsmc']]],
-  ['moveomp',['MoveOMP',['../classvsmc_1_1_move_o_m_p.html',1,'vsmc']]],
-  ['moveseq',['MoveSEQ',['../classvsmc_1_1_move_s_e_q.html',1,'vsmc']]],
-  ['movetbb',['MoveTBB',['../classvsmc_1_1_move_t_b_b.html',1,'vsmc']]]
+  ['movesmp',['MoveSMP',['../classvsmc_1_1_move_s_m_p.html',1,'vsmc']]],
+  ['movesmp_3c_20backendomp_2c_20t_2c_20derived_20_3e',['MoveSMP&lt; BackendOMP, T, Derived &gt;',['../classvsmc_1_1_move_s_m_p_3_01_backend_o_m_p_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
+  ['movesmp_3c_20backendseq_2c_20t_2c_20derived_20_3e',['MoveSMP&lt; BackendSEQ, T, Derived &gt;',['../classvsmc_1_1_move_s_m_p_3_01_backend_s_e_q_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
+  ['movesmp_3c_20backendstd_2c_20t_2c_20derived_20_3e',['MoveSMP&lt; BackendSTD, T, Derived &gt;',['../classvsmc_1_1_move_s_m_p_3_01_backend_s_t_d_00_01_t_00_01_derived_01_4.html',1,'vsmc']]],
+  ['movesmp_3c_20backendtbb_2c_20t_2c_20derived_20_3e',['MoveSMP&lt; BackendTBB, T, Derived &gt;',['../classvsmc_1_1_move_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4.html',1,'vsmc']]]
 ];

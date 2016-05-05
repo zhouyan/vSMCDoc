@@ -105,12 +105,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>StateMatrix</code> gain <code>resize(N, dim)</code> method. Resizing a <code>StateMatrix</code> object preserve original values in the following sense. Let N and M be the original and new sizes, let K and L be the original and new dimensions. Then <code>resize(M, L)</code> preserve the min(N, M) by min(K, L) matrix at the upper left corner of the original. The overloading <code>resize(N)</code> assumes the dimension does not change. The method <code>resize_dim</code> also gains this new behavior of preserving values.</li>
 <li><code>StateMatrix</code> can now handle the situation where the length of the input <code>index</code> to <code>copy</code> is not the same as its own size. The results is a resized matrix.</li>
 <li><code>Particle</code> can now be resized by various methods</li>
+<li>One can now use resampling algorithms as a <code>Sampler::move_type</code> object through <code>ResampleMove</code></li>
 </ul>
 <h2>Changed behaviors</h2>
 <ul>
 <li>Most methods which take a <code>MatrixLayout</code> type template parameter now has that parameter as a runtime parameter.</li>
 <li>Most methods that takes output iterators, (including pointers that used in this fashion), now returns an iterator in the same way as <code>std::copy</code> etc.</li>
 <li><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;&gt;</code></li>
+<li><code>Sampler::resample_scheme</code> is now renamed <code>resample_method</code></li>
+<li><code>Particle::resample</code> is removed</li>
 </ul>
 <h2>Removed features</h2>
 <ul>

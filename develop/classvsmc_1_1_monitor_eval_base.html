@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe953e083a2295a2d091cf643e48562b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a086290f49d0bd96c27757925aaf40d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#a086290f49d0bd96c27757925aaf40d4d">eval_pre</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
 <tr class="separator:a086290f49d0bd96c27757925aaf40d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2075a6af7734388a9f83340d429e422b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#a2075a6af7734388a9f83340d429e422b">eval_range</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_particle_range.html">ParticleRange</a>&lt; T &gt; range, double *r)</td></tr>
+<tr class="separator:a2075a6af7734388a9f83340d429e422b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19664a9e2f98d8f5244093fd38ed575b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_monitor_eval_base.html#a19664a9e2f98d8f5244093fd38ed575b">eval_sp</a> (std::size_t iter, std::size_t dim, <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; sp, double *r)</td></tr>
 <tr class="separator:a19664a9e2f98d8f5244093fd38ed575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -140,7 +142,7 @@ class vsmc::MonitorEvalBase&lt; T, Derived &gt;</h3>
 
 <p><a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> evalution base dispatch class. </p>
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00360">360</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00470">470</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3170efc8a765af47466d5338c7404518"></a>
 <div class="memitem">
@@ -254,7 +256,7 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00374">374</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00490">490</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -292,7 +294,57 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00369">369</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00485">485</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2075a6af7734388a9f83340d429e422b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::eval_range </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle_range.html">ParticleRange</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00479">479</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -342,33 +394,7 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00363">363</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8c1c916eec43ded2f399ed932656aa0d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt;T, Derived&gt;&amp; <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt; T, Derived &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00473">473</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -385,6 +411,32 @@ template&lt;typename T , typename Derived &gt; </div>
           <td class="memname"><a class="el" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt;T, Derived&gt;&amp; <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt; T, Derived &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c1c916eec43ded2f399ed932656aa0d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt;T, Derived&gt;&amp; <a class="el" href="classvsmc_1_1_monitor_eval_base.html">vsmc::MonitorEvalBase</a>&lt; T, Derived &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_monitor_eval_base.html">MonitorEvalBase</a>&lt; T, Derived &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

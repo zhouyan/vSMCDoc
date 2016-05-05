@@ -826,7 +826,7 @@ template&lt;typename InputIter &gt; </div>
 <p>Store a matrix in the HDF5 format from an input iterator. </p>
 <dl class="section note"><dt>Note</dt><dd>HDF5 store data in row major layout. For example, <div class="fragment"><div class="line"><span class="keywordtype">double</span> data[6] = {1, 2, 3, 4, 5, 6};</div><div class="line"></div><div class="line"><span class="comment">// Store matrix</span></div><div class="line"><span class="comment">// 1 2</span></div><div class="line"><span class="comment">// 3 4</span></div><div class="line"><span class="comment">// 5 6</span></div><div class="line">hdf5store_matrix&lt;double&gt;(<a class="code" href="group___definitions.html#gga59ef6afcf177c66c2847f809d21dd8d5a4df16e4b47c5a0662d1344fac6783ae6">RowMajor</a>, 3, 2, data, <span class="stringliteral">&quot;row.hdf5&quot;</span>, <span class="stringliteral">&quot;data&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// Store matrix</span></div><div class="line"><span class="comment">// 1 4</span></div><div class="line"><span class="comment">// 2 5</span></div><div class="line"><span class="comment">// 3 6</span></div><div class="line">hdf5store_matrix&lt;double&gt;(<a class="code" href="group___definitions.html#gga59ef6afcf177c66c2847f809d21dd8d5acdd5754f1499e364f16d3373c94e368f">ColMajor</a>, 3, 2, data, <span class="stringliteral">&quot;col.hdf5&quot;</span>, <span class="stringliteral">&quot;data&quot;</span>);</div></div><!-- fragment --> When the results are read by other program, for example R, a transpose may be needed. For instance, <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;library(rhdf5)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;row &lt;- h5read(&quot;row.hdf5&quot;, &quot;/data&quot;)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;print(row) # produce</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;#      [,1] [,2] [,3]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;# [1,]    1    3    5</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;# [2,]    2    4    6</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;col &lt;- h5read(&quot;col.hdf5&quot;, &quot;/data&quot;)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;print(col)  # produce</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;#      [,1] [,2]</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;# [1,]    1    4</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;# [2,]    2    5</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;# [3,]    3    6</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;#</div></div><!-- fragment --> That is, when the data is stored in column major layout in C++ memory, then the read in R produces exactly the same output. If the data is stored as row major matrix in C++ memory, the read in R produces the transpose the original matrix though they are identical in memory. </dd></dl>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00519">519</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00516">516</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -878,7 +878,7 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00556">556</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00553">553</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -930,7 +930,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00566">566</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00563">563</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -982,7 +982,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_monitor.html" title="Monitor for Monte Carlo integration. ">Monitor</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00578">578</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00575">575</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1034,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> in the HDF5 format. </p>
 
-<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00614">614</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
+<p>Definition at line <a class="el" href="hdf5io_8hpp_source.html#l00587">587</a> of file <a class="el" href="hdf5io_8hpp_source.html">hdf5io.hpp</a>.</p>
 
 </div>
 </div>

@@ -99,6 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">algorithm.hpp File Reference</div>  </div>
@@ -114,6 +115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_algorithm.html">vsmc::ResampleAlgorithm&lt; U01SeqType, Residual &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resampling algorithm.  <a href="classvsmc_1_1_resample_algorithm.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_move.html">vsmc::ResampleMove&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resample algorithm acting as a <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> move.  <a href="classvsmc_1_1_resample_move.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_resample_type_trait.html">vsmc::ResampleTypeTrait&lt; ResampleScheme &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type trait of ResampleScheme parameter.  <a href="classvsmc_1_1_resample_type_trait.html#details">More...</a><br /></td></tr>
@@ -142,6 +146,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacevsmc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevsmc.html">vsmc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a54c7f3ae9d342582e36b0efb8425fe5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="algorithm_8hpp.html#a54c7f3ae9d342582e36b0efb8425fe5b">VSMC_RUNTIME_ASSERT_RESAMPLE_ALGORITHM_EVAL</a></td></tr>
+<tr class="separator:a54c7f3ae9d342582e36b0efb8425fe5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gab71e8ed43458e235201569030bb87b3b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___resample.html#gab71e8ed43458e235201569030bb87b3b">vsmc::ResampleMultinomial</a> = ResampleAlgorithm&lt; U01SequenceSorted, false &gt;</td></tr>
@@ -167,6 +176,22 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:gadf87ff3c9e8240ba445a7a3191f93d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of resample class corresponding to ResampleScheme parameter.  <a href="group___resample.html#gadf87ff3c9e8240ba445a7a3191f93d09">More...</a><br /></td></tr>
 <tr class="separator:gadf87ff3c9e8240ba445a7a3191f93d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a54c7f3ae9d342582e36b0efb8425fe5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VSMC_RUNTIME_ASSERT_RESAMPLE_ALGORITHM_EVAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a>(                                                      \</div><div class="line">        eval_, <span class="stringliteral">&quot;**ResampleMove::operator()** INVALID ALGORITHM OBJECT&quot;</span>)</div><div class="ttc" id="assert_8hpp_html_a992bf27762b7f77bd3312340c757054e"><div class="ttname"><a href="assert_8hpp.html#a992bf27762b7f77bd3312340c757054e">VSMC_RUNTIME_ASSERT</a></div><div class="ttdeci">#define VSMC_RUNTIME_ASSERT(cond, msg)                                                                            </div><div class="ttdef"><b>Definition:</b> <a href="assert_8hpp_source.html#l00059">assert.hpp:59</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="algorithm_8hpp_source.html#l00039">39</a> of file <a class="el" href="algorithm_8hpp_source.html">algorithm.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

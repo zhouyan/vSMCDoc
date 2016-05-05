@@ -105,6 +105,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_particle.html">vsmc::Particle&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a> class representing the whole particle set.  <a href="classvsmc_1_1_particle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_particle_range.html">vsmc::ParticleRange&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A subset of particles.  <a href="classvsmc_1_1_particle_range.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_sampler.html">vsmc::Sampler&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SMC <a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a>.  <a href="classvsmc_1_1_sampler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,15 +141,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3d9f15f3aaeeff3652101eb3bf4fbb1f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___core.html#ga3d9f15f3aaeeff3652101eb3bf4fbb1f">vsmc::swap</a> (StateMatrixBase&lt; Layout, Dim, T &gt; &amp;state1, StateMatrixBase&lt; Layout, Dim, T &gt; &amp;state2) noexcept</td></tr>
 <tr class="memdesc:ga3d9f15f3aaeeff3652101eb3bf4fbb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap two <a class="el" href="classvsmc_1_1_state_matrix_base.html" title="Base type of StateMatrix. ">StateMatrixBase</a> objects.  <a href="group___core.html#ga3d9f15f3aaeeff3652101eb3bf4fbb1f">More...</a><br /></td></tr>
 <tr class="separator:ga3d9f15f3aaeeff3652101eb3bf4fbb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c25e249c076553de2d0c2e777d184a4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core.html#ga3c25e249c076553de2d0c2e777d184a4">vsmc::weight_ess</a> (std::size_t N, const double *first)</td></tr>
-<tr class="memdesc:ga3c25e249c076553de2d0c2e777d184a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the ess given normalized weights.  <a href="group___core.html#ga3c25e249c076553de2d0c2e777d184a4">More...</a><br /></td></tr>
-<tr class="separator:ga3c25e249c076553de2d0c2e777d184a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4da4a3dbcc0d8de16cc8540dd6fe52e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core.html#ga4da4a3dbcc0d8de16cc8540dd6fe52e2">vsmc::weight_normalize</a> (std::size_t N, double *first)</td></tr>
-<tr class="memdesc:ga4da4a3dbcc0d8de16cc8540dd6fe52e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize weights such that the summation is one.  <a href="group___core.html#ga4da4a3dbcc0d8de16cc8540dd6fe52e2">More...</a><br /></td></tr>
-<tr class="separator:ga4da4a3dbcc0d8de16cc8540dd6fe52e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga826d29709f815c1cfaf21dfe03b94b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core.html#ga826d29709f815c1cfaf21dfe03b94b9e">vsmc::weight_normalize_log</a> (std::size_t N, double *first)</td></tr>
-<tr class="memdesc:ga826d29709f815c1cfaf21dfe03b94b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize logarithm weights such that the maximum is zero.  <a href="group___core.html#ga826d29709f815c1cfaf21dfe03b94b9e">More...</a><br /></td></tr>
-<tr class="separator:ga826d29709f815c1cfaf21dfe03b94b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Constructing samplers with operations on the whole particle set. </p>
@@ -187,121 +181,7 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T &gt; </div>
 
 <p>Swap two <a class="el" href="classvsmc_1_1_state_matrix_base.html" title="Base type of StateMatrix. ">StateMatrixBase</a> objects. </p>
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00179">179</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3c25e249c076553de2d0c2e777d184a4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double vsmc::weight_ess </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>first</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute the ess given normalized weights. </p>
-
-<p>Definition at line <a class="el" href="weight_8hpp_source.html#l00043">43</a> of file <a class="el" href="weight_8hpp_source.html">weight.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga4da4a3dbcc0d8de16cc8540dd6fe52e2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::weight_normalize </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>first</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Normalize weights such that the summation is one. </p>
-
-<p>Definition at line <a class="el" href="weight_8hpp_source.html#l00053">53</a> of file <a class="el" href="weight_8hpp_source.html">weight.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga826d29709f815c1cfaf21dfe03b94b9e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vsmc::weight_normalize_log </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>N</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>first</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Normalize logarithm weights such that the maximum is zero. </p>
-
-<p>Definition at line <a class="el" href="weight_8hpp_source.html#l00060">60</a> of file <a class="el" href="weight_8hpp_source.html">weight.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00192">192</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>

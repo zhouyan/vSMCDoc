@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9acd5f15e301f3b66c5abcec1c81f0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4340e75ff3f4b3a61bae8baba732462d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_base.html#a4340e75ff3f4b3a61bae8baba732462d">eval_pre</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle.html">Particle</a>&lt; T &gt; &amp;particle)</td></tr>
 <tr class="separator:a4340e75ff3f4b3a61bae8baba732462d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8b88ea885d836855441f5bc55f66c8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_base.html#a0c8b88ea885d836855441f5bc55f66c8">eval_range</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_particle_range.html">ParticleRange</a>&lt; T &gt; range)</td></tr>
+<tr class="separator:a0c8b88ea885d836855441f5bc55f66c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad7c6a9d7798d68067425cc70cad3b8e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_move_base.html#aad7c6a9d7798d68067425cc70cad3b8e">eval_sp</a> (std::size_t iter, <a class="el" href="classvsmc_1_1_single_particle.html">SingleParticle</a>&lt; T &gt; sp)</td></tr>
 <tr class="separator:aad7c6a9d7798d68067425cc70cad3b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -140,7 +142,7 @@ class vsmc::MoveBase&lt; T, Derived &gt;</h3>
 
 <p>Move base dispatch class. </p>
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00236">236</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00296">296</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a182006de95faae22ba4f17c672aa68fc"></a>
 <div class="memitem">
@@ -254,7 +256,7 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00249">249</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00314">314</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -292,7 +294,45 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00244">244</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00309">309</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c8b88ea885d836855441f5bc55f66c8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classvsmc_1_1_move_base.html">vsmc::MoveBase</a>&lt; T, Derived &gt;::eval_range </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_particle_range.html">ParticleRange</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00304">304</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,33 +370,7 @@ template&lt;typename T , typename Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00239">239</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a26eb078080c1adb4c335e366b582c02a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvsmc_1_1_move_base.html">MoveBase</a>&lt;T, Derived&gt;&amp; <a class="el" href="classvsmc_1_1_move_base.html">vsmc::MoveBase</a>&lt; T, Derived &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvsmc_1_1_move_base.html">MoveBase</a>&lt; T, Derived &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="backend__base_8hpp_source.html#l00299">299</a> of file <a class="el" href="backend__base_8hpp_source.html">backend_base.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,6 +387,32 @@ template&lt;typename T , typename Derived &gt; </div>
           <td class="memname"><a class="el" href="classvsmc_1_1_move_base.html">MoveBase</a>&lt;T, Derived&gt;&amp; <a class="el" href="classvsmc_1_1_move_base.html">vsmc::MoveBase</a>&lt; T, Derived &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvsmc_1_1_move_base.html">MoveBase</a>&lt; T, Derived &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26eb078080c1adb4c335e366b582c02a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvsmc_1_1_move_base.html">MoveBase</a>&lt;T, Derived&gt;&amp; <a class="el" href="classvsmc_1_1_move_base.html">vsmc::MoveBase</a>&lt; T, Derived &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvsmc_1_1_move_base.html">MoveBase</a>&lt; T, Derived &gt; &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

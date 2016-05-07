@@ -2,6 +2,7 @@ var searchData=
 [
   ['vsmc_5fcovariance',['vsmc_covariance',['../structvsmc__covariance.html',1,'']]],
   ['vsmc_5fmonitor',['vsmc_monitor',['../structvsmc__monitor.html',1,'']]],
+  ['vsmc_5fmonitor_5feval_5fsmp_5ftype',['vsmc_monitor_eval_smp_type',['../structvsmc__monitor__eval__smp__type.html',1,'']]],
   ['vsmc_5fparticle',['vsmc_particle',['../structvsmc__particle.html',1,'']]],
   ['vsmc_5fphilox2x32',['vsmc_philox2x32',['../structvsmc__philox2x32.html',1,'']]],
   ['vsmc_5fphilox2x32_5fctr_5ft',['vsmc_philox2x32_ctr_t',['../structvsmc__philox2x32__ctr__t.html',1,'']]],
@@ -11,10 +12,10 @@ var searchData=
   ['vsmc_5fphilox4x32_5fctr_5ft',['vsmc_philox4x32_ctr_t',['../structvsmc__philox4x32__ctr__t.html',1,'']]],
   ['vsmc_5fphilox4x32_5fkey_5ft',['vsmc_philox4x32_key_t',['../structvsmc__philox4x32__key__t.html',1,'']]],
   ['vsmc_5fphilox4x32_5fpar_5ft',['vsmc_philox4x32_par_t',['../structvsmc__philox4x32__par__t.html',1,'']]],
-  ['vsmc_5fprogram_5foption_5fmap',['vsmc_program_option_map',['../structvsmc__program__option__map.html',1,'']]],
-  ['vsmc_5fprogress',['vsmc_progress',['../structvsmc__progress.html',1,'']]],
   ['vsmc_5frng',['vsmc_rng',['../structvsmc__rng.html',1,'']]],
   ['vsmc_5fsampler',['vsmc_sampler',['../structvsmc__sampler.html',1,'']]],
+  ['vsmc_5fsampler_5finit_5fsmp_5ftype',['vsmc_sampler_init_smp_type',['../structvsmc__sampler__init__smp__type.html',1,'']]],
+  ['vsmc_5fsampler_5fmove_5fsmp_5ftype',['vsmc_sampler_move_smp_type',['../structvsmc__sampler__move__smp__type.html',1,'']]],
   ['vsmc_5fsingle_5fparticle',['vsmc_single_particle',['../structvsmc__single__particle.html',1,'']]],
   ['vsmc_5fstate_5fmatrix',['vsmc_state_matrix',['../structvsmc__state__matrix.html',1,'']]],
   ['vsmc_5fstop_5fwatch',['vsmc_stop_watch',['../structvsmc__stop__watch.html',1,'']]],
@@ -34,8 +35,5 @@ var searchData=
   ['vsmc_5fthreefry4x64_5fctr_5ft',['vsmc_threefry4x64_ctr_t',['../structvsmc__threefry4x64__ctr__t.html',1,'']]],
   ['vsmc_5fthreefry4x64_5fkey_5ft',['vsmc_threefry4x64_key_t',['../structvsmc__threefry4x64__key__t.html',1,'']]],
   ['vsmc_5fthreefry4x64_5fpar_5ft',['vsmc_threefry4x64_par_t',['../structvsmc__threefry4x64__par__t.html',1,'']]],
-  ['vsmc_5fvector',['vsmc_vector',['../structvsmc__vector.html',1,'']]],
-  ['vsmc_5fvector_5fint',['vsmc_vector_int',['../structvsmc__vector__int.html',1,'']]],
-  ['vsmc_5fvector_5fraw',['vsmc_vector_raw',['../structvsmc__vector__raw.html',1,'']]],
   ['vsmc_5fweight',['vsmc_weight',['../structvsmc__weight.html',1,'']]]
 ];

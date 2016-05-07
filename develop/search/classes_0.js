@@ -18,6 +18,7 @@ var searchData=
   ['allocator_3c_20void_2c_20alignment_2c_20memory_20_3e',['Allocator&lt; void, Alignment, Memory &gt;',['../classvsmc_1_1_allocator_3_01void_00_01_alignment_00_01_memory_01_4.html',1,'vsmc']]],
   ['allocatoralignment',['AllocatorAlignment',['../classvsmc_1_1internal_1_1_allocator_alignment.html',1,'vsmc::internal']]],
   ['allocatoralignment_3c_20allocator_3c_20t_2c_20alignment_2c_20memory_20_3e_20_3e',['AllocatorAlignment&lt; Allocator&lt; T, Alignment, Memory &gt; &gt;',['../classvsmc_1_1internal_1_1_allocator_alignment_3_01_allocator_3_01_t_00_01_alignment_00_01_memory_01_4_01_4.html',1,'vsmc::internal']]],
+  ['arcsinedistribution',['ArcsineDistribution',['../classvsmc_1_1_arcsine_distribution.html',1,'vsmc']]],
   ['array',['Array',['../classvsmc_1_1_array.html',1,'vsmc']]],
   ['arsconstants',['ARSConstants',['../classvsmc_1_1_a_r_s_constants.html',1,'vsmc']]],
   ['arskeyseqimpl',['ARSKeySeqImpl',['../classvsmc_1_1internal_1_1_a_r_s_key_seq_impl.html',1,'vsmc::internal']]],

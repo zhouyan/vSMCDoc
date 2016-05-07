@@ -45,8 +45,8 @@ var searchData=
   ['u01impl_3c_20uinttype_2c_20realtype_2c_20open_2c_20closed_20_3e',['U01Impl&lt; UIntType, RealType, Open, Closed &gt;',['../classvsmc_1_1internal_1_1_u01_impl_3_01_u_int_type_00_01_real_type_00_01_open_00_01_closed_01_4.html',1,'vsmc::internal']]],
   ['u01impl_3c_20uinttype_2c_20realtype_2c_20open_2c_20open_20_3e',['U01Impl&lt; UIntType, RealType, Open, Open &gt;',['../classvsmc_1_1internal_1_1_u01_impl_3_01_u_int_type_00_01_real_type_00_01_open_00_01_open_01_4.html',1,'vsmc::internal']]],
   ['u01lrdistribution',['U01LRDistribution',['../classvsmc_1_1_u01_l_r_distribution.html',1,'vsmc']]],
-  ['u01ocdistribution',['U01OCDistribution',['../classvsmc_1_1_u01_o_c_distribution.html',1,'vsmc']]],
   ['u01ocdistribution',['U01OCDistribution',['../classvsmc_1_1_u01_o_c_distribution.html#a0d3b0f9ca33bbafa7a26ff1607bf4279',1,'vsmc::U01OCDistribution::U01OCDistribution()=default'],['../classvsmc_1_1_u01_o_c_distribution.html#ab9f4f5d23baa2e6ac1a3256d6527c477',1,'vsmc::U01OCDistribution::U01OCDistribution(const param_type &amp;)']]],
+  ['u01ocdistribution',['U01OCDistribution',['../classvsmc_1_1_u01_o_c_distribution.html',1,'vsmc']]],
   ['u01oodistribution',['U01OODistribution',['../classvsmc_1_1_u01_o_o_distribution.html',1,'vsmc']]],
   ['u01oodistribution',['U01OODistribution',['../classvsmc_1_1_u01_o_o_distribution.html#aabe18fad92dd7e19493e1ac523dabcd1',1,'vsmc::U01OODistribution::U01OODistribution()=default'],['../classvsmc_1_1_u01_o_o_distribution.html#a2a28331efbc85d807c1f532d4e8237a9',1,'vsmc::U01OODistribution::U01OODistribution(const param_type &amp;)']]],
   ['u01pow2',['U01Pow2',['../classvsmc_1_1internal_1_1_u01_pow2.html',1,'vsmc::internal']]],
@@ -76,8 +76,8 @@ var searchData=
   ['uniform_5freal_5fdistribution_5fimpl',['uniform_real_distribution_impl',['../namespacevsmc_1_1internal.html#a28989f85f31514eb1222647fd7e255d1',1,'vsmc::internal']]],
   ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html',1,'vsmc']]],
   ['uniformbitsdistribution',['UniformBitsDistribution',['../classvsmc_1_1_uniform_bits_distribution.html#a0417d8865555b77d88212d45533c5562',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution()=default'],['../classvsmc_1_1_uniform_bits_distribution.html#ab1876acdf1445d56ad3a906fa8af5a08',1,'vsmc::UniformBitsDistribution::UniformBitsDistribution(const param_type &amp;)']]],
-  ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]],
   ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html',1,'vsmc']]],
+  ['uniformrealdistribution',['UniformRealDistribution',['../classvsmc_1_1_uniform_real_distribution.html#a743e84bb8c4f17fd7d2635354bc33144',1,'vsmc::UniformRealDistribution::UniformRealDistribution(result_type a=0, result_type b=1)'],['../classvsmc_1_1_uniform_real_distribution.html#a236635f21be14988d5219c80d0c592c7',1,'vsmc::UniformRealDistribution::UniformRealDistribution(const param_type &amp;param)']]],
   ['unique',['unique',['../classvsmc_1_1_c_l_base.html#a7ea8dac667a1715aa154c8b41005bf79',1,'vsmc::CLBase']]],
   ['unload_5fcompiler',['unload_compiler',['../classvsmc_1_1_c_l_platform.html#a2f49f72d90b464f1ab56d6c8d92748da',1,'vsmc::CLPlatform']]],
   ['unpack_5fi',['unpack_i',['../group__v_pack_unpack.html#ga8e03ac68bd42a925c28181dfe8d1758e',1,'vsmc']]],
@@ -85,5 +85,6 @@ var searchData=
   ['unpack_5fs',['unpack_s',['../group__v_pack_unpack.html#ga5d37c26bfe3c12974e0f7615f265f409',1,'vsmc']]],
   ['use_5fcount',['use_count',['../classvsmc_1_1_c_l_base.html#a566c9b492e8d50cb0de9680191eec72c',1,'vsmc::CLBase']]],
   ['utility',['Utility',['../group___utility.html',1,'']]],
+  ['utility_2eh',['utility.h',['../utility_8h.html',1,'']]],
   ['utility_2ehpp',['utility.hpp',['../utility_8hpp.html',1,'']]]
 ];

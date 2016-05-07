@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: vsmc_progress Struct Reference</title>
+<title>vSMC: vsmc_sampler_move_smp_type Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,34 +96,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structvsmc__progress-members.html">List of all members</a>  </div>
+<a href="structvsmc__sampler__move__smp__type-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vsmc_progress Struct Reference<div class="ingroups"><a class="el" href="group___c___a_p_i.html">C API</a> &raquo; <a class="el" href="group___c___a_p_i___utility.html">Utility</a> &raquo; <a class="el" href="group___c___a_p_i___utility___progress.html">Progress</a></div></div>  </div>
+<div class="title">vsmc_sampler_move_smp_type Struct Reference<div class="ingroups"><a class="el" href="group___c___a_p_i.html">C API</a> &raquo; <a class="el" href="group___c___a_p_i___definitions.html">Enumerators, placeholders and macros</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="vsmc_8h_source.html">vsmc/vsmc.h</a>&gt;</code></p>
+<p><a class="el" href="classvsmc_1_1_move_s_m_p.html" title="Sampler&lt;T&gt;::move_type. ">vsmc::MoveSMP</a>  
+ <a href="structvsmc__sampler__move__smp__type.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="defines_8h_source.html">vsmc/internal/defines.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a48e8d54da0fb5c9502f4257b01a60238"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__progress.html#a48e8d54da0fb5c9502f4257b01a60238">ptr</a></td></tr>
-<tr class="separator:a48e8d54da0fb5c9502f4257b01a60238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17dce208738845efceec6b1bbec647a1"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__sampler__move__smp__type.html#a17dce208738845efceec6b1bbec647a1">eval_post</a> )(size_t, <a class="el" href="structvsmc__particle.html">vsmc_particle</a>)</td></tr>
+<tr class="separator:a17dce208738845efceec6b1bbec647a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cd6f70814975b5a215f945f58eaaf8"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__sampler__move__smp__type.html#ac9cd6f70814975b5a215f945f58eaaf8">eval_pre</a> )(size_t, <a class="el" href="structvsmc__particle.html">vsmc_particle</a>)</td></tr>
+<tr class="separator:ac9cd6f70814975b5a215f945f58eaaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ba94892160fc0dbf7b3958e61c6955"><td class="memItemLeft" align="right" valign="top">size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsmc__sampler__move__smp__type.html#ad0ba94892160fc0dbf7b3958e61c6955">eval_sp</a> )(size_t, <a class="el" href="structvsmc__single__particle.html">vsmc_single_particle</a>)</td></tr>
+<tr class="separator:ad0ba94892160fc0dbf7b3958e61c6955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l01535">1535</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
+<div class="textblock"><p><a class="el" href="classvsmc_1_1_move_s_m_p.html" title="Sampler&lt;T&gt;::move_type. ">vsmc::MoveSMP</a> </p>
+
+<p>Definition at line <a class="el" href="defines_8h_source.html#l00230">230</a> of file <a class="el" href="defines_8h_source.html">defines.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a48e8d54da0fb5c9502f4257b01a60238"></a>
+<a class="anchor" id="a17dce208738845efceec6b1bbec647a1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* vsmc_progress::ptr</td>
+          <td class="memname">void(* vsmc_sampler_move_smp_type::eval_post) (size_t, <a class="el" href="structvsmc__particle.html">vsmc_particle</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vsmc_8h_source.html#l01536">1536</a> of file <a class="el" href="vsmc_8h_source.html">vsmc.h</a>.</p>
+<p>Definition at line <a class="el" href="defines_8h_source.html#l00233">233</a> of file <a class="el" href="defines_8h_source.html">defines.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9cd6f70814975b5a215f945f58eaaf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vsmc_sampler_move_smp_type::eval_pre) (size_t, <a class="el" href="structvsmc__particle.html">vsmc_particle</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="defines_8h_source.html#l00232">232</a> of file <a class="el" href="defines_8h_source.html">defines.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0ba94892160fc0dbf7b3958e61c6955"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t(* vsmc_sampler_move_smp_type::eval_sp) (size_t, <a class="el" href="structvsmc__single__particle.html">vsmc_single_particle</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="defines_8h_source.html#l00231">231</a> of file <a class="el" href="defines_8h_source.html">defines.h</a>.</p>
 
 </div>
 </div>

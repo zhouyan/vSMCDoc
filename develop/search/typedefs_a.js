@@ -5,7 +5,6 @@ var searchData=
   ['rdrand32',['RDRAND32',['../group___r_d_r_a_n_d.html#gab4b423697221847201caadade3bec834',1,'vsmc']]],
   ['rdrand64',['RDRAND64',['../group___r_d_r_a_n_d.html#gad2fa06d4c438905168dc683ce7703f25',1,'vsmc']]],
   ['reference',['reference',['../classvsmc_1_1_allocator.html#a5e61a0848d4731fd6630e44ca893ef43',1,'vsmc::Allocator']]],
-  ['resample_5ftype',['resample_type',['../classvsmc_1_1_sampler.html#af99836aa32e139bcc36543693ec9b1b3',1,'vsmc::Sampler']]],
   ['resamplemultinomial',['ResampleMultinomial',['../group___resample.html#gab71e8ed43458e235201569030bb87b3b',1,'vsmc']]],
   ['resampleresidual',['ResampleResidual',['../group___resample.html#ga343b6d78f9b73053179500a79c67e92f',1,'vsmc']]],
   ['resampleresidualstratified',['ResampleResidualStratified',['../group___resample.html#gaa9bc7e083d0124a14916b15a78beb261',1,'vsmc']]],
@@ -18,8 +17,8 @@ var searchData=
   ['rng_5f64',['RNG_64',['../group___r_n_g.html#gabf437e972b00f9b53cdcf441fe3fd7e2',1,'vsmc']]],
   ['rng_5fset_5ftype',['rng_set_type',['../classvsmc_1_1_particle.html#ab54493f8c041e656017497e0cdf509c4',1,'vsmc::Particle']]],
   ['rng_5ftype',['rng_type',['../classvsmc_1_1_particle.html#ad45e4cd609c92c3bdf1124b1be8e965a',1,'vsmc::Particle::rng_type()'],['../classvsmc_1_1_r_n_g_set_scalar.html#a90387fe34cbe89fcf6a84dcbfa92ca41',1,'vsmc::RNGSetScalar::rng_type()'],['../classvsmc_1_1_r_n_g_set_vector.html#ace560beaa6814e455e0f9fa4a30212da',1,'vsmc::RNGSetVector::rng_type()'],['../classvsmc_1_1_r_n_g_set_t_b_b.html#ae29b571f4e5088316eda792b531d6ba7',1,'vsmc::RNGSetTBB::rng_type()']]],
-  ['rngmini',['RNGMini',['../group___r_n_g.html#gad4c6994daa709103508608cab375cb77',1,'vsmc']]],
-  ['rngmini_5f64',['RNGMini_64',['../group___r_n_g.html#ga63f2ce3ac8fc76c35908c356ff357338',1,'vsmc']]],
+  ['rngmini',['RNGMini',['../group___r_n_g.html#gaaeee54b108022d48425a1dd9a66a8ce2',1,'vsmc']]],
+  ['rngmini_5f64',['RNGMini_64',['../group___r_n_g.html#ga588d32ec9dce7daa510f6e6565f07fc6',1,'vsmc']]],
   ['rngset',['RNGSet',['../group___r_n_g.html#ga899911e734bd3c3fcab712162b6e688b',1,'vsmc']]],
   ['rngsettype',['RNGSetType',['../namespacevsmc.html#af152089d00c3e54a6e38a8e4e69d0e77',1,'vsmc']]],
   ['rotate',['rotate',['../classvsmc_1_1_threefry_constants.html#ab24c8522946f1a062ebe995e482afc78',1,'vsmc::ThreefryConstants']]]

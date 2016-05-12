@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>vSMC: Change log</title>
+<title>vSMC: Changes in v3.0.0</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">vSMC
-   &#160;<span id="projectnumber">v2.3.0</span>
+   &#160;<span id="projectnumber">v3.0.0</span>
    </div>
-   <div id="projectbrief">vSMC: Scalable Monte Carlo</div>
+   <div id="projectbrief">Scalable Monte Carlo</div>
   </td>
  </tr>
  </tbody>
@@ -87,82 +87,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Change log </div>  </div>
+<div class="title">Changes in v3.0.0 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Changes in v2.3.0</h1>
-<h2>Important changes</h2>
-<ul>
-<li><code>AlignedAllocator</code> is renamed to <code>Allocator</code>. The old type alias <code>Allocator</code> is removed. The default alignment is defined by <code>AlignmentTrait&lt;T&gt;</code>, which is <code>VSMC_ALIGNMENT</code> for scalar types and <code>max(alignof(T), VSMC_ALIGNMENT_MIN)</code> for others.</li>
-<li>New configuration macro <code>VSMC_CONSTRUCT_SCALAR</code>. If it is zero (the default), then <code>Allocator</code> will not zero initialize scalar values when <code>construct</code> is called without additional arguments.</li>
-<li>The HDFIO module has been rewritten. Now there are only two main functions, <code>hdf5load</code> and <code>hdf5store</code>. The data types are detected based on iterator types.</li>
-</ul>
-<h2>New features</h2>
-<ul>
-<li>New C++ OpenCL RAII classes</li>
-<li><code>Sampler</code> gains new methods, <code>accept_size</code>, <code>read_accept_history</code>, <code>read_accept_history_list</code>, and <code>read_accept_history_matrix</code>.</li>
-<li>New functions <code>pack_s</code>, <code>pack_i</code>, <code>pack_m</code>, <code>unpack_s</code>, <code>unpack_i</code>, and <code>unpack_m</code>, for pack and unpack vectors into/from contiguous storage</li>
-<li><code>StateMatrix</code> gain <code>resize(N, dim)</code> method. Resizing a <code>StateMatrix</code> object preserve original values in the following sense. Let N and M be the original and new sizes, let K and L be the original and new dimensions. Then <code>resize(M, L)</code> preserve the min(N, M) by min(K, L) matrix at the upper left corner of the original. The overloading <code>resize(N)</code> assumes the dimension does not change. The method <code>resize_dim</code> also gains this new behavior of preserving values.</li>
-<li><code>StateMatrix</code> can now handle the situation where the length of the input <code>index</code> to <code>copy</code> is not the same as its own size. The results is a resized matrix.</li>
-<li><code>Particle</code> can now be resized by various methods</li>
-<li>One can now use resampling algorithms as a <code>Sampler::move_type</code> object through <code>ResampleMove</code></li>
-</ul>
-<h2>Changed behaviors</h2>
-<ul>
-<li>Most methods which take a <code>MatrixLayout</code> type template parameter now has that parameter as a runtime parameter.</li>
-<li>Most methods that takes output iterators, (including pointers that used in this fashion), now returns an iterator in the same way as <code>std::copy</code> etc.</li>
-<li><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;&gt;</code></li>
-<li><code>Sampler::resample_scheme</code> is now renamed <code>resample_method</code></li>
-<li><code>Particle::resample</code> is removed</li>
-</ul>
-<h2>Removed features</h2>
-<ul>
-<li><code>Monitor::read_record_matrix</code> overload which takes iterators to iterators is removed</li>
-<li><code>StateMatrix::read_state_matrix</code> overload which takes iterators to iterators is removed</li>
-<li>MKL RAII classes no long has the <code>reset</code> method with same arguments as the constructors. Use the constructor and move semantics instead.</li>
-<li><code>Monitor::index_data</code> and <code>Monitor::record_data</code> are removed</li>
-<li><code>AlignedVector</code> is removed</li>
-<li><code>hdf5store</code> is now overloaded for <code>Monitor</code></li>
-<li><code>Sampler::mcmc_type</code> is removed. It was exactly the same as <code>Sampler::move_type</code>. Unless the user code explicitly use the name <code>mcmc_type</code>, nothing shall break.</li>
-</ul>
-<h1>Changes in v2.2.0</h1>
-<h2>New features</h2>
-<ul>
-<li><code>SingleParticle</code> now as iterator-like behaviors.</li>
-<li><code>Particle</code> now has a new <code>sp</code> member that return <code>SingleParticle</code> objects.</li>
-<li><code>NormalMVDistribution</code> and related functions for generating multivariate Normal distribution random variate.</li>
-<li>New module "Random Walk" that implements generic random walk MCMC kernels and Normal distribution based proposals. Both scalar and multivariate cases are supported.</li>
-<li><code>Covariance</code> is a new class that can compute the covariance matrix from (weighted) samples, and output the matrix in variance formats.</li>
-<li><code>cov_chol</code> transform a covariance matrix, stored in various formats, into the lower triangular part of its Cholesky decomposition, stored as a packed row major matrix</li>
-</ul>
-<h2>Changed behaviors</h2>
-<ul>
-<li><code>AlignedAllocator</code> template parameter <code>Memory</code> now requires its member functions to be static and the class stateless. Unless you write your allocator using this template, there is no need to change client code.</li>
-<li><code>MatrixOrder</code> is now an alias to <code>MatrixLayout</code>.</li>
-<li>CBLAS and LAPACK are now required dependency.</li>
-</ul>
-<h2>Removed features</h2>
-<ul>
-<li><code>U01LRDistribution</code> is removed, while <code>U01CCDistribution</code> etc., remain.</li>
-<li><code>UniformRealLRDistribution</code> and <code>UniformRealCCDistribution</code> etc., are removed.</li>
-<li>Path sampling support is removed. It can be easily done through the more general <code>Monitor</code>. See the GMM example.</li>
-</ul>
-<h2>Documentation</h2>
-<p><a href="http://zhouyan.github.io/vSMCDoc/v2.2.0/">http://zhouyan.github.io/vSMCDoc/v2.2.0/</a></p>
-<h1>Changes in v2.1.0</h1>
-<h2>Important changes</h2>
-<p>The mutation (MCMC) steps are now performed after the resampling of initialization step.</p>
-<h2>Removed features</h2>
-<ul>
-<li>OpenCL and MPI modules are removed for now. It is planned that they will be added back in future with a new interface.</li>
-</ul>
-<h2>Documentation</h2>
-<p><a href="http://zhouyan.github.io/vSMCDoc/v2.1.0/">http://zhouyan.github.io/vSMCDoc/v2.1.0/</a></p>
-<h1>Changes in v2.0.0</h1>
-<p>The version 2.0.0 is a major restructuring of the library since the initial release. Its documentation is still been updated. For the time being, one can keep using the old JSS release or the reference manual below.</p>
-<p>The most important change is that C++11, both language and libraries are now required.</p>
-<h2>Documentation</h2>
-<p><a href="http://zhouyan.github.io/vSMCDoc/v2.0.0/">http://zhouyan.github.io/vSMCDoc/v2.0.0/</a> </p>
+<div class="textblock"><h1>Important changes</h1>
+<p><code>StateMatrix</code> member <code>state</code> is replaced by <code>operator()</code>, <code>copy</code> renamed to <code>select</code> and <code>copy_particle</code> renamed to <code>duplicate</code>.</p>
+<p><code>Particle</code> member <code>value</code> is renamed <code>state</code>.</p>
+<p><code>Sampler</code> constructor has been rewritten. It no longer accept arguments about resampling method and threshold. Instead, it is now a variadic template and pass all of its arguments to <code>Particle</code>. The later will take the first argument, if it there is one, as the number of particles, and pass the rest to value type <code>T</code>. Use the new <code>resample_method</code> method of <code>Sampler</code> to configure the behavior of resampling.</p>
+<p><code>AlignedAllocator</code> is renamed to <code>Allocator</code>. The old type alias <code>Allocator</code> is removed. The default alignment is defined by <code>AlignmentTrait&lt;T&gt;</code>, which is <code>VSMC_ALIGNMENT</code> for scalar types and <code>max(alignof(T), VSMC_ALIGNMENT_MIN)</code> for others.</p>
+<p>New configuration macro <code>VSMC_CONSTRUCT_SCALAR</code>. If it is zero (the default), then <code>Allocator</code> will not zero initialize scalar values when <code>construct</code> is called without additional arguments.</p>
+<p>The HDF5 module has been rewritten. Now there are only two main functions, <code>hdf5load</code> and <code>hdf5store</code>. The data types are detected based on iterator types.</p>
+<h1>New features</h1>
+<p>New C++ OpenCL RAII classes</p>
+<p><code>Sampler</code> <code>accept_history</code> etc., are renamed to <code>status_history</code> etc.</p>
+<p><code>Sampler</code> gains new methods, <code>status_size</code>, <code>read_status_history</code>, and <code>read_status_history_matrix</code>.</p>
+<p><code>StateMatrix</code> gain <code>resize(N, dim)</code> method. Resizing a <code>StateMatrix</code> object preserve original values in the following sense. Let N and M be the original and new sizes, let K and L be the original and new dimensions. Then <code>resize(M, L)</code> preserve the min(N, M) by min(K, L) matrix at the upper left corner of the original. The overloading <code>resize(N)</code> assumes the dimension does not change. The method <code>resize_dim</code> also gains this new behavior of preserving values.</p>
+<p><code>StateMatrix</code> can now handle the situation where the length of the input <code>index</code> to <code>copy</code> is not the same as its own size. The results is a resized matrix.</p>
+<p><code>Particle</code> can now be resized by various methods</p>
+<p>One can now use resampling algorithms as a <code>Sampler::move_type</code> object through <code>ResampleMove</code></p>
+<p>New distribution <code>ArcsineDistribution</code></p>
+<p>New generic <code>MoveSMP</code> etc., base classes. <code>MoveTBB&lt;T, Derived</code> etc., are now alias to <code>MoveSMP&lt;T, Derived, BackendTBB&gt;</code> etc.</p>
+<p>New vectorized rounding functions</p>
+<p>New RNG type alias, <code>RNG_64</code>, <code>RNGMini</code> and <code>RNGMini_64</code>. And new naming scheme, which is more consistent with the others, for AES-NI based RNGs.</p>
+<h1>Changed behaviors</h1>
+<p>Most methods which take a <code>MatrixLayout</code> type template parameter now has that parameter as a runtime parameter.</p>
+<p>Most methods that takes output iterators, (including pointers that used in this fashion), now returns an iterator in the same way as <code>std::copy</code> etc.</p>
+<p><code>Vector</code> is now defined to be <code>std::vector&lt;T, Allocator&lt;T&gt;&gt;</code></p>
+<p><code>Sampler::resample_scheme</code> is now renamed <code>resample_method</code></p>
+<p><code>Particle::resample</code> is removed</p>
+<h1>Removed features</h1>
+<p><code>Monitor::read_record_matrix</code> overload which takes iterators to iterators is removed</p>
+<p><code>StateMatrix::read_state_matrix</code> overload which takes iterators to iterators is removed</p>
+<p>MKL RAII classes no long has the <code>reset</code> method with same arguments as the constructors. Use the constructor and move semantics instead.</p>
+<p><code>Monitor::index_data</code> and <code>Monitor::record_data</code> are removed</p>
+<p><code>AlignedVector</code> is removed</p>
+<p><code>hdf5store</code> is now overloaded for <code>Monitor</code> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

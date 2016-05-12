@@ -31,9 +31,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">vSMC
-   &#160;<span id="projectnumber">v2.3.0</span>
+   &#160;<span id="projectnumber">v3.0.0</span>
    </div>
-   <div id="projectbrief">vSMC: Scalable Monte Carlo</div>
+   <div id="projectbrief">Scalable Monte Carlo</div>
   </td>
  </tr>
  </tbody>
@@ -109,15 +109,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="basic_8hpp_source.html">vsmc/internal/basic.hpp</a>&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;tbb/scalable_allocator.h&gt;</code><br />
-<code>#include &lt;mkl_service.h&gt;</code><br />
 </div>
 <p><a href="aligned__memory_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_m_k_l.html">vsmc::AlignedMemoryMKL</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned memory using Intel MKL <code>mkl_malloc</code> and <code>mkl_free</code>  <a href="classvsmc_1_1_aligned_memory_m_k_l.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_aligned_memory_s_t_d.html">vsmc::AlignedMemorySTD</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned memory using <code>std::malloc</code> and <code>std::free</code>  <a href="classvsmc_1_1_aligned_memory_s_t_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +161,7 @@ Macros</h2></td></tr>
 <tr class="memitem:gaa442f52c017461d56833399222df2a23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gaa442f52c017461d56833399222df2a23">VSMC_ALIGNED_MEMORY_TYPE</a>&#160;&#160;&#160;::<a class="el" href="classvsmc_1_1_aligned_memory_t_b_b.html">vsmc::AlignedMemoryTBB</a></td></tr>
 <tr class="memdesc:gaa442f52c017461d56833399222df2a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default AlignedMemory type.  <a href="group___config.html#gaa442f52c017461d56833399222df2a23">More...</a><br /></td></tr>
 <tr class="separator:gaa442f52c017461d56833399222df2a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafe2e3606e32e1ee406b4b79e53e60e65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gafe2e3606e32e1ee406b4b79e53e60e65">VSMC_ALIGNMENT</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:gafe2e3606e32e1ee406b4b79e53e60e65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#gafe2e3606e32e1ee406b4b79e53e60e65">VSMC_ALIGNMENT</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:gafe2e3606e32e1ee406b4b79e53e60e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default alignment for scalar type.  <a href="group___config.html#gafe2e3606e32e1ee406b4b79e53e60e65">More...</a><br /></td></tr>
 <tr class="separator:gafe2e3606e32e1ee406b4b79e53e60e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92b722f79db91db113019b6886d2dc24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___config.html#ga92b722f79db91db113019b6886d2dc24">VSMC_ALIGNMENT_MIN</a>&#160;&#160;&#160;16</td></tr>
@@ -212,7 +208,7 @@ Functions</h2></td></tr>
 
 <p>Allocator::construct default behavior for scalar type. </p>
 
-<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00088">88</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="aligned__memory_8hpp_source.html#l00078">78</a> of file <a class="el" href="aligned__memory_8hpp_source.html">aligned_memory.hpp</a>.</p>
 
 </div>
 </div>

@@ -31,9 +31,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">vSMC
-   &#160;<span id="projectnumber">v2.3.0</span>
+   &#160;<span id="projectnumber">v3.0.0</span>
    </div>
-   <div id="projectbrief">vSMC: Scalable Monte Carlo</div>
+   <div id="projectbrief">Scalable Monte Carlo</div>
   </td>
  </tr>
  </tbody>
@@ -138,7 +138,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_lognormal_distribution.html#a2609797b8399ca43a089d86de3609486">vsmc::LognormalDistribution&lt; RealType &gt;</a>
 </li>
 <li>Sampler()
-: <a class="el" href="classvsmc_1_1_sampler.html#a93699e28b54e25343d83e8012d45180f">vsmc::Sampler&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_sampler.html#aab0900d0115deafa89ac1819ae8ced1d">vsmc::Sampler&lt; T &gt;</a>
+</li>
+<li>SamplerEvalBase()
+: <a class="el" href="classvsmc_1_1_sampler_eval_base.html#ad6140ac4bd4c10c71433bf4e5eb191db">vsmc::SamplerEvalBase&lt; T, Derived &gt;</a>
+, <a class="el" href="classvsmc_1_1_sampler_eval_base_3_01_t_00_01_virtual_01_4.html#ae8f29208eeb349d14707cae3958c0963">vsmc::SamplerEvalBase&lt; T, Virtual &gt;</a>
+</li>
+<li>SamplerEvalSMP()
+: <a class="el" href="classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_o_m_p_01_4.html#aed1f01fd291ffb3795780d60b721bc71">vsmc::SamplerEvalSMP&lt; T, Derived, BackendOMP &gt;</a>
+, <a class="el" href="classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_s_e_q_01_4.html#ac1440b9df68651c5da5e0a7211d16518">vsmc::SamplerEvalSMP&lt; T, Derived, BackendSEQ &gt;</a>
+, <a class="el" href="classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_s_t_d_01_4.html#a356ff8118e4148675c8194ec9b7a2d07">vsmc::SamplerEvalSMP&lt; T, Derived, BackendSTD &gt;</a>
+, <a class="el" href="classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_t_b_b_01_4.html#a2c5a7a0d74553ebd64e50ce8e286e556">vsmc::SamplerEvalSMP&lt; T, Derived, BackendTBB &gt;</a>
 </li>
 <li>save_f()
 : <a class="el" href="classvsmc_1_1_m_k_l_stream.html#a82a7a455b5eaeb727c3158a80c1cd3ac">vsmc::MKLStream</a>
@@ -159,6 +169,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SeedGenerator()
 : <a class="el" href="classvsmc_1_1_seed_generator.html#acda49ba5b48eba9a7652d7e545d78d78">vsmc::SeedGenerator&lt; ID, ResultType &gt;</a>
+</li>
+<li>select()
+: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#af29ba209d9abebc30131aa78b2766627">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
+, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a8feeee1a58b16993a15e85f0481d2a5d">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
 </li>
 <li>set()
 : <a class="el" href="classvsmc_1_1_program_option.html#a1e6318f7823456b58137eb3e754bdf49">vsmc::ProgramOption</a>
@@ -187,8 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_weight_null.html#ae22df6186624f599a96edbddcd6cde77">vsmc::WeightNull</a>
 </li>
 <li>set_eval()
-: <a class="el" href="classvsmc_1_1_monitor.html#a51600675e13027bb6c5617f7003b6eaa">vsmc::Monitor&lt; T &gt;</a>
-, <a class="el" href="classvsmc_1_1_resample_move.html#a25ed63241b82e57d29f2f955287964bb">vsmc::ResampleMove&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_resample_eval.html#a2cbbab8df32e5378fb1454285a0b043a">vsmc::ResampleEval&lt; T &gt;</a>
 </li>
 <li>set_log()
 : <a class="el" href="classvsmc_1_1_weight.html#adba5a4ffd4365046f593b588c5cac623">vsmc::Weight</a>
@@ -244,14 +257,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>size_type
 : <a class="el" href="classvsmc_1_1_allocator.html#ab11c7de7794cc721e295910680d91f65">vsmc::Allocator&lt; T, Alignment, Memory &gt;</a>
-, <a class="el" href="classvsmc_1_1_initialize_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4_1_1work__type.html#ad7c6822119951d8fabebb12b892b5d59">vsmc::InitializeSMP&lt; BackendTBB, T, Derived &gt;::work_type</a>
-, <a class="el" href="classvsmc_1_1_monitor_eval_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4_1_1work__type.html#ae8f75e6e867c9426b8009c23fd014409">vsmc::MonitorEvalSMP&lt; BackendTBB, T, Derived &gt;::work_type</a>
-, <a class="el" href="classvsmc_1_1_move_s_m_p_3_01_backend_t_b_b_00_01_t_00_01_derived_01_4_1_1work__type.html#ae4ff70da8bbba05749d77e9227e65346">vsmc::MoveSMP&lt; BackendTBB, T, Derived &gt;::work_type</a>
+, <a class="el" href="classvsmc_1_1_monitor_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_t_b_b_01_4_1_1work__type.html#a82f8e504837e3b24b87fcec120d400d1">vsmc::MonitorEvalSMP&lt; T, Derived, BackendTBB &gt;::work_type</a>
 , <a class="el" href="classvsmc_1_1_particle.html#ad209417e0e289ba10b837a8264afaeef">vsmc::Particle&lt; T &gt;</a>
 , <a class="el" href="classvsmc_1_1_r_n_g_set_scalar.html#ab92e34ce0fd5700ed89a720fc5847ec5">vsmc::RNGSetScalar&lt; RNGType &gt;</a>
 , <a class="el" href="classvsmc_1_1_r_n_g_set_t_b_b.html#af3b3d49f1d820ab3d1870f1977ff0b9b">vsmc::RNGSetTBB&lt; RNGType &gt;</a>
 , <a class="el" href="classvsmc_1_1_r_n_g_set_vector.html#ac1759e3a22c3ba162ced65298c1ad5f1">vsmc::RNGSetVector&lt; RNGType &gt;</a>
 , <a class="el" href="classvsmc_1_1_sampler.html#a89d8f5d91fdddbecaeb3401a8d9b2d40">vsmc::Sampler&lt; T &gt;</a>
+, <a class="el" href="classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_t_b_b_01_4_1_1work__type.html#a4b912d4b99fae2eafd466a3fe1fea8cf">vsmc::SamplerEvalSMP&lt; T, Derived, BackendTBB &gt;::work_type</a>
 , <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#abf3cdf76eacae8e14b5488bdd6b2fb79">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
 , <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a40bc1b6426e70346c9e6e35b718c539b">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
 , <a class="el" href="classvsmc_1_1_state_matrix_base.html#a4f943c162a9c35ab9f99d4376d5a3827">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;</a>
@@ -278,9 +290,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_stop_watch_clock_adapter.html#a5a80a2001d7f862ab268ad8b73f05eff">vsmc::StopWatchClockAdapter&lt; ClockType &gt;</a>
 </li>
 <li>state()
-: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#af9fd509511fb840b74987137c93e54c4">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#ac0170914f87e1edac1729c774ae039c3">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_base_1_1single__particle__type.html#a7fe6666b2685445a8ca05ea0e80c4a96">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;::single_particle_type&lt; S &gt;</a>
+: <a class="el" href="classvsmc_1_1_particle.html#a24a0b20f5a1b895df55e3301bbcc900f">vsmc::Particle&lt; T &gt;</a>
 , <a class="el" href="structvsmc__philox2x32.html#a16f57258acd009bfec787a38f3abe2df">vsmc_philox2x32</a>
 , <a class="el" href="structvsmc__philox4x32.html#ab9be04ac4cb1af5899ad42a642e5ea1b">vsmc_philox4x32</a>
 , <a class="el" href="structvsmc__single__particle.html#aababfd41483726da1d726c0cdda12ea6">vsmc_single_particle</a>
@@ -294,38 +304,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#ab8141cfe59f6eb86e3518bcef7c0dda8">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
 </li>
 <li>state_pack()
-: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a2807addc3ef381d3b725522ed34707bb">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#ad5d5fcbeb00d144fde2c3dcbbac1eb38">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
-</li>
-<li>state_pack_type
-: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#aaa8fa22efa9afb756ea1ee3ab123f0fb">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a353af37255be1f26bb814be3bc64eab3">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_base.html#a4a8a4b6ab61161e8ee3101b873645427">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;</a>
+: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a366ae23f7a8a6da35d68e6bdfce4ffbc">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
+, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#ac197115adce99c264b0e3f27a378f400">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
 </li>
 <li>state_type
-: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a8640ce49b23b294a469efbbcaf12f77d">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a7d2a387f7d3c0609c43de703fb21d0e1">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_base.html#adb49bf764a164232bf07e764e0bceb8f">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;</a>
+: <a class="el" href="classvsmc_1_1_particle.html#a857e43ca143996e10034a3de82155c4f">vsmc::Particle&lt; T &gt;</a>
 </li>
 <li>state_unpack()
-: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#ab215d18cfef5c9fe9529c23aa0f65bf0">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a2880f0d69f4d3f652dd40fe84549b14a">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
+: <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a082b418fb52b884913b1d129a5b40f53">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
+, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a8504575bbc50fd142316a3e4c5de2abc">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
 </li>
 <li>StateMatrix()
 : <a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#a50aad712417c021671f7a828b68febab">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a>
-, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#a36d9cddd450d5c729a0f81a686d7d64d">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
+, <a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#af5c27528d417ce02a764be4b6ae42585">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a>
 </li>
 <li>StateMatrixBase()
-: <a class="el" href="classvsmc_1_1_state_matrix_base.html#a28726997e0abc2b2b7e74e28cf47d4fb">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;</a>
+: <a class="el" href="classvsmc_1_1_state_matrix_base.html#a5875ae81c204bdf1e6493a93ef9aeb86">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;</a>
 </li>
 <li>StateMatrixDim()
 : <a class="el" href="classvsmc_1_1internal_1_1_state_matrix_dim_3_01_dynamic_01_4.html#a195d54e4a3224ec5408083a16776edde">vsmc::internal::StateMatrixDim&lt; Dynamic &gt;</a>
 </li>
 <li>status_history()
-: <a class="el" href="classvsmc_1_1_sampler.html#a66327182f4a420c3e25c7a6f9e217e78">vsmc::Sampler&lt; T &gt;</a>
-</li>
-<li>status_size()
-: <a class="el" href="classvsmc_1_1_sampler.html#a417e395e35cd6ec16833ea66a4a5d2e2">vsmc::Sampler&lt; T &gt;</a>
+: <a class="el" href="classvsmc_1_1_sampler.html#a44273ca873d265d7734b548f47432194">vsmc::Sampler&lt; T &gt;</a>
 </li>
 <li>stddev()
 : <a class="el" href="classvsmc_1_1_normal_distribution_1_1param__type.html#a1a33e0434591c39c40e19bb77da8f642">vsmc::NormalDistribution&lt; RealType &gt;::param_type</a>
@@ -342,7 +342,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classvsmc_1_1_stop_watch_guard.html#a4f15c55ddd3dcdcee0ca49f2f8977df2">vsmc::StopWatchGuard&lt; WatchType &gt;</a>
 </li>
 <li>stream()
-: <a class="el" href="classvsmc_1_1_m_k_l_engine.html#ae526587f0e05289e716ad3de324af744">vsmc::MKLEngine&lt; BRNG, Bits &gt;</a>
+: <a class="el" href="classvsmc_1_1_m_k_l_engine.html#a95ffb23a88c249505c5b131b1c7c38d8">vsmc::MKLEngine&lt; BRNG, Bits &gt;</a>
 </li>
 <li>StudentTDistribution()
 : <a class="el" href="classvsmc_1_1_student_t_distribution.html#a4a01c90dcf31bc21684ce64c86d065aa">vsmc::StudentTDistribution&lt; RealType &gt;</a>

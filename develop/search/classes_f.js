@@ -1,6 +1,13 @@
 var searchData=
 [
   ['sampler',['Sampler',['../classvsmc_1_1_sampler.html',1,'vsmc']]],
+  ['samplerevalbase',['SamplerEvalBase',['../classvsmc_1_1_sampler_eval_base.html',1,'vsmc']]],
+  ['samplerevalbase_3c_20t_2c_20virtual_20_3e',['SamplerEvalBase&lt; T, Virtual &gt;',['../classvsmc_1_1_sampler_eval_base_3_01_t_00_01_virtual_01_4.html',1,'vsmc']]],
+  ['samplerevalsmp',['SamplerEvalSMP',['../classvsmc_1_1_sampler_eval_s_m_p.html',1,'vsmc']]],
+  ['samplerevalsmp_3c_20t_2c_20derived_2c_20backendomp_20_3e',['SamplerEvalSMP&lt; T, Derived, BackendOMP &gt;',['../classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_o_m_p_01_4.html',1,'vsmc']]],
+  ['samplerevalsmp_3c_20t_2c_20derived_2c_20backendseq_20_3e',['SamplerEvalSMP&lt; T, Derived, BackendSEQ &gt;',['../classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_s_e_q_01_4.html',1,'vsmc']]],
+  ['samplerevalsmp_3c_20t_2c_20derived_2c_20backendstd_20_3e',['SamplerEvalSMP&lt; T, Derived, BackendSTD &gt;',['../classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_s_t_d_01_4.html',1,'vsmc']]],
+  ['samplerevalsmp_3c_20t_2c_20derived_2c_20backendtbb_20_3e',['SamplerEvalSMP&lt; T, Derived, BackendTBB &gt;',['../classvsmc_1_1_sampler_eval_s_m_p_3_01_t_00_01_derived_00_01_backend_t_b_b_01_4.html',1,'vsmc']]],
   ['seedgenerator',['SeedGenerator',['../classvsmc_1_1_seed_generator.html',1,'vsmc']]],
   ['single_5fparticle_5ftype',['single_particle_type',['../classvsmc_1_1_state_matrix_base_1_1single__particle__type.html',1,'vsmc::StateMatrixBase']]],
   ['singleparticle',['SingleParticle',['../classvsmc_1_1_single_particle.html',1,'vsmc']]],

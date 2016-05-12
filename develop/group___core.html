@@ -31,9 +31,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">vSMC
-   &#160;<span id="projectnumber">v2.3.0</span>
+   &#160;<span id="projectnumber">v3.0.0</span>
    </div>
-   <div id="projectbrief">vSMC: Scalable Monte Carlo</div>
+   <div id="projectbrief">Scalable Monte Carlo</div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Core</div>  </div>
@@ -118,10 +119,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A thin wrapper over a complete <a class="el" href="classvsmc_1_1_particle.html" title="Particle class representing the whole particle set. ">Particle</a>.  <a href="classvsmc_1_1_single_particle_base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html">vsmc::StateMatrix&lt; ColMajor, Dim, T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a0a89071f8a1a7dde5be42394e24c0eb1">Particle::value_type</a> subtype.  <a href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle::value_type subtype.  <a href="classvsmc_1_1_state_matrix_3_01_col_major_00_01_dim_00_01_t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html">vsmc::StateMatrix&lt; RowMajor, Dim, T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvsmc_1_1_particle.html#a0a89071f8a1a7dde5be42394e24c0eb1">Particle::value_type</a> subtype.  <a href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle::value_type subtype.  <a href="classvsmc_1_1_state_matrix_3_01_row_major_00_01_dim_00_01_t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsmc_1_1_state_matrix_base.html">vsmc::StateMatrixBase&lt; Layout, Dim, T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base type of <a class="el" href="classvsmc_1_1_state_matrix.html">StateMatrix</a>.  <a href="classvsmc_1_1_state_matrix_base.html#details">More...</a><br /></td></tr>
@@ -135,6 +136,19 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty weight set class.  <a href="classvsmc_1_1_weight_null.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gad618d3ba9a2321a75447dc88dd52098b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___core.html#gad618d3ba9a2321a75447dc88dd52098b">vsmc::SamplerStage</a> { <br />
+&#160;&#160;<a class="el" href="group___core.html#ggad618d3ba9a2321a75447dc88dd52098baa2c7b34813d179d00d573c1d65741c96">vsmc::SamplerInit</a> = 1 &lt;&lt; 0, 
+<br />
+&#160;&#160;<a class="el" href="group___core.html#ggad618d3ba9a2321a75447dc88dd52098bae838ac7225ab7e9bb9bdef88560f7170">vsmc::SamplerMove</a> = 1 &lt;&lt; 1, 
+<br />
+&#160;&#160;<a class="el" href="group___core.html#ggad618d3ba9a2321a75447dc88dd52098ba01934d7c3503d4bb21c60ed8ecb41022">vsmc::SamplerMCMC</a> = 1 &lt;&lt; 2
+<br />
+ }<tr class="memdesc:gad618d3ba9a2321a75447dc88dd52098b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampler evaluaiton stages.  <a href="group___core.html#gad618d3ba9a2321a75447dc88dd52098b">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gad618d3ba9a2321a75447dc88dd52098b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3d9f15f3aaeeff3652101eb3bf4fbb1f"><td class="memTemplParams" colspan="2">template&lt;MatrixLayout Layout, std::size_t Dim, typename T &gt; </td></tr>
@@ -144,6 +158,34 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Constructing samplers with operations on the whole particle set. </p>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="gad618d3ba9a2321a75447dc88dd52098b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___core.html#gad618d3ba9a2321a75447dc88dd52098b">vsmc::SamplerStage</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classvsmc_1_1_sampler.html" title="SMC Sampler. ">Sampler</a> evaluaiton stages. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggad618d3ba9a2321a75447dc88dd52098baa2c7b34813d179d00d573c1d65741c96"></a>SamplerInit&#160;</td><td class="fielddoc">
+<p>Evaluation at initialization before resampling. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad618d3ba9a2321a75447dc88dd52098bae838ac7225ab7e9bb9bdef88560f7170"></a>SamplerMove&#160;</td><td class="fielddoc">
+<p>Evaluation at iteration before resampling. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad618d3ba9a2321a75447dc88dd52098ba01934d7c3503d4bb21c60ed8ecb41022"></a>SamplerMCMC&#160;</td><td class="fielddoc">
+<p>Evaluation at after resampling. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="sampler_8hpp_source.html#l00052">52</a> of file <a class="el" href="sampler_8hpp_source.html">sampler.hpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga3d9f15f3aaeeff3652101eb3bf4fbb1f"></a>
 <div class="memitem">
@@ -181,7 +223,7 @@ template&lt;MatrixLayout Layout, std::size_t Dim, typename T &gt; </div>
 
 <p>Swap two <a class="el" href="classvsmc_1_1_state_matrix_base.html" title="Base type of StateMatrix. ">StateMatrixBase</a> objects. </p>
 
-<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00192">192</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
+<p>Definition at line <a class="el" href="state__matrix_8hpp_source.html#l00199">199</a> of file <a class="el" href="state__matrix_8hpp_source.html">state_matrix.hpp</a>.</p>
 
 </div>
 </div>

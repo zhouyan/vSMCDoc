@@ -31,9 +31,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">vSMC
-   &#160;<span id="projectnumber">v2.3.0</span>
+   &#160;<span id="projectnumber">v3.0.0</span>
    </div>
-   <div id="projectbrief">vSMC: Scalable Monte Carlo</div>
+   <div id="projectbrief">Scalable Monte Carlo</div>
   </td>
  </tr>
  </tbody>
@@ -91,21 +91,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Introduction</h1>
-<p>The vSMC library provides a framework for implementing SMC algorithms. It has a modules that perform resampling, etc., operations common to all SMC algorithms and applications. In addition, it provides bases for implementing parallelized samplers. The SMC algorithms are highly parallelizable, but there are many frameworks for doing this. This library tries to hide the different parallelization mechanism behind a unified interface, and thus increases code reuse.</p>
+<p>The vSMC library provides a framework for implementing Monte Carlo algorithms. It was originally developed for the purpose of parallel implementation of SMC algorithms. But it now supports other algorithms as well. The library provides basic building blocks for implementing parallelizable Monte Carlo algorithms.</p>
 <h1>Installation</h1>
-<p>This is a header only template C++ library. To install the library just move the contents of the <code>include</code> directory into a proper place, e.g., <code>/usr/local/include</code> on Unix-alike systems. Alternatively, one can use <a href="http://www.cmake.org">CMake</a> (3.0.0 or later required), </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd /path_to_vSMC_source</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;mkdir build</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cd build</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cmake ..</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;make install</div></div><!-- fragment --><p> One may need administrator permissions to perform the last installation step or alternatively one can define the <a href="http://www.cmake.org">CMake</a> variable <code>CMAKE_INSTALL_PREFIX</code> to change the destination of installation.</p>
+<p>This is a header only template C++ library. To install the library just move the contents of the <code>include</code> directory into a proper place, e.g., <code>/usr/local/include</code> on Unix-alike systems.</p>
 <h1>Documentation</h1>
-<p>The documentation of the <a href="http://zhouyan.github.io/vSMCDoc/master">master</a> and <a href="http://zhouyan.github.io/vSMCDoc/develop">develop</a> branches, as well as for individual releases can be found online. A <a href="http://zhouyan.github.io/vSMCDoc/develop/user_guide.pdf">User guide</a> is also provided for the develop branch.</p>
+<p><a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a> generated reference manuals for the <a href="http://zhouyan.github.io/vSMCDoc/master">master</a> and <a href="http://zhouyan.github.io/vSMCDoc/develop">develop</a> branches, as well as for individual releases can be found online (see <a href="https://github.com/zhouyan/vSMC/releases">release notes</a> for links). A [Manual][VSMCManual] is also provided.</p>
 <h1>Third-party dependencies</h1>
-<p>This library requires a working BLAS/LAPACK implementation, with the standard C interface headers (<code>cblas.h</code> and <code>lapacke.h</code>). Some of the library's functionalities can only be used if a optional dependencies are present. Notably, <a href="http://www.hdfgroup.org">HDF5</a>, <a href="http://threadingbuildingblocks.org">TBB</a>, <a href="http://www.openmp.org">OpenMP</a> and <a href="https://software.intel.com/en-us/intel-mkl">MKL</a>. One can tell the library that these optional features are available by defining configuration macros such as <code>-DVSMC_HAS_HDF5=1</code> during compilation.</p>
-<h1>Parallelization backends</h1>
-<p>This library support various backends for multi-thread parallelization, unified under a uniform interface. The primary backends are <a href="http://www.openmp.org">OpenMP</a> and <a href="http://threadingbuildingblocks.org">TBB</a>.</p>
+<p>This library requires a working BLAS implementation. Some of the library's functionalities can only be used if a optional dependencies are present. Notably, <a href="http://www.hdfgroup.org">HDF5</a>, <a href="http://threadingbuildingblocks.org">TBB</a>, <a href="http://www.openmp.org">OpenMP</a> and <a href="https://software.intel.com/en-us/intel-mkl">MKL</a>. One can tell the library that these optional features are available by defining configuration macros such as <code>-DVSMC_HAS_HDF5=1</code> during compilation.</p>
 <h1>Compiler support</h1>
 <p>This library makes heavy use of some template metaprogramming techniques. It requires a C++11 standard conforming compiler.</p>
 <p>This library has been regularly tested with recent <a href="http://clang.llvm.org">Clang</a>, <a href="http://gcc.gnu.org">GCC</a> and <a href="http://software.intel.com/en-us/intel-compilers">Intel C++ Compiler</a> in C++11 mode.</p>
-<p>Other compilers might work but are not tested. Complete C++11 implementation is required.</p>
+<p>Other compilers might work but are not tested. Complete C++11 implementation is required with thread-local storage as an exception.</p>
 <h1>Examples</h1>
-<p>Examples are in the <code>example</code> subdirectory, to build them, </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;export CXXFLAGS=c++11</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cd /path_to_vSMC_source</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;mkdir build</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cd build</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;cmake ..</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;make example</div></div><!-- fragment --><p> Some examples may only be built if some optional dependencies are present.</p>
+<p>Examples are in the <code>example</code> subdirectory, to build them, </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;export CXXFLAGS=&quot;-std=c++11&quot;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cd /path_to_vSMC_source</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;mkdir build</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;cd build</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;cmake .. -DCMAKE_BUILD_TYPE=Release</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;make example</div></div><!-- fragment --><p> Some examples may only be built if optional dependencies are present.</p>
 <h1>License</h1>
 <p>The vSMC library is distributed with a 2-clause BSD license which can be found in the <code>LICENSE</code> file distributed with the source. </p>
 </div></div><!-- contents -->

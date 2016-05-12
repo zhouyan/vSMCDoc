@@ -5,7 +5,6 @@ var searchData=
   ['aes256keyseqgenerator',['AES256KeySeqGenerator',['../classvsmc_1_1internal_1_1_a_e_s256_key_seq_generator.html',1,'vsmc::internal']]],
   ['aeskeyseq',['AESKeySeq',['../classvsmc_1_1internal_1_1_a_e_s_key_seq.html',1,'vsmc::internal']]],
   ['aesnigenerator',['AESNIGenerator',['../classvsmc_1_1_a_e_s_n_i_generator.html',1,'vsmc']]],
-  ['alignedmemorymkl',['AlignedMemoryMKL',['../classvsmc_1_1_aligned_memory_m_k_l.html',1,'vsmc']]],
   ['alignedmemorystd',['AlignedMemorySTD',['../classvsmc_1_1_aligned_memory_s_t_d.html',1,'vsmc']]],
   ['alignedmemorysys',['AlignedMemorySYS',['../classvsmc_1_1_aligned_memory_s_y_s.html',1,'vsmc']]],
   ['alignedmemorytbb',['AlignedMemoryTBB',['../classvsmc_1_1_aligned_memory_t_b_b.html',1,'vsmc']]],
